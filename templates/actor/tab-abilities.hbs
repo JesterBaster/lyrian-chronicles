@@ -2,9 +2,12 @@
 
   <div class="lyr-section-head">
     <h2 class="lyr-heading">Abilities</h2>
-    <button type="button" data-action="createItem" data-type="ability">Add ability</button>
+    <div class="lyr-section-actions">
+      <button type="button" data-action="browsePack" data-pack="{{#if isNPC}}monster-abilities{{else}}player-abilities{{/if}}"><i class="fa-solid fa-book-open"></i> Browse compendium</button>
+      <button type="button" data-action="createItem" data-type="{{#if isNPC}}monsterAbility{{else}}ability{{/if}}">Add ability</button>
+    </div>
   </div>
-  <p class="lyr-note">Each ability is once per round unless it has Rapid. Shift-click to use without paying its cost.</p>
+  <p class="lyr-note">Drag abilities from the compendium onto this sheet. Shift-click Use to skip the resource cost.</p>
 
   {{#*inline "abilityRow"}}
     <li class="lyr-row {{#if this.system.usedThisRound}}lyr-row--spent{{/if}}" data-item-id="{{this.id}}">

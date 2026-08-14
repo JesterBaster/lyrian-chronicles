@@ -5,8 +5,8 @@
       <section class="lyr-reference-card">
         <h3>Combat profile</h3>
         <dl class="lyr-facts">
-          {{#if system.official.lightAttack}}<div><dt>Light attack</dt><dd>{{system.official.lightAttack}}</dd></div>{{/if}}
-          {{#if system.official.heavyAttack}}<div><dt>Heavy attack</dt><dd>{{system.official.heavyAttack}}</dd></div>{{/if}}
+          {{#if system.official.lightAttack}}<div><dt>Light attack</dt><dd>{{system.official.lightAttack}} <button type="button" data-action="monsterAttack" data-attack-type="light" title="Roll; Shift-click without AP cost">Roll</button></dd></div>{{/if}}
+          {{#if system.official.heavyAttack}}<div><dt>Heavy attack</dt><dd>{{system.official.heavyAttack}} <button type="button" data-action="monsterAttack" data-attack-type="heavy" title="Roll; Shift-click without AP cost">Roll</button></dd></div>{{/if}}
           {{#if system.official.notableSkills}}<div><dt>Notable skills</dt><dd>{{system.official.notableSkills}}</dd></div>{{/if}}
           {{#if system.details.recommended}}<div><dt>Recommended</dt><dd>{{system.details.recommended}}</dd></div>{{/if}}
         </dl>
@@ -77,7 +77,7 @@
             </div>
           </li>
         {{else}}
-          <li class="lyr-empty">No weapons yet. Add one from the Inventory tab.</li>
+          <li class="lyr-empty">{{#if isNPC}}Use the official basic attacks above, or add a weapon from Inventory.{{else}}No weapons yet. Add one from the Inventory tab.{{/if}}</li>
         {{/each}}
       </ul>
 
