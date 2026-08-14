@@ -43,6 +43,29 @@ export function classFeatureGrants(classSystem, level = 1) {
   })).filter((grant) => grant.stableId && grant.requiredLevel <= normalizeClassLevel(level));
 }
 
+/** Stable identity for one generated race/class feature on an owned Actor. */
+export function featureSourceKey(source = {}) {
+  const sourceItemId = String(source.sourceItemId ?? "").trim();
+  const stableId = String(source.stableId ?? "").trim();
+  return sourceItemId && stableId ? `${sourceItemId}:${stableId}` : "";
+}
+
+/** Keep the first generated feature for each source and identify duplicate rows. */
+export function indexGeneratedFeatures(entries = []) {
+  const byKey = new Map();
+  const duplicates = [];
+  for (const entry of entries) {
+    const source = entry.source ?? entry.getFlag?.("lyrian-chronicles", "featureSource") ?? {};
+    const key = featureSourceKey(source);
+    if (!key || !byKey.has(key)) {
+      if (key) byKey.set(key, entry);
+      continue;
+    }
+    duplicates.push(entry);
+  }
+  return { byKey, duplicates };
+}
+
 export function raceAttributeBonuses(attributes = "") {
   const text = String(attributes);
   const main = {};

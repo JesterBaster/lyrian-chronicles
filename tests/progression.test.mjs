@@ -6,6 +6,8 @@ import test from "node:test";
 import {
   CLASS_FEATURE_LEVELS,
   classFeatureGrants,
+  featureSourceKey,
+  indexGeneratedFeatures,
   normalizeClassLevel,
   raceAmbitionExp,
   raceAttributeBonuses,
@@ -15,6 +17,22 @@ import {
 } from "../module/rules/progression.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
+
+test("generated class features have stable keys and duplicate copies are identified", () => {
+  const source = { sourceItemId: "class-1", stableId: "ability--power-jump" };
+  const first = { id: "ability-1", source };
+  const duplicate = { id: "ability-2", source: { ...source } };
+  const other = {
+    id: "ability-3",
+    source: { sourceItemId: "class-1", stableId: "ability--mana-razor" }
+  };
+
+  assert.equal(featureSourceKey(source), "class-1:ability--power-jump");
+  const indexed = indexGeneratedFeatures([first, duplicate, other]);
+  assert.equal(indexed.byKey.get("class-1:ability--power-jump"), first);
+  assert.equal(indexed.byKey.get("class-1:ability--mana-razor"), other);
+  assert.deepEqual(indexed.duplicates, [duplicate]);
+});
 
 test("class progression unlocks its five features through level 8", () => {
   const system = {
