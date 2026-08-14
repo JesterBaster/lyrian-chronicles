@@ -1,12 +1,19 @@
 import { LYRIAN } from "../config.mjs";
 import { parseMonsterAttackProfile } from "../rules/monster-attack.mjs";
-import { classFeatureGrants } from "../rules/progression.mjs";
+import {
+  classFeatureGrants,
+  featureSourceKey,
+  indexGeneratedFeatures
+} from "../rules/progression.mjs";
 
 /**
  * The Actor document for Lyrian Chronicles.
  * Rolls live here so macros can call them: actor.rollSkill("stealth")
  */
 export class LyrianActor extends Actor {
+  /** @type {Promise<void>|null} Prevent concurrent feature synchronization. */
+  #progressionSync = null;
+
   /** @override */
   prepareData() {
     super.prepareData();
@@ -42,6 +49,17 @@ export class LyrianActor extends Actor {
 
   /** Synchronize race traits and unlocked class abilities from compendium links. */
   async syncProgressionFeatures() {
+    if (this.#progressionSync) return this.#progressionSync;
+    this.#progressionSync = this.#syncProgressionFeatures();
+    try {
+      return await this.#progressionSync;
+    } finally {
+      this.#progressionSync = null;
+    }
+  }
+
+  /** Execute one serialized synchronization pass. */
+  async #syncProgressionFeatures() {
     if (this.type !== "character") return;
 
     const expected = new Map();
@@ -50,7 +68,7 @@ export class LyrianActor extends Actor {
         (entry) => entry.stableId === grant.stableId
       );
       if (!link?.uuid) return;
-      expected.set(`${sourceItem.id}:${grant.stableId}`, {
+      expected.set(featureSourceKey({ sourceItemId: sourceItem.id, stableId: grant.stableId }), {
         ...grant,
         kind,
         sourceItemId: sourceItem.id,
@@ -86,10 +104,8 @@ export class LyrianActor extends Actor {
     const generated = this.items.filter(
       (item) => item.type === "ability" && item.getFlag("lyrian-chronicles", "featureSource")
     );
-    const generatedByKey = new Map(generated.map((item) => {
-      const source = item.getFlag("lyrian-chronicles", "featureSource");
-      return [`${source.sourceItemId}:${source.stableId}`, item];
-    }));
+    const { byKey: generatedByKey, duplicates } = indexGeneratedFeatures(generated);
+    const duplicateIds = new Set(duplicates.map((item) => item.id));
 
     const create = [];
     const update = [];
@@ -128,7 +144,7 @@ export class LyrianActor extends Actor {
 
     const remove = generated.filter((item) => {
       const source = item.getFlag("lyrian-chronicles", "featureSource");
-      return !expected.has(`${source.sourceItemId}:${source.stableId}`);
+      return duplicateIds.has(item.id) || !expected.has(featureSourceKey(source));
     });
     if (remove.length) await this.deleteEmbeddedDocuments("Item", remove.map((item) => item.id));
     if (update.length) await this.updateEmbeddedDocuments("Item", update);
