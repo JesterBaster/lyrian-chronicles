@@ -142,6 +142,26 @@
           </div>
         {{/each}}
       </div>
+
+      {{#each raceSkillPools as |pool|}}
+        <h3 class="lyr-subheading">{{pool.race.name}} skill bonus</h3>
+        <p class="lyr-note">Allocate up to {{pool.points}} racial skill points among the allowed skills. Remaining: <strong class="lyr-budget">{{pool.remaining}}</strong></p>
+        <div class="lyr-skill-buy">
+          {{#each pool.skills as |skill|}}
+            <div class="lyr-skill-buy__row">
+              <span class="lyr-skill-buy__name">{{skill.label}}</span>
+              <span class="lyr-skill-buy__stat">Racial bonus</span>
+              <button type="button" class="lyr-step" data-action="adjustRaceSkill"
+                      data-race-id="{{pool.race.id}}" data-skill="{{skill.key}}"
+                      data-maximum="{{pool.points}}" data-delta="-1">&minus;</button>
+              <span class="lyr-skill-buy__rank">{{skill.ranks}}</span>
+              <button type="button" class="lyr-step" data-action="adjustRaceSkill"
+                      data-race-id="{{pool.race.id}}" data-skill="{{skill.key}}"
+                      data-maximum="{{pool.points}}" data-delta="1">+</button>
+            </div>
+          {{/each}}
+        </div>
+      {{/each}}
     </section>
   {{/if}}
 

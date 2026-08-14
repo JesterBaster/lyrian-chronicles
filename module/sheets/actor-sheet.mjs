@@ -1,6 +1,10 @@
 import { LYRIAN } from "../config.mjs";
 import { adjustResourcePool } from "../rules/resource-utils.mjs";
-import { normalizeClassLevel } from "../rules/progression.mjs";
+import {
+  normalizeClassLevel,
+  raceSkillGrant,
+  selectedRaceSkillBonuses
+} from "../rules/progression.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -30,6 +34,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       useItem: LyrianActorSheet.#onUseItem,
       browsePack: LyrianActorSheet.#onBrowsePack,
       adjustClassLevel: LyrianActorSheet.#onAdjustClassLevel,
+      allocateRaceSkills: LyrianActorSheet.#onAllocateRaceSkills,
       createItem: LyrianActorSheet.#onCreateItem,
       editItem: LyrianActorSheet.#onEditItem,
       deleteItem: LyrianActorSheet.#onDeleteItem,
@@ -290,6 +295,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       (choice) => choice.key === primaryRace.system.selectedVariant
     );
     context.raceSummary = primaryRace ? { primary: primaryRace, ancestry, variant } : null;
+    context.raceRows = buckets.races.map((item) => {
+      const selection = selectedRaceSkillBonuses(item.system);
+      return { item, ...selection };
+    });
 
     // EXP actually committed to classes and breakthroughs, for cross-checking Spirit Core.
     context.expInClasses = buckets.classes.reduce((n, c) => n + c.system.expInvested, 0);
@@ -386,8 +395,39 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       }
     }
 
+    await this._promptRaceSkillAllocation(owned);
+
     await this.document.syncProgressionFeatures();
     return result;
+  }
+
+  /** Allocate an owned race's restricted skill-point pool. */
+  async _promptRaceSkillAllocation(item) {
+    const grant = Number(item.system.skillGrant?.points)
+      ? item.system.skillGrant
+      : raceSkillGrant(item.system.grantedSkills);
+    const allowed = (grant.allowedSkills ?? []).filter((key) => LYRIAN.skills[key]);
+    if (!grant.points || !allowed.length) return;
+
+    const current = item.system.selectedSkillBonuses ?? {};
+    const rows = allowed.map((key) => `<label>${game.i18n.localize(LYRIAN.skills[key].label)}
+      <input type="number" name="${key}" min="0" max="${grant.points}" value="${Number(current[key]) || 0}">
+    </label>`).join("");
+    const choice = await foundry.applications.api.DialogV2.prompt({
+      window: { title: `${item.name} racial skill points` },
+      content: `<div class="lyrian"><p>Allocate up to ${grant.points} points among these allowed skills.</p><div class="lyr-field-grid">${rows}</div></div>`,
+      ok: {
+        callback: (dialogEvent, button) => Object.fromEntries(
+          allowed.map((key) => [key, Math.max(0, Number(button.form.elements[key]?.value) || 0)])
+        )
+      }
+    }).catch(() => null);
+    if (!choice) return;
+    const total = Object.values(choice).reduce((sum, value) => sum + value, 0);
+    if (total > grant.points) {
+      return ui.notifications.warn(`${item.name} grants only ${grant.points} racial skill points.`);
+    }
+    await item.update({ "system.selectedSkillBonuses": choice });
   }
 
   /* -------------------------------------------- */
@@ -475,6 +515,12 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (level === item.system.abilitiesUnlocked) return;
     await item.update({ "system.abilitiesUnlocked": level });
     await this.document.syncProgressionFeatures();
+  }
+
+  static async #onAllocateRaceSkills(event, target) {
+    const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    if (!item || item.type !== "race") return;
+    await this._promptRaceSkillAllocation(item);
   }
 
   static async #onUseItem(event, target) {

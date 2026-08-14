@@ -100,14 +100,18 @@
     <button type="button" data-action="createItem" data-type="race">Add race</button>
   </div>
   <ul class="lyr-list">
-    {{#each items.races as |item|}}
-      <li class="lyr-row" data-item-id="{{item.id}}">
-        <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+    {{#each raceRows as |row|}}
+      <li class="lyr-row" data-item-id="{{row.item.id}}">
+        <img class="lyr-row__icon" src="{{row.item.img}}" alt="" />
         <div class="lyr-row__body">
-          <span class="lyr-row__name">{{item.name}}</span>
-          <span class="lyr-row__meta">{{item.system.subrace}} {{#if item.system.clan}}· {{item.system.clan}}{{/if}}</span>
+          <span class="lyr-row__name">{{row.item.name}}</span>
+          <span class="lyr-row__meta">
+            {{row.item.system.subrace}} {{#if row.item.system.clan}}· {{row.item.system.clan}}{{/if}}
+            {{#if row.granted}}· Racial skills {{row.allocated}} / {{row.granted}}{{/if}}
+          </span>
         </div>
         <div class="lyr-row__actions">
+          {{#if row.granted}}<button type="button" data-action="allocateRaceSkills">Skills {{#if row.unallocated}}({{row.unallocated}} left){{/if}}</button>{{/if}}
           <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
           <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
         </div>

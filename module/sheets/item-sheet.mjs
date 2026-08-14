@@ -1,4 +1,5 @@
 import { LYRIAN } from "../config.mjs";
+import { raceSkillGrant } from "../rules/progression.mjs";
 
 const { ItemSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -74,6 +75,20 @@ export class LyrianItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
           item.system.benefits ?? "",
           { relativeTo: item, rollData: item.getRollData() }
         );
+    }
+
+    if (item.type === "race") {
+      const grant = Number(item.system.skillGrant?.points)
+        ? item.system.skillGrant
+        : raceSkillGrant(item.system.grantedSkills);
+      context.raceSkillGrant = grant;
+      context.raceSkillChoices = (grant.allowedSkills ?? [])
+        .filter((key) => LYRIAN.skills[key])
+        .map((key) => ({
+          key,
+          label: game.i18n.localize(LYRIAN.skills[key].label),
+          value: item.system.selectedSkillBonuses?.[key] ?? 0
+        }));
     }
 
     return context;

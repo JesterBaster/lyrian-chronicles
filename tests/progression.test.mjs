@@ -9,6 +9,8 @@ import {
   normalizeClassLevel,
   raceAmbitionExp,
   raceAttributeBonuses,
+  raceSkillGrant,
+  selectedRaceSkillBonuses,
   selectedRaceBonuses
 } from "../module/rules/progression.mjs";
 
@@ -55,6 +57,33 @@ test("Human ambition adds 100 EXP to the available budget and Spirit Core", () =
   );
 });
 
+test("racial skill grants preserve their official allowed skill lists", () => {
+  assert.deepEqual(
+    raceSkillGrant("You gain +5 skill points in either Magic, Survival, Animal Husbandry, Perception, Insight, Linguistics or Artifice."),
+    {
+      points: 5,
+      allowedSkills: ["artifice", "linguistics", "magic", "animalHusbandry", "insight", "perception", "survival"]
+    }
+  );
+  const human = raceSkillGrant(
+    "You gain +5 skill points in any non-crafting or gathering skill of your choice."
+  );
+  assert.equal(human.points, 5);
+  assert.equal(human.allowedSkills.length, 21);
+});
+
+test("racial skill selections cannot exceed or escape their grant", () => {
+  assert.deepEqual(selectedRaceSkillBonuses({
+    skillGrant: { points: 5, allowedSkills: ["magic", "history"] },
+    selectedSkillBonuses: { magic: 4, history: 4, stealth: 99 }
+  }), {
+    bonuses: { magic: 4, history: 1 },
+    granted: 5,
+    allocated: 5,
+    unallocated: 0
+  });
+});
+
 test("compiled primary races and classes carry complete sheet automation", async () => {
   const races = JSON.parse(await readFile(path.join(ROOT, "content", "races-01.json"), "utf8"));
   const classFiles = ["classes-01.json", "classes-02.json"];
@@ -66,11 +95,18 @@ test("compiled primary races and classes carry complete sheet automation", async
   assert.equal(human.system.ambitionExp, 100);
   assert.equal(human.system.attributeBonuses.chooseMain, 1);
   assert.equal(human.system.attributeBonuses.chooseSub, 1);
+  assert.equal(human.system.skillGrant.points, 5);
+  assert.equal(human.system.skillGrant.allowedSkills.length, 21);
   assert.equal(human.system.relationships.abilities.length, 2);
 
   const demon = races.find((race) => race.system.stableId === "primary-race--demon");
   assert.ok(demon.system.variants.length >= 8);
   assert.ok(demon.system.variants.every((variant) => variant.abilityStableId));
+
+  for (const primary of races.filter((race) => race.system.raceKind === "primary")) {
+    assert.equal(primary.system.skillGrant.points, 5, primary.name);
+    assert.ok(primary.system.skillGrant.allowedSkills.length, primary.name);
+  }
 
   for (const classItem of classes) {
     assert.equal(classItem.system.abilitiesUnlocked, 1, classItem.name);

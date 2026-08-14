@@ -2,13 +2,18 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { raceAmbitionExp, raceAttributeBonuses } from "../module/rules/progression.mjs";
+import {
+  raceAmbitionExp,
+  raceAttributeBonuses,
+  raceSkillGrant
+} from "../module/rules/progression.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE = process.argv[2] || path.join(ROOT, "content-source", "approved", "0.13.1");
 const OUTPUT = process.argv[3] || path.join(ROOT, "content");
 const SYSTEM_ID = "lyrian-chronicles";
 const CONTENT_BUILD = "0.5.0";
+const RACE_CONTENT_BUILD = "0.5.1";
 let ENTRY_BY_STABLE_ID = new Map();
 let STABLE_ID_BY_SOURCE_ID = new Map();
 
@@ -180,7 +185,7 @@ function flags(entry) {
       sourceUrl: entry.source_url,
       sourceHash: entry.source_hash,
       rulebookVersion: entry.rulebook_version,
-      contentBuild: CONTENT_BUILD,
+      contentBuild: entry.category === "races" ? RACE_CONTENT_BUILD : CONTENT_BUILD,
     },
   };
 }
@@ -321,6 +326,8 @@ function buildRace(entry) {
     variants,
     grantedProficiencies: String(data.proficiencies ?? ""),
     grantedSkills: String(data.skills ?? ""),
+    skillGrant: raceSkillGrant(data.skills),
+    selectedSkillBonuses: {},
     size: "medium",
     speed: 20,
   });

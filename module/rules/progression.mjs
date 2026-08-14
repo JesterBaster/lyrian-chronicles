@@ -1,5 +1,29 @@
 export const CLASS_FEATURE_LEVELS = Object.freeze([1, 2, 4, 6, 8]);
 
+const STANDARD_SKILLS = Object.freeze({
+  athletics: "Athletics",
+  riding: "Riding",
+  deception: "Deception",
+  roguecraft: "Roguecraft",
+  stealth: "Stealth",
+  artifice: "Artifice",
+  appraise: "Appraise",
+  commonKnowledge: "Common Knowledge",
+  flight: "Flight",
+  history: "History",
+  linguistics: "Linguistics",
+  magic: "Magic",
+  medicine: "Medicine",
+  religion: "Religion",
+  animalHusbandry: "Animal Husbandry",
+  insight: "Insight",
+  perception: "Perception",
+  survival: "Survival",
+  art: "Art",
+  intimidation: "Intimidation",
+  negotiation: "Negotiation"
+});
+
 export function normalizeClassLevel(value) {
   return Math.max(1, Math.min(8, Number(value) || 1));
 }
@@ -46,6 +70,47 @@ export function raceAttributeBonuses(attributes = "") {
 export function raceAmbitionExp(ambition = "") {
   const match = String(ambition).match(/additional\s+(\d+)\s+exp/i);
   return match ? Number(match[1]) : 0;
+}
+
+/** Convert official racial skill text into an allocatable restricted pool. */
+export function raceSkillGrant(skills = "") {
+  const text = String(skills);
+  const pointsMatch = text.match(/(?:gain|additional)\s+\+?(\d+)\s+skill points?/i);
+  const points = pointsMatch ? Number(pointsMatch[1]) : 0;
+  if (!points) return { points: 0, allowedSkills: [] };
+
+  const anyStandard = /any\s+non[- ]crafting\s+or\s+gathering\s+skill/i.test(text);
+  const allowedSkills = anyStandard
+    ? Object.keys(STANDARD_SKILLS)
+    : Object.entries(STANDARD_SKILLS)
+      .filter(([, label]) => new RegExp(`\\b${label.replace(" ", "\\s+")}\\b`, "i").test(text))
+      .map(([key]) => key);
+  return { points, allowedSkills };
+}
+
+/** Validate and cap a race item's chosen skill bonuses to its official pool. */
+export function selectedRaceSkillBonuses(raceSystem = {}) {
+  const grant = Number(raceSystem.skillGrant?.points)
+    ? raceSystem.skillGrant
+    : raceSkillGrant(raceSystem.grantedSkills);
+  const allowed = new Set(grant.allowedSkills ?? []);
+  const chosen = raceSystem.selectedSkillBonuses ?? {};
+  const bonuses = {};
+  let remaining = Math.max(0, Number(grant.points) || 0);
+
+  for (const key of allowed) {
+    if (!remaining) break;
+    const value = Math.max(0, Math.floor(Number(chosen[key]) || 0));
+    if (!value) continue;
+    bonuses[key] = Math.min(value, remaining);
+    remaining -= bonuses[key];
+  }
+  return {
+    bonuses,
+    granted: Math.max(0, Number(grant.points) || 0),
+    allocated: Math.max(0, Number(grant.points) || 0) - remaining,
+    unallocated: remaining
+  };
 }
 
 export function selectedRaceBonuses(raceSystem = {}) {
