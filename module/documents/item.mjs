@@ -78,7 +78,7 @@ export class LyrianItem extends Item {
    * and optionally roll an attached attack.
    */
   async rollAbility(options = {}) {
-    if (this.type !== "ability") return this.postToChat();
+    if (this.type !== "ability" && this.type !== "monsterAbility") return this.postToChat();
 
     const actor = this.actor;
     if (!actor) return ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoActor"));

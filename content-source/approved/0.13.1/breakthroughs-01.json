@@ -1,0 +1,2138 @@
+[
+  {
+    "stable_id": "breakthrough--8-eyes-spiderfolk",
+    "category": "breakthroughs",
+    "name": "8 Eyes (Spiderfolk)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dab",
+      "index_id": "aafdafa8-abe6-478f-85a8-bda44172b78f"
+    },
+    "data": {
+      "breakthroughId": "8-eyes--spiderfolk-",
+      "name": "8 Eyes (Spiderfolk)",
+      "cost": "100",
+      "requirements": "Must be a spiderfolk.",
+      "description": "<p>You may have up to 8 Mystic Eyes instead of the regular 2.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "ae1d204ca424903728bb1905fa7cf767642b7213527ae5aca99093e46c46f087"
+  },
+  {
+    "stable_id": "breakthrough--angelblooded-human-restricted",
+    "category": "breakthroughs",
+    "name": "Angelblooded (Human) (Restricted)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930da8",
+      "index_id": "b3238ec2-b29b-42e2-83fd-fdfe572380a9"
+    },
+    "data": {
+      "breakthroughId": "angelblooded--human---restricted-",
+      "name": "Angelblooded (Human) (Restricted)",
+      "cost": "0",
+      "requirements": "Must be a human and only a human. Requires GM Approval",
+      "description": "<p>You have the blood of angels in you. You may purchase the Angelblooded class.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "0a62744da766d9b7b5b8d0b2010dcf76b47b65f771e25c96aa5f3613402c0f96"
+  },
+  {
+    "stable_id": "breakthrough--arachne-spiderfolk",
+    "category": "breakthroughs",
+    "name": "Arachne (Spiderfolk)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dc0",
+      "index_id": "986e7955-0941-467d-9043-a9341bbda7a9"
+    },
+    "data": {
+      "breakthroughId": "arachne--spiderfolk-",
+      "name": "Arachne (Spiderfolk)",
+      "cost": "0",
+      "requirements": "Must be a spiderfolk. Can only be taken at character creation.",
+      "description": "<p>You lose your extra arms racial ability. In exchange, you become Large size and your max burden is increased by 2. When attempting to move through 5ft wide spaces, it is considered difficult terrain for you and many humanoid buildings will struggle to accommodate you. You also suffer a -10 penalty to swimming checks, but you may climb through your spider climb ability at your normal speed instead of half speed.</p><p>In addition, you count as mounted for the purposes of abilities that require you to be mounted. This does not let you be a mount to other creatures.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "58cce2a22fcb07797cccb50939208513afce1b64d2321e7875640facc50d7c32"
+  },
+  {
+    "stable_id": "breakthrough--become-fire-salamander",
+    "category": "breakthroughs",
+    "name": "Become Fire (Salamander)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930da2",
+      "index_id": "fd764314-601d-434a-aa7b-9a3eee8dd7ce"
+    },
+    "data": {
+      "breakthroughId": "become-fire--salamander-",
+      "name": "Become Fire (Salamander)",
+      "cost": "200",
+      "requirements": "Must be a Salamander.",
+      "description": "<p>The RP cost of Consume Fire is reduced to 0.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "1417e51d59441f543c98839ffd49e5502ae471d684cd88ca386ca73516af9a91"
+  },
+  {
+    "stable_id": "breakthrough--become-ice-yuki-onna",
+    "category": "breakthroughs",
+    "name": "Become Ice (Yuki-Onna)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930da3",
+      "index_id": "8d9791d3-2c3b-404f-af15-9fed79ef46a3"
+    },
+    "data": {
+      "breakthroughId": "become-ice--yuki-onna-",
+      "name": "Become Ice (Yuki-Onna)",
+      "cost": "200",
+      "requirements": "Must be a Yuki-Onna.",
+      "description": "<p>The RP cost of Absorb Ice is reduced to 0 the first time you use it per round. Cost is reset back to 0 when it becomes your turn</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "55e0553d4697375d50b9518810cb123d46c06879dcc038376a6ef5a7068b5f86"
+  },
+  {
+    "stable_id": "breakthrough--become-lightning-raijin",
+    "category": "breakthroughs",
+    "name": "Become Lightning (Raijin)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d8b",
+      "index_id": "f319aea5-b094-4157-91a4-763e4e8e3b85"
+    },
+    "data": {
+      "breakthroughId": "become-lightning--raijin-",
+      "name": "Become Lightning (Raijin)",
+      "cost": "200",
+      "requirements": "Must be a Raijin Youkai.",
+      "description": "<p>The RP cost of Consume Lightning is reduced to 0 the first time you use it per round. Cost is reset back to 0 when it becomes your turn. Any Power bonus you gain from using Consume Lightning does not stack.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "8b8a702b179460b539220a6acaab0d13d0c9dbaff1b1afca9025eaf85fc6a0c2"
+  },
+  {
+    "stable_id": "breakthrough--become-wind-sylph",
+    "category": "breakthroughs",
+    "name": "Become Wind (Sylph)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dcb",
+      "index_id": "04663818-6856-4c01-a7d2-a219b7f50475"
+    },
+    "data": {
+      "breakthroughId": "become-wind--sylph-",
+      "name": "Become Wind (Sylph)",
+      "cost": "200",
+      "requirements": "Must be a Sylph Fae",
+      "description": "<p>The RP cost of Consume Wind is reduced to 0 the first time you use it per round. Cost is reset back to 0 when it becomes your turn</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "dc492c4468082de04aaf608691366165be8c96449f255d536822c8f3c0b8b0e5"
+  },
+  {
+    "stable_id": "breakthrough--blend-in-ii-slimefolk",
+    "category": "breakthroughs",
+    "name": "Blend In II (Slimefolk)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dc1",
+      "index_id": "33729faa-0de7-44d9-960a-2f3c944468a1"
+    },
+    "data": {
+      "breakthroughId": "blend-in-ii--slimefolk-",
+      "name": "Blend In II (Slimefolk)",
+      "cost": "25",
+      "requirements": "Must have Blend In.",
+      "description": "<p>You may disguise as a different race in addition to your chosen race during Blend In. You may take this breakthrough multiple times, selecting a new race to disguise as each time.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "fa6ad21dd6954089922016936506cc380032adfba28d7ac8069b909738f60d7c"
+  },
+  {
+    "stable_id": "breakthrough--blend-in-slimefolk",
+    "category": "breakthroughs",
+    "name": "Blend In (Slimefolk)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930da9",
+      "index_id": "0e5b0dc1-f105-4621-ace9-4f56029c8c5e"
+    },
+    "data": {
+      "breakthroughId": "blend-in--slimefolk-",
+      "name": "Blend In (Slimefolk)",
+      "cost": "200",
+      "requirements": "Must be a Slimefolk.",
+      "description": "<p>You disguise your appearance using magic to be that of another race (and gain a +30 bonus to hide this magical effect from things such as sense magic). This skill does not allow you to change your appearance at will, but instead lets you appear as you would as a different race. &nbsp;You choose this race when this breakthrough is picked up and cannot change it.<br><br>In addition, the first time you use Slime Body while disguised in this way, it costs 0 RP instead of 1 RP but reveals your actual race. &nbsp;This effect does not work if the attacker knows that you are a Slimefolk.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "b391f7b06bc9cc0b9750b78d4aea87cf9e82a19045cb8676b0cb19442aff2d80"
+  },
+  {
+    "stable_id": "breakthrough--blessed-by-kari-human",
+    "category": "breakthroughs",
+    "name": "Blessed by Kari (Human)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d85",
+      "index_id": "1b0f7b2b-5414-4cb9-aab3-afc69390d50a"
+    },
+    "data": {
+      "breakthroughId": "blessed-by-kari--human-",
+      "name": "Blessed by Kari (Human)",
+      "cost": "100",
+      "requirements": "Must be a Human.",
+      "description": "<p>After using Divine Providence you may use it a second time before resting, but the cost increases to 1 RP. This second use must pick a different option then your first one.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "b7c9bef72c9afee1392e6e3392a78bc844760a932f34abc4b4a3b9b1737df024"
+  },
+  {
+    "stable_id": "breakthrough--bully",
+    "category": "breakthroughs",
+    "name": "Bully",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d96",
+      "index_id": "f16beb54-87c1-49b9-9db0-fec7c01e2684"
+    },
+    "data": {
+      "breakthroughId": "bully",
+      "name": "Bully",
+      "cost": "50",
+      "requirements": "-",
+      "description": "<p>You gain a +5 bonus to intimidation skill checks against targets with less Fitness than you.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "4b1d1ab93bdc3d3e9b658d255084099cb2726545dac507b6ccb34ae84a1b3a2f"
+  },
+  {
+    "stable_id": "breakthrough--celestial-dragon-ryujin",
+    "category": "breakthroughs",
+    "name": "Celestial Dragon (Ryujin)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dbf",
+      "index_id": "60a9f33e-f68d-4483-8cb7-87c61f925613"
+    },
+    "data": {
+      "breakthroughId": "celestial-dragon--ryujin-",
+      "name": "Celestial Dragon (Ryujin)",
+      "cost": "300",
+      "requirements": "Must be a Ryujin. Can only be taken at character creation.",
+      "description": "<p>Your elemental mastery from your Ryujin's Mastery may be Holy or Dark as well. In addition, you can use Flight.</p>",
+      "ability": "5b304038-c45a-4521-b58f-2ad9545e1a9d"
+    },
+    "relationships": {
+      "granted_ability": "ability--flight"
+    },
+    "source_hash": "7afe255c8effd36917bd714b1fc0e0df6eac8f6fe197f0d563a533be975106a8"
+  },
+  {
+    "stable_id": "breakthrough--combat-doggy-cu-sith",
+    "category": "breakthroughs",
+    "name": "Combat Doggy (Cu Sith)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dc7",
+      "index_id": "b71866fc-efab-44fe-88d3-92b0c54fb418"
+    },
+    "data": {
+      "breakthroughId": "combat-doggy--cu-sith-",
+      "name": "Combat Doggy (Cu Sith)",
+      "cost": "100",
+      "requirements": "Must be a Cu Sith.",
+      "description": "<p>You may use abilities like normal while in Dog Form and may use One-Handed weapon. Any abilities that require a specific armor or other specific physical requirements still cannot be used.</p><p>Your Dog Form no longer breaks upon taking damage.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "7ef069a9999f462046e6a90a53f0efab70a845275efbb0a27ca95d80d3aa1fc4"
+  },
+  {
+    "stable_id": "breakthrough--combat-kitty-cait-sith",
+    "category": "breakthroughs",
+    "name": "Combat Kitty (Cait Sith)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dbc",
+      "index_id": "ac1771fd-fad7-414a-bda2-491df277347d"
+    },
+    "data": {
+      "breakthroughId": "combat-kitty--cait-sith-",
+      "name": "Combat Kitty (Cait Sith)",
+      "cost": "100",
+      "requirements": "Must be a Cait Sith.",
+      "description": "<p>You may use abilities like normal while in cat form and may use One-Handed weapon. Any abilities that require a specific armor or other specific physical requirements still cannot be used.</p><p>Your cat form no longer breaks on damage.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "b0f33a988730732f5c8da51e96336b5a919cc610ddb2be8d66b1e253bd413bca"
+  },
+  {
+    "stable_id": "breakthrough--curse-of-vampirism",
+    "category": "breakthroughs",
+    "name": "Curse of Vampirism",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930da7",
+      "index_id": "cba3fb90-fefe-4899-8b3f-8a52c13b57cc"
+    },
+    "data": {
+      "breakthroughId": "curse-of-vampirism",
+      "name": "Curse of Vampirism",
+      "cost": "300",
+      "requirements": "Must be taken at character creation or after being killed by a vampire's bite.",
+      "description": "<p>You rise as a vampire, an immortal creature that feeds on the blood of living creatures and&nbsp;<strong>immediately gain the Vampire racial style class and its key ability</strong>. Your race changes to ‘Vampire’, but you keep the benefits of your previous race.</p><p>As a vampire, you no longer age and your physical appearance changes slightly. Your skin becomes more pale and you grow a pair of fangs. You still need to eat, drink and breathe as normal.</p><p>A vampire’s spirit core is cracked, making it difficult for it to regenerate mana naturally and requiring it to obtain it from other creatures. You no longer regenerate mana from eating (including potions), resting and can no longer use the Draw Mana encounter conclusion action. You still recover full mana at the start of a new arc.&nbsp;</p><p>You are weak to sunlight. Every round you spend in sunlight without proper protection you take 10 true damage and your maximum HP is lowered by 10. Your maximum HP remains lowered until you finish a rest. You may carry a parasol or similar object in one hand to protect yourself from the sun and can do so even in combat.</p><p>In addition to these drawbacks, you no longer receive Wounds unless the damage that reduced your HP to 0 was fire, holy or true damage. You also gain 60ft Darkvision. Darkvision lets you see in total darkness, even if there's no source of light.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "9c1d4dbfbdce1ee82d7ba6290e2df521a035f345ed57bf1696f1d8bbbfa68377"
+  },
+  {
+    "stable_id": "breakthrough--deep-connection",
+    "category": "breakthroughs",
+    "name": "Deep Connection",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dc6",
+      "index_id": "c6b4d9b7-06e5-452c-9054-9f49a2a76a76"
+    },
+    "data": {
+      "breakthroughId": "deep-connection",
+      "name": "Deep Connection",
+      "cost": "50",
+      "requirements": "Cavalier mastered.",
+      "description": "<p>You may command your mount to move and attack even if you're not mounted on it. This still using AP, Mana etc like normal as if you were mounted.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "cd7191516caefd75fc69b663e7924b78a95abc4370132b1dbe3ba44aaf43426f"
+  },
+  {
+    "stable_id": "breakthrough--deus-ex-machina",
+    "category": "breakthroughs",
+    "name": "Deus Ex Machina",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d82",
+      "index_id": "7ad03e80-b3f9-4ffa-be35-6a460363ccf8"
+    },
+    "data": {
+      "breakthroughId": "deus-ex-machina",
+      "name": "Deus Ex Machina",
+      "cost": "600",
+      "requirements": "-",
+      "description": "<p>The first time you would die from a mortal wound at Encounter Conclusion, the mortal wound is removed and you instead receive a normal injury. The benefit of this breakthrough is then lost and you may not choose this breakthrough again after.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "d25bdd9abdf9752c1235c75a16a4764853694c1e51c370925b36fc4f359b8e6e"
+  },
+  {
+    "stable_id": "breakthrough--divine-luck-i",
+    "category": "breakthroughs",
+    "name": "Divine Luck I",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d8e",
+      "index_id": "b3ef521f-a8d6-481f-8c90-c05d959b1089"
+    },
+    "data": {
+      "breakthroughId": "divine-luck-i",
+      "name": "Divine Luck I",
+      "cost": "300",
+      "requirements": "-",
+      "description": "<p>Once per rest, you may roll an additional dice when making a check and take the higher result.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "5e6f0e2a76697bc194b7d739b67c35ae08f775735f02307b39260c6715e63252"
+  },
+  {
+    "stable_id": "breakthrough--divine-luck-ii",
+    "category": "breakthroughs",
+    "name": "Divine Luck II",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d8f",
+      "index_id": "fc6a7e76-d7ac-41e3-a8d8-d5500ed8d308"
+    },
+    "data": {
+      "breakthroughId": "divine-luck-ii",
+      "name": "Divine Luck II",
+      "cost": "600",
+      "requirements": "Must have purchased Divine Luck I.",
+      "description": "<p>Once per arc, you may choose to automatically succeed on a check (if success is possible).</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "b7c8cd1a767982be87b45a2dee0dba680e5d7cf3cf711a61823ce633a1aa08f4"
+  },
+  {
+    "stable_id": "breakthrough--divine-s-chosen",
+    "category": "breakthroughs",
+    "name": "Divine's Chosen",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a42cfeeb1ae8a568e9cc7f7",
+      "index_id": "6e3d4067-515c-43d3-b38f-c64802840152"
+    },
+    "data": {
+      "breakthroughId": "divine-s-chosen",
+      "name": "Divine's Chosen",
+      "cost": "0",
+      "requirements": "-",
+      "description": "<p>You select one of the divines from the below list to worship. Once chosen, you can only change this decision with GM approval after a significant enough change.</p><p>Any abilities with the Divine keyword deal your chosen divine's damage instead of their listed type.&nbsp;</p><p><strong>Kari</strong>: (Type Holy) goddess of Light, the most prominent deity in the setting, almost all religious people follow Kari and it's the only serious religion with any support outside of Kirara.&nbsp;</p><p><strong>Heira</strong>: (Type Astra) goddess of Evil, mostly followed by cultists.&nbsp;</p><p><strong>Pandora</strong>: (Type Arcane) goddess of Magic (Arcane). There are a few broken-down shrines to her, not widely followed, but a few followers.&nbsp;</p><p><strong>Makai</strong>: (Type Water) goddess of the Ocean. Mostly followed in Houkaina and Kirara, moreso in Houkaina. Main temple is in Houkaina (in Northi), followed by Merfolk.&nbsp;</p><p><strong>Ayuzi Kirara</strong>: (Type Fire) goddess of Artisans. The most popular Divine in Kirara.&nbsp;</p><p><strong>Eisen</strong>: (Type Slashing) god of War. Mostly followed by goblins and orcs in Eisenstadt. Mostly seen as ceremonial and \"old ways,\" not taken as seriously in Eisenstadt.&nbsp;</p><p><strong>Athena</strong>: (Type Lightning) goddess of Wind. Mostly followed by citizens of the area around Marlone Bay. A goddess with a quiet disposition. Mostly the \"old ways,\" a sailor might make a gesture to Athena before setting out while not fully being a follower.&nbsp;</p><p><strong>Clio</strong>: (Type Arcane) goddess of Storytelling. Not officially followed anywhere, or even known about. Clio draws power from all of the stories forged through life, both true and fictional.&nbsp;</p><p><strong>Yggdrasil:</strong> (Type Earth) the world itself. Mostly followed by Fae in Easter. \"Nature,\" \"Terra itself\" are Yggdrasil. \"The will of the world/nature.\" Not actually a \"sentient\" force, but a force that creates balance and opposes destruction of natural order. Yggdrasil's strength is that it has four \"superpaladins\" (thaumaturges) that are bound to the world and cannot be permanently killed. The thaumaturges do not work together, and may not even be aware of each other, and may not even be aware of their mission.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "3fef449288e5c9a1c587cd068733b07c34734ba7ad3523ee533e86cb1ded1320"
+  },
+  {
+    "stable_id": "breakthrough--drag-along-lamia",
+    "category": "breakthroughs",
+    "name": "Drag along (Lamia)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930daa",
+      "index_id": "d1c3d5ef-65bb-43f5-8a04-51771146f0b2"
+    },
+    "data": {
+      "breakthroughId": "drag-along--lamia-",
+      "name": "Drag along (Lamia)",
+      "cost": "200",
+      "requirements": "Must be a Lamia.",
+      "description": "<p>When you have a target under the effect of \"Just a hug\", you can still move at half of your normal movement speed while under the <strong>Just a hug</strong> root effect and you still count as rooted for all other purposes.</p><p>When moving, you can drag along the target of Just a hug, but they still count as rooted at your new location.</p><p>In addition, your grapple power increases by +1.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "7a92d2e0d6785f5ddb8ce04558105e8a0d70a56e405f6c601f041534b8aac01b"
+  },
+  {
+    "stable_id": "breakthrough--dual-personality",
+    "category": "breakthroughs",
+    "name": "Dual Personality",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d8d",
+      "index_id": "40caec22-8ca7-4055-83d9-1790f56ef7a3"
+    },
+    "data": {
+      "breakthroughId": "dual-personality",
+      "name": "Dual Personality",
+      "cost": "300",
+      "requirements": "-",
+      "description": "<p>Whether through magical or non-magical means, you have more than a single personality or entity within you through either physical or magical means. When under the influence of a Charm, Illusion or other mind-influencing effect you may spend 1 AP to switch personalities/entities and act as normal.</p><p>You may only do this once per encounter.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "32c627290a597381f982ef0db10a4a5aa2cc113bfbe4e4c48a982418b740e45e"
+  },
+  {
+    "stable_id": "breakthrough--early-ascension",
+    "category": "breakthroughs",
+    "name": "Early Ascension",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930da5",
+      "index_id": "9ffa91f3-be68-4877-b4fd-91c91ba3d0af"
+    },
+    "data": {
+      "breakthroughId": "early-ascension",
+      "name": "Early Ascension",
+      "cost": "300",
+      "requirements": "Must be taken at character creation.",
+      "description": "<p>You are treated as having 1 class mastered for the purposes of selecting a tier 2 class that has “Any class mastered” or similar requirement. This does not apply to any class that requires a specific class to be mastered and it doesn't automatically qualify you for other requirements such as weapon proficiencies.&nbsp;</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "9814dca56aacfc30397c31d21e6b28c8b718bc2200644be9d1b506ed6943e5a0"
+  },
+  {
+    "stable_id": "breakthrough--elemental-affinity",
+    "category": "breakthroughs",
+    "name": "Elemental Affinity",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d94",
+      "index_id": "05009dd0-73e9-4f90-98bc-e6fbe75a1c5f"
+    },
+    "data": {
+      "breakthroughId": "elemental-affinity",
+      "name": "Elemental Affinity",
+      "cost": "150",
+      "requirements": "-",
+      "description": "<p>You gain Elemental Mastery in an element of your choice.</p><p>You may pick this breakthrough more than once, choosing a different element each time.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "b832d33e6ce92329010c22c836ed2f0cb10d98e892082709c0e486c22cdb8bf3"
+  },
+  {
+    "stable_id": "breakthrough--elemental-breath-ryujin",
+    "category": "breakthroughs",
+    "name": "Elemental Breath (Ryujin)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dbe",
+      "index_id": "f9283358-e643-4552-bed5-42724a980de8"
+    },
+    "data": {
+      "breakthroughId": "elemental-breath--ryujin-",
+      "name": "Elemental Breath (Ryujin)",
+      "cost": "100",
+      "requirements": "Must be a Ryujin.",
+      "description": "<p>You may let your Dragon Breath do the damage of any element that you have mastered.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "ec11272878dda8b1d4e417defbba80e8ec6c98d8f1167ccf9faf7b48c063d211"
+  },
+  {
+    "stable_id": "breakthrough--elixir-addict",
+    "category": "breakthroughs",
+    "name": "Elixir Addict",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d99",
+      "index_id": "0917066a-bf81-46fd-8013-8f0738b734c8"
+    },
+    "data": {
+      "breakthroughId": "elixir-addict",
+      "name": "Elixir Addict",
+      "cost": "0",
+      "requirements": "Must have used at least 3 elixirs in the same encounter.",
+      "description": "<p>You have become used to the effects of drinking elixirs, too used in fact. At the end of your turn in combat, if you do not have an Elixir active you take 6 true damage. The HP cost of drinking all elixirs is reduced by 11.</p><p>This breakthrough may be removed during an interlude phase by spending 1 IP.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "3af0c7a1587730a2a8e097be3472c77c330b08346e3f803c41d1b858c778b64e"
+  },
+  {
+    "stable_id": "breakthrough--expert-summoner",
+    "category": "breakthroughs",
+    "name": "Expert Summoner",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dca",
+      "index_id": "7f83a2c6-5300-41f3-959d-ad0fe0a9603f"
+    },
+    "data": {
+      "breakthroughId": "expert-summoner",
+      "name": "Expert Summoner",
+      "cost": "0",
+      "requirements": "At least 1 of Summoner, Mogul, Animal Summoner or Necromancer maxed. 3000+ Spirit Core",
+      "description": "<p>When you summon during the first or second round of an encounter, you may transfer main stat points from yourself into your summon.</p><p>The maximum stat points you can imbue for all your summons combined is equal to your total main stat points (Focus, Power, Agility, Toughness) - 18. You can not lower a stat below 3 with this. When you lose stat points due to this, your related values such as mana, HP and RP have their max reduced. When lowering your agility or toughness, you also lose RP or HP equal to the respective stat lost. If your &nbsp;Mana is higher than your max Mana after imbuing, it is reduced to the new max.</p><p>This transfer stays until end of encounter or until the summon you invested in dies (or is otherwise removed from combat). Your max of your stats is returned to normal, but any HP or Mana lost due to this is not refunded.</p><p>You may imbue a Heroic summon with any amount of stats from this pool. These points don't need to be a direct transfer (for example, you can lower your Agility by 2 to buff your summons Power). They increase your summons values such as HP/RP etc by the regular amount these stats give.</p><p>For grunt summons, you may imbue them with half of this max. They are still capped at max 1 RP.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "d1cc2af7b7b780b3a109b789f6e55b96952c998e1b9c44a699b5a9bd15aeadc6"
+  },
+  {
+    "stable_id": "breakthrough--fae-flash-acrobat-fae",
+    "category": "breakthroughs",
+    "name": "Fae Flash Acrobat (Fae)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d9a",
+      "index_id": "02e547b9-990c-48b3-8831-9d82f9c6ea24"
+    },
+    "data": {
+      "breakthroughId": "fae-flash-acrobat--fae-",
+      "name": "Fae Flash Acrobat (Fae)",
+      "cost": "50",
+      "requirements": "Must be a Fae.",
+      "description": "<p>While using Fae Flash, you may teleport a partial distance and materialize there to redirect your teleport. In a single Fae Step, you may teleport multiple times, reappearing each time you stop, to teleport from that new position. You are still limited by your maximum teleport distance and cannot take any other actions between each teleport.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "5cfb8db97200879140a30be2d89f9c90d2eb2c9f1b30b3735a1c66e62a6833d9"
+  },
+  {
+    "stable_id": "breakthrough--faerie-chimera-hybrid-race",
+    "category": "breakthroughs",
+    "name": "Faerie-Chimera Hybrid (Race)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d75",
+      "index_id": "4179c9b9-1eee-4a1a-8460-7b2f40921204"
+    },
+    "data": {
+      "breakthroughId": "faerie-chimera-hybrid--race-",
+      "name": "Faerie-Chimera Hybrid (Race)",
+      "cost": "200",
+      "requirements": "Must be chosen at character creation. Must choose Faerie or Chimera race.",
+      "description": "<p>An extremely rare condition in which a Chimera parent and a Faerie parent produces a child with Chimera traits. The odds are said to be less than 1%.</p><p>If your main race is Chimera, you may choose a Fae subrace instead of a Chimera one. If your main race is Fae, you may choose a Chimera subrace instead of a Fae one.&nbsp;</p><p>You do not get any of the base traits from the other race and keep the ones from your chosen main race. However, you do get the language from the other race (or a dialect of choosing a chimera subrace)</p><p>If you pick High Fae as your subrace, you gain Fae Flash instead of Fae Flash II.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "2fdd53950ecdf8418b43e341b3680857fac748cad39ad2a5448108dc51bb7338"
+  },
+  {
+    "stable_id": "breakthrough--faerie-flash-master-fae",
+    "category": "breakthroughs",
+    "name": "Faerie Flash Master (Fae)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d86",
+      "index_id": "75c704e5-20d8-4791-9ca7-6ebe362103ea"
+    },
+    "data": {
+      "breakthroughId": "faerie-flash-master--fae-",
+      "name": "Faerie Flash Master (Fae)",
+      "cost": "100",
+      "requirements": "Must be a Fae.",
+      "description": "<p>When using your Faerie Flash ability, you may spend X additional mana to increase your teleport distance by X times your movement speed.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "992d2eb9b8c669f79554d775bcf5fa3538abcbda24de4899cfd63da8745a2b1b"
+  },
+  {
+    "stable_id": "breakthrough--fast-metabolism",
+    "category": "breakthroughs",
+    "name": "Fast Metabolism",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930db2",
+      "index_id": "97ccaea7-ffb4-4fdd-ac25-4eb9d6a7b143"
+    },
+    "data": {
+      "breakthroughId": "fast-metabolism",
+      "name": "Fast Metabolism",
+      "cost": "150",
+      "requirements": "-",
+      "description": "<p>Once per arc you may eat food and gain the benefits even if you already had gotten the benefits from eating food that day.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "e36a16805bfead40b438d5a2192157580fec29f0f137c60f2d2dad08e8498d52"
+  },
+  {
+    "stable_id": "breakthrough--fast-movement-centaur",
+    "category": "breakthroughs",
+    "name": "Fast Movement (Centaur)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dad",
+      "index_id": "adf2da75-1740-4532-affe-bebf9bcc7c59"
+    },
+    "data": {
+      "breakthroughId": "fast-movement--centaur-",
+      "name": "Fast Movement (Centaur)",
+      "cost": "200",
+      "requirements": "Must be Centaur or Arachne Spiderfolk",
+      "description": "<p>Your base movement speed increases by 5ft.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "10b940fb613d31a081c76c1f6b841382cf1fae6c1fa6a83d0e51c701ff61b3a9"
+  },
+  {
+    "stable_id": "breakthrough--fearless",
+    "category": "breakthroughs",
+    "name": "Fearless",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d95",
+      "index_id": "f15a735e-f8ca-432f-b075-202bd284f62f"
+    },
+    "data": {
+      "breakthroughId": "fearless",
+      "name": "Fearless",
+      "cost": "200",
+      "requirements": "-",
+      "description": "<p>Whenever you are afflicted by a Fear type condition, you may spend 1 RP or 0 AP to remove it.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "1fcd53c143c916740d6f754b823a488034985a85cdea257c6077ef3d7254e6c8"
+  },
+  {
+    "stable_id": "breakthrough--fight-and-flight-chimera",
+    "category": "breakthroughs",
+    "name": "Fight and Flight (Chimera)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d89",
+      "index_id": "a9dd9a11-8408-40c7-98e1-f5a3b16c392c"
+    },
+    "data": {
+      "breakthroughId": "fight-and-flight--chimera-",
+      "name": "Fight and Flight (Chimera)",
+      "cost": "200",
+      "requirements": "Must be a Chimera.",
+      "description": "<p>When using Fight or Flight, you no longer receive the drawback.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "6a6f112fb4ee04d4f288162a201a4cfe1b9c02f75af5d556613798f2c3681166"
+  },
+  {
+    "stable_id": "breakthrough--flesheater-jiangshi",
+    "category": "breakthroughs",
+    "name": "Flesheater (Jiangshi)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d9c",
+      "index_id": "e6591f4f-eec0-4b4f-8ec3-32f2007cd00d"
+    },
+    "data": {
+      "breakthroughId": "flesheater--jiangshi-",
+      "name": "Flesheater (Jiangshi)",
+      "cost": "100",
+      "requirements": "Must be a Jiangshi.",
+      "description": "<p>When using Consume Enemy, you may consider that your food for the day and regain mana equal to a normal ration. You cannot gain this benefit if you already regained mana from food that day and using this benefit prevents you from regaining mana from food until you’ve rested.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "155b9fe12f6f611de4bd8437eafee0a2ccb10c8d24f8997190f1b110ead79744"
+  },
+  {
+    "stable_id": "breakthrough--flying-counter-kitsune",
+    "category": "breakthroughs",
+    "name": "Flying Counter (Kitsune)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d9d",
+      "index_id": "7e563b66-935f-4edc-8a8f-766c3e7794c8"
+    },
+    "data": {
+      "breakthroughId": "flying-counter--kitsune-",
+      "name": "Flying Counter (Kitsune)",
+      "cost": "200",
+      "requirements": "Must be a Kitsune.",
+      "description": "<p>When using Fading Counter, you may move up to your movement speed instead of 5ft. This movement has Flight and still does not provoke attacks of opportunity.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "5fb96e84708eb30bf69d06e3a749e3b2968f6628fa7e3d0fa7da8c4b96b91d78"
+  },
+  {
+    "stable_id": "breakthrough--four-paw-sprint-catfolk",
+    "category": "breakthroughs",
+    "name": "Four Paw Sprint (Catfolk)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d9f",
+      "index_id": "1666248a-dd60-4cb9-83af-18d4c978f6de"
+    },
+    "data": {
+      "breakthroughId": "four-paw-sprint--catfolk-",
+      "name": "Four Paw Sprint (Catfolk)",
+      "cost": "100",
+      "requirements": "Must be a Catfolk.",
+      "description": "<p>When spending at least 3 AP of movement, your base movement speed is increased to 40ft instead of 25.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "683c1300a84746c77e8ec235568995b2008f0dfe8b977b93628cc60ed17130e3"
+  },
+  {
+    "stable_id": "breakthrough--greatshield-training",
+    "category": "breakthroughs",
+    "name": "Greatshield Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d7f",
+      "index_id": "d2dfb912-5ff7-40e4-9c96-44ab480673d9"
+    },
+    "data": {
+      "breakthroughId": "greatshield-training",
+      "name": "Greatshield Training",
+      "cost": "100",
+      "requirements": "You must be proficient with shields.",
+      "description": "<p>You gain proficiency with Greatshields.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "2edfc6450132861123c62d71b6a69e473fc61ed11bb846aa4b7ce9ee8ac69f26"
+  },
+  {
+    "stable_id": "breakthrough--heavy-armor-training",
+    "category": "breakthroughs",
+    "name": "Heavy Armor Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d7e",
+      "index_id": "f729ba66-87cd-47cf-bb73-b3558d805c52"
+    },
+    "data": {
+      "breakthroughId": "heavy-armor-training",
+      "name": "Heavy Armor Training",
+      "cost": "100",
+      "requirements": "You must be proficient with Light and Medium armor.",
+      "description": "<p>You gain proficiency with Heavy Armor.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "2e6b166828fb65468002b82d4ce44242716ec1b2577707efeae8c2f047c9f8d8"
+  },
+  {
+    "stable_id": "breakthrough--hide-behind-ally-pixie",
+    "category": "breakthroughs",
+    "name": "Hide Behind Ally (Pixie)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930da1",
+      "index_id": "a199aec1-ae91-43b0-a1d1-ee2a3a0c8f8c"
+    },
+    "data": {
+      "breakthroughId": "hide-behind-ally--pixie-",
+      "name": "Hide Behind Ally (Pixie)",
+      "cost": "300",
+      "requirements": "Must be a Pixie.",
+      "description": "<p>When occupying the same space as a conscious ally that's at least a size bigger than you, you may choose to become untargetable to single target attacks. The ally must be willing to take the hits for you, though they may react to these attacks as normal. While occupying the same space as a conscious ally, any effect that triggers upon not being targeted by an enemy (such as Challenge) will not be triggered. Does not work against Attacks of Opportunity.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "1fef9d73a02c169b012024fecb24a5d16f560d606064c8636311e52597d56eaa"
+  },
+  {
+    "stable_id": "breakthrough--human-chimera-hybrid-race",
+    "category": "breakthroughs",
+    "name": "Human-Chimera Hybrid (Race)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d74",
+      "index_id": "d676b6a8-0840-41c6-bcd9-6b99ef9d2831"
+    },
+    "data": {
+      "breakthroughId": "human-chimera-hybrid--race-",
+      "name": "Human-Chimera Hybrid (Race)",
+      "cost": "200",
+      "requirements": "Must be chosen at character creation. Must choose Human race.",
+      "description": "<p>While most unions of Human and Chimera parents result in the offspring being fully of Human or fully of Chimera, there are rare instances in which the Chimera traits are still present in a human offspring.</p><p>Choose one Chimera Subrace and gain all of its features.&nbsp;You do not gain any of the Chimera base traits and instead have the Human ones, including Divine Providence. You do not get the 100 extra exp that humans normally get or human adaptability.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "154dc7edfacaa260e663a01d26ed384d691441d44878b5653d00c485560a8b4b"
+  },
+  {
+    "stable_id": "breakthrough--improved-demonic-divine-release-demon",
+    "category": "breakthroughs",
+    "name": "Improved Demonic Divine Release (Demon)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d84",
+      "index_id": "f21a4bb6-0543-4ee9-9942-712262b3a2fd"
+    },
+    "data": {
+      "breakthroughId": "improved-demonic-divine-release--demon-",
+      "name": "Improved Demonic Divine Release (Demon)",
+      "cost": "300",
+      "requirements": "Must be a Demon",
+      "description": "<p>When activating your divine release you may choose to reduce your max HP by 22. When you do, you do not pay any additional HP cost to activate it and the HP Upkeep is reduced to 0 while above 0 HP.</p><p>When you fall below 0 HP, you pay the increased Upkeep cost as normal.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "9e7582c5c2900888b8e980a6648a7b0897e8a5975d6230598bfdb416db118e4c"
+  },
+  {
+    "stable_id": "breakthrough--in-sync-youkai",
+    "category": "breakthroughs",
+    "name": "In Sync (Youkai)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d8a",
+      "index_id": "dab7e9ee-ff71-41aa-b474-3389400e235f"
+    },
+    "data": {
+      "breakthroughId": "in-sync--youkai-",
+      "name": "In Sync (Youkai)",
+      "cost": "100",
+      "requirements": "Must be a Youkai.",
+      "description": "<p>After you use Spiritual Sync, you may cancel the effect for 0 RP at any time. If you do, you regain mana like it is described in the ability or 8 HP for each temporary mana you still had remaining.</p><p>In addition, the maximum mana or HP you can spend on Spiritual Sync is doubled.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "bc3f5bcef7ce321b1c1a1288ce0040e4877529b86f293831d64f7388a65e6ede"
+  },
+  {
+    "stable_id": "breakthrough--kit-expert",
+    "category": "breakthroughs",
+    "name": "Kit Expert",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930db6",
+      "index_id": "bb5d7dd1-af65-4fce-9675-a4fea97cded4"
+    },
+    "data": {
+      "breakthroughId": "kit-expert",
+      "name": "Kit Expert",
+      "cost": "200",
+      "requirements": "-",
+      "description": "<p>You may reduce the Burden cost of a single kit in your inventory by 2.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "6e1deeca8ddda8792c851009e5d162bd6a2e0bd0e845808f9914234c1da6361a"
+  },
+  {
+    "stable_id": "breakthrough--language-training",
+    "category": "breakthroughs",
+    "name": "Language Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d97",
+      "index_id": "49576f97-4ab5-45ca-ad3e-c98b9bdafdfe"
+    },
+    "data": {
+      "breakthroughId": "language-training",
+      "name": "Language Training",
+      "cost": "100",
+      "requirements": "-",
+      "description": "<p>You learn a language of your choice. Rare, dead or similar languages may be unavailable (GM’s discretion).</p><p>You may take this breakthrough multiple times, picking a different language each time.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "ddd13c8d55714862c4a1fc997a7994e00edf6fa25279cd541994791ba04b97fa"
+  },
+  {
+    "stable_id": "breakthrough--large-specimen-nio-bullfolk-or-bearfolk",
+    "category": "breakthroughs",
+    "name": "Large Specimen (Nio, Bullfolk or Bearfolk)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dba",
+      "index_id": "712791f4-6cbb-4681-80b4-4666b34b1c66"
+    },
+    "data": {
+      "breakthroughId": "large-specimen--nio--bullfolk-or-bearfolk-",
+      "name": "Large Specimen (Nio, Bullfolk or Bearfolk)",
+      "cost": "100",
+      "requirements": "Must be a Nio, Bullfolk or Bearfolk.",
+      "description": "<p>Your size becomes Large.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "832bbe83202dcc6d6915b8b495d73f85b917b5dd6c3f8c2f9e21e2e44f710f02"
+  },
+  {
+    "stable_id": "breakthrough--light-armor-training",
+    "category": "breakthroughs",
+    "name": "Light Armor Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d7c",
+      "index_id": "0327396a-1722-494b-93ac-bf8a79babb26"
+    },
+    "data": {
+      "breakthroughId": "light-armor-training",
+      "name": "Light Armor Training",
+      "cost": "25",
+      "requirements": "-",
+      "description": "<p>You gain proficiency with Light Armor and shields.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "7b2daa516d968eacb437aa1afb48347084fcdff7d7c17d49bf6b7d1080c5a5d0"
+  },
+  {
+    "stable_id": "breakthrough--light-sleeper",
+    "category": "breakthroughs",
+    "name": "Light Sleeper",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d8c",
+      "index_id": "7956f508-8c8c-4a6a-8aa7-266b75e8668c"
+    },
+    "data": {
+      "breakthroughId": "light-sleeper",
+      "name": "Light Sleeper",
+      "cost": "75",
+      "requirements": "-",
+      "description": "<p>When asleep, you may roll Perception rolls as if you were awake to be aware of danger approaching.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "c98028b4d43ee7c7488f66792ac384855cd09edaf441029db0c6312a930c5396"
+  },
+  {
+    "stable_id": "breakthrough--mark-of-conflict",
+    "category": "breakthroughs",
+    "name": "Mark of Conflict",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dc3",
+      "index_id": "4c457daa-aa10-4b8e-879a-99bc8ce97a87"
+    },
+    "data": {
+      "breakthroughId": "mark-of-conflict",
+      "name": "Mark of Conflict",
+      "cost": "0",
+      "requirements": "Must be an Unknown Paladin that follows Eisen. Must have the Mark of Justice ability.",
+      "description": "<p>The effect of your Mark of Justice changes to the following:</p><p>“You mark a single enemy, inflicting the Mark of Conflict on them. If an enemy moves away from you and not towards another ally, they take Full Pierce physical damage equal to your Power for each 20ft of movement they spent moving away from you.”</p><p>The range and AP cost remain the same.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "2c5122b8d585824cf8c771aab1f69e4ec0bbe0e8b88fba235861aeafb2d83c99"
+  },
+  {
+    "stable_id": "breakthrough--medium-armor-training",
+    "category": "breakthroughs",
+    "name": "Medium Armor Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d7d",
+      "index_id": "ab136b22-8d6a-45dd-b2b8-4479b11caa54"
+    },
+    "data": {
+      "breakthroughId": "medium-armor-training",
+      "name": "Medium Armor Training",
+      "cost": "50",
+      "requirements": "You must be proficient with Light Armor",
+      "description": "<p>You gain proficiency with Medium Armor.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "2336c9d07d3ac6a7e3e0656b4c34c5f2d2309d769b99fa7542df05c748900125"
+  },
+  {
+    "stable_id": "breakthrough--mental-torture-unseelie",
+    "category": "breakthroughs",
+    "name": "Mental Torture (Unseelie)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dbd",
+      "index_id": "df29a1bf-6089-4108-b852-6d5557dbcaa6"
+    },
+    "data": {
+      "breakthroughId": "mental-torture--unseelie-",
+      "name": "Mental Torture (Unseelie)",
+      "cost": "100",
+      "requirements": "Must be an Unseelie.",
+      "description": "<p>When you roll a natural 20 on your accuracy roll, you may apply the effects of Torture Techniques even if the enemy Dodges or Blocks it.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "b470ff6f02a86d268d200bc5fbb99e06c7eea9c0dc8168996d2293ebf04c10ec"
+  },
+  {
+    "stable_id": "breakthrough--mixed-house-demon",
+    "category": "breakthroughs",
+    "name": "Mixed House (Demon)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d83",
+      "index_id": "5fad2fbd-117f-45de-a874-23ec8d9550fe"
+    },
+    "data": {
+      "breakthroughId": "mixed-house--demon-",
+      "name": "Mixed House (Demon)",
+      "cost": "100",
+      "requirements": "Must be a Demon.",
+      "description": "<p>You choose another house to gain the benefit of.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "2bb8e21948b38dcddd6f4731f29da33e9d81729b9715b289bb846e9c9aa30b17"
+  },
+  {
+    "stable_id": "breakthrough--mystic-eyes-of-faerie-light-fae",
+    "category": "breakthroughs",
+    "name": "Mystic Eyes of Faerie Light (Fae)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d87",
+      "index_id": "7898e2c7-2a72-4fa8-bc06-13b93e171466"
+    },
+    "data": {
+      "breakthroughId": "mystic-eyes-of-faerie-light--fae-",
+      "name": "Mystic Eyes of Faerie Light (Fae)",
+      "cost": "100",
+      "requirements": "Must be a Fae.",
+      "description": "<p>Your Fae eyes have developed into the Eyes of Faerie Light.&nbsp; You may purchase the Faerie Light Eyes class.</p><p>In addition, you can make a Perception check at +10 bonus to determine if something is an illusion. You are not immune to these illusions however.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "c98591eebd418b3314319e58847e1ecc8d0db8ccda91248ac35cf47269ccfadd"
+  },
+  {
+    "stable_id": "breakthrough--natural-immunity-ratfolk",
+    "category": "breakthroughs",
+    "name": "Natural Immunity (Ratfolk)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930db0",
+      "index_id": "0fa5b003-e9eb-49c9-a5f9-5e50b58c34cf"
+    },
+    "data": {
+      "breakthroughId": "natural-immunity--ratfolk-",
+      "name": "Natural Immunity (Ratfolk)",
+      "cost": "100",
+      "requirements": "Must be Ratfolk",
+      "description": "<p>When you successfully resist the effect of a disease or poison (or are immune to the effect), you may choose to become afflicted anyway. You suffer no effects from a disease or poison you choose to accept this way. This poison or disease lasts the normal duration or until the end of the encounter, whichever is shorter.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "c87d7315850e3675b99a44d4efb8257db58b0b4ff43871f18f317ffb88feddb9"
+  },
+  {
+    "stable_id": "breakthrough--on-the-draw",
+    "category": "breakthroughs",
+    "name": "On the draw",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930db8",
+      "index_id": "34b8e8e7-d8b9-43ea-a0bd-50d873600df2"
+    },
+    "data": {
+      "breakthroughId": "on-the-draw",
+      "name": "On the draw",
+      "cost": "100",
+      "requirements": "-",
+      "description": "<p>You gain +1 to your initiative.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "4cdb670c88193df062eb895dc67087a52562de7e79a702afebb5b7c614ecab77"
+  },
+  {
+    "stable_id": "breakthrough--organized-inventory",
+    "category": "breakthroughs",
+    "name": "Organized Inventory",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d76",
+      "index_id": "fe8267f3-b340-4f24-a59f-388750fe73e3"
+    },
+    "data": {
+      "breakthroughId": "organized-inventory",
+      "name": "Organized Inventory",
+      "cost": "100",
+      "requirements": "-",
+      "description": "<p>Increases your in-combat burden capacity by 1.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "021d59bb7d0bfa6e7dd686b4acbde35403715e3c0c840343cbc4e0ef14aeedb8"
+  },
+  {
+    "stable_id": "breakthrough--organized-inventory-ii",
+    "category": "breakthroughs",
+    "name": "Organized Inventory II",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d90",
+      "index_id": "319b2e72-de29-441b-a0a8-f8f65a684b73"
+    },
+    "data": {
+      "breakthroughId": "organized-inventory-ii",
+      "name": "Organized Inventory II",
+      "cost": "200",
+      "requirements": "Must have the Organized Inventory breakthrough",
+      "description": "<p>Your in-combat Burden capacity is increased by 1.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "154e43d7f3d978f43b851a2ef8dbeb9d2951b298c0daf962a277a006480af07f"
+  },
+  {
+    "stable_id": "breakthrough--organized-inventory-iii",
+    "category": "breakthroughs",
+    "name": "Organized Inventory III",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d91",
+      "index_id": "d4e1caca-8e77-4b4c-8156-9a1e425e0eaa"
+    },
+    "data": {
+      "breakthroughId": "organized-inventory-iii",
+      "name": "Organized Inventory III",
+      "cost": "300",
+      "requirements": "Must have the Organized Inventory II breakthrough",
+      "description": "<p>Your in-combat Burden capacity is increased by 1.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "82fface9dc53c944b3bfe3c79e716af1aa53886e00835309ae926c903cc5feed"
+  },
+  {
+    "stable_id": "breakthrough--overrun-centaur",
+    "category": "breakthroughs",
+    "name": "Overrun (Centaur)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930da4",
+      "index_id": "99ff1560-2863-4f33-9301-ee7cf4d5a627"
+    },
+    "data": {
+      "breakthroughId": "overrun--centaur-",
+      "name": "Overrun (Centaur)",
+      "cost": "200",
+      "requirements": "Must be a Centaur.",
+      "description": "<p>When using the Charge or Spear Charge ability your movement speed is increased by 5ft and if your attack made through the Charge ability does damage, it knocks the target prone.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "b69f0d7b351e54252a99daa2f91b91154282267ccb1190c99ad0fb9cc32b8df5"
+  },
+  {
+    "stable_id": "breakthrough--panda-martial-arts-red-panda",
+    "category": "breakthroughs",
+    "name": "Panda Martial Arts (Red Panda)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930db3",
+      "index_id": "7f3433df-8797-49d0-a254-b8a6b3759aa4"
+    },
+    "data": {
+      "breakthroughId": "panda-martial-arts--red-panda-",
+      "name": "Panda Martial Arts (Red Panda)",
+      "cost": "100",
+      "requirements": "Must be Red Panda",
+      "description": "<p>You can be in Panda stance at the same time as another stance without either stance ending.</p><p>Other rules for stance breaking (such as entering 2 non-panda stances) still apply.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "acbd09acf5d8d63331ed5653ba243d860a359e1adcfbf286d1b17011fe41dd6e"
+  },
+  {
+    "stable_id": "breakthrough--photosynthesis-dryad",
+    "category": "breakthroughs",
+    "name": "Photosynthesis (Dryad)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930db1",
+      "index_id": "37a3c35d-e778-4741-b787-704bbae5b73b"
+    },
+    "data": {
+      "breakthroughId": "photosynthesis--dryad-",
+      "name": "Photosynthesis (Dryad)",
+      "cost": "100",
+      "requirements": "Must be Dryad.",
+      "description": "<p>By spending at least an hour in the direct sunlight, you may gain the benefits of having eaten food and you do not need to eat or drink for the next 24 hours.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "455177832ec9b29906888eaaf94dbed49a0da9450a2a5af9a4eabb65471502c2"
+  },
+  {
+    "stable_id": "breakthrough--power-saving-mode-ancient-marionette",
+    "category": "breakthroughs",
+    "name": "Power Saving Mode (Ancient Marionette)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930db7",
+      "index_id": "aebebfc4-e6c3-4e70-ad36-4b0063732300"
+    },
+    "data": {
+      "breakthroughId": "power-saving-mode--ancient-marionette-",
+      "name": "Power Saving Mode (Ancient Marionette)",
+      "cost": "100",
+      "requirements": "Must be an Ancient Marionette",
+      "description": "<p>If you are at maximum mana during your meal, you only need to consume half the normal amount to be well fed.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "230fd2ae6d7b76ad7f53092d3b0c115ad1248f376407bd091465223e8f9258e2"
+  },
+  {
+    "stable_id": "breakthrough--powerful-ki-oni",
+    "category": "breakthroughs",
+    "name": "Powerful Ki (Oni)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d9b",
+      "index_id": "b312c868-2837-42e2-9045-8fba8e3602ca"
+    },
+    "data": {
+      "breakthroughId": "powerful-ki--oni-",
+      "name": "Powerful Ki (Oni)",
+      "cost": "200",
+      "requirements": "Must be an Oni.",
+      "description": "<p>When using Gravitational Ki, the range increases by 30ft. The push and pull distance increases by up to 10ft. In addition, you may spend 1 AP instead of 1 RP on it.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "2a8ebdff500f9fee0bad6188beb1dc70dcab4222863b37988f454977020127ac"
+  },
+  {
+    "stable_id": "breakthrough--primary-stat-training",
+    "category": "breakthroughs",
+    "name": "Primary Stat Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d80",
+      "index_id": "45822ac3-a314-4d89-bcd6-2d8344dc2d9a"
+    },
+    "data": {
+      "breakthroughId": "primary-stat-training",
+      "name": "Primary Stat Training",
+      "cost": "400",
+      "requirements": "-",
+      "description": "<p>You gain a +1 bonus to Focus, Power, Agility or Toughness.</p><p>This breakthrough can be selected multiple times. The effects stack. Each time you take this breakthrough the cost increases by 100, up to a maximum of 700.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "c91c4a4db47e543c112471cbda388681344a92516383fa1a0ab44228be5c28ba"
+  },
+  {
+    "stable_id": "breakthrough--racial-flight",
+    "category": "breakthroughs",
+    "name": "Racial Flight",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930daf",
+      "index_id": "5ba5e6af-a6bb-4823-8bcf-9e2daf512be2"
+    },
+    "data": {
+      "breakthroughId": "racial-flight",
+      "name": "Racial Flight",
+      "cost": "300",
+      "requirements": "Must be Phoenix, Mothfolk, Lizardfolk, Sylph or Willowisp race.",
+      "description": "<p>You may use Flight.</p>",
+      "ability": "5b304038-c45a-4521-b58f-2ad9545e1a9d"
+    },
+    "relationships": {
+      "granted_ability": "ability--flight"
+    },
+    "source_hash": "2515d618439524ffb50aecf1bd5cceaa63a48a743ae76ebb6ed30e847db64e83"
+  },
+  {
+    "stable_id": "breakthrough--rapid-flash-high-fae",
+    "category": "breakthroughs",
+    "name": "Rapid Flash (High Fae)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d98",
+      "index_id": "2a202a86-be68-4862-a6fa-668874701d8c"
+    },
+    "data": {
+      "breakthroughId": "rapid-flash--high-fae-",
+      "name": "Rapid Flash (High Fae)",
+      "cost": "100",
+      "requirements": "Must be a High Fae.",
+      "description": "<p>Your Fae Flash gains the Rapid keyword.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "dfc6b456f68165b151f279d94e120ad0f60bcb3c0abd34bc6c6329758e16340b"
+  },
+  {
+    "stable_id": "breakthrough--rich-parents",
+    "category": "breakthroughs",
+    "name": "Rich Parents",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930db5",
+      "index_id": "b7b38bd5-0123-4000-b73d-046fe2898b41"
+    },
+    "data": {
+      "breakthroughId": "rich-parents",
+      "name": "Rich Parents",
+      "cost": "300",
+      "requirements": "Must be taken at character creation.",
+      "description": "<p>You start the game with an additional 3000 Clim of funds.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "2880f4457a290e62be2d9ea0c76f9b43ef7eb6f29c568bdcf7d948b710e8ce87"
+  },
+  {
+    "stable_id": "breakthrough--secondary-stat-training",
+    "category": "breakthroughs",
+    "name": "Secondary Stat Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d81",
+      "index_id": "bf5c2d85-7a07-4a2c-9e3f-6a51a915aed1"
+    },
+    "data": {
+      "breakthroughId": "secondary-stat-training",
+      "name": "Secondary Stat Training",
+      "cost": "200",
+      "requirements": "-",
+      "description": "<p>You gain a +1 bonus to Fitness, Cunning, Reason, Awareness or Presence.</p><p>This breakthrough can be selected multiple times. The effects stack.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "0130d0a1554362410bc569f91328a7e9985028ff3901fb47a80620670c52e0dc"
+  },
+  {
+    "stable_id": "breakthrough--skill-training",
+    "category": "breakthroughs",
+    "name": "Skill Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d79",
+      "index_id": "29589820-d937-49d7-88dd-5f3ab90ee5ce"
+    },
+    "data": {
+      "breakthroughId": "skill-training",
+      "name": "Skill Training",
+      "cost": "25",
+      "requirements": "-",
+      "description": "<p>You gain a single skill point or two expertise points to spend on a skill. Crafting skills cannot be selected with this training.</p><p>You may select this breakthrough multiple times. Its effects can stack.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "39e8c1db5aac855cc0602913db58483853ffd29d71a93d6d41e60b685bc2b590"
+  },
+  {
+    "stable_id": "breakthrough--skilled-flier",
+    "category": "breakthroughs",
+    "name": "Skilled Flier",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dae",
+      "index_id": "296b5632-0f01-444f-aae5-dffb22d5fd2b"
+    },
+    "data": {
+      "breakthroughId": "skilled-flier",
+      "name": "Skilled Flier",
+      "cost": "100",
+      "requirements": "Must have Flight racial ability or Racial Flight breakthrough",
+      "description": "<p>When you are about to lose Height from taking damage due to your Flight ability, you may instead spend 3 Mana to negate losing height from the flight mechanic until the start of your next turn.</p><p>Abilities that make you lose height not part of the Flight ability (such as downburst) may still knock you out of the air.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "f457c83e942ff98dd60213e0e9696eedee8b06edea59b1ed1b361fd89d2a3156"
+  },
+  {
+    "stable_id": "breakthrough--slime-summoner",
+    "category": "breakthroughs",
+    "name": "Slime Summoner",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dc5",
+      "index_id": "94c72324-0872-435e-90b9-bd7b8e0d3d3f"
+    },
+    "data": {
+      "breakthroughId": "slime-summoner",
+      "name": "Slime Summoner",
+      "cost": "100",
+      "requirements": "Must be a mastered Animal Summoner.",
+      "description": "<p>When using the Summon Animal ability, you may instead choose to summon slimes. You roll randomly from the following slimes: Slime, Fire Slime, Earth Slime, Water Slime, Wind Slime or Mana Slime.</p><p>Even if you have the Wildheart class, you still cannot choose which slime you summon except you may choose to summon the regular Slime.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "016c69993c45642fd9063fa8788dd6da81441663c8ad7f5432b2fad0a357c6c2"
+  },
+  {
+    "stable_id": "breakthrough--slow-starter",
+    "category": "breakthroughs",
+    "name": "Slow Starter",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930da6",
+      "index_id": "69ad5786-9e4b-4099-bf12-036fd89873f1"
+    },
+    "data": {
+      "breakthroughId": "slow-starter",
+      "name": "Slow Starter",
+      "cost": "300",
+      "requirements": "Must be taken at character creation.",
+      "description": "<p>You receive 200 less EXP at character creation to spend on classes and abilities. Every time you get EXP after character creation, you get twice as much. This lasts until you’ve received a total of 500 (1000 when doubled) exp.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "c04c9097e971aa6e42bb51852f78116fe955e831ae3c8f42bb1d6864922ab0dc"
+  },
+  {
+    "stable_id": "breakthrough--small-doggy-cu-sith",
+    "category": "breakthroughs",
+    "name": "Small Doggy (Cu Sith)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dc8",
+      "index_id": "2a89d4f8-4911-487a-89e6-413cd15931e5"
+    },
+    "data": {
+      "breakthroughId": "small-doggy--cu-sith-",
+      "name": "Small Doggy (Cu Sith)",
+      "cost": "0",
+      "requirements": "Must be a Cu Sith.",
+      "description": "<p>When you enter your Dog Form, you become a small dog instead. Instead of the usual bonuses and penalties, you instead lose 4 guard and 8 Block but gain a +2 Size bonus to Evasion and Dodge.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "da09c29f2007084bf3303e0506ac309ddf0e749fb5621159908bce1ebedf7a49"
+  },
+  {
+    "stable_id": "breakthrough--small-specimen-cowfolk",
+    "category": "breakthroughs",
+    "name": "Small Specimen (Cowfolk)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dc4",
+      "index_id": "d5492d93-94da-4c58-94ea-82a66d05d4f5"
+    },
+    "data": {
+      "breakthroughId": "small-specimen--cowfolk-",
+      "name": "Small Specimen (Cowfolk)",
+      "cost": "25",
+      "requirements": "Cowfolk only. Must be taken at character creation.",
+      "description": "<p>Your size is Small instead of Medium.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "f0bad932277035139125bef8bccfaa7ce6421a822d09d5d8f81088bec12bffcc"
+  },
+  {
+    "stable_id": "breakthrough--speciality-weapon-training",
+    "category": "breakthroughs",
+    "name": "Speciality Weapon Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d7b",
+      "index_id": "0e92a4c2-fad0-4b5c-81a3-9310307dadc1"
+    },
+    "data": {
+      "breakthroughId": "speciality-weapon-training",
+      "name": "Speciality Weapon Training",
+      "cost": "100",
+      "requirements": "-",
+      "description": "<p>You gain proficiency with a Speciality Weapon group.</p><p>This breakthrough can be selected multiple times. You must select a different weapon group each time you select it.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "467c0edfa4e7a4704263a96f2ef90f615c1eb30d4be9d9f7bfa47bcf8904392c"
+  },
+  {
+    "stable_id": "breakthrough--summon-contract-fortuna-lady-luck",
+    "category": "breakthroughs",
+    "name": "Summon Contract: Fortuna, Lady Luck",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930db4",
+      "index_id": "23ade1b1-4956-4974-8601-52b61d8516e9"
+    },
+    "data": {
+      "breakthroughId": "summon-contract--fortuna--lady-luck",
+      "name": "Summon Contract: Fortuna, Lady Luck",
+      "cost": "0",
+      "requirements": "Must be a summoner and have visited the eidolon.",
+      "description": "<p><strong>Appearance</strong>: Fortuna appears as a beautiful lady wearing clothing of the highest quality. Her clothes change each time she appears, but she always carries with her a parasol designed like a roulette wheel.<br><strong>Desires</strong>: Fortuna desires to see gambling. To have people bet their all on impossible odds.<br><strong>Pact Cost</strong>: You can never naturally roll 20 again. Every 20 you roll is reduced to 19.<br><strong>Attunement Cost:</strong> None<br><strong>Re-Summon Cost</strong>: Roll a natural 20 (before the pact cost reduces it) on an attack or skill check with consequences for failure (GM’s decision).</p><p>When you contract Fortuna, you are able to attune to it. While attuned, you gain access to the Draw Luck ability through your Channel Eidolon ability. You summon the Jack of Hearts for your Lesser Eidolon and Fortuna for your Eidolon (The stats for these are listed under monsters).</p>",
+      "ability": "7d26f4ec-eaef-4dc8-a244-a5cecc769b09"
+    },
+    "relationships": {
+      "granted_ability": "ability--channel-eidolon-draw-luck"
+    },
+    "source_hash": "d002e4ac88bacb7ac2ef48297b97f29a20379dadcaa15cd8736d974de2eb7a33"
+  },
+  {
+    "stable_id": "breakthrough--summon-contract-ixilune-the-swarm",
+    "category": "breakthroughs",
+    "name": "Summon Contract: Ixilune, The Swarm",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930db9",
+      "index_id": "9d2ff949-92dd-45ba-a6d7-ba52c40f87b1"
+    },
+    "data": {
+      "breakthroughId": "summon-contract--ixilune--the-swarm",
+      "name": "Summon Contract: Ixilune, The Swarm",
+      "cost": "0",
+      "requirements": "Must be a summoner and have visited the eidolon.",
+      "description": "<p><strong>Appearance:</strong> Hot bug lady.<br><strong>Desires:</strong> Ixilune desires to consume everything.<br><strong>Pact Cost:</strong> You need to eat 1.5x as much food to be fed.<br><strong>Attunement Cost:</strong> None<br><strong>Re-Summon Cost:</strong> Must eat the flesh of a creature of the same (main) race.</p><p>When you contract Ixilune, you are able to attune to it. While attuned, you gain access the Distracting Swarm ability through your Channel Eidolon ability. You summon the Devouring Swarm for your Lesser Eidolon and Ixilune for your Eidolon. (The stats for these are listed under monsters.)</p>",
+      "ability": "40915658-9ccb-49b5-bae4-04f51db828c8"
+    },
+    "relationships": {
+      "granted_ability": "ability--channel-eidolon-distracting-swarm"
+    },
+    "source_hash": "9ed06f6a0f3a19c67c3d73e775c7deee036cd9cb5a28d622c075d9495326b9c1"
+  },
+  {
+    "stable_id": "breakthrough--summon-contract-pipoltr-the-gardener",
+    "category": "breakthroughs",
+    "name": "Summon Contract: Pipoltr, The Gardener",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dac",
+      "index_id": "cb8daf36-337c-4cde-b338-5a539b51dfcc"
+    },
+    "data": {
+      "breakthroughId": "summon-contract--pipoltr--the-gardener",
+      "name": "Summon Contract: Pipoltr, The Gardener",
+      "cost": "0",
+      "requirements": "Must be a summoner and have visited the eidolon.",
+      "description": "<ul><li><strong>Appearance:&nbsp;</strong>Pipoltr appears as a giant scarab beetle whose carapace glints with a metallic sheen like burnished bronze and emerald green.&nbsp; His presence is both otherworldly and ancient, curved antennae sprout from his head that can detect the health of plants.&nbsp; His compound eyes shine like brilliant gems.</li><li><strong>Desires:&nbsp;</strong>Pipoltr’s desire is the health of nature.</li><li><strong>Pact Cost:&nbsp; </strong>1 Maximum Mana.</li><li><strong>Attunement Cost:</strong> None</li><li><strong>Re-Summon Eidolon:&nbsp;</strong>&nbsp;Character must spend an EP to perform 1 day of gardening work before resummoning Pipoltr.</li></ul><p>When you contract Pipoltr, you are able to attune to it. While attuned, you gain access the Vine Wall Cover ability through your Channel Eidolon ability. You summon the Rhinoceros Beetle for your Lesser Eidolon and Pipoltr for your Eidolon. (The stats for these are listed under monsters.)</p>",
+      "ability": "2fce3db9-f052-4ae5-825e-c9ddd82589ef"
+    },
+    "relationships": {
+      "granted_ability": "ability--channel-eidolon-vine-wall-cover"
+    },
+    "source_hash": "4f5fc273b1b81e8ce1619a63c410535dc494f133459d0e8ddfc0c8499056e976"
+  },
+  {
+    "stable_id": "breakthrough--superior-escapist-rabbitfolk",
+    "category": "breakthroughs",
+    "name": "Superior Escapist (Rabbitfolk)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930da0",
+      "index_id": "51d9c6b8-cb21-48a4-93cb-39e70b752e85"
+    },
+    "data": {
+      "breakthroughId": "superior-escapist--rabbitfolk-",
+      "name": "Superior Escapist (Rabbitfolk)",
+      "cost": "100",
+      "requirements": "Must be a Rabbitfolk.",
+      "description": "<p>You may use your Escape Artist when Rooted to remove it in addition to grapples.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "322686a56116f3de467e014f18d410827036a71a35a1afaf09519994c3940ab2"
+  },
+  {
+    "stable_id": "breakthrough--tengu-defensive-aura-tengu",
+    "category": "breakthroughs",
+    "name": "Tengu Defensive Aura (Tengu)",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d9e",
+      "index_id": "81f1de89-e38d-42c7-9710-8166449e5c11"
+    },
+    "data": {
+      "breakthroughId": "tengu-defensive-aura--tengu-",
+      "name": "Tengu Defensive Aura (Tengu)",
+      "cost": "100",
+      "requirements": "Must be a Tengu.",
+      "description": "<p>Your resistance to astra corruption is increased by 1 (Your SC is treated as 500 higher when determining if you suffer from astra corruption). In addition, you do not suffer any negative effects when the astra level is raised artificially. (such as from Exousiai's).</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "a816bc063829127cb3a88c77a23ff524b08c2a9feb8c20edf90d3a4028f00d8c"
+  },
+  {
+    "stable_id": "breakthrough--the-unknown-paladin",
+    "category": "breakthroughs",
+    "name": "The Unknown Paladin",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d77",
+      "index_id": "8521fc76-4efd-4951-b84f-8356867598d5"
+    },
+    "data": {
+      "breakthroughId": "the-unknown-paladin",
+      "name": "The Unknown Paladin",
+      "cost": "200",
+      "requirements": "Must have the Divine's Chosen breakthrough.",
+      "description": "<p>Despite not being human, you fulfill the human requirement to become a Paladin.&nbsp;In addition, your Smite skill's damage type changes to one that represents your chosen Divine. The paladin holy weapon key ability also changes its damage type to the one that represents your chosen Divine.</p><p><strong>Kari:</strong> Holy&nbsp;<br><strong>Heira:</strong> Astra<br><strong>Pandora:</strong> Arcane<br><strong>Makai:</strong> Water<br><strong>Ayuzi Kirara:</strong> Fire&nbsp;<br><strong>Eisen:</strong> Physical&nbsp;<br><strong>Athena:</strong> Lightning&nbsp;<br><strong>Clio:</strong> Arcane&nbsp;<br><strong>Yggdrasil:</strong> Earth</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "44f7a11cea378a6ba12c54864b8290320a2f75a7153c6f20c16bb467bb0dbe4e"
+  },
+  {
+    "stable_id": "breakthrough--third-eye",
+    "category": "breakthroughs",
+    "name": "Third Eye",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dc9",
+      "index_id": "e68daed1-6d5b-4f61-99da-b253b007143d"
+    },
+    "data": {
+      "breakthroughId": "third-eye",
+      "name": "Third Eye",
+      "cost": "200",
+      "requirements": "-",
+      "description": "<p>You may have up to 3 Mystic Eyes instead of the regular 2.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "ed5c0f6caca43fe4b05e454a884c0507edb1655bbb1cbc3dd5b02a6afe1ec0bc"
+  },
+  {
+    "stable_id": "breakthrough--touched-by-death",
+    "category": "breakthroughs",
+    "name": "Touched by Death",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d88",
+      "index_id": "ed1c6436-8f72-4788-9a54-9356464133a4"
+    },
+    "data": {
+      "breakthroughId": "touched-by-death",
+      "name": "Touched by Death",
+      "cost": "200",
+      "requirements": "Must be taken at character creation or after your HP has dropped below 0 in an encounter.",
+      "description": "<p>Near-death experiences sometimes leave people more sensitive to death itself, manifesting in what is called the Shinigami’s Eyes. You may purchase the Shinigami Eyes class.</p><p>In addition, you may spend 1 AP to see the HP percentage and weak spots (if any) of all creatures for 1 turn.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "c8e04582d6b70e67913b4c43d3c6badcfe3fa027c56eb2eba1356c753af4f656"
+  },
+  {
+    "stable_id": "breakthrough--universal-training",
+    "category": "breakthroughs",
+    "name": "Universal Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dbb",
+      "index_id": "3366d50c-0f52-4ed7-a1ed-b51c21445936"
+    },
+    "data": {
+      "breakthroughId": "universal-training",
+      "name": "Universal Training",
+      "cost": "700",
+      "requirements": "-",
+      "description": "<p>You gain +1 to any primary stat, +1 to any secondary stat and 5 skill points. You may put these skill points into any normal skill, except crafting and gathering skills.</p><p>This breakthrough may be taken multiple times. The effects stack.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "e5fb19226f26efe947a0cd2ecff4438dbe9627bbb525b6cf00e915f8f0bdc111"
+  },
+  {
+    "stable_id": "breakthrough--weapon-training",
+    "category": "breakthroughs",
+    "name": "Weapon Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d7a",
+      "index_id": "2bd098f7-6554-42a0-afa7-7b6a15df122a"
+    },
+    "data": {
+      "breakthroughId": "weapon-training",
+      "name": "Weapon Training",
+      "cost": "25",
+      "requirements": "-",
+      "description": "<p>You gain proficiency with a weapon group. You may not select Speciality Weapons with this.</p><p>This breakthrough can be selected multiple times. You must select a different weapon group each time you select it.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "b1350e4182b6ffc2cb16a8a7e12d30317590863b8fff15383308c53e7863db06"
+  },
+  {
+    "stable_id": "breakthrough--wide-circuits-i",
+    "category": "breakthroughs",
+    "name": "Wide Circuits I",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d78",
+      "index_id": "fb1ecde9-ff6d-4d94-bde7-e8881be68963"
+    },
+    "data": {
+      "breakthroughId": "wide-circuits-i",
+      "name": "Wide Circuits I",
+      "cost": "150",
+      "requirements": "-",
+      "description": "<p>Your maximum mana increases by 1.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "80e2a8a0c4581a250f75e8f2fbae1302d4fcbc66dae07650809931e683c2a96b"
+  },
+  {
+    "stable_id": "breakthrough--wide-circuits-ii",
+    "category": "breakthroughs",
+    "name": "Wide Circuits II",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d92",
+      "index_id": "e2a0e613-f37d-4d8a-bfae-dfb6db0edd39"
+    },
+    "data": {
+      "breakthroughId": "wide-circuits-ii",
+      "name": "Wide Circuits II",
+      "cost": "175",
+      "requirements": "Must have the Wide Circuits breakthrough.",
+      "description": "<p>Your maximum Mana is increased by 1.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "765ae418606ca684ba0883ba1265f54fdaa128d2ff829ac15b7f279bf0d54613"
+  },
+  {
+    "stable_id": "breakthrough--wide-circuits-iii",
+    "category": "breakthroughs",
+    "name": "Wide Circuits III",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d93",
+      "index_id": "82825f86-6850-4b0a-8830-3fa4c268ee1b"
+    },
+    "data": {
+      "breakthroughId": "wide-circuits-iii",
+      "name": "Wide Circuits III",
+      "cost": "200",
+      "requirements": "Must have the Wide Circuits II breakthrough.",
+      "description": "<p>Your maximum Mana is increased by 1.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "5d62e3a91b35458e0fc304e90bd7b7673f985d9c59a2f9d384b80a8c91f5ccc7"
+  },
+  {
+    "stable_id": "breakthrough--wide-circuits-iv",
+    "category": "breakthroughs",
+    "name": "Wide Circuits IV",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930dc2",
+      "index_id": "782d71a7-b467-4a2d-a7dd-80bd047d6cbd"
+    },
+    "data": {
+      "breakthroughId": "wide-circuits-iv",
+      "name": "Wide Circuits IV",
+      "cost": "250",
+      "requirements": "Must have the Wide Circuits III breakthrough",
+      "description": "<p>Your maximum Mana is increased by 1.</p><p>You may take this breakthrough multiple times. The effects stack.</p>",
+      "ability": ""
+    },
+    "relationships": {
+      "granted_ability": null
+    },
+    "source_hash": "49ef863914a6f2522c5760d5517365f94a30e46a227d3437531da715fb982e8e"
+  }
+]

@@ -1,7 +1,25 @@
 <header class="lyr-item-header" data-application-part="header">
   <img class="lyr-item-icon" src="{{item.img}}" data-edit="img" alt="{{item.name}}" />
   <div class="lyr-item-identity">
-    <input class="lyr-name" type="text" name="name" value="{{item.name}}" placeholder="Name" />
-    <span class="lyr-item-type">{{localize (concat "TYPES.Item." type)}}</span>
+    {{#if editable}}
+      <input class="lyr-name" type="text" name="name" value="{{item.name}}" placeholder="Name" />
+    {{else}}
+      <h1 class="lyr-name lyr-reference-name">{{item.name}}</h1>
+    {{/if}}
+    <div class="lyr-item-kicker">
+      <span class="lyr-item-type">{{localize (concat "TYPES.Item." type)}}</span>
+      {{#if system.rulebookVersion}}<span>Rulebook v{{system.rulebookVersion}}</span>{{/if}}
+    </div>
+    <div class="lyr-summary-chips">
+      {{#each summaryChips as |chip|}}
+        <span class="lyr-summary-chip lyr-summary-chip--{{chip.tone}}">{{chip.label}}</span>
+      {{/each}}
+    </div>
   </div>
+  {{#if hasSourceLink}}
+    <a class="lyr-source-link" href="{{system.sourceUrl}}" target="_blank" rel="noopener" title="Open official source">
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      <span>Official source</span>
+    </a>
+  {{/if}}
 </header>

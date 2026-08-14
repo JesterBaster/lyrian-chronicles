@@ -358,8 +358,44 @@
 }
 .lyrian .lyr-item-icon { width: 56px; height: 56px; object-fit: cover; border: 1px solid var(--lyr-gold-dim); border-radius: var(--lyr-radius); }
 .lyrian .lyr-item-identity { flex: 1; min-width: 0; }
+.lyrian .lyr-reference-name { margin: 0 0 0.12rem; padding: 0; border: 0; color: var(--lyr-gold-bright); font-size: 1.25rem; line-height: 1.15; }
 .lyrian .lyr-item-type { font-size: 0.66rem; font-variant: small-caps; letter-spacing: 0.12em; color: var(--lyr-ink-dim); }
+.lyrian .lyr-item-kicker { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; font-size: 0.62rem; color: var(--lyr-ink-faint); }
+.lyrian .lyr-summary-chips { display: flex; flex-wrap: wrap; gap: 0.28rem; margin-top: 0.35rem; }
+.lyrian .lyr-summary-chip {
+  display: inline-flex; align-items: center; min-height: 1.35rem; padding: 0.1rem 0.48rem;
+  background: var(--lyr-void); border: 1px solid var(--lyr-rule); border-radius: 999px;
+  color: var(--lyr-ink-dim); font-size: 0.64rem; line-height: 1.1;
+}
+.lyrian .lyr-summary-chip--gold { border-color: var(--lyr-gold-dim); color: var(--lyr-gold-bright); }
+.lyrian .lyr-summary-chip--resource { border-color: rgba(91, 154, 219, 0.4); color: #8fc2f2; }
+.lyrian .lyr-source-link {
+  display: inline-flex; align-items: center; gap: 0.3rem; flex: 0 0 auto; padding: 0.28rem 0.48rem;
+  border: 1px solid var(--lyr-rule); border-radius: var(--lyr-radius); color: var(--lyr-gold);
+  font-size: 0.64rem; text-decoration: none;
+}
+.lyrian .lyr-source-link:hover { border-color: var(--lyr-gold); color: var(--lyr-gold-bright); }
 .lyrian .lyr-item-body, .lyrian .lyr-item-description { padding: 0.8rem; }
+.lyrian .lyr-reference-overview { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.55rem; }
+.lyrian .lyr-reference-card {
+  min-width: 0; padding: 0.65rem; background: linear-gradient(155deg, var(--lyr-plate), var(--lyr-night));
+  border: 1px solid var(--lyr-rule); border-top-color: var(--lyr-gold-dim); border-radius: var(--lyr-radius);
+}
+.lyrian .lyr-reference-card--wide { grid-column: 1 / -1; }
+.lyrian .lyr-reference-card h3 {
+  margin: 0 0 0.45rem; padding-bottom: 0.28rem; border-bottom: 1px solid var(--lyr-rule);
+  color: var(--lyr-gold); font-family: var(--lyr-font-display); font-size: 0.74rem;
+  font-variant: small-caps; letter-spacing: 0.1em;
+}
+.lyrian .lyr-reference-card p { margin: 0.25rem 0; color: var(--lyr-ink); font-size: 0.77rem; line-height: 1.48; }
+.lyrian .lyr-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.4rem 0.65rem; margin: 0; }
+.lyrian .lyr-facts div { min-width: 0; padding-bottom: 0.26rem; border-bottom: 1px solid rgba(201, 162, 39, 0.1); }
+.lyrian .lyr-facts dt { color: var(--lyr-ink-faint); font-size: 0.58rem; font-variant: small-caps; letter-spacing: 0.08em; }
+.lyrian .lyr-facts dd { margin: 0.1rem 0 0; color: var(--lyr-ink); font-size: 0.76rem; overflow-wrap: anywhere; }
+.lyrian .lyr-rich-text { color: var(--lyr-ink); font-size: 0.79rem; line-height: 1.55; }
+.lyrian .lyr-rich-text h1, .lyrian .lyr-rich-text h2, .lyrian .lyr-rich-text h3 { color: var(--lyr-gold); border-bottom-color: var(--lyr-rule); }
+.lyrian .lyr-provenance { display: flex; justify-content: space-between; gap: 0.6rem; margin-top: 0.9rem; padding-top: 0.5rem; border-top: 1px solid var(--lyr-rule); color: var(--lyr-ink-faint); font-size: 0.6rem; }
+.lyrian .lyr-provenance code { max-width: 12rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--lyr-ink-faint); }
 .lyrian .lyr-field-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.45rem; }
 .lyrian .lyr-item-body label { display: flex; flex-direction: column; gap: 0.15rem; font-size: 0.7rem; font-variant: small-caps; letter-spacing: 0.05em; color: var(--lyr-ink-dim); }
 .lyrian .lyr-item-body label.lyr-check { flex-direction: row; align-items: center; gap: 0.35rem; }
@@ -384,6 +420,12 @@
 .lyrian .lyr-primary { background: var(--lyr-gold); color: var(--lyr-void); border-color: var(--lyr-gold); font-weight: 600; }
 .lyrian .lyr-primary:hover { background: var(--lyr-gold-bright); color: var(--lyr-void); }
 .lyrian .lyr-primary:disabled { opacity: 0.35; cursor: not-allowed; }
+
+@media (max-width: 520px) {
+  .lyrian .lyr-reference-overview { grid-template-columns: 1fr; }
+  .lyrian .lyr-reference-card--wide { grid-column: auto; }
+  .lyrian .lyr-source-link span { display: none; }
+}
 
 /* --------------------------------------------------------------------------
    Character creation

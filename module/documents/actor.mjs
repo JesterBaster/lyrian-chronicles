@@ -325,7 +325,7 @@ export class LyrianActor extends Actor {
 
     if (hp <= 0) {
       // Grunts die outright; everyone else goes down.
-      if (this.type === "npc" && this.system.diesWhenDropped) {
+      if ((this.type === "npc" || this.type === "monster") && this.system.diesWhenDropped) {
         await this.toggleStatusEffect("dead", { active: true, overlay: true });
         return;
       }

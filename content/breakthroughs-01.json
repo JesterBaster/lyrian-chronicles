@@ -1,0 +1,2890 @@
+[
+  {
+    "_id": "20d535ab5efdb79c",
+    "name": "8 Eyes (Spiderfolk)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You may have up to 8 Mystic Eyes instead of the regular 2.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "ae1d204ca424903728bb1905fa7cf767642b7213527ae5aca99093e46c46f087",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--8-eyes-spiderfolk",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a spiderfolk.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--8-eyes-spiderfolk",
+        "stableId": "breakthrough--8-eyes-spiderfolk",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "ae1d204ca424903728bb1905fa7cf767642b7213527ae5aca99093e46c46f087",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "1573307d6eae4e03",
+    "name": "Angelblooded (Human) (Restricted)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You have the blood of angels in you. You may purchase the Angelblooded class.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "0a62744da766d9b7b5b8d0b2010dcf76b47b65f771e25c96aa5f3613402c0f96",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--angelblooded-human-restricted",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 0,
+      "rawCost": "0",
+      "level": 1,
+      "requirements": "Must be a human and only a human. Requires GM Approval",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--angelblooded-human-restricted",
+        "stableId": "breakthrough--angelblooded-human-restricted",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "0a62744da766d9b7b5b8d0b2010dcf76b47b65f771e25c96aa5f3613402c0f96",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "b392a7763142571a",
+    "name": "Arachne (Spiderfolk)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You lose your extra arms racial ability. In exchange, you become Large size and your max burden is increased by 2. When attempting to move through 5ft wide spaces, it is considered difficult terrain for you and many humanoid buildings will struggle to accommodate you. You also suffer a -10 penalty to swimming checks, but you may climb through your spider climb ability at your normal speed instead of half speed.</p><p>In addition, you count as mounted for the purposes of abilities that require you to be mounted. This does not let you be a mount to other creatures.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "58cce2a22fcb07797cccb50939208513afce1b64d2321e7875640facc50d7c32",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--arachne-spiderfolk",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 0,
+      "rawCost": "0",
+      "level": 1,
+      "requirements": "Must be a spiderfolk. Can only be taken at character creation.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--arachne-spiderfolk",
+        "stableId": "breakthrough--arachne-spiderfolk",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "58cce2a22fcb07797cccb50939208513afce1b64d2321e7875640facc50d7c32",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "a320050c589eeea1",
+    "name": "Become Fire (Salamander)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>The RP cost of Consume Fire is reduced to 0.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "1417e51d59441f543c98839ffd49e5502ae471d684cd88ca386ca73516af9a91",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--become-fire-salamander",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be a Salamander.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--become-fire-salamander",
+        "stableId": "breakthrough--become-fire-salamander",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "1417e51d59441f543c98839ffd49e5502ae471d684cd88ca386ca73516af9a91",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "8448c5bc638001cb",
+    "name": "Become Ice (Yuki-Onna)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>The RP cost of Absorb Ice is reduced to 0 the first time you use it per round. Cost is reset back to 0 when it becomes your turn</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "55e0553d4697375d50b9518810cb123d46c06879dcc038376a6ef5a7068b5f86",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--become-ice-yuki-onna",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be a Yuki-Onna.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--become-ice-yuki-onna",
+        "stableId": "breakthrough--become-ice-yuki-onna",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "55e0553d4697375d50b9518810cb123d46c06879dcc038376a6ef5a7068b5f86",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "072c71fdbc8df9ce",
+    "name": "Become Lightning (Raijin)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>The RP cost of Consume Lightning is reduced to 0 the first time you use it per round. Cost is reset back to 0 when it becomes your turn. Any Power bonus you gain from using Consume Lightning does not stack.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "8b8a702b179460b539220a6acaab0d13d0c9dbaff1b1afca9025eaf85fc6a0c2",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--become-lightning-raijin",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be a Raijin Youkai.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--become-lightning-raijin",
+        "stableId": "breakthrough--become-lightning-raijin",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "8b8a702b179460b539220a6acaab0d13d0c9dbaff1b1afca9025eaf85fc6a0c2",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "1a1ee27345ef4b57",
+    "name": "Become Wind (Sylph)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>The RP cost of Consume Wind is reduced to 0 the first time you use it per round. Cost is reset back to 0 when it becomes your turn</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "dc492c4468082de04aaf608691366165be8c96449f255d536822c8f3c0b8b0e5",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--become-wind-sylph",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be a Sylph Fae",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--become-wind-sylph",
+        "stableId": "breakthrough--become-wind-sylph",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "dc492c4468082de04aaf608691366165be8c96449f255d536822c8f3c0b8b0e5",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "342b35b96915c7ef",
+    "name": "Blend In (Slimefolk)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You disguise your appearance using magic to be that of another race (and gain a +30 bonus to hide this magical effect from things such as sense magic). This skill does not allow you to change your appearance at will, but instead lets you appear as you would as a different race. &nbsp;You choose this race when this breakthrough is picked up and cannot change it.<br><br>In addition, the first time you use Slime Body while disguised in this way, it costs 0 RP instead of 1 RP but reveals your actual race. &nbsp;This effect does not work if the attacker knows that you are a Slimefolk.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "b391f7b06bc9cc0b9750b78d4aea87cf9e82a19045cb8676b0cb19442aff2d80",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--blend-in-slimefolk",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be a Slimefolk.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--blend-in-slimefolk",
+        "stableId": "breakthrough--blend-in-slimefolk",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "b391f7b06bc9cc0b9750b78d4aea87cf9e82a19045cb8676b0cb19442aff2d80",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "301d9ed87dcfef0f",
+    "name": "Blend In II (Slimefolk)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You may disguise as a different race in addition to your chosen race during Blend In. You may take this breakthrough multiple times, selecting a new race to disguise as each time.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "fa6ad21dd6954089922016936506cc380032adfba28d7ac8069b909738f60d7c",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--blend-in-ii-slimefolk",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 25,
+      "rawCost": "25",
+      "level": 1,
+      "requirements": "Must have Blend In.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--blend-in-ii-slimefolk",
+        "stableId": "breakthrough--blend-in-ii-slimefolk",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "fa6ad21dd6954089922016936506cc380032adfba28d7ac8069b909738f60d7c",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "cb8e04550543fa68",
+    "name": "Blessed by Kari (Human)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>After using Divine Providence you may use it a second time before resting, but the cost increases to 1 RP. This second use must pick a different option then your first one.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "b7c9bef72c9afee1392e6e3392a78bc844760a932f34abc4b4a3b9b1737df024",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--blessed-by-kari-human",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Human.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--blessed-by-kari-human",
+        "stableId": "breakthrough--blessed-by-kari-human",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "b7c9bef72c9afee1392e6e3392a78bc844760a932f34abc4b4a3b9b1737df024",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "302179f106315808",
+    "name": "Bully",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain a +5 bonus to intimidation skill checks against targets with less Fitness than you.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "4b1d1ab93bdc3d3e9b658d255084099cb2726545dac507b6ccb34ae84a1b3a2f",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--bully",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 50,
+      "rawCost": "50",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--bully",
+        "stableId": "breakthrough--bully",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "4b1d1ab93bdc3d3e9b658d255084099cb2726545dac507b6ccb34ae84a1b3a2f",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "2b95aa8a20cc4638",
+    "name": "Celestial Dragon (Ryujin)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your elemental mastery from your Ryujin's Mastery may be Holy or Dark as well. In addition, you can use Flight.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "7afe255c8effd36917bd714b1fc0e0df6eac8f6fe197f0d563a533be975106a8",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--celestial-dragon-ryujin",
+      "relationships": {
+        "granted_ability": "ability--flight",
+        "_links": [
+          {
+            "stableId": "ability--flight",
+            "name": "Flight",
+            "pack": "player-abilities",
+            "documentId": "9d7feb6dbf96b19d",
+            "uuid": "Compendium.lyrian-chronicles.player-abilities.Item.9d7feb6dbf96b19d"
+          }
+        ]
+      },
+      "expCost": 300,
+      "rawCost": "300",
+      "level": 1,
+      "requirements": "Must be a Ryujin. Can only be taken at character creation.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--celestial-dragon-ryujin",
+        "stableId": "breakthrough--celestial-dragon-ryujin",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "7afe255c8effd36917bd714b1fc0e0df6eac8f6fe197f0d563a533be975106a8",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "ff159ca5167909c9",
+    "name": "Combat Doggy (Cu Sith)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You may use abilities like normal while in Dog Form and may use One-Handed weapon. Any abilities that require a specific armor or other specific physical requirements still cannot be used.</p><p>Your Dog Form no longer breaks upon taking damage.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "7ef069a9999f462046e6a90a53f0efab70a845275efbb0a27ca95d80d3aa1fc4",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--combat-doggy-cu-sith",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Cu Sith.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--combat-doggy-cu-sith",
+        "stableId": "breakthrough--combat-doggy-cu-sith",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "7ef069a9999f462046e6a90a53f0efab70a845275efbb0a27ca95d80d3aa1fc4",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "7945206a8b1bf731",
+    "name": "Combat Kitty (Cait Sith)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You may use abilities like normal while in cat form and may use One-Handed weapon. Any abilities that require a specific armor or other specific physical requirements still cannot be used.</p><p>Your cat form no longer breaks on damage.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "b0f33a988730732f5c8da51e96336b5a919cc610ddb2be8d66b1e253bd413bca",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--combat-kitty-cait-sith",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Cait Sith.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--combat-kitty-cait-sith",
+        "stableId": "breakthrough--combat-kitty-cait-sith",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "b0f33a988730732f5c8da51e96336b5a919cc610ddb2be8d66b1e253bd413bca",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "3d15ec473d1e5a8f",
+    "name": "Curse of Vampirism",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You rise as a vampire, an immortal creature that feeds on the blood of living creatures and&nbsp;<strong>immediately gain the Vampire racial style class and its key ability</strong>. Your race changes to ‘Vampire’, but you keep the benefits of your previous race.</p><p>As a vampire, you no longer age and your physical appearance changes slightly. Your skin becomes more pale and you grow a pair of fangs. You still need to eat, drink and breathe as normal.</p><p>A vampire’s spirit core is cracked, making it difficult for it to regenerate mana naturally and requiring it to obtain it from other creatures. You no longer regenerate mana from eating (including potions), resting and can no longer use the Draw Mana encounter conclusion action. You still recover full mana at the start of a new arc.&nbsp;</p><p>You are weak to sunlight. Every round you spend in sunlight without proper protection you take 10 true damage and your maximum HP is lowered by 10. Your maximum HP remains lowered until you finish a rest. You may carry a parasol or similar object in one hand to protect yourself from the sun and can do so even in combat.</p><p>In addition to these drawbacks, you no longer receive Wounds unless the damage that reduced your HP to 0 was fire, holy or true damage. You also gain 60ft Darkvision. Darkvision lets you see in total darkness, even if there's no source of light.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "9c1d4dbfbdce1ee82d7ba6290e2df521a035f345ed57bf1696f1d8bbbfa68377",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--curse-of-vampirism",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 300,
+      "rawCost": "300",
+      "level": 1,
+      "requirements": "Must be taken at character creation or after being killed by a vampire's bite.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--curse-of-vampirism",
+        "stableId": "breakthrough--curse-of-vampirism",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "9c1d4dbfbdce1ee82d7ba6290e2df521a035f345ed57bf1696f1d8bbbfa68377",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "99785729dbd140a4",
+    "name": "Deep Connection",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You may command your mount to move and attack even if you're not mounted on it. This still using AP, Mana etc like normal as if you were mounted.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "cd7191516caefd75fc69b663e7924b78a95abc4370132b1dbe3ba44aaf43426f",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--deep-connection",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 50,
+      "rawCost": "50",
+      "level": 1,
+      "requirements": "Cavalier mastered.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--deep-connection",
+        "stableId": "breakthrough--deep-connection",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "cd7191516caefd75fc69b663e7924b78a95abc4370132b1dbe3ba44aaf43426f",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "7671634a99b7a6f2",
+    "name": "Deus Ex Machina",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>The first time you would die from a mortal wound at Encounter Conclusion, the mortal wound is removed and you instead receive a normal injury. The benefit of this breakthrough is then lost and you may not choose this breakthrough again after.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "d25bdd9abdf9752c1235c75a16a4764853694c1e51c370925b36fc4f359b8e6e",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--deus-ex-machina",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 600,
+      "rawCost": "600",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--deus-ex-machina",
+        "stableId": "breakthrough--deus-ex-machina",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "d25bdd9abdf9752c1235c75a16a4764853694c1e51c370925b36fc4f359b8e6e",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "7ad1b78d6c1bb983",
+    "name": "Divine Luck I",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Once per rest, you may roll an additional dice when making a check and take the higher result.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "5e6f0e2a76697bc194b7d739b67c35ae08f775735f02307b39260c6715e63252",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--divine-luck-i",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 300,
+      "rawCost": "300",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--divine-luck-i",
+        "stableId": "breakthrough--divine-luck-i",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "5e6f0e2a76697bc194b7d739b67c35ae08f775735f02307b39260c6715e63252",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "44da96bdb3c0f3c9",
+    "name": "Divine Luck II",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Once per arc, you may choose to automatically succeed on a check (if success is possible).</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "b7c8cd1a767982be87b45a2dee0dba680e5d7cf3cf711a61823ce633a1aa08f4",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--divine-luck-ii",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 600,
+      "rawCost": "600",
+      "level": 1,
+      "requirements": "Must have purchased Divine Luck I.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--divine-luck-ii",
+        "stableId": "breakthrough--divine-luck-ii",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "b7c8cd1a767982be87b45a2dee0dba680e5d7cf3cf711a61823ce633a1aa08f4",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "ccd32d81de609088",
+    "name": "Divine's Chosen",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You select one of the divines from the below list to worship. Once chosen, you can only change this decision with GM approval after a significant enough change.</p><p>Any abilities with the Divine keyword deal your chosen divine's damage instead of their listed type.&nbsp;</p><p><strong>Kari</strong>: (Type Holy) goddess of Light, the most prominent deity in the setting, almost all religious people follow Kari and it's the only serious religion with any support outside of Kirara.&nbsp;</p><p><strong>Heira</strong>: (Type Astra) goddess of Evil, mostly followed by cultists.&nbsp;</p><p><strong>Pandora</strong>: (Type Arcane) goddess of Magic (Arcane). There are a few broken-down shrines to her, not widely followed, but a few followers.&nbsp;</p><p><strong>Makai</strong>: (Type Water) goddess of the Ocean. Mostly followed in Houkaina and Kirara, moreso in Houkaina. Main temple is in Houkaina (in Northi), followed by Merfolk.&nbsp;</p><p><strong>Ayuzi Kirara</strong>: (Type Fire) goddess of Artisans. The most popular Divine in Kirara.&nbsp;</p><p><strong>Eisen</strong>: (Type Slashing) god of War. Mostly followed by goblins and orcs in Eisenstadt. Mostly seen as ceremonial and \"old ways,\" not taken as seriously in Eisenstadt.&nbsp;</p><p><strong>Athena</strong>: (Type Lightning) goddess of Wind. Mostly followed by citizens of the area around Marlone Bay. A goddess with a quiet disposition. Mostly the \"old ways,\" a sailor might make a gesture to Athena before setting out while not fully being a follower.&nbsp;</p><p><strong>Clio</strong>: (Type Arcane) goddess of Storytelling. Not officially followed anywhere, or even known about. Clio draws power from all of the stories forged through life, both true and fictional.&nbsp;</p><p><strong>Yggdrasil:</strong> (Type Earth) the world itself. Mostly followed by Fae in Easter. \"Nature,\" \"Terra itself\" are Yggdrasil. \"The will of the world/nature.\" Not actually a \"sentient\" force, but a force that creates balance and opposes destruction of natural order. Yggdrasil's strength is that it has four \"superpaladins\" (thaumaturges) that are bound to the world and cannot be permanently killed. The thaumaturges do not work together, and may not even be aware of each other, and may not even be aware of their mission.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "3fef449288e5c9a1c587cd068733b07c34734ba7ad3523ee533e86cb1ded1320",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--divine-s-chosen",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 0,
+      "rawCost": "0",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--divine-s-chosen",
+        "stableId": "breakthrough--divine-s-chosen",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "3fef449288e5c9a1c587cd068733b07c34734ba7ad3523ee533e86cb1ded1320",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "39ba5ecb0edace2e",
+    "name": "Drag along (Lamia)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When you have a target under the effect of \"Just a hug\", you can still move at half of your normal movement speed while under the <strong>Just a hug</strong> root effect and you still count as rooted for all other purposes.</p><p>When moving, you can drag along the target of Just a hug, but they still count as rooted at your new location.</p><p>In addition, your grapple power increases by +1.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "7a92d2e0d6785f5ddb8ce04558105e8a0d70a56e405f6c601f041534b8aac01b",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--drag-along-lamia",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be a Lamia.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--drag-along-lamia",
+        "stableId": "breakthrough--drag-along-lamia",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "7a92d2e0d6785f5ddb8ce04558105e8a0d70a56e405f6c601f041534b8aac01b",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "b7f31f66cd2a0806",
+    "name": "Dual Personality",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Whether through magical or non-magical means, you have more than a single personality or entity within you through either physical or magical means. When under the influence of a Charm, Illusion or other mind-influencing effect you may spend 1 AP to switch personalities/entities and act as normal.</p><p>You may only do this once per encounter.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "32c627290a597381f982ef0db10a4a5aa2cc113bfbe4e4c48a982418b740e45e",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--dual-personality",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 300,
+      "rawCost": "300",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--dual-personality",
+        "stableId": "breakthrough--dual-personality",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "32c627290a597381f982ef0db10a4a5aa2cc113bfbe4e4c48a982418b740e45e",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "192604c868111d78",
+    "name": "Early Ascension",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You are treated as having 1 class mastered for the purposes of selecting a tier 2 class that has “Any class mastered” or similar requirement. This does not apply to any class that requires a specific class to be mastered and it doesn't automatically qualify you for other requirements such as weapon proficiencies.&nbsp;</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "9814dca56aacfc30397c31d21e6b28c8b718bc2200644be9d1b506ed6943e5a0",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--early-ascension",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 300,
+      "rawCost": "300",
+      "level": 1,
+      "requirements": "Must be taken at character creation.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--early-ascension",
+        "stableId": "breakthrough--early-ascension",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "9814dca56aacfc30397c31d21e6b28c8b718bc2200644be9d1b506ed6943e5a0",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "5187d53f0ee417de",
+    "name": "Elemental Affinity",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain Elemental Mastery in an element of your choice.</p><p>You may pick this breakthrough more than once, choosing a different element each time.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "b832d33e6ce92329010c22c836ed2f0cb10d98e892082709c0e486c22cdb8bf3",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--elemental-affinity",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 150,
+      "rawCost": "150",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--elemental-affinity",
+        "stableId": "breakthrough--elemental-affinity",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "b832d33e6ce92329010c22c836ed2f0cb10d98e892082709c0e486c22cdb8bf3",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "6e1d45947b2274b1",
+    "name": "Elemental Breath (Ryujin)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You may let your Dragon Breath do the damage of any element that you have mastered.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "ec11272878dda8b1d4e417defbba80e8ec6c98d8f1167ccf9faf7b48c063d211",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--elemental-breath-ryujin",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Ryujin.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--elemental-breath-ryujin",
+        "stableId": "breakthrough--elemental-breath-ryujin",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "ec11272878dda8b1d4e417defbba80e8ec6c98d8f1167ccf9faf7b48c063d211",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "e36413d1b818587a",
+    "name": "Elixir Addict",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You have become used to the effects of drinking elixirs, too used in fact. At the end of your turn in combat, if you do not have an Elixir active you take 6 true damage. The HP cost of drinking all elixirs is reduced by 11.</p><p>This breakthrough may be removed during an interlude phase by spending 1 IP.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "3af0c7a1587730a2a8e097be3472c77c330b08346e3f803c41d1b858c778b64e",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--elixir-addict",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 0,
+      "rawCost": "0",
+      "level": 1,
+      "requirements": "Must have used at least 3 elixirs in the same encounter.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--elixir-addict",
+        "stableId": "breakthrough--elixir-addict",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "3af0c7a1587730a2a8e097be3472c77c330b08346e3f803c41d1b858c778b64e",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "e28367758a5201b6",
+    "name": "Expert Summoner",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When you summon during the first or second round of an encounter, you may transfer main stat points from yourself into your summon.</p><p>The maximum stat points you can imbue for all your summons combined is equal to your total main stat points (Focus, Power, Agility, Toughness) - 18. You can not lower a stat below 3 with this. When you lose stat points due to this, your related values such as mana, HP and RP have their max reduced. When lowering your agility or toughness, you also lose RP or HP equal to the respective stat lost. If your &nbsp;Mana is higher than your max Mana after imbuing, it is reduced to the new max.</p><p>This transfer stays until end of encounter or until the summon you invested in dies (or is otherwise removed from combat). Your max of your stats is returned to normal, but any HP or Mana lost due to this is not refunded.</p><p>You may imbue a Heroic summon with any amount of stats from this pool. These points don't need to be a direct transfer (for example, you can lower your Agility by 2 to buff your summons Power). They increase your summons values such as HP/RP etc by the regular amount these stats give.</p><p>For grunt summons, you may imbue them with half of this max. They are still capped at max 1 RP.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "d1cc2af7b7b780b3a109b789f6e55b96952c998e1b9c44a699b5a9bd15aeadc6",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--expert-summoner",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 0,
+      "rawCost": "0",
+      "level": 1,
+      "requirements": "At least 1 of Summoner, Mogul, Animal Summoner or Necromancer maxed. 3000+ Spirit Core",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--expert-summoner",
+        "stableId": "breakthrough--expert-summoner",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "d1cc2af7b7b780b3a109b789f6e55b96952c998e1b9c44a699b5a9bd15aeadc6",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "8937275d2bf35af2",
+    "name": "Fae Flash Acrobat (Fae)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>While using Fae Flash, you may teleport a partial distance and materialize there to redirect your teleport. In a single Fae Step, you may teleport multiple times, reappearing each time you stop, to teleport from that new position. You are still limited by your maximum teleport distance and cannot take any other actions between each teleport.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "5cfb8db97200879140a30be2d89f9c90d2eb2c9f1b30b3735a1c66e62a6833d9",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--fae-flash-acrobat-fae",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 50,
+      "rawCost": "50",
+      "level": 1,
+      "requirements": "Must be a Fae.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--fae-flash-acrobat-fae",
+        "stableId": "breakthrough--fae-flash-acrobat-fae",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "5cfb8db97200879140a30be2d89f9c90d2eb2c9f1b30b3735a1c66e62a6833d9",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "2efc5565009902c5",
+    "name": "Faerie Flash Master (Fae)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When using your Faerie Flash ability, you may spend X additional mana to increase your teleport distance by X times your movement speed.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "992d2eb9b8c669f79554d775bcf5fa3538abcbda24de4899cfd63da8745a2b1b",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--faerie-flash-master-fae",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Fae.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--faerie-flash-master-fae",
+        "stableId": "breakthrough--faerie-flash-master-fae",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "992d2eb9b8c669f79554d775bcf5fa3538abcbda24de4899cfd63da8745a2b1b",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "160b17b305924f05",
+    "name": "Faerie-Chimera Hybrid (Race)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>An extremely rare condition in which a Chimera parent and a Faerie parent produces a child with Chimera traits. The odds are said to be less than 1%.</p><p>If your main race is Chimera, you may choose a Fae subrace instead of a Chimera one. If your main race is Fae, you may choose a Chimera subrace instead of a Fae one.&nbsp;</p><p>You do not get any of the base traits from the other race and keep the ones from your chosen main race. However, you do get the language from the other race (or a dialect of choosing a chimera subrace)</p><p>If you pick High Fae as your subrace, you gain Fae Flash instead of Fae Flash II.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "2fdd53950ecdf8418b43e341b3680857fac748cad39ad2a5448108dc51bb7338",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--faerie-chimera-hybrid-race",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be chosen at character creation. Must choose Faerie or Chimera race.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--faerie-chimera-hybrid-race",
+        "stableId": "breakthrough--faerie-chimera-hybrid-race",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "2fdd53950ecdf8418b43e341b3680857fac748cad39ad2a5448108dc51bb7338",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "7eb11ac96f358bce",
+    "name": "Fast Metabolism",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Once per arc you may eat food and gain the benefits even if you already had gotten the benefits from eating food that day.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "e36a16805bfead40b438d5a2192157580fec29f0f137c60f2d2dad08e8498d52",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--fast-metabolism",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 150,
+      "rawCost": "150",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--fast-metabolism",
+        "stableId": "breakthrough--fast-metabolism",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "e36a16805bfead40b438d5a2192157580fec29f0f137c60f2d2dad08e8498d52",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "622d6b67ad8f9e77",
+    "name": "Fast Movement (Centaur)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your base movement speed increases by 5ft.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "10b940fb613d31a081c76c1f6b841382cf1fae6c1fa6a83d0e51c701ff61b3a9",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--fast-movement-centaur",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be Centaur or Arachne Spiderfolk",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--fast-movement-centaur",
+        "stableId": "breakthrough--fast-movement-centaur",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "10b940fb613d31a081c76c1f6b841382cf1fae6c1fa6a83d0e51c701ff61b3a9",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "d4ffbe01acd12f1b",
+    "name": "Fearless",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Whenever you are afflicted by a Fear type condition, you may spend 1 RP or 0 AP to remove it.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "1fcd53c143c916740d6f754b823a488034985a85cdea257c6077ef3d7254e6c8",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--fearless",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--fearless",
+        "stableId": "breakthrough--fearless",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "1fcd53c143c916740d6f754b823a488034985a85cdea257c6077ef3d7254e6c8",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "453444e06181a48c",
+    "name": "Fight and Flight (Chimera)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When using Fight or Flight, you no longer receive the drawback.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "6a6f112fb4ee04d4f288162a201a4cfe1b9c02f75af5d556613798f2c3681166",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--fight-and-flight-chimera",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be a Chimera.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--fight-and-flight-chimera",
+        "stableId": "breakthrough--fight-and-flight-chimera",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "6a6f112fb4ee04d4f288162a201a4cfe1b9c02f75af5d556613798f2c3681166",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "d335f7f7d36ee4ab",
+    "name": "Flesheater (Jiangshi)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When using Consume Enemy, you may consider that your food for the day and regain mana equal to a normal ration. You cannot gain this benefit if you already regained mana from food that day and using this benefit prevents you from regaining mana from food until you’ve rested.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "155b9fe12f6f611de4bd8437eafee0a2ccb10c8d24f8997190f1b110ead79744",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--flesheater-jiangshi",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Jiangshi.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--flesheater-jiangshi",
+        "stableId": "breakthrough--flesheater-jiangshi",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "155b9fe12f6f611de4bd8437eafee0a2ccb10c8d24f8997190f1b110ead79744",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "19f04649e30ef57f",
+    "name": "Flying Counter (Kitsune)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When using Fading Counter, you may move up to your movement speed instead of 5ft. This movement has Flight and still does not provoke attacks of opportunity.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "5fb96e84708eb30bf69d06e3a749e3b2968f6628fa7e3d0fa7da8c4b96b91d78",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--flying-counter-kitsune",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be a Kitsune.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--flying-counter-kitsune",
+        "stableId": "breakthrough--flying-counter-kitsune",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "5fb96e84708eb30bf69d06e3a749e3b2968f6628fa7e3d0fa7da8c4b96b91d78",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "56a4375642726ad5",
+    "name": "Four Paw Sprint (Catfolk)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When spending at least 3 AP of movement, your base movement speed is increased to 40ft instead of 25.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "683c1300a84746c77e8ec235568995b2008f0dfe8b977b93628cc60ed17130e3",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--four-paw-sprint-catfolk",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Catfolk.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--four-paw-sprint-catfolk",
+        "stableId": "breakthrough--four-paw-sprint-catfolk",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "683c1300a84746c77e8ec235568995b2008f0dfe8b977b93628cc60ed17130e3",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "017a953f1475adba",
+    "name": "Greatshield Training",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain proficiency with Greatshields.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "2edfc6450132861123c62d71b6a69e473fc61ed11bb846aa4b7ce9ee8ac69f26",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--greatshield-training",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "You must be proficient with shields.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--greatshield-training",
+        "stableId": "breakthrough--greatshield-training",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "2edfc6450132861123c62d71b6a69e473fc61ed11bb846aa4b7ce9ee8ac69f26",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "1ed858650cc76f11",
+    "name": "Heavy Armor Training",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain proficiency with Heavy Armor.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "2e6b166828fb65468002b82d4ce44242716ec1b2577707efeae8c2f047c9f8d8",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--heavy-armor-training",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "You must be proficient with Light and Medium armor.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--heavy-armor-training",
+        "stableId": "breakthrough--heavy-armor-training",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "2e6b166828fb65468002b82d4ce44242716ec1b2577707efeae8c2f047c9f8d8",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "d019bb60477ba6a5",
+    "name": "Hide Behind Ally (Pixie)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When occupying the same space as a conscious ally that's at least a size bigger than you, you may choose to become untargetable to single target attacks. The ally must be willing to take the hits for you, though they may react to these attacks as normal. While occupying the same space as a conscious ally, any effect that triggers upon not being targeted by an enemy (such as Challenge) will not be triggered. Does not work against Attacks of Opportunity.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "1fef9d73a02c169b012024fecb24a5d16f560d606064c8636311e52597d56eaa",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--hide-behind-ally-pixie",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 300,
+      "rawCost": "300",
+      "level": 1,
+      "requirements": "Must be a Pixie.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--hide-behind-ally-pixie",
+        "stableId": "breakthrough--hide-behind-ally-pixie",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "1fef9d73a02c169b012024fecb24a5d16f560d606064c8636311e52597d56eaa",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "8618d1d5c5af6042",
+    "name": "Human-Chimera Hybrid (Race)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>While most unions of Human and Chimera parents result in the offspring being fully of Human or fully of Chimera, there are rare instances in which the Chimera traits are still present in a human offspring.</p><p>Choose one Chimera Subrace and gain all of its features.&nbsp;You do not gain any of the Chimera base traits and instead have the Human ones, including Divine Providence. You do not get the 100 extra exp that humans normally get or human adaptability.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "154dc7edfacaa260e663a01d26ed384d691441d44878b5653d00c485560a8b4b",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--human-chimera-hybrid-race",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be chosen at character creation. Must choose Human race.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--human-chimera-hybrid-race",
+        "stableId": "breakthrough--human-chimera-hybrid-race",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "154dc7edfacaa260e663a01d26ed384d691441d44878b5653d00c485560a8b4b",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "c0bee5bd91656175",
+    "name": "Improved Demonic Divine Release (Demon)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When activating your divine release you may choose to reduce your max HP by 22. When you do, you do not pay any additional HP cost to activate it and the HP Upkeep is reduced to 0 while above 0 HP.</p><p>When you fall below 0 HP, you pay the increased Upkeep cost as normal.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "9e7582c5c2900888b8e980a6648a7b0897e8a5975d6230598bfdb416db118e4c",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--improved-demonic-divine-release-demon",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 300,
+      "rawCost": "300",
+      "level": 1,
+      "requirements": "Must be a Demon",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--improved-demonic-divine-release-demon",
+        "stableId": "breakthrough--improved-demonic-divine-release-demon",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "9e7582c5c2900888b8e980a6648a7b0897e8a5975d6230598bfdb416db118e4c",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "be4237b45677f57e",
+    "name": "In Sync (Youkai)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>After you use Spiritual Sync, you may cancel the effect for 0 RP at any time. If you do, you regain mana like it is described in the ability or 8 HP for each temporary mana you still had remaining.</p><p>In addition, the maximum mana or HP you can spend on Spiritual Sync is doubled.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "bc3f5bcef7ce321b1c1a1288ce0040e4877529b86f293831d64f7388a65e6ede",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--in-sync-youkai",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Youkai.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--in-sync-youkai",
+        "stableId": "breakthrough--in-sync-youkai",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "bc3f5bcef7ce321b1c1a1288ce0040e4877529b86f293831d64f7388a65e6ede",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "84cc3f87c06c8c4a",
+    "name": "Kit Expert",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You may reduce the Burden cost of a single kit in your inventory by 2.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "6e1deeca8ddda8792c851009e5d162bd6a2e0bd0e845808f9914234c1da6361a",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--kit-expert",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--kit-expert",
+        "stableId": "breakthrough--kit-expert",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "6e1deeca8ddda8792c851009e5d162bd6a2e0bd0e845808f9914234c1da6361a",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "65b2ee1196471901",
+    "name": "Language Training",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You learn a language of your choice. Rare, dead or similar languages may be unavailable (GM’s discretion).</p><p>You may take this breakthrough multiple times, picking a different language each time.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "ddd13c8d55714862c4a1fc997a7994e00edf6fa25279cd541994791ba04b97fa",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--language-training",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--language-training",
+        "stableId": "breakthrough--language-training",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "ddd13c8d55714862c4a1fc997a7994e00edf6fa25279cd541994791ba04b97fa",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "3f8fd2b0ccc4d7c0",
+    "name": "Large Specimen (Nio, Bullfolk or Bearfolk)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your size becomes Large.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "832bbe83202dcc6d6915b8b495d73f85b917b5dd6c3f8c2f9e21e2e44f710f02",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--large-specimen-nio-bullfolk-or-bearfolk",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Nio, Bullfolk or Bearfolk.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--large-specimen-nio-bullfolk-or-bearfolk",
+        "stableId": "breakthrough--large-specimen-nio-bullfolk-or-bearfolk",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "832bbe83202dcc6d6915b8b495d73f85b917b5dd6c3f8c2f9e21e2e44f710f02",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "84e350da957c1262",
+    "name": "Light Armor Training",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain proficiency with Light Armor and shields.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "7b2daa516d968eacb437aa1afb48347084fcdff7d7c17d49bf6b7d1080c5a5d0",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--light-armor-training",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 25,
+      "rawCost": "25",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--light-armor-training",
+        "stableId": "breakthrough--light-armor-training",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "7b2daa516d968eacb437aa1afb48347084fcdff7d7c17d49bf6b7d1080c5a5d0",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "55418d051d8e7745",
+    "name": "Light Sleeper",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When asleep, you may roll Perception rolls as if you were awake to be aware of danger approaching.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "c98028b4d43ee7c7488f66792ac384855cd09edaf441029db0c6312a930c5396",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--light-sleeper",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 75,
+      "rawCost": "75",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--light-sleeper",
+        "stableId": "breakthrough--light-sleeper",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "c98028b4d43ee7c7488f66792ac384855cd09edaf441029db0c6312a930c5396",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "5b14190236efdba7",
+    "name": "Mark of Conflict",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>The effect of your Mark of Justice changes to the following:</p><p>“You mark a single enemy, inflicting the Mark of Conflict on them. If an enemy moves away from you and not towards another ally, they take Full Pierce physical damage equal to your Power for each 20ft of movement they spent moving away from you.”</p><p>The range and AP cost remain the same.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "2c5122b8d585824cf8c771aab1f69e4ec0bbe0e8b88fba235861aeafb2d83c99",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--mark-of-conflict",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 0,
+      "rawCost": "0",
+      "level": 1,
+      "requirements": "Must be an Unknown Paladin that follows Eisen. Must have the Mark of Justice ability.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--mark-of-conflict",
+        "stableId": "breakthrough--mark-of-conflict",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "2c5122b8d585824cf8c771aab1f69e4ec0bbe0e8b88fba235861aeafb2d83c99",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "4375bddd6a32e009",
+    "name": "Medium Armor Training",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain proficiency with Medium Armor.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "2336c9d07d3ac6a7e3e0656b4c34c5f2d2309d769b99fa7542df05c748900125",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--medium-armor-training",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 50,
+      "rawCost": "50",
+      "level": 1,
+      "requirements": "You must be proficient with Light Armor",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--medium-armor-training",
+        "stableId": "breakthrough--medium-armor-training",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "2336c9d07d3ac6a7e3e0656b4c34c5f2d2309d769b99fa7542df05c748900125",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "8d14b49e2a6be19d",
+    "name": "Mental Torture (Unseelie)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When you roll a natural 20 on your accuracy roll, you may apply the effects of Torture Techniques even if the enemy Dodges or Blocks it.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "b470ff6f02a86d268d200bc5fbb99e06c7eea9c0dc8168996d2293ebf04c10ec",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--mental-torture-unseelie",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be an Unseelie.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--mental-torture-unseelie",
+        "stableId": "breakthrough--mental-torture-unseelie",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "b470ff6f02a86d268d200bc5fbb99e06c7eea9c0dc8168996d2293ebf04c10ec",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "7f6c3f4093404fe6",
+    "name": "Mixed House (Demon)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You choose another house to gain the benefit of.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "2bb8e21948b38dcddd6f4731f29da33e9d81729b9715b289bb846e9c9aa30b17",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--mixed-house-demon",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Demon.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--mixed-house-demon",
+        "stableId": "breakthrough--mixed-house-demon",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "2bb8e21948b38dcddd6f4731f29da33e9d81729b9715b289bb846e9c9aa30b17",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "b68e807e389a9e3a",
+    "name": "Mystic Eyes of Faerie Light (Fae)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your Fae eyes have developed into the Eyes of Faerie Light.&nbsp; You may purchase the Faerie Light Eyes class.</p><p>In addition, you can make a Perception check at +10 bonus to determine if something is an illusion. You are not immune to these illusions however.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "c98591eebd418b3314319e58847e1ecc8d0db8ccda91248ac35cf47269ccfadd",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--mystic-eyes-of-faerie-light-fae",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Fae.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--mystic-eyes-of-faerie-light-fae",
+        "stableId": "breakthrough--mystic-eyes-of-faerie-light-fae",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "c98591eebd418b3314319e58847e1ecc8d0db8ccda91248ac35cf47269ccfadd",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "47a8d4d5c1cc66f9",
+    "name": "Natural Immunity (Ratfolk)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When you successfully resist the effect of a disease or poison (or are immune to the effect), you may choose to become afflicted anyway. You suffer no effects from a disease or poison you choose to accept this way. This poison or disease lasts the normal duration or until the end of the encounter, whichever is shorter.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "c87d7315850e3675b99a44d4efb8257db58b0b4ff43871f18f317ffb88feddb9",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--natural-immunity-ratfolk",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be Ratfolk",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--natural-immunity-ratfolk",
+        "stableId": "breakthrough--natural-immunity-ratfolk",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "c87d7315850e3675b99a44d4efb8257db58b0b4ff43871f18f317ffb88feddb9",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "50d09f358b124b18",
+    "name": "On the draw",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain +1 to your initiative.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "4cdb670c88193df062eb895dc67087a52562de7e79a702afebb5b7c614ecab77",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--on-the-draw",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--on-the-draw",
+        "stableId": "breakthrough--on-the-draw",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "4cdb670c88193df062eb895dc67087a52562de7e79a702afebb5b7c614ecab77",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "9c6b0df215a1741f",
+    "name": "Organized Inventory",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Increases your in-combat burden capacity by 1.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "021d59bb7d0bfa6e7dd686b4acbde35403715e3c0c840343cbc4e0ef14aeedb8",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--organized-inventory",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--organized-inventory",
+        "stableId": "breakthrough--organized-inventory",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "021d59bb7d0bfa6e7dd686b4acbde35403715e3c0c840343cbc4e0ef14aeedb8",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "c4e3f836ac060ab7",
+    "name": "Organized Inventory II",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your in-combat Burden capacity is increased by 1.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "154e43d7f3d978f43b851a2ef8dbeb9d2951b298c0daf962a277a006480af07f",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--organized-inventory-ii",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must have the Organized Inventory breakthrough",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--organized-inventory-ii",
+        "stableId": "breakthrough--organized-inventory-ii",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "154e43d7f3d978f43b851a2ef8dbeb9d2951b298c0daf962a277a006480af07f",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "f0f7ebfb2899d588",
+    "name": "Organized Inventory III",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your in-combat Burden capacity is increased by 1.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "82fface9dc53c944b3bfe3c79e716af1aa53886e00835309ae926c903cc5feed",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--organized-inventory-iii",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 300,
+      "rawCost": "300",
+      "level": 1,
+      "requirements": "Must have the Organized Inventory II breakthrough",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--organized-inventory-iii",
+        "stableId": "breakthrough--organized-inventory-iii",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "82fface9dc53c944b3bfe3c79e716af1aa53886e00835309ae926c903cc5feed",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "e5f4ecdfb4c1d253",
+    "name": "Overrun (Centaur)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When using the Charge or Spear Charge ability your movement speed is increased by 5ft and if your attack made through the Charge ability does damage, it knocks the target prone.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "b69f0d7b351e54252a99daa2f91b91154282267ccb1190c99ad0fb9cc32b8df5",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--overrun-centaur",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be a Centaur.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--overrun-centaur",
+        "stableId": "breakthrough--overrun-centaur",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "b69f0d7b351e54252a99daa2f91b91154282267ccb1190c99ad0fb9cc32b8df5",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "193e7aa2d932fc68",
+    "name": "Panda Martial Arts (Red Panda)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You can be in Panda stance at the same time as another stance without either stance ending.</p><p>Other rules for stance breaking (such as entering 2 non-panda stances) still apply.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "acbd09acf5d8d63331ed5653ba243d860a359e1adcfbf286d1b17011fe41dd6e",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--panda-martial-arts-red-panda",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be Red Panda",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--panda-martial-arts-red-panda",
+        "stableId": "breakthrough--panda-martial-arts-red-panda",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "acbd09acf5d8d63331ed5653ba243d860a359e1adcfbf286d1b17011fe41dd6e",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "8f93499e996132a6",
+    "name": "Photosynthesis (Dryad)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>By spending at least an hour in the direct sunlight, you may gain the benefits of having eaten food and you do not need to eat or drink for the next 24 hours.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "455177832ec9b29906888eaaf94dbed49a0da9450a2a5af9a4eabb65471502c2",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--photosynthesis-dryad",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be Dryad.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--photosynthesis-dryad",
+        "stableId": "breakthrough--photosynthesis-dryad",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "455177832ec9b29906888eaaf94dbed49a0da9450a2a5af9a4eabb65471502c2",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "e55e197e5566c9e0",
+    "name": "Power Saving Mode (Ancient Marionette)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>If you are at maximum mana during your meal, you only need to consume half the normal amount to be well fed.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "230fd2ae6d7b76ad7f53092d3b0c115ad1248f376407bd091465223e8f9258e2",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--power-saving-mode-ancient-marionette",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be an Ancient Marionette",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--power-saving-mode-ancient-marionette",
+        "stableId": "breakthrough--power-saving-mode-ancient-marionette",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "230fd2ae6d7b76ad7f53092d3b0c115ad1248f376407bd091465223e8f9258e2",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "d19d2400b1166616",
+    "name": "Powerful Ki (Oni)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When using Gravitational Ki, the range increases by 30ft. The push and pull distance increases by up to 10ft. In addition, you may spend 1 AP instead of 1 RP on it.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "2a8ebdff500f9fee0bad6188beb1dc70dcab4222863b37988f454977020127ac",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--powerful-ki-oni",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be an Oni.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--powerful-ki-oni",
+        "stableId": "breakthrough--powerful-ki-oni",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "2a8ebdff500f9fee0bad6188beb1dc70dcab4222863b37988f454977020127ac",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "30ed44888f3712ad",
+    "name": "Primary Stat Training",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain a +1 bonus to Focus, Power, Agility or Toughness.</p><p>This breakthrough can be selected multiple times. The effects stack. Each time you take this breakthrough the cost increases by 100, up to a maximum of 700.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "c91c4a4db47e543c112471cbda388681344a92516383fa1a0ab44228be5c28ba",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--primary-stat-training",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 400,
+      "rawCost": "400",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--primary-stat-training",
+        "stableId": "breakthrough--primary-stat-training",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "c91c4a4db47e543c112471cbda388681344a92516383fa1a0ab44228be5c28ba",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "b9ae6a9fe908931b",
+    "name": "Racial Flight",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You may use Flight.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "2515d618439524ffb50aecf1bd5cceaa63a48a743ae76ebb6ed30e847db64e83",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--racial-flight",
+      "relationships": {
+        "granted_ability": "ability--flight",
+        "_links": [
+          {
+            "stableId": "ability--flight",
+            "name": "Flight",
+            "pack": "player-abilities",
+            "documentId": "9d7feb6dbf96b19d",
+            "uuid": "Compendium.lyrian-chronicles.player-abilities.Item.9d7feb6dbf96b19d"
+          }
+        ]
+      },
+      "expCost": 300,
+      "rawCost": "300",
+      "level": 1,
+      "requirements": "Must be Phoenix, Mothfolk, Lizardfolk, Sylph or Willowisp race.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--racial-flight",
+        "stableId": "breakthrough--racial-flight",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "2515d618439524ffb50aecf1bd5cceaa63a48a743ae76ebb6ed30e847db64e83",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "8b184fb48fc67d91",
+    "name": "Rapid Flash (High Fae)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your Fae Flash gains the Rapid keyword.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "dfc6b456f68165b151f279d94e120ad0f60bcb3c0abd34bc6c6329758e16340b",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--rapid-flash-high-fae",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a High Fae.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--rapid-flash-high-fae",
+        "stableId": "breakthrough--rapid-flash-high-fae",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "dfc6b456f68165b151f279d94e120ad0f60bcb3c0abd34bc6c6329758e16340b",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "0bc74ef11c9dc549",
+    "name": "Rich Parents",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You start the game with an additional 3000 Clim of funds.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "2880f4457a290e62be2d9ea0c76f9b43ef7eb6f29c568bdcf7d948b710e8ce87",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--rich-parents",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 300,
+      "rawCost": "300",
+      "level": 1,
+      "requirements": "Must be taken at character creation.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--rich-parents",
+        "stableId": "breakthrough--rich-parents",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "2880f4457a290e62be2d9ea0c76f9b43ef7eb6f29c568bdcf7d948b710e8ce87",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "95f388720869f5b3",
+    "name": "Secondary Stat Training",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain a +1 bonus to Fitness, Cunning, Reason, Awareness or Presence.</p><p>This breakthrough can be selected multiple times. The effects stack.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "0130d0a1554362410bc569f91328a7e9985028ff3901fb47a80620670c52e0dc",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--secondary-stat-training",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--secondary-stat-training",
+        "stableId": "breakthrough--secondary-stat-training",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "0130d0a1554362410bc569f91328a7e9985028ff3901fb47a80620670c52e0dc",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "94b80c268e7fbf84",
+    "name": "Skill Training",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain a single skill point or two expertise points to spend on a skill. Crafting skills cannot be selected with this training.</p><p>You may select this breakthrough multiple times. Its effects can stack.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "39e8c1db5aac855cc0602913db58483853ffd29d71a93d6d41e60b685bc2b590",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--skill-training",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 25,
+      "rawCost": "25",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--skill-training",
+        "stableId": "breakthrough--skill-training",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "39e8c1db5aac855cc0602913db58483853ffd29d71a93d6d41e60b685bc2b590",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "b2135d3f2b87910d",
+    "name": "Skilled Flier",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When you are about to lose Height from taking damage due to your Flight ability, you may instead spend 3 Mana to negate losing height from the flight mechanic until the start of your next turn.</p><p>Abilities that make you lose height not part of the Flight ability (such as downburst) may still knock you out of the air.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "f457c83e942ff98dd60213e0e9696eedee8b06edea59b1ed1b361fd89d2a3156",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--skilled-flier",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must have Flight racial ability or Racial Flight breakthrough",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--skilled-flier",
+        "stableId": "breakthrough--skilled-flier",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "f457c83e942ff98dd60213e0e9696eedee8b06edea59b1ed1b361fd89d2a3156",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "aa1115ff9cdd2842",
+    "name": "Slime Summoner",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When using the Summon Animal ability, you may instead choose to summon slimes. You roll randomly from the following slimes: Slime, Fire Slime, Earth Slime, Water Slime, Wind Slime or Mana Slime.</p><p>Even if you have the Wildheart class, you still cannot choose which slime you summon except you may choose to summon the regular Slime.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "016c69993c45642fd9063fa8788dd6da81441663c8ad7f5432b2fad0a357c6c2",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--slime-summoner",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a mastered Animal Summoner.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--slime-summoner",
+        "stableId": "breakthrough--slime-summoner",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "016c69993c45642fd9063fa8788dd6da81441663c8ad7f5432b2fad0a357c6c2",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "67143d07a61172da",
+    "name": "Slow Starter",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You receive 200 less EXP at character creation to spend on classes and abilities. Every time you get EXP after character creation, you get twice as much. This lasts until you’ve received a total of 500 (1000 when doubled) exp.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "c04c9097e971aa6e42bb51852f78116fe955e831ae3c8f42bb1d6864922ab0dc",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--slow-starter",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 300,
+      "rawCost": "300",
+      "level": 1,
+      "requirements": "Must be taken at character creation.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--slow-starter",
+        "stableId": "breakthrough--slow-starter",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "c04c9097e971aa6e42bb51852f78116fe955e831ae3c8f42bb1d6864922ab0dc",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "1cbfd41fc235d1a3",
+    "name": "Small Doggy (Cu Sith)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>When you enter your Dog Form, you become a small dog instead. Instead of the usual bonuses and penalties, you instead lose 4 guard and 8 Block but gain a +2 Size bonus to Evasion and Dodge.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "da09c29f2007084bf3303e0506ac309ddf0e749fb5621159908bce1ebedf7a49",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--small-doggy-cu-sith",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 0,
+      "rawCost": "0",
+      "level": 1,
+      "requirements": "Must be a Cu Sith.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--small-doggy-cu-sith",
+        "stableId": "breakthrough--small-doggy-cu-sith",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "da09c29f2007084bf3303e0506ac309ddf0e749fb5621159908bce1ebedf7a49",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "d234bb016a31e4e7",
+    "name": "Small Specimen (Cowfolk)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your size is Small instead of Medium.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "f0bad932277035139125bef8bccfaa7ce6421a822d09d5d8f81088bec12bffcc",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--small-specimen-cowfolk",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 25,
+      "rawCost": "25",
+      "level": 1,
+      "requirements": "Cowfolk only. Must be taken at character creation.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--small-specimen-cowfolk",
+        "stableId": "breakthrough--small-specimen-cowfolk",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "f0bad932277035139125bef8bccfaa7ce6421a822d09d5d8f81088bec12bffcc",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "b8e726c65d43a7c7",
+    "name": "Speciality Weapon Training",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain proficiency with a Speciality Weapon group.</p><p>This breakthrough can be selected multiple times. You must select a different weapon group each time you select it.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "467c0edfa4e7a4704263a96f2ef90f615c1eb30d4be9d9f7bfa47bcf8904392c",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--speciality-weapon-training",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--speciality-weapon-training",
+        "stableId": "breakthrough--speciality-weapon-training",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "467c0edfa4e7a4704263a96f2ef90f615c1eb30d4be9d9f7bfa47bcf8904392c",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "c387388e66dbb504",
+    "name": "Summon Contract: Fortuna, Lady Luck",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p><strong>Appearance</strong>: Fortuna appears as a beautiful lady wearing clothing of the highest quality. Her clothes change each time she appears, but she always carries with her a parasol designed like a roulette wheel.<br><strong>Desires</strong>: Fortuna desires to see gambling. To have people bet their all on impossible odds.<br><strong>Pact Cost</strong>: You can never naturally roll 20 again. Every 20 you roll is reduced to 19.<br><strong>Attunement Cost:</strong> None<br><strong>Re-Summon Cost</strong>: Roll a natural 20 (before the pact cost reduces it) on an attack or skill check with consequences for failure (GM’s decision).</p><p>When you contract Fortuna, you are able to attune to it. While attuned, you gain access to the Draw Luck ability through your Channel Eidolon ability. You summon the Jack of Hearts for your Lesser Eidolon and Fortuna for your Eidolon (The stats for these are listed under monsters).</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "d002e4ac88bacb7ac2ef48297b97f29a20379dadcaa15cd8736d974de2eb7a33",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--summon-contract-fortuna-lady-luck",
+      "relationships": {
+        "granted_ability": "ability--channel-eidolon-draw-luck",
+        "_links": [
+          {
+            "stableId": "ability--channel-eidolon-draw-luck",
+            "name": "Channel Eidolon: Draw Luck",
+            "pack": "player-abilities",
+            "documentId": "ce4b2d15bc2e4984",
+            "uuid": "Compendium.lyrian-chronicles.player-abilities.Item.ce4b2d15bc2e4984"
+          }
+        ]
+      },
+      "expCost": 0,
+      "rawCost": "0",
+      "level": 1,
+      "requirements": "Must be a summoner and have visited the eidolon.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--summon-contract-fortuna-lady-luck",
+        "stableId": "breakthrough--summon-contract-fortuna-lady-luck",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "d002e4ac88bacb7ac2ef48297b97f29a20379dadcaa15cd8736d974de2eb7a33",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "7e4e49ffd7eb28c9",
+    "name": "Summon Contract: Ixilune, The Swarm",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p><strong>Appearance:</strong> Hot bug lady.<br><strong>Desires:</strong> Ixilune desires to consume everything.<br><strong>Pact Cost:</strong> You need to eat 1.5x as much food to be fed.<br><strong>Attunement Cost:</strong> None<br><strong>Re-Summon Cost:</strong> Must eat the flesh of a creature of the same (main) race.</p><p>When you contract Ixilune, you are able to attune to it. While attuned, you gain access the Distracting Swarm ability through your Channel Eidolon ability. You summon the Devouring Swarm for your Lesser Eidolon and Ixilune for your Eidolon. (The stats for these are listed under monsters.)</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "9ed06f6a0f3a19c67c3d73e775c7deee036cd9cb5a28d622c075d9495326b9c1",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--summon-contract-ixilune-the-swarm",
+      "relationships": {
+        "granted_ability": "ability--channel-eidolon-distracting-swarm",
+        "_links": [
+          {
+            "stableId": "ability--channel-eidolon-distracting-swarm",
+            "name": "Channel Eidolon: Distracting Swarm",
+            "pack": "player-abilities",
+            "documentId": "a5d8ca2530594a70",
+            "uuid": "Compendium.lyrian-chronicles.player-abilities.Item.a5d8ca2530594a70"
+          }
+        ]
+      },
+      "expCost": 0,
+      "rawCost": "0",
+      "level": 1,
+      "requirements": "Must be a summoner and have visited the eidolon.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--summon-contract-ixilune-the-swarm",
+        "stableId": "breakthrough--summon-contract-ixilune-the-swarm",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "9ed06f6a0f3a19c67c3d73e775c7deee036cd9cb5a28d622c075d9495326b9c1",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "2080d24723cbad96",
+    "name": "Summon Contract: Pipoltr, The Gardener",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<ul><li><strong>Appearance:&nbsp;</strong>Pipoltr appears as a giant scarab beetle whose carapace glints with a metallic sheen like burnished bronze and emerald green.&nbsp; His presence is both otherworldly and ancient, curved antennae sprout from his head that can detect the health of plants.&nbsp; His compound eyes shine like brilliant gems.</li><li><strong>Desires:&nbsp;</strong>Pipoltr’s desire is the health of nature.</li><li><strong>Pact Cost:&nbsp; </strong>1 Maximum Mana.</li><li><strong>Attunement Cost:</strong> None</li><li><strong>Re-Summon Eidolon:&nbsp;</strong>&nbsp;Character must spend an EP to perform 1 day of gardening work before resummoning Pipoltr.</li></ul><p>When you contract Pipoltr, you are able to attune to it. While attuned, you gain access the Vine Wall Cover ability through your Channel Eidolon ability. You summon the Rhinoceros Beetle for your Lesser Eidolon and Pipoltr for your Eidolon. (The stats for these are listed under monsters.)</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "4f5fc273b1b81e8ce1619a63c410535dc494f133459d0e8ddfc0c8499056e976",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--summon-contract-pipoltr-the-gardener",
+      "relationships": {
+        "granted_ability": "ability--channel-eidolon-vine-wall-cover",
+        "_links": [
+          {
+            "stableId": "ability--channel-eidolon-vine-wall-cover",
+            "name": "Channel Eidolon: Vine Wall Cover",
+            "pack": "player-abilities",
+            "documentId": "170694639db86038",
+            "uuid": "Compendium.lyrian-chronicles.player-abilities.Item.170694639db86038"
+          }
+        ]
+      },
+      "expCost": 0,
+      "rawCost": "0",
+      "level": 1,
+      "requirements": "Must be a summoner and have visited the eidolon.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--summon-contract-pipoltr-the-gardener",
+        "stableId": "breakthrough--summon-contract-pipoltr-the-gardener",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "4f5fc273b1b81e8ce1619a63c410535dc494f133459d0e8ddfc0c8499056e976",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "f4568b29692dab0a",
+    "name": "Superior Escapist (Rabbitfolk)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You may use your Escape Artist when Rooted to remove it in addition to grapples.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "322686a56116f3de467e014f18d410827036a71a35a1afaf09519994c3940ab2",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--superior-escapist-rabbitfolk",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Rabbitfolk.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--superior-escapist-rabbitfolk",
+        "stableId": "breakthrough--superior-escapist-rabbitfolk",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "322686a56116f3de467e014f18d410827036a71a35a1afaf09519994c3940ab2",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "b6a769f71437114c",
+    "name": "Tengu Defensive Aura (Tengu)",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your resistance to astra corruption is increased by 1 (Your SC is treated as 500 higher when determining if you suffer from astra corruption). In addition, you do not suffer any negative effects when the astra level is raised artificially. (such as from Exousiai's).</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "a816bc063829127cb3a88c77a23ff524b08c2a9feb8c20edf90d3a4028f00d8c",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--tengu-defensive-aura-tengu",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 100,
+      "rawCost": "100",
+      "level": 1,
+      "requirements": "Must be a Tengu.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--tengu-defensive-aura-tengu",
+        "stableId": "breakthrough--tengu-defensive-aura-tengu",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "a816bc063829127cb3a88c77a23ff524b08c2a9feb8c20edf90d3a4028f00d8c",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "aa940f406f512667",
+    "name": "The Unknown Paladin",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Despite not being human, you fulfill the human requirement to become a Paladin.&nbsp;In addition, your Smite skill's damage type changes to one that represents your chosen Divine. The paladin holy weapon key ability also changes its damage type to the one that represents your chosen Divine.</p><p><strong>Kari:</strong> Holy&nbsp;<br><strong>Heira:</strong> Astra<br><strong>Pandora:</strong> Arcane<br><strong>Makai:</strong> Water<br><strong>Ayuzi Kirara:</strong> Fire&nbsp;<br><strong>Eisen:</strong> Physical&nbsp;<br><strong>Athena:</strong> Lightning&nbsp;<br><strong>Clio:</strong> Arcane&nbsp;<br><strong>Yggdrasil:</strong> Earth</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "44f7a11cea378a6ba12c54864b8290320a2f75a7153c6f20c16bb467bb0dbe4e",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--the-unknown-paladin",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must have the Divine's Chosen breakthrough.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--the-unknown-paladin",
+        "stableId": "breakthrough--the-unknown-paladin",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "44f7a11cea378a6ba12c54864b8290320a2f75a7153c6f20c16bb467bb0dbe4e",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "7e8b18a3fbabed1d",
+    "name": "Third Eye",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You may have up to 3 Mystic Eyes instead of the regular 2.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "ed5c0f6caca43fe4b05e454a884c0507edb1655bbb1cbc3dd5b02a6afe1ec0bc",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--third-eye",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--third-eye",
+        "stableId": "breakthrough--third-eye",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "ed5c0f6caca43fe4b05e454a884c0507edb1655bbb1cbc3dd5b02a6afe1ec0bc",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "8e3238ba4489417f",
+    "name": "Touched by Death",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Near-death experiences sometimes leave people more sensitive to death itself, manifesting in what is called the Shinigami’s Eyes. You may purchase the Shinigami Eyes class.</p><p>In addition, you may spend 1 AP to see the HP percentage and weak spots (if any) of all creatures for 1 turn.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "c8e04582d6b70e67913b4c43d3c6badcfe3fa027c56eb2eba1356c753af4f656",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--touched-by-death",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must be taken at character creation or after your HP has dropped below 0 in an encounter.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--touched-by-death",
+        "stableId": "breakthrough--touched-by-death",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "c8e04582d6b70e67913b4c43d3c6badcfe3fa027c56eb2eba1356c753af4f656",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "0e0f98545a879a0c",
+    "name": "Universal Training",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain +1 to any primary stat, +1 to any secondary stat and 5 skill points. You may put these skill points into any normal skill, except crafting and gathering skills.</p><p>This breakthrough may be taken multiple times. The effects stack.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "e5fb19226f26efe947a0cd2ecff4438dbe9627bbb525b6cf00e915f8f0bdc111",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--universal-training",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 700,
+      "rawCost": "700",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--universal-training",
+        "stableId": "breakthrough--universal-training",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "e5fb19226f26efe947a0cd2ecff4438dbe9627bbb525b6cf00e915f8f0bdc111",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "dd12385a51cf5d9d",
+    "name": "Weapon Training",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>You gain proficiency with a weapon group. You may not select Speciality Weapons with this.</p><p>This breakthrough can be selected multiple times. You must select a different weapon group each time you select it.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "b1350e4182b6ffc2cb16a8a7e12d30317590863b8fff15383308c53e7863db06",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--weapon-training",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 25,
+      "rawCost": "25",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--weapon-training",
+        "stableId": "breakthrough--weapon-training",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "b1350e4182b6ffc2cb16a8a7e12d30317590863b8fff15383308c53e7863db06",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "5f493fd9259f8993",
+    "name": "Wide Circuits I",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your maximum mana increases by 1.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "80e2a8a0c4581a250f75e8f2fbae1302d4fcbc66dae07650809931e683c2a96b",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--wide-circuits-i",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 150,
+      "rawCost": "150",
+      "level": 1,
+      "requirements": "-",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--wide-circuits-i",
+        "stableId": "breakthrough--wide-circuits-i",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "80e2a8a0c4581a250f75e8f2fbae1302d4fcbc66dae07650809931e683c2a96b",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "1b39ecc291ce8ed4",
+    "name": "Wide Circuits II",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your maximum Mana is increased by 1.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "765ae418606ca684ba0883ba1265f54fdaa128d2ff829ac15b7f279bf0d54613",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--wide-circuits-ii",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 175,
+      "rawCost": "175",
+      "level": 1,
+      "requirements": "Must have the Wide Circuits breakthrough.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--wide-circuits-ii",
+        "stableId": "breakthrough--wide-circuits-ii",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "765ae418606ca684ba0883ba1265f54fdaa128d2ff829ac15b7f279bf0d54613",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "081857a57d9e4633",
+    "name": "Wide Circuits III",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your maximum Mana is increased by 1.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "5d62e3a91b35458e0fc304e90bd7b7673f985d9c59a2f9d384b80a8c91f5ccc7",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--wide-circuits-iii",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 200,
+      "rawCost": "200",
+      "level": 1,
+      "requirements": "Must have the Wide Circuits II breakthrough.",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--wide-circuits-iii",
+        "stableId": "breakthrough--wide-circuits-iii",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "5d62e3a91b35458e0fc304e90bd7b7673f985d9c59a2f9d384b80a8c91f5ccc7",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  },
+  {
+    "_id": "64d3e81d20561f02",
+    "name": "Wide Circuits IV",
+    "type": "breakthrough",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<p>Your maximum Mana is increased by 1.</p><p>You may take this breakthrough multiple times. The effects stack.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+      "sourceHash": "49ef863914a6f2522c5760d5517365f94a30e46a227d3437531da715fb982e8e",
+      "rulebookVersion": "0.13.1",
+      "stableId": "breakthrough--wide-circuits-iv",
+      "relationships": {
+        "granted_ability": null,
+        "_links": []
+      },
+      "expCost": 250,
+      "rawCost": "250",
+      "level": 1,
+      "requirements": "Must have the Wide Circuits III breakthrough",
+      "repeatable": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:breakthrough--wide-circuits-iv",
+        "stableId": "breakthrough--wide-circuits-iv",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+        "sourceHash": "49ef863914a6f2522c5760d5517365f94a30e46a227d3437531da715fb982e8e",
+        "rulebookVersion": "0.13.1"
+      }
+    }
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "rulebook_version": "0.13.1",
+  "generated_from": "content-source/approved/0.13.1",
+  "packs": {
+    "rules-setting-guide": {
+      "type": "JournalEntry",
+      "count": 2,
+      "files": [
+        "rules-setting-guide-01.json"
+      ]
+    },
+    "keywords": {
+      "type": "Item",
+      "count": 87,
+      "files": [
+        "keywords-01.json"
+      ]
+    },
+    "breakthroughs": {
+      "type": "Item",
+      "count": 89,
+      "files": [
+        "breakthroughs-01.json"
+      ]
+    },
+    "player-abilities": {
+      "type": "Item",
+      "count": 1112,
+      "files": [
+        "player-abilities-01.json",
+        "player-abilities-02.json",
+        "player-abilities-03.json",
+        "player-abilities-04.json"
+      ]
+    },
+    "races": {
+      "type": "Item",
+      "count": 48,
+      "files": [
+        "races-01.json"
+      ]
+    },
+    "classes": {
+      "type": "Item",
+      "count": 181,
+      "files": [
+        "classes-01.json",
+        "classes-02.json"
+      ]
+    },
+    "items": {
+      "type": "Item",
+      "count": 206,
+      "files": [
+        "items-01.json"
+      ]
+    },
+    "monsters": {
+      "type": "Actor",
+      "count": 84,
+      "files": [
+        "monsters-01.json",
+        "monsters-02.json"
+      ]
+    },
+    "monster-abilities": {
+      "type": "Item",
+      "count": 307,
+      "files": [
+        "monster-abilities-01.json"
+      ]
+    }
+  }
+}
