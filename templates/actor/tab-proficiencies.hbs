@@ -1,0 +1,43 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="proficiencies" data-group="primary" data-application-part="proficiencies">
+  <p class="lyr-note">Granted automatically by your race, subrace or house, and unlocked class features. Automatic grants cannot be removed here.</p>
+
+  <section class="lyr-prof-summary">
+    <h2 class="lyr-heading">Weapon &amp; Armor Proficiencies</h2>
+    <div class="lyr-prof-summary__line"><strong>Armor:</strong>
+      {{#each proficiency.automatic.armor}}<span class="lyr-prof-chip lyr-prof-chip--armor">{{name}}</span>{{else}}<em>None granted</em>{{/each}}
+    </div>
+    <div class="lyr-prof-summary__line"><strong>Weapons:</strong>
+      {{#each proficiency.automatic.weapons}}<span class="lyr-prof-chip">{{name}}</span>{{else}}<em>None granted</em>{{/each}}
+    </div>
+    <div class="lyr-prof-sources">
+      {{#each proficiency.sources as |source|}}
+        <div><strong>{{source.name}}</strong>
+          {{#if source.entries}}<span>{{#each source.entries}}{{this}}{{#unless @last}} · {{/unless}}{{/each}}</span>{{/if}}
+          {{#each source.choices}}<em>{{this}}</em>{{/each}}
+        </div>
+      {{else}}<p class="lyr-empty">No automatic proficiency sources yet.</p>{{/each}}
+    </div>
+  </section>
+
+  {{#*inline "proficiencyCard"}}
+    <section class="lyr-prof-card" data-proficiency-kind="{{kind}}">
+      <header><h2><i class="{{icon}}"></i> {{title}}</h2><span>{{entries.length}}</span></header>
+      <div class="lyr-prof-list">
+        {{#each entries as |entry|}}
+          <span class="lyr-prof-entry {{#if entry.granted}}is-granted{{/if}}">
+            {{entry.name}}
+            {{#if entry.granted}}<em>Granted</em>{{else}}<button type="button" data-action="removeProficiency" data-kind="{{../kind}}" data-name="{{entry.name}}" title="Remove">×</button>{{/if}}
+          </span>
+        {{else}}<em class="lyr-empty">None.</em>{{/each}}
+      </div>
+      <div class="lyr-prof-add">
+        <input type="text" data-proficiency-input placeholder="{{placeholder}}" />
+        <button type="button" data-action="addProficiency" data-kind="{{kind}}">+ Add</button>
+      </div>
+    </section>
+  {{/inline}}
+
+  {{> proficiencyCard kind="weapons" title="Weapon Proficiencies" icon="fa-solid fa-khanda" entries=proficiency.groups.weapons placeholder="e.g. Light Swords, Channeling Weapons…"}}
+  {{> proficiencyCard kind="armor" title="Armor Proficiencies" icon="fa-solid fa-shield" entries=proficiency.groups.armor placeholder="e.g. Light Armor, Shields…"}}
+  {{> proficiencyCard kind="languages" title="Languages" icon="fa-solid fa-comment" entries=proficiency.groups.languages placeholder="e.g. Sorthen, Sylvan…"}}
+</section>
