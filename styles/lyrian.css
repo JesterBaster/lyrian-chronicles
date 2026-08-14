@@ -82,6 +82,20 @@
 
 .lyrian .lyr-subline { display: flex; flex-wrap: wrap; gap: 0.3rem; }
 .lyrian .lyr-subline input, .lyrian .lyr-subline select { flex: 1 1 6rem; min-width: 0; font-size: 0.75rem; }
+.lyrian .lyr-subline--details input { flex-basis: 4.4rem; }
+.lyrian .lyr-subline--details input[name="system.details.worship"] { flex-basis: 7rem; }
+.lyrian .lyr-worship-status {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.45rem;
+  padding: 0.38rem 0.5rem; font-size: 0.68rem; color: var(--lyr-ink-dim);
+  background: rgba(7, 10, 18, 0.45); border: 1px solid var(--lyr-rule-soft);
+  border-radius: var(--lyr-radius);
+}
+.lyrian .lyr-worship-status > i { color: var(--lyr-ink-faint); }
+.lyrian .lyr-worship-status > strong { color: var(--lyr-ink); }
+.lyrian .lyr-worship-status--active { border-color: var(--lyr-gold-dim); }
+.lyrian .lyr-worship-status--active > i,
+.lyrian .lyr-worship-status--active > strong { color: var(--lyr-gold-bright); }
+.lyrian .lyr-worship-status__related { flex-basis: 100%; color: var(--lyr-ink-faint); }
 .lyrian .lyr-inline { font-size: 0.7rem; color: var(--lyr-ink-dim); }
 
 /* Resource bars ---------------------------------------------------------- */

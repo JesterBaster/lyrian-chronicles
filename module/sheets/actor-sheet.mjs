@@ -10,6 +10,7 @@ import {
   raceSkillGrant,
   selectedRaceSkillBonuses
 } from "../rules/progression.mjs";
+import { collectWorshipBenefits, DIVINES } from "../rules/worship.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -147,6 +148,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     this._prepareItems(context);
     if (context.isCharacter) this._prepareSkills(context);
     if (context.isCharacter) this._prepareProficiencies(context);
+    if (context.isCharacter) this._prepareWorship(context);
 
     return context;
   }
@@ -224,6 +226,12 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       ])
     );
     context.proficiency = proficiency;
+  }
+
+  /** Explain whether the selected worship has an active rules benefit. */
+  _prepareWorship(context) {
+    context.divines = Object.values(DIVINES);
+    context.worship = collectWorshipBenefits(this.document);
   }
 
   /* -------------------------------------------- */

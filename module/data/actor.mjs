@@ -331,7 +331,11 @@ export class LyrianCharacter extends LyrianActorBase {
     schema.details = new fields.SchemaField({
       race: new fields.StringField({ blank: true, initial: "" }),
       subrace: new fields.StringField({ blank: true, initial: "" }),
+      gender: new fields.StringField({ blank: true, initial: "" }),
       age: new fields.StringField({ blank: true, initial: "" }),
+      height: new fields.StringField({ blank: true, initial: "" }),
+      weight: new fields.StringField({ blank: true, initial: "" }),
+      worship: new fields.StringField({ blank: true, initial: "" }),
       pronouns: new fields.StringField({ blank: true, initial: "" }),
       party: new fields.StringField({ blank: true, initial: "" }),
       partyRole: new fields.StringField({ blank: true, initial: "" })
