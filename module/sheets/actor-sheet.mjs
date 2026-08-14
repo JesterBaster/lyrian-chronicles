@@ -53,8 +53,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       startEncounter: LyrianActorSheet.#onStartEncounter,
       takeRest: LyrianActorSheet.#onTakeRest,
       recoverInjury: LyrianActorSheet.#onRecoverInjury,
-      spendExpPrompt: LyrianActorSheet.#onSpendExp,
-      openCreation: LyrianActorSheet.#onOpenCreation
+      spendExpPrompt: LyrianActorSheet.#onSpendExp
     },
     dragDrop: [{ dragSelector: "[data-drag]", dropSelector: null }]
   };
@@ -718,8 +717,4 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     await this.document.spendExp(amount.exp, amount.reason);
   }
 
-  static async #onOpenCreation() {
-    const { runCharacterCreation } = await import("../apps/character-creation.mjs");
-    runCharacterCreation(this.document);
-  }
 }
