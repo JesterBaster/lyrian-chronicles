@@ -1,0 +1,74 @@
+name: Release
+
+# Publishing a GitHub Release tagged v0.1.0 builds and attaches the assets.
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the tagged commit
+        uses: actions/checkout@v4
+
+      - name: Read the version from the tag
+        id: version
+        run: |
+          # Strip a leading "v" so the tag v0.1.0 becomes the version 0.1.0.
+          TAG="${GITHUB_REF_NAME}"
+          echo "version=${TAG#v}" >> "$GITHUB_OUTPUT"
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+
+      - name: Stamp version and URLs into system.json
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+          TAG: ${{ steps.version.outputs.tag }}
+          REPO: ${{ github.repository }}
+        run: |
+          # manifest always points at "latest" so Foundry can detect updates.
+          # download is pinned to this tag so each release installs its own build.
+          export MANIFEST="https://github.com/${REPO}/releases/latest/download/system.json"
+          export DOWNLOAD="https://github.com/${REPO}/releases/download/${TAG}/system.zip"
+
+          node -e '
+            const fs = require("fs");
+            const m = JSON.parse(fs.readFileSync("system.json", "utf8"));
+            m.version = process.env.VERSION;
+            m.manifest = process.env.MANIFEST;
+            m.download = process.env.DOWNLOAD;
+            m.url = `https://github.com/${process.env.REPO}`;
+            fs.writeFileSync("system.json", JSON.stringify(m, null, 2) + "\n");
+          '
+          echo "--- system.json ---"
+          cat system.json
+        shell: bash
+
+      - name: Verify the manifest is valid JSON
+        run: node -e 'JSON.parse(require("fs").readFileSync("system.json","utf8")); console.log("manifest ok")'
+
+      - name: Build the package
+        run: |
+          # Foundry expects system.json at the root of the archive, not inside a folder.
+          zip -r system.zip \
+            system.json README.md LICENSE.txt \
+            module/ migrations/ templates/ styles/ lang/ packs/ content/ images/ \
+            -x '*.git*' '*.DS_Store'
+
+          # Fail loudly rather than shipping an archive Foundry cannot install.
+          unzip -l system.zip | grep -q ' system.json$' || { echo "system.json not at archive root"; exit 1; }
+          for required in module/lyrian.mjs styles/lyrian.css lang/en.json content/weapons.json; do
+            unzip -l system.zip | grep -q " $required$" || { echo "missing $required"; exit 1; }
+          done
+          echo "archive contents verified"
+          unzip -l system.zip | head -20
+
+      - name: Attach assets to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "${GITHUB_REF_NAME}" system.json system.zip --clobber

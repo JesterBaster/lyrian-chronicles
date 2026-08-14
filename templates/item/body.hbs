@@ -1,0 +1,182 @@
+<section class="lyr-item-body" data-application-part="body">
+
+{{#if (eq type "weapon")}}
+  <div class="lyr-field-grid">
+    <label>Weapon group
+      <select name="system.group">
+        {{#each config.weaponGroups as |group key|}}
+          <option value="{{key}}" {{#if (eq ../system.group key)}}selected{{/if}}>{{localize group.label}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>Hands
+      <select name="system.hands">
+        {{#each config.weaponHands as |label key|}}
+          <option value="{{key}}" {{#if (eq ../system.hands key)}}selected{{/if}}>{{localize label}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>Damage type
+      <select name="system.damageType">
+        {{#each config.damageTypes as |dt key|}}
+          <option value="{{key}}" {{#if (eq ../system.damageType key)}}selected{{/if}}>{{localize dt.label}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>Accuracy bonus <input type="number" name="system.accuracyBonus" value="{{system.accuracyBonus}}" /></label>
+    <label>Damage bonus <input type="number" name="system.damageBonus" value="{{system.damageBonus}}" /></label>
+    <label>Crit on <input type="number" name="system.critThreshold" value="{{system.critThreshold}}" min="2" max="20" /></label>
+    <label>Range override (ft) <input type="number" name="system.rangeOverride" value="{{system.rangeOverride}}" /></label>
+    <label>Burden <input type="number" name="system.burden" value="{{system.burden}}" /></label>
+    <label>Value (Clim) <input type="number" name="system.value" value="{{system.value}}" /></label>
+    <label class="lyr-check"><input type="checkbox" name="system.equipped" {{checked system.equipped}} /> Equipped</label>
+    <label class="lyr-check"><input type="checkbox" name="system.proficient" {{checked system.proficient}} /> Proficient</label>
+    <label class="lyr-check"><input type="checkbox" name="system.offHand" {{checked system.offHand}} /> Off hand</label>
+  </div>
+  <p class="lyr-note">
+    Group property: <strong>{{localize system.propertyLabel}}</strong>.
+    Effective range {{system.range}} ft. Crits on {{system.effectiveCrit}}+.
+  </p>
+  <label>Enchantment <input type="text" name="system.enchantment" value="{{system.enchantment}}" /></label>
+  <div class="lyr-field-grid">
+    <label>Applied poison <input type="text" name="system.poison.name" value="{{system.poison.name}}" /></label>
+    <label>Hits remaining <input type="number" name="system.poison.hitsRemaining" value="{{system.poison.hitsRemaining}}" /></label>
+  </div>
+{{/if}}
+
+{{#if (eq type "armor")}}
+  <div class="lyr-field-grid">
+    <label>Category
+      <select name="system.category">
+        {{#each config.armorCategories as |cat key|}}
+          <option value="{{key}}" {{#if (eq ../system.category key)}}selected{{/if}}>{{localize cat.label}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>Extra guard <input type="number" name="system.guardBonus" value="{{system.guardBonus}}" /></label>
+    <label>Extra block <input type="number" name="system.blockBonus" value="{{system.blockBonus}}" /></label>
+    <label>Burden <input type="number" name="system.burden" value="{{system.burden}}" /></label>
+    <label>Value (Clim) <input type="number" name="system.value" value="{{system.value}}" /></label>
+    <label class="lyr-check"><input type="checkbox" name="system.equipped" {{checked system.equipped}} /> Equipped</label>
+    <label class="lyr-check"><input type="checkbox" name="system.proficient" {{checked system.proficient}} /> Proficient</label>
+  </div>
+  <label>Modification <input type="text" name="system.modification" value="{{system.modification}}" /></label>
+  <p class="lyr-note">
+    Guard {{lyrianSigned system.guard}} · Block value {{system.blockValue}} ·
+    Evasion {{lyrianSigned system.evasionPenalty}} · Initiative {{lyrianSigned system.initiativePenalty}}
+  </p>
+{{/if}}
+
+{{#if (eq type "ability")}}
+  <div class="lyr-field-grid">
+    <label>AP cost <input type="number" name="system.apCost" value="{{system.apCost}}" /></label>
+    <label>RP cost <input type="number" name="system.rpCost" value="{{system.rpCost}}" /></label>
+    <label>Mana cost <input type="number" name="system.manaCost" value="{{system.manaCost}}" /></label>
+    <label>Upkeep (AP) <input type="number" name="system.upkeep" value="{{system.upkeep}}" /></label>
+    <label>Timing
+      <select name="system.timing">
+        {{#each config.abilityTiming as |label key|}}
+          <option value="{{key}}" {{#if (eq ../system.timing key)}}selected{{/if}}>{{localize label}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>Range <input type="text" name="system.range" value="{{system.range}}" placeholder="60 ft, self, 15 ft radius" /></label>
+    <label>Other costs <input type="text" name="system.otherCosts" value="{{system.otherCosts}}" /></label>
+    <label>Requirement <input type="text" name="system.requirement" value="{{system.requirement}}" /></label>
+    <label>From class <input type="text" name="system.classSource" value="{{system.classSource}}" /></label>
+  </div>
+
+  <fieldset class="lyr-keywords">
+    <legend>Keywords</legend>
+    {{#each keywordChoices as |kw|}}
+      <button type="button" class="lyr-keyword {{#if kw.active}}lyr-keyword--on{{/if}} {{#unless kw.automated}}lyr-keyword--manual{{/unless}}"
+              data-action="toggleKeyword" data-keyword="{{kw.key}}"
+              title="{{#if kw.automated}}Automated by the system{{else}}Display only — resolve at the table{{/if}}">{{kw.label}}</button>
+    {{/each}}
+  </fieldset>
+
+  <fieldset class="lyr-attack-block">
+    <legend>Attack</legend>
+    <label class="lyr-check"><input type="checkbox" name="system.hasAttack" {{checked system.hasAttack}} /> This ability makes an attack</label>
+    <div class="lyr-field-grid">
+      <label>Attack type
+        <select name="system.attackType">
+          {{#each config.attackTypes as |at key|}}
+            <option value="{{key}}" {{#if (eq ../system.attackType key)}}selected{{/if}}>{{localize at.label}}</option>
+          {{/each}}
+        </select>
+      </label>
+      <label>Damage formula <input type="text" name="system.damageFormula" value="{{system.damageFormula}}" placeholder="2d6 + @power" /></label>
+      <label>Damage type
+        <select name="system.damageType">
+          {{#each config.damageTypes as |dt key|}}
+            <option value="{{key}}" {{#if (eq ../system.damageType key)}}selected{{/if}}>{{localize dt.label}}</option>
+          {{/each}}
+        </select>
+      </label>
+      <label class="lyr-check"><input type="checkbox" name="system.usesWeapon" {{checked system.usesWeapon}} /> Use equipped weapon damage</label>
+    </div>
+  </fieldset>
+{{/if}}
+
+{{#if (eq type "class")}}
+  <div class="lyr-field-grid">
+    <label>Tier <input type="number" name="system.tier" value="{{system.tier}}" min="1" max="5" /></label>
+    <label>Abilities unlocked <input type="number" name="system.abilitiesUnlocked" value="{{system.abilitiesUnlocked}}" min="0" max="7" /></label>
+    <label class="lyr-check"><input type="checkbox" name="system.artisan" {{checked system.artisan}} /> Artisan class</label>
+    <label class="lyr-check"><input type="checkbox" name="system.gathering" {{checked system.gathering}} /> Gathering class</label>
+  </div>
+  <label>Key abilities <input type="text" name="system.keyAbilities" value="{{system.keyAbilities}}" /></label>
+  <label>Requirements <input type="text" name="system.requirements" value="{{system.requirements}}" /></label>
+  <p class="lyr-note">Unlock cost {{system.unlockCost}} EXP plus 1 interlude point. Total invested {{system.expInvested}} EXP.</p>
+{{/if}}
+
+{{#if (eq type "breakthrough")}}
+  <div class="lyr-field-grid">
+    <label>EXP cost <input type="number" name="system.expCost" value="{{system.expCost}}" /></label>
+    <label>Level <input type="number" name="system.level" value="{{system.level}}" min="1" /></label>
+    <label class="lyr-check"><input type="checkbox" name="system.repeatable" {{checked system.repeatable}} /> Repeatable</label>
+  </div>
+  <label>Requirements <input type="text" name="system.requirements" value="{{system.requirements}}" /></label>
+{{/if}}
+
+{{#if (eq type "race")}}
+  <div class="lyr-field-grid">
+    <label>Subrace <input type="text" name="system.subrace" value="{{system.subrace}}" /></label>
+    <label>Clan <input type="text" name="system.clan" value="{{system.clan}}" /></label>
+    <label>Size
+      <select name="system.size">
+        {{#each config.creatureSizes as |sz key|}}
+          <option value="{{key}}" {{#if (eq ../system.size key)}}selected{{/if}}>{{localize sz.label}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>Speed <input type="number" name="system.speed" value="{{system.speed}}" /></label>
+  </div>
+  <label>Granted proficiencies <input type="text" name="system.grantedProficiencies" value="{{system.grantedProficiencies}}" /></label>
+  <label>Granted skills <input type="text" name="system.grantedSkills" value="{{system.grantedSkills}}" /></label>
+{{/if}}
+
+{{#if (eq type "gear")}}
+  <div class="lyr-field-grid">
+    <label>Quantity <input type="number" name="system.quantity" value="{{system.quantity}}" /></label>
+    <label>Burden each <input type="number" name="system.burden" value="{{system.burden}}" /></label>
+    <label>Value (Clim) <input type="number" name="system.value" value="{{system.value}}" /></label>
+    <label>Material type <input type="text" name="system.materialType" value="{{system.materialType}}" placeholder="Ore, Botany, Wood" /></label>
+    <label>Units <input type="number" name="system.units" value="{{system.units}}" /></label>
+    <label class="lyr-check"><input type="checkbox" name="system.combatItem" {{checked system.combatItem}} /> Combat item</label>
+    <label class="lyr-check"><input type="checkbox" name="system.isKit" {{checked system.isKit}} /> Kit</label>
+  </div>
+{{/if}}
+
+{{#if (eq type "injury")}}
+  <div class="lyr-field-grid">
+    <label>Rolled <input type="number" name="system.rolled" value="{{system.rolled}}" min="0" max="10" /></label>
+    <label class="lyr-check"><input type="checkbox" name="system.fromDowned" {{checked system.fromDowned}} /> From being downed</label>
+    <label class="lyr-check"><input type="checkbox" name="system.suppressed" {{checked system.suppressed}} /> Suppressed</label>
+  </div>
+  <p class="lyr-note">A single injury is removed by taking the Recover action during an interlude.</p>
+{{/if}}
+
+<label>Source <input type="text" name="system.source" value="{{system.source}}" placeholder="Rulebook section or homebrew" /></label>
+</section>

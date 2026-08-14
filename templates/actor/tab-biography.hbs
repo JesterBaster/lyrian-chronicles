@@ -1,0 +1,12 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="biography" data-group="primary" data-application-part="biography">
+  <h2 class="lyr-heading">Biography</h2>
+  {{formInput systemFields.biography value=system.biography enriched=enrichedBiography toggled=true}}
+
+  {{#if isNPC}}
+    <h2 class="lyr-heading">Tactics</h2>
+    {{formInput systemFields.tactics value=system.tactics enriched=enrichedTactics toggled=true}}
+
+    <h2 class="lyr-heading">Gatherable parts</h2>
+    <input type="text" name="system.gatherables" value="{{system.gatherables}}" placeholder="What can be harvested from this creature" />
+  {{/if}}
+</section>

@@ -1,0 +1,108 @@
+<div class="lyr-creation-body">
+
+  <nav class="lyr-steps">
+    {{#each (array "stats" "race" "class" "skills") as |id|}}
+      <button type="button" class="lyr-step-btn {{#if (eq ../state.step id)}}is-active{{/if}}"
+              data-action="goStep" data-step="{{id}}">{{localize (concat "LYRIAN.Creation.Step." id)}}</button>
+    {{/each}}
+  </nav>
+
+  {{#if (eq state.step "stats")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">Main stats</h2>
+      <p class="lyr-note">Assign {{mainArray}}, one value to each stat.</p>
+      <div class="lyr-assign-grid">
+        {{#each mainStats as |stat|}}
+          <label class="lyr-assign">
+            <span>{{stat.label}}</span>
+            <select data-assign="main" data-stat="{{stat.key}}">
+              <option value="">—</option>
+              {{#each stat.options as |v|}}
+                <option value="{{v}}" {{#if (eq ../stat.assigned v)}}selected{{/if}}>{{v}}</option>
+              {{/each}}
+            </select>
+          </label>
+        {{/each}}
+      </div>
+
+      <h2 class="lyr-heading">Sub stats</h2>
+      <p class="lyr-note">Assign {{subArray}}, one value to each.</p>
+      <div class="lyr-assign-grid">
+        {{#each subStats as |stat|}}
+          <label class="lyr-assign">
+            <span>{{stat.label}}</span>
+            <select data-assign="sub" data-stat="{{stat.key}}">
+              <option value="">—</option>
+              {{#each stat.options as |v|}}
+                <option value="{{v}}" {{#if (eq ../stat.assigned v)}}selected{{/if}}>{{v}}</option>
+              {{/each}}
+            </select>
+          </label>
+        {{/each}}
+      </div>
+      {{#if statsComplete}}<p class="lyr-ok">Stats assigned.</p>{{/if}}
+    </section>
+  {{/if}}
+
+  {{#if (eq state.step "race")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">Race</h2>
+      {{#if races.length}}
+        <div class="lyr-pick-grid">
+          {{#each races as |race|}}
+            <label class="lyr-pick {{#if (eq ../state.raceId race.id)}}is-picked{{/if}}">
+              <input type="radio" name="raceId" value="{{race.id}}" {{#if (eq ../state.raceId race.id)}}checked{{/if}} />
+              <img src="{{race.img}}" alt="" />
+              <span>{{race.name}}</span>
+            </label>
+          {{/each}}
+        </div>
+      {{else}}
+        <p class="lyr-empty">The Races compendium is empty. Add <code>content/races.json</code> and reload, or skip this step and add a Race item by hand.</p>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if (eq state.step "class")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">Starting class</h2>
+      <p class="lyr-note">You begin with {{config.progression.startingClassExp}} class EXP and {{config.progression.startingBreakthroughExp}} breakthrough EXP. A tier 1 class costs {{config.progression.classCostPerTier}} EXP and 1 interlude point.</p>
+      {{#if classes.length}}
+        <div class="lyr-pick-grid">
+          {{#each classes as |cls|}}
+            <label class="lyr-pick {{#if (eq ../state.classId cls.id)}}is-picked{{/if}}">
+              <input type="radio" name="classId" value="{{cls.id}}" {{#if (eq ../state.classId cls.id)}}checked{{/if}} />
+              <img src="{{cls.img}}" alt="" />
+              <span>{{cls.name}}</span>
+            </label>
+          {{/each}}
+        </div>
+      {{else}}
+        <p class="lyr-empty">The Classes compendium is empty. Add <code>content/classes.json</code> and reload, or skip and add a Class item by hand.</p>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if (eq state.step "skills")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">Skill points</h2>
+      <p class="lyr-note">Remaining: <strong class="lyr-budget">{{skillPointsLeft}}</strong> of {{state.skillPoints}}</p>
+      <div class="lyr-skill-buy">
+        {{#each skills as |skill|}}
+          <div class="lyr-skill-buy__row">
+            <span class="lyr-skill-buy__name">{{skill.label}}</span>
+            <span class="lyr-skill-buy__stat">{{skill.stat}}</span>
+            <button type="button" class="lyr-step" data-action="adjustSkill" data-skill="{{skill.key}}" data-delta="-1">&minus;</button>
+            <span class="lyr-skill-buy__rank">{{skill.ranks}}</span>
+            <button type="button" class="lyr-step" data-action="adjustSkill" data-skill="{{skill.key}}" data-delta="1">+</button>
+          </div>
+        {{/each}}
+      </div>
+    </section>
+  {{/if}}
+
+  <footer class="lyr-creation-footer">
+    <button type="button" data-action="reset">Reset</button>
+    <button type="button" class="lyr-primary" data-action="finish" {{#unless statsComplete}}disabled{{/unless}}>Apply to sheet</button>
+  </footer>
+</div>

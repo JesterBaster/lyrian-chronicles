@@ -1,0 +1,446 @@
+import { LYRIAN } from "../config.mjs";
+
+const { ActorSheetV2 } = foundry.applications.sheets;
+const { HandlebarsApplicationMixin } = foundry.applications.api;
+
+/**
+ * Character and NPC sheet.
+ */
+export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
+  /** @override */
+  static DEFAULT_OPTIONS = {
+    classes: ["lyrian", "sheet", "actor"],
+    position: { width: 820, height: 800 },
+    window: { resizable: true },
+    form: { submitOnChange: true },
+    actions: {
+      rollSkill: LyrianActorSheet.#onRollSkill,
+      addExpertise: LyrianActorSheet.#onAddExpertise,
+      removeExpertise: LyrianActorSheet.#onRemoveExpertise,
+      rollAttribute: LyrianActorSheet.#onRollAttribute,
+      rollArtisan: LyrianActorSheet.#onRollArtisan,
+      rollGathering: LyrianActorSheet.#onRollGathering,
+      rollSave: LyrianActorSheet.#onRollSave,
+      rollInitiative: LyrianActorSheet.#onRollInitiative,
+      rollInjury: LyrianActorSheet.#onRollInjury,
+      attack: LyrianActorSheet.#onAttack,
+      useItem: LyrianActorSheet.#onUseItem,
+      createItem: LyrianActorSheet.#onCreateItem,
+      editItem: LyrianActorSheet.#onEditItem,
+      deleteItem: LyrianActorSheet.#onDeleteItem,
+      toggleEquip: LyrianActorSheet.#onToggleEquip,
+      adjustResource: LyrianActorSheet.#onAdjustResource,
+      refreshTurn: LyrianActorSheet.#onRefreshTurn,
+      startEncounter: LyrianActorSheet.#onStartEncounter,
+      takeRest: LyrianActorSheet.#onTakeRest,
+      recoverInjury: LyrianActorSheet.#onRecoverInjury,
+      spendExpPrompt: LyrianActorSheet.#onSpendExp,
+      openCreation: LyrianActorSheet.#onOpenCreation
+    },
+    dragDrop: [{ dragSelector: "[data-drag]", dropSelector: null }]
+  };
+
+  /** @override */
+  static PARTS = {
+    header: { template: "systems/lyrian-chronicles/templates/actor/header.hbs" },
+    tabs: { template: "templates/generic/tab-navigation.hbs" },
+    main: { template: "systems/lyrian-chronicles/templates/actor/tab-main.hbs" },
+    skills: { template: "systems/lyrian-chronicles/templates/actor/tab-skills.hbs" },
+    abilities: { template: "systems/lyrian-chronicles/templates/actor/tab-abilities.hbs" },
+    inventory: { template: "systems/lyrian-chronicles/templates/actor/tab-inventory.hbs" },
+    progression: { template: "systems/lyrian-chronicles/templates/actor/tab-progression.hbs" },
+    biography: { template: "systems/lyrian-chronicles/templates/actor/tab-biography.hbs" }
+  };
+
+  /** @override */
+  static TABS = {
+    primary: {
+      tabs: [
+        { id: "main", icon: "fa-solid fa-shield-halved" },
+        { id: "skills", icon: "fa-solid fa-dice-d20" },
+        { id: "abilities", icon: "fa-solid fa-wand-sparkles" },
+        { id: "inventory", icon: "fa-solid fa-sack" },
+        { id: "progression", icon: "fa-solid fa-gem" },
+        { id: "biography", icon: "fa-solid fa-feather" }
+      ],
+      initial: "main",
+      labelPrefix: "LYRIAN.Tab"
+    }
+  };
+
+  /* -------------------------------------------- */
+
+  /** @override */
+  _configureRenderParts(options) {
+    const parts = super._configureRenderParts(options);
+    // NPCs have no skill sheet or interlude bookkeeping.
+    if (this.document.type === "npc") {
+      delete parts.skills;
+      delete parts.progression;
+    }
+    return parts;
+  }
+
+  /** @override */
+  _prepareTabs(group) {
+    const tabs = super._prepareTabs(group);
+    if (this.document.type === "npc") {
+      delete tabs.skills;
+      delete tabs.progression;
+    }
+    return tabs;
+  }
+
+  /* -------------------------------------------- */
+
+  /** @override */
+  async _prepareContext(options) {
+    const context = await super._prepareContext(options);
+    const actor = this.document;
+
+    context.actor = actor;
+    context.system = actor.system;
+    context.config = LYRIAN;
+    context.isCharacter = actor.type === "character";
+    context.isNPC = actor.type === "npc";
+    context.editable = this.isEditable;
+    context.systemFields = actor.system.schema.fields;
+
+    context.enrichedBiography = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+      actor.system.biography ?? "",
+      { relativeTo: actor, rollData: actor.getRollData() }
+    );
+
+    if (context.isNPC) {
+      context.enrichedTactics = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+        actor.system.tactics ?? "",
+        { relativeTo: actor }
+      );
+    }
+
+    this._prepareStats(context);
+    this._prepareItems(context);
+    if (context.isCharacter) this._prepareSkills(context);
+
+    return context;
+  }
+
+  /* -------------------------------------------- */
+
+  /** @override */
+  async _preparePartContext(partId, context) {
+    context = await super._preparePartContext(partId, context);
+    if (partId in (context.tabs ?? {})) context.tab = context.tabs[partId];
+    return context;
+  }
+
+  /* -------------------------------------------- */
+
+  /** Build display-friendly stat blocks. */
+  _prepareStats(context) {
+    context.mainStats = Object.entries(LYRIAN.mainStats).map(([key, label]) => ({
+      key,
+      label: game.i18n.localize(label),
+      ...context.system.stats[key]
+    }));
+
+    context.subStatList = Object.entries(LYRIAN.subStats).map(([key, label]) => ({
+      key,
+      label: game.i18n.localize(label),
+      ...context.system.subStats[key]
+    }));
+  }
+
+  /* -------------------------------------------- */
+
+  /** Group skills under their governing sub stat for display. */
+  _prepareSkills(context) {
+    const groups = {};
+    for (const [key, def] of Object.entries(LYRIAN.skills)) {
+      const stat = def.stat;
+      groups[stat] ??= {
+        key: stat,
+        label: game.i18n.localize(LYRIAN.subStats[stat]),
+        value: context.system.subStats[stat].total,
+        skills: []
+      };
+      groups[stat].skills.push({
+        key,
+        label: game.i18n.localize(def.label),
+        ...context.system.skills[key]
+      });
+    }
+    context.skillGroups = Object.values(groups);
+
+    context.artisanList = Object.entries(LYRIAN.artisanSkills).map(([key, label]) => ({
+      key,
+      label: game.i18n.localize(label),
+      ...context.system.artisan[key]
+    }));
+
+    context.gatheringList = Object.entries(LYRIAN.gatheringSkills).map(([key, label]) => ({
+      key,
+      label: game.i18n.localize(label),
+      ...context.system.gathering[key]
+    }));
+
+    context.skillCapLabel = Number.isFinite(context.system.skillCap)
+      ? context.system.skillCap
+      : "∞";
+  }
+
+  /* -------------------------------------------- */
+
+  /** Sort owned items into sheet sections. */
+  _prepareItems(context) {
+    const buckets = {
+      weapons: [],
+      armor: [],
+      abilities: [],
+      reactions: [],
+      encounterStart: [],
+      encounterConclusion: [],
+      passives: [],
+      classes: [],
+      breakthroughs: [],
+      races: [],
+      gear: [],
+      injuries: []
+    };
+
+    for (const item of this.document.items) {
+      switch (item.type) {
+        case "weapon":
+          buckets.weapons.push(item);
+          break;
+        case "armor":
+          buckets.armor.push(item);
+          break;
+        case "ability":
+          if (item.system.timing === "passive") buckets.passives.push(item);
+          else if (item.system.timing === "encounterStart") buckets.encounterStart.push(item);
+          else if (item.system.timing === "encounterConclusion")
+            buckets.encounterConclusion.push(item);
+          else if (item.system.isReaction) buckets.reactions.push(item);
+          else buckets.abilities.push(item);
+          break;
+        case "class":
+          buckets.classes.push(item);
+          break;
+        case "breakthrough":
+          buckets.breakthroughs.push(item);
+          break;
+        case "race":
+          buckets.races.push(item);
+          break;
+        case "gear":
+          buckets.gear.push(item);
+          break;
+        case "injury":
+          buckets.injuries.push(item);
+          break;
+      }
+    }
+
+    context.items = buckets;
+
+    // EXP actually committed to classes and breakthroughs, for cross-checking Spirit Core.
+    context.expInClasses = buckets.classes.reduce((n, c) => n + c.system.expInvested, 0);
+    context.expInBreakthroughs = buckets.breakthroughs.reduce(
+      (n, b) => n + b.system.expCost,
+      0
+    );
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Expertise inputs are handled by hand.
+   *
+   * Foundry expands a form name like `system.skills.athletics.expertises.0.name`
+   * into an object keyed "0", which an ArrayField rejects. So these inputs are
+   * kept out of the form submission and written as a complete array instead.
+   */
+  _onRender(context, options) {
+    super._onRender?.(context, options);
+
+    this.element.querySelectorAll("[data-expertise-field]").forEach((input) => {
+      input.addEventListener("change", async (event) => {
+        const { group, skill } = event.target.dataset;
+        const rows = this.element.querySelectorAll(
+          `[data-expertise-row][data-group="${group}"][data-skill="${skill}"]`
+        );
+
+        const expertises = Array.from(rows).map((row) => ({
+          name: row.querySelector("[data-expertise-name]")?.value ?? "",
+          rank: Number(row.querySelector("[data-expertise-rank]")?.value ?? 0)
+        }));
+
+        await this.document.update({ [`system.${group}.${skill}.expertises`]: expertises });
+      });
+    });
+  }
+
+  /* -------------------------------------------- */
+  /*  Actions                                      */
+  /* -------------------------------------------- */
+
+  static async #onRollSkill(event, target) {
+    const index = target.dataset.expertiseIndex;
+    await this.document.rollSkill(target.dataset.skill, {
+      expertiseIndex: index === undefined ? undefined : Number(index)
+    });
+  }
+
+  static async #onRollArtisan(event, target) {
+    const index = target.dataset.expertiseIndex;
+    await this.document.rollArtisan(target.dataset.skill, {
+      expertiseIndex: index === undefined ? undefined : Number(index)
+    });
+  }
+
+  /** Append a blank expertise to a skill. */
+  static async #onAddExpertise(event, target) {
+    const { group, skill } = target.dataset;
+    const path = `system.${group}.${skill}.expertises`;
+    const current = foundry.utils.getProperty(this.document, path) ?? [];
+    await this.document.update({
+      [path]: [...current.map((e) => ({ name: e.name, rank: e.rank })), { name: "", rank: 0 }]
+    });
+  }
+
+  static async #onRemoveExpertise(event, target) {
+    const { group, skill, index } = target.dataset;
+    const path = `system.${group}.${skill}.expertises`;
+    const current = foundry.utils.getProperty(this.document, path) ?? [];
+    const next = current
+      .map((e) => ({ name: e.name, rank: e.rank }))
+      .filter((_, i) => i !== Number(index));
+    await this.document.update({ [path]: next });
+  }
+
+  static async #onRollGathering(event, target) {
+    await this.document.rollGathering(target.dataset.skill);
+  }
+
+  static async #onRollSave() {
+    await this.document.rollSave();
+  }
+
+  static async #onRollInitiative() {
+    await this.document.rollInitiativeCheck();
+  }
+
+  static async #onRollInjury() {
+    await this.document.rollInjury();
+  }
+
+  static async #onAttack(event, target) {
+    const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    if (!item) return;
+    await item.rollAttack(target.dataset.attackType, { free: event.shiftKey });
+  }
+
+  static async #onUseItem(event, target) {
+    const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    if (!item) return;
+    if (item.type === "ability") await item.rollAbility({ free: event.shiftKey });
+    else await item.postToChat();
+  }
+
+  static async #onCreateItem(event, target) {
+    const type = target.dataset.type;
+    const name = game.i18n.format("LYRIAN.New", {
+      type: game.i18n.localize(`TYPES.Item.${type}`)
+    });
+    await this.document.createEmbeddedDocuments("Item", [{ name, type }]);
+  }
+
+  static async #onEditItem(event, target) {
+    const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    item?.sheet.render(true);
+  }
+
+  static async #onDeleteItem(event, target) {
+    const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    if (!item) return;
+    const confirmed = await foundry.applications.api.DialogV2.confirm({
+      window: { title: game.i18n.localize("LYRIAN.Delete") },
+      content: `<p>${game.i18n.format("LYRIAN.DeleteConfirm", { name: item.name })}</p>`
+    });
+    if (confirmed) await item.delete();
+  }
+
+  static async #onToggleEquip(event, target) {
+    const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    if (!item) return;
+    await item.update({ "system.equipped": !item.system.equipped });
+  }
+
+  /**
+   * Increment or decrement AP, RP, HP or mana from the sheet header.
+   * There is no upper bound: overhealing, bonus AP and temporary mana all
+   * legitimately push a resource above its normal maximum. The only floor is
+   * negative max HP for hit points, since that is where Mortal Wound sits.
+   */
+  static async #onAdjustResource(event, target) {
+    const path = target.dataset.resource;
+    const delta = Number(target.dataset.delta ?? 0);
+    const current = foundry.utils.getProperty(this.document, `system.${path}.value`);
+    const max = foundry.utils.getProperty(this.document, `system.${path}.max`);
+    const floor = path === "hp" ? -max : 0;
+    const next = Math.max(floor, current + delta);
+    await this.document.update({ [`system.${path}.value`]: next });
+  }
+
+  /**
+   * Roll d20 plus any displayed value: a main stat, a sub stat, or a
+   * defence number the GM wants to contest directly.
+   */
+  static async #onRollAttribute(event, target) {
+    const value = Number(target.dataset.value ?? 0);
+    const label = target.dataset.label ?? "Check";
+    await this.document.rollAttribute(label, value);
+  }
+
+  static async #onRefreshTurn() {
+    await this.document.refreshTurn();
+  }
+
+  static async #onStartEncounter() {
+    await this.document.startEncounter();
+  }
+
+  static async #onTakeRest() {
+    await this.document.takeRest();
+  }
+
+  static async #onRecoverInjury(event, target) {
+    const id = target.closest("[data-item-id]")?.dataset.itemId;
+    await this.document.recoverInjury(id);
+  }
+
+  static async #onSpendExp() {
+    const available = this.document.system.exp.available;
+    const amount = await foundry.applications.api.DialogV2.prompt({
+      window: { title: game.i18n.localize("LYRIAN.Interlude.Train") },
+      content: `<p>${game.i18n.format("LYRIAN.Interlude.ExpAvailable", { exp: available })}</p>
+                <label>EXP to commit <input type="number" name="exp" value="100" min="0" max="${available}" /></label>
+                <label>Reason <input type="text" name="reason" placeholder="Class ability, breakthrough, skill" /></label>`,
+      ok: {
+        callback: (event, button) => ({
+          exp: Number(button.form.elements.exp.value),
+          reason: button.form.elements.reason.value
+        })
+      }
+    }).catch(() => null);
+
+    if (!amount?.exp) return;
+    await this.document.spendExp(amount.exp, amount.reason);
+  }
+
+  static async #onOpenCreation() {
+    const { runCharacterCreation } = await import("../apps/character-creation.mjs");
+    runCharacterCreation(this.document);
+  }
+}
