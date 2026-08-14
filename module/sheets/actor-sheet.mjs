@@ -1,4 +1,5 @@
 import { LYRIAN } from "../config.mjs";
+import { adjustResourcePool } from "../rules/resource-utils.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -386,11 +387,19 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static async #onAdjustResource(event, target) {
     const path = target.dataset.resource;
     const delta = Number(target.dataset.delta ?? 0);
-    const current = foundry.utils.getProperty(this.document, `system.${path}.value`);
-    const max = foundry.utils.getProperty(this.document, `system.${path}.max`);
+    if (!["hp", "mana", "ap", "rp"].includes(path) || !Number.isFinite(delta) || delta === 0) {
+      return;
+    }
+
+    const pool = foundry.utils.getProperty(this.document, `system.${path}`);
+    const max = Number(pool?.max ?? 0);
     const floor = path === "hp" ? -max : 0;
-    const next = Math.max(floor, current + delta);
-    await this.document.update({ [`system.${path}.value`]: next });
+    const next = adjustResourcePool(pool, delta, { floor });
+
+    await this.document.update({
+      [`system.${path}.value`]: next.value,
+      [`system.${path}.temp`]: next.temp
+    });
   }
 
   /**
