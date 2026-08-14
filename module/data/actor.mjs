@@ -324,6 +324,7 @@ export class LyrianCharacter extends LyrianActorBase {
     schema.proficiencies = new fields.SchemaField({
       weapons: new fields.SetField(new fields.StringField(), { required: false }),
       armor: new fields.SetField(new fields.StringField(), { required: false }),
+      languages: new fields.SetField(new fields.StringField(), { required: false }),
       unarmed: new fields.BooleanField({ initial: false })
     });
 

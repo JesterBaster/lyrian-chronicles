@@ -172,6 +172,7 @@ async function preloadTemplates() {
     "actor/header",
     "actor/tab-main",
     "actor/tab-skills",
+    "actor/tab-proficiencies",
     "actor/tab-abilities",
     "actor/tab-inventory",
     "actor/tab-progression",

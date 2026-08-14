@@ -20,6 +20,7 @@
   "LYRIAN.DeleteConfirm": "Permanently delete {name}?",
   "LYRIAN.Tab.main": "Overview",
   "LYRIAN.Tab.skills": "Skills",
+  "LYRIAN.Tab.proficiencies": "Proficiencies",
   "LYRIAN.Tab.abilities": "Abilities",
   "LYRIAN.Tab.inventory": "Inventory",
   "LYRIAN.Tab.progression": "Spirit Core",

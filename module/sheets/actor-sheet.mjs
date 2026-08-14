@@ -1,6 +1,11 @@
 import { LYRIAN } from "../config.mjs";
 import { adjustResourcePool } from "../rules/resource-utils.mjs";
 import {
+  canonicalProficiency,
+  collectActorProficiencies,
+  proficiencyKey
+} from "../rules/proficiencies.mjs";
+import {
   normalizeClassLevel,
   raceSkillGrant,
   selectedRaceSkillBonuses
@@ -35,6 +40,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       browsePack: LyrianActorSheet.#onBrowsePack,
       adjustClassLevel: LyrianActorSheet.#onAdjustClassLevel,
       allocateRaceSkills: LyrianActorSheet.#onAllocateRaceSkills,
+      addProficiency: LyrianActorSheet.#onAddProficiency,
+      removeProficiency: LyrianActorSheet.#onRemoveProficiency,
       createItem: LyrianActorSheet.#onCreateItem,
       editItem: LyrianActorSheet.#onEditItem,
       deleteItem: LyrianActorSheet.#onDeleteItem,
@@ -56,6 +63,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     tabs: { template: "templates/generic/tab-navigation.hbs" },
     main: { template: "systems/lyrian-chronicles/templates/actor/tab-main.hbs" },
     skills: { template: "systems/lyrian-chronicles/templates/actor/tab-skills.hbs" },
+    proficiencies: { template: "systems/lyrian-chronicles/templates/actor/tab-proficiencies.hbs" },
     abilities: { template: "systems/lyrian-chronicles/templates/actor/tab-abilities.hbs" },
     inventory: { template: "systems/lyrian-chronicles/templates/actor/tab-inventory.hbs" },
     progression: { template: "systems/lyrian-chronicles/templates/actor/tab-progression.hbs" },
@@ -68,6 +76,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       tabs: [
         { id: "main", icon: "fa-solid fa-shield-halved" },
         { id: "skills", icon: "fa-solid fa-dice-d20" },
+        { id: "proficiencies", icon: "fa-solid fa-shield" },
         { id: "abilities", icon: "fa-solid fa-wand-sparkles" },
         { id: "inventory", icon: "fa-solid fa-sack" },
         { id: "progression", icon: "fa-solid fa-gem" },
@@ -86,6 +95,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     // NPCs have no skill sheet or interlude bookkeeping.
     if (this.document.type === "npc" || this.document.type === "monster") {
       delete parts.skills;
+      delete parts.proficiencies;
       delete parts.progression;
     }
     return parts;
@@ -96,6 +106,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const tabs = super._prepareTabs(group);
     if (this.document.type === "npc" || this.document.type === "monster") {
       delete tabs.skills;
+      delete tabs.proficiencies;
       delete tabs.progression;
     }
     return tabs;
@@ -135,6 +146,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     this._prepareStats(context);
     this._prepareItems(context);
     if (context.isCharacter) this._prepareSkills(context);
+    if (context.isCharacter) this._prepareProficiencies(context);
 
     return context;
   }
@@ -201,6 +213,17 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.skillCapLabel = Number.isFinite(context.system.skillCap)
       ? context.system.skillCap
       : "∞";
+  }
+
+  /** Collect automatic and player-selected proficiencies without duplicates. */
+  _prepareProficiencies(context) {
+    const proficiency = collectActorProficiencies(this.document);
+    proficiency.automatic = Object.fromEntries(
+      Object.entries(proficiency.groups).map(([kind, entries]) => [
+        kind, entries.filter((entry) => entry.granted)
+      ])
+    );
+    context.proficiency = proficiency;
   }
 
   /* -------------------------------------------- */
@@ -521,6 +544,35 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
     if (!item || item.type !== "race") return;
     await this._promptRaceSkillAllocation(item);
+  }
+
+  static async #onAddProficiency(event, target) {
+    const kind = target.dataset.kind;
+    if (!["weapons", "armor", "languages"].includes(kind)) return;
+    const card = target.closest("[data-proficiency-kind]");
+    const input = card?.querySelector("[data-proficiency-input]");
+    const canonical = canonicalProficiency(input?.value, kind);
+    if (!canonical.name) return;
+    if (canonical.kind !== kind) {
+      return ui.notifications.warn(`${canonical.name} belongs under ${canonical.kind}.`);
+    }
+
+    const current = collectActorProficiencies(this.document).groups[kind];
+    if (current.some((entry) => entry.key === canonical.key)) {
+      return ui.notifications.warn(`${canonical.name} is already granted or selected.`);
+    }
+    const manual = Array.from(this.document.system.proficiencies[kind] ?? []);
+    await this.document.update({ [`system.proficiencies.${kind}`]: [...manual, canonical.name] });
+    if (input) input.value = "";
+  }
+
+  static async #onRemoveProficiency(event, target) {
+    const kind = target.dataset.kind;
+    const key = proficiencyKey(target.dataset.name);
+    if (!["weapons", "armor", "languages"].includes(kind) || !key) return;
+    const manual = Array.from(this.document.system.proficiencies[kind] ?? [])
+      .filter((value) => proficiencyKey(value) !== key);
+    await this.document.update({ [`system.proficiencies.${kind}`]: manual });
   }
 
   static async #onUseItem(event, target) {

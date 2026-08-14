@@ -225,6 +225,36 @@
 .lyrian .lyr-feature-role { color: var(--lyr-ink-faint); font-size: 0.65rem; }
 .lyrian .lyr-race-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.55rem; margin-top: 0.7rem; }
 
+/* Proficiencies */
+.lyrian .lyr-prof-summary,
+.lyrian .lyr-prof-card {
+  border: 1px solid rgba(201, 162, 39, 0.35); border-radius: var(--lyr-radius);
+  background: rgba(16, 19, 31, 0.78); padding: 0.85rem 1rem; margin-bottom: 0.85rem;
+}
+.lyrian .lyr-prof-summary__line { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0; }
+.lyrian .lyr-prof-chip,
+.lyrian .lyr-prof-entry {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  border: 1px solid rgba(201, 162, 39, 0.6); border-radius: 999px;
+  padding: 0.28rem 0.55rem; color: var(--lyr-gold); background: rgba(201, 162, 39, 0.07);
+}
+.lyrian .lyr-prof-chip--armor { border-color: rgba(103, 164, 222, 0.65); color: #a9d2f6; }
+.lyrian .lyr-prof-sources { border-top: 1px solid var(--lyr-rule); margin-top: 0.7rem; padding-top: 0.55rem; }
+.lyrian .lyr-prof-sources > div { display: grid; gap: 0.15rem; margin: 0.5rem 0; }
+.lyrian .lyr-prof-sources span,
+.lyrian .lyr-prof-sources em { font-size: 0.72rem; }
+.lyrian .lyr-prof-sources em { color: var(--lyr-ink-faint); }
+.lyrian .lyr-prof-card { border-color: rgba(103, 164, 222, 0.25); }
+.lyrian .lyr-prof-card > header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--lyr-rule); margin-bottom: 0.7rem; padding-bottom: 0.55rem; }
+.lyrian .lyr-prof-card > header h2 { margin: 0; font-size: 0.88rem; text-transform: uppercase; }
+.lyrian .lyr-prof-card > header > span { min-width: 1.5rem; text-align: center; border-radius: 999px; background: rgba(103, 164, 222, 0.12); padding: 0.2rem; }
+.lyrian .lyr-prof-list { display: flex; flex-wrap: wrap; gap: 0.45rem; min-height: 1.8rem; }
+.lyrian .lyr-prof-entry { border-radius: 5px; border-color: rgba(103, 164, 222, 0.35); color: var(--lyr-ink); }
+.lyrian .lyr-prof-entry em { color: var(--lyr-ink-faint); font-size: 0.55rem; text-transform: uppercase; }
+.lyrian .lyr-prof-entry button { border: 0; padding: 0 0.15rem; min-height: 0; color: var(--lyr-hp); background: transparent; }
+.lyrian .lyr-prof-add { display: flex; gap: 0.45rem; margin-top: 0.75rem; }
+.lyrian .lyr-prof-add input { flex: 1; }
+
 /* --------------------------------------------------------------------------
    Stats — hexagonal nodes
    -------------------------------------------------------------------------- */
