@@ -1,5 +1,6 @@
 import { LYRIAN } from "../config.mjs";
 import { parseMonsterAttackProfile } from "../rules/monster-attack.mjs";
+import { classFeatureGrants } from "../rules/progression.mjs";
 
 /**
  * The Actor document for Lyrian Chronicles.
@@ -33,6 +34,121 @@ export class LyrianActor extends Actor {
     data.spiritCore = this.system.spiritCore ?? 0;
 
     return data;
+  }
+
+  /* -------------------------------------------- */
+  /*  Compendium progression                      */
+  /* -------------------------------------------- */
+
+  /** Synchronize race traits and unlocked class abilities from compendium links. */
+  async syncProgressionFeatures() {
+    if (this.type !== "character") return;
+
+    const expected = new Map();
+    const addExpected = (sourceItem, grant, kind) => {
+      const link = sourceItem.system.relationships?._links?.find(
+        (entry) => entry.stableId === grant.stableId
+      );
+      if (!link?.uuid) return;
+      expected.set(`${sourceItem.id}:${grant.stableId}`, {
+        ...grant,
+        kind,
+        sourceItemId: sourceItem.id,
+        sourceName: sourceItem.name,
+        uuid: link.uuid
+      });
+    };
+
+    const races = this.items.filter((item) => item.type === "race");
+    for (const race of races) {
+      const relationships = race.system.relationships ?? {};
+      for (const stableId of [...(relationships.abilities ?? []), ...(relationships.traits ?? [])]) {
+        addExpected(race, { stableId, role: "Racial Trait", requiredLevel: 0 }, "race");
+      }
+      const variant = race.system.variants?.find(
+        (choice) => choice.key === race.system.selectedVariant
+      );
+      if (variant?.abilityStableId) {
+        addExpected(race, {
+          stableId: variant.abilityStableId,
+          role: variant.name || "House Trait",
+          requiredLevel: 0
+        }, "race");
+      }
+    }
+
+    for (const classItem of this.items.filter((item) => item.type === "class")) {
+      for (const grant of classFeatureGrants(classItem.system, classItem.system.abilitiesUnlocked)) {
+        addExpected(classItem, grant, "class");
+      }
+    }
+
+    const generated = this.items.filter(
+      (item) => item.type === "ability" && item.getFlag("lyrian-chronicles", "featureSource")
+    );
+    const generatedByKey = new Map(generated.map((item) => {
+      const source = item.getFlag("lyrian-chronicles", "featureSource");
+      return [`${source.sourceItemId}:${source.stableId}`, item];
+    }));
+
+    const create = [];
+    const update = [];
+    for (const [key, grant] of expected) {
+      if (generatedByKey.has(key)) continue;
+
+      const owned = this.items.find(
+        (item) => item.type === "ability" && item.system.stableId === grant.stableId &&
+          !item.getFlag("lyrian-chronicles", "featureSource")
+      );
+      const featureSource = {
+        kind: grant.kind,
+        sourceItemId: grant.sourceItemId,
+        sourceName: grant.sourceName,
+        stableId: grant.stableId,
+        requiredLevel: grant.requiredLevel,
+        role: grant.role
+      };
+      if (owned) {
+        update.push({
+          _id: owned.id,
+          "flags.lyrian-chronicles.featureSource": featureSource,
+          "system.classStep": grant.requiredLevel
+        });
+        continue;
+      }
+
+      const source = await fromUuid(grant.uuid);
+      if (!source) continue;
+      const data = source.toObject();
+      delete data._id;
+      foundry.utils.setProperty(data, "flags.lyrian-chronicles.featureSource", featureSource);
+      data.system.classStep = grant.requiredLevel;
+      create.push(data);
+    }
+
+    const remove = generated.filter((item) => {
+      const source = item.getFlag("lyrian-chronicles", "featureSource");
+      return !expected.has(`${source.sourceItemId}:${source.stableId}`);
+    });
+    if (remove.length) await this.deleteEmbeddedDocuments("Item", remove.map((item) => item.id));
+    if (update.length) await this.updateEmbeddedDocuments("Item", update);
+    if (create.length) await this.createEmbeddedDocuments("Item", create);
+
+    const primary = races.find((item) => item.system.raceKind === "primary");
+    const ancestry = races.find((item) => item.system.raceKind === "ancestry");
+    const variant = primary?.system.variants?.find(
+      (choice) => choice.key === primary.system.selectedVariant
+    );
+    const details = {
+      race: primary?.name ?? "",
+      subrace: ancestry?.name ?? variant?.name ?? ""
+    };
+    if (this.system.details.race !== details.race || this.system.details.subrace !== details.subrace) {
+      await this.update({
+        "system.details.race": details.race,
+        "system.details.subrace": details.subrace
+      });
+    }
   }
 
   /* -------------------------------------------- */

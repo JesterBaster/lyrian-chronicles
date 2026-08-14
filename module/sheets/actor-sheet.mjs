@@ -1,5 +1,6 @@
 import { LYRIAN } from "../config.mjs";
 import { adjustResourcePool } from "../rules/resource-utils.mjs";
+import { normalizeClassLevel } from "../rules/progression.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -28,6 +29,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       monsterAttack: LyrianActorSheet.#onMonsterAttack,
       useItem: LyrianActorSheet.#onUseItem,
       browsePack: LyrianActorSheet.#onBrowsePack,
+      adjustClassLevel: LyrianActorSheet.#onAdjustClassLevel,
       createItem: LyrianActorSheet.#onCreateItem,
       editItem: LyrianActorSheet.#onEditItem,
       deleteItem: LyrianActorSheet.#onDeleteItem,
@@ -256,6 +258,39 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     context.items = buckets;
 
+    const granted = this.document.items.filter(
+      (item) => item.type === "ability" && item.getFlag("lyrian-chronicles", "featureSource")
+    );
+    const grantedIds = new Set(granted.map((item) => item.id));
+    for (const key of ["abilities", "reactions", "encounterStart", "encounterConclusion", "passives"]) {
+      buckets[key] = buckets[key].filter((item) => !grantedIds.has(item.id));
+    }
+
+    const featureView = (item) => ({
+      item,
+      role: item.getFlag("lyrian-chronicles", "featureSource")?.role ?? "Trait",
+      requiredLevel: item.getFlag("lyrian-chronicles", "featureSource")?.requiredLevel ?? 0,
+      usable: item.system.timing !== "passive"
+    });
+    context.racialTraits = granted.filter(
+      (item) => item.getFlag("lyrian-chronicles", "featureSource")?.kind === "race"
+    ).map(featureView);
+    context.classGroups = buckets.classes.map((classItem) => ({
+      item: classItem,
+      level: classItem.system.abilitiesUnlocked,
+      features: granted
+        .filter((item) => item.getFlag("lyrian-chronicles", "featureSource")?.sourceItemId === classItem.id)
+        .sort((a, b) => (a.system.classStep ?? 0) - (b.system.classStep ?? 0))
+        .map(featureView)
+    }));
+
+    const primaryRace = buckets.races.find((item) => item.system.raceKind === "primary");
+    const ancestry = buckets.races.find((item) => item.system.raceKind === "ancestry");
+    const variant = primaryRace?.system.variants?.find(
+      (choice) => choice.key === primaryRace.system.selectedVariant
+    );
+    context.raceSummary = primaryRace ? { primary: primaryRace, ancestry, variant } : null;
+
     // EXP actually committed to classes and breakthroughs, for cross-checking Spirit Core.
     context.expInClasses = buckets.classes.reduce((n, c) => n + c.system.expInvested, 0);
     context.expInBreakthroughs = buckets.breakthroughs.reduce(
@@ -291,6 +326,68 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         await this.document.update({ [`system.${group}.${skill}.expertises`]: expertises });
       });
     });
+  }
+
+  /** Complete race-specific choices when a Race is dragged from a compendium. */
+  async _onDropItem(event, item) {
+    const result = await super._onDropItem(event, item);
+    const owned = Array.isArray(result) ? result[0] : result;
+    if (!owned || this.document.type !== "character" || owned.type !== "race") return result;
+
+    if (owned.system.raceKind === "ancestry") {
+      const primary = this.document.items.find(
+        (entry) => entry.type === "race" && entry.system.raceKind === "primary"
+      );
+      if (!primary || primary.name !== owned.system.primaryRace) {
+        await owned.delete();
+        ui.notifications.warn(`${owned.name} requires the ${owned.system.primaryRace} primary race.`);
+        return null;
+      }
+    }
+
+    const older = this.document.items.filter(
+      (entry) => entry.type === "race" && entry.id !== owned.id &&
+        entry.system.raceKind === owned.system.raceKind
+    );
+    if (older.length) await this.document.deleteEmbeddedDocuments("Item", older.map((entry) => entry.id));
+
+    if (owned.system.raceKind === "primary") {
+      const automation = owned.system.attributeBonuses ?? {};
+      const variants = owned.system.variants ?? [];
+      if (automation.chooseMain || automation.chooseSub || variants.length) {
+        const options = (table) => Object.entries(table)
+          .map(([key, label]) => `<option value="${key}">${game.i18n.localize(label)}</option>`)
+          .join("");
+        const variantOptions = variants
+          .map((choice) => `<option value="${choice.key}">${choice.name}</option>`)
+          .join("");
+        const choice = await foundry.applications.api.DialogV2.prompt({
+          window: { title: `${owned.name} choices` },
+          content: `<div class="lyrian">
+            ${automation.chooseMain ? `<label>Main stat +${automation.chooseMain}<select name="main"><option value="">—</option>${options(LYRIAN.mainStats)}</select></label>` : ""}
+            ${automation.chooseSub ? `<label>Sub stat +${automation.chooseSub}<select name="sub"><option value="">—</option>${options(LYRIAN.subStats)}</select></label>` : ""}
+            ${variants.length ? `<label>Demon house<select name="variant"><option value="">—</option>${variantOptions}</select></label>` : ""}
+          </div>`,
+          ok: {
+            callback: (dialogEvent, button) => ({
+              main: button.form.elements.main?.value ?? "",
+              sub: button.form.elements.sub?.value ?? "",
+              variant: button.form.elements.variant?.value ?? ""
+            })
+          }
+        }).catch(() => null);
+        if (choice) {
+          await owned.update({
+            "system.selectedMainStat": choice.main,
+            "system.selectedSubStat": choice.sub,
+            "system.selectedVariant": choice.variant
+          });
+        }
+      }
+    }
+
+    await this.document.syncProgressionFeatures();
+    return result;
   }
 
   /* -------------------------------------------- */
@@ -369,6 +466,15 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (!pack) return ui.notifications.warn(`Compendium not found: ${packName}`);
     if (typeof pack.render === "function") return pack.render(true);
     return pack.application?.render(true);
+  }
+
+  static async #onAdjustClassLevel(event, target) {
+    const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    if (!item || item.type !== "class") return;
+    const level = normalizeClassLevel(item.system.abilitiesUnlocked + Number(target.dataset.delta ?? 0));
+    if (level === item.system.abilitiesUnlocked) return;
+    await item.update({ "system.abilitiesUnlocked": level });
+    await this.document.syncProgressionFeatures();
   }
 
   static async #onUseItem(event, target) {

@@ -65,7 +65,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Animal Husbandry, Magic, Riding, Intimidation, Perception or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Awareness, Reason or Presence.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--mage-knight",
       "requirements": "<p>Cavalier mastered.</p>",
       "artisan": false,
@@ -77,7 +77,8 @@
         "stableId": "class--mage-knight",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mage-knight",
         "sourceHash": "0e49bfe7e093a458eac6d1b3512eeaacf0d4e8a6c562ab39e46bf4c7139d59a1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -147,7 +148,7 @@
       "skills": "You gain +5 skill points in Artificing. ",
       "heart": "You gain +1 to Reason.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--advanced-artificing",
       "requirements": "<p>Artificer mastered.</p>",
       "artisan": true,
@@ -159,7 +160,8 @@
         "stableId": "class--magitechnician",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/magitechnician-",
         "sourceHash": "0a7d8dc755006bdbdc714bf4820721d3f73e489c9599e06d7b4df463735d99c1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -229,7 +231,7 @@
       "skills": "You gain 5 skill points to spend in Athletics, Stealth, Roguecraft, Medicine, Common Knowledge, Linguistics, Appraise, History, Perception, Insight, Survival or Intimidation. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 Fitness, Cunning, Reason, Awareness or Presence.",
       "soul": "You gain +1 Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--maid-training",
       "requirements": "<p>None</p>",
       "artisan": false,
@@ -241,7 +243,8 @@
         "stableId": "class--maid",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/maid",
         "sourceHash": "d00b2067253ca6ddfcc56a971d6ce6d3cf48d386e53592a588ad1710468ec655",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -311,7 +314,7 @@
       "skills": "You gain 5 skill points to spend on Athletics, Stealth, Medicine, Perception, Survival, Animal Husbandry or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Awareness.",
       "soul": "You gain +1 to Power or Focus.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--status-assessment-ii",
       "requirements": "Ranger mastered.",
       "artisan": false,
@@ -323,7 +326,8 @@
         "stableId": "class--marksman",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/marksman",
         "sourceHash": "86f750a74207b80bf551dd3249452135ec36b0c32873a9ae9b7418d401484151",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -393,7 +397,7 @@
       "skills": "You gain +5 skill points to spend in Athletics, Perception, Insight, Medicine, Intimidation, Common Knowledge or a relevant Expert Knowledge skill (By DM approval). You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness.",
       "soul": "You gain +1 to Focus, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--martial-artist-s-journey",
       "requirements": "<p>None.</p>",
       "artisan": false,
@@ -405,7 +409,8 @@
         "stableId": "class--martial-artist",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/martial-artist",
         "sourceHash": "1bd249a3190393fd60de0410538a996378e4ffecfc1c34b527b2a71a37c7a75c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -475,7 +480,7 @@
       "skills": "You gain +5 skill points in Armorsmithing",
       "heart": "You gain +1 to Fitness. ",
       "soul": "You gain +1 to Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--armorsmithing-expert",
       "requirements": "<p>Armorsmith mastered.</p>",
       "artisan": true,
@@ -487,7 +492,8 @@
         "stableId": "class--master-armorer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/master-armorer",
         "sourceHash": "1265251a9ac7731626b65e80e321d84a1845225da6a6f2211d194cb043839b3a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -557,7 +563,7 @@
       "skills": "You gain +5 skill points to spend in Athletics, Linguistics, History, Medicine or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness or Reason.",
       "soul": "You gain +1 to Focus or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--medic-s-journey",
       "requirements": "<p>None</p>",
       "artisan": false,
@@ -569,7 +575,8 @@
         "stableId": "class--medic",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/medic",
         "sourceHash": "45618dcbb599d8ba84bb8122ee7d6319d53407a5f2937a6b7992f67afd38cea0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -639,7 +646,7 @@
       "skills": " You gain +5 skill points to spend on Riding, Deception, Intimidation, Negotiation, Appraise or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning, Reason, Awareness or Presence.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--peddler-of-wares",
       "requirements": "<p>None</p>",
       "artisan": false,
@@ -651,7 +658,8 @@
         "stableId": "class--merchant",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/merchant",
         "sourceHash": "cff201f031287f39e1268a2835694726c927dd3731f075b21964bd4c5beb6d73",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -721,7 +729,7 @@
       "skills": "You gain +5 skill points to spend in Art. You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
       "heart": "You gain +1 to Presence.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--mime-s-journey",
       "requirements": "<p>None</p>",
       "artisan": false,
@@ -733,7 +741,8 @@
         "stableId": "class--mime",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mime",
         "sourceHash": "50063a569285d6319506915876a18b4953505810ba23802748160df1d893f8e3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -803,7 +812,7 @@
       "skills": "You gain +5 skill points to spend on Mining. You also gain 5 skill points to spend in Athletics, Appraise or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": " You gain +1 to Fitness or Awareness.",
       "soul": "You gain +1 to Focus, Power or Toughness. In addition your Pickaxe proficiency gains: Superior Armor Pierce: Treats the enemy’s Guard as if it was 1 lower.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--rock-and-stone",
       "requirements": "<p>None</p>",
       "artisan": false,
@@ -815,7 +824,8 @@
         "stableId": "class--miner",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/miner",
         "sourceHash": "7bb253d8a559f8231d3ba3e2e9389a53f769b75967e73f885deee7b7f2bedf92",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -885,7 +895,7 @@
       "skills": "You gain +5 skill points to spend on Art. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Presence.",
       "soul": "You gain +1 to Focus, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--song-without-song",
       "requirements": "<p>Idol or Bard mastered or 10 points in Art (Flute) expertise and any class mastered.</p>",
       "artisan": false,
@@ -897,7 +907,8 @@
         "stableId": "class--mist-veil-elegy",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mist-veil-elegy",
         "sourceHash": "94307ba27116ff255c9cc32e7e6dd36ceed673dcc5b065ccb05315a4e316c617",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -967,7 +978,7 @@
       "skills": "You gain +5 skill points to spend on Riding, Deception, Intimidation, Negotiation, Appraise or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning, Reason, Awareness or Presence.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--merchant-lord",
       "requirements": "<p>Merchant mastered.</p>",
       "artisan": false,
@@ -979,7 +990,8 @@
         "stableId": "class--mogul",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mogul",
         "sourceHash": "0d2b391f895aa286ef2f952dbe235b33a16f942b8662707e6f0b576578f47583",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1049,7 +1061,7 @@
       "skills": "You gain +5 skill points to spend in Athletics, Perception, Insight, Medicine, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 Fitness or Awareness.",
       "soul": "You gain +1 Focus, Power or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--empty-body",
       "requirements": "<p>Cultivator or Martial Artist mastered.</p>",
       "artisan": false,
@@ -1061,7 +1073,8 @@
         "stableId": "class--monk",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/monk",
         "sourceHash": "2ace2009fcca0f553fa33f5f6819681d7705313e5413d953c60351792914dcd7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1131,7 +1144,7 @@
       "skills": "You gain +5 skill points to spend on Medicine, Magic or Survival.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Awareness or Cunning.",
       "soul": "You gain +1 to Power or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--spore-symbiote",
       "requirements": "<p>Mage mastered or Earth Mastery</p>",
       "artisan": false,
@@ -1143,7 +1156,8 @@
         "stableId": "class--mycomancer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mycomancer",
         "sourceHash": "13e68a92a9fd88b83b373506e232928488d1e4e6bf228d126878ef7b365dcb49",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1213,7 +1227,7 @@
       "skills": "You gain +5 skill points to spend in Appraise, Perception, Insight, Medicine, Magic or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Awareness.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--look-of-death",
       "requirements": "<p>Evil Eye mastered or Oni plus any tier 2 mastered.</p><p>At least 1 mystic eye slot open.</p>",
       "artisan": false,
@@ -1225,7 +1239,8 @@
         "stableId": "class--mystic-eyes-of-destruction",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mystic-eyes-of-destruction",
         "sourceHash": "dd7589919e492bc763ad86ecd261e05cc28eea94eee001f25b12528c8dc01272",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1295,7 +1310,7 @@
       "skills": "You gain +5 skill points to spend in Perception, Insight, Magic, Negotiation, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Awareness.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--authority",
       "requirements": "<p>Evil Eye mastered or Demon plus any tier 2 mastered.</p><p>At least 1 mystic eye slot open.</p>",
       "artisan": false,
@@ -1307,7 +1322,8 @@
         "stableId": "class--mystic-eyes-of-domination",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mystic-eyes-of-domination",
         "sourceHash": "6ed0b2211a050a0971b4bc0a6e116d35cd7e519b99cfaccc13f431a772f2cb3e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1377,7 +1393,7 @@
       "skills": "You gain +5 skill points to spend on Athletics, Medicine, Magic, Survival, Animal Husbandry or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Reason or Awareness.",
       "soul": "You gain +1 to Focus or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--natural-cycle",
       "requirements": "<p>Medic, Acolyte, Sorcerer, Mage, Ranger, Farmer, Forager or Mycomancer mastered.</p>",
       "artisan": false,
@@ -1389,7 +1405,8 @@
         "stableId": "class--naturalist",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/naturalist",
         "sourceHash": "f56c6373e7b0369b185f02ee74e3982f1b1c4b86f579e5c4bac9ef941228eb6c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1459,7 +1476,7 @@
       "skills": "You gain +5 skill points in Medicine, Magic, Religion, History, Flight, Artifice or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Cunning, Reason or Awareness.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--raise-undead",
       "requirements": "Any class mastered.",
       "artisan": false,
@@ -1471,7 +1488,8 @@
         "stableId": "class--necromancer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/necromancer",
         "sourceHash": "4139b0d3e2c9c4c2781e3309b1a26b9c2a9444157144d9344896501331c1db20",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1541,7 +1559,7 @@
       "skills": "You gain +5 skill points in Medicine, Magic, Religion, History, Flight, Artifice or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Cunning, Reason or Awareness.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--undead-mastery",
       "requirements": "<p>Necromancer mastered.</p>",
       "artisan": false,
@@ -1553,7 +1571,8 @@
         "stableId": "class--necromaster",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/necromaster",
         "sourceHash": "b836d6013b7c14aa3e8ac03c805e5d42f121789bdb927426fbb990585a1df9b6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1623,7 +1642,7 @@
       "skills": "You gain +5 skill points to spend in Athletics, Stealth, Deception, Roguecraft, Perception, Insight, Negotiation, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 Cunning.",
       "soul": "You gain +1 Focus or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--ninja-style",
       "requirements": "Rogue mastered.",
       "artisan": false,
@@ -1635,7 +1654,8 @@
         "stableId": "class--ninja",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/ninja",
         "sourceHash": "883b00f35e2163449ddd6f1082224d4414fe164475416a646ce9b498626f1bd1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1705,7 +1725,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Animal Husbandry, Riding, Flight, Intimidation, Perception, Insight or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Awareness or Presence.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--light-cavalry",
       "requirements": "<p>Cavalier mastered.</p>",
       "artisan": false,
@@ -1717,7 +1737,8 @@
         "stableId": "class--nomad",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/nomad",
         "sourceHash": "c485d7fa12afd36a1c5e6942683bf53d94d3863f0e84eedbf504d8743880cbc8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1787,7 +1808,7 @@
       "skills": "You gain +5 skill points to spend on Appraise, Medicine, Religion, Magic Perception, Insight, Art or Common Knowledge.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason, Awareness or Presence.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--expert-scribe",
       "requirements": "<p>Any class mastered.</p>",
       "artisan": false,
@@ -1799,7 +1820,8 @@
         "stableId": "class--onmyoji",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/onmyoji-",
         "sourceHash": "b9ca59c25ccc0968b78726f86f10e45146114feb470af2f517576070a5303868",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1869,7 +1891,7 @@
       "skills": "You gain +5 skill points to spend on Appraise, History, Magic, Insight, Perception or Common Knowledge.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--receive-oracle",
       "requirements": "<p>Any class mastered.</p>",
       "artisan": false,
@@ -1881,7 +1903,8 @@
         "stableId": "class--oracle",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/oracle",
         "sourceHash": "4f72ff0ffed253869d2da942b113ef923e7ea7722c5fcc9858a2b34b66c26ed7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1951,7 +1974,7 @@
       "skills": "You gain +5 skill points to spend on Athletics, Riding, Intimidation, Perception or Common Knowledge.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness or Awareness.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--throwing-rhythm",
       "requirements": "<p>Any class mastered. Proficiency in throwing weapons.</p>",
       "artisan": false,
@@ -1963,7 +1986,8 @@
         "stableId": "class--peltast",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/peltast",
         "sourceHash": "84580c364e4b732e4c7f0cd67f936a6b3ed5125bdb889acd808db8549ac8d160",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2033,7 +2057,7 @@
       "skills": " You gain +5 skill points to spend in Appraise, Athletics, Stealth, Deception, Roguecraft, Perception, Insight, Negotiation, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": " You gain +1 to Fitness or Cunning.",
       "soul": "You gain +1 to Focus or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--phantom-thief",
       "requirements": "<p>Thief mastered and mage mastered.</p>",
       "artisan": false,
@@ -2045,7 +2069,8 @@
         "stableId": "class--phantom-thief",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/phantom-thief",
         "sourceHash": "e41518e1460fc16a9d13dcaf8f97a1ac0cd1a68a734be69ced998b2b5c463d6e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2115,7 +2140,7 @@
       "skills": "You gain +5 skill points to spend on Religion, Art Magic, History, Appraise, Negotiation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason or Presence.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--benevolence",
       "requirements": "<p>Any class mastered or Holy mastery.</p>",
       "artisan": false,
@@ -2127,7 +2152,8 @@
         "stableId": "class--phosphomancer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/phosphomancer",
         "sourceHash": "64f5ddc5595d48a41d43a91f0b7f4deb7e4eb7d087c70ebbbc91893d5e378ce5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2197,7 +2223,7 @@
       "skills": "You gain +5 skill points to spend in Art. You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
       "heart": "You gain +1 to Presence.",
       "soul": "You gain +1 to Focus, Agility or Toughness",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--pierrot-s-journey",
       "requirements": "<p>None</p>",
       "artisan": false,
@@ -2209,7 +2235,8 @@
         "stableId": "class--pierrot",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/pierrot",
         "sourceHash": "49eb2fb1d618b658a73a4338b653913106b209d8054d0d2bf2f54ad8ddc72326",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2279,7 +2306,7 @@
       "skills": "You gain +5 skill points to spend in Medicine, Religion, Magic, History, Insight, Negotiation, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Awareness or Presence.",
       "soul": "You gain +1 to either Power or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--studied-healer",
       "requirements": "Acolyte mastered.",
       "artisan": false,
@@ -2291,7 +2318,8 @@
         "stableId": "class--priest",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/priest",
         "sourceHash": "d03c649868c682bd9b66f89ae044ae1c63834cf4f44cc4fd44b07d6ebbc2b385",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2361,7 +2389,7 @@
       "skills": "You gain +5 skill points to spend in Athletics, Riding, Intimidation, Perception or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 Fitness, Awareness or Presence.",
       "soul": "You gain +1 to Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--greatshield-master",
       "requirements": "Guardian mastered.",
       "artisan": false,
@@ -2373,7 +2401,8 @@
         "stableId": "class--protector",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/protector",
         "sourceHash": "5709f9035df64baa622ca9599dc0237b56b4102f4e1fd3de87687a36ae69c811",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2443,7 +2472,7 @@
       "skills": "You gain +5 skill points in Medicine, Magic, Religion, History, Flight, Artifice or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 Reason.",
       "soul": "You gain +1 Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--controlled-blaze",
       "requirements": "<p>Any class mastered or Fire mastery.</p>",
       "artisan": false,
@@ -2455,7 +2484,8 @@
         "stableId": "class--pyromancer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/pyromancer",
         "sourceHash": "7d87cec2151f06b04cc1454d07b520cd84aec65503612d0b45e0da410a35b055",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2525,7 +2555,7 @@
       "skills": "You gain +5 skill points in Medicine, Magic, Religion, History, Flight, Artifice or Common Knowledge.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason",
       "soul": "You gain +1 to Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--eternal-flames",
       "requirements": "<p>Pyromancer mastered.</p>",
       "artisan": false,
@@ -2537,7 +2567,8 @@
         "stableId": "class--pyromaster",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/pyromaster",
         "sourceHash": "fce0e6f738b77d5969d46a73498b51135e0435393ca11c400eeb94d897065cbd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2607,7 +2638,7 @@
       "skills": "You gain 5 skill points to spend on Appraise, Athletics, Stealth, Medicine, Perception, Survival, Animal Husbandry or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Awareness.",
       "soul": "You gain +1 to Focus or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--ranger-s-journey",
       "requirements": "<p>None.</p>",
       "artisan": false,
@@ -2619,7 +2650,8 @@
         "stableId": "class--ranger",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/ranger",
         "sourceHash": "1b3fe0c5eb6f678b02d786fdea7b3a39fc231ca64ab6a0a8e154585bb09071d6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2689,7 +2721,7 @@
       "skills": " You gain +5 skill points to spend on Athletics, Riding, Intimidation, Perception or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness.",
       "soul": "You gain +1 to Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--overwhelming-critical",
       "requirements": "<p>Highlander mastered.</p>",
       "artisan": false,
@@ -2701,7 +2733,8 @@
         "stableId": "class--reaver",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/reaver",
         "sourceHash": "9034e93e422d0d4b4056abb0a09eed32dbccf084db266866c919d7a03281167a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2771,7 +2804,7 @@
       "skills": "You gain +5 skill points to spend in Appraise, Athletics, Stealth, Deception, Roguecraft, Perception, Insight, Negotiation, Intimidation or Common Knowledge.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning.",
       "soul": "You gain +1 to Focus or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--rogue-s-journey",
       "requirements": "<p>None.</p>",
       "artisan": false,
@@ -2783,7 +2816,8 @@
         "stableId": "class--rogue",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/rogue",
         "sourceHash": "8c7307ed78f1caf7346965f1cbe6d1af11d9be0d6cf4af15c20e6397a8c1b9ee",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2853,7 +2887,7 @@
       "skills": "You gain +5 skill in Stealth or Stealth Expertise",
       "heart": "You gain +1 to Awareness.",
       "soul": "You gain +1 to Focus or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--saboteur",
       "requirements": "Rogue mastered.",
       "artisan": false,
@@ -2865,7 +2899,8 @@
         "stableId": "class--saboteur",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/saboteur",
         "sourceHash": "614b2ade0ece410b93e07a89ed2effb4787bd7092d799b65dff13aa13e961d79",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2935,7 +2970,7 @@
       "skills": "You gain +5 skill points in Appraise, Medicine, Magic, Religion, History, Flight, Artifice or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--augmented-casting-increased-reach",
       "requirements": "<p>Mage, Sorcerer or Mage Knight mastered.</p>",
       "artisan": false,
@@ -2947,7 +2982,8 @@
         "stableId": "class--sage",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sage",
         "sourceHash": "134ae08256d71ce1c6d8d996dd2497a6c58cc3c9cdcaf735e3fbc03d08a069db",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3017,7 +3053,7 @@
       "skills": "You gain +5 skill points to spend in Medicine, Religion, Magic, History, Insight, Negotiation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason or Presence.",
       "soul": "You gain +1 to Focus.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--sanctioned-healer",
       "requirements": "<p>Medic, Acolyte, Mage, Mage Knight or Sorcerer mastered.</p>",
       "artisan": false,
@@ -3029,7 +3065,8 @@
         "stableId": "class--sanctioner",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sanctioner",
         "sourceHash": "560fda7bf3b006ded7330ff382abf6b8115ab504414766a8a9747e6cf174965f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3099,7 +3136,7 @@
       "skills": "You gain 5 skill points to spend on Appraise, Athletics, Stealth, Medicine, Perception, Survival, Animal Husbandry, Art or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Awareness.",
       "soul": " You gain +1 to Focus or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--independent-actor",
       "requirements": "<p>Rogue or Ranger mastered</p>",
       "artisan": false,
@@ -3111,7 +3148,8 @@
         "stableId": "class--scout",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/scout",
         "sourceHash": "bdf76d0dc8040534f648b3a465f2f897509779d3be2dee3872be0fa487e34a59",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3181,7 +3219,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Magic, Perception, Intimidation, Survival, Art or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Reason or Presence.",
       "soul": "You gain +1 to Focus, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--fire-weapon",
       "requirements": "<p>Any class mastered.</p>",
       "artisan": false,
@@ -3193,7 +3231,8 @@
         "stableId": "class--searing-lotus-style",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/searing-lotus-style",
         "sourceHash": "5ee279972e3862d5dc44688516e9cfdaaf8938b086a3b700c55c93b03640c352",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3263,7 +3302,7 @@
       "skills": "You gain +5 skill points to spend in Athletics, Stealth, Perception, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Cunning or Presence.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--dark-weapon",
       "requirements": "<p>Any class mastered. Proficiency in at least one of Katanas, Scythes, Heavy Blades or Small weapons.</p>",
       "artisan": false,
@@ -3275,7 +3314,8 @@
         "stableId": "class--seven-sorrows-sword-style",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/seven-sorrows-sword-style",
         "sourceHash": "f3a24fa04de58c5d6079c077bf1ff93ceb5744f7b1fad2e690bf03fc9a90a164",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3345,7 +3385,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Stealth, Deception, Roguecraft, Perception, Insight, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning.",
       "soul": "You gain +1 to Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--nightstalker",
       "requirements": "<p>Rogue mastered or Dark mastery.</p>",
       "artisan": false,
@@ -3357,7 +3397,8 @@
         "stableId": "class--shadow-thief",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shadow-thief",
         "sourceHash": "ad8fb3a2dcdbf84337c414079552011b6a85b16a2d5cd3d61e982cf8b90ea83e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3427,7 +3468,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Stealth, Deception, Roguecraft, Perception, Insight, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning.",
       "soul": "You gain +1 to Focus, Power or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--shared-darkness",
       "requirements": "<p>Shadow Thief mastered</p>",
       "artisan": false,
@@ -3439,7 +3480,8 @@
         "stableId": "class--shadowbringer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shadowbringer",
         "sourceHash": "e53ec6e6b079d45afd72392dbc8514c2a7a9a3bc55ceb4b1b6b1373dd54c4b42",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3509,7 +3551,7 @@
       "skills": "You gain +5 skill points to spend on any non crafting or gathering skill.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Awareness or Presence.",
       "soul": "You gain +1 to Focus, Power or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--divine-weapon",
       "requirements": "<p>Human, proficient with shields and medium or heavy armor.</p>",
       "artisan": false,
@@ -3521,7 +3563,8 @@
         "stableId": "class--shield-paladin",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shield-paladin",
         "sourceHash": "256877033d3ae806d911bd09807aa6f1c227e15f32d755d38a4d6cfd2279ffe1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3591,7 +3634,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Riding, Intimidation, Perception, Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Awareness or Presence.",
       "soul": "You gain +1 to Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--soul-bond",
       "requirements": "<p>Bodyguard mastered.</p>",
       "artisan": false,
@@ -3603,7 +3646,8 @@
         "stableId": "class--shield-saint",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shield-saint",
         "sourceHash": "d8a56fe99c54ab236b04baa4353aaba43edc13c32961d01310285bad85eb472b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3673,7 +3717,7 @@
       "skills": "You gain +5 skill points to spend on Magic, Religion, Medicine, Perception, Negotiation or Common Knowledge.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason.",
       "soul": "You gain +1 to Power or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--recover-power",
       "requirements": "<p>Acolyte, Mage or Mage Knight mastered.</p>",
       "artisan": false,
@@ -3685,7 +3729,8 @@
         "stableId": "class--shieldwarden",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shieldwarden",
         "sourceHash": "2e438fc7dc83b65503fb866b107c61ab6613e53463984f3a9aa9becb14dee95b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3755,7 +3800,7 @@
       "skills": "You gain +5 skill points to spend on Athletics, Stealth, Medicine, Perception, Insight or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Cunning or Awareness.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--death-perception",
       "requirements": "<p>Any class mastered, must have the Touched by Death breakthrough. Must have at least 1 mystic eye slot open.</p>",
       "artisan": false,
@@ -3767,7 +3812,8 @@
         "stableId": "class--shinigami-eyes",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shinigami-eyes",
         "sourceHash": "32d6e1ac60f763007c866a3b491311fc53ffd89e91d36eea2d25333216f4b81e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3837,7 +3883,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Animal Husbandry, Riding, Flight, Intimidation, Perception or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Awareness or Presence.",
       "soul": "You gain +1 to Focus or Power",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--air-stability",
       "requirements": "<p>Cavalier mastered.</p>",
       "artisan": false,
@@ -3849,7 +3895,8 @@
         "stableId": "class--sky-knight",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sky-knight",
         "sourceHash": "27740ba73ae1b1204ada92db9db96eb6abdbf6b8cc5b8e91c9c37965fce202aa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3919,7 +3966,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Flight, Perception, Intimidation, Survival or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness or Awareness.",
       "soul": "You gain +1 to Focus, Power or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--boundless-wind",
       "requirements": "<p>Cultivator or Martial Artist mastered.</p>",
       "artisan": false,
@@ -3931,7 +3978,8 @@
         "stableId": "class--sky-talon-style",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sky-talon-style",
         "sourceHash": "45d62b50d3e81a77cbe38af099784a74e1687795a4b9c05c862b3253c80418f4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4001,7 +4049,7 @@
       "skills": "You gain 5 skill points to spend on Athletics, Stealth, Medicine, Perception, Survival, Animal Husbandry or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning or Awareness.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--snipe",
       "requirements": "<p>Marksman or Scout mastered.</p>",
       "artisan": false,
@@ -4013,7 +4061,8 @@
         "stableId": "class--sniper",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sniper",
         "sourceHash": "0660ab57f30c459548932e7877b4c2a018c3edc60babeae38858e30e8dde19bd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4083,7 +4132,7 @@
       "skills": "You gain +5 skill points to spend in Deception, Medicine, Magic, Religion, History, Negotiation, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason or Presence.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--sorcerer-s-journey",
       "requirements": "<p>None</p>",
       "artisan": false,
@@ -4095,7 +4144,8 @@
         "stableId": "class--sorcerer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sorcerer",
         "sourceHash": "16a61a06db6353d045e09285516f73aab12d48f399b69f7ce414c15559e9ad88",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4165,7 +4215,7 @@
       "skills": "You gain +5 skill points to spend on Athletics, Riding, Intimidation, Perception or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--versatile-range",
       "requirements": "<p>Lancer mastered.</p>",
       "artisan": false,
@@ -4177,7 +4227,8 @@
         "stableId": "class--spearmaster",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/spearmaster",
         "sourceHash": "f6bb0d69f4d597779a1ab712e26e56df0d09fbdf66a01bdff878bdfbbec98525",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4247,7 +4298,7 @@
       "skills": "You gain +5 skill points in Athletics, Intimidation, Magic, History, Flight, Artifice or Common Knowledge.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 Fitness or Reason.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--draw-elements-ii",
       "requirements": "<p>Spellblade mastered.</p>",
       "artisan": false,
@@ -4259,7 +4310,8 @@
         "stableId": "class--spell-blademaster",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/spell-blademaster",
         "sourceHash": "da3ab00e36db88ae32fd5ff4978c6cf39b9f1b1a3eb63c403cc79bc2771f8bb5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4329,7 +4381,7 @@
       "skills": "You gain +5 skill points in Athletics, Intimidation, Magic, History, Flight, Artifice or Common Knowledge.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 Fitness or Reason.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--draw-elements",
       "requirements": "Have at least 1 spell, Have one element mastered, Be proficient in 1 weapon.",
       "artisan": false,
@@ -4341,7 +4393,8 @@
         "stableId": "class--spellblade",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/spellblade",
         "sourceHash": "0d782d19a750e16dfb7376eed332a8d5feeb7a705f5e19ad963b157bfd981533",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4411,7 +4464,7 @@
       "skills": "You gain +5 skill points to spend on Appraise, Medicine, Magic, Religion, History, Flight, Artifice or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--celestial-artillery",
       "requirements": "<p>Mage or Sorcerer mastered.</p>",
       "artisan": false,
@@ -4423,7 +4476,8 @@
         "stableId": "class--starcaller",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/starcaller",
         "sourceHash": "a7ebaf1360039dd031088df745396c20af3cc3395d37e4a134911413759ba910",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4493,7 +4547,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Perception, Insight, Medicine, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness.",
       "soul": "You gain +1 to Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--shielding-fist",
       "requirements": "<p>Cultivator or Martial Artist mastered.</p>",
       "artisan": false,
@@ -4505,7 +4559,8 @@
         "stableId": "class--still-stone-style",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/still-stone-style",
         "sourceHash": "aaeb53f87b20deccc584275d60de88c5bf41d8c59dfeeee25d54cdaf6b4debb6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4575,7 +4630,7 @@
       "skills": "You gain +5 skill points in Deception, Stealth, Appraise, History, Magic, Perception, Intimidation, Negotiation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": " You gain +1 to Reason, Awareness or Cunning.",
       "soul": " You gain +1 to Focus or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--sound-the-retreat",
       "requirements": "<p>Tactician mastered</p>",
       "artisan": false,
@@ -4587,7 +4642,8 @@
         "stableId": "class--strategist",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/strategist",
         "sourceHash": "7e30948eb25a5a56b5d1d1f5927cae2515b98b9270c75981a0145d0b86588186",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4657,7 +4713,7 @@
       "skills": "You gain +5 skill points to spend on any non-crafting and non-gathering skill.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Cunning, Reason, Awareness or Presence.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--summoning-basics",
       "requirements": "<p>Any class mastered.</p>",
       "artisan": false,
@@ -4669,7 +4725,8 @@
         "stableId": "class--summoner",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/summoner",
         "sourceHash": "d18d23e5c4c121d7a3f3bdc99ecf6a9c3ebc0c092decb4478db1fe43715a7c66",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4739,7 +4796,7 @@
       "skills": "You gain +5 skill points to spend on Stealth, Athletics, Roguecraft, Survival or  Common Knowledge.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Awareness or Presence.",
       "soul": "You gain +1 to Focus or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--take-the-advantage",
       "requirements": "<p>Fighter, Rogue, Ranger, Cultivator, Adventurer, Maid or Forager mastered. Proficient in Light Swords.</p>",
       "artisan": false,
@@ -4751,7 +4808,8 @@
         "stableId": "class--swashbuckler",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/swashbuckler",
         "sourceHash": "95177ffa294cd24df6220ba486834224b953944eded3f70047b01ec0ea3247cf",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4821,7 +4879,7 @@
       "skills": "You gain +5 skill points to spend on any non crafting or gathering skill.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Awareness or Presence.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--divine-weapon",
       "requirements": "<p>Human.</p>",
       "artisan": false,
@@ -4833,7 +4891,8 @@
         "stableId": "class--sword-paladin",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sword-paladin",
         "sourceHash": "b6e08d587d8383fbd5f85afe52332bd2abf5dd197859f77245ab06d87d8e037e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4903,7 +4962,7 @@
       "skills": "You gain +5 skill points to spend on Athletics, Intimidation, History, Insight, Art, Perception or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Awareness or Fitness.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--resheathe",
       "requirements": "Iaido style mastered.",
       "artisan": false,
@@ -4915,7 +4974,8 @@
         "stableId": "class--sword-saint",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sword-saint",
         "sourceHash": "22b82aa7a4bb3554b5fedb5ee36448c8eec71f918da2d75a0797b180880b7de6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4985,7 +5045,7 @@
       "skills": "You gain +5 skill points to spend on History.  You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
       "heart": "You gain +1 to Reason, Awareness or Cunning.",
       "soul": "You gain +1 to Focus or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--scholar-of-tactics",
       "requirements": "<p>Any class mastered, 5 skill points in the history skill.</p>",
       "artisan": false,
@@ -4997,7 +5057,8 @@
         "stableId": "class--tactician",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/tactician",
         "sourceHash": "8a0c64d51644cd6f79a2a930235ded33b59f3eb5bc1247a4c55925884aaffef1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5067,7 +5128,7 @@
       "skills": "You gain +5 skill points to spend in Athletics, Perception, Insight, Survival, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness.",
       "soul": "You gain +1 to Focus, Power or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--improvised-weaponry",
       "requirements": "<p>Any class mastered.</p>",
       "artisan": false,
@@ -5079,7 +5140,8 @@
         "stableId": "class--tavern-brawler",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/tavern-brawler",
         "sourceHash": "b37ac8be4b56af4cb9f8e371a9d041a0505b253feb59eaf306a7704453f11e1e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5149,7 +5211,7 @@
       "skills": "You gain +5 skill points to spend on any non crafting or gathering skill. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning or Awareness.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--mending",
       "requirements": "<p>Time Thief mastered.</p>",
       "artisan": false,
@@ -5161,7 +5223,8 @@
         "stableId": "class--temporal-trickster",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/temporal-trickster",
         "sourceHash": "34435f02c93f16d04559cbc6ed8dd35db0f6776ce9c0375f9b48f653e76c2556",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5231,7 +5294,7 @@
       "skills": "You gain +5 skill points to spend in Appraise, Athletics, Stealth, Deception, Roguecraft, Perception, Insight, Negotiation, Intimidation or Common Knowledge.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness or Cunning.",
       "soul": "You gain +1 Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--infiltrate",
       "requirements": "<p>Be a rabbitfolk or have Rogue mastered and possess the Decipher Magic ability.</p>",
       "artisan": false,
@@ -5243,7 +5306,8 @@
         "stableId": "class--thief",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/thief",
         "sourceHash": "4d4c9ec7c5b15b6ad17a48703c2403553f1b3f2905d1e3fdfd2f33fac61356e6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5313,7 +5377,7 @@
       "skills": "You gain +5 skill points in Carpentry.",
       "heart": "You gain +1 to Fitness or Reason.",
       "soul": "You gain +1 to Power, Focus or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--timberwright-s-core-crafting",
       "requirements": "<p>Carpenter mastered.</p>",
       "artisan": true,
@@ -5325,7 +5389,8 @@
         "stableId": "class--timberwright",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/timberwright",
         "sourceHash": "33d604852fa4d6042628c2447bb543c3de945b7a05a9796d3462b74fc8523bdb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5395,7 +5460,7 @@
       "skills": " You gain +5 skill points to spend on any non crafting or gathering skill. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning or Awareness.",
       "soul": "You gain +1 to Focus or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--thefts-of-the-past",
       "requirements": "<p>Rogue mastered.</p>",
       "artisan": false,
@@ -5407,7 +5472,8 @@
         "stableId": "class--time-thief",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/time-thief",
         "sourceHash": "69c1ac219a0876683092bad457f1f352873accc2be4d828e83a1dff9b9db1539",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5477,7 +5543,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Perception, Intimidation, Survival or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness or Awareness.",
       "soul": "You gain +1 to Focus, Power or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--rolling-thunder",
       "requirements": "<p>Cultivator or Martial Artist mastered, any tier 2 mastered.</p>",
       "artisan": false,
@@ -5489,7 +5555,8 @@
         "stableId": "class--transcendent-lightning-style",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/transcendent-lightning-style",
         "sourceHash": "d315d3492d59667b0cc676ded981cd3f9e8b21068893fa800c14db651bc4b005",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5559,7 +5626,7 @@
       "skills": "You gain 5 Transmuter points. Pick one of the crafting disciplines, such as blacksmithing or alchemy. Whenever you use your Transmuter abilities in a craft of that discipline, you may add your transmuter points as bonus to that ability (even if it's not a roll).",
       "heart": "You gain +1 to Reason.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness. In addition, as an errand you can use Co-Craft to help in crafting once.  Only 1 person can Co-Craft with a craft at a time. When you Co-Craft, you help another crafter allowing you to use a single Co-Craft ability in their crafting session. Your Co-Craft actions count towards the 1 limit of using an ability for the main crafter.  (Both you and the main crafter cannot use the same co-craft ability in one crafting session). You must declare you are helping before any crafting actions are taken by the main crafter.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--transmutation-basics",
       "requirements": "<p>None</p>",
       "artisan": true,
@@ -5571,7 +5638,8 @@
         "stableId": "class--transmuter",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/transmuter",
         "sourceHash": "b067e22188536471371b2f2f44b70ceafce669d51db42c04dc11e7a191ea958e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5641,7 +5709,7 @@
       "skills": "You gain 5 skill points to spend on Athletics, Stealth, Medicine, Perception, Survival, Animal Husbandry or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning or Awareness.",
       "soul": "You gain +1 to Power or Agility. The food units received from your key ability is increased to 1d10 x 10 food units.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--trap-basics",
       "requirements": "<p>Ranger mastered</p>",
       "artisan": false,
@@ -5653,7 +5721,8 @@
         "stableId": "class--trapper",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/trapper",
         "sourceHash": "d91d58ffbe127d44d3196a7ff60f27cab8ddd3535c33dfa18f07635cce805eb5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5723,7 +5792,7 @@
       "skills": "You gain +5 skill points to spend on Deception.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 Cunning.",
       "soul": "You gain +1 Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--perfect-mimicry",
       "requirements": "<p>Two classes mastered, of which 1 must be a tier 2 class.</p>",
       "artisan": false,
@@ -5735,7 +5804,8 @@
         "stableId": "class--trickster",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/trickster",
         "sourceHash": "36c1866ac4a1d3db525aa4e8e0be7d75a2455d414a0d983b29a7e392e8375eaa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5805,7 +5875,7 @@
       "skills": "You gain +5 skill points to spend on Athletics, Stealth, Medicine, Perception, Insight or Common Knowledge.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Cunning or Awareness.",
       "soul": "You gain +1 to Focus or Power.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--improved-death-perception",
       "requirements": "<p>Shinigami Eyes mastered.</p>",
       "artisan": false,
@@ -5817,7 +5887,8 @@
         "stableId": "class--true-shinigami-eyes",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/true-shinigami-eyes",
         "sourceHash": "804c3701a4ac2b7e31c9148b0aa382d20cd6918930fb171cb26dd5a6a4e3b693",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5887,7 +5958,7 @@
       "skills": "You gain +5 skill points to spend on any non crafting or gathering skill.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Cunning or Presence.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--vampiric-strength",
       "requirements": "<p>Must have the Curse of Vampirism breakthrough.</p>",
       "artisan": false,
@@ -5899,7 +5970,8 @@
         "stableId": "class--vampire",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/vampire",
         "sourceHash": "c9389f54642bfc0641275eccfd1cf4062dacd8810b2158e3cc5720968d5d078c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5969,7 +6041,7 @@
       "skills": "You gain +5 skill points to spend on any non crafting or gathering skill.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": " You gain +1 to Fitness, Cunning or Presence.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--lord-s-dominion",
       "requirements": "<p>Vampire mastered.</p>",
       "artisan": false,
@@ -5981,7 +6053,8 @@
         "stableId": "class--vampire-lord",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/vampire-lord",
         "sourceHash": "a53f5896384e1e691cef079ce06c0b0c63e4d4ab6e785d2c3438aed6b1e3ba63",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6051,7 +6124,7 @@
       "skills": "You gain +5 skill points to spend on Magic, Religion, Medicine, Perception, Negotiation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason.",
       "soul": "You gain +1 to Power or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--emergency-shields",
       "requirements": "<p>Shieldwarden mastered.</p>",
       "artisan": false,
@@ -6063,7 +6136,8 @@
         "stableId": "class--veilguard",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/veilguard",
         "sourceHash": "c43d7ae45b4c99e67d78c12a0e8377bf5434c15a2371ff4f712f0aa8a85d92c7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6133,7 +6207,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Stealth, Deception, Roguecraft, Medicine, Survival or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning.",
       "soul": " You gain +1 to Focus.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--toxic-blast",
       "requirements": "<p>Alchemist, Culinarian, Cultivator, Farmer, Forager, Maid, Pierrot, Rogue, Ranger or Mycomancer mastered.</p>",
       "artisan": false,
@@ -6145,7 +6219,8 @@
         "stableId": "class--venomancer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/venomancer",
         "sourceHash": "5c5f1dc4f36ae69311633ec83e35dec23500cb133fa020c933059f22f1a8789d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6215,7 +6290,7 @@
       "skills": " You gain +5 skill points to spend in Athletics, Stealth, Deception, Roguecraft, Medicine, Survival or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning.",
       "soul": "You gain +1 to Focus.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--envenom-weapon",
       "requirements": "<p>Alchemist, Culinarian, Cultivator, Farmer, Forager, Maid, Pierrot, Rogue, Ranger or Mycomancer mastered.</p>",
       "artisan": false,
@@ -6227,7 +6302,8 @@
         "stableId": "class--venomblade",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/venomblade",
         "sourceHash": "bbf5f3bc541ffbad8793e72bc6ee362984131da651e1734bb8e5b6c5e4c99c41",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6297,7 +6373,7 @@
       "skills": "You gain +5 skill points to spend on Stealth, Magic, Perception or Insight or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Cunning, Reason or Awareness.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--disable-magic",
       "requirements": "Mage mastered.",
       "artisan": false,
@@ -6309,7 +6385,8 @@
         "stableId": "class--warding-mage",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/warding-mage",
         "sourceHash": "9da275b2b30e42b964a433c4628a91dbd7376450b9f0a6ce16a2da7895a183cb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6379,7 +6456,7 @@
       "skills": "You gain +5 skill points to spend on Athletics, Negotiation, Perception or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 Fitness or Presence.",
       "soul": "You gain +1 Focus.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--mana-sight",
       "requirements": "<p>Cultivator or Martial Artist mastered. Must have at least 1 mystic eye slot open.</p>",
       "artisan": false,
@@ -6391,7 +6468,8 @@
         "stableId": "class--wave-palm-style",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/wave-palm-style",
         "sourceHash": "f0ae206e9f6309d302e9933a855c20b3c10289f92bae4511779b72b4ac4ff479",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6461,7 +6539,7 @@
       "skills": "You gain +5 skill points to spend on Animal Husbandry.  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Cunning, Reason, Awareness or Presence.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--expanded-menagerie",
       "requirements": "<p>Animal summoner mastered.</p>",
       "artisan": false,
@@ -6473,7 +6551,8 @@
         "stableId": "class--wildheart",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/wildheart",
         "sourceHash": "001084d8674a8cb82332bd6cd3553b72cdf62965154dcd0d6814cc5cc54f86d8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6543,7 +6622,7 @@
       "skills": "You gain +5 skill points in Medicine, Magic, Religion, History, Flight, Artifice or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason or Fitness.",
       "soul": "You gain +1 to Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--wind-master",
       "requirements": "Mage mastered or Wind mastered.",
       "artisan": false,
@@ -6555,7 +6634,8 @@
         "stableId": "class--windbringer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/windbringer",
         "sourceHash": "6379c951c442921bdc328c897c3b019c49d97c833ef25ee62deba55b655af8a1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6625,7 +6705,7 @@
       "skills": "You gain +5 skill points to spend in Athletics, Perception, Insight, Medicine, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 Fitness or Awareness.",
       "soul": "You gain +1 Focus, Power, Agility or Toughness.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--rapid-blasts",
       "requirements": "<p>Monk mastered.</p>",
       "artisan": false,
@@ -6637,7 +6717,8 @@
         "stableId": "class--zen-warrior",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/zen-warrior",
         "sourceHash": "dc576831fa3cfffd074f0c14dee68440967c0071eb7f556ab4537c851cf8da5d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6707,7 +6788,7 @@
       "skills": "You gain +5 skill points in Medicine, Magic, Religion, History, Flight, Artifice or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Reason or Presence.",
       "soul": "You gain +1 to Focus or Agility.",
-      "abilitiesUnlocked": 0,
+      "abilitiesUnlocked": 1,
       "keyAbilities": "key-ability--wind-master",
       "requirements": "<p>Mage mastered or Wind mastered.</p>",
       "artisan": false,
@@ -6719,7 +6800,8 @@
         "stableId": "class--zephyr-warder",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/zephyr-warder",
         "sourceHash": "2ce7be089c203811cc98861b8109c434a0014768255dce11dfcdd36d1d511f10",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   }

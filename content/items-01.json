@@ -32,7 +32,8 @@
         "stableId": "item--adjustable-lens-refractor-gun",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "de327114ec242fcaf04c7be5d065084b64a647331d3b3d9895eab526e68c3b3f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -69,7 +70,8 @@
         "stableId": "item--advanced-surgery-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "129c8371bbc682d599664ff7647160a7b852ecd99957633eb979233ee506ed75",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -106,7 +108,8 @@
         "stableId": "item--adventurer-s-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1b1c77c16fa6fbce81ad4bcc2118216a5d3b01a9841a3073eb9e8db92049b85f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -143,7 +146,8 @@
         "stableId": "item--aerial-staff-custom-model",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "981a7a9a27b508040e7e4bfa1037517390e49199a5b575cf8e6860e4def9c2a7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -180,7 +184,8 @@
         "stableId": "item--aerial-staff-sparrow-model",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1ff76d984f2eae6681effa0fce4e7737c8f5c103d8c53974ca28db9325041486",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -217,7 +222,8 @@
         "stableId": "item--aetherie-sensory-station",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ddcd0f961c649bb9ff008ca31d3ceaa144bb8755a3a790077ac080c4d29781a9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -254,7 +260,8 @@
         "stableId": "item--alchemist-s-alembic",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "59e6497cd2a85858cc12e9f58de4691d3f6e91d8cd3f933ce65b087578f489e9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -291,7 +298,8 @@
         "stableId": "item--alchemy-materials",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cd0fc9cee928e67c46c084d070baa8b039c7b7dbc98b7e6a49dfdb29028e8b12",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -328,7 +336,8 @@
         "stableId": "item--alchemy-rig",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e4b93f597041b07c8f0f895189a87d4c1f36a9d5b244fb22332f82d090152b7a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -365,7 +374,8 @@
         "stableId": "item--alchemy-rig-deluxe",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "75f379052196326b211ebd424c440fca043c22eab2276686d484d6a4cb1b8e74",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -402,7 +412,8 @@
         "stableId": "item--anti-air-weapon-sight",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f6a00aebec4ed35d73ae10de50d4d0c17870afb2e8022f9aa6537328bf7302f2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -439,7 +450,8 @@
         "stableId": "item--antidote-shot-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "5097a40e8d5f7fbe9b7d43842ed92306a4f6405e1565be51ada23e04392b2f76",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -476,7 +488,8 @@
         "stableId": "item--armor-clothing",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "29656ee26b96e04519adf9c21c63db1f8d6f8d38d8cf2162fdd0229a67cead00",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -513,7 +526,8 @@
         "stableId": "item--armor-heavy",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d15525a2b2e978aed6f1f242389ffd9b1ec855e40682bb99c8b7942e93cca4ec",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -550,7 +564,8 @@
         "stableId": "item--armor-light",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "431b84916fcec297857d319996c9dd9b777abce55fdba777d2525deca3eb4343",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -587,7 +602,8 @@
         "stableId": "item--armor-medium",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "00582c1c0b8a68843c7fb02ad52fbb85543ae680e80e02d0f889a688a364634f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -624,7 +640,8 @@
         "stableId": "item--armor-plates",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ac8d46b5ff99657083b6affb453dafb29c452a31048ea889dc1bd276b093109a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -661,7 +678,8 @@
         "stableId": "item--armorsmithing-materials",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d7aa7a993c60a684c4da67f01dde662e1327ef118f54732e9c9bcbba9d2e80f9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -698,7 +716,8 @@
         "stableId": "item--artifice-limb",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "9b918323a7796c65f551d3926e92c64a2695e337a963f0a92c2047412e55c8b2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -735,7 +754,8 @@
         "stableId": "item--artifice-water-purifier",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b529d2678e84fedc37cf65a1cc5e075e965ae62c750fc14023dca27cb765c5e2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -772,7 +792,8 @@
         "stableId": "item--artificer-materials",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0339f6d77401a6f834b15084c5ab097e40ec95f3eeadc6835a7ce8a95949ed8e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -809,7 +830,8 @@
         "stableId": "item--artificer-s-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0f4c641407927d5b121e97ee1cb939be61057a2fc2d7843d1aba213245552a81",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -846,7 +868,8 @@
         "stableId": "item--artificer-s-multitool",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e1360965a73c98b56e5b3b2c60d236fd46c566ac3736550972b853881f86e864",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -883,7 +906,8 @@
         "stableId": "item--astra-guidance-beacon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d3205a96b46c1d7a0e6ef4d0f9fa3944e055360f410f6246452f1bde8864f707",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -920,7 +944,8 @@
         "stableId": "item--axe-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7d452c6e25a3b48eff40ac44170a378f1449c91983b3df83500f07a607b1f96a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -957,7 +982,8 @@
         "stableId": "item--axe-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "66b1d4e0ef00a2e7ffb0c61f74ed41658457b001363e002b16b28f45b2b40b5a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -994,7 +1020,8 @@
         "stableId": "item--axolotl-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d15b4294b642055a3ff3a91b14683a3d1ae8fd6e99fa5567528b0cf72c5aa294",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1031,7 +1058,8 @@
         "stableId": "item--backpack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6d0a632923c0589f2c8712ac7b80accce8b426fd0cc8d52b9f1cccf7a8ed997d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1068,7 +1096,8 @@
         "stableId": "item--bear-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8f7018b18d64dfb6e28cd69e5662fbab62c38b3b072aeb99a1a12a4a3ff5ef21",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1105,7 +1134,8 @@
         "stableId": "item--binoculars",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "3fe43aed4fb6e13fbb8c105c3ce22254896e46bc7314956ac9bc736f413c1c42",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1142,7 +1172,8 @@
         "stableId": "item--blacksmithing-materials",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "38fac6486d767f264d7a0c417a8da76f3b7ac62d524ad3f2337ca7c2f6df3af7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1179,7 +1210,8 @@
         "stableId": "item--blaster-weapon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "51c1e7392233d7a049627c40beec357c4c1e06ce78934b4ce71c7351f074d3b6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1216,7 +1248,8 @@
         "stableId": "item--blood-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8909af80e23e42994d0e5bacac08c86968f7752513a045da1ec98b54c5ef9ff4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1253,7 +1286,8 @@
         "stableId": "item--bludgeoning-weapon-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "62f6683c157b83184b856b697a2fefdde121614c1adc433710d3cc507515ad2c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1290,7 +1324,8 @@
         "stableId": "item--bludgeoning-weapon-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "547b655313adf8e3dcb841f72802a8a848202945733e05d344caa5fbf873c24f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1327,7 +1362,8 @@
         "stableId": "item--boar",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6779381cbe9d4f737edcc0c2f4d4b62e0c7aa73433d7a1811956fa5a88dfeb26",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1364,7 +1400,8 @@
         "stableId": "item--botany-bag",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2f8cec354567693ea4fa1c1a1b3774b9b796c154a84ba14d0027c06d7687a715",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1401,7 +1438,8 @@
         "stableId": "item--bow-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0fa168010ab279818e2bd1a0ec435d1a9ab1430e206c225f20b5e816adeab810",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1438,7 +1476,8 @@
         "stableId": "item--breaching-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2447c1d6d43793430ab768b925b0f7f4dc8603d14804512fcb4eb0ae026c5e47",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1475,7 +1514,8 @@
         "stableId": "item--bull-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "bb5269e6bdada8525fb835ad342c22bcbca7448319f53a0a0636be95c08ce8e1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1512,7 +1552,8 @@
         "stableId": "item--buster-weapon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ba3a356da4acb739a759b35396d0e5f959e454a3f92ab076a8cb55227e6ee01c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1549,7 +1590,8 @@
         "stableId": "item--calibretto-device",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "942020fc9089eafdd8a726a1a7052b7cd411f2974b652b878996ec2bd21c82a5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1586,7 +1628,8 @@
         "stableId": "item--camping-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2ac70093f7083f56723dc0f9891041ee67b6e91e465d57ad8eb5c5407cdadccf",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1623,7 +1666,8 @@
         "stableId": "item--cannon-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b20d7acd74f5fba93959f3eeb1f6e5ff69e8a7794c18e85b0b4f0b0e4f1ddb48",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1660,7 +1704,8 @@
         "stableId": "item--carpenter-materials",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f1574b3e05f5f2b1a07e58031848ee96eb6b3022078c0596534ffd471c748465",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1697,7 +1742,8 @@
         "stableId": "item--carpenter-s-chisel",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "afbc9ed9f7c60509b74e9a75e0e73f3b5035a4523c2742d8ce4035cf6367b33d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1734,7 +1780,8 @@
         "stableId": "item--cart",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ef3ddbebf5e33261ed55d466d2e6eb8c51858df502ff1a803a3d077ac7cd69a0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1771,7 +1818,8 @@
         "stableId": "item--cartographer-s-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "fc4b881bfb84cbfeb730d34302c630eeee11615e13c1bb4351e495dd0909b442",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1808,7 +1856,8 @@
         "stableId": "item--cat-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f7a52242a729f0bd9a01aa5981547cd2ad22bd68c2771da0534851a166124a22",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1845,7 +1894,8 @@
         "stableId": "item--chainsaw-artifice-two-handed-weapon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "be2411cacb651e76d5fcf39f39337be7738c1aadf016ab3930ee1d1abaa0205e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1882,7 +1932,8 @@
         "stableId": "item--cleansing-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "13cc865d4ea6c5dfe0686e12a4df8cb2fb3b6b4f61e995b938ff4a6de71facb1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1919,7 +1970,8 @@
         "stableId": "item--cloak",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0a816ec7c0de57641b07b56f055f1a6522a1d376c5efb68ce6b7f3a8bf2f6606",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1956,7 +2008,8 @@
         "stableId": "item--corrosive-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0ac80411e6b8cb38c68cb405b3ac0b4c111de0b199dcdc22188ca6365f9831d4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1993,7 +2046,8 @@
         "stableId": "item--counter-magic-shackles",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "82eea8653138613eebc0a988f587b0ade1cd5d5c0614cfb812b46ce3ce42f8b4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2030,7 +2084,8 @@
         "stableId": "item--crossbow-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6a38312ed82e46edd850af677fb12a4bdddecce10d685fc7a8ecc4aab5a20059",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2067,7 +2122,8 @@
         "stableId": "item--crossbow-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ed69b028bcb353902e12fb45e3b0258fd603dd85f8338fb5f469a3467f480fd6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2104,7 +2160,8 @@
         "stableId": "item--culinarian-ingredients",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "031d9611505ad5d389f3a8abdd9c81b4c310837bf02ad0aa3c868514925979a9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2141,7 +2198,8 @@
         "stableId": "item--culinary-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1eaef90fb64e1e5bb303b023cdda7d1ebdc064f35c7fd17ff4e38615ac17a7c7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2178,7 +2236,8 @@
         "stableId": "item--demonblood-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "92c0699d7e08587c23ef66f1a879c450247362b459500353fd742b1fe2ad4a41",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2215,7 +2274,8 @@
         "stableId": "item--diamondize-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "66e8e5d29febead4074f2dde234b3be2a0ecd578ec76b3546e2ca4d7446ac9f4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2252,7 +2312,8 @@
         "stableId": "item--displacement-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1e6c2588a99b1aa220093747fe07ea4929c46609f32e160a79c8bf2bcedc274d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2289,7 +2350,8 @@
         "stableId": "item--dueling-weapon-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6a0b052d4cc0c37f8bb622ff3a87d85a7bbb4d625fb0394d995247b755a5427c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2326,7 +2388,8 @@
         "stableId": "item--eagle-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "c6677dc22b18481de552e817d53680123a0e89010d72b003c01da5b14a75314a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2363,7 +2426,8 @@
         "stableId": "item--elemental-grease",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b77defe7bc3fd25f0cfb79f0fde2b4ed5d033238c1ef7b29f42bed0cde765be0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2400,7 +2464,8 @@
         "stableId": "item--elemental-immunity-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e1454dbc03eda8e9bfd1f98b92e890684c1a0f2290767003f57dba10f02c5211",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2437,7 +2502,8 @@
         "stableId": "item--elemental-mixture-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e480c52219fe9113ed9ac873c913518e486536732ff25fb68336312763aca961",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2474,7 +2540,8 @@
         "stableId": "item--elemental-resistance-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "93043f314d1941ddee19580a861875d16990bddefbe64c40fe3f168970132117",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2511,7 +2578,8 @@
         "stableId": "item--elemental-weapon-artifice",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "799558f27d255e97901536edfd49399d65cdc1b7537633526dc9e88f9bd48b92",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2548,7 +2616,8 @@
         "stableId": "item--equipment-patching-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "02543188e88048277863fc6e10f24fd6b4a0d0870271053a5f0008727a6e19b9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2585,7 +2654,8 @@
         "stableId": "item--eye-lens",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ebe7fdfd91f0a0d02140150882e0d5c36457ac282dd36e64eae4387a80f0b2b1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2622,7 +2692,8 @@
         "stableId": "item--facilities",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "871a5161e5652d7f309330c13aef73d767739c9bef3ebc2936bbd514acba5941",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2659,7 +2730,8 @@
         "stableId": "item--falcon-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a0eaa70a31c5a444febc2519fd16db6ccc8e52f907c79086c32a8c278d5ed949",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2696,7 +2768,8 @@
         "stableId": "item--farming-materials",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f6ffe1062a0d4fc07893a8da3be983b039d67c7f34405874c3751a78fa0c0e38",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2733,7 +2806,8 @@
         "stableId": "item--fire-robe",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1aa5ba1a8f86d167d359756591e15c9f7fd961b4af0c347b5d132cafd2e8a971",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2770,7 +2844,8 @@
         "stableId": "item--flame-oil-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a782528e9ad6e133193efb47d3f90d21b610ba2f9d4a7d1e80ee9614a00d8e2f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2807,7 +2882,8 @@
         "stableId": "item--flamellon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "562ca1d65b3197c7ce23136305dca1e27b532609a94f9622c69ef8f811f8d2a2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2844,7 +2920,8 @@
         "stableId": "item--flashbang-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "3a1468a6e0ccb8e8cc9c1fc16e3a69efc204935ef9b174a43717a4dd95ca81b3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2881,7 +2958,8 @@
         "stableId": "item--food-bag",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "c43d8cf0800ff035759f42c561773beb62ba41b863f7065d690617255d6687ac",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2918,7 +2996,8 @@
         "stableId": "item--frying-pan",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "4261545c94adda2240af538d9bedff9c48664f200de3dfd965d34a01b463338f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2955,7 +3034,8 @@
         "stableId": "item--fuel-cartridge-pack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cfe2ee6a8b4fc807708bfd3663c74c3eefec1e9892c02a48991d094135b30f8c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2992,7 +3072,8 @@
         "stableId": "item--gauntlets-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a80fedbca634fe804bf199843e1b5bab18ddaed312c55dcc07f462148e17525c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3029,7 +3110,8 @@
         "stableId": "item--ghost-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0c0500864e3259ac772a9de5c64e487f968d9b0315958ca715015244774de238",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3066,7 +3148,8 @@
         "stableId": "item--ghostblade",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cffa79237dcd3f2d0db538585a4c9d8832c43935bc0328be363f47e40edfafbe",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3103,7 +3186,8 @@
         "stableId": "item--giant-dragonfly",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2d2c46ff020f28e58c9c5e1b71b560182eabce344351bf43b7db44c68b06a866",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3140,7 +3224,8 @@
         "stableId": "item--giant-scissors-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1ecef23870019481f24e53b777b722db6d86b9fb017126714e213c2d7c153458",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3177,7 +3262,8 @@
         "stableId": "item--gourmet-cooking-stock",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8a1246c41a25ac841e76872f55b8a5afc98e4ef8bfb40cb9facf0d71cd47e6d3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3214,7 +3300,8 @@
         "stableId": "item--grapeshot-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2c4b7ffc988aaeb65c607a1f78a3a52c92b70a77fc1d38d3a7ca0d7b68114323",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3251,7 +3338,8 @@
         "stableId": "item--grappling-hook-artifice",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f749f270b5ba85a9116f8c613abdef5fce3db5b081143d61cd78b90d0d4f9d86",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3288,7 +3376,8 @@
         "stableId": "item--greater-healing-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "c481cf400dff0d6741683557e20d7b4251cd0a125ac920c693cf3cda9f6e80e1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3325,7 +3414,8 @@
         "stableId": "item--greater-shielding-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a8d736f8910e11bf2e3d308746418c269001caf672743de77a2152d3f80c387a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3362,7 +3452,8 @@
         "stableId": "item--greater-speed-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "eab0709eb30fcaea7135f2839ae488f74a7e484fc0cb8b338d07a94977fed045",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3399,7 +3490,8 @@
         "stableId": "item--growth-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e06eddc559f7cd8eacf0451031f7ffd9e5501baa4da057d20777bdeda284ee9c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3436,7 +3528,8 @@
         "stableId": "item--healing-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "34ca8304aec8a374c1f6e38892becc3a1183b15da34ecd6d0adab62cbaff7dfe",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3473,7 +3566,8 @@
         "stableId": "item--heavy-blade-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "4504665e95f10613043eb28cbacbd267ce1090d4d4d8adc1a039bc0e7edded1d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3510,7 +3604,8 @@
         "stableId": "item--hori",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7bc02a4a09922faa1f1f312816c6e5ba085f7f345a988e3cbe5d332fd3a99f98",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3547,7 +3642,8 @@
         "stableId": "item--horse",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "9d1dfa1b1dc020668cf032b6f5fcc5a780393dac829a2613f2b84322f409eb3c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3584,7 +3680,8 @@
         "stableId": "item--horse-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ab672ea8f00b8ca32878eec84990009fabca0c30f3b09c09061e2de727245c28",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3621,7 +3718,8 @@
         "stableId": "item--ice-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "bdd1ffd6828ec3587426ab6580558bfaaa5dd1a5b1e0589aa9f44b9b7c5a4d11",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3658,7 +3756,8 @@
         "stableId": "item--immunity-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cf455ab702edf765be8aedf3dcb9f7100b761cb28db144d586acbc77db292e42",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3695,7 +3794,8 @@
         "stableId": "item--inky-oil-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a4044ab81852a68b5c61b5206bb056d7756be883e24f7d741327c3b7bb21c2f1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3732,7 +3832,8 @@
         "stableId": "item--isona-poison",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "15837a621f12f080a38bca8ed26c1715182ff769a5bc263905159baea0ba9972",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3769,7 +3870,8 @@
         "stableId": "item--katana-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "be7ffbaa65eff077fb505e851a6f6225349f6d022d2e5f6edf64a196c16940f5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3806,7 +3908,8 @@
         "stableId": "item--katana-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "10a933438dc301d3a63dd684fe67acf1e5bbe1a436d0ec748820d82ecfed1b33",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3843,7 +3946,8 @@
         "stableId": "item--lance-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0a2763c1890ec5bb5b0b715d7d3d5f6546cd70b31a307cf2d1109d01f81bf22e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3880,7 +3984,8 @@
         "stableId": "item--lesser-diamondize-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b31c29f5b4322904ddceb050c03497929dafa54afafcc8766e99dac8dbd48173",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3917,7 +4022,8 @@
         "stableId": "item--light-sword-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f17375bcdf3d6cab645814126e091ccf1cfe10e11231bbea1be9b0feff62ab8f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3954,7 +4060,8 @@
         "stableId": "item--lightning-rod",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "3071dc3b3eb6904d37e9fda82ef15c883e275d7bfd75bf3846bc0af590959262",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3991,7 +4098,8 @@
         "stableId": "item--lizard-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "46f763472e5b0dd44aab8747c093b7ffeb6b564631c31594cc8c4bfdf732f7ae",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4028,7 +4136,8 @@
         "stableId": "item--locking-seal",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f693684b7285893337c0051ab5c1a077ac97546825722f387b6832974887c016",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4065,7 +4174,8 @@
         "stableId": "item--long-distance-communications-array",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0fa7d4f76aaf9971924d9c525ec796a740905c79fee5f13bba89a5b87726850a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4102,7 +4212,8 @@
         "stableId": "item--longsword-one-handed-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1b2c2acd23cd1de8bb1ef83a544b39ebe006094c9538176b35070d1bd9ce316b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4139,7 +4250,8 @@
         "stableId": "item--mage-s-blood",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cca3256cb8f9007c479e94bbfe5f276d289cd825b80352420a204be4e9a7a1cd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4176,7 +4288,8 @@
         "stableId": "item--mana-vision-goggles",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "17be051f1f7a03c45a32a5bfcd192258f26332fe4486e4106cb12cfbf314c2c3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4213,7 +4326,8 @@
         "stableId": "item--marlone-jelly-poison",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8b3d953eea73f03a20bc724be3656a23a6932ee2edc234da59d5c09b050d95df",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4250,7 +4364,8 @@
         "stableId": "item--medical-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1bd62d9ad385283b900c00153418e026e8a5ae86601d83eff74f54a5871afd9f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4287,7 +4402,8 @@
         "stableId": "item--medium-shell",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d63ac63358d3f1239f2db46ef4bfb2c1d1055751b06d7667fdec477c5f9464bb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4324,7 +4440,8 @@
         "stableId": "item--memory-bubble",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0f3e006b23d2eb5c7e935468dac9aae2a188f0e085cf0910e7760cf485f20d04",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4361,7 +4478,8 @@
         "stableId": "item--military-ration",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "10bf74dd3911b5c393e58653e1489df702d23bc03c203cc5a8d5747c7dba3260",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4398,7 +4516,8 @@
         "stableId": "item--mimic-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "704159af902fff9cc377945baabe5254ce33848e974bdf9212ec0edc2d212303",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4435,7 +4554,8 @@
         "stableId": "item--mining-bag",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2f7bee1ee18202e3009a9b3da03d4d8c211417b88cf96ec1e237f603bd390628",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4472,7 +4592,8 @@
         "stableId": "item--minor-item",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d9d239f27338b627a18162dc61528a2e04989d536debad1fcd97a6a210f12a66",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4509,7 +4630,8 @@
         "stableId": "item--mule",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "645d8af086489615fd1488e22f74e6a66b474dac39cffe38ae69876a6864446a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4546,7 +4668,8 @@
         "stableId": "item--musket-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0d7bd9258cbcbfca1d1d70963876e5b58000d373734a1084c6fbb8f29bfa16b7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4583,7 +4706,8 @@
         "stableId": "item--netting-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "81371c48af943ff9f5a669b80df7fce17b08b6bef584581b50873d649b8afabe",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4620,7 +4744,8 @@
         "stableId": "item--night-vision-goggles",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2a73a0d6964b7bc4f6d5f684db88148d65b5ec81c7a76542f5dc269945d59abf",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4657,7 +4782,8 @@
         "stableId": "item--northi-lantern",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "fab59b9c3b66912a66e8d3aa32f824679d187faf216c0457d20c2215aaf22278",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4694,7 +4820,8 @@
         "stableId": "item--parrot-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cb3b2b02050c780524a40cdca7ec7f444515babb188fbe8f9ec2ca78e91a4176",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4731,7 +4858,8 @@
         "stableId": "item--pegasus",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1211f8c80ae153de0a865d1cefabe745cba93d9a11f047ed02a138f48f20ad1c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4768,7 +4896,8 @@
         "stableId": "item--personal-camouflage-field",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e8b0f33b6d7d64afef67d64ac72297642b5640fed71db0a5f8b9efc8ae72215a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4805,7 +4934,8 @@
         "stableId": "item--photon-shield",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "755c557e3f873f52818578af3a6f2412c7718771a560c066a2610e6f4f92af5a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4842,7 +4972,8 @@
         "stableId": "item--pickaxe-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "83279ace923b27328d171f2547a1f9bd00137319d1c0aba5ba0524cbe9c7ed65",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4879,7 +5010,8 @@
         "stableId": "item--pickaxe-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a419262f534cb91622dce2bcf3c18ee8a4884fffb8ef059ccff13d7e3e7f78aa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4916,7 +5048,8 @@
         "stableId": "item--pistol-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "17f4163b6ee28a6d0c96bdf8de0d1736407237af708b4e5d258963ff12da7d14",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4953,7 +5086,8 @@
         "stableId": "item--polaris-pair",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f0cfdc6cee7e1837ed07e990172e7c2a7010e474d15aae18d9ef2fba43821348",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4990,7 +5124,8 @@
         "stableId": "item--polearm-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "fb5cfe9c73d5915f41995b0bad733d19ff8a6d1f87c78211ef224680bed0777a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5027,7 +5162,8 @@
         "stableId": "item--polearm-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a0fdaa6b28d4714e227c5e0946a38518e5d1fe1257bcbc449db3e7699a68abb7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5064,7 +5200,8 @@
         "stableId": "item--portable-vacuum",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e1a41bdf3c40703341356530e4b98e5020feb16dc7f370415b587f8b08700a64",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5101,7 +5238,8 @@
         "stableId": "item--portable-wall",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1756fc5752511c48d1aa43e575cb60cb9fce5df4e93dce5b5507cfcca14abd4d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5138,7 +5276,8 @@
         "stableId": "item--power-gauntlets",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "990a2dee0aa11dc4292ae611724e4d3b4eab936031faddd477c1a4b608ca5751",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5175,7 +5314,8 @@
         "stableId": "item--private-communications-device",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6deee6122727eb7e91c2f1420e7713be4ac384619d0ac5f527f574be944f36ae",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5212,7 +5352,8 @@
         "stableId": "item--projected-recorder-orb",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "16f9c3a766cdf23f05551b2d524b83e4b22c9632fe105f08419e96216e322444",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5249,7 +5390,8 @@
         "stableId": "item--rabbit-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2bf2088d3011eaea999f99cc3ab1c68d502225e72c3f2063d5d17926a7e509f6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5286,7 +5428,8 @@
         "stableId": "item--reaper-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "67b178a29976c12b12b9704e59372492109fb2583db946ffdf7e759a1d5ea4b0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5323,7 +5466,8 @@
         "stableId": "item--refractor-gun",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "5816fc3c05b1ba2e0140701da78add5ebdcaf9d1a5883cceb1d4a3188447a1ce",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5360,7 +5504,8 @@
         "stableId": "item--research-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "9bc59d28be51caefecad7a4011c55d61f7b894676e9e9bdd8f60523dce077590",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5397,7 +5542,8 @@
         "stableId": "item--return-stone",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a2b85c4997fd76d219245c863bf25127a0d916693da1645978ec7d1418e551f3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5434,7 +5580,8 @@
         "stableId": "item--saboteur-thread-daggers-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ab469fb1b2fd98eea7d94cc4ab134a0f4f13a44a6283e9ff8edb7fc21cb8a6d9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5471,7 +5618,8 @@
         "stableId": "item--scythe-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "5317982fe142e0e977bda13d2e0a036ed722a8e49f0302436e74bd3529c3a86f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5508,7 +5656,8 @@
         "stableId": "item--set-of-missiles-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "23d583af602848c214a1fb613108d5734db956ee4a4227299978d53c5b5400e7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5545,7 +5694,8 @@
         "stableId": "item--shark-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "41d1a4bbaf00e508162ec0fb9e1b7cfeec4e0a8f293fa97eca85da6d175e034f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5582,7 +5732,8 @@
         "stableId": "item--shell-converter",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b90ea156a6eb03374e8de22e2de8386127a9f441e4567be1d41148ec294cd492",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5619,7 +5770,8 @@
         "stableId": "item--shepherd-s-sling-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cdda99033e05fc30fd7745fc4bab3de8fbdff071043121d706952dfd7d5a9e8d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5656,7 +5808,8 @@
         "stableId": "item--shield",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "c454a92b12fe85b0d2eba3a8ebba9fbc332d36f86e4421f2191a4e64bfc62c57",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5693,7 +5846,8 @@
         "stableId": "item--shield-great",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "87fcbc8c908696b1eeb1f51fdaceba6ae9d3a914363ceb36b61ae571b9d74e8e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5730,7 +5884,8 @@
         "stableId": "item--shielding-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b95dc01120705d741944dd713c4e6d2aaa5fda5bc67cd4c02fb086622fb41ca7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5767,7 +5922,8 @@
         "stableId": "item--shock-stick",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b7697089d7f22a989ebf4e583ad00d2540462b12d79b79fabd053a1931b7c6a9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5804,7 +5960,8 @@
         "stableId": "item--short-range-communications-device",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "04861dd399a586b8ae8dc3f89cd166aeab3872e5399a0ea4448432cea9c42d3b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5841,7 +5998,8 @@
         "stableId": "item--shotgun-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6c9033b787ab423d67fbf3ec73710d61ac63a035ba5ee497aa0c2436113b9e34",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5878,7 +6036,8 @@
         "stableId": "item--shotgun-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "88003bd3c2ef677d45ccd1b5773a8ead2ac3f721105c48cf2c68bf3a22f8df9e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5915,7 +6074,8 @@
         "stableId": "item--sickle",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8ed54998643d94f67f429ed0d88d3ab73124c2745c10a23c766d1a35e1ac72c4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5952,7 +6112,8 @@
         "stableId": "item--silencer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "917d38718c2a3b99f5867b517d194cb929edb99fe60ce08089a3d92bf8ce2ea5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5989,7 +6150,8 @@
         "stableId": "item--small-shell",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "012ea1d89ca482d77f00bef5f25bbae6ee1e47fc7a1b44c218ad202272fdea79",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6026,7 +6188,8 @@
         "stableId": "item--small-weapons-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "47f30cd2501249a990c18ca602b2b3179ebcf7af2a3e717f4992d37456d96ff7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6063,7 +6226,8 @@
         "stableId": "item--smith-s-hammer-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b46478f9839cc9e207770a337d311961346dc77bf024ad2eda3947f301329931",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6100,7 +6264,8 @@
         "stableId": "item--smith-s-hammer-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d2a6d72ad5b3f710087a6e139f703679e9ca51efcf97cdea9b6769ea18cba09b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6137,7 +6302,8 @@
         "stableId": "item--smoke-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7a4dc3fa13c4b82ab40c19a55a8d9642e5b3c1a6f269fbcf7c4fa11e8d7d698e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6174,7 +6340,8 @@
         "stableId": "item--sniper-rifle-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d994e4f15137ba14a43c64cba7ff0c4c1e14c7f2e74ee23af416303807cb5049",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6211,7 +6378,8 @@
         "stableId": "item--snow-cloak",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2993d9cf293e40bec203207a62f2a418d2308b18cb50bf5d02655da6357a462d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6248,7 +6416,8 @@
         "stableId": "item--soul-lamp",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "bb0fd6306067c5eced562cde044350d3c07a3ee772b41e8520e1837a8866291a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6285,7 +6454,8 @@
         "stableId": "item--souleater-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0c457c4c9d72635c4ead460ba160ca35918c5337a213987f68e2603bf2ddd286",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6322,7 +6492,8 @@
         "stableId": "item--space-time-anchor",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ebed098db178034a089ce18eeba3ad8affb8c5cbfa7e861a8e56120946c24630",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6359,7 +6530,8 @@
         "stableId": "item--speed-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1be93781a52b2401a226deb019a40a3bf0986dc502d26bcc684b8f6b8f9c55f4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6396,7 +6568,8 @@
         "stableId": "item--spider-shoes",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7828e33fc5b1f073e7ee3e29fe2ba5bd14f001809ee34fa7b022bb40329caf37",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6433,7 +6606,8 @@
         "stableId": "item--staff-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7e68bbcaa638be7a765d51dbb7cab93714785adcc909fe6555a04017dd458b11",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6470,7 +6644,8 @@
         "stableId": "item--staff-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8682fb9004608244a22a7d05461d0446f324cf559146f3a55387d7ff19b34029",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6507,7 +6682,8 @@
         "stableId": "item--sticky-glue-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0b286b07d17e2e64abb6e3a93a9cae63a3b06fe0833cf848f281e5ce23a911db",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6544,7 +6720,8 @@
         "stableId": "item--stone-serpent-s-kiss",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b4fecd8dc2b47edf56287f1d9ce148573b422412432adbb006295a626b68c376",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6581,7 +6758,8 @@
         "stableId": "item--stun-gun",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a9e2a6497d0acec1c2db4c3aee4b1508e176e78c72197cc8e53a2fef93d44a6e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6618,7 +6796,8 @@
         "stableId": "item--suppression-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "3370ba4bad0759f107adfe63cf9750fe4c465559af64f0ad39b87f3f18a5f826",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6655,7 +6834,8 @@
         "stableId": "item--surgery-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cf484e54e192f74c4ed623ab10b6ba26695977ced9eae6191129f759f49cb230",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6692,7 +6872,8 @@
         "stableId": "item--thrown-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "20f93336d62fbf522debba3c13af70bc01cc17ac488cf51eafe8e178bc49991d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6729,7 +6910,8 @@
         "stableId": "item--thrown-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "82cebe6559b19a30315ed92d852b34e525c717f3aaa42648682534859f299d5d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6766,7 +6948,8 @@
         "stableId": "item--timeworn-katana",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "81767a3627ac6a3bca1237119147fd64624ab1779d195e168fa8f1926e072701",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6803,7 +6986,8 @@
         "stableId": "item--torch",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "bcd0f3814ed68a74c93002e6d952f2a76dd479c21c7729bc2723a8d2ba40b2df",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6840,7 +7024,8 @@
         "stableId": "item--transforming-weapon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "68a39bc05c230b2028e16d98ab8c747fe9470244d363731360be08a86b75c5d3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6877,7 +7062,8 @@
         "stableId": "item--tunnel-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "3602b75ed2c21c449ae4fabdf068bf847cb01ba68582f48c40838302a1b770ca",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6914,7 +7100,8 @@
         "stableId": "item--turtle-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "9561d8d40fe1c01b16f32ce949c6dbad358fd0771254c5d5128e74e55bf867f8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6951,7 +7138,8 @@
         "stableId": "item--twinblade-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0fe53af7f59b767db996b9b957e338370f16cd354f4b7c03f2b0f9996e43cf04",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6988,7 +7176,8 @@
         "stableId": "item--universal-armor-mods",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e309c9b403cb9ebab1cdbf777a35281de1a410eec0f112311e6d63ab7e570d3f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7025,7 +7214,8 @@
         "stableId": "item--universal-artifice-mods",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f4adfad472e832972ee4d284145a123cd4bc15352f0c02232f05ae70b0cb4654",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7062,7 +7252,8 @@
         "stableId": "item--universal-crafting-mods",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b1454921e7d73b62f5b7bc38c0acbb7de40d80ca41df7903b49ef56c1a1d487b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7099,7 +7290,8 @@
         "stableId": "item--universal-translator",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8788c152094130f2136c05ed2dfafcefb4a36b117e4381efdf96f8d90ca492f3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7136,7 +7328,8 @@
         "stableId": "item--universal-weapon-mods",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "55ab73e51dd2b97ee6cee60255c429f3e8f7b01e8133f98fbd5b14545632b230",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7173,7 +7366,8 @@
         "stableId": "item--wand-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1a0deaabc2599be8f5447cc639528bb9f21eefa20cf9a959e1227af46b76f9fe",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7210,7 +7404,8 @@
         "stableId": "item--wand-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1a8425b7bd37ed111a16071d5b64c18b1e7f4fbc81770d6d76cfdfa7d16f7dcb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7247,7 +7442,8 @@
         "stableId": "item--water-balloon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "57b8e511ae5c5179353144c36d6654afae61ccfa70470cb8a1daa67f54fcef5e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7284,7 +7480,8 @@
         "stableId": "item--weak-spider-poison",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ce924ae3c435cecd5c84955fff4ba86e3d197c104dc5f7c6c7b4a0b087475e8a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7321,7 +7518,8 @@
         "stableId": "item--weak-wyvern-poison",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7f11768f1968434a8f45fd009f197b756fd2f49b8bc9e6ee27a5433b41f7c090",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7358,7 +7556,8 @@
         "stableId": "item--web-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a38352c2b570d784780dc7d5b3543ee9ce49123262cc210ee1718a3ab3175479",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7395,7 +7594,8 @@
         "stableId": "item--whip-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f6cf234f5c73a09a0b05a9e5f4148822ad1bc0f75b46007fadeba2a1125b1872",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7432,7 +7632,8 @@
         "stableId": "item--wind-bubble",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8aabad44f1c0c02c9c8e4065455a85eaa0ab1ee94fd10340aad5b22777f89648",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7469,7 +7670,8 @@
         "stableId": "item--winged-backpack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1adaf4fab1906bd0a19e7e821d762a1245c3f5fcab29f1447905b2df86f4ac8f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7506,7 +7708,8 @@
         "stableId": "item--wolf",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "9f48e9b808f68319933005904235fbb179366732bdbdec6f49f1766ca5ed9d14",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7543,7 +7746,8 @@
         "stableId": "item--wolverine-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "818a2065726e055866b1e4d48fd3ec17640428a47a848aa39844bbca9e59842d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7580,7 +7784,8 @@
         "stableId": "item--wyvern",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6d136f0f03208153b2e04ebbb506e02575c6b1e8abd1a696b0bb498ee962ec0c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7617,7 +7822,8 @@
         "stableId": "item--xl-healing-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "083dbacaaaffc16078e101f2a225a65f5c2d3e609a0093e1e424ec2df9eb5250",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   }

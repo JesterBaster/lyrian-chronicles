@@ -212,7 +212,7 @@
 {{#if (eq type "class")}}
   <div class="lyr-field-grid">
     <label>Tier <input type="number" name="system.tier" value="{{system.tier}}" min="1" max="5" /></label>
-    <label>Abilities unlocked <input type="number" name="system.abilitiesUnlocked" value="{{system.abilitiesUnlocked}}" min="0" max="7" /></label>
+    <label>Class level <input type="number" name="system.abilitiesUnlocked" value="{{system.abilitiesUnlocked}}" min="1" max="8" /></label>
     <label class="lyr-check"><input type="checkbox" name="system.artisan" {{checked system.artisan}} /> Artisan class</label>
     <label class="lyr-check"><input type="checkbox" name="system.gathering" {{checked system.gathering}} /> Gathering class</label>
   </div>
@@ -242,6 +242,21 @@
       </select>
     </label>
     <label>Speed <input type="number" name="system.speed" value="{{system.speed}}" /></label>
+    {{#if system.attributeBonuses.chooseMain}}
+      <label>Main stat choice
+        <select name="system.selectedMainStat"><option value="">—</option>{{#each config.mainStats as |label key|}}<option value="{{key}}" {{#if (eq ../system.selectedMainStat key)}}selected{{/if}}>{{localize label}}</option>{{/each}}</select>
+      </label>
+    {{/if}}
+    {{#if system.attributeBonuses.chooseSub}}
+      <label>Sub stat choice
+        <select name="system.selectedSubStat"><option value="">—</option>{{#each config.subStats as |label key|}}<option value="{{key}}" {{#if (eq ../system.selectedSubStat key)}}selected{{/if}}>{{localize label}}</option>{{/each}}</select>
+      </label>
+    {{/if}}
+    {{#if system.variants.length}}
+      <label>Demon house
+        <select name="system.selectedVariant"><option value="">—</option>{{#each system.variants as |choice|}}<option value="{{choice.key}}" {{#if (eq ../system.selectedVariant choice.key)}}selected{{/if}}>{{choice.name}}</option>{{/each}}</select>
+      </label>
+    {{/if}}
   </div>
   <label>Granted proficiencies <input type="text" name="system.grantedProficiencies" value="{{system.grantedProficiencies}}" /></label>
   <label>Granted skills <input type="text" name="system.grantedSkills" value="{{system.grantedSkills}}" /></label>

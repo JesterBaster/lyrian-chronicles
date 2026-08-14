@@ -22,7 +22,8 @@
         "stableId": "keyword--active",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "6314b044d0a7fad656b68b9411daa497c42ce951a7d27fc10714277967d335d8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -49,7 +50,8 @@
         "stableId": "keyword--aid",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "933a90b2d8f3e03218540edaa83b0ebec205a530a5684fd4ec04ca8368e5d123",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -76,7 +78,8 @@
         "stableId": "keyword--artillery",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "a1c62b59016190de48428b77f6fbda429611613471eb5e3954715791c8463a3e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -103,7 +106,8 @@
         "stableId": "keyword--augment",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "b45ed10ce13d9e13cb51373869b33a00b03ce29ca813a8f6fe9e55e194d96e73",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -130,7 +134,8 @@
         "stableId": "keyword--blanketing",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "01e3d9c77f569918351dcfe97a5a9e32c93d7e0bb30247439dd032123f3c7b96",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -157,7 +162,8 @@
         "stableId": "keyword--bleeding",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "637537f7c2396ce4c884a12c58d88f13589a9c258e2b2ff21cc3ddea903246c6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -184,7 +190,8 @@
         "stableId": "keyword--blinded",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "02ba755f3dbdedf4ae7434f89962fe4e6ce54084853cc6730c04381fcfad6080",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -211,7 +218,8 @@
         "stableId": "keyword--block-crush",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "38e8ef6007031f94220e570c0dfc8eadbb6dab9accbd870171a315f765a986f2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -238,7 +246,8 @@
         "stableId": "keyword--broken",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "a2a48351d4651fb277deadee70b5390c4fcb0858446aa325a1ef01dbf873d90c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -265,7 +274,8 @@
         "stableId": "keyword--burning",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "b1a6389e77969a1703472340247b32828df1f2451ef51108134672e35c2a55d6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -292,7 +302,8 @@
         "stableId": "keyword--challenge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "6ae25100778c5f791d4d5d9bf307b12d32d67713400ec8ad52443f32e3dd297a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -319,7 +330,8 @@
         "stableId": "keyword--charm",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "98f35e0c82bede8ce17842065c7e1ad1cd99fead64616da6432df2fcb7ad0d34",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -346,7 +358,8 @@
         "stableId": "keyword--circuit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "84e0c4b4b191c5a2a31e8ecbb44ed0269438364a5de4636b86f9eae0bfcebe52",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -373,7 +386,8 @@
         "stableId": "keyword--combo",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "bae60eb519a8962105b7b7afff20bc0b29c3aa12296cc82229f493f7dbcbccfe",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -400,7 +414,8 @@
         "stableId": "keyword--concentration",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "e97354dde170982fa10a96da57164940a3d4def757185c974126ee9b74840462",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -427,7 +442,8 @@
         "stableId": "keyword--crushing",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "a5fe0cac2d60b21e38c4c0ca077d3ec234d582b56b71a36a36307196f1cf6942",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -454,7 +470,8 @@
         "stableId": "keyword--daze",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "50fcf001ac1b3186ac2257dce8fcdd49c9f20fcb39ada0960f851e86cd750483",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -481,7 +498,8 @@
         "stableId": "keyword--disarm",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "270fc0ce6efc1998b9b4bafe2db2d63f219d48d8d236dadf5ec9082fd351bdf4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -508,7 +526,8 @@
         "stableId": "keyword--divine",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "437156ef3873a290bfa47dc809315bc0bc325dddb4a0604b5cc3c14f6467fbfd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -535,7 +554,8 @@
         "stableId": "keyword--domain",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "a41fdcdafe1f4cbc832763bb325960db4c8d9d6572c4c3647f348c9b070986b8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -562,7 +582,8 @@
         "stableId": "keyword--enchantment",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "87f6fa51ab35bf1542405c2971d38872f84c6fb68a6903229cfab126546af22d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -589,7 +610,8 @@
         "stableId": "keyword--esoteric-art",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "233b46f8f442e6c28eecaafeb0641391fce02d38c6d377ff63090f5ee1bb927c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -616,7 +638,8 @@
         "stableId": "keyword--expose",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "c42360a48910468869920ff1c00ec11aa773c1a5c3a0297fdf99aad8632f5689",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -643,7 +666,8 @@
         "stableId": "keyword--fire",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "be9cbfca415276370af8df488db2cd6586e2260ee8603062944e863cfcc9de4d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -670,7 +694,8 @@
         "stableId": "keyword--flashback",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "79b8c001079bf55ed72daf076c2839a5b5d91696f85daa3610bc340e960ad99b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -697,7 +722,8 @@
         "stableId": "keyword--full-pierce",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "824f7a3acd3cef121a716dccc450379e14069149f75d18d26513103486a0afc8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -724,7 +750,8 @@
         "stableId": "keyword--half-pierce",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "ed5bc61a2522eac40becb4e6b7eeb89beba809096807197bfe4eebbf205d4584",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -751,7 +778,8 @@
         "stableId": "keyword--half-rapid",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "0f4256904b900d01983c3b5ea91141a588f3abbe6279446e71eb29b9ad576960",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -778,7 +806,8 @@
         "stableId": "keyword--hellfire",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "dcd6bf7a5225afef19f128af00d9c57ea00e53fa2699e98d93653b038dad54d6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -805,7 +834,8 @@
         "stableId": "keyword--hiding",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "e3bd3dd886841f9f44aee5d970df467d4c3ee61b205f973222cd87ded7efd476",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -832,7 +862,8 @@
         "stableId": "keyword--illumination",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "c7b9e9ca854fe0168521705db71f69a75c1d1a051c1b7cfc5ed7a5843fcea902",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -859,7 +890,8 @@
         "stableId": "keyword--immovable",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "5e7f29672b4bec50f07b235bda593a3b86231aee78d21f39b2ca317d049c7321",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -886,7 +918,8 @@
         "stableId": "keyword--instant",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "1e12d5836b66046d660b53bdfc720226050559c4374fe3cfc18cd1cf2a07a8bf",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -913,7 +946,8 @@
         "stableId": "keyword--isolated",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "e38175ffc5788b06400f94a7d47d0bc44def7ff9176e1b860217b4a393f81062",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -940,7 +974,8 @@
         "stableId": "keyword--killing-blow",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "a88777d3b85bd1a144228357c116dfe3eff6bcface57261eeea8e89dcf92dd6e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -967,7 +1002,8 @@
         "stableId": "keyword--lock-on",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "b77e0cdd0519cd640669613975d58d9b5596e2f29f19852c5b7d11e7d4f08369",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -994,7 +1030,8 @@
         "stableId": "keyword--lockstep",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "94e0d895d27546873786336cb3d61ed4936ad42191724350f6b98d7c2b1c8a68",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1021,7 +1058,8 @@
         "stableId": "keyword--miracle",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "a01fd34b80d3ae863be46c234d13f829fbb4f33b35fdf3ba556a40740a399713",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1048,7 +1086,8 @@
         "stableId": "keyword--mystic-eye",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "2ac8e785b51a8daceea95442596eeb7eb2795a82c3e7241d81faf3e231587f5d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1075,7 +1114,8 @@
         "stableId": "keyword--ninjutsu",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "93db668a1d4115deb7d7e8510ef43511443251e867393196df0f35ef3b326305",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1102,7 +1142,8 @@
         "stableId": "keyword--offstep",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "8bd05e323ca1ac1a9c4697d05eeb6ce160f9da383567355021014a91e25d6ab1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1129,7 +1170,8 @@
         "stableId": "keyword--opener",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "4053a21b8f132c0c1d37bf73159c83631ccac05a95fcf05a64b16053a6551a32",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1156,7 +1198,8 @@
         "stableId": "keyword--opportunistic",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "d298cf263ebc603c1846d970431f0a29d5bdab35af39fe14d3fad5a8d941bac6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1183,7 +1226,8 @@
         "stableId": "keyword--overcharge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "72cf50809a78be2bf697ce34a90d6ee4f821d085ee58a4f3fc4799ed7779c147",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1210,7 +1254,8 @@
         "stableId": "keyword--pass",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "cf6e9f78c06239b3d0e1c49c542c294402306b2c4d1935677ea58b33cf46b421",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1237,7 +1282,8 @@
         "stableId": "keyword--persist",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "0b5ec4e3fb6bc7bc2b5770c964364e0c566218bef4b1ce99e57a444b35dc5eba",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1264,7 +1310,8 @@
         "stableId": "keyword--pinpoint",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "492cccc30a86d63ee79c9701c5af2ac3b485b6a9f689004292212a4ac5483120",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1291,7 +1338,8 @@
         "stableId": "keyword--presence-concealment",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "67c675c6e0bcafddbdb91a2f4e29e2087e38ecadf1d3e0f0d358e3429fb3251d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1318,7 +1366,8 @@
         "stableId": "keyword--prone",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "e7f061f2527e1da96a65fb209debee1b0a99679f4115c69a28f30b66dd41251a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1345,7 +1394,8 @@
         "stableId": "keyword--quick",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "36ba84cab59073dfa44d7762887b58b8072b908523b869d7c4e704ff69a61f74",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1372,7 +1422,8 @@
         "stableId": "keyword--rage",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "368e50cdaf5d2e57c0fe77c204cacc526a67ae97dcb0ffb955fde8c4d03ba923",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1399,7 +1450,8 @@
         "stableId": "keyword--rapid",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "741971603fa10330f60cdf560a080a83989296d870b56a514e0019692051def4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1426,7 +1478,8 @@
         "stableId": "keyword--regrowth",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "96945535d1ae590f86590ebd35a61e075a4b3eb1cc6388766f77031dea879bcd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1453,7 +1506,8 @@
         "stableId": "keyword--root",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "66c6ebb4a5728c422a8725d2ba5662a5ff58bb9f47fe0217725eb2a8273fa6e3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1480,7 +1534,8 @@
         "stableId": "keyword--safe",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "e7f4431e54fbe11222b700a8d6c629ae15340e5eee3db8433ffaa91e77b8387a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1507,7 +1562,8 @@
         "stableId": "keyword--sanctify",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "e931aea6d3f722f4f9a63615d96aa2c246d973eda34fc100eb59a60172edec87",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1534,7 +1590,8 @@
         "stableId": "keyword--scatter",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "9518fad10e9a224e3581e8467b1115a0d58a578d6df3c3689df4f7c17f530767",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1561,7 +1618,8 @@
         "stableId": "keyword--secret-art",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "eb5fa0643e2073547845aeaf851cf26484dd929e2814086f01ff9ad3e3a5c494",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1588,7 +1646,8 @@
         "stableId": "keyword--setup",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "2406ec1ae10217b5e44a351a3807b6f277d96af25efad70b5346730ef2b8c961",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1615,7 +1674,8 @@
         "stableId": "keyword--shaken",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "98a7d093571c0167493a18403440ce06f25e72563c213c94d7accece697b6d00",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1642,7 +1702,8 @@
         "stableId": "keyword--shieldbreaker",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "133da075a8413c2c454e3631a20d986c5307e1ee81fac5719ebc93c3b9b4c640",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1669,7 +1730,8 @@
         "stableId": "keyword--sickened",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "36be53415a71bfdc5d0469e97cd9cde78f4a182632d9bc5c62f3f63b650e3e68",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1696,7 +1758,8 @@
         "stableId": "keyword--sidestep",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "82c8492c3611bcf32862255dbb539041e62250e1825e67e40ddcab67ee869ec3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1723,7 +1786,8 @@
         "stableId": "keyword--slow",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "7bebee501a45db828de54ad3f98fac5c908fa1f8bcc05aa66fc1686aa45953db",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1750,7 +1814,8 @@
         "stableId": "keyword--soaked",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "5a136f467690985c9b5c8eed81df0620dc06a2954571056471bfbdf2f91afec0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1777,7 +1842,8 @@
         "stableId": "keyword--song",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "7ccf697007b37902c86e55c22a04c717507a7b8d89983db82fa27af8212bd088",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1804,7 +1870,8 @@
         "stableId": "keyword--sound",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "ad564c102d0edaf63906c1f273a79ce15d694c6a1db20bc459749d8be05ebb6c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1831,7 +1898,8 @@
         "stableId": "keyword--spell",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "1ec65473b45b2e607e89cf53334be70c86af76358a9c84d3ca5b6b8e929d203f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1858,7 +1926,8 @@
         "stableId": "keyword--stacking",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "17de274a6c10758835301bebba0947d8a4b51d6f38d8abcafa1f4e835a78ee44",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1885,7 +1954,8 @@
         "stableId": "keyword--stagger",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "1bc0e32a042d56fa8ec7c0a60aad52c1d261ea0dd19c50344d8146267696690a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1912,7 +1982,8 @@
         "stableId": "keyword--stance",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "8f43343fcd44ed01222d1bbe075e4c1541f14b15b9183cff93ef87cf6336a9d3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1939,7 +2010,8 @@
         "stableId": "keyword--static",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "10eb26942690dbaab792052e3f3d706bf3f53f31856f157d388ad8c355bdf8a0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1966,7 +2038,8 @@
         "stableId": "keyword--stealth",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "0eaa0684729b8d536d2b0d1b8f665953c613497ef9c69dca35f5d642aa0c32e2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1993,7 +2066,8 @@
         "stableId": "keyword--strafe",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "ef0aefbfc89b6aee9a0ea1488254f76880914a75abca39665b5cb6f46599f8d7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2020,7 +2094,8 @@
         "stableId": "keyword--stun",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "c5ddf0f5916bd5c3641b65e22c1cbf5d5e52778e790693e59364876ffa6910a2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2047,7 +2122,8 @@
         "stableId": "keyword--summon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "639849901a65839eb3067e081653cefd13fef68cb98a3c834678fb1a18822b24",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2074,7 +2150,8 @@
         "stableId": "keyword--sunder",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "f6eeef07361d57d0c6dbbed6eb4e69795ca409fbeb5b015b67f2c0fbc6576a94",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2101,7 +2178,8 @@
         "stableId": "keyword--sure-hit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "c4367d066027d44b70bdacb53d25b71d2300fb4a41e0428f17c0e810122d979c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2128,7 +2206,8 @@
         "stableId": "keyword--teleport",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "11425ffee0cdba594d8bb16aab82d6504c3ea43a4aacc5c5e5c4880b5933fa67",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2155,7 +2234,8 @@
         "stableId": "keyword--toxic",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "3d700c6ca31eb7dc5463d8b12fd16e0a46d9de4c4fc2fc7ff229556185983764",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2182,7 +2262,8 @@
         "stableId": "keyword--transformation",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "eec40f7045a71c138922b152e97cbdbfbd4dd0d7a001b5a14a40bd3355806a71",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2209,7 +2290,8 @@
         "stableId": "keyword--trick-attack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "0c0a0b5f3f9debd599e604886b2de5b75c2b5a55f529ae314b3576fe10b60fa5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2236,7 +2318,8 @@
         "stableId": "keyword--type",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "145934b243bb8e7ee5729bfb572af30e50fcfc8a3ca1088a15457d860d1bab56",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2263,7 +2346,8 @@
         "stableId": "keyword--unarmed-strike",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "10d9d7776f171dae6222de13aefe50eab1db0499de6613969dd2f80ca822544b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2290,7 +2374,8 @@
         "stableId": "keyword--unbalanced",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "6fbf15eaac2e1f934e1ef43cb183422e4915eabb775726f780901056f4141497",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2317,7 +2402,8 @@
         "stableId": "keyword--upkeep",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "97109c738f5d5ba2625ef91131c317337e2b989795f45d98e050f4f6e49c3747",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2344,7 +2430,8 @@
         "stableId": "keyword--weakened",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/keywords",
         "sourceHash": "9e186ef6a26ecf5d629df036e2232f2107934c47c6a9814e1e468af8857bdf08",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   }

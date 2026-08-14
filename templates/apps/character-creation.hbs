@@ -57,6 +57,50 @@
             </label>
           {{/each}}
         </div>
+        {{#if selectedRace}}
+          <div class="lyr-choice-summary">
+            {{#if selectedRace.system.attributes}}<p><strong>Attributes:</strong> {{selectedRace.system.attributes}}</p>{{/if}}
+            {{#if selectedRace.system.ambition}}<p><strong>Ambition:</strong> {{selectedRace.system.ambition}}</p>{{/if}}
+          </div>
+
+          {{#if raceNeedsMainChoice}}
+            <label class="lyr-assign">Choose +1 main stat
+              <select data-race-choice="raceMainChoice">
+                <option value="">— Choose —</option>
+                {{#each mainStatChoices as |choice|}}<option value="{{choice.key}}" {{#if (eq ../state.raceMainChoice choice.key)}}selected{{/if}}>{{choice.label}}</option>{{/each}}
+              </select>
+            </label>
+          {{/if}}
+          {{#if raceNeedsSubChoice}}
+            <label class="lyr-assign">Choose +1 sub stat
+              <select data-race-choice="raceSubChoice">
+                <option value="">— Choose —</option>
+                {{#each subStatChoices as |choice|}}<option value="{{choice.key}}" {{#if (eq ../state.raceSubChoice choice.key)}}selected{{/if}}>{{choice.label}}</option>{{/each}}
+              </select>
+            </label>
+          {{/if}}
+
+          {{#if ancestries.length}}
+            <h3 class="lyr-subheading">Subrace / ancestry</h3>
+            <div class="lyr-pick-grid">
+              {{#each ancestries as |race|}}
+                <label class="lyr-pick {{#if (eq ../state.ancestryId race.id)}}is-picked{{/if}}">
+                  <input type="radio" name="ancestryId" value="{{race.id}}" {{#if (eq ../state.ancestryId race.id)}}checked{{/if}} />
+                  <img src="{{race.img}}" alt="" /><span>{{race.name}}</span>
+                </label>
+              {{/each}}
+            </div>
+          {{/if}}
+
+          {{#if raceVariants.length}}
+            <label class="lyr-assign">Demon house
+              <select data-race-choice="raceVariant">
+                <option value="">— Choose —</option>
+                {{#each raceVariants as |choice|}}<option value="{{choice.key}}" {{#if (eq ../state.raceVariant choice.key)}}selected{{/if}}>{{choice.name}} — {{choice.description}}</option>{{/each}}
+              </select>
+            </label>
+          {{/if}}
+        {{/if}}
       {{else}}
         <p class="lyr-empty">The Races compendium is empty. Add <code>content/races.json</code> and reload, or skip this step and add a Race item by hand.</p>
       {{/if}}
@@ -103,6 +147,6 @@
 
   <footer class="lyr-creation-footer">
     <button type="button" data-action="reset">Reset</button>
-    <button type="button" class="lyr-primary" data-action="finish" {{#unless statsComplete}}disabled{{/unless}}>Apply to sheet</button>
+    <button type="button" class="lyr-primary" data-action="finish" {{#unless statsComplete}}disabled{{else}}{{#unless raceComplete}}disabled{{else}}{{#unless state.classId}}disabled{{/unless}}{{/unless}}{{/unless}}>Apply to sheet</button>
   </footer>
 </div>

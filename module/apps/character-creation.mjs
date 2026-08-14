@@ -21,6 +21,10 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       mainAssign: {},        // stat key -> array value
       subAssign: {},
       raceId: null,
+      ancestryId: null,
+      raceMainChoice: "",
+      raceSubChoice: "",
+      raceVariant: "",
       classId: null,
       skillPoints: p.startingSkillPoints,
       skillSpend: {},        // skill key -> ranks bought
@@ -52,6 +56,13 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const s = this.state;
     const usedMain = Object.values(s.mainAssign);
     const usedSub = Object.values(s.subAssign);
+    const raceEntries = await this._packIndex("races");
+    const races = raceEntries.filter((entry) => entry.system.raceKind === "primary");
+    const selectedRace = races.find((entry) => entry.id === s.raceId) ?? null;
+    const ancestries = selectedRace
+      ? raceEntries.filter((entry) => entry.system.raceKind === "ancestry" &&
+          entry.system.primaryRace === selectedRace.name)
+      : [];
 
     return {
       actor: this.actor,
@@ -80,7 +91,19 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       statsComplete:
         Object.keys(s.mainAssign).length === 4 && Object.keys(s.subAssign).length === 5,
 
-      races: await this._packIndex("races"),
+      races,
+      ancestries,
+      selectedRace,
+      raceNeedsMainChoice: !!selectedRace?.system.attributeBonuses?.chooseMain,
+      raceNeedsSubChoice: !!selectedRace?.system.attributeBonuses?.chooseSub,
+      raceVariants: selectedRace?.system.variants ?? [],
+      raceComplete: !!selectedRace &&
+        (!selectedRace.system.attributeBonuses?.chooseMain || !!s.raceMainChoice) &&
+        (!selectedRace.system.attributeBonuses?.chooseSub || !!s.raceSubChoice) &&
+        (!ancestries.length || !!s.ancestryId) &&
+        (!(selectedRace.system.variants?.length) || !!s.raceVariant),
+      mainStatChoices: Object.entries(LYRIAN.mainStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
+      subStatChoices: Object.entries(LYRIAN.subStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
       classes: await this._packIndex("classes"),
 
       skills: Object.entries(LYRIAN.skills).map(([key, def]) => ({
@@ -103,8 +126,13 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
   async _packIndex(packName) {
     const pack = game.packs.get(`lyrian-chronicles.${packName}`);
     if (!pack) return [];
-    const index = await pack.getIndex();
-    return index.map((e) => ({ id: e._id, uuid: e.uuid, name: e.name, img: e.img }));
+    const index = await pack.getIndex({ fields: [
+      "system.raceKind", "system.primaryRace", "system.attributes", "system.ambition",
+      "system.attributeBonuses", "system.variants", "system.tier"
+    ] });
+    return index.map((e) => ({
+      id: e._id, uuid: e.uuid, name: e.name, img: e.img, system: e.system ?? {}
+    }));
   }
 
   /* -------------------------------------------- */
@@ -125,10 +153,23 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       });
     });
 
-    html.querySelectorAll("input[name='raceId'], input[name='classId']").forEach((radio) => {
+    html.querySelectorAll("input[name='raceId'], input[name='ancestryId'], input[name='classId']").forEach((radio) => {
       radio.addEventListener("change", (event) => {
-        const field = event.target.name === "raceId" ? "raceId" : "classId";
+        const field = event.target.name;
         this.state[field] = event.target.value;
+        if (field === "raceId") {
+          this.state.ancestryId = null;
+          this.state.raceMainChoice = "";
+          this.state.raceSubChoice = "";
+          this.state.raceVariant = "";
+        }
+        this.render();
+      });
+    });
+
+    html.querySelectorAll("[data-race-choice]").forEach((select) => {
+      select.addEventListener("change", (event) => {
+        this.state[event.target.dataset.raceChoice] = event.target.value;
         this.render();
       });
     });
@@ -162,6 +203,10 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     this.state.subAssign = {};
     this.state.skillSpend = {};
     this.state.raceId = null;
+    this.state.ancestryId = null;
+    this.state.raceMainChoice = "";
+    this.state.raceSubChoice = "";
+    this.state.raceVariant = "";
     this.state.classId = null;
     this.render();
   }
@@ -200,21 +245,55 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
 
     await actor.update(update);
 
+    // Replace the race selection cleanly when the wizard is reopened. Generated
+    // traits are removed by the synchronization pass below.
+    const existingRaces = actor.items.filter((item) => item.type === "race");
+    if (existingRaces.length) {
+      await actor.deleteEmbeddedDocuments("Item", existingRaces.map((item) => item.id));
+    }
+
     // Bring in the chosen race and class as owned items.
     const toCreate = [];
-    for (const [packName, id] of [["races", s.raceId], ["classes", s.classId]]) {
+    for (const [packName, id] of [["races", s.raceId], ["races", s.ancestryId], ["classes", s.classId]]) {
       if (!id) continue;
       const pack = game.packs.get(`lyrian-chronicles.${packName}`);
       const doc = await pack?.getDocument(id);
-      if (doc) toCreate.push(doc.toObject());
+      if (doc) {
+        const data = doc.toObject();
+        delete data._id;
+        if (doc.type === "race" && doc.system.raceKind === "primary") {
+          data.system.selectedMainStat = s.raceMainChoice;
+          data.system.selectedSubStat = s.raceSubChoice;
+          data.system.selectedVariant = s.raceVariant;
+        }
+        if (doc.type === "class") {
+          const alreadyOwned = actor.items.find(
+            (item) => item.type === "class" && item.system.stableId === doc.system.stableId
+          );
+          if (alreadyOwned) continue;
+          data.system.abilitiesUnlocked = 1;
+        }
+        toCreate.push(data);
+      }
     }
     if (toCreate.length) await actor.createEmbeddedDocuments("Item", toCreate);
 
+    await actor.syncProgressionFeatures();
+
     // A purchased class is committed EXP.
-    const classItem = actor.items.find((i) => i.type === "class");
-    if (classItem) {
-      await actor.update({ "system.exp.spent": classItem.system.unlockCost });
-    }
+    const classExp = actor.items
+      .filter((item) => item.type === "class")
+      .reduce((total, item) => total + item.system.expInvested, 0);
+    const breakthroughExp = actor.items
+      .filter((item) => item.type === "breakthrough")
+      .reduce((total, item) => total + item.system.expCost, 0);
+    await actor.update({ "system.exp.spent": classExp + breakthroughExp });
+
+    // Race bonuses may change HP and mana maxima; start the new character full.
+    await actor.update({
+      "system.hp.value": actor.system.hp.max,
+      "system.mana.value": actor.system.mana.max
+    });
 
     ui.notifications.info(
       game.i18n.format("LYRIAN.Creation.Done", { name: actor.name })

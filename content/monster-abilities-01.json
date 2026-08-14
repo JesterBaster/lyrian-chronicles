@@ -32,7 +32,8 @@
         "stableId": "monster-ability--absorb-magic",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "fe2fc7cd5c354a73bc0435d7bfc7104b80daf385fe853a6e0dc59fd92beac795",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -69,7 +70,8 @@
         "stableId": "monster-action--adapt",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "49f5d373f9d18bcf4d49a241d9f3945423fc09d036bc386f92e7b93e7a9a3a52",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -108,7 +110,8 @@
         "stableId": "monster-action--alchemic-barrage-backpack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8c230ec553b151d0caa3a537e170cb3e0b6129dd774fb91ddd6cfa84b8b038f4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -148,7 +151,8 @@
         "stableId": "monster-action--alchemic-barrage-ii-backpack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "be4a3eb7479458fd1062f04ca2d672cc93dd4a7b84b3012cfe3207b4e9839f7e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -185,7 +189,8 @@
         "stableId": "monster-ability--alchemic-engine-overdrive",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "415f568d9e40ab148d1adae2341c1cdcbb93cea2804a51b89be3c7315328ebdc",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -224,7 +229,8 @@
         "stableId": "monster-action--alchemic-flare-body",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9b678ecb112d265d49dd6d823405a76b16caba3de389f9ecccf3ce9cfab4af2f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -264,7 +270,8 @@
         "stableId": "monster-action--ancestor-s-blessing",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "2b8c6cfb361368d44b1505430bb720e9937229e81c3a91b62465cab82240742a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -305,7 +312,8 @@
         "stableId": "monster-action--angel-s-embrace",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d5174b13952f485a00b0136aca8926c3b9bef2441d45eb81d7dc9160097fefe2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -342,7 +350,8 @@
         "stableId": "monster-ability--animal-shield",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4f00e08118a5a1400d4c3657469bc372b3c52a5c446717b1cc5f6d52f0aa37ef",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -379,7 +388,8 @@
         "stableId": "monster-ability--arcane-barrier",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9ab2d5ef8b612586ac91d4e8bfef9bacf6264eaeb540b99b2c88d478d22b80d1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -416,7 +426,8 @@
         "stableId": "monster-ability--arcane-body",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c413a91fcfc019b65fd9e1fd5fd532f02c45aa0bf0a1923af887788332a02232",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -455,7 +466,8 @@
         "stableId": "monster-action--arcane-fang",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8734194bd51592db3df805b8ba2215dab906c1e1d297f45cc1dace0aeab50802",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -496,7 +508,8 @@
         "stableId": "monster-action--arcane-net",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "30bd300c90d75206b11d4e84c416727efc2cdfff0b0ac828cc26ad59d50bd0f7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -533,7 +546,8 @@
         "stableId": "monster-ability--arcane-type-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a564a73499c112077237fe6415360dfbcd1d3b97cba3787f6c4360ad65c7c3f9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -570,7 +584,8 @@
         "stableId": "monster-ability--armored-chitin",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "911b8bb10e2c41cb99990ee998e19bfadace887226d855a4e13ec3a4506dfbca",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -607,7 +622,8 @@
         "stableId": "monster-action--astra-beams",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "11fbebcaac7dec03f35201f4da3cdc472855539ec64b947d551d0a19511560fd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -644,7 +660,8 @@
         "stableId": "monster-ability--aurasense",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5bde9422fcb181bc4ec2cb500ee1a8fb5839cd2e0b91b25ef70702ba6d7051ca",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -684,7 +701,8 @@
         "stableId": "monster-action--backstab",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9923d7a3c69a801269719c46acef358b21d3301b4c9590e430e0f5bd0f3f5ab7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -723,7 +741,8 @@
         "stableId": "monster-action--bandersnatch-swipe",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4d32fed111cceb05eb7cdd0b38fea2206e50af4f96c8e9c493ce67b87ae47ed9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -760,7 +779,8 @@
         "stableId": "monster-ability--battle-tactics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "470adb75103af4c7fd7b25a76d8ddb6ef91d5dc758478fbfe6f371e4d08f7d7c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -797,7 +817,8 @@
         "stableId": "monster-ability--berserker",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "fbe22bd9ea04476efeac272e2bc3b8d72faf6d95e6b22a457003de46bace2b41",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -834,7 +855,8 @@
         "stableId": "monster-action--bestial-command",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "df6b3302254d2cf6643e6153f69a1ed08233d315eb0ee0d4e2745a96112d3efd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -873,7 +895,8 @@
         "stableId": "monster-action--black-knight-s-charge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a1fc654c9f8f823f8fb0e714e01cc8a5873846afce1a9e10a50a365f4dfe9efe",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -910,7 +933,8 @@
         "stableId": "monster-ability--black-mount",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c48f1ba56e28c141a072fe8c723d29c47046948d9b2aa30e0895013b26e4865b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -950,7 +974,8 @@
         "stableId": "monster-action--blink",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "b1f4f47beff64e0e978fea0b75b30f8650adbd7e90c6bc62a6e89faf80cc2716",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -990,7 +1015,8 @@
         "stableId": "monster-action--blizzard",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ee043782f5646ffbb9cf5fef0906fee3022d694a76d6fdcbfbc9cd6e33554a00",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1027,7 +1053,8 @@
         "stableId": "monster-action--blizzard-walker",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "48025105e4f85f410bf8a2542e68f77a9b6b4e77d712e4e6d082fdf4680ba039",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1064,7 +1091,8 @@
         "stableId": "monster-ability--bludgeoning-weakness",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "409c3e7113c2eca97e3672da790f0987484c2da84d291d7ce79838b6198eb6bc",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1101,7 +1129,8 @@
         "stableId": "monster-action--boar-charge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "2978ed6c9f7c0d67675a2720fefe7bf74c30f9050a8a6f05747f0ffef6cd9518",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1138,7 +1167,8 @@
         "stableId": "monster-ability--boar-charger",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "22392ba09ebe554fc4e5740b8930439d5163f1b718c773418443bda497fd5213",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1175,7 +1205,8 @@
         "stableId": "monster-ability--boar-hide",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5da5c7e72a60e2c061d827f131e5493f96221b236557458b99efdba115743054",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1212,7 +1243,8 @@
         "stableId": "monster-ability--boar-mount",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8c0889a67a65aa15837b5247c5ad7eeac836609331d210acd2bbd10a792899c7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1251,7 +1283,8 @@
         "stableId": "monster-action--boar-trample",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "2480eb59e50465240f52c4ba80ce38720297e4e7753ef6c0061790d1cddb7bfd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1291,7 +1324,8 @@
         "stableId": "monster-action--bone-spike-shot",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9985c1898578890b0482bfdc8cce6e59f3b8da22df8a79c0fcf48629b0cc7a2f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1330,7 +1364,8 @@
         "stableId": "monster-action--bowling-roller",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "7e421c107092268e648c5c7cbb8fa3a48461d02e97c48e735ed1f9c9752c65cb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1367,7 +1402,8 @@
         "stableId": "monster-ability--burrow",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "967c89e77190532934e88cfc5199a68fa936665439d60b18a048d144bc073c8a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1407,7 +1443,8 @@
         "stableId": "monster-action--burrow",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6fb2d0176edbbc6225a913ec2d2db85054bd76d8ca68d102d8d7c198ff572247",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1444,7 +1481,8 @@
         "stableId": "monster-ability--calm-aim",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6cd76f77e0a3e98b835176d0bf2ef8f69aa5b9ac39bef228991ee2a45cdb7f94",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1481,7 +1519,8 @@
         "stableId": "monster-ability--camouflage",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "23836ffe75f10588e41a6fb22168561cf3c54c0e7759da71398390f61fa2d813",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1518,7 +1557,8 @@
         "stableId": "monster-action--charge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "cb7dcbe1821b44fb49f9178c4b001ea5d324a3634db3ce1402b59fabfb2d3f70",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1557,7 +1597,8 @@
         "stableId": "monster-action--claw-drill",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "7d3909eaa36560838323923a5c6ffcff1ffd3d6c62e50abaf0e985ec5916ccd3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1594,7 +1635,8 @@
         "stableId": "monster-action--cleaving-strike",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ebcc18b61f05f8d8e970809369ecb5ef9fe3b958135a654be512941d327956a5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1631,7 +1673,8 @@
         "stableId": "monster-ability--combat-healer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "3f1b58763c42ac63d5cef5d1db3994dcda6c5a99fd5be5c1c60a4613527aad21",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1668,7 +1711,8 @@
         "stableId": "monster-action--combine",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ed0b0c97be92768e43ff31e72b0e14dd1fccbca02335ad87661e367ed3e29d4d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1707,7 +1751,8 @@
         "stableId": "monster-action--consume",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "561057a5d903cd12ce6538eb56e63384d7c0d5dfc2da1cb56575048a9921a56f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1744,7 +1789,8 @@
         "stableId": "monster-ability--controlled-space",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f23681cd25b1ae480b57ca0ea320a391d00597009ee6ce5ddebd53d4d4e302e2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1781,7 +1827,8 @@
         "stableId": "monster-ability--core-brain",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8ed26c0db1ce09ccc09cf664980a5e30d3335e78c2db9667d001430df3c5beaf",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1818,7 +1865,8 @@
         "stableId": "monster-action--crab-flexibility",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ede480f04e7bc8ece7c38da20d89983ed55b6e78b23818def9dfcfa0b8ecec97",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1855,7 +1903,8 @@
         "stableId": "monster-action--crab-grab",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "aedab4347a0e171aa46f3e6f7c8e3d52f2ab225632505f164ab430f9e3422281",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1892,7 +1941,8 @@
         "stableId": "monster-ability--creature-of-fire",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ca1e35c95ce00473a8fa1382253b9480efc82e5d486879265f1e0152e1dfe65d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1929,7 +1979,8 @@
         "stableId": "monster-ability--crushing-maw",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "3570564e19268f066e8580d51406cf3339c5a5b49cbf1a2f0e91002ca759ba76",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1969,7 +2020,8 @@
         "stableId": "monster-action--crushing-presence",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d054199a6e0856301aa5e2ee4042feee4b79dc79ec95bd18a164918c2e8b35cd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2008,7 +2060,8 @@
         "stableId": "monster-action--crystal-barrier",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "23338959bbbf79ca92d06b9d0e5b9c1ad38449156fde8179f7a14c52620e5dc8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2047,7 +2100,8 @@
         "stableId": "monster-action--crystal-burst",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ceb2cc6c356cc8f3f82c4032a7954c7b2d3631f85b1e2ffd9f1601d910bf9492",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2084,7 +2138,8 @@
         "stableId": "monster-action--crystal-stomp",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "22dc3bac7e1d7a7af5f2291d9a76537475c67a8559280d80c1f73435ebbeb4da",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2123,7 +2178,8 @@
         "stableId": "monster-action--cure-body",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "54695f0a68d3a9946c4155d856b98a56488eebe3f13597bcdcc4360b5eae5873",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2163,7 +2219,8 @@
         "stableId": "monster-action--cure-touch",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "15f237f8aae85e8f669ef4b451368299530d0f87acce91937a14bba82ea1d2ad",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2200,7 +2257,8 @@
         "stableId": "monster-action--darkness",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "433f1ef1f4fd85ed11d3a1d2d376251b2ef2db9359c5e1c0eb0a72c2203dbe37",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2237,7 +2295,8 @@
         "stableId": "monster-action--darkness-shade",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a547373ae9cc26ea899a29113ce2478cd3d7ee9be2eb8ae877178455066567e7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2276,7 +2335,8 @@
         "stableId": "monster-action--death-s-follower",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "610b218c95cfb07cef995c0f5c5b483c0da874e1300b93037f163ca2af151a0d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2313,7 +2373,8 @@
         "stableId": "monster-ability--deathtouch",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c2db18ad6f7d90a3b4746573402f48f3c87b57c80197fd5e3feb616a672e7222",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2352,7 +2413,8 @@
         "stableId": "monster-action--defensive-curl",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4a8f0a5f0967f07464335e52e33f0d53031e85b7dd316dca1ca34d999588ee02",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2391,7 +2453,8 @@
         "stableId": "monster-action--desync",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "604931e0f78a7c2a49f8a34b334b1d852a840392936fd09a593731701591c4b3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2431,7 +2494,8 @@
         "stableId": "monster-action--detonate-self",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4ffe7e922d237f043821f9470eb44d6a4442ea129395c04a27c06735f99343fa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2471,7 +2535,8 @@
         "stableId": "monster-action--devastating-strike",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8a6b809a12a29b670585fdfbe0b6f6897b4e3104ce404b812189b83377e26d1b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2508,7 +2573,8 @@
         "stableId": "monster-action--devour-corpse",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "dee38bdbeb27f9b16a70440ec550de62cd823ab910e4b87285d5e128b68d104d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2547,7 +2613,8 @@
         "stableId": "monster-action--dig-deeper",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d7c343f69408e062a7e449c694649984beb2a53e5ab23ca077929c2fce3fa641",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2587,7 +2654,8 @@
         "stableId": "monster-action--digestion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e06ac35ed39367111d6486f64e407c535973abfd78c97ba4774abf3db8d6f64a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2626,7 +2694,8 @@
         "stableId": "monster-action--dire-claw",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c3b1166b7af6624a752cb4ef1fd62af56f4f8e1b328b4e5eb62ff491f5b8c864",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2663,7 +2732,8 @@
         "stableId": "monster-action--disengaging-shot",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6f1fa58494a1d94a37bad7fa256218aa9a483cc401997c996a4831806f585f57",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2700,7 +2770,8 @@
         "stableId": "monster-action--dive-attack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e0c8963f21284cff1206b2b41f87e3c7cd35a19e6ee5c8a3d3194a408648f5fb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2739,7 +2810,8 @@
         "stableId": "monster-action--divine-shield",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4d7333325369812c96cae4fe4694479cd687e5f4f30340e63cd20e4403281145",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2778,7 +2850,8 @@
         "stableId": "monster-action--divine-smite",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "0e8a84d06b304659d1e1072d600e943514e6f5dfe8c9b47f566c5ae463d8b81f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2815,7 +2888,8 @@
         "stableId": "monster-ability--double-headed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e65786e94d2495ccb3df5d5f362f9f72f2eaef3c3c6145ca7e1dc7b2b36c5eea",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2852,7 +2926,8 @@
         "stableId": "monster-ability--dragon-fire",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f25371a4cffb3194625042cf07d71747868ff49ef6ce252686358f47ae39fd65",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2891,7 +2966,8 @@
         "stableId": "monster-action--draining-touch",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6ab23370ff14fcf11b543ebf27141512fca1e8db2544d88c1c23959d5f01a3b6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2928,7 +3004,8 @@
         "stableId": "monster-action--dream-ender",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "452aff267f81fc39ded5801e9ef9b6ae32d2c477baf613ede92371ef7e63240e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2967,7 +3044,8 @@
         "stableId": "monster-action--dream-shift",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4d43deed566b2fc253e491718b0ede8b5c4568d6c93c6a4469848f1cea764f17",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3006,7 +3084,8 @@
         "stableId": "monster-action--drop-in-pot",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "051dfb89d874e2355e3ee3f46356bdbdbc299e53662304de9a8adc31cab77ae0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3043,7 +3122,8 @@
         "stableId": "monster-ability--earth-body",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e934508ce083f994eda51f333268db96c3c3beea0ef7b77fc5d1085af5030902",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3080,7 +3160,8 @@
         "stableId": "monster-ability--earth-immunity",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "cfd0aaf1f136f11f05d2f7020376ef974c41d7ea9421c69fd5e8b61ab4ca29ef",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3117,7 +3198,8 @@
         "stableId": "monster-ability--earth-type-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "dba66c2c6301f0e18595dfdfbdca56212e20f2d83fb0c1696c9a6a047216b357",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3154,7 +3236,8 @@
         "stableId": "monster-ability--elite-solo-aura",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6461cc7da0f0e5ae7ca53556f15b0df244773970ee56c1ce5811907ff4c84393",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3191,7 +3274,8 @@
         "stableId": "monster-action--empower-beast",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9ae8b7da98f4bb140f406bc5be9071843ce812f588cccc1360335352129a6c1c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3230,7 +3314,8 @@
         "stableId": "monster-action--esoteric-art-all-out",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a8d4bc8854ce2f099c2f20d2e3a9b3da5909ecd06130af901f55ecb592c9b505",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3267,7 +3352,8 @@
         "stableId": "monster-action--evasive-maneuver",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "85d8f704147bd77c326ecc9d235da0bdb67abda9ee1d488ec08ee9bb0aeccf67",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3306,7 +3392,8 @@
         "stableId": "monster-action--evasive-maneuver-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5235a0b2e361664f6c1fb9f3d51ea44e6c7672b19ae8214cc64e517265da392e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3343,7 +3430,8 @@
         "stableId": "monster-ability--evasive-rogue",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5ff1834d8b8f9bc11e9012c462907e303ced1ecfaca565cb277540db99ad5f9e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3382,7 +3470,8 @@
         "stableId": "monster-action--exousiai-s-presence",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a30d8915ac65aea6b4dc85820a729fcfeb7aee291cb58df63b8e36d04dea973e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3419,7 +3508,8 @@
         "stableId": "monster-action--explode-self",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "1c6e6e8a150dfe9c447f8fa1553f85d5d8a44eba349d610bdd2bc1c687baa078",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3458,7 +3548,8 @@
         "stableId": "monster-action--faewolf-flash",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6c6bf9347b90b22d0064117d0cbcc1b5ecef342005e8f2de6300f9056b5c9ab4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3495,7 +3586,8 @@
         "stableId": "monster-ability--faewolf-shimmer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "1bb35d8004174a5fad7a380e930f56124de487ca8711ba0acff4a878687fe69a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3536,7 +3628,8 @@
         "stableId": "monster-action--feast",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a0d1e09e343410fd4a45f69b5caa14cfb41930e1f30d0f8930dc5f8966b92b5e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3573,7 +3666,8 @@
         "stableId": "monster-ability--feeding-time",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "0fd6557d75787cc214a49e5bffcd0f567641a9dd6bef06a9e9986ecf30d67bdd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3610,7 +3704,8 @@
         "stableId": "monster-ability--fire-body",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "195434fcd31ce28e2f4fb2bf08ece1087952df91f898f865640e323fa4cbcf2d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3647,7 +3742,8 @@
         "stableId": "monster-ability--fire-immunity",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "7e652b4a55724c27047e60d18b8466f021f7b653c72dabbea6cdfc7c579f3a3e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3684,7 +3780,8 @@
         "stableId": "monster-ability--fire-resistance",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f683b51b16a72aa137a6dadde312f542054f3c36b4ce097b6e6053222ef2bae4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3721,7 +3818,8 @@
         "stableId": "monster-ability--fire-type-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "7f16fdbcc08a798ae7587bb035275b8f15bb0062bea051df8cfbd71d6b3c45be",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3758,7 +3856,8 @@
         "stableId": "monster-ability--fire-vulnerability",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "bd1fe30c8221ff4ba67232d88179cbc83be38ef75bc930e038655e67f12bfcb9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3795,7 +3894,8 @@
         "stableId": "monster-ability--fire-weakness",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e37969fee6373c7c5ffb73d322cf88b28a5f82d378be9b5521a4cf6b290b35f2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3832,7 +3932,8 @@
         "stableId": "monster-action--fireball",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c6f4d232a9edf9592da1fcbc0412ba40895548780234f0e4f4163551707f637a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3869,7 +3970,8 @@
         "stableId": "monster-action--firebolt",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5e2cb240cafee538003e9dee888fffe5e10d4077fef90abb3e30b8fa3932a65b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3906,7 +4008,8 @@
         "stableId": "monster-action--flame-breath",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8ce66cb79fad9454e5f827d37532184b2fb805712a185f0d6d5e6e8d5d2a3ed5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3943,7 +4046,8 @@
         "stableId": "monster-ability--flight",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "99490a9e3b95246c757b6355075ae7e5f6a8aa78b468c255883fbbd69c1c7f97",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3980,7 +4084,8 @@
         "stableId": "monster-ability--fly-by",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "747eeecbcc594d0193b7933b5698fbe19d497402b6c19a10b2f2bf66b4172e47",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4017,7 +4122,8 @@
         "stableId": "monster-action--focus-fire",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "aeaa046f494aee4f2451ffe026c05a11fa64708b1084e3fc72ad87bd3f25f3bd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4054,7 +4160,8 @@
         "stableId": "monster-action--focused-gaze",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "25208da5050c5aadd93e78926e6eb63334b7e5121ba71d084082f2220c7f04ed",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4095,7 +4202,8 @@
         "stableId": "monster-action--frost-creation-tower",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f65a62f68afde5309dd510aa141d0de7818639607bb608027fdeb4957e13f52e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4132,7 +4240,8 @@
         "stableId": "monster-ability--frost-creation-weapons",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8f9f9dc988270362885c4a88a13e125b0c675d46292b3d2b92964119a302ea36",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4171,7 +4280,8 @@
         "stableId": "monster-action--frosty-start",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d642a290aeb40776db17d3940eefae8c413a0be0a9ae581d70d2f2f408a936ff",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4208,7 +4318,8 @@
         "stableId": "monster-action--full-petrify",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "b212e93b6da23fac933caab608dcccd95580b6921359d8ae47a14cc190cd2b8d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4245,7 +4356,8 @@
         "stableId": "monster-ability--gel-body",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "610f27070cefd4372cc65d6c7ac0034d64c8f7fabb385775d4c29b97a46ce38c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4282,7 +4394,8 @@
         "stableId": "monster-action--ghoul-bite",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "89d614027dec76ec1fa153587d642a51a97fca318e9f1c849fbf79d8170dcb62",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4323,7 +4436,8 @@
         "stableId": "monster-action--glittershards",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4d1524cffd5dd5029150fba26ea617893e984724f3e1024cc4872d304a3607ea",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4362,7 +4476,8 @@
         "stableId": "monster-action--gluttony",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8d2ec54903d9a7431610335c5b680a1520f131dc611abb07ed448daefabf32a9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4401,7 +4516,8 @@
         "stableId": "monster-action--go-for-the-throat",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "1fe86eccf8f4ffb99b8a51777a8e0c9bcf4677bfa13fa6b4b2ec4ede2667919b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4440,7 +4556,8 @@
         "stableId": "monster-action--gobbo-regeneration",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "33e5d6829c3232bb05026aaabddfbff23b03469bf48af2df6b1ab5967042cbc1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4479,7 +4596,8 @@
         "stableId": "monster-action--gobbo-throw-rock",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5a1d336fbd911f76cd2cb82047c6178d2a2ea6de59a2f50555c42b9aac2f84e5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4520,7 +4638,8 @@
         "stableId": "monster-action--goring-charge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f4b32c851244af8465cbe5e9323778989496272b58bf0fdd9d90881006a3cca8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4559,7 +4678,8 @@
         "stableId": "monster-action--grab",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a03a582d861e700ebbd85055de61f65d3d07fac04b53817a084938ccd7953ca0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4599,7 +4719,8 @@
         "stableId": "monster-action--gravity-crash",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "563879d3c9177bf585887bef06b31b0a207997d9aeeabf5683d24dc3fedc2359",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4636,7 +4757,8 @@
         "stableId": "monster-action--gravity-pull",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "3112f68359c0839422d8564febdc0a79199dae84602d30471673eb0442e14bd9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4673,7 +4795,8 @@
         "stableId": "monster-ability--gravity-well",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "97e1e9ce7901b0306db396381be60f71d9f4ef1d63c2569db670195117421a60",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4710,7 +4833,8 @@
         "stableId": "monster-ability--growing-sludge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e9e25c19eaa1d964534017d3a7811bf7e04f17e7d495ed5fdd08993ecccdb093",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4747,7 +4871,8 @@
         "stableId": "monster-ability--halberd",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d96982e0d3039cffde6f135bd2f610fbb4d63cd2fcb172948fcb4f757ade8bf5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4787,7 +4912,8 @@
         "stableId": "monster-action--hallowed-ground",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ceeff5f80c2e67f2e723359629f4c4da7e7a1586f577be7318975350582a95b9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4824,7 +4950,8 @@
         "stableId": "monster-ability--hard-shell",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8e10e474d2ecd5e55b3d6c2328baa84e6171ab80b304718ef7b1e20db054bac8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4861,7 +4988,8 @@
         "stableId": "monster-ability--hardened-scales",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "91c15f8eb83b31a08df082e5d7bf3b094f75c359e98df9da2a6ed8f1cdd87d73",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4898,7 +5026,8 @@
         "stableId": "monster-ability--hardened-skin-mutation",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f8102e1b153eda75bd8a3a9103532c0865f028e8508513806f4bd5c26ac08e2e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4935,7 +5064,8 @@
         "stableId": "monster-ability--head-limit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6aeb575ce63613f532b59f8f4eae6bf51964f40b60fa1b109b108ed97153ecfd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4972,7 +5102,8 @@
         "stableId": "monster-ability--head-or-tails",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e53ac1b3fd7c3b7e7f48cdbb574980b6c12fe21d1adc9b302773af8ffc217acc",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5009,7 +5140,8 @@
         "stableId": "monster-ability--head-regrowth",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5bc687924a0688a9293a5ae6d69c68c749e2dfde814e7c0ec717a5c301cfbb71",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5048,7 +5180,8 @@
         "stableId": "monster-action--headbutt",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "70fb577df11e23dfc1289566530eda31259fbd03c9dbad758cc1c7658208be20",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5087,7 +5220,8 @@
         "stableId": "monster-action--heat-wave",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "24e7ea86f70ec78bb54f1a748b8454792a2cd0257aaf75f2d67154fddf8deb75",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5124,7 +5258,8 @@
         "stableId": "monster-ability--heavy-cavalry",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "efc8817acd8bc5286531c91cc2c0c593f452d407c04255cad7d6dacced1ea945",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5161,7 +5296,8 @@
         "stableId": "monster-ability--heavy-paws",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "2b8bbdd862ff822a177df06739bd2768c51a7cc21cb7314ac962badc15ece6b8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5198,7 +5334,8 @@
         "stableId": "monster-ability--high-flock-tactics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6fc1ae6f208e190b2b907ae773ff71142d427d5597520328ed78bc582115223a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5235,7 +5372,8 @@
         "stableId": "monster-ability--holy-vulnerability",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "b23f6ad9b289df55cd16e3810430a556d19a1bd9e0f2133370ce33739e2f54a8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5272,7 +5410,8 @@
         "stableId": "monster-ability--holy-weakness",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c4201ecd41d4cb2bf7ac676fd3686bd730426e3b2aa143f0bfa51fa670830eae",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5311,7 +5450,8 @@
         "stableId": "monster-action--homing-shot",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5f3e3c4b6c40b5128a556a1cd4f1148738bf290f602171ed530ef2b5daba2e80",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5348,7 +5488,8 @@
         "stableId": "monster-ability--host-defense",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "1541809f4c84e08a608ce1a08498ff3af304b54c772c798e066eacbd140be1cd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5385,7 +5526,8 @@
         "stableId": "monster-ability--hover",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "83485e2024f6bc10cd161755b8e731735baf81e9e005ffed1abc8b7775d78a2d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5426,7 +5568,8 @@
         "stableId": "monster-action--hydra-breath",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "b4857f304564f1f9d8637c225bb426d0424af60ac4d1f52724a52a2f7b6f3e2e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5465,7 +5608,8 @@
         "stableId": "monster-action--hydra-constrict",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "1475ac08c9520f30a4d7595e84c06213f45b5847ec0cce36aaca141791c45121",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5502,7 +5646,8 @@
         "stableId": "monster-ability--hydra-elements",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "26c1feb95b06423008889dbf46256c7a40d17e686f09a4580df7758b88c88eef",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5539,7 +5684,8 @@
         "stableId": "monster-ability--ice-defense",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8f3eb568aafe90b3f2bbc236790d578858e82b51a6dff2d0be81b7f6dfea7b1b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5576,7 +5722,8 @@
         "stableId": "monster-ability--ice-immunity",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "58b0751a42d85b2786ef99636c5c9a548b29f74db0b07fd8fda6b59b4f036c4d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5613,7 +5760,8 @@
         "stableId": "monster-ability--ice-resistance",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "20129af6029c46754f7b28b994581a5374f1f75720228d27317e4c032304f3e8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5650,7 +5798,8 @@
         "stableId": "monster-ability--icy-puddle",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "40003e495de05436c87f11e8f478a8008331e80a622c289d39abaf0a22afd85e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5689,7 +5838,8 @@
         "stableId": "monster-action--impale",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "69edc0f82fd3518343a8b09f7dab2635e18eea8d89c10a520e49121460509992",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5726,7 +5876,8 @@
         "stableId": "monster-action--improved-feint",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4602ce6feb651a19e191e31274cabed61740bd2a07c7d22fd87027465c16f57b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5763,7 +5914,8 @@
         "stableId": "monster-ability--incorporeal",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "75a2f1a828fb03970cf0e72c9e4480e444bf62e66982774a71db80f4e9f5db91",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5802,7 +5954,8 @@
         "stableId": "monster-action--ink-attack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9db102ee08529a8a99e379b337a51608842b1e738d7a3dd04c72dd318f7559f7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5839,7 +5992,8 @@
         "stableId": "monster-ability--ink-explosion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "bf895e30df7aaf781419865cedec183187eddd201151acff36b4c8ea86ce600b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5876,7 +6030,8 @@
         "stableId": "monster-action--inky-dodge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a80ffe49d673276b35ec37c62ee66ac974d9f57a0f0333681293fa8a4f3cc07d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5913,7 +6068,8 @@
         "stableId": "monster-ability--insatiable-hunger",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "cf4d549c6dcad9170246dcaf5e3b56b5cebf0654825451f4a32ab38d3d711e67",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5952,7 +6108,8 @@
         "stableId": "monster-action--insect-assault",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "72978441bfec13ec6fd93e8ee1ce35ca73d9b6c2b0ba5be095974a0a873f2cd6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5989,7 +6146,8 @@
         "stableId": "monster-ability--ixilune-s-chitin",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f2cd5b3e0df28bccd5af7a1de9712d8af96cc2516f1023824e7638a6d201b8d3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6028,7 +6186,8 @@
         "stableId": "monster-action--ixilune-s-command",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "87d5953d1b8820b925f40c7a40a46d0751220a5a2181af3ddabec5681931b9a9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6067,7 +6226,8 @@
         "stableId": "monster-action--ixith-swarm",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c8de58b15200dee03eda718fb66fdd0128d1ef7d6f39b19979000373fc07debd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6104,7 +6264,8 @@
         "stableId": "monster-action--jumping-bite",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4b3a84aa287f73385b50a114d510fc3e5ea2ac1fdd9533328acc0d861e62c0aa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6141,7 +6302,8 @@
         "stableId": "monster-ability--just-a-nightmare",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4ee5f8d7691339152d049ce035aabff704367f21eef72be1638d0f4e339366c2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6178,7 +6340,8 @@
         "stableId": "monster-ability--keen-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "77da2c202de3b9b2b2884599139b98e27bb24d3c61e1daa86dd49104979796bb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6215,7 +6378,8 @@
         "stableId": "monster-ability--large-nimble-flier",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f74eeea4cd8eb4f5332d1cb42af58e5a7a634bfbd272b31e36826dc6b590b6e5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6252,7 +6416,8 @@
         "stableId": "monster-ability--last-resort",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "25750643268f82723e9d1a0f2aa1849fa3e6ee13c51aed31a6454590a12373f5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6289,7 +6454,8 @@
         "stableId": "monster-ability--lead-the-pack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a935a7548abb0f06d9a582e2567aa812da736c65c4608b043d786a07a2afd219",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6326,7 +6492,8 @@
         "stableId": "monster-ability--leadership",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8b80f5b1e5841e8d775ab80e4836474f013dbae84e1c590c82dab1eaa02487ad",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6363,7 +6530,8 @@
         "stableId": "monster-action--leading-bite",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "374da004a3f894141a5d079f0e2d85378e36b7d7b2031e9ee0445c90539af9da",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6400,7 +6568,8 @@
         "stableId": "monster-action--leaping-strike",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "7fbb72d19c63b2c221ef9af338867ce87d2cb7aa03165d635efe63335fd6eaf1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6437,7 +6606,8 @@
         "stableId": "monster-ability--lesser-fiend-regeneration",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "3c361c3ffacae488ce28ccd34be27cdf92cc708b7726b3dbb7c5e1dbad865785",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6474,7 +6644,8 @@
         "stableId": "monster-ability--light-array-barrier",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f93617829871f11af10971725ae7fbe560811141086d2515ffbcf2e179f5faea",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6511,7 +6682,8 @@
         "stableId": "monster-ability--light-vulnerability",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "b423e541ddffeae065b012f05a710551246702a436b75b61c30a1a20b1c52e17",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6548,7 +6720,8 @@
         "stableId": "monster-action--lightning-charge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c6c2059cf69efc028a7af2a9c796f56e517d23cdffda75797742342f5236e1f8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6585,7 +6758,8 @@
         "stableId": "monster-ability--lightning-immunity",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "924ffa9e630eacb3cd413078306bae2b56524bb74bf0ebf64d1be634759406bd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6622,7 +6796,8 @@
         "stableId": "monster-ability--limited-dreaming",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d00de86cc3fd3bc83c3e214dfe0a56543bbff843f565c868469cf9393cee9f58",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6659,7 +6834,8 @@
         "stableId": "monster-ability--limited-flight",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c4ddf3dab234200862f8237858ef9763d1e09504e7120eadae8bcd3ee6fc72a4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6700,7 +6876,8 @@
         "stableId": "monster-action--lion-s-roar",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "aa10dd5a4d708c9dcba919ed425b3661fb3c965194c0d33f88e70016e16831c4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6737,7 +6914,8 @@
         "stableId": "monster-ability--low-flock-tactics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6b7efb2b1dabd5d036712bc36daafef1ce8193af7502374ca8dda18ed513fde6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6774,7 +6952,8 @@
         "stableId": "monster-ability--luck-aura",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9599048ccddb657d4d95a03ee2710964790fa286c0aafc54f3e80fb4836f52fa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6813,7 +6992,8 @@
         "stableId": "monster-action--luck-surge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f3fecf952d13b78fae19e2804e240e52761f70337f22bbd06d2c24cadc347e2c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6852,7 +7032,8 @@
         "stableId": "monster-action--lucky-dodge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "56a6edaecff6698291358c185a0f40b4ab3784859fe46828e1c3df34a8f3d29d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6889,7 +7070,8 @@
         "stableId": "monster-action--lucky-hit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a97d8e28c703ff7fbb5a33ecaf862385b6c2518ec9906ea9adc385d535be9361",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6928,7 +7110,8 @@
         "stableId": "monster-action--lucky-lass",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5333305184d5b707a63dbc3554719abbdc7dd245e0934ca35e302460aa00fa25",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6965,7 +7148,8 @@
         "stableId": "monster-action--luring-pollen",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9c92b838771d929d15e519071102684654a67128c0fda3c14fd7f0802a7f3c6f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7002,7 +7186,8 @@
         "stableId": "monster-action--mana-razor-alpha",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "085c351ebcec9088f561f283b569937d7c57d45733c08ab8bdb933d8cb71be47",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7039,7 +7224,8 @@
         "stableId": "monster-action--maul",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d0922f5ad8bf500a035b52d7776e80c8365645f96bc709f90d01eddb0ec54340",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7076,7 +7262,8 @@
         "stableId": "monster-ability--medium-fiend-regeneration",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5e62bd97a2ed1736fd1a358a06d8cfaf27b1090f7513625e09c3259c001c5221",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7113,7 +7300,8 @@
         "stableId": "monster-ability--mindless",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "493c34eda120429f36217d08ea427d30a49d899707c0f6a3328894bcb843017b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7150,7 +7338,8 @@
         "stableId": "monster-ability--minor-hardened-skin-mutation",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "b33ea9dd1a3f1bc5187d291978ccd1913ab62bfc07968d5e04710dce20ea16e9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7190,7 +7379,8 @@
         "stableId": "monster-action--missile-barrage",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "0792c2951f5466712a9de5351978f5ea028b98ad8d5a72b673e1def9c66fade9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7227,7 +7417,8 @@
         "stableId": "monster-ability--morale-failure",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "1320bbc7828ac678b2474109f1e7b183a6e6e312d52379c7eb2175e438b7d4bc",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7266,7 +7457,8 @@
         "stableId": "monster-action--mounted-charge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "77d0a5ebb91f172f2b3497865f6c6100688de443e8cf2d4d2ab1ab696929da24",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7303,7 +7495,8 @@
         "stableId": "monster-ability--multi-headed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9347b01cb89a88fba774e85ad7ae6a98ae0c599aff2bed22f5a38d99eef56664",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7342,7 +7535,8 @@
         "stableId": "monster-action--nightmare-cage",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4cb7220e0e8e8f38f8fa9846c9fdde840896a51310c1401a13e13fb5691223ff",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7379,7 +7573,8 @@
         "stableId": "monster-ability--no-escape",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8c2608f1d27874b58b8ebecb3e28386d7ba9a877f2163ae5e62411f48f3eef95",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7416,7 +7611,8 @@
         "stableId": "monster-action--nothing",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "eadcd86f9330bbf246ea4f313c8d8a5a901306d5cfe80855a4845e5e7828b48e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7456,7 +7652,8 @@
         "stableId": "monster-action--oppressing-glare",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5558c8f84426bda3cbb69e921af2da9597b012d640108c784d8edaad35463f19",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7493,7 +7690,8 @@
         "stableId": "monster-ability--overheat",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "80d1c483a90aad0934acf52aa69869d580e9f15a8683746bac6e44e5c8d81ae1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7530,7 +7728,8 @@
         "stableId": "monster-ability--pack-tactics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "26c3cdbef617e0073344ebe5cdb5a032da9bdd4d859326d8a7b3d894befce301",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7567,7 +7766,8 @@
         "stableId": "monster-action--perfect-shell",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e2db92fb1eecad6f8df4e6a43e2b51227f5b2d99b287477d10fa6603b371d6f3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7604,7 +7804,8 @@
         "stableId": "monster-ability--petrifying-gaze",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "01225abb95e569d770f2b3f0b95b5f68bcbd7f08edd8c00b6b17db6d29eeaf94",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7641,7 +7842,8 @@
         "stableId": "monster-ability--phase-through",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9aa29f503a1d657bfaf3fef7a0b827ff7a119d737f66d26015871b1eb59892de",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7681,7 +7883,8 @@
         "stableId": "monster-action--poison-bite",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "166dcdf8285be8cea121394b7fe8f299d1a38b50f1c858cd1f3390cac964ad00",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7721,7 +7924,8 @@
         "stableId": "monster-action--poison-spore",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "619537134c94d72c5bbc858f0555ff5ed8581be305ede49aff438695d6aadc1d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7758,7 +7962,8 @@
         "stableId": "monster-ability--poison-tail",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d76d244f379183ffe1ec395521326ab8bdb0a928bede422b0262087b388eaf34",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7798,7 +8003,8 @@
         "stableId": "monster-action--poisonous-bite",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c6c367f4d391815d6cf23a59fe77cbacf56fde6d615cd5381a65d3aa31bee882",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7835,7 +8041,8 @@
         "stableId": "monster-action--poltergeist",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "478d28ca567aafa9596ba6ecec98c96b417dc637159823b28204526dd3aa1708",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7872,7 +8079,8 @@
         "stableId": "monster-action--pounce",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a4a742b92b9eea5caf94a25e7b55b63b1dc2767a01c2b22faa245b5b16e03b45",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7911,7 +8119,8 @@
         "stableId": "monster-action--power-strike",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9b9f5228feaf1382466ee5e37d3d1f1770af0b330604c966c9678d23e11245aa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7948,7 +8157,8 @@
         "stableId": "monster-ability--prismatic-adaptability",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e61cbe1ddccaf65b1f2b438e1363282438c9e28c3f309d6086f6b079d543f127",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7987,7 +8197,8 @@
         "stableId": "monster-action--provoke",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f95fe1ca33a7f2a160f0b6f76440567ce33ec1c3ea82421e4d7b1bfeb6115150",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8027,7 +8238,8 @@
         "stableId": "monster-action--queen-s-domain",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "596c7e623d271083a05f98ed51f6b005d52a38a6d726128be318458be20b62a6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8064,7 +8276,8 @@
         "stableId": "monster-action--raise-shield",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "bc9dd698a93d5aaa692f7303e939998981dc287b552cdcadafc37b8edb4e5417",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8101,7 +8314,8 @@
         "stableId": "monster-ability--razorsharp",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9bc50d40a3fa5ecfcc203ced245477eb828a518bb47404a021550754791af62a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8138,7 +8352,8 @@
         "stableId": "monster-ability--reach",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "25093130e0fa10ce7584ea212c7f03d0dbb73863d4617721c0907c2459c94838",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8175,7 +8390,8 @@
         "stableId": "monster-ability--regenerating-bone",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "7e4a2ff43a2d776c0169805013964e3aa9b0a969c2f1f1e1410374809cc361ee",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8212,7 +8428,8 @@
         "stableId": "monster-ability--regenerating-bone-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "651aed226bd3a3e5fe3beabe3d2ec0972747499d20793619eca9ea001302446a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8249,7 +8466,8 @@
         "stableId": "monster-ability--regeneration",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "77761e72c30be1275b351c386a7fb0eb1523603d3a1ce66486efef12712a8110",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8286,7 +8504,8 @@
         "stableId": "monster-action--reposition",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "bc1c5a7e92d20df30f1ea9d31946469898d99a10dadb529d0eb52127c8a50679",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8323,7 +8542,8 @@
         "stableId": "monster-ability--repulsor-field",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "fbfb542dfa0c2e4c03dca0e5e10682230cdc545b4d4eed4db66393096a38b223",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8360,7 +8580,8 @@
         "stableId": "monster-ability--resurrection",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "55f06b305ae771e637366aa330961631e9c452488ee7222135b05a01875bc5d2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8400,7 +8621,8 @@
         "stableId": "monster-action--resync-bite",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "81a045ce4dfe8a7224e9fbacab92317aabda520e60905d1d9ae1c254de35b65e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8437,7 +8659,8 @@
         "stableId": "monster-ability--revel-in-death",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "73c9f2abaf444faa650425c66a06d6818e6dcce61eb138524ad73cf24b79677c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8477,7 +8700,8 @@
         "stableId": "monster-action--reverberant-frost",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "301446554dae6a6c88ac164d57cee71efa1acc4d4b44cd5b116dd5923f28af49",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8516,7 +8740,8 @@
         "stableId": "monster-action--rock-crunching-bite",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f263adf753c411bcdd8f9f66a05abd7b9dd3247852a94f523f238eb6d5129845",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8553,7 +8778,8 @@
         "stableId": "monster-ability--rush",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "298c03e6374dbdfa834d39f03879dc72440c46546ed2217652c4ec83dfa2c4c8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8592,7 +8818,8 @@
         "stableId": "monster-action--self-icicle-nail",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "cdf1bd3b0b6ca21dda2de2748cbc9082cc27116c892188cd642b7633de68bb8f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8633,7 +8860,8 @@
         "stableId": "monster-action--shards-of-ice",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ddd03e5d8a107fe00d219598f3d28a4bf6f4d67cef765b5160ad3e24c815c6af",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8670,7 +8898,8 @@
         "stableId": "monster-ability--shimmer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "b8e55980d1e8dc797759137d09f81ed0fa20572a4753ac557621bb83daa0a614",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8707,7 +8936,8 @@
         "stableId": "monster-ability--shimmer-spider",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8d57dcf50985de2bf1ee89b22339fefb3cc71ba7ef0e0de4ae1d4947f025a542",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8744,7 +8974,8 @@
         "stableId": "monster-ability--single-fin",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4a8e8c55e155d2e997a09fa7039d9724248a68d98d0b14818580de16ef13d826",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8781,7 +9012,8 @@
         "stableId": "monster-action--skeletal-arm-sweep",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8928c315f3bfe61f4ebab57117854a739e75a2dc705c6a2a86d2c955f0d84534",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8818,7 +9050,8 @@
         "stableId": "monster-action--skeletal-armblade-barrage",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "17cf2bbc24bd677afbf3530936681289448eb749996ed3a89dafd7c73d6abd2f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8855,7 +9088,8 @@
         "stableId": "monster-ability--skeletal-part-targeting",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d602028a98ee852a8d20c1a387703c5f363cd7a670e9ef3003e461d6349cc732",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8892,7 +9126,8 @@
         "stableId": "monster-ability--skitter",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "9a8dd45b3b472b28c0388c7b44f66d4b9714dfc9e348195c26a322eb6029ef0f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8931,7 +9166,8 @@
         "stableId": "monster-action--skullsplitter",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "fc49c68bf63b315353dca9b0ec4509a8b2553323100ee9405fdd857025a5ad7f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8968,7 +9204,8 @@
         "stableId": "monster-action--slam",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f09c3ba6f5f8b7bac8156c48d916664acc675716f100c4aeb2044be2207eed64",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9005,7 +9242,8 @@
         "stableId": "monster-action--slice-dice",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "08ed68fe83e71adc8078f2f190927e5189b3653a49e1907cea848ce194fad437",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9042,7 +9280,8 @@
         "stableId": "monster-action--slime-body-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f87db0c05eb25b0941c1b7d588064dfe06484b5d81dceaa9815933a3737b011f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9079,7 +9318,8 @@
         "stableId": "monster-ability--slime-type",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5082859abe87d22c3d3b418c185a8007ac120687f5a832b1ead12b47606590c4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9116,7 +9356,8 @@
         "stableId": "monster-ability--slippery",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d7b1c8e418b165ef64547ff8c8fb3dbd092ca5c58b960f305d3b95d954773132",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9155,7 +9396,8 @@
         "stableId": "monster-action--sludge-blast",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5f818171659fe1666aca2210d1704ac63cd9f5659b849c1c5fb538f390d981a6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9194,7 +9436,8 @@
         "stableId": "monster-action--smash-you",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f44061b4709ace569ac35cd100725c23dd9dab40b90fd6d9eeaedfdfb36f738b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9233,7 +9476,8 @@
         "stableId": "monster-action--smash-you-more",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5b6feb038df847e8931d93997705cd32b672ad78bd5e74eac620c397a8c23582",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9270,7 +9514,8 @@
         "stableId": "monster-action--snap-shot",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6e15423eb1aceb55cf71b25119626d330fd40f5dcc1cef1c10f21aa51f53908c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9307,7 +9552,8 @@
         "stableId": "monster-action--snow-assassin",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ed14a24d8244525866b82b81dd015e06067e0ef34f6bfd4ed05a1e0b12961b83",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9344,7 +9590,8 @@
         "stableId": "monster-ability--snow-camouflage",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a1853544b2a478b8362b281974388b422c3c63cdff17d6174570cc8d931afa3e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9381,7 +9628,8 @@
         "stableId": "monster-ability--soft-wings",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "14d30ada1be504ea5b57e069715d546d245a4402e61c0611df8251d121c3a759",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9421,7 +9669,8 @@
         "stableId": "monster-action--spectral-touch",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "447debe9e3eda059158678176f0eb357000465cdc15488c1cf9503155a3ea5cc",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9458,7 +9707,8 @@
         "stableId": "monster-ability--spider-climb",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "0e42742d0c557a200c31a24ec18cdc6d83d4ac84778f2c146c8d83c0fb949228",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9495,7 +9745,8 @@
         "stableId": "monster-ability--spider-host",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ee306071b20341c5859d6f2ebdbd33389a29f4a2f69f329da000445d2d5fef8c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9534,7 +9785,8 @@
         "stableId": "monster-action--spore-launch",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f475ebf2055e9cd50bd95717f7c5253b5fa201e149153fac1ec02c2df06f6acf",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9573,7 +9825,8 @@
         "stableId": "monster-action--squeeze",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d2b09585c972715cc2d0071d6ad7c34db598b17fda5c54eab667a150d5e63104",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9610,7 +9863,8 @@
         "stableId": "monster-ability--stalk",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6878eb4aea5e5fbd147a477cf1fe713f8f0fbbe6e97fd1c9c490e1bfe33bdb72",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9649,7 +9903,8 @@
         "stableId": "monster-action--static-field",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "010231fc1ebda00e9c1461ea30559979b3f8d3ca66432af764fb3ebd54dd4e4a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9686,7 +9941,8 @@
         "stableId": "monster-ability--stationary",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ec264bc6fcd3e9d7d12402ee17a19ab612f10936caf84ffe3c7189f1492a46a0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9723,7 +9979,8 @@
         "stableId": "monster-ability--steady-stance",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "17ca1ce3decaf0bc37315c3f047d2ee41655cc8b4acb58271e9603b72d60790a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9760,7 +10017,8 @@
         "stableId": "monster-ability--stealthy",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e8afec4edc80b454662bf9dd796184364d7616ef342c51d6dc9f406e4543efd9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9797,7 +10055,8 @@
         "stableId": "monster-ability--sticky-movement",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "20cb805be5f6c731cc81cab4342ec88a6176b790a9dca5a1f7b0a214eec87b38",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9834,7 +10093,8 @@
         "stableId": "monster-action--stone-form",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "7db4183c6169b1adf7ded874eb9b5ba5a807e56b0ec89e796dbf92e6de9c6153",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9871,7 +10131,8 @@
         "stableId": "monster-ability--stone-skin",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "090b9ad692e0e9bd14902c8ddb2ebd3685cc65df064106df8803659e8308b834",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9908,7 +10169,8 @@
         "stableId": "monster-ability--storm-creature",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "42fb23a9818de8dbeb650b11702bac4e3b24bf52f2bf443c8d919a8d7e04c99b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9947,7 +10209,8 @@
         "stableId": "monster-action--stratagem-lightning",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "1bddef6d875021918cc3640f8dbb2f9dfbf6a58bc0001682841be685c4acc959",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9984,7 +10247,8 @@
         "stableId": "monster-ability--strike-for-the-shiny-smartly",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d49637476789b1be08fd59bc6f3d8fdcb572a0480c503fcea06ded2a0a5249c9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10021,7 +10285,8 @@
         "stableId": "monster-ability--strike-for-the-shiny",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "cdc342f0dd746d4a88f08b93d7553e09c6cc6c6776aacb5a001a74405ed1bb3e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10058,7 +10323,8 @@
         "stableId": "monster-ability--sub-zero-body",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6cf6a9993fd3d8db3f2e75e89e235bcb19e7a1acc85f9a3354c937024b601bbd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10097,7 +10363,8 @@
         "stableId": "monster-action--summon-beast",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ad4468e2201ffcc140481385b3adf7ab2547155a2fe8a9b43949fb34f8feae34",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10134,7 +10401,8 @@
         "stableId": "monster-ability--summon-i",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a63c7465644603905f5d35ec000368a5a53bb244ef99f6b7131ffe0c2cff3422",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10171,7 +10439,8 @@
         "stableId": "monster-ability--summon-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ce1fd748abe2bd4f0dc8b41625c59b11612289f5c3b5c06453ab44ab87ce2b4c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10208,7 +10477,8 @@
         "stableId": "monster-ability--superboss-resistance",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "1f3b3a25dbf4023d0cb3afa3608191fd1d785161aa3c94af1c5b18289ea4a55f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10245,7 +10515,8 @@
         "stableId": "monster-ability--superior-fiend-regeneration",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c8a5f173f03b59f4abae4b4361280d07b863931d8549343bb6319a1ff9b68af0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10282,7 +10553,8 @@
         "stableId": "monster-ability--surefooted",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "37fbd9d03633a23925ab38fc0d60674e5030b91da8bb5f8b21937930ce5a356c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10319,7 +10591,8 @@
         "stableId": "monster-ability--swarm",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8933d516e93eb0665463e7410dbc7705cadd1ec238be3bf92a15f229c3725d9b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10356,7 +10629,8 @@
         "stableId": "monster-ability--swarm-tactics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f81c3e90ea4cea7c9c061a4765862006b5eff51a81d75730238b352ad25f9a16",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10395,7 +10669,8 @@
         "stableId": "monster-action--sweep",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "095f03e53c90630e4f05caef7b3f982e2cade1374c639bfa4a926dc3919ad697",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10432,7 +10707,8 @@
         "stableId": "monster-action--sweeping-opportunity",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "bad86d5366d9f1e4ea0dec51af7736eaa03e311237d3eda205f28125a3f87d5f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10471,7 +10747,8 @@
         "stableId": "monster-action--swooping-strike",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "d671fb0b8bcc04eea14f84c2b2d6c1fa9e0c02b9808d846fa6d990598aaae6cc",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10510,7 +10787,8 @@
         "stableId": "monster-action--swooping-strike-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e20d2e2ce7981ca6d102bcad072c35f1394e9d20136b6103a2a887312a686ee7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10547,7 +10825,8 @@
         "stableId": "monster-action--tail-spikes",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "64b4d40c9ad42506cd8ccb865949b8031d164b451bd9810115924f076e8dc1c7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10584,7 +10863,8 @@
         "stableId": "monster-action--tail-swipe",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "4c27703f698f77b7fd63531a35f80a320aaa18f342755a8498a5e7bb41548b2b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10621,7 +10901,8 @@
         "stableId": "monster-ability--target-rich-environment",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "312dc53c0125b10f09ba284d1ebe2bd68db00fd2424346d5c5d2efc69df9381f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10663,7 +10944,8 @@
         "stableId": "monster-action--terrifying-roar",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "a17012b1b50eaf6bc80a1c7a457deb622aca0b8b386d413d3c9f71886163d8b3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10700,7 +10982,8 @@
         "stableId": "monster-ability--the-blur",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "6ea0611d5c895bf813b531d230ef56c011f4d41467b38c756756c4772aa55c34",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10737,7 +11020,8 @@
         "stableId": "monster-ability--thicc-skull",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "2954710b11427301bf89bc26f828c14a2f3bf9dbef40e8751d84c31491269d94",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10774,7 +11058,8 @@
         "stableId": "monster-ability--threatening",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "669f39a47d5877157294f4be9eff803c21ea74fcacaa362d153a87b624bd3083",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10814,7 +11099,8 @@
         "stableId": "monster-action--threatening-aura",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "1d16dc21628dc425112c06fd36fdd0b073aaa84cf9ca3eca124f267c7472f950",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10851,7 +11137,8 @@
         "stableId": "monster-action--three-headed-assault",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "afc21c8554e968a031ae0e968f030cd6fc4d282011c52102b2125dd7260dc8b0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10888,7 +11175,8 @@
         "stableId": "monster-ability--tiny-wings",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5614f413ae1bdf62a8144506e8dba2a20414bed78f8cd3cd093e534953413cc8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10925,7 +11213,8 @@
         "stableId": "monster-action--topple-prey",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "734c8f8fdc63004ee008644dbe87caa6a779b178127659aefbc55c2e57f5e874",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10962,7 +11251,8 @@
         "stableId": "monster-action--transmutation-cannon-right-arm",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "eafe695f45ed5b14203e5e1aa79a1d6b996a4f41bfb885de0302f09c4b95d4a8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10999,7 +11289,8 @@
         "stableId": "monster-action--transmute-low-wall-body",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "47c9bb0641818ec4166e80764f069c67d0018af413f253302dc7848c89652a81",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11036,7 +11327,8 @@
         "stableId": "monster-ability--tripping-pounce",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "fc88c3602114995a34aa6fec0e428be4d633da510b736fbd31ed4843f2a41b62",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11073,7 +11365,8 @@
         "stableId": "monster-action--ultimate-lifeform",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c7e8c9e4f73ecba13fb2c41eac90503ba8dbc0c10c2d57c289e0d56c15289589",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11112,7 +11405,8 @@
         "stableId": "monster-action--vine-grab",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "8791c61b8a61b40a90fcecb92a5aad3caa52cd48ccbef74322af67f691a0b8b3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11149,7 +11443,8 @@
         "stableId": "monster-ability--vine-tentacles",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e57aeca15ab86b57e2e5fd8cdf32aa7b709283d5a866eb47ab1ff833685ea5f2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11186,7 +11481,8 @@
         "stableId": "monster-action--vital-flurry",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "f53e5c6daef6b982d0cfb4cc6065e87a5aab30daa307d39ba27e520f915332c0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11223,7 +11519,8 @@
         "stableId": "monster-ability--water-body",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "2aa0f6b703850fdad39e161122c87e6241cea308ac534faf6bb14e9cd428791d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11260,7 +11557,8 @@
         "stableId": "monster-ability--water-type-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "7df46f2d820f789dd47a1a32631ad4207d1d8afdf3c2459c64703e7a74ca2a03",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11297,7 +11595,8 @@
         "stableId": "monster-ability--web-hunter",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "312db11b21485a0b9a2bf61fb38ffcbc972d7cee77db6260542c30482cff8265",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11336,7 +11635,8 @@
         "stableId": "monster-action--web-spray",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "ccfe68df991b6dacdd6702fc9c6f2dafe95364f4610b0568f46f71177d03b7ce",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11373,7 +11673,8 @@
         "stableId": "monster-action--webbing",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "5258b0207d2b8f1a9bf86eb3d9aadc131cdff556995adfc12d690edfd8c7420c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11410,7 +11711,8 @@
         "stableId": "monster-action--weight-of-the-world",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "21f33a3d121dae9171bd712ae4cc4705c9372fd6c0548165c7698663dcc93730",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11449,7 +11751,8 @@
         "stableId": "monster-action--wind-blast",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "0493b4e823c5ffb6c1b68563af1c2b95c9ee75fd5c3453abdd110384f966ba7e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11486,7 +11789,8 @@
         "stableId": "monster-ability--wind-body",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "134f627fb23b38dc628dc2cf4550b1d4701a19c1ffed6cc385de7004ddfeff49",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11523,7 +11827,8 @@
         "stableId": "monster-ability--wind-type-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "264e90fdfe924f14179e548aec3261ba81204188a2233cbfe75dc2c61e983964",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11560,7 +11865,8 @@
         "stableId": "monster-ability--wings",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "c4d65fb53776934fffe6494f6318c3c8aec2726f989d4ccd3ee57838f966d911",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11597,7 +11903,8 @@
         "stableId": "monster-action--zero-impact-generator-left-arm",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
         "sourceHash": "e4682f05b98409aeb53f45ded320acdc2b0d618ba4a99ec17af150da8a461e61",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   }

@@ -1,4 +1,5 @@
 import { LYRIAN } from "../config.mjs";
+import { raceAmbitionExp, selectedRaceBonuses } from "../rules/progression.mjs";
 
 const fields = foundry.data.fields;
 
@@ -123,6 +124,21 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
   prepareDerivedData() {
     const stats = this.stats;
     const subStats = this.subStats;
+
+    // Primary-race attributes are derived from the owned compendium Race item.
+    // Keeping them derived prevents re-applying bonuses when a sheet reloads.
+    const primaryRace = this.parent?.items?.find(
+      (item) => item.type === "race" && item.system.raceKind === "primary"
+    );
+    if (primaryRace) {
+      const bonuses = selectedRaceBonuses(primaryRace.system);
+      for (const [key, value] of Object.entries(bonuses.main)) {
+        if (stats[key]) stats[key].bonus += Number(value) || 0;
+      }
+      for (const [key, value] of Object.entries(bonuses.sub)) {
+        if (subStats[key]) subStats[key].bonus += Number(value) || 0;
+      }
+    }
 
     for (const stat of Object.values(stats)) stat.total = stat.value + stat.bonus;
     for (const stat of Object.values(subStats)) stat.total = stat.value + stat.bonus;
@@ -334,8 +350,12 @@ export class LyrianCharacter extends LyrianActorBase {
     super.prepareDerivedData();
 
     // Spirit core is exactly the EXP you have spent.
-    this.spiritCore = this.exp.spent;
-    this.exp.available = this.exp.total - this.exp.spent;
+    const primaryRace = this.parent?.items?.find(
+      (item) => item.type === "race" && item.system.raceKind === "primary"
+    );
+    this.ambitionExp = primaryRace?.system.ambitionExp || raceAmbitionExp(primaryRace?.system.ambition);
+    this.spiritCore = this.exp.spent + this.ambitionExp;
+    this.exp.available = this.exp.total + this.ambitionExp - this.exp.spent;
 
     // Skill caps loosen as your spirit core grows.
     const caps = LYRIAN.skillCaps;

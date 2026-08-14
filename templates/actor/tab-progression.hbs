@@ -16,6 +16,7 @@
     <div class="lyr-spirit__exp">
       <label>EXP earned <input type="number" name="system.exp.total" value="{{system.exp.total}}" /></label>
       <label>EXP spent <input type="number" name="system.exp.spent" value="{{system.exp.spent}}" /></label>
+      {{#if system.ambitionExp}}<span class="lyr-note">Ambition: +{{system.ambitionExp}} EXP and Spirit Core</span>{{/if}}
       <span class="lyr-note">Unspent: <strong>{{system.exp.available}}</strong></span>
     </div>
     <div class="lyr-spirit__interlude">
@@ -60,10 +61,13 @@
         <div class="lyr-row__body">
           <span class="lyr-row__name">{{item.name}} {{#if item.system.mastered}}<em class="lyr-tag">Mastered</em>{{/if}}</span>
           <span class="lyr-row__meta">
-            Tier {{item.system.tier}} · {{item.system.abilitiesUnlocked}} of 7 abilities · {{item.system.expInvested}} EXP invested
+            Tier {{item.system.tier}} · Level {{item.system.abilitiesUnlocked}} / 8 · {{item.system.expInvested}} EXP invested
           </span>
         </div>
         <div class="lyr-row__actions">
+          <button type="button" class="lyr-step" data-action="adjustClassLevel" data-delta="-1" title="Lower class level">&minus;</button>
+          <strong>{{item.system.abilitiesUnlocked}}</strong>
+          <button type="button" class="lyr-step" data-action="adjustClassLevel" data-delta="1" title="Raise class level">+</button>
           <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
           <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
         </div>
@@ -110,4 +114,20 @@
       </li>
     {{else}}<li class="lyr-empty">No race entry.</li>{{/each}}
   </ul>
+
+  {{#if raceSummary}}
+    <div class="lyr-race-summary">
+      <section class="lyr-reference-card">
+        <h3>{{raceSummary.primary.name}}</h3>
+        <p><strong>Attributes:</strong> {{raceSummary.primary.system.attributes}}</p>
+        {{#if raceSummary.primary.system.ambition}}<p><strong>Ambition:</strong> {{raceSummary.primary.system.ambition}}</p>{{/if}}
+      </section>
+      {{#if raceSummary.ancestry}}
+        <section class="lyr-reference-card"><h3>Subrace · {{raceSummary.ancestry.name}}</h3><p>{{raceSummary.ancestry.system.description}}</p></section>
+      {{/if}}
+      {{#if raceSummary.variant}}
+        <section class="lyr-reference-card"><h3>{{raceSummary.variant.name}}</h3><p>{{raceSummary.variant.description}}</p></section>
+      {{/if}}
+    </div>
+  {{/if}}
 </section>

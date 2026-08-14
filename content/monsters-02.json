@@ -146,7 +146,8 @@
         "stableId": "monster--mana-slime",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/mana-slime",
         "sourceHash": "ccd08d7d6080222f084e95cacb3fddc35606c8acc75f03595f3168bb7f4e6368",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -184,6 +185,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "5082859abe87d22c3d3b418c185a8007ac120687f5a832b1ead12b47606590c4",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.5cde56acef6c49fb"
           }
         }
@@ -222,6 +224,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "a564a73499c112077237fe6415360dfbcd1d3b97cba3787f6c4360ad65c7c3f9",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.099686ca4c4546c9"
           }
         }
@@ -260,6 +263,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "c413a91fcfc019b65fd9e1fd5fd532f02c45aa0bf0a1923af887788332a02232",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.4716d5e1da36436c"
           }
         }
@@ -298,6 +302,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f87db0c05eb25b0941c1b7d588064dfe06484b5d81dceaa9815933a3737b011f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.00af0fb20792befb"
           }
         }
@@ -336,6 +341,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "ed0b0c97be92768e43ff31e72b0e14dd1fccbca02335ad87661e367ed3e29d4d",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.e948ca064af139bf"
           }
         }
@@ -376,6 +382,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "561057a5d903cd12ce6538eb56e63384d7c0d5dfc2da1cb56575048a9921a56f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.b10e649c5f1c9b22"
           }
         }
@@ -416,6 +423,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "5235a0b2e361664f6c1fb9f3d51ea44e6c7672b19ae8214cc64e517265da392e",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.06f126b7fa26788d"
           }
         }
@@ -576,7 +584,8 @@
         "stableId": "monster--manticore",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/manticore",
         "sourceHash": "75d508f4dbd915aac6d98520b541bb764d0d5565bb1b2475b479fdecee76b90b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -614,6 +623,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "3570564e19268f066e8580d51406cf3339c5a5b49cbf1a2f0e91002ca759ba76",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.068c6c01914504f7"
           }
         }
@@ -652,6 +662,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "e53ac1b3fd7c3b7e7f48cdbb574980b6c12fe21d1adc9b302773af8ffc217acc",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.31e2cb65997d5fa3"
           }
         }
@@ -690,6 +701,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "d76d244f379183ffe1ec395521326ab8bdb0a928bede422b0262087b388eaf34",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.82e5cccad3904bef"
           }
         }
@@ -732,6 +744,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "aa10dd5a4d708c9dcba919ed425b3661fb3c965194c0d33f88e70016e16831c4",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.7cfa1f308df1adb1"
           }
         }
@@ -770,6 +783,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "64b4d40c9ad42506cd8ccb865949b8031d164b451bd9810115924f076e8dc1c7",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.27ac0b412285979a"
           }
         }
@@ -928,7 +942,8 @@
         "stableId": "monster--minotaur",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/minotaur",
         "sourceHash": "cfae69f55ea33313a1b444e7e90a609cdbba74c9c164b7ee040ac41f3dbf73a1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -966,6 +981,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "2954710b11427301bf89bc26f828c14a2f3bf9dbef40e8751d84c31491269d94",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.9d090d326386fdfc"
           }
         }
@@ -1008,6 +1024,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f4b32c851244af8465cbe5e9323778989496272b58bf0fdd9d90881006a3cca8",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.a6661ed8df896f49"
           }
         }
@@ -1048,6 +1065,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "70fb577df11e23dfc1289566530eda31259fbd03c9dbad758cc1c7658208be20",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.3bb9dfe98bee1ea2"
           }
         }
@@ -1206,7 +1224,8 @@
         "stableId": "monster--ogre",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/ogre",
         "sourceHash": "5ccab752d26da09b2e180f4481a04438b054cae8857624dee4a6d8e107c3ff4b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -1244,6 +1263,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "fbe22bd9ea04476efeac272e2bc3b8d72faf6d95e6b22a457003de46bace2b41",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.a58b9e49f1006dc1"
           }
         }
@@ -1284,6 +1304,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f44061b4709ace569ac35cd100725c23dd9dab40b90fd6d9eeaedfdfb36f738b",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.0556770f25760bb3"
           }
         }
@@ -1324,6 +1345,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "5b6feb038df847e8931d93997705cd32b672ad78bd5e74eac620c397a8c23582",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.1103715422cfb9ad"
           }
         }
@@ -1484,7 +1506,8 @@
         "stableId": "monster--pipoltr",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/pipoltr",
         "sourceHash": "5436616106afc632475a4ab4ae749fb3c47b48a4a83e5dcea278faa2de02b916",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -1522,6 +1545,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "ce1fd748abe2bd4f0dc8b41625c59b11612289f5c3b5c06453ab44ab87ce2b4c",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.19ffca8d158412aa"
           }
         }
@@ -1560,6 +1584,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f23681cd25b1ae480b57ca0ea320a391d00597009ee6ce5ddebd53d4d4e302e2",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.fef67e2a48a4e37d"
           }
         }
@@ -1600,6 +1625,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f95fe1ca33a7f2a160f0b6f76440567ce33ec1c3ea82421e4d7b1bfeb6115150",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.b5c63ab1805b75ef"
           }
         }
@@ -1638,6 +1664,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "bc9dd698a93d5aaa692f7303e939998981dc287b552cdcadafc37b8edb4e5417",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.95f640aed0191d20"
           }
         }
@@ -1676,6 +1703,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f09c3ba6f5f8b7bac8156c48d916664acc675716f100c4aeb2044be2207eed64",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.3c388e2f3c99fa01"
           }
         }
@@ -1835,7 +1863,8 @@
         "stableId": "monster--priest",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/priest",
         "sourceHash": "4bfdc97086c608b07e09c8f70b20aa7100b8ac77c2e0218089bd5b857ebffe65",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -1873,6 +1902,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "3f1b58763c42ac63d5cef5d1db3994dcda6c5a99fd5be5c1c60a4613527aad21",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.88c6135590e02af4"
           }
         }
@@ -1915,6 +1945,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "d5174b13952f485a00b0136aca8926c3b9bef2441d45eb81d7dc9160097fefe2",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.b0c3a21f1ebc5953"
           }
         }
@@ -1956,6 +1987,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "15f237f8aae85e8f669ef4b451368299530d0f87acce91937a14bba82ea1d2ad",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.1ad75a1f178d4fb3"
           }
         }
@@ -1997,6 +2029,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "ceeff5f80c2e67f2e723359629f4c4da7e7a1586f577be7318975350582a95b9",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.339f082e8d8fbe34"
           }
         }
@@ -2156,7 +2189,8 @@
         "stableId": "monster--raiju",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/raiju",
         "sourceHash": "583331c0a13436f9b404b81346c075877b7c010f33dc97e3a4195cb80866cb04",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -2194,6 +2228,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "924ffa9e630eacb3cd413078306bae2b56524bb74bf0ebf64d1be634759406bd",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.c3fed8487ec58c19"
           }
         }
@@ -2232,6 +2267,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "42fb23a9818de8dbeb650b11702bac4e3b24bf52f2bf443c8d919a8d7e04c99b",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.d2b1b7f335595d0b"
           }
         }
@@ -2270,6 +2306,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "c6c2059cf69efc028a7af2a9c796f56e517d23cdffda75797742342f5236e1f8",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.5b0acec36824555e"
           }
         }
@@ -2310,6 +2347,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "010231fc1ebda00e9c1461ea30559979b3f8d3ca66432af764fb3ebd54dd4e4a",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.0456c57794ec1865"
           }
         }
@@ -2468,7 +2506,8 @@
         "stableId": "monster--rhinoceros-beetle",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/rhinoceros-beetle",
         "sourceHash": "f731cd2d6d5ecbbf19c967af012b7839dd3c8fe3e573ad1642619596fbace9d2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -2506,6 +2545,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "a63c7465644603905f5d35ec000368a5a53bb244ef99f6b7131ffe0c2cff3422",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.49bf3d968f42ee57"
           }
         }
@@ -2544,6 +2584,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "298c03e6374dbdfa834d39f03879dc72440c46546ed2217652c4ec83dfa2c4c8",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.4e19c8c09d36e71d"
           }
         }
@@ -2582,6 +2623,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "cb7dcbe1821b44fb49f9178c4b001ea5d324a3634db3ce1402b59fabfb2d3f70",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.8d1c2aa28d475828"
           }
         }
@@ -2741,7 +2783,8 @@
         "stableId": "monster--rime-vermin",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/rime-vermin",
         "sourceHash": "b9eb69c508185766a04aaeea639969950270ae8332e1a76415e56b4993a55c19",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -2779,6 +2822,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "e37969fee6373c7c5ffb73d322cf88b28a5f82d378be9b5521a4cf6b290b35f2",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.0f8566e153c7c14f"
           }
         }
@@ -2817,6 +2861,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "20129af6029c46754f7b28b994581a5374f1f75720228d27317e4c032304f3e8",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.a5101879ed3f2fba"
           }
         }
@@ -2855,6 +2900,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "40003e495de05436c87f11e8f478a8008331e80a622c289d39abaf0a22afd85e",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.b2bb83a2e39ce8ee"
           }
         }
@@ -2895,6 +2941,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "cdf1bd3b0b6ca21dda2de2748cbc9082cc27116c892188cd642b7633de68bb8f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.6c3aa59e85a48baf"
           }
         }
@@ -3054,7 +3101,8 @@
         "stableId": "monster--rogue",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/rogue",
         "sourceHash": "ab734d187a5e15fda086b137e8914382fd74d918bc7f02b04deaf4a21c07e161",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -3092,6 +3140,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "5ff1834d8b8f9bc11e9012c462907e303ced1ecfaca565cb277540db99ad5f9e",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.273bf657879a31fa"
           }
         }
@@ -3130,6 +3179,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "85d8f704147bd77c326ecc9d235da0bdb67abda9ee1d488ec08ee9bb0aeccf67",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.c4abd99e0f731847"
           }
         }
@@ -3171,6 +3221,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "8a6b809a12a29b670585fdfbe0b6f6897b4e3104ce404b812189b83377e26d1b",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.0044bfe27bd08521"
           }
         }
@@ -3209,6 +3260,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "4602ce6feb651a19e191e31274cabed61740bd2a07c7d22fd87027465c16f57b",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.cb6550370a45d8f1"
           }
         }
@@ -3368,7 +3420,8 @@
         "stableId": "monster--skeletal-champion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/skeletal-champion",
         "sourceHash": "54477433988a6d6c931e5442e8f806f6dda7a3cf5c527fe998d98149a7c28402",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -3406,6 +3459,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "493c34eda120429f36217d08ea427d30a49d899707c0f6a3328894bcb843017b",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.30793641f75655a3"
           }
         }
@@ -3444,6 +3498,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "7e4a2ff43a2d776c0169805013964e3aa9b0a969c2f1f1e1410374809cc361ee",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.9956c7170f9e7222"
           }
         }
@@ -3484,6 +3539,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "9b9f5228feaf1382466ee5e37d3d1f1770af0b330604c966c9678d23e11245aa",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.75dbac18e53124fb"
           }
         }
@@ -3524,6 +3580,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "610b218c95cfb07cef995c0f5c5b483c0da874e1300b93037f163ca2af151a0d",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.a26932c5cbc1201c"
           }
         }
@@ -3686,7 +3743,8 @@
         "stableId": "monster--skeletal-monstrosity",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/skeletal-monstrosity",
         "sourceHash": "3a51424ff3d22b2790ae553b5b51e48fc5084380d73bf758c5d9f59fa8d2baef",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -3724,6 +3782,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "d602028a98ee852a8d20c1a387703c5f363cd7a670e9ef3003e461d6349cc732",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.60a97ca2e022aceb"
           }
         }
@@ -3762,6 +3821,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "651aed226bd3a3e5fe3beabe3d2ec0972747499d20793619eca9ea001302446a",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.6b6d266b8623d856"
           }
         }
@@ -3800,6 +3860,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "25093130e0fa10ce7584ea212c7f03d0dbb73863d4617721c0907c2459c94838",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.4c76877600b591b0"
           }
         }
@@ -3838,6 +3899,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "493c34eda120429f36217d08ea427d30a49d899707c0f6a3328894bcb843017b",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.30793641f75655a3"
           }
         }
@@ -3879,6 +3941,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "9985c1898578890b0482bfdc8cce6e59f3b8da22df8a79c0fcf48629b0cc7a2f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.96f987853f3aac92"
           }
         }
@@ -3917,6 +3980,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "8928c315f3bfe61f4ebab57117854a739e75a2dc705c6a2a86d2c955f0d84534",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.7fd0ddcff9853f42"
           }
         }
@@ -3955,6 +4019,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "17cf2bbc24bd677afbf3530936681289448eb749996ed3a89dafd7c73d6abd2f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.33b362be9b51df25"
           }
         }
@@ -4112,7 +4177,8 @@
         "stableId": "monster--skeleton",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/skeleton",
         "sourceHash": "a9e3a1de2275997f62508869caba2e017714a6c76f32661216eb655c099695ba",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -4150,6 +4216,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "409c3e7113c2eca97e3672da790f0987484c2da84d291d7ce79838b6198eb6bc",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.b57a1f43241b6de9"
           }
         }
@@ -4188,6 +4255,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "493c34eda120429f36217d08ea427d30a49d899707c0f6a3328894bcb843017b",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.30793641f75655a3"
           }
         }
@@ -4226,6 +4294,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "55f06b305ae771e637366aa330961631e9c452488ee7222135b05a01875bc5d2",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.b42c266a2cf42bda"
           }
         }
@@ -4385,7 +4454,8 @@
         "stableId": "monster--slime",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/slime",
         "sourceHash": "b8aa79ea980c025a076850848338a39bc15df04c78dc6e38cb817d2e2996eb70",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -4423,6 +4493,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "5082859abe87d22c3d3b418c185a8007ac120687f5a832b1ead12b47606590c4",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.5cde56acef6c49fb"
           }
         }
@@ -4461,6 +4532,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f87db0c05eb25b0941c1b7d588064dfe06484b5d81dceaa9815933a3737b011f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.00af0fb20792befb"
           }
         }
@@ -4499,6 +4571,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "ed0b0c97be92768e43ff31e72b0e14dd1fccbca02335ad87661e367ed3e29d4d",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.e948ca064af139bf"
           }
         }
@@ -4539,6 +4612,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "561057a5d903cd12ce6538eb56e63384d7c0d5dfc2da1cb56575048a9921a56f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.b10e649c5f1c9b22"
           }
         }
@@ -4698,7 +4772,8 @@
         "stableId": "monster--sniper",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/sniper",
         "sourceHash": "95e5a9f0109ab0bac0d769486c4346c780663f82b646d679acb0db9f651077e2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -4736,6 +4811,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "6cd76f77e0a3e98b835176d0bf2ef8f69aa5b9ac39bef228991ee2a45cdb7f94",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.addcaba7f37f7cc8"
           }
         }
@@ -4776,6 +4852,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "5f3e3c4b6c40b5128a556a1cd4f1148738bf290f602171ed530ef2b5daba2e80",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.2345784c17d8705f"
           }
         }
@@ -4814,6 +4891,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "6f1fa58494a1d94a37bad7fa256218aa9a483cc401997c996a4831806f585f57",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.a8ef99bb972e23c3"
           }
         }
@@ -4852,6 +4930,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "6e15423eb1aceb55cf71b25119626d330fd40f5dcc1cef1c10f21aa51f53908c",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.b054c535c317d6c2"
           }
         }
@@ -5013,7 +5092,8 @@
         "stableId": "monster--tactician",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/tactician",
         "sourceHash": "118d592c1b6997a1c83fc4a81b179d99c6de06869d0c0592e101f87a337835f3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -5051,6 +5131,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "8b80f5b1e5841e8d775ab80e4836474f013dbae84e1c590c82dab1eaa02487ad",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.e92ad065aa6db8e9"
           }
         }
@@ -5089,6 +5170,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "470adb75103af4c7fd7b25a76d8ddb6ef91d5dc758478fbfe6f371e4d08f7d7c",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.e54c58ea80017a01"
           }
         }
@@ -5127,6 +5209,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "1320bbc7828ac678b2474109f1e7b183a6e6e312d52379c7eb2175e438b7d4bc",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.09ebcab5ce99c276"
           }
         }
@@ -5165,6 +5248,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "aeaa046f494aee4f2451ffe026c05a11fa64708b1084e3fc72ad87bd3f25f3bd",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.e19c22b28dc37fb0"
           }
         }
@@ -5203,6 +5287,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "bc1c5a7e92d20df30f1ea9d31946469898d99a10dadb529d0eb52127c8a50679",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.2703bc724ac319b2"
           }
         }
@@ -5243,6 +5328,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "1bddef6d875021918cc3640f8dbb2f9dfbf6a58bc0001682841be685c4acc959",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.983ff6c904e47177"
           }
         }
@@ -5400,7 +5486,8 @@
         "stableId": "monster--tank",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/tank",
         "sourceHash": "5338bcd932d705f533a80edadbc8e230ec91ed92f3f3cab9a5d7090b480bbaed",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -5438,6 +5525,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f23681cd25b1ae480b57ca0ea320a391d00597009ee6ce5ddebd53d4d4e302e2",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.fef67e2a48a4e37d"
           }
         }
@@ -5478,6 +5566,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f95fe1ca33a7f2a160f0b6f76440567ce33ec1c3ea82421e4d7b1bfeb6115150",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.b5c63ab1805b75ef"
           }
         }
@@ -5636,7 +5725,8 @@
         "stableId": "monster--troll",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/troll",
         "sourceHash": "e0048c60fbe0b308867f87290ed3aa97fb9a7e11dc28ae824d684eff20408d95",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -5674,6 +5764,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "e37969fee6373c7c5ffb73d322cf88b28a5f82d378be9b5521a4cf6b290b35f2",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.0f8566e153c7c14f"
           }
         }
@@ -5712,6 +5803,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "77761e72c30be1275b351c386a7fb0eb1523603d3a1ce66486efef12712a8110",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.43c9e7d08d216188"
           }
         }
@@ -5750,6 +5842,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "eadcd86f9330bbf246ea4f313c8d8a5a901306d5cfe80855a4845e5e7828b48e",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.269e6db20b7246fa"
           }
         }
@@ -5909,7 +6002,8 @@
         "stableId": "monster--unstable-efreet",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/unstable-efreet",
         "sourceHash": "a7a62cf5efac4fbdc7b36bc4551378409951c37c59cd94d5fe01c50ca3572a29",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -5947,6 +6041,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "25750643268f82723e9d1a0f2aa1849fa3e6ee13c51aed31a6454590a12373f5",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.091c68ad8e45a9f0"
           }
         }
@@ -5985,6 +6080,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "80d1c483a90aad0934acf52aa69869d580e9f15a8683746bac6e44e5c8d81ae1",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.c31f58de2429a951"
           }
         }
@@ -6023,6 +6119,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "ca1e35c95ce00473a8fa1382253b9480efc82e5d486879265f1e0152e1dfe65d",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.8f58ac8ba6486f17"
           }
         }
@@ -6061,6 +6158,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "1c6e6e8a150dfe9c447f8fa1553f85d5d8a44eba349d610bdd2bc1c687baa078",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.ac1808c9fc5f4b6e"
           }
         }
@@ -6220,7 +6318,8 @@
         "stableId": "monster--warrior",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/warrior",
         "sourceHash": "611085627fc6f5011fad99022ec872b2ef7b4aa9856d04f409c75ee04fb9c974",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -6258,6 +6357,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "17ca1ce3decaf0bc37315c3f047d2ee41655cc8b4acb58271e9603b72d60790a",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.88a4e1d97fb50fc7"
           }
         }
@@ -6296,6 +6396,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "cb7dcbe1821b44fb49f9178c4b001ea5d324a3634db3ce1402b59fabfb2d3f70",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.8d1c2aa28d475828"
           }
         }
@@ -6334,6 +6435,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "ebcc18b61f05f8d8e970809369ecb5ef9fe3b958135a654be512941d327956a5",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.d48b344d5b133225"
           }
         }
@@ -6374,6 +6476,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "fc49c68bf63b315353dca9b0ec4509a8b2553323100ee9405fdd857025a5ad7f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.6569304b6aaa15f6"
           }
         }
@@ -6536,7 +6639,8 @@
         "stableId": "monster--water-slime",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/water-slime",
         "sourceHash": "4450baa130aa14ee102e9965a2af37ea933bd36625c2f58c675c7cd340d2f3ca",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -6574,6 +6678,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "5082859abe87d22c3d3b418c185a8007ac120687f5a832b1ead12b47606590c4",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.5cde56acef6c49fb"
           }
         }
@@ -6612,6 +6717,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "7df46f2d820f789dd47a1a32631ad4207d1d8afdf3c2459c64703e7a74ca2a03",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.3403ccede8bd0b33"
           }
         }
@@ -6650,6 +6756,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "2aa0f6b703850fdad39e161122c87e6241cea308ac534faf6bb14e9cd428791d",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.7e7ce1b47a6fdbad"
           }
         }
@@ -6688,6 +6795,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f87db0c05eb25b0941c1b7d588064dfe06484b5d81dceaa9815933a3737b011f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.00af0fb20792befb"
           }
         }
@@ -6726,6 +6834,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "ed0b0c97be92768e43ff31e72b0e14dd1fccbca02335ad87661e367ed3e29d4d",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.e948ca064af139bf"
           }
         }
@@ -6766,6 +6875,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "561057a5d903cd12ce6538eb56e63384d7c0d5dfc2da1cb56575048a9921a56f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.b10e649c5f1c9b22"
           }
         }
@@ -6806,6 +6916,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "54695f0a68d3a9946c4155d856b98a56488eebe3f13597bcdcc4360b5eae5873",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.aa33b070e3af6531"
           }
         }
@@ -6965,7 +7076,8 @@
         "stableId": "monster--westrian-heavy-paladin",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/westrian-heavy-paladin",
         "sourceHash": "f226e33dd8a6425bf04ad00a7cbbbe2c891320da8a9ae8b89827d424202368fb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -7003,6 +7115,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "efc8817acd8bc5286531c91cc2c0c593f452d407c04255cad7d6dacced1ea945",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.e8d50c3fbeebed0e"
           }
         }
@@ -7043,6 +7156,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "77d0a5ebb91f172f2b3497865f6c6100688de443e8cf2d4d2ab1ab696929da24",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.e8ac675f71a4b041"
           }
         }
@@ -7083,6 +7197,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "0e8a84d06b304659d1e1072d600e943514e6f5dfe8c9b47f566c5ae463d8b81f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.7a2674413ff052e0"
           }
         }
@@ -7123,6 +7238,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "4d7333325369812c96cae4fe4694479cd687e5f4f30340e63cd20e4403281145",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.315739e439501c33"
           }
         }
@@ -7282,7 +7398,8 @@
         "stableId": "monster--wight",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/wight",
         "sourceHash": "78f58f44da62b22faf579c0de776a8ae3e157e17baaada7091343ca8700ff848",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -7320,6 +7437,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "75a2f1a828fb03970cf0e72c9e4480e444bf62e66982774a71db80f4e9f5db91",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.26025076fad34895"
           }
         }
@@ -7358,6 +7476,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "9aa29f503a1d657bfaf3fef7a0b827ff7a119d737f66d26015871b1eb59892de",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.90c30a572eac8ee7"
           }
         }
@@ -7398,6 +7517,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "6ab23370ff14fcf11b543ebf27141512fca1e8db2544d88c1c23959d5f01a3b6",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.410385db78e76a91"
           }
         }
@@ -7439,6 +7559,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "447debe9e3eda059158678176f0eb357000465cdc15488c1cf9503155a3ea5cc",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.17d8903eede006a4"
           }
         }
@@ -7601,7 +7722,8 @@
         "stableId": "monster--wind-slime",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/wind-slime",
         "sourceHash": "5158be221adaa2a26d9e911762ffa87f067d7d62f564167c5c2844ecde6885f2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -7639,6 +7761,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "5082859abe87d22c3d3b418c185a8007ac120687f5a832b1ead12b47606590c4",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.5cde56acef6c49fb"
           }
         }
@@ -7677,6 +7800,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "264e90fdfe924f14179e548aec3261ba81204188a2233cbfe75dc2c61e983964",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.33d2768884392732"
           }
         }
@@ -7715,6 +7839,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "134f627fb23b38dc628dc2cf4550b1d4701a19c1ffed6cc385de7004ddfeff49",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.69ae5fad558eb2cf"
           }
         }
@@ -7753,6 +7878,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f87db0c05eb25b0941c1b7d588064dfe06484b5d81dceaa9815933a3737b011f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.00af0fb20792befb"
           }
         }
@@ -7791,6 +7917,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "ed0b0c97be92768e43ff31e72b0e14dd1fccbca02335ad87661e367ed3e29d4d",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.e948ca064af139bf"
           }
         }
@@ -7831,6 +7958,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "561057a5d903cd12ce6538eb56e63384d7c0d5dfc2da1cb56575048a9921a56f",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.b10e649c5f1c9b22"
           }
         }
@@ -7871,6 +7999,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "5235a0b2e361664f6c1fb9f3d51ea44e6c7672b19ae8214cc64e517265da392e",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.06f126b7fa26788d"
           }
         }
@@ -8030,7 +8159,8 @@
         "stableId": "monster--wolf",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/wolf",
         "sourceHash": "782cd5878ca1f652c9de5f84b412035069b1a315559bec87bc397dfb69d58564",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -8068,6 +8198,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "26c3cdbef617e0073344ebe5cdb5a032da9bdd4d859326d8a7b3d894befce301",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.23d40619b3c5fe4a"
           }
         }
@@ -8106,6 +8237,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f81c3e90ea4cea7c9c061a4765862006b5eff51a81d75730238b352ad25f9a16",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.fd59bc3b53ab0b53"
           }
         }
@@ -8146,6 +8278,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "1fe86eccf8f4ffb99b8a51777a8e0c9bcf4677bfa13fa6b4b2ec4ede2667919b",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.12c3f7a86fe8f449"
           }
         }
@@ -8184,6 +8317,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "734c8f8fdc63004ee008644dbe87caa6a779b178127659aefbc55c2e57f5e874",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.6afbcc96014911f7"
           }
         }
@@ -8347,7 +8481,8 @@
         "stableId": "monster--wraith",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/wraith",
         "sourceHash": "4d8e7ad231039d60a83b922d9242c8782ee686d77fad68e8db52ce3d0ae4363b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -8385,6 +8520,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "c2db18ad6f7d90a3b4746573402f48f3c87b57c80197fd5e3feb616a672e7222",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.6110e703e99edeaf"
           }
         }
@@ -8423,6 +8559,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "75a2f1a828fb03970cf0e72c9e4480e444bf62e66982774a71db80f4e9f5db91",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.26025076fad34895"
           }
         }
@@ -8461,6 +8598,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "b423e541ddffeae065b012f05a710551246702a436b75b61c30a1a20b1c52e17",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.779a55a1ec9a6389"
           }
         }
@@ -8499,6 +8637,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "9aa29f503a1d657bfaf3fef7a0b827ff7a119d737f66d26015871b1eb59892de",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.90c30a572eac8ee7"
           }
         }
@@ -8537,6 +8676,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "433f1ef1f4fd85ed11d3a1d2d376251b2ef2db9359c5e1c0eb0a72c2203dbe37",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.94f1a374ff1c986a"
           }
         }
@@ -8575,6 +8715,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "a547373ae9cc26ea899a29113ce2478cd3d7ee9be2eb8ae877178455066567e7",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.50149f0ad8de9310"
           }
         }
@@ -8615,6 +8756,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "6ab23370ff14fcf11b543ebf27141512fca1e8db2544d88c1c23959d5f01a3b6",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.410385db78e76a91"
           }
         }
@@ -8656,6 +8798,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "447debe9e3eda059158678176f0eb357000465cdc15488c1cf9503155a3ea5cc",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.17d8903eede006a4"
           }
         }
@@ -8819,7 +8962,8 @@
         "stableId": "monster--wyrm-fire",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/wyrm--fire-",
         "sourceHash": "367c128304a8e847510ca337e13f25467f29df2937bc97a8dd672f8f175fa44c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -8857,6 +9001,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "f25371a4cffb3194625042cf07d71747868ff49ef6ce252686358f47ae39fd65",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.11ecaa34a5cb4ed2"
           }
         }
@@ -8895,6 +9040,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "7e652b4a55724c27047e60d18b8466f021f7b653c72dabbea6cdfc7c579f3a3e",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.e6d105924a6fbcbf"
           }
         }
@@ -8933,6 +9079,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "747eeecbcc594d0193b7933b5698fbe19d497402b6c19a10b2f2bf66b4172e47",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.6a38ef97357828f8"
           }
         }
@@ -8971,6 +9118,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "91c15f8eb83b31a08df082e5d7bf3b094f75c359e98df9da2a6ed8f1cdd87d73",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.99000f10aed85f2f"
           }
         }
@@ -9009,6 +9157,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "8ce66cb79fad9454e5f827d37532184b2fb805712a185f0d6d5e6e8d5d2a3ed5",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.229e229c2112737f"
           }
         }
@@ -9047,6 +9196,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "c6f4d232a9edf9592da1fcbc0412ba40895548780234f0e4f4163551707f637a",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.a88a06386e3d70a3"
           }
         }
@@ -9085,6 +9235,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "4c27703f698f77b7fd63531a35f80a320aaa18f342755a8498a5e7bb41548b2b",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.c2f2fc422ebf3e30"
           }
         }
@@ -9128,6 +9279,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "a17012b1b50eaf6bc80a1c7a457deb622aca0b8b386d413d3c9f71886163d8b3",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.893c4501c3662b06"
           }
         }
@@ -9286,7 +9438,8 @@
         "stableId": "monster--zombies",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/zombies",
         "sourceHash": "bdbf76a8feaee54a76f4ef399e57d5953dc08f3b8c96c7f33f554e14d6a10fa8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     },
     "items": [
@@ -9324,6 +9477,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "c4201ecd41d4cb2bf7ac676fd3686bd730426e3b2aa143f0bfa51fa670830eae",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.048fb6db90854715"
           }
         }
@@ -9362,6 +9516,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "493c34eda120429f36217d08ea427d30a49d899707c0f6a3328894bcb843017b",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.30793641f75655a3"
           }
         }
@@ -9402,6 +9557,7 @@
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monster-abilities",
             "sourceHash": "a03a582d861e700ebbd85055de61f65d3d07fac04b53817a084938ccd7953ca0",
             "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0",
             "compendiumSource": "Compendium.lyrian-chronicles.monster-abilities.Item.7ca06219fe981ad2"
           }
         }

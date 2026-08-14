@@ -233,7 +233,7 @@ export class LyrianAbility extends LyrianItemBase {
 
     // Ability tracking.
     schema.classSource = new fields.StringField({ blank: true, initial: "" });
-    schema.classStep = int(0, { min: 0, max: 7 });
+    schema.classStep = int(0, { min: 0, max: 8 });
     schema.usedThisRound = new fields.BooleanField({ initial: false });
 
     return schema;
@@ -269,7 +269,9 @@ export class LyrianClass extends LyrianItemBase {
     schema.skills = new fields.StringField({ blank: true, initial: "" });
     schema.heart = new fields.StringField({ blank: true, initial: "" });
     schema.soul = new fields.StringField({ blank: true, initial: "" });
-    schema.abilitiesUnlocked = int(0, { min: 0, max: 7 });
+    // Class progression is level 1 through 8. The key ability is granted at
+    // level 1; class abilities arrive at 2, 4, 6, and 8.
+    schema.abilitiesUnlocked = int(1, { min: 1, max: 8 });
     schema.keyAbilities = new fields.StringField({ blank: true, initial: "" });
     schema.requirements = new fields.StringField({ blank: true, initial: "" });
     schema.artisan = new fields.BooleanField({ initial: false });
@@ -281,9 +283,9 @@ export class LyrianClass extends LyrianItemBase {
   prepareDerivedData() {
     const p = LYRIAN.progression;
     this.unlockCost = this.tier * p.classCostPerTier;
-    this.mastered = this.abilitiesUnlocked >= p.abilitiesPerClass;
-    // Unlock cost plus 100 per ability step purchased so far.
-    this.expInvested = this.unlockCost + this.abilitiesUnlocked * p.abilityCost;
+    this.mastered = this.abilitiesUnlocked >= p.maxClassLevel;
+    // Level 1 is included in the unlock cost; levels 2–8 are purchases.
+    this.expInvested = this.unlockCost + (this.abilitiesUnlocked - 1) * p.abilityCost;
     this.nextAbilityCost = this.mastered ? 0 : p.abilityCost;
   }
 }
@@ -321,6 +323,12 @@ export class LyrianRace extends LyrianItemBase {
     schema.clan = new fields.StringField({ blank: true, initial: "" });
     schema.attributes = new fields.StringField({ blank: true, initial: "" });
     schema.ambition = new fields.StringField({ blank: true, initial: "" });
+    schema.ambitionExp = int(0, { min: 0 });
+    schema.attributeBonuses = new fields.ObjectField({ required: true, nullable: false, initial: {} });
+    schema.selectedMainStat = new fields.StringField({ blank: true, initial: "" });
+    schema.selectedSubStat = new fields.StringField({ blank: true, initial: "" });
+    schema.selectedVariant = new fields.StringField({ blank: true, initial: "" });
+    schema.variants = new fields.ArrayField(new fields.ObjectField(), { required: false, initial: [] });
     schema.grantedProficiencies = new fields.StringField({ blank: true, initial: "" });
     schema.grantedSkills = new fields.StringField({ blank: true, initial: "" });
     schema.size = new fields.StringField({

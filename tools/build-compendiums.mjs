@@ -2,12 +2,15 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, readdir, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { raceAmbitionExp, raceAttributeBonuses } from "../module/rules/progression.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE = process.argv[2] || path.join(ROOT, "content-source", "approved", "0.13.1");
 const OUTPUT = process.argv[3] || path.join(ROOT, "content");
 const SYSTEM_ID = "lyrian-chronicles";
+const CONTENT_BUILD = "0.5.0";
 let ENTRY_BY_STABLE_ID = new Map();
+let STABLE_ID_BY_SOURCE_ID = new Map();
 
 const PACKS = {
   "rules-setting-guide": { prefix: "rules-setting-guide", type: "JournalEntry" },
@@ -177,6 +180,7 @@ function flags(entry) {
       sourceUrl: entry.source_url,
       sourceHash: entry.source_hash,
       rulebookVersion: entry.rulebook_version,
+      contentBuild: CONTENT_BUILD,
     },
   };
 }
@@ -285,14 +289,36 @@ function buildAbility(entry) {
 function buildRace(entry) {
   const data = entry.data;
   const isPrimary = entry.stable_id.startsWith("primary-race--");
+  const variants = ["wi", "lir", "d", "ar", "lu", "ni", "un", "vi", "none"]
+    .map((key) => {
+      const choice = data[key] ?? {};
+      const abilityStableId = STABLE_ID_BY_SOURCE_ID.get(choice.ability) ?? "";
+      return {
+        key,
+        name: key === "none" ? "No House" : `House ${key.toUpperCase()}`,
+        description: String(choice.text ?? ""),
+        abilityStableId
+      };
+    })
+    .filter((choice) => choice.description || choice.abilityStableId);
+  const relationships = {
+    ...(entry.relationships ?? {}),
+    variant_traits: variants.map((choice) => choice.abilityStableId).filter(Boolean)
+  };
   return baseDocument(entry, "race", data.imageSmUrl || data.imageLgUrl || fallbackIcons.race, {
-    ...provenance(entry, data.description),
+    ...provenance({ ...entry, relationships }, data.description),
     raceKind: isPrimary ? "primary" : "ancestry",
     primaryRace: isPrimary ? entry.name : String(data.primaryRace ?? ""),
     subrace: isPrimary ? "" : entry.name,
     clan: "",
     attributes: String(data.attributes ?? ""),
     ambition: String(data.ambition ?? ""),
+    ambitionExp: raceAmbitionExp(data.ambition),
+    attributeBonuses: raceAttributeBonuses(data.attributes),
+    selectedMainStat: "",
+    selectedSubStat: "",
+    selectedVariant: "",
+    variants,
     grantedProficiencies: String(data.proficiencies ?? ""),
     grantedSkills: String(data.skills ?? ""),
     size: "medium",
@@ -313,7 +339,7 @@ function buildClass(entry) {
     skills: String(data.skills ?? ""),
     heart: String(data.heart ?? ""),
     soul: String(data.soul ?? ""),
-    abilitiesUnlocked: 0,
+    abilitiesUnlocked: 1,
     keyAbilities: String(relations.key_ability ?? ""),
     requirements: String(data.requirements ?? ""),
     artisan: /artisan/i.test(`${data.role1 ?? ""} ${data.role2 ?? ""}`),
@@ -492,6 +518,9 @@ function validateSnapshot(snapshot) {
 const snapshot = await loadSnapshot(SOURCE);
 validateSnapshot(snapshot);
 ENTRY_BY_STABLE_ID = new Map(snapshot.entries.map((entry) => [entry.stable_id, entry]));
+STABLE_ID_BY_SOURCE_ID = new Map(snapshot.entries.flatMap((entry) =>
+  Object.values(entry.source_ids ?? {}).filter(Boolean).map((sourceId) => [sourceId, entry.stable_id])
+));
 const grouped = Object.fromEntries(Object.keys(PACKS).map((key) => [key, []]));
 
 const monsterAbilityEntries = snapshot.entries.filter((entry) => entry.category === "monster-abilities");
