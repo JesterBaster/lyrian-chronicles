@@ -4,6 +4,9 @@
     Click a skill to roll d20 + sub stat + ranks. Click an expertise to roll that
     expertise instead. Current rank cap: <strong>{{skillCapLabel}}</strong>.
   </p>
+  {{#if system.raceSkillPoints.granted}}
+    <p class="lyr-note">Racial skill points: <strong>{{system.raceSkillPoints.allocated}} / {{system.raceSkillPoints.granted}}</strong>{{#if system.raceSkillPoints.unallocated}} · {{system.raceSkillPoints.unallocated}} still unallocated on the Progression tab{{/if}}.</p>
+  {{/if}}
 
   {{#*inline "expertiseBlock"}}
     <div class="lyr-exp">

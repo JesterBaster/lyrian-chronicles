@@ -260,6 +260,16 @@
   </div>
   <label>Granted proficiencies <input type="text" name="system.grantedProficiencies" value="{{system.grantedProficiencies}}" /></label>
   <label>Granted skills <input type="text" name="system.grantedSkills" value="{{system.grantedSkills}}" /></label>
+  {{#if raceSkillChoices.length}}
+    <fieldset class="lyr-keywords">
+      <legend>Racial skill allocation — up to {{raceSkillGrant.points}} points</legend>
+      <div class="lyr-field-grid">
+        {{#each raceSkillChoices as |skill|}}
+          <label>{{skill.label}} <input type="number" name="system.selectedSkillBonuses.{{skill.key}}" value="{{skill.value}}" min="0" max="{{../raceSkillGrant.points}}" /></label>
+        {{/each}}
+      </div>
+    </fieldset>
+  {{/if}}
 {{/if}}
 
 {{#if (eq type "equipment")}}

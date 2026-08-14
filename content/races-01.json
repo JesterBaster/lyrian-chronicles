@@ -69,6 +69,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -79,7 +84,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/ancient-marionette",
         "sourceHash": "b7098b2a60e128a37d8ab22c475f837e883419b97c0daf8a0540fa1a9b092bca",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -153,6 +158,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -163,7 +173,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/anubis",
         "sourceHash": "64f779097f7b45f9ed099151fb4535cd7dde6d6802ae79155a051123adf560f1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -237,6 +247,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -247,7 +262,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/bearfolk",
         "sourceHash": "4cc4c5fdec58e5fee3513746b0b525584d187c27c1335ce0b190dceb198fa004",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -313,6 +328,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -323,7 +343,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/bullfolk",
         "sourceHash": "12425fe43cd1bd03caa327302bfc1aa8d3545f6358c486acb06e08bfe0889dfd",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -397,6 +417,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -407,7 +432,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/cait-sith",
         "sourceHash": "0c023859f97cd8f13e01c4f965d57f57528eed4f3798d4489db949df9f1234e3",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -481,6 +506,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -491,7 +521,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/catfolk",
         "sourceHash": "3cf50ea66da67c437ab6b259f96d4a701fd8dd8cef6d0e7d03429a89d52f481f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -565,6 +595,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -575,7 +610,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/centaur",
         "sourceHash": "d6be658fb389a04cf9585e39fde4cdbb61805fcc8a0cbc7b674a950b3bf65e15",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -629,6 +664,19 @@
       "variants": [],
       "grantedProficiencies": "You can speak, read and write Common as well as the special dialect of your sub-race. ",
       "grantedSkills": "You gain +5 skill points in either Magic, Survival, Animal Husbandry, Perception, Insight, Linguistics or Artifice.",
+      "skillGrant": {
+        "points": 5,
+        "allowedSkills": [
+          "artifice",
+          "linguistics",
+          "magic",
+          "animalHusbandry",
+          "insight",
+          "perception",
+          "survival"
+        ]
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -639,7 +687,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/primary/chimera",
         "sourceHash": "ea90b827fab08ccc06043be82c364babce4f10dcc437d0b63d038d0bf0a6d24a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -713,6 +761,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -723,7 +776,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/cowfolk",
         "sourceHash": "b253310ac23bfaccb719bf698d04b44d1095d2ae21b7ddb788bc1333e9e050ba",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -797,6 +850,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -807,7 +865,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/cu-sith",
         "sourceHash": "5aa79bbf49a99a7509b9cab524110cd07413cfa2d497823f0739ccfc07c23aad",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -997,6 +1055,18 @@
       ],
       "grantedProficiencies": "You can speak, read, write Common and Sorthen.  You also gain proficiency in one common weapon or +5 skill points in a skill relating to your demon clan.",
       "grantedSkills": "You gain +5 skill points in either Common Knowledge, Magic, Religion, History, Flight, Artifice.",
+      "skillGrant": {
+        "points": 5,
+        "allowedSkills": [
+          "artifice",
+          "commonKnowledge",
+          "flight",
+          "history",
+          "magic",
+          "religion"
+        ]
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1007,7 +1077,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/primary/demon",
         "sourceHash": "603d8602727976c6feb4a1c904dde4e4d311638f143f07ae51667336d85e7be9",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1073,6 +1143,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1083,7 +1158,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/dogfolk",
         "sourceHash": "cf16193b2c9dfdcc7612eb0419206624d2020fdee348c13723067d789053e09f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1149,6 +1224,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1159,7 +1239,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/dryad",
         "sourceHash": "dbfff3ee3f28d939f67b8e3edd976da3fd0e03689fb50d44b0ec8aa093cdcb8b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1225,6 +1305,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1235,7 +1320,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/dullahan",
         "sourceHash": "2bd1f69a5f681aeb7f200efefdf83e8c726cb0bab52582be48b94668a6cec19c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1289,6 +1374,17 @@
       "variants": [],
       "grantedProficiencies": "You can speak, read and write Sylvan, as well as Common.",
       "grantedSkills": "You gain +5 skill points in either Magic, Medicine, Negotiation, Intimidation, Insight.",
+      "skillGrant": {
+        "points": 5,
+        "allowedSkills": [
+          "magic",
+          "medicine",
+          "insight",
+          "intimidation",
+          "negotiation"
+        ]
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1299,7 +1395,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/primary/fae",
         "sourceHash": "bcf14d17cfe122260c9f7dd4504397bd1cd33679df74dc6263a6988341681201",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1373,6 +1469,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1383,7 +1484,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/gnome",
         "sourceHash": "7e26b88f0479f247c6591ec3c1f79e78f05d74ef3b2beca8df0c18e754ad67cf",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1457,6 +1558,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1467,7 +1573,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/harpy",
         "sourceHash": "2ccf5a29c1b22045517433d60b8f83c590f95260e2147e9413d0a748cadecfe0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1533,6 +1639,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1543,7 +1654,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/high-fae",
         "sourceHash": "e0b42d293c2ef37c06b4bc50aa62ca566a9a88a69b1f211470d16c05d0d66b76",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1609,6 +1720,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1619,7 +1735,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/horse-folk",
         "sourceHash": "737f16cf1e4d0afc1a603460682733f00246ef0429f07e0ed146168592ad0f54",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1677,6 +1793,33 @@
       "variants": [],
       "grantedProficiencies": "You can speak, read and write Common, as well as another Language of your choice.  You also gain proficiency in one common weapon group.",
       "grantedSkills": "You gain +5 skill points in any non-crafting or gathering skill of your choice.",
+      "skillGrant": {
+        "points": 5,
+        "allowedSkills": [
+          "athletics",
+          "riding",
+          "deception",
+          "roguecraft",
+          "stealth",
+          "artifice",
+          "appraise",
+          "commonKnowledge",
+          "flight",
+          "history",
+          "linguistics",
+          "magic",
+          "medicine",
+          "religion",
+          "animalHusbandry",
+          "insight",
+          "perception",
+          "survival",
+          "art",
+          "intimidation",
+          "negotiation"
+        ]
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1687,7 +1830,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/primary/human",
         "sourceHash": "31926f95b6170a86335f38db5eefa72de9371af198abea47abb126c28de72f0a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1761,6 +1904,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1771,7 +1919,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/jiangshi",
         "sourceHash": "38afacf2eb7936856eca127da9787360cd3b6a29eb828b397498d31af87d36d1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1837,6 +1985,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1847,7 +2000,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/kitsune",
         "sourceHash": "7145ec9eba507cf95c51312eb9d550880701cbb3fe85ab57d77ce0dabc8faee0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -1921,6 +2074,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -1931,7 +2089,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/lamiafolk",
         "sourceHash": "d28294532e656e24ceb38d88c59824f1df286935a8e048b061e4551deb68a202",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2005,6 +2163,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2015,7 +2178,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/lizardfolk",
         "sourceHash": "dcfc55fc93958f281de6100d0012b0c3f1d17c84d7803eeaa5dd204261f83b36",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2089,6 +2252,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2099,7 +2267,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/mothfolk",
         "sourceHash": "d76cfd8534e38f5b1f51d3cdf40b5259343886061e61e3513d8b115e265b1718",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2173,6 +2341,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2183,7 +2356,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/nekomata",
         "sourceHash": "73ad75b91832d3561166b5a0ca6e8d420adaa2e7b36a57563cf8655bc8871996",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2257,6 +2430,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2267,7 +2445,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/nio",
         "sourceHash": "ddf759f4c2fb0a93068d0b804ffdd7c7c470867bf4bf1fdc8e90e11d3e346a1f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2341,6 +2519,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2351,7 +2534,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/oni",
         "sourceHash": "11991b4de7cdf73266d4855d25166a2e0579b6eb1a0b63a81fa882c15551cae0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2425,6 +2608,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2435,7 +2623,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/phoenix",
         "sourceHash": "3f05a65d98058312aa9c6b905507a08d76210c69f1be3dcf3fe950de7df5d768",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2509,6 +2697,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2519,7 +2712,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/pixie",
         "sourceHash": "31af56bb36686286893eddbfe90af63c48b724c9edb90f34b89be3fbc89cc9b0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2593,6 +2786,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2603,7 +2801,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/rabbitfolk",
         "sourceHash": "1dd8c4ca1888c1e9cd98ced21f2167fe1331575a7c3ad3eee72f665190bda2da",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2677,6 +2875,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2687,7 +2890,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/raijin",
         "sourceHash": "b902e86b84f072be5fd3f9d1c3b96e26bd99f9957066c8d2b4d8fa76c6e197d1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2761,6 +2964,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2771,7 +2979,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/ratfolk",
         "sourceHash": "1449aa4f84a769ef51be11a9f6702f47117477cb946c93ea00fab14ec68759ee",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2837,6 +3045,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2847,7 +3060,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/red-pandafolk",
         "sourceHash": "3c16b9c13f4bb9f52a75c9ace14b61eaf1a48480c8fb5f04d54fa2c9f46b2698",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -2921,6 +3134,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -2931,7 +3149,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/ryujin",
         "sourceHash": "e2287f0808fd101ac37f9ecea39fd112e971c3d13576188c7cb97572d037eae1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3005,6 +3223,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3015,7 +3238,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/salamander",
         "sourceHash": "5fa50ab23654724230ae209d7875b0e880fa98a404c3349bdaa2dd04a5714403",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3089,6 +3312,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3099,7 +3327,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/selkie",
         "sourceHash": "60708691e3e94b6ea1cae5b14a8db764f53b3d82219efb6a136443d94fde5b11",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3173,6 +3401,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3183,7 +3416,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/sheepfolk",
         "sourceHash": "76d61d9b511f16a534ca9b877a2752ae9570db0b39a256859985cdbb1c68626b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3249,6 +3482,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3259,7 +3497,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/slimefolk",
         "sourceHash": "601f6cabc0c4bf01ce4823739154b2f5b845ff817849b80886b513a1a4d852ff",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3325,6 +3563,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3335,7 +3578,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/spiderfolk",
         "sourceHash": "23f2dc617ce3cbb54e068cde842e50e78699252a5fcffb332524f23055e89090",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3409,6 +3652,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3419,7 +3667,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/suryan",
         "sourceHash": "839dae8162a272887808fec59313f37ffa1db691ef6ed19346d556caf8a25b3c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3493,6 +3741,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3503,7 +3756,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/sylph",
         "sourceHash": "5fa15d0a1be747900aaf22ba6be879da6275599d172ee76265af33052b34a493",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3577,6 +3830,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3587,7 +3845,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/tengu",
         "sourceHash": "7e431ae40c07534f19950a66b72b1e6c8df96a5143b8e54880f071919723be90",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3661,6 +3919,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3671,7 +3934,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/unseelie",
         "sourceHash": "1231d793a81035423554f0a9e37fcab38b44cbf786262eb761e16daea615e700",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3745,6 +4008,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3755,7 +4023,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/willo-wisp",
         "sourceHash": "57386981b1f90018f17a2a295e98e288c3656b729508ac8473910f323c3aefd4",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3829,6 +4097,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3839,7 +4112,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/wolf-folk",
         "sourceHash": "1cc269d6ea28e53fa0ed253eb7fabdbf2c72a4d62c8f3bb38cb77b329e6e8b0f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3893,6 +4166,17 @@
       "variants": [],
       "grantedProficiencies": "You can speak, read and write Kiraran, as well as Common. ",
       "grantedSkills": "You gain +5 skill points in either Insight, Intimidation, Magic, Medicine, Negotiation",
+      "skillGrant": {
+        "points": 5,
+        "allowedSkills": [
+          "magic",
+          "medicine",
+          "insight",
+          "intimidation",
+          "negotiation"
+        ]
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3903,7 +4187,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/primary/youkai",
         "sourceHash": "b6cc3390040bac7fb28304e272d6bf6b621cc39d521c61f17e660085477048cd",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   },
@@ -3977,6 +4261,11 @@
       "variants": [],
       "grantedProficiencies": "",
       "grantedSkills": "",
+      "skillGrant": {
+        "points": 0,
+        "allowedSkills": []
+      },
+      "selectedSkillBonuses": {},
       "size": "medium",
       "speed": 20
     },
@@ -3987,7 +4276,7 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/yuki-onna",
         "sourceHash": "a0690a61f6438b532dac8a8a0bd8d64399bf49f3cdd2922e34fdaf704c579501",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.1"
       }
     }
   }

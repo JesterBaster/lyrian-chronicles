@@ -1,5 +1,9 @@
 import { LYRIAN } from "../config.mjs";
-import { raceAmbitionExp, selectedRaceBonuses } from "../rules/progression.mjs";
+import {
+  raceAmbitionExp,
+  selectedRaceBonuses,
+  selectedRaceSkillBonuses
+} from "../rules/progression.mjs";
 
 const fields = foundry.data.fields;
 
@@ -127,11 +131,9 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
 
     // Primary-race attributes are derived from the owned compendium Race item.
     // Keeping them derived prevents re-applying bonuses when a sheet reloads.
-    const primaryRace = this.parent?.items?.find(
-      (item) => item.type === "race" && item.system.raceKind === "primary"
-    );
-    if (primaryRace) {
-      const bonuses = selectedRaceBonuses(primaryRace.system);
+    const races = this.parent?.items?.filter((item) => item.type === "race") ?? [];
+    for (const race of races) {
+      const bonuses = selectedRaceBonuses(race.system);
       for (const [key, value] of Object.entries(bonuses.main)) {
         if (stats[key]) stats[key].bonus += Number(value) || 0;
       }
@@ -367,6 +369,20 @@ export class LyrianCharacter extends LyrianActorBase {
       (best, t) => (this.spiritCore >= t.threshold ? t : best),
       LYRIAN.spiritCoreTiers[0]
     );
+
+    // Racial skill points are kept on their Race item and applied as derived
+    // bonuses. Changing race therefore removes the old grant cleanly without
+    // erasing skill ranks the player purchased normally.
+    this.raceSkillPoints = { granted: 0, allocated: 0, unallocated: 0 };
+    for (const race of this.parent?.items?.filter((item) => item.type === "race") ?? []) {
+      const selection = selectedRaceSkillBonuses(race.system);
+      this.raceSkillPoints.granted += selection.granted;
+      this.raceSkillPoints.allocated += selection.allocated;
+      this.raceSkillPoints.unallocated += selection.unallocated;
+      for (const [key, value] of Object.entries(selection.bonuses)) {
+        if (this.skills[key]) this.skills[key].bonus += value;
+      }
+    }
 
     // Action economy. Player characters are always heroic.
     const economy = LYRIAN.actionEconomy.heroic;

@@ -331,6 +331,8 @@ export class LyrianRace extends LyrianItemBase {
     schema.variants = new fields.ArrayField(new fields.ObjectField(), { required: false, initial: [] });
     schema.grantedProficiencies = new fields.StringField({ blank: true, initial: "" });
     schema.grantedSkills = new fields.StringField({ blank: true, initial: "" });
+    schema.skillGrant = new fields.ObjectField({ required: true, nullable: false, initial: {} });
+    schema.selectedSkillBonuses = new fields.ObjectField({ required: true, nullable: false, initial: {} });
     schema.size = new fields.StringField({
       required: true,
       initial: "medium",

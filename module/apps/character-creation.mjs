@@ -1,4 +1,5 @@
 import { LYRIAN } from "../config.mjs";
+import { raceSkillGrant } from "../rules/progression.mjs";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -28,6 +29,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       classId: null,
       skillPoints: p.startingSkillPoints,
       skillSpend: {},        // skill key -> ranks bought
+      raceSkillSpend: {},    // race compendium ID -> skill bonuses
       expBudget: p.startingClassExp,
       breakthroughBudget: p.startingBreakthroughExp
     };
@@ -41,6 +43,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     actions: {
       goStep: LyrianCharacterCreation.#onGoStep,
       adjustSkill: LyrianCharacterCreation.#onAdjustSkill,
+      adjustRaceSkill: LyrianCharacterCreation.#onAdjustRaceSkill,
       finish: LyrianCharacterCreation.#onFinish,
       reset: LyrianCharacterCreation.#onReset
     }
@@ -63,6 +66,23 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       ? raceEntries.filter((entry) => entry.system.raceKind === "ancestry" &&
           entry.system.primaryRace === selectedRace.name)
       : [];
+    const selectedAncestry = ancestries.find((entry) => entry.id === s.ancestryId) ?? null;
+    const raceSkillPools = [selectedRace, selectedAncestry].filter(Boolean).map((race) => {
+      const grant = Number(race.system.skillGrant?.points)
+        ? race.system.skillGrant
+        : raceSkillGrant(race.system.grantedSkills);
+      const spent = Object.values(s.raceSkillSpend[race.id] ?? {}).reduce((a, b) => a + b, 0);
+      return {
+        race,
+        points: grant.points,
+        remaining: Math.max(0, grant.points - spent),
+        skills: (grant.allowedSkills ?? []).map((key) => ({
+          key,
+          label: game.i18n.localize(LYRIAN.skills[key]?.label ?? key),
+          ranks: s.raceSkillSpend[race.id]?.[key] ?? 0
+        }))
+      };
+    }).filter((pool) => pool.points && pool.skills.length);
 
     return {
       actor: this.actor,
@@ -94,6 +114,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       races,
       ancestries,
       selectedRace,
+      selectedAncestry,
       raceNeedsMainChoice: !!selectedRace?.system.attributeBonuses?.chooseMain,
       raceNeedsSubChoice: !!selectedRace?.system.attributeBonuses?.chooseSub,
       raceVariants: selectedRace?.system.variants ?? [],
@@ -113,6 +134,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
         ranks: s.skillSpend[key] ?? 0
       })),
       skillPointsLeft: s.skillPoints - Object.values(s.skillSpend).reduce((a, b) => a + b, 0),
+      raceSkillPools,
 
       mainArray: LYRIAN.mainStatArray.join(", "),
       subArray: LYRIAN.subStatArray.join(", "),
@@ -128,7 +150,8 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     if (!pack) return [];
     const index = await pack.getIndex({ fields: [
       "system.raceKind", "system.primaryRace", "system.attributes", "system.ambition",
-      "system.attributeBonuses", "system.variants", "system.tier"
+      "system.attributeBonuses", "system.variants", "system.tier",
+      "system.grantedSkills", "system.skillGrant"
     ] });
     return index.map((e) => ({
       id: e._id, uuid: e.uuid, name: e.name, img: e.img, system: e.system ?? {}
@@ -162,6 +185,11 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
           this.state.raceMainChoice = "";
           this.state.raceSubChoice = "";
           this.state.raceVariant = "";
+          this.state.raceSkillSpend = {};
+        } else if (field === "ancestryId") {
+          for (const id of Object.keys(this.state.raceSkillSpend)) {
+            if (id !== this.state.raceId) delete this.state.raceSkillSpend[id];
+          }
         }
         this.render();
       });
@@ -198,10 +226,25 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     this.render();
   }
 
+  static async #onAdjustRaceSkill(event, target) {
+    const raceId = target.dataset.raceId;
+    const key = target.dataset.skill;
+    const delta = Number(target.dataset.delta);
+    const maximum = Number(target.dataset.maximum) || 0;
+    const allocation = this.state.raceSkillSpend[raceId] ??= {};
+    const spent = Object.values(allocation).reduce((a, b) => a + b, 0);
+    if (delta > 0 && spent >= maximum) return;
+    const next = Math.max(0, (allocation[key] ?? 0) + delta);
+    if (next) allocation[key] = next;
+    else delete allocation[key];
+    this.render();
+  }
+
   static async #onReset() {
     this.state.mainAssign = {};
     this.state.subAssign = {};
     this.state.skillSpend = {};
+    this.state.raceSkillSpend = {};
     this.state.raceId = null;
     this.state.ancestryId = null;
     this.state.raceMainChoice = "";
@@ -265,6 +308,9 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
           data.system.selectedMainStat = s.raceMainChoice;
           data.system.selectedSubStat = s.raceSubChoice;
           data.system.selectedVariant = s.raceVariant;
+        }
+        if (doc.type === "race") {
+          data.system.selectedSkillBonuses = { ...(s.raceSkillSpend[id] ?? {}) };
         }
         if (doc.type === "class") {
           const alreadyOwned = actor.items.find(

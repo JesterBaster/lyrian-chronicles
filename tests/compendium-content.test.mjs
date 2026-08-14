@@ -45,7 +45,7 @@ function digest(value) {
 
 test("manifest declares the exact reviewed nine packs", () => {
   assert.deepEqual(MANIFEST.packs.map((pack) => pack.name), Object.keys(PACKS));
-  assert.equal(MANIFEST.version, "0.5.0");
+  assert.equal(MANIFEST.version, "0.5.1");
   assert.equal(MANIFEST.compatibility.minimum, "14");
   assert.equal(MANIFEST.compatibility.verified, "14");
 });
@@ -73,7 +73,7 @@ test("compiled packs have reviewed counts and stable unique IDs", () => {
       assert.ok(!seedKeys.has(flags.seedKey), `${pack} duplicate seedKey ${flags.seedKey}`);
       seedKeys.add(flags.seedKey);
       assert.equal(flags.rulebookVersion, "0.13.1");
-      assert.equal(flags.contentBuild, "0.5.0");
+      assert.equal(flags.contentBuild, pack === "races" ? "0.5.1" : "0.5.0");
       assert.match(flags.sourceUrl, /^https:\/\/rpg\.angelssword\.com\/game\/0\.13\.1\//);
       assert.match(flags.sourceHash, /^[a-f0-9]{64}$/);
     }
