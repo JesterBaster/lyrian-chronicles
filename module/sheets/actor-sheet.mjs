@@ -25,7 +25,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollInitiative: LyrianActorSheet.#onRollInitiative,
       rollInjury: LyrianActorSheet.#onRollInjury,
       attack: LyrianActorSheet.#onAttack,
+      monsterAttack: LyrianActorSheet.#onMonsterAttack,
       useItem: LyrianActorSheet.#onUseItem,
+      browsePack: LyrianActorSheet.#onBrowsePack,
       createItem: LyrianActorSheet.#onCreateItem,
       editItem: LyrianActorSheet.#onEditItem,
       deleteItem: LyrianActorSheet.#onDeleteItem,
@@ -349,6 +351,24 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
     if (!item) return;
     await item.rollAttack(target.dataset.attackType, { free: event.shiftKey });
+  }
+
+  static async #onMonsterAttack(event, target) {
+    await this.document.rollMonsterAttack(target.dataset.attackType, { free: event.shiftKey });
+  }
+
+  /** Open a system compendium so its entries can be dragged onto the sheet. */
+  static async #onBrowsePack(event, target) {
+    const packName = target.dataset.pack;
+    const allowed = new Set([
+      "breakthroughs", "player-abilities", "races", "classes", "items", "monster-abilities"
+    ]);
+    if (!allowed.has(packName)) return;
+
+    const pack = game.packs.get(`lyrian-chronicles.${packName}`);
+    if (!pack) return ui.notifications.warn(`Compendium not found: ${packName}`);
+    if (typeof pack.render === "function") return pack.render(true);
+    return pack.application?.render(true);
   }
 
   static async #onUseItem(event, target) {

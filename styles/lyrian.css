@@ -198,6 +198,15 @@
 .lyrian .lyr-ok { font-size: 0.72rem; color: var(--lyr-guard); }
 .lyrian .lyr-section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; }
 .lyrian .lyr-section-head .lyr-heading { flex: 1; }
+.lyrian .lyr-section-actions,
+.lyrian .lyr-compendium-strip { display: flex; align-items: center; gap: 0.45rem; }
+.lyrian .lyr-section-actions { flex-wrap: wrap; justify-content: flex-end; }
+.lyrian .lyr-compendium-strip {
+  justify-content: space-between; margin: 0 0 0.75rem; padding: 0.55rem 0.7rem;
+  border: 1px solid rgba(201, 162, 39, 0.45); border-radius: var(--lyr-radius);
+  background: rgba(201, 162, 39, 0.07);
+}
+.lyrian .lyr-compendium-strip--wrap { flex-wrap: wrap; justify-content: flex-start; }
 
 /* --------------------------------------------------------------------------
    Stats — hexagonal nodes
