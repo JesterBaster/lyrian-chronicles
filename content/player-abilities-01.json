@@ -61,7 +61,8 @@
         "stableId": "ability--1st-sorrow-distance-dies-first",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d828c18b9d8f66b46f13dcd9f25f8747432e70f897d6f08f4663606158347ced",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -126,7 +127,8 @@
         "stableId": "ability--2nd-sorrow-one-against-the-world",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3c0de4b96fdfb5abf050ec4449ff9bcac89bba8d981d49cc0ca4e7880063f0c0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -190,7 +192,8 @@
         "stableId": "ability--3rd-sorrow-blade-without-witness",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c6c56bd981443238a1c1b08a0f055304443bbacd27749700de5fb9788ee3c522",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -255,7 +258,8 @@
         "stableId": "ability--abjurer-s-blast",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a7b2c0984d97ecec1eaf043711013d3db8df984eb74895592525c5041bcbc286",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -306,7 +310,8 @@
         "stableId": "ability--absorb-ice",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1ec667b206ae16cbd12afd631476b57f52cd9232e439f0babc7f8c7530928136",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -370,7 +375,8 @@
         "stableId": "ability--accelerando",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "df3bc8d6b8b5de3d5cdb7d2d53685be6ecfd8d2bb5d9197fbd84061122822593",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -432,7 +438,8 @@
         "stableId": "ability--accelerating-strike",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d6add9de42768c8631835dc32c665dd5f58f357389252eb0b4119f9d527f7f87",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -495,7 +502,8 @@
         "stableId": "key-ability--acolyte-s-journey",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "e763aa2317a89b9216318c94f93ddbc0565539a6ce99ad4fb72dcc75428e45fb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -546,7 +554,8 @@
         "stableId": "ability--adaptive-defense",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f64021b3ae15786e16dc59f707a2502628e9a0c3571dd2b1e2d842fa91fe4e2b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -595,7 +604,8 @@
         "stableId": "ability--advanced-artificing",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ca68a6571dff552a8d4ac2695fdd57b637b974604fe532d83da9b899066959fd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -665,7 +675,8 @@
         "stableId": "key-ability--advanced-artificing",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "7a89d64363f4593c134140db225b00efd48375fe709c7617c323c9fcb684e970",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -735,7 +746,8 @@
         "stableId": "key-ability--adventurer-essentials",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f85a7163aca4e16f930d0d064ab2b82a3512d4fac164c17ceb61a4f983afebb4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -799,7 +811,8 @@
         "stableId": "ability--aerial-crashdown",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "fc6d2d6f444d8c1c7e93b797d04b6c5a11c3ff922651aaef4472926ff210f579",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -863,7 +876,8 @@
         "stableId": "ability--aerial-loop",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "2efcb27b5376ed75ab2adbc174a8b2494f521a6b332b36f79489060d724221f0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -933,7 +947,8 @@
         "stableId": "key-ability--aerial-mage",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "e7179e6cf9286b6d78c5893a4010839180463fea091f30808c4733212c502888",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -986,7 +1001,8 @@
         "stableId": "ability--aerial-mode-switch",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "4f6b4ee3800520cc682bc800f19e620f3a40fde15895951f2e902dc400ffe31c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1038,7 +1054,8 @@
         "stableId": "ability--aftershock",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3f39eb6765e46fe76d305aa3b6b3d3369351e97c8ae1f918bcf4c0ae54adf4f7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1108,7 +1125,8 @@
         "stableId": "key-ability--aftershocks",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "43b7907e8a928c170f34810918bc97a0e7d3fd41b43e64e45932d521ac7a6f6d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1183,7 +1201,8 @@
         "stableId": "ability--aimed-shot",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "909768651e2c76b6099bdd624c701c2426cbceeeebb738d8e2b55432e852f637",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1246,7 +1265,8 @@
         "stableId": "key-ability--air-stability",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1e7d010214dbaa8aa3954d35752729bedb889004d4a0f6131da293aa767cfa9c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1310,7 +1330,8 @@
         "stableId": "ability--airheart-gravity-turn",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ad590fc49659842a3befba869816abdb36f2fc5ef62b345dc958946bec82a48d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1375,7 +1396,8 @@
         "stableId": "ability--alarm-ward",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "988cb4ee9eecd35acb7435cafb554d556a88cc3f1e5cc66bcfca54984954644f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1424,7 +1446,8 @@
         "stableId": "ability--alchemeister-core-crafting",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "4be10c8649366abcf54622a65cbefc2c8890ca902eac5c538307cc56f7b81af0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1488,7 +1511,8 @@
         "stableId": "ability--alchemical-detonation",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "bd24e05ee3aeb16c1e567447364ef03e17f12d7d8d4a422fad858030dd17db1e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1537,7 +1561,8 @@
         "stableId": "ability--alchemist-core-crafting",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f379938ee3109ec0312a1614fa8108b6ffdf1f938f0f25cd4c9c6a65ef391e81",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1601,7 +1626,8 @@
         "stableId": "ability--allow-me-to-clean-that",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a52f0fbc6e0cdbe63c9bdd34657ee21d275f76d1c25c300cf35f506fb69c7971",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1665,7 +1691,8 @@
         "stableId": "ability--always-prepared",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "746ae0ad016aff4b707a6cca3e38e606dd990b3f7f33c4b4b5852fd43899cf78",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1729,7 +1756,8 @@
         "stableId": "ability--ambush-trapper",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d9b711f05ef90304dea8f08ced718057f4a453cbdb295a902526518bf9fae83e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1795,7 +1823,8 @@
         "stableId": "ability--amoxicillin",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "77cbd30ca1e099b60a28433eb566ab1ed87d8925e56b84a7328428a29a30ccf6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1844,7 +1873,8 @@
         "stableId": "ability--amphibious",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "bdbbcf3ab929c2d7bf11766e6a749c9af1074d566c1777a723d6eb81c287c494",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1896,7 +1926,8 @@
         "stableId": "ability--anathema",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "65212856884c4ae318998b3961e3222e751795bebc5a6d052084d924bd89da65",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1963,7 +1994,8 @@
         "stableId": "ability--angel-s-embrace",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d305e5500e623dfeaaf96c2a6b99d47ca71bcc7de68efd583c11b5fa9426c7f1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2026,7 +2058,8 @@
         "stableId": "key-ability--angelic-presence",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "33313dae69ab2c524269819ec8ea8020305a0115cc99b610197a2e10d0862cc2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2075,7 +2108,8 @@
         "stableId": "ability--antennae",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "44f1aad2809cf953e50b606a95d2bb2544bac787d8e6b981468ec66cdd93b189",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2142,7 +2176,8 @@
         "stableId": "ability--anti-magic-shield",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "64bf6d5d252e46fa9cb9109b81b125ba295e309dbb9d1d43a13bacb0cb0760af",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2207,7 +2242,8 @@
         "stableId": "ability--anti-shield",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c021190ffbaa730d3f75227409ca39ea5327ee3c4a788d177f688a01c4731aff",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2269,7 +2305,8 @@
         "stableId": "ability--anvil-tactics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a6c19e2ee633e8bc760f3e211ba4413ebdded364865408f775979be8d60dd7d1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2334,7 +2371,8 @@
         "stableId": "ability--aqua-drill",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3ef896ca7c8a4c1562f1a9ed562674067ca6027106bc4103a56938e83162ae5a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2383,7 +2421,8 @@
         "stableId": "ability--aquatic-fae",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "34e9763c2c73046413512af9e7a84d09ba2352b46054ad9941dbc67137d2294a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2448,7 +2487,8 @@
         "stableId": "ability--arcane-barrier",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "8bb13161cb6196b7e776ed7bc3588ff1dc91a4fe6cc18369b77ff5eb3d70bda6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2513,7 +2553,8 @@
         "stableId": "ability--arcane-barrier-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "656d5c19d0c2d30cbcd650443828972b6215dbca42a2445319864f9a63a72463",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2578,7 +2619,8 @@
         "stableId": "ability--arcane-blast",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f99ceb5d9af8c1d92454bb385172cdc6a0e07f18ddfe36e5c975a472d25422d9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2644,7 +2686,8 @@
         "stableId": "ability--arcane-buster",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f3dd9674746a7cff0b64f8f077bd3143b3e0c9dceb704842c341d6605ce2c148",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2712,7 +2755,8 @@
         "stableId": "ability--arcane-explosion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "163ff0352683a0b483b6068b27dd4ead6322ceeb5748a4f56327ef708fabb0d9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2776,7 +2820,8 @@
         "stableId": "ability--arcane-power",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "e6154284f018faadfdf56e735ce34267617910f56a06f5be3bfa7adf9ea2a7d0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2840,7 +2885,8 @@
         "stableId": "ability--arcane-pull",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d82d6562cf554e48f83178caf334a1ad101084094fc381143ac7b21fc01cd694",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2906,7 +2952,8 @@
         "stableId": "ability--arcane-rapidfire",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c282ce81ecaa8e46acfbfb987e6ce632317cb976c93ce4e739eaff9db317b6e1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2972,7 +3019,8 @@
         "stableId": "ability--armor-crushing-shell",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ca8ed19fa26838a2c9c8dcf083ce5e13e7df34622d5a8bef6deb771913e6b741",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3036,7 +3084,8 @@
         "stableId": "ability--armor-up",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6b1ece37e18490cd546c2b4bed7707649461162f554bc3ee2005bbcd4394aae9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3098,7 +3147,8 @@
         "stableId": "ability--armored-blow",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "773ff8404f01e6bf0c9e28eb13e7b60c75ee50de3a8c24a5d6c2c0a7b981931c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3147,7 +3197,8 @@
         "stableId": "ability--armorsmith-basics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "338e0d956273b3f7c30c7171b8b1ce845c67035ca85b75d7c6c897a758d0fe87",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3217,7 +3268,8 @@
         "stableId": "key-ability--armorsmith-basics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "82e4b0097a818380a9b5afcd81eab351653b8e0065890472ec98b0800a4a3e16",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3266,7 +3318,8 @@
         "stableId": "ability--armorsmithing-expert",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "fada120325363037cb0c2f8400fd279d80f368c8b522491d220facd07febc598",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3336,7 +3389,8 @@
         "stableId": "key-ability--armorsmithing-expert",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "bb6248144e8ed7b830c244bc3bf7833d52aa52cfd56814380fa451458b8631cc",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3399,7 +3453,8 @@
         "stableId": "key-ability--arms-mastery",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "0ab41a24a613e0cd79a8511566759472b7c88e8d159babf71829379a739e8734",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3461,7 +3516,8 @@
         "stableId": "ability--artery-cut",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "52590ebd771a7b7c5697c3dd7862ff4a7230dc53603575002eb4d8d066de0a88",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3510,7 +3566,8 @@
         "stableId": "ability--artificer-basics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "4b1cac9294d5b5e54dd528762050a05988a8a771f05173ac7aa5cfa2b30d29c2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3580,7 +3637,8 @@
         "stableId": "key-ability--artificer-basics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6c2852768b76d148402bc1918056ef64312ae0beb716c21785ac64a503d4380b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3645,7 +3703,8 @@
         "stableId": "ability--assign-decoy",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "12841343b6b1a383fa721d0de240a27652441be9f0bf53f5ecb28fe503e0db2d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3696,7 +3755,8 @@
         "stableId": "ability--astral-projection",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "4978dfc005370edf1c3d829dab5eb76a9479a3e9b7476d572c49437396496a32",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3760,7 +3820,8 @@
         "stableId": "ability--at-your-side",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "43797f1c3ce98f2166eed8010ab3ba63c16a28b3f5e0ef49577f7b924be2e145",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3822,7 +3883,8 @@
         "stableId": "ability--attack-in-detail",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ca78c4185ffa2e3f71c6114809072fc83da23da1ec3658fc0bb344733cf3241e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3886,7 +3948,8 @@
         "stableId": "ability--attacks-from-the-past",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3718f94ecc7af782a0558a8b6259e2f3512d276468fa7cfa1c858d76a3dc06a4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -3937,7 +4000,8 @@
         "stableId": "ability--attune-eidolon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "bf0ab77cd5dca46be8c6ff99116cbf9d1a4a683d60e787dbb1ac2181e2bd790c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4007,7 +4071,8 @@
         "stableId": "key-ability--augmented-casting-increased-reach",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "25999335d8abd4e650d76aea0e6027ecbc54b23235b7bd8b14477d19e9157b15",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4077,7 +4142,8 @@
         "stableId": "key-ability--augmented-casting-persistent-spell",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "5dc54922b30c05bb66b395cca1509aeb4389af7ed4c78ac7ed2cc14a365625d9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4141,7 +4207,8 @@
         "stableId": "ability--aura-of-protection",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d8a6b68133b8c869d49a45b3e4ba0b7775f45aee68787c41b4d0b2f9adbdd819",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4205,7 +4272,8 @@
         "stableId": "ability--aura-of-resistance",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "9b626a1b9b45070663ab7744c69451c3e748329dc28bd421de519c7ac6b8ef91",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4271,7 +4339,8 @@
         "stableId": "ability--aurora-blade-style-secret-art-permafrost-guilotine",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d2644ffe7b8d005c5c4bb2ec0a38cd838c414b3c32c0695d9b4c8c1494cf5e24",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4336,7 +4405,8 @@
         "stableId": "ability--aurora-blade-style-aurora-slash",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "4630cbb68bca19c82ce9aa0df081aac4b991113036944b7ba6f03c574bccf656",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4400,7 +4470,8 @@
         "stableId": "ability--aurora-blade-style-rimestep",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f438d56d65778c24937b8816f4903e965bde347f2fe76a25867fe98fa0135755",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4465,7 +4536,8 @@
         "stableId": "ability--aurora-blade-style-winter-s-edge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c397c9dcc576d5f422f8fd86c636eb77393e35acdb4a2ddc2539da63497b9cd7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4528,7 +4600,8 @@
         "stableId": "key-ability--authority",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "415617e90e4001c125637d66949fda33500b5b3fb28c03ef1834f1bb3aee5e3b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4592,7 +4665,8 @@
         "stableId": "ability--ave-mar-a",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "0d2d554d358670846a6c9acceff53dca2e4650e269b09137b1f7806f1eb2dcde",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4657,7 +4731,8 @@
         "stableId": "ability--backlash",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a3dceb7f8c7f2b1a6c9af8d4f9816c223f759818e89479311589dfa6ca6f8125",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4719,7 +4794,8 @@
         "stableId": "ability--banana-peel",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "103ebc72b53fc1b5c26412ebd8a8e9ef9ff7ecf397cb92acb96df916d413ee1a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4783,7 +4859,8 @@
         "stableId": "ability--barrel-roll",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f67d013d8bfdfb6da306853788276717f897bd4e45337d4d8359984f1c1735ca",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4858,7 +4935,8 @@
         "stableId": "ability--battle-cast",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d64f053feb206af145291d77d0003ca4e96ad2dcab6d57f1d0b8508c613cba76",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4909,7 +4987,8 @@
         "stableId": "ability--bear-maul",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "54229e40070b1b24f185c0a88bcd97413c7cc0fbb7803a90edf09f0218d10fed",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -4958,7 +5037,8 @@
         "stableId": "ability--bear-shock",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ae9eb0260617110787d1aa2921dd3cdb6680a65c020b905608e2d0749ffffa90",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5024,7 +5104,8 @@
         "stableId": "ability--bear-trap",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a44ee5a37c0dcd40b1651cdf35aa9bb801428fca40070bc1406cc37e5ef182c2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5089,7 +5170,8 @@
         "stableId": "ability--benediction",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "bf172d1557e8f9aa1890f82e9d60e5de710ad6a83942c481b041b4bd63b5f484",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5152,7 +5234,8 @@
         "stableId": "key-ability--benevolence",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "556c2bd6a0823e3be15a25496b78ca5a40e1c9bff69fc571a97613a20745b211",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5216,7 +5299,8 @@
         "stableId": "ability--bestial-command",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "796bf60d723a2529a64e01ddd5e3a1b9ef21e40fe5d657a8c5d07811490e0845",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5265,7 +5349,8 @@
         "stableId": "ability--biohacking",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "dcfd9002b629eaae81bec48d94f43ee71256b0eec72909f141f2e0d19ac42012",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5327,7 +5412,8 @@
         "stableId": "ability--blackbird",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "999ad585769691f43dce79efdd8dddb2f22e632898005aa5edb5e44b2927fd92",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5376,7 +5462,8 @@
         "stableId": "ability--blacksmith-core-crafting",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a2763a4b6fe9f6b8968a62c42b6c03249bdd54b416325b96e186e98d1cfccefb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5438,7 +5525,8 @@
         "stableId": "ability--blast-away",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6eb1a0fe0bae182a9cacdde0959771b8a5677323f520f34715b8486bf57f0f12",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5504,7 +5592,8 @@
         "stableId": "ability--blast-wave",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "9b56650204a4b38d02aaea5538e8837e77ded96e3286c2ecd9bc5fbb3b481679",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5557,7 +5646,8 @@
         "stableId": "ability--blinding-dust",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c861670a245b23077df3c6b0c05dab64fe1df1e98646370df8051252f7514daa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5619,7 +5709,8 @@
         "stableId": "ability--blocking-move",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "b179acd42c4a9a152f6cfa9f4c8b10b0aea4c75a1a58a9be6db4fac7b4efc1f1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5684,7 +5775,8 @@
         "stableId": "ability--blood-drain",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "b1aaeb2ea5edf7af7c14b2544ea284dd3a710ef8cccec3b54b52078b85867236",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5746,7 +5838,8 @@
         "stableId": "ability--blood-frenzy",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "8c143b96a4549ef50b5721551069407524a65d9611187797d70a592b64d3bb35",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5812,7 +5905,8 @@
         "stableId": "ability--blood-shield",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "b15c84f529a643f8e7c302698640d56bc676fe876a8a39160564c5fd4bd4483e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5876,7 +5970,8 @@
         "stableId": "ability--bloodbolt",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "38c20886263922b0efbf25fb8d76d1e65b01047501748c557f1083912ddb94d2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5925,7 +6020,8 @@
         "stableId": "ability--blue-soul",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "587b4ae8dc2a111be4ae67fa03cbbcbde8dd578d5bdb7585fd6ca555705fa792",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -5977,7 +6073,8 @@
         "stableId": "ability--blue-tide",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "76e1fd3b3d25c68f8ecc69bbdbf46d53f400029967e33c9dbbb7cee9a6ccbe11",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6044,7 +6141,8 @@
         "stableId": "ability--bolting",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "fc4a4a5dc0e9d65fc92be0f14f004be0569a8506267d31c7ea482822635e0d5b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6093,7 +6191,8 @@
         "stableId": "ability--bone-armor",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a9cb9e00878a2ebc0931499af806186196645c6e988968ac841cd3091ac36af9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6163,7 +6262,8 @@
         "stableId": "key-ability--bone-armor",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3f4b2a9241923e7d18a841bb65903e758a30a08fb7d8b9df8bc1a87081a6b37c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6226,7 +6326,8 @@
         "stableId": "key-ability--botany-study",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ab5a36a2037989bdb73eb5b3ec17411e4f490c5da9ce3db2941c7a7c81cdbfda",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6291,7 +6392,8 @@
         "stableId": "ability--bottle-smash",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "bd163c8a01cf83e9ac0223fec110b4109af8131287d8fc46f9a4d0cc1f7897b1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6355,7 +6457,8 @@
         "stableId": "ability--bottle-toss",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "9cad434389a7950ae38514ae69a3662d9202873cade254024f05512525210cb5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6425,7 +6528,8 @@
         "stableId": "key-ability--boundless-wind",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "24c74c5475bfa5fa04c3557f4fb7ac4d2e9ef45e5539a66fd3bdf2fc7ac83e2d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6476,7 +6580,8 @@
         "stableId": "ability--boundless-wind-stance",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "84d087d9b7111adbc58af25e818e16956f1fc4dae1e65a00f2949a1bf85577be",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6539,7 +6644,8 @@
         "stableId": "key-ability--brace",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "7159a1fe648cff7d280f2746595d628f776ed3f33cb6b046449b4dc1411ad3fa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6603,7 +6709,8 @@
         "stableId": "ability--break-away",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "df59917e568367da279f13610383a89ad0ba62fd75a38d179c7c9181d18f830c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6667,7 +6774,8 @@
         "stableId": "ability--break-free",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f254701e6ab1002c295ad4b8855dc55407199ea40d44c9993a31823e22415e3a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6733,7 +6841,8 @@
         "stableId": "ability--brilliance",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "99a567197c12b80b0645bd8c616e5c338c123663b7a4b98fade6154c48a46108",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6797,7 +6906,8 @@
         "stableId": "ability--bring-out-your-dead",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1f046b22a52dffa71d41b0fbca3b9d1fdfea07c81230ad1a39bacc1e085c80f8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6859,7 +6969,8 @@
         "stableId": "ability--bulk-orders",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "8cf270fe9996440cb3d3509447bc45abc6d71bcf0205e47139825e220020ba3f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6921,7 +7032,8 @@
         "stableId": "ability--bullet-magnet",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "b2c0a005fda9ae1e15add370fd01d6ec5512aa3269093a8a4cbdc0164976f7c1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -6986,7 +7098,8 @@
         "stableId": "ability--bunshin-tai-no-jutsu",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ed712e09ce4d985f75e21436740d7f2afea07dcb019ebd1dddf27e40bc0d236d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7050,7 +7163,8 @@
         "stableId": "ability--call-of-the-grave",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "b408a3b742db0e571d0d7dd2bd8cad4aae1b3c3bf0dc8eb5adb78a7f2d7c3cf1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7114,7 +7228,8 @@
         "stableId": "ability--call-to-grace",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "59c3b49bb9a01c362861a546c3248d89719deecf88c59843601c1a3a7950d347",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7178,7 +7293,8 @@
         "stableId": "ability--can-t-escape-death",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1bef4bc4e71945cbdc5a171a0e697ce6ef715160965dbf8823557df105a3ac9a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7248,7 +7364,8 @@
         "stableId": "key-ability--cannon-expert",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3e4d4d657a557eb18eda07e75b2f51ef5a3fcaecd8e7d9843cdee04641eb18c0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7313,7 +7430,8 @@
         "stableId": "ability--cannonball",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6ad57ca340b6d4809e555ad6c56c57615f22bdc06e04a35c4d1f22374f5f7ac6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7377,7 +7495,8 @@
         "stableId": "ability--canter",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "470729231e993d1806845356241d6089b04a2d5af5b475cae73ac45aaed0c18a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7426,7 +7545,8 @@
         "stableId": "ability--carpenter-basics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "061ad40de0d8af6726d4d4743c52521112b6afd8af53484bb12d4a6ad536b3a1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7496,7 +7616,8 @@
         "stableId": "key-ability--carpenter-basics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "cacc6f4ae3e55f0c60199842f0fa8de3071cab821e78b5d15578ece8dc090f73",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7560,7 +7681,8 @@
         "stableId": "ability--castling",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "93b30ab6e1093ae930772067339f8d1c179648571af0a794687f7e2f9b862b85",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7611,7 +7733,8 @@
         "stableId": "ability--cat-form",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "154131404dabbf7bcee4571e92ebfa041f3f5b727832405a355b3a5f09a115f4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7678,7 +7801,8 @@
         "stableId": "ability--catalyze",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "e4eb0cf77a01dd5f685a993dcd2f8073d52171744c61e95d8c1eff72c15c4c55",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7742,7 +7866,8 @@
         "stableId": "ability--cavalry-charge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "60e20e49dd83bbb094c0dd8fc349e39138469ebf18a2491d247ce46dcb61894b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7807,7 +7932,8 @@
         "stableId": "ability--cavalry-heal",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3464341b48c72bbcf697a3fcdf19954c1a484c06adb91af9140f3b030bfdd8ba",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7871,7 +7997,8 @@
         "stableId": "ability--cave-raider",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "33e007a9c3622b26bc338f8d4148fa9dfa87768cf91d8f837dc457cfabc3f9cb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -7941,7 +8068,8 @@
         "stableId": "key-ability--celestial-artillery",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c7570ee24acf72ee1a10177c6cd7643699021903955b6e0487df0d1c18af0fdd",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8006,7 +8134,8 @@
         "stableId": "ability--chain-lightning",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6e1988c76c1c1ccc831840065a56e5ed5e99cf448b68b290bee8b2d92db55d7e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8057,7 +8186,8 @@
         "stableId": "ability--chair-grab",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c8c937e20d36082df531af41e7f14cb425b5d8ae0f98e432a32f344d3a986b3e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8121,7 +8251,8 @@
         "stableId": "ability--channel-eidolon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "2a789892ddc7a05e93ea6c7364fe94c736d7bce3128f40bc47d1f09b90158888",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8170,7 +8301,8 @@
         "stableId": "ability--channel-eidolon-distracting-swarm",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a51ff6ba1e113da664b2c71f43ea36aa89c9afa9333cdd661031cb0d1178319f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8221,7 +8353,8 @@
         "stableId": "ability--channel-eidolon-draw-luck",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c5b02604b300bc52e3cfa1160201fabdec2df8800ad2016b5b783f4bba96ccfa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8272,7 +8405,8 @@
         "stableId": "ability--channel-eidolon-vine-wall-cover",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ecbb64d30b87415f416eb010bb18add1be2b3dced2d288806dc7a1bba2dd99d1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8334,7 +8468,8 @@
         "stableId": "ability--charge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "5c96cb7359d50e8158794dd0f33ca600b297f6db8c57e96a654798b105c48198",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8400,7 +8535,8 @@
         "stableId": "ability--charm",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "99191d8a0410d2dd5fddcf8ed68d1d4aeea212b184342ddc14645698383ef8cf",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8464,7 +8600,8 @@
         "stableId": "ability--check",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "bdb3adb860e9cc224ac505527df9f3517abc3c35a40282cb86560a62e4178e1b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8528,7 +8665,8 @@
         "stableId": "ability--chemical-explosive",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "24d78b3e21b7a98954508489d642388bceee7b9f300e45a95b8cdee4760e2943",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8592,7 +8730,8 @@
         "stableId": "ability--chiburi-noto",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a59083b0cf7638f6b90f14bb3fbadfac203c97b5e04e80b22361185bb52f728d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8656,7 +8795,8 @@
         "stableId": "ability--chiburi-noto-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f2229b3156b95aa2a2c4df8f8c1361cf5200e673fcd7b86d53836233cfb6b507",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8705,7 +8845,8 @@
         "stableId": "ability--chilling-cold",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "efef56cc24e610db08ecce79ad67405c0192f0bb77e0c90009c17bae72b62817",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8767,7 +8908,8 @@
         "stableId": "ability--circle-swing",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "761a70f0897722d57e15c027aad37af54cbdf3ea8f65e05d9e297b19f685227a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8829,7 +8971,8 @@
         "stableId": "ability--circuit-reset",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "cd253cd252e2d40a73152b4842cf7446870cfe3230e644f4e58b05f6fa2d0d6a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8893,7 +9036,8 @@
         "stableId": "ability--clearcasting",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "e9c646b04159f3e19ffa5699290945bca762fdc7f09f5af664fd264e7f1dd21a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -8957,7 +9101,8 @@
         "stableId": "ability--cleave",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "be08e25b76e72a6b122a68e0596ba600e0ba1d36534424af21f81f04852a33db",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9021,7 +9166,8 @@
         "stableId": "ability--cloak-of-bats",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "54f6110826034880aa99fd9bdf1f02c8151cf5fc0efc9e6b2001ba0874f54ff5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9087,7 +9233,8 @@
         "stableId": "ability--cloud-piercing-claw",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "515f1871ddd743f0d87a4ac17c024e27f9664bea1add165fb7b72eb6d12aa096",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9138,7 +9285,8 @@
         "stableId": "ability--cloudstep",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ffc4d2b7c65c2275a7e42677ebd12a525205d613fbaeae82898d183df29c9d42",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9208,7 +9356,8 @@
         "stableId": "key-ability--cloudstep",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ad273dd3b2cd47392f42c6074023e4b4e015e4494997c41e7e5acc5413ca4de9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9272,7 +9421,8 @@
         "stableId": "ability--code-blue",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a2dcb6b27589642e477fee251cf8e490279c610f6fef26ab28e524734849706a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9334,7 +9484,8 @@
         "stableId": "ability--combat-chemistry",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "e9c826e9d6accab0f4980142d198fd3d720797ccf686747c26651194dd625c70",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9386,7 +9537,8 @@
         "stableId": "ability--comet",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "8d3c17f6172d1b1ad197674e63b346dbc958883cc2660c3bfc63f72119bd80f4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9448,7 +9600,8 @@
         "stableId": "ability--command-undead",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "4506fe74cdd80ef2c92b677159f1588e8d772767e5190aa4a6cc5a680f91d5d6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9513,7 +9666,8 @@
         "stableId": "ability--compression",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "9eccd69f2974a9cac496b8280979e402008ac079b6f73841427a495773831080",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9578,7 +9732,8 @@
         "stableId": "ability--concealed-shot",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d33d10dbc608bf716e80535cc19a471d3480e522aeddb8e3288bd98590de3f8a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9642,7 +9797,8 @@
         "stableId": "ability--conduit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "0352f2e6215efa44b9cbbb4b0ff015fdc3f9d5a01ffb67d53c60a8d43f25b8b2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9707,7 +9863,8 @@
         "stableId": "ability--consecrating-bolt",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6ae84e37cdcc2cb568b9a4151f1dc27ce4abe72395e8ae677df6657cf7316f2c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9769,7 +9926,8 @@
         "stableId": "ability--consistent-shot",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "2caec9c612416d91fe4c12a09671194e7b647af78caec893d583c703dc102a38",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9820,7 +9978,8 @@
         "stableId": "ability--consume-enemy",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f2d4ab2a94697ad5ea45c077356ad50c7be1256e12b4165e5998df81adb07b04",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9871,7 +10030,8 @@
         "stableId": "ability--consume-fire",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1f3b6332eeaf1d30afe4d8b14a3c5cf9515d7bb00c0196744d6cb82f6f7e628d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9922,7 +10082,8 @@
         "stableId": "ability--consume-lightning",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "0c2dc2206139b4b1af68e24ee0ac1c75d16276c07834350fbfefbfdc0ca76d54",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -9973,7 +10134,8 @@
         "stableId": "ability--consume-wind",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "03bd95f414b02e32c6cedb205c7842d9ebd38582d8d34d0b521a2c225cb5832f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10047,7 +10209,8 @@
         "stableId": "key-ability--controlled-blaze",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a34691508e87ab88267b5a9b4eda82bde936c071a24eac94d45cc7f189fae88e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10110,7 +10273,8 @@
         "stableId": "key-ability--controlled-opportunities",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "e2e0b47dea41c6739997dd7f06c03d9cbcb8687682cedde3c31f79418d144101",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10173,7 +10337,8 @@
         "stableId": "key-ability--controlled-wind",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c31d7e0597edbd3d1aea4f9681c5bf57aa923c3851d8619ad905d6bd151e0111",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10236,7 +10401,8 @@
         "stableId": "key-ability--cool-spotlight",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "fc2a29ab18ca89dc5e2534e6f938cff126d305ff7f6715255ef3b576e8c7ea9e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10301,7 +10467,8 @@
         "stableId": "ability--corona-burst",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6c24e309ae4807cc60f74b74de83fbc94014f014cd0a1c1aba10886006b145ae",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10352,7 +10519,8 @@
         "stableId": "ability--corpse-domination",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c1107313ccce5095334f8a42325d62c5af234a07af1d692880dd90d3dd4ea9f7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10416,7 +10584,8 @@
         "stableId": "ability--corpse-explosion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "aea5bfb531253b644f52d5f2ff7cbf28d8fd65b6636b2dfd81b2b6dc44c2fded",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10465,7 +10634,8 @@
         "stableId": "ability--corpse-puppetry",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f4fc31d6290512b07e9afd5a8a26e0a0b58ef88397e99a29834d18b87675c749",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10531,7 +10701,8 @@
         "stableId": "ability--counter-stance",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1bf39c3a5ee81ab3a125b48f3861af42ee217a8af6265e7694e1f50d6692e802",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10593,7 +10764,8 @@
         "stableId": "ability--counter-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3b870e8a9fe6e8d34f6ab891eb1b33b314b5bbe61de2be67c9f8b4acd84c9f73",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10655,7 +10827,8 @@
         "stableId": "ability--countershot",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "dd013aa1b4726cb06201b7e70074a961b17b7d481800a06ca9afcafe7aa8d51a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10721,7 +10894,8 @@
         "stableId": "ability--counterspell",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "0712581843561f9ee2be56685956f0beca7f38660d9dbc26ca2de6e2ccdb1f75",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10783,7 +10957,8 @@
         "stableId": "ability--craft-artificer-s-glove",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "de25fc9621bdac2705eba9159548bbdea3abc3eb2be72bdf1990399de9f2bd19",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10847,7 +11022,8 @@
         "stableId": "ability--craft-pemmican",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "60823482399ad45aa199c2e19b34c6712b21811ce2e98a0e2f52eba0f71f05ba",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10917,7 +11093,8 @@
         "stableId": "key-ability--craft-weapons",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "69b4f8368e70133e4ec46cbc4d6044967f1110a109632d85de84c737b50df456",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -10982,7 +11159,8 @@
         "stableId": "ability--crashing-foam-wave",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "9c53746fc1b7c53ca6a36303c55e9e363f41e8a3f20084c95164cb7c8ffb5c51",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11044,7 +11222,8 @@
         "stableId": "ability--create-talisman",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1fe67596c8634602f9d15744e9ed68cbc9ba9ede8f10bdc61ea18d625abee413",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11108,7 +11287,8 @@
         "stableId": "ability--crescent-sweep",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ad2735b2a784e8e781d6f8478ff790ef9b9c097257131524000d1aa104a43425",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11170,7 +11350,8 @@
         "stableId": "ability--crimson-enmity",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c0344e49353a8ef31d06684c064d4c9e598a2515a40bdd093841bae3d12b5015",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11234,7 +11415,8 @@
         "stableId": "ability--crippling-attack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "71c302365d14f7932f16abb1abf7fa08bd344e3562c9c9c4520ebec185e8ed1e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11299,7 +11481,8 @@
         "stableId": "ability--crippling-poison",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a298491652f2ca4d3097722d18ab173d9208d8122598cec56872ccd92745ff18",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11366,7 +11549,8 @@
         "stableId": "ability--crucified-by-radiance",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "bc25c5735451fd2ff078512852b7a0ee592c1db8fcad5402bae188c24926133a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11430,7 +11614,8 @@
         "stableId": "ability--crusader-s-advance",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3a2e3699ccedd2f532e6f3f743e4f7637292ab96c313f36044a89bffe3ed1628",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11479,7 +11664,8 @@
         "stableId": "ability--culinary-basics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "5206ce102d58d3f5f76d29ac64c0688a2184660b4f04ddc159c5a7ca0f5fb8e8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11549,7 +11735,8 @@
         "stableId": "key-ability--culinary-basics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "958a195c9ca6f216fd39e835a46f7e47fa151297df710ff76eaabb7fd3bd6d7e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11612,7 +11799,8 @@
         "stableId": "key-ability--cultivator-s-journey",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "97878ac6a223e10e0daffa1947581045e998031d3304e72c532ca0710da932d5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11677,7 +11865,8 @@
         "stableId": "ability--cure-touch",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "5b21778a73af4aacdb2c45c6e01bd26db83af3f2c1fdd367a79e08b0450a63aa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11742,7 +11931,8 @@
         "stableId": "ability--cure-touch-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "575318f929759dfb2f03b6e07f37fb957457fe43249c45508b4ff7d057589f71",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11808,7 +11998,8 @@
         "stableId": "ability--cure-water",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "e78091a89db5ee407c42e5d00f6ab0a73bb36c85e35c0bb5e8806b5187fa8d70",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11874,7 +12065,8 @@
         "stableId": "ability--cursed-evil-eye",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "9c8694bfdf79e4a4bf9abdfe4922141914d6edf43999e33025d0ec985500a9ec",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -11936,7 +12128,8 @@
         "stableId": "ability--cut-away",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "2016d5f5604c814f9dd0d9e7fc724eb770993e15f0a1a194a25df04ebb935822",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12000,7 +12193,8 @@
         "stableId": "ability--cut-magic",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6a99c0618e3e976a61e79bbb792b11ec5a99dd63dd61f5f9836392bba9d0b0ab",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12065,7 +12259,8 @@
         "stableId": "ability--cyclone",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c69914c984fc18a54b2416dca7943fca9b014d4588ab65d60acb3d3f9d3426bb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12132,7 +12327,8 @@
         "stableId": "ability--dark-barrier",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f32ac2dfa29e79149193ee7795f8d81606e4714bab798d1176f4a53f5e950b48",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12186,7 +12382,8 @@
         "stableId": "ability--dark-bolt",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "5a3abb6da5f7b4cd88bf0d1c8ed6611732c90bc3844353d03e9c4ee3ff9b9a77",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12253,7 +12450,8 @@
         "stableId": "ability--dark-healing",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "bbbae6a4e7c67adab70a3bf874156933b0433533c326630c6e27907239a4f6c1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12316,7 +12514,8 @@
         "stableId": "key-ability--dark-surge",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "47a4b55ff8f3972da69cb1ad7f8ccd8521b548c1164c76be90c1591a21439914",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12379,7 +12578,8 @@
         "stableId": "key-ability--dark-weapon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6579a21120eab35a468139abf227ccd0c627dc32ae66b19b64c5c802cb4f8d47",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12446,7 +12646,8 @@
         "stableId": "ability--darkness",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d4cb92747366d2dca5b444d340a293c7a8845d3dec77f434f345ff5cbe925ce7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12497,7 +12698,8 @@
         "stableId": "ability--darkvision",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "c503605c45f6cc3eef3f19cc847481a99d86ce2f79925b45735f96d8740f5ffa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12546,7 +12748,8 @@
         "stableId": "ability--darkvision-passive",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "01a14d69ba33ac2e21b800e05c41137584953b20603871a14b9665c8ded94cb4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12611,7 +12814,8 @@
         "stableId": "ability--deadly-venom",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "2e4c2cc5b4d1acd13f809939d6268b92cd7c9ba74fc3c7d55ef2974050571a8a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12675,7 +12879,8 @@
         "stableId": "ability--death-mark",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "0578e3370eaf2c11ff23a793105479082bcf70ec034264dddad8a0b3db23b53a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12726,7 +12931,8 @@
         "stableId": "ability--death-perception",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "2f6f3071e887c1d3e3cf66c0b20bae921719a68220654d0f7cd60ad02fee23d9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12796,7 +13002,8 @@
         "stableId": "key-ability--death-perception",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3d7b5f29193d507978c68deecb150056fa0fde53fb9f266b9006577c692f19e4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12860,7 +13067,8 @@
         "stableId": "ability--decipher-magic",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6ea95189202ed7d46564673d8844d9d61e9bb56411ca48e0687902625e1a60c4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12925,7 +13133,8 @@
         "stableId": "ability--deckbreaker",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "8fb333ff599d3c05d96a2bf6d462b7c779ee86de48281a561a25645ffa6be212",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -12989,7 +13198,8 @@
         "stableId": "ability--deconstruction",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1948ca54227ec8032936ba34840170cf72e7b93b5d97d1faf52cf3182df9b377",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13054,7 +13264,8 @@
         "stableId": "ability--decree",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "4dca16591ee9ab763ad6ab0315eb9013e3c9f474388b4d41f1c5f6c7c4497b0a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13118,7 +13329,8 @@
         "stableId": "ability--defensive-flexibility",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "7c9f1e357312fed2b5a476c86904ae69c97bc5d4fc73ea78b4fb8e03a6d02f7f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13181,7 +13393,8 @@
         "stableId": "key-ability--deflect-everything",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "9da7f4370349df5cf62d32fd66a562b48ec7119d2b2625aaf6b0424e44f6d648",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13245,7 +13458,8 @@
         "stableId": "ability--delay-time",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "39f50ebe069cad3389f8e208409afa4514fb4ebdfed516713fc16cc060754710",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13307,7 +13521,8 @@
         "stableId": "ability--delayed-hit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "5e5c9505e2a6b6191a61d8c703cd2f64f68d61534465feb7122337e1cd6c3115",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13356,7 +13571,8 @@
         "stableId": "ability--demonblood-regeneration",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3f7984f9b6a48c4f40d9adb3665b852ee723c5b95151a350a70641fd38ef5702",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13405,7 +13621,8 @@
         "stableId": "ability--dense-frame",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1b2e87cba65bcec1533873171a908ae95d07f59808dec30ddbf59dbc25366ece",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13454,7 +13671,8 @@
         "stableId": "ability--dense-mana",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "31a078400ab0be351efde27accbe6235f01d79dc792be6820812bbf96c1ce9aa",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13520,7 +13738,8 @@
         "stableId": "ability--density-break",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "91ec5d890b1f6bbce9b8e84434658cc8ac4847fb9a9bd6ebcf0f16cfe87e8782",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13586,7 +13805,8 @@
         "stableId": "ability--despair-of-isolation",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d37438a2a6e58230bae2a059604b4ef7d0f6d7d1772e6e47c27018bf7a94dc78",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13651,7 +13871,8 @@
         "stableId": "ability--destroy",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "03c8a52e710e4551c9563259f3dba5083a6d4c6e16061220a4086914b13f7851",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13700,7 +13921,8 @@
         "stableId": "ability--destroy-ground",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "22ec8c6a1a5fb046971d5b2e6b3cf778efad7a7dd3e8d0107ce92916f28334c9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13766,7 +13988,8 @@
         "stableId": "ability--destroying-angel",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3681e2d63e76bc54cb84f714d11df6a9f38e2b4ae28ee90f4308e12a10868ae4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13828,7 +14051,8 @@
         "stableId": "ability--detailed-finish",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "63484c612a8ff54a0e0b688d68c038ba8ef47556f1869875ce9a2b1016e0258d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13892,7 +14116,8 @@
         "stableId": "ability--deus-vult",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "e237bf984a19720d9ea69ddc49bfebe6a544e7651b8a27a6a86c0fbf560c2b2e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -13957,7 +14182,8 @@
         "stableId": "ability--devastating-strike",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a1f0d437c473c9e91968497fbbcca5b7cdbf4d9964b3db7077205b50a9eedbe8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14022,7 +14248,8 @@
         "stableId": "ability--devastating-strike-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f4febfc2bc1efd9a27721c0c83320ff92cad1edfda2bb9414e5a2551cc1f118f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14087,7 +14314,8 @@
         "stableId": "ability--devastating-strike-iii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d4b1fe7c908b7175c834dafed95b55e0e118c8c83fac49b9b46545c9cdbd6d4c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14151,7 +14379,8 @@
         "stableId": "ability--devil-s-blow",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "43cb2b1707a8f2f158d5d5efd79060121a06b4c5ddf36d65b5bd016636f322f8",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14215,7 +14444,8 @@
         "stableId": "ability--devil-s-curse",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6e1f51deadd494dd1aa05b71d7622a55078909dc71e2f822bfab1ccd74f6fb05",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14280,7 +14510,8 @@
         "stableId": "ability--dharani-blooming-conciousness",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "362a9a5ffce18b9e33b6a75e0ab667f32a3b787d0ab50c5f3b6373e31c6a1792",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14343,7 +14574,8 @@
         "stableId": "key-ability--dimensional-armory",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "070ad4586007ce37040eac9372051cbe1ef81a4bb12a8dce10966e2c06ea942a",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14405,7 +14637,8 @@
         "stableId": "ability--dimensional-armory-expansion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "95640de614aa1de92e97cacd90a960a114c9e520fe70ef16241b3e67e00e3b11",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14472,7 +14705,8 @@
         "stableId": "ability--dirge-of-despair",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "4d33364f62ada07b8d604b3708de97784c4438e4a0230dc362ca6758cbfa6ad2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14535,7 +14769,8 @@
         "stableId": "key-ability--disable-magic",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "7324174282408b89c954a7e68c925bac52fa72267598218fbc3a4a8684d719ed",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14599,7 +14834,8 @@
         "stableId": "ability--disarming-attack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "43967e88ada554f38d62c58ca95388d17223562b711397525e62bc7157d63571",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14663,7 +14899,8 @@
         "stableId": "ability--disarming-shot",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1598c1874308825c769b00f73cb00fd3bedf2440d1785aa2f3adf049190dfb60",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14714,7 +14951,8 @@
         "stableId": "ability--discern-immunities",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3a6d396f14bb41953737ef737743c813f832e5a1c19c1f1de9e2559f9be74a82",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14784,7 +15022,8 @@
         "stableId": "key-ability--discern-immunities",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "b866450bd801646481c155014556d6f68a7cc2e374636efe85b3b400a6747f68",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14833,7 +15072,8 @@
         "stableId": "ability--discipline",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "45cb1afcb48efd831ac9783cf5bcba4a7b8b0595c2ed488b1a0d3b10788759f5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14899,7 +15139,8 @@
         "stableId": "ability--dispel-magic",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "5e0dddb049b25b8c512afe6fe66afb13f89af9e0afff7ec904f43d3084744090",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -14964,7 +15205,8 @@
         "stableId": "ability--disrupt-ki",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a3ad8bc2848237ebbb3139f806eb4061b08287dc39dcee246edeb32ee6547839",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15026,7 +15268,8 @@
         "stableId": "ability--divine-barrage",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "6ff7c5bb955331c6f9c323db2dc5e01de558c85619e3ce55c44acbc0104e8b22",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15088,7 +15331,8 @@
         "stableId": "ability--divine-guard",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "e0474e152dcd3e9bd834fd3f94d7f999f7b171f013764c83d63bf4007cdbf6d7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15150,7 +15394,8 @@
         "stableId": "ability--divine-might",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "2151fb30fbe54dc3a050ba86a0dfac389274de1b4d306cb92d574ef384a2ff06",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15202,7 +15447,8 @@
         "stableId": "ability--divine-providence",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "bad5f8da80b79cf516751d4ebbc6b7b1c0958b530e0bb5e9223d6e9c87104176",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15254,7 +15500,8 @@
         "stableId": "ability--divine-release",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "d7721f1d3fdf2e48057a5c95ef78c71d2fdddbb9e29090d5e05d23102aa7562f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15319,7 +15566,8 @@
         "stableId": "ability--divine-smite",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "488ac3e2498471551745b7c110647387cdd8313dfc335e041ac9025ff466a085",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15383,7 +15631,8 @@
         "stableId": "ability--divine-smite-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ea6da655d06b70ba1c93cc3532e36b12a2f6c536bbbf7f01edb9b5138d3a8dae",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15448,7 +15697,8 @@
         "stableId": "ability--divine-storm",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "4a8dccc278644d13bbca8526b6f88f85e38ce9338e2f2e60d826b11c647917e7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15533,7 +15783,8 @@
         "stableId": "key-ability--divine-weapon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "5d7dca7d687c2fc22123b66e4c5281122150669547941c809e298dffaa850081",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15595,7 +15846,8 @@
         "stableId": "ability--divining-petalfall",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "b5b1e85b6c7dfe8c58c8a529569b582e1d3a6fa25dc7ee7a25c2d078e6da935f",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15659,7 +15911,8 @@
         "stableId": "ability--doctor-jekyll",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "e15926ea9be248879696174105e26ff3cc3bef1c428bd01773f4680b991c740b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15710,7 +15963,8 @@
         "stableId": "ability--dog-form",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "81166b928161fd9b85e0a43110d46ebb5efc18f8138b9245b7886a0591b98c24",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15774,7 +16028,8 @@
         "stableId": "ability--doom",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3f2b64e12091f38ba65e0233287d4c9cd2009a6378b6493b8e69139f53d3ea51",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15838,7 +16093,8 @@
         "stableId": "ability--double-elements",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "655be9288382f5913abf88ac159131cd3d2b5d0b0c4fe524e08af87ae89a5888",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15903,7 +16159,8 @@
         "stableId": "ability--double-palm-strike",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "00dbf3cb11948ca170129887e1045326f96b6eed22c2a27473210764379d7a98",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -15967,7 +16224,8 @@
         "stableId": "ability--double-punch",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ae3deba674990c631234d3e2cc3717f85dfae832f5555ae4d14277e7bc58e6c6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16031,7 +16289,8 @@
         "stableId": "ability--double-slam",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "ee2e47292359b7e62d70e230382b8f884687623c19429437add94a3ddd917fba",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16097,7 +16356,8 @@
         "stableId": "ability--downburst",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "45e3ef8884f09025f7875b196710d7472c425dde8135b4e7c1835faeab3847b0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16163,7 +16423,8 @@
         "stableId": "ability--downburst-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "0e311dd0d27c3fc1e50525fb4993d3fce9d3f4e2129cf7ac7663021b65330b4d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16212,7 +16473,8 @@
         "stableId": "ability--draconic-presence",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "174aa9724d3069e8d226b9a48fdf068bebf82036b08e51b16cc32e2f8d1285a2",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16278,7 +16540,8 @@
         "stableId": "ability--dragon-breaks-the-ranks",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "af4a9d246430b83cb1691b3aca2bf5113951f65f4e7a045292e426ee1cb360f9",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16336,7 +16599,8 @@
         "stableId": "ability--dragon-s-breath",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "a29e8c66a07823e1cd942b225323c899e530e4649433da996e53c55523b5d39e",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16402,7 +16666,8 @@
         "stableId": "ability--dragonfire-dive",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "620b650a30b37a7dee11c39286faebe90a9c49e365502e7994200c9323da4e79",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16464,7 +16729,8 @@
         "stableId": "ability--dramatic-death",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "2926d2f411ebd85aea6fe106795d45db9e1dcdefcd16ffd40924cad8b9ac7c18",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16513,7 +16779,8 @@
         "stableId": "ability--draw-elements",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "67cf0bd43f63d1225f910f119f7ddc5b3d0cc5f7f9b983b163643aa6bab2833c",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16583,7 +16850,8 @@
         "stableId": "key-ability--draw-elements",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "bbf4f23f5328798397d10f929cf35f95699852e84cd1ead6b425d3d8c2ae9cbb",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16634,7 +16902,8 @@
         "stableId": "ability--draw-elements-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "48f78b0801440d42ca1b31ea96025bba0a61755c07803824e4b4b01491d51137",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16704,7 +16973,8 @@
         "stableId": "key-ability--draw-elements-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3245362637569bf6d10297dda62c8886ac4b1e6fe0e106dfb4f7ce8406ac4d51",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16768,7 +17038,8 @@
         "stableId": "ability--draw-in",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "80a9fb8e9aecd45ad7d91b4c1b43ed31e5f2c5317da075bd36a3eec6a7da6c68",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16830,7 +17101,8 @@
         "stableId": "ability--driftwind-evasion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "13641a2b31e137d07a458d8d40efbe4817daa3a2e14f12bf3c3093ff9902c5a1",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16881,7 +17153,8 @@
         "stableId": "ability--drink-to-battle",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1ff8451f4b52acbacba537830796d4cfb962bd10f1c6c0063e93f6e57bab721b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -16945,7 +17218,8 @@
         "stableId": "ability--dualcast",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "246a9ef60bebd1cdd8bdec0cb970207d49b95fae0c58bee58f632880976e5fd3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17007,7 +17281,8 @@
         "stableId": "ability--duelist-blow",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "f8be4dca51f0ecaba0dc7690550a5badd858a31eedbcf93828fa41932ca60761",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17058,7 +17333,8 @@
         "stableId": "ability--dullahan-s-mount",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3b24dddaa53f4ac744ada29dc66c6a9146297248e863575826b5a16b8877aa6d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17123,7 +17399,8 @@
         "stableId": "ability--duplicate",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "0dce5cd4d25f7773c0ce461413e21a8da449e43ba4eb7d961af48052aa0feba5",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17187,7 +17464,8 @@
         "stableId": "ability--dust-kick",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "3dfc6600645ee26414ae05643c57974a08d8fec38f772f40872023f397a48da7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17252,7 +17530,8 @@
         "stableId": "ability--eagle-hunt",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "19d369e39659903bacf086cfb333b227480f0371e1cd31bc033dd252dd68a0c0",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17318,7 +17597,8 @@
         "stableId": "ability--earth-armor",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1a2341b6101e7747ef13a56286885a1b4689b60f4241a132b10458cdd0e848dc",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17384,7 +17664,8 @@
         "stableId": "ability--earth-infusion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "7fdc4143bf0d4919aa244372d43e136a8871c9d7e1ebdb2ede6ff6e91d11fa18",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17451,7 +17732,8 @@
         "stableId": "ability--earth-shield",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "517f359188dbd99fdb5e1f8628403c0a6fdbc4d7179cb2ad0fddbeef4798ba5b",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17514,7 +17796,8 @@
         "stableId": "key-ability--earth-weapon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1ce7be8ec74d9f70c44bacf191e2241eb3219b3b06632ecc8e5d8fbb19f5d300",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17579,7 +17862,8 @@
         "stableId": "ability--earthen-divide",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "5b66f9f1457ba2e12aad9310fa0135444815b411ef53d1414a9b01db15ac32a7",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17644,7 +17928,8 @@
         "stableId": "ability--earthen-guardian",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "248b79a0d43ea3aa377e6d3547f2f3c7221bd81b277d73d27be14bc542c6bde6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17709,7 +17994,8 @@
         "stableId": "ability--eclipse-breaker",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "16f147aebf75e333969bb4a7082210c06d2a1615402b1fbee37c8bf7c5c42ee6",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17771,7 +18057,8 @@
         "stableId": "ability--efficient-strike",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "38c9afd8fac04526b3914da77bb1035446160bc242e52b27970443ae3bb9471d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17837,7 +18124,8 @@
         "stableId": "ability--elbow-uppercut",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "25f437e9bb12c1e99b7bc6e54d9150beb23c0b1cb6118d1780729ff945684332",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17908,7 +18196,8 @@
         "stableId": "ability--elemental-bolt",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "1ad9364907e40a56e9278e4ea5b2eeacc8db85f30af11e28e5056532828e8ed3",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -17972,7 +18261,8 @@
         "stableId": "ability--elemental-burst",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "7ac9aebe6739f28ffb51fcdbd7e23a3ec660900546df3c196f97c88e07f94880",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -18023,7 +18313,8 @@
         "stableId": "ability--elemental-convergence",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "209553f1910b623778ff85815a597ee1f6f71b9eb892f63005df9be3c59f2130",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -18093,301 +18384,8 @@
         "stableId": "key-ability--elemental-convergence",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
         "sourceHash": "eb7b19d2d857d8e44d00b2328adc64e0c5e1a78cbabc59a1cf6a48846257fc4d",
-        "rulebookVersion": "0.13.1"
-      }
-    }
-  },
-  {
-    "_id": "db3a1cfcaac54ee6",
-    "name": "Elemental Mastery: Dark",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>You gain Elemental Mastery: Dark</p>",
-      "source": "The Lyrian Chronicles v0.13.1",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-      "sourceHash": "c1a3828b170a83aefa5382dcec0fa9c8e012c58c8ab565eebd6e2de70c4434b6",
-      "rulebookVersion": "0.13.1",
-      "stableId": "ability--elemental-mastery-dark",
-      "relationships": {
-        "classes": [],
-        "_links": []
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [],
-      "rawKeywords": "",
-      "rawCost": "",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.1",
-      "range": "",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--elemental-mastery-dark",
-        "stableId": "ability--elemental-mastery-dark",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-        "sourceHash": "c1a3828b170a83aefa5382dcec0fa9c8e012c58c8ab565eebd6e2de70c4434b6",
-        "rulebookVersion": "0.13.1"
-      }
-    }
-  },
-  {
-    "_id": "2d4fac11462aff85",
-    "name": "Elemental Mastery: Fire",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>You gain Elemental Mastery: Fire</p>",
-      "source": "The Lyrian Chronicles v0.13.1",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-      "sourceHash": "2342cb252300f89e84d8b8d89ce2915da21a37f767593515cd0f8e5a1f0c905f",
-      "rulebookVersion": "0.13.1",
-      "stableId": "ability--elemental-mastery-fire",
-      "relationships": {
-        "classes": [],
-        "_links": []
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [],
-      "rawKeywords": "",
-      "rawCost": "",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.1",
-      "range": "",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--elemental-mastery-fire",
-        "stableId": "ability--elemental-mastery-fire",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-        "sourceHash": "2342cb252300f89e84d8b8d89ce2915da21a37f767593515cd0f8e5a1f0c905f",
-        "rulebookVersion": "0.13.1"
-      }
-    }
-  },
-  {
-    "_id": "6c53b014be7029c6",
-    "name": "Elemental Mastery: Frost",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>You gain Elemental Mastery: Frost</p>",
-      "source": "The Lyrian Chronicles v0.13.1",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-      "sourceHash": "4d53a67f25891f330c80e617fb5706361bcc281be329f2eed28c63987d859187",
-      "rulebookVersion": "0.13.1",
-      "stableId": "ability--elemental-mastery-frost",
-      "relationships": {
-        "classes": [],
-        "_links": []
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [],
-      "rawKeywords": "",
-      "rawCost": "",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.1",
-      "range": "",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--elemental-mastery-frost",
-        "stableId": "ability--elemental-mastery-frost",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-        "sourceHash": "4d53a67f25891f330c80e617fb5706361bcc281be329f2eed28c63987d859187",
-        "rulebookVersion": "0.13.1"
-      }
-    }
-  },
-  {
-    "_id": "c1e1327b25878108",
-    "name": "Elemental Mastery: Holy",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>You gain Elemental Mastery: Holy</p>",
-      "source": "The Lyrian Chronicles v0.13.1",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-      "sourceHash": "e33f5b655ca2bc360bb99b29f05d3bf948a0eae73979de654fcd244b6634fc51",
-      "rulebookVersion": "0.13.1",
-      "stableId": "ability--elemental-mastery-holy",
-      "relationships": {
-        "classes": [],
-        "_links": []
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [],
-      "rawKeywords": "",
-      "rawCost": "",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.1",
-      "range": "",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--elemental-mastery-holy",
-        "stableId": "ability--elemental-mastery-holy",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-        "sourceHash": "e33f5b655ca2bc360bb99b29f05d3bf948a0eae73979de654fcd244b6634fc51",
-        "rulebookVersion": "0.13.1"
-      }
-    }
-  },
-  {
-    "_id": "b492e3400016698d",
-    "name": "Elemental Mastery: Lightning",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>You gain Elemental Mastery: Lightning.</p>",
-      "source": "The Lyrian Chronicles v0.13.1",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-      "sourceHash": "8dd649e814afd73c1594fb6010c7202e95afb4d1cdae5280bb2ddf85636460b7",
-      "rulebookVersion": "0.13.1",
-      "stableId": "ability--elemental-mastery-lightning",
-      "relationships": {
-        "classes": [],
-        "_links": []
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [],
-      "rawKeywords": "",
-      "rawCost": "",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.1",
-      "range": "",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--elemental-mastery-lightning",
-        "stableId": "ability--elemental-mastery-lightning",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-        "sourceHash": "8dd649e814afd73c1594fb6010c7202e95afb4d1cdae5280bb2ddf85636460b7",
-        "rulebookVersion": "0.13.1"
-      }
-    }
-  },
-  {
-    "_id": "8a7fdedb73c3a3dd",
-    "name": "Elemental Mastery: Wind",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>You gain Elemental Mastery: Wind.</p>",
-      "source": "The Lyrian Chronicles v0.13.1",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-      "sourceHash": "90bcab57126c949bb289e95db8b1abebfe00f4b3fc82e11aa9d8d2b617e12920",
-      "rulebookVersion": "0.13.1",
-      "stableId": "ability--elemental-mastery-wind",
-      "relationships": {
-        "classes": [],
-        "_links": []
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [],
-      "rawKeywords": "",
-      "rawCost": "",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.1",
-      "range": "",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--elemental-mastery-wind",
-        "stableId": "ability--elemental-mastery-wind",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/abilities",
-        "sourceHash": "90bcab57126c949bb289e95db8b1abebfe00f4b3fc82e11aa9d8d2b617e12920",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   }

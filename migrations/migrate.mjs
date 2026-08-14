@@ -17,7 +17,8 @@
 /** Every version that ships a migration, oldest first. */
 const VERSIONS = [
   "0.3.1",
-  "0.3.4"
+  "0.3.4",
+  "0.5.0"
 ];
 
 /* -------------------------------------------- */

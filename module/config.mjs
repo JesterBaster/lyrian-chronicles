@@ -321,7 +321,7 @@ LYRIAN.progression = {
   startingClim: 3000,
   classCostPerTier: 100,
   abilityCost: 100,
-  abilitiesPerClass: 7
+  maxClassLevel: 8
 };
 
 /** Spirit core milestones. Purely informational on the sheet. */

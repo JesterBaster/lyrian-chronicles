@@ -1,7 +1,7 @@
 const SYSTEM_ID = "lyrian-chronicles";
 
 /** Bump when content JSON changes so worlds pick up additions. */
-export const CONTENT_VERSION = "0.4.0-rulebook-0.13.1";
+export const CONTENT_VERSION = "0.5.0-rulebook-0.13.1";
 
 /** Reviewed pack names, in mandatory rulebook review order. */
 const PACK_NAMES = [
@@ -53,7 +53,8 @@ export async function seedSystemPacks({ force = false } = {}) {
     await pack.getIndex({
       fields: [
         `flags.${SYSTEM_ID}.seedKey`,
-        `flags.${SYSTEM_ID}.sourceHash`
+        `flags.${SYSTEM_ID}.sourceHash`,
+        `flags.${SYSTEM_ID}.contentBuild`
       ]
     });
     const present = new Map(
@@ -75,7 +76,9 @@ export async function seedSystemPacks({ force = false } = {}) {
       if (!current) return false;
       const incomingHash = foundry.utils.getProperty(document, `flags.${SYSTEM_ID}.sourceHash`);
       const currentHash = foundry.utils.getProperty(current, `flags.${SYSTEM_ID}.sourceHash`);
-      return incomingHash && incomingHash !== currentHash;
+      const incomingBuild = foundry.utils.getProperty(document, `flags.${SYSTEM_ID}.contentBuild`);
+      const currentBuild = foundry.utils.getProperty(current, `flags.${SYSTEM_ID}.contentBuild`);
+      return (incomingHash && incomingHash !== currentHash) || incomingBuild !== currentBuild;
     });
 
     if (!missing.length && !changed.length) {

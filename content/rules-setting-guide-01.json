@@ -21,7 +21,8 @@
             "stableId": "rulebook",
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/rulebook",
             "sourceHash": "7a54511cceb41b35a1f2ac3e55ec6fa05ce6b6b611b4bd09b972a00af62b114d",
-            "rulebookVersion": "0.13.1"
+            "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0"
           }
         }
       }
@@ -35,7 +36,8 @@
         "stableId": "rulebook",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/rulebook",
         "sourceHash": "7a54511cceb41b35a1f2ac3e55ec6fa05ce6b6b611b4bd09b972a00af62b114d",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -61,7 +63,8 @@
             "stableId": "setting-guide",
             "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/settings-guide",
             "sourceHash": "df54f9603c2641fd2fe4e905e76450b577f394ae83e22f31a0f296fdeadbc4c4",
-            "rulebookVersion": "0.13.1"
+            "rulebookVersion": "0.13.1",
+            "contentBuild": "0.5.0"
           }
         }
       }
@@ -75,7 +78,8 @@
         "stableId": "setting-guide",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/settings-guide",
         "sourceHash": "df54f9603c2641fd2fe4e905e76450b577f394ae83e22f31a0f296fdeadbc4c4",
-        "rulebookVersion": "0.13.1"
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   }

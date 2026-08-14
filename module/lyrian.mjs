@@ -287,6 +287,13 @@ Hooks.on("hotbarDrop", (bar, data, slot) => {
   return false;
 });
 
+for (const hook of ["createItem", "updateItem", "deleteItem"]) {
+  Hooks.on(hook, async (item) => {
+    if (!item.actor || !["race", "class"].includes(item.type)) return;
+    await item.actor.syncProgressionFeatures();
+  });
+}
+
 async function createItemMacro(data, slot) {
   const item = await Item.implementation.fromDropData(data);
   if (!item?.parent) {
@@ -319,9 +326,11 @@ async function rollItemMacro(itemUuid) {
 
 Hooks.once("ready", async function () {
   console.log("Lyrian Chronicles | Ready");
-  await runMigrations(SYSTEM_ID, game.system.version);
-
+  // Refresh the official source documents first. Migrations can then hydrate
+  // older owned race items from the current compendium schema.
   if (game.settings.get(SYSTEM_ID, "autoSeedContent")) {
     await seedSystemPacks();
   }
+
+  await runMigrations(SYSTEM_ID, game.system.version);
 });
