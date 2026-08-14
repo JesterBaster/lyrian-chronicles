@@ -1,7 +1,7 @@
 <section class="tab lyr-tab {{tab.cssClass}}" data-tab="inventory" data-group="primary" data-application-part="inventory">
 
   <div class="lyr-compendium-strip">
-    <span>Official equipment can be dragged directly onto this sheet.</span>
+    <span>{{localize "LYRIAN.Inventory.DropSorted"}}</span>
     <button type="button" data-action="browsePack" data-pack="items"><i class="fa-solid fa-book-open"></i> Browse Items &amp; Equipment</button>
   </div>
 
@@ -82,7 +82,7 @@
 
   {{#if items.equipment.length}}
     <div class="lyr-section-head">
-      <h2 class="lyr-heading">Official equipment</h2>
+      <h2 class="lyr-heading">{{localize "LYRIAN.Inventory.OtherOfficial"}}</h2>
     </div>
     <ul class="lyr-list">
       {{#each items.equipment as |item|}}
@@ -98,7 +98,6 @@
           </div>
           <div class="lyr-row__actions">
             <button type="button" data-action="useItem">Show</button>
-            <button type="button" class="lyr-icon" data-action="toggleEquip"><i class="fa-solid {{#if item.system.equipped}}fa-hand-fist{{else}}fa-box{{/if}}"></i></button>
             <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
             <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
           </div>

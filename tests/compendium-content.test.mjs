@@ -45,7 +45,7 @@ function digest(value) {
 
 test("manifest declares the exact reviewed nine packs", () => {
   assert.deepEqual(MANIFEST.packs.map((pack) => pack.name), Object.keys(PACKS));
-  assert.equal(MANIFEST.version, "0.5.3");
+  assert.equal(MANIFEST.version, "0.5.4");
   assert.equal(MANIFEST.compatibility.minimum, "14");
   assert.equal(MANIFEST.compatibility.verified, "14");
 });

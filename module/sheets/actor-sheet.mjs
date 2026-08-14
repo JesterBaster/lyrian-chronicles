@@ -11,6 +11,7 @@ import {
   selectedRaceSkillBonuses
 } from "../rules/progression.mjs";
 import { collectWorshipBenefits, DIVINES } from "../rules/worship.mjs";
+import { convertOfficialEquipment } from "../rules/equipment-import.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -372,7 +373,33 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   async _onDropItem(event, item) {
     const result = await super._onDropItem(event, item);
     const owned = Array.isArray(result) ? result[0] : result;
-    if (!owned || this.document.type !== "character" || owned.type !== "race") return result;
+    if (!owned || this.document.type !== "character") return result;
+
+    if (owned.type === "equipment") {
+      const proficiency = collectActorProficiencies(this.document).groups;
+      const convertedData = convertOfficialEquipment(owned.toObject(), {
+        weapons: proficiency.weapons.map((entry) => entry.name),
+        armor: proficiency.armor.map((entry) => entry.name)
+      });
+      if (!convertedData) return result;
+
+      // Create first so a validation failure never destroys the dropped source.
+      const [converted] = await this.document.createEmbeddedDocuments("Item", [convertedData]);
+      try {
+        await owned.delete();
+      } catch (error) {
+        await converted.delete();
+        throw error;
+      }
+      const section = game.i18n.localize(`LYRIAN.Inventory.Section.${converted.type}`);
+      ui.notifications.info(game.i18n.format("LYRIAN.Inventory.DropAdded", {
+        name: converted.name,
+        section
+      }));
+      return Array.isArray(result) ? [converted] : converted;
+    }
+
+    if (owned.type !== "race") return result;
 
     if (owned.system.raceKind === "ancestry") {
       const primary = this.document.items.find(
@@ -617,7 +644,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #onToggleEquip(event, target) {
     const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
-    if (!item) return;
+    if (!item || !["weapon", "armor"].includes(item.type)) return;
     await item.update({ "system.equipped": !item.system.equipped });
   }
 
