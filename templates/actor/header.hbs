@@ -27,6 +27,36 @@
         {{/if}}
       {{/if}}
     </div>
+
+    {{#if isCharacter}}
+      <div class="lyr-subline lyr-subline--details">
+        <input type="text" name="system.details.gender" value="{{system.details.gender}}" placeholder="{{localize 'LYRIAN.Identity.Gender'}}" aria-label="{{localize 'LYRIAN.Identity.Gender'}}" />
+        <input type="text" name="system.details.age" value="{{system.details.age}}" placeholder="{{localize 'LYRIAN.Identity.Age'}}" aria-label="{{localize 'LYRIAN.Identity.Age'}}" />
+        <input type="text" name="system.details.height" value="{{system.details.height}}" placeholder="{{localize 'LYRIAN.Identity.Height'}}" aria-label="{{localize 'LYRIAN.Identity.Height'}}" />
+        <input type="text" name="system.details.weight" value="{{system.details.weight}}" placeholder="{{localize 'LYRIAN.Identity.Weight'}}" aria-label="{{localize 'LYRIAN.Identity.Weight'}}" />
+        <input type="text" name="system.details.worship" value="{{system.details.worship}}" placeholder="{{localize 'LYRIAN.Identity.Worships'}}" aria-label="{{localize 'LYRIAN.Identity.Worships'}}" list="lyrian-divines-{{actor.id}}" />
+        <datalist id="lyrian-divines-{{actor.id}}">
+          {{#each divines as |divine|}}<option value="{{divine.name}}">{{divine.damageType}}</option>{{/each}}
+        </datalist>
+      </div>
+
+      {{#if worship.entered}}
+        <div class="lyr-worship-status {{#if worship.active}}lyr-worship-status--active{{/if}}">
+          <i class="fa-solid {{#if worship.active}}fa-sun{{else}}fa-book-open{{/if}}"></i>
+          <strong>{{worship.entered}}</strong>
+          {{#if worship.active}}
+            <span>{{localize "LYRIAN.Worship.Active" damageType=worship.damageType}}</span>
+          {{else if worship.hasDivinesChosen}}
+            <span>{{localize "LYRIAN.Worship.NeedsDivine"}}</span>
+          {{else}}
+            <span>{{localize "LYRIAN.Worship.Background"}}</span>
+          {{/if}}
+          {{#if worship.relatedBenefits.length}}
+            <span class="lyr-worship-status__related">{{localize "LYRIAN.Worship.Related"}}: {{#each worship.relatedBenefits as |benefit|}}{{#unless @first}}, {{/unless}}{{benefit}}{{/each}}</span>
+          {{/if}}
+        </div>
+      {{/if}}
+    {{/if}}
   </div>
 
   <div class="lyr-resources">
