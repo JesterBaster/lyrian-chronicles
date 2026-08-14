@@ -75,6 +75,33 @@
     {{else}}<li class="lyr-empty">Travelling light.</li>{{/each}}
   </ul>
 
+  {{#if items.equipment.length}}
+    <div class="lyr-section-head">
+      <h2 class="lyr-heading">Official equipment</h2>
+    </div>
+    <ul class="lyr-list">
+      {{#each items.equipment as |item|}}
+        <li class="lyr-row" data-item-id="{{item.id}}">
+          <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+          <div class="lyr-row__body">
+            <span class="lyr-row__name">{{item.name}}</span>
+            <span class="lyr-row__meta">
+              {{item.system.category}}{{#if item.system.subType}} · {{item.system.subType}}{{/if}}
+              {{#if item.system.cost}} · cost {{item.system.cost}}{{/if}}
+              {{#if item.system.burden}} · burden {{item.system.burden}}{{/if}}
+            </span>
+          </div>
+          <div class="lyr-row__actions">
+            <button type="button" data-action="useItem">Show</button>
+            <button type="button" class="lyr-icon" data-action="toggleEquip"><i class="fa-solid {{#if item.system.equipped}}fa-hand-fist{{else}}fa-box{{/if}}"></i></button>
+            <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+            <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  {{/if}}
+
   {{#if isCharacter}}
     <div class="lyr-purse">
       <label>Clim <input type="number" name="system.clim" value="{{system.clim}}" /></label>

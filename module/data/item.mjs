@@ -12,8 +12,25 @@ export class LyrianItemBase extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       description: new fields.HTMLField({ required: false, blank: true }),
-      source: new fields.StringField({ blank: true, initial: "" })
+      source: new fields.StringField({ blank: true, initial: "" }),
+      sourceUrl: new fields.StringField({ blank: true, initial: "" }),
+      sourceHash: new fields.StringField({ blank: true, initial: "" }),
+      rulebookVersion: new fields.StringField({ blank: true, initial: "" }),
+      stableId: new fields.StringField({ blank: true, initial: "" }),
+      relationships: new fields.ObjectField({ required: true, nullable: false, initial: {} })
     };
+  }
+}
+
+/* -------------------------------------------- */
+/*  Rulebook keywords                            */
+/* -------------------------------------------- */
+
+export class LyrianKeyword extends LyrianItemBase {
+  static defineSchema() {
+    const schema = super.defineSchema();
+    schema.keyword = new fields.StringField({ blank: true, initial: "" });
+    return schema;
   }
 }
 
@@ -245,6 +262,13 @@ export class LyrianClass extends LyrianItemBase {
     const schema = super.defineSchema();
 
     schema.tier = int(1, { min: 1, max: 5 });
+    schema.difficulty = int(0, { min: 0 });
+    schema.role1 = new fields.StringField({ blank: true, initial: "" });
+    schema.role2 = new fields.StringField({ blank: true, initial: "" });
+    schema.guide = new fields.HTMLField({ required: false, blank: true });
+    schema.skills = new fields.StringField({ blank: true, initial: "" });
+    schema.heart = new fields.StringField({ blank: true, initial: "" });
+    schema.soul = new fields.StringField({ blank: true, initial: "" });
     schema.abilitiesUnlocked = int(0, { min: 0, max: 7 });
     schema.keyAbilities = new fields.StringField({ blank: true, initial: "" });
     schema.requirements = new fields.StringField({ blank: true, initial: "" });
@@ -272,6 +296,7 @@ export class LyrianBreakthrough extends LyrianItemBase {
   static defineSchema() {
     const schema = super.defineSchema();
     schema.expCost = int(100, { min: 0 });
+    schema.rawCost = new fields.StringField({ blank: true, initial: "" });
     schema.level = int(1, { min: 1 });
     schema.requirements = new fields.StringField({ blank: true, initial: "" });
     schema.repeatable = new fields.BooleanField({ initial: false });
@@ -286,8 +311,16 @@ export class LyrianBreakthrough extends LyrianItemBase {
 export class LyrianRace extends LyrianItemBase {
   static defineSchema() {
     const schema = super.defineSchema();
+    schema.raceKind = new fields.StringField({
+      required: true,
+      initial: "primary",
+      choices: ["primary", "ancestry"]
+    });
+    schema.primaryRace = new fields.StringField({ blank: true, initial: "" });
     schema.subrace = new fields.StringField({ blank: true, initial: "" });
     schema.clan = new fields.StringField({ blank: true, initial: "" });
+    schema.attributes = new fields.StringField({ blank: true, initial: "" });
+    schema.ambition = new fields.StringField({ blank: true, initial: "" });
     schema.grantedProficiencies = new fields.StringField({ blank: true, initial: "" });
     schema.grantedSkills = new fields.StringField({ blank: true, initial: "" });
     schema.size = new fields.StringField({
@@ -296,6 +329,44 @@ export class LyrianRace extends LyrianItemBase {
       choices: Object.keys(LYRIAN.creatureSizes)
     });
     schema.speed = int(LYRIAN.baseSpeed);
+    return schema;
+  }
+}
+
+/* -------------------------------------------- */
+/*  Official equipment reference                */
+/* -------------------------------------------- */
+
+export class LyrianEquipment extends LyrianItemBase {
+  static defineSchema() {
+    const schema = super.defineSchema();
+    schema.category = new fields.StringField({ blank: true, initial: "" });
+    schema.subType = new fields.StringField({ blank: true, initial: "" });
+    schema.cost = new fields.StringField({ blank: true, initial: "" });
+    schema.burden = new fields.StringField({ blank: true, initial: "" });
+    schema.activationCost = new fields.StringField({ blank: true, initial: "" });
+    schema.shellSize = new fields.StringField({ blank: true, initial: "" });
+    schema.fuelUsage = new fields.StringField({ blank: true, initial: "" });
+    schema.craftingPoints = int(0, { min: 0 });
+    schema.craftingType = new fields.StringField({ blank: true, initial: "" });
+    schema.quantity = int(1, { min: 0 });
+    schema.equipped = new fields.BooleanField({ initial: false });
+    return schema;
+  }
+}
+
+/* -------------------------------------------- */
+/*  Monster abilities and actions                */
+/* -------------------------------------------- */
+
+export class LyrianMonsterAbility extends LyrianAbility {
+  static defineSchema() {
+    const schema = super.defineSchema();
+    schema.kind = new fields.StringField({
+      required: true,
+      initial: "passive",
+      choices: ["passive", "active-action"]
+    });
     return schema;
   }
 }

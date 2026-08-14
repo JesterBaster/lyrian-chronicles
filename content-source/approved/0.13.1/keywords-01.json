@@ -1,0 +1,1655 @@
+[
+  {
+    "stable_id": "keyword--active",
+    "category": "keywords",
+    "name": "Active",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f93",
+      "index_id": "eac777b0-b114-4559-8ac2-0225e7bd2416"
+    },
+    "data": {
+      "keywordId": "active",
+      "name": "Active",
+      "description": "<p>You cannot use the Prepare action on this ability.</p>"
+    },
+    "relationships": {},
+    "source_hash": "6314b044d0a7fad656b68b9411daa497c42ce951a7d27fc10714277967d335d8"
+  },
+  {
+    "stable_id": "keyword--aid",
+    "category": "keywords",
+    "name": "Aid",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f7e",
+      "index_id": "4d9857ec-4df6-4ba4-9268-31c45092aa21"
+    },
+    "data": {
+      "keywordId": "aid",
+      "name": "Aid",
+      "description": "<p>Abilities with the Aid keyword can only be used on allies, unless the ability specifically states you can use it on yourself.</p>"
+    },
+    "relationships": {},
+    "source_hash": "933a90b2d8f3e03218540edaa83b0ebec205a530a5684fd4ec04ca8368e5d123"
+  },
+  {
+    "stable_id": "keyword--artillery",
+    "category": "keywords",
+    "name": "Artillery",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f4e",
+      "index_id": "00a85b38-a930-4260-bde5-b1d2a0c5a1f2"
+    },
+    "data": {
+      "keywordId": "artillery",
+      "name": "Artillery",
+      "description": "<p>The attack can target non-hidden units behind cover (even full cover) and any cover is calculated from above the target rather than from your position to the target.</p>"
+    },
+    "relationships": {},
+    "source_hash": "a1c62b59016190de48428b77f6fbda429611613471eb5e3954715791c8463a3e"
+  },
+  {
+    "stable_id": "keyword--augment",
+    "category": "keywords",
+    "name": "Augment",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f9d",
+      "index_id": "07432b3c-1945-4698-be43-758981fd5a49"
+    },
+    "data": {
+      "keywordId": "augment",
+      "name": "Augment",
+      "description": "<p>An attack that has been modified by an Augment effect cannot be modified again and given another Augment effect.</p>"
+    },
+    "relationships": {},
+    "source_hash": "b45ed10ce13d9e13cb51373869b33a00b03ce29ca813a8f6fe9e55e194d96e73"
+  },
+  {
+    "stable_id": "keyword--blanketing",
+    "category": "keywords",
+    "name": "Blanketing",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f92",
+      "index_id": "17337955-a183-457b-bb2b-9194d3cd8231"
+    },
+    "data": {
+      "keywordId": "blanketing",
+      "name": "Blanketing",
+      "description": "<p>When you make an attack against multiple targets with this ability, roll one accuracy and damage check that applies against all targets.</p>"
+    },
+    "relationships": {},
+    "source_hash": "01e3d9c77f569918351dcfe97a5a9e32c93d7e0bb30247439dd032123f3c7b96"
+  },
+  {
+    "stable_id": "keyword--bleeding",
+    "category": "keywords",
+    "name": "Bleeding",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f89",
+      "index_id": "5c7a0fd6-6356-4570-b8cb-5aa6799fb0ab"
+    },
+    "data": {
+      "keywordId": "bleeding",
+      "name": "Bleeding",
+      "description": "<p>You take 1d6 true damage at the start of your turn.</p>"
+    },
+    "relationships": {},
+    "source_hash": "637537f7c2396ce4c884a12c58d88f13589a9c258e2b2ff21cc3ddea903246c6"
+  },
+  {
+    "stable_id": "keyword--blinded",
+    "category": "keywords",
+    "name": "Blinded",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f4f",
+      "index_id": "1d9bb50b-1e8d-4fb4-890c-cb7a8041667e"
+    },
+    "data": {
+      "keywordId": "blinded",
+      "name": "Blinded",
+      "description": "<p>Blinded characters suffer a -X penalty to their accuracy rolls where X is the blinded value. If they are Blinded for 3 or higher, they cannot make any ranged attacks without first locating a target through another means than sight. If they are blinded for 5 or higher, they also cannot gain Sure Hit on their attacks.</p>"
+    },
+    "relationships": {},
+    "source_hash": "02ba755f3dbdedf4ae7434f89962fe4e6ce54084853cc6730c04381fcfad6080"
+  },
+  {
+    "stable_id": "keyword--block-crush",
+    "category": "keywords",
+    "name": "Block Crush",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f59",
+      "index_id": "d488b696-b5f6-4644-adb5-fc83766547cd"
+    },
+    "data": {
+      "keywordId": "block-crush",
+      "name": "Block Crush",
+      "description": "<p>Block Crush attacks ignore any additional Guard gained from the Block action.</p>"
+    },
+    "relationships": {},
+    "source_hash": "38e8ef6007031f94220e570c0dfc8eadbb6dab9accbd870171a315f765a986f2"
+  },
+  {
+    "stable_id": "keyword--broken",
+    "category": "keywords",
+    "name": "Broken",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f7b",
+      "index_id": "d023900c-ae49-4e0f-9d70-ef7402eaebcf"
+    },
+    "data": {
+      "keywordId": "broken",
+      "name": "Broken",
+      "description": "<p>Only applies to equipment. Armor and shields that are broken provide no benefit or negatives. Weapons that are broken can only be used as an improvised weapon.</p>"
+    },
+    "relationships": {},
+    "source_hash": "a2a48351d4651fb277deadee70b5390c4fcb0858446aa325a1ef01dbf873d90c"
+  },
+  {
+    "stable_id": "keyword--burning",
+    "category": "keywords",
+    "name": "Burning",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f50",
+      "index_id": "a1145a79-b6f8-4e1c-8242-46bc19db0fb8"
+    },
+    "data": {
+      "keywordId": "burning",
+      "name": "Burning",
+      "description": "<p>A Burning character takes X damage at the end of their turn. They may spend 1 AP to remove this effect.</p>"
+    },
+    "relationships": {},
+    "source_hash": "b1a6389e77969a1703472340247b32828df1f2451ef51108134672e35c2a55d6"
+  },
+  {
+    "stable_id": "keyword--challenge",
+    "category": "keywords",
+    "name": "Challenge",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f51",
+      "index_id": "2fa2f790-dc31-454e-b773-053fcb5ae4e5"
+    },
+    "data": {
+      "keywordId": "challenge",
+      "name": "Challenge",
+      "description": "<p>If a challenged character does not include the challenger as a target when making an attack, they provoke a melee attack of opportunity from the challenger.</p><p>This does not trigger if the challenged target makes an attack of opportunity or if the challenger is not a target due effects such as charm.</p>"
+    },
+    "relationships": {},
+    "source_hash": "6ae25100778c5f791d4d5d9bf307b12d32d67713400ec8ad52443f32e3dd297a"
+  },
+  {
+    "stable_id": "keyword--charm",
+    "category": "keywords",
+    "name": "Charm",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f87",
+      "index_id": "ce1b49be-edb8-4bdc-ad57-9f840b1f708c"
+    },
+    "data": {
+      "keywordId": "charm",
+      "name": "Charm",
+      "description": "<p>You may not willingly target the charmer with attacks unless you have no other valid targets (excluding allies) for the attack. Your AoE abilities that target allies also include the charmer, and your AoE attacks or abilities that exclude allies also exclude the charmer.</p>"
+    },
+    "relationships": {},
+    "source_hash": "98f35e0c82bede8ce17842065c7e1ad1cd99fead64616da6432df2fcb7ad0d34"
+  },
+  {
+    "stable_id": "keyword--circuit",
+    "category": "keywords",
+    "name": "Circuit",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f96",
+      "index_id": "4442e9d7-2f08-4318-9358-893f7f785227"
+    },
+    "data": {
+      "keywordId": "circuit",
+      "name": "Circuit",
+      "description": "<p>The first time each combat you use an ability with this keyword, the mana cost is reduced by 1. Afterwards, this mana cost reduction is removed from all abilities with this keyword.</p>"
+    },
+    "relationships": {},
+    "source_hash": "84e0c4b4b191c5a2a31e8ecbb44ed0269438364a5de4636b86f9eae0bfcebe52"
+  },
+  {
+    "stable_id": "keyword--combo",
+    "category": "keywords",
+    "name": "Combo",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f52",
+      "index_id": "6cffc4e1-6836-4399-b258-21b0add51ae0"
+    },
+    "data": {
+      "keywordId": "combo",
+      "name": "Combo",
+      "description": "<p>Combo abilities gain a bonus when used directly after another ability. Combo abilities remain valid until you spend AP on a different ability or action.</p>"
+    },
+    "relationships": {},
+    "source_hash": "bae60eb519a8962105b7b7afff20bc0b29c3aa12296cc82229f493f7dbcbccfe"
+  },
+  {
+    "stable_id": "keyword--concentration",
+    "category": "keywords",
+    "name": "Concentration",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f53",
+      "index_id": "ec7daaed-57a5-4b75-aecd-9879c96fd131"
+    },
+    "data": {
+      "keywordId": "concentration",
+      "name": "Concentration",
+      "description": "<p>A character can only have 1 Concentration effect active at the same time. They may drop a Concentration effect during their turn for 0 AP. When a character gets Downed, they lose Concentration.</p>"
+    },
+    "relationships": {},
+    "source_hash": "e97354dde170982fa10a96da57164940a3d4def757185c974126ee9b74840462"
+  },
+  {
+    "stable_id": "keyword--crushing",
+    "category": "keywords",
+    "name": "Crushing",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f98",
+      "index_id": "0e468cf9-5779-460c-b72a-0d52e53979dc"
+    },
+    "data": {
+      "keywordId": "crushing",
+      "name": "Crushing",
+      "description": "<p>On an unblocked hit, this attack deals a minimum damage equal to your Power.</p>"
+    },
+    "relationships": {},
+    "source_hash": "a5fe0cac2d60b21e38c4c0ca077d3ec234d582b56b71a36a36307196f1cf6942"
+  },
+  {
+    "stable_id": "keyword--daze",
+    "category": "keywords",
+    "name": "Daze",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f54",
+      "index_id": "f29356fb-274d-4365-ba2b-0aea6a18a2db"
+    },
+    "data": {
+      "keywordId": "daze",
+      "name": "Daze",
+      "description": "<p>You immediately lose 1 AP. If you do not have any AP, you instead regen 1 less AP at the start of your next turn. A dazed target becomes immune to Daze until the end of their next turn.</p>"
+    },
+    "relationships": {},
+    "source_hash": "50fcf001ac1b3186ac2257dce8fcdd49c9f20fcb39ada0960f851e86cd750483"
+  },
+  {
+    "stable_id": "keyword--disarm",
+    "category": "keywords",
+    "name": "Disarm",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f55",
+      "index_id": "5de332e1-9e01-4ca7-b9ef-1e69cf4d0c79"
+    },
+    "data": {
+      "keywordId": "disarm",
+      "name": "Disarm",
+      "description": "<p>When disarmed, you cannot make weapon attacks with the weapon you were wielding when you got disarmed. You must draw the weapon again to use it when the Disarm ends. Unarmed attacks are unaffected by Disarm.</p>"
+    },
+    "relationships": {},
+    "source_hash": "270fc0ce6efc1998b9b4bafe2db2d63f219d48d8d236dadf5ec9082fd351bdf4"
+  },
+  {
+    "stable_id": "keyword--divine",
+    "category": "keywords",
+    "name": "Divine",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a42d088b1ae8a568e9cc7f8",
+      "index_id": "4ae1988f-63e7-4abb-8d59-f994618207f4"
+    },
+    "data": {
+      "keywordId": "divine",
+      "name": "Divine",
+      "description": "<p>If you took the Divine's Chosen breakthrough, this ability's damage type becomes your chosen divine's damage type instead of Holy.</p>"
+    },
+    "relationships": {},
+    "source_hash": "437156ef3873a290bfa47dc809315bc0bc325dddb4a0604b5cc3c14f6467fbfd"
+  },
+  {
+    "stable_id": "keyword--domain",
+    "category": "keywords",
+    "name": "Domain",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f8b",
+      "index_id": "79e00490-6478-44bb-abc9-d9118eac6d96"
+    },
+    "data": {
+      "keywordId": "domain",
+      "name": "Domain",
+      "description": "<p>A domain area spell. Only one domain area may be active at a location at a time.</p>"
+    },
+    "relationships": {},
+    "source_hash": "a41fdcdafe1f4cbc832763bb325960db4c8d9d6572c4c3647f348c9b070986b8"
+  },
+  {
+    "stable_id": "keyword--enchantment",
+    "category": "keywords",
+    "name": "Enchantment",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f81",
+      "index_id": "7bb8b8b9-fb07-467f-a68a-3bce52282ddd"
+    },
+    "data": {
+      "keywordId": "enchantment",
+      "name": "Enchantment",
+      "description": "<p>An enchantment is placed on a weapon. A weapon can only have 1 enchantment at the same time. If an enchantment is placed on a channeling weapon, it transfer the enchantment properties to any spells cast while holding it.</p>"
+    },
+    "relationships": {},
+    "source_hash": "87f6fa51ab35bf1542405c2971d38872f84c6fb68a6903229cfab126546af22d"
+  },
+  {
+    "stable_id": "keyword--esoteric-art",
+    "category": "keywords",
+    "name": "Esoteric Art",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f84",
+      "index_id": "5da14c6e-8d2a-44b5-84fa-2b685167d302"
+    },
+    "data": {
+      "keywordId": "esoteric-art",
+      "name": "Esoteric Art",
+      "description": "<p>You can only use 1 ability with this keyword or with the Secret Art keyword per encounter.&nbsp;</p>"
+    },
+    "relationships": {},
+    "source_hash": "233b46f8f442e6c28eecaafeb0641391fce02d38c6d377ff63090f5ee1bb927c"
+  },
+  {
+    "stable_id": "keyword--expose",
+    "category": "keywords",
+    "name": "Expose",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f86",
+      "index_id": "8e376297-5f7b-4a60-83fe-e273135ac448"
+    },
+    "data": {
+      "keywordId": "expose",
+      "name": "Expose",
+      "description": "<p>The target's crit threshold is reduced by the expose value (base 1, reducing normal crit threshold from 20→19). Stacks with katana's reduced crit threshold and other abilities which lower the crit threshold of the user.</p><p>Expose is removed once the target is critically hit (regardless of if they defend or not)</p>"
+    },
+    "relationships": {},
+    "source_hash": "c42360a48910468869920ff1c00ec11aa773c1a5c3a0297fdf99aad8632f5689"
+  },
+  {
+    "stable_id": "keyword--fire",
+    "category": "keywords",
+    "name": "Fire",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f56",
+      "index_id": "20a8fe36-099e-4b67-820a-2d5110263145"
+    },
+    "data": {
+      "keywordId": "fire",
+      "name": "Fire",
+      "description": "<p>Spells and attacks that deal Fire damage may ignite flammable, unattended objects.</p>"
+    },
+    "relationships": {},
+    "source_hash": "be9cbfca415276370af8df488db2cd6586e2260ee8603062944e863cfcc9de4d"
+  },
+  {
+    "stable_id": "keyword--flashback",
+    "category": "keywords",
+    "name": "Flashback",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f57",
+      "index_id": "e6dc65e1-dfcd-4b88-ab9b-f52ed11089e5"
+    },
+    "data": {
+      "keywordId": "flashback",
+      "name": "Flashback",
+      "description": "<p>Flashbacks are abilities that refer to an earlier time in the campaign. They reflect prior planning that the character has made to affect the current situation.</p>"
+    },
+    "relationships": {},
+    "source_hash": "79b8c001079bf55ed72daf076c2839a5b5d91696f85daa3610bc340e960ad99b"
+  },
+  {
+    "stable_id": "keyword--full-pierce",
+    "category": "keywords",
+    "name": "Full Pierce",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f58",
+      "index_id": "c5ef3c1c-7cfc-4715-9843-7c9568f23baf"
+    },
+    "data": {
+      "keywordId": "full-pierce",
+      "name": "Full Pierce",
+      "description": "<p>Full pierce attacks cannot be reduced by guard.</p>"
+    },
+    "relationships": {},
+    "source_hash": "824f7a3acd3cef121a716dccc450379e14069149f75d18d26513103486a0afc8"
+  },
+  {
+    "stable_id": "keyword--half-pierce",
+    "category": "keywords",
+    "name": "Half Pierce",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f5a",
+      "index_id": "25efada6-1d4e-4206-aab9-ac350a353102"
+    },
+    "data": {
+      "keywordId": "half-pierce",
+      "name": "Half Pierce",
+      "description": "<p>Half Pierce attacks ignore Guard, unless the target takes the Block action or Dodge action.</p>"
+    },
+    "relationships": {},
+    "source_hash": "ed5bc61a2522eac40becb4e6b7eeb89beba809096807197bfe4eebbf205d4584"
+  },
+  {
+    "stable_id": "keyword--half-rapid",
+    "category": "keywords",
+    "name": "Half Rapid",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f9e",
+      "index_id": "e1e7059e-8541-43b3-ac10-17ff84fecf32"
+    },
+    "data": {
+      "keywordId": "half-rapid",
+      "name": "Half Rapid",
+      "description": "<p>This ability may be used once on each creature every round.</p>"
+    },
+    "relationships": {},
+    "source_hash": "0f4256904b900d01983c3b5ea91141a588f3abbe6279446e71eb29b9ad576960"
+  },
+  {
+    "stable_id": "keyword--hellfire",
+    "category": "keywords",
+    "name": "Hellfire",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f9f",
+      "index_id": "1e8bb4b3-d32f-4ea8-abe3-ed067dc52319"
+    },
+    "data": {
+      "keywordId": "hellfire",
+      "name": "Hellfire",
+      "description": "<p>Hellfire functions like Burning (You take X damage at the end of your turn), but it can no longer be removed the normal way if not removed before the end of the target’s next turn. It can still be dispelled through the use of abilities.</p><p>Hellfire can be applied to enemies immune to Burning, but it can still be removed like normal even after a turn has passed. Hellfire is automatically removed at the end of the encounter.</p>"
+    },
+    "relationships": {},
+    "source_hash": "dcd6bf7a5225afef19f128af00d9c57ea00e53fa2699e98d93653b038dad54d6"
+  },
+  {
+    "stable_id": "keyword--hiding",
+    "category": "keywords",
+    "name": "Hiding",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f8e",
+      "index_id": "6d176f9b-ace1-4689-acc4-344c411d31b9"
+    },
+    "data": {
+      "keywordId": "hiding",
+      "name": "Hiding",
+      "description": "<p>While in Hiding, enemies cannot see or target you and even if they are aware of your presence, they cannot pinpoint your exact location. You lose Hiding if you move, attack or use any other ability that does not have the Stealth keyword unless that movement or attack says otherwise.</p>"
+    },
+    "relationships": {},
+    "source_hash": "e3bd3dd886841f9f44aee5d970df467d4c3ee61b205f973222cd87ded7efd476"
+  },
+  {
+    "stable_id": "keyword--illumination",
+    "category": "keywords",
+    "name": "Illumination",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f88",
+      "index_id": "2cb7e815-0e3a-4c9d-8b54-5fe40754529c"
+    },
+    "data": {
+      "keywordId": "illumination",
+      "name": "Illumination",
+      "description": "<p>The next attack against you gets an X bonus to the accuracy roll (Consumed even on a miss).</p>"
+    },
+    "relationships": {},
+    "source_hash": "c7b9e9ca854fe0168521705db71f69a75c1d1a051c1b7cfc5ed7a5843fcea902"
+  },
+  {
+    "stable_id": "keyword--immovable",
+    "category": "keywords",
+    "name": "Immovable",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f5b",
+      "index_id": "202dc4ee-51c2-4dff-a8d1-c8de3cd0ffbf"
+    },
+    "data": {
+      "keywordId": "immovable",
+      "name": "Immovable",
+      "description": "<p>While not flying, effects from other creatures that knock you prone or force you to move such as knockbacks are ineffective.</p>"
+    },
+    "relationships": {},
+    "source_hash": "5e7f29672b4bec50f07b235bda593a3b86231aee78d21f39b2ca317d049c7321"
+  },
+  {
+    "stable_id": "keyword--instant",
+    "category": "keywords",
+    "name": "Instant",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f5c",
+      "index_id": "fa291071-2630-4dfa-9626-5dc912591713"
+    },
+    "data": {
+      "keywordId": "instant",
+      "name": "Instant",
+      "description": "<p>Can be used while another action is resolving to temporarily interrupt it. The Instant ability resolves immediately and before any interrupted ability can resolve. The current action is cancelled and refunded if the target becomes invalid.</p>"
+    },
+    "relationships": {},
+    "source_hash": "1e12d5836b66046d660b53bdfc720226050559c4374fe3cfc18cd1cf2a07a8bf"
+  },
+  {
+    "stable_id": "keyword--isolated",
+    "category": "keywords",
+    "name": "Isolated",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a4369bab1ae8a568e9cc7fb",
+      "index_id": "9a5a43c0-f329-4f2a-8d8c-ad10d9e20fd9"
+    },
+    "data": {
+      "keywordId": "isolated",
+      "name": "Isolated",
+      "description": "<p>If you have no allies within 10ft of you and at least 2 enemies within 10ft of you, you are considered Isolated.</p>"
+    },
+    "relationships": {},
+    "source_hash": "e38175ffc5788b06400f94a7d47d0bc44def7ff9176e1b860217b4a393f81062"
+  },
+  {
+    "stable_id": "keyword--killing-blow",
+    "category": "keywords",
+    "name": "Killing Blow",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f5d",
+      "index_id": "550c60b9-d89f-4de8-96f5-097ed6ad7bf8"
+    },
+    "data": {
+      "keywordId": "killing-blow",
+      "name": "Killing Blow",
+      "description": "<p>Killing Blow effects trigger when reducing the HP of enemy to 0 or lower.</p><p>You cannot benefit from the same Killing Blow effect against the same target more than once.</p>"
+    },
+    "relationships": {},
+    "source_hash": "a88777d3b85bd1a144228357c116dfe3eff6bcface57261eeea8e89dcf92dd6e"
+  },
+  {
+    "stable_id": "keyword--lock-on",
+    "category": "keywords",
+    "name": "Lock On",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f5e",
+      "index_id": "67075aad-dec3-4c83-9802-92bbf7dd4331"
+    },
+    "data": {
+      "keywordId": "lock-on",
+      "name": "Lock On",
+      "description": "<p>Lock On attacks ignore the bonus from dodge.</p>"
+    },
+    "relationships": {},
+    "source_hash": "b77e0cdd0519cd640669613975d58d9b5596e2f29f19852c5b7d11e7d4f08369"
+  },
+  {
+    "stable_id": "keyword--lockstep",
+    "category": "keywords",
+    "name": "Lockstep",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f99",
+      "index_id": "68fa5644-5bdb-4e8b-bf2d-be96ef80c535"
+    },
+    "data": {
+      "keywordId": "lockstep",
+      "name": "Lockstep",
+      "description": "<p>This attack always matches the target's base evasion (including bonuses etc, but they may still dodge it like normal).</p>"
+    },
+    "relationships": {},
+    "source_hash": "94e0d895d27546873786336cb3d61ed4936ad42191724350f6b98d7c2b1c8a68"
+  },
+  {
+    "stable_id": "keyword--miracle",
+    "category": "keywords",
+    "name": "Miracle",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f5f",
+      "index_id": "afa3db7b-1d98-4bff-b5e9-50bef9420cc1"
+    },
+    "data": {
+      "keywordId": "miracle",
+      "name": "Miracle",
+      "description": "<p>A character may only cast 1 Miracle per encounter.</p>"
+    },
+    "relationships": {},
+    "source_hash": "a01fd34b80d3ae863be46c234d13f829fbb4f33b35fdf3ba556a40740a399713"
+  },
+  {
+    "stable_id": "keyword--mystic-eye",
+    "category": "keywords",
+    "name": "Mystic Eye",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f60",
+      "index_id": "e10bc7b8-fbbd-452b-be2f-8b38d533311d"
+    },
+    "data": {
+      "keywordId": "mystic-eye",
+      "name": "Mystic Eye",
+      "description": "<p>This ability is made with a Mystic Eye.</p>"
+    },
+    "relationships": {},
+    "source_hash": "2ac8e785b51a8daceea95442596eeb7eb2795a82c3e7241d81faf3e231587f5d"
+  },
+  {
+    "stable_id": "keyword--ninjutsu",
+    "category": "keywords",
+    "name": "Ninjutsu",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f61",
+      "index_id": "fe2396d3-ee76-4ed6-bb40-a7ad4d8efa41"
+    },
+    "data": {
+      "keywordId": "ninjutsu",
+      "name": "Ninjutsu",
+      "description": "<p>This ability requires two free hands. You may wield Small weapon, Saboteur threaded dagger, One-handed thrown and Sets of Missiles weapons and still count as having your hand free.</p>"
+    },
+    "relationships": {},
+    "source_hash": "93db668a1d4115deb7d7e8510ef43511443251e867393196df0f35ef3b326305"
+  },
+  {
+    "stable_id": "keyword--offstep",
+    "category": "keywords",
+    "name": "Offstep",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f90",
+      "index_id": "90f1f5a8-c03a-4f8d-a620-8af7b02b17a1"
+    },
+    "data": {
+      "keywordId": "offstep",
+      "name": "Offstep",
+      "description": "<p>Attacks against you always meet your base evasion (Including bonuses etc, but you may still dodge them like normal).</p>"
+    },
+    "relationships": {},
+    "source_hash": "8bd05e323ca1ac1a9c4697d05eeb6ce160f9da383567355021014a91e25d6ab1"
+  },
+  {
+    "stable_id": "keyword--opener",
+    "category": "keywords",
+    "name": "Opener",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f95",
+      "index_id": "0793f88a-b87f-45b0-b7e7-1642ecf82c2a"
+    },
+    "data": {
+      "keywordId": "opener",
+      "name": "Opener",
+      "description": "<p>This ability can only be used as the first action in a turn. (Paying upkeep does not count as an action)</p>"
+    },
+    "relationships": {},
+    "source_hash": "4053a21b8f132c0c1d37bf73159c83631ccac05a95fcf05a64b16053a6551a32"
+  },
+  {
+    "stable_id": "keyword--opportunistic",
+    "category": "keywords",
+    "name": "Opportunistic",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930fa1",
+      "index_id": "d3fcdaa5-032e-4e1e-af16-950271b14151"
+    },
+    "data": {
+      "keywordId": "opportunistic",
+      "name": "Opportunistic",
+      "description": "<p>You may use this ability instead of making a regular of attack of opportunity. This ability is counted as making an attack of opportunity and you don't get your regular one if you use it.</p>"
+    },
+    "relationships": {},
+    "source_hash": "d298cf263ebc603c1846d970431f0a29d5bdab35af39fe14d3fad5a8d941bac6"
+  },
+  {
+    "stable_id": "keyword--overcharge",
+    "category": "keywords",
+    "name": "Overcharge",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f62",
+      "index_id": "3ff4d097-9577-49b6-800d-9f1f6983da69"
+    },
+    "data": {
+      "keywordId": "overcharge",
+      "name": "Overcharge",
+      "description": "<p>You may spend additional AP and/or Mana to increase the power of the ability.</p>"
+    },
+    "relationships": {},
+    "source_hash": "72cf50809a78be2bf697ce34a90d6ee4f821d085ee58a4f3fc4799ed7779c147"
+  },
+  {
+    "stable_id": "keyword--pass",
+    "category": "keywords",
+    "name": "Pass",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f82",
+      "index_id": "a541b2de-0829-4cc4-9dbd-c2059e08f7e7"
+    },
+    "data": {
+      "keywordId": "pass",
+      "name": "Pass",
+      "description": "<p>You can move through enemy units for this movement.</p>"
+    },
+    "relationships": {},
+    "source_hash": "cf6e9f78c06239b3d0e1c49c542c294402306b2c4d1935677ea58b33cf46b421"
+  },
+  {
+    "stable_id": "keyword--persist",
+    "category": "keywords",
+    "name": "Persist",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f9a",
+      "index_id": "28e456c9-3b37-4704-a48f-636d67ec7163"
+    },
+    "data": {
+      "keywordId": "persist",
+      "name": "Persist",
+      "description": "<p>This effect costs +X mana to dispel. If the creature dispelling it does not use mana, it takes +X AP (or +X RP) instead.</p><p>Does not apply when they use the natural way of removing it, if possible (For example by spending 1 AP to remove a Burn).</p>"
+    },
+    "relationships": {},
+    "source_hash": "0b5ec4e3fb6bc7bc2b5770c964364e0c566218bef4b1ce99e57a444b35dc5eba"
+  },
+  {
+    "stable_id": "keyword--pinpoint",
+    "category": "keywords",
+    "name": "Pinpoint",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f94",
+      "index_id": "2ba73803-2365-41e3-9e97-be1bdc1d65ff"
+    },
+    "data": {
+      "keywordId": "pinpoint",
+      "name": "Pinpoint",
+      "description": "<p>You ignore points of the target's guard equal to your Focus. Cannot reduce guard below 0.</p>"
+    },
+    "relationships": {},
+    "source_hash": "492cccc30a86d63ee79c9701c5af2ac3b485b6a9f689004292212a4ac5483120"
+  },
+  {
+    "stable_id": "keyword--presence-concealment",
+    "category": "keywords",
+    "name": "Presence Concealment",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f7c",
+      "index_id": "37f7a6ae-322a-49c6-a034-4b90eb85053d"
+    },
+    "data": {
+      "keywordId": "presence-concealment",
+      "name": "Presence Concealment",
+      "description": "<p>You hide your mana output and aura, making it harder to detect you by magical means—Causing your spirit core to be considered 0 for the purposes of detection and aura abilities. &nbsp;In addition you gain a +5 bonus to stealth.</p>"
+    },
+    "relationships": {},
+    "source_hash": "67c675c6e0bcafddbdb91a2f4e29e2087e38ecadf1d3e0f0d358e3429fb3251d"
+  },
+  {
+    "stable_id": "keyword--prone",
+    "category": "keywords",
+    "name": "Prone",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f63",
+      "index_id": "ff3590e1-4c9a-4b26-a4c7-3bcb2195b436"
+    },
+    "data": {
+      "keywordId": "prone",
+      "name": "Prone",
+      "description": "<p>An ability with this keyword can be used while Prone with no penalty. All attacks without the Prone keyword cost +1 AP and RP while prone.</p>"
+    },
+    "relationships": {},
+    "source_hash": "e7f061f2527e1da96a65fb209debee1b0a99679f4115c69a28f30b66dd41251a"
+  },
+  {
+    "stable_id": "keyword--quick",
+    "category": "keywords",
+    "name": "Quick",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f64",
+      "index_id": "ca168d73-441f-496b-b1a8-0af1762e27f7"
+    },
+    "data": {
+      "keywordId": "quick",
+      "name": "Quick",
+      "description": "<p>The first time after using an ability with Quick, other abilities with Quick used in same turn cost +1 AP.</p>"
+    },
+    "relationships": {},
+    "source_hash": "36ba84cab59073dfa44d7762887b58b8072b908523b869d7c4e704ff69a61f74"
+  },
+  {
+    "stable_id": "keyword--rage",
+    "category": "keywords",
+    "name": "Rage",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f85",
+      "index_id": "dd923002-136f-4830-9344-42cbbb52cef1"
+    },
+    "data": {
+      "keywordId": "rage",
+      "name": "Rage",
+      "description": "<p>This ability can be used while in Rage Stance.</p>"
+    },
+    "relationships": {},
+    "source_hash": "368e50cdaf5d2e57c0fe77c204cacc526a67ae97dcb0ffb955fde8c4d03ba923"
+  },
+  {
+    "stable_id": "keyword--rapid",
+    "category": "keywords",
+    "name": "Rapid",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f65",
+      "index_id": "6e4c2928-ddae-48f7-9f79-c929e9abfbc4"
+    },
+    "data": {
+      "keywordId": "rapid",
+      "name": "Rapid",
+      "description": "<p>This ability can be used more than once per turn.</p>"
+    },
+    "relationships": {},
+    "source_hash": "741971603fa10330f60cdf560a080a83989296d870b56a514e0019692051def4"
+  },
+  {
+    "stable_id": "keyword--regrowth",
+    "category": "keywords",
+    "name": "Regrowth",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930fa0",
+      "index_id": "f90f0ce0-18d7-4af7-82b3-1fbf110cb26a"
+    },
+    "data": {
+      "keywordId": "regrowth",
+      "name": "Regrowth",
+      "description": "<p>You heal for 3+Focus (of the one who applied it) at the start of your turn.</p>"
+    },
+    "relationships": {},
+    "source_hash": "96945535d1ae590f86590ebd35a61e075a4b3eb1cc6388766f77031dea879bcd"
+  },
+  {
+    "stable_id": "keyword--root",
+    "category": "keywords",
+    "name": "Root",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f66",
+      "index_id": "1fd87cd9-f9db-4fae-8ddd-2c2f3a1284b4"
+    },
+    "data": {
+      "keywordId": "root",
+      "name": "Root",
+      "description": "<p>You cannot move and your evasion when taking the Dodge reaction is changed to 13 + Agility (rounded down)</p>"
+    },
+    "relationships": {},
+    "source_hash": "66c6ebb4a5728c422a8725d2ba5662a5ff58bb9f47fe0217725eb2a8273fa6e3"
+  },
+  {
+    "stable_id": "keyword--safe",
+    "category": "keywords",
+    "name": "Safe",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f97",
+      "index_id": "0e6c5ba2-7f7e-40b4-aaae-3cebf2e04b2d"
+    },
+    "data": {
+      "keywordId": "safe",
+      "name": "Safe",
+      "description": "<p>This spell and/or attack does not provoke attacks of opportunity.</p>"
+    },
+    "relationships": {},
+    "source_hash": "e7f4431e54fbe11222b700a8d6c629ae15340e5eee3db8433ffaa91e77b8387a"
+  },
+  {
+    "stable_id": "keyword--sanctify",
+    "category": "keywords",
+    "name": "Sanctify",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f9c",
+      "index_id": "3a552029-2889-464b-b037-38ac98580b65"
+    },
+    "data": {
+      "keywordId": "sanctify",
+      "name": "Sanctify",
+      "description": "<p>Attacks against you that hit heal an enemy attacker by 3+the applier's focus. After this triggers, the stacks of this debuff are reduced by 1.</p><p>An attacker at full HP may choose not to trigger the effect.</p>"
+    },
+    "relationships": {},
+    "source_hash": "e931aea6d3f722f4f9a63615d96aa2c246d973eda34fc100eb59a60172edec87"
+  },
+  {
+    "stable_id": "keyword--scatter",
+    "category": "keywords",
+    "name": "Scatter",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f91",
+      "index_id": "52ecee25-6b45-4e64-9cf2-7c516b771f08"
+    },
+    "data": {
+      "keywordId": "scatter",
+      "name": "Scatter",
+      "description": "<p>When you make an attack against multiple targets with this ability, roll a separate accuracy and damage check against each target.</p>"
+    },
+    "relationships": {},
+    "source_hash": "9518fad10e9a224e3581e8467b1115a0d58a578d6df3c3689df4f7c17f530767"
+  },
+  {
+    "stable_id": "keyword--secret-art",
+    "category": "keywords",
+    "name": "Secret Art",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f67",
+      "index_id": "adfc9176-039b-4f2f-828e-cd14573451aa"
+    },
+    "data": {
+      "keywordId": "secret-art",
+      "name": "Secret Art",
+      "description": "<p>You can only use 1 ability with this keyword or with the Esoteric Art keyword per encounter.&nbsp;</p>"
+    },
+    "relationships": {},
+    "source_hash": "eb5fa0643e2073547845aeaf851cf26484dd929e2814086f01ff9ad3e3a5c494"
+  },
+  {
+    "stable_id": "keyword--setup",
+    "category": "keywords",
+    "name": "Setup",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f68",
+      "index_id": "0db22031-edae-49eb-8a2b-01680c7fe3dc"
+    },
+    "data": {
+      "keywordId": "setup",
+      "name": "Setup",
+      "description": "<p>Setup attacks can be completed by spending AP in the following turn. While charging the attack, no other AP actions can be taken and attacks against you gain the Trick Attack keyword. You may cancel a setup attack instead of finishing it and don't need to spend the remaining AP. Setup attacks cannot activate before the start of your next turn and you cannot use the Prepare action on Setup abilities. You may cancel a setup attack at any time by spending 0 RP. You must spend at least 1 AP to begin charging a setup attack.</p>"
+    },
+    "relationships": {},
+    "source_hash": "2406ec1ae10217b5e44a351a3807b6f277d96af25efad70b5346730ef2b8c961"
+  },
+  {
+    "stable_id": "keyword--shaken",
+    "category": "keywords",
+    "name": "Shaken",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f69",
+      "index_id": "0bcb8fe9-7215-4793-8199-db2672365d0b"
+    },
+    "data": {
+      "keywordId": "shaken",
+      "name": "Shaken",
+      "description": "<p>The target's maximum AP is reduced by 1.</p>"
+    },
+    "relationships": {},
+    "source_hash": "98a7d093571c0167493a18403440ce06f25e72563c213c94d7accece697b6d00"
+  },
+  {
+    "stable_id": "keyword--shieldbreaker",
+    "category": "keywords",
+    "name": "Shieldbreaker",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f6a",
+      "index_id": "918abd51-5b78-4af7-8e72-474cdf443429"
+    },
+    "data": {
+      "keywordId": "shieldbreaker",
+      "name": "Shieldbreaker",
+      "description": "<p>This attack deals double damage to the HP of Shields and Temporary HP. Any carryover damage is not doubled.</p>"
+    },
+    "relationships": {},
+    "source_hash": "133da075a8413c2c454e3631a20d986c5307e1ee81fac5719ebc93c3b9b4c640"
+  },
+  {
+    "stable_id": "keyword--sickened",
+    "category": "keywords",
+    "name": "Sickened",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f79",
+      "index_id": "a34dacc0-1b1c-4813-9bde-6af795344267"
+    },
+    "data": {
+      "keywordId": "sickened",
+      "name": "Sickened",
+      "description": "<p>When making a roll that uses Focus, Power, Agility or Toughness, they are treated as 1 lower.</p>"
+    },
+    "relationships": {},
+    "source_hash": "36be53415a71bfdc5d0469e97cd9cde78f4a182632d9bc5c62f3f63b650e3e68"
+  },
+  {
+    "stable_id": "keyword--sidestep",
+    "category": "keywords",
+    "name": "Sidestep",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f6b",
+      "index_id": "cbe95f38-cc4d-4a67-8c13-0cf7774ee434"
+    },
+    "data": {
+      "keywordId": "sidestep",
+      "name": "Sidestep",
+      "description": "<p>Your movement does not provoke attacks of opportunities.</p>"
+    },
+    "relationships": {},
+    "source_hash": "82c8492c3611bcf32862255dbb539041e62250e1825e67e40ddcab67ee869ec3"
+  },
+  {
+    "stable_id": "keyword--slow",
+    "category": "keywords",
+    "name": "Slow",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f6c",
+      "index_id": "009c28db-9ead-4a10-8b0f-58552e3e327c"
+    },
+    "data": {
+      "keywordId": "slow",
+      "name": "Slow",
+      "description": "<p>Your movement speed is halved.</p>"
+    },
+    "relationships": {},
+    "source_hash": "7bebee501a45db828de54ad3f98fac5c908fa1f8bcc05aa66fc1686aa45953db"
+  },
+  {
+    "stable_id": "keyword--soaked",
+    "category": "keywords",
+    "name": "Soaked",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f7f",
+      "index_id": "60962ad3-ab10-41e4-95bd-f668ee6b4167"
+    },
+    "data": {
+      "keywordId": "soaked",
+      "name": "Soaked",
+      "description": "<p>A soaked target takes X additional damage when taking Lighting damage.</p>"
+    },
+    "relationships": {},
+    "source_hash": "5a136f467690985c9b5c8eed81df0620dc06a2954571056471bfbdf2f91afec0"
+  },
+  {
+    "stable_id": "keyword--song",
+    "category": "keywords",
+    "name": "Song",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f6d",
+      "index_id": "d136875f-9ba2-4d44-9d53-d6d61dd1b291"
+    },
+    "data": {
+      "keywordId": "song",
+      "name": "Song",
+      "description": "<p>A character can only have 1 Song active at the same time.</p>"
+    },
+    "relationships": {},
+    "source_hash": "7ccf697007b37902c86e55c22a04c717507a7b8d89983db82fa27af8212bd088"
+  },
+  {
+    "stable_id": "keyword--sound",
+    "category": "keywords",
+    "name": "Sound",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f6e",
+      "index_id": "1d4c9d83-92f9-4c8f-97a0-03364af0d89d"
+    },
+    "data": {
+      "keywordId": "sound",
+      "name": "Sound",
+      "description": "<p>This ability's effect is based around sound. Those who can't hear it are unaffected.</p>"
+    },
+    "relationships": {},
+    "source_hash": "ad564c102d0edaf63906c1f273a79ce15d694c6a1db20bc459749d8be05ebb6c"
+  },
+  {
+    "stable_id": "keyword--spell",
+    "category": "keywords",
+    "name": "Spell",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f80",
+      "index_id": "4c06100e-0210-4287-a782-0fce51327591"
+    },
+    "data": {
+      "keywordId": "spell",
+      "name": "Spell",
+      "description": "<p>This ability is considered a spell. Unless stated otherwise, it will provoke attacks of opportunity.</p>"
+    },
+    "relationships": {},
+    "source_hash": "1ec65473b45b2e607e89cf53334be70c86af76358a9c84d3ca5b6b8e929d203f"
+  },
+  {
+    "stable_id": "keyword--stacking",
+    "category": "keywords",
+    "name": "Stacking",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f8c",
+      "index_id": "ddc35d94-ab34-4134-9f4c-9f756d314802"
+    },
+    "data": {
+      "keywordId": "stacking",
+      "name": "Stacking",
+      "description": "<p>Abilities with this keyword give stacks of something. You can only gain stacks of 1 thing with this keyword a the same time. Upon gaining a stack of a different kind, your original stacks are lost.</p>"
+    },
+    "relationships": {},
+    "source_hash": "17de274a6c10758835301bebba0947d8a4b51d6f38d8abcafa1f4e835a78ee44"
+  },
+  {
+    "stable_id": "keyword--stagger",
+    "category": "keywords",
+    "name": "Stagger",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f8f",
+      "index_id": "c6c37243-7354-489c-bc7c-d8a254d38109"
+    },
+    "data": {
+      "keywordId": "stagger",
+      "name": "Stagger",
+      "description": "<p>A character inflicted with Stagger has their evasion reduced by X, where X is the Stagger value.</p>"
+    },
+    "relationships": {},
+    "source_hash": "1bc0e32a042d56fa8ec7c0a60aad52c1d261ea0dd19c50344d8146267696690a"
+  },
+  {
+    "stable_id": "keyword--stance",
+    "category": "keywords",
+    "name": "Stance",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f6f",
+      "index_id": "4f1b555a-cf53-42a9-9b43-818c43115fe9"
+    },
+    "data": {
+      "keywordId": "stance",
+      "name": "Stance",
+      "description": "<p>Only 1 Stance ability can be active at the same time.</p>"
+    },
+    "relationships": {},
+    "source_hash": "8f43343fcd44ed01222d1bbe075e4c1541f14b15b9183cff93ef87cf6336a9d3"
+  },
+  {
+    "stable_id": "keyword--static",
+    "category": "keywords",
+    "name": "Static",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f70",
+      "index_id": "ee475527-8a40-43ba-87aa-d45f6655d785"
+    },
+    "data": {
+      "keywordId": "static",
+      "name": "Static",
+      "description": "<p>At the end of your next turn, you deal X lightning damage to all allies within 5ft of you.</p>"
+    },
+    "relationships": {},
+    "source_hash": "10eb26942690dbaab792052e3f3d706bf3f53f31856f157d388ad8c355bdf8a0"
+  },
+  {
+    "stable_id": "keyword--stealth",
+    "category": "keywords",
+    "name": "Stealth",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f8d",
+      "index_id": "13a42b5c-ea37-4d56-bc5c-6c2909a3d0ca"
+    },
+    "data": {
+      "keywordId": "stealth",
+      "name": "Stealth",
+      "description": "<p>This ability does not pull you out of Hiding. You must still be in low cover after using this ability to remain in Hiding.</p>"
+    },
+    "relationships": {},
+    "source_hash": "0eaa0684729b8d536d2b0d1b8f665953c613497ef9c69dca35f5d642aa0c32e2"
+  },
+  {
+    "stable_id": "keyword--strafe",
+    "category": "keywords",
+    "name": "Strafe",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930fa2",
+      "index_id": "43ec950b-b2a6-417c-bf4a-5457f855405f"
+    },
+    "data": {
+      "keywordId": "strafe",
+      "name": "Strafe",
+      "description": "<p>You must have moved at least the Strafe distance towards the target before making an attack with this keyword.</p>"
+    },
+    "relationships": {},
+    "source_hash": "ef0aefbfc89b6aee9a0ea1488254f76880914a75abca39665b5cb6f46599f8d7"
+  },
+  {
+    "stable_id": "keyword--stun",
+    "category": "keywords",
+    "name": "Stun",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f71",
+      "index_id": "44993b6e-f93f-4121-9980-b607f4dc4d81"
+    },
+    "data": {
+      "keywordId": "stun",
+      "name": "Stun",
+      "description": "<p>Your AP, AP recovery and RP is set to 0 when afflicted by this. When it ends, you regain any unused RP lost from this effect.</p>"
+    },
+    "relationships": {},
+    "source_hash": "c5ddf0f5916bd5c3641b65e22c1cbf5d5e52778e790693e59364876ffa6910a2"
+  },
+  {
+    "stable_id": "keyword--summon",
+    "category": "keywords",
+    "name": "Summon",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f72",
+      "index_id": "490f3e8f-98b8-47ab-a41f-aefa26bc8fd8"
+    },
+    "data": {
+      "keywordId": "summon",
+      "name": "Summon",
+      "description": "<p>This ability counts towards your maximum summon limit. You can only have 2 summons active at the same time.</p><p>A summon does not count as a valid target for abilities that require a ‘willing’ ally.</p>"
+    },
+    "relationships": {},
+    "source_hash": "639849901a65839eb3067e081653cefd13fef68cb98a3c834678fb1a18822b24"
+  },
+  {
+    "stable_id": "keyword--sunder",
+    "category": "keywords",
+    "name": "Sunder",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f83",
+      "index_id": "ad06fb6c-a6a8-4cdc-b62c-9162f8442cc0"
+    },
+    "data": {
+      "keywordId": "sunder",
+      "name": "Sunder",
+      "description": "<p>A character inflicted with Sunder has their guard reduced by X, where X is the Sunder value.</p>"
+    },
+    "relationships": {},
+    "source_hash": "f6eeef07361d57d0c6dbbed6eb4e69795ca409fbeb5b015b67f2c0fbc6576a94"
+  },
+  {
+    "stable_id": "keyword--sure-hit",
+    "category": "keywords",
+    "name": "Sure Hit",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f73",
+      "index_id": "5232e3cf-4b87-48b7-a53f-d522d1a4036b"
+    },
+    "data": {
+      "keywordId": "sure-hit",
+      "name": "Sure Hit",
+      "description": "<p>Sure hit attacks always hit and do not require an accuracy roll, but they automatically miss against targets with full cover.</p>"
+    },
+    "relationships": {},
+    "source_hash": "c4367d066027d44b70bdacb53d25b71d2300fb4a41e0428f17c0e810122d979c"
+  },
+  {
+    "stable_id": "keyword--teleport",
+    "category": "keywords",
+    "name": "Teleport",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f7a",
+      "index_id": "a9056be5-02dd-471b-a01c-a23bf213d242"
+    },
+    "data": {
+      "keywordId": "teleport",
+      "name": "Teleport",
+      "description": "<p>You teleport instead of moving normally. Teleportation does not provoke Attacks of Opportunity and ignores most forms of slows, roots and grapples. You need to see where you teleport to, but can otherwise ignore difficult terrain and solid objects in the way. Unless stated otherwise, you only move yourself and your belongings when teleporting, not other creatures you might be touching.</p>"
+    },
+    "relationships": {},
+    "source_hash": "11425ffee0cdba594d8bb16aab82d6504c3ea43a4aacc5c5e5c4880b5933fa67"
+  },
+  {
+    "stable_id": "keyword--toxic",
+    "category": "keywords",
+    "name": "Toxic",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f9b",
+      "index_id": "9b904e8f-b318-41d0-a151-61171ae874eb"
+    },
+    "data": {
+      "keywordId": "toxic",
+      "name": "Toxic",
+      "description": "<p>A character suffering from Toxic takes 1d6 Full Pierce Poison damage at the start of their turn.</p>"
+    },
+    "relationships": {},
+    "source_hash": "3d700c6ca31eb7dc5463d8b12fd16e0a46d9de4c4fc2fc7ff229556185983764"
+  },
+  {
+    "stable_id": "keyword--transformation",
+    "category": "keywords",
+    "name": "Transformation",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f7d",
+      "index_id": "040f0d4c-cb8c-481c-94c9-7cdeb3032bdc"
+    },
+    "data": {
+      "keywordId": "transformation",
+      "name": "Transformation",
+      "description": "<p>You can only have one transformation effect active at one time.</p>"
+    },
+    "relationships": {},
+    "source_hash": "eec40f7045a71c138922b152e97cbdbfbd4dd0d7a001b5a14a40bd3355806a71"
+  },
+  {
+    "stable_id": "keyword--trick-attack",
+    "category": "keywords",
+    "name": "Trick Attack",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f74",
+      "index_id": "f0712a24-568b-43f9-a3bb-832bb66af172"
+    },
+    "data": {
+      "keywordId": "trick-attack",
+      "name": "Trick Attack",
+      "description": "<p>The target of the attack must spend double RP to react to a Trick Attack.</p>"
+    },
+    "relationships": {},
+    "source_hash": "0c0a0b5f3f9debd599e604886b2de5b75c2b5a55f529ae314b3576fe10b60fa5"
+  },
+  {
+    "stable_id": "keyword--type",
+    "category": "keywords",
+    "name": "Type",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f8a",
+      "index_id": "c8e4fdb6-7948-43a6-9ec3-a764096599f2"
+    },
+    "data": {
+      "keywordId": "type",
+      "name": "Type",
+      "description": "<p>You can only be 1 ‘type’ at the same time.&nbsp;</p>"
+    },
+    "relationships": {},
+    "source_hash": "145934b243bb8e7ee5729bfb572af30e50fcfc8a3ca1088a15457d860d1bab56"
+  },
+  {
+    "stable_id": "keyword--unarmed-strike",
+    "category": "keywords",
+    "name": "Unarmed Strike",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f75",
+      "index_id": "d0e8aacb-546b-4123-ba4c-9331ae27cf31"
+    },
+    "data": {
+      "keywordId": "unarmed-strike",
+      "name": "Unarmed Strike",
+      "description": "<p>This ability must be made with an unarmed attack.</p>"
+    },
+    "relationships": {},
+    "source_hash": "10d9d7776f171dae6222de13aefe50eab1db0499de6613969dd2f80ca822544b"
+  },
+  {
+    "stable_id": "keyword--unbalanced",
+    "category": "keywords",
+    "name": "Unbalanced",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f76",
+      "index_id": "fd712af4-2392-4bd9-b51c-25296f06f1b2"
+    },
+    "data": {
+      "keywordId": "unbalanced",
+      "name": "Unbalanced",
+      "description": "<p>Your next attack that costs AP (even 0 AP) costs 1 extra AP.</p>"
+    },
+    "relationships": {},
+    "source_hash": "6fbf15eaac2e1f934e1ef43cb183422e4915eabb775726f780901056f4141497"
+  },
+  {
+    "stable_id": "keyword--upkeep",
+    "category": "keywords",
+    "name": "Upkeep",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f77",
+      "index_id": "c17863ed-20ca-4cbc-8456-40c3dd824fd8"
+    },
+    "data": {
+      "keywordId": "upkeep",
+      "name": "Upkeep",
+      "description": "<p>You may choose to pay the cost at the beginning of your turn. If you don't, the effect is terminated.</p><p>While downed, you cannot pay upkeep.</p>"
+    },
+    "relationships": {},
+    "source_hash": "97109c738f5d5ba2625ef91131c317337e2b989795f45d98e050f4f6e49c3747"
+  },
+  {
+    "stable_id": "keyword--weakened",
+    "category": "keywords",
+    "name": "Weakened",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/keywords",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930f78",
+      "index_id": "d70a6b0e-dce7-4a4d-8852-6e50d0cd8787"
+    },
+    "data": {
+      "keywordId": "weakened",
+      "name": "Weakened",
+      "description": "<p>Your maximum AP goes down to 2 and maximum RP goes down to 1. When it ends, you regain any unused RP lost from this effect.</p>"
+    },
+    "relationships": {},
+    "source_hash": "9e186ef6a26ecf5d629df036e2232f2107934c47c6a9814e1e468af8857bdf08"
+  }
+]

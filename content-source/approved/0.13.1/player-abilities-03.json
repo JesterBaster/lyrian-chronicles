@@ -1,0 +1,2896 @@
+[
+  {
+    "stable_id": "key-ability--knight-of-yggdrasil",
+    "category": "player-abilities",
+    "name": "Knight of Yggdrasil",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d46",
+      "index_id": "94dc6db0-6882-467b-8524-338d2f944c4d"
+    },
+    "data": {
+      "abilityId": "knight-of-yggdrasil",
+      "name": "Knight of Yggdrasil",
+      "benefit1": "You may use Fluttering Blade.",
+      "benefit2": "Once per round, if an enemy is holding a weapon affected by your Fluttering Blade, you may spend 1 RP to deal Heavy Full Pierce damage to it.",
+      "benefit3": "When a Fluttering Blade you created is within 5ft of you, you may spend 0 AP to grab hold of it with a free hand.",
+      "benefit4": "",
+      "associatedAbility": "ca8b73da-9f28-4043-80a6-dc5b4c6f9872"
+    },
+    "relationships": {
+      "associated_ability": "ability--fluttering-blade",
+      "classes": [
+        {
+          "class": "class--fae-knight",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "7466b951e996e86d89558b403d606fbbe2c06eb1ec30d030ff8bcc057f2a5975"
+  },
+  {
+    "stable_id": "key-ability--knight-of-yggdrasil-ii",
+    "category": "player-abilities",
+    "name": "Knight of Yggdrasil II",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d47",
+      "index_id": "a8c49df0-7463-45f3-be5e-63d42bef133b"
+    },
+    "data": {
+      "abilityId": "knight-of-yggdrasil-ii",
+      "name": "Knight of Yggdrasil II",
+      "benefit1": "You may use Fae Knight Style: Willow Stance",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "6f63aea8-4474-413e-9e29-d7ad4309f05f"
+    },
+    "relationships": {
+      "associated_ability": "ability--fae-knight-style-willow-stance",
+      "classes": [
+        {
+          "class": "class--fae-knight-willow-style",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "2b74e7957fe3095ef4151704b573d9e1c738bee93dd513372c98e111c7bd7417"
+  },
+  {
+    "stable_id": "key-ability--light-cavalry",
+    "category": "player-abilities",
+    "name": "Light Cavalry",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cfa",
+      "index_id": "39e08bd4-19a4-4a21-af4a-a2fd6ca84e44"
+    },
+    "data": {
+      "abilityId": "light-cavalry",
+      "name": "Light Cavalry",
+      "benefit1": "While mounted and while you and your mount both wear light armor or no armor, you ignore natural difficult terrain.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--nomad",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "b9670dd03bdcae739c30db3a90cd34aadf0090f57ff41202967ffe8ac6cdf877"
+  },
+  {
+    "stable_id": "key-ability--lightning-strikes-twice",
+    "category": "player-abilities",
+    "name": "Lightning Strikes Twice",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ce0",
+      "index_id": "eee1d60e-1d8e-40b7-8d08-9136c0669e6a"
+    },
+    "data": {
+      "abilityId": "lightning-strikes-twice",
+      "name": "Lightning Strikes Twice",
+      "benefit1": "When the Static you apply deals damage to an enemy, that enemy becomes afflicted with Static X, where X is the value of the Static that damaged it.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--electromaster",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "8a136a9930418c48f82c0e341e86101edc1a73167f2ad4380a238ddc19a6a8d0"
+  },
+  {
+    "stable_id": "key-ability--lightning-weapon",
+    "category": "player-abilities",
+    "name": "Lightning Weapon",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cec",
+      "index_id": "7ab28c17-b35d-4f2f-8d2d-f671ee110bb0"
+    },
+    "data": {
+      "abilityId": "lightning-weapon",
+      "name": "Lightning Weapon",
+      "benefit1": "When attacking with a weapon, you may choose to have the weapon deal Lightning Damage instead of its normal damage type. You must declare your chosen damage type before making the accuracy roll.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--flash-star-blade-style",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "0acc4eedd34f66bae3e67ce7e1d3daa0b1374c4e4c6e0e889ef091fa8246850f"
+  },
+  {
+    "stable_id": "key-ability--living-cover",
+    "category": "player-abilities",
+    "name": "Living Cover",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d22",
+      "index_id": "b3538102-e9f7-4c95-aa6f-fe8832814e91"
+    },
+    "data": {
+      "abilityId": "living-cover",
+      "name": "Living Cover",
+      "benefit1": "While mounted, any ally within 5ft of you may use you as Low Cover. If an attack would miss them because of your cover benefit, the attack instead hits you.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--knight-paramount",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "221f5ae37e4890d8eecda9f6db46286bc4fc768332151056b98391cb8f84aabb"
+  },
+  {
+    "stable_id": "key-ability--look-of-death",
+    "category": "player-abilities",
+    "name": "Look of Death",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d34",
+      "index_id": "8a452db6-5faa-49d7-8c79-ea1ad746d952"
+    },
+    "data": {
+      "abilityId": "look-of-death",
+      "name": "Look of Death",
+      "benefit1": "You may use Perish.",
+      "benefit2": "One of your eyes becomes an Destruction Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "003f15ef-ac1a-414f-8059-d63bedeb47f0"
+    },
+    "relationships": {
+      "associated_ability": "ability--perish",
+      "classes": [
+        {
+          "class": "class--mystic-eyes-of-destruction",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "cf5c44f50480dffc062d3cd2d735e6d0c3abfeb120285c4113b990c80eadeb94"
+  },
+  {
+    "stable_id": "key-ability--lord-s-dominion",
+    "category": "player-abilities",
+    "name": "Lord's Dominion",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cf3",
+      "index_id": "a0d43f25-2960-4493-a30e-dfc764aba120"
+    },
+    "data": {
+      "abilityId": "lord-s-dominion",
+      "name": "Lord's Dominion",
+      "benefit1": "You can partially resist the effect of the sun. You may now spend 1 round in the sun before you start taking damage. Spending a turn outside of the sun resets this effect, giving you another round where you do not suffer the negative effects.",
+      "benefit2": "You gain +1 Vampire Lord bonus to Presence.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--vampire-lord",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "9a0a15329d45c2ade5fc437e53dac0f8d6508b11203d4ab4dbf2e95d0b4d2f69"
+  },
+  {
+    "stable_id": "key-ability--mage-armor",
+    "category": "player-abilities",
+    "name": "Mage Armor",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ca4",
+      "index_id": "645192af-84c9-4dee-beb9-491590ae82bf"
+    },
+    "data": {
+      "abilityId": "mage-armor",
+      "name": "Mage Armor",
+      "benefit1": "You may use Mage Armor",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "e837fc6d-f762-4369-84e8-a36bf264c521"
+    },
+    "relationships": {
+      "associated_ability": "ability--mage-armor",
+      "classes": [
+        {
+          "class": "class--battle-mage",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "1444cdaa6f2fc133e2319f253cbbd1b936f3a31ae23a66bce99e7b57ef3e7c77"
+  },
+  {
+    "stable_id": "key-ability--mage-knight",
+    "category": "player-abilities",
+    "name": "Mage Knight",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cf9",
+      "index_id": "da47f44d-4060-4ffd-815d-7bfd8bbe180d"
+    },
+    "data": {
+      "abilityId": "mage-knight",
+      "name": "Mage Knight",
+      "benefit1": "You may also use Canter after casting a spell.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--mage-knight",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "17ee31072803a7a7e8c058ef76f0e0ed8ab73b5c03b5fe4cf26b9b54211adae0"
+  },
+  {
+    "stable_id": "key-ability--mage-of-the-tides",
+    "category": "player-abilities",
+    "name": "Mage of the Tides",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d1c",
+      "index_id": "1e45d3bd-18f5-4d2d-9384-ad7796949060"
+    },
+    "data": {
+      "abilityId": "mage-of-the-tides",
+      "name": "Mage of the Tides",
+      "benefit1": "You can use Blue Tide.",
+      "benefit2": "You gain Elemental Mastery: Water",
+      "benefit3": "You gain the ability to walk on water and skate across its surface—every 10ft of water surface movement only costs 5ft of movement.",
+      "benefit4": "",
+      "associatedAbility": "268bb8cf-7a75-49fc-862a-19e9576a108b"
+    },
+    "relationships": {
+      "associated_ability": "ability--blue-tide",
+      "classes": [
+        {
+          "class": "class--hydromancer",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "4df93b32c250e74b428e339dbb430b930978db7c6e69a092b3e42d4e6f32994b"
+  },
+  {
+    "stable_id": "key-ability--mage-s-journey",
+    "category": "player-abilities",
+    "name": "Mage's Journey",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930c9c",
+      "index_id": "37fe1444-7c50-4872-a921-eee266503966"
+    },
+    "data": {
+      "abilityId": "mage-s-journey",
+      "name": "Mage's Journey",
+      "benefit1": "You gain proficiency in the Channeling weapon group's weapons and gain Arcane Mastery. Mastery of an element allows you to use it in Channeling weapon attacks and use it to perform minor tricks relating to it.",
+      "benefit2": "You gain +5 skill points in the Magic skill. You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
+      "benefit3": "You can use Sense Magic.",
+      "benefit4": "",
+      "associatedAbility": "cbfc49c9-90e8-4940-a09b-a2d913d42080"
+    },
+    "relationships": {
+      "associated_ability": "ability--sense-magic",
+      "classes": [
+        {
+          "class": "class--mage",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "1bf0cd96dbe96ab0039f3f3593cb323e3d76cc65f991cc124ba8129aafaf315a"
+  },
+  {
+    "stable_id": "key-ability--magic-resistance",
+    "category": "player-abilities",
+    "name": "Magic Resistance",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930c9e",
+      "index_id": "b6fb8a83-6436-4246-993b-3c929ae491fa"
+    },
+    "data": {
+      "abilityId": "magic-resistance",
+      "name": "Magic Resistance",
+      "benefit1": "You gain a +2 Anti-Mage bonus to your saves against Spells.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": null
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--anti-mage",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "493270a30435b0868c44394d630d84843be80a7b2d8f32aa1326c1c2f360a33d"
+  },
+  {
+    "stable_id": "key-ability--maid-training",
+    "category": "player-abilities",
+    "name": "Maid Training",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d27",
+      "index_id": "18c04cca-b655-45cf-868e-06f4d69d32b0"
+    },
+    "data": {
+      "abilityId": "maid-training",
+      "name": "Maid Training",
+      "benefit1": "You gain proficiency in staves (broom), small weapons, sets of missiles and light armor.",
+      "benefit2": "You gain 5 skill points to spend in Athletics, Stealth, Roguecraft, Medicine, Common Knowledge, Linguistics, Appraise, History, Perception, Insight, Survival or Intimidation. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
+      "benefit3": "You may use Graceful Service.",
+      "benefit4": "",
+      "associatedAbility": "fd369348-a806-47d8-9d62-0c2230771ae6"
+    },
+    "relationships": {
+      "associated_ability": "ability--graceful-service",
+      "classes": [
+        {
+          "class": "class--maid",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "74fcda224e793b1596939d880178ce4d45a8850378673e5986d1d5fe3af00da2"
+  },
+  {
+    "stable_id": "key-ability--mana-sight",
+    "category": "player-abilities",
+    "name": "Mana Sight",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cc0",
+      "index_id": "111eadce-c322-4eb1-a1e4-71b7225c2188"
+    },
+    "data": {
+      "abilityId": "mana-sight",
+      "name": "Mana Sight",
+      "benefit1": "You may use Mana Sight.",
+      "benefit2": "One of your eyes becomes an Life Perception Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.",
+      "benefit3": "When making an attack with the Mystic Eye keyword that use the Life Perception eye, you ignore 1 point of guard.",
+      "benefit4": "",
+      "associatedAbility": "f7e8cabb-aa1d-4b99-81ca-ea4dc212c2f9"
+    },
+    "relationships": {
+      "associated_ability": "ability--mana-sight",
+      "classes": [
+        {
+          "class": "class--wave-palm-style",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "8c1ff0a165cdfbcb613fc53d293d2c62a3cc45b70cfad528e4723249cb2a36f6"
+  },
+  {
+    "stable_id": "key-ability--martial-artist-s-journey",
+    "category": "player-abilities",
+    "name": "Martial Artist's Journey",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cce",
+      "index_id": "5ec49f45-f281-48f2-bacf-9a31c8498d9a"
+    },
+    "data": {
+      "abilityId": "martial-artist-s-journey",
+      "name": "Martial Artist's Journey",
+      "benefit1": "Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient.",
+      "benefit2": "You gain +5 skill points to spend in Athletics, Perception, Insight, Medicine, Intimidation or a relevant Expert Knowledge skill (By DM approval). You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
+      "benefit3": "You can use Discipline.",
+      "benefit4": "",
+      "associatedAbility": "9db4a877-8d93-460c-87a0-2609a36ddfbb"
+    },
+    "relationships": {
+      "associated_ability": "ability--discipline",
+      "classes": [
+        {
+          "class": "class--martial-artist",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "3826105ca8889043c62a2c9b4ddceca91bb5a23be730b64fd7b6cf8775cd42e0"
+  },
+  {
+    "stable_id": "key-ability--mass-index",
+    "category": "player-abilities",
+    "name": "Mass Index",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d30",
+      "index_id": "37358196-6881-49a6-acff-db47d8a8df5e"
+    },
+    "data": {
+      "abilityId": "mass-index",
+      "name": "Mass Index",
+      "benefit1": "Your spells with the Gravity keyword deal extra damage to the target based on its size. They deal an additional 1 damage to large creatures and an additional 3 to Huge creatures.",
+      "benefit2": "You may use Gravity Crush.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "ae0d84da-a321-46d0-9556-231ac2abcfbb"
+    },
+    "relationships": {
+      "associated_ability": "ability--gravity-crush",
+      "classes": [
+        {
+          "class": "class--graviturge",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "6fdffdc71d246c7ae342e88664bf00c7e906cd560dc46a8f3ed036a2405ec779"
+  },
+  {
+    "stable_id": "key-ability--medic-s-journey",
+    "category": "player-abilities",
+    "name": "Medic's Journey",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d44",
+      "index_id": "7735a9e1-c61f-434e-b58f-640e06c612e3"
+    },
+    "data": {
+      "abilityId": "medic-s-journey",
+      "name": "Medic's Journey",
+      "benefit1": "You gain proficiency in small weapons, set of missiles and light armor.",
+      "benefit2": "You gain +5 skill points to spend in Medicine. You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
+      "benefit3": "You gain the benefits of First Response.",
+      "benefit4": "",
+      "associatedAbility": "0e2cca4a-edc5-4f1a-a64b-6508cf7df15c"
+    },
+    "relationships": {
+      "associated_ability": "ability--first-response",
+      "classes": [
+        {
+          "class": "class--medic",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "340c306b92e4c3f89020efb143c57b5974ed36b1306cff28fac4e6454ed5ffa9"
+  },
+  {
+    "stable_id": "key-ability--mending",
+    "category": "player-abilities",
+    "name": "Mending",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d20",
+      "index_id": "5a266851-1dbe-43e8-8b9f-84ee0609c922"
+    },
+    "data": {
+      "abilityId": "mending",
+      "name": "Mending",
+      "benefit1": "You may spend an EP to restore a Broken item. Some items (such as consumables) cannot be repaired (GM’s discretion).",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--temporal-trickster",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "205279b0cd15e48c675177de60f79c41f53da6c6afa2a15241284e22cfb4eaac"
+  },
+  {
+    "stable_id": "key-ability--merchant-lord",
+    "category": "player-abilities",
+    "name": "Merchant Lord",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d42",
+      "index_id": "d86e8c96-49b0-4b4f-bc7c-83a627e81d03"
+    },
+    "data": {
+      "abilityId": "merchant-lord",
+      "name": "Merchant Lord",
+      "benefit1": "Procurement Limit increases to 3000 and you can procure materials that cost <= 3000 clim per ingot/block.",
+      "benefit2": "You gain proficiency in Pistols.",
+      "benefit3": "Upon mastering this class, the Procurement Limit increases to 4000 and you can procure materials that cost <= 4000 clim per ingot/block.",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--mogul",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "45bcd39d18b37cbe11c69b1be8c65240ea2baa0c0a19ac0e804684287ed0c2d3"
+  },
+  {
+    "stable_id": "key-ability--mime-s-journey",
+    "category": "player-abilities",
+    "name": "Mime's Journey",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d39",
+      "index_id": "b5fb9bc9-83a3-43f8-aed8-bc2e84de9f71"
+    },
+    "data": {
+      "abilityId": "mime-s-journey",
+      "name": "Mime's Journey",
+      "benefit1": "You gain proficiency in 1 common and 1 specialized weapon",
+      "benefit2": "You gain +5 skill points to spend in Art. You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
+      "benefit3": "As a mime, you’re not allowed to speak. If you speak during an encounter, you cannot use any Mime abilities until the end of the encounter.",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--mime",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "330489e91a1117b08477aecf638a9105e7c98c77365827b73a81e4ff30db6d2c"
+  },
+  {
+    "stable_id": "key-ability--mission-control",
+    "category": "player-abilities",
+    "name": "Mission Control",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cfc",
+      "index_id": "20393e2d-5b39-43a9-9a3f-4439b0e697d8"
+    },
+    "data": {
+      "abilityId": "mission-control",
+      "name": "Mission Control",
+      "benefit1": "You gain proficiency in the Aetherie Sensory Station.",
+      "benefit2": "You may use Mind Connection.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "53afdce0-f6f0-441a-876c-cd25a63f7d6d"
+    },
+    "relationships": {
+      "associated_ability": "ability--mind-connection",
+      "classes": [
+        {
+          "class": "class--aetherie",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "64a46971d8183fade3a970a4335a0f2416f3510ab4854ed264fcfe45ca9c37fa"
+  },
+  {
+    "stable_id": "key-ability--mounted-basics",
+    "category": "player-abilities",
+    "name": "Mounted Basics",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cf6",
+      "index_id": "94c15b56-8597-40bf-9460-31f54a65965e"
+    },
+    "data": {
+      "abilityId": "mounted-basics",
+      "name": "Mounted Basics",
+      "benefit1": "You gain proficiency in Polearms, Lances, Light armor, Shields and one other common weapon group of your choice.",
+      "benefit2": "You gain 5 skill points in Riding. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
+      "benefit3": "You may use Spirit Jump.",
+      "benefit4": "If you have mastered cavalier, your mount can withstand one lethal blow. If your mount would be reduced to 0 HP or below by an attack, it instead is reduced to 1 HP. Only works once per encounter.",
+      "associatedAbility": "6db0edca-5258-45c5-af4b-fa64c93d0f25"
+    },
+    "relationships": {
+      "associated_ability": "ability--spirit-jump",
+      "classes": [
+        {
+          "class": "class--cavalier",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "e36cbb9191481d188879b108a3abf773093b89798c41ccf0a84c74d45478d062"
+  },
+  {
+    "stable_id": "key-ability--natural-cycle",
+    "category": "player-abilities",
+    "name": "Natural Cycle",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d43",
+      "index_id": "945b10eb-5f6e-4bcd-8ab2-cbed8cc9c069"
+    },
+    "data": {
+      "abilityId": "natural-cycle",
+      "name": "Natural Cycle",
+      "benefit1": "At the start of your turn you may pay upkeep 1 mana for each Regrowth you have on an ally. If you do, you may extend its duration by 1 turn. You can choose this upkeep separately for each Regrowth.",
+      "benefit2": "You may use Regrowth.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "e30efab3-a95b-4976-b200-bf914fdacb29"
+    },
+    "relationships": {
+      "associated_ability": "ability--regrowth",
+      "classes": [
+        {
+          "class": "class--naturalist",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "8cb04e256c02fd49f4ad4293b3f2ea533be3fac0721f6598d15298a33dc7c262"
+  },
+  {
+    "stable_id": "key-ability--nightstalker",
+    "category": "player-abilities",
+    "name": "Nightstalker",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cbb",
+      "index_id": "abde20c5-ca37-4ee9-a68f-ea2ec34c9367"
+    },
+    "data": {
+      "abilityId": "nightstalker",
+      "name": "Nightstalker",
+      "benefit1": "You gain 60ft darkvision, allowing you to see perfectly in the dark even without a source of light. If you already have darkvision, the range of it improves by 60ft.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": null
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--shadow-thief",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "c2a81438754a700c4b3fb4e9d7a77f0094805e731d328f6783689b188cc9910e"
+  },
+  {
+    "stable_id": "key-ability--ninja-style",
+    "category": "player-abilities",
+    "name": "Ninja Style",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cb5",
+      "index_id": "bb197651-56c9-4d9a-b9e1-960d3c02dde0"
+    },
+    "data": {
+      "abilityId": "ninja_style",
+      "name": "Ninja Style",
+      "benefit1": "You gain proficiency in both Small Weapons and Sets of Missiles.",
+      "benefit2": "You may use Ninja Run.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "9c7bfadd-dae1-4da1-b95e-e6d4d62ff1e6"
+    },
+    "relationships": {
+      "associated_ability": "ability--ninja-run",
+      "classes": [
+        {
+          "class": "class--ninja",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "6375b42f094a6ba43db18e91a4ccc8fd671b6b43857593edf0f2e1b357d55b2c"
+  },
+  {
+    "stable_id": "key-ability--ninja-techniques",
+    "category": "player-abilities",
+    "name": "Ninja Techniques",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d21",
+      "index_id": "7f15c71c-b289-4c65-b5ad-1417e9d27d70"
+    },
+    "data": {
+      "abilityId": "ninja-techniques",
+      "name": "Ninja Techniques",
+      "benefit1": "Your Ninja Run now lasts for the entire turn.",
+      "benefit2": "You may use Genjutsu Kai",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "51ee50de-0fbe-4189-bd67-2cde1a56165b"
+    },
+    "relationships": {
+      "associated_ability": "ability--genjutsu-kai",
+      "classes": [
+        {
+          "class": "class--jonin",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "33c5e506f22498b87f8bdd7146719ed03729feb87701f477a72d46e698a08cc6"
+  },
+  {
+    "stable_id": "key-ability--on-my-terms",
+    "category": "player-abilities",
+    "name": "On my terms",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cf2",
+      "index_id": "2906419d-6b27-4747-94e5-21c85fb55eb6"
+    },
+    "data": {
+      "abilityId": "on-my-terms",
+      "name": "On my terms",
+      "benefit1": "While you are at 1 HP or higher, damage (including true damage) you take during your own turn cannot reduce you below 1 HP.",
+      "benefit2": "When you roll a 1 on a skill check, something unexpected may happen (GM's discretion). This is usually bad, but it could also turn out to be a blessing in disguise.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--curse-knight",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "bcbbc6c983bda8fc4434f51dda16cf7bc8189ff5f211dcf7bafa30d1484bb1c2"
+  },
+  {
+    "stable_id": "key-ability--ore-hunter",
+    "category": "player-abilities",
+    "name": "Ore Hunter",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d05",
+      "index_id": "5b416233-7ffd-4f24-adeb-57c92bd6d07d"
+    },
+    "data": {
+      "abilityId": "ore-hunter",
+      "name": "Ore Hunter",
+      "benefit1": "You can gather Tier 2 mining outcrops.",
+      "benefit2": "You are an expert and tying knots. Using rope, you can secure yourself to objects and safely rappel down to investigate down cliffsides.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--excavator",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "205613f67e47cac143f6ece2697978979c409608cb55a7e89b230353e1e1b48f"
+  },
+  {
+    "stable_id": "key-ability--overwhelming-critical",
+    "category": "player-abilities",
+    "name": "Overwhelming Critical",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d14",
+      "index_id": "7e58bb5f-1060-4bde-8a3c-bb4f27552a99"
+    },
+    "data": {
+      "abilityId": "overwhelming-critical",
+      "name": "Overwhelming Critical",
+      "benefit1": "When you roll a critical hit while making a Heavy attack with a Two-Handed weapon you may use Aftershock even if the attack didn’t miss. This use doesn’t count against the normal use limit of it and this effect still applies even if the critical hit was blocked or otherwise defended against.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--reaver",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "6ea152e76b52ab0950eddd3560350e5f590d37e04178b6c53dd20028aef5116d"
+  },
+  {
+    "stable_id": "key-ability--past-self",
+    "category": "player-abilities",
+    "name": "Past Self",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ca8",
+      "index_id": "de8bc2b7-3a6b-42b7-b2ec-5062ac7bb966"
+    },
+    "data": {
+      "abilityId": "past-self",
+      "name": "Past Self",
+      "benefit1": "You may use Past Self.",
+      "benefit2": "Using the Delay encounter start action does not consume your encounter start action use and may use it multiple times.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "29952616-a6e8-4442-94eb-afff28e44c16"
+    },
+    "relationships": {
+      "associated_ability": "ability--past-self",
+      "classes": [
+        {
+          "class": "class--chronofighter",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "9bd63440e57b0d69901a622987ed72b428ee331002bd7f120e20ea2c0090502f"
+  },
+  {
+    "stable_id": "key-ability--peddler-of-wares",
+    "category": "player-abilities",
+    "name": "Peddler of Wares",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d41",
+      "index_id": "0237f460-9c96-45ea-af84-9bc1217360a1"
+    },
+    "data": {
+      "abilityId": "peddler-of-wares",
+      "name": "Peddler of Wares",
+      "benefit1": "Your in-combat burden capacity increases by 1.",
+      "benefit2": "You gain proficiency in 1 common weapon group.",
+      "benefit3": "You gain +5 skill points in Riding. You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
+      "benefit4": "Upon mastering this class, the Procurement Limit increases to 2000 and you can procure materials that cost <= 2000 clim per ingot/block.",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--merchant",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "b67617cbb601768d769199081c694a8e1bd81933b13ab7e80b55d241fb8237cd"
+  },
+  {
+    "stable_id": "key-ability--perfect-mimicry",
+    "category": "player-abilities",
+    "name": "Perfect Mimicry",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cdd",
+      "index_id": "23da5aae-6215-4248-953d-91a3286c6d2f"
+    },
+    "data": {
+      "abilityId": "perfect-mimicry",
+      "name": "Perfect Mimicry",
+      "benefit1": "When given enough preparation time and enough knowledge about the subject, you are able to perfectly impersonate another person (GM’s discretion on what is ‘enough’). When disguised in this way, other people are unable to see through your disguise through normal means unless you act or say things that are strange enough to draw suspicions. This disguise is partially magical in nature, but cannot make up for obvious size or shape differences.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--trickster",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "fec762dd49f8a3e1cd5461ef2aabcca3067b2d189eeb15dd6d2b24674d664516"
+  },
+  {
+    "stable_id": "key-ability--phantom-thief",
+    "category": "player-abilities",
+    "name": "Phantom Thief",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d12",
+      "index_id": "4a258d2b-b5f5-4ea5-ac37-abf3a5ae24d7"
+    },
+    "data": {
+      "abilityId": "phantom-thief",
+      "name": "Phantom Thief",
+      "benefit1": "You are able to disable and modify t2 and t3 bounded fields.",
+      "benefit2": "You may use Stolen Skill.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "1fb943e0-15c3-4980-a4ab-2872d6d8f80c"
+    },
+    "relationships": {
+      "associated_ability": "ability--stolen-skill",
+      "classes": [
+        {
+          "class": "class--phantom-thief",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "d898438b22e05f4db8ae5d23d67641ab61aa29ed9a444abb3def641d80aebe03"
+  },
+  {
+    "stable_id": "key-ability--pierrot-s-journey",
+    "category": "player-abilities",
+    "name": "Pierrot's Journey",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d3a",
+      "index_id": "3ae4f0c0-0102-4805-a260-00d6c66d8d33"
+    },
+    "data": {
+      "abilityId": "pierrot-s-journey",
+      "name": "Pierrot's Journey",
+      "benefit1": "You gain proficiency in small weapons, bludgeoning weapons and light armor.",
+      "benefit2": "You gain +5 skill points to spend in Art. You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
+      "benefit3": "You gain 2 Damage Reduction against pies.",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--pierrot",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "3626a7c8dd19e7a4cd8736b776af9d47e99f159e713e6de2db999fe47086bc56"
+  },
+  {
+    "stable_id": "key-ability--puppet-grandmaster",
+    "category": "player-abilities",
+    "name": "Puppet Grandmaster",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d2e",
+      "index_id": "d2a5fcf5-5ec5-4c74-90a1-050e2e16f7d7"
+    },
+    "data": {
+      "abilityId": "puppet-grandmaster",
+      "name": "Puppet Grandmaster",
+      "benefit1": "You can summon puppets under your control using Summon Piece. While these puppets follow movement rules as described in the abilities and are always Medium size, they can appear as whatever you wish, decided when you take this class.",
+      "benefit2": "As an EP action, you may change the appearance of your pieces.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "646b5751-19fe-4b72-8991-cce46836a0cd"
+    },
+    "relationships": {
+      "associated_ability": "ability--summon-piece",
+      "classes": [
+        {
+          "class": "class--grandmaster",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "87bf1c56cb65f1a6377dcf22dd2b774e11141333ffd836b0d98829625537c094"
+  },
+  {
+    "stable_id": "key-ability--raise-undead",
+    "category": "player-abilities",
+    "name": "Raise Undead",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cb4",
+      "index_id": "9ddef49c-2213-4412-9a48-a7f72a34eadf"
+    },
+    "data": {
+      "abilityId": "raise_undead",
+      "name": "Raise Undead",
+      "benefit1": "You may use Raise Undead.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "613f9256-6e12-46da-b183-071f85cfb26c"
+    },
+    "relationships": {
+      "associated_ability": "ability--raise-undead",
+      "classes": [
+        {
+          "class": "class--necromancer",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "94143525b12c3864ef0c89d788031d25a99e7213dc6fb1b83d2e182c1662e349"
+  },
+  {
+    "stable_id": "key-ability--ranger-s-journey",
+    "category": "player-abilities",
+    "name": "Ranger's Journey",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cd0",
+      "index_id": "dfff15be-3c7c-4d88-baf6-934ac35681ff"
+    },
+    "data": {
+      "abilityId": "ranger-s-journey",
+      "name": "Ranger's Journey",
+      "benefit1": "You gain proficiency in light and medium armor, a common ranged weapon group and a common melee weapon group.",
+      "benefit2": "You gain 5 points in one of the following: Appraise, Athletics, Stealth, Medicine, Perception, Survival, Animal Husbandry or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
+      "benefit3": "You can use Status Assessment.",
+      "benefit4": "",
+      "associatedAbility": "bdd832c5-e394-46bd-83f4-bc26d284de17"
+    },
+    "relationships": {
+      "associated_ability": "ability--status-assessment",
+      "classes": [
+        {
+          "class": "class--ranger",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "40fb3d8bdac5a6551054f33ba1e33b5d4bf59f0a207c68170b740c67f90e0e89"
+  },
+  {
+    "stable_id": "key-ability--rapid-blasts",
+    "category": "player-abilities",
+    "name": "Rapid Blasts",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cd6",
+      "index_id": "130eead4-b34e-4729-a86c-17e21c53afcd"
+    },
+    "data": {
+      "abilityId": "rapid-blasts",
+      "name": "Rapid Blasts",
+      "benefit1": "You may use Ki Blast II.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "bd6d6a19-72bb-4c4b-8a3e-4e13cf615cba"
+    },
+    "relationships": {
+      "associated_ability": "ability--ki-blast-ii",
+      "classes": [
+        {
+          "class": "class--zen-warrior",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "5b3dba5a866f24c28940d3eb7ad79f7fa96d00f87fac5aa4e2f4f276a6e1ca25"
+  },
+  {
+    "stable_id": "key-ability--receive-oracle",
+    "category": "player-abilities",
+    "name": "Receive Oracle",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cd4",
+      "index_id": "3c020c07-111e-4476-a87b-763050fb54e1"
+    },
+    "data": {
+      "abilityId": "receive_oracle",
+      "name": "Receive Oracle",
+      "benefit1": "You may use Receive Oracle.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "b94357a0-f9aa-46e2-940d-08db4414ef58"
+    },
+    "relationships": {
+      "associated_ability": "ability--receive-oracle",
+      "classes": [
+        {
+          "class": "class--oracle",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "4baf39b81a41c1bb309c14c4d0d8dba20315c28a17cd657ab83383bd24be5e5a"
+  },
+  {
+    "stable_id": "key-ability--recover-power",
+    "category": "player-abilities",
+    "name": "Recover Power",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cda",
+      "index_id": "fcf45dbb-0674-4a1e-9e8c-bfab7a370d3a"
+    },
+    "data": {
+      "abilityId": "recover-power",
+      "name": "Recover Power",
+      "benefit1": "Any temporary HP on you at the end of an encounter is converted into healing. You regain HP equal to half the value of temporary HP you have remaining.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--shieldwarden",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "2b8a76d64815c32a35367ce02531829682ac3b1f638b8f2f6dd375b2a4596c42"
+  },
+  {
+    "stable_id": "key-ability--resheathe",
+    "category": "player-abilities",
+    "name": "Resheathe",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ccb",
+      "index_id": "d51aca36-f58d-4e65-ac14-1fc0c54877e4"
+    },
+    "data": {
+      "abilityId": "resheathe",
+      "name": "Resheathe",
+      "benefit1": "You may use Resheathe.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "554df130-95d9-4a33-bc63-5745c6161daf"
+    },
+    "relationships": {
+      "associated_ability": "ability--resheathe",
+      "classes": [
+        {
+          "class": "class--sword-saint",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "1e263bc4524e8ff9fe572edbfaf1a8d28827cf89543304c9d49418963463ab79"
+  },
+  {
+    "stable_id": "key-ability--rock-and-stone",
+    "category": "player-abilities",
+    "name": "Rock and Stone",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d04",
+      "index_id": "f2d35fa5-937c-47b7-aa25-9c8ebf0e1ac1"
+    },
+    "data": {
+      "abilityId": "rock-and-stone",
+      "name": "Rock and Stone",
+      "benefit1": "You gain proficiency in 1 armor or in the shield. You also gain proficiency in the Pickaxe specialty weapon.",
+      "benefit2": "You gain the ability to gather mining outcrops.",
+      "benefit3": "You gain the ability to create Ingots as an Errand.  See item: Blacksmithing Materials. You may use an IP to do this 4 times instead.",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--miner",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "da149f1019a08a907c2958a3e85de535f58f6e3aebd9ac6d4f53ffd0e494993a"
+  },
+  {
+    "stable_id": "key-ability--rogue-s-journey",
+    "category": "player-abilities",
+    "name": "Rogue's Journey",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cd2",
+      "index_id": "3e25b973-c187-4f30-8c13-b2a980e0134d"
+    },
+    "data": {
+      "abilityId": "rogue-s-journey",
+      "name": "Rogue's Journey",
+      "benefit1": "You gain proficiency with light armor and with one of the following weapon groups: Small weapons, Light swords, Dueling weapons and Set of missiles.",
+      "benefit2": "You gain +5 skill points in Roguecraft and +5 skill points to spend in Athletics, Stealth, Deception, Perception, Insight, Negotiation, Intimidation or a relevant Expert Knowledge skill (By DM Approval).  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
+      "benefit3": "You can use Feint.",
+      "benefit4": "",
+      "associatedAbility": "7e9dca18-d206-424e-aea8-7cf7ea0913a3"
+    },
+    "relationships": {
+      "associated_ability": "ability--feint",
+      "classes": [
+        {
+          "class": "class--rogue",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "30b6870012b4369efaab70c757492fa01f9cbfc6a2b43e0c4f8a913b1fdd9412"
+  },
+  {
+    "stable_id": "key-ability--rolling-thunder",
+    "category": "player-abilities",
+    "name": "Rolling Thunder",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d23",
+      "index_id": "a2a9267d-2f8d-422e-aafb-ce740ea9e96d"
+    },
+    "data": {
+      "abilityId": "rolling-thunder",
+      "name": "Rolling Thunder",
+      "benefit1": "After moving at least 40ft in a turn, your next unarmed strike that turn gains a +2 Transcendent Lightning bonus to accuracy and damage.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--transcendent-lightning-style",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "02e0998ac0aeb47a75e67d95f2715635ec260b2375a1c0df80e446db7152ee5c"
+  },
+  {
+    "stable_id": "key-ability--saboteur",
+    "category": "player-abilities",
+    "name": "Saboteur",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cb8",
+      "index_id": "5a488fec-4783-42ca-a7c0-228dfc8a3e03"
+    },
+    "data": {
+      "abilityId": "saboteur",
+      "name": "Saboteur",
+      "benefit1": "You gain proficiency in Saboteur Thread Daggers.",
+      "benefit2": "You may use Presence Concealment.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "1e26e66c-34c5-49dc-b99f-68b157be8aee"
+    },
+    "relationships": {
+      "associated_ability": "ability--presence-concealment",
+      "classes": [
+        {
+          "class": "class--saboteur",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "3198a0f5bb279e788b39f20746899a4a06f1281fa8e1779891cd9e30bb95cd83"
+  },
+  {
+    "stable_id": "key-ability--sanctioned-healer",
+    "category": "player-abilities",
+    "name": "Sanctioned Healer",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d3f",
+      "index_id": "feb4c2bc-8a42-48e1-b8bc-a8aa67fff6be"
+    },
+    "data": {
+      "abilityId": "sanctioned-healer",
+      "name": "Sanctioned Healer",
+      "benefit1": "When you attack an enemy with Sanctify, you may choose not to trigger the effect of it.",
+      "benefit2": "You gain Elemental Mastery: Holy",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--sanctioner",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "2e3dd736060b0fb8cecd48a5f22e1b6dac5285d9f8449e1d97066e9e83b386e9"
+  },
+  {
+    "stable_id": "key-ability--scholar-of-tactics",
+    "category": "player-abilities",
+    "name": "Scholar of Tactics",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cbd",
+      "index_id": "8e74a43b-36ff-4e96-b655-ab755d6a13e2"
+    },
+    "data": {
+      "abilityId": "scholar-of-tactics",
+      "name": "Scholar of Tactics",
+      "benefit1": "You gain proficiency in Pistols.",
+      "benefit2": "You may use Take Cover!.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "3832172d-0dcc-4857-8f51-3a6d4e5ce683"
+    },
+    "relationships": {
+      "associated_ability": "ability--take-cover",
+      "classes": [
+        {
+          "class": "class--tactician",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "29cb04f177a08a1befcf46c7be2a7f9e1777f198f3f13070cbb8d3a3fc1b5f37"
+  },
+  {
+    "stable_id": "key-ability--shared-darkness",
+    "category": "player-abilities",
+    "name": "Shared Darkness",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d18",
+      "index_id": "d6ae7f56-6115-4234-9609-a75c3a57aaf8"
+    },
+    "data": {
+      "abilityId": "shared-darkness",
+      "name": "Shared Darkness",
+      "benefit1": "The range of your darkvision increases by 60ft.",
+      "benefit2": "You may use Darkvision.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "6b4a182a-59ee-475f-983e-0dc0bd13b962"
+    },
+    "relationships": {
+      "associated_ability": "ability--darkvision",
+      "classes": [
+        {
+          "class": "class--shadowbringer",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "83306dbfaa50de57d176cb895117e9fa47e87fb65ba008e40ef54bac0fdc6545"
+  },
+  {
+    "stable_id": "key-ability--shield-the-fallen",
+    "category": "player-abilities",
+    "name": "Shield the Fallen",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d1e",
+      "index_id": "5d5c0dc4-0876-481a-8dd2-04f0c6f59004"
+    },
+    "data": {
+      "abilityId": "shield-the-fallen",
+      "name": "Shield the Fallen",
+      "benefit1": "You may use Shield the Fallen.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "2fff1f67-4567-40ae-814e-a94aa61a0287"
+    },
+    "relationships": {
+      "associated_ability": "ability--shield-the-fallen",
+      "classes": [
+        {
+          "class": "class--exalted-shield",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "8916d024eb19511d752e9e6825f25cf99e69b5d2e7041f39b2e4243b42a980ad"
+  },
+  {
+    "stable_id": "key-ability--shielding-fist",
+    "category": "player-abilities",
+    "name": "Shielding Fist",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d1b",
+      "index_id": "50f7b301-dbff-4617-96fa-9c4b00c9a106"
+    },
+    "data": {
+      "abilityId": "shielding-fist",
+      "name": "Shielding Fist",
+      "benefit1": "While you have at least 1 hand empty and aren't wielding a shield, you gain a +4 Shield bonus to your block.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--still-stone-style",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "e694101f36d2200471c1c28b8b4c71fd220615d84ddd3eecdd1905dbde925853"
+  },
+  {
+    "stable_id": "key-ability--shrug-it-off",
+    "category": "player-abilities",
+    "name": "Shrug it off",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ca7",
+      "index_id": "361519a0-14c3-4c4b-ac99-6e0b9d396c61"
+    },
+    "data": {
+      "abilityId": "shrug-it-off",
+      "name": "Shrug it off",
+      "benefit1": "You may use Vital Drive II.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "2c5b050a-d98f-4ea0-aea5-68865ee44652"
+    },
+    "relationships": {
+      "associated_ability": "ability--vital-drive-ii",
+      "classes": [
+        {
+          "class": "class--brawler",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "602af70b13236aed311540c47b617f73af5d592803e43e785cc30b1e40ff9bb0"
+  },
+  {
+    "stable_id": "key-ability--snipe",
+    "category": "player-abilities",
+    "name": "Snipe",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ccd",
+      "index_id": "82f32ad1-b86c-4b9f-864e-385568f3d18a"
+    },
+    "data": {
+      "abilityId": "snipe",
+      "name": "Snipe",
+      "benefit1": "You gain proficiency in Sniper Rifles.",
+      "benefit2": "If you did not move this turn or the previous turn you gain a +1d4 Snipe bonus to your accuracy roll on attacks made with a Sniper Rifle.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": null
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--sniper",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "503167c36646ba39e99001672e3e934adf339f903624550b9e2e6d1ca0873865"
+  },
+  {
+    "stable_id": "key-ability--song-without-song",
+    "category": "player-abilities",
+    "name": "Song without Song",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d1d",
+      "index_id": "cc52bb2c-351d-40c3-8a6d-138531cedaab"
+    },
+    "data": {
+      "abilityId": "song-without-song",
+      "name": "Song without Song",
+      "benefit1": "You may have 1 additional song active at the same time.",
+      "benefit2": "You learn the language 'Music'.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--mist-veil-elegy",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "9fbf6021cd9c20d14c242d7c371c6175905847ef645413ade2ae1c4e475b44eb"
+  },
+  {
+    "stable_id": "key-ability--sorcerer-s-journey",
+    "category": "player-abilities",
+    "name": "Sorcerer's Journey",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d37",
+      "index_id": "ad970e79-f0e5-48ff-988b-ad67a33a1743"
+    },
+    "data": {
+      "abilityId": "sorcerer-s-journey",
+      "name": "Sorcerer's Journey",
+      "benefit1": "You gain proficiency in Channeling Weapons and Light Armor.",
+      "benefit2": "You gain +5 skill points in Magic. You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
+      "benefit3": "You gain Arcane Mastery. Upon mastering this class, you may master an additional element of your choice.",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--sorcerer",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "2e5a58116ec00fda79d9c7bbeebe78acbd546bd3bde7560a7e36c30d8ed58117"
+  },
+  {
+    "stable_id": "key-ability--soul-absorption",
+    "category": "player-abilities",
+    "name": "Soul Absorption",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d19",
+      "index_id": "1c6fa755-467c-416b-9f20-6b7c3caf4686"
+    },
+    "data": {
+      "abilityId": "soul-absorption",
+      "name": "Soul Absorption",
+      "benefit1": "You gain Elemental Mastery: Dark",
+      "benefit2": "You may use Soul Absorption.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "a0fdd470-fcd1-4926-a37f-d97a85ad6b32"
+    },
+    "relationships": {
+      "associated_ability": "ability--soul-absorption",
+      "classes": [
+        {
+          "class": "class--dark-priest",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "d19bb15b3240097c97031c0f995d237521463feb0b11fb786cdca0ef1d69ccea"
+  },
+  {
+    "stable_id": "key-ability--soul-bond",
+    "category": "player-abilities",
+    "name": "Soul Bond",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cf1",
+      "index_id": "848b833a-73f4-4869-a46c-83bf731c4b79"
+    },
+    "data": {
+      "abilityId": "soul-bond",
+      "name": "Soul Bond",
+      "benefit1": "When you acquire this ability, choose 1 willing person. That person is treated as your Soulmate and several of the class abilities only work on your Soulmate. This cannot be changed unless your Soulmate dies.",
+      "benefit2": "Your Soulmate is always treated as your VIP for any bodyguard abilities. You may still designate another VIP as normal.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--shield-saint",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "5bac63b0e2c481e80c7e41fe6fd02786ce81cd4d2bab891b60b3960da0bdce9f"
+  },
+  {
+    "stable_id": "key-ability--sound-the-retreat",
+    "category": "player-abilities",
+    "name": "Sound the retreat",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d0f",
+      "index_id": "b4e1c618-7a10-48a2-8d2e-f87dae8b1093"
+    },
+    "data": {
+      "abilityId": "sound-the-retreat",
+      "name": "Sound the retreat",
+      "benefit1": "You may use Sound the retreat",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "dac4299e-a8fc-46cc-85c3-879ce2662fec"
+    },
+    "relationships": {
+      "associated_ability": "ability--sound-the-retreat",
+      "classes": [
+        {
+          "class": "class--strategist",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "6286942c9e50a2bf9dce9b6eef5574578ca03c7bf38691888ba9bb2fb415bf05"
+  },
+  {
+    "stable_id": "key-ability--spell-challenge",
+    "category": "player-abilities",
+    "name": "Spell Challenge",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930c9b",
+      "index_id": "8f7ad9e9-ff8f-40a6-b757-a92e4fbf8f3b"
+    },
+    "data": {
+      "abilityId": "spell-challenge",
+      "name": "Spell Challenge",
+      "benefit1": "When targeting or damaging an enemy with a spell, you may choose to inflict Challenge on them until the end of your next turn.",
+      "benefit2": "When an enemy that is Challenged by you provokes an attack of opportunity from you, you may instead use Abjurer's Blast against them. The heavy and precise version of this cost 1 RP, while the light version costs 0 RP.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": null
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--abjurer",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "0c4585cd1a78af100b44017246a0dae985263d7ee52644d5eded7f88281da86c"
+  },
+  {
+    "stable_id": "key-ability--spell-transfer",
+    "category": "player-abilities",
+    "name": "Spell Transfer",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d25",
+      "index_id": "78f6328c-43c1-4509-8524-7ae782086b91"
+    },
+    "data": {
+      "abilityId": "spell-transfer",
+      "name": "Spell Transfer",
+      "benefit1": "When you use the Create Talisman ability, an ally may spend their Errand action to use one of their spells to put on the talisman instead of your own. You only create 1 copy of this talisman per Errand action and cannot use Secret Art spells with it.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--daionmyoji",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "7582d2a8809b295f0b32c94d4db948940ff08e6cd7488f39eeebcb53ed507956"
+  },
+  {
+    "stable_id": "key-ability--spore-symbiote",
+    "category": "player-abilities",
+    "name": "Spore Symbiote",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cb2",
+      "index_id": "9b8aaca2-20d6-441e-aaed-06d7c89b3b27"
+    },
+    "data": {
+      "abilityId": "spore-symbiote",
+      "name": "Spore Symbiote",
+      "benefit1": "You can use Spore Symbiote.",
+      "benefit2": "You gain Earth Elemental Mastery.",
+      "benefit3": "You can create a cute mushroom cap hat to wear.",
+      "benefit4": "",
+      "associatedAbility": "0cf24f63-7c3e-4954-a37c-c3949b109237"
+    },
+    "relationships": {
+      "associated_ability": "ability--spore-symbiote",
+      "classes": [
+        {
+          "class": "class--mycomancer",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "588dd853defe52f9b751d880705b88b487c8b002e3981d7105b8ea4a0edf80e3"
+  },
+  {
+    "stable_id": "key-ability--status-assessment-ii",
+    "category": "player-abilities",
+    "name": "Status Assessment II",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ca0",
+      "index_id": "20f581c0-dfba-48e7-b260-76e076682337"
+    },
+    "data": {
+      "abilityId": "status-assessment-ii",
+      "name": "Status Assessment II",
+      "benefit1": "You may use Status Assessment II.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "f40ee45c-1c24-4f5c-9ec6-8c1d4602193f"
+    },
+    "relationships": {
+      "associated_ability": "ability--status-assessment-ii",
+      "classes": [
+        {
+          "class": "class--archer",
+          "slot": "keyAbility"
+        },
+        {
+          "class": "class--marksman",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "c5bb8832a9ba8226987780f3b368e2194c0285728b609a62bc34c7df7454cb02"
+  },
+  {
+    "stable_id": "key-ability--store-time",
+    "category": "player-abilities",
+    "name": "Store Time",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ce9",
+      "index_id": "aca6ea81-c8ab-4017-9a41-64cb1e2be07a"
+    },
+    "data": {
+      "abilityId": "store-time",
+      "name": "Store Time",
+      "benefit1": "You can use Store Time.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "f33a0ea1-1022-49b6-a0ad-4df2ebc5a018"
+    },
+    "relationships": {
+      "associated_ability": "ability--store-time",
+      "classes": [
+        {
+          "class": "class--chronomancer",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "421200922094f4405ecff04994796ec2aebdcdfc250058e54ba460a613022398"
+  },
+  {
+    "stable_id": "key-ability--studied-healer",
+    "category": "player-abilities",
+    "name": "Studied Healer",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cb6",
+      "index_id": "96cdedef-b044-44de-8689-be2bda03eda0"
+    },
+    "data": {
+      "abilityId": "studied-healer",
+      "name": "Studied Healer",
+      "benefit1": "You gain +5 skill points in the Religion skill.",
+      "benefit2": "Followers of your Religion are more obligated to listen to you, granting you a +5 Negotiation Bonus when dealing with them.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": null
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--priest",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "0c086b7826e8fd126ca606f53caf435b18ccdd865f7f045ec4154ec6d8c7a776"
+  },
+  {
+    "stable_id": "key-ability--stygian-comprehension",
+    "category": "player-abilities",
+    "name": "Stygian Comprehension",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d16",
+      "index_id": "b3aa8bbc-a508-4752-96c1-f8f48db26a46"
+    },
+    "data": {
+      "abilityId": "stygian-comprehension",
+      "name": "Stygian Comprehension",
+      "benefit1": "You gain Elemental Mastery: Dark",
+      "benefit2": "You may use Dark Bolt.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "d8b1c3a2-b246-44cb-8bf2-8192e51fb2c9"
+    },
+    "relationships": {
+      "associated_ability": "ability--dark-bolt",
+      "classes": [
+        {
+          "class": "class--eremancer",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "36a37995173c9c53e82f9b3e86a727d84331428e931cb5247689248f1eb21f11"
+  },
+  {
+    "stable_id": "key-ability--summon-animal",
+    "category": "player-abilities",
+    "name": "Summon Animal",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ced",
+      "index_id": "dc2137fc-f712-4c16-b470-52b237ddb268"
+    },
+    "data": {
+      "abilityId": "summon-animal",
+      "name": "Summon Animal",
+      "benefit1": "You may use Summon Animal.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "9494f15b-c0ec-4e56-8c57-6329516af37b"
+    },
+    "relationships": {
+      "associated_ability": "ability--summon-animal",
+      "classes": [
+        {
+          "class": "class--animal-summoner",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "a8011ccd2e613e16404510368048edd267dccb3c91501060f5720e16a1ac777f"
+  },
+  {
+    "stable_id": "key-ability--summoning-basics",
+    "category": "player-abilities",
+    "name": "Summoning Basics",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cef",
+      "index_id": "1e3697ea-80bc-4252-bee5-a5cd0fc0ff05"
+    },
+    "data": {
+      "abilityId": "summoning-basics",
+      "name": "Summoning Basics",
+      "benefit1": "You may channel for 10 minutes after which you arrive at the space between worlds, allowing you to interact with Eidolons that wish to meet with you.",
+      "benefit2": "You may use Attune Eidolon.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "9417f043-0cc8-4432-9d03-76dcd8cd304f"
+    },
+    "relationships": {
+      "associated_ability": "ability--attune-eidolon",
+      "classes": [
+        {
+          "class": "class--summoner",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "68d41c6015b2c1783ee99d9ebdc5ae2c3af614dcf7fc79454783b5699b5bab21"
+  },
+  {
+    "stable_id": "key-ability--superconductor",
+    "category": "player-abilities",
+    "name": "Superconductor",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ca9",
+      "index_id": "45f1d76f-e334-43ef-9643-0adc6edbb2ee"
+    },
+    "data": {
+      "abilityId": "superconductor",
+      "name": "Superconductor",
+      "benefit1": "When you make an attack that deals Lightning damage to a target afflicted with Static, you gain a +1 accuracy bonus.",
+      "benefit2": "You gain Elemental Mastery: Lightning.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": null
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--electromancer",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "bd09b77556ca64d539c2aabe7b0c44d5dbb8995e9d08a8f133357c511ff112c9"
+  },
+  {
+    "stable_id": "key-ability--superior-assessment",
+    "category": "player-abilities",
+    "name": "Superior Assessment",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cc6",
+      "index_id": "118702d7-2c50-4e3e-85c1-fe165327a038"
+    },
+    "data": {
+      "abilityId": "superior_assessment",
+      "name": "Superior Assessment",
+      "benefit1": "You may use Status Assessment III.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "9dd5d233-7114-4bc8-be29-c97373f03965"
+    },
+    "relationships": {
+      "associated_ability": "ability--status-assessment-iii",
+      "classes": [
+        {
+          "class": "class--deadeye",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "b6162cad1cebec83af2bb96683aa0d2f4c16326eebba068d768f8bf6de47565c"
+  },
+  {
+    "stable_id": "key-ability--surgical-precision",
+    "category": "player-abilities",
+    "name": "Surgical Precision",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d1f",
+      "index_id": "65e51562-f60a-4556-a106-186f00d73337"
+    },
+    "data": {
+      "abilityId": "surgical-precision",
+      "name": "Surgical Precision",
+      "benefit1": "When you deal damage with a one-handed melee weapon that is both Sure Hit and Full Pierce or a critical hit, you inflict Bleeding on the target for 1 turn. This effect stacks with other Bleeds effects and itself up to 3 times.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--cutthroat",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "8b28296cf859053b5d99a6e43107cc6ad9240d82354c6fcdc6fbe58a63896720"
+  },
+  {
+    "stable_id": "key-ability--take-the-advantage",
+    "category": "player-abilities",
+    "name": "Take the advantage",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d2c",
+      "index_id": "26e450a4-3ed2-4e7b-84c5-34cfdfe2418e"
+    },
+    "data": {
+      "abilityId": "take-the-advantage",
+      "name": "Take the advantage",
+      "benefit1": "When attacking a target inflicted with Offstep, Stagger or Blinded, you gain a +1 accuracy bonus against them.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--swashbuckler",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "fcc1768f48d3948bf467e4d095544460d83666de470f573dab3e24cde2f52382"
+  },
+  {
+    "stable_id": "key-ability--terrifying-charge",
+    "category": "player-abilities",
+    "name": "Terrifying Charge",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cf8",
+      "index_id": "0796b52f-93e0-4978-a034-fccf9a320f8d"
+    },
+    "data": {
+      "abilityId": "terrifying-charge",
+      "name": "Terrifying Charge",
+      "benefit1": "When dealing damage with the trample effect or with your Secret Art: Override, any non-heroic target you damage becomes Shaken until the end of their next turn.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--hussar",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "6eebc097aea2274f12c76e671fa739c4f982d9ca948788f4e4372fc5b3decb84"
+  },
+  {
+    "stable_id": "key-ability--the-alchemist",
+    "category": "player-abilities",
+    "name": "The Alchemist",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ce6",
+      "index_id": "1979fa59-8e17-462f-9cb3-982a6ec9a571"
+    },
+    "data": {
+      "abilityId": "the-alchemist",
+      "name": "The Alchemist",
+      "benefit1": "You gain Alchemist Core Crafting Abilities, and proficiency in 1 basic weapon.",
+      "benefit2": "You can craft using non-advanced materials and base materials. You may use an IP to perform an EP action tied to this key ability 4 times.",
+      "benefit3": "You can use an Alchemist's Alembic as crafting tool for alchemy crafts.",
+      "benefit4": "You craft 3 of the same Elixir, Potion, Flask, Poison or Salve when using an interlude point instead of 1. You only need to pay the listed cost once.",
+      "associatedAbility": "01cdee4e-876d-4342-a56c-2006d731ed52"
+    },
+    "relationships": {
+      "associated_ability": "ability--alchemist-core-crafting",
+      "classes": [
+        {
+          "class": "class--alchemist",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "2cafda2fca164f1162e94b22dd10edf41fb9a5a0d97af12cd153afd78ff513a1"
+  },
+  {
+    "stable_id": "key-ability--thefts-of-the-past",
+    "category": "player-abilities",
+    "name": "Thefts of the past",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cd5",
+      "index_id": "0eb5af8e-ac0a-4e55-9e0b-faaf513d6320"
+    },
+    "data": {
+      "abilityId": "thefts-of-the-past",
+      "name": "Thefts of the past",
+      "benefit1": "When making a check with the Roguecraft skill, you may treat the object or person you’re interacting with as being up to an hour in the past. This may allow you to steal things not currently carried, open doors before they were locked and more. Does not work in combat and an item that is consumed cannot be stolen.",
+      "benefit2": "Using the Delay encounter start action does not consume your encounter start action use and you may use it multiple times.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": null
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--time-thief",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "65e91537e51150877d460dbfacf1576dcc14c8bc06d535cd411eb960380e4135"
+  },
+  {
+    "stable_id": "key-ability--throwing-rhythm",
+    "category": "player-abilities",
+    "name": "Throwing Rhythm",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cb7",
+      "index_id": "9afdcd91-6d51-416d-aa69-1bee7ace219e"
+    },
+    "data": {
+      "abilityId": "throwing-rhythm",
+      "name": "Throwing Rhythm",
+      "benefit1": "When you make an attack with a throwing weapon, or take the thrown attack basic action, you may move 5ft as if you had the light sword passive (Nimble).",
+      "benefit2": "When you take the thrown attack basic action, the weapon returns to your hand afterwards.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": null
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--peltast",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "6969d94295ea4b9214e4e2beb3b0d55685a431d3c3eb3340b141cb8aa5b6c3a2"
+  },
+  {
+    "stable_id": "key-ability--timberwright-s-core-crafting",
+    "category": "player-abilities",
+    "name": "Timberwright's Core Crafting",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d06",
+      "index_id": "8fcafec9-cd97-4be7-88c1-340cf4d691ca"
+    },
+    "data": {
+      "abilityId": "timberwright-s-core-crafting",
+      "name": "Timberwright's Core Crafting",
+      "benefit1": "You may use the Timberwright's Core Crafting abilities",
+      "benefit2": "You may craft using Ash and Yew materials.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "01a4dde6-bfed-4af6-829f-060c91f0d20a"
+    },
+    "relationships": {
+      "associated_ability": "ability--timberwright-s-core-crafting",
+      "classes": [
+        {
+          "class": "class--timberwright",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "d39cabd5335c2c8682a32e44fe24c896620bbafd79126fc7ace28816540ad59c"
+  },
+  {
+    "stable_id": "key-ability--titan-s-grip",
+    "category": "player-abilities",
+    "name": "Titan's Grip",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cea",
+      "index_id": "92934ba5-4d76-475b-85a9-dfd693da3725"
+    },
+    "data": {
+      "abilityId": "titan-s-grip",
+      "name": "Titan's Grip",
+      "benefit1": "You may wield a Two-Handed weapon in 1 hand allowing you to use a second (Two-Handed) weapon or shield in your offhand. ",
+      "benefit2": "While dual wielding Two-Handed weapons, you may make dual wield attacks as if they were One-Handed weapons.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--colossus",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "53b1fd0295ed25c459e11d643757685a2cc5a02c8501a2337e065891db84f621"
+  },
+  {
+    "stable_id": "key-ability--toss-a-coin",
+    "category": "player-abilities",
+    "name": "Toss a coin",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ca2",
+      "index_id": "2fe9880d-4c4f-4753-b54e-4be45a287539"
+    },
+    "data": {
+      "abilityId": "toss-a-coin",
+      "name": "Toss a coin",
+      "benefit1": "As an Errand action, you may perform in a city or town and earn Clim equal to your relevant Art roll x 10 up to a maximum of 300 clim.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": null
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--bard",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "52bf2b28b410db7434180d512232c44f39614d4822a70e2aca92f03bebe26c56"
+  },
+  {
+    "stable_id": "key-ability--toxic-blast",
+    "category": "player-abilities",
+    "name": "Toxic Blast",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d3c",
+      "index_id": "db443d80-5c58-4c92-874d-3c203bb26cc6"
+    },
+    "data": {
+      "abilityId": "toxic-blast",
+      "name": "Toxic Blast",
+      "benefit1": "You may use Toxic Blast.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "ae446094-a5bb-48f2-ad4c-490657707200"
+    },
+    "relationships": {
+      "associated_ability": "ability--toxic-blast",
+      "classes": [
+        {
+          "class": "class--venomancer",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "bdabe713ab75f8694454a1e1696631826c51bddf9a42c98b9f5947f2cba8975f"
+  },
+  {
+    "stable_id": "key-ability--tranquil-prayers",
+    "category": "player-abilities",
+    "name": "Tranquil Prayers",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ce5",
+      "index_id": "272f9a97-4064-4c49-b809-9e182b4a6ebb"
+    },
+    "data": {
+      "abilityId": "tranquil-prayers",
+      "name": "Tranquil Prayers",
+      "benefit1": "Your Acolyte, Priest and High Priest Healing abilities heal for 2x value when used out of combat.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--high-priest",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "51d537a6152fb0e8c436cf0a0b682c1ca525674df359bf63145c575d23c97f86"
+  },
+  {
+    "stable_id": "key-ability--transfusion",
+    "category": "player-abilities",
+    "name": "Transfusion",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cdb",
+      "index_id": "4852a089-ac80-4cef-89b0-b267dd49bf6b"
+    },
+    "data": {
+      "abilityId": "transfusion",
+      "name": "Transfusion",
+      "benefit1": "You may use Transfusion.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "314f6d68-9be0-42c6-a20f-4a0d5821739c"
+    },
+    "relationships": {
+      "associated_ability": "ability--transfusion",
+      "classes": [
+        {
+          "class": "class--bloodbinder",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "63dc1729c0df8400a023816d588b61e3cde540a4d4e4df0044ce5cb907ebcc6f"
+  },
+  {
+    "stable_id": "key-ability--transmutation-basics",
+    "category": "player-abilities",
+    "name": "Transmutation Basics",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cfd",
+      "index_id": "d9aa1834-3a02-4072-b318-139393d61db0"
+    },
+    "data": {
+      "abilityId": "transmutation-basics",
+      "name": "Transmutation Basics",
+      "benefit1": "You gain Transmuter Core Crafting Abilities. You may use one of these abilities in a crafting session. If you use one of these abilities, other transmuters can no longer use their co craft abilities with you. Similarly, if a co crafter uses one of these abilities for you, you can no longer use any of these abilities.",
+      "benefit2": "You can craft using non-advanced materials and base materials. You may use an IP to perform an EP action tied to this key ability 4 times.",
+      "benefit3": "You can now craft Elixirs, Potions, Flasks and Salves. You craft 3 of the same Elixir, Potion, Flask or Salve when using an interlude point instead of 1. You only need to pay the listed cost once.",
+      "benefit4": "You gain proficiency in alchemist’s alembic and 1 basic weapon type.",
+      "associatedAbility": "0f5eb799-13d5-4f01-9642-74d5fa2eede5"
+    },
+    "relationships": {
+      "associated_ability": "ability--transmutation-basics",
+      "classes": [
+        {
+          "class": "class--transmuter",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "7df6c6829e4782a07ba2a65ee42811d90f745f6a6bdbe36abde9ebc84f43d7d3"
+  },
+  {
+    "stable_id": "key-ability--transmutation-tricks",
+    "category": "player-abilities",
+    "name": "Transmutation Tricks",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cfe",
+      "index_id": "0e71f201-d383-4085-8097-61ca64ded45b"
+    },
+    "data": {
+      "abilityId": "transmutation-tricks",
+      "name": "Transmutation Tricks",
+      "benefit1": "For 1 AP, You can create small items using transmuting to provide temporary comforts and curiosities— a cup to drink out of, a chair to sit down on, a figurine etc.  These items cannot have significant gameplay factors (such as a key or a tool).  If you’d like to create something small to give away or sell, you must utilize x amount of commodities of whatever quantity and type the GM decides.",
+      "benefit2": "You may use your transmuter abilities a second time during a craft or co craft.",
+      "benefit3": "You may use the following abilities:",
+      "benefit4": "",
+      "associatedAbility": "8c0dc284-0333-4d51-9bc1-eef2034c37ac"
+    },
+    "relationships": {
+      "associated_ability": "ability--transmuter-tricks",
+      "classes": [
+        {
+          "class": "class--alkahest",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "776b92dd616cb57dc9633c458956f5bdd624773df2480ba15316e7516e08d290"
+  },
+  {
+    "stable_id": "key-ability--transmuter-of-life",
+    "category": "player-abilities",
+    "name": "Transmuter of Life",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d3e",
+      "index_id": "0a751ecd-d57d-4a3f-b0d1-5ca69fef30a2"
+    },
+    "data": {
+      "abilityId": "transmuter-of-life",
+      "name": "Transmuter of Life",
+      "benefit1": "You may use Biohacking.",
+      "benefit2": "You can store up to one gene in your gene inventory.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "94ad5731-f627-44db-baab-7ecc35179b70"
+    },
+    "relationships": {
+      "associated_ability": "ability--biohacking",
+      "classes": [
+        {
+          "class": "class--biochemist",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "214341ebd7c51625f30405988ec3d0f45294a086e9129ab0e7c6204d917eec53"
+  },
+  {
+    "stable_id": "key-ability--trap-basics",
+    "category": "player-abilities",
+    "name": "Trap Basics",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d0e",
+      "index_id": "20f3d7ab-9396-45ea-82fe-367533a18276"
+    },
+    "data": {
+      "abilityId": "trap-basics",
+      "name": "Trap Basics",
+      "benefit1": "You may convert 100u of junk into a Trapper's Trap you can use for your abilities. You may do so as a Rest action or as an Errand action. Trapper's Traps are a special item that cost 1 burden.",
+      "benefit2": "You may carry up to 3 Trapper's Traps without them costing Burden.",
+      "benefit3": "When resting at your camp outdoors, you may set traps that will alert you to enemies approaching by using a rest action. These do not consume a Trapper's Trap,  but allow you to use Survival to detect enemies instead of Perception. After each of such rests, you obtain 1d10 x 5 food units.",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--trapper",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "9f32d33ef46ec1395f8b6049868bb6c8f50e47afc45ccc5eef58cd0cf113388d"
+  },
+  {
+    "stable_id": "key-ability--tremorsense",
+    "category": "player-abilities",
+    "name": "Tremorsense",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930cf0",
+      "index_id": "68a52b38-51f8-4388-9098-be37493e3793"
+    },
+    "data": {
+      "abilityId": "tremorsense",
+      "name": "Tremorsense",
+      "benefit1": "You gain Earth Mastery.",
+      "benefit2": "You may use Tremorsense",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "3a1ba5e6-2df1-4b6f-aad6-00c4edcf5927"
+    },
+    "relationships": {
+      "associated_ability": "ability--tremorsense",
+      "classes": [
+        {
+          "class": "class--geomancer",
+          "slot": "keyAbility"
+        },
+        {
+          "class": "class--granite-warden",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "98dc959e4463c5e7119df112f73c4229bfebc791026d3e8b424811c930319f9b"
+  },
+  {
+    "stable_id": "key-ability--undead-mastery",
+    "category": "player-abilities",
+    "name": "Undead Mastery",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d3d",
+      "index_id": "c4370754-2338-497e-8c35-df5ad40ea0f2"
+    },
+    "data": {
+      "abilityId": "undead-mastery",
+      "name": "Undead Mastery",
+      "benefit1": "For every 300 spirit core you possess above 2000, you can control 1 extra zombie with your Create Undead.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--necromaster",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "98713e26298af43b780494be750786ee15a0c8e1703f38796083cc056def280a"
+  },
+  {
+    "stable_id": "key-ability--vampiric-strength",
+    "category": "player-abilities",
+    "name": "Vampiric Strength",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ce8",
+      "index_id": "dbc1d4de-9383-46f1-bdf3-e6f38f164d0c"
+    },
+    "data": {
+      "abilityId": "vampiric-strength",
+      "name": "Vampiric Strength",
+      "benefit1": "Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient. Your unarmed attacks cannot deal non-lethal damage.",
+      "benefit2": "You may use the Vampire Bite ability.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "d79a84ca-cf51-42b8-8fc4-023002ba0648"
+    },
+    "relationships": {
+      "associated_ability": "ability--vampire-bite",
+      "classes": [
+        {
+          "class": "class--vampire",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "2cea77fe94d6187b6d8e2fa7304f9a688feffc47e296ad234c6721479a4b449f"
+  },
+  {
+    "stable_id": "key-ability--versatile-range",
+    "category": "player-abilities",
+    "name": "Versatile Range",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ceb",
+      "index_id": "e185e399-38ac-4673-a805-c02e51da01f3"
+    },
+    "data": {
+      "abilityId": "versatile-range",
+      "name": "Versatile Range",
+      "benefit1": "You may treat your polearm’s threatened range as 5ft instead of 5-10ft. You must declare this during your turn and it lasts until the start of your next turn.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--spearmaster",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "65a9625d7b926316d50f90cb039dcf56a9b3e9fcec22227e1dbf4a5b37386f3b"
+  },
+  {
+    "stable_id": "key-ability--vip-protection",
+    "category": "player-abilities",
+    "name": "VIP Protection",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ca6",
+      "index_id": "1cf8ae2f-87c4-4e9a-b633-6d22db5ba4d1"
+    },
+    "data": {
+      "abilityId": "vip-protection",
+      "name": "VIP Protection",
+      "benefit1": "At the start of each arc, choose one person other than yourself as your VIP for that arc. Your VIP is the target for several of your abilities.",
+      "benefit2": "You may use VIP Protection.",
+      "benefit3": "If you choose a VIP, you cannot become the target of a VIP protection yourself.",
+      "benefit4": "",
+      "associatedAbility": "d090d94f-fcc3-4b1b-bf35-2648b3ba1bbc"
+    },
+    "relationships": {
+      "associated_ability": "ability--vip-protection",
+      "classes": [
+        {
+          "class": "class--bodyguard",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "15a356d0976681ae0c457ee62b2b0edaa01dcd10fdeddc7ddd7c1a0f15bb5451"
+  },
+  {
+    "stable_id": "key-ability--wall-ride",
+    "category": "player-abilities",
+    "name": "Wall Ride",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930d29",
+      "index_id": "f69e1029-7515-45ff-84dc-fa94d729261e"
+    },
+    "data": {
+      "abilityId": "wall-ride",
+      "name": "Wall Ride",
+      "benefit1": "When you create a wall on your turn using your Geomancer or Geomaster abilities, you may move along the wall as it is created. You can jump off at any point of the wall creation, ending in an empty square next to the wall.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": ""
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": [
+        {
+          "class": "class--geomaster",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "5b9012131436da1e3febd3154071b9f7923542b5f8c63ff73865e00b0904bfe5"
+  },
+  {
+    "stable_id": "key-ability--wind-master",
+    "category": "player-abilities",
+    "name": "Wind Master",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930c9d",
+      "index_id": "1eb98d03-67af-4688-8e5e-98b2c263db88"
+    },
+    "data": {
+      "abilityId": "wind_master",
+      "name": "Wind Master",
+      "benefit1": "You gain Wind Mastery.",
+      "benefit2": "You can use Glide.",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": "e8acaf6a-f6aa-47c8-b44a-802c49be7c67"
+    },
+    "relationships": {
+      "associated_ability": "ability--glide",
+      "classes": [
+        {
+          "class": "class--aeromancer",
+          "slot": "keyAbility"
+        },
+        {
+          "class": "class--windbringer",
+          "slot": "keyAbility"
+        },
+        {
+          "class": "class--zephyr-warder",
+          "slot": "keyAbility"
+        }
+      ]
+    },
+    "source_hash": "9f9d224e4c54b38fa6d70d5963261f2e8b9863b2349013b968a8747ecca3e7e6"
+  },
+  {
+    "stable_id": "key-ability--zhen-jiao",
+    "category": "player-abilities",
+    "name": "Zhen Jiao",
+    "source_url": "https://rpg.angelssword.com/game/0.13.1/abilities",
+    "rulebook_version": "0.13.1",
+    "retrieved_at": "2026-08-14T20:04:17.396Z",
+    "source_ids": {
+      "id": "6a2e7a0d6be32fced4930ca1",
+      "index_id": "b573c1f7-0d6a-4607-baf2-4907d4984a83"
+    },
+    "data": {
+      "abilityId": "zhen_jiao",
+      "name": "Zhen Jiao",
+      "benefit1": "When you move toward an enemy as part of a Bajiquan ability, your attack deals two  extra points of damage for every 5ft moved.",
+      "benefit2": "",
+      "benefit3": "",
+      "benefit4": "",
+      "associatedAbility": null
+    },
+    "relationships": {
+      "associated_ability": null,
+      "classes": []
+    },
+    "source_hash": "4f44757c147519be185d37a005f9364f572a25e6c300dbfe321ad0161c1805a1"
+  }
+]

@@ -16,9 +16,15 @@
           {{/each}}
         </select>
         <input type="text" name="system.details.creatureType" value="{{system.details.creatureType}}" placeholder="Creature type" />
+        {{#if system.details.dangerLevel}}<span class="lyr-summary-chip lyr-summary-chip--gold">Danger {{system.details.dangerLevel}}</span>{{/if}}
         <label class="lyr-inline">EXP reward
           <input type="number" name="system.details.expReward" value="{{system.details.expReward}}" />
         </label>
+        {{#if system.source.url}}
+          <a class="lyr-source-link" href="{{system.source.url}}" target="_blank" rel="noopener" title="Open official monster entry">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i><span>Official source</span>
+          </a>
+        {{/if}}
       {{/if}}
     </div>
   </div>

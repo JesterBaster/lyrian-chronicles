@@ -418,11 +418,35 @@ export class LyrianNPC extends LyrianActorBase {
       creatureType: new fields.StringField({ blank: true, initial: "" }),
       powerLevel: int(0),
       expReward: int(0),
-      astraCorruption: int(0)
+      astraCorruption: int(0),
+      dangerLevel: new fields.StringField({ blank: true, initial: "" }),
+      recommended: new fields.StringField({ blank: true, initial: "" }),
+      appearance: new fields.StringField({ blank: true, initial: "" }),
+      habitat: new fields.StringField({ blank: true, initial: "" }),
+      strongAgainst: new fields.StringField({ blank: true, initial: "" }),
+      weakAgainst: new fields.StringField({ blank: true, initial: "" })
     });
 
     schema.gatherables = new fields.StringField({ blank: true, initial: "" });
     schema.tactics = new fields.HTMLField({ required: false, blank: true });
+    schema.runningMonster = new fields.HTMLField({ required: false, blank: true });
+    schema.official = new fields.SchemaField({
+      enabled: new fields.BooleanField({ initial: false }),
+      hp: int(0),
+      mana: int(0),
+      ap: int(0),
+      rp: int(0),
+      initiative: int(0),
+      evasion: int(0),
+      dodgeEvasion: int(0),
+      guard: int(0),
+      blockGuard: int(0),
+      movement: int(0),
+      lightAttack: new fields.StringField({ blank: true, initial: "" }),
+      heavyAttack: new fields.StringField({ blank: true, initial: "" }),
+      notableSkills: new fields.StringField({ blank: true, initial: "" })
+    });
+    schema.source = new fields.ObjectField({ required: true, nullable: false, initial: {} });
 
     return schema;
   }
@@ -432,11 +456,27 @@ export class LyrianNPC extends LyrianActorBase {
   prepareDerivedData() {
     super.prepareDerivedData();
 
-    const economy = LYRIAN.actionEconomy[this.rank] ?? LYRIAN.actionEconomy.grunt;
-    this.ap.max = economy.ap + this.ap.bonus;
-    this.rp.max = economy.rpFromAgility
-      ? economy.rp + this.stats.agility.total + this.rp.bonus
-      : economy.rp + this.rp.bonus;
+    if (this.official.enabled) {
+      this.hp.max = this.official.hp;
+      this.mana.max = this.official.mana;
+      this.hp.over = this.hp.value > this.hp.max;
+      this.mana.over = this.mana.value > this.mana.max;
+      this.ap.max = this.official.ap;
+      this.rp.max = this.official.rp;
+      this.guard = this.official.guard;
+      this.blockGuard = this.official.blockGuard;
+      this.evasion = this.official.evasion;
+      this.dodgeEvasion = this.official.dodgeEvasion;
+      this.initiative.value = this.official.initiative;
+      this.movement.total = this.official.movement;
+      this._finishPools(this.hp, this.mana);
+    } else {
+      const economy = LYRIAN.actionEconomy[this.rank] ?? LYRIAN.actionEconomy.grunt;
+      this.ap.max = economy.ap + this.ap.bonus;
+      this.rp.max = economy.rpFromAgility
+        ? economy.rp + this.stats.agility.total + this.rp.bonus
+        : economy.rp + this.rp.bonus;
+    }
     this._finishPools(this.ap, this.rp);
 
     // Grunts die outright at 0 HP; heroics and bosses go down first.

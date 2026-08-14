@@ -1,24 +1,20 @@
 const SYSTEM_ID = "lyrian-chronicles";
 
 /** Bump when content JSON changes so worlds pick up additions. */
-export const CONTENT_VERSION = "0.3.1";
+export const CONTENT_VERSION = "0.4.0-rulebook-0.13.1";
 
-/**
- * Pack name -> content file. A missing file is skipped quietly, which is what
- * lets you drop in classes.json and abilities.json later without code changes.
- */
-const SOURCES = {
-  weapons: "weapons.json",
-  armor: "armor.json",
-  gear: "gear.json",
-  injuries: "injuries.json",
-  bestiary: "bestiary.json",
-  tables: "tables.json",
-  classes: "classes.json",
-  abilities: "abilities.json",
-  breakthroughs: "breakthroughs.json",
-  races: "races.json"
-};
+/** Reviewed pack names, in mandatory rulebook review order. */
+const PACK_NAMES = [
+  "rules-setting-guide",
+  "keywords",
+  "breakthroughs",
+  "player-abilities",
+  "races",
+  "classes",
+  "items",
+  "monsters",
+  "monster-abilities"
+];
 
 /* -------------------------------------------- */
 
@@ -42,30 +38,48 @@ export async function seedSystemPacks({ force = false } = {}) {
 
   const summary = {};
   let total = 0;
+  const catalog = await _loadContentIndex();
+  if (!catalog) throw new Error("Lyrian Chronicles compendium index is missing");
 
-  for (const [packName, fileName] of Object.entries(SOURCES)) {
+  for (const packName of PACK_NAMES) {
     const pack = game.packs.get(`${SYSTEM_ID}.${packName}`);
     if (!pack) continue;
 
-    const source = await _loadContent(fileName);
+    const source = await _loadContent(catalog.packs?.[packName]?.files ?? []);
     if (!source) continue;
 
     // Read the index rather than hydrating documents — the ability pack can be
     // very large and getDocuments() on it is painfully slow.
-    await pack.getIndex({ fields: [`flags.${SYSTEM_ID}.seedKey`] });
-    const present = new Set(
+    await pack.getIndex({
+      fields: [
+        `flags.${SYSTEM_ID}.seedKey`,
+        `flags.${SYSTEM_ID}.sourceHash`
+      ]
+    });
+    const present = new Map(
       pack.index
-        .map((e) => foundry.utils.getProperty(e, `flags.${SYSTEM_ID}.seedKey`))
-        .filter(Boolean)
+        .map((entry) => [
+          foundry.utils.getProperty(entry, `flags.${SYSTEM_ID}.seedKey`),
+          entry
+        ])
+        .filter(([key]) => key)
     );
 
     const missing = source.filter((d) => {
       const key = foundry.utils.getProperty(d, `flags.${SYSTEM_ID}.seedKey`);
       return key && !present.has(key);
     });
+    const changed = source.filter((document) => {
+      const key = foundry.utils.getProperty(document, `flags.${SYSTEM_ID}.seedKey`);
+      const current = present.get(key);
+      if (!current) return false;
+      const incomingHash = foundry.utils.getProperty(document, `flags.${SYSTEM_ID}.sourceHash`);
+      const currentHash = foundry.utils.getProperty(current, `flags.${SYSTEM_ID}.sourceHash`);
+      return incomingHash && incomingHash !== currentHash;
+    });
 
-    if (!missing.length) {
-      summary[packName] = { created: 0, total: source.length };
+    if (!missing.length && !changed.length) {
+      summary[packName] = { created: 0, updated: 0, total: source.length };
       continue;
     }
 
@@ -81,9 +95,23 @@ export async function seedSystemPacks({ force = false } = {}) {
         });
       }
 
-      summary[packName] = { created: missing.length, total: source.length };
-      total += missing.length;
-      console.log(`Lyrian Chronicles | Seeded ${missing.length} into ${packName}`);
+      for (let i = 0; i < changed.length; i += 100) {
+        await pack.documentClass.updateDocuments(changed.slice(i, i + 100), {
+          pack: pack.collection,
+          diff: false,
+          recursive: false
+        });
+      }
+
+      summary[packName] = {
+        created: missing.length,
+        updated: changed.length,
+        total: source.length
+      };
+      total += missing.length + changed.length;
+      console.log(
+        `Lyrian Chronicles | ${packName}: created ${missing.length}, updated ${changed.length}`
+      );
     } catch (err) {
       console.error(`Lyrian Chronicles | Seeding ${packName} failed`, err);
       summary[packName] = { error: err.message };
@@ -109,12 +137,25 @@ export async function seedSystemPacks({ force = false } = {}) {
 
 /* -------------------------------------------- */
 
-async function _loadContent(fileName) {
+async function _loadContentIndex() {
   try {
-    const response = await fetch(`systems/${SYSTEM_ID}/content/${fileName}`);
-    if (!response.ok) return null;   // Optional file, not an error.
-    const data = await response.json();
-    return Array.isArray(data) ? data : null;
+    const response = await fetch(`systems/${SYSTEM_ID}/content/compendium-index.json`);
+    return response.ok ? response.json() : null;
+  } catch {
+    return null;
+  }
+}
+
+async function _loadContent(fileNames) {
+  try {
+    const chunks = await Promise.all(fileNames.map(async (fileName) => {
+      const response = await fetch(`systems/${SYSTEM_ID}/content/${fileName}`);
+      if (!response.ok) throw new Error(`${fileName}: ${response.status}`);
+      const data = await response.json();
+      if (!Array.isArray(data)) throw new Error(`${fileName}: expected an array`);
+      return data;
+    }));
+    return chunks.flat();
   } catch {
     return null;
   }
@@ -132,7 +173,7 @@ export async function resetSystemPacks() {
   });
   if (!confirmed) return;
 
-  for (const packName of Object.keys(SOURCES)) {
+  for (const packName of PACK_NAMES) {
     const pack = game.packs.get(`${SYSTEM_ID}.${packName}`);
     if (!pack) continue;
 

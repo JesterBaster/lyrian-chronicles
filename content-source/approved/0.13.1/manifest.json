@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "game": "The Lyrian Chronicles",
+  "rulebook_version": "0.13.1",
+  "retrieved_at": "2026-08-14T20:04:17.396Z",
+  "attribution": "Official game content © Angel's Sword Studios, used with permission.",
+  "source": "https://rpg.angelssword.com/game/0.13.1/rulebook",
+  "unresolved_relationships": [],
+  "entry_count": 2116,
+  "parts": [
+    {
+      "file": "breakthroughs-01.json",
+      "category": "breakthroughs",
+      "count": 89
+    },
+    {
+      "file": "classes-01.json",
+      "category": "classes",
+      "count": 116
+    },
+    {
+      "file": "classes-02.json",
+      "category": "classes",
+      "count": 65
+    },
+    {
+      "file": "items-01.json",
+      "category": "items",
+      "count": 206
+    },
+    {
+      "file": "keywords-01.json",
+      "category": "keywords",
+      "count": 87
+    },
+    {
+      "file": "monster-abilities-01.json",
+      "category": "monster-abilities",
+      "count": 307
+    },
+    {
+      "file": "monsters-01.json",
+      "category": "monsters",
+      "count": 84
+    },
+    {
+      "file": "player-abilities-01.json",
+      "category": "player-abilities",
+      "count": 512
+    },
+    {
+      "file": "player-abilities-02.json",
+      "category": "player-abilities",
+      "count": 507
+    },
+    {
+      "file": "player-abilities-03.json",
+      "category": "player-abilities",
+      "count": 93
+    },
+    {
+      "file": "races-01.json",
+      "category": "races",
+      "count": 48
+    },
+    {
+      "file": "rules-setting-guide-01.json",
+      "category": "rules-setting-guide",
+      "count": 2
+    }
+  ]
+}

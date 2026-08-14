@@ -1,5 +1,75 @@
 <section class="lyr-item-body" data-application-part="body">
 
+{{#unless editable}}
+  <div class="lyr-reference-overview">
+    {{#if (eq type "ability")}}
+      {{#if enrichedRequirements}}
+        <section class="lyr-reference-card"><h3>Requirements</h3>{{{enrichedRequirements}}}</section>
+      {{/if}}
+      {{#if keywordChoices}}
+        <section class="lyr-reference-card"><h3>Keywords</h3>
+          <div class="lyr-summary-chips">
+            {{#each keywordChoices as |kw|}}{{#if kw.active}}<span class="lyr-summary-chip">{{kw.label}}</span>{{/if}}{{/each}}
+          </div>
+        </section>
+      {{/if}}
+    {{/if}}
+
+    {{#if (eq type "monsterAbility")}}
+      {{#if enrichedRequirements}}
+        <section class="lyr-reference-card"><h3>Requirements</h3>{{{enrichedRequirements}}}</section>
+      {{/if}}
+      {{#if keywordChoices}}
+        <section class="lyr-reference-card"><h3>Keywords</h3>
+          <div class="lyr-summary-chips">
+            {{#each keywordChoices as |kw|}}{{#if kw.active}}<span class="lyr-summary-chip">{{kw.label}}</span>{{/if}}{{/each}}
+          </div>
+        </section>
+      {{/if}}
+    {{/if}}
+
+    {{#if (eq type "class")}}
+      {{#if enrichedRequirements}}<section class="lyr-reference-card"><h3>Requirements</h3>{{{enrichedRequirements}}}</section>{{/if}}
+      {{#if system.skills}}<section class="lyr-reference-card"><h3>Skills</h3><p>{{system.skills}}</p></section>{{/if}}
+      {{#if system.heart}}<section class="lyr-reference-card"><h3>Heart</h3><p>{{system.heart}}</p></section>{{/if}}
+      {{#if system.soul}}<section class="lyr-reference-card"><h3>Soul</h3><p>{{system.soul}}</p></section>{{/if}}
+      {{#if enrichedGuide}}<section class="lyr-reference-card lyr-reference-card--wide"><h3>How to play</h3>{{{enrichedGuide}}}</section>{{/if}}
+    {{/if}}
+
+    {{#if (eq type "race")}}
+      {{#if system.attributes}}<section class="lyr-reference-card"><h3>Attributes</h3><p>{{system.attributes}}</p></section>{{/if}}
+      {{#if system.grantedProficiencies}}<section class="lyr-reference-card"><h3>Proficiencies</h3><p>{{system.grantedProficiencies}}</p></section>{{/if}}
+      {{#if system.grantedSkills}}<section class="lyr-reference-card"><h3>Skills</h3><p>{{system.grantedSkills}}</p></section>{{/if}}
+      {{#if system.ambition}}<section class="lyr-reference-card"><h3>Ambition</h3><p>{{system.ambition}}</p></section>{{/if}}
+    {{/if}}
+
+    {{#if (eq type "breakthrough")}}
+      {{#if enrichedRequirements}}<section class="lyr-reference-card"><h3>Requirements</h3>{{{enrichedRequirements}}}</section>{{/if}}
+    {{/if}}
+
+    {{#if (eq type "equipment")}}
+      <section class="lyr-reference-card"><h3>Equipment details</h3>
+        <dl class="lyr-facts">
+          {{#if system.category}}<div><dt>Category</dt><dd>{{system.category}}</dd></div>{{/if}}
+          {{#if system.subType}}<div><dt>Type</dt><dd>{{system.subType}}</dd></div>{{/if}}
+          {{#if system.cost}}<div><dt>Cost</dt><dd>{{system.cost}}</dd></div>{{/if}}
+          {{#if system.burden}}<div><dt>Burden</dt><dd>{{system.burden}}</dd></div>{{/if}}
+          {{#if system.activationCost}}<div><dt>Activation</dt><dd>{{system.activationCost}}</dd></div>{{/if}}
+          {{#if system.shellSize}}<div><dt>Shell size</dt><dd>{{system.shellSize}}</dd></div>{{/if}}
+          {{#if system.fuelUsage}}<div><dt>Fuel</dt><dd>{{system.fuelUsage}}</dd></div>{{/if}}
+          {{#if system.craftingType}}<div><dt>Crafting</dt><dd>{{system.craftingPoints}} · {{system.craftingType}}</dd></div>{{/if}}
+        </dl>
+      </section>
+    {{/if}}
+
+    {{#if enrichedRelationships}}
+      <section class="lyr-reference-card lyr-reference-card--wide"><h3>Related entries</h3>{{{enrichedRelationships}}}</section>
+    {{/if}}
+  </div>
+{{/unless}}
+
+{{#if editable}}
+
 {{#if (eq type "weapon")}}
   <div class="lyr-field-grid">
     <label>Weapon group
@@ -119,6 +189,26 @@
   </fieldset>
 {{/if}}
 
+{{#if (eq type "keyword")}}
+  <label>Keyword <input type="text" name="system.keyword" value="{{system.keyword}}" /></label>
+{{/if}}
+
+{{#if (eq type "monsterAbility")}}
+  <div class="lyr-field-grid">
+    <label>Kind
+      <select name="system.kind">
+        <option value="passive" {{#if (eq system.kind "passive")}}selected{{/if}}>Passive</option>
+        <option value="active-action" {{#if (eq system.kind "active-action")}}selected{{/if}}>Active action</option>
+      </select>
+    </label>
+    <label>AP cost <input type="number" name="system.apCost" value="{{system.apCost}}" /></label>
+    <label>RP cost <input type="number" name="system.rpCost" value="{{system.rpCost}}" /></label>
+    <label>Mana cost <input type="number" name="system.manaCost" value="{{system.manaCost}}" /></label>
+    <label>Range <input type="text" name="system.range" value="{{system.range}}" /></label>
+    <label>Requirement <input type="text" name="system.requirement" value="{{system.requirement}}" /></label>
+  </div>
+{{/if}}
+
 {{#if (eq type "class")}}
   <div class="lyr-field-grid">
     <label>Tier <input type="number" name="system.tier" value="{{system.tier}}" min="1" max="5" /></label>
@@ -157,6 +247,17 @@
   <label>Granted skills <input type="text" name="system.grantedSkills" value="{{system.grantedSkills}}" /></label>
 {{/if}}
 
+{{#if (eq type "equipment")}}
+  <div class="lyr-field-grid">
+    <label>Category <input type="text" name="system.category" value="{{system.category}}" /></label>
+    <label>Type <input type="text" name="system.subType" value="{{system.subType}}" /></label>
+    <label>Cost <input type="text" name="system.cost" value="{{system.cost}}" /></label>
+    <label>Burden <input type="text" name="system.burden" value="{{system.burden}}" /></label>
+    <label>Activation <input type="text" name="system.activationCost" value="{{system.activationCost}}" /></label>
+    <label>Quantity <input type="number" name="system.quantity" value="{{system.quantity}}" /></label>
+  </div>
+{{/if}}
+
 {{#if (eq type "gear")}}
   <div class="lyr-field-grid">
     <label>Quantity <input type="number" name="system.quantity" value="{{system.quantity}}" /></label>
@@ -179,4 +280,5 @@
 {{/if}}
 
 <label>Source <input type="text" name="system.source" value="{{system.source}}" placeholder="Rulebook section or homebrew" /></label>
+{{/if}}
 </section>

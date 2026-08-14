@@ -2,12 +2,15 @@ import { LYRIAN } from "./config.mjs";
 import { LyrianActorBase, LyrianCharacter, LyrianNPC } from "./data/actor.mjs";
 import {
   LyrianItemBase,
+  LyrianKeyword,
   LyrianWeapon,
   LyrianArmor,
   LyrianAbility,
   LyrianClass,
   LyrianBreakthrough,
   LyrianRace,
+  LyrianEquipment,
+  LyrianMonsterAbility,
   LyrianGear,
   LyrianInjury
 } from "./data/item.mjs";
@@ -53,16 +56,20 @@ Hooks.once("init", function () {
   // Data models, keyed to the subtypes declared in system.json.
   CONFIG.Actor.dataModels = {
     character: LyrianCharacter,
-    npc: LyrianNPC
+    npc: LyrianNPC,
+    monster: LyrianNPC
   };
 
   CONFIG.Item.dataModels = {
+    keyword: LyrianKeyword,
     weapon: LyrianWeapon,
     armor: LyrianArmor,
     ability: LyrianAbility,
     class: LyrianClass,
     breakthrough: LyrianBreakthrough,
     race: LyrianRace,
+    equipment: LyrianEquipment,
+    monsterAbility: LyrianMonsterAbility,
     gear: LyrianGear,
     injury: LyrianInjury
   };
@@ -101,7 +108,7 @@ function registerSheets() {
   }
 
   Actors.registerSheet(SYSTEM_ID, LyrianActorSheet, {
-    types: ["character", "npc"],
+    types: ["character", "npc", "monster"],
     makeDefault: true,
     label: "LYRIAN.SheetLabel.Actor"
   });

@@ -1,5 +1,28 @@
 <section class="tab lyr-tab {{tab.cssClass}}" data-tab="main" data-group="primary" data-application-part="main">
 
+  {{#if system.official.enabled}}
+    <div class="lyr-reference-overview lyr-monster-overview">
+      <section class="lyr-reference-card">
+        <h3>Combat profile</h3>
+        <dl class="lyr-facts">
+          {{#if system.official.lightAttack}}<div><dt>Light attack</dt><dd>{{system.official.lightAttack}}</dd></div>{{/if}}
+          {{#if system.official.heavyAttack}}<div><dt>Heavy attack</dt><dd>{{system.official.heavyAttack}}</dd></div>{{/if}}
+          {{#if system.official.notableSkills}}<div><dt>Notable skills</dt><dd>{{system.official.notableSkills}}</dd></div>{{/if}}
+          {{#if system.details.recommended}}<div><dt>Recommended</dt><dd>{{system.details.recommended}}</dd></div>{{/if}}
+        </dl>
+      </section>
+      <section class="lyr-reference-card">
+        <h3>Encounter notes</h3>
+        <dl class="lyr-facts">
+          {{#if system.details.strongAgainst}}<div><dt>Strong against</dt><dd>{{system.details.strongAgainst}}</dd></div>{{/if}}
+          {{#if system.details.weakAgainst}}<div><dt>Weak against</dt><dd>{{system.details.weakAgainst}}</dd></div>{{/if}}
+          {{#if system.details.appearance}}<div><dt>Appearance</dt><dd>{{system.details.appearance}}</dd></div>{{/if}}
+          {{#if system.details.habitat}}<div><dt>Habitat</dt><dd>{{system.details.habitat}}</dd></div>{{/if}}
+        </dl>
+      </section>
+    </div>
+  {{/if}}
+
   <div class="lyr-columns">
     <div class="lyr-col">
       <h2 class="lyr-heading">Main stats</h2>

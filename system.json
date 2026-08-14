@@ -1,8 +1,8 @@
 {
   "id": "lyrian-chronicles",
   "title": "The Lyrian Chronicles",
-  "description": "An unofficial Foundry VTT implementation of Angel's Sword Studios' Lyrian Chronicles TTRPG. Power/Focus/Agility/Toughness, AP & RP economy, Guard/Block/Dodge defence, skills with expertise, classes, breakthroughs and interlude tracking.",
-  "version": "0.3.4",
+  "description": "A fan-made Foundry VTT implementation of Angel's Sword Studios' Lyrian Chronicles TTRPG, using official game content with permission. Includes nine complete rulebook v0.13.1 compendiums and gameplay automation.",
+  "version": "0.4.0",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -36,11 +36,24 @@
       "npc": {
         "htmlFields": [
           "biography",
-          "tactics"
+          "tactics",
+          "runningMonster"
+        ]
+      },
+      "monster": {
+        "htmlFields": [
+          "biography",
+          "tactics",
+          "runningMonster"
         ]
       }
     },
     "Item": {
+      "keyword": {
+        "htmlFields": [
+          "description"
+        ]
+      },
       "weapon": {
         "htmlFields": [
           "description"
@@ -53,12 +66,14 @@
       },
       "ability": {
         "htmlFields": [
-          "description"
+          "description",
+          "benefits"
         ]
       },
       "class": {
         "htmlFields": [
-          "description"
+          "description",
+          "guide"
         ]
       },
       "breakthrough": {
@@ -67,6 +82,16 @@
         ]
       },
       "race": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "equipment": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "monsterAbility": {
         "htmlFields": [
           "description"
         ]
@@ -92,26 +117,26 @@
   "socket": true,
   "packs": [
     {
-      "name": "classes",
-      "label": "Classes",
-      "type": "Item",
-      "path": "packs/classes",
+      "name": "rules-setting-guide",
+      "label": "01 · Rules & Setting Guide",
+      "type": "JournalEntry",
+      "path": "packs/rules-setting-guide",
       "system": "lyrian-chronicles",
       "private": false,
       "flags": {}
     },
     {
-      "name": "abilities",
-      "label": "Abilities",
+      "name": "keywords",
+      "label": "02 · Keywords",
       "type": "Item",
-      "path": "packs/abilities",
+      "path": "packs/keywords",
       "system": "lyrian-chronicles",
       "private": false,
       "flags": {}
     },
     {
       "name": "breakthroughs",
-      "label": "Breakthroughs",
+      "label": "03 · Breakthroughs",
       "type": "Item",
       "path": "packs/breakthroughs",
       "system": "lyrian-chronicles",
@@ -119,8 +144,17 @@
       "flags": {}
     },
     {
+      "name": "player-abilities",
+      "label": "04 · Player Abilities",
+      "type": "Item",
+      "path": "packs/player-abilities",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
       "name": "races",
-      "label": "Races",
+      "label": "05 · Races & Ancestries",
       "type": "Item",
       "path": "packs/races",
       "system": "lyrian-chronicles",
@@ -128,64 +162,37 @@
       "flags": {}
     },
     {
-      "name": "weapons",
-      "label": "Weapons",
+      "name": "classes",
+      "label": "06 · Classes",
       "type": "Item",
-      "path": "packs/weapons",
+      "path": "packs/classes",
       "system": "lyrian-chronicles",
       "private": false,
       "flags": {}
     },
     {
-      "name": "armor",
-      "label": "Armour & Shields",
+      "name": "items",
+      "label": "07 · Items & Equipment",
       "type": "Item",
-      "path": "packs/armor",
+      "path": "packs/items",
       "system": "lyrian-chronicles",
       "private": false,
       "flags": {}
     },
     {
-      "name": "gear",
-      "label": "Gear & Materials",
-      "type": "Item",
-      "path": "packs/gear",
-      "system": "lyrian-chronicles",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "name": "injuries",
-      "label": "Injuries",
-      "type": "Item",
-      "path": "packs/injuries",
-      "system": "lyrian-chronicles",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "name": "bestiary",
-      "label": "Bestiary",
+      "name": "monsters",
+      "label": "08 · Monsters",
       "type": "Actor",
-      "path": "packs/bestiary",
+      "path": "packs/monsters",
       "system": "lyrian-chronicles",
       "private": false,
       "flags": {}
     },
     {
-      "name": "rules",
-      "label": "Rules Reference",
-      "type": "JournalEntry",
-      "path": "packs/rules",
-      "system": "lyrian-chronicles",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "name": "tables",
-      "label": "Roll Tables",
-      "type": "RollTable",
-      "path": "packs/tables",
+      "name": "monster-abilities",
+      "label": "09 · Monster Abilities",
+      "type": "Item",
+      "path": "packs/monster-abilities",
       "system": "lyrian-chronicles",
       "private": false,
       "flags": {}
@@ -197,17 +204,15 @@
       "sorting": "m",
       "color": "#c9a227",
       "packs": [
-        "classes",
-        "abilities",
+        "rules-setting-guide",
+        "keywords",
         "breakthroughs",
+        "player-abilities",
         "races",
-        "weapons",
-        "armor",
-        "gear",
-        "injuries",
-        "bestiary",
-        "rules",
-        "tables"
+        "classes",
+        "items",
+        "monsters",
+        "monster-abilities"
       ]
     }
   ],
@@ -219,7 +224,7 @@
   ],
   "url": "https://github.com/JesterBaster/lyrian-chronicles",
   "manifest": "https://github.com/JesterBaster/lyrian-chronicles/releases/latest/download/system.json",
-  "download": "https://github.com/JesterBaster/lyrian-chronicles/releases/download/v0.3.4/system.zip",
+  "download": "https://github.com/JesterBaster/lyrian-chronicles/releases/download/v0.4.0/system.zip",
   "license": "LICENSE.txt",
   "readme": "README.md"
 }

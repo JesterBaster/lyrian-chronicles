@@ -1,4 +1,14 @@
 <section class="lyr-item-description" data-application-part="description">
   <h3 class="lyr-subheading">Description</h3>
-  {{formInput systemFields.description value=system.description enriched=enrichedDescription toggled=true}}
+  {{#if editable}}
+    {{formInput systemFields.description value=system.description enriched=enrichedDescription toggled=true}}
+  {{else}}
+    <div class="lyr-rich-text">{{{enrichedDescription}}}</div>
+  {{/if}}
+  {{#if system.source}}
+    <footer class="lyr-provenance">
+      <span>{{system.source}}</span>
+      {{#if system.sourceHash}}<code title="Normalized source hash">{{system.sourceHash}}</code>{{/if}}
+    </footer>
+  {{/if}}
 </section>

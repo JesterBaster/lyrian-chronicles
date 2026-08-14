@@ -75,7 +75,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   _configureRenderParts(options) {
     const parts = super._configureRenderParts(options);
     // NPCs have no skill sheet or interlude bookkeeping.
-    if (this.document.type === "npc") {
+    if (this.document.type === "npc" || this.document.type === "monster") {
       delete parts.skills;
       delete parts.progression;
     }
@@ -85,7 +85,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   /** @override */
   _prepareTabs(group) {
     const tabs = super._prepareTabs(group);
-    if (this.document.type === "npc") {
+    if (this.document.type === "npc" || this.document.type === "monster") {
       delete tabs.skills;
       delete tabs.progression;
     }
@@ -103,7 +103,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.system = actor.system;
     context.config = LYRIAN;
     context.isCharacter = actor.type === "character";
-    context.isNPC = actor.type === "npc";
+    context.isNPC = actor.type === "npc" || actor.type === "monster";
     context.editable = this.isEditable;
     context.systemFields = actor.system.schema.fields;
 
@@ -115,6 +115,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (context.isNPC) {
       context.enrichedTactics = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
         actor.system.tactics ?? "",
+        { relativeTo: actor }
+      );
+      context.enrichedRunningMonster = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
+        actor.system.runningMonster ?? "",
         { relativeTo: actor }
       );
     }
@@ -206,6 +210,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       breakthroughs: [],
       races: [],
       gear: [],
+      equipment: [],
       injuries: []
     };
 
@@ -218,6 +223,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           buckets.armor.push(item);
           break;
         case "ability":
+        case "monsterAbility":
           if (item.system.timing === "passive") buckets.passives.push(item);
           else if (item.system.timing === "encounterStart") buckets.encounterStart.push(item);
           else if (item.system.timing === "encounterConclusion")
@@ -236,6 +242,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           break;
         case "gear":
           buckets.gear.push(item);
+          break;
+        case "equipment":
+          buckets.equipment.push(item);
           break;
         case "injury":
           buckets.injuries.push(item);
@@ -345,7 +354,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static async #onUseItem(event, target) {
     const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
     if (!item) return;
-    if (item.type === "ability") await item.rollAbility({ free: event.shiftKey });
+    if (item.type === "ability" || item.type === "monsterAbility") {
+      await item.rollAbility({ free: event.shiftKey });
+    }
     else await item.postToChat();
   }
 
