@@ -1,0 +1,52 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="abilities" data-group="primary" data-application-part="abilities">
+
+  <div class="lyr-section-head">
+    <h2 class="lyr-heading">Abilities</h2>
+    <button type="button" data-action="createItem" data-type="ability">Add ability</button>
+  </div>
+  <p class="lyr-note">Each ability is once per round unless it has Rapid. Shift-click to use without paying its cost.</p>
+
+  {{#*inline "abilityRow"}}
+    <li class="lyr-row {{#if this.system.usedThisRound}}lyr-row--spent{{/if}}" data-item-id="{{this.id}}">
+      <img class="lyr-row__icon" src="{{this.img}}" alt="" />
+      <div class="lyr-row__body">
+        <span class="lyr-row__name">{{this.name}}</span>
+        <span class="lyr-row__meta">
+          {{this.system.costLabel}}
+          {{#if this.system.range}} · {{this.system.range}}{{/if}}
+          {{#if this.system.requirement}} · Requires {{this.system.requirement}}{{/if}}
+        </span>
+      </div>
+      <div class="lyr-row__actions">
+        <button type="button" data-action="useItem">Use</button>
+        <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+        <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+      </div>
+    </li>
+  {{/inline}}
+
+  <h3 class="lyr-subheading">Actions</h3>
+  <ul class="lyr-list">
+    {{#each items.abilities}}{{> abilityRow}}{{else}}<li class="lyr-empty">No active abilities.</li>{{/each}}
+  </ul>
+
+  <h3 class="lyr-subheading">Reactions</h3>
+  <ul class="lyr-list">
+    {{#each items.reactions}}{{> abilityRow}}{{else}}<li class="lyr-empty">No reactions.</li>{{/each}}
+  </ul>
+
+  <h3 class="lyr-subheading">Encounter start</h3>
+  <ul class="lyr-list">
+    {{#each items.encounterStart}}{{> abilityRow}}{{else}}<li class="lyr-empty">None.</li>{{/each}}
+  </ul>
+
+  <h3 class="lyr-subheading">Encounter conclusion</h3>
+  <ul class="lyr-list">
+    {{#each items.encounterConclusion}}{{> abilityRow}}{{else}}<li class="lyr-empty">None.</li>{{/each}}
+  </ul>
+
+  <h3 class="lyr-subheading">Passives</h3>
+  <ul class="lyr-list">
+    {{#each items.passives}}{{> abilityRow}}{{else}}<li class="lyr-empty">None.</li>{{/each}}
+  </ul>
+</section>

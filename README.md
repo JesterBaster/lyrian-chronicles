@@ -1,7 +1,7 @@
 # The Lyrian Chronicles — Foundry VTT system
 
 An unofficial Foundry VTT game system for Angel's Sword Studios' *Lyrian Chronicles*, built
-against the v14 API (v13 compatible). Mechanics are transcribed from the core rulebook:
+for Foundry VTT v14. Mechanics are transcribed from the core rulebook:
 Power / Focus / Agility / Toughness, the AP and RP economy, Guard–Block–Dodge defence,
 skills with expertise, classes, breakthroughs, and Spirit Core progression.
 

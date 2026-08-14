@@ -1,0 +1,225 @@
+{
+  "id": "lyrian-chronicles",
+  "title": "The Lyrian Chronicles",
+  "description": "An unofficial Foundry VTT implementation of Angel's Sword Studios' Lyrian Chronicles TTRPG. Power/Focus/Agility/Toughness, AP & RP economy, Guard/Block/Dodge defence, skills with expertise, classes, breakthroughs and interlude tracking.",
+  "version": "0.3.4",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Jester",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "module/lyrian.mjs"
+  ],
+  "styles": [
+    "styles/lyrian.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlFields": [
+          "biography"
+        ]
+      },
+      "npc": {
+        "htmlFields": [
+          "biography",
+          "tactics"
+        ]
+      }
+    },
+    "Item": {
+      "weapon": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "armor": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "ability": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "class": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "breakthrough": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "race": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "gear": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "injury": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    }
+  },
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "hp",
+  "secondaryTokenAttribute": "mana",
+  "socket": true,
+  "packs": [
+    {
+      "name": "classes",
+      "label": "Classes",
+      "type": "Item",
+      "path": "packs/classes",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "abilities",
+      "label": "Abilities",
+      "type": "Item",
+      "path": "packs/abilities",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "breakthroughs",
+      "label": "Breakthroughs",
+      "type": "Item",
+      "path": "packs/breakthroughs",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "races",
+      "label": "Races",
+      "type": "Item",
+      "path": "packs/races",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "weapons",
+      "label": "Weapons",
+      "type": "Item",
+      "path": "packs/weapons",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "armor",
+      "label": "Armour & Shields",
+      "type": "Item",
+      "path": "packs/armor",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "gear",
+      "label": "Gear & Materials",
+      "type": "Item",
+      "path": "packs/gear",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "injuries",
+      "label": "Injuries",
+      "type": "Item",
+      "path": "packs/injuries",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "bestiary",
+      "label": "Bestiary",
+      "type": "Actor",
+      "path": "packs/bestiary",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "rules",
+      "label": "Rules Reference",
+      "type": "JournalEntry",
+      "path": "packs/rules",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "tables",
+      "label": "Roll Tables",
+      "type": "RollTable",
+      "path": "packs/tables",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "The Lyrian Chronicles",
+      "sorting": "m",
+      "color": "#c9a227",
+      "packs": [
+        "classes",
+        "abilities",
+        "breakthroughs",
+        "races",
+        "weapons",
+        "armor",
+        "gear",
+        "injuries",
+        "bestiary",
+        "rules",
+        "tables"
+      ]
+    }
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "thumbnail": "systems/lyrian-chronicles/images/thumbnail.webp"
+    }
+  ],
+  "url": "https://github.com/JesterBaster/lyrian-chronicles",
+  "manifest": "https://github.com/JesterBaster/lyrian-chronicles/releases/latest/download/system.json",
+  "download": "https://github.com/JesterBaster/lyrian-chronicles/releases/download/v0.3.4/system.zip",
+  "license": "LICENSE.txt",
+  "readme": "README.md"
+}

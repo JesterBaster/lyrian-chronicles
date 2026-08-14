@@ -1,0 +1,332 @@
+[
+  {
+    "_id": "f36292bbcf7e6995",
+    "name": "Rations (1 day)",
+    "type": "gear",
+    "img": "icons/svg/chest.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Enough food for one day of travel.</p>",
+      "quantity": 1,
+      "burden": 0,
+      "value": 0,
+      "combatItem": false,
+      "isKit": false,
+      "materialType": "",
+      "units": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:rations-1-day-"
+      }
+    }
+  },
+  {
+    "_id": "66cbce2e7ff2ac94",
+    "name": "Rope, 50 ft",
+    "type": "gear",
+    "img": "icons/svg/chest.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Hemp rope. Useful more often than it looks.</p>",
+      "quantity": 1,
+      "burden": 1,
+      "value": 0,
+      "combatItem": true,
+      "isKit": false,
+      "materialType": "",
+      "units": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:rope-50-ft"
+      }
+    }
+  },
+  {
+    "_id": "acb9649a470631f8",
+    "name": "Torch",
+    "type": "gear",
+    "img": "icons/svg/chest.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Burns for roughly an hour.</p>",
+      "quantity": 1,
+      "burden": 0,
+      "value": 0,
+      "combatItem": true,
+      "isKit": false,
+      "materialType": "",
+      "units": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:torch"
+      }
+    }
+  },
+  {
+    "_id": "e197a60fa0265db4",
+    "name": "Healing Draught",
+    "type": "gear",
+    "img": "icons/svg/chest.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Restores health when drunk. An action to use.</p>",
+      "quantity": 1,
+      "burden": 0,
+      "value": 0,
+      "combatItem": true,
+      "isKit": false,
+      "materialType": "",
+      "units": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:healing-draught"
+      }
+    }
+  },
+  {
+    "_id": "e091332f063e3d32",
+    "name": "Mana Draught",
+    "type": "gear",
+    "img": "icons/svg/chest.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Restores mana when drunk.</p>",
+      "quantity": 1,
+      "burden": 0,
+      "value": 0,
+      "combatItem": true,
+      "isKit": false,
+      "materialType": "",
+      "units": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:mana-draught"
+      }
+    }
+  },
+  {
+    "_id": "d3b486454c5a507c",
+    "name": "Antidote",
+    "type": "gear",
+    "img": "icons/svg/chest.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Ends one poison effect.</p>",
+      "quantity": 1,
+      "burden": 0,
+      "value": 0,
+      "combatItem": true,
+      "isKit": false,
+      "materialType": "",
+      "units": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:antidote"
+      }
+    }
+  },
+  {
+    "_id": "ea90b5c8fc26e072",
+    "name": "Bedroll",
+    "type": "gear",
+    "img": "icons/svg/chest.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Required for a proper Rest.</p>",
+      "quantity": 1,
+      "burden": 1,
+      "value": 0,
+      "combatItem": false,
+      "isKit": false,
+      "materialType": "",
+      "units": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:bedroll"
+      }
+    }
+  },
+  {
+    "_id": "58022100d759976b",
+    "name": "Blacksmith's Kit",
+    "type": "gear",
+    "img": "icons/svg/chest.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Required to craft at a forge.</p>",
+      "quantity": 1,
+      "burden": 2,
+      "value": 0,
+      "combatItem": false,
+      "isKit": true,
+      "materialType": "",
+      "units": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:blacksmith-s-kit"
+      }
+    }
+  },
+  {
+    "_id": "b338503ca026cf3f",
+    "name": "Alchemist's Kit",
+    "type": "gear",
+    "img": "icons/svg/chest.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Required to brew reagents.</p>",
+      "quantity": 1,
+      "burden": 2,
+      "value": 0,
+      "combatItem": false,
+      "isKit": true,
+      "materialType": "",
+      "units": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:alchemist-s-kit"
+      }
+    }
+  },
+  {
+    "_id": "4b7e7affd54afd7c",
+    "name": "Artificer's Kit",
+    "type": "gear",
+    "img": "icons/svg/chest.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Required for artifice work.</p>",
+      "quantity": 1,
+      "burden": 2,
+      "value": 0,
+      "combatItem": false,
+      "isKit": true,
+      "materialType": "",
+      "units": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:artificer-s-kit"
+      }
+    }
+  },
+  {
+    "_id": "be6a08cf0d8a3f9e",
+    "name": "Mining Pick",
+    "type": "gear",
+    "img": "icons/svg/chest.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Required to gather from ore nodes.</p>",
+      "quantity": 1,
+      "burden": 1,
+      "value": 0,
+      "combatItem": false,
+      "isKit": false,
+      "materialType": "",
+      "units": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:mining-pick"
+      }
+    }
+  },
+  {
+    "_id": "34a4c664d7208502",
+    "name": "Iron Ore",
+    "type": "gear",
+    "img": "icons/svg/item-bag.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Raw ore. Smelted into ingots.</p>",
+      "quantity": 0,
+      "burden": 0,
+      "value": 0,
+      "combatItem": false,
+      "isKit": false,
+      "materialType": "Ore",
+      "units": 1
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:iron-ore"
+      }
+    }
+  },
+  {
+    "_id": "4ef9534927036dee",
+    "name": "Herb Bundle",
+    "type": "gear",
+    "img": "icons/svg/item-bag.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Common reagents for alchemy.</p>",
+      "quantity": 0,
+      "burden": 0,
+      "value": 0,
+      "combatItem": false,
+      "isKit": false,
+      "materialType": "Botany",
+      "units": 1
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:herb-bundle"
+      }
+    }
+  },
+  {
+    "_id": "752a71cbc3b9c630",
+    "name": "Timber",
+    "type": "gear",
+    "img": "icons/svg/item-bag.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Rough-cut wood for carpentry.</p>",
+      "quantity": 0,
+      "burden": 0,
+      "value": 0,
+      "combatItem": false,
+      "isKit": false,
+      "materialType": "Wood",
+      "units": 1
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:timber"
+      }
+    }
+  },
+  {
+    "_id": "a3b6532cdbce34f8",
+    "name": "Monster Hide",
+    "type": "gear",
+    "img": "icons/svg/item-bag.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Harvested from a defeated creature.</p>",
+      "quantity": 0,
+      "burden": 0,
+      "value": 0,
+      "combatItem": false,
+      "isKit": false,
+      "materialType": "Hide",
+      "units": 1
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "gear:monster-hide"
+      }
+    }
+  }
+]

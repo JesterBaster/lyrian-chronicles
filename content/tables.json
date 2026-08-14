@@ -1,0 +1,128 @@
+[
+  {
+    "_id": "9b7cd82200960338",
+    "name": "Injury Table (1d10)",
+    "img": "icons/svg/blood.svg",
+    "description": "Rolled when a character is downed and the encounter concludes.",
+    "formula": "1d10",
+    "replacement": true,
+    "displayRoll": true,
+    "results": [
+      {
+        "_id": "ca3d40ab017aa2ca",
+        "type": "text",
+        "text": "Main Hand Injury",
+        "range": [
+          1,
+          1
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "45105488950ab102",
+        "type": "text",
+        "text": "Muscle Injury",
+        "range": [
+          2,
+          2
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "7c7c0759b635ca53",
+        "type": "text",
+        "text": "Spirit Circuit Injury",
+        "range": [
+          3,
+          3
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "fab2058844cbd9e8",
+        "type": "text",
+        "text": "Off Hand Injury",
+        "range": [
+          4,
+          4
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "7dc4ea0cb8aa755e",
+        "type": "text",
+        "text": "Leg Injury",
+        "range": [
+          5,
+          5
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "66a5f775578ad77f",
+        "type": "text",
+        "text": "Head Injury",
+        "range": [
+          6,
+          6
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "96276861aafd4e15",
+        "type": "text",
+        "text": "Wound Injury",
+        "range": [
+          7,
+          7
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "fb2c4df336513055",
+        "type": "text",
+        "text": "Eye Injury",
+        "range": [
+          8,
+          8
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "16755aef53153808",
+        "type": "text",
+        "text": "Laceration Injury",
+        "range": [
+          9,
+          9
+        ],
+        "weight": 1,
+        "drawn": false
+      },
+      {
+        "_id": "c7a8a8a6e9f37b44",
+        "type": "text",
+        "text": "Foot Injury",
+        "range": [
+          10,
+          10
+        ],
+        "weight": 1,
+        "drawn": false
+      }
+    ],
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "table:injury"
+      }
+    }
+  }
+]

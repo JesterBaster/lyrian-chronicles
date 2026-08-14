@@ -1,0 +1,12 @@
+<div class="lyrian-card">
+  <header class="lyrian-card__head">
+    <img src="{{item.img}}" alt="" />
+    <div>
+      <h3>{{item.name}}</h3>
+      {{#if system.costLabel}}<span class="lyrian-card__sub">{{system.costLabel}}</span>{{/if}}
+    </div>
+  </header>
+  {{#if system.range}}<p class="lyrian-card__line"><strong>Range</strong> {{system.range}}</p>{{/if}}
+  {{#if system.requirement}}<p class="lyrian-card__line"><strong>Requirement</strong> {{system.requirement}}</p>{{/if}}
+  <div class="lyrian-card__text">{{{system.description}}}</div>
+</div>

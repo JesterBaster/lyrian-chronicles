@@ -1,0 +1,140 @@
+[
+  {
+    "_id": "e2e9ba2dea314934",
+    "name": "Travelling Clothes",
+    "type": "armor",
+    "img": "icons/svg/shield.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>No protection, no penalty.</p>",
+      "category": "clothing",
+      "equipped": false,
+      "proficient": true,
+      "guardBonus": 0,
+      "blockBonus": 0,
+      "burden": 0,
+      "value": 0,
+      "modification": ""
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "armor:clothing"
+      }
+    }
+  },
+  {
+    "_id": "cb98993ed97975b0",
+    "name": "Leather Armour",
+    "type": "armor",
+    "img": "icons/svg/shield.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>+1 Guard. Light enough to move in.</p>",
+      "category": "light",
+      "equipped": false,
+      "proficient": true,
+      "guardBonus": 0,
+      "blockBonus": 0,
+      "burden": 1,
+      "value": 0,
+      "modification": ""
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "armor:light"
+      }
+    }
+  },
+  {
+    "_id": "06106c6c136a1327",
+    "name": "Chainmail",
+    "type": "armor",
+    "img": "icons/svg/shield.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>+2 Guard at a real cost to Evasion.</p>",
+      "category": "medium",
+      "equipped": false,
+      "proficient": true,
+      "guardBonus": 0,
+      "blockBonus": 0,
+      "burden": 2,
+      "value": 0,
+      "modification": ""
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "armor:medium"
+      }
+    }
+  },
+  {
+    "_id": "c60edf246b88e6b1",
+    "name": "Plate Armour",
+    "type": "armor",
+    "img": "icons/svg/shield.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>+3 Guard and the best Block value available.</p>",
+      "category": "heavy",
+      "equipped": false,
+      "proficient": true,
+      "guardBonus": 0,
+      "blockBonus": 0,
+      "burden": 3,
+      "value": 0,
+      "modification": ""
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "armor:heavy"
+      }
+    }
+  },
+  {
+    "_id": "e8a2db5110ee62c5",
+    "name": "Shield",
+    "type": "armor",
+    "img": "icons/svg/shield.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>Adds to Block only; no effect on Guard or Evasion.</p>",
+      "category": "shield",
+      "equipped": false,
+      "proficient": true,
+      "guardBonus": 0,
+      "blockBonus": 0,
+      "burden": 1,
+      "value": 0,
+      "modification": ""
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "armor:shield"
+      }
+    }
+  },
+  {
+    "_id": "686143b5af20dd30",
+    "name": "Greatshield",
+    "type": "armor",
+    "img": "icons/svg/shield.svg",
+    "system": {
+      "source": "Lyrian Chronicles core rules",
+      "description": "<p>A wall of steel. Slows you down.</p>",
+      "category": "greatshield",
+      "equipped": false,
+      "proficient": true,
+      "guardBonus": 0,
+      "blockBonus": 0,
+      "burden": 2,
+      "value": 0,
+      "modification": ""
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "armor:greatshield"
+      }
+    }
+  }
+]

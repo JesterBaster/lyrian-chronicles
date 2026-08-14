@@ -1,0 +1,84 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="inventory" data-group="primary" data-application-part="inventory">
+
+  <div class="lyr-section-head">
+    <h2 class="lyr-heading">Weapons</h2>
+    <button type="button" data-action="createItem" data-type="weapon">Add weapon</button>
+  </div>
+  <ul class="lyr-list">
+    {{#each items.weapons as |item|}}
+      <li class="lyr-row" data-item-id="{{item.id}}">
+        <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+        <div class="lyr-row__body">
+          <span class="lyr-row__name">{{item.name}}</span>
+          <span class="lyr-row__meta">
+            {{lyrianLocalizeKey "weaponGroups" item.system.group}} ·
+            burden {{item.system.burden}}
+            {{#unless item.system.proficient}} · <em class="lyr-warn">not proficient</em>{{/unless}}
+          </span>
+        </div>
+        <div class="lyr-row__actions">
+          <button type="button" class="lyr-icon" data-action="toggleEquip"><i class="fa-solid {{#if item.system.equipped}}fa-hand-fist{{else}}fa-box{{/if}}"></i></button>
+          <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+          <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </li>
+    {{else}}<li class="lyr-empty">Unarmed.</li>{{/each}}
+  </ul>
+
+  <div class="lyr-section-head">
+    <h2 class="lyr-heading">Armour and shields</h2>
+    <button type="button" data-action="createItem" data-type="armor">Add armour</button>
+  </div>
+  <ul class="lyr-list">
+    {{#each items.armor as |item|}}
+      <li class="lyr-row" data-item-id="{{item.id}}">
+        <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+        <div class="lyr-row__body">
+          <span class="lyr-row__name">{{item.name}}</span>
+          <span class="lyr-row__meta">
+            {{lyrianLocalizeKey "armorCategories" item.system.category}} ·
+            guard {{lyrianSigned item.system.guard}} · block {{item.system.blockValue}} ·
+            evasion {{lyrianSigned item.system.evasionPenalty}}
+          </span>
+        </div>
+        <div class="lyr-row__actions">
+          <button type="button" class="lyr-icon" data-action="toggleEquip"><i class="fa-solid {{#if item.system.equipped}}fa-shield{{else}}fa-box{{/if}}"></i></button>
+          <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+          <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </li>
+    {{else}}<li class="lyr-empty">Unarmoured.</li>{{/each}}
+  </ul>
+
+  <div class="lyr-section-head">
+    <h2 class="lyr-heading">Gear and materials</h2>
+    <button type="button" data-action="createItem" data-type="gear">Add gear</button>
+  </div>
+  <ul class="lyr-list">
+    {{#each items.gear as |item|}}
+      <li class="lyr-row" data-item-id="{{item.id}}">
+        <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+        <div class="lyr-row__body">
+          <span class="lyr-row__name">{{item.name}}</span>
+          <span class="lyr-row__meta">
+            x{{item.system.quantity}}
+            {{#if item.system.units}} · {{item.system.units}} units{{/if}}
+            {{#if item.system.countsAsBurden}} · burden {{item.system.totalBurden}}{{else}} · stowed{{/if}}
+          </span>
+        </div>
+        <div class="lyr-row__actions">
+          <button type="button" data-action="useItem">Show</button>
+          <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+          <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </li>
+    {{else}}<li class="lyr-empty">Travelling light.</li>{{/each}}
+  </ul>
+
+  {{#if isCharacter}}
+    <div class="lyr-purse">
+      <label>Clim <input type="number" name="system.clim" value="{{system.clim}}" /></label>
+      <span class="lyr-note">Burden {{system.burden}} of {{config.burdenLimit}}</span>
+    </div>
+  {{/if}}
+</section>

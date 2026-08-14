@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Lyrian Chronicles — Foundry VTT system</title>
+<meta name="description" content="An unofficial Foundry VTT game system for Angel's Sword Studios' Lyrian Chronicles." />
+<style>
+  :root {
+    --night: #15172a;
+    --plate: #1e2140;
+    --plate-2: #262a4d;
+    --rule: #3a3f6b;
+    --brass: #c9a227;
+    --spirit: #58e0c8;
+    --ink: #e9e7f4;
+    --ink-dim: #a3a2c4;
+    --font-display: "Palatino Linotype", Palatino, Georgia, serif;
+    --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-num: "SFMono-Regular", "IBM Plex Mono", "Courier New", monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(ellipse at 50% -10%, rgba(88, 224, 200, 0.10), transparent 60%),
+      linear-gradient(180deg, var(--night), #0e1020);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 4rem 1.25rem 5rem; }
+
+  /* The spirit core: one faceted shape, the sheet's signature, reused as the hero mark. */
+  .core {
+    width: 82px; height: 82px; margin: 0 auto 1.75rem;
+    display: grid; place-items: center;
+    background: var(--night);
+    border: 1px solid var(--spirit);
+    clip-path: polygon(50% 0%, 100% 26%, 100% 74%, 50% 100%, 0% 74%, 0% 26%);
+    box-shadow: 0 0 26px rgba(88, 224, 200, 0.28) inset;
+  }
+  .core span { font-family: var(--font-num); color: var(--spirit); font-size: 1.5rem; }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 6vw, 2.9rem);
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin: 0 0 0.4rem;
+  }
+
+  .tagline { text-align: center; color: var(--ink-dim); margin: 0 0 0.6rem; }
+
+  .badges { display: flex; justify-content: center; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+  .badge {
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.09em;
+    border: 1px solid var(--rule); border-radius: 999px;
+    padding: 0.15rem 0.65rem; color: var(--ink-dim);
+  }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: 1.1rem; letter-spacing: 0.09em; text-transform: uppercase;
+    color: var(--brass);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.3rem; margin: 2.5rem 0 1rem;
+  }
+
+  .install { background: var(--plate); border: 1px solid var(--rule); border-left: 3px solid var(--brass); border-radius: 4px; padding: 1.1rem; }
+  .install p { margin: 0 0 0.7rem; font-size: 0.92rem; }
+
+  .url-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+  code.url {
+    flex: 1 1 18rem; min-width: 0;
+    font-family: var(--font-num); font-size: 0.78rem;
+    background: var(--night); border: 1px solid var(--rule); border-radius: 3px;
+    padding: 0.6rem 0.7rem; overflow-x: auto; white-space: nowrap;
+  }
+
+  button {
+    font: inherit; font-size: 0.82rem;
+    background: var(--plate-2); color: var(--ink);
+    border: 1px solid var(--rule); border-radius: 3px;
+    padding: 0.5rem 1rem; cursor: pointer;
+    transition: border-color 140ms ease, color 140ms ease;
+  }
+  button:hover { border-color: var(--spirit); color: var(--spirit); }
+  button:focus-visible { outline: 2px solid var(--spirit); outline-offset: 2px; }
+  button[data-copied="true"] { border-color: var(--spirit); color: var(--spirit); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  th, td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--ink-dim); font-weight: 600; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.07em; }
+  td:first-child { color: var(--brass); white-space: nowrap; }
+
+  ul { padding-left: 1.1rem; }
+  li { margin-bottom: 0.4rem; font-size: 0.92rem; }
+
+  a { color: var(--spirit); }
+
+  footer { margin-top: 3.5rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); font-size: 0.78rem; color: var(--ink-dim); }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="core" aria-hidden="true"><span>◆</span></div>
+
+  <h1>The Lyrian Chronicles</h1>
+  <p class="tagline">An unofficial Foundry VTT game system for Angel&rsquo;s Sword Studios&rsquo; tabletop RPG.</p>
+
+  <div class="badges">
+    <span class="badge">Foundry v13&ndash;v14</span>
+    <span class="badge">Unofficial</span>
+    <span class="badge">Work in progress</span>
+  </div>
+
+  <h2>Install</h2>
+  <div class="install">
+    <p>In Foundry: <strong>Game Systems &rarr; Install System</strong>, then paste this manifest URL.</p>
+    <div class="url-row">
+      <code class="url" id="manifest">https://github.com/JesterBaster/lyrian-chronicles/releases/latest/download/system.json</code>
+      <button type="button" id="copy" data-copied="false">Copy</button>
+    </div>
+  </div>
+
+  <h2>What it handles</h2>
+  <table>
+    <thead><tr><th>Rule</th><th>Behaviour</th></tr></thead>
+    <tbody>
+      <tr><td>Derived stats</td><td>HP 20 + Toughness&times;10, Mana 6 + Power, RP 2 + Agility, Evasion 7 + Agility, Potency 11 + Focus</td></tr>
+      <tr><td>Attacks</td><td>Light 2d4 + Power, Heavy 4d6 + 2&times;Power (5d6 two-handed melee), Precise at doubled Focus with Pinpoint</td></tr>
+      <tr><td>Criticals</td><td>Natural 20, or 19 with Keen weapon groups: maximum damage plus Half Pierce</td></tr>
+      <tr><td>Defence</td><td>Chat card buttons for Dodge and Block; Block uses 2&times;Toughness + armour block value and can reduce damage to zero</td></tr>
+      <tr><td>Initiative</td><td>1d4 + Agility, ties resolved for players and bosses first, then heroics, then grunts</td></tr>
+      <tr><td>Action economy</td><td>4 AP and 2 + Agility RP for heroics, 2 AP and 1 RP for grunts</td></tr>
+      <tr><td>Once per round</td><td>Non-Rapid abilities lock until your next turn; one Secret Art per encounter</td></tr>
+      <tr><td>Injuries</td><td>1d10 table roll creates an Injury item on the actor</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Left to the table</h2>
+  <p>Cover, stealth, grapple escape power, mounted combat, crafting dice pools, gathering
+  node points and interlude bookkeeping have fields on the sheet but are resolved by the GM.
+  That is deliberate &mdash; automating them before the system has seen play tends to lock in
+  the wrong assumptions.</p>
+
+  <h2>Modules</h2>
+  <p>Generic modules work: Dice So Nice, Drag Ruler, Sequencer, FXMaster, Monk&rsquo;s Token Bar,
+  Automated Animations. System-specific modules do not &mdash; a D&amp;D 5e module reads
+  <code>system.abilities.str</code> and finds nothing here. Every bonus is a real schema field
+  (<code>system.stats.power.bonus</code>, <code>system.defences.guardBonus</code>), so Active
+  Effects and the modules that drive them apply cleanly.</p>
+
+  <footer>
+    <p>Not affiliated with or endorsed by Angel&rsquo;s Sword Studios. The Lyrian Chronicles rules,
+    setting and trademarks belong to Angel&rsquo;s Sword Studios, LLC. This system ships no rules
+    text and no art.</p>
+    <p><a href="https://github.com/JesterBaster/lyrian-chronicles">Source on GitHub</a></p>
+  </footer>
+</div>
+
+<script>
+  const button = document.getElementById("copy");
+  const manifest = document.getElementById("manifest");
+
+  button.addEventListener("click", async () => {
+    const url = manifest.textContent.trim();
+    try {
+      await navigator.clipboard.writeText(url);
+    } catch {
+      // Clipboard API needs a secure context; select the text so it can be copied by hand.
+      const range = document.createRange();
+      range.selectNodeContents(manifest);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+    button.textContent = "Copied";
+    button.dataset.copied = "true";
+    setTimeout(() => {
+      button.textContent = "Copy";
+      button.dataset.copied = "false";
+    }, 2000);
+  });
+</script>
+</body>
+</html>

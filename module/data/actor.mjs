@@ -1,0 +1,446 @@
+import { LYRIAN } from "../config.mjs";
+
+const fields = foundry.data.fields;
+
+/**
+ * Shorthand for a non-negative integer field.
+ */
+function int(initial = 0, extra = {}) {
+  return new fields.NumberField({ required: true, integer: true, initial, ...extra });
+}
+
+/**
+ * A skill can carry several expertises — "Athletics (Climbing)" and
+ * "Athletics (Swimming)" are separate purchases that apply to different rolls,
+ * so each needs its own name and rank.
+ */
+function expertiseList() {
+  return new fields.ArrayField(
+    new fields.SchemaField({
+      name: new fields.StringField({ required: true, blank: true, initial: "" }),
+      rank: int(0, { min: 0 })
+    }),
+    { required: false, initial: [] }
+  );
+}
+
+/* -------------------------------------------- */
+
+/**
+ * Shared schema and derivation for every actor in Lyr.
+ */
+export class LyrianActorBase extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    const schema = {};
+
+    schema.hp = new fields.SchemaField({
+      value: int(30),
+      max: int(30),
+      temp: int(0),
+      maxBonus: int(0)
+    });
+
+    schema.mana = new fields.SchemaField({
+      value: int(6),
+      max: int(6),
+      temp: int(0),
+      maxBonus: int(0)
+    });
+
+    schema.ap = new fields.SchemaField({
+      value: int(4),
+      max: int(4),
+      temp: int(0),
+      bonus: int(0)
+    });
+
+    schema.rp = new fields.SchemaField({
+      value: int(2),
+      max: int(2),
+      temp: int(0),
+      bonus: int(0)
+    });
+
+    // Main stats.
+    schema.stats = new fields.SchemaField(
+      Object.keys(LYRIAN.mainStats).reduce((obj, key) => {
+        obj[key] = new fields.SchemaField({
+          value: int(3, { min: 0 }),
+          bonus: int(0)
+        });
+        return obj;
+      }, {})
+    );
+
+    // Sub stats.
+    schema.subStats = new fields.SchemaField(
+      Object.keys(LYRIAN.subStats).reduce((obj, key) => {
+        obj[key] = new fields.SchemaField({
+          value: int(1, { min: 0 }),
+          bonus: int(0)
+        });
+        return obj;
+      }, {})
+    );
+
+    schema.defences = new fields.SchemaField({
+      guardBonus: int(0),
+      evasionBonus: int(0),
+      blockBonus: int(0),
+      potencyBonus: int(0),
+      saveBonus: int(0),
+      accuracyBonus: int(0)
+    });
+
+    schema.movement = new fields.SchemaField({
+      speed: int(LYRIAN.baseSpeed),
+      bonus: int(0),
+      fly: int(0),
+      swim: int(0)
+    });
+
+    schema.initiative = new fields.SchemaField({
+      bonus: int(0)
+    });
+
+    schema.size = new fields.StringField({
+      required: true,
+      initial: "medium",
+      choices: Object.keys(LYRIAN.creatureSizes)
+    });
+
+    schema.biography = new fields.HTMLField({ required: false, blank: true });
+
+    return schema;
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Derive everything the rulebook calculates from stats and equipment.
+   * Runs after Active Effects have been applied.
+   */
+  prepareDerivedData() {
+    const stats = this.stats;
+    const subStats = this.subStats;
+
+    for (const stat of Object.values(stats)) stat.total = stat.value + stat.bonus;
+    for (const stat of Object.values(subStats)) stat.total = stat.value + stat.bonus;
+
+    const power = stats.power.total;
+    const focus = stats.focus.total;
+    const agility = stats.agility.total;
+    const toughness = stats.toughness.total;
+
+    // Equipment contributions.
+    const gear = this._prepareEquipment();
+
+    // Resources.
+    this.hp.max = 20 + toughness * 10 + (this.hp.maxBonus ?? 0);
+    this.mana.max = 6 + power + (this.mana.maxBonus ?? 0);
+
+    // Current values are deliberately NOT capped at max. Overhealing, temporary
+    // boosts and GM fiat all need to push a resource past its normal ceiling.
+    this.hp.over = this.hp.value > this.hp.max;
+    this.mana.over = this.mana.value > this.mana.max;
+
+    // HP and mana have final maxima by now. AP and RP do not: their max is set
+    // by the character/NPC subclass after this runs, so they are finished there.
+    this._finishPools(this.hp, this.mana);
+
+    // Defences.
+    this.guard = Math.max(0, gear.guard + toughness + this.defences.guardBonus);
+    this.blockGuard = Math.max(
+      0,
+      2 * toughness + gear.blockValue + this.defences.guardBonus + this.defences.blockBonus
+    );
+    this.evasion = 7 + agility + gear.evasion + this.defences.evasionBonus;
+    this.dodgeEvasion = this.evasion + LYRIAN.dodgeBonus;
+    this.potency = 11 + focus + this.defences.potencyBonus;
+    this.save = toughness + this.defences.saveBonus;
+
+    this.initiative.value = Math.max(
+      0,
+      agility + gear.initiative + this.initiative.bonus
+    );
+
+    this.movement.total = Math.max(0, this.movement.speed + this.movement.bonus);
+
+    // Accuracy shorthands used by the roll helpers.
+    this.accuracy = {
+      standard: focus + this.defences.accuracyBonus,
+      precise: focus * 2 + this.defences.accuracyBonus
+    };
+
+    this.equipment = gear;
+    this.burden = gear.burden;
+    this.overBurdened = gear.burden > LYRIAN.burdenLimit;
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Effective total and bar capacity for a resource pool.
+   * `capacity` is max plus temp, so a boosted bar grows instead of compressing.
+   */
+  _finishPools(...pools) {
+    for (const pool of pools) {
+      const temp = pool.temp ?? 0;
+      pool.total = pool.value + temp;
+      pool.capacity = Math.max(1, pool.max + temp);
+    }
+  }
+
+  /**
+   * Sum equipped armour, shields and carried burden.
+   * Only one armour applies; shields stack with armour but only for Block.
+   */
+  _prepareEquipment() {
+    const out = {
+      guard: 0,
+      evasion: 0,
+      initiative: 0,
+      blockValue: 0,
+      burden: 0,
+      armor: null,
+      shield: null,
+      weapons: []
+    };
+
+    const items = this.parent?.items ?? [];
+
+    for (const item of items) {
+      const sys = item.system;
+
+      if (item.type === "gear" && sys.combatItem) {
+        out.burden += (sys.burden ?? 0) * (sys.quantity ?? 1);
+        continue;
+      }
+
+      if (item.type === "weapon") {
+        out.burden += sys.burden ?? 0;
+        if (sys.equipped) out.weapons.push(item);
+        continue;
+      }
+
+      if (item.type !== "armor") continue;
+
+      const cat = LYRIAN.armorCategories[sys.category] ?? LYRIAN.armorCategories.clothing;
+      out.burden += sys.burden ?? cat.burden ?? 0;
+      if (!sys.equipped) continue;
+
+      const penalty = sys.proficient ? { guard: 0, evasion: 0 } : LYRIAN.nonProficientArmorPenalty;
+
+      if (cat.isShield) {
+        out.shield = item;
+        out.blockValue += cat.block + (sys.blockBonus ?? 0);
+        out.guard += cat.guard + penalty.guard;
+        out.evasion += cat.evasion + penalty.evasion;
+        out.initiative += cat.initiative;
+      } else {
+        out.armor = item;
+        out.guard += cat.guard + (sys.guardBonus ?? 0) + penalty.guard;
+        out.evasion += cat.evasion + penalty.evasion;
+        out.initiative += cat.initiative;
+        out.blockValue += cat.block + (sys.blockBonus ?? 0);
+      }
+    }
+
+    return out;
+  }
+}
+
+/* -------------------------------------------- */
+/*  Player characters                            */
+/* -------------------------------------------- */
+
+export class LyrianCharacter extends LyrianActorBase {
+  static defineSchema() {
+    const schema = super.defineSchema();
+
+    schema.exp = new fields.SchemaField({
+      total: int(0),
+      spent: int(0)
+    });
+
+    schema.interlude = new fields.SchemaField({
+      points: int(0),
+      errandPoints: int(0)
+    });
+
+    schema.clim = int(LYRIAN.progression.startingClim);
+
+    // Main skills: ranks plus a single named expertise.
+    schema.skills = new fields.SchemaField(
+      Object.keys(LYRIAN.skills).reduce((obj, key) => {
+        obj[key] = new fields.SchemaField({
+          rank: int(0, { min: 0 }),
+          expertises: expertiseList(),
+          bonus: int(0)
+        });
+        return obj;
+      }, {})
+    );
+
+    schema.artisan = new fields.SchemaField(
+      Object.keys(LYRIAN.artisanSkills).reduce((obj, key) => {
+        obj[key] = new fields.SchemaField({
+          rank: int(0, { min: 0 }),
+          expertises: expertiseList(),
+          bonus: int(0)
+        });
+        return obj;
+      }, {})
+    );
+
+    schema.gathering = new fields.SchemaField(
+      Object.keys(LYRIAN.gatheringSkills).reduce((obj, key) => {
+        obj[key] = new fields.SchemaField({
+          rank: int(0, { min: 0 }),
+          bonus: int(0)
+        });
+        return obj;
+      }, {})
+    );
+
+    schema.proficiencies = new fields.SchemaField({
+      weapons: new fields.SetField(new fields.StringField(), { required: false }),
+      armor: new fields.SetField(new fields.StringField(), { required: false }),
+      unarmed: new fields.BooleanField({ initial: false })
+    });
+
+    schema.details = new fields.SchemaField({
+      race: new fields.StringField({ blank: true, initial: "" }),
+      subrace: new fields.StringField({ blank: true, initial: "" }),
+      age: new fields.StringField({ blank: true, initial: "" }),
+      pronouns: new fields.StringField({ blank: true, initial: "" }),
+      party: new fields.StringField({ blank: true, initial: "" }),
+      partyRole: new fields.StringField({ blank: true, initial: "" })
+    });
+
+    schema.encounter = new fields.SchemaField({
+      secretArtUsed: new fields.BooleanField({ initial: false }),
+      encounterStartUsed: new fields.BooleanField({ initial: false }),
+      conclusionUsed: new fields.BooleanField({ initial: false }),
+      downedThisEncounter: int(0)
+    });
+
+    return schema;
+  }
+
+  /* -------------------------------------------- */
+
+  prepareDerivedData() {
+    super.prepareDerivedData();
+
+    // Spirit core is exactly the EXP you have spent.
+    this.spiritCore = this.exp.spent;
+    this.exp.available = this.exp.total - this.exp.spent;
+
+    // Skill caps loosen as your spirit core grows.
+    const caps = LYRIAN.skillCaps;
+    if (this.spiritCore >= caps.uncappedThreshold) this.skillCap = Infinity;
+    else if (this.spiritCore >= caps.skyboundThreshold) this.skillCap = caps.base + caps.skyboundBonus;
+    else this.skillCap = caps.base;
+
+    this.tier = LYRIAN.spiritCoreTiers.reduce(
+      (best, t) => (this.spiritCore >= t.threshold ? t : best),
+      LYRIAN.spiritCoreTiers[0]
+    );
+
+    // Action economy. Player characters are always heroic.
+    const economy = LYRIAN.actionEconomy.heroic;
+    this.ap.max = economy.ap + this.ap.bonus;
+    this.rp.max = economy.rp + this.stats.agility.total + this.rp.bonus;
+    this._finishPools(this.ap, this.rp);
+
+    this._prepareSkillTotals();
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Skill check bonus = sub stat + ranks + highest applicable expertise.
+   * Artisan and gathering skills do not add a sub stat.
+   */
+  _prepareSkillTotals() {
+    for (const [key, skill] of Object.entries(this.skills)) {
+      const statKey = LYRIAN.skills[key].stat;
+      const stat = this.subStats[statKey]?.total ?? 0;
+      skill.stat = statKey;
+      skill.total = stat + skill.rank + skill.bonus;
+      skill.atCap = skill.rank >= this.skillCap;
+      this._prepareExpertises(skill);
+    }
+
+    for (const skill of Object.values(this.artisan)) {
+      skill.total = skill.rank + skill.bonus;
+      skill.atCap = skill.rank >= LYRIAN.skillCaps.artisan;
+      this._prepareExpertises(skill);
+    }
+
+    for (const skill of Object.values(this.gathering)) {
+      skill.total = skill.rank + skill.bonus;
+      skill.atCap = skill.rank >= LYRIAN.skillCaps.gathering;
+    }
+  }
+
+  /**
+   * Give each expertise its own roll total, and record the best one so the
+   * sheet can show what this skill is capable of at a glance.
+   */
+  _prepareExpertises(skill) {
+    let best = null;
+    for (const expertise of skill.expertises ?? []) {
+      expertise.total = skill.total + expertise.rank;
+      if (!best || expertise.total > best.total) best = expertise;
+    }
+    skill.bestExpertise = best;
+    skill.hasExpertise = (skill.expertises?.length ?? 0) > 0;
+  }
+}
+
+/* -------------------------------------------- */
+/*  NPCs                                         */
+/* -------------------------------------------- */
+
+export class LyrianNPC extends LyrianActorBase {
+  static defineSchema() {
+    const schema = super.defineSchema();
+
+    schema.rank = new fields.StringField({
+      required: true,
+      initial: "grunt",
+      choices: Object.keys(LYRIAN.combatantTypes)
+    });
+
+    schema.details = new fields.SchemaField({
+      creatureType: new fields.StringField({ blank: true, initial: "" }),
+      powerLevel: int(0),
+      expReward: int(0),
+      astraCorruption: int(0)
+    });
+
+    schema.gatherables = new fields.StringField({ blank: true, initial: "" });
+    schema.tactics = new fields.HTMLField({ required: false, blank: true });
+
+    return schema;
+  }
+
+  /* -------------------------------------------- */
+
+  prepareDerivedData() {
+    super.prepareDerivedData();
+
+    const economy = LYRIAN.actionEconomy[this.rank] ?? LYRIAN.actionEconomy.grunt;
+    this.ap.max = economy.ap + this.ap.bonus;
+    this.rp.max = economy.rpFromAgility
+      ? economy.rp + this.stats.agility.total + this.rp.bonus
+      : economy.rp + this.rp.bonus;
+    this._finishPools(this.ap, this.rp);
+
+    // Grunts die outright at 0 HP; heroics and bosses go down first.
+    this.diesWhenDropped = this.rank === "grunt";
+    this.isHeroic = this.rank !== "grunt";
+  }
+}

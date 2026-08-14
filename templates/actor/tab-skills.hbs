@@ -1,0 +1,82 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="skills" data-group="primary" data-application-part="skills">
+
+  <p class="lyr-note">
+    Click a skill to roll d20 + sub stat + ranks. Click an expertise to roll that
+    expertise instead. Current rank cap: <strong>{{skillCapLabel}}</strong>.
+  </p>
+
+  {{#*inline "expertiseBlock"}}
+    <div class="lyr-exp">
+      {{#each this.expertises as |exp index|}}
+        <div class="lyr-exp__row" data-expertise-row data-group="{{../group}}" data-skill="{{../key}}">
+          <button type="button" class="lyr-exp__roll"
+                  data-action="{{../rollAction}}" data-skill="{{../key}}" data-expertise-index="{{index}}"
+                  title="Roll with this expertise">
+            {{#if exp.name}}{{exp.name}}{{else}}(unnamed){{/if}}
+            <em>{{lyrianSigned exp.total}}</em>
+          </button>
+          <input type="text" data-expertise-field data-expertise-name
+                 data-group="{{../group}}" data-skill="{{../key}}"
+                 value="{{exp.name}}" placeholder="Expertise name" />
+          <input type="number" data-expertise-field data-expertise-rank
+                 data-group="{{../group}}" data-skill="{{../key}}"
+                 value="{{exp.rank}}" title="Expertise points" />
+          <button type="button" class="lyr-icon" data-action="removeExpertise"
+                  data-group="{{../group}}" data-skill="{{../key}}" data-index="{{index}}"
+                  title="Remove"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      {{/each}}
+      <button type="button" class="lyr-exp__add" data-action="addExpertise"
+              data-group="{{group}}" data-skill="{{key}}">+ expertise</button>
+    </div>
+  {{/inline}}
+
+  <div class="lyr-skill-groups">
+    {{#each skillGroups as |group|}}
+      <div class="lyr-skill-group">
+        <h3 class="lyr-skill-group__title">{{group.label}} <em>{{group.value}}</em></h3>
+        {{#each group.skills as |skill|}}
+          <div class="lyr-skill-entry {{#if skill.atCap}}lyr-skill--capped{{/if}}">
+            <div class="lyr-skill">
+              <button type="button" class="lyr-skill__roll" data-action="rollSkill" data-skill="{{skill.key}}">
+                {{skill.label}}
+              </button>
+              <span class="lyr-skill__total">{{lyrianSigned skill.total}}</span>
+              <input class="lyr-skill__rank" type="number" name="system.skills.{{skill.key}}.rank" value="{{skill.rank}}" title="Ranks" />
+            </div>
+            {{> expertiseBlock expertises=skill.expertises key=skill.key group="skills" rollAction="rollSkill"}}
+          </div>
+        {{/each}}
+      </div>
+    {{/each}}
+  </div>
+
+  <div class="lyr-columns">
+    <div class="lyr-col">
+      <h2 class="lyr-heading">Artisan skills</h2>
+      <p class="lyr-note">Crafting check: d10 + skill + expertise. Cap 10 ranks.</p>
+      {{#each artisanList as |skill|}}
+        <div class="lyr-skill-entry {{#if skill.atCap}}lyr-skill--capped{{/if}}">
+          <div class="lyr-skill">
+            <button type="button" class="lyr-skill__roll" data-action="rollArtisan" data-skill="{{skill.key}}">{{skill.label}}</button>
+            <span class="lyr-skill__total">{{lyrianSigned skill.total}}</span>
+            <input class="lyr-skill__rank" type="number" name="system.artisan.{{skill.key}}.rank" value="{{skill.rank}}" />
+          </div>
+          {{> expertiseBlock expertises=skill.expertises key=skill.key group="artisan" rollAction="rollArtisan"}}
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="lyr-col">
+      <h2 class="lyr-heading">Gathering skills</h2>
+      <p class="lyr-note">Gathering check: d10 + skill. Cap 15 ranks, no expertise.</p>
+      {{#each gatheringList as |skill|}}
+        <div class="lyr-skill {{#if skill.atCap}}lyr-skill--capped{{/if}}">
+          <button type="button" class="lyr-skill__roll" data-action="rollGathering" data-skill="{{skill.key}}">{{skill.label}}</button>
+          <span class="lyr-skill__total">{{lyrianSigned skill.total}}</span>
+          <input class="lyr-skill__rank" type="number" name="system.gathering.{{skill.key}}.rank" value="{{skill.rank}}" />
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

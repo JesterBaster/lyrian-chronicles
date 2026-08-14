@@ -1,0 +1,84 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="main" data-group="primary" data-application-part="main">
+
+  <div class="lyr-columns">
+    <div class="lyr-col">
+      <h2 class="lyr-heading">Main stats</h2>
+      <p class="lyr-note">Creation array: 5, 4, 4, 3</p>
+      <div class="lyr-stat-grid">
+        {{#each mainStats as |stat|}}
+          <div class="lyr-stat">
+            <button type="button" class="lyr-stat__label" data-action="rollAttribute" data-value="{{stat.total}}" data-label="{{stat.label}}">{{stat.label}}</button>
+            <input class="lyr-stat__input" type="number" name="system.stats.{{stat.key}}.value" value="{{stat.value}}" />
+            {{#if stat.bonus}}<span class="lyr-stat__bonus">{{lyrianSigned stat.bonus}}</span>{{/if}}
+            <span class="lyr-stat__total">{{stat.total}}</span>
+          </div>
+        {{/each}}
+      </div>
+
+      <h2 class="lyr-heading">Sub stats</h2>
+      <p class="lyr-note">Creation array: 5, 4, 3, 2, 1</p>
+      <div class="lyr-stat-grid lyr-stat-grid--sub">
+        {{#each subStatList as |stat|}}
+          <div class="lyr-stat">
+            <button type="button" class="lyr-stat__label" data-action="rollAttribute" data-value="{{stat.total}}" data-label="{{stat.label}}">{{stat.label}}</button>
+            <input class="lyr-stat__input" type="number" name="system.subStats.{{stat.key}}.value" value="{{stat.value}}" />
+            <span class="lyr-stat__total">{{stat.total}}</span>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="lyr-col">
+      <h2 class="lyr-heading">Attacks</h2>
+      <ul class="lyr-list">
+        {{#each items.weapons as |weapon|}}
+          <li class="lyr-row {{#unless weapon.system.equipped}}lyr-row--stowed{{/unless}}" data-item-id="{{weapon.id}}">
+            <img class="lyr-row__icon" src="{{weapon.img}}" alt="" />
+            <div class="lyr-row__body">
+              <span class="lyr-row__name">{{weapon.name}}</span>
+              <span class="lyr-row__meta">
+                {{lyrianLocalizeKey "weaponGroups" weapon.system.group}} ·
+                {{#if weapon.system.isTwoHanded}}Two-handed{{else}}One-handed{{/if}} ·
+                {{weapon.system.range}} ft
+                {{#if (lt weapon.system.effectiveCrit 20)}} · crit {{weapon.system.effectiveCrit}}+{{/if}}
+              </span>
+            </div>
+            <div class="lyr-row__actions">
+              <button type="button" data-action="attack" data-attack-type="light" title="1 AP">Light</button>
+              <button type="button" data-action="attack" data-attack-type="heavy" title="2 AP">Heavy</button>
+              <button type="button" data-action="attack" data-attack-type="precise" title="2 AP">Precise</button>
+              <button type="button" class="lyr-icon" data-action="toggleEquip" title="Equip or stow">
+                <i class="fa-solid {{#if weapon.system.equipped}}fa-hand-fist{{else}}fa-box{{/if}}"></i>
+              </button>
+              <button type="button" class="lyr-icon" data-action="editItem" title="Edit"><i class="fa-solid fa-pen"></i></button>
+            </div>
+          </li>
+        {{else}}
+          <li class="lyr-empty">No weapons yet. Add one from the Inventory tab.</li>
+        {{/each}}
+      </ul>
+
+      <h2 class="lyr-heading">Injuries</h2>
+      <ul class="lyr-list lyr-list--tight">
+        {{#each items.injuries as |injury|}}
+          <li class="lyr-row" data-item-id="{{injury.id}}">
+            <div class="lyr-row__body"><span class="lyr-row__name">{{injury.name}}</span></div>
+            <div class="lyr-row__actions">
+              <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+              <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </li>
+        {{else}}
+          <li class="lyr-empty">Uninjured.</li>
+        {{/each}}
+      </ul>
+      <button type="button" class="lyr-wide" data-action="rollInjury">Roll on the injury table</button>
+
+      {{#if system.overBurdened}}
+        <p class="lyr-alert">Burden {{system.burden}} of {{config.burdenLimit}} — you are Rooted until you drop something.</p>
+      {{else}}
+        <p class="lyr-note">Burden {{system.burden}} of {{config.burdenLimit}}</p>
+      {{/if}}
+    </div>
+  </div>
+</section>

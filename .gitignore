@@ -1,0 +1,10 @@
+# Build output — the release workflow generates these.
+system.zip
+*.zip
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+node_modules/
