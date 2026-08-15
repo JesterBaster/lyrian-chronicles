@@ -9,6 +9,7 @@ import {
   featureSourceKey,
   indexGeneratedFeatures,
   normalizeClassLevel,
+  raceAncestryRequirement,
   raceAmbitionExp,
   raceAttributeBonuses,
   raceSkillGrant,
@@ -17,6 +18,21 @@ import {
 } from "../module/rules/progression.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
+
+test("Fae, Chimera, and Youkai require their complete official ancestry sets", async () => {
+  assert.deepEqual(raceAncestryRequirement("Fae"), { name: "Fae", count: 13 });
+  assert.deepEqual(raceAncestryRequirement("Chimera"), { name: "Chimera", count: 19 });
+  assert.deepEqual(raceAncestryRequirement("Youkai"), { name: "Youkai", count: 11 });
+  assert.equal(raceAncestryRequirement("Human"), null);
+  assert.equal(raceAncestryRequirement("Demon"), null);
+
+  const races = JSON.parse(await readFile(path.join(ROOT, "content", "races-01.json"), "utf8"));
+  for (const name of ["Fae", "Chimera", "Youkai"]) {
+    const rule = raceAncestryRequirement(name);
+    const options = races.filter((race) => race.system.raceKind === "ancestry" && race.system.primaryRace === name);
+    assert.equal(options.length, rule.count, name);
+  }
+});
 
 test("generated class features have stable keys and duplicate copies are identified", () => {
   const source = { sourceItemId: "class-1", stableId: "ability--power-jump" };

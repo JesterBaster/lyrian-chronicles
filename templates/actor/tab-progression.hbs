@@ -95,6 +95,12 @@
     <h2 class="lyr-heading">Race</h2>
     <button type="button" data-action="createItem" data-type="race">Add race</button>
   </div>
+  {{#if ancestryRequirement.missing}}
+    <div class="lyr-alert lyr-race-requirement">
+      <span>{{localize "LYRIAN.Race.AncestryRequired" race=ancestryRequirement.name count=ancestryRequirement.count}}</span>
+      <button type="button" data-action="chooseRequiredAncestry">{{localize "LYRIAN.Race.ChooseAncestry"}}</button>
+    </div>
+  {{/if}}
   <ul class="lyr-list">
     {{#each raceRows as |row|}}
       <li class="lyr-row" data-item-id="{{row.item.id}}">
