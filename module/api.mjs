@@ -1,4 +1,5 @@
 import { LYRIAN } from "./config.mjs";
+import { parseMonsterAttackProfile } from "./rules/monster-attack.mjs";
 
 /**
  * Public API for modules such as Automated Animations, Token Action HUD,
@@ -43,6 +44,22 @@ export const LyrianAPI = {
     if (!actor) return null;
     const weapons = actor.items.filter((i) => i.type === "weapon");
     const abilities = actor.items.filter((i) => ["ability", "monsterAbility"].includes(i.type));
+    const monsterAttacks = (actor.type === "npc" || actor.type === "monster")
+      ? ["light", "heavy"].flatMap((type) => {
+          const sourceProfile = actor.system.official?.[`${type}Attack`] ?? "";
+          const profile = parseMonsterAttackProfile(sourceProfile);
+          if (!profile) return [];
+          const apCost = LYRIAN.attackTypes[type].ap;
+          return [{
+            type,
+            sourceProfile,
+            accuracy: profile.accuracy,
+            damageFormula: profile.damageFormula,
+            apCost,
+            affordable: actor.system.ap.total >= apCost
+          }];
+        })
+      : [];
 
     return {
       resources: {
@@ -66,6 +83,7 @@ export const LyrianAPI = {
           affordable: actor.system.ap.total >= profile.ap
         }))
       })),
+      monsterAttacks,
       abilities: abilities.map((a) => ({
         itemId: a.id,
         uuid: a.uuid,
@@ -112,6 +130,13 @@ export const LyrianAPI = {
     const item = actor?.items.get(itemId);
     if (!item) throw new Error(`Lyrian API: no item ${itemId} on ${actor?.name}`);
     return item.rollAttack(attackType, options);
+  },
+
+  async rollMonsterAttack(actor, attackType = "light", options = {}) {
+    if (!["npc", "monster"].includes(actor?.type) || !actor?.rollMonsterAttack) {
+      throw new Error(`Lyrian API: ${actor?.name ?? "actor"} has no monster attack profile`);
+    }
+    return actor.rollMonsterAttack(attackType, options);
   },
 
   async useAbility(actor, itemId, options = {}) {
@@ -164,7 +189,7 @@ export const LyrianAPI = {
  *
  * The attack payload shape, stable across releases:
  * {
- *   actorUuid, itemUuid, itemName, attackType, damageType,
+ *   actorUuid, itemUuid, itemName, sourceUuid, sourceKind, attackType, damageType,
  *   accuracy: { total, formula, natural, isCrit } | null,
  *   damage:   { total, formula, maximised } | null,
  *   keywords: string[],

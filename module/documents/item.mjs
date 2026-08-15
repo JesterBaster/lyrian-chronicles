@@ -1,4 +1,5 @@
 import { LYRIAN } from "../config.mjs";
+import { renderAttackCard } from "../rules/attack-card.mjs";
 
 /**
  * The Item document. Weapons and abilities know how to roll themselves.
@@ -56,14 +57,19 @@ export class LyrianItem extends Item {
     // Precise attacks ignore Guard equal to the attacker's Focus.
     const pinpoint = profile.pinpoint ? actor.system.stats.focus.total : 0;
 
-    await this._renderAttackCard({
+    await renderAttackCard({
+      actor,
+      source: this,
       attackType,
       attackRoll,
       damageRoll,
       isCrit,
       pinpoint,
       halfPierce: isCrit,
-      damageType: this.system.damageType
+      damageType: this.system.damageType,
+      weaponGroup: this.system.group,
+      ranged: !!this.system.isRanged,
+      keywords: this.system.keywords
     });
 
     return { attackRoll, damageRoll, isCrit };
@@ -143,7 +149,9 @@ export class LyrianItem extends Item {
       ? await new Roll(damageFormula, this.getRollData()).evaluate({ maximize: isCrit })
       : null;
 
-    await this._renderAttackCard({
+    await renderAttackCard({
+      actor,
+      source: this,
       attackType: sys.attackType,
       attackRoll,
       damageRoll,
@@ -152,7 +160,8 @@ export class LyrianItem extends Item {
       halfPierce: isCrit || sys.keywords?.has("halfPierce"),
       fullPierce: sys.keywords?.has("fullPierce"),
       damageType: sys.damageType,
-      sureHit
+      sureHit,
+      keywords: sys.keywords
     });
 
     return { attackRoll, damageRoll, isCrit };
@@ -160,133 +169,6 @@ export class LyrianItem extends Item {
 
   /* -------------------------------------------- */
   /*  Chat output                                  */
-  /* -------------------------------------------- */
-
-  /**
-   * Render the attack chat card, including per-target hit resolution
-   * and buttons for the defender's chosen reaction.
-   */
-  async _renderAttackCard(data) {
-    const actor = this.actor;
-    const targets = Array.from(game.user.targets).map((t) => {
-      const target = t.actor;
-      // Cover is read from a flag the GM sets on the token, so a token behind
-      // a wall stays behind it without re-selecting options every attack.
-      const cover = t.document?.getFlag("lyrian-chronicles", "cover") ?? "none";
-      const def = target.getDefencesAgainst({ cover, attacker: actor });
-      const evasion = def.evasion;
-      const hit = def.untargetable
-        ? false
-        : data.sureHit || (data.attackRoll?.total ?? 0) >= evasion;
-      return {
-        id: target.id,
-        uuid: target.uuid,
-        tokenId: t.id,
-        tokenUuid: t.document?.uuid ?? null,
-        name: target.name,
-        evasion,
-        dodgeEvasion: def.dodgeEvasion,
-        guard: def.guard,
-        blockGuard: def.blockGuard,
-        cover,
-        coverNotes: def.notes.join(", "),
-        untargetable: def.untargetable,
-        hit
-      };
-    });
-
-    const templateData = {
-      item: this,
-      actor,
-      attackTypeLabel: game.i18n.localize(LYRIAN.attackTypes[data.attackType].label),
-      damageTypeLabel: game.i18n.localize(LYRIAN.damageTypes[data.damageType]?.label ?? ""),
-      attackRoll: data.attackRoll,
-      attackTotal: data.attackRoll?.total,
-      damageRoll: data.damageRoll,
-      damageTotal: data.damageRoll?.total ?? 0,
-      isCrit: data.isCrit,
-      sureHit: data.sureHit,
-      pinpoint: data.pinpoint,
-      halfPierce: data.halfPierce,
-      fullPierce: data.fullPierce,
-      targets,
-      hasTargets: targets.length > 0
-    };
-
-    const content = await foundry.applications.handlebars.renderTemplate(
-      "systems/lyrian-chronicles/templates/chat/attack-card.hbs",
-      templateData
-    );
-
-    const rolls = [data.attackRoll, data.damageRoll].filter(Boolean);
-
-    // Structured payload for third-party modules. Documented in module/api.mjs
-    // and treated as a stability promise — additive changes only.
-    const payload = {
-      actorUuid: actor?.uuid ?? null,
-      itemUuid: this.uuid,
-      itemName: this.name,
-      itemImg: this.img,
-      attackType: data.attackType,
-      damageType: data.damageType,
-      weaponGroup: this.type === "weapon" ? this.system.group : null,
-      ranged: this.type === "weapon" ? !!this.system.isRanged : null,
-      accuracy: data.attackRoll
-        ? {
-            total: data.attackRoll.total,
-            formula: data.attackRoll.formula,
-            natural: data.attackRoll.dice[0]?.total ?? null,
-            isCrit: !!data.isCrit
-          }
-        : null,
-      sureHit: !!data.sureHit,
-      damage: data.damageRoll
-        ? {
-            total: data.damageRoll.total,
-            formula: data.damageRoll.formula,
-            maximised: !!data.isCrit
-          }
-        : null,
-      keywords: Array.from(this.system.keywords ?? []),
-      pierce: {
-        pinpoint: data.pinpoint ?? 0,
-        half: !!data.halfPierce,
-        full: !!data.fullPierce
-      },
-      targets: targets.map((t) => ({
-        actorUuid: t.uuid,
-        tokenUuid: t.tokenUuid,
-        name: t.name,
-        evasion: t.evasion,
-        dodgeEvasion: t.dodgeEvasion,
-        guard: t.guard,
-        blockGuard: t.blockGuard,
-        untargetable: t.untargetable,
-        hit: t.hit
-      }))
-    };
-
-    const message = await ChatMessage.create({
-      speaker: ChatMessage.getSpeaker({ actor }),
-      content,
-      rolls,
-      flags: {
-        "lyrian-chronicles": {
-          attack: payload,
-          // Kept flat as well: the damage-application buttons read these.
-          damage: templateData.damageTotal,
-          pinpoint: data.pinpoint,
-          fullPierce: data.fullPierce,
-          halfPierce: data.halfPierce,
-          damageType: data.damageType
-        }
-      }
-    });
-
-    Hooks.callAll("lyrianAttack", payload, message);
-    return message;
-  }
-
   /* -------------------------------------------- */
 
   /** Post a plain description card for items with no roll. */

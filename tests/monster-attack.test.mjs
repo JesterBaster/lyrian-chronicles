@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { parseMonsterAttackProfile } from "../module/rules/monster-attack.mjs";
+import { LyrianAPI } from "../module/api.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -37,4 +38,39 @@ test("every published monster basic attack is rollable or explicitly None", asyn
       assert.ok(parseMonsterAttackProfile(text), `${monster.name} has unparseable ${key}: ${text}`);
     }
   }
+});
+
+test("the public action set exposes official monster profile attacks", () => {
+  globalThis.game = { i18n: { localize: (value) => value } };
+  const actor = {
+    type: "monster",
+    items: [],
+    system: {
+      official: {
+        lightAttack: "+3 Accuracy, 2d4+2",
+        heavyAttack: "None"
+      },
+      ap: { value: 2, max: 2, temp: 0, total: 2 },
+      rp: { value: 1, max: 1, temp: 0, total: 1 },
+      mana: { value: 0, max: 0, temp: 0, total: 0 },
+      hp: { value: 20, max: 20, temp: 0, total: 20 },
+      skills: {},
+      evasion: 10,
+      dodgeEvasion: 14,
+      guard: 2,
+      blockGuard: 4,
+      potency: 11,
+      save: 2
+    }
+  };
+
+  assert.deepEqual(LyrianAPI.getActionSet(actor).monsterAttacks, [{
+    type: "light",
+    sourceProfile: "+3 Accuracy, 2d4+2",
+    accuracy: 3,
+    damageFormula: "2d4+2",
+    apCost: 1,
+    affordable: true
+  }]);
+  delete globalThis.game;
 });

@@ -90,6 +90,7 @@ change without a major version bump.
 const api = game.lyrian.api;
 api.getActionSet(actor);        // everything a HUD needs in one call
 api.rollAttack(actor, itemId, "heavy");
+api.rollMonsterAttack(actor, "light");
 api.getAttackData(chatMessage); // structured payload, or null
 ```
 
@@ -97,7 +98,9 @@ Hooks fired: `lyrianAttack`, `lyrianDamage`, `lyrianHealing`, `lyrianDowned`,
 `lyrianTurnStart`. The attack payload carries the attack type, weapon group,
 accuracy and damage rolls, crit state, keywords, pierce flags and per-target
 results with UUIDs — enough for Automated Animations to key off Light, Heavy or
-Precise, and for a HUD to build buttons without touching internals.
+Precise, and for a HUD to build buttons without touching internals. NPC and monster
+basic profiles appear in `getActionSet(actor).monsterAttacks` and use the same target,
+Dodge / Block, damage and chat-card pipeline as character attacks.
 
 ## Cover
 
