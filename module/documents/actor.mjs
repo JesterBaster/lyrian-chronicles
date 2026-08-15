@@ -1,5 +1,6 @@
 import { LYRIAN } from "../config.mjs";
 import { parseMonsterAttackProfile } from "../rules/monster-attack.mjs";
+import { renderAttackCard } from "../rules/attack-card.mjs";
 import {
   nonNegativeInteger,
   normalizeResourceCosts,
@@ -292,6 +293,7 @@ export class LyrianActor extends Actor {
   /** Roll a basic attack from an official compendium monster stat block. */
   async rollMonsterAttack(attackType = "light", options = {}) {
     if (this.type !== "npc" && this.type !== "monster") return null;
+    if (!["light", "heavy"].includes(attackType)) return null;
 
     const key = attackType === "heavy" ? "heavyAttack" : "lightAttack";
     const profileText = this.system.official?.[key] ?? "";
@@ -307,24 +309,26 @@ export class LyrianActor extends Actor {
 
     const attackRoll = await new Roll(`1d20 + ${profile.accuracy}`).evaluate();
     const damageRoll = await new Roll(profile.damageFormula).evaluate();
-    await ChatMessage.create({
-      speaker: ChatMessage.getSpeaker({ actor: this }),
-      flavor: `${this.name} — ${game.i18n.localize(LYRIAN.attackTypes[attackType].label)}`,
-      rolls: [attackRoll, damageRoll],
-      flags: {
-        "lyrian-chronicles": {
-          monsterAttack: {
-            actorUuid: this.uuid,
-            attackType,
-            accuracy: attackRoll.total,
-            damage: damageRoll.total,
-            damageFormula: profile.damageFormula,
-            sourceProfile: profileText
-          }
-        }
-      }
+    const legacyMonsterAttack = {
+      actorUuid: this.uuid,
+      attackType,
+      accuracy: attackRoll.total,
+      damage: damageRoll.total,
+      damageFormula: profile.damageFormula,
+      sourceProfile: profileText
+    };
+    const message = await renderAttackCard({
+      actor: this,
+      source: this,
+      sourceKind: "monsterProfile",
+      sourceProfile: profileText,
+      attackType,
+      damageType: "physical",
+      attackRoll,
+      damageRoll,
+      legacyMonsterAttack
     });
-    return { attackRoll, damageRoll };
+    return { attackRoll, damageRoll, message };
   }
 
   /* -------------------------------------------- */
