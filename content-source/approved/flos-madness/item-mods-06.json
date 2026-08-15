@@ -1,0 +1,944 @@
+[
+  {
+    "stableId": "mods--item-specific--snowproof--03a7ff7605ff",
+    "name": "Snowproof",
+    "displayName": "Snowproof",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "While it's active, you are immune to Slowing effects caused by Frost damage.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Snow Cloak"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H39"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--sori-curve--265146fdeaaa",
+    "name": "Sori Curve",
+    "displayName": "Sori Curve",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "When you roll a 1 on an accuracy roll, you can reroll the attack. Your target(s) can make an opportunity attack, even with a ranged weapon. This opportunity attack does not provoke other opportunity attacks.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Katana (One-Handed)",
+      "Katana (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F17",
+      "Weapons!F18"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--sorthen-shield-generator--0653b244649f",
+    "name": "Sorthen Shield Generator",
+    "displayName": "Sorthen Shield Generator",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Requires Jury-Rigged Shield. Installs a Sorthen style Shield Generator increasing the shield value by 15 HP.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Aerial Staff (Sparrow Model)"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H5"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--spade-lunga--387aa29dd346",
+    "name": "Spade Lunga",
+    "displayName": "Spade Lunga",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "When moving at least 40ft towards an enemy, increases the range of your next attack made with this weapon by 5 ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Dueling Weapon (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F12"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--spiked-shield--cd3aa79a756b",
+    "name": "Spiked Shield",
+    "displayName": "Spiked Shield",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "You may treat your shield as a Light weapon. You can use it to make an attack and still gain the shield bonus.",
+    "targetType": "Shield",
+    "compatibleTargets": [
+      "Shield",
+      "Greatshield"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A32:D32",
+      "Armors!A38:D38"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--spinning-axe--e3266b481bee",
+    "name": "Spinning Axe",
+    "displayName": "Spinning Axe",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "This weapon also gains the axe passive (Wild Swing). You keep this effect even when throwing the weapon.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Thrown (One-Handed)",
+      "Thrown (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F42",
+      "Weapons!F43"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--spinning-dance--bb29862e5dd4",
+    "name": "Spinning Dance",
+    "displayName": "Spinning Dance",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "You may move 5ft after making your Heavy attack, but before making your Sweeping Arc attack.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Scythe (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F30"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--spring-loaded--2440f4cfb9d2",
+    "name": "Spring-loaded",
+    "displayName": "Spring-loaded",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "You do not need to draw and wield this weapon to use it, it is worn in your equipment. However, you can only attack once per round with it. If your first attack with it in a fight is a basic attack, it activates Hidden Weapon as if you drew it right before attacking, though this still does not allow you to benefit from Hidden Weapon multiple times per combat. This weapon can no longer be used to make thrown weapon attacks and cannot be drawn normally. Designed by Nya.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Hori (One-Handed) (Treated as a Small Weapon)",
+      "Small Weapons (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F16",
+      "Weapons!F36"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--sticky-footing--26c937448136",
+    "name": "Sticky Footing",
+    "displayName": "Sticky Footing",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "You gain a +5 bonus to any saves that would knock you prone or knock you back.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Spider Shoes"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H42"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--swallow-s-edge--ca261124689f",
+    "name": "Swallow's Edge",
+    "displayName": "Swallow's Edge",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "The crit threshold decreases by 1 for each attack made this turn with a Swallow’s Edge weapon. This bonus resets if you land a critical hit. If both your mainhand and offhand weapon have this mod, the effect aplies to both weapons at the same time.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Katana (One-Handed)",
+      "Katana (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G17",
+      "Weapons!G18"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--swing-engine--7713bbc0675d",
+    "name": "Swing Engine",
+    "displayName": "Swing Engine",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "The grappling hook artifice can be used to swing from the point the pin is embedded instead of pulling straight towards it, in addition the rope length is increased by 20ft. The pin automatically detaches and reels in when you move to your destination for smooth traveling.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Grappling Hook Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--swordbreaker--c6feeb39ee21",
+    "name": "Swordbreaker",
+    "displayName": "Swordbreaker",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "You gain a +2 Swordbreaker Power bonus against targets wielding light blades and heavy blades.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Polearm (One-Handed)",
+      "Polearm (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G26",
+      "Weapons!G27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--telescopic-pole--7c4b57b4723e",
+    "name": "Telescopic Pole",
+    "displayName": "Telescopic Pole",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The zone increases to 30x30ft.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Lightning Rod"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G20"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--thermal-fusion-sight--b7381e4774a1",
+    "name": "Thermal Fusion Sight",
+    "displayName": "Thermal Fusion Sight",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "Adds thermal vision up to 120ft. This cannot detect things hidden by magical means. The sight can not discern a difference in heat once something reaches freezing temperatures.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Night Vision Goggles"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H25"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--thermal-fusion-sight-eye-only--a73ddf682d13",
+    "name": "Thermal Fusion Sight (Eye only)",
+    "displayName": "Thermal Fusion Sight (Eye only)",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "Adds thermal vision up to 120ft. This cannot detect things hidden by magical means. The sight can not discern a difference in heat once something reaches freezing temperatures.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Artifice Limb"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--thermal-mask--9cd2de335158",
+    "name": "Thermal Mask",
+    "displayName": "Thermal Mask",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "Thermal vision and similar heat based detection no longer automatically detects you.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Personal Camoflage Field"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--throwing-hammer--eae836d4a60a",
+    "name": "Throwing Hammer",
+    "displayName": "Throwing Hammer",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Attacks with this weapon gain the Artillery keyword within 30ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Thrown (One-Handed)",
+      "Thrown (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G42",
+      "Weapons!G43"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--throwing-shield--378ee4def737",
+    "name": "Throwing Shield",
+    "displayName": "Throwing Shield",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "You may throw this shield at an enemy within 30ft to make a ranged attack against it. Afterwards, the shield returns to your hand.",
+    "targetType": "Shield",
+    "compatibleTargets": [
+      "Shield"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A34:D34"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--titan-armor--5dde318a9e84",
+    "name": "Titan Armor",
+    "displayName": "Titan Armor",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "You are treated as Large size (no effect if already large). If you are tiny or small size, it instead increases your size by 1 category.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Heavy Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A29:D29"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--tower-shield--553a2e189412",
+    "name": "Tower Shield",
+    "displayName": "Tower Shield",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "The burden of this shield is increased by 1, but it now counts as Low cover for you against ranged attacks.",
+    "targetType": "Shield",
+    "compatibleTargets": [
+      "Greatshield"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A40:D40"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--training-stock--84312cd3dbd4",
+    "name": "Training Stock",
+    "displayName": "Training Stock",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "You can use this weapon even if you're not proficient with any of the above listed firearms.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Stun Gun"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G43"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--triple-form--612c96fc65d7",
+    "name": "Triple Form",
+    "displayName": "Triple Form",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "You may attach 3 weapons to this instead of 2.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Transforming Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H44"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--turbo-engine--216cebead10a",
+    "name": "Turbo Engine",
+    "displayName": "Turbo Engine",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "If a heavy attack is the first attack used, it grants the damage stack immediately.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Chainsaw"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F9"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--underwater-mode--b53d2518c1a5",
+    "name": "Underwater Mode",
+    "displayName": "Underwater Mode",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "If used underwater, the bubble provided you air as you slowly float upwards.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Wind Bubble"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H46"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--unreasonable-mass--f3da15402a32",
+    "name": "Unreasonable Mass",
+    "displayName": "Unreasonable Mass",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "Heavy attacks gain 1 additional dice in damage (5d6->6d6) but suffer -1 accuracy on all attacks.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Heavy Blade (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G4"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--unstoppable-force--be161eb3cdbd",
+    "name": "Unstoppable Force",
+    "displayName": "Unstoppable Force",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "The knockback effect is now on hit rather than on damage.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Staff (One-Handed)",
+      "Staff (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G40",
+      "Weapons!G41"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--upgraded-airship-engine--ec4b2d8112d7",
+    "name": "Upgraded Airship Engine",
+    "displayName": "Upgraded Airship Engine",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "Increases the speed to 50ft but adds Line Movement: The airship may only move in a straight line when making a movement action.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Aerial Staff (Sparrow Model)"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H5"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--vanishing-act--4ae4301621ee",
+    "name": "Vanishing Act",
+    "displayName": "Vanishing Act",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "When you activate the device in combat, you may immediately take the Hide action for -2 AP of its normal cost (min 0).",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Personal Camoflage Field"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--vault-breaker--8b469e39ced3",
+    "name": "Vault Breaker",
+    "displayName": "Vault Breaker",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Your attacks deal double damage against objects.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Power Gauntlets"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F28"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--vivre-flame--2eb80d30b107",
+    "name": "Vivre Flame",
+    "displayName": "Vivre Flame",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "The person who is attuned to the lamp must be present upon its creation, and a bit of their blood or magic must be inserted into the lamp. The soul lamp’s flame’s strength now corresponds to the health of the target, being a bright flame when the target is at 100% HP and becoming a Dim flicker when they are downed.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Soul Lamp"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G40"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--voice-amplification--a230b8d5b5dc",
+    "name": "Voice Amplification",
+    "displayName": "Voice Amplification",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "In addition to translating, the speaker's voice is also amplified to be heard from over long distances as if shouting.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Universal Translator"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H45"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--war-sword--bf88250b9c7b",
+    "name": "War Sword",
+    "displayName": "War Sword",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Your first basic attack made with this weapon after moving at least 20ft maximizes one dice of your choice instead of rolling.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Longsword (Versatile)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F21"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--warding-wand--a9718ba9f66f",
+    "name": "Warding Wand",
+    "displayName": "Warding Wand",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "You may spend 1 AP to gain 5 temporary HP until the start of your next turn.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Wand (One-Handed)",
+      "Wand (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F45",
+      "Weapons!F46"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--weak-point-protection--ea1c5cb7ed9b",
+    "name": "Weak Point Protection",
+    "displayName": "Weak Point Protection",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Pinpoint attacks against you reduce 1 less guard.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Medium Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A19:D19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--weapon-slot-arm-only--021509f7672c",
+    "name": "Weapon slot (Arm only)",
+    "displayName": "Weapon slot (Arm only)",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Allows the user to install a weapon into the arm, functioning just like the weapon would (takes an errand from artificer to install). The weapon costs burden like normal, but may be drawn or sheathed for 0 AP once per turn.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Artifice Limb"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--web-resistance--4663e0aed8f0",
+    "name": "Web Resistance",
+    "displayName": "Web Resistance",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "You don't suffer any penalties from walking across webs either natural or created through magic or items.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Spider Shoes"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G42"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--weighted-edge--aeb78feeb19e",
+    "name": "Weighted Edge",
+    "displayName": "Weighted Edge",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "You may use Nimble (and Nimble II or Nimble Rotation etc if you have those instead) even after making a Heavy or Precise attack.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Light Sword (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G20"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--weighted-greaves--a28039c183f1",
+    "name": "Weighted Greaves",
+    "displayName": "Weighted Greaves",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "You become immovable while on the ground.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Heavy Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A28:D28"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--weighted-poll-upsetting--ca72a9ec4678",
+    "name": "Weighted Poll Upsetting",
+    "displayName": "Weighted Poll Upsetting",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "When making 3 separate attacks against a target, the third attack you make with “Weighted Poll Upsetting” knocks the target back 10ft on damage.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Bludgeoning Weapon (One-Handed)",
+      "Bludgeoning Weapon (Two-Handed)",
+      "Frying Pan",
+      "Smith's Hammer (One-Handed)",
+      "Smith's Hammer (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G5",
+      "Weapons!G6",
+      "Weapons!G13",
+      "Weapons!G37",
+      "Weapons!G38"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--wide-blade--7330d1c2c140",
+    "name": "Wide Blade",
+    "displayName": "Wide Blade",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "When you are wielding this in two hands and don’t make an attack with this weapon on your turn you can grant yourself or an adjacent ally low cover against ranged attacks for 0 RP until the start of your next turn. Can only use this once per turn.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Heavy Blade (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F4"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--windlass-arbalest--94bdce8510c8",
+    "name": "Windlass Arbalest",
+    "displayName": "Windlass Arbalest",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "Basic attacks with this weapon gain full pierce within 30 ft. However must be reloaded for 2 AP or 1 RP before it can be used again.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cross-Bow (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F11"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--winged-lugs--1ed5c0ebcc85",
+    "name": "Winged Lugs",
+    "displayName": "Winged Lugs",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Increase guard by 1 and Block by 2 and reduce evasion by 1 while wielding.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Polearm (One-Handed)",
+      "Polearm (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G26",
+      "Weapons!G27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--wrist-claw--bc817cb63f73",
+    "name": "Wrist Claw",
+    "displayName": "Wrist Claw",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "While wearing this item, you may still hold an item in that hand as if it was empty.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Gauntlets (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--wrist-mounted--647a78cfb51c",
+    "name": "Wrist-mounted",
+    "displayName": "Wrist-mounted",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "One handed crossbow only, range lowered to 30ft. Is mounted on your wrist and is always considered drawn + can hold a weapon in that hand.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cross-Bow (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F10"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--yari-point-taper--37f093da22f3",
+    "name": "Yari Point Taper",
+    "displayName": "Yari Point Taper",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "After making a basic heavy attack, strike another target immediately behind the first with a light attack.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Polearm (One-Handed)",
+      "Polearm (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G26",
+      "Weapons!G27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--zero-suppression--4785c760cd71",
+    "name": "Zero Suppression",
+    "displayName": "Zero Suppression",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Lowers the target’s visible aura to 0 while wearing these, making them difficult to locate by magical means.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Counter-Magic Shackles"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H15"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--zoom-in--01f973699875",
+    "name": "Zoom In",
+    "displayName": "Zoom In",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Can function like binoculars.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Eye Lens"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G17"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--zoom-in-eye-only--65281caa0315",
+    "name": "Zoom In (Eye only)",
+    "displayName": "Zoom In (Eye only)",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "You may spend 1 AP to gain a +10 bonus to your perception until the start of your next turn.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Artifice Limb"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  }
+]
