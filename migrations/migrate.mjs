@@ -15,6 +15,8 @@
  */
 
 /** Every version that ships a migration, oldest first. */
+import { pendingMigrationVersions } from "../module/rules/versioning.mjs";
+
 const VERSIONS = [
   "0.3.1",
   "0.3.4",
@@ -88,11 +90,9 @@ export async function runMigrations(systemId, currentVersion) {
     return game.settings.set(systemId, "lastMigration", currentVersion);
   }
 
-  // A world predating migrations needs every script from the beginning.
-  const startIndex = last ? VERSIONS.indexOf(last) : -1;
-  const pending = VERSIONS.slice(startIndex + 1).filter(
-    (v) => !foundry.utils.isNewerVersion(v, currentVersion)
-  );
+  // Compare versions rather than looking up the package version in VERSIONS.
+  // Package releases without a migration are intentionally absent from that list.
+  const pending = pendingMigrationVersions(last, currentVersion, VERSIONS);
 
   if (!pending.length) {
     return game.settings.set(systemId, "lastMigration", currentVersion);
