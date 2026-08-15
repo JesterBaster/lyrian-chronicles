@@ -390,7 +390,9 @@ export class LyrianActor extends Actor {
     await this.update({ "system.ap.value": this.system.ap.max });
     Hooks.callAll("lyrianTurnStart", this);
     // Once-per-round ability locks reset when your turn comes round again.
-    const locked = this.items.filter((i) => i.type === "ability" && i.system.usedThisRound);
+    const locked = this.items.filter(
+      (i) => ["ability", "monsterAbility"].includes(i.type) && i.system.usedThisRound
+    );
     if (locked.length) {
       await this.updateEmbeddedDocuments(
         "Item",
@@ -416,6 +418,15 @@ export class LyrianActor extends Actor {
       update["system.encounter.downedThisEncounter"] = 0;
     }
     await this.update(update);
+    const locked = this.items.filter(
+      (i) => ["ability", "monsterAbility"].includes(i.type) && i.system.usedThisRound
+    );
+    if (locked.length) {
+      await this.updateEmbeddedDocuments(
+        "Item",
+        locked.map((i) => ({ _id: i.id, "system.usedThisRound": false }))
+      );
+    }
   }
 
   /* -------------------------------------------- */
