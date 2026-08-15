@@ -242,7 +242,7 @@ export class LyrianActor extends Actor {
    */
   async rollSkill(skillKey, options = {}) {
     const skill = this.system.skills?.[skillKey];
-    if (!skill) return ui.notifications.warn(`Unknown skill: ${skillKey}`);
+    if (!skill) return ui.notifications.warn(game.i18n.format("LYRIAN.Warn.UnknownSkill", { skill: skillKey }));
 
     const { bonus, suffix } = this._resolveExpertise(skill, options);
     const label = game.i18n.localize(LYRIAN.skills[skillKey].label);
@@ -257,12 +257,14 @@ export class LyrianActor extends Actor {
   /** Roll an artisan crafting check: d10 + skill + expertise. */
   async rollArtisan(skillKey, options = {}) {
     const skill = this.system.artisan?.[skillKey];
-    if (!skill) return ui.notifications.warn(`Unknown artisan skill: ${skillKey}`);
+    if (!skill) return ui.notifications.warn(game.i18n.format("LYRIAN.Warn.UnknownArtisan", { skill: skillKey }));
 
     const { bonus, suffix } = this._resolveExpertise(skill, options);
     return this._rollCheck({
       formula: `1d10 + ${bonus}`,
-      flavour: `${game.i18n.localize(LYRIAN.artisanSkills[skillKey])}${suffix} — Crafting Check`
+      flavour: game.i18n.format("LYRIAN.Roll.CraftingCheck", {
+        skill: `${game.i18n.localize(LYRIAN.artisanSkills[skillKey])}${suffix}`
+      })
     });
   }
 
@@ -297,10 +299,12 @@ export class LyrianActor extends Actor {
   /** Roll a gathering strike: d10 + gathering skill. */
   async rollGathering(skillKey, options = {}) {
     const skill = this.system.gathering?.[skillKey];
-    if (!skill) return ui.notifications.warn(`Unknown gathering skill: ${skillKey}`);
+    if (!skill) return ui.notifications.warn(game.i18n.format("LYRIAN.Warn.UnknownGathering", { skill: skillKey }));
     return this._rollCheck({
       formula: `1d10 + ${skill.total + (options.bonus ?? 0)}`,
-      flavour: `${game.i18n.localize(LYRIAN.gatheringSkills[skillKey])} — Gathering Check`
+      flavour: game.i18n.format("LYRIAN.Roll.GatheringCheck", {
+        skill: game.i18n.localize(LYRIAN.gatheringSkills[skillKey])
+      })
     });
   }
 
@@ -332,7 +336,7 @@ export class LyrianActor extends Actor {
   /** Roll a main stat check: d20 + the stat's total. */
   async rollStat(statKey, options = {}) {
     const stat = this.system.stats?.[statKey] ?? this.system.subStats?.[statKey];
-    if (!stat) return ui.notifications.warn(`Unknown stat: ${statKey}`);
+    if (!stat) return ui.notifications.warn(game.i18n.format("LYRIAN.Warn.UnknownStat", { stat: statKey }));
     const table = this.system.stats?.[statKey] ? "mainStats" : "subStats";
     const label = game.i18n.localize(LYRIAN[table][statKey]);
     return this.rollAttribute(label, stat.total, options);
@@ -365,7 +369,10 @@ export class LyrianActor extends Actor {
     const profileText = this.system.official?.[key] ?? "";
     const profile = parseMonsterAttackProfile(profileText);
     if (!profile) {
-      return ui.notifications.warn(`${this.name} has no ${attackType} attack profile.`);
+      return ui.notifications.warn(game.i18n.format("LYRIAN.Warn.NoAttackProfile", {
+        name: this.name,
+        attack: game.i18n.localize(`LYRIAN.Attack.${attackType}`)
+      }));
     }
 
     if (!options.free) {
@@ -697,7 +704,9 @@ export class LyrianActor extends Actor {
     ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor: this }),
       content: `<p>${game.i18n.format("LYRIAN.Msg.InterludeSpent", {
-        name: this.name, points, reason: reason || "an interlude action"
+        name: this.name,
+        points,
+        reason: reason || game.i18n.localize("LYRIAN.Interlude.GenericAction")
       })}</p>`
     });
     return true;
@@ -743,7 +752,10 @@ export class LyrianActor extends Actor {
     ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor: this }),
       content: `<p>${game.i18n.format("LYRIAN.Msg.ExpSpent", {
-        name: this.name, exp, reason: reason || "training", core: after
+        name: this.name,
+        exp,
+        reason: reason || game.i18n.localize("LYRIAN.Interlude.Training"),
+        core: after
       })}</p>`
     });
     return true;

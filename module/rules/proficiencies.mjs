@@ -157,6 +157,13 @@ function choiceTitle(rule) {
   return CHOICE_TITLES[baseKey] ?? `${rule.kind === "armor" ? "Armor" : rule.kind === "languages" ? "Language" : "Weapon"} proficiency`;
 }
 
+function choiceTitleKey(rule) {
+  const baseKey = String(rule.key ?? "").replace(/-\d+$/, "");
+  const known = new Set(Object.keys(CHOICE_TITLES));
+  if (known.has(baseKey)) return `LYRIAN.Proficiency.Choice.${baseKey}`;
+  return `LYRIAN.Proficiency.Choice.${rule.kind}`;
+}
+
 function explicitWeaponList(value) {
   return String(value ?? "")
     .split(/,|\band\b|\bor\b/i)
@@ -360,6 +367,7 @@ export function collectActorProficiencies(actor) {
         id,
         slots,
         title: choiceTitle(rule),
+        titleKey: choiceTitleKey(rule),
         complete: slots.every((slot) => Boolean(slot.value))
       };
     });

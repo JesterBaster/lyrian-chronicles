@@ -100,7 +100,7 @@ export async function runMigrations(systemId, currentVersion) {
 
   for (const version of pending) {
     const notice = ui.notifications.info(
-      `Lyrian Chronicles: migrating to ${version}. Leave this window open.`,
+      game.i18n.format("LYRIAN.Migration.Progress", { version }),
       { permanent: true }
     );
 
@@ -112,7 +112,7 @@ export async function runMigrations(systemId, currentVersion) {
     } catch (err) {
       console.error(`Lyrian Chronicles | Migration ${version} failed`, err);
       ui.notifications.error(
-        `Migration to ${version} failed. Restore a backup before continuing.`,
+        game.i18n.format("LYRIAN.Migration.Failed", { version }),
         { permanent: true }
       );
       return;
@@ -122,5 +122,5 @@ export async function runMigrations(systemId, currentVersion) {
   }
 
   await game.settings.set(systemId, "lastMigration", currentVersion);
-  ui.notifications.info("Lyrian Chronicles: migrations complete.");
+  ui.notifications.info(game.i18n.localize("LYRIAN.Migration.Complete"));
 }

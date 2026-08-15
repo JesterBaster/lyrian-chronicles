@@ -1,5 +1,5 @@
 <section class="lyr-item-description" data-application-part="description">
-  <h3 class="lyr-subheading">Description</h3>
+  <h3 class="lyr-subheading">{{localize "LYRIAN.UI.Description"}}</h3>
   {{#if editable}}
     {{formInput systemFields.description value=system.description enriched=enrichedDescription toggled=true}}
   {{else}}
@@ -8,7 +8,7 @@
   {{#if system.source}}
     <footer class="lyr-provenance">
       <span>{{system.source}}</span>
-      {{#if system.sourceHash}}<code title="Normalized source hash">{{system.sourceHash}}</code>{{/if}}
+      {{#if system.sourceHash}}<code title="{{localize "LYRIAN.UI.NormalizedSourceHash"}}">{{system.sourceHash}}</code>{{/if}}
     </footer>
   {{/if}}
 </section>

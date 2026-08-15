@@ -1,79 +1,78 @@
 <section class="tab lyr-tab {{tab.cssClass}}" data-tab="progression" data-group="primary" data-application-part="progression">
 
   <div class="lyr-compendium-strip lyr-compendium-strip--wrap">
-    <span>Drag official progression options onto this sheet:</span>
-    <button type="button" data-action="browsePack" data-pack="races">Races</button>
-    <button type="button" data-action="browsePack" data-pack="classes">Classes</button>
-    <button type="button" data-action="browsePack" data-pack="breakthroughs">Breakthroughs</button>
+    <span>{{localize "LYRIAN.Hint.ProgressionDrop"}}</span>
+    <button type="button" data-action="browsePack" data-pack="races">{{localize "LYRIAN.UI.Races"}}</button>
+    <button type="button" data-action="browsePack" data-pack="classes">{{localize "LYRIAN.UI.Classes"}}</button>
+    <button type="button" data-action="browsePack" data-pack="breakthroughs">{{localize "LYRIAN.UI.Breakthroughs"}}</button>
   </div>
 
   <div class="lyr-spirit">
     <div class="lyr-spirit__core">
-      <span class="lyr-spirit__label">Spirit core</span>
+      <span class="lyr-spirit__label">{{localize "LYRIAN.UI.SpiritCore"}}</span>
       <strong class="lyr-spirit__value">{{system.spiritCore}}</strong>
       <em>{{localize system.tier.label}}</em>
     </div>
     <div class="lyr-spirit__exp">
-      <label>EXP earned <input type="number" name="system.exp.total" value="{{system.exp.total}}" /></label>
-      <label>EXP spent <input type="number" name="system.exp.spent" value="{{system.exp.spent}}" /></label>
-      {{#if system.ambitionExp}}<span class="lyr-note">Ambition: +{{system.ambitionExp}} EXP and Spirit Core</span>{{/if}}
-      <span class="lyr-note">Unspent: <strong>{{system.exp.available}}</strong></span>
+      <label>{{localize "LYRIAN.UI.ExpEarned"}} <input type="number" name="system.exp.total" value="{{system.exp.total}}" /></label>
+      <label>{{localize "LYRIAN.UI.ExpSpent"}} <input type="number" name="system.exp.spent" value="{{system.exp.spent}}" /></label>
+      {{#if system.ambitionExp}}<span class="lyr-note">{{localize "LYRIAN.Hint.AmbitionExp" exp=system.ambitionExp}}</span>{{/if}}
+      <span class="lyr-note">{{localize "LYRIAN.UI.Unspent"}}: <strong>{{system.exp.available}}</strong></span>
     </div>
     <div class="lyr-spirit__interlude">
-      <label>Interlude points <input type="number" name="system.interlude.points" value="{{system.interlude.points}}" /></label>
-      <label>Errand points <input type="number" name="system.interlude.errandPoints" value="{{system.interlude.errandPoints}}" /></label>
+      <label>{{localize "LYRIAN.UI.InterludePoints"}} <input type="number" name="system.interlude.points" value="{{system.interlude.points}}" /></label>
+      <label>{{localize "LYRIAN.UI.ErrandPoints"}} <input type="number" name="system.interlude.errandPoints" value="{{system.interlude.errandPoints}}" /></label>
     </div>
   </div>
 
   <p class="lyr-note">
-    Classes on this sheet account for {{expInClasses}} EXP, breakthroughs for {{expInBreakthroughs}} EXP.
-    Spirit core should match the total you have committed.
+    {{localize "LYRIAN.Hint.ExpAccounting" classes=expInClasses breakthroughs=expInBreakthroughs}}
   </p>
 
-  <h2 class="lyr-heading">Interlude actions</h2>
+  <h2 class="lyr-heading">{{localize "LYRIAN.UI.InterludeActions"}}</h2>
   <div class="lyr-action-grid">
     <button type="button" class="lyr-action-card" data-action="takeRest">
-      <strong>Rest</strong>
-      <span>Full HP and mana, plus 20% of each as temporary. Clears Downed.</span>
+      <strong>{{localize "LYRIAN.Action.Rest"}}</strong>
+      <span>{{localize "LYRIAN.Hint.Rest"}}</span>
     </button>
     <button type="button" class="lyr-action-card" data-action="recoverInjury">
-      <strong>Recover</strong>
-      <span>Remove one injury. Costs 1 interlude point.</span>
+      <strong>{{localize "LYRIAN.Action.Recover"}}</strong>
+      <span>{{localize "LYRIAN.Hint.Recover"}}</span>
     </button>
     <button type="button" class="lyr-action-card" data-action="spendExpPrompt">
-      <strong>Train</strong>
-      <span>Commit EXP to your Spirit Core.</span>
+      <strong>{{localize "LYRIAN.Action.Train"}}</strong>
+      <span>{{localize "LYRIAN.Hint.Train"}}</span>
     </button>
   </div>
 
   <div class="lyr-section-head">
-    <h2 class="lyr-heading">Classes</h2>
-    <button type="button" data-action="createItem" data-type="class">Add class</button>
+    <h2 class="lyr-heading">{{localize "LYRIAN.UI.Classes"}}</h2>
+    <button type="button" data-action="createItem" data-type="class">{{localize "LYRIAN.Action.AddClass"}}</button>
   </div>
   <ul class="lyr-list">
     {{#each items.classes as |item|}}
       <li class="lyr-row {{#if item.system.mastered}}lyr-row--mastered{{/if}}" data-item-id="{{item.id}}">
         <img class="lyr-row__icon" src="{{item.img}}" alt="" />
         <div class="lyr-row__body">
-          <span class="lyr-row__name">{{item.name}} {{#if item.system.mastered}}<em class="lyr-tag">Mastered</em>{{/if}}</span>
+          <span class="lyr-row__name">{{item.name}} {{#if item.system.mastered}}<em class="lyr-tag">{{localize "LYRIAN.UI.Mastered"}}</em>{{/if}}</span>
           <span class="lyr-row__meta">
-            Tier {{item.system.tier}} · Level {{item.system.abilitiesUnlocked}} / 8 · {{item.system.expInvested}} EXP invested
+            {{localize "LYRIAN.UI.ClassSummary" tier=item.system.tier level=item.system.abilitiesUnlocked exp=item.system.expInvested}}
           </span>
         </div>
         <div class="lyr-row__actions">
-          <button type="button" class="lyr-step" data-action="adjustClassLevel" data-delta="-1" title="Lower class level">&minus;</button>
+          <button type="button" class="lyr-step" data-action="adjustClassLevel" data-delta="-1" title="{{localize "LYRIAN.Action.LowerClassLevel"}}">&minus;</button>
           <strong>{{item.system.abilitiesUnlocked}}</strong>
-          <button type="button" class="lyr-step" data-action="adjustClassLevel" data-delta="1" title="Raise class level">+</button>
+          <button type="button" class="lyr-step" data-action="adjustClassLevel" data-delta="1" title="{{localize "LYRIAN.Action.RaiseClassLevel"}}">+</button>
           <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
           <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
         </div>
       </li>
-    {{else}}<li class="lyr-empty">No classes yet.</li>{{/each}}
+    {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Classes"}}</li>{{/each}}
   </ul>
 
   <div class="lyr-section-head">
-    <h2 class="lyr-heading">Breakthroughs</h2>
-    <button type="button" data-action="createItem" data-type="breakthrough">Add breakthrough</button>
+    <h2 class="lyr-heading">{{localize "LYRIAN.UI.Breakthroughs"}}</h2>
+    <button type="button" data-action="createItem" data-type="breakthrough">{{localize "LYRIAN.Action.AddBreakthrough"}}</button>
   </div>
   <ul class="lyr-list">
     {{#each items.breakthroughs as |item|}}
@@ -81,19 +80,19 @@
         <img class="lyr-row__icon" src="{{item.img}}" alt="" />
         <div class="lyr-row__body">
           <span class="lyr-row__name">{{item.name}}</span>
-          <span class="lyr-row__meta">Level {{item.system.level}} · {{item.system.expCost}} EXP</span>
+          <span class="lyr-row__meta">{{localize "LYRIAN.UI.BreakthroughSummary" level=item.system.level exp=item.system.expCost}}</span>
         </div>
         <div class="lyr-row__actions">
           <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
           <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
         </div>
       </li>
-    {{else}}<li class="lyr-empty">No breakthroughs yet.</li>{{/each}}
+    {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Breakthroughs"}}</li>{{/each}}
   </ul>
 
   <div class="lyr-section-head">
-    <h2 class="lyr-heading">Race</h2>
-    <button type="button" data-action="createItem" data-type="race">Add race</button>
+    <h2 class="lyr-heading">{{localize "LYRIAN.UI.Race"}}</h2>
+    <button type="button" data-action="createItem" data-type="race">{{localize "LYRIAN.Action.AddRace"}}</button>
   </div>
   {{#if ancestryRequirement.missing}}
     <div class="lyr-alert lyr-race-requirement">
@@ -109,27 +108,27 @@
           <span class="lyr-row__name">{{row.item.name}}</span>
           <span class="lyr-row__meta">
             {{row.item.system.subrace}} {{#if row.item.system.clan}}· {{row.item.system.clan}}{{/if}}
-            {{#if row.granted}}· Racial skills {{row.allocated}} / {{row.granted}}{{/if}}
+            {{#if row.granted}}· {{localize "LYRIAN.UI.RacialSkillsSummary" allocated=row.allocated granted=row.granted}}{{/if}}
           </span>
         </div>
         <div class="lyr-row__actions">
-          {{#if row.granted}}<button type="button" data-action="allocateRaceSkills">Skills {{#if row.unallocated}}({{row.unallocated}} left){{/if}}</button>{{/if}}
+          {{#if row.granted}}<button type="button" data-action="allocateRaceSkills">{{localize "LYRIAN.UI.Skills"}} {{#if row.unallocated}}({{localize "LYRIAN.UI.PointsLeft" count=row.unallocated}}){{/if}}</button>{{/if}}
           <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
           <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
         </div>
       </li>
-    {{else}}<li class="lyr-empty">No race entry.</li>{{/each}}
+    {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Race"}}</li>{{/each}}
   </ul>
 
   {{#if raceSummary}}
     <div class="lyr-race-summary">
       <section class="lyr-reference-card">
         <h3>{{raceSummary.primary.name}}</h3>
-        <p><strong>Attributes:</strong> {{raceSummary.primary.system.attributes}}</p>
-        {{#if raceSummary.primary.system.ambition}}<p><strong>Ambition:</strong> {{raceSummary.primary.system.ambition}}</p>{{/if}}
+        <p><strong>{{localize "LYRIAN.UI.Attributes"}}:</strong> {{raceSummary.primary.system.attributes}}</p>
+        {{#if raceSummary.primary.system.ambition}}<p><strong>{{localize "LYRIAN.UI.Ambition"}}:</strong> {{raceSummary.primary.system.ambition}}</p>{{/if}}
       </section>
       {{#if raceSummary.ancestry}}
-        <section class="lyr-reference-card"><h3>Subrace · {{raceSummary.ancestry.name}}</h3><p>{{raceSummary.ancestry.system.description}}</p></section>
+        <section class="lyr-reference-card"><h3>{{localize "LYRIAN.Race.Subrace"}} · {{raceSummary.ancestry.name}}</h3><p>{{raceSummary.ancestry.system.description}}</p></section>
       {{/if}}
       {{#if raceSummary.variant}}
         <section class="lyr-reference-card"><h3>{{raceSummary.variant.name}}</h3><p>{{raceSummary.variant.description}}</p></section>

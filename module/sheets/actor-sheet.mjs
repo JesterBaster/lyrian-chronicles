@@ -230,6 +230,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         kind, entries.filter((entry) => entry.granted)
       ])
     );
+    for (const source of proficiency.sources) {
+      for (const choice of source.choices) choice.title = game.i18n.localize(choice.titleKey);
+    }
     context.proficiency = proficiency;
   }
 
@@ -437,12 +440,15 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       const exp = Number(owned.system.unlockCost ?? owned.system.tier * LYRIAN.progression.classCostPerTier);
       if (this.document.system.exp.available < exp || this.document.system.interlude.points < 1) {
         await owned.delete();
-        ui.notifications.warn(`Unlocking ${owned.name} requires ${exp} EXP and 1 Interlude Point.`);
+        ui.notifications.warn(game.i18n.format("LYRIAN.Progression.UnlockCost", {
+          name: owned.name,
+          exp
+        }));
         return null;
       }
       const confirmed = await foundry.applications.api.DialogV2.confirm({
-        window: { title: `Unlock ${owned.name}?` },
-        content: `<p>Spend <strong>${exp} EXP</strong> and <strong>1 Interlude Point</strong>?</p>`
+        window: { title: game.i18n.format("LYRIAN.Progression.UnlockTitle", { name: owned.name }) },
+        content: `<p>${game.i18n.format("LYRIAN.Progression.UnlockPrompt", { exp })}</p>`
       });
       if (!confirmed) {
         await owned.delete();
@@ -479,7 +485,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       );
       if (!primary || primary.name !== owned.system.primaryRace) {
         await owned.delete();
-        ui.notifications.warn(`${owned.name} requires the ${owned.system.primaryRace} primary race.`);
+        ui.notifications.warn(game.i18n.format("LYRIAN.Race.PrimaryRequired", {
+          name: owned.name,
+          race: owned.system.primaryRace
+        }));
         return null;
       }
       const older = this.document.items.filter(
@@ -525,11 +534,11 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           .map((choice) => `<option value="${choice.key}">${choice.name}</option>`)
           .join("");
         const choice = await foundry.applications.api.DialogV2.prompt({
-          window: { title: `${owned.name} choices` },
+          window: { title: game.i18n.format("LYRIAN.Race.ChoicesTitle", { name: owned.name }) },
           content: `<div class="lyrian">
-            ${automation.chooseMain ? `<label>Main stat +${automation.chooseMain}<select name="main"><option value="">—</option>${options(LYRIAN.mainStats)}</select></label>` : ""}
-            ${automation.chooseSub ? `<label>Sub stat +${automation.chooseSub}<select name="sub"><option value="">—</option>${options(LYRIAN.subStats)}</select></label>` : ""}
-            ${variants.length ? `<label>Demon house<select name="variant"><option value="">—</option>${variantOptions}</select></label>` : ""}
+            ${automation.chooseMain ? `<label>${game.i18n.format("LYRIAN.Race.MainStatBonus", { bonus: automation.chooseMain })}<select name="main"><option value="">—</option>${options(LYRIAN.mainStats)}</select></label>` : ""}
+            ${automation.chooseSub ? `<label>${game.i18n.format("LYRIAN.Race.SubStatBonus", { bonus: automation.chooseSub })}<select name="sub"><option value="">—</option>${options(LYRIAN.subStats)}</select></label>` : ""}
+            ${variants.length ? `<label>${game.i18n.localize("LYRIAN.Race.DemonHouse")}<select name="variant"><option value="">—</option>${variantOptions}</select></label>` : ""}
           </div>`,
           ok: {
             callback: (dialogEvent, button) => ({
@@ -622,8 +631,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       <input type="number" name="${key}" min="0" max="${grant.points}" value="${Number(current[key]) || 0}">
     </label>`).join("");
     const choice = await foundry.applications.api.DialogV2.prompt({
-      window: { title: `${item.name} racial skill points` },
-      content: `<div class="lyrian"><p>Allocate up to ${grant.points} points among these allowed skills.</p><div class="lyr-field-grid">${rows}</div></div>`,
+      window: { title: game.i18n.format("LYRIAN.Race.SkillPointsTitle", { name: item.name }) },
+      content: `<div class="lyrian"><p>${game.i18n.format("LYRIAN.Race.SkillPointsPrompt", {
+        points: grant.points
+      })}</p><div class="lyr-field-grid">${rows}</div></div>`,
       ok: {
         callback: (dialogEvent, button) => Object.fromEntries(
           allowed.map((key) => [
@@ -636,7 +647,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (!choice) return;
     const total = Object.values(choice).reduce((sum, value) => sum + value, 0);
     if (total > grant.points) {
-      return ui.notifications.warn(`${item.name} grants only ${grant.points} racial skill points.`);
+      return ui.notifications.warn(game.i18n.format("LYRIAN.Race.SkillPointsLimit", {
+        name: item.name,
+        points: grant.points
+      }));
     }
     await item.update({ "system.selectedSkillBonuses": choice });
   }
@@ -716,7 +730,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (!allowed.has(packName)) return;
 
     const pack = game.packs.get(`lyrian-chronicles.${packName}`);
-    if (!pack) return ui.notifications.warn(`Compendium not found: ${packName}`);
+    if (!pack) return ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CompendiumMissing", {
+      pack: packName
+    }));
     if (typeof pack.render === "function") return pack.render(true);
     return pack.application?.render(true);
   }
@@ -729,23 +745,29 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (level === item.system.abilitiesUnlocked) return;
 
     if (delta < 0) {
-      if (!game.user.isGM) return ui.notifications.warn("Only a GM can lower a class level.");
+      if (!game.user.isGM) return ui.notifications.warn(game.i18n.localize("LYRIAN.Progression.LowerGMOnly"));
       const confirmed = await foundry.applications.api.DialogV2.confirm({
-        window: { title: `Lower ${item.name}?` },
-        content: "<p>This removes the latest class ability and does not refund EXP.</p>"
+        window: { title: game.i18n.format("LYRIAN.Progression.LowerTitle", { name: item.name }) },
+        content: `<p>${game.i18n.localize("LYRIAN.Progression.LowerPrompt")}</p>`
       });
       if (!confirmed) return;
     } else {
       const exp = LYRIAN.progression.abilityCost;
       if (this.document.system.exp.available < exp) {
-        return ui.notifications.warn(`${this.document.name} needs ${exp} available EXP.`);
+        return ui.notifications.warn(game.i18n.format("LYRIAN.Warn.NeedsExp", {
+          name: this.document.name,
+          exp
+        }));
       }
       const confirmed = await foundry.applications.api.DialogV2.confirm({
-        window: { title: `Advance ${item.name}?` },
-        content: `<p>Spend <strong>${exp} EXP</strong> to unlock the next class ability?</p>`
+        window: { title: game.i18n.format("LYRIAN.Progression.AdvanceTitle", { name: item.name }) },
+        content: `<p>${game.i18n.format("LYRIAN.Progression.AdvancePrompt", { exp })}</p>`
       });
       if (!confirmed) return;
-      const paid = await this.document.spendExp(exp, `${item.name} level ${level}`);
+      const paid = await this.document.spendExp(exp, game.i18n.format("LYRIAN.Progression.ClassLevel", {
+        name: item.name,
+        level
+      }));
       if (!paid) return;
     }
     await item.update({ "system.abilitiesUnlocked": level });
@@ -779,12 +801,15 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const canonical = canonicalProficiency(input?.value, kind);
     if (!canonical.name) return;
     if (canonical.kind !== kind) {
-      return ui.notifications.warn(`${canonical.name} belongs under ${canonical.kind}.`);
+      return ui.notifications.warn(game.i18n.format("LYRIAN.Proficiency.WrongGroup", {
+        name: canonical.name,
+        group: game.i18n.localize(`LYRIAN.Proficiency.Group.${canonical.kind}`)
+      }));
     }
 
     const current = collectActorProficiencies(this.document).groups[kind];
     if (current.some((entry) => entry.key === canonical.key)) {
-      return ui.notifications.warn(`${canonical.name} is already granted or selected.`);
+      return ui.notifications.warn(game.i18n.format("LYRIAN.Proficiency.Duplicate", { name: canonical.name }));
     }
     const manual = Array.from(this.document.system.proficiencies[kind] ?? []);
     await this.document.update({ [`system.proficiencies.${kind}`]: [...manual, canonical.name] });
@@ -814,10 +839,13 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const raw = input.value.trim();
     const canonical = raw ? canonicalProficiency(raw, rule.kind) : null;
     if (canonical && canonical.kind !== rule.kind) {
-      return ui.notifications.warn(`${canonical.name} belongs under ${canonical.kind}.`);
+      return ui.notifications.warn(game.i18n.format("LYRIAN.Proficiency.WrongGroup", {
+        name: canonical.name,
+        group: game.i18n.localize(`LYRIAN.Proficiency.Group.${canonical.kind}`)
+      }));
     }
     if (canonical && !rule.allowCustom && !rule.options.some((option) => proficiencyKey(option) === canonical.key)) {
-      return ui.notifications.warn(`${canonical.name} is not allowed for this proficiency choice.`);
+      return ui.notifications.warn(game.i18n.format("LYRIAN.Proficiency.NotAllowed", { name: canonical.name }));
     }
 
     const stored = structuredClone(this.document.system.proficiencyChoiceSelections ?? {});
@@ -825,7 +853,11 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const previous = values[index] ?? "";
     if (canonical && proficiencyKey(previous) !== canonical.key) {
       const duplicate = proficiency.groups[rule.kind].some((entry) => entry.key === canonical.key);
-      if (duplicate) return ui.notifications.warn(`${canonical.name} is already granted or selected.`);
+      if (duplicate) {
+        return ui.notifications.warn(game.i18n.format("LYRIAN.Proficiency.Duplicate", {
+          name: canonical.name
+        }));
+      }
     }
     values[index] = canonical?.name ?? "";
     stored[id] = values.slice(0, rule.count);
@@ -916,7 +948,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
    */
   static async #onRollAttribute(event, target) {
     const value = Number(target.dataset.value ?? 0);
-    const label = target.dataset.label ?? "Check";
+    const label = target.dataset.label ?? game.i18n.localize("LYRIAN.Roll.Check");
     await this.document.rollAttribute(label, value);
   }
 
@@ -942,8 +974,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const amount = await foundry.applications.api.DialogV2.prompt({
       window: { title: game.i18n.localize("LYRIAN.Interlude.Train") },
       content: `<p>${game.i18n.format("LYRIAN.Interlude.ExpAvailable", { exp: available })}</p>
-                <label>EXP to commit <input type="number" name="exp" value="100" min="0" max="${available}" /></label>
-                <label>Reason <input type="text" name="reason" placeholder="Class ability, breakthrough, skill" /></label>`,
+                <label>${game.i18n.localize("LYRIAN.Interlude.ExpToCommit")} <input type="number" name="exp" value="100" min="0" max="${available}" /></label>
+                <label>${game.i18n.localize("LYRIAN.Interlude.Reason")} <input type="text" name="reason" placeholder="${game.i18n.localize("LYRIAN.Interlude.ReasonPlaceholder")}" /></label>`,
       ok: {
         callback: (event, button) => ({
           exp: Number(button.form.elements.exp.value),

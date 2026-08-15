@@ -2,27 +2,27 @@
   <img class="lyr-portrait" src="{{actor.img}}" data-edit="img" alt="{{actor.name}}" />
 
   <div class="lyr-identity">
-    <input class="lyr-name" type="text" name="name" value="{{actor.name}}" placeholder="Name" />
+    <input class="lyr-name" type="text" name="name" value="{{actor.name}}" placeholder="{{localize "LYRIAN.UI.Name"}}" />
 
     <div class="lyr-subline">
       {{#if isCharacter}}
-        <input type="text" name="system.details.race" value="{{system.details.race}}" placeholder="Race" />
-        <input type="text" name="system.details.subrace" value="{{system.details.subrace}}" placeholder="Subrace" />
-        <input type="text" name="system.details.partyRole" value="{{system.details.partyRole}}" placeholder="Party role" />
+        <input type="text" name="system.details.race" value="{{system.details.race}}" placeholder="{{localize "LYRIAN.UI.Race"}}" />
+        <input type="text" name="system.details.subrace" value="{{system.details.subrace}}" placeholder="{{localize "LYRIAN.Race.Subrace"}}" />
+        <input type="text" name="system.details.partyRole" value="{{system.details.partyRole}}" placeholder="{{localize "LYRIAN.UI.PartyRole"}}" />
       {{else}}
         <select name="system.rank">
           {{#each config.combatantTypes as |label key|}}
             <option value="{{key}}" {{#if (eq ../system.rank key)}}selected{{/if}}>{{localize label}}</option>
           {{/each}}
         </select>
-        <input type="text" name="system.details.creatureType" value="{{system.details.creatureType}}" placeholder="Creature type" />
-        {{#if system.details.dangerLevel}}<span class="lyr-summary-chip lyr-summary-chip--gold">Danger {{system.details.dangerLevel}}</span>{{/if}}
-        <label class="lyr-inline">EXP reward
+        <input type="text" name="system.details.creatureType" value="{{system.details.creatureType}}" placeholder="{{localize "LYRIAN.UI.CreatureType"}}" />
+        {{#if system.details.dangerLevel}}<span class="lyr-summary-chip lyr-summary-chip--gold">{{localize "LYRIAN.UI.DangerLevel" level=system.details.dangerLevel}}</span>{{/if}}
+        <label class="lyr-inline">{{localize "LYRIAN.UI.ExpReward"}}
           <input type="number" name="system.details.expReward" value="{{system.details.expReward}}" />
         </label>
         {{#if system.source.url}}
-          <a class="lyr-source-link" href="{{system.source.url}}" target="_blank" rel="noopener" title="Open official monster entry">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i><span>Official source</span>
+          <a class="lyr-source-link" href="{{system.source.url}}" target="_blank" rel="noopener" title="{{localize "LYRIAN.Action.OpenOfficialMonster"}}">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i><span>{{localize "LYRIAN.UI.OfficialSource"}}</span>
           </a>
         {{/if}}
       {{/if}}
@@ -61,18 +61,18 @@
 
   <div class="lyr-resources">
     <div class="lyr-res lyr-res--hp {{#if system.hp.over}}lyr-res--over{{/if}}">
-      <span class="lyr-res__label">HP</span>
+      <span class="lyr-res__label">{{localize "LYRIAN.Resource.HP"}}</span>
       <div class="lyr-res__track">
         <div class="lyr-res__fill" style="width: {{lyrianPercent system.hp.value system.hp.capacity}}%"></div>
         {{#if system.hp.temp}}<div class="lyr-res__temp" style="width: {{lyrianPercent system.hp.temp system.hp.capacity}}%"></div>{{/if}}
       </div>
       <div class="lyr-res__values">
-        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="hp" data-delta="-1" aria-label="Lose 1 HP">&minus;</button>
+        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="hp" data-delta="-1" aria-label="{{localize "LYRIAN.Action.LoseHP"}}">&minus;</button>
         <input type="number" name="system.hp.value" value="{{system.hp.value}}" />
         <span class="lyr-res__max">/ {{system.hp.max}}</span>
-        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="hp" data-delta="1" aria-label="Regain 1 HP">+</button>
-        <label class="lyr-temp" title="Temporary HP absorbs damage before real HP">
-          <span>temp</span>
+        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="hp" data-delta="1" aria-label="{{localize "LYRIAN.Action.RegainHP"}}">+</button>
+        <label class="lyr-temp" title="{{localize "LYRIAN.Hint.TempHP"}}">
+          <span>{{localize "LYRIAN.Resource.Temp"}}</span>
           <input type="number" name="system.hp.temp" value="{{system.hp.temp}}" />
         </label>
         {{#if system.hp.temp}}<span class="lyr-res__total">= {{system.hp.total}}</span>{{/if}}
@@ -80,18 +80,18 @@
     </div>
 
     <div class="lyr-res lyr-res--mana {{#if system.mana.over}}lyr-res--over{{/if}}">
-      <span class="lyr-res__label">Mana</span>
+      <span class="lyr-res__label">{{localize "LYRIAN.Resource.Mana"}}</span>
       <div class="lyr-res__track">
         <div class="lyr-res__fill" style="width: {{lyrianPercent system.mana.value system.mana.capacity}}%"></div>
         {{#if system.mana.temp}}<div class="lyr-res__temp" style="width: {{lyrianPercent system.mana.temp system.mana.capacity}}%"></div>{{/if}}
       </div>
       <div class="lyr-res__values">
-        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="mana" data-delta="-1" aria-label="Spend 1 mana">&minus;</button>
+        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="mana" data-delta="-1" aria-label="{{localize "LYRIAN.Action.SpendMana"}}">&minus;</button>
         <input type="number" name="system.mana.value" value="{{system.mana.value}}" />
         <span class="lyr-res__max">/ {{system.mana.max}}</span>
-        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="mana" data-delta="1" aria-label="Regain 1 mana">+</button>
-        <label class="lyr-temp" title="Temporary mana is spent before real mana">
-          <span>temp</span>
+        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="mana" data-delta="1" aria-label="{{localize "LYRIAN.Action.RegainMana"}}">+</button>
+        <label class="lyr-temp" title="{{localize "LYRIAN.Hint.TempMana"}}">
+          <span>{{localize "LYRIAN.Resource.Temp"}}</span>
           <input type="number" name="system.mana.temp" value="{{system.mana.temp}}" />
         </label>
         {{#if system.mana.temp}}<span class="lyr-res__total">= {{system.mana.total}}</span>{{/if}}
@@ -100,42 +100,42 @@
 
     <div class="lyr-pips">
       <div class="lyr-pip-row {{#if system.ap.temp}}lyr-pip-row--boosted{{/if}}">
-        <span class="lyr-pip-label">AP</span>
-        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="ap" data-delta="-1" aria-label="Spend 1 AP">&minus;</button>
+        <span class="lyr-pip-label">{{localize "LYRIAN.Resource.AP"}}</span>
+        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="ap" data-delta="-1" aria-label="{{localize "LYRIAN.Action.SpendAP"}}">&minus;</button>
         <span class="lyr-pip-count">{{system.ap.value}}<em>/{{system.ap.max}}</em></span>
-        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="ap" data-delta="1" aria-label="Regain 1 AP">+</button>
-        <label class="lyr-temp" title="Temporary AP survives the turn refresh and is spent first">
-          <span>temp</span>
+        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="ap" data-delta="1" aria-label="{{localize "LYRIAN.Action.RegainAP"}}">+</button>
+        <label class="lyr-temp" title="{{localize "LYRIAN.Hint.TempAP"}}">
+          <span>{{localize "LYRIAN.Resource.Temp"}}</span>
           <input type="number" name="system.ap.temp" value="{{system.ap.temp}}" />
         </label>
         {{#if system.ap.temp}}<span class="lyr-res__total">= {{system.ap.total}}</span>{{/if}}
       </div>
 
       <div class="lyr-pip-row {{#if system.rp.temp}}lyr-pip-row--boosted{{/if}}">
-        <span class="lyr-pip-label">RP</span>
-        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="rp" data-delta="-1" aria-label="Spend 1 RP">&minus;</button>
+        <span class="lyr-pip-label">{{localize "LYRIAN.Resource.RP"}}</span>
+        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="rp" data-delta="-1" aria-label="{{localize "LYRIAN.Action.SpendRP"}}">&minus;</button>
         <span class="lyr-pip-count">{{system.rp.value}}<em>/{{system.rp.max}}</em></span>
-        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="rp" data-delta="1" aria-label="Regain 1 RP">+</button>
-        <label class="lyr-temp" title="Temporary RP survives the encounter refresh and is spent first">
-          <span>temp</span>
+        <button type="button" class="lyr-step" data-action="adjustResource" data-resource="rp" data-delta="1" aria-label="{{localize "LYRIAN.Action.RegainRP"}}">+</button>
+        <label class="lyr-temp" title="{{localize "LYRIAN.Hint.TempRP"}}">
+          <span>{{localize "LYRIAN.Resource.Temp"}}</span>
           <input type="number" name="system.rp.temp" value="{{system.rp.temp}}" />
         </label>
         {{#if system.rp.temp}}<span class="lyr-res__total">= {{system.rp.total}}</span>{{/if}}
       </div>
 
       <div class="lyr-turn-actions">
-        <button type="button" data-action="refreshTurn">Start turn</button>
-        <button type="button" data-action="startEncounter">Start encounter</button>
+        <button type="button" data-action="refreshTurn">{{localize "LYRIAN.Action.StartTurn"}}</button>
+        <button type="button" data-action="startEncounter">{{localize "LYRIAN.Action.StartEncounter"}}</button>
       </div>
     </div>
   </div>
 
   <div class="lyr-defences">
-    <div class="lyr-def lyr-def--roll" data-action="rollAttribute" data-value="{{system.evasion}}" data-label="Evasion" role="button" tabindex="0"><span>Evasion</span><strong>{{system.evasion}}</strong><em>Dodge {{system.dodgeEvasion}}</em></div>
-    <div class="lyr-def lyr-def--roll" data-action="rollAttribute" data-value="{{system.guard}}" data-label="Guard" role="button" tabindex="0"><span>Guard</span><strong>{{system.guard}}</strong><em>Block {{system.blockGuard}}</em></div>
-    <div class="lyr-def lyr-def--roll" data-action="rollAttribute" data-value="{{system.potency}}" data-label="Potency" role="button" tabindex="0"><span>Potency</span><strong>{{system.potency}}</strong><em>DC</em></div>
-    <div class="lyr-def lyr-def--roll" data-action="rollSave" role="button" tabindex="0"><span>Save</span><strong>{{lyrianSigned system.save}}</strong><em>2d10</em></div>
-    <div class="lyr-def lyr-def--roll" data-action="rollInitiative" role="button" tabindex="0"><span>Initiative</span><strong>{{lyrianSigned system.initiative.value}}</strong><em>1d4</em></div>
-    <div class="lyr-def"><span>Speed</span><strong>{{system.movement.total}}</strong><em>ft</em></div>
+    <div class="lyr-def lyr-def--roll" data-action="rollAttribute" data-value="{{system.evasion}}" data-label="{{localize "LYRIAN.Defence.Evasion"}}" role="button" tabindex="0"><span>{{localize "LYRIAN.Defence.Evasion"}}</span><strong>{{system.evasion}}</strong><em>{{localize "LYRIAN.Defence.Dodge"}} {{system.dodgeEvasion}}</em></div>
+    <div class="lyr-def lyr-def--roll" data-action="rollAttribute" data-value="{{system.guard}}" data-label="{{localize "LYRIAN.Defence.Guard"}}" role="button" tabindex="0"><span>{{localize "LYRIAN.Defence.Guard"}}</span><strong>{{system.guard}}</strong><em>{{localize "LYRIAN.Defence.Block"}} {{system.blockGuard}}</em></div>
+    <div class="lyr-def lyr-def--roll" data-action="rollAttribute" data-value="{{system.potency}}" data-label="{{localize "LYRIAN.Defence.Potency"}}" role="button" tabindex="0"><span>{{localize "LYRIAN.Defence.Potency"}}</span><strong>{{system.potency}}</strong><em>{{localize "LYRIAN.UI.DC"}}</em></div>
+    <div class="lyr-def lyr-def--roll" data-action="rollSave" role="button" tabindex="0"><span>{{localize "LYRIAN.Defence.Save"}}</span><strong>{{lyrianSigned system.save}}</strong><em>2d10</em></div>
+    <div class="lyr-def lyr-def--roll" data-action="rollInitiative" role="button" tabindex="0"><span>{{localize "LYRIAN.Defence.Initiative"}}</span><strong>{{lyrianSigned system.initiative.value}}</strong><em>1d4</em></div>
+    <div class="lyr-def"><span>{{localize "LYRIAN.Defence.Speed"}}</span><strong>{{system.movement.total}}</strong><em>{{localize "LYRIAN.Unit.Feet"}}</em></div>
   </div>
 </header>

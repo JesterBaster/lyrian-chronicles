@@ -73,9 +73,14 @@ function ownedByName(owned, candidate) {
     entry.aliases.some((alias) => candidate.aliases.includes(alias)));
 }
 
-function addCheck(checks, id, label, passed) {
+function addCheck(checks, id, labelKey, labelData, passed) {
   if (checks.some((check) => check.id === id)) return;
-  checks.push({ id, label, status: passed ? REQUIREMENT_STATUS.PASS : REQUIREMENT_STATUS.FAIL });
+  checks.push({
+    id,
+    labelKey,
+    labelData,
+    status: passed ? REQUIREMENT_STATUS.PASS : REQUIREMENT_STATUS.FAIL
+  });
 }
 
 /**
@@ -111,14 +116,15 @@ export function evaluateRequirement(requirement, context = {}) {
   if (anyClass) {
     recognized = true;
     classDomain = true;
-    addCheck(checks, "class:any-mastered", "At least one class is mastered", ownedClasses.some((entry) => entry.mastered));
+    addCheck(checks, "class:any-mastered", "LYRIAN.Requirement.Check.AnyClassMastered", {},
+      ownedClasses.some((entry) => entry.mastered));
   }
 
   const classCountMatch = text.match(/\b(?:two|2) classes? (?:mastered|maxed)\b/i);
   if (classCountMatch) {
     recognized = true;
     classDomain = true;
-    addCheck(checks, "class:two-mastered", "At least two classes are mastered",
+    addCheck(checks, "class:two-mastered", "LYRIAN.Requirement.Check.TwoClassesMastered", {},
       ownedClasses.filter((entry) => entry.mastered).length >= 2);
   }
 
@@ -126,7 +132,7 @@ export function evaluateRequirement(requirement, context = {}) {
     recognized = true;
     classDomain = true;
     const tier = Number(match[1]);
-    addCheck(checks, `class:tier:${tier}`, `A tier ${tier} class is mastered`,
+    addCheck(checks, `class:tier:${tier}`, "LYRIAN.Requirement.Check.TierClassMastered", { tier },
       ownedClasses.some((entry) => entry.mastered && entry.tier === tier));
   }
 
@@ -145,7 +151,8 @@ export function evaluateRequirement(requirement, context = {}) {
       addCheck(
         checks,
         `class:named:${unique.map((entry) => entry.key).join("|")}`,
-        `${unique.map((entry) => entry.name).join(alternative ? " or " : " and ")} mastered`,
+        "LYRIAN.Requirement.Check.NamedClassesMastered",
+        { classes: unique.map((entry) => entry.name).join(alternative ? " / " : ", ") },
         passed
       );
     }
@@ -157,7 +164,8 @@ export function evaluateRequirement(requirement, context = {}) {
     breakthroughDomain = true;
     const passed = mentionedBreakthroughs.some((candidate) => ownedByName(ownedBreakthroughs, candidate));
     addCheck(checks, `breakthrough:${mentionedBreakthroughs.map((entry) => entry.key).join("|")}`,
-      `Own ${mentionedBreakthroughs.map((entry) => entry.name).join(" or ")}`, passed);
+      "LYRIAN.Requirement.Check.OwnBreakthrough",
+      { names: mentionedBreakthroughs.map((entry) => entry.name).join(" / ") }, passed);
   }
 
   const mentionedAbilities = mentioned(abilityCatalog, text);
@@ -166,7 +174,8 @@ export function evaluateRequirement(requirement, context = {}) {
     abilityDomain = true;
     const passed = mentionedAbilities.some((candidate) => ownedByName(ownedAbilities, candidate));
     addCheck(checks, `ability:${mentionedAbilities.map((entry) => entry.key).join("|")}`,
-      `Know ${mentionedAbilities.map((entry) => entry.name).join(" or ")}`, passed);
+      "LYRIAN.Requirement.Check.KnowAbility",
+      { names: mentionedAbilities.map((entry) => entry.name).join(" / ") }, passed);
   }
 
   const mentionedRaces = mentioned(raceCatalog, text);
@@ -176,18 +185,21 @@ export function evaluateRequirement(requirement, context = {}) {
     raceDomain = true;
     const passed = mentionedRaces.some((candidate) => ownedByName(ownedRaces, candidate));
     addCheck(checks, `race:${mentionedRaces.map((entry) => entry.key).join("|")}`,
-      `Be ${mentionedRaces.map((entry) => entry.name).join(" or ")}`, passed);
+      "LYRIAN.Requirement.Check.BeRace",
+      { names: mentionedRaces.map((entry) => entry.name).join(" / ") }, passed);
   }
 
   for (const match of text.matchAll(/(\d[\d,]*)\+?\s+spirit core/gi)) {
     recognized = true;
     const minimum = Number(match[1].replaceAll(",", ""));
-    addCheck(checks, `spirit-core:${minimum}`, `Spirit Core ${minimum}+`, Number(context.actor?.spiritCore ?? 0) >= minimum);
+    addCheck(checks, `spirit-core:${minimum}`, "LYRIAN.Requirement.Check.SpiritCore", { minimum },
+      Number(context.actor?.spiritCore ?? 0) >= minimum);
   }
 
   if (/\b(?:at|chosen at|taken at) character creation\b/i.test(text)) {
     recognized = true;
-    addCheck(checks, "character-creation", "Taken during character creation", Boolean(context.atCharacterCreation));
+    addCheck(checks, "character-creation", "LYRIAN.Requirement.Check.CharacterCreation", {},
+      Boolean(context.atCharacterCreation));
   }
 
   const proficiencyNames = names(context.actor?.proficiencies);
@@ -200,7 +212,8 @@ export function evaluateRequirement(requirement, context = {}) {
         ? requested.some((candidate) => ownedByName(proficiencyNames, candidate))
         : requested.every((candidate) => ownedByName(proficiencyNames, candidate));
       addCheck(checks, `proficiency:${requested.map((entry) => entry.key).join("|")}`,
-        `Proficient with ${requested.map((entry) => entry.name).join(" or ")}`, passed);
+        "LYRIAN.Requirement.Check.ProficientWith",
+        { names: requested.map((entry) => entry.name).join(" / ") }, passed);
     }
   }
 
@@ -209,17 +222,19 @@ export function evaluateRequirement(requirement, context = {}) {
   if (/\b(?:only|must be using|attack with)\b/i.test(text) && weaponOnly.length) {
     recognized = true;
     addCheck(checks, `weapon:${weaponOnly.map((entry) => entry.key).join("|")}`,
-      `Use ${weaponOnly.map((entry) => entry.name).join(" or ")}`,
+      "LYRIAN.Requirement.Check.UseWeapon",
+      { names: weaponOnly.map((entry) => entry.name).join(" / ") },
       weaponOnly.some((candidate) => ownedByName(equipped, candidate)));
   }
   if (/\btwo[- ]handed weapons? only\b/i.test(text)) {
     recognized = true;
-    addCheck(checks, "weapon:two-handed", "Use an equipped two-handed weapon",
+    addCheck(checks, "weapon:two-handed", "LYRIAN.Requirement.Check.UseTwoHanded", {},
       Boolean(context.actor?.hasTwoHandedWeapon));
   }
   if (/\b(?:using|use|with) (?:a )?(?:great)?shield\b/i.test(text)) {
     recognized = true;
-    addCheck(checks, "equipment:shield", "Use an equipped shield", Boolean(context.actor?.hasShield));
+    addCheck(checks, "equipment:shield", "LYRIAN.Requirement.Check.UseShield", {},
+      Boolean(context.actor?.hasShield));
   }
 
   if (/\bGM approval\b/i.test(text)) manual.push("GM approval is required");
@@ -329,15 +344,15 @@ export async function confirmItemRequirements(actor, item, options = {}) {
 
   const failed = result.checks
     .filter((check) => check.status === REQUIREMENT_STATUS.FAIL)
-    .map((check) => `<li>${check.label}</li>`)
+    .map((check) => `<li>${game.i18n.format(check.labelKey, check.labelData)}</li>`)
     .join("");
   const content = [
     `<p><strong>${item.name}</strong></p>`,
     `<p>${result.text}</p>`,
-    failed ? `<p>Not met:</p><ul>${failed}</ul>` : "",
+    failed ? `<p>${game.i18n.localize("LYRIAN.Requirement.NotMet")}</p><ul>${failed}</ul>` : "",
     result.status === REQUIREMENT_STATUS.MANUAL
-      ? "<p>This requirement needs player/GM confirmation.</p>"
-      : "<p>The automatic requirement check failed.</p>"
+      ? `<p>${game.i18n.localize("LYRIAN.Requirement.ManualPrompt")}</p>`
+      : `<p>${game.i18n.localize("LYRIAN.Requirement.AutomaticFailed")}</p>`
   ].join("");
 
   if (result.status === REQUIREMENT_STATUS.FAIL && !game.user.isGM) {

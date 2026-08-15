@@ -5,23 +5,23 @@
       <h3>{{item.name}}</h3>
       <span class="lyrian-card__sub">{{attackTypeLabel}}{{#if damageTypeLabel}} · {{damageTypeLabel}}{{/if}}</span>
     </div>
-    {{#if isCrit}}<span class="lyrian-crit">Critical</span>{{/if}}
+    {{#if isCrit}}<span class="lyrian-crit">{{localize "LYRIAN.UI.Critical"}}</span>{{/if}}
   </header>
 
   <div class="lyrian-card__rolls">
     {{#if attackRoll}}
       <div class="lyrian-roll">
-        <span class="lyrian-roll__label">Accuracy</span>
+        <span class="lyrian-roll__label">{{localize "LYRIAN.UI.Accuracy"}}</span>
         <span class="lyrian-roll__total">{{attackTotal}}</span>
         <span class="lyrian-roll__formula">{{attackRoll.formula}}</span>
       </div>
     {{else}}
-      <div class="lyrian-roll"><span class="lyrian-roll__label">Sure hit</span></div>
+      <div class="lyrian-roll"><span class="lyrian-roll__label">{{localize "LYRIAN.Keyword.SureHit"}}</span></div>
     {{/if}}
 
     {{#if damageRoll}}
       <div class="lyrian-roll lyrian-roll--damage">
-        <span class="lyrian-roll__label">Damage{{#if isCrit}} (maximised){{/if}}</span>
+        <span class="lyrian-roll__label">{{#if isCrit}}{{localize "LYRIAN.UI.DamageMaximised"}}{{else}}{{localize "LYRIAN.UI.Damage"}}{{/if}}</span>
         <span class="lyrian-roll__total">{{damageTotal}}</span>
         <span class="lyrian-roll__formula">{{damageRoll.formula}}</span>
       </div>
@@ -30,9 +30,9 @@
 
   {{#if (or pinpoint halfPierce fullPierce)}}
     <p class="lyrian-card__tags">
-      {{#if pinpoint}}<span>Pinpoint {{pinpoint}}</span>{{/if}}
-      {{#if halfPierce}}<span>Half pierce</span>{{/if}}
-      {{#if fullPierce}}<span>Full pierce</span>{{/if}}
+      {{#if pinpoint}}<span>{{localize "LYRIAN.Keyword.Pinpoint"}} {{pinpoint}}</span>{{/if}}
+      {{#if halfPierce}}<span>{{localize "LYRIAN.Keyword.HalfPierce"}}</span>{{/if}}
+      {{#if fullPierce}}<span>{{localize "LYRIAN.Keyword.FullPierce"}}</span>{{/if}}
     </p>
   {{/if}}
 
@@ -42,18 +42,18 @@
         <li class="lyrian-target {{#if t.hit}}is-hit{{else}}is-miss{{/if}}">
           <span class="lyrian-target__name">{{t.name}}</span>
           <span class="lyrian-target__result">
-            {{#if t.untargetable}}In full cover — cannot be targeted{{else}}{{#if t.hit}}Hits Evasion {{t.evasion}}{{else}}Misses Evasion {{t.evasion}}{{/if}}{{/if}}
+            {{#if t.untargetable}}{{localize "LYRIAN.Attack.FullCover"}}{{else}}{{#if t.hit}}{{localize "LYRIAN.Attack.HitsEvasion" evasion=t.evasion}}{{else}}{{localize "LYRIAN.Attack.MissesEvasion" evasion=t.evasion}}{{/if}}{{/if}}
           </span>
           {{#if t.coverNotes}}<span class="lyrian-target__cover">{{t.coverNotes}}</span>{{/if}}
           {{#if t.hit}}
             {{#if ../damageRoll}}
               <span class="lyrian-target__buttons">
-                <button type="button" data-lyrian-action="applyDamage" data-defence="none" data-target-index="{{@index}}">Take it</button>
-                <button type="button" data-lyrian-action="applyDamage" data-defence="dodge" data-target-index="{{@index}}" title="Costs 1 RP · Evasion {{t.dodgeEvasion}}">Dodge (1 RP)</button>
-                <button type="button" data-lyrian-action="applyDamage" data-defence="block" data-target-index="{{@index}}" title="Costs 1 RP · Guard {{t.blockGuard}}">Block (1 RP)</button>
+                <button type="button" data-lyrian-action="applyDamage" data-defence="none" data-target-index="{{@index}}">{{localize "LYRIAN.Action.TakeHit"}}</button>
+                <button type="button" data-lyrian-action="applyDamage" data-defence="dodge" data-target-index="{{@index}}" title="{{localize "LYRIAN.Hint.DodgeCost" evasion=t.dodgeEvasion}}">{{localize "LYRIAN.Action.DodgeCost"}}</button>
+                <button type="button" data-lyrian-action="applyDamage" data-defence="block" data-target-index="{{@index}}" title="{{localize "LYRIAN.Hint.BlockCost" guard=t.blockGuard}}">{{localize "LYRIAN.Action.BlockCost"}}</button>
               </span>
             {{else}}
-              <span class="lyrian-card__hint">No automated damage</span>
+              <span class="lyrian-card__hint">{{localize "LYRIAN.Hint.NoAutomatedDamage"}}</span>
             {{/if}}
           {{/if}}
         </li>
@@ -62,13 +62,13 @@
   {{else}}
     {{#if damageRoll}}
       <div class="lyrian-card__buttons">
-        <span class="lyrian-card__hint">Select the defending token, then choose their reaction:</span>
-        <button type="button" data-lyrian-action="applyDamage" data-defence="none">No reaction</button>
-        <button type="button" data-lyrian-action="applyDamage" data-defence="dodge">Dodge (1 RP)</button>
-        <button type="button" data-lyrian-action="applyDamage" data-defence="block">Block (1 RP)</button>
+        <span class="lyrian-card__hint">{{localize "LYRIAN.Hint.ChooseDefence"}}</span>
+        <button type="button" data-lyrian-action="applyDamage" data-defence="none">{{localize "LYRIAN.Defence.None"}}</button>
+        <button type="button" data-lyrian-action="applyDamage" data-defence="dodge">{{localize "LYRIAN.Action.DodgeCost"}}</button>
+        <button type="button" data-lyrian-action="applyDamage" data-defence="block">{{localize "LYRIAN.Action.BlockCost"}}</button>
       </div>
     {{else}}
-      <p class="lyrian-card__hint">No automated damage</p>
+      <p class="lyrian-card__hint">{{localize "LYRIAN.Hint.NoAutomatedDamage"}}</p>
     {{/if}}
   {{/if}}
 </div>
