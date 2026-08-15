@@ -242,6 +242,7 @@
   "LYRIAN.Roll.Failure": "Failure",
   "LYRIAN.Warn.NoActor": "This item is not owned by an actor.",
   "LYRIAN.Warn.NotEnoughResources": "{name} cannot pay {cost}.",
+  "LYRIAN.Warn.InvalidAmount": "Enter a valid whole-number amount.",
   "LYRIAN.Warn.AlreadyUsed": "{name} has already been used this round.",
   "LYRIAN.Warn.SecretArtSpent": "Only one Secret Art may be used per encounter.",
   "LYRIAN.Warn.NoTargetSelected": "Select the defending token first.",
