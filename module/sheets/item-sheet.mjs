@@ -151,6 +151,8 @@ export class LyrianItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
         add(sys.category, "gold");
         add(sys.subType);
         add(sys.cost ? `Cost ${sys.cost}` : "", "resource");
+        add(sys.modSlot ? `Slot ${sys.modSlot}` : "");
+        add(sys.craftingPoints ? `${sys.craftingPoints} crafting points` : "");
         if (sys.burden) add(`Burden ${sys.burden}`);
         break;
       case "monsterAbility":

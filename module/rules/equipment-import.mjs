@@ -201,8 +201,10 @@ export function convertOfficialEquipment(data, proficiencies = {}) {
       value,
       combatItem: burden > 0,
       isKit: /\bkit\b/i.test(system.subType ?? ""),
-      materialType: system.category === "Crafting" ? system.subType ?? "" : "",
-      units: 0
+      materialType: /Crafting|Material|Mod/i.test(`${system.category} ${system.subType}`)
+        ? system.craftingType || system.subType || ""
+        : "",
+      units: /\bunits\b/i.test(system.unitCost ?? "") ? numberFrom(system.unitCost) : 0
     }
   };
 }

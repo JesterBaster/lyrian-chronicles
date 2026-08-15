@@ -213,6 +213,7 @@
   margin: 0.5rem 0 0.7rem; padding: 0.5rem 0.65rem;
   background: color-mix(in srgb, var(--lyr-hp) 7%, transparent);
 }
+.lyrian .lyr-compendium-actions { display: flex; flex-wrap: wrap; gap: 0.3rem; }
 .lyrian .lyr-warn { color: var(--lyr-hp); font-style: normal; }
 .lyrian .lyr-ok { font-size: 0.72rem; color: var(--lyr-guard); }
 .lyrian .lyr-section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; }

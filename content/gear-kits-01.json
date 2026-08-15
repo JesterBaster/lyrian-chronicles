@@ -1,0 +1,1180 @@
+[
+  {
+    "_id": "131ca9c8f143b781",
+    "name": "Advanced Surgery Kit",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/e5aaa7a4-713c-44ad-8b86-9c906db93bf7-ea23ce35-559d-40a8-9196-2196b7b41d56-Surgery Kit.lg.lg.webp",
+    "system": {
+      "description": "<p>Surgery kits contain stitches, bandages and other items used for more serious wounds.</p><p><strong>Rest Action:&nbsp;</strong>You perform minor surgery on an ally or yourself. Requires at least 5 points in Medicine (or a relevant expertise in Medicine) to use. Make a medicine check against DC 15.&nbsp;On success you can negate the effect of one injury suffered this campaign until the end of the campaign.&nbsp;An injury can only be negated once by this effect, and one person can only have one negated injury at a time.&nbsp; The injury must still be dealt with after the campaign ends.</p><p>With an advanced surgery kit, you can heal two injuries from a single person instead of just one. The DC to heal two injuries is DC30.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "129c8371bbc682d599664ff7647160a7b852ecd99957633eb979233ee506ed75",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--advanced-surgery-kit",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Kit",
+      "cost": "1500 Clim",
+      "burden": "2",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--advanced-surgery-kit",
+        "stableId": "item--advanced-surgery-kit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "129c8371bbc682d599664ff7647160a7b852ecd99957633eb979233ee506ed75",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "2db8ca08ed1ba461",
+    "name": "Adventurer's Kit",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/0288ef78-505e-42dd-918c-97628d972cd7-Adventurer Kit.lg.webp",
+    "system": {
+      "description": "<p>Adventuring kits contain all of the basic tools for adventuring.&nbsp;Included in the kit:<strong> </strong>Backpack<strong>, </strong>Flint and steel, Rope, Notebook, Pen, Compass, Bedroll, Torches, Hand Mirror.</p><p><strong>Effect:</strong> You can use the items for their various purposes within reason. Can store up to 5 burden of Adventuring Essentials, a Northi Lantern or items included in this kit in a combat ready state for 0 burden and contains a torch/lantern holster for hands off torch/lantern use for light purposes. Cannot store kits or other burden reducing items in this combat ready state.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1b1c77c16fa6fbce81ad4bcc2118216a5d3b01a9841a3073eb9e8db92049b85f",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--adventurer-s-kit",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Kit",
+      "cost": "100 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "-",
+      "fuelUsage": "-",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--adventurer-s-kit",
+        "stableId": "item--adventurer-s-kit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1b1c77c16fa6fbce81ad4bcc2118216a5d3b01a9841a3073eb9e8db92049b85f",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "20e3b1d8a05bafa3",
+    "name": "Alchemist's Alembic",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/690a723b-c0f8-477b-9417-8e7aed3ebe6d-Alembic.lg.webp",
+    "system": {
+      "description": "<p>Core crafting tool. Allows you to craft items as an alchemist.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "59e6497cd2a85858cc12e9f58de4691d3f6e91d8cd3f933ce65b087578f489e9",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--alchemist-s-alembic",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Tool",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Blacksmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--alchemist-s-alembic",
+        "stableId": "item--alchemist-s-alembic",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "59e6497cd2a85858cc12e9f58de4691d3f6e91d8cd3f933ce65b087578f489e9",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "35e3edaefeec960c",
+    "name": "Alchemy Rig",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/62c60072-857f-4f65-813f-0fed06e70f3c-Alchemy Rig.lg.webp",
+    "system": {
+      "description": "<p>A carrier that allows easy access to Elixirs, Flasks, Potions, Poisons and Salves. You can only equip one alchemy rig at a time, whether it's the normal alchemy rig or the deluxe version.</p><p>Stores up to 2 burden worth of Elixirs, Flasks, Potions and Salves.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "e4b93f597041b07c8f0f895189a87d4c1f36a9d5b244fb22332f82d090152b7a",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--alchemy-rig",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Storage",
+      "cost": "50 Clim",
+      "burden": "1",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--alchemy-rig",
+        "stableId": "item--alchemy-rig",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "e4b93f597041b07c8f0f895189a87d4c1f36a9d5b244fb22332f82d090152b7a",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "b9d27ab6e9d14142",
+    "name": "Alchemy Rig (Deluxe)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/9b7087b7-8617-4ea3-99a8-f601c23be532-Alchemy Rig Deluxe.lg.webp",
+    "system": {
+      "description": "<p>A carrier that allows easy access to Elixirs, Flasks, Potions, Poisons and Salves. You can only equip one alchemy rig at a time, whether it's the normal alchemy rig or the deluxe version.</p><p>Stores up to 5 burden worth of Elixirs, Flasks, Potions and Salves.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "75f379052196326b211ebd424c440fca043c22eab2276686d484d6a4cb1b8e74",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--alchemy-rig-deluxe",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Storage",
+      "cost": "300 Clim",
+      "burden": "2",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--alchemy-rig-deluxe",
+        "stableId": "item--alchemy-rig-deluxe",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "75f379052196326b211ebd424c440fca043c22eab2276686d484d6a4cb1b8e74",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "4be1505689aede69",
+    "name": "Artificer's Kit",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/420b1d89-82c0-43d6-8ea8-cd60c1a8ee00-Artificer Kit.lg.webp",
+    "system": {
+      "description": "<p>Artificer’s Patch kit with various tools for maintaining artifices.</p><p><strong>Rest Action: </strong>You can either patch a broken, non-airship Artifice (with the exception of Aerial Staves), allowing it to be usable until the end of the scenario if its repairable.&nbsp;The Artifice still counts as broken at the end of the scenario and cannot be patched again until fully repaired.&nbsp; Alternatively, you can instead choose to create an Artifice Shell, paying its cost in Magical Fuel to create.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "0f4c641407927d5b121e97ee1cb939be61057a2fc2d7843d1aba213245552a81",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--artificer-s-kit",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Kit",
+      "cost": "500 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "-",
+      "fuelUsage": "-",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--artificer-s-kit",
+        "stableId": "item--artificer-s-kit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "0f4c641407927d5b121e97ee1cb939be61057a2fc2d7843d1aba213245552a81",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "aef4e5bba9c84d00",
+    "name": "Artificer's Multitool",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/4bea90f6-1241-479a-b3eb-f712862baa57-Multitool.lg.webp",
+    "system": {
+      "description": "<p>Core crafting tool. Allows you to craft items as an artificer.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "e1360965a73c98b56e5b3b2c60d236fd46c566ac3736550972b853881f86e864",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--artificer-s-multitool",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Tool",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Blacksmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--artificer-s-multitool",
+        "stableId": "item--artificer-s-multitool",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "e1360965a73c98b56e5b3b2c60d236fd46c566ac3736550972b853881f86e864",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "9b1c71824396952a",
+    "name": "Backpack",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/c226ebed-b149-40b7-8cf1-c5e6298efaf7-Backpack - Copy.lg.webp",
+    "system": {
+      "description": "<p>Mounted on your back or a pack animal.&nbsp;</p><p>Allows you to store items in non-combat storage.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "6d0a632923c0589f2c8712ac7b80accce8b426fd0cc8d52b9f1cccf7a8ed997d",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--backpack",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Storage",
+      "cost": "50 Clim",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--backpack",
+        "stableId": "item--backpack",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "6d0a632923c0589f2c8712ac7b80accce8b426fd0cc8d52b9f1cccf7a8ed997d",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1af9e96a1ac84cae",
+    "name": "Boar",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/603a507d-2d7a-49e0-844a-a404ce75023b-Boar.lg.webp",
+    "system": {
+      "description": "<p>A boar trained to be used in combat.</p><p>&nbsp;</p><p><strong>Stats:</strong></p><p>HP: 45</p><p>Focus: 2</p><p>Power: 4</p><p>Agility: 2</p><p>Toughness: 4</p><p>Speed: 30ft</p><p>Size: Medium</p><p>&nbsp;</p><p><strong>Special qualities:&nbsp;</strong></p><p><strong>Boar Charge:</strong> When using the trample ability, you can trample enemies the same size as you (Medium). You also deal an additional Power damage with the attack.</p><p><strong>Line Movement: </strong>You may only move in a straight line when taking a movement action.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "6779381cbe9d4f737edcc0c2f4d4b62e0c7aa73433d7a1811956fa5a88dfeb26",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--boar",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Mount",
+      "subType": "",
+      "cost": "1500 Clim",
+      "burden": "0",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--boar",
+        "stableId": "item--boar",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "6779381cbe9d4f737edcc0c2f4d4b62e0c7aa73433d7a1811956fa5a88dfeb26",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "5f271893932790be",
+    "name": "Camping Kit",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/3393fe51-1ff2-43c8-b5dc-abbcddaca136-Camping Kit.lg.webp",
+    "system": {
+      "description": "<p>Camping kits contain all of the basic tools for setting up camp.&nbsp; A tent, 5 bedrolls, tinder, flint and steel, camping mat.</p><p><strong>Rest action</strong>: You can create a comfortable camp for your party, giving you the benefits of comfortable rest (2x toughness) even in poor conditions.&nbsp;</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "2ac70093f7083f56723dc0f9891041ee67b6e91e465d57ad8eb5c5407cdadccf",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--camping-kit",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Kit",
+      "cost": "500 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "-",
+      "fuelUsage": "-",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--camping-kit",
+        "stableId": "item--camping-kit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "2ac70093f7083f56723dc0f9891041ee67b6e91e465d57ad8eb5c5407cdadccf",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "ae13c65ddc9dcdf5",
+    "name": "Carpenter's Chisel",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/5365de73-170c-45d5-960a-d9388a0e8eef-CarpenterTool.lg.webp",
+    "system": {
+      "description": "<p>Core crafting tool. Allows you to craft items as a carpenter.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "afbc9ed9f7c60509b74e9a75e0e73f3b5035a4523c2742d8ce4035cf6367b33d",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--carpenter-s-chisel",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Tool",
+      "cost": "500",
+      "burden": "1",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Blacksmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--carpenter-s-chisel",
+        "stableId": "item--carpenter-s-chisel",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "afbc9ed9f7c60509b74e9a75e0e73f3b5035a4523c2742d8ce4035cf6367b33d",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "8ca8b808edb79750",
+    "name": "Cart",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/1d5e8256-1b05-4081-8195-e2dda9a4aee9-Cart.lg.webp",
+    "system": {
+      "description": "<p>A simple cart used for storing items. May store an additional 2000 units worth of every material.</p><p>Must be pulled by a large creature or reduce traveling speed by half.</p><p>(Costs 1 Wood Block to craft.)</p><p>May be crafted using Maple / Ash / Yew / Yggdrasil wood to hold an additional 1000 / 3000 / 6000 / 10000 units of every material.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "ef3ddbebf5e33261ed55d466d2e6eb8c51858df502ff1a803a3d077ac7cd69a0",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--cart",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Mount",
+      "subType": "",
+      "cost": "500 Clim",
+      "burden": "0",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Carpentry",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--cart",
+        "stableId": "item--cart",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "ef3ddbebf5e33261ed55d466d2e6eb8c51858df502ff1a803a3d077ac7cd69a0",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "6cee33f978b7452c",
+    "name": "Cartographer's Kit",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/c0a7a3e3-b2a9-4923-b7b4-e476288e8426-Carto kit.lg.webp",
+    "system": {
+      "description": "<p>Cartographer’s Kits contain a compass, gridded parchment, graphite pencils, a measuring rod, a protractor, and a travel logbook. Perfect for mapping unknown terrain and recording vital landmarks.</p><p><strong>Effect</strong>: You can use the cartographer's kit to make maps to trade to others and can accurately mark things on the map. You may also use it to perfectly copy other maps by making an Art (Cartography) check against DC15.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "fc4b881bfb84cbfeb730d34302c630eeee11615e13c1bb4351e495dd0909b442",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--cartographer-s-kit",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Kit",
+      "cost": "300 Clim",
+      "burden": "1",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--cartographer-s-kit",
+        "stableId": "item--cartographer-s-kit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "fc4b881bfb84cbfeb730d34302c630eeee11615e13c1bb4351e495dd0909b442",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1a04e9d1a0719cd1",
+    "name": "Culinary Kit",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/74633fdf-f20d-4583-8fa9-e0cec162ab5e-Culinary Kit.lg.webp",
+    "system": {
+      "description": "<p><strong>&nbsp;</strong>Culinary Kits come with easily portable cooking knives, a pot and a pan and preserved food. &nbsp;Has a special compartment to draw the pan as a weapon in a pinch! &nbsp;The included pan isn't tough enough for a skilled chef, but good enough for a novice.</p><p><strong>Rest Action: </strong>You cook a meal for your party at the cost of 40 units of food (equal to 20 Clim) per person, giving you the benefits of food (2 mana) for the rest.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1eaef90fb64e1e5bb303b023cdda7d1ebdc064f35c7fd17ff4e38615ac17a7c7",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--culinary-kit",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Kit",
+      "cost": "500 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "-",
+      "fuelUsage": "-",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--culinary-kit",
+        "stableId": "item--culinary-kit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1eaef90fb64e1e5bb303b023cdda7d1ebdc064f35c7fd17ff4e38615ac17a7c7",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "66fbb1d958338a83",
+    "name": "Equipment Patching Kit",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/ac7d1849-ec0c-4d49-b8de-3f63851cadab-Equipment Patching Kit.lg.webp",
+    "system": {
+      "description": "<p>Contains all the necessary materials to jury rig a fix on damaged weapons.</p><p><strong>Rest Action: </strong>You can patch a broken piece of equipment or adventuring essential item, allowing it to be usable until the end of the scenario if it is repairable.&nbsp;The equipment still counts as broken at the end of the scenario and cannot be patched again until fully repaired.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "02543188e88048277863fc6e10f24fd6b4a0d0870271053a5f0008727a6e19b9",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--equipment-patching-kit",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Kit",
+      "cost": "500 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "-",
+      "fuelUsage": "-",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--equipment-patching-kit",
+        "stableId": "item--equipment-patching-kit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "02543188e88048277863fc6e10f24fd6b4a0d0870271053a5f0008727a6e19b9",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "493f8999970f06b8",
+    "name": "Eye Lens",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/3cf705ad-abc7-4fbc-a745-ab38bd581c66-eyelens.lg.webp",
+    "system": {
+      "description": "<p>A lens that boosts the power of mystic eyes when crafted with good materials. Has little effect normally, except for looking stylish.</p><p>If crafted with Tamahagane, Mithril, Orihalcum or Escudo gives a bonus to Mystic Eye attacks as if it was a weapon.&nbsp;</p><p>This item is crafted similarly to an artifice weapon and gives the same sort of Material bonus, but cannot take alloys, universal mods or burden reducing effects.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Zoom In (20 points): </strong>Can function like binoculars.&nbsp;</li></ul></li><li><i>B mods:</i><ul><li><strong>Focused Lens(25 points):</strong> When you deal damage with a mystic eye ability, you make immediately make a Light attack against one of the targets you damaged with it. This counts as your dual wield attack.</li><li><strong>Silver Lens (80 points): </strong>Mystic Eye attacks made with this lens count as silver.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "ebe7fdfd91f0a0d02140150882e0d5c36457ac282dd36e64eae4387a80f0b2b1",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--eye-lens",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Accessory",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--eye-lens",
+        "stableId": "item--eye-lens",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "ebe7fdfd91f0a0d02140150882e0d5c36457ac282dd36e64eae4387a80f0b2b1",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "128ff60880229a76",
+    "name": "Frying Pan",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/c5b95842-8493-4fb5-a8a7-29df9728f5bb-FryingPan.lg.webp",
+    "system": {
+      "description": "<p>Core crafting tool. Allows you to craft items as a culinarian.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "4261545c94adda2240af538d9bedff9c48664f200de3dfd965d34a01b463338f",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--frying-pan",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Tool",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Blacksmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--frying-pan",
+        "stableId": "item--frying-pan",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "4261545c94adda2240af538d9bedff9c48664f200de3dfd965d34a01b463338f",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "0bdf08cfb142094a",
+    "name": "Fuel Cartridge Pack",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/462ab291-0463-46b5-b7d8-d02067f5dca0-Fuel Shell Pack - Copy.lg.webp",
+    "system": {
+      "description": "<p>A bag that stores magical fuel shells. Each shell is shaped like a cartridge. You can only equip one fuel cartridge pack at a time.</p><p>Stores up to 20 burden worth of Fuel Shells, reducing their burden to 0.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "cfe2ee6a8b4fc807708bfd3663c74c3eefec1e9892c02a48991d094135b30f8c",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--fuel-cartridge-pack",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Storage",
+      "cost": "50 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--fuel-cartridge-pack",
+        "stableId": "item--fuel-cartridge-pack",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "cfe2ee6a8b4fc807708bfd3663c74c3eefec1e9892c02a48991d094135b30f8c",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "d37bc0f85d7eae4b",
+    "name": "Giant Dragonfly",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/cf59825d-23a9-443f-9606-50e2d0e0e64c-Dragonfly.lg.webp",
+    "system": {
+      "description": "<p>A dragonfly trained to be used in combat.</p><p>&nbsp;</p><p><strong>Stats:</strong></p><p>HP: 18</p><p>Focus: 3</p><p>Power: 2</p><p>Agility: 6</p><p>Toughness: 1</p><p>Speed: 30ft</p><p>Size: Small</p><p>&nbsp;</p><p><strong>Special Qualities:</strong></p><p><strong>Tiny Flying Mount</strong>: Your mount can fly. While moving only on the ground, your speed is reduced to 5ft. You may use the cavalier’s ability Rider &amp; Mount As One to re-direct attacks away from your mount even while flying. Any damage you take while using this will cause you to lose altitude as if your mount took damage.</p><p><strong>Spectral Trample:</strong> You may apply the trample effect to creatures of any size, but your attack does not gain Sure Hit, displace the enemy or knock them prone. If they dodge your attack, your trample movement is not canceled.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "2d2c46ff020f28e58c9c5e1b71b560182eabce344351bf43b7db44c68b06a866",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--giant-dragonfly",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Mount",
+      "subType": "",
+      "cost": "1500 Clim",
+      "burden": "0",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--giant-dragonfly",
+        "stableId": "item--giant-dragonfly",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "2d2c46ff020f28e58c9c5e1b71b560182eabce344351bf43b7db44c68b06a866",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "5fd0bd374b921cc3",
+    "name": "Horse",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/6541471b-32e1-4349-8b18-0fcea5e9667e-Horse.lg.webp",
+    "system": {
+      "description": "<p>A horse trained to be used for combat.&nbsp;</p><p>&nbsp;</p><p><strong>Stats:</strong></p><p>HP: 30</p><p>Focus: 3</p><p>Power: 3</p><p>Agility: 3</p><p>Toughness: 3</p><p>Speed: 50ft</p><p>Size: Large</p><p>&nbsp;</p><p><strong>Special Qualities:</strong></p><p><strong>Line Movement:</strong> You may only move in a straight line when making a movement action.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "9d1dfa1b1dc020668cf032b6f5fcc5a780393dac829a2613f2b84322f409eb3c",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--horse",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Mount",
+      "subType": "",
+      "cost": "2000 Clim",
+      "burden": "0",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--horse",
+        "stableId": "item--horse",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "9d1dfa1b1dc020668cf032b6f5fcc5a780393dac829a2613f2b84322f409eb3c",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "ca8d5fee62e3f95d",
+    "name": "Locking Seal",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/77b7dd55-fc11-4ccd-940f-7bae1f8c58f7-Locking Seal.lg.webp",
+    "system": {
+      "description": "<p>A piece of paper inscribed with a single Kiraran character of ‘Lock’. When placed on a door, chest or similar object it prevents any person from opening it. The person who placed it can safely remove it, but for everyone else it counts as a tier 1 bounded field. Destroying the seal itself through physical force is impossible by normal means, but if the object it's placed on is sufficiently damaged, then the seal is broken.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "f693684b7285893337c0051ab5c1a077ac97546825722f387b6832974887c016",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--locking-seal",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Talisman",
+      "subType": "",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "4 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--locking-seal",
+        "stableId": "item--locking-seal",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "f693684b7285893337c0051ab5c1a077ac97546825722f387b6832974887c016",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "93e49093e016ad58",
+    "name": "Medical Kit",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a051b43c-7386-488f-af5f-e8cd6dfcf7a1-assets2Ftask_01jqtq611bej7a0hnmv4ny0g262Fimg_0.lg.webp",
+    "system": {
+      "description": "<p>Medical Kits contain basic bandages, salves, alcohol, scissors and a knife.&nbsp; Perfect for patching up light wounds.</p><p><strong>Rest action:</strong> You heal yourself or an ally for their Toughness+5.&nbsp; A character can only be affected once per rest by Medical Kit.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1bd62d9ad385283b900c00153418e026e8a5ae86601d83eff74f54a5871afd9f",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--medical-kit",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Kit",
+      "cost": "500 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--medical-kit",
+        "stableId": "item--medical-kit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1bd62d9ad385283b900c00153418e026e8a5ae86601d83eff74f54a5871afd9f",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "57b621ef58d44847",
+    "name": "Military Ration",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/af382f15-4e35-41ab-875d-1d4df73ee864-Military Ration.lg.webp",
+    "system": {
+      "description": "<p>A ready to eat meal.&nbsp; Grants the effects of food for rest without having to cook or prepare anything.&nbsp;Can be consumed during a rest to gain the effects of food (2 mana).<br><br>Typically consists of of dried meats, dried fruits and blocks of compressed grains with honey. &nbsp;Sometimes includes vials of sauce. &nbsp;Typically pressed together and then rolled in linen cloth, but higher end ones can come in wooden boxes.</p><p>If eaten during an encounter, it's a <strong>Setup </strong>action that takes 8 AP to complete.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "10bf74dd3911b5c393e58653e1489df702d23bc03c203cc5a8d5747c7dba3260",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--military-ration",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Basic",
+      "cost": "40 Clim",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--military-ration",
+        "stableId": "item--military-ration",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "10bf74dd3911b5c393e58653e1489df702d23bc03c203cc5a8d5747c7dba3260",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "e7e4ca12f9319f32",
+    "name": "Minor Item",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/3e0cb6ca-c063-4fc3-9a6f-14253f440652-Minor items.lg.webp",
+    "system": {
+      "description": "<p>Generic listing for minor items not listed separately. May contain any item within reason (GM's discretion), but should only contain adventuring or daily life utility stuff.</p><p><strong>For example</strong>: Shovel, Rope, Ink, Bedroll, Sack, Piton etc</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "d9d239f27338b627a18162dc61528a2e04989d536debad1fcd97a6a210f12a66",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--minor-item",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Basic",
+      "cost": "25 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--minor-item",
+        "stableId": "item--minor-item",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "d9d239f27338b627a18162dc61528a2e04989d536debad1fcd97a6a210f12a66",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1d8527610f85f995",
+    "name": "Mule",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/8885e3a3-9e04-485b-a599-219058f6521b-Mule.lg.webp",
+    "system": {
+      "description": "<p>A mule used for pulling carts and storing items. Can't be used as mount in combat (Abilities like Trample will not work if mounted on a mule).</p><p>May store an additional 1000 units worth of every material.</p><p><strong>Stats:</strong></p><p>HP: 20</p><p>Focus: 3</p><p>Power: 3</p><p>Agility: 3</p><p>Toughness: 3</p><p>Speed: 20ft</p><p>Size: Large</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "645d8af086489615fd1488e22f74e6a66b474dac39cffe38ae69876a6864446a",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--mule",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Mount",
+      "subType": "",
+      "cost": "1000 Clim",
+      "burden": "0",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--mule",
+        "stableId": "item--mule",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "645d8af086489615fd1488e22f74e6a66b474dac39cffe38ae69876a6864446a",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "9d6f867abe31f394",
+    "name": "Pegasus",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/20152707-c998-4a89-8a28-2fa8a4863118-Pegasus.lg.webp",
+    "system": {
+      "description": "<p>A pegasus trained to be used in combat.</p><p>&nbsp;</p><p><strong>Stats:</strong></p><p>HP: 45</p><p>Focus: 4</p><p>Power: 4</p><p>Agility: 5</p><p>Toughness: 4</p><p>Speed: 60ft</p><p>Size: Large</p><p>&nbsp;</p><p><strong>Special qualities:</strong></p><p><strong>Flying Mount</strong>: Your mount can fly. While flying you may only move in a straight line when making a movement action. While moving only on the ground, your speed is reduced to 20ft but this restriction does not apply.</p><p><strong>In flight vulnerability:</strong> When your mount takes damage while flying, its height is lowered by 20ft. If this would reduce its height to the ground level, it becomes rooted and cannot fly again until the end of your next turn. If the attack that reduced your HP came from a flying creature other than yourself, you do not lose altitude.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1211f8c80ae153de0a865d1cefabe745cba93d9a11f047ed02a138f48f20ad1c",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--pegasus",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Mount",
+      "subType": "",
+      "cost": "5000 Clim",
+      "burden": "0",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--pegasus",
+        "stableId": "item--pegasus",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1211f8c80ae153de0a865d1cefabe745cba93d9a11f047ed02a138f48f20ad1c",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "d715fe6cc8d1f81a",
+    "name": "Research Kit",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/7a4f1846-2c26-49a0-aa7a-0a783b05f689-Research Kit.lg.webp",
+    "system": {
+      "description": "<p>Has enough bottles/vials/containers to store research samples for one expedition.</p><p>The kit is consumed at the end of the expedition if used.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "9bc59d28be51caefecad7a4011c55d61f7b894676e9e9bdd8f60523dce077590",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--research-kit",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Kit",
+      "cost": "100 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "-",
+      "fuelUsage": "-",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--research-kit",
+        "stableId": "item--research-kit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "9bc59d28be51caefecad7a4011c55d61f7b894676e9e9bdd8f60523dce077590",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "627f6a497f5b0737",
+    "name": "Surgery Kit",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/ea23ce35-559d-40a8-9196-2196b7b41d56-Surgery Kit.lg.webp",
+    "system": {
+      "description": "<p>Surgery kits contain stitches, bandages and other items used for more serious wounds.</p><p><strong>Rest Action:&nbsp;</strong>You perform minor surgery on an ally or yourself. Requires at least 5 points in Medicine (or a relevant expertise in Medicine) to use. Make a medicine check against DC 15.&nbsp; On success you can negate the effect of one injury suffered this campaign until the end of the campaign.&nbsp; An injury can only be negated once by this effect, and one person can only have one negated injury at a time.&nbsp; The injury must still be dealt with after the campaign ends.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "cf484e54e192f74c4ed623ab10b6ba26695977ced9eae6191129f759f49cb230",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--surgery-kit",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Kit",
+      "cost": "500 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "-",
+      "fuelUsage": "-",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--surgery-kit",
+        "stableId": "item--surgery-kit",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "cf484e54e192f74c4ed623ab10b6ba26695977ced9eae6191129f759f49cb230",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "637c3b04188bc736",
+    "name": "Torch",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a5edd72b-3eb5-43f0-8af3-624c4eeb6bb4-Torch - Copy.lg.webp",
+    "system": {
+      "description": "<p>A simple piece of wood with a pre-oiled tied cloth on one end.&nbsp; Provides ample light and is quite easy to light on fire.&nbsp; Comes with an attached striker that can be lit on most rock and metal surfaces. When ‘activated’, creates a light that emits light within 30 feet.&nbsp; Can also be used as an improvised weapon that deals&nbsp;fire&nbsp;damage.&nbsp; Lasts up to two hours.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "bcd0f3814ed68a74c93002e6d952f2a76dd479c21c7729bc2723a8d2ba40b2df",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--torch",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Adventuring Essentials",
+      "subType": "Basic",
+      "cost": "10 Clim",
+      "burden": "1",
+      "activationCost": "2 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--torch",
+        "stableId": "item--torch",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "bcd0f3814ed68a74c93002e6d952f2a76dd479c21c7729bc2723a8d2ba40b2df",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "e768b794fda28c39",
+    "name": "Wolf",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/b67a4509-29a7-4c6f-9f6d-60be645f5097-Wolf.lg.webp",
+    "system": {
+      "description": "<p>A wolf trained to be used in combat.</p><p>&nbsp;</p><p><strong>Stats:</strong></p><p>HP: 20</p><p>Focus: 4</p><p>Power: 4</p><p>Agility: 3</p><p>Toughness: 3</p><p>Speed: 25ft</p><p>Size: Large</p><p>&nbsp;</p><p><strong>Special qualities:</strong></p><p><strong>Topple Prey: </strong>You may spend 2 AP to command your mount to make a Light attack against the target. On damage, the target is knocked prone. This attack uses your mount’s stats instead of your own and it gains a +2 to hit for every ally (apart from you) within 5ft of the target.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "9f48e9b808f68319933005904235fbb179366732bdbdec6f49f1766ca5ed9d14",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--wolf",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Mount",
+      "subType": "",
+      "cost": "3000 Clim",
+      "burden": "0",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--wolf",
+        "stableId": "item--wolf",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "9f48e9b808f68319933005904235fbb179366732bdbdec6f49f1766ca5ed9d14",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "f132ff3c38407eb8",
+    "name": "Wyvern",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/64f85c25-5886-4670-bd96-d8fa14cec432-Wyvern.lg.webp",
+    "system": {
+      "description": "<p>A wyvern trained to be ridden by people.</p><p>&nbsp;</p><p><strong>Stats:</strong></p><p>HP: 75</p><p>Focus: 4</p><p>Power: 6</p><p>Agility: 3</p><p>Toughness: 6</p><p>Speed: 40ft</p><p>Size: Large</p><p>&nbsp;</p><p><strong>Special qualities:</strong></p><p><strong>Flying Mount:</strong> Your mount can fly. While flying you may only move in a straight line when making a movement action. While moving only on the ground, your speed is reduced to 20ft but this restriction does not apply.</p><p><strong>In flight vulnerability</strong>: When your mount takes damage while flying, its height is lowered by 20ft. If this would reduce its height to the ground level, it becomes rooted and cannot fly again until the end of your next turn.</p><p><strong>Breath Weapon:</strong> You may spend 1 AP to make your mount use a breath weapon (damage type dependent on the wyrm type), making a Light attack against all enemies in a 30ft cone. This attack uses your mount’s stats instead of your own</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "6d136f0f03208153b2e04ebbb506e02575c6b1e8abd1a696b0bb498ee962ec0c",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--wyvern",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Mount",
+      "subType": "",
+      "cost": "10000 Clim",
+      "burden": "0",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:gear-kits:item--wyvern",
+        "stableId": "item--wyvern",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "6d136f0f03208153b2e04ebbb506e02575c6b1e8abd1a696b0bb498ee962ec0c",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  }
+]

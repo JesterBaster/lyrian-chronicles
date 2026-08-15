@@ -69,6 +69,20 @@ test("non-weapon references become usable gear instead of inert equipment", () =
   assert.equal(result.system.burden, 1);
 });
 
+test("Flo materials preserve numeric units without treating named pieces as generic units", () => {
+  const bulk = convertOfficialEquipment(official("Iron", "Material", {
+    category: "Crafting Materials", craftingType: "Blacksmithing", unitCost: "500 units", burden: ""
+  }));
+  assert.equal(bulk.type, "gear");
+  assert.equal(bulk.system.materialType, "Blacksmithing");
+  assert.equal(bulk.system.units, 500);
+
+  const core = convertOfficialEquipment(official("Crystal Core", "Material", {
+    category: "Crafting Materials", craftingType: "Armorsmithing", unitCost: "1 Core", burden: ""
+  }));
+  assert.equal(core.system.units, 0);
+});
+
 test("unknown official weapons remain equippable as improvised weapons", () => {
   const result = convertOfficialEquipment(official("Prototype Cannon", "Specialized Weapon"));
   assert.equal(result.type, "weapon");

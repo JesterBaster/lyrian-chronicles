@@ -1,0 +1,1446 @@
+[
+  {
+    "_id": "5998ea252a567c4c",
+    "name": "Adjustable Lens Refractor Gun",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a0e61891-6c5c-4a39-8bf2-2f41d18d7720-Adjustable Refractor.lg.webp",
+    "system": {
+      "description": "<p>An artifice gun with cartridges that lets it fire blasts of arcane energy through a series of lenses rather than bullets. Attacks with this weapon deal Arcane damage.&nbsp;</p><p>By spending 1 AP per lens, the user may adjust the strength of the gun at the cost of accuracy. Each lens adjusted for power lets the user treat their attacks with the weapon as if their power was 1 higher than it actually is, at the cost of their focus being treated as 1 lower than it actually is. Up to 3 lenses can be modified in this way.&nbsp;</p><p>Exists in Musket and Sniper Rifle variants.</p><h2>Mods:</h2><p>Also takes normal musket and sniper rifle mods.</p><ul><li><i>A mods:</i><ul><li><strong>Elemental Lens (10 points): </strong>Instead of Arcane, the weapon may deal a different element of your choosing</li></ul></li><li><i>B mods:</i><ul><li>None</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "de327114ec242fcaf04c7be5d065084b64a647331d3b3d9895eab526e68c3b3f",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--adjustable-lens-refractor-gun",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon",
+      "cost": "Original Weapon + 3000",
+      "burden": "Original Weapon",
+      "activationCost": "-",
+      "shellSize": "M",
+      "fuelUsage": "1 shell per encounter",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--adjustable-lens-refractor-gun",
+        "stableId": "item--adjustable-lens-refractor-gun",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "de327114ec242fcaf04c7be5d065084b64a647331d3b3d9895eab526e68c3b3f",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "52a47f68fc283c81",
+    "name": "Aerial Staff (Custom Model)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/8429e264-687b-4108-9af7-f0c1127993b3-Aerial staff.lg.webp",
+    "system": {
+      "description": "<p>A custom model aerial staff has no fixed cost as it is made up from several parts. There are several base models that can be further modified through the use of parts.</p><p>Adding, removing or changing the parts of an aerial staff requires a level 8 artificer to spend an EP in town, though they may add and/or remove as many parts from a single staff as they want with that one EP.</p><p>For information on staves and how they work, check the rulebook.</p><p>All parts and staff models can be crafted by artificers and magitechnicians as if they were normal artifices. Unless stated otherwise, parts cannot be modified.</p><p>Unless stated otherwise, all aerial staff models have 3 burden, though this can be reduced with C mods like normal.</p><h5>Models:</h5><p><br><strong>Falcon Model</strong><br>Cost: 5000c<br>Slots:</p><ul><li>Main Weapon S</li><li>Sub Weapon S</li><li>Sub Weapon S</li><li>Utility S</li><li>Utility S</li><li>Engine S</li></ul><p><br><strong>Egret Model</strong><br>Cost: 5000c<br>Slots:</p><ul><li>Main Weapon S</li><li>Sub Weapon S</li><li>Utility S</li><li>Utility S</li><li>Utility S</li><li>Engine S</li></ul><p><br><strong>Kestrel Model</strong><br>Cost: 3000c<br>Slots:</p><ul><li>Main Weapon S</li><li>Main Weapon S</li><li>Sub Weapon S</li><li>Engine S</li></ul><h5>Main Weapons</h5><p><strong>Sorthern Arc Buster Cannon</strong><br>Ammo Capacity: 2. 1 Shell per use<br>Fixed Weapon, 0 RP, 60ft range, Strafe 50<br>You fire a blast of energy, making a heavy attack that deals arcane damage. This attack has the shieldbreaker property.<br>Cost: 1000c</p><p><strong>Napalm Bomb</strong><br>Ammo Capacity: 2. 1 Shell per use<br>Fixed Weapon, 0 RP, 90ft range, Strafe 25<br>You hurl a fireball at a 15x15ft area, making a Light attack that deals fire damage against all units in the area. On damage, you inflict Burning 5.<br>Cost: 750c</p><h2>Sub Weapons</h2><p><strong>Magic Rocket Pods</strong><br>Ammo Capacity: 2. 1 Shell per use<br>Turret Weapon, 0 RP, 30ft range<br>You fire a highly accurate blast of arcane energy at the target, making a Precise Attack that deals Arcane damage against the target. This attack has the Lock On property, but does not get pinpoint<br>Cost: 500c</p><p><strong>Blaze Rifle</strong><br>Gimballed Weapon, 120ft range, Strafe 10<br>Rapid, you make a Light (1 AP), Heavy (2 AP) or Precise (2 AP) attack against the target.<br>Cost: 1000c</p><p><strong>Northi Gattling Rifle</strong><br>Fixed Weapon, 30ft range, Strafe 50<br>1 AP, Make a light attack against the target and all targets 10ft directly behind it.<br>Cost: 500c</p><p><strong>Sorthen Smoke Pod</strong><br>Ammo Capacity: 1. 1 Shell per use<br>Turret Weapon, 0 RP, 30ft range<br>You create a sphere of smoke in a 15x15ft area that blocks line of sight. This effect functions similarly to Glittershards and lasts until the start of your next turn.<br>Cost: 1250c<br>&nbsp;</p><h2>Utility</h2><p><strong>Sorthen Shield Projector</strong><br>Your staff gains a 25 HP shield. While the shield lasts, your staff does not lose altitude from any attacks that are made against the shield.<br>Cost: 1250c</p><p><strong>Sorthen Ejection System</strong><br>Ammo Capacity: 1. 1 Shell per use<br>0 RP, You immediately trigger wind bubble for both yourself and your artifice<br>Cost: 1000c</p><p><strong>Medivac Rig</strong><br>You can haul a downed ally on the underbelly of your staff, but your speed is halved while doing so.<br>Cost: 500c</p><p><strong>Afterburner</strong><br>Ammo Capacity: 1. 1 Shell per use<br>You double the speed of your staff for the next full movement action.<br>Cost: 1250c</p><h2>Engine</h2><p><strong>Budget Model Engine</strong><br>20ft air speed, no line movement. 1 Medium Shell per day.<br>Cost: 250c</p><p><strong>Stock Model Engine</strong><br>65ft air speed, 10ft turn. 1 Medium Shell per day<br>Cost: 750c</p><p><strong>Arlan Custom Engine</strong><br>35ft air speed, no line movement. 1 Medium Shell per day<br>Cost: 1500c</p><p><strong>Wing Model Engine</strong><br>50ft air speed, 30ft turn. 1 Medium Shell per day<br>Cost: 1000c</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "981a7a9a27b508040e7e4bfa1037517390e49199a5b575cf8e6860e4def9c2a7",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--aerial-staff-custom-model",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Airship",
+      "cost": "",
+      "burden": "3",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--aerial-staff-custom-model",
+        "stableId": "item--aerial-staff-custom-model",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "981a7a9a27b508040e7e4bfa1037517390e49199a5b575cf8e6860e4def9c2a7",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "ad1f7619b3d10d56",
+    "name": "Aerial Staff (Sparrow Model)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/9acf0249-521e-4abd-9087-1d2c9d47328b-AerialStaff.lg.webp",
+    "system": {
+      "description": "<p>The Sparrow Model Aerial Staff design is the most simple entry level Aerial Staff.&nbsp; It has a base speed of 20 feet and does not include integrated shielding or any weapon systems.&nbsp; Often used for training, its fuel efficiency is fairly high.&nbsp;</p><p>Its user can use it to fly. It has a speed of a 20ft.</p><p>Requires 1 hand to operate while flying.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Jury-Rigged Cannon (10 points): </strong>Adds a small star cannon that fires an arcane blast from the front that deals heavy attack damage for 2 AP with 120ft Range.&nbsp;</li><li><strong>Medivac Rig (20 points):</strong> Allows a downed ally to be hauled on the underbelly of the staff. But reduces the speed by 10ft while hauling.&nbsp;</li><li><strong>Jury Rigged Shield (35 points): </strong>Adds a shield generator, granting the airship a 15 HP shield. This shield can be switched on and off, but can only be replenished by changing the fuel cell.&nbsp;</li></ul></li><li><i>B mods:</i><ul><li><strong>Sorthen Shield Generator (50 points): </strong>Requires Jury-Rigged Shield. Installs a Sorthen style Shield Generator increasing the shield value by 15 HP.</li><li><strong>Upgraded Airship Engine (80 points):</strong> Increases the speed to 50ft but adds Line Movement: The airship may only move in a straight line when making a movement action.&nbsp;</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1ff76d984f2eae6681effa0fce4e7737c8f5c103d8c53974ca28db9325041486",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--aerial-staff-sparrow-model",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Airship",
+      "cost": "3500 Clim",
+      "burden": "3",
+      "activationCost": "0 AP",
+      "shellSize": "M",
+      "fuelUsage": "1 shell per hour",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--aerial-staff-sparrow-model",
+        "stableId": "item--aerial-staff-sparrow-model",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1ff76d984f2eae6681effa0fce4e7737c8f5c103d8c53974ca28db9325041486",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "db60303de1453a08",
+    "name": "Aetherie Sensory Station",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/2bf89fcf-d9a3-4a7a-a8e4-5249155e970d-Aetherie Chair.lg.webp",
+    "system": {
+      "description": "<p>A large stationary artifice chair an Aetherie connects themselves to that drastically boosts Mind Connection range by 250 miles.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "ddcd0f961c649bb9ff008ca31d3ceaa144bb8755a3a790077ac080c4d29781a9",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--aetherie-sensory-station",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Basic",
+      "cost": "100000",
+      "burden": "--",
+      "activationCost": "--",
+      "shellSize": "Medium",
+      "fuelUsage": "1 shell per day",
+      "craftingPoints": 0,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--aetherie-sensory-station",
+        "stableId": "item--aetherie-sensory-station",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "ddcd0f961c649bb9ff008ca31d3ceaa144bb8755a3a790077ac080c4d29781a9",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1ffbb2faf147a920",
+    "name": "Anti-Air Weapon Sight",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/487bb065-f0b6-4306-ba44-b61e02c0ae03-Anti-Air Targeting Artifice - Copy.lg.webp",
+    "system": {
+      "description": "<p>An artifice designed to combat against aerial mages.&nbsp;Provides tracking assistance against the more predictable movement of air units.&nbsp;</p><p>Attaches to ranged weapons.&nbsp;</p><p>Increases the accuracy of ranged weapon attacks against flying targets by +4 until the start of your next turn.</p><p>Can be attached or detached by spending 4 AP.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Holographic Optic (10 points): </strong>Increases the accuracy against flying targets by +1</li></ul></li><li><i>B mods:</i><ul><li><strong>Wide Targeting (25 points):</strong> The accuracy bonus is reduced by 2, but it now works on all targets.</li><li><strong>Aerial Targeting Mode (50 points):</strong> The effect now lasts until the end of the encounter or until deactivated by spending 2 AP. However, attacks against non-flying targets suffer a -4 penalty.</li><li><strong>Wing Outlining (80 points): </strong>The first attack made after activation applies the downburst effect (See: Downburst ability)</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "f6a00aebec4ed35d73ae10de50d4d0c17870afb2e8022f9aa6537328bf7302f2",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--anti-air-weapon-sight",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon Attachment",
+      "cost": "2000 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per use",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--anti-air-weapon-sight",
+        "stableId": "item--anti-air-weapon-sight",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "f6a00aebec4ed35d73ae10de50d4d0c17870afb2e8022f9aa6537328bf7302f2",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "f14efd26c3b6ca29",
+    "name": "Artifice Limb",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/44722766-985e-4080-a9e0-8658e5bb2b0b-ProstheticLimb.lg.webp",
+    "system": {
+      "description": "<p>An artifice item that replaces a lost limb or body part. Each of these must be custom made for a person. When attached, it allows the user to function as if the artifice limb was a normal limb.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Grapple Launcher (Arm only)(10 points):</strong> Allows the user to install a grappling hook artifice in the arm, functioning just like the grappling hook would. (Grappling hook must be supplied separately and takes an errand action from an artificer to install). A grappling hook installed in the arm takes burden like usual and still takes an AP to activate, but requires no AP to pull out.</li><li><strong>Zoom In (Eye only)(20 points):</strong> You may spend 1 AP to gain a +10 bonus to your perception until the start of your next turn.</li><li><strong>Weapon Slot (Arm only)(20 points): </strong>Allows the user to install a weapon into the arm, functioning just like the weapon would (takes an errand from artificer to install). The weapon costs burden like normal, but may be drawn or sheathed for 0 AP once per turn.</li><li><strong>Movement Burst (Leg only) (20 points):</strong> You may spend 0 AP to gain +20ft movement until the start of your next turn. Afterwards, your movement speed is halved until you put in a new shell into your leg.</li></ul></li><li><i>B mods:</i><ul><li><strong>Blast Knuckle (Arm or Leg only) (25 points):</strong> After making a Heavy unarmed attack with the limb, you may spend 0 RP to make a Light attack against all enemies in a 15ft wide, 15ft long cone behind the target. After doing this, you must put in a new shell into the limb to use it again (your movement speed is halved if your leg is unusable).</li><li><strong>Rocket Punch (Arm only) (50 points):</strong> Once per round, you may make a basic unarmed Heavy attack with this limb to a target within 60ft.</li><li><strong>Thermal Fusion Sight (Eye only)(80 points): </strong>Adds thermal vision up to 120ft. This cannot detect things hidden by magical means.&nbsp; The sight can not discern a difference in heat once something reaches freezing temperatures.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "9b918323a7796c65f551d3926e92c64a2695e337a963f0a92c2047412e55c8b2",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--artifice-limb",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "4000 Clim",
+      "burden": "0",
+      "activationCost": "",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per arc",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--artifice-limb",
+        "stableId": "item--artifice-limb",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "9b918323a7796c65f551d3926e92c64a2695e337a963f0a92c2047412e55c8b2",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "15e91319d3736671",
+    "name": "Artifice Water Purifier",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/eedb48a9-2fee-4185-8329-39f14d7175f8-water purifier.lg.webp",
+    "system": {
+      "description": "<p>A filter that purifies water to make it safe to drink.&nbsp;The device is easy to use and can filter up to 2 liters of water in 1 minute.&nbsp;&nbsp;</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Quick Filter (10 points): </strong>Can filter up to 4 liters of water in 1 minute.</li></ul></li><li><i>B mods:</i><ul><li><strong>Natural Use (25 points): </strong>When used during a rest action, the filter provides half the food needed for a basic rest (20u) provided a camping kit is set up.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "b529d2678e84fedc37cf65a1cc5e075e965ae62c750fc14023dca27cb765c5e2",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--artifice-water-purifier",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Basic",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per use",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--artifice-water-purifier",
+        "stableId": "item--artifice-water-purifier",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "b529d2678e84fedc37cf65a1cc5e075e965ae62c750fc14023dca27cb765c5e2",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "ca065fdd174eb7f5",
+    "name": "Astra Guidance Beacon",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/6046ece4-990b-4150-8ead-67eadde4fb0a-guidancedevice.lg.webp",
+    "system": {
+      "description": "<p>While this artifice is in effect, the spirit core values of your allies within 300ft of you are treated as 500 higher than they actually are for the purposes of calculating astra corruption risks. Does not stack with similar resistance boosting effects and only works on allies with a Spirit Core lower than yours.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Increased Effect (20 points): </strong>Now boosts the spirit core values of your allies by 1000 instead of 500.</li></ul></li><li><i>B mods:</i><ul><li><strong>Exousiai Protection (80 points): </strong>You and allies affected by this device ignore 1 level of astra corruption increase caused by Exousiai type fiends.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "d3205a96b46c1d7a0e6ef4d0f9fa3944e055360f410f6246452f1bde8864f707",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--astra-guidance-beacon",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Basic",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "M",
+      "fuelUsage": "1 shell per arc",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--astra-guidance-beacon",
+        "stableId": "item--astra-guidance-beacon",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "d3205a96b46c1d7a0e6ef4d0f9fa3944e055360f410f6246452f1bde8864f707",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1592ff633875fb49",
+    "name": "Binoculars",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/285c8f91-d839-4bf6-95d0-41dd0a53e7c2-Binoculars.lg.webp",
+    "system": {
+      "description": "<p>Binoculars let you zoom in on distant views, bringing faraway details up close and clear.&nbsp;</p><p>When using these, you gain a +10 bonus on perception checks against things further than 60ft away but a -10 penalty to things within 60ft.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Quick Focus Dial (20 points): </strong>The penalty for things within 60ft is reduced from -10 to -5.</li><li><strong>Night Mode (20 points):</strong> Looking through the binoculars gives you Nightvision up to 120ft.</li></ul></li><li><i>B mods:</i><ul><li><strong>Range Finder (25 points): </strong>When looking through this item, you can tell how far objects are from you.</li><li><strong>Anti-Illusion Lens (50 points):</strong> You gain a +10 bonus to determine if something is an Illusion or not.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "3fe43aed4fb6e13fbb8c105c3ce22254896e46bc7314956ac9bc736f413c1c42",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--binoculars",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Basic",
+      "cost": "500",
+      "burden": "1",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--binoculars",
+        "stableId": "item--binoculars",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "3fe43aed4fb6e13fbb8c105c3ce22254896e46bc7314956ac9bc736f413c1c42",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "afe7338edd892843",
+    "name": "Blaster Weapon",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/88d1c983-3851-4dc0-95c1-aff0ba2b0311-Blaster Weapon - Copy.lg.webp",
+    "system": {
+      "description": "<p>An artifice that fires a condensed blast of magical energy.&nbsp;Used to give a ranged option to melee weapons.&nbsp;Attachable to melee weapons.&nbsp;</p><p>When activated, changes the weapon to a ranged mode that can fire elemental blasts to a target up to 80ft away like a ranged weapon could. The elemental type is determined at artifice creation. When the weapon is activated again, the weapon switches back to the melee mode and the shell is expended.</p><p>Can be attached or detached from a melee weapon by spending 4 AP.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Quick Swap (20 points): </strong>The activation cost is reduced to 0 AP.</li></ul></li><li><i>B mods:</i><ul><li><strong>Lightweight (25 points):</strong> Reduces the Burden of this artifice by 1.</li><li><strong>Sniper Mode (50 points):</strong> The range of the ranged mode is increased to 240ft.</li><li><strong>Channeling Blasts (80 points):</strong> Your ranged mode also counts as a channeling weapon for the purpose of casting spells through it, as if the weapon it is attached to was a channeling weapon.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "51c1e7392233d7a049627c40beec357c4c1e06ce78934b4ce71c7351f074d3b6",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--blaster-weapon",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon Attachment",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per use",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--blaster-weapon",
+        "stableId": "item--blaster-weapon",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "51c1e7392233d7a049627c40beec357c4c1e06ce78934b4ce71c7351f074d3b6",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "fff97118acf37c77",
+    "name": "Buster Weapon",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/1ef12ee6-1be6-4dfa-a15a-dbffff459c31-BusterArtifice.lg.webp",
+    "system": {
+      "description": "<p>An artifice that adds an explosive blast to increase forward velocity.&nbsp;The most common type of weapon artifice used to help overwhelm an opponent.&nbsp;Attachable to melee weapons.&nbsp;</p><p>Use when you are making a melee attack against an enemy.&nbsp;The attack gains +3 accuracy and +3 damage.</p><p>Can be attached for 4 AP, but once attached, can only be removed by spending an EP in town.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Powerful Explosion (10 points): </strong>Increases the damage bonus by +1</li><li><strong>Optimized Explosion (20 points):</strong> Increases the accuracy bonus by +1</li></ul></li><li><i>B mods:</i><ul><li><strong>Angel Type (25 points): </strong>When an attack enhanced by this artifice deals damage, knock the target back 5ft.</li><li><strong>Launch Step (50 points): </strong>You can use this before making an attack to move 10ft before making an attack that benefits from this artifice.</li><li><strong>Shieldbreaker (80 points):</strong> The attack enhanced by the artifice also gains the Shieldbreaker keyword.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "ba3a356da4acb739a759b35396d0e5f959e454a3f92ab076a8cb55227e6ee01c",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--buster-weapon",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon Attachment",
+      "cost": "3000 Clim",
+      "burden": "1",
+      "activationCost": "0 RP, Instant",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per use",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--buster-weapon",
+        "stableId": "item--buster-weapon",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "ba3a356da4acb739a759b35396d0e5f959e454a3f92ab076a8cb55227e6ee01c",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "3a19c87e6b7cb5f3",
+    "name": "Calibretto Device",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a5ea45d7-f97d-41e7-8d26-7341bb74401b-calibretto.lg.webp",
+    "system": {
+      "description": "<p>A small handheld device that display the astra level of where you're currently standing.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Bag Clip (10 points): </strong>The device can be used by attaching it to a belt or bag and no longer requires to be held in your hands.</li></ul></li><li><i>B mods:</i><ul><li><strong>Item Checker (25 points):</strong> You can use the device to check objects to determine if they are corrupted with astra or safe to touch.</li><li><strong>Increased Capacity (50 points): </strong>When activated, the device now remains active for a week on the same shell.</li><li><strong>Radar (80 points)</strong>: While active, points to the highest source of non-ambient astra within a 1 mile range.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "942020fc9089eafdd8a726a1a7052b7cd411f2974b652b878996ec2bd21c82a5",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--calibretto-device",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Basic",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 per use",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--calibretto-device",
+        "stableId": "item--calibretto-device",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "942020fc9089eafdd8a726a1a7052b7cd411f2974b652b878996ec2bd21c82a5",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "cd26fc73bbabb096",
+    "name": "Cannon (Two-Handed)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/b559f665-0b91-4d07-891a-dabb929d8b1f-cannon.lg.webp",
+    "system": {
+      "description": "<p><strong>Cannon</strong>: All basic attacks made with this weapon gain the Artillery keyword, but you can only make 1 ranged attack with this weapon per round. When you make a basic Heavy attack against an enemy, you make a Blanketing Light attack against all other enemies within 5ft of the target as well.</p><p>Range: 240ft, reduced to 60ft if you moved before firing.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>IFF Off (0 points):</strong> Your basic attack splash now hit all targets within range instead of only enemies.</li><li><strong>Pie Launcher (10 points):</strong> Pie toss can be fired through the weapon to gain the increased range (does not affect the damage or transfer alloys).</li><li><strong>Big Boom (20 points):</strong> The light attack is made against all enemies within 10ft of the target instead of 5ft.</li><li><strong>Incendiary Shell (20 points):</strong> The Light attack deals Fire damage and ignites flammable materials in its radius.</li><li><strong>Mobile Artillery (35 points)</strong>: After moving, your range is reduced to 120ft instead of 60ft.</li></ul></li><li><i>B mods:</i><ul><li><strong>Reinforced Frame (25 points):</strong> You may use the cannon as a melee weapon that deals Physical(Bludgeoning) damage. Only does 4d6 heavy damage when used as a melee weapon.</li><li><strong>Side Barrel (50 points):</strong> You may use the cannon a second time in a round, however this second attack can only be a light attack.</li><li><strong>Snipe (80 points):</strong> If you did not move this turn or the previous turn you gain a +1d4 bonus to your accuracy roll on attacks made with this weapon.</li><li><strong>Bigger Pies (80):</strong> When you fire a pie through the launcher, you may deal 1 sure hit full pierce damage to all other targets within 5ft of the target.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "b20d7acd74f5fba93959f3eeb1f6e5ff69e8a7794c18e85b0b4f0b0e4f1ddb48",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--cannon-two-handed",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Specialized Weapon",
+      "cost": "1000 Clim",
+      "burden": "2",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--cannon-two-handed",
+        "stableId": "item--cannon-two-handed",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "b20d7acd74f5fba93959f3eeb1f6e5ff69e8a7794c18e85b0b4f0b0e4f1ddb48",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "907a1538ae753ae7",
+    "name": "Chainsaw Artifice (Two-Handed Weapon)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/826340eb-f0e1-4ee8-a907-84ef39edbc0f-Chainsaw_-_Copy.lg.webp",
+    "system": {
+      "description": "<p><strong>Let it rip:</strong> After making an attack with this weapon, subsequent attacks with this weapon deal +1 damage.</p><p>You may consume 1 shell to empower the artifice until the end of your turn. While empowered, the damage bonus of subsequent attacks stacks.</p><h6>Mods:</h6><ul><li>A mods:<ul><li><strong>Multi Gear Chaindrive (20 points):</strong>&nbsp;On activate. Heavy attacks grant 2 stacks instead of 1.</li><li><strong>Turbo Engine (10 points):</strong> If a heavy attack is the first attack used, it grants the damage stack immediately.</li></ul></li><li>B mods:<ul><li><strong>Efficient Gathering (25 points):</strong> If the artifice was used during combat, gain a +10 bonus to Gather Parts Encounter Conclusion action for that combat.</li><li><strong>Redline Engine (80 points):</strong> The activation ability begins at +2 stacks, but the artifice cannot use the empower ability again after it ends until the end of the arc.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "be2411cacb651e76d5fcf39f39337be7738c1aadf016ab3930ee1d1abaa0205e",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--chainsaw-artifice-two-handed-weapon",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon",
+      "cost": "3000 Clim",
+      "burden": "2",
+      "activationCost": "0 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 per use",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--chainsaw-artifice-two-handed-weapon",
+        "stableId": "item--chainsaw-artifice-two-handed-weapon",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "be2411cacb651e76d5fcf39f39337be7738c1aadf016ab3930ee1d1abaa0205e",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "d1bbeca94d3bfb30",
+    "name": "Counter-Magic Shackles",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/290546d7-422a-4cd4-bbd2-f7a70e75e5f3-Magic Shackles.lg.webp",
+    "system": {
+      "description": "<p>Special Shackles that were created for restraining targets with high magic levels.&nbsp;hey disrupt the shackled target’s magic circuits, making them unable to use any magic or mana abilities.&nbsp;Because of the nature of the magic circuit restriction, they can only be used on unconscious targets.&nbsp;</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Anti-Teleport (10 points): </strong>The wearer cannot teleport, even if the teleport would cost no mana..</li></ul></li><li><i>B mods:</i><ul><li><strong>Zero Suppression (50 points):</strong> Lowers the target’s visible aura to 0 while wearing these, making them difficult to locate by magical means.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "82eea8653138613eebc0a988f587b0ade1cd5d5c0614cfb812b46ce3ce42f8b4",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--counter-magic-shackles",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Basic",
+      "cost": "4000 Clim",
+      "burden": "1",
+      "activationCost": "2 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per day",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--counter-magic-shackles",
+        "stableId": "item--counter-magic-shackles",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "82eea8653138613eebc0a988f587b0ade1cd5d5c0614cfb812b46ce3ce42f8b4",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "39c1a74b7420099f",
+    "name": "Elemental Weapon Artifice",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/d9e2d5a4-55e1-43c6-8f0d-e4a0887a6e94-Elemental Weapon Artifice - Copy.lg.webp",
+    "system": {
+      "description": "<p>An artifice that sends energy through the weapon. The type is predetermined and can not be changed. The appearance and effect are based on the type. For example, a fire weapon might cover the weapon in flames and deal fire damage.&nbsp;</p><p>When your attacks with this weapon deal damage, the type of damage they deal changes based on this weapon’s element. This effect lasts for 1 minute. Can only be applied to melee weapons.</p><p>Can be attached or detached from a melee weapon by spending 4 AP.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Early Deactivation (10 points):</strong> You may spend 0 RP to deactivate the effect.</li><li><strong>Quick Activation (20 points): </strong>The activation cost is reduced to 0 AP.</li></ul></li><li><i>B mods:</i><ul><li><strong>Secondary Element (50 points):</strong> The artifice is made with two predetermined elements instead of 1. When activating it, you may choose which element is used.</li><li><strong>Ranged Mode (50 points):</strong> This artifice can be attached to ranged weapons as well.</li><li><strong>Elemental Burst (80 points):</strong> While active, you may expend the shell and 1 AP to make a Heavy attack with the weapon.</li><li><strong>Elemental Mastery (80): </strong>When activated, the artifice instead changes to an element the wielder has mastered (their choosing). Still has the base element too as option.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "799558f27d255e97901536edfd49399d65cdc1b7537633526dc9e88f9bd48b92",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--elemental-weapon-artifice",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon Attachment",
+      "cost": "1000",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per use",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--elemental-weapon-artifice",
+        "stableId": "item--elemental-weapon-artifice",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "799558f27d255e97901536edfd49399d65cdc1b7537633526dc9e88f9bd48b92",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "48431793b7eaecca",
+    "name": "Fire Robe",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/56a57564-183c-4017-bce6-91a5b67fd5dd-Fire Robe.lg.webp",
+    "system": {
+      "description": "<p>A red robe with a design based of a Divine Arms. Keeps the wearer cool in even the hottest of weathers by repelling the heat.</p><p>Considered a cloak and takes the cloak slot.</p><p>Can be activated to give the wearer 5 damage reduction against fire damage until the end of the encounter. When this effect ends, the shell inside the robe is immediately used up and needs to be replaced for the weather repelling effect to function.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Quick Activation (20 points): </strong>The activation cost is reduced to 0 AP.</li></ul></li><li><i>B mods:</i><ul><li><strong>Fireproof (25 points):</strong> While it's active, you are immune to Burning.</li><li><strong>Increased Protection (80 points): </strong>The damage reduction is increased to 10.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1aa5ba1a8f86d167d359756591e15c9f7fd961b4af0c347b5d132cafd2e8a971",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--fire-robe",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "3000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per arc",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--fire-robe",
+        "stableId": "item--fire-robe",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1aa5ba1a8f86d167d359756591e15c9f7fd961b4af0c347b5d132cafd2e8a971",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "d31af73b8e4e2e27",
+    "name": "Grappling Hook Artifice",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/1c056ef9-c631-45aa-aff5-1ef51e1f6ef0-Grappling Hook.lg.webp",
+    "system": {
+      "description": "<p>A handheld cylinder shaped artifice that fires out a pin with a 40ft rope attached to it. The pin attaches itself to any non-living surface it hits and it can support the weight of up to four people. The GM may require an accuracy check for distant or hard to hit surfaces.</p><p>After the pin is attached, you may spend 0 AP to reel yourself in and move towards where the pin is attached to. Any allies within 5ft of you may grab onto you and be moved alongside you for 0 RP (Up to 3 allies total).</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Drive By Model (10 points): </strong>The Grappling Hook Artifice loses the ability to move allies, but you can now make attacks at any point while being reeled as long as you have actions.&nbsp;While you are moving in this way, you do not provoke attacks of opportunity.</li><li><strong>Scorpion Tip (20 points):</strong> The range of the Grappling Hook Artifice is lowered to 20ft, but can be used to make a light attack that does exactly 1 damage with full pierce.&nbsp;On damage, the target can be pulled up to 20ft towards the user.</li><li><strong>Swing Engine (35 points):</strong> The grappling hook artifice can be used to swing from the point the pin is embedded instead of pulling straight towards it, in addition the rope length is increased by 20ft. The pin automatically detaches and reels in when you move to your destination for smooth traveling.</li></ul></li><li><i>B mods:</i><ul><li><strong>Emergency Escape Reel (25 points):</strong> You may also fire this using 1 RP.</li><li><strong>Heavy Tow Line (25 points):</strong> The grappling hook can support 1 additional ally to move with you.</li><li><strong>Belt Attachment (50 points): </strong>The Grappling Hook Artifice is modified to be mounted onto the belt, allowing for operation while wielding items in both hands via a switch mounted on the arm.</li><li><strong>Safety Hook (80 points):</strong> You and your allies movement with this artifice is considered a sidestep.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "f749f270b5ba85a9116f8c613abdef5fce3db5b081143d61cd78b90d0d4f9d86",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--grappling-hook-artifice",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "2000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per use",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--grappling-hook-artifice",
+        "stableId": "item--grappling-hook-artifice",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "f749f270b5ba85a9116f8c613abdef5fce3db5b081143d61cd78b90d0d4f9d86",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "67ff097a4c3f1bc4",
+    "name": "Lightning Rod",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/b0cb557c-0a02-4a46-85ef-86b650255071-Lightning Rod Artifice - Copy.lg.webp",
+    "system": {
+      "description": "<p>A short metal rod that can be expanded with the push of a button.</p><p>When placed into the ground and activated, it creates a 25x25ft zone with it in the center. Everyone in the zone gains 5 damage reduction against Lightning damage. Lasts until the end of the encounter.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Telescopic Pole (20 points): </strong>The zone increases to 30x30ft.</li><li><strong>Quick Activation (35 points):</strong> The activation cost is reduced by 1.</li></ul></li><li><i>B mods:</i><ul><li><strong>Shockproof (25 points):</strong> While it's active, everyone in the area also gains immunity to Static.</li><li><strong>Increased Protection (80 points): </strong>The damage reduction is increased to 10.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "3071dc3b3eb6904d37e9fda82ef15c883e275d7bfd75bf3846bc0af590959262",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--lightning-rod",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "3000 Clim",
+      "burden": "1",
+      "activationCost": "2 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per use",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--lightning-rod",
+        "stableId": "item--lightning-rod",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "3071dc3b3eb6904d37e9fda82ef15c883e275d7bfd75bf3846bc0af590959262",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "bfade7d3594e82c7",
+    "name": "Long Distance Communications Array",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/324cc910-bc2b-4f97-9262-79b9c82a6e31-Long Range Com Backpack - Copy.lg.webp",
+    "system": {
+      "description": "<p>A series of boxes, microphones and earplugs that is used for long range communications. It can connect to other devices by inputting a code unique to the artifice its connecting to. Any sound spoken into the microphone is broadcasted to all other artifices connected to it. It has unlimited range.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "0fa7d4f76aaf9971924d9c525ec796a740905c79fee5f13bba89a5b87726850a",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--long-distance-communications-array",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "200000 Clim",
+      "burden": "5",
+      "activationCost": "4 AP",
+      "shellSize": "L",
+      "fuelUsage": "1 shell per hour",
+      "craftingPoints": 0,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--long-distance-communications-array",
+        "stableId": "item--long-distance-communications-array",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "0fa7d4f76aaf9971924d9c525ec796a740905c79fee5f13bba89a5b87726850a",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "6aaa620483b2044c",
+    "name": "Mana Vision Goggles",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/b2bc3d50-0785-4830-8d1e-e19789ee65da-Mana Vision Goggles - Copy.lg.webp",
+    "system": {
+      "description": "<p>A pair of goggles that link themselves to the wielder’s eyes. Once put on, they are always active. They allow the wielder to see the fluctuations of mana, letting them see the presence of any magic or mana based abilities including traps or barriers.&nbsp;</p><p>They can also automatically detect the presence of any creature that has mana that is not behind total cover. (This does not give you vision to attack them if they would be in things such as glittershards). However, they become unable to detect living creatures without mana in them.</p><p>Due to the nature of these goggles, they must be carefully removed. Removing them takes a minute. Attempting to do it faster will blind the person wielding them for a minute instead.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Mana Sight (20 points): </strong>Looking at a target within 30ft automatically reveals their mana %.</li></ul></li><li><i>B mods:</i><ul><li><strong>Quick Removal (50 points): </strong>Can be removed by spending 3 AP instead of 1 minute.</li><li><strong>Decipher Magic (80 points):</strong> When looking at a magic effect, you may attempt to understand it as if using Decipher Magic. Your bonus for this roll is +15, regardless of your reason or magic skill points.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "17be051f1f7a03c45a32a5bfcd192258f26332fe4486e4106cb12cfbf314c2c3",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--mana-vision-goggles",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "3000 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per arc",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--mana-vision-goggles",
+        "stableId": "item--mana-vision-goggles",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "17be051f1f7a03c45a32a5bfcd192258f26332fe4486e4106cb12cfbf314c2c3",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "3c7ada82bcc49385",
+    "name": "Medium Shell",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/eb3e04d5-0514-4377-80e3-e088315861b8-Medium Magic Shells - Copy.lg.webp",
+    "system": {
+      "description": "<p>A medium cylinder of magical fuel that is used to power artifices.&nbsp; Most weapon-type artifices automatically eject the shell when they are emptied… along with a burst of steam to prevent overheating.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "d63ac63358d3f1239f2db46ef4bfb2c1d1055751b06d7667fdec477c5f9464bb",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--medium-shell",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Fuel",
+      "cost": "200 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "M",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--medium-shell",
+        "stableId": "item--medium-shell",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "d63ac63358d3f1239f2db46ef4bfb2c1d1055751b06d7667fdec477c5f9464bb",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "110ac9dee0f49b13",
+    "name": "Memory Bubble",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/ec7405c7-7014-4d0f-a6a8-a82820e30ba3-Memory Bubble - Copy.lg.webp",
+    "system": {
+      "description": "<p>A spherical object that can record memories. A person can record up to 1, 2 or 5 minutes of memory into the object depending on the type. After a memory is recorded onto this artifice, no further memories can be recorded even if the time is not fully spent.</p><p>After a memory is recorded, other people can view the memory. When using this object, they view the memory from the point of view of the recorder.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Infinite Replays (35 points): </strong>A person may watch the recording by spending 1 mana rather than using a shell.</li></ul></li><li><i>B mods:</i><ul><li><strong>Redacted (25 points):</strong> The recorder can mute or censor parts of the memory being recorded. This tampering may fool regular people, but an artifice check of DC20 will reveal tampering has been done.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "0f3e006b23d2eb5c7e935468dac9aae2a188f0e085cf0910e7760cf485f20d04",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--memory-bubble",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "2000/4000/10000 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per use (including recording)",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--memory-bubble",
+        "stableId": "item--memory-bubble",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "0f3e006b23d2eb5c7e935468dac9aae2a188f0e085cf0910e7760cf485f20d04",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "43b663b3af7801a2",
+    "name": "Night Vision Goggles",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a9b736b0-7f7d-4381-be31-440740fa46da-NVG - Copy.lg.webp",
+    "system": {
+      "description": "<p>Special goggles that grant the user night vision up to 120ft in addition to keeping the eyes protected from weather and impacts.&nbsp;Easy to operate with the flick of a switch.&nbsp;&nbsp;</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Anti-Flash Shutter (20 points): </strong>While this artifice is worn and active, you are protected from being dazed, blinded etc by sudden flashes of light.</li><li><strong>Increased Range (20 points):</strong> Increases the range at which these goggles are active by 60ft.</li></ul></li><li><i>B mods:</i><ul><li><strong>Darkvision Goggles (50 points):</strong> Instead of Nightvision, these goggles give you Darkvision.</li><li><strong>Thermal Fusion Sight (80 points): </strong>Adds thermal vision up to 120ft. This cannot detect things hidden by magical means.&nbsp;The sight can not discern a difference in heat once something reaches freezing temperatures.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "2a73a0d6964b7bc4f6d5f684db88148d65b5ec81c7a76542f5dc269945d59abf",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--night-vision-goggles",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "2000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per day",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--night-vision-goggles",
+        "stableId": "item--night-vision-goggles",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "2a73a0d6964b7bc4f6d5f684db88148d65b5ec81c7a76542f5dc269945d59abf",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "988fa9a87b988166",
+    "name": "Northi Lantern",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/d8898c14-0881-4a4b-80c2-68c738bb7ffd-Lantern.lg.webp",
+    "system": {
+      "description": "<p>A contained magical light within a casing.&nbsp;The light can be easily turned on and off with the flick of a switch and provides clear and stable white light that emits up to 30 feet away.&nbsp;&nbsp;</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Light control (10 points): </strong>The distance of light emitted can be any distance up to the normal max.</li><li><strong>Directional Light (20 points): </strong>Makes the light directionally forward instead of all around.</li></ul></li><li><i>B mods:</i><ul><li><strong>Lumen Sphere (25 points):</strong> Increases the light emission to 60ft.</li><li><strong>Bag Clip (25 points): </strong>Can be attached to your belt or bag to be used without being held in your hand.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "fab59b9c3b66912a66e8d3aa32f824679d187faf216c0457d20c2215aaf22278",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--northi-lantern",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Basic",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per arc",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--northi-lantern",
+        "stableId": "item--northi-lantern",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "fab59b9c3b66912a66e8d3aa32f824679d187faf216c0457d20c2215aaf22278",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "b4fcc082aca25d14",
+    "name": "Personal Camouflage Field",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/c2b2cbf5-2b82-4605-8a70-9472ab688edc-Personal Camo Field - Copy.lg.webp",
+    "system": {
+      "description": "<p>A circular device that barely fits in one hand. When activated, the user’s appearance shifts the match the surroundings. The user is able to hide without cover with a +10 bonus to stealth checks from any creature that was unaware of its presence before. In combat or against creatures looking for the wearer, the cloak will only give a +5 bonus to stealth checks.</p><p>Upon making an attack, the effect of this artifice is disabled until the start of your next turn.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Vanishing Act (20 points): </strong>When you activate the device in combat, you may immediately take the Hide action for -2 AP of its normal cost (min 0).</li><li><strong>Group Veil (35 points):</strong> While stationary, you may extend the effect of this device to all medium or smaller creatures within 5ft of you.</li></ul></li><li><i>B mods:</i><ul><li><strong>Decoy (50 points):</strong> The first time you are attacked while stealthed while this device is active, you automatically dodge the attack.</li><li><strong>Thermal Mask (80 points): </strong>Thermal vision and similar heat based detection no longer automatically detects you.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "e8b0f33b6d7d64afef67d64ac72297642b5640fed71db0a5f8b9efc8ae72215a",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--personal-camouflage-field",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "3000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per minute",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--personal-camouflage-field",
+        "stableId": "item--personal-camouflage-field",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "e8b0f33b6d7d64afef67d64ac72297642b5640fed71db0a5f8b9efc8ae72215a",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "8f6a1113e1ae2f5b",
+    "name": "Photon Shield",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/ee0ad321-717c-465a-bf85-9e4510be1a01-Photon Shield.lg.webp",
+    "system": {
+      "description": "<p>A bracelet that projects a shield of light onto the user’s arm.&nbsp;Activates a projected shield of light onto your arm, which acts as a shield but does not use your hand to wield it allowing you to carry a weapon in it.&nbsp; Does not stack with other shields and while activated, it is treated as a shield for things with that as requirement.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Quick Activation (20 points): </strong>The activation cost is reduced to 0 AP</li><li><strong>Photon Dome (20 points):</strong> Changes the Photon Shield effect to instead project a dome 5ft around you that grants the shield effect to allies against ranged attacks only.&nbsp; Does not stack with other equipped shields. Does not stack with other “Photon” modifications. May still choose to activate the original effect of Photon Shield.</li><li><strong>Photon Wall (20 points):</strong> Changes the Photon Shield effect to instead to create a stationary wall of light in front of you.&nbsp;This wall disappears when you move.&nbsp;The wall is a 1 way high cover with 20 HP and only allows ranged attacks to pass through it from your side.&nbsp;When you move, the wall is immediately destroyed.&nbsp;Once the wall is destroyed, the shell is expended and ejects from the artifice. May still choose to activate the original effect of Photon Shield.</li></ul></li><li><i>B mods:</i><ul><li><strong>Photon Greatshield (25 points):</strong> Increases the Burden to 2 and changes the effect of Photon Shield to a Greatshield instead of a regular shield. Reduces your evasion etc like a Greatshield would. You can deactivate the photon greatshield for 0 RP, but doing so ejects the shell and ends the effect.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "755c557e3f873f52818578af3a6f2412c7718771a560c066a2610e6f4f92af5a",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--photon-shield",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "3000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per encounter",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--photon-shield",
+        "stableId": "item--photon-shield",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "755c557e3f873f52818578af3a6f2412c7718771a560c066a2610e6f4f92af5a",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "40e01662f62b7c67",
+    "name": "Portable Vacuum",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/44b7df3b-58b1-49fc-b3d9-15db042585a6-Portable Vacuum - Copy.lg.webp",
+    "system": {
+      "description": "<p>A large box with a powerful vacuum on top. When activated, it sucks in any mist or gas within 20ft of its location, removing its effects. This affects magical mists or gasses too, but cannot affect those created by Secret Art or Climax Art.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Powerful Fan (10 points): </strong>Increases the range of which it sucks in by 10ft.</li><li><strong>Fuel Optimization (10 points): </strong>When activated, it now lasts until the end of the encounter on a single shell use.</li></ul></li><li><i>B mods:</i><ul><li><strong>Airflow Optimization (25 points): </strong>Increases the range of which it sucks in by 10ft.</li><li><strong>Backpack Vacuum (80 points):</strong> You may carry this artifice on your back and you can activate it without having to draw it. In addition, it moves with you instead of sucking up things only near its activation location.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "e1a41bdf3c40703341356530e4b98e5020feb16dc7f370415b587f8b08700a64",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--portable-vacuum",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "2500 Clim",
+      "burden": "2",
+      "activationCost": "1 AP",
+      "shellSize": "M",
+      "fuelUsage": "1 shell per minute",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--portable-vacuum",
+        "stableId": "item--portable-vacuum",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "e1a41bdf3c40703341356530e4b98e5020feb16dc7f370415b587f8b08700a64",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "3eda4915ecc7220a",
+    "name": "Power Gauntlets",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/8ce02b8a-0497-4789-88ff-73474cb3fd30-Power gauntlets.lg.webp",
+    "system": {
+      "description": "<p>A large and heavy pair of gloves. Once the wearer inserts their hand into them, they will secure themselves properly around their hands.&nbsp;</p><p>When activated, the wearer’s unarmed attacks do normal weapon damage instead of their normal unarmed damage. If the wearer already has a feature that lets them do this, the gauntlets instead give them +1 Power to unarmed attacks. While wearing these gauntlets, even if they are inactive, the wearer suffers a -10 penalty to all checks that require finesse movements with their hands.&nbsp;</p><p>Wearing these gauntlets also prevents the user from properly holding and using other items and weapons with them. Both hands are taken up by these gauntlets.</p><p>While they are considered a two-handed weapon as they take two hands to use, they do not normally get 5d6 heavy damage.</p><p>After drawing these in combat, putting them on takes 2 AP (But you may choose to just always wear them to bypass this). Taking them off also takes 2 AP.&nbsp;</p><h2>Mods:</h2><ul><li><i>A mods:</i><ul><li><strong>Fine Size (10 points): </strong>Removes the -10 penalty for finesse movements while wearing the gauntlets.</li><li><strong>Vault Breaker (20 points):</strong> Your attacks deal double damage against objects.</li><li><strong>Artificer's Gloves (35 points):</strong> You may hold and use artifices like normal while wearing the gauntlets.</li></ul></li><li><i>B mods:</i><ul><li><strong>Finesse Grip (25 points):</strong> You may hold and use items or weapons like normal while wearing these gauntlets.</li><li><strong>Heavy punches (50 points): </strong>Unarmed attacks made with this weapon deal 5d6 damage instead of 4d6.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "990a2dee0aa11dc4292ae611724e4d3b4eab936031faddd477c1a4b608ca5751",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--power-gauntlets",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon",
+      "cost": "1500 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per hour",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--power-gauntlets",
+        "stableId": "item--power-gauntlets",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "990a2dee0aa11dc4292ae611724e4d3b4eab936031faddd477c1a4b608ca5751",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "d1f66b6d10aaa232",
+    "name": "Private Communications Device",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/67ce3c78-d643-4e0b-abc1-3a3c64da06b7-Personal Communications Device - Copy.lg.webp",
+    "system": {
+      "description": "<p>A small box that comes with two earplugs. It can connect to other devices within a mile by inputting a code unique to the box its connecting to. When a person speaks into the box, their voice can be heard through the earplugs as normal volume, regardless of how loud the person speaks. Only a person wearing at least 1 earplugs can hear sounds coming through it.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Extra Earplugs (10 points): </strong>The device now comes with 3 additional earplugs, letting more people listen in.</li></ul></li><li><i>B mods:</i><ul><li><strong>Extra Range (25 points):</strong> The range of the device increases from 1 mile to 3 miles.</li><li><strong>Hidden Device (80 points):</strong> The device is disguises as a regular object, making it not appear as a private communications device. (Closer inspection or perception checks may still reveal it as such).</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "6deee6122727eb7e91c2f1420e7713be4ac384619d0ac5f527f574be944f36ae",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--private-communications-device",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "1500 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per hour",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--private-communications-device",
+        "stableId": "item--private-communications-device",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "6deee6122727eb7e91c2f1420e7713be4ac384619d0ac5f527f574be944f36ae",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "9d25e956e1664a78",
+    "name": "Projected Recorder Orb",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/f42ed698-a11d-4182-921a-8683b14a422b-Projected Recorder Orb - Copy.lg.webp",
+    "system": {
+      "description": "<p>A special crystal ball that records sounds and images.&nbsp; It can be used to playback what it has recorded with illusionary magic.&nbsp; The shell is built-in and the device records up to 1 minute in a 10ft radius around the orb.&nbsp; When used again it will project an illusion of the recording around itself.&nbsp; The illusion appears slightly distorted and is clearly an illusion.&nbsp; The orb can only record once, but may playback for up to a year.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "16f9c3a766cdf23f05551b2d524b83e4b22c9632fe105f08419e96216e322444",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--projected-recorder-orb",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Basic",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "S",
+      "fuelUsage": "Special",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--projected-recorder-orb",
+        "stableId": "item--projected-recorder-orb",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "16f9c3a766cdf23f05551b2d524b83e4b22c9632fe105f08419e96216e322444",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "25a78d25d4bd5fb8",
+    "name": "Refractor Gun",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/b047912b-1b78-407e-a5be-b4a4b39fc973-Refractor Gun.lg.webp",
+    "system": {
+      "description": "<p>An artifice gun with cartridges that lets it fire blasts of arcane energy through a series of lenses rather than bullets. Attacks with this weapon deal Arcane damage. Exists in Musket, Pistol, Shotgun and Sniper Rifle variants.</p><h2>Mods:</h2><p>Also takes normal pistol, shotgun, musket and sniper rifle mods.</p><ul><li><i>A mods:</i><ul><li><strong>Elemental Lens (10 points): </strong>Instead of Arcane, the weapon may deal a different element of your choosing</li></ul></li><li><i>B mods:</i><ul><li>None</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "5816fc3c05b1ba2e0140701da78add5ebdcaf9d1a5883cceb1d4a3188447a1ce",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--refractor-gun",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon",
+      "cost": "Original Weapon + 1000",
+      "burden": "Original Weapon",
+      "activationCost": "-",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per encounter",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--refractor-gun",
+        "stableId": "item--refractor-gun",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "5816fc3c05b1ba2e0140701da78add5ebdcaf9d1a5883cceb1d4a3188447a1ce",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "683e24b5d48df5c0",
+    "name": "Return Stone",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/8e6703ba-9fa1-48d8-a003-247fb1ae330c-Return Stone - Copy.lg.webp",
+    "system": {
+      "description": "<p>A small crystal that is attuned to normal reality. Can be used as an emergency escape from dungeons.</p><p>When activated, the person who activated it is immediately teleported out of the dungeon. May be used on downed allies instead of oneselves.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Shortened Activator (20 points): </strong>Reduces the activation cost by 1 AP.</li></ul></li><li><i>B mods:</i><ul><li><strong>Ranged Circuit (25 points):</strong> Increases the range by 20ft when used on a downed ally.</li><li><strong>Re-usable (50 points):</strong> Can be used more than once, but requires repair in between them. This also takes up 2 C slots.&nbsp;</li><li><strong>Group Escape (80 points): </strong>When used, up to 3 other allies within 10ft of you may choose to escape with you. Increases the AP cost by 2, potentially giving it the setup keyword.</li><li><strong>Re-usable+ (80 points):</strong> Can be used more than once. This also takes up 3 C slots.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "a2b85c4997fd76d219245c863bf25127a0d916693da1645978ec7d1418e551f3",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--return-stone",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Basic",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "3 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--return-stone",
+        "stableId": "item--return-stone",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "a2b85c4997fd76d219245c863bf25127a0d916693da1645978ec7d1418e551f3",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "f30a12cf7791bcb9",
+    "name": "Shell Converter",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/9b1e5679-cb0f-4d49-b48b-818263e1ef6c-shellconverter.lg.webp",
+    "system": {
+      "description": "<p>An artifice that easily converts fuel into shells. Less bulky to carry than an artifice kit, but cannot be used to repair artifices.</p><p>Treated as a kit for Burden purposes.</p><p><strong>Rest Action: </strong>You can choose to create a small Artifice Shell, paying its cost in Magical Fuel to create.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Medium Capacity (20 points):</strong> You may also create Medium Shells (costs more Fuel still).</li></ul></li><li><i>B mods:</i><ul><li><strong>Increased Production (25 points):</strong> You may create two shells instead of 1 (costs more Fuel still).</li><li><strong>Lightweight Design (80 points):</strong> This artifice is no longer counted as a kit and can thus be stored easily in non-combat inventory.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "b90ea156a6eb03374e8de22e2de8386127a9f441e4567be1d41148ec294cd492",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--shell-converter",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Basic",
+      "cost": "500c",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "-",
+      "fuelUsage": "-",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--shell-converter",
+        "stableId": "item--shell-converter",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "b90ea156a6eb03374e8de22e2de8386127a9f441e4567be1d41148ec294cd492",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "a6d1f2cd5376da77",
+    "name": "Shock Stick",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/dee3f269-7358-463c-b895-c92fd7e5ba6e-Shockstick.lg.webp",
+    "system": {
+      "description": "<p>A long stick that can easily be used by anyone proficient in any melee weapon.&nbsp;</p><p>Considered an improvised weapon until it is activated, after which it is considered a light weapon that does normal Lightning damage. Upon reducing an enemy to 0 or lower HP, the target becomes stunned instead of killed. This stun lasts until the end of the encounter and an extra minute after that.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Heavy Baton (20 points): </strong>This weapon is now considered a two-handed weapon.</li><li><strong>Long Stick (35 points):</strong> You gain +5ft range on your weapon attacks and your threatened range becomes 10ft</li></ul></li><li><i>B mods:</i><ul><li><strong>Capture Model (80 points): </strong>When dealing damage to a Grunt with a Heavy attack, they are stunned until &nbsp;the start of your next turn even if they are still above 0 HP.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "b7697089d7f22a989ebf4e583ad00d2540462b12d79b79fabd053a1931b7c6a9",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--shock-stick",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon",
+      "cost": "1500 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per encounter",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--shock-stick",
+        "stableId": "item--shock-stick",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "b7697089d7f22a989ebf4e583ad00d2540462b12d79b79fabd053a1931b7c6a9",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "5dcc110576daca83",
+    "name": "Short Range Communications Device",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/932b24ea-a121-4692-b2a1-beb2b87dd94a-Short range communicators.lg.webp",
+    "system": {
+      "description": "<p>Two small boxes that are connected to each other. When a button is pressed and both are active, all audio from one of the boxes is transmitted to the other one. It has a maximum range of 1 mile.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Directional Ping (35 points):</strong> While within the device's range, you can determine the direction the paired device is in.</li></ul></li><li><i>B mods:</i><ul><li><strong>Extra Range (25 points):</strong> The range of the device increases from 1 mile to 2 miles.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "04861dd399a586b8ae8dc3f89cd166aeab3872e5399a0ea4448432cea9c42d3b",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--short-range-communications-device",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per day",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--short-range-communications-device",
+        "stableId": "item--short-range-communications-device",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "04861dd399a586b8ae8dc3f89cd166aeab3872e5399a0ea4448432cea9c42d3b",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "329256ec37863dc2",
+    "name": "Silencer",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/b600067f-b7f5-48cb-aa98-4ebaf8a562db-silencer.lg.webp",
+    "system": {
+      "description": "<p>A tool for guns that reduces the sound they make. Can be applied to weapons of the Musket, Pistol, Shotgun and Sniper Rifle weapon groups. When applied, these weapons no longer make a very loud noise when fired.</p><p>When a gun is fired without a silencer, the loud noise will alert all enemies within 120ft of the shooter.</p><p>Can be attached or detached from a weapon by spending 4 AP.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "917d38718c2a3b99f5867b517d194cb929edb99fe60ce08089a3d92bf8ce2ea5",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--silencer",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon Attachment",
+      "cost": "1500 Clim",
+      "burden": "0",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--silencer",
+        "stableId": "item--silencer",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "917d38718c2a3b99f5867b517d194cb929edb99fe60ce08089a3d92bf8ce2ea5",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "544cf0bdbd4cd083",
+    "name": "Small Shell",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/f01a33a6-4c27-44ab-9a46-c0e79e0eb032-Small Shell - Copy.lg.webp",
+    "system": {
+      "description": "<p>A small cylinder of magical fuel that is used to power artifices.&nbsp; Most weapon-type artifices automatically eject the shell when they are emptied… along with a burst of steam to prevent overheating.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "012ea1d89ca482d77f00bef5f25bbae6ee1e47fc7a1b44c218ad202272fdea79",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--small-shell",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Fuel",
+      "cost": "50 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "S",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:artifices:item--small-shell",
+        "stableId": "item--small-shell",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "012ea1d89ca482d77f00bef5f25bbae6ee1e47fc7a1b44c218ad202272fdea79",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  }
+]

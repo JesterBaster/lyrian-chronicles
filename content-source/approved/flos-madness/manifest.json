@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "title": "Flo's Madness",
+  "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit",
+  "retrievedAt": "2026-08-15",
+  "sourceHash": "73357852bb746e01f1c0cf9a44f30653b47aba296207954637f38dc1e9bffafb",
+  "notation": {
+    "u": "units",
+    "c": "Clim"
+  },
+  "reviewedCounts": {
+    "materials": 149,
+    "mods": 93,
+    "craftingGuide": 11
+  },
+  "materialTabs": {
+    "Armorsmithing Mats": 33,
+    "Blacksmithing Mats": 24,
+    "Carpentry Mats": 23,
+    "Artificing Mats": 29,
+    "Alchemy Mats": 24,
+    "Culinarian Mats": 8,
+    "Farming Mats": 8
+  },
+  "modTabs": {
+    "Universal Armor Mods": 50,
+    "Universal Weapon Mods": 31,
+    "Universal Crafting Mods": 5,
+    "Universal Artifice Mods": 7
+  }
+}

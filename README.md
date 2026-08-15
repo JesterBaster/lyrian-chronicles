@@ -7,8 +7,8 @@ for Foundry VTT v14. Mechanics are transcribed from the core rulebook:
 Power / Focus / Agility / Toughness, the AP and RP economy, Guard–Block–Dodge defence,
 skills with expertise, classes, breakthroughs, and Spirit Core progression.
 
-The system includes reviewed official rulebook v0.13.1 content in nine searchable compendiums,
-with source links, stable cross-references, and official artwork where available.
+The system includes reviewed official rulebook v0.13.1 content plus focused equipment and
+crafting compendiums, with source links, stable cross-references, and official artwork where available.
 
 ## Install
 
@@ -53,15 +53,15 @@ restart; changes to data model schemas need the world relaunched from the setup 
 
 ## Compendium content
 
-The system ships mechanical content and seeds it into compendia on first world
-load: every weapon group, all six armour categories, kits and materials, the
-full injury table as both Items and a RollTable, and three sample NPCs.
+The system seeds reviewed rules, keywords, breakthroughs, abilities, races, classes,
+weapons, armor, consumables, gear, artifices, crafting materials, item mods, monsters,
+and monster abilities. A separate Crafting Guide preserves explanatory notes from
+Flo's Madness. The former mixed Items & Equipment pack remains GM-only for one migration
+cycle so existing world references are not broken.
 
-Classes, abilities, breakthroughs and races are **not included**. Those are
-Angel's Sword Studios' authored text, and redistributing them is their call to
-make, not this project's. Drop `content/classes.json`, `content/abilities.json`,
-`content/breakthroughs.json` and `content/races.json` into place and they seed
-automatically — the format is documented in `content/README.md`.
+Prices ending in `c` in Flo's Madness are normalized as Clim. Amounts ending in `u` are
+normalized as units. Every crafting entry retains its source tab, effects, requirements,
+crafting points, mod slot, and polarity data.
 
 ### For GMs
 
@@ -141,7 +141,7 @@ entries and progression costs all live there as plain data.
 
 Create Items in a compendium and drag them onto sheets:
 
-- **Class** items track tier and how many of the seven abilities are unlocked.
+- **Class** items track tier and progression through level 8.
 - **Ability** items carry AP / RP / mana costs, keywords, and an optional attack payload.
   Tick *Use equipped weapon damage* for abilities that ride on a weapon strike.
 - **Breakthrough** items record EXP cost and level.

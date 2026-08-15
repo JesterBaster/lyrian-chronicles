@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "rulebook_version": "0.13.1",
-  "generated_from": "content-source/approved/0.13.1",
+  "generated_from": "official v0.13.1 and Flo's Madness",
   "packs": {
     "rules-setting-guide": {
       "type": "JournalEntry",
@@ -69,6 +69,68 @@
       "count": 307,
       "files": [
         "monster-abilities-01.json"
+      ]
+    },
+    "weapons": {
+      "type": "Item",
+      "count": 45,
+      "files": [
+        "weapons-01.json",
+        "weapons-02.json"
+      ]
+    },
+    "armor-shields": {
+      "type": "Item",
+      "count": 9,
+      "files": [
+        "armor-shields-01.json"
+      ]
+    },
+    "consumables": {
+      "type": "Item",
+      "count": 58,
+      "files": [
+        "consumables-01.json",
+        "consumables-02.json"
+      ]
+    },
+    "gear-kits": {
+      "type": "Item",
+      "count": 31,
+      "files": [
+        "gear-kits-01.json"
+      ]
+    },
+    "artifices": {
+      "type": "Item",
+      "count": 47,
+      "files": [
+        "artifices-01.json",
+        "artifices-02.json"
+      ]
+    },
+    "materials": {
+      "type": "Item",
+      "count": 149,
+      "files": [
+        "materials-01.json",
+        "materials-02.json",
+        "materials-03.json"
+      ]
+    },
+    "mods": {
+      "type": "Item",
+      "count": 93,
+      "files": [
+        "mods-01.json",
+        "mods-02.json"
+      ]
+    },
+    "crafting-guide": {
+      "type": "JournalEntry",
+      "count": 11,
+      "files": [
+        "crafting-guide-01.json"
       ]
     }
   }

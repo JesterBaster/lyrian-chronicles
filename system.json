@@ -1,8 +1,8 @@
 {
   "id": "lyrian-chronicles",
   "title": "The Lyrian Chronicles",
-  "description": "A fan-made Foundry VTT implementation of Angel's Sword Studios' Lyrian Chronicles TTRPG, using official game content with permission. Includes nine complete rulebook v0.13.1 compendiums and gameplay automation.",
-  "version": "0.5.7",
+  "description": "A fan-made Foundry VTT implementation of Angel's Sword Studios' Lyrian Chronicles TTRPG, using official game content with permission. Includes complete rulebook v0.13.1 compendiums, Flo's Madness crafting references, and gameplay automation.",
+  "version": "0.6.0",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -172,16 +172,88 @@
     },
     {
       "name": "items",
-      "label": "07 · Items & Equipment",
+      "label": "Legacy · Items & Equipment (v0.6)",
       "type": "Item",
       "path": "packs/items",
+      "system": "lyrian-chronicles",
+      "private": true,
+      "flags": {}
+    },
+    {
+      "name": "weapons",
+      "label": "07 · Weapons",
+      "type": "Item",
+      "path": "packs/weapons",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "armor-shields",
+      "label": "08 · Armor & Shields",
+      "type": "Item",
+      "path": "packs/armor-shields",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "consumables",
+      "label": "09 · Consumables",
+      "type": "Item",
+      "path": "packs/consumables",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "gear-kits",
+      "label": "10 · Gear & Kits",
+      "type": "Item",
+      "path": "packs/gear-kits",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "artifices",
+      "label": "11 · Artifices",
+      "type": "Item",
+      "path": "packs/artifices",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "materials",
+      "label": "12 · Materials & Mats",
+      "type": "Item",
+      "path": "packs/materials",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "mods",
+      "label": "13 · Item Mods",
+      "type": "Item",
+      "path": "packs/mods",
+      "system": "lyrian-chronicles",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "crafting-guide",
+      "label": "14 · Crafting Guide",
+      "type": "JournalEntry",
+      "path": "packs/crafting-guide",
       "system": "lyrian-chronicles",
       "private": false,
       "flags": {}
     },
     {
       "name": "monsters",
-      "label": "08 · Monsters",
+      "label": "15 · Monsters",
       "type": "Actor",
       "path": "packs/monsters",
       "system": "lyrian-chronicles",
@@ -190,7 +262,7 @@
     },
     {
       "name": "monster-abilities",
-      "label": "09 · Monster Abilities",
+      "label": "16 · Monster Abilities",
       "type": "Item",
       "path": "packs/monster-abilities",
       "system": "lyrian-chronicles",
@@ -200,7 +272,7 @@
   ],
   "packFolders": [
     {
-      "name": "The Lyrian Chronicles",
+      "name": "Rules & Characters",
       "sorting": "m",
       "color": "#c9a227",
       "packs": [
@@ -209,10 +281,39 @@
         "breakthroughs",
         "player-abilities",
         "races",
-        "classes",
-        "items",
+        "classes"
+      ]
+    },
+    {
+      "name": "Equipment & Crafting",
+      "sorting": "m",
+      "color": "#c9a227",
+      "packs": [
+        "weapons",
+        "armor-shields",
+        "consumables",
+        "gear-kits",
+        "artifices",
+        "materials",
+        "mods",
+        "crafting-guide"
+      ]
+    },
+    {
+      "name": "GM Bestiary",
+      "sorting": "m",
+      "color": "#8f2f3f",
+      "packs": [
         "monsters",
         "monster-abilities"
+      ]
+    },
+    {
+      "name": "Legacy Content",
+      "sorting": "m",
+      "color": "#596579",
+      "packs": [
+        "items"
       ]
     }
   ],
@@ -224,7 +325,7 @@
   ],
   "url": "https://github.com/JesterBaster/lyrian-chronicles",
   "manifest": "https://github.com/JesterBaster/lyrian-chronicles/releases/latest/download/system.json",
-  "download": "https://github.com/JesterBaster/lyrian-chronicles/releases/download/v0.5.7/system.zip",
+  "download": "https://github.com/JesterBaster/lyrian-chronicles/releases/download/v0.6.0/system.zip",
   "license": "LICENSE.txt",
   "readme": "README.md"
 }
