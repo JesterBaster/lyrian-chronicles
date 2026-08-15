@@ -79,16 +79,15 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static TABS = {
     primary: {
       tabs: [
-        { id: "main", icon: "fa-solid fa-shield-halved" },
-        { id: "skills", icon: "fa-solid fa-dice-d20" },
-        { id: "proficiencies", icon: "fa-solid fa-shield" },
-        { id: "abilities", icon: "fa-solid fa-wand-sparkles" },
-        { id: "inventory", icon: "fa-solid fa-sack" },
-        { id: "progression", icon: "fa-solid fa-gem" },
-        { id: "biography", icon: "fa-solid fa-feather" }
+        { id: "main", icon: "fa-solid fa-shield-halved", label: "LYRIAN.Tab.main" },
+        { id: "skills", icon: "fa-solid fa-dice-d20", label: "LYRIAN.Tab.skills" },
+        { id: "proficiencies", icon: "fa-solid fa-shield", label: "LYRIAN.Tab.proficiencies" },
+        { id: "abilities", icon: "fa-solid fa-wand-sparkles", label: "LYRIAN.Tab.abilities" },
+        { id: "inventory", icon: "fa-solid fa-sack", label: "LYRIAN.Tab.inventory" },
+        { id: "progression", icon: "fa-solid fa-gem", label: "LYRIAN.Tab.progression" },
+        { id: "biography", icon: "fa-solid fa-feather", label: "LYRIAN.Tab.biography" }
       ],
-      initial: "main",
-      labelPrefix: "LYRIAN.Tab"
+      initial: "main"
     }
   };
 

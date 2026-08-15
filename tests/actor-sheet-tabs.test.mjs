@@ -46,6 +46,14 @@ test.after(() => {
   globalThis.game = originalGame;
 });
 
+test("tab configuration uses explicit localization keys", () => {
+  assert.deepEqual(
+    LyrianActorSheet.TABS.primary.tabs.map(({ id, label }) => [id, label]),
+    Object.keys(TAB_LABELS).map((id) => [id, `LYRIAN.Tab.${id}`])
+  );
+  assert.equal(LyrianActorSheet.TABS.primary.labelPrefix, undefined);
+});
+
 test("character tabs use localized labels", () => {
   const tabs = new LyrianActorSheet("character")._prepareTabs("primary");
 
