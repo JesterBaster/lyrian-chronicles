@@ -374,6 +374,16 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         await this.document.update({ [`system.${group}.${skill}.expertises`]: expertises });
       });
     });
+
+    // Proficiency choices save as soon as the player changes them. These
+    // controls intentionally have no form names, so the normal sheet submit
+    // cannot duplicate or flatten the source-owned selection data.
+    this.element.querySelectorAll("[data-proficiency-choice-value]").forEach((input) => {
+      input.addEventListener("change", async (event) => {
+        const row = event.currentTarget.closest("[data-proficiency-choice]");
+        if (row) await LyrianActorSheet.#onSaveProficiencyChoice.call(this, event, row);
+      });
+    });
   }
 
   /** Complete race-specific choices when a Race is dragged from a compendium. */
@@ -714,8 +724,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #onSaveProficiencyChoice(event, target) {
     const row = target.closest("[data-proficiency-choice]");
-    const id = target.dataset.choiceId;
-    const index = Number(target.dataset.choiceIndex);
+    const id = row?.dataset.choiceId;
+    const index = Number(row?.dataset.choiceIndex);
     const input = row?.querySelector("[data-proficiency-choice-value]");
     if (!id || !Number.isInteger(index) || !input) return;
 
