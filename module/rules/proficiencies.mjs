@@ -96,6 +96,19 @@ export const ARMOR_PROFICIENCIES = Object.freeze([
   "Light Armor", "Medium Armor", "Heavy Armor", "Shields", "Greatshields"
 ]);
 
+const CHOICE_TITLES = Object.freeze({
+  "language-choice": "Additional language or dialect",
+  "common-weapons": "Common weapon group",
+  "specialized-weapons": "Specialized weapon group",
+  "common-or-specialized-weapons": "Common or specialized weapon group",
+  "listed-weapons": "Weapon group",
+  "listed-options": "Weapon proficiency",
+  "heavy-armor-or-greatshield": "Heavy Armor or Greatshield",
+  "armor-choice": "Armor or shield proficiency",
+  "armor-or-shield": "Armor or shield proficiency",
+  "weapon-choice": "Weapon proficiency"
+});
+
 function plainText(value) {
   return String(value ?? "")
     .replace(/<[^>]*>/g, " ")
@@ -137,6 +150,11 @@ function countFrom(value) {
 
 function choice(key, kind, label, options, count = 1, allowCustom = false) {
   return { key, kind, label: label.trim(), options: [...new Set(options)], count, allowCustom };
+}
+
+function choiceTitle(rule) {
+  const baseKey = String(rule.key ?? "").replace(/-\d+$/, "");
+  return CHOICE_TITLES[baseKey] ?? `${rule.kind === "armor" ? "Armor" : rule.kind === "languages" ? "Language" : "Weapon"} proficiency`;
 }
 
 function explicitWeaponList(value) {
@@ -337,7 +355,13 @@ export function collectActorProficiencies(actor) {
           selected: proficiencyKey(option) === proficiencyKey(selected[slotIndex])
         }))
       }));
-      return { ...rule, id, slots };
+      return {
+        ...rule,
+        id,
+        slots,
+        title: choiceTitle(rule),
+        complete: slots.every((slot) => Boolean(slot.value))
+      };
     });
     if (entries.length || sourceChoices.length) {
       sourceRows.push({ name, entries: [...new Set(entries)], choices: sourceChoices });

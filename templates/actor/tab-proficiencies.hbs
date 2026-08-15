@@ -1,5 +1,5 @@
 <section class="tab lyr-tab {{tab.cssClass}}" data-tab="proficiencies" data-group="primary" data-application-part="proficiencies">
-  <p class="lyr-note">Granted automatically by your race, subrace or house, and unlocked class features. Automatic grants cannot be removed here.</p>
+  <p class="lyr-note">Race and class choices save automatically. Granted proficiencies cannot be removed here.</p>
 
   <section class="lyr-prof-summary">
     <h2 class="lyr-heading">Weapon &amp; Armor Proficiencies</h2>
@@ -11,29 +11,42 @@
     </div>
     <div class="lyr-prof-sources">
       {{#each proficiency.sources as |source|}}
-        <div><strong>{{source.name}}</strong>
-          {{#if source.entries}}<span>{{#each source.entries}}{{this}}{{#unless @last}} · {{/unless}}{{/each}}</span>{{/if}}
-          {{#each source.choices as |choice|}}
-            <section class="lyr-prof-choice">
-              <em>{{choice.label}}</em>
-              {{#each choice.slots as |slot|}}
-                <div class="lyr-prof-choice__row" data-proficiency-choice>
+        <section class="lyr-prof-source">
+          <header class="lyr-prof-source__header">
+            <strong>{{source.name}}</strong>
+            {{#if source.entries}}<span>Granted: {{#each source.entries}}{{this}}{{#unless @last}} · {{/unless}}{{/each}}</span>{{/if}}
+          </header>
+          {{#if source.choices.length}}
+            <div class="lyr-prof-choice-grid">
+              {{#each source.choices as |choice|}}
+                <section class="lyr-prof-choice {{#if choice.complete}}is-complete{{/if}}">
+                  <header>
+                    <strong>{{choice.title}}</strong>
+                    <span>{{#if choice.complete}}<i class="fa-solid fa-check"></i> Saved{{else}}Choose{{/if}}</span>
+                  </header>
+                  {{#each choice.slots as |slot|}}
+                    <div class="lyr-prof-choice__row" data-proficiency-choice data-choice-id="{{../id}}" data-choice-index="{{slot.index}}">
                   {{#if ../allowCustom}}
-                    <input type="text" data-proficiency-choice-value value="{{slot.value}}" placeholder="Language or dialect" />
+                        <input type="text" data-proficiency-choice-value value="{{slot.value}}" placeholder="Enter a language or dialect" aria-label="{{../title}}" />
                   {{else}}
-                    <select data-proficiency-choice-value>
-                      <option value="">— Choose —</option>
+                        <select data-proficiency-choice-value aria-label="{{../title}}">
+                          <option value="">— Select —</option>
                       {{#each slot.options as |option|}}
-                        <option value="{{option.value}}" {{#if option.selected}}selected{{/if}}>{{option.label}}</option>
+                            <option value="{{option.value}}" {{#if option.selected}}selected{{/if}}>{{option.label}}</option>
                       {{/each}}
-                    </select>
+                        </select>
                   {{/if}}
-                  <button type="button" data-action="saveProficiencyChoice" data-choice-id="{{../id}}" data-choice-index="{{slot.index}}">Save</button>
-                </div>
+                    </div>
+                  {{/each}}
+                  <details class="lyr-prof-choice__rule">
+                    <summary>View rule</summary>
+                    <p>{{choice.label}}</p>
+                  </details>
+                </section>
               {{/each}}
-            </section>
-          {{/each}}
-        </div>
+            </div>
+          {{/if}}
+        </section>
       {{else}}<p class="lyr-empty">No automatic proficiency sources yet.</p>{{/each}}
     </div>
   </section>

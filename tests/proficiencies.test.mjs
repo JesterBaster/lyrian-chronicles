@@ -147,6 +147,9 @@ test("saved source-owned choices become automatic proficiencies", () => {
   assert.deepEqual(result.groups.weapons.map((entry) => entry.name), ["Light Swords"]);
   assert.deepEqual(result.groups.languages.map((entry) => entry.name), ["Common", "Northi"]);
   assert.ok(result.groups.weapons.every((entry) => entry.granted));
+  assert.equal(result.sources[0].choices[0].title, "Additional language or dialect");
+  assert.equal(result.sources[0].choices[0].complete, true);
+  assert.equal(result.sources[0].choices[1].title, "Common weapon group");
   assert.equal(result.sources[0].choices[1].slots[0].value, "Light Swords");
 });
 

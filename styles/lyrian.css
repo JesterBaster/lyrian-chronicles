@@ -260,15 +260,26 @@
 }
 .lyrian .lyr-prof-chip--armor { border-color: rgba(103, 164, 222, 0.65); color: #a9d2f6; }
 .lyrian .lyr-prof-sources { border-top: 1px solid var(--lyr-rule); margin-top: 0.7rem; padding-top: 0.55rem; }
-.lyrian .lyr-prof-sources > div { display: grid; gap: 0.15rem; margin: 0.5rem 0; }
+.lyrian .lyr-prof-source { display: grid; gap: 0.55rem; padding: 0.7rem 0; border-bottom: 1px solid var(--lyr-rule-soft); }
+.lyrian .lyr-prof-source:last-child { border-bottom: 0; }
+.lyrian .lyr-prof-source__header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.3rem 0.7rem; }
+.lyrian .lyr-prof-source__header > span { color: var(--lyr-ink-dim); }
 .lyrian .lyr-prof-sources span,
 .lyrian .lyr-prof-sources em { font-size: 0.72rem; }
 .lyrian .lyr-prof-sources em { color: var(--lyr-ink-faint); }
-.lyrian .lyr-prof-choice { display: grid; gap: 0.35rem; margin-top: 0.35rem; }
+.lyrian .lyr-prof-choice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0.55rem; }
+.lyrian .lyr-prof-choice { display: grid; align-content: start; gap: 0.45rem; padding: 0.6rem; border: 1px solid var(--lyr-rule); border-radius: var(--lyr-radius); background: rgba(7, 10, 18, 0.42); }
+.lyrian .lyr-prof-choice.is-complete { border-color: rgba(80, 180, 120, 0.5); }
+.lyrian .lyr-prof-choice > header { display: flex; align-items: center; justify-content: space-between; gap: 0.4rem; }
+.lyrian .lyr-prof-choice > header > strong { font-size: 0.75rem; color: var(--lyr-ink); }
+.lyrian .lyr-prof-choice > header > span { color: var(--lyr-ink-faint); white-space: nowrap; }
+.lyrian .lyr-prof-choice.is-complete > header > span { color: #7fd39d; }
 .lyrian .lyr-prof-choice__row { display: flex; gap: 0.4rem; align-items: center; }
 .lyrian .lyr-prof-choice__row select,
-.lyrian .lyr-prof-choice__row input { flex: 1; min-width: 12rem; }
-.lyrian .lyr-prof-choice__row button { flex: 0 0 auto; }
+.lyrian .lyr-prof-choice__row input { flex: 1; min-width: 0; }
+.lyrian .lyr-prof-choice__rule { color: var(--lyr-ink-faint); font-size: 0.68rem; }
+.lyrian .lyr-prof-choice__rule summary { cursor: pointer; color: var(--lyr-gold-dim); }
+.lyrian .lyr-prof-choice__rule p { margin: 0.3rem 0 0; line-height: 1.35; }
 .lyrian .lyr-prof-card { border-color: rgba(103, 164, 222, 0.25); }
 .lyrian .lyr-prof-card > header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--lyr-rule); margin-bottom: 0.7rem; padding-bottom: 0.55rem; }
 .lyrian .lyr-prof-card > header h2 { margin: 0; font-size: 0.88rem; text-transform: uppercase; }
