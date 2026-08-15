@@ -1,4 +1,6 @@
 // Copy this to migrations/<version>.mjs and add <version> to VERSIONS in migrate.mjs.
+// Increase the affected DOCUMENT_SCHEMA_VERSIONS entry, transform only older
+// documents, and write system.schemaVersion in the same successful update.
 import { forEachDocument } from "./migrate.mjs";
 
 export async function runMigration() {

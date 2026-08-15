@@ -11,6 +11,9 @@ function int(initial = 0, extra = {}) {
 export class LyrianItemBase extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
+      // Zero identifies documents created before per-document version tracking.
+      // LyrianItem._preCreate stamps new documents with the current revision.
+      schemaVersion: int(0, { min: 0 }),
       description: new fields.HTMLField({ required: false, blank: true }),
       source: new fields.StringField({ blank: true, initial: "" }),
       sourceUrl: new fields.StringField({ blank: true, initial: "" }),

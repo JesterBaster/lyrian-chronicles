@@ -17,6 +17,8 @@
 /** Every version that ships a migration, oldest first. */
 import { pendingMigrationVersions } from "../module/rules/versioning.mjs";
 
+const SYSTEM_ID = "lyrian-chronicles";
+
 const VERSIONS = [
   "0.3.1",
   "0.3.4",
@@ -25,7 +27,8 @@ const VERSIONS = [
   "0.5.2",
   "0.5.3",
   "0.5.4",
-  "0.5.5"
+  "0.5.5",
+  "0.6.14"
 ];
 
 /* -------------------------------------------- */
@@ -39,36 +42,71 @@ const VERSIONS = [
  *
  * @param {"Actor"|"Item"} documentName
  * @param {(doc: Document) => Promise<void>} callback
+ * @param {object} [options]
+ * @param {boolean} [options.includeLockedSystemPacks=false]
  */
-export async function forEachDocument(documentName, callback) {
-  const collection = documentName === "Actor" ? game.actors : game.items;
+export async function forEachDocument(documentName, callback, { includeLockedSystemPacks = false } = {}) {
+  if (!["Actor", "Item"].includes(documentName)) {
+    throw new Error(`Unsupported migration document type: ${documentName}`);
+  }
 
-  // 1. World documents.
-  for (const doc of collection) await callback(doc);
+  const seen = new Set();
+  let count = 0;
+  const visit = async (document) => {
+    if (!document || seen.has(document)) return;
+    seen.add(document);
+    count += 1;
+    await callback(document);
+  };
 
-  // 2. Unlinked tokens, which hold their own actor data rather than pointing at one.
+  const actors = [...game.actors];
+  for (const scene of game.scenes) {
+    for (const token of scene.tokens) {
+      if (!token.actorLink && token.actor) actors.push(token.actor);
+    }
+  }
+
   if (documentName === "Actor") {
-    for (const scene of game.scenes) {
-      for (const token of scene.tokens) {
-        if (token.actorLink || !token.actor) continue;
-        await callback(token.actor);
+    for (const actor of actors) await visit(actor);
+    for (const pack of game.packs) {
+      if (pack.documentName !== "Actor") continue;
+      await withMigratablePack(pack, includeLockedSystemPacks, async () => {
+        for (const actor of await pack.getDocuments()) await visit(actor);
+      });
+    }
+  } else {
+    for (const item of game.items) await visit(item);
+    for (const actor of actors) {
+      for (const item of actor.items ?? []) await visit(item);
+    }
+    for (const pack of game.packs) {
+      if (pack.documentName === "Actor") {
+        await withMigratablePack(pack, includeLockedSystemPacks, async () => {
+          for (const actor of await pack.getDocuments()) {
+            for (const item of actor.items ?? []) await visit(item);
+          }
+        });
+      }
+      if (pack.documentName === "Item") {
+        await withMigratablePack(pack, includeLockedSystemPacks, async () => {
+          for (const item of await pack.getDocuments()) await visit(item);
+        });
       }
     }
   }
+  return count;
+}
 
-  // 3. Embedded items on every actor reached above.
-  if (documentName === "Item") {
-    for (const actor of game.actors) {
-      for (const item of actor.items) await callback(item);
-    }
-  }
-
-  // 4. Unlocked compendiums belonging to this world or system.
-  for (const pack of game.packs) {
-    if (pack.documentName !== documentName) continue;
-    if (pack.locked) continue;
-    const documents = await pack.getDocuments();
-    for (const doc of documents) await callback(doc);
+/** Visit unlocked packs plus locked system-owned packs, restoring their lock. */
+async function withMigratablePack(pack, includeLockedSystemPacks, callback) {
+  const systemOwned = String(pack.collection ?? "").startsWith(`${SYSTEM_ID}.`);
+  if (pack.locked && (!systemOwned || !includeLockedSystemPacks)) return;
+  const wasLocked = pack.locked;
+  try {
+    if (wasLocked) await pack.configure({ locked: false });
+    await callback();
+  } finally {
+    if (wasLocked) await pack.configure({ locked: true });
   }
 }
 
