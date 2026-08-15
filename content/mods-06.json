@@ -1,0 +1,2669 @@
+[
+  {
+    "_id": "e11cdaea214711ad",
+    "name": "Photon Greatshield",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Increases the Burden to 2 and changes the effect of Photon Shield to a Greatshield instead of a regular shield. Reduces your evasion etc like a Greatshield would. You can deactivate the photon greatshield for 0 RP, but doing so ejects the shell and ends the effect.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "5df5df31918ded791df8489943547739c5b3ad9fe2b7019e424cadec86d82aad",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--photon-greatshield--da76531333ac",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 25,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Photon Shield"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--photon-greatshield--da76531333ac",
+        "stableId": "mods--item-specific--photon-greatshield--da76531333ac",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "5df5df31918ded791df8489943547739c5b3ad9fe2b7019e424cadec86d82aad",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "f3b9e081083a121d",
+    "name": "Photon Wall",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Changes the Photon Shield effect to instead to create a stationary wall of light in front of you. This wall disappears when you move. The wall is a 1 way high cover with 20 HP and only allows ranged attacks to pass through it from your side. When you move, the wall is immediately destroyed. Once the wall is destroyed, the shell is expended and ejects from the artifice. May still choose to activate the original effect of Photon Shield.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "80526d556cddaf4ff49a79fa118e053497445a3887f924f5cfe194718c10924b",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--photon-wall--ac8885cb04dc",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Photon Shield"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--photon-wall--ac8885cb04dc",
+        "stableId": "mods--item-specific--photon-wall--ac8885cb04dc",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "80526d556cddaf4ff49a79fa118e053497445a3887f924f5cfe194718c10924b",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "f537d97669098d14",
+    "name": "Pie Launcher",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Pie toss can be fired through the weapon to gain the increased range (does not affect the damage or transfer alloys).</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "7d2b876fa9f38ff1340e723de05fbfb8f1e8ce57f1b8e8425e442e262653431d",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--pie-launcher--d7764352fa34",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 10,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Cannon"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--pie-launcher--d7764352fa34",
+        "stableId": "mods--item-specific--pie-launcher--d7764352fa34",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "7d2b876fa9f38ff1340e723de05fbfb8f1e8ce57f1b8e8425e442e262653431d",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "2e6b9855e1bf061f",
+    "name": "Point Blank",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>You may make AoO’s as if this was a melee weapon with a 5ft threaten range.</p></section>",
+      "source": "Flo's Madness · Weapons + Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "090ddfe07a0bdfb2dbb6d873be88b42af90fdc353af2184c376f50105db637e0",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--point-blank--b72239a0827c",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Shotgun (One-Handed)",
+        "Shotgun (Two-Handed)",
+        "Refractor Gun"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--point-blank--b72239a0827c",
+        "stableId": "mods--item-specific--point-blank--b72239a0827c",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "090ddfe07a0bdfb2dbb6d873be88b42af90fdc353af2184c376f50105db637e0",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "09b8f32fbdae1717",
+    "name": "Poison Container",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Poison can be pre-applied to the container and then sealed. Once the lid is opened and a missile is drawn, it is considered to be applied and begins to use up its application limit and duration.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "bd969e27842c8fd48167f7c1b6ba4a559d69b79a01b63e6f8067836550c8c467",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--poison-container--db9efcc439f6",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 25,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Set of Missiles (One-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--poison-container--db9efcc439f6",
+        "stableId": "mods--item-specific--poison-container--db9efcc439f6",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "bd969e27842c8fd48167f7c1b6ba4a559d69b79a01b63e6f8067836550c8c467",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "b86e3a0b551f391e",
+    "name": "Poisoner Weapon",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Applying poison to this weapon costs -1 AP (min 0).</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "12f2464c9dbf48b04c220ad4074fc0c134858ab6c3ba21ed993f7d6778bc7f05",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--poisoner-weapon--2c80565410b5",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 25,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Hori (One-Handed) (Treated as a Small Weapon)",
+        "Saboteur Thread Daggers (One-Handed)",
+        "Small Weapons (One-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--poisoner-weapon--2c80565410b5",
+        "stableId": "mods--item-specific--poisoner-weapon--2c80565410b5",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "12f2464c9dbf48b04c220ad4074fc0c134858ab6c3ba21ed993f7d6778bc7f05",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "56571e55b0c9bf71",
+    "name": "Porcupine Hide",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Enemies grappling you take 1d6 full pierce damage. When escaping a grapple, you also deal 1d6 full pierce damage to the creature grappling you.</p></section>",
+      "source": "Flo's Madness · Armors item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921",
+      "sourceHash": "7a682ef3d6df08e56c02009ab33a2037c75a57307cc6b1a14fc862961f48cbb9",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--porcupine-hide--398b70786ca6",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 10,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Armor",
+      "compatibleTargets": [
+        "Light Armor"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--porcupine-hide--398b70786ca6",
+        "stableId": "mods--item-specific--porcupine-hide--398b70786ca6",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921",
+        "sourceHash": "7a682ef3d6df08e56c02009ab33a2037c75a57307cc6b1a14fc862961f48cbb9",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "779d4808a9b4e254",
+    "name": "Powerful Explosion",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Increases the damage bonus by +1</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "86d03e46ee6f97237446d4daf65a9a08659e869ed3e1cfe8c55d362b6fd6b580",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--powerful-explosion--ae52aab1aa26",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 10,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Buster Weapon"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--powerful-explosion--ae52aab1aa26",
+        "stableId": "mods--item-specific--powerful-explosion--ae52aab1aa26",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "86d03e46ee6f97237446d4daf65a9a08659e869ed3e1cfe8c55d362b6fd6b580",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "9bbf358775ebc895",
+    "name": "Powerful Fan",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Increases the range of which it sucks in by 10ft.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "c8f37d531701321a07fe148bb663bbeb4087f1d4238f028d3ff966ed30fbf7ab",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--powerful-fan--6c312031eece",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 10,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Portable Vacuum"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--powerful-fan--6c312031eece",
+        "stableId": "mods--item-specific--powerful-fan--6c312031eece",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "c8f37d531701321a07fe148bb663bbeb4087f1d4238f028d3ff966ed30fbf7ab",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "728f5684d8c0415b",
+    "name": "Powerful Push",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The knockback distance is increased to 10ft.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "d4293e016479a4bddc0fb2fee207e784f917c744f1fc7b986f67af504ff2d734",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--powerful-push--b91a0253dc9c",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Staff (One-Handed)",
+        "Staff (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--powerful-push--b91a0253dc9c",
+        "stableId": "mods--item-specific--powerful-push--b91a0253dc9c",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "d4293e016479a4bddc0fb2fee207e784f917c744f1fc7b986f67af504ff2d734",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "32d2fb73c0ea1be6",
+    "name": "Proof Load",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>When you make a heavy attack with this weapon, you may knock yourself back 5ft.</p></section>",
+      "source": "Flo's Madness · Weapons + Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "3fcc9d891e312b98b2ba7ae813dbbbdd1c93588f3a7aca766d2f5c026d56e73b",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--proof-load--e6cc3610735f",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Shotgun (One-Handed)",
+        "Shotgun (Two-Handed)",
+        "Refractor Gun"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--proof-load--e6cc3610735f",
+        "stableId": "mods--item-specific--proof-load--e6cc3610735f",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "3fcc9d891e312b98b2ba7ae813dbbbdd1c93588f3a7aca766d2f5c026d56e73b",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "6c0eec0d1bd2b0b5",
+    "name": "Quakemaker",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Critical hits render the target prone regardless of if they hit or not.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "69e817867c9c9f27c590decaa6e0f7ce267571bee9346c3cd193e9775a19213a",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quakemaker--9757e2864be8",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 25,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Heavy Blade (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quakemaker--9757e2864be8",
+        "stableId": "mods--item-specific--quakemaker--9757e2864be8",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "69e817867c9c9f27c590decaa6e0f7ce267571bee9346c3cd193e9775a19213a",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "de3b0af0bb8e2a42",
+    "name": "Quick Activation — Elemental Weapon Artifice / Fire Robe / Snow Cloak",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The activation cost is reduced to 0 AP.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "23b2036bb6ce46ef45763b7ab9b1576f3fbeda5f19b5b5c9f6ec6d07f945efe1",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quick-activation--b3406851fb60",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Elemental Weapon Artifice",
+        "Fire Robe",
+        "Snow Cloak"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quick-activation--b3406851fb60",
+        "stableId": "mods--item-specific--quick-activation--b3406851fb60",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "23b2036bb6ce46ef45763b7ab9b1576f3fbeda5f19b5b5c9f6ec6d07f945efe1",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "d830662d018683d2",
+    "name": "Quick Activation — Lightning Rod",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The activation cost is reduced by 1.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "5adf4e32fc1a632e1d1d52136f705c1356902e1df831488303ad002fb91c92f7",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quick-activation--346f6443b82f",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Lightning Rod"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quick-activation--346f6443b82f",
+        "stableId": "mods--item-specific--quick-activation--346f6443b82f",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "5adf4e32fc1a632e1d1d52136f705c1356902e1df831488303ad002fb91c92f7",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "19388f86a896dcec",
+    "name": "Quick Activation — Photon Shield",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The activation cost is reduced to 0 AP</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "bb20565ccc30ee9f4c4ffa4bb4bf9a3c4f41e89d57575eda25e3f5b8bb421649",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quick-activation--4d8c3fe756c1",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Photon Shield"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quick-activation--4d8c3fe756c1",
+        "stableId": "mods--item-specific--quick-activation--4d8c3fe756c1",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "bb20565ccc30ee9f4c4ffa4bb4bf9a3c4f41e89d57575eda25e3f5b8bb421649",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "0e595aef9f66f988",
+    "name": "Quick Activation — Spider Shoes / Winged Backpack",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The activation cost is reduced by 1 AP, to a minimum of 0.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "832e37f5118b8f5e5685d7a3315569fc4b8e4cb2f7d9f1305f2e76d5eabae51f",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quick-activation--3236d7674e81",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Spider Shoes",
+        "Winged Backpack"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quick-activation--3236d7674e81",
+        "stableId": "mods--item-specific--quick-activation--3236d7674e81",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "832e37f5118b8f5e5685d7a3315569fc4b8e4cb2f7d9f1305f2e76d5eabae51f",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "cac3c73b3999ed2a",
+    "name": "Quick Activation — Wind Bubble",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The activation cost is reduced by 1 AP or 1 RP, to a minimum of 0.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "d132134f4986d7a98b48339fc68a74330165647cc134958e5f22de3311b0ae27",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quick-activation--436b6b78bc8e",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Wind Bubble"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quick-activation--436b6b78bc8e",
+        "stableId": "mods--item-specific--quick-activation--436b6b78bc8e",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "d132134f4986d7a98b48339fc68a74330165647cc134958e5f22de3311b0ae27",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "36cddfea35d6d80e",
+    "name": "Quick Filter",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Can filter up to 4 liters of water in 1 minute.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "1335c409b9d6d3e2d0e158a4a498d03a6288cf5a61d098d71c2ae14f5118a82c",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quick-filter--5655a444d4e1",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 10,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Artifice Water Purifier"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quick-filter--5655a444d4e1",
+        "stableId": "mods--item-specific--quick-filter--5655a444d4e1",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "1335c409b9d6d3e2d0e158a4a498d03a6288cf5a61d098d71c2ae14f5118a82c",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "4c8441e6c2f957d1",
+    "name": "Quick Focus Dial",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The penalty for things within 60ft is reduced from -10 to -5.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "793e68f8bf9b4115e466b1e2029051d8e8a9c8312b012e43190a99fccd526848",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quick-focus-dial--a2f2b43275fe",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Binoculars"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quick-focus-dial--a2f2b43275fe",
+        "stableId": "mods--item-specific--quick-focus-dial--a2f2b43275fe",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "793e68f8bf9b4115e466b1e2029051d8e8a9c8312b012e43190a99fccd526848",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1a82fc4d909e86ac",
+    "name": "Quick Removal",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Can be removed by spending 3 AP instead of 1 minute.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "a9b0b781105819c811fa6f2b901b9641e00ecca9620b068192f32a4aa751d91e",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quick-removal--8f3056d36004",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Mana Vision Goggles"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quick-removal--8f3056d36004",
+        "stableId": "mods--item-specific--quick-removal--8f3056d36004",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "a9b0b781105819c811fa6f2b901b9641e00ecca9620b068192f32a4aa751d91e",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "4f9660bff751ecfc",
+    "name": "Quick Swap — Blaster Weapon",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The activation cost is reduced to 0 AP.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "2d95f72218bd3a36e57d32229b9f83688841ee8f303c937922b767b7c147b54b",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quick-swap--55c56eb86722",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Blaster Weapon"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quick-swap--55c56eb86722",
+        "stableId": "mods--item-specific--quick-swap--55c56eb86722",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "2d95f72218bd3a36e57d32229b9f83688841ee8f303c937922b767b7c147b54b",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "2021f5929ce54a9a",
+    "name": "Quick Swap — Transforming Weapon",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>You may activate this artifice for 0 RP instead of 0 AP.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "c06232cfee494ac41c723b140c1726bb929c8280a10831ca973f8ad9c3b796b8",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quick-swap--73790105c774",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Transforming Weapon"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quick-swap--73790105c774",
+        "stableId": "mods--item-specific--quick-swap--73790105c774",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "c06232cfee494ac41c723b140c1726bb929c8280a10831ca973f8ad9c3b796b8",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "fa0cb5bb064c7285",
+    "name": "Quickened Activation",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The activation cost is reduced by 1 AP.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "fbd86bee27c8bd56e6b9bc8b3019178a7bc83fc1c07551cef8ecac86c6783cf1",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--quickened-activation--0f3da3a3b8f3",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Space Time Anchor"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--quickened-activation--0f3da3a3b8f3",
+        "stableId": "mods--item-specific--quickened-activation--0f3da3a3b8f3",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "fbd86bee27c8bd56e6b9bc8b3019178a7bc83fc1c07551cef8ecac86c6783cf1",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "f6e11fb09b78162d",
+    "name": "Radar",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>While active, points to the highest source of non-ambient astra within a 1 mile range.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "f5468e04d2709e0b55ce74b943ff4b502fa7221287263ccb3da4520fccf09a1c",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--radar--bab0471b364a",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Calibretto Device"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--radar--bab0471b364a",
+        "stableId": "mods--item-specific--radar--bab0471b364a",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "f5468e04d2709e0b55ce74b943ff4b502fa7221287263ccb3da4520fccf09a1c",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "7f20d75d94151d9b",
+    "name": "Range Finder — Binoculars",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>When looking through this item, you can tell how far objects are from you.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "75c72edbefc5c7656a34c1f096be66046327a4071d489c216504654b20cb2e64",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--range-finder--38ebb8e77908",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 25,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Binoculars"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--range-finder--38ebb8e77908",
+        "stableId": "mods--item-specific--range-finder--38ebb8e77908",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "75c72edbefc5c7656a34c1f096be66046327a4071d489c216504654b20cb2e64",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "fdfc77a4d41ec3ee",
+    "name": "Range Finder — Musket (Two-Handed) / Adjustable Lens Refractor Gun",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>You add a range finder to the weapon. This does not increase its range, but does allow you to look through the lens for a +10 perception bonus against things further than 60ft away. In addition, you can tell how far objects are from you when doing this.</p></section>",
+      "source": "Flo's Madness · Weapons + Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "d36c881a1992de80b4d9cf629448fe1cbc0d142ffdc75be9415a35ca4e75f3cf",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--range-finder--c4a0493f8661",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Musket (Two-Handed)",
+        "Adjustable Lens Refractor Gun"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--range-finder--c4a0493f8661",
+        "stableId": "mods--item-specific--range-finder--c4a0493f8661",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "d36c881a1992de80b4d9cf629448fe1cbc0d142ffdc75be9415a35ca4e75f3cf",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "af2acb287aebc51a",
+    "name": "Ranged Circuit",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Increases the range by 20ft when used on a downed ally.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "cb67158271f2d7e2dc3b1015e6a50fc7c71185ae7db462f7672a3f3c247c7a24",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--ranged-circuit--e53be014909e",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 25,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Return Stone"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--ranged-circuit--e53be014909e",
+        "stableId": "mods--item-specific--ranged-circuit--e53be014909e",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "cb67158271f2d7e2dc3b1015e6a50fc7c71185ae7db462f7672a3f3c247c7a24",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "e5fd001b26d76312",
+    "name": "Ranged Mode",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>This artifice can be attached to ranged weapons as well.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "ba6f3b4d89895c6b1a81c7d8166482f5c3dea325a4c4824f9049c796ae8cfad2",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--ranged-mode--e138da6c91bb",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Elemental Weapon Artifice"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--ranged-mode--e138da6c91bb",
+        "stableId": "mods--item-specific--ranged-mode--e138da6c91bb",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "ba6f3b4d89895c6b1a81c7d8166482f5c3dea325a4c4824f9049c796ae8cfad2",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "28a116cdbb086f6f",
+    "name": "Rapid Spins",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Your Sweeping Arc can now be used two times per round.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "8174a53e6a9626da44ac15cd0b744f5ced3e96d28ea5556a884f59335f26c243",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--rapid-spins--ef885bb50174",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Scythe (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--rapid-spins--ef885bb50174",
+        "stableId": "mods--item-specific--rapid-spins--ef885bb50174",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "8174a53e6a9626da44ac15cd0b744f5ced3e96d28ea5556a884f59335f26c243",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "6a9d6dc0abd8cfed",
+    "name": "Rappel",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>After you deal damage with a thrown attack with this weapon, you may move up to 30ft towards the target. Can only be done once per turn.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "35427af624936c4279dc3c26c7eca1350736e0539b80fe31a8f6a48bd1ce05e1",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--rappel--952a7a586b2a",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Saboteur Thread Daggers (One-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--rappel--952a7a586b2a",
+        "stableId": "mods--item-specific--rappel--952a7a586b2a",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "35427af624936c4279dc3c26c7eca1350736e0539b80fe31a8f6a48bd1ce05e1",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "3bcae95ff2a3ea8f",
+    "name": "Re-usable",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Can be used more than once, but requires repair in between them. This also takes up 2 C slots.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "e1fdd3ab03150086514a3a19bc9bd5d36671981247a2e36223372878a2d8bb49",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--re-usable--06ba8038702f",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Return Stone"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--re-usable--06ba8038702f",
+        "stableId": "mods--item-specific--re-usable--06ba8038702f",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "e1fdd3ab03150086514a3a19bc9bd5d36671981247a2e36223372878a2d8bb49",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "f8ae6d622183de85",
+    "name": "Re-usable+",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Can be used more than once. This also takes up 3 C slots.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "ee8682ee8d9bf1fa4b1cc5eb331655ed87a6106e6d2e170131df7b1f5ea677b6",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--re-usable--d69754588526",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Return Stone"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--re-usable--d69754588526",
+        "stableId": "mods--item-specific--re-usable--d69754588526",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "ee8682ee8d9bf1fa4b1cc5eb331655ed87a6106e6d2e170131df7b1f5ea677b6",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "ad4328484f357ee3",
+    "name": "Recurve",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Range increased by 60ft.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "c62441060a31c957e6be3f471ddbd05152f7b4f8ce5153cafd7a4f1d46f3b264",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--recurve--000dfb1ac9ca",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Bow (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--recurve--000dfb1ac9ca",
+        "stableId": "mods--item-specific--recurve--000dfb1ac9ca",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "c62441060a31c957e6be3f471ddbd05152f7b4f8ce5153cafd7a4f1d46f3b264",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "909033495619cac5",
+    "name": "Red Gauntlets",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>For every AP spent on basic movement, you gain +2 damage to your next attack with this weapon (up to a maximum of +4 dmg).</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "1cab8725bb6c8d19cd8ec2f93832516d13156a1bd93a33cbdc913f23630dccbf",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--red-gauntlets--3df8599569e4",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Gauntlets (One-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--red-gauntlets--3df8599569e4",
+        "stableId": "mods--item-specific--red-gauntlets--3df8599569e4",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "1cab8725bb6c8d19cd8ec2f93832516d13156a1bd93a33cbdc913f23630dccbf",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "bbcd6c53742f61f0",
+    "name": "Redacted",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The recorder can mute or censor parts of the memory being recorded. This tampering may fool regular people, but an artifice check of DC20 will reveal tampering has been done.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "b169afbc2c0bab1f6358e3e14a4732106dcacca61a6f1f8c07994b816983cf56",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--redacted--31fcf6bdaa7d",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 25,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Memory Bubble"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--redacted--31fcf6bdaa7d",
+        "stableId": "mods--item-specific--redacted--31fcf6bdaa7d",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "b169afbc2c0bab1f6358e3e14a4732106dcacca61a6f1f8c07994b816983cf56",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "131c3aaf7f49e99f",
+    "name": "Redline Engine",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The activation ability begins at +2 stacks, but the artifice cannot use the empower ability again after it ends until the end of the arc.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "658a43663a94f6b3f45c8dc58f6ec53f7133661847732c2931dcf09659b241be",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--redline-engine--dff5f33e7e2d",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Chainsaw"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--redline-engine--dff5f33e7e2d",
+        "stableId": "mods--item-specific--redline-engine--dff5f33e7e2d",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "658a43663a94f6b3f45c8dc58f6ec53f7133661847732c2931dcf09659b241be",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "7fcad412d27225c7",
+    "name": "Reinforced Clothing",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>This clothing can benefit from material bonuses, but its burden is increased by 1.</p></section>",
+      "source": "Flo's Madness · Armors item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921",
+      "sourceHash": "b783e74adb57c73238a93ff62e14ecdd8ce332b3765efc3da62390ea2793bd92",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--reinforced-clothing--1081cfc0ba2e",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "Frame",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Armor",
+      "compatibleTargets": [
+        "Clothing"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--reinforced-clothing--1081cfc0ba2e",
+        "stableId": "mods--item-specific--reinforced-clothing--1081cfc0ba2e",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921",
+        "sourceHash": "b783e74adb57c73238a93ff62e14ecdd8ce332b3765efc3da62390ea2793bd92",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "91b76badd03bc3f3",
+    "name": "Reinforced Frame",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>You may use the cannon as a melee weapon that deals Physical(Bludgeoning) damage. Only does 4d6 heavy damage when used as a melee weapon.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "db9d1fff18c86681689a9a1a905edea7285c24328ced51777f0da0f3de545545",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--reinforced-frame--a12e8cedd89a",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 25,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Cannon"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--reinforced-frame--a12e8cedd89a",
+        "stableId": "mods--item-specific--reinforced-frame--a12e8cedd89a",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "db9d1fff18c86681689a9a1a905edea7285c24328ced51777f0da0f3de545545",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "e1d3048b07451ea3",
+    "name": "Reinforced Langet",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>This weapon cannot be disarmed.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "b241219586589824d77b509c07d2dc7c5826e5fc708f5a74d70bc898bf91ccb8",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--reinforced-langet--0daca5cf4e36",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 10,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Axe (One-Handed)",
+        "Axe (Two-Handed)",
+        "Pickaxe (One-Handed)",
+        "Pickaxe (Two-Handed)",
+        "Sickle (One-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--reinforced-langet--0daca5cf4e36",
+        "stableId": "mods--item-specific--reinforced-langet--0daca5cf4e36",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "b241219586589824d77b509c07d2dc7c5826e5fc708f5a74d70bc898bf91ccb8",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "6ba23637846c9a58",
+    "name": "Repeater",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>When you make 3 attacks with this weapon in 1 turn, you may make an additional light attack.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "0352eaa0193dad1cbc24980cbe41eed2e203d95a439f64d369f47722ef30f6ed",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--repeater--aed5afe3b9a6",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Cross-Bow (One-Handed)",
+        "Cross-Bow (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--repeater--aed5afe3b9a6",
+        "stableId": "mods--item-specific--repeater--aed5afe3b9a6",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "0352eaa0193dad1cbc24980cbe41eed2e203d95a439f64d369f47722ef30f6ed",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "ce5a06a6bce48159",
+    "name": "Ricocheting",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Once per round when this weapon deals damage with a Heavy attack, you may make a Light attack against a different target within 20ft.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "c4dd9cf0c977919113062964b0f48e8e1bb5c50fad124d8b452f0353ca7d3324",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--ricocheting--7829a8bded45",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Thrown (One-Handed)",
+        "Thrown (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--ricocheting--7829a8bded45",
+        "stableId": "mods--item-specific--ricocheting--7829a8bded45",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "c4dd9cf0c977919113062964b0f48e8e1bb5c50fad124d8b452f0353ca7d3324",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "820e5855ef768005",
+    "name": "Ring Pommel",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>If you make a heavy attack that the target defends against, you do not trigger attacks of opportunity from them until the start of your next turn.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "b554d66b6c2a164a851cd7cd7d43709d26128a23242243a10594211459c70523",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--ring-pommel--9b4579eecf24",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Hori (One-Handed) (Treated as a Small Weapon)",
+        "Saboteur Thread Daggers (One-Handed)",
+        "Small Weapons (One-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--ring-pommel--9b4579eecf24",
+        "stableId": "mods--item-specific--ring-pommel--9b4579eecf24",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "b554d66b6c2a164a851cd7cd7d43709d26128a23242243a10594211459c70523",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "c971caf9032584c6",
+    "name": "Rocket Punch (Arm only)",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Once per round, you may make a basic unarmed Heavy attack with this limb to a target within 60ft.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "4fbb380af82fca972692c8d65ac12bf9c3139655e7291472176c08d9071d89a1",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--rocket-punch-arm-only--72900189929f",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Artifice Limb"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--rocket-punch-arm-only--72900189929f",
+        "stableId": "mods--item-specific--rocket-punch-arm-only--72900189929f",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "4fbb380af82fca972692c8d65ac12bf9c3139655e7291472176c08d9071d89a1",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "4e923ef8cea4fde8",
+    "name": "Rotational Stability",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>If a target moves away from you when you attack with this weapon and your next attack this turn is a throwing attack using this weapon against that target, that attack gains lock on.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "d4f4406872f05c9f975e9ff96f2bcd8496a7925366b20e192b2c88bdf5d45551",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--rotational-stability--b08c425f261d",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Axe (One-Handed)",
+        "Axe (Two-Handed)",
+        "Pickaxe (One-Handed)",
+        "Pickaxe (Two-Handed)",
+        "Sickle (One-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--rotational-stability--b08c425f261d",
+        "stableId": "mods--item-specific--rotational-stability--b08c425f261d",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "d4f4406872f05c9f975e9ff96f2bcd8496a7925366b20e192b2c88bdf5d45551",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "15cffaf9056dae03",
+    "name": "Safety Hook",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>You and your allies movement with this artifice is considered a sidestep.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "614de68a6e74d75bf32b7f390203d08b139557770f5b6001ebf3e2356debf431",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--safety-hook--c6e8bc722404",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Grappling Hook Artifice"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--safety-hook--c6e8bc722404",
+        "stableId": "mods--item-specific--safety-hook--c6e8bc722404",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "614de68a6e74d75bf32b7f390203d08b139557770f5b6001ebf3e2356debf431",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "7b0b598b3d7a8114",
+    "name": "Scorpion Tip",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The range of the Grappling Hook Artifice is lowered to 20ft, but can be used to make a light attack that does exactly 1 damage with full pierce. On damage, the target can be pulled up to 20ft towards the user.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "3642c4a4bd5a09692cdcdb13d2507e8cba5fc8ecb7dcea9ae8e26ec10869eda0",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--scorpion-tip--f92e276f624b",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Grappling Hook Artifice"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--scorpion-tip--f92e276f624b",
+        "stableId": "mods--item-specific--scorpion-tip--f92e276f624b",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "3642c4a4bd5a09692cdcdb13d2507e8cba5fc8ecb7dcea9ae8e26ec10869eda0",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "21370f6a7f983f32",
+    "name": "Secondary Element",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The artifice is made with two predetermined elements instead of 1. When activating it, you may choose which element is used.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "f44e0e1a0d18917a9372eefed04b9458f8e8f3675f44c56096907faafc3e3b0a",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--secondary-element--4ea66d453502",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Elemental Weapon Artifice"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--secondary-element--4ea66d453502",
+        "stableId": "mods--item-specific--secondary-element--4ea66d453502",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "f44e0e1a0d18917a9372eefed04b9458f8e8f3675f44c56096907faafc3e3b0a",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1f3601d73706ed04",
+    "name": "Semi-Automatic",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The first time you miss with a basic Heavy atack in a round you can follow up with a light attack against the same target.</p></section>",
+      "source": "Flo's Madness · Weapons + Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "9e95f76012892aa2b5dde37059d256b0594a8726f8c5a79383658007dffb7a28",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--semi-automatic--9cf944b6bb7b",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Sniper Rifle (Two-Handed)",
+        "Adjustable Lens Refractor Gun",
+        "Refractor Gun"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--semi-automatic--9cf944b6bb7b",
+        "stableId": "mods--item-specific--semi-automatic--9cf944b6bb7b",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "9e95f76012892aa2b5dde37059d256b0594a8726f8c5a79383658007dffb7a28",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "5a07563c981cb007",
+    "name": "Separation",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>You can separate the Giant Scissors into two pieces for 0 AP (Quick), allowing you to dual wield them. You can use Separation again to put them back together. The passive changes from Shearing to Shearing Flurry which instead grants +1 accuracy to unarmored targets.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "17463a7f78c162cd02810b5daf1f0db50f16dbea96a97e1bdf552c95e85a9797",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--separation--2bbe2f85a666",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Giant Scissors (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--separation--2bbe2f85a666",
+        "stableId": "mods--item-specific--separation--2bbe2f85a666",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "17463a7f78c162cd02810b5daf1f0db50f16dbea96a97e1bdf552c95e85a9797",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1e74f63ac82ef6d2",
+    "name": "Shadow-Type Saber",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>When engaged in melee and you take a block or dodge action and then you are attacked by another melee attack by a different enemy, you may use block or dodge against that attack for 0 RP. Applies once per turn</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "97c32fdf8458783896e18193e4ff9104215358d2027d9a20b1eeff5b37a82784",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--shadow-type-saber--e7669231f169",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Twinblade (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--shadow-type-saber--e7669231f169",
+        "stableId": "mods--item-specific--shadow-type-saber--e7669231f169",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "97c32fdf8458783896e18193e4ff9104215358d2027d9a20b1eeff5b37a82784",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "3dc7d88a3923790f",
+    "name": "Shepherd's Lanza",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Fall damage is reduced by 60ft while wielding.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "740f38147daeb950f3e76728366b3784fda3a9f22e565ae9b3f70cf2d6a602dd",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--shepherd-s-lanza--25bbc6b2e6c7",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Polearm (One-Handed)",
+        "Polearm (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--shepherd-s-lanza--25bbc6b2e6c7",
+        "stableId": "mods--item-specific--shepherd-s-lanza--25bbc6b2e6c7",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "740f38147daeb950f3e76728366b3784fda3a9f22e565ae9b3f70cf2d6a602dd",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "d840e563b190bbe8",
+    "name": "Shield Formation",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>While next to another ally with a shield or greatshield, you gain +1 Guard. (Only actual shields apply)</p></section>",
+      "source": "Flo's Madness · Armors item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921",
+      "sourceHash": "5ff3eacff9d1618fc639a175f1c9633aaf54306bb6f7da62f09caf4134b368f7",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--shield-formation--ec83f46615ff",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Shield",
+      "compatibleTargets": [
+        "Shield",
+        "Greatshield"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--shield-formation--ec83f46615ff",
+        "stableId": "mods--item-specific--shield-formation--ec83f46615ff",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921",
+        "sourceHash": "5ff3eacff9d1618fc639a175f1c9633aaf54306bb6f7da62f09caf4134b368f7",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "354fd12162451da7",
+    "name": "Shield Lance",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>When spending at least 3 AP to move in one turn, your next basic defense costs 1 less RP.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "498870312e4263f401337da8f2e9e177cc75d1887baaca22386a789e6a36f4bc",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--shield-lance--e3542b3eab33",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Lance (One-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--shield-lance--e3542b3eab33",
+        "stableId": "mods--item-specific--shield-lance--e3542b3eab33",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "498870312e4263f401337da8f2e9e177cc75d1887baaca22386a789e6a36f4bc",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1708c5116fd8bc77",
+    "name": "Shieldbreaker",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>The attack enhanced by the artifice also gains the Shieldbreaker keyword.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "2b2241ed45985e5fe4f8ce4b9ae6197e9cdbc408ca21bf16987aae314b8782b1",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--shieldbreaker--acdca0766aad",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Buster Weapon"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--shieldbreaker--acdca0766aad",
+        "stableId": "mods--item-specific--shieldbreaker--acdca0766aad",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "2b2241ed45985e5fe4f8ce4b9ae6197e9cdbc408ca21bf16987aae314b8782b1",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "b7140468bf8e306a",
+    "name": "Shockproof",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>While it&#39;s active, everyone in the area also gains immunity to Static.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "a962f72869cff76dbeea6376e9d86b19d8f3283e63a2c4e93a4d03a0c395b9cb",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--shockproof--d3df76eebcd6",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 25,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Lightning Rod"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--shockproof--d3df76eebcd6",
+        "stableId": "mods--item-specific--shockproof--d3df76eebcd6",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "a962f72869cff76dbeea6376e9d86b19d8f3283e63a2c4e93a4d03a0c395b9cb",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  }
+]

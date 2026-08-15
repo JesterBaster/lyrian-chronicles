@@ -7,9 +7,12 @@
   "itemModSnapshot": {
     "retrievedAt": "2026-08-15",
     "parts": [
-      { "file": "item-mods-01.json", "count": 100 },
-      { "file": "item-mods-02.json", "count": 100 },
-      { "file": "item-mods-03.json", "count": 98 }
+      { "file": "item-mods-01.json", "count": 50 },
+      { "file": "item-mods-02.json", "count": 50 },
+      { "file": "item-mods-03.json", "count": 50 },
+      { "file": "item-mods-04.json", "count": 50 },
+      { "file": "item-mods-05.json", "count": 50 },
+      { "file": "item-mods-06.json", "count": 48 }
     ],
     "excludedIncomplete": [
       { "name": "Holographic Optic", "sourceLocation": "Artifices!G7", "reason": "Crafting-point cost is missing." },

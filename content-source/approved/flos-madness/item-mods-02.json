@@ -1,0 +1,997 @@
+[
+  {
+    "stableId": "mods--item-specific--compact-ergonomics--061d1c0a3508",
+    "name": "Compact Ergonomics",
+    "displayName": "Compact Ergonomics",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "When your other hand is free and you take a movement action that costs RP, that movement range is increased by 5ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Hori (One-Handed) (Treated as a Small Weapon)",
+      "Saboteur Thread Daggers (One-Handed)",
+      "Small Weapons (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F16",
+      "Weapons!F29",
+      "Weapons!F36"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--crown-tip--19edcfb12315",
+    "name": "Crown Tip",
+    "displayName": "Crown Tip",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "The first basic attack per turn made immediately after moving 50ft or more, dismounts mounted targets on damage.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Lance (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--damage-sensor--2c08e7c4ca09",
+    "name": "Damage Sensor",
+    "displayName": "Damage Sensor",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "When the target takes damage, the flame flickers a different color.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Soul Lamp"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H40"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--darkvision-goggles--4d0de84d9e33",
+    "name": "Darkvision Goggles",
+    "displayName": "Darkvision Goggles",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Instead of Nightvision, these goggles give you Darkvision.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Night Vision Goggles"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H25"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--decipher-magic--ee346b779b80",
+    "name": "Decipher Magic",
+    "displayName": "Decipher Magic",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When looking at a magic effect, you may attempt to understand it as if using Decipher Magic. Your bonus for this roll is +15, regardless of your reason or magic skill points.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Mana Vision Goggles"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H22"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--decoy--b1d326e4c8f7",
+    "name": "Decoy",
+    "displayName": "Decoy",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "The first time you are attacked while stealthed while this device is active, you automatically dodge the attack.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Personal Camoflage Field"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--dedicated-focus--19c3b01cb6f0",
+    "name": "Dedicated Focus",
+    "displayName": "Dedicated Focus",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Gain +1 bonus to accuracy rolls, but can only fire elemental attacks of 1 element. Spells cast through this wand only gain that bonus if they deal that element of damage.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Wand (One-Handed)",
+      "Wand (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G45",
+      "Weapons!G46"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--deflecting-armor--0cebb6c6c517",
+    "name": "Deflecting Armor",
+    "displayName": "Deflecting Armor",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "An accuracy roll against you that rolls a 1 always misses.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Heavy Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A26:D26"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--demi-lance--a5863f1a551c",
+    "name": "Demi-Lance",
+    "displayName": "Demi-Lance",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Can be used while dismounted as a normal spear, but loses its movement max damage bonus unless mounted.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Lance (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--diamond-tip--6c8a0245111d",
+    "name": "Diamond Tip",
+    "displayName": "Diamond Tip",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "Shearing now always deals +1 damage regardless of armor.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Giant Scissors (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F15"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--directional-flame--988b17bd9f9a",
+    "name": "Directional Flame",
+    "displayName": "Directional Flame",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "The lamp contains a flame that points in the direction of the person the lamp is attuned to.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Soul Lamp"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H40"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--directional-light--13ea4882960c",
+    "name": "Directional Light",
+    "displayName": "Directional Light",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Makes the light directionally forward instead of all around.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Northi Lantern"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G26"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--directional-ping--51cd85a25e2f",
+    "name": "Directional Ping",
+    "displayName": "Directional Ping",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "While within the device's range, you can determine the direction the paired device is in.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Short Range Communications Device"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G36"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--double-action--eb8d46946db0",
+    "name": "Double Action",
+    "displayName": "Double Action",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "Accuracy is reduced by 3, but attacks with this weapon reduce the target’s ranged accuracy by 1 (stacking) until the start of your next turn regardless of if they hit or not. Doesn’t affect boss enemies.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Pistol (One-Handed)",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!F25",
+      "Artifices!G32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--double-barrel--af5cd00fa0ab",
+    "name": "Double Barrel",
+    "displayName": "Double Barrel — Shotgun (Two-Handed) / Refractor Gun",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "The first heavy attack you make with this weapon per turn also light attacks the same target afterwards.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Shotgun (Two-Handed)",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!G34",
+      "Artifices!H32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--dragon-s-breath--4095a370a159",
+    "name": "Dragon's Breath",
+    "displayName": "Dragon's Breath — Shotgun (One-Handed) / Refractor Gun",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "The first basic attack you make with this weapon in a turn inflicts burning 5 regardless of it hits or not. (If used with Open Choke mod, this can affect that attack).",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Shotgun (One-Handed)",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!F33",
+      "Artifices!G32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--dragon-s-breath--8a57dc7d9c1a",
+    "name": "Dragon's Breath",
+    "displayName": "Dragon's Breath — Shotgun (Two-Handed)",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "The first attack you make with this weapon in a turn inflicts burning 5 regardless of it hits or not.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Shotgun (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F34"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--drive-by-model--6c0195ef7258",
+    "name": "Drive By Model",
+    "displayName": "Drive By Model",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "The Grappling Hook Artifice loses the ability to move allies, but you can now make attacks at any point while being reeled as long as you have actions. While you are moving in this way, you do not provoke attacks of opportunity.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Grappling Hook Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--early-deactivation--6d6940f11b2e",
+    "name": "Early Deactivation",
+    "displayName": "Early Deactivation",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "You may spend 0 RP to deactivate the effect.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Elemental Weapon Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G16"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--echo-blast--9cd166d69a54",
+    "name": "Echo Blast",
+    "displayName": "Echo Blast",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "When you make a basic Heavy attack, you may split the damage against two different targets in range. Make only 1 accuracy check against both.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Wand (One-Handed)",
+      "Wand (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F45",
+      "Weapons!F46"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--efficiency--26094df01e64",
+    "name": "Efficiency",
+    "displayName": "Efficiency",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "The first basic attack you make each turn may trigger the knockback effect without spending mana.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Staff (One-Handed)",
+      "Staff (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G40",
+      "Weapons!G41"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--efficient-gathering--017bcbdd67ae",
+    "name": "Efficient Gathering",
+    "displayName": "Efficient Gathering",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "If the artifice was used during combat, gain a +10 bonus to Gather Parts Encounter Conclusion action for that combat.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Chainsaw"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G9"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--elegant-executioner--000191273828",
+    "name": "Elegant Executioner",
+    "displayName": "Elegant Executioner",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "Reduces Vivisect AP cost by 1.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Giant Scissors (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F15"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--elemental-burst--454566ea65d3",
+    "name": "Elemental Burst",
+    "displayName": "Elemental Burst",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "While active, you may expend the shell and 1 AP to make a Heavy attack with the weapon.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Elemental Weapon Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H16"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--elemental-lens--1ab24b458858",
+    "name": "Elemental Lens",
+    "displayName": "Elemental Lens",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Instead of Arcane, the weapon may deal a different element of your choosing",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Adjustable Lens Refractor Gun",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G3",
+      "Artifices!G32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--elemental-mastery--ff270b30a6e2",
+    "name": "Elemental Mastery",
+    "displayName": "Elemental Mastery",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When activated, the artifice instead changes to an element the wielder has mastered (their choosing). Still has the base element too as option.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Elemental Weapon Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H16"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--elemental-staff--7541138d9e02",
+    "name": "Elemental Staff",
+    "displayName": "Elemental Staff",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "You may alter the damage type from an attack made with this weapon for 0 AP. The damage type must be an element type you have mastered (usually unlocked through classes) or one that’s built into the weapon.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Staff (One-Handed)",
+      "Staff (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F40",
+      "Weapons!F41"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--emergency-escape-reel--8cd9a0f15940",
+    "name": "Emergency Escape Reel",
+    "displayName": "Emergency Escape Reel",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "You may also fire this using 1 RP.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Grappling Hook Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--equilibrium-forging--e43e5939f578",
+    "name": "Equilibrium Forging",
+    "displayName": "Equilibrium Forging — Katana (One-Handed)",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "You do not roll damage on this weapon, but deal slightly higher than average damage. Instead it deals 6 damage on light attacks or 15 damage on heavy attacks. Critical strikes apply maximum damage as normal.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Katana (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G17"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--equilibrium-forging--6613d393ee73",
+    "name": "Equilibrium Forging",
+    "displayName": "Equilibrium Forging — Katana (Two-Handed)",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "You do not roll damage on this weapon, but deal slightly higher than average damage. Instead it deals 6 damage on light attacks or 19 damage on heavy attacks. Critical strikes apply maximum damage as normal.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Katana (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G18"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--executioner-s-blade--695e9cae201b",
+    "name": "Executioner's Blade",
+    "displayName": "Executioner's Blade",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Heavy basic attacks strike an adjacent target in range with a light attack. Once per turn",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Heavy Blade (Two-Handed)",
+      "Giant Scissors (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G4",
+      "Weapons!G15"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--exousiai-protection--c8083bfef9c1",
+    "name": "Exousiai Protection",
+    "displayName": "Exousiai Protection",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "You and allies affected by this device ignore 1 level of astra corruption increase caused by Exousiai type fiends.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Astra Guidance Beacon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H10"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--explosive-rock--d45e32f366ef",
+    "name": "Explosive Rock",
+    "displayName": "Explosive Rock",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When making the Overcharge attack, you may deal the extra light damage to all creatures within 5ft of the original target.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Shepard's Sling (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--extended-draw--0c842a18bd0f",
+    "name": "Extended Draw",
+    "displayName": "Extended Draw — Cross-Bow (One-Handed)",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Your armor piercing effect range is increased to 60ft. If combined with a wrist mounted crossbow, increases the range but not the armor piercing range to 60ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cross-Bow (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G10"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--extended-draw--b65b8e4ee9b9",
+    "name": "Extended Draw",
+    "displayName": "Extended Draw — Cross-Bow (Two-Handed)",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Your armor piercing effect range is increased to 60ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cross-Bow (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G11"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--extended-quillons--c7577d0c45ce",
+    "name": "Extended Quillons",
+    "displayName": "Extended Quillons",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Grants +1 to guard when out of RP.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Light Sword (One-Handed)",
+      "Longsword (Versatile)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G20",
+      "Weapons!G21"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--extra-earplugs--f9a79f771e33",
+    "name": "Extra Earplugs",
+    "displayName": "Extra Earplugs",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "The device now comes with 3 additional earplugs, letting more people listen in.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Private Communications Device"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G30"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--extra-range--1a8feb672b6a",
+    "name": "Extra Range",
+    "displayName": "Extra Range — Private Communications Device",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "The range of the device increases from 1 mile to 3 miles.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Private Communications Device"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H30"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--extra-range--66e118f2d9ee",
+    "name": "Extra Range",
+    "displayName": "Extra Range — Short Range Communications Device",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "The range of the device increases from 1 mile to 2 miles.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Short Range Communications Device"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H36"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--featherflight--44cdcb57a70b",
+    "name": "Featherflight",
+    "displayName": "Featherflight",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "Range is increased to 60ft, but the remain stealthed mechanic only applies when attacking within 30ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Set of Missiles (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F31"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--ferrobri-grip--72f938bb64e2",
+    "name": "Ferrobri Grip",
+    "displayName": "Ferrobri Grip",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "Dueling weapon passive changes to Aggressive Dueling: When attacking a single enemy 3 times with this weapon, your next basic attack has its cost reduced by 1 AP.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Dueling Weapon (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G12"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--fine-size--bc8d88f97705",
+    "name": "Fine Size",
+    "displayName": "Fine Size",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Removes the -10 penalty for finesse movements while wearing the gauntlets.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Power Gauntlets"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F28"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--finesse-grip--ca78bedcf4c1",
+    "name": "Finesse Grip",
+    "displayName": "Finesse Grip",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "You may hold and use items or weapons like normal while wearing these gauntlets.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Power Gauntlets"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G28"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--fireproof--e6df412f4b7f",
+    "name": "Fireproof",
+    "displayName": "Fireproof",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "While it's active, you are immune to Burning.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Fire Robe"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H18"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--flanged-head--91e804649415",
+    "name": "Flanged Head",
+    "displayName": "Flanged Head",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "When you crit with this weapon, the damage is still maximized even against blocking targets.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Bludgeoning Weapon (One-Handed)",
+      "Bludgeoning Weapon (Two-Handed)",
+      "Frying Pan",
+      "Smith's Hammer (One-Handed)",
+      "Smith's Hammer (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G5",
+      "Weapons!G6",
+      "Weapons!G13",
+      "Weapons!G37",
+      "Weapons!G38"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--flat-pommel--9b34f438f6e5",
+    "name": "Flat Pommel",
+    "displayName": "Flat Pommel — Hori (One-Handed) (Treated as a Small Weapon) / Small Weapons (One-Handed)",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "When your other hand is free, you use your free hand to push the blade into targets increasing melee heavy attack damage to 5d6.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Hori (One-Handed) (Treated as a Small Weapon)",
+      "Small Weapons (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F16",
+      "Weapons!F36"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--flat-pommel--19bf0395d10d",
+    "name": "Flat Pommel",
+    "displayName": "Flat Pommel — Saboteur Thread Daggers (One-Handed)",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "When your other hand is free, you use your free hand to push the target into targets increasing melee heavy attack damage to 5d6.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Saboteur Thread Daggers (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F29"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--flexible-armor--7d3616d770c3",
+    "name": "Flexible Armor",
+    "displayName": "Flexible Armor",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "When you take the Dodge action, your next Block gains a +8 bonus. When you take the Block action, your next Dodge action gains a +4 bonus. Lasts until the start of your next turn. Can activate multiple times per turn, but does not stack.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Medium Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A21:D21"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--flexible-handle--640291cdacae",
+    "name": "Flexible Handle",
+    "displayName": "Flexible Handle",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "When dealing damage to a target, the minimum damage you deal is always 2. (this does not trigger on damage effects if damage would be 0 otherwise).",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Bludgeoning Weapon (One-Handed)",
+      "Bludgeoning Weapon (Two-Handed)",
+      "Frying Pan",
+      "Smith's Hammer (One-Handed)",
+      "Smith's Hammer (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F5",
+      "Weapons!F6",
+      "Weapons!F13",
+      "Weapons!F37",
+      "Weapons!F38"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--fluttering-ribbon--ccd163e45b33",
+    "name": "Fluttering Ribbon",
+    "displayName": "Fluttering Ribbon",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "At the start of your turn, you may change your threatened range to 5-10ft until the start of your next turn.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Whip (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F47"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  }
+]

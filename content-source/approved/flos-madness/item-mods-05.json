@@ -1,0 +1,1000 @@
+[
+  {
+    "stableId": "mods--item-specific--quick-swap--55c56eb86722",
+    "name": "Quick Swap",
+    "displayName": "Quick Swap — Blaster Weapon",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The activation cost is reduced to 0 AP.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Blaster Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G12"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--quick-swap--73790105c774",
+    "name": "Quick Swap",
+    "displayName": "Quick Swap — Transforming Weapon",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "You may activate this artifice for 0 RP instead of 0 AP.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Transforming Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H44"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--quickened-activation--0f3da3a3b8f3",
+    "name": "Quickened Activation",
+    "displayName": "Quickened Activation",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The activation cost is reduced by 1 AP.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Space Time Anchor"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G41"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--radar--bab0471b364a",
+    "name": "Radar",
+    "displayName": "Radar",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "While active, points to the highest source of non-ambient astra within a 1 mile range.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Calibretto Device"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--range-finder--38ebb8e77908",
+    "name": "Range Finder",
+    "displayName": "Range Finder — Binoculars",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "When looking through this item, you can tell how far objects are from you.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Binoculars"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H11"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--range-finder--c4a0493f8661",
+    "name": "Range Finder",
+    "displayName": "Range Finder — Musket (Two-Handed) / Adjustable Lens Refractor Gun",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "You add a range finder to the weapon. This does not increase its range, but does allow you to look through the lens for a +10 perception bonus against things further than 60ft away. In addition, you can tell how far objects are from you when doing this.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Musket (Two-Handed)",
+      "Adjustable Lens Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!F22",
+      "Artifices!G3"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--ranged-circuit--e53be014909e",
+    "name": "Ranged Circuit",
+    "displayName": "Ranged Circuit",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Increases the range by 20ft when used on a downed ally.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Return Stone"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H33"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--ranged-mode--e138da6c91bb",
+    "name": "Ranged Mode",
+    "displayName": "Ranged Mode",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "This artifice can be attached to ranged weapons as well.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Elemental Weapon Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H16"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--rapid-spins--ef885bb50174",
+    "name": "Rapid Spins",
+    "displayName": "Rapid Spins",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Your Sweeping Arc can now be used two times per round.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Scythe (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G30"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--rappel--952a7a586b2a",
+    "name": "Rappel",
+    "displayName": "Rappel",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "After you deal damage with a thrown attack with this weapon, you may move up to 30ft towards the target. Can only be done once per turn.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Saboteur Thread Daggers (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G29"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--re-usable--06ba8038702f",
+    "name": "Re-usable",
+    "displayName": "Re-usable",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Can be used more than once, but requires repair in between them. This also takes up 2 C slots.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Return Stone"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H33"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--re-usable--d69754588526",
+    "name": "Re-usable+",
+    "displayName": "Re-usable+",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "Can be used more than once. This also takes up 3 C slots.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Return Stone"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H33"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--recurve--000dfb1ac9ca",
+    "name": "Recurve",
+    "displayName": "Recurve",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Range increased by 60ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Bow (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F7"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--red-gauntlets--3df8599569e4",
+    "name": "Red Gauntlets",
+    "displayName": "Red Gauntlets",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "For every AP spent on basic movement, you gain +2 damage to your next attack with this weapon (up to a maximum of +4 dmg).",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Gauntlets (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--redacted--31fcf6bdaa7d",
+    "name": "Redacted",
+    "displayName": "Redacted",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "The recorder can mute or censor parts of the memory being recorded. This tampering may fool regular people, but an artifice check of DC20 will reveal tampering has been done.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Memory Bubble"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H24"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--redline-engine--dff5f33e7e2d",
+    "name": "Redline Engine",
+    "displayName": "Redline Engine",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "The activation ability begins at +2 stacks, but the artifice cannot use the empower ability again after it ends until the end of the arc.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Chainsaw"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G9"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--reinforced-clothing--1081cfc0ba2e",
+    "name": "Reinforced Clothing",
+    "displayName": "Reinforced Clothing",
+    "modSlot": "Frame",
+    "craftingPoints": 0,
+    "effect": "This clothing can benefit from material bonuses, but its burden is increased by 1.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Clothing"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A3:D3"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--reinforced-frame--a12e8cedd89a",
+    "name": "Reinforced Frame",
+    "displayName": "Reinforced Frame",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "You may use the cannon as a melee weapon that deals Physical(Bludgeoning) damage. Only does 4d6 heavy damage when used as a melee weapon.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cannon"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--reinforced-langet--0daca5cf4e36",
+    "name": "Reinforced Langet",
+    "displayName": "Reinforced Langet",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "This weapon cannot be disarmed.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Axe (One-Handed)",
+      "Axe (Two-Handed)",
+      "Pickaxe (One-Handed)",
+      "Pickaxe (Two-Handed)",
+      "Sickle (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F2",
+      "Weapons!F3",
+      "Weapons!F23",
+      "Weapons!F24",
+      "Weapons!F35"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--repeater--aed5afe3b9a6",
+    "name": "Repeater",
+    "displayName": "Repeater",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When you make 3 attacks with this weapon in 1 turn, you may make an additional light attack.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cross-Bow (One-Handed)",
+      "Cross-Bow (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G10",
+      "Weapons!G11"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--ricocheting--7829a8bded45",
+    "name": "Ricocheting",
+    "displayName": "Ricocheting",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Once per round when this weapon deals damage with a Heavy attack, you may make a Light attack against a different target within 20ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Thrown (One-Handed)",
+      "Thrown (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G42",
+      "Weapons!G43"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--ring-pommel--9b4579eecf24",
+    "name": "Ring Pommel",
+    "displayName": "Ring Pommel",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "If you make a heavy attack that the target defends against, you do not trigger attacks of opportunity from them until the start of your next turn.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Hori (One-Handed) (Treated as a Small Weapon)",
+      "Saboteur Thread Daggers (One-Handed)",
+      "Small Weapons (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G16",
+      "Weapons!G29",
+      "Weapons!G36"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--rocket-punch-arm-only--72900189929f",
+    "name": "Rocket Punch (Arm only)",
+    "displayName": "Rocket Punch (Arm only)",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Once per round, you may make a basic unarmed Heavy attack with this limb to a target within 60ft.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Artifice Limb"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--rotational-stability--b08c425f261d",
+    "name": "Rotational Stability",
+    "displayName": "Rotational Stability",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "If a target moves away from you when you attack with this weapon and your next attack this turn is a throwing attack using this weapon against that target, that attack gains lock on.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Axe (One-Handed)",
+      "Axe (Two-Handed)",
+      "Pickaxe (One-Handed)",
+      "Pickaxe (Two-Handed)",
+      "Sickle (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F2",
+      "Weapons!F3",
+      "Weapons!F23",
+      "Weapons!F24",
+      "Weapons!F35"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--safety-hook--c6e8bc722404",
+    "name": "Safety Hook",
+    "displayName": "Safety Hook",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "You and your allies movement with this artifice is considered a sidestep.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Grappling Hook Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--scorpion-tip--f92e276f624b",
+    "name": "Scorpion Tip",
+    "displayName": "Scorpion Tip",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The range of the Grappling Hook Artifice is lowered to 20ft, but can be used to make a light attack that does exactly 1 damage with full pierce. On damage, the target can be pulled up to 20ft towards the user.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Grappling Hook Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--secondary-element--4ea66d453502",
+    "name": "Secondary Element",
+    "displayName": "Secondary Element",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "The artifice is made with two predetermined elements instead of 1. When activating it, you may choose which element is used.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Elemental Weapon Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H16"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--semi-automatic--9cf944b6bb7b",
+    "name": "Semi-Automatic",
+    "displayName": "Semi-Automatic",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The first time you miss with a basic Heavy atack in a round you can follow up with a light attack against the same target.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Sniper Rifle (Two-Handed)",
+      "Adjustable Lens Refractor Gun",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!F39",
+      "Artifices!G3",
+      "Artifices!G32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--separation--2bbe2f85a666",
+    "name": "Separation",
+    "displayName": "Separation",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "You can separate the Giant Scissors into two pieces for 0 AP (Quick), allowing you to dual wield them. You can use Separation again to put them back together. The passive changes from Shearing to Shearing Flurry which instead grants +1 accuracy to unarmored targets.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Giant Scissors (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G15"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--shadow-type-saber--e7669231f169",
+    "name": "Shadow-Type Saber",
+    "displayName": "Shadow-Type Saber",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When engaged in melee and you take a block or dodge action and then you are attacked by another melee attack by a different enemy, you may use block or dodge against that attack for 0 RP. Applies once per turn",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Twinblade (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G44"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--shepherd-s-lanza--25bbc6b2e6c7",
+    "name": "Shepherd's Lanza",
+    "displayName": "Shepherd's Lanza",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Fall damage is reduced by 60ft while wielding.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Polearm (One-Handed)",
+      "Polearm (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F26",
+      "Weapons!F27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--shield-formation--ec83f46615ff",
+    "name": "Shield Formation",
+    "displayName": "Shield Formation",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "While next to another ally with a shield or greatshield, you gain +1 Guard. (Only actual shields apply)",
+    "targetType": "Shield",
+    "compatibleTargets": [
+      "Shield",
+      "Greatshield"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A35:D35",
+      "Armors!A41:D41"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--shield-lance--e3542b3eab33",
+    "name": "Shield Lance",
+    "displayName": "Shield Lance",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When spending at least 3 AP to move in one turn, your next basic defense costs 1 less RP.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Lance (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--shieldbreaker--acdca0766aad",
+    "name": "Shieldbreaker",
+    "displayName": "Shieldbreaker",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "The attack enhanced by the artifice also gains the Shieldbreaker keyword.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Buster Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H13"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--shockproof--d3df76eebcd6",
+    "name": "Shockproof",
+    "displayName": "Shockproof",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "While it's active, everyone in the area also gains immunity to Static.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Lightning Rod"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H20"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--shortbow--38956aea9c53",
+    "name": "Shortbow",
+    "displayName": "Shortbow",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Range reduced to 120ft but when making a basic light attack, you can make a second light attack for 0 AP.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Bow (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G7"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--shortened-activator--7a21888557b9",
+    "name": "Shortened Activator",
+    "displayName": "Shortened Activator",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Reduces the activation cost by 1 AP.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Return Stone"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G33"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--side-barrel--21c3dc3f969e",
+    "name": "Side Barrel",
+    "displayName": "Side Barrel",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "You may use the cannon a second time in a round, however this second attack can only be a light attack.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cannon"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--silver-lens--c26de4a62882",
+    "name": "Silver Lens",
+    "displayName": "Silver Lens",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "Mystic Eye attacks made with this lens count as silver.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Eye Lens"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H17"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--simple-design--52700a4a210f",
+    "name": "Simple Design",
+    "displayName": "Simple Design",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "You are considered proficient with these even if you normally would not be.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Gauntlets (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--single-edge--e9a7277e0943",
+    "name": "Single Edge",
+    "displayName": "Single Edge",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Nimble instead becomes Nimble Rotation. After attacking you can no longer move away from the enemy, but you can sidestep to anywhere adjacent to the enemy when making a melee attack. This cannot be used if the target is reduced to 0 HP from the attack.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Light Sword (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F20"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--skirmisher--29943a343df5",
+    "name": "Skirmisher",
+    "displayName": "Skirmisher",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "After making a ranged attack with this weapon, you may move 5ft as if you had the light sword passive (Nimble).",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Thrown (One-Handed)",
+      "Thrown (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F42",
+      "Weapons!F43"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--skitter-away--ff474db6fbf1",
+    "name": "Skitter Away",
+    "displayName": "Skitter Away",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When you move up a vertical surface from a horizontal one, your first movement of the round does not provoke an attack of opportunity.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Spider Shoes"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H42"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--sleek--2b5f1ef8609f",
+    "name": "Sleek",
+    "displayName": "Sleek",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "If you spend RP dodging an attack of opportunity, you may dodge any other attacks of opportunity made in reaction to the same action as the first for free.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Light Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A13:D13"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--slow-fall--74d9aa7bb050",
+    "name": "Slow Fall",
+    "displayName": "Slow Fall",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Reduces the falling speed down to 20ft per round.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Wind Bubble"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H46"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--slugs--4982bcbdc9e8",
+    "name": "Slugs",
+    "displayName": "Slugs",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Your range is doubled.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Shotgun (One-Handed)",
+      "Shotgun (Two-Handed)",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!G33",
+      "Weapons!G34",
+      "Artifices!H32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--smooth-operations--22920a20f19c",
+    "name": "Smooth Operations",
+    "displayName": "Smooth Operations",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The first switch in an encounter does not consume a shell.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Transforming Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G44"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--snipe--35420a80f55e",
+    "name": "Snipe",
+    "displayName": "Snipe — Cannon",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "If you did not move this turn or the previous turn you gain a +1d4 bonus to your accuracy roll on attacks made with this weapon.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cannon"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--snipe--025ca36d5110",
+    "name": "Snipe",
+    "displayName": "Snipe — Sniper Rifle (Two-Handed) / Adjustable Lens Refractor Gun / Refractor Gun",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "If you did not move this turn or the previous turn you gain a +1d4 bonus to your accuracy roll on attacks made with a Sniper Rifle. If you already have the Sniper's Snipe ability, the effect is 4 instead of rolling when used with this weapon.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Sniper Rifle (Two-Handed)",
+      "Adjustable Lens Refractor Gun",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!G39",
+      "Artifices!H3",
+      "Artifices!H32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--sniper-mode--f16ff3afe809",
+    "name": "Sniper Mode",
+    "displayName": "Sniper Mode",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "The range of the ranged mode is increased to 240ft.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Blaster Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H12"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  }
+]

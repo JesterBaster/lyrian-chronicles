@@ -1,0 +1,989 @@
+[
+  {
+    "stableId": "mods--item-specific--lumen-sphere--5dad277349e4",
+    "name": "Lumen Sphere",
+    "displayName": "Lumen Sphere",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Increases the light emission to 60ft.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Northi Lantern"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H26"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--mage-robes--64a34e3736c1",
+    "name": "Mage Robes",
+    "displayName": "Mage Robes",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "You gain +1 maximum mana, but lose 1 guard and 2 block.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Clothing"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A4:D4"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--make-exception--6de41c40e587",
+    "name": "Make Exception",
+    "displayName": "Make Exception",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "Allies can still teleport while in the area.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Space Time Anchor"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H41"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--mana-core--38a07bb08840",
+    "name": "Mana Core",
+    "displayName": "Mana Core",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When you deal max damage with an attack against an enemy in an encounter, your next spell this turn costs 1 less mana (min 0)",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Wand (One-Handed)",
+      "Wand (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G45",
+      "Weapons!G46"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--mana-sight--fbb3e137d08e",
+    "name": "Mana Sight",
+    "displayName": "Mana Sight",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Looking at a target within 30ft automatically reveals their mana %.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Mana Vision Goggles"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G22"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--mana-surge--353e10a87f63",
+    "name": "Mana Surge",
+    "displayName": "Mana Surge",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Once per turn after you cast a spell, you may make a Light attack for 0 AP.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Wand (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G46"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--martial-mastery--d4ae38f7b0bd",
+    "name": "Martial Mastery",
+    "displayName": "Martial Mastery",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "You may have your attacks deal Elemental damage instead of physical based on your mastered classes. Bajiquan for Fire, Monk for Water, Sky Talon for Wind and Still Stone for Earth, Transcendant Lightning for Lightning, Five Harmonies for Holy, Black Oath for Dark.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Gauntlets (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--mastercrafted-saya--41fe0a3b03ab",
+    "name": "Mastercrafted Saya",
+    "displayName": "Mastercrafted Saya",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The first single target attack made with this weapon per combat also draws the weapon simultaneously. This first attack has its crit threshold lowered by 1.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Katana (One-Handed)",
+      "Katana (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F17",
+      "Weapons!F18"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--match-barrel--bad38fa2252f",
+    "name": "Match Barrel",
+    "displayName": "Match Barrel",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "The range of this weapon is increased by 60ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Pistol (One-Handed)",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!G25",
+      "Artifices!H32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--medium-capacity--b6ff5257d577",
+    "name": "Medium Capacity",
+    "displayName": "Medium Capacity",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "You may also create Medium Shells (costs more Fuel still).",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Shell Converter"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G34"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--medivac-rig--f562fe42a488",
+    "name": "Medivac Rig",
+    "displayName": "Medivac Rig",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Allows a downed ally to be hauled on the underbelly of the staff. But reduces the speed by 10ft while hauling.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Aerial Staff (Sparrow Model)"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G5"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--mirror-shield--34bd79d8d974",
+    "name": "Mirror Shield",
+    "displayName": "Mirror Shield",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "When you are the target of a Mystic Eye ability, you may spend 1 RP to negate the effect on yourself and reflect it back to the user.",
+    "targetType": "Shield",
+    "compatibleTargets": [
+      "Shield",
+      "Greatshield"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A33:D33",
+      "Armors!A39:D39"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--mistweave--ec6c66347490",
+    "name": "Mistweave",
+    "displayName": "Mistweave",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "You no longer provoke attacks of opportunity, but all attacks against you gain Half Pierce.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Light Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A15:D15"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--mobile-artillery--35a7e77832d8",
+    "name": "Mobile Artillery",
+    "displayName": "Mobile Artillery",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "After moving, your range is reduced to 120ft instead of 60ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cannon"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--movement-burst-leg-only--61eb46b381e5",
+    "name": "Movement Burst (Leg only)",
+    "displayName": "Movement Burst (Leg only)",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "You may spend 0 AP to gain +20ft movement until the start of your next turn. Afterwards, your movement speed is halved until you put in a new shell into your leg.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Artifice Limb"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--multi-gear-chaindrive--5add1a30fd59",
+    "name": "Multi Gear Chaindrive",
+    "displayName": "Multi Gear Chaindrive",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "On activate. Heavy attacks grant 2 stacks instead of 1.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Chainsaw"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F9"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--natural-use--df8c93667ac1",
+    "name": "Natural Use",
+    "displayName": "Natural Use",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "When used during a rest action, the filter provides half the food needed for a basic rest (20u) provided a camping kit is set up.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Artifice Water Purifier"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H9"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--night-mode--5dd89d7727b0",
+    "name": "Night Mode",
+    "displayName": "Night Mode",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Looking through the binoculars gives you Nightvision up to 120ft.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Binoculars"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G11"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--open-choke--0d678039a581",
+    "name": "Open Choke",
+    "displayName": "Open Choke — Shotgun (One-Handed)",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "The first basic light attack you make with this weapon in a turn makes a Light attack against all enemies in a 45 degree cone up to range.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Shotgun (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G33"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--open-choke--0f7696310026",
+    "name": "Open Choke",
+    "displayName": "Open Choke — Shotgun (Two-Handed)",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "The first light attack you make with this weapon in a turn makes a Light attack against all enemies in a 45 degree cone up to range.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Shotgun (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G34"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--open-choke-2h-shotgun--82d8f33ed799",
+    "name": "Open Choke [2H Shotgun]",
+    "displayName": "Open Choke [2H Shotgun]",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "The first light attack you make with this weapon in a turn makes a Light attack against all enemies in a 45 degree cone up to range.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--optimized-explosion--544d05630742",
+    "name": "Optimized Explosion",
+    "displayName": "Optimized Explosion",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Increases the accuracy bonus by +1",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Buster Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G13"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--ornamental--655238c742e1",
+    "name": "Ornamental",
+    "displayName": "Ornamental",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "You may use this weapon as one minor item such as an instrument or parasol.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Wand (One-Handed)",
+      "Wand (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F45",
+      "Weapons!F46"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--ornate-blade--51d8987419cd",
+    "name": "Ornate Blade",
+    "displayName": "Ornate Blade",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "Moving into the target’s threatened zone the first time in a turn counts as 1 attack for the requirement to activate Dueling.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Dueling Weapon (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F12"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--overwhelming-edge--04658997c742",
+    "name": "Overwhelming Edge",
+    "displayName": "Overwhelming Edge",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "You cannot be disarmed or parried.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Heavy Blade (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F4"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--padded--f3154672b884",
+    "name": "Padded",
+    "displayName": "Padded",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Increase guard vs light attacks by 1, doesn't affect heavy damage.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Light Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A14:D14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--paired-duelers--50bb10a61f6d",
+    "name": "Paired Duelers",
+    "displayName": "Paired Duelers",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "When wielding two dueling weapons with paired duelers, your offhand extra attack counts as one attack for your dueling bonus on your main hand weapon.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Dueling Weapon (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G12"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--parley-mode--013dc425fe04",
+    "name": "Parley Mode",
+    "displayName": "Parley Mode",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The device now translates all words spoken near it, allowing for easier two way communication.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Universal Translator"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G45"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--parrying-dagger--030638ff770a",
+    "name": "Parrying Dagger",
+    "displayName": "Parrying Dagger",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "If you don’t use this weapon to make an attack during your turn, you gain a +4 bonus to your Block until the start of your next turn. You also gain a +4 bonus to your ‘damage’ roll when using the Parry ability.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Hori (One-Handed) (Treated as a Small Weapon)",
+      "Saboteur Thread Daggers (One-Handed)",
+      "Small Weapons (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F16",
+      "Weapons!F29",
+      "Weapons!F36"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--photon-dome--a0410b6d7030",
+    "name": "Photon Dome",
+    "displayName": "Photon Dome",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Changes the Photon Shield effect to instead project a dome 5ft around you that grants the shield effect to allies against ranged attacks only. Does not stack with other equipped shields. Does not stack with other “Photon” modifications. May still choose to activate the original effect of Photon Shield.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Photon Shield"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G28"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--photon-greatshield--da76531333ac",
+    "name": "Photon Greatshield",
+    "displayName": "Photon Greatshield",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Increases the Burden to 2 and changes the effect of Photon Shield to a Greatshield instead of a regular shield. Reduces your evasion etc like a Greatshield would. You can deactivate the photon greatshield for 0 RP, but doing so ejects the shell and ends the effect.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Photon Shield"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H28"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--photon-wall--ac8885cb04dc",
+    "name": "Photon Wall",
+    "displayName": "Photon Wall",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Changes the Photon Shield effect to instead to create a stationary wall of light in front of you. This wall disappears when you move. The wall is a 1 way high cover with 20 HP and only allows ranged attacks to pass through it from your side. When you move, the wall is immediately destroyed. Once the wall is destroyed, the shell is expended and ejects from the artifice. May still choose to activate the original effect of Photon Shield.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Photon Shield"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G28"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--pie-launcher--d7764352fa34",
+    "name": "Pie Launcher",
+    "displayName": "Pie Launcher",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Pie toss can be fired through the weapon to gain the increased range (does not affect the damage or transfer alloys).",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cannon"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--point-blank--b72239a0827c",
+    "name": "Point Blank",
+    "displayName": "Point Blank",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "You may make AoO’s as if this was a melee weapon with a 5ft threaten range.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Shotgun (One-Handed)",
+      "Shotgun (Two-Handed)",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!F33",
+      "Weapons!F34",
+      "Artifices!G32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--poison-container--db9efcc439f6",
+    "name": "Poison Container",
+    "displayName": "Poison Container",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Poison can be pre-applied to the container and then sealed. Once the lid is opened and a missile is drawn, it is considered to be applied and begins to use up its application limit and duration.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Set of Missiles (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G31"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--poisoner-weapon--2c80565410b5",
+    "name": "Poisoner Weapon",
+    "displayName": "Poisoner Weapon",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Applying poison to this weapon costs -1 AP (min 0).",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Hori (One-Handed) (Treated as a Small Weapon)",
+      "Saboteur Thread Daggers (One-Handed)",
+      "Small Weapons (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G16",
+      "Weapons!G29",
+      "Weapons!G36"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--porcupine-hide--398b70786ca6",
+    "name": "Porcupine Hide",
+    "displayName": "Porcupine Hide",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Enemies grappling you take 1d6 full pierce damage. When escaping a grapple, you also deal 1d6 full pierce damage to the creature grappling you.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Light Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A12:D12"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--powerful-explosion--ae52aab1aa26",
+    "name": "Powerful Explosion",
+    "displayName": "Powerful Explosion",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Increases the damage bonus by +1",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Buster Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G13"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--powerful-fan--6c312031eece",
+    "name": "Powerful Fan",
+    "displayName": "Powerful Fan",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Increases the range of which it sucks in by 10ft.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Portable Vacuum"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G29"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--powerful-push--b91a0253dc9c",
+    "name": "Powerful Push",
+    "displayName": "Powerful Push",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "The knockback distance is increased to 10ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Staff (One-Handed)",
+      "Staff (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F40",
+      "Weapons!F41"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--proof-load--e6cc3610735f",
+    "name": "Proof Load",
+    "displayName": "Proof Load",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "When you make a heavy attack with this weapon, you may knock yourself back 5ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Shotgun (One-Handed)",
+      "Shotgun (Two-Handed)",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!F33",
+      "Weapons!F34",
+      "Artifices!G32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--quakemaker--9757e2864be8",
+    "name": "Quakemaker",
+    "displayName": "Quakemaker",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Critical hits render the target prone regardless of if they hit or not.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Heavy Blade (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G4"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--quick-activation--b3406851fb60",
+    "name": "Quick Activation",
+    "displayName": "Quick Activation — Elemental Weapon Artifice / Fire Robe / Snow Cloak",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The activation cost is reduced to 0 AP.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Elemental Weapon Artifice",
+      "Fire Robe",
+      "Snow Cloak"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G16",
+      "Artifices!G18",
+      "Artifices!G39"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--quick-activation--346f6443b82f",
+    "name": "Quick Activation",
+    "displayName": "Quick Activation — Lightning Rod",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "The activation cost is reduced by 1.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Lightning Rod"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G20"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--quick-activation--4d8c3fe756c1",
+    "name": "Quick Activation",
+    "displayName": "Quick Activation — Photon Shield",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The activation cost is reduced to 0 AP",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Photon Shield"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G28"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--quick-activation--3236d7674e81",
+    "name": "Quick Activation",
+    "displayName": "Quick Activation — Spider Shoes / Winged Backpack",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The activation cost is reduced by 1 AP, to a minimum of 0.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Spider Shoes",
+      "Winged Backpack"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G42",
+      "Artifices!G47"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--quick-activation--436b6b78bc8e",
+    "name": "Quick Activation",
+    "displayName": "Quick Activation — Wind Bubble",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The activation cost is reduced by 1 AP or 1 RP, to a minimum of 0.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Wind Bubble"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G46"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--quick-filter--5655a444d4e1",
+    "name": "Quick Filter",
+    "displayName": "Quick Filter",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Can filter up to 4 liters of water in 1 minute.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Artifice Water Purifier"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G9"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--quick-focus-dial--a2f2b43275fe",
+    "name": "Quick Focus Dial",
+    "displayName": "Quick Focus Dial",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The penalty for things within 60ft is reduced from -10 to -5.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Binoculars"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G11"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--quick-removal--8f3056d36004",
+    "name": "Quick Removal",
+    "displayName": "Quick Removal",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Can be removed by spending 3 AP instead of 1 minute.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Mana Vision Goggles"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H22"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  }
+]
