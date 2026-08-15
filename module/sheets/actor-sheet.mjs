@@ -114,6 +114,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       delete tabs.proficiencies;
       delete tabs.progression;
     }
+    for (const tab of Object.values(tabs)) {
+      if (typeof tab.label === "string") tab.label = game.i18n.localize(tab.label);
+    }
     return tabs;
   }
 
