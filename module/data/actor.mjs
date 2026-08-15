@@ -38,6 +38,10 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     const schema = {};
 
+    // Zero identifies documents created before per-document version tracking.
+    // LyrianActor._preCreate stamps new documents with the current revision.
+    schema.schemaVersion = int(0, { min: 0 });
+
     schema.hp = new fields.SchemaField({
       value: int(30),
       max: int(30),

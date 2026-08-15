@@ -1,3 +1,5 @@
+import { stampDocumentSourceSchema } from "../rules/schema-versioning.mjs";
+
 const SYSTEM_ID = "lyrian-chronicles";
 
 /** Bump when content JSON changes so worlds pick up additions. */
@@ -63,7 +65,9 @@ export async function seedSystemPacks({ force = false } = {}) {
 
     let source;
     try {
-      source = await _loadContent(fileNames);
+      source = (await _loadContent(fileNames)).map((document) =>
+        stampDocumentSourceSchema(pack.documentName, document)
+      );
     } catch (err) {
       console.error(`Lyrian Chronicles | Loading ${packName} failed`, err);
       summary[packName] = { error: err.message };
@@ -76,7 +80,8 @@ export async function seedSystemPacks({ force = false } = {}) {
       fields: [
         `flags.${SYSTEM_ID}.seedKey`,
         `flags.${SYSTEM_ID}.sourceHash`,
-        `flags.${SYSTEM_ID}.contentBuild`
+        `flags.${SYSTEM_ID}.contentBuild`,
+        "system.schemaVersion"
       ]
     });
     const present = new Map(
@@ -100,7 +105,10 @@ export async function seedSystemPacks({ force = false } = {}) {
       const currentHash = foundry.utils.getProperty(current, `flags.${SYSTEM_ID}.sourceHash`);
       const incomingBuild = foundry.utils.getProperty(document, `flags.${SYSTEM_ID}.contentBuild`);
       const currentBuild = foundry.utils.getProperty(current, `flags.${SYSTEM_ID}.contentBuild`);
-      return (incomingHash && incomingHash !== currentHash) || incomingBuild !== currentBuild;
+      const incomingSchema = Number(document.system?.schemaVersion ?? 0);
+      const currentSchema = Number(current.system?.schemaVersion ?? 0);
+      return (incomingHash && incomingHash !== currentHash) ||
+        incomingBuild !== currentBuild || currentSchema < incomingSchema;
     });
 
     if (!missing.length && !changed.length) {

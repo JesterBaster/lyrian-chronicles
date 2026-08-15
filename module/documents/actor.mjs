@@ -20,6 +20,7 @@ import {
   formatSkillCapViolation,
   skillCapViolations
 } from "../rules/skill-caps.mjs";
+import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 
 /**
  * The Actor document for Lyrian Chronicles.
@@ -32,6 +33,16 @@ export class LyrianActor extends Actor {
   /** @override */
   prepareData() {
     super.prepareData();
+  }
+
+  /** @override Stamp newly created and imported Actors with a monotonic schema revision. */
+  async _preCreate(data, options, user) {
+    const allowed = await super._preCreate(data, options, user);
+    if (allowed === false) return false;
+    this.updateSource({
+      "system.schemaVersion": schemaVersionForCreation("Actor", this.system?.schemaVersion)
+    });
+    return allowed;
   }
 
   /** @override Enforce character skill and expertise caps for every update source. */

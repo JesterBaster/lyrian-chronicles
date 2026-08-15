@@ -5,11 +5,22 @@ import {
   runExclusiveActorAction
 } from "../rules/action-transactions.mjs";
 import { confirmItemRequirements } from "../rules/requirements.mjs";
+import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 
 /**
  * The Item document. Weapons and abilities know how to roll themselves.
  */
 export class LyrianItem extends Item {
+  /** @override Stamp newly created and imported Items with a monotonic schema revision. */
+  async _preCreate(data, options, user) {
+    const allowed = await super._preCreate(data, options, user);
+    if (allowed === false) return false;
+    this.updateSource({
+      "system.schemaVersion": schemaVersionForCreation("Item", this.system?.schemaVersion)
+    });
+    return allowed;
+  }
+
   /** @override */
   getRollData() {
     const data = { ...this.system };
