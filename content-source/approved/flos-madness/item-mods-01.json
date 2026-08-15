@@ -1,0 +1,1005 @@
+[
+  {
+    "stableId": "mods--item-specific--acrobat-s-harness--0f190805faa8",
+    "name": "Acrobat's Harness",
+    "displayName": "Acrobat's Harness",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "You gain +5 bonus to athletics and acrobatics while wearing this armor.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Light Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A10:D10"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--aerial-targeting-mode--a52a7fe97111",
+    "name": "Aerial Targeting Mode",
+    "displayName": "Aerial Targeting Mode",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "The effect now lasts until the end of the encounter or until deactivated by spending 2 AP. However, attacks against non-flying targets suffer a -4 penalty.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Anti-Air Weapon Sight"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H7"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--aerodynamic-design--6875e7e9eb5a",
+    "name": "Aerodynamic Design",
+    "displayName": "Aerodynamic Design",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Boomerang/Return effects cannot be used with this. For 1 RP you can throw the dagger, making a light ranged attack. On damage, the target is slowed until the end of its next turn.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Hori (One-Handed) (Treated as a Small Weapon)",
+      "Small Weapons (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F16",
+      "Weapons!F36"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--agile-weave--7069aad6db29",
+    "name": "Agile Weave",
+    "displayName": "Agile Weave",
+    "modSlot": "A, Frame",
+    "craftingPoints": 35,
+    "effect": "No armor penalty, but no guard/block bonus. You gain +1 evasion (but no additional dodge).",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Light Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A9:D9"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--airflow-optimization--17e95e6e8f59",
+    "name": "Airflow Optimization",
+    "displayName": "Airflow Optimization",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Increases the range of which it sucks in by 10ft.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Portable Vacuum"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H29"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--anchor-backpack--24e0dba3cc39",
+    "name": "Anchor Backpack",
+    "displayName": "Anchor Backpack",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "You may carry the device around instead of placing it on the ground. However, your movement speed is reduced by 10ft if doing so while the device is active.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Space Time Anchor"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H41"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--angel-type--e043ce5cee1e",
+    "name": "Angel Type",
+    "displayName": "Angel Type",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "When an attack enhanced by this artifice deals damage, knock the target back 5ft.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Buster Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H13"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--anti-flash-shutter--c49072ed37a0",
+    "name": "Anti-Flash Shutter",
+    "displayName": "Anti-Flash Shutter",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "While this artifice is worn and active, you are protected from being dazed, blinded etc by sudden flashes of light.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Night Vision Goggles"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G25"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--anti-goliath--9d3b4a538e2d",
+    "name": "Anti-Goliath",
+    "displayName": "Anti-Goliath",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "You gain a +1 Size Power bonus on attacks against creatures that are Large or bigger.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Shepard's Sling (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--anti-illusion-lens--cc84c02cfd12",
+    "name": "Anti-Illusion Lens",
+    "displayName": "Anti-Illusion Lens",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "You gain a +10 bonus to determine if something is an Illusion or not.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Binoculars"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H11"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--anti-teleport--90f16adeb3e4",
+    "name": "Anti-Teleport",
+    "displayName": "Anti-Teleport",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "The wearer cannot teleport, even if the teleport would cost no mana..",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Counter-Magic Shackles"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G15"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--armor-piercing-rounds--560193c1e052",
+    "name": "Armor Piercing Rounds",
+    "displayName": "Armor Piercing Rounds",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "The first attack you make each round with this weapon treats the enemy guard as if it were 4 lower.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Sniper Rifle (Two-Handed)",
+      "Adjustable Lens Refractor Gun",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!F39",
+      "Artifices!G3",
+      "Artifices!G32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--artificer-s-gloves--0a449e406030",
+    "name": "Artificer's Gloves",
+    "displayName": "Artificer's Gloves",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "You may hold and use artifices like normal while wearing the gauntlets.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Power Gauntlets"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F28"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--axebreaker--95c1d6bfea38",
+    "name": "Axebreaker",
+    "displayName": "Axebreaker — Light Sword (One-Handed)",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "You gain a +2 Axebreaker Power bonus against enemies wielding axes.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Light Sword (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G20"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--axebreaker--458ae45b1779",
+    "name": "Axebreaker",
+    "displayName": "Axebreaker — Longsword (Versatile)",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "You gain a +2 Axebreaker Power bonus against targets wielding axes.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Longsword (Versatile)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G21"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--backpack-vacuum--c9c8072cc237",
+    "name": "Backpack Vacuum",
+    "displayName": "Backpack Vacuum",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "You may carry this artifice on your back and you can activate it without having to draw it. In addition, it moves with you instead of sucking up things only near its activation location.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Portable Vacuum"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H29"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--bag-clip--7bfa8eb9ab9c",
+    "name": "Bag Clip",
+    "displayName": "Bag Clip — Calibretto Device",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "The device can be used by attaching it to a belt or bag and no longer requires to be held in your hands.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Calibretto Device"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--bag-clip--cbd4456e95e6",
+    "name": "Bag Clip",
+    "displayName": "Bag Clip — Northi Lantern",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Can be attached to your belt or bag to be used without being held in your hand.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Northi Lantern"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H26"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--barbed-wire--9e29c9b57a47",
+    "name": "Barbed Wire",
+    "displayName": "Barbed Wire",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Upon landing a critical hit with this weapon, apply Bleeding to the target.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Whip (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F47"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--bastard-sword--239836afed28",
+    "name": "Bastard Sword",
+    "displayName": "Bastard Sword",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "You gain a +1 Armorbreaker Power bonus against targets in Heavy armor or higher.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Longsword (Versatile)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F21"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--battle-casting--46903c6586f5",
+    "name": "Battle Casting",
+    "displayName": "Battle Casting",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "The first spell you cast each turn does not provoke attacks of opportunity.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Clothing"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A6:D6"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--bayonet--8ff38e3cd9bf",
+    "name": "Bayonet",
+    "displayName": "Bayonet",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "You may make melee attacks with this weapon that deal Physical(Piercing) damage without provoking attacks of opportunity.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Musket (Two-Handed)",
+      "Adjustable Lens Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!F22",
+      "Artifices!G3"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--beacon-armor--5cb9f98bea00",
+    "name": "Beacon Armor",
+    "displayName": "Beacon Armor",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "The guard of this armor is reduced by 1, but unarmored allies (except armor plates) within 40ft of you gain +1 guard.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Heavy Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A27:D27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--bearded-extension--827e328bc215",
+    "name": "Bearded Extension",
+    "displayName": "Bearded Extension",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Wild Swing now ignores guard, but the damage is reduced to 2 (light attack) or 4 (heavy attack).",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Axe (One-Handed)",
+      "Axe (Two-Handed)",
+      "Pickaxe (One-Handed)",
+      "Pickaxe (Two-Handed)",
+      "Sickle (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F2",
+      "Weapons!F3",
+      "Weapons!F23",
+      "Weapons!F24",
+      "Weapons!F35"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--beavertail-grip--cf53d13c3f12",
+    "name": "Beavertail Grip",
+    "displayName": "Beavertail Grip",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "When making a light attack at a target you can move 10ft in a straight line towards them.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Pistol (One-Handed)",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!G25",
+      "Artifices!H32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--belt-attachment--f4ad5ccb7b47",
+    "name": "Belt Attachment",
+    "displayName": "Belt Attachment",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "The Grappling Hook Artifice is modified to be mounted onto the belt, allowing for operation while wielding items in both hands via a switch mounted on the arm.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Grappling Hook Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--beneri-special--1ebe2766cedd",
+    "name": "Beneri Special",
+    "displayName": "Beneri Special",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "Grants a +1/+1 Bonus, doesn’t stack with material bonuses. Weapon shatters, becoming irreparably broken on a 1 roll for an accuracy roll.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Katana (One-Handed)",
+      "Katana (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F17",
+      "Weapons!F18"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--berserker-armor--eecf5b9bd9c6",
+    "name": "Berserker Armor",
+    "displayName": "Berserker Armor",
+    "modSlot": "Frame",
+    "craftingPoints": 10,
+    "effect": "This armor reduces your RP by 2, but does not reduce your evasion and dodge.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Medium Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A18:D18"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--berserker-armor-ii--62907dd25d97",
+    "name": "Berserker Armor II",
+    "displayName": "Berserker Armor II",
+    "modSlot": "Frame",
+    "craftingPoints": 10,
+    "effect": "This armor reduces your RP by 3, but does not reduce your evasion and dodge.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Heavy Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A24:D24"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--big-boom--226d1333718f",
+    "name": "Big Boom",
+    "displayName": "Big Boom",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The light attack is made against all enemies within 10ft of the target instead of 5ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cannon"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--bigger-pies--89ce6ed1db04",
+    "name": "Bigger Pies",
+    "displayName": "Bigger Pies",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When you fire a pie through the launcher, you may deal 1 sure hit full pierce damage to all other targets within 5ft of the target.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cannon"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--binding-flow--d71267137815",
+    "name": "Binding Flow",
+    "displayName": "Binding Flow",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "When dealing damage with a Heavy attack, you may choose to not do damage to instead reduce a creature’s movement speed to 0 until the start of your next turn or until you move. Does not work against bosses or creatures bigger than you.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Whip (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G47"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--bipod--65f518be64e8",
+    "name": "Bipod",
+    "displayName": "Bipod",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "All attacks with this weapon gain the Prone keyword. While prone, you are considered to have low cover against ranged attacks.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Sniper Rifle (Two-Handed)",
+      "Adjustable Lens Refractor Gun",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!G39",
+      "Artifices!H3",
+      "Artifices!H32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--black-gauntlets--ef145d38e6f0",
+    "name": "Black Gauntlets",
+    "displayName": "Black Gauntlets",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When dealing damage with this weapon, you may take true damage equal to the damage dice (ie 6 on a d6) to maximize the damage of one die.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Gauntlets (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--blast-diverter--c0d60ef647bd",
+    "name": "Blast Diverter",
+    "displayName": "Blast Diverter",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Once per turn, attacks from this weapon cause the target to only be able to make heavy attacks of opportunity against you until the end of your turn.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Pistol (One-Handed)",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!F25",
+      "Artifices!G32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--blast-knuckle-arm-or-leg-only--67950f0a7cbc",
+    "name": "Blast Knuckle (Arm or Leg only)",
+    "displayName": "Blast Knuckle (Arm or Leg only)",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "After making a Heavy unarmed attack with the limb, you may spend 0 RP to make a Light attack against all enemies in a 15ft wide, 15ft long cone behind the target. After doing this, you must put in a new shell into the limb to use it again (your movement speed is halved if your leg is unusable).",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Artifice Limb"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--blunthead-arrows--2b096baa10f5",
+    "name": "Blunthead Arrows",
+    "displayName": "Blunthead Arrows",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "First basic heavy attack per turn dazes targets on damage.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Bow (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G7"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--bodkin-arrows--b6708f377550",
+    "name": "Bodkin Arrows",
+    "displayName": "Bodkin Arrows",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Grants Hollow Blow: When attacking and hitting a target, you deal additional damage if they Block. This damage is 2 on a Light/Precise attack or 4 on a Heavy attack.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Bow (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G7"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--boomerang-wing--03ed6701a5ae",
+    "name": "Boomerang Wing",
+    "displayName": "Boomerang Wing",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "After using a throwing attack with this weapon, you can return the weapon to your hand for 0 RP.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Axe (One-Handed)",
+      "Axe (Two-Handed)",
+      "Pickaxe (One-Handed)",
+      "Pickaxe (Two-Handed)",
+      "Sickle (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G2",
+      "Weapons!G3",
+      "Weapons!G23",
+      "Weapons!G24",
+      "Weapons!G35"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--broadhead-arrows--0d952a907123",
+    "name": "Broadhead Arrows",
+    "displayName": "Broadhead Arrows",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Deals +1 damage against light armor or unarmored targets.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Bow (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G7"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--brown-gauntlets--8aee72fc2758",
+    "name": "Brown Gauntlets",
+    "displayName": "Brown Gauntlets",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "While wearing this item, you gain a +4 Shield bonus to your block. This stacks with Still Stone Style's Shielding Fist, but not with other shields.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Gauntlets (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--butterfly-knife--17cbe19c311a",
+    "name": "Butterfly Knife",
+    "displayName": "Butterfly Knife",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Your first light attack each turn with this weapon gains Trick Attack, but it can no longer make Heavy attacks.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Hori (One-Handed) (Treated as a Small Weapon)",
+      "Saboteur Thread Daggers (One-Handed)",
+      "Small Weapons (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G16",
+      "Weapons!G29",
+      "Weapons!G36"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--camo--c7dec2361aeb",
+    "name": "Camo",
+    "displayName": "Camo",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Pick a color theme. You gain +5 to stealth when hiding in environments of that theme, but -5 when hiding elsewhere. A GM may approve new environments, defaults are: green camo (jungle, woodland, prone in grass), yellow camo (desert, savannas), white camo (snow, arctic), dark camo (night, caves, rocky terrain), blue camo (rivers or oceanic)",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Light Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A11:D11"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--capture-model--29cd73bcfc5c",
+    "name": "Capture Model",
+    "displayName": "Capture Model",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When dealing damage to a Grunt with a Heavy attack, they are stunned until the start of your next turn even if they are still above 0 HP.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Shock Stick",
+      "Stun Gun"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H35",
+      "Artifices!H43"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--catch-pommel--a387dbf4f15f",
+    "name": "Catch Pommel",
+    "displayName": "Catch Pommel",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "When using the Longsword with one hand, once per turn you can extend the range of your attack by 5ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Longsword (Versatile)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F21"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--ceiling-drop--ef469e22a05f",
+    "name": "Ceiling Drop",
+    "displayName": "Ceiling Drop",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "You may cancel the effect of this artifice for 0 RP. When you do, if you were attached to a ceiling or vertical surface, treat the fall as if it was 100ft lower than it is.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Spider Shoes"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G42"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--chain-flail--3bfff2a05c07",
+    "name": "Chain Flail",
+    "displayName": "Chain Flail",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "Cannot be defended against by 0 RP actions. Attacks made with this weapon do not count as consuming 0 RP actions.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Bludgeoning Weapon (One-Handed)",
+      "Bludgeoning Weapon (Two-Handed)",
+      "Frying Pan",
+      "Smith's Hammer (One-Handed)",
+      "Smith's Hammer (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F5",
+      "Weapons!F6",
+      "Weapons!F13",
+      "Weapons!F37",
+      "Weapons!F38"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--chain-links--8324f44861cb",
+    "name": "Chain Links",
+    "displayName": "Chain Links",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Increases the block gained from this armor by 4.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Medium Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A20:D20"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--channeling-blasts--53c641f3ce27",
+    "name": "Channeling Blasts",
+    "displayName": "Channeling Blasts",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "Your ranged mode also counts as a channeling weapon for the purpose of casting spells through it, as if the weapon it is attached to was a channeling weapon.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Blaster Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H12"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--cloud-robes--8ed26514b8dc",
+    "name": "Cloud Robes",
+    "displayName": "Cloud Robes",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Your movement speed is increased by 5ft.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Clothing"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A5:D5"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  }
+]
