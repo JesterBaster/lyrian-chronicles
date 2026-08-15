@@ -208,6 +208,11 @@
 .lyrian .lyr-subheading { font-family: var(--lyr-font-display); font-variant: small-caps; font-size: 0.88rem; letter-spacing: 0.1em; color: var(--lyr-ink-dim); margin: 0.7rem 0 0.3rem; }
 .lyrian .lyr-note { font-size: 0.72rem; color: var(--lyr-ink-dim); margin: 0.2rem 0; }
 .lyrian .lyr-alert { font-size: 0.75rem; color: var(--lyr-hp); border-left: 2px solid var(--lyr-hp); padding-left: 0.45rem; }
+.lyrian .lyr-race-requirement {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.6rem;
+  margin: 0.5rem 0 0.7rem; padding: 0.5rem 0.65rem;
+  background: color-mix(in srgb, var(--lyr-hp) 7%, transparent);
+}
 .lyrian .lyr-warn { color: var(--lyr-hp); font-style: normal; }
 .lyrian .lyr-ok { font-size: 0.72rem; color: var(--lyr-guard); }
 .lyrian .lyr-section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; }

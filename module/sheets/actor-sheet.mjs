@@ -7,6 +7,7 @@ import {
 } from "../rules/proficiencies.mjs";
 import {
   normalizeClassLevel,
+  raceAncestryRequirement,
   raceSkillGrant,
   selectedRaceSkillBonuses
 } from "../rules/progression.mjs";
@@ -42,6 +43,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       browsePack: LyrianActorSheet.#onBrowsePack,
       adjustClassLevel: LyrianActorSheet.#onAdjustClassLevel,
       allocateRaceSkills: LyrianActorSheet.#onAllocateRaceSkills,
+      chooseRequiredAncestry: LyrianActorSheet.#onChooseRequiredAncestry,
       addProficiency: LyrianActorSheet.#onAddProficiency,
       removeProficiency: LyrianActorSheet.#onRemoveProficiency,
       createItem: LyrianActorSheet.#onCreateItem,
@@ -326,6 +328,11 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       (choice) => choice.key === primaryRace.system.selectedVariant
     );
     context.raceSummary = primaryRace ? { primary: primaryRace, ancestry, variant } : null;
+    const ancestryRule = raceAncestryRequirement(primaryRace?.name);
+    context.ancestryRequirement = ancestryRule ? {
+      ...ancestryRule,
+      missing: !ancestry || ancestry.system.primaryRace !== primaryRace.name
+    } : null;
     context.raceRows = buckets.races.map((item) => {
       const selection = selectedRaceSkillBonuses(item.system);
       return { item, ...selection };
@@ -409,15 +416,39 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         ui.notifications.warn(`${owned.name} requires the ${owned.system.primaryRace} primary race.`);
         return null;
       }
+      const older = this.document.items.filter(
+        (entry) => entry.type === "race" && entry.id !== owned.id &&
+          entry.system.raceKind === "ancestry"
+      );
+      if (older.length) {
+        await this.document.deleteEmbeddedDocuments("Item", older.map((entry) => entry.id));
+      }
+      await this._promptRaceSkillAllocation(owned);
+      await this.document.syncProgressionFeatures();
+      return result;
     }
 
-    const older = this.document.items.filter(
-      (entry) => entry.type === "race" && entry.id !== owned.id &&
-        entry.system.raceKind === owned.system.raceKind
-    );
-    if (older.length) await this.document.deleteEmbeddedDocuments("Item", older.map((entry) => entry.id));
-
     if (owned.system.raceKind === "primary") {
+      const ancestryRule = raceAncestryRequirement(owned.name);
+      const ancestrySource = ancestryRule
+        ? await this._selectRequiredAncestry(owned, ancestryRule)
+        : null;
+      if (ancestryRule && !ancestrySource) {
+        await owned.delete();
+        ui.notifications.warn(game.i18n.format("LYRIAN.Race.AncestryRequired", {
+          race: ancestryRule.name,
+          count: ancestryRule.count
+        }));
+        return null;
+      }
+
+      const older = this.document.items.filter(
+        (entry) => entry.type === "race" && entry.id !== owned.id
+      );
+      if (older.length) {
+        await this.document.deleteEmbeddedDocuments("Item", older.map((entry) => entry.id));
+      }
+
       const automation = owned.system.attributeBonuses ?? {};
       const variants = owned.system.variants ?? [];
       if (automation.chooseMain || automation.chooseSub || variants.length) {
@@ -450,12 +481,66 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           });
         }
       }
-    }
 
-    await this._promptRaceSkillAllocation(owned);
+      await this._promptRaceSkillAllocation(owned);
+      if (ancestrySource) {
+        const ancestry = await this._createSelectedAncestry(ancestrySource);
+        await this._promptRaceSkillAllocation(ancestry);
+      }
+    }
 
     await this.document.syncProgressionFeatures();
     return result;
+  }
+
+  /** Prompt from the official pack for a valid ancestry belonging to a primary race. */
+  async _selectRequiredAncestry(primary, rule = raceAncestryRequirement(primary?.name)) {
+    if (!rule) return null;
+    const pack = game.packs.get("lyrian-chronicles.races");
+    if (!pack) {
+      ui.notifications.error(game.i18n.localize("LYRIAN.Race.PackMissing"));
+      return null;
+    }
+
+    const index = await pack.getIndex({
+      fields: ["system.raceKind", "system.primaryRace"]
+    });
+    const choices = Array.from(index)
+      .filter((entry) => entry.system?.raceKind === "ancestry" &&
+        entry.system?.primaryRace === primary.name)
+      .sort((a, b) => a.name.localeCompare(b.name));
+    if (!choices.length) {
+      ui.notifications.error(game.i18n.format("LYRIAN.Race.NoAncestries", { race: primary.name }));
+      return null;
+    }
+
+    const escape = foundry.utils.escapeHTML;
+    const options = choices.map((entry) =>
+      `<option value="${entry._id}">${escape(entry.name)}</option>`
+    ).join("");
+    const selectedId = await foundry.applications.api.DialogV2.prompt({
+      window: { title: game.i18n.format("LYRIAN.Race.ChooseAncestryTitle", { race: primary.name }) },
+      content: `<div class="lyrian"><p>${game.i18n.format("LYRIAN.Race.ChooseAncestryHint", {
+        race: primary.name,
+        count: choices.length
+      })}</p><label>${game.i18n.localize("LYRIAN.Race.Subrace")}<select name="ancestry">${options}</select></label></div>`,
+      ok: { callback: (dialogEvent, button) => button.form.elements.ancestry?.value ?? "" }
+    }).catch(() => null);
+    return selectedId ? pack.getDocument(selectedId) : null;
+  }
+
+  /** Replace the Actor's ancestry with an owned copy of the selected official entry. */
+  async _createSelectedAncestry(source) {
+    const older = this.document.items.filter(
+      (entry) => entry.type === "race" && entry.system.raceKind === "ancestry"
+    );
+    if (older.length) {
+      await this.document.deleteEmbeddedDocuments("Item", older.map((entry) => entry.id));
+    }
+    const data = source.toObject();
+    delete data._id;
+    const [ancestry] = await this.document.createEmbeddedDocuments("Item", [data]);
+    return ancestry;
   }
 
   /** Allocate an owned race's restricted skill-point pool. */
@@ -578,6 +663,19 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
     if (!item || item.type !== "race") return;
     await this._promptRaceSkillAllocation(item);
+  }
+
+  static async #onChooseRequiredAncestry() {
+    const primary = this.document.items.find(
+      (item) => item.type === "race" && item.system.raceKind === "primary"
+    );
+    const rule = raceAncestryRequirement(primary?.name);
+    if (!primary || !rule) return;
+    const source = await this._selectRequiredAncestry(primary, rule);
+    if (!source) return;
+    const ancestry = await this._createSelectedAncestry(source);
+    await this._promptRaceSkillAllocation(ancestry);
+    await this.document.syncProgressionFeatures();
   }
 
   static async #onAddProficiency(event, target) {

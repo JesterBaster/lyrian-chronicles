@@ -1,5 +1,17 @@
 export const CLASS_FEATURE_LEVELS = Object.freeze([1, 2, 4, 6, 8]);
 
+export const REQUIRED_ANCESTRIES = Object.freeze({
+  chimera: { name: "Chimera", count: 19 },
+  fae: { name: "Fae", count: 13 },
+  youkai: { name: "Youkai", count: 11 }
+});
+
+/** Return the required ancestry rule for a primary race, if it has one. */
+export function raceAncestryRequirement(primaryRace = "") {
+  const key = String(primaryRace).trim().toLocaleLowerCase();
+  return REQUIRED_ANCESTRIES[key] ?? null;
+}
+
 const STANDARD_SKILLS = Object.freeze({
   athletics: "Athletics",
   riding: "Riding",
