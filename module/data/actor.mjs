@@ -327,6 +327,11 @@ export class LyrianCharacter extends LyrianActorBase {
       languages: new fields.SetField(new fields.StringField(), { required: false }),
       unarmed: new fields.BooleanField({ initial: false })
     });
+    schema.proficiencyChoiceSelections = new fields.ObjectField({
+      required: true,
+      nullable: false,
+      initial: {}
+    });
 
     schema.details = new fields.SchemaField({
       race: new fields.StringField({ blank: true, initial: "" }),

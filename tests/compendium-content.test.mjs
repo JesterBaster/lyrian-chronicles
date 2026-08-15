@@ -58,7 +58,7 @@ test("manifest declares reviewed rules plus focused equipment and crafting packs
     "weapons", "armor-shields", "consumables", "gear-kits", "artifices", "materials", "mods", "crafting-guide",
     "monsters", "monster-abilities"
   ]);
-  assert.equal(MANIFEST.version, "0.6.2");
+  assert.equal(MANIFEST.version, "0.6.3");
   assert.equal(MANIFEST.compatibility.minimum, "14");
   assert.equal(MANIFEST.compatibility.verified, "14");
   const foldered = MANIFEST.packFolders.flatMap((folder) => folder.packs);

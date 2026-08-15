@@ -13,7 +13,26 @@
       {{#each proficiency.sources as |source|}}
         <div><strong>{{source.name}}</strong>
           {{#if source.entries}}<span>{{#each source.entries}}{{this}}{{#unless @last}} · {{/unless}}{{/each}}</span>{{/if}}
-          {{#each source.choices}}<em>{{this}}</em>{{/each}}
+          {{#each source.choices as |choice|}}
+            <section class="lyr-prof-choice">
+              <em>{{choice.label}}</em>
+              {{#each choice.slots as |slot|}}
+                <div class="lyr-prof-choice__row" data-proficiency-choice>
+                  {{#if ../allowCustom}}
+                    <input type="text" data-proficiency-choice-value value="{{slot.value}}" placeholder="Language or dialect" />
+                  {{else}}
+                    <select data-proficiency-choice-value>
+                      <option value="">— Choose —</option>
+                      {{#each slot.options as |option|}}
+                        <option value="{{option.value}}" {{#if option.selected}}selected{{/if}}>{{option.label}}</option>
+                      {{/each}}
+                    </select>
+                  {{/if}}
+                  <button type="button" data-action="saveProficiencyChoice" data-choice-id="{{../id}}" data-choice-index="{{slot.index}}">Save</button>
+                </div>
+              {{/each}}
+            </section>
+          {{/each}}
         </div>
       {{else}}<p class="lyr-empty">No automatic proficiency sources yet.</p>{{/each}}
     </div>
