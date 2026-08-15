@@ -36,7 +36,7 @@ const PACKS = {
 };
 const CRAFTING_PACKS = {
   materials: 149,
-  mods: 93,
+  mods: 391,
   "crafting-guide": 11,
 };
 
@@ -58,7 +58,7 @@ test("manifest declares reviewed rules plus focused equipment and crafting packs
     "weapons", "armor-shields", "consumables", "gear-kits", "artifices", "materials", "mods", "crafting-guide",
     "monsters", "monster-abilities"
   ]);
-  assert.equal(MANIFEST.version, "0.6.1");
+  assert.equal(MANIFEST.version, "0.6.2");
   assert.equal(MANIFEST.compatibility.minimum, "14");
   assert.equal(MANIFEST.compatibility.verified, "14");
   const foldered = MANIFEST.packFolders.flatMap((folder) => folder.packs);
@@ -117,6 +117,16 @@ test("focused equipment and Flo's Madness packs have reviewed counts", async () 
   assert.ok(materials.some((item) => item.system.cost === "1,000 Clim"));
   assert.ok(mods.some((item) => item.system.modSlot === "Frame"));
   assert.ok(mods.some((item) => item.system.polarityUnits === 4000));
+  const singleEdge = mods.find((item) => item.system.stableId.startsWith("mods--item-specific--single-edge--"));
+  assert.ok(singleEdge, "Single Edge item-specific mod is missing");
+  assert.deepEqual(singleEdge.system.compatibleTargets, ["Light Sword (One-Handed)"]);
+  const reinforcedLanget = mods.find((item) => item.system.stableId.startsWith("mods--item-specific--reinforced-langet--"));
+  assert.ok(reinforcedLanget, "Reinforced Langet item-specific mod is missing");
+  assert.ok(reinforcedLanget.system.compatibleTargets.includes("Pickaxe (Two-Handed)"));
+  assert.equal(mods.filter((item) => item.system.craftingType === "Item-specific").length, 298);
+  for (const missingCost of ["Holographic Optic", "Wide Targeting", "Wing Outlining"]) {
+    assert.ok(!mods.some((item) => item.name === missingCost), `${missingCost} should remain excluded until it has a cost`);
+  }
   for (const item of [...materials, ...mods]) {
     assert.match(item.system.sourceUrl, /^https:\/\/docs\.google\.com\/spreadsheets\/d\/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs\/edit#gid=\d+$/);
     assert.match(item.system.sourceHash, /^[a-f0-9]{64}$/);
