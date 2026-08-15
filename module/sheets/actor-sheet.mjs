@@ -46,6 +46,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       chooseRequiredAncestry: LyrianActorSheet.#onChooseRequiredAncestry,
       addProficiency: LyrianActorSheet.#onAddProficiency,
       removeProficiency: LyrianActorSheet.#onRemoveProficiency,
+      saveProficiencyChoice: LyrianActorSheet.#onSaveProficiencyChoice,
       createItem: LyrianActorSheet.#onCreateItem,
       editItem: LyrianActorSheet.#onEditItem,
       deleteItem: LyrianActorSheet.#onDeleteItem,
@@ -707,6 +708,38 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const manual = Array.from(this.document.system.proficiencies[kind] ?? [])
       .filter((value) => proficiencyKey(value) !== key);
     await this.document.update({ [`system.proficiencies.${kind}`]: manual });
+  }
+
+  static async #onSaveProficiencyChoice(event, target) {
+    const row = target.closest("[data-proficiency-choice]");
+    const id = target.dataset.choiceId;
+    const index = Number(target.dataset.choiceIndex);
+    const input = row?.querySelector("[data-proficiency-choice-value]");
+    if (!id || !Number.isInteger(index) || !input) return;
+
+    const proficiency = collectActorProficiencies(this.document);
+    const rule = proficiency.sources.flatMap((source) => source.choices).find((entry) => entry.id === id);
+    if (!rule || index < 0 || index >= rule.count) return;
+
+    const raw = input.value.trim();
+    const canonical = raw ? canonicalProficiency(raw, rule.kind) : null;
+    if (canonical && canonical.kind !== rule.kind) {
+      return ui.notifications.warn(`${canonical.name} belongs under ${canonical.kind}.`);
+    }
+    if (canonical && !rule.allowCustom && !rule.options.some((option) => proficiencyKey(option) === canonical.key)) {
+      return ui.notifications.warn(`${canonical.name} is not allowed for this proficiency choice.`);
+    }
+
+    const stored = structuredClone(this.document.system.proficiencyChoiceSelections ?? {});
+    const values = Array.isArray(stored[id]) ? [...stored[id]] : [];
+    const previous = values[index] ?? "";
+    if (canonical && proficiencyKey(previous) !== canonical.key) {
+      const duplicate = proficiency.groups[rule.kind].some((entry) => entry.key === canonical.key);
+      if (duplicate) return ui.notifications.warn(`${canonical.name} is already granted or selected.`);
+    }
+    values[index] = canonical?.name ?? "";
+    stored[id] = values.slice(0, rule.count);
+    await this.document.update({ "system.proficiencyChoiceSelections": stored });
   }
 
   static async #onUseItem(event, target) {
