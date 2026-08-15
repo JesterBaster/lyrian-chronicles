@@ -1,6 +1,7 @@
 import { LYRIAN } from "../config.mjs";
 import { renderAttackCard } from "../rules/attack-card.mjs";
 import { runExclusiveActorAction } from "../rules/action-transactions.mjs";
+import { confirmItemRequirements } from "../rules/requirements.mjs";
 
 /**
  * The Item document. Weapons and abilities know how to roll themselves.
@@ -112,6 +113,11 @@ export class LyrianItem extends Item {
   async _rollAbility(options) {
     const actor = this.actor;
     const sys = this.system;
+
+    if (!options.ignoreRequirements || !game.user.isGM) {
+      const allowed = await confirmItemRequirements(actor, this, options);
+      if (!allowed) return null;
+    }
 
     // Once per round, unless Rapid.
     const enforceOncePerRound = game.settings.get("lyrian-chronicles", "enforceOncePerRound");

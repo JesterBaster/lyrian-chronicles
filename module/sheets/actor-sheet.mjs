@@ -13,6 +13,7 @@ import {
 } from "../rules/progression.mjs";
 import { collectWorshipBenefits, DIVINES } from "../rules/worship.mjs";
 import { convertOfficialEquipment } from "../rules/equipment-import.mjs";
+import { confirmItemRequirements } from "../rules/requirements.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -419,6 +420,19 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     if (this.document.type !== "character") return result;
     if (owned.type === "class") {
+      const duplicate = this.document.items.find((item) =>
+        item.id !== owned.id && item.type === "class" &&
+        item.system.stableId && item.system.stableId === owned.system.stableId);
+      if (duplicate) {
+        await owned.delete();
+        ui.notifications.warn(game.i18n.format("LYRIAN.Requirement.Duplicate", { name: owned.name }));
+        return null;
+      }
+      const meetsRequirements = await confirmItemRequirements(this.document, owned);
+      if (!meetsRequirements) {
+        await owned.delete();
+        return null;
+      }
       const exp = Number(owned.system.unlockCost ?? owned.system.tier * LYRIAN.progression.classCostPerTier);
       if (this.document.system.exp.available < exp || this.document.system.interlude.points < 1) {
         await owned.delete();
@@ -427,7 +441,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       }
       const confirmed = await foundry.applications.api.DialogV2.confirm({
         window: { title: `Unlock ${owned.name}?` },
-        content: `<p>Confirm that this character meets the class requirements, then spend <strong>${exp} EXP</strong> and <strong>1 Interlude Point</strong>.</p>`
+        content: `<p>Spend <strong>${exp} EXP</strong> and <strong>1 Interlude Point</strong>?</p>`
       });
       if (!confirmed) {
         await owned.delete();
@@ -438,6 +452,22 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         "system.interlude.points": this.document.system.interlude.points - 1
       });
       await this.document.syncProgressionFeatures();
+      return result;
+    }
+    if (owned.type === "breakthrough") {
+      const duplicate = this.document.items.find((item) =>
+        item.id !== owned.id && item.type === "breakthrough" &&
+        item.system.stableId && item.system.stableId === owned.system.stableId);
+      if (duplicate && !owned.system.repeatable) {
+        await owned.delete();
+        ui.notifications.warn(game.i18n.format("LYRIAN.Requirement.Duplicate", { name: owned.name }));
+        return null;
+      }
+      const meetsRequirements = await confirmItemRequirements(this.document, owned);
+      if (!meetsRequirements) {
+        await owned.delete();
+        return null;
+      }
       return result;
     }
     if (owned.type !== "race") return result;
