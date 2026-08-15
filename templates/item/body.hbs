@@ -58,6 +58,14 @@
           {{#if system.shellSize}}<div><dt>Shell size</dt><dd>{{system.shellSize}}</dd></div>{{/if}}
           {{#if system.fuelUsage}}<div><dt>Fuel</dt><dd>{{system.fuelUsage}}</dd></div>{{/if}}
           {{#if system.craftingType}}<div><dt>Crafting</dt><dd>{{system.craftingPoints}} · {{system.craftingType}}</dd></div>{{/if}}
+          {{#if system.unitCost}}<div><dt>Unit value</dt><dd>{{system.unitCost}}</dd></div>{{/if}}
+          {{#if system.targetType}}<div><dt>Mod target</dt><dd>{{system.targetType}}</dd></div>{{/if}}
+          {{#if system.modSlot}}<div><dt>Mod slot</dt><dd>{{system.modSlot}}</dd></div>{{/if}}
+          {{#if system.polarityType}}<div><dt>Polarity</dt><dd>{{system.polarityType}}{{#if system.polarityUnits}} · {{system.polarityUnits}} units{{/if}}</dd></div>{{/if}}
+          {{#if system.rarity}}<div><dt>Rarity</dt><dd>{{system.rarity}}</dd></div>{{/if}}
+          {{#if system.multiplier}}<div><dt>Material multiplier</dt><dd>{{system.multiplier}}</dd></div>{{/if}}
+          {{#if system.growingTime}}<div><dt>Growing time</dt><dd>{{system.growingTime}}</dd></div>{{/if}}
+          {{#if system.difficulty}}<div><dt>Difficulty</dt><dd>{{system.difficulty}}</dd></div>{{/if}}
         </dl>
       </section>
     {{/if}}
@@ -279,6 +287,13 @@
     <label>Cost <input type="text" name="system.cost" value="{{system.cost}}" /></label>
     <label>Burden <input type="text" name="system.burden" value="{{system.burden}}" /></label>
     <label>Activation <input type="text" name="system.activationCost" value="{{system.activationCost}}" /></label>
+    <label>Unit value <input type="text" name="system.unitCost" value="{{system.unitCost}}" /></label>
+    <label>Crafting type <input type="text" name="system.craftingType" value="{{system.craftingType}}" /></label>
+    <label>Crafting points <input type="number" name="system.craftingPoints" value="{{system.craftingPoints}}" /></label>
+    <label>Mod target <input type="text" name="system.targetType" value="{{system.targetType}}" /></label>
+    <label>Mod slot <input type="text" name="system.modSlot" value="{{system.modSlot}}" /></label>
+    <label>Polarity type <input type="text" name="system.polarityType" value="{{system.polarityType}}" /></label>
+    <label>Polarity units <input type="number" name="system.polarityUnits" value="{{system.polarityUnits}}" /></label>
     <label>Quantity <input type="number" name="system.quantity" value="{{system.quantity}}" /></label>
   </div>
 {{/if}}

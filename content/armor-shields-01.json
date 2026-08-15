@@ -1,0 +1,344 @@
+[
+  {
+    "_id": "246f04de613b3f25",
+    "name": "Armor (Clothing)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/663a1da1-9ff3-47eb-a88a-011e0e1420ad-Clothing.lg.webp",
+    "system": {
+      "description": "<p>A high quality set of clothing. Does not provide any bonuses by itself, but if crafted by an armorsmith, can accept Flamellon mods.</p><p>Cannot be worn at the same time as regular armor.</p><h4>Mods:</h4><ul><li><i>A mods</i><ul><li><strong>Mage Robes (20 points):</strong> You gain +1 maximum mana, but lose 1 guard and 2 block.</li></ul></li><li><i>B mods</i><ul><li><strong>Cloud Robes (50 points):</strong> Your movement speed is increased by 5ft.</li><li><strong>Battle Casting (80 points): </strong>The first spell you cast each turn does not provoke attacks of opportunity.</li></ul></li><li><i>Frame mods</i><ul><li><strong>Reinforced Clothing (0 points):</strong> This clothing can benefit from material bonuses, but its burden is increased by 1.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "29656ee26b96e04519adf9c21c63db1f8d6f8d38d8cf2162fdd0229a67cead00",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--armor-clothing",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Armor",
+      "cost": "500 Clim",
+      "burden": "0",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Armorsmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:armor-shields:item--armor-clothing",
+        "stableId": "item--armor-clothing",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "29656ee26b96e04519adf9c21c63db1f8d6f8d38d8cf2162fdd0229a67cead00",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "455ff109eef6e7c1",
+    "name": "Armor (Heavy)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/f80c3fc0-7a48-43ac-a969-8a288318c607-Heavy armor.lg.webp",
+    "system": {
+      "description": "<p>Increases your Guard by 3 and your Block by 12, but reduces your Initiative by 3 and your Evasion and Dodge by 6.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Beacon Armor (35 points):</strong> Unarmored allies (except armor plates) within 40ft of you gain +1 guard.</li></ul></li><li><i>B mods:</i><ul><li><strong>Deflecting Armor (25 points): </strong>An accuracy roll against you that rolls a 1 always misses.</li><li><strong>Weighted Greaves (50 points):</strong> You become immovable while on the ground.</li><li><strong>Titan Armor (50 points): </strong>You are treated as having a size category 1 step higher (maximum Large).</li></ul></li><li><i>Frame mods:</i><ul><li><strong>Berserker Armor II (10 points): </strong>This armor reduces your RP by 3, but does not reduce your evasion and dodge.</li><li><strong>Fortress (20 points): </strong>Reduces the Initiative penalty by 1 and the Evasion/Dodge penalty by 2, but it also reduces the movement speed by 5ft.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "d15525a2b2e978aed6f1f242389ffd9b1ec855e40682bb99c8b7942e93cca4ec",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--armor-heavy",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Armor",
+      "cost": "2000 Clim",
+      "burden": "3",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Armorsmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:armor-shields:item--armor-heavy",
+        "stableId": "item--armor-heavy",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "d15525a2b2e978aed6f1f242389ffd9b1ec855e40682bb99c8b7942e93cca4ec",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "8a02ec2e519723fb",
+    "name": "Armor (Light)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/2af20ff6-15ce-4508-8e05-364c19bab2a1-Light Armor.lg.webp",
+    "system": {
+      "description": "<p>Increases your Guard by 1 and your Block by 4, but reduces your Initiative by 1 and your Evasion and Dodge by 2.</p><h4>Mods:</h4><ul><li><i>A mods</i><ul><li><strong>Agile Weave (35 points):</strong> No armor penalty, but no guard/block bonus. You gain +1 evasion (but no additional dodge). This also takes up your Frame mod slot.</li><li><strong>Acrobat's Harness (10 points):</strong> You gain +10 bonus to athletics while wearing this armor.</li><li><strong>Camo (10 points):</strong> Pick a color theme. You gain +5 to stealth when hiding in environments of that theme, but -5 when hiding elsewhere. A GM may approve new environments, defaults are: green camo (jungle, woodland, prone in grass), yellow camo (desert, savannas), white camo (snow, arctic), dark camo (night, caves, rocky terrain), blue camo (rivers or oceanic)</li><li><strong>Porcupine Hide (10 points):</strong> Enemies grappling you take 1d6 full pierce damage. When escaping a grapple, you also deal 1d6 full pierce damage to the creature grappling you.</li></ul></li><li><i>B mods</i><ul><li><strong>Sleek (25 points):</strong> If you spend RP dodging an attack of opportunity, you may dodge any other attacks of opportunity made in reaction to the same action at the first for free.</li><li><strong>Padded (25 points):</strong> Increase guard vs light attacks by 1, doesn't affect heavy damage.</li><li><strong>Mistweave (50 points): </strong>You no longer provoke attacks of opportunity, but all attacks against you gain Half Pierce.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "431b84916fcec297857d319996c9dd9b777abce55fdba777d2525deca3eb4343",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--armor-light",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Armor",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Armorsmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:armor-shields:item--armor-light",
+        "stableId": "item--armor-light",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "431b84916fcec297857d319996c9dd9b777abce55fdba777d2525deca3eb4343",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "47fac403ea31e238",
+    "name": "Armor (Medium)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/5b7129e1-5972-488b-8385-3c199b056759-Medium armor.lg.webp",
+    "system": {
+      "description": "<p>Increases your Guard by 2 and your Block by 8, but reduces your Initiative by 2 and your Evasion and Dodge by 4.</p><h4>Mods:</h4><ul><li><i>A mods:</i><ul><li><strong>Weak Point Protection (20 Points):</strong> Pinpoint attacks against you reduce 1 less guard.</li></ul></li><li><i>B mods:</i><ul><li><strong>Chain Links (25 points):</strong> Increases the block gained from this armor by 4.</li><li><strong>Flexible Armor (50 points):</strong> When you take the Dodge action, your next Block gains a +8 bonus. When you take the Block action, your next Dodge action gains a +4 bonus. Lasts until the start of your next turn. Can activate multiple times per turn, but does not stack.</li></ul></li><li><i>Frame mods:</i><ul><li><strong>Berserker Armor (10 points): </strong>This armor reduces your RP by 2, but does not reduce your evasion and dodge.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "00582c1c0b8a68843c7fb02ad52fbb85543ae680e80e02d0f889a688a364634f",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--armor-medium",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Armor",
+      "cost": "1000 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Armorsmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:armor-shields:item--armor-medium",
+        "stableId": "item--armor-medium",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "00582c1c0b8a68843c7fb02ad52fbb85543ae680e80e02d0f889a688a364634f",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "4fc35964861b7a7c",
+    "name": "Armor Plates",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/5cf6b823-81dc-4ee3-8a59-2425adec77e6-Armor Plates.lg.webp",
+    "system": {
+      "description": "<p>Can be attached to an armor to increase its guard, but make it bulkier.</p><p>Gives the armor they are attached to +1 Guard (and +2 block), but increases the Burden of it by 3.</p><p>Attaching it or removing it from an armor takes 10 minutes.</p><p>Can be used together with other armor modifications. Can be put on regular clothing, but always requires an armor proficiency to have an effect. While you can wear multiple armor plates, the effect does not stack.</p><p>Despite being craftable by an armorsmith, the item cannot be modified during crafting.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "ac8d46b5ff99657083b6affb453dafb29c452a31048ea889dc1bd276b093109a",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--armor-plates",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Armor",
+      "cost": "500 Clim",
+      "burden": "3",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Armorsmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:armor-shields:item--armor-plates",
+        "stableId": "item--armor-plates",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "ac8d46b5ff99657083b6affb453dafb29c452a31048ea889dc1bd276b093109a",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "9827a8604f1597a6",
+    "name": "Armorsmithing Materials",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/c2a9c7ea-02b7-48f8-b9b5-2c2e99f860b2-Armorsmithing materials.lg.webp",
+    "system": {
+      "description": "<h2>Armorsmithing Base Metal Materials</h2><p>The base material for crafting Medium and Heavy armor with armorsmithing is Iron. Iron units must be converted into an ingot before they can be used.</p><ul><li>Iron:<ul><li>Clim Cost per ingot: 300 Clim</li><li>Unit cost per ingot: 500 Iron units</li><li>Effect: None</li><li>When using Iron to craft an item, you must spend 1 ingot for shield or armor plates, 2 ingots for a medium armor or greatshield or 4 for a heavy armor.</li></ul></li></ul><p>Outside of iron, there are a variety of special materials that an armorsmith can use while crafting. These are more expensive, but grant stat bonuses.</p><ul><li>Tamahagane<ul><li>Clim Cost per ingot: 1050 Clim</li><li>Unit cost per ingot: 2000 Tamahagane units.</li><li>Effect: +1 stat bonus</li><li>When using Tamahagane to craft an item, you must spend 1 of Tamahagane. If crafting a medium armor or great shield, you must add 1 ingot of Iron. If crafting a heavy armor, you must add 3 ingots of Iron.</li></ul></li><li>Mithril<ul><li>Clim Cost per ingot: 4050 Clim</li><li>Unit cost per ingot: 8000 Mithril units.</li><li>Effect: +1/+1 stat bonus</li><li>When using Mithril to craft an item, you must spend 1 ingot of Mithril. If crafting a medium armor or great shield, you must add 1 ingot of Iron. If crafting a heavy armor, you must add 3 ingots of Iron.</li></ul></li><li>Orichalcum<ul><li>Clim Cost per ingot: 8050 Clim</li><li>Unit cost per ingot: 16000 Orihalcum units.</li><li>Effect: +2/+1 stat bonus</li><li>When using Orihalcum to craft an item, you must spend 1 ingot of Orihalcum. If crafting a medium armor or great shield, you must add 1 ingot of Iron. If crafting a heavy armor, you must add 3 ingots of Iron.</li></ul></li><li>Escudo<ul><li>Clim Cost per ingot: 11550 Clim</li><li>Unit cost per ingot: 23000 Escudo units.</li><li>Effect: +2/+2 stat bonus</li><li>When using Escudo to craft an item, you must spend 1 ingot of Escudo. If crafting a medium armor or great shield, you must add 1 ingot of Iron. If crafting a heavy armor, you must add 3 ingots of Iron.</li></ul></li></ul><p>Stat bonuses:</p><p><strong>Armor:</strong> Each stat bonus gives a +1 evasion and dodge Material bonus or a +1 guard and +2 block Material bonus. A mithril or primehide armor would thus give +1 evasion, dodge and guard as well as +2 Block.<br><strong>Shield:</strong> Each stat bonus gives a +1 Gear bonus to Dodge or a +3 Gear bonus to Block.&nbsp;</p><h2>Armorsmithing Base Leather Materials</h2><p>The base material for crafting clothing, light armor and cloaks is Animal Hides. Animal Hides must be converted into Tanned Animal Hide before they can be used.</p><p><strong>IMPORTANT</strong>: Clothing does not gain material bonuses when made out of something better unless they have the “Reinforced Clothing” A mod.</p><ul><li>Animal Hide:<ul><li>Clim Cost per tanned hide: 300 Clim</li><li>Unit cost per tanned hide: 500 Animal Hide units</li><li>Effect: None</li><li>When using animal hides to craft an item, you must spend 1 tanned animal hide for clothing, light armor, bags and cloaks.</li></ul></li></ul><p>Outside of animal hides, there are a variety of special materials that an armorsmith can use while crafting. These are more expensive, but grant stat bonuses.</p><ul><li>Direhide:<ul><li>Clim Cost per tanned hide: 1050 Clim</li><li>Unit cost per tanned hide: 2000 Direhide units</li><li>Effect: +1 stat bonus</li><li>When using direhides to craft an item, you must spend 1 tanned direhide for clothing, light armor and cloaks.</li></ul></li><li>Primehide:<ul><li>Clim Cost per tanned hide: 4050 Clim</li><li>Unit cost per tanned hide: 8000 Primehide units</li><li>Effect: +1/+1 stat bonus</li><li>When using primehides to craft an item, you must spend 1 tanned primehides for clothing, light armor and cloaks.</li></ul></li><li>Dragonscale:<ul><li>Clim Cost per tanned hide: 8050 Clim</li><li>Unit cost per tanned hide: 16000 Dragonscale units</li><li>Effect: +2/+1 stat bonus</li><li>When using Dragonscales to craft an item, you must spend 1 tanned Dragonscale for clothing, light armor and cloaks.</li></ul></li><li>Astrahide:<ul><li>Clim Cost per tanned hide: 11550 Clim</li><li>Unit cost per tanned hide: 23000 Astrahide units</li><li>Effect: +2/+2 stat bonus</li><li>When using Astrahide to craft an item, you must spend 1 tanned Astrahide for clothing, light armor and cloaks.</li></ul></li></ul><p>Stat bonuses:</p><p><strong>Armor:</strong> Each stat bonus gives a +1 evasion and dodge Material bonus or a +1 guard and +2 block Material bonus. A mithril or primehide armor would thus give +1 evasion, dodge and guard as well as +2 Block.</p><h2>Armorsmithing Special Materials</h2><ul><li>Spidersilk (500 Clim / 15 Crafting Points):<ul><li>Unit cost: 1000 Spidersilk units</li><li>A Spidersilk armor reduces the Initiative penalty by 1 and the Evasion/Dodge penalty by 2, but the wearer takes double damage from Fire damage. Light armor only.</li></ul></li><li>Electrum (3050 Clim / 30 Crafting Points):&nbsp;<ul><li>Unit cost per ingot: 6000 Electrum units.</li><li>Armors infused with Electrum gain &nbsp;a +1 Guard and +4 block bonus against attacks made by Divines, Summons and Otherworlders.</li></ul></li><li>Silver (1050 Clim / 30 Crafting Points):&nbsp;<ul><li>Unit cost per ingot: 2000 Silver units.</li><li>Silver infused armors remove a Fiend's regeneration. When a fiend hits you with a melee attack or a physical contact attack, they lose their regeneration until the start of their next turn.</li></ul></li><li>Mycelite (1550 Clim / 20 Crafting Points):<ul><li>Unit cost per ingot: 3000 Mycelite units.</li><li>Mycelite infused armor incur 1 less burden to a minimum of 1.</li></ul></li><li>Adamantite (2050 Clim / 20 Crafting Points):<ul><li>Unit cost per ingot: 4000 Adamantite units</li><li>Adamantite armors cannot be destroyed or damaged by effect such as Sunder by non adamantite tools or weapons.</li></ul></li><li>Luxaeterna (1550 Clim / 30 Crafting Points):&nbsp;<ul><li>Unit cost per ingot: 3000 Luxaeterna units.</li><li>Armor infused with Luxaterna gives the wearer 5 damage reduction against Holy damage.</li></ul></li><li>Corvuskite (1550 Clim / 30 Crafting Points):&nbsp;<ul><li>Unit cost per ingot: 3000 Corvuskite units.&nbsp;</li><li>Armor infused with Corvuskite gives the wearer 5 damage reduction against Dark damage.</li></ul></li><li>Arcanium (1550 Clim / 30 Crafting Points):&nbsp;<ul><li>Unit cost per ingot: 3000 Arcanium units.&nbsp;</li><li>Armor infused with Arcanium gives the wearer 5 damage reduction against Arcane damage.</li></ul></li><li>Vivinthal (1550 Clim / 30 Crafting Points):&nbsp;<ul><li>Unit cost per ingot: 3000 Vivinthal units.&nbsp;</li><li>Armor infused with Vivinthal gives the wearer 5 damage reduction against Water damage.</li></ul></li><li>Glacite (1550 Clim / 30 Crafting Points):&nbsp;<ul><li>Unit cost per ingot: 3000 Glacite units.&nbsp;</li><li>Armor infused with Glacite gives the wearer 5 damage reduction against Frost damage.</li></ul></li><li>Salachar (1550 Clim / 30 Crafting Points):&nbsp;<ul><li>Unit cost per ingot: 3000 Salachar units.&nbsp;</li><li>Armor infused with Salachar gives the wearer 5 damage reduction against Fire damage.</li></ul></li><li>Sylphsteel (1550 Clim / 30 Crafting Points):&nbsp;<ul><li>Unit cost per ingot: 3000 Sylphsteel units.&nbsp;</li><li>Armor infused with Sylphsteel gives the wearer 5 damage reduction against Wind damage.</li></ul></li><li>Fulgarite ( 1550 Clim / 30 Crafting Points):<ul><li>Unit cost per ingot: 3000 Fulgarite units.&nbsp;</li><li>Armor infused with Fulgarite gives the wearer 5 damage reduction against Lightning damage.</li></ul></li><li>Ghimslag (1550 Clim / 30 Crafting Points):&nbsp;<ul><li>Unit cost per ingot: 3000 Ghimslag units.&nbsp;</li><li>Armor infused with Ghimslag gives the wearer 5 damage reduction against Earth damage.</li></ul></li><li>Crystal Core (3500 Clim / 35 Crafting Points)<ul><li>Unit cost: 1 core</li><li>Armor infused with the core of a specific fiend. The wearer may spend 1 Mana and 0 RP to absorb the energy of an elemental (Arcane, Fire, Water, Wind, Earth or any of its subtypes) damage attack. Their next weapon attack gains bonus damage equal to the attacker’s power and becomes the element of the triggering attack.</li></ul></li><li>Nullite ( 2050 Clim / 20 Crafting Points):<ul><li>Unit cost per ingot: 4000 Nullite units</li><li><strong>Anti-Magic Layer:</strong> Against spells, you gain 2 guard, 2 evasion and a +2 bonus to saves. However you can no longer become the target of friendly spells (including your own).</li></ul></li><li>Runesteel ( 1050 Clim / 10 Crafting Points):<ul><li>Unit cost per ingot: 2000 Runesteel units</li><li><strong>Select Magic Absorption:</strong> Friendly spells targeting you gain +20ft range.</li></ul></li><li>Sunsteel ( 1550 Clim, 15 crafting points):<ul><li>Unit cost per ingot: 3000 Sunsteel units</li><li><strong>Sun Protection: </strong>You are immune to any negative effects suffered from being in the sun.</li></ul></li><li>Perfect Shell (2000 Clim)<ul><li>Can be made into light armor or armor plates by a Master Armorer (counts as Mithril in terms of difficulty).</li><li>If used for light armor, the light armor cannot have another special material (may still have flamelon mods) and cannot have frame mods, but it receives +1 guard and +4 Block and may have one medium armor property. Counts as a base material for crafting as well.</li><li>If used for armor plates, the armor plates receive an additional 2 block for a +1 guard and +4 block total.</li></ul></li></ul><h2>Armorsmithing Cloak Materials</h2><p>Cloaks may benefit from higher base materials being used. This is on a per cloak basis and is listed with the material.</p><ul><li>No special material<ul><li>A cloak made with no special material may gain a Gear bonus to its Dodge or Block.</li><li>When made with Direhide/Primehide/Dragonscale/Astrahide gives a +1/+2/+3/+4 Gear bonus to Dodge or a +3/+6/+9/+12 Gear bonus to Block.</li></ul></li><li>Night Wolf Pelt (550 Clim / 5 Crafting Points)<ul><li>Unit cost: 1000 units</li><li>A cloak of night wolf pelt gives the wielder +5 bonus to stealth checks during the night or in area's without light.</li><li>When made with Direhide/Primehide instead gives a +10/+15 bonus.</li></ul></li><li>Fae Wolf Pelt (1050 Clim / 10 Crafting Points)<ul><li>Unit Cost: 2000 Units</li><li>A cloak of faewolf pelt gives the wielder the ability to spend 4 AP to hide in plain sight. This hide lasts until you take any other action or speak.</li><li>When made with Primehide, reduce the AP cost to 3.</li></ul></li><li>Astral Tiger Pelt (1050 Clim / 10 Crafting Points)<ul><li>Unit Cost: 2000 Units</li><li>A cloak of astral tiger pelt gives the wielder the ability to teleport when attacked. After an attack against you misses (or you dodge it), you may spend 1 RP to teleport up to 20ft.</li></ul></li><li>Wonderland Rabbit Hide (1550 Clim / 15 Crafting Points) <i>(By CCeles)</i><ul><li>Unit Cost: No units, just 1 hide.</li><li>When you take a movement action that costs RP, that movement is increased by 5ft. (Doesn't stack with Compact Ergonomics mod)</li><li>When made with Primehide, the movement is increased by 10ft instead.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "d7aa7a993c60a684c4da67f01dde662e1327ef118f54732e9c9bcbba9d2e80f9",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--armorsmithing-materials",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Crafting",
+      "subType": "Materials",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:armor-shields:item--armorsmithing-materials",
+        "stableId": "item--armorsmithing-materials",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "d7aa7a993c60a684c4da67f01dde662e1327ef118f54732e9c9bcbba9d2e80f9",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "4822da64d246ab3d",
+    "name": "Cloak",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/d105fd86-6a7e-4f92-9095-6efe9bd4b321-Cloak.lg.webp",
+    "system": {
+      "description": "<p>A common cloak made from animal hides. Helps protects the wearer from cold weather, but offers no additional benefits.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "0a816ec7c0de57641b07b56f055f1a6522a1d376c5efb68ce6b7f3a8bf2f6606",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--cloak",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Armor",
+      "cost": "500",
+      "burden": "0",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Armorsmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:armor-shields:item--cloak",
+        "stableId": "item--cloak",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "0a816ec7c0de57641b07b56f055f1a6522a1d376c5efb68ce6b7f3a8bf2f6606",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "ae5449b6280f635b",
+    "name": "Shield",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/1a1803b4-aa1d-4635-ae09-fec5e53c3706-ShieldSmall.lg.webp",
+    "system": {
+      "description": "<p>Gives a +4 Shield bonus to your Block.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Spiked Shield (20 points): </strong>You may treat your shield as a One-Handed weapon. You can use it to make an attack and still gain the shield bonus.</li><li><strong>Mirror Shield (35 points):</strong> When you are the target of a Mystic Eye ability, you may spend 1 RP to negate the effect on yourself and reflect it back to the user.</li></ul></li><li><i>B mods:</i><ul><li><strong>Throwing Shield (50 points):</strong> You may throw this shield at an enemy within 30ft to make a ranged attack against it. Afterwards, the shield returns to your hand.</li><li><strong>Shield Formation (80 points): </strong>While next to another ally with a shield or greatshield, you gain +1 Guard. (Only actual shields apply)</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "c454a92b12fe85b0d2eba3a8ebba9fbc332d36f86e4421f2191a4e64bfc62c57",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--shield",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Armorsmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:armor-shields:item--shield",
+        "stableId": "item--shield",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "c454a92b12fe85b0d2eba3a8ebba9fbc332d36f86e4421f2191a4e64bfc62c57",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "c8b75a9cbe00ae69",
+    "name": "Shield (Great)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/78f93726-568d-4f91-8790-35002492af39-Greatshield.lg.webp",
+    "system": {
+      "description": "<p>Gives a +1 Shield bonus to your guard, but a -1 penalty to your Initiative and a -2 penalty to your Evasion and Dodge. When taking the Block action, this Shield bonus is increased to 8.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Spiked Shield (20 points): </strong>You may treat your shield as a One-Handed weapon. You can use it to make an attack and still gain the shield bonus.</li><li><strong>Mirror Shield (35 points):</strong> When you are the target of a Mystic Eye ability, you may spend 1 RP to negate the effect on yourself and reflect it back to the user.</li></ul></li><li><i>B mods:</i><ul><li><strong>Tower Shield (50 points):</strong> The burden of this shield is increased by 1, but it now counts as Low cover for you against ranged attacks.</li><li><strong>Shield Formation (80 points): </strong>While next to another ally with a shield or greatshield, you gain +1 Guard. (Only actual shields apply)</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "87fcbc8c908696b1eeb1f51fdaceba6ae9d3a914363ceb36b61ae571b9d74e8e",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--shield-great",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "",
+      "cost": "1000 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Armorsmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:armor-shields:item--shield-great",
+        "stableId": "item--shield-great",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "87fcbc8c908696b1eeb1f51fdaceba6ae9d3a914363ceb36b61ae571b9d74e8e",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  }
+]

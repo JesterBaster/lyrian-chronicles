@@ -1,0 +1,2130 @@
+[
+  {
+    "_id": "e788e39ee1557172",
+    "name": "Antidote Shot Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/287e202b-f500-43b9-96b1-a0cba7dc2c19-Antivenom.lg.webp",
+    "system": {
+      "description": "<p>Created with Goblin Medical Science, a universal antidote for all common poisons.&nbsp; Stored inside of a glass vial syringe that is injected into the body. When used, immediately removes a single common poison effect and grants immunity to that poison for the next hour.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1400 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Mystic Earth</li><li>1x Rare Water</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "5097a40e8d5f7fbe9b7d43842ed92306a4f6405e1565be51ada23e04392b2f76",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--antidote-shot-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 55,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--antidote-shot-potion",
+        "stableId": "item--antidote-shot-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "5097a40e8d5f7fbe9b7d43842ed92306a4f6405e1565be51ada23e04392b2f76",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "db8e881f9a39b05d",
+    "name": "Axolotl Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/fdc5ca4f-f4a9-47d3-bdf8-c64151c5d53d-Axolotl potion.lg.webp",
+    "system": {
+      "description": "<p>When drunk, you take true damage equal to your Toughness x 5. Until the end of the encounter, you regain HP equal to your Toughness at the start of your turn.</p><p>If the triggering damage lowers your HP to 0 or lower, the effect immediately ends. Your HP being dropped to 0 or lower from other effects does not cancel this elixir.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 870 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Water</li><li>1x Common Arcane</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "d15b4294b642055a3ff3a91b14683a3d1ae8fd6e99fa5567528b0cf72c5aa294",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--axolotl-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "0 AP, 2 Mana",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--axolotl-elixir",
+        "stableId": "item--axolotl-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "d15b4294b642055a3ff3a91b14683a3d1ae8fd6e99fa5567528b0cf72c5aa294",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "854715055462d2cc",
+    "name": "Bear Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/27817fa7-cb12-4d1f-b4f6-3bfda3132d21-Bear Elixir.lg.webp",
+    "system": {
+      "description": "<p>An elixir that raises your stamina and reaction speed. When drunk, you take 11 true damage. You immediately gain 1 RP and your maximum RP increases by 1 until the end of the&nbsp;encounter.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 650 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Earth</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "8f7018b18d64dfb6e28cd69e5662fbab62c38b3b072aeb99a1a12a4a3ff5ef21",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--bear-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "400 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 40,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--bear-elixir",
+        "stableId": "item--bear-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "8f7018b18d64dfb6e28cd69e5662fbab62c38b3b072aeb99a1a12a4a3ff5ef21",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "f0b332798c0b083c",
+    "name": "Blood Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/1eadfc8b-a672-4d38-921c-6cccda06dfec-Blood Elixir.lg.webp",
+    "system": {
+      "description": "<p>A deep red potion that when drunk reduces your current and maximum HP by 15 until the end of your next rest.. You immediately gain 3 mana, up to your maximum mana.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1350 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>3x Common Water</li><li>1x Rare Fire</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "8909af80e23e42994d0e5bacac08c86968f7752513a045da1ec98b54c5ef9ff4",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--blood-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "750 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 53,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--blood-elixir",
+        "stableId": "item--blood-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "8909af80e23e42994d0e5bacac08c86968f7752513a045da1ec98b54c5ef9ff4",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "e0134f5cad0ed7d0",
+    "name": "Breaching Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/ebc6cc9e-12ca-42f2-8fdf-17207047a836-Breaching Flask - Copy.lg.webp",
+    "system": {
+      "description": "<p>A flask made for breaching locked doors. When tossed against a door, window or similar medium sized entryway it blasts them open and anyone within 5ft behind the door is knocked prone. Works against doors with a roguecraft DC equal or less than 20. Creates a loud noise regardless of success. When attempting to use it against living creatures, they may choose to avoid it for 0 RP. Else, they are knocked back 30ft.</p><p><strong>Materials:</strong> 600 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Fire</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "2447c1d6d43793430ab768b925b0f7f4dc8603d14804512fcb4eb0ae026c5e47",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--breaching-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "400 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 40,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--breaching-flask",
+        "stableId": "item--breaching-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "2447c1d6d43793430ab768b925b0f7f4dc8603d14804512fcb4eb0ae026c5e47",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "65e1ffdef1b5ecc4",
+    "name": "Bull Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/e663b1a5-0172-4575-bb12-b044a9cb06b7-Bull Elixir.lg.webp",
+    "system": {
+      "description": "<p>A potion that immediately gives the benefit of consuming food when drunk. You regain 2 mana, but this counts as your one food buff per day. This potion gives no benefit if you already received benefits from eating food today.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 350 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Fire</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "bb5269e6bdada8525fb835ad342c22bcbca7448319f53a0a0636be95c08ce8e1",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--bull-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "300 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--bull-potion",
+        "stableId": "item--bull-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "bb5269e6bdada8525fb835ad342c22bcbca7448319f53a0a0636be95c08ce8e1",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "d34a3a91afe23fc9",
+    "name": "Cat Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a1e30270-13e2-40b2-ba10-cf2e92e26272-catelixir.lg.webp",
+    "system": {
+      "description": "<p>An elixir that gives you a cat's agility. When drank you take 11 true damage. You gain +1 Agility. Lasts until the end of combat.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 380 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>2x Common Wind</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "f7a52242a729f0bd9a01aa5981547cd2ad22bd68c2771da0534851a166124a22",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--cat-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "200 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--cat-elixir",
+        "stableId": "item--cat-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "f7a52242a729f0bd9a01aa5981547cd2ad22bd68c2771da0534851a166124a22",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "eb8cb3dfdeae7e64",
+    "name": "Cleansing Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/7f284672-92e2-46c9-8706-a73e780ab7fe-Cleansingpotion.lg.webp",
+    "system": {
+      "description": "<p>A potion that cleanses the body. When drank, a stack of one debuff is fully removed from you.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 900 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Arcane</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "13cc865d4ea6c5dfe0686e12a4df8cb2fb3b6b4f61e995b938ff4a6de71facb1",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--cleansing-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "0 AP, 1 Mana",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--cleansing-potion",
+        "stableId": "item--cleansing-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "13cc865d4ea6c5dfe0686e12a4df8cb2fb3b6b4f61e995b938ff4a6de71facb1",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "44d104645c607dd4",
+    "name": "Corrosive Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/6d3d59fb-b793-465d-b817-e2b12ae0c2f8-Corrosive Flask - Copy.lg.webp",
+    "system": {
+      "description": "<p>An Alchemical mix that splashes acid onto a target, making armor brittle.&nbsp;May be thrown up to 40ft away. When thrown, the target of the flask takes 1 damage. On contact, their armor value is reduced by 3 (min 0) until they spend 2 AP to wipe the substance of.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 450 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Fire</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "0ac80411e6b8cb38c68cb405b3ac0b4c111de0b199dcdc22188ca6365f9831d4",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--corrosive-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "350 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--corrosive-flask",
+        "stableId": "item--corrosive-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "0ac80411e6b8cb38c68cb405b3ac0b4c111de0b199dcdc22188ca6365f9831d4",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "585edd59e9415590",
+    "name": "Demonblood Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/2857df85-5431-427f-889f-698d65157057-Demonblood.lg.webp",
+    "system": {
+      "description": "<p>Not actually made out of Demonblood, it refers to Demon tenacity.&nbsp; The potion is an intense stimulant that allows a character to fight through pain and injury. When drank, you ignore the penalties of one injury until the end of the encounter.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 250 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Arcane</li><li>1x Rare Fire</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "92c0699d7e08587c23ef66f1a879c450247362b459500353fd742b1fe2ad4a41",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--demonblood-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--demonblood-potion",
+        "stableId": "item--demonblood-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "92c0699d7e08587c23ef66f1a879c450247362b459500353fd742b1fe2ad4a41",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "671a925590ac74a3",
+    "name": "Diamondize Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/5ad6744b-14d4-4d4b-9240-c1d230c3d39a-Diamondize Potion.lg.webp",
+    "system": {
+      "description": "<p>Temporarily encases the user in hard crystal, rendering them nearly impervious to damage but incapacitating them in stasis. While in stasis, you cannot take any actions but all damage (including true damage) you take is reduced by 200. Lasts for 10 minutes and can be used while downed.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 4400 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Supreme Earth</li><li>1x Mystic Arcane</li><li>1x Mystic Water</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "66e8e5d29febead4074f2dde234b3be2a0ecd578ec76b3546e2ca4d7446ac9f4",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--diamondize-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "3000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 75,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--diamondize-potion",
+        "stableId": "item--diamondize-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "66e8e5d29febead4074f2dde234b3be2a0ecd578ec76b3546e2ca4d7446ac9f4",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "ceb1ce5aff42a0e6",
+    "name": "Displacement Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/6ab55762-f5a3-4f21-9ef5-38c57b503b0e-Displacement Elixir - Copy.lg.webp",
+    "system": {
+      "description": "<p>When drunk, you teleport 40ft in a random direction (roll 1d8 to determine this, 1 being north and 5 being south etc). If this would place you inside a wall or otherwise occupied place, the teleport fails and the potion is wasted.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 350 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Wind</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1e6c2588a99b1aa220093747fe07ea4929c46609f32e160a79c8bf2bcedc274d",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--displacement-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "300 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--displacement-potion",
+        "stableId": "item--displacement-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1e6c2588a99b1aa220093747fe07ea4929c46609f32e160a79c8bf2bcedc274d",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "566c33233eb627d2",
+    "name": "Eagle Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a4cfed69-5d50-4d3d-88fe-f48a92fdf326-Eaglepotion.lg.webp",
+    "system": {
+      "description": "<p>When drunk, you can assess the status of a single enemy until the end of combat. This functions like the Status Assessment II ability.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 520 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Common Wind</li><li>1x Common Fire</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "c6677dc22b18481de552e817d53680123a0e89010d72b003c01da5b14a75314a",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--eagle-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "250 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--eagle-potion",
+        "stableId": "item--eagle-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "c6677dc22b18481de552e817d53680123a0e89010d72b003c01da5b14a75314a",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "96fc2de9536ef3e4",
+    "name": "Elemental Grease",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/5ae6cbf3-b8c4-47c9-9e2c-1fe4c36c73aa-grease.lg.webp",
+    "system": {
+      "description": "<p>An flask that when splashed over your weapon changes the damage it deals to the element of the flask until the end of the encounter.<br><br>There exist flasks for Arcane, Fire, Water, Frost, Lightning, Wind, Earth, Holy and Dark damage.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 350 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare herb of matching element (Arcane for holy/dark, Wind for Lightning, Water for Frost)</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "b77defe7bc3fd25f0cfb79f0fde2b4ed5d033238c1ef7b29f42bed0cde765be0",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--elemental-grease",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "301 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--elemental-grease",
+        "stableId": "item--elemental-grease",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "b77defe7bc3fd25f0cfb79f0fde2b4ed5d033238c1ef7b29f42bed0cde765be0",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "59fc3f32bdf035ed",
+    "name": "Elemental Immunity Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/7bae94d5-0a79-4be9-a18e-088840bf3585-Elemental Immunity Elixir - Copy.lg.webp",
+    "system": {
+      "description": "<p>An elixir that raises your resistance against a type of damage. When drunk, you take 11 true damage. You gain 10 damage reduction against a single type of damage, determined by the type of elixir. This lasts until the end of the encounter.&nbsp;<br><br>There exist elixirs for Arcane, Fire, Water, Frost, Lightning, Wind, Earth, Holy and Dark resistance.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1250 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>3x Rare herb of matching element (Arcane for holy/dark, Wind for Lightning, Water for Frost)</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "e1454dbc03eda8e9bfd1f98b92e890684c1a0f2290767003f57dba10f02c5211",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--elemental-immunity-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 55,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--elemental-immunity-elixir",
+        "stableId": "item--elemental-immunity-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "e1454dbc03eda8e9bfd1f98b92e890684c1a0f2290767003f57dba10f02c5211",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "353532b62de164af",
+    "name": "Elemental Mixture Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/ff90d368-e952-410e-a9ea-c42ca52b307d-Elemental Mixture Flask - Copy.lg.webp",
+    "system": {
+      "description": "<p>A flask that when thrown explodes in a 15x15ft area dealing damage based on the type of flask. May be thrown up to 40ft away. You may make a light attack against all caught in the explosion area. The damage type of this is determined by the type of flask. There exist flasks that deal Arcane, Fire, Water, Frost, Wind, Lightning, Earth, Holy and Dark damage.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 0 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare herb of the element (Arcane for holy/dark, Wind for Lightning, Water for Frost)</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "e480c52219fe9113ed9ac873c913518e486536732ff25fb68336312763aca961",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--elemental-mixture-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "200 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--elemental-mixture-flask",
+        "stableId": "item--elemental-mixture-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "e480c52219fe9113ed9ac873c913518e486536732ff25fb68336312763aca961",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "8573e5cb9d0754e0",
+    "name": "Elemental Resistance Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/c5a6a38c-fad8-4c4d-a871-04657c99fddf-Elemental Resistance Elixir - Copy.lg.webp",
+    "system": {
+      "description": "<p>An elixir that raises your resistance against a type of damage. When drunk, you take 11 true damage. You gain 5 damage reduction against a single type of damage, determined by the type of elixir. This lasts until the end of the encounter.<br><br>There exist elixirs for Arcane, Fire, Water, Frost, Lightning, Wind, Earth, Holy and Dark resistance.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 350 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare herb of matching element (Arcane for holy/dark, Wind for Lightning, Water for Frost)</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "93043f314d1941ddee19580a861875d16990bddefbe64c40fe3f168970132117",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--elemental-resistance-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "300 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--elemental-resistance-elixir",
+        "stableId": "item--elemental-resistance-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "93043f314d1941ddee19580a861875d16990bddefbe64c40fe3f168970132117",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "a0a29ccef6c18168",
+    "name": "Falcon Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/e7d522c3-28ef-48ac-ae15-d0032a2b6ebb-Falcon Elixir.lg.webp",
+    "system": {
+      "description": "<p>When drunk, you take 11 true damage. You gain the ability to fly with a speed equal to your normal speed. The effect lasts for 10 rounds.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1250 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Mystic Wind</li><li>1x Rare Arcane</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "a0eaa70a31c5a444febc2519fd16db6ccc8e52f907c79086c32a8c278d5ed949",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--falcon-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 55,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--falcon-elixir",
+        "stableId": "item--falcon-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "a0eaa70a31c5a444febc2519fd16db6ccc8e52f907c79086c32a8c278d5ed949",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "2417348da3d9d5fe",
+    "name": "Flame Oil Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a5249a9d-2094-4015-8068-e7fa0c4582b9-flameoil.lg.webp",
+    "system": {
+      "description": "<p>&nbsp;An Alchemical mix that creates an area of flame. May be thrown up to 40ft away. Creates a 15x15ft area of fire that lasts until the start of your next turn. Any creature ending their turn in the area takes 20 full pierce fire damage.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 330 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Common Fire</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "a782528e9ad6e133193efb47d3f90d21b610ba2f9d4a7d1e80ee9614a00d8e2f",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--flame-oil-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "150 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--flame-oil-flask",
+        "stableId": "item--flame-oil-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "a782528e9ad6e133193efb47d3f90d21b610ba2f9d4a7d1e80ee9614a00d8e2f",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "f690fde41f8aaafc",
+    "name": "Flashbang Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/19287336-4c00-4684-8217-92edb581b72a-FlashBang - Copy.lg.webp",
+    "system": {
+      "description": "<p>An Alchemical mix that explodes in a bright flash and loud noise when exposed to air. May be thrown up to 40ft away. All targets caught within a 25x25ft area become Dazed.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 420 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>3x Common Wind</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "3a1468a6e0ccb8e8cc9c1fc16e3a69efc204935ef9b174a43717a4dd95ca81b3",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--flashbang-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "250 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--flashbang-flask",
+        "stableId": "item--flashbang-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "3a1468a6e0ccb8e8cc9c1fc16e3a69efc204935ef9b174a43717a4dd95ca81b3",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "3291ec5beceb936f",
+    "name": "Ghost Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/cd337b86-c115-48c6-b1d2-b6a52ba5af0a-Ghost Elixir.lg.webp",
+    "system": {
+      "description": "<p>A translucent potion that when drunk gives you the phase through trait for 1 minute. This Lets you move through solid objects and creatures. When thrown at a creature with the phase through and/or incorporeal traits, they lose these traits for a minute. Can be thrown up to 40ft.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 300 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Arcane</li><li>1x Rare Wind</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "0c0500864e3259ac772a9de5c64e487f968d9b0315958ca715015244774de238",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--ghost-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--ghost-elixir",
+        "stableId": "item--ghost-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "0c0500864e3259ac772a9de5c64e487f968d9b0315958ca715015244774de238",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "4b18bd64ab593bf3",
+    "name": "Grapeshot Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/ef828bf0-c122-41da-80ed-73dd80a89623-grape.lg.webp",
+    "system": {
+      "description": "<p>An Alchemical mix that explodes when shattered, sending small metal balls in all directions.&nbsp;May be thrown up to 40ft away. All targets within a 15x15ft area take 5 full pierce physical damage.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 180 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Common Fire</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "2c4b7ffc988aaeb65c607a1f78a3a52c92b70a77fc1d38d3a7ca0d7b68114323",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--grapeshot-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "100 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--grapeshot-flask",
+        "stableId": "item--grapeshot-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "2c4b7ffc988aaeb65c607a1f78a3a52c92b70a77fc1d38d3a7ca0d7b68114323",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "a844644075f118c8",
+    "name": "Greater Healing Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/d406b24e-1bd8-456c-872a-02af8ab3531d-GREATpotion.lg.webp",
+    "system": {
+      "description": "<p>Healing liquid in a vial made from various herbs and reagents.&nbsp; Spurs the body’s natural healing by converting mana into regeneration.&nbsp; Much purer and more difficult to create, uses special materials. When drank, you heal for 30 HP.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 970 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Water</li><li>3x Common Earth</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "c481cf400dff0d6741683557e20d7b4251cd0a125ac920c693cf3cda9f6e80e1",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--greater-healing-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "600 Clim",
+      "burden": "1",
+      "activationCost": "0 AP, 4 Mana",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 51,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--greater-healing-potion",
+        "stableId": "item--greater-healing-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "c481cf400dff0d6741683557e20d7b4251cd0a125ac920c693cf3cda9f6e80e1",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "d6791c7433e0d45f",
+    "name": "Greater Shielding Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/6b585e5a-cc0f-4e0a-84af-a0f95817f301-greatershielding.lg.webp",
+    "system": {
+      "description": "<p>A potion that briefly forms a protective barrier around you when drunk. You gain 30 temporary hit points that last until the start of your next turn.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1800 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Earth&nbsp;</li><li>1x Rare Arcane</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "a8d736f8910e11bf2e3d308746418c269001caf672743de77a2152d3f80c387a",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--greater-shielding-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 55,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--greater-shielding-potion",
+        "stableId": "item--greater-shielding-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "a8d736f8910e11bf2e3d308746418c269001caf672743de77a2152d3f80c387a",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "46d5eea6289ecdd3",
+    "name": "Greater Speed Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/7e65d092-c1d2-4dc1-af01-131b3878a996-Greaterspeedpotion.lg.webp",
+    "system": {
+      "description": "<p>A potion that briefly increases your movement speed when drunk. Your movement speed is increased by 50ft until the end of your turn.&nbsp;</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1150 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Mystic Wind</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "eab0709eb30fcaea7135f2839ae488f74a7e484fc0cb8b338d07a94977fed045",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--greater-speed-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "750 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 53,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--greater-speed-potion",
+        "stableId": "item--greater-speed-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "eab0709eb30fcaea7135f2839ae488f74a7e484fc0cb8b338d07a94977fed045",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "7f88e3b3d6c8a7ad",
+    "name": "Growth Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/4ad3b863-f68c-472f-b68d-d7c5d37cda05-growthpotion.lg.webp",
+    "system": {
+      "description": "<p><i>By Charre.</i></p><p>A rare magical potion that speeds up the growth of animals when given to them, allowing them to reach maturity much more quickly. See animal raising in the rulebook for more details on its use.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 2000 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Mystic Arcane</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "e06eddc559f7cd8eacf0451031f7ffd9e5501baa4da057d20777bdeda284ee9c",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--growth-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "1100 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 80,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--growth-potion",
+        "stableId": "item--growth-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "e06eddc559f7cd8eacf0451031f7ffd9e5501baa4da057d20777bdeda284ee9c",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "9e107e45c8d7138b",
+    "name": "Healing Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/46351009-57a9-4c66-813f-a88accefd5e9-HealingPotion.lg.webp",
+    "system": {
+      "description": "<p>Healing liquid in a vial made from various herbs and reagents. Spurs the body’s natural healing by converting mana into regeneration. When drank, you heal 15 HP.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 450 Alchemy Materials<br><strong>Herbs:</strong> <i>None required</i></p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "34ca8304aec8a374c1f6e38892becc3a1183b15da34ecd6d0adab62cbaff7dfe",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--healing-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "150 Clim",
+      "burden": "1",
+      "activationCost": "0 AP, 2 Mana",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--healing-potion",
+        "stableId": "item--healing-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "34ca8304aec8a374c1f6e38892becc3a1183b15da34ecd6d0adab62cbaff7dfe",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "d81679b6d2d8541b",
+    "name": "Horse Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/d42a8876-b08b-4032-abb3-c1895358c8db-horseelixir.lg.webp",
+    "system": {
+      "description": "<p>An elixir that gives you the movement of a horse(folk). When drank you take 11 true damage. Your movement speed becomes 50ft and you gain Line Movement (You may only move in a straight line when making a movement action). Lasts until the end of combat.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 750 Alchemy Materials<br><strong>Special Materials:</strong></p><ul><li>500u Carrots</li><li>1x Rare Wind</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "ab672ea8f00b8ca32878eec84990009fabca0c30f3b09c09061e2de727245c28",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--horse-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "600 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 51,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--horse-elixir",
+        "stableId": "item--horse-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "ab672ea8f00b8ca32878eec84990009fabca0c30f3b09c09061e2de727245c28",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "6c8c103ecdff5875",
+    "name": "Ice Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/e9ba9649-9128-4495-8a72-64694386db0b-Frost Flask - Copy.lg.webp",
+    "system": {
+      "description": "<p>A flask that when thrown explodes in a 5ft radius around the target and applies frost to all target. The target and everyone within 5ft of it become Slowed until the start of your next turn. May be thrown up to 40ft away.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 300 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Water</li><li>1x Rare Wind</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "bdd1ffd6828ec3587426ab6580558bfaaa5dd1a5b1e0589aa9f44b9b7c5a4d11",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--ice-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "450 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 45,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--ice-flask",
+        "stableId": "item--ice-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "bdd1ffd6828ec3587426ab6580558bfaaa5dd1a5b1e0589aa9f44b9b7c5a4d11",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "7173e7733aff2418",
+    "name": "Immunity Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/ef2ff9bc-2870-4166-bf94-0c10f4ddaaf3-Immunity Elixir.lg.webp",
+    "system": {
+      "description": "<p>An elixir that raises your resistance against negative effects. When drunk, you &nbsp;take 11 true damage. The next 3 negative effects that you would be affected by are negated. Negative effects caused by Secret Art or Climax Art level effects are not negated through this. This lasts until the end of the encounter.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1400 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Mystic Earth</li><li>1x Rare Water</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "cf455ab702edf765be8aedf3dcb9f7100b761cb28db144d586acbc77db292e42",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--immunity-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 55,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--immunity-elixir",
+        "stableId": "item--immunity-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "cf455ab702edf765be8aedf3dcb9f7100b761cb28db144d586acbc77db292e42",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1f91afdd8ec8dc74",
+    "name": "Inky Oil Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/1ab0d92c-6aec-4d9d-bf84-4d5462edc7a6-Inky Oil Flask.lg.webp",
+    "system": {
+      "description": "<p>An alchemical mix aimed at the target's eyes. May be thrown 40ft away. When thrown, the target of the flask takes 1 damage. If they took damage, they are Blinded 2 until they spend 2 AP to wipe the substance off.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1000 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Water</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "a4044ab81852a68b5c61b5206bb056d7756be883e24f7d741327c3b7bb21c2f1",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--inky-oil-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--inky-oil-flask",
+        "stableId": "item--inky-oil-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "a4044ab81852a68b5c61b5206bb056d7756be883e24f7d741327c3b7bb21c2f1",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "10191deda3847eed",
+    "name": "Isona Poison",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/69fb99f3-65d5-4af7-837a-95021d875b2e-e4e29b7a-73ba-4bcc-8953-217ddfe12515.lg.webp",
+    "system": {
+      "description": "<p>Contact Poison. Can be applied to a weapon. Lasts for 2 minute (12 rounds).&nbsp;</p><p>When an attack with this poison damages a fiend type enemy, the target is considered silvered until the start of your next turn.</p><p><strong>Crafting:&nbsp;</strong><br><strong>Materials</strong>: 1430 Alchemy Materials<br><strong>Special Materials:</strong></p><ul><li>100u of silver</li><li>Common Fire Herb</li><li>Common Water Herb</li><li>Common Earth Herb</li><li>Common Wind Herb</li><li>Common Arcane Herb</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "15837a621f12f080a38bca8ed26c1715182ff769a5bc263905159baea0ba9972",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--isona-poison",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Poison",
+      "cost": "700 clim",
+      "burden": "1",
+      "activationCost": "1",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 52,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--isona-poison",
+        "stableId": "item--isona-poison",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "15837a621f12f080a38bca8ed26c1715182ff769a5bc263905159baea0ba9972",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "b807f72b49e18106",
+    "name": "Lesser Diamondize Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/fcbad2d0-ca7b-4f73-bb7f-31fc761f6e01-Lesser Diamondize Potion - Copy.lg.webp",
+    "system": {
+      "description": "<p>Temporarily encases the user in hard crystal, rendering them nearly impervious to damage but incapacitating them in stasis. While in stasis, you cannot take any actions but all damage (including true damage) you take is reduced by 200. Lasts until the start of your next turn.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 2100 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Mystic Earth</li><li>1x Mystic Arcane</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "b31c29f5b4322904ddceb050c03497929dafa54afafcc8766e99dac8dbd48173",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--lesser-diamondize-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "1500 Clim",
+      "burden": "1",
+      "activationCost": "3 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 60,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--lesser-diamondize-potion",
+        "stableId": "item--lesser-diamondize-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "b31c29f5b4322904ddceb050c03497929dafa54afafcc8766e99dac8dbd48173",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1e602b0986f225e4",
+    "name": "Lizard Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/612be6d4-7f30-4a1e-92c0-77e25ee13b75-Lizard elixir.lg.webp",
+    "system": {
+      "description": "<p>When drunk with a severed limb held to the right part of the body, the limb will begin to re-attach. Has to be drunk within 5 minutes of the loss. After drinking, you become stunned for a minute until the process finishes.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1400 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Mystic Water</li><li>1x Rare Earth</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "46f763472e5b0dd44aab8747c093b7ffeb6b564631c31594cc8c4bfdf732f7ae",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--lizard-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP, 3 Mana",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 55,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--lizard-elixir",
+        "stableId": "item--lizard-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "46f763472e5b0dd44aab8747c093b7ffeb6b564631c31594cc8c4bfdf732f7ae",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "1085987d9bea934c",
+    "name": "Mage's Blood",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/2dd17c89-a531-41ef-a393-e2dbb40b94f7-Magesblood.lg.webp",
+    "system": {
+      "description": "<p>Contact poison. Can be applied to a weapon. Lasts for 1 hit or 1 minute (6 rounds).</p><p>When an attack with this poison damages an enemy, they are inflicted with a <strong>Circuit Crash</strong> debuff. The next time they use mana before the end of the encounter, they take 4d6+8 damage.</p><p>Discovered by Beetle Swallower.</p><p><strong>Crafting:</strong><br><strong>Materials</strong>: 1800 Alchemy Materials<br><strong>Special Materials</strong>:&nbsp;</p><ul><li>3x vial of Heartwood Poison Water.</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "cca3256cb8f9007c479e94bbfe5f276d289cd825b80352420a204be4e9a7a1cd",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--mage-s-blood",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Poison",
+      "cost": "600 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 51,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--mage-s-blood",
+        "stableId": "item--mage-s-blood",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "cca3256cb8f9007c479e94bbfe5f276d289cd825b80352420a204be4e9a7a1cd",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "5e407a8cff4eff0f",
+    "name": "Marlone Jelly Poison",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/0b3242b0-1f07-4127-a538-051c85d1e033-Marlone_Jelly_Poison.lg.webp",
+    "system": {
+      "description": "<p>Contact Poison. Can be applied to a weapon. Lasts for 1 hits or 1 minute (6 rounds).</p><p>When an attack with this poison damages a grunt type enemy, the target is stunned until the end of this next turn. An enemy can only be affected by this poison once per combat.</p><p><strong>Crafting:</strong><br><strong>Materials</strong>: 700 Alchemy Materials<br><strong>Special Materials:</strong></p><ul><li>1x Rare Water Herb</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "8b3d953eea73f03a20bc724be3656a23a6932ee2edc234da59d5c09b050d95df",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--marlone-jelly-poison",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Poison",
+      "cost": "400",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--marlone-jelly-poison",
+        "stableId": "item--marlone-jelly-poison",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "8b3d953eea73f03a20bc724be3656a23a6932ee2edc234da59d5c09b050d95df",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "22d39d9f78563fbd",
+    "name": "Mimic Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/e6634372-d4ad-4bdf-b7be-3814fd6fa6b8-Mimic elixir.lg.webp",
+    "system": {
+      "description": "<p>When drunk, your appearance shifts to that of an average sized chest. Lasts up to a minute or until a character attempts to interact with you.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 360 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Common Arcane</li><li>1x Common Earth</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "704159af902fff9cc377945baabe5254ce33848e974bdf9212ec0edc2d212303",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--mimic-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "200 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--mimic-potion",
+        "stableId": "item--mimic-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "704159af902fff9cc377945baabe5254ce33848e974bdf9212ec0edc2d212303",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "651aa39369b30d2b",
+    "name": "Netting Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a598dcaf-79e5-4451-911f-97da1f9ff332-nettingflask.lg.webp",
+    "system": {
+      "description": "<p>A flask that when thrown explodes in a 5ft radius around the target and conjures up magnetic nets. The target and everyone within 5ft of it become Rooted until the start of your next turn or until they use 2 AP to remove the net. May be thrown up to 40ft away</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1950 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Mystic Wind</li><li>1x Rare Earth</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "81371c48af943ff9f5a669b80df7fce17b08b6bef584581b50873d649b8afabe",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--netting-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "1200 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 57,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--netting-flask",
+        "stableId": "item--netting-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "81371c48af943ff9f5a669b80df7fce17b08b6bef584581b50873d649b8afabe",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "68016f9e775f0bd9",
+    "name": "Parrot Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/de2e7d1f-5f10-4278-a8d4-6e537593b95f-Parrot Elixir.lg.webp",
+    "system": {
+      "description": "<p>When drunk, your appearance shifts to that of a random, average looking person of the same gender and race. This lasts for 24 hours. If drunk again before the time is up, the duration is extended by 24 hours.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 560 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Wind</li><li>3x Common Arcane</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "cb3b2b02050c780524a40cdca7ec7f444515babb188fbe8f9ec2ca78e91a4176",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--parrot-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--parrot-elixir",
+        "stableId": "item--parrot-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "cb3b2b02050c780524a40cdca7ec7f444515babb188fbe8f9ec2ca78e91a4176",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "3b09b472dfa3ab05",
+    "name": "Portable Wall",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/244bc76d-2497-49c8-9600-364b526a837c-Wall Flask - Copy.lg.webp",
+    "system": {
+      "description": "<p>A handful of rock-like objects that when thrown generate a magical wall between each of the rocks. If there is a living creature between the rocks, the wall will not appear. The wall is 10ft high, 5ft long, lasts for 2 turns and has 100 HP. After a single use, this item becomes unusable. Can be thrown up to 40ft away.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 600 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Mystic Earth</li><li>1x Mystic Arcane</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1756fc5752511c48d1aa43e575cb60cb9fce5df4e93dce5b5507cfcca14abd4d",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--portable-wall",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 55,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--portable-wall",
+        "stableId": "item--portable-wall",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1756fc5752511c48d1aa43e575cb60cb9fce5df4e93dce5b5507cfcca14abd4d",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "9a49396bca520858",
+    "name": "Rabbit Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/58fd633c-39e3-4f1f-8f9a-6a463c978d5c-Rabbit Elixir.lg.webp",
+    "system": {
+      "description": "<p>An elixir that increases metabolism when used, increasing speed. When drank, you take 11 true damage.&nbsp; Until the end of the encounter your speed increases by 10 ft.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 490 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Common Wind</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "2bf2088d3011eaea999f99cc3ab1c68d502225e72c3f2063d5d17926a7e509f6",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--rabbit-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "200 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--rabbit-elixir",
+        "stableId": "item--rabbit-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "2bf2088d3011eaea999f99cc3ab1c68d502225e72c3f2063d5d17926a7e509f6",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "bc82cff080caa752",
+    "name": "Reaper Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a5262936-c356-4510-b2ae-b21116cbece6-Reaper Elixir.lg.webp",
+    "system": {
+      "description": "<p>An elixir that causes a surge of energy within the body. When drank, you take 11 true damage.&nbsp;You gain +1 Power.&nbsp;Lasts until the end of combat.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 350 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Common Fire</li><li>1x Common Arcane</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "67b178a29976c12b12b9704e59372492109fb2583db946ffdf7e759a1d5ea4b0",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--reaper-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "200 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--reaper-elixir",
+        "stableId": "item--reaper-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "67b178a29976c12b12b9704e59372492109fb2583db946ffdf7e759a1d5ea4b0",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "fa8501c3df6f4658",
+    "name": "Shark Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/b4d8db30-9f89-4cde-a97d-1b20ef4df895-Shark Elixir.lg.webp",
+    "system": {
+      "description": "<p>An elixir that makes temporary physical changes to allow you to breathe underwater. When drank you take 11 true damage.&nbsp;You can breathe underwater and swim easily underwater up to your speed for up to 1 day.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 350 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Common Water</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "41d1a4bbaf00e508162ec0fb9e1b7cfeec4e0a8f293fa97eca85da6d175e034f",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--shark-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "150 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--shark-elixir",
+        "stableId": "item--shark-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "41d1a4bbaf00e508162ec0fb9e1b7cfeec4e0a8f293fa97eca85da6d175e034f",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "94f9521aaa1f63a2",
+    "name": "Shielding Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/599da623-dcaf-4831-b0a8-00008d101ef1-Shielding Potion - Copy.lg.webp",
+    "system": {
+      "description": "<p>A potion that briefly forms a protective barrier around you when drunk. You gain 15 temporary hit points that last until the start of your next turn.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 270 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>3x Common Earth&nbsp;</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "b95dc01120705d741944dd713c4e6d2aaa5fda5bc67cd4c02fb086622fb41ca7",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--shielding-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "200 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--shielding-potion",
+        "stableId": "item--shielding-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "b95dc01120705d741944dd713c4e6d2aaa5fda5bc67cd4c02fb086622fb41ca7",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "93419978db2e687e",
+    "name": "Smoke Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/be6f553b-1e4a-4626-aec9-08ebc2c66c9b-Smoke Flask - Copy.lg.webp",
+    "system": {
+      "description": "<p>An Alchemical mix that creates a cloud of smoke temporarily. May be thrown up to 20ft away. Creates a smokecloud in a 15x15ft area that blocks line of sight. This effect functions similarly to ‘Glittershards’ and ends at the start of your next turn.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 200 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Wind</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "7a4dc3fa13c4b82ab40c19a55a8d9642e5b3c1a6f269fbcf7c4fa11e8d7d698e",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--smoke-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "250 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--smoke-flask",
+        "stableId": "item--smoke-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "7a4dc3fa13c4b82ab40c19a55a8d9642e5b3c1a6f269fbcf7c4fa11e8d7d698e",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "092d660ded912c6e",
+    "name": "Souleater Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/68f9a011-f100-47c1-9ecd-9f73820ea74c-Potions_and_Elixirs_Clean.lg.webp",
+    "system": {
+      "description": "<p>An elixir that heightens spirit circuits in the eyes, making the user able to view invisible creatures. When drank you take 11 true damage.&nbsp; You gain the ability to see invisible (not hidden) creatures and gain a +10 bonus to Perception checks to detect creatures until the end of the encounter.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1100 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Fire</li><li>1x Common Water</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "0c457c4c9d72635c4ead460ba160ca35918c5337a213987f68e2603bf2ddd286",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--souleater-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "600 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 51,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--souleater-elixir",
+        "stableId": "item--souleater-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "0c457c4c9d72635c4ead460ba160ca35918c5337a213987f68e2603bf2ddd286",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "a6bb53e583c613f6",
+    "name": "Speed Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/72d5efc2-10d3-4f1d-bc4c-5212f8a1cb68-Speed potion.lg.webp",
+    "system": {
+      "description": "<p>A potion that briefly increases your movement speed when drunk. Your movement speed is increased by 20ft until the end of your turn.&nbsp;</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 270 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>3x Common Wind</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1be93781a52b2401a226deb019a40a3bf0986dc502d26bcc684b8f6b8f9c55f4",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--speed-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "200 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--speed-potion",
+        "stableId": "item--speed-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1be93781a52b2401a226deb019a40a3bf0986dc502d26bcc684b8f6b8f9c55f4",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "3f09929031fbf370",
+    "name": "Sticky Glue Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/ca4d6dcc-0d4c-4e58-b8b6-29b235cada79-Stickyglue.lg.webp",
+    "system": {
+      "description": "<p>An Alchemical mix that coats the target in Sticky Glue, restricting mobility. May be thrown up to 40ft away. When thrown, the target of the flask takes 1 damage. If they took damage, their evasion is reduced by 3 until they spend 2 AP to wipe the substance off.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 500 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Earth</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "0b286b07d17e2e64abb6e3a93a9cae63a3b06fe0833cf848f281e5ce23a911db",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--sticky-glue-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "350 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--sticky-glue-flask",
+        "stableId": "item--sticky-glue-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "0b286b07d17e2e64abb6e3a93a9cae63a3b06fe0833cf848f281e5ce23a911db",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "c4f9c050b95e13bf",
+    "name": "Stone Serpent's Kiss",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/d981257d-cc48-41b8-8ba3-37b98cd50ee2-Stone Serpent_s Kiss - Copy.lg.webp",
+    "system": {
+      "description": "<p><i>By Boshi</i></p><p>Contact poison(Venom). Can be applied to a cutting or thrusting weapon- or to an arrow, bolt, or bullet. Lasts for 1 hit or 1 minute (6 rounds).&nbsp;</p><p>When an attack with this poison damages an enemy, they are inflicted with a form of Paralysis. A paralyzed Heroic or Boss target is Rooted and Unbalanced until recovering from this poison, which lasts for 1 minute (6 rounds). A paralyzed grunt is completely incapacitated (0AP, 0RP) until they recover from this poison, which lasts for 1 hour (360 rounds).&nbsp;</p><p>A Heroic or Boss unit afflicted may spend 2 AP or make a Save at the end of their turn for free against Potency 13 to end the effect early on each of their turns.</p><p>Crafting:<br>Materials: 900 Alchemy Materials<br>Special Materials:&nbsp;</p><ul><li>1 Rare Wind Herb&nbsp;</li><li>1 Rare Arcane Herb&nbsp;</li><li>1 Mystic Earth Herb</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "b4fecd8dc2b47edf56287f1d9ce148573b422412432adbb006295a626b68c376",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--stone-serpent-s-kiss",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Poison",
+      "cost": "1000c",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 55,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--stone-serpent-s-kiss",
+        "stableId": "item--stone-serpent-s-kiss",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "b4fecd8dc2b47edf56287f1d9ce148573b422412432adbb006295a626b68c376",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "ddedccb535ac90dd",
+    "name": "Suppression Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/45be59e6-7f17-449b-bd5d-0939b62d0822-Suppression Potion - Copy.lg.webp",
+    "system": {
+      "description": "<p>A potion that temporarily suppresses the effects of a poison, disease or other natural affliction. The effect lasts for 24 hours. Magical poisons, diseases, curses etc are not affected by this.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 600 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Water</li><li>1x Rare Earth</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "3370ba4bad0759f107adfe63cf9750fe4c465559af64f0ad39b87f3f18a5f826",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--suppression-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "600 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 51,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--suppression-potion",
+        "stableId": "item--suppression-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "3370ba4bad0759f107adfe63cf9750fe4c465559af64f0ad39b87f3f18a5f826",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "0b799cdfabb6aea7",
+    "name": "Tunnel Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/623f3917-6fb2-4d38-b622-81b6cd68177c-Tunnel Elixir.lg.webp",
+    "system": {
+      "description": "<p>An elixir that causes intense focus on the task at hand. When drank you take 11 true damage. You gain +1 Focus. Lasts until the end of combat.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 380 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>2x Common Earth</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "3602b75ed2c21c449ae4fabdf068bf847cb01ba68582f48c40838302a1b770ca",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--tunnel-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "200 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--tunnel-elixir",
+        "stableId": "item--tunnel-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "3602b75ed2c21c449ae4fabdf068bf847cb01ba68582f48c40838302a1b770ca",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "9c56fa4573b89a05",
+    "name": "Turtle Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a6d6f6c7-badf-480d-b14d-f5acbbaaaf54-turtleelixir.lg.webp",
+    "system": {
+      "description": "<p>An elixir that gives you greater endurance. When drank, you take 11 true damage. You gain +1 Toughness. Lasts until the end of combat.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 490 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Common Earth</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "9561d8d40fe1c01b16f32ce949c6dbad358fd0771254c5d5128e74e55bf867f8",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--turtle-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "200 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--turtle-elixir",
+        "stableId": "item--turtle-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "9561d8d40fe1c01b16f32ce949c6dbad358fd0771254c5d5128e74e55bf867f8",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "e03c98215dcfb4e9",
+    "name": "Water Balloon",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/4e4e5b93-332d-411b-9bd8-92c8d7a3bb62-water balloon.lg.webp",
+    "system": {
+      "description": "<p>A flask that when thrown explodes in a 5ft radius around the target and applies Soaked 5 to all targets in the area. May be thrown up to 40ft away.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 200 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Common Water</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "57b8e511ae5c5179353144c36d6654afae61ccfa70470cb8a1daa67f54fcef5e",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--water-balloon",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "100 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 25,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--water-balloon",
+        "stableId": "item--water-balloon",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "57b8e511ae5c5179353144c36d6654afae61ccfa70470cb8a1daa67f54fcef5e",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "92fef8ae31f84e37",
+    "name": "Weak Spider Poison",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/72b6dc03-0835-452b-9a01-20a4e2b664b3-SpiderVenom.lg.webp",
+    "system": {
+      "description": "<p>Contact Poison. Can be applied to a weapon. Lasts for 2 hits or 1 minute (6 rounds).</p><p>When an attack with this poison damages an enemy, they become Dazed. If an enemy is already dazed, they instead take 8 full pierce Poison damage. An enemy can only be affected by this poison (daze and damage effect both apply) twice per round.</p><p><strong>Crafting:</strong><br><strong>Materials</strong>: 300 Alchemy Materials<br><strong>Special Materials:</strong></p><ul><li>150 units of Spidersilk</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "ce924ae3c435cecd5c84955fff4ba86e3d197c104dc5f7c6c7b4a0b087475e8a",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--weak-spider-poison",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Poison",
+      "cost": "150 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--weak-spider-poison",
+        "stableId": "item--weak-spider-poison",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "ce924ae3c435cecd5c84955fff4ba86e3d197c104dc5f7c6c7b4a0b087475e8a",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "0701c03f7b4e36be",
+    "name": "Weak Wyvern Poison",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/da824004-95b9-474c-8ff1-b29f13a7e2b1-poison.lg.webp",
+    "system": {
+      "description": "<p>Contact Poison. Can be applied to a weapon. Lasts for 1 hits or 1 minute (6 rounds).</p><p>When an attack with this poison damages an enemy, they become poisoned. The next time they move the full distance they can in an action they take, they take 3d6 full pierce Poison damage.</p><p><strong>Crafting:</strong><br><strong>Materials</strong>: 230 Alchemy Materials<br><strong>Special Materials:</strong></p><ul><li>2 Common Earth Herbs</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "7f11768f1968434a8f45fd009f197b756fd2f49b8bc9e6ee27a5433b41f7c090",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--weak-wyvern-poison",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Poison",
+      "cost": "150 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--weak-wyvern-poison",
+        "stableId": "item--weak-wyvern-poison",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "7f11768f1968434a8f45fd009f197b756fd2f49b8bc9e6ee27a5433b41f7c090",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "ad050936c401fac0",
+    "name": "Web Flask",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/f402af26-7e20-4e5d-bb70-269b9396ea23-Web Flask.lg.webp",
+    "system": {
+      "description": "<p>A flask that when thrown coats a 20x20 feet area in sticky webs until the start of your next turn. Anyone walking through it becomes Slowed and any creature ending its turn inside of it becomes Rooted until the start of their next turn. May be thrown up to 40ft away.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 400 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Rare Wind</li><li>1x Rare Earth</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "a38352c2b570d784780dc7d5b3543ee9ce49123262cc210ee1718a3ab3175479",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--web-flask",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Flask",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "catalog:consumables:item--web-flask",
+        "stableId": "item--web-flask",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "a38352c2b570d784780dc7d5b3543ee9ce49123262cc210ee1718a3ab3175479",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.6.0"
+      }
+    }
+  }
+]

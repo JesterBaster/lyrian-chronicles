@@ -1,0 +1,464 @@
+[
+  {
+    "_id": "cf4202ff81718a5e",
+    "name": "Armorsmithing Materials",
+    "pages": [
+      {
+        "_id": "ae0cff1f140c264b",
+        "name": "Armorsmithing Materials",
+        "type": "text",
+        "title": {
+          "show": true,
+          "level": 1
+        },
+        "text": {
+          "format": 1,
+          "content": "<p>Armor: Each stat bonus gives a +1 evasion and dodge Material bonus or a +1 guard and +2 block Material bonus. A mithril or primehide armor would thus give +1 evasion, dodge and guard as well as +2 Block.</p><p>Shield: Each stat bonus gives a +1 Gear bonus to Dodge or a +3 Gear bonus to Block. </p><p>Cloak: A cloak made with no special material may gain a Gear bonus to its Dodge or Block.<br>When made with Direhide/Primehide/Dragonscale/Astrahide gives a +1/+2/+3/+4 Gear bonus to Dodge or a +2/+4/+6/+8 Gear bonus to Block.</p><p>Same stat bonuses from Shields or Cloak do not stack, ie; a +2 Dodge Cloak and a +2 Dodge Shield would not stack.</p><hr><p><small>Source: <a href=\"https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=888978637\">Flo's Madness</a>. Prices ending in c are Clim; amounts ending in u are units.</small></p>"
+        },
+        "flags": {
+          "lyrian-chronicles": {
+            "seedKey": "flos-madness:crafting-guide--armorsmithing-materials",
+            "stableId": "crafting-guide--armorsmithing-materials",
+            "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=888978637",
+            "sourceHash": "e1d4329be00ffa2cb0f285319edcc95dfef3772b8771f56a25e11542cb3ed5dd",
+            "rulebookVersion": "Flo's Madness",
+            "contentBuild": "0.6.0"
+          }
+        }
+      }
+    ],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:crafting-guide--armorsmithing-materials",
+        "stableId": "crafting-guide--armorsmithing-materials",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=888978637",
+        "sourceHash": "e1d4329be00ffa2cb0f285319edcc95dfef3772b8771f56a25e11542cb3ed5dd",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "8f62b1f0f7ce04f4",
+    "name": "Blacksmithing Materials",
+    "pages": [
+      {
+        "_id": "d0a0f6bc39be9f16",
+        "name": "Blacksmithing Materials",
+        "type": "text",
+        "title": {
+          "show": true,
+          "level": 1
+        },
+        "text": {
+          "format": 1,
+          "content": "<p>Weapon: The stat bonuses go to Focus and Power. With getting a +1 bonus or a +2/+1 bonus, the crafter may choose which of the two stats gets the extra bonus.</p><p>Tool: For tools, there is a crafting bonus and a finish bonus. A crafting bonus gives you +1 (or +2) to each crafting dice roll. The finish bonus gives you a +5 (or +10) bonus once at the end of your craft.</p><p>For Tools that function as weapons you have to choose between a stat bonus OR the crafting bonus, you do not get both.</p><hr><p><small>Source: <a href=\"https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=286625673\">Flo's Madness</a>. Prices ending in c are Clim; amounts ending in u are units.</small></p>"
+        },
+        "flags": {
+          "lyrian-chronicles": {
+            "seedKey": "flos-madness:crafting-guide--blacksmithing-materials",
+            "stableId": "crafting-guide--blacksmithing-materials",
+            "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=286625673",
+            "sourceHash": "343dc1544b556d881c46a0bd876a88eaf29b5fbf23bb457d4baee8eb0619edd2",
+            "rulebookVersion": "Flo's Madness",
+            "contentBuild": "0.6.0"
+          }
+        }
+      }
+    ],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:crafting-guide--blacksmithing-materials",
+        "stableId": "crafting-guide--blacksmithing-materials",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=286625673",
+        "sourceHash": "343dc1544b556d881c46a0bd876a88eaf29b5fbf23bb457d4baee8eb0619edd2",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "3a59c64e81d8d075",
+    "name": "Carpentry Materials",
+    "pages": [
+      {
+        "_id": "6dcc614eb1a45e16",
+        "name": "Carpentry Materials",
+        "type": "text",
+        "title": {
+          "show": true,
+          "level": 1
+        },
+        "text": {
+          "format": 1,
+          "content": "<p>Weapon: The stat bonuses to go Focus and Power. With getting a +1 bonus or a +2/+1 bonus, the crafter may choose which of the two stats gets the extra bonus.</p><hr><p><small>Source: <a href=\"https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=913278585\">Flo's Madness</a>. Prices ending in c are Clim; amounts ending in u are units.</small></p>"
+        },
+        "flags": {
+          "lyrian-chronicles": {
+            "seedKey": "flos-madness:crafting-guide--carpentry-materials",
+            "stableId": "crafting-guide--carpentry-materials",
+            "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=913278585",
+            "sourceHash": "9a1951eefab8af2c8d04074e726231535765b85fc713c3e70ebbe1e42aa096b9",
+            "rulebookVersion": "Flo's Madness",
+            "contentBuild": "0.6.0"
+          }
+        }
+      }
+    ],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:crafting-guide--carpentry-materials",
+        "stableId": "crafting-guide--carpentry-materials",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=913278585",
+        "sourceHash": "9a1951eefab8af2c8d04074e726231535765b85fc713c3e70ebbe1e42aa096b9",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "a891053c3bbd9fc3",
+    "name": "Artificing Materials",
+    "pages": [
+      {
+        "_id": "0c9d41f616acddec",
+        "name": "Artificing Materials",
+        "type": "text",
+        "title": {
+          "show": true,
+          "level": 1
+        },
+        "text": {
+          "format": 1,
+          "content": "<p>Artifice weapons follow special rules. Weapon attachments follow the regular artifice rules however.</p><p>Iron:<br>Equal artifice parts to the base clim cost of the artifice is required to craft Iron Artifices.</p><p>Outside of iron, there are a variety of special materials that an Artificer can use while crafting. These are more expensive, but grant additional C mod slots to the artifice.</p><p>You need Artifice Parts of the matching type to craft and the amount you need is determined this way:</p><p>(Special Material Modifier) x (Base Clim Cost) = Amount of Special Material Artifice Parts Needed</p><p>NOTE: When making an Artifice weapon that is an actual weapon and not an attachment, you must spend an additional iron artifice parts equal to the cost of the weapon - 500 rather than an extra ingot. This also applies to guns.</p><hr><p><small>Source: <a href=\"https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=858813003\">Flo's Madness</a>. Prices ending in c are Clim; amounts ending in u are units.</small></p>"
+        },
+        "flags": {
+          "lyrian-chronicles": {
+            "seedKey": "flos-madness:crafting-guide--artificing-materials",
+            "stableId": "crafting-guide--artificing-materials",
+            "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=858813003",
+            "sourceHash": "b51bbab52015399e27611f94ca6b77f640d900144db7f5d5502c816a0e5eeb0e",
+            "rulebookVersion": "Flo's Madness",
+            "contentBuild": "0.6.0"
+          }
+        }
+      }
+    ],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:crafting-guide--artificing-materials",
+        "stableId": "crafting-guide--artificing-materials",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=858813003",
+        "sourceHash": "b51bbab52015399e27611f94ca6b77f640d900144db7f5d5502c816a0e5eeb0e",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "9771b02d7bb6d45e",
+    "name": "Alchemy Materials",
+    "pages": [
+      {
+        "_id": "18f657cc4d01aa8c",
+        "name": "Alchemy Materials",
+        "type": "text",
+        "title": {
+          "show": true,
+          "level": 1
+        },
+        "text": {
+          "format": 1,
+          "content": "<p>When crafting as an alchemist, you may add additional herbs and alchemy materials into the mix. By adding in an extra amount of alchemy units as well as the exact same herbs as the recipe needs, you get extra dice.</p><hr><p><small>Source: <a href=\"https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1149578449\">Flo's Madness</a>. Prices ending in c are Clim; amounts ending in u are units.</small></p>"
+        },
+        "flags": {
+          "lyrian-chronicles": {
+            "seedKey": "flos-madness:crafting-guide--alchemy-materials",
+            "stableId": "crafting-guide--alchemy-materials",
+            "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1149578449",
+            "sourceHash": "8fa9807d0896182ef8182b28c94d8558cbba8f84bcf59e959d1b07ebde3f6409",
+            "rulebookVersion": "Flo's Madness",
+            "contentBuild": "0.6.0"
+          }
+        }
+      }
+    ],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:crafting-guide--alchemy-materials",
+        "stableId": "crafting-guide--alchemy-materials",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1149578449",
+        "sourceHash": "8fa9807d0896182ef8182b28c94d8558cbba8f84bcf59e959d1b07ebde3f6409",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "a7e66d95f4d5f7b9",
+    "name": "Culinarian Materials",
+    "pages": [
+      {
+        "_id": "e75b6213927cf284",
+        "name": "Culinarian Materials",
+        "type": "text",
+        "title": {
+          "show": true,
+          "level": 1
+        },
+        "text": {
+          "format": 1,
+          "content": "<p>The base material for crafting food is Food Units.  These units can be any kind of food/filler material, for example:</p><p>400u of Flour<br>200u of Fish<br>400u of Noodles</p><p>This is enough food to make 25 Pemmican [Rations] (1000u of any combination of food)</p><p>200u of Flour<br>100u of Fish<br>200u of Noodles</p><p>This is enough food to make a Gourmet Stock (500u of any combination of food)</p><p>When crafting a stock, you make 10 at a time. When making a box for stocks it&#39;s 1 per 500u.</p><hr><p><small>Source: <a href=\"https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=2073204002\">Flo's Madness</a>. Prices ending in c are Clim; amounts ending in u are units.</small></p>"
+        },
+        "flags": {
+          "lyrian-chronicles": {
+            "seedKey": "flos-madness:crafting-guide--culinarian-materials",
+            "stableId": "crafting-guide--culinarian-materials",
+            "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=2073204002",
+            "sourceHash": "acc911b6697f0e88b1eca7dfcdd0208f0038017e36ed3f758584387159c74cc0",
+            "rulebookVersion": "Flo's Madness",
+            "contentBuild": "0.6.0"
+          }
+        }
+      }
+    ],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:crafting-guide--culinarian-materials",
+        "stableId": "crafting-guide--culinarian-materials",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=2073204002",
+        "sourceHash": "acc911b6697f0e88b1eca7dfcdd0208f0038017e36ed3f758584387159c74cc0",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "919fedcf8b56f705",
+    "name": "Farming Materials",
+    "pages": [
+      {
+        "_id": "df48c9b4b8db1779",
+        "name": "Farming Materials",
+        "type": "text",
+        "title": {
+          "show": true,
+          "level": 1
+        },
+        "text": {
+          "format": 1,
+          "content": "<p>Cost is the value of the seed.</p><p>Difficulty is how much crafting points it takes to gather the yield when harvesting.</p><p>Yield is what the seed gives once harvested.</p><p>Growing time is how long a seed takes to be harvested. A growing time of 1 means it can be harvested immediately once you have enough IP to use the Harvest ability. When a seed has a growing time longer than 1, it takes harvests equal to the growing time to receive the yield. When resolving a harvest with a seed with a growing time of more than 1 remaining, you still need to pay the difficulty to take care of the seed like normal.</p><p>Special: [Moon-Phase Seeds Only] If you let it grow for another season after the first, the yield changes to a Mystic Herb of the same element.</p><p>Fertilizer can be applied during the sowing part. You can only apply 1 fertilizer at the same time.</p><hr><p><small>Source: <a href=\"https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1231598790\">Flo's Madness</a>. Prices ending in c are Clim; amounts ending in u are units.</small></p>"
+        },
+        "flags": {
+          "lyrian-chronicles": {
+            "seedKey": "flos-madness:crafting-guide--farming-materials",
+            "stableId": "crafting-guide--farming-materials",
+            "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1231598790",
+            "sourceHash": "6d653b6d3afbc9222bdacb5d183d62f5350723bc4174d8db8081cd09a67bd1c4",
+            "rulebookVersion": "Flo's Madness",
+            "contentBuild": "0.6.0"
+          }
+        }
+      }
+    ],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:crafting-guide--farming-materials",
+        "stableId": "crafting-guide--farming-materials",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1231598790",
+        "sourceHash": "6d653b6d3afbc9222bdacb5d183d62f5350723bc4174d8db8081cd09a67bd1c4",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "2380b426a70d1105",
+    "name": "Armor Mods",
+    "pages": [
+      {
+        "_id": "37b253cdfe544714",
+        "name": "Armor Mods",
+        "type": "text",
+        "title": {
+          "show": true,
+          "level": 1
+        },
+        "text": {
+          "format": 1,
+          "content": "<p>These are mods that can be put on any armor (not shield), regardless of type.</p><p>Frame Mods</p><p>Flamellon mods are special mods that can be put on armors. To put one of these mods on an item you must have sufficient items with the matching Flamelic Polarity.</p><p>Adding a layering of the required element automatically fulfills/gives polarity equal to the units in the ingot. For example, adding a Salachar ingot as layering also gives you 3000 Salachar polarity.</p><hr><p><small>Source: <a href=\"https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=36846504\">Flo's Madness</a>. Prices ending in c are Clim; amounts ending in u are units.</small></p>"
+        },
+        "flags": {
+          "lyrian-chronicles": {
+            "seedKey": "flos-madness:crafting-guide--armor-mods",
+            "stableId": "crafting-guide--armor-mods",
+            "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=36846504",
+            "sourceHash": "82931a25e3946eda4586adc6934e8743377870315eed3c8215d1255b3dde05ee",
+            "rulebookVersion": "Flo's Madness",
+            "contentBuild": "0.6.0"
+          }
+        }
+      }
+    ],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:crafting-guide--armor-mods",
+        "stableId": "crafting-guide--armor-mods",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=36846504",
+        "sourceHash": "82931a25e3946eda4586adc6934e8743377870315eed3c8215d1255b3dde05ee",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "b1669d6dd5401346",
+    "name": "Weapon Mods",
+    "pages": [
+      {
+        "_id": "5fca98faad3b7b2f",
+        "name": "Weapon Mods",
+        "type": "text",
+        "title": {
+          "show": true,
+          "level": 1
+        },
+        "text": {
+          "format": 1,
+          "content": "<p>These are mods that can be put on any weapon, regardless of type.<br>While gathering is a universal mod, you still cannot gather unless the weapon is a tool that can be used for gathering.</p><p>Alloy mods can also be put on any weapon, but require the weapon to include a specific type of alloy. If the weapon does not include this alloy, the mod cannot be used.</p><hr><p><small>Source: <a href=\"https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=97476896\">Flo's Madness</a>. Prices ending in c are Clim; amounts ending in u are units.</small></p>"
+        },
+        "flags": {
+          "lyrian-chronicles": {
+            "seedKey": "flos-madness:crafting-guide--weapon-mods",
+            "stableId": "crafting-guide--weapon-mods",
+            "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=97476896",
+            "sourceHash": "c14027634cc05fef2d79781dc8dafae11527ab4439ffb4891ab610278faf4d16",
+            "rulebookVersion": "Flo's Madness",
+            "contentBuild": "0.6.0"
+          }
+        }
+      }
+    ],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:crafting-guide--weapon-mods",
+        "stableId": "crafting-guide--weapon-mods",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=97476896",
+        "sourceHash": "c14027634cc05fef2d79781dc8dafae11527ab4439ffb4891ab610278faf4d16",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "e59d344a0b4cdd54",
+    "name": "Crafting Tool Mods",
+    "pages": [
+      {
+        "_id": "3aeedbcfa889b84a",
+        "name": "Crafting Tool Mods",
+        "type": "text",
+        "title": {
+          "show": true,
+          "level": 1
+        },
+        "text": {
+          "format": 1,
+          "content": "<hr><p><small>Source: <a href=\"https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=698222983\">Flo's Madness</a>. Prices ending in c are Clim; amounts ending in u are units.</small></p>"
+        },
+        "flags": {
+          "lyrian-chronicles": {
+            "seedKey": "flos-madness:crafting-guide--crafting-tool-mods",
+            "stableId": "crafting-guide--crafting-tool-mods",
+            "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=698222983",
+            "sourceHash": "b886a5e4be0dd48297a6fc41a0af93d3cc9221c480e5a4e3921cdab32a3a8dd3",
+            "rulebookVersion": "Flo's Madness",
+            "contentBuild": "0.6.0"
+          }
+        }
+      }
+    ],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:crafting-guide--crafting-tool-mods",
+        "stableId": "crafting-guide--crafting-tool-mods",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=698222983",
+        "sourceHash": "b886a5e4be0dd48297a6fc41a0af93d3cc9221c480e5a4e3921cdab32a3a8dd3",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "32d7a655c2503304",
+    "name": "Artifice Mods",
+    "pages": [
+      {
+        "_id": "a7d95e341bc49523",
+        "name": "Artifice Mods",
+        "type": "text",
+        "title": {
+          "show": true,
+          "level": 1
+        },
+        "text": {
+          "format": 1,
+          "content": "<hr><p><small>Source: <a href=\"https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=241158869\">Flo's Madness</a>. Prices ending in c are Clim; amounts ending in u are units.</small></p>"
+        },
+        "flags": {
+          "lyrian-chronicles": {
+            "seedKey": "flos-madness:crafting-guide--artifice-mods",
+            "stableId": "crafting-guide--artifice-mods",
+            "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=241158869",
+            "sourceHash": "3663b0dae3a1404a53f68ceade126896d533dbfd7f51203403379fc09c5e95d4",
+            "rulebookVersion": "Flo's Madness",
+            "contentBuild": "0.6.0"
+          }
+        }
+      }
+    ],
+    "ownership": {
+      "default": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:crafting-guide--artifice-mods",
+        "stableId": "crafting-guide--artifice-mods",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=241158869",
+        "sourceHash": "3663b0dae3a1404a53f68ceade126896d533dbfd7f51203403379fc09c5e95d4",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  }
+]

@@ -30,6 +30,16 @@ const PACKS = {
   monsters: 84,
   "monster-abilities": 307,
 };
+const CRAFTING_PACKS = {
+  weapons: 45,
+  "armor-shields": 9,
+  consumables: 58,
+  "gear-kits": 31,
+  artifices: 47,
+  materials: 149,
+  mods: 93,
+  "crafting-guide": 11,
+};
 
 const CONTENT_INDEX = JSON.parse(await readFile(path.join(ROOT, "content", "compendium-index.json"), "utf8"));
 const content = {};
@@ -43,11 +53,20 @@ function digest(value) {
   return createHash("sha256").update(value).digest("hex");
 }
 
-test("manifest declares the exact reviewed nine packs", () => {
-  assert.deepEqual(MANIFEST.packs.map((pack) => pack.name), Object.keys(PACKS));
-  assert.equal(MANIFEST.version, "0.5.7");
+test("manifest declares reviewed rules plus focused equipment and crafting packs", () => {
+  assert.deepEqual(MANIFEST.packs.map((pack) => pack.name), [
+    "rules-setting-guide", "keywords", "breakthroughs", "player-abilities", "races", "classes", "items",
+    "weapons", "armor-shields", "consumables", "gear-kits", "artifices", "materials", "mods", "crafting-guide",
+    "monsters", "monster-abilities"
+  ]);
+  assert.equal(MANIFEST.version, "0.6.0");
   assert.equal(MANIFEST.compatibility.minimum, "14");
   assert.equal(MANIFEST.compatibility.verified, "14");
+  const foldered = MANIFEST.packFolders.flatMap((folder) => folder.packs);
+  assert.equal(foldered.length, MANIFEST.packs.length);
+  assert.equal(new Set(foldered).size, MANIFEST.packs.length);
+  assert.deepEqual(new Set(foldered), new Set(MANIFEST.packs.map((pack) => pack.name)));
+  for (const pack of MANIFEST.packs) assert.ok(CONTENT_INDEX.packs[pack.name], `${pack.name} missing content index`);
 });
 
 test("approved snapshot is complete and has no unresolved relationships", () => {
@@ -77,6 +96,31 @@ test("compiled packs have reviewed counts and stable unique IDs", () => {
       assert.match(flags.sourceUrl, /^https:\/\/rpg\.angelssword\.com\/game\/0\.13\.1\//);
       assert.match(flags.sourceHash, /^[a-f0-9]{64}$/);
     }
+  }
+});
+
+test("focused equipment and Flo's Madness packs have reviewed counts", async () => {
+  for (const [pack, expected] of Object.entries(CRAFTING_PACKS)) {
+    const documents = (await Promise.all(CONTENT_INDEX.packs[pack].files.map(async (file) =>
+      JSON.parse(await readFile(path.join(ROOT, "content", file), "utf8"))
+    ))).flat();
+    assert.equal(documents.length, expected, pack);
+    assert.equal(new Set(documents.map((document) => document._id)).size, expected, `${pack} IDs`);
+    assert.equal(new Set(documents.map((document) => document.flags?.["lyrian-chronicles"]?.seedKey)).size, expected, `${pack} seed keys`);
+  }
+
+  const loadPack = async (pack) => (await Promise.all(CONTENT_INDEX.packs[pack].files.map(async (file) =>
+    JSON.parse(await readFile(path.join(ROOT, "content", file), "utf8"))
+  ))).flat();
+  const materials = await loadPack("materials");
+  const mods = await loadPack("mods");
+  assert.ok(materials.some((item) => item.system.unitCost === "500 units"));
+  assert.ok(materials.some((item) => item.system.cost === "1,000 Clim"));
+  assert.ok(mods.some((item) => item.system.modSlot === "Frame"));
+  assert.ok(mods.some((item) => item.system.polarityUnits === 4000));
+  for (const item of [...materials, ...mods]) {
+    assert.match(item.system.sourceUrl, /^https:\/\/docs\.google\.com\/spreadsheets\/d\/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs\/edit#gid=\d+$/);
+    assert.match(item.system.sourceHash, /^[a-f0-9]{64}$/);
   }
 });
 
@@ -134,10 +178,7 @@ test("compiler output is deterministic", async () => {
     SNAPSHOT_DIRECTORY,
     output,
   ]);
-  const files = [
-    "compendium-index.json",
-    ...Object.values(CONTENT_INDEX.packs).flatMap((pack) => pack.files),
-  ];
+  const files = Object.keys(PACKS).flatMap((pack) => CONTENT_INDEX.packs[pack].files);
   for (const file of files) {
     const expected = await readFile(path.join(ROOT, "content", file));
     const actual = await readFile(path.join(output, file));

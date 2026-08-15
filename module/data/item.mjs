@@ -359,6 +359,15 @@ export class LyrianEquipment extends LyrianItemBase {
     schema.fuelUsage = new fields.StringField({ blank: true, initial: "" });
     schema.craftingPoints = int(0, { min: 0 });
     schema.craftingType = new fields.StringField({ blank: true, initial: "" });
+    schema.unitCost = new fields.StringField({ blank: true, initial: "" });
+    schema.modSlot = new fields.StringField({ blank: true, initial: "" });
+    schema.polarityType = new fields.StringField({ blank: true, initial: "" });
+    schema.polarityUnits = int(0, { min: 0 });
+    schema.targetType = new fields.StringField({ blank: true, initial: "" });
+    schema.rarity = new fields.StringField({ blank: true, initial: "" });
+    schema.multiplier = new fields.StringField({ blank: true, initial: "" });
+    schema.growingTime = int(0, { min: 0 });
+    schema.difficulty = int(0, { min: 0 });
     schema.quantity = int(1, { min: 0 });
     schema.equipped = new fields.BooleanField({ initial: false });
     return schema;
