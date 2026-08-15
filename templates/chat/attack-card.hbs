@@ -46,21 +46,29 @@
           </span>
           {{#if t.coverNotes}}<span class="lyrian-target__cover">{{t.coverNotes}}</span>{{/if}}
           {{#if t.hit}}
-            <span class="lyrian-target__buttons">
-              <button type="button" data-lyrian-action="applyDamage" data-defence="none" data-target-index="{{@index}}">Take it</button>
-              <button type="button" data-lyrian-action="applyDamage" data-defence="dodge" data-target-index="{{@index}}" title="Costs 1 RP · Evasion {{t.dodgeEvasion}}">Dodge (1 RP)</button>
-              <button type="button" data-lyrian-action="applyDamage" data-defence="block" data-target-index="{{@index}}" title="Costs 1 RP · Guard {{t.blockGuard}}">Block (1 RP)</button>
-            </span>
+            {{#if ../damageRoll}}
+              <span class="lyrian-target__buttons">
+                <button type="button" data-lyrian-action="applyDamage" data-defence="none" data-target-index="{{@index}}">Take it</button>
+                <button type="button" data-lyrian-action="applyDamage" data-defence="dodge" data-target-index="{{@index}}" title="Costs 1 RP · Evasion {{t.dodgeEvasion}}">Dodge (1 RP)</button>
+                <button type="button" data-lyrian-action="applyDamage" data-defence="block" data-target-index="{{@index}}" title="Costs 1 RP · Guard {{t.blockGuard}}">Block (1 RP)</button>
+              </span>
+            {{else}}
+              <span class="lyrian-card__hint">No automated damage</span>
+            {{/if}}
           {{/if}}
         </li>
       {{/each}}
     </ul>
   {{else}}
-    <div class="lyrian-card__buttons">
-      <span class="lyrian-card__hint">Select the defending token, then choose their reaction:</span>
-      <button type="button" data-lyrian-action="applyDamage" data-defence="none">No reaction</button>
-      <button type="button" data-lyrian-action="applyDamage" data-defence="dodge">Dodge (1 RP)</button>
-      <button type="button" data-lyrian-action="applyDamage" data-defence="block">Block (1 RP)</button>
-    </div>
+    {{#if damageRoll}}
+      <div class="lyrian-card__buttons">
+        <span class="lyrian-card__hint">Select the defending token, then choose their reaction:</span>
+        <button type="button" data-lyrian-action="applyDamage" data-defence="none">No reaction</button>
+        <button type="button" data-lyrian-action="applyDamage" data-defence="dodge">Dodge (1 RP)</button>
+        <button type="button" data-lyrian-action="applyDamage" data-defence="block">Block (1 RP)</button>
+      </div>
+    {{else}}
+      <p class="lyrian-card__hint">No automated damage</p>
+    {{/if}}
   {{/if}}
 </div>

@@ -595,7 +595,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       content: `<div class="lyrian"><p>Allocate up to ${grant.points} points among these allowed skills.</p><div class="lyr-field-grid">${rows}</div></div>`,
       ok: {
         callback: (dialogEvent, button) => Object.fromEntries(
-          allowed.map((key) => [key, Math.max(0, Number(button.form.elements[key]?.value) || 0)])
+          allowed.map((key) => [
+            key,
+            Math.max(0, Math.floor(Number(button.form.elements[key]?.value) || 0))
+          ])
         )
       }
     }).catch(() => null);

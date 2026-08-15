@@ -26,6 +26,7 @@ import { runCharacterCreation } from "./apps/character-creation.mjs";
 import { resolveDefence } from "./rules/defence-resolution.mjs";
 
 const SYSTEM_ID = "lyrian-chronicles";
+const pendingAttackResolutions = new Set();
 
 /* -------------------------------------------- */
 /*  Initialisation                               */
@@ -257,11 +258,13 @@ async function onChatAction(event, message) {
     const actor = document?.actor ?? document;
     if (actor) defenders = [{ actor, target: indexedTarget }];
   } else {
+    const attackerDocument = attack.actorUuid ? await fromUuid(attack.actorUuid) : null;
+    const attacker = attackerDocument?.actor ?? attackerDocument;
     defenders = canvas.tokens.controlled
       .filter((token) => token.actor)
       .map((token) => {
         const cover = token.document?.getFlag(SYSTEM_ID, "cover") ?? "none";
-        const values = token.actor.getDefencesAgainst({ cover });
+        const values = token.actor.getDefencesAgainst({ cover, attacker });
         return {
           actor: token.actor,
           target: {
@@ -286,59 +289,65 @@ async function onChatAction(event, message) {
     }
 
     const resolved = actor.getFlag(SYSTEM_ID, "resolvedAttacks") ?? {};
-    if (resolved[message.id]) {
+    const resolutionKey = `${actor.uuid}:${message.id}`;
+    if (resolved[message.id] || pendingAttackResolutions.has(resolutionKey)) {
       ui.notifications.warn(`${actor.name} has already resolved this attack.`);
       continue;
     }
 
-    const outcome = resolveDefence({
-      defence,
-      attackTotal: attack.accuracy?.total,
-      sureHit: attack.sureHit,
-      originalHit: target.hit,
-      untargetable: target.untargetable,
-      dodgeEvasion: target.dodgeEvasion
-    });
-    if (outcome.rpCost && !(await actor.spendResources({ rp: outcome.rpCost }))) continue;
+    pendingAttackResolutions.add(resolutionKey);
+    try {
+      const outcome = resolveDefence({
+        defence,
+        attackTotal: attack.accuracy?.total,
+        sureHit: attack.sureHit,
+        originalHit: target.hit,
+        untargetable: target.untargetable,
+        dodgeEvasion: target.dodgeEvasion
+      });
+      if (outcome.rpCost && !(await actor.spendResources({ rp: outcome.rpCost }))) continue;
 
-    // Store the claim on the defender, which its owner can update even when the
-    // attacker's ChatMessage belongs to another user. Keep only recent claims.
-    const recent = Object.fromEntries(Object.entries(resolved).slice(-49));
-    await actor.setFlag(SYSTEM_ID, "resolvedAttacks", {
-      ...recent,
-      [message.id]: { defence, at: Date.now() }
-    });
-    button.disabled = true;
+      // Store the claim on the defender, which its owner can update even when the
+      // attacker's ChatMessage belongs to another user. Keep only recent claims.
+      const recent = Object.fromEntries(Object.entries(resolved).slice(-49));
+      await actor.setFlag(SYSTEM_ID, "resolvedAttacks", {
+        ...recent,
+        [message.id]: { defence, at: Date.now() }
+      });
+      button.disabled = true;
 
-    if (!outcome.hits) {
+      if (!outcome.hits) {
+        await ChatMessage.create({
+          speaker: ChatMessage.getSpeaker({ actor }),
+          content: `<p><strong>${actor.name}</strong> ${outcome.reason === "dodged" ? "dodges the attack." : "takes no damage from the missed attack."}</p>`
+        });
+        continue;
+      }
+
+      let damage = attack.damage?.total ?? flags.damage ?? 0;
+      // Blocking prevents a critical hit, so replace maximised damage with a normal roll.
+      if (defence === "block" && attack.damage?.maximised && attack.damage.formula) {
+        damage = (await new Roll(attack.damage.formula).evaluate()).total;
+      }
+
+      const result = await actor.applyDamage(damage, {
+        defence,
+        fullPierce: flags.fullPierce || (flags.halfPierce && defence === "none"),
+        pinpoint: flags.pinpoint ?? 0
+      });
+
       await ChatMessage.create({
         speaker: ChatMessage.getSpeaker({ actor }),
-        content: `<p><strong>${actor.name}</strong> ${outcome.reason === "dodged" ? "dodges the attack." : "takes no damage from the missed attack."}</p>`
+        content: `<p>${game.i18n.format("LYRIAN.Msg.DamageApplied", {
+          name: actor.name,
+          amount: result.applied,
+          guard: result.guardUsed,
+          defence: game.i18n.localize(LYRIAN.defenceReactions[defence])
+        })}</p>`
       });
-      continue;
+    } finally {
+      pendingAttackResolutions.delete(resolutionKey);
     }
-
-    let damage = attack.damage?.total ?? flags.damage ?? 0;
-    // Blocking prevents a critical hit, so replace maximised damage with a normal roll.
-    if (defence === "block" && attack.damage?.maximised && attack.damage.formula) {
-      damage = (await new Roll(attack.damage.formula).evaluate()).total;
-    }
-
-    const result = await actor.applyDamage(damage, {
-      defence,
-      fullPierce: flags.fullPierce || (flags.halfPierce && defence === "none"),
-      pinpoint: flags.pinpoint ?? 0
-    });
-
-    await ChatMessage.create({
-      speaker: ChatMessage.getSpeaker({ actor }),
-      content: `<p>${game.i18n.format("LYRIAN.Msg.DamageApplied", {
-        name: actor.name,
-        amount: result.applied,
-        guard: result.guardUsed,
-        defence: game.i18n.localize(LYRIAN.defenceReactions[defence])
-      })}</p>`
-    });
   }
 }
 

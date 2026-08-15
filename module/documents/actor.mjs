@@ -1,6 +1,11 @@
 import { LYRIAN } from "../config.mjs";
 import { parseMonsterAttackProfile } from "../rules/monster-attack.mjs";
 import {
+  nonNegativeInteger,
+  normalizeResourceCosts,
+  positiveInteger
+} from "../rules/numeric-input.mjs";
+import {
   classFeatureGrants,
   featureSourceKey,
   indexGeneratedFeatures
@@ -352,10 +357,16 @@ export class LyrianActor extends Actor {
    */
   async spendResources({ ap = 0, rp = 0, mana = 0 } = {}) {
     const s = this.system;
+    const costs = normalizeResourceCosts({ ap, rp, mana });
+    if (!costs) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.InvalidAmount"));
+      return false;
+    }
+
     const shortfalls = [];
-    if (ap > s.ap.total) shortfalls.push(`${ap} AP`);
-    if (rp > s.rp.total) shortfalls.push(`${rp} RP`);
-    if (mana > s.mana.total) shortfalls.push(`${mana} Mana`);
+    if (costs.ap > s.ap.total) shortfalls.push(`${costs.ap} AP`);
+    if (costs.rp > s.rp.total) shortfalls.push(`${costs.rp} RP`);
+    if (costs.mana > s.mana.total) shortfalls.push(`${costs.mana} Mana`);
 
     if (shortfalls.length) {
       ui.notifications.warn(
@@ -368,7 +379,7 @@ export class LyrianActor extends Actor {
     }
 
     const update = {};
-    for (const [key, cost] of [["ap", ap], ["rp", rp], ["mana", mana]]) {
+    for (const [key, cost] of Object.entries(costs)) {
       if (!cost) continue;
       // Temporary points are spent first — they expire, so burning them last wastes them.
       const pool = s[key];
@@ -445,15 +456,20 @@ export class LyrianActor extends Actor {
   async applyDamage(amount, options = {}) {
     const { defence = "none", trueDamage = false, fullPierce = false, pinpoint = 0 } = options;
     const s = this.system;
+    const normalizedAmount = positiveInteger(amount);
+    if (!normalizedAmount) {
+      return { applied: 0, guardUsed: 0, hp: s.hp.value };
+    }
+    const normalizedPinpoint = nonNegativeInteger(pinpoint) ?? 0;
 
-    let final = amount;
+    let final = normalizedAmount;
     let guardUsed = 0;
 
     if (!trueDamage) {
       if (!fullPierce) {
         const baseGuard = defence === "block" ? s.blockGuard : s.guard;
-        guardUsed = Math.max(0, baseGuard - pinpoint);
-        final = amount - guardUsed;
+        guardUsed = Math.max(0, baseGuard - normalizedPinpoint);
+        final = normalizedAmount - guardUsed;
       }
 
       // Only Block (or an equivalent reduction) can take an attack to zero.
@@ -482,10 +498,12 @@ export class LyrianActor extends Actor {
 
   /** Heal, respecting max HP. */
   async applyHealing(amount) {
-    const newHp = Math.min(this.system.hp.max, this.system.hp.value + amount);
+    const normalizedAmount = positiveInteger(amount);
+    if (!normalizedAmount) return this.system.hp.value;
+    const newHp = Math.min(this.system.hp.max, this.system.hp.value + normalizedAmount);
     await this.update({ "system.hp.value": newHp });
     if (newHp > 0) await this.toggleStatusEffect("downed", { active: false });
-    Hooks.callAll("lyrianHealing", this, amount);
+    Hooks.callAll("lyrianHealing", this, normalizedAmount);
     return newHp;
   }
 
@@ -591,6 +609,11 @@ export class LyrianActor extends Actor {
    */
   async spendInterludePoints(points, reason = "") {
     if (this.type !== "character") return false;
+    points = positiveInteger(points);
+    if (!points) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.InvalidAmount"));
+      return false;
+    }
     const available = this.system.interlude.points;
     if (points > available) {
       ui.notifications.warn(
@@ -616,6 +639,11 @@ export class LyrianActor extends Actor {
    */
   async spendExp(exp, reason = "") {
     if (this.type !== "character") return false;
+    exp = positiveInteger(exp);
+    if (!exp) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.InvalidAmount"));
+      return false;
+    }
     if (exp > this.system.exp.available) {
       ui.notifications.warn(
         game.i18n.format("LYRIAN.Warn.NotEnoughExp", { name: this.name, exp })
