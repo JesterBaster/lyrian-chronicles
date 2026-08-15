@@ -91,8 +91,14 @@ const api = game.lyrian.api;
 api.getActionSet(actor);        // everything a HUD needs in one call
 api.rollAttack(actor, itemId, "heavy");
 api.rollMonsterAttack(actor, "light");
+await api.evaluateRequirements(actor, itemId); // pass, fail, or manual confirmation
 api.getAttackData(chatMessage); // structured payload, or null
 ```
+
+Class unlocks, breakthrough drops, and ability use share this requirement evaluator.
+Static actor-state requirements are enforced automatically; encounter-dependent or
+ambiguous rules are presented for confirmation. A GM can pass
+`{ ignoreRequirements: true }` to `useAbility` when making an explicit ruling.
 
 Hooks fired: `lyrianAttack`, `lyrianDamage`, `lyrianHealing`, `lyrianDowned`,
 `lyrianTurnStart`. The attack payload carries the attack type, weapon group,

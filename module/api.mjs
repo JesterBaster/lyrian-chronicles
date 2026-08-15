@@ -1,5 +1,6 @@
 import { LYRIAN } from "./config.mjs";
 import { parseMonsterAttackProfile } from "./rules/monster-attack.mjs";
+import { evaluateItemRequirements } from "./rules/requirements.mjs";
 
 /**
  * Public API for modules such as Automated Animations, Token Action HUD,
@@ -143,6 +144,12 @@ export const LyrianAPI = {
     const item = actor?.items.get(itemId);
     if (!item) throw new Error(`Lyrian API: no item ${itemId} on ${actor?.name}`);
     return item.rollAbility(options);
+  },
+
+  async evaluateRequirements(actor, itemId, options = {}) {
+    const item = actor?.items.get(itemId);
+    if (!item) throw new Error(`Lyrian API: no item ${itemId} on ${actor?.name}`);
+    return evaluateItemRequirements(actor, item, options);
   },
 
   async rollSkill(actor, skillKey, options = {}) {
