@@ -380,14 +380,15 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   async _onDropItem(event, item) {
     const result = await super._onDropItem(event, item);
     const owned = Array.isArray(result) ? result[0] : result;
-    if (!owned || this.document.type !== "character") return result;
+    if (!owned) return result;
 
     if (owned.type === "equipment") {
-      const proficiency = collectActorProficiencies(this.document).groups;
-      const convertedData = convertOfficialEquipment(owned.toObject(), {
+      const isCharacter = this.document.type === "character";
+      const proficiency = isCharacter ? collectActorProficiencies(this.document).groups : null;
+      const convertedData = convertOfficialEquipment(owned.toObject(), isCharacter ? {
         weapons: proficiency.weapons.map((entry) => entry.name),
         armor: proficiency.armor.map((entry) => entry.name)
-      });
+      } : { assumeProficient: true });
       if (!convertedData) return result;
 
       // Create first so a validation failure never destroys the dropped source.
@@ -406,6 +407,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       return Array.isArray(result) ? [converted] : converted;
     }
 
+    if (this.document.type !== "character") return result;
     if (owned.type !== "race") return result;
 
     if (owned.system.raceKind === "ancestry") {
