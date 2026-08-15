@@ -1,0 +1,436 @@
+[
+  {
+    "_id": "c82637e79c5e2dd8",
+    "name": "Wide Blade",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>When you are wielding this in two hands and don’t make an attack with this weapon on your turn you can grant yourself or an adjacent ally low cover against ranged attacks for 0 RP until the start of your next turn. Can only use this once per turn.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "1ac8d5e8428b298f5d52f1b957a6d1889f24071a901592fcceea73a2dcfda1aa",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--wide-blade--7330d1c2c140",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Heavy Blade (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--wide-blade--7330d1c2c140",
+        "stableId": "mods--item-specific--wide-blade--7330d1c2c140",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "1ac8d5e8428b298f5d52f1b957a6d1889f24071a901592fcceea73a2dcfda1aa",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "4896d765a1f5df2b",
+    "name": "Windlass Arbalest",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Basic attacks with this weapon gain full pierce within 30 ft. However must be reloaded for 2 AP or 1 RP before it can be used again.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "b16f19006cbdef6b907ba1bbb080ff352122616d75d8b9ab028f3efad593247e",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--windlass-arbalest--94bdce8510c8",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Cross-Bow (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--windlass-arbalest--94bdce8510c8",
+        "stableId": "mods--item-specific--windlass-arbalest--94bdce8510c8",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "b16f19006cbdef6b907ba1bbb080ff352122616d75d8b9ab028f3efad593247e",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "bd685d439f058c40",
+    "name": "Winged Lugs",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Increase guard by 1 and Block by 2 and reduce evasion by 1 while wielding.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "4f0d81217890dfab7fbb942864b1408e5a15d772f1f1de34e8ea9ae3ae6872b3",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--winged-lugs--1ed5c0ebcc85",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 25,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Polearm (One-Handed)",
+        "Polearm (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--winged-lugs--1ed5c0ebcc85",
+        "stableId": "mods--item-specific--winged-lugs--1ed5c0ebcc85",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "4f0d81217890dfab7fbb942864b1408e5a15d772f1f1de34e8ea9ae3ae6872b3",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "15f092387c891223",
+    "name": "Wrist Claw",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>While wearing this item, you may still hold an item in that hand as if it was empty.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "0c185ded472d8bde158543676dfa4e54a0e033d8661d3b03c80233d2cf6e6619",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--wrist-claw--bc817cb63f73",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Gauntlets (One-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--wrist-claw--bc817cb63f73",
+        "stableId": "mods--item-specific--wrist-claw--bc817cb63f73",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "0c185ded472d8bde158543676dfa4e54a0e033d8661d3b03c80233d2cf6e6619",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "3b3f3f604cc6dd3c",
+    "name": "Wrist-mounted",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>One handed crossbow only, range lowered to 30ft. Is mounted on your wrist and is always considered drawn + can hold a weapon in that hand.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "c68795fb0759a0b8a9238bf5817a96438900ffa88ff9826d44eb02833ec1d72f",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--wrist-mounted--647a78cfb51c",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 35,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Cross-Bow (One-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--wrist-mounted--647a78cfb51c",
+        "stableId": "mods--item-specific--wrist-mounted--647a78cfb51c",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "c68795fb0759a0b8a9238bf5817a96438900ffa88ff9826d44eb02833ec1d72f",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "d104a571122cf301",
+    "name": "Yari Point Taper",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>After making a basic heavy attack, strike another target immediately behind the first with a light attack.</p></section>",
+      "source": "Flo's Madness · Weapons item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+      "sourceHash": "89ac309382c53b64a43a8f6b4ef5f6ecd22446cd9cd32d6ce0bfc105c54a078c",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--yari-point-taper--37f093da22f3",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Weapon",
+      "compatibleTargets": [
+        "Polearm (One-Handed)",
+        "Polearm (Two-Handed)"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--yari-point-taper--37f093da22f3",
+        "stableId": "mods--item-specific--yari-point-taper--37f093da22f3",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0",
+        "sourceHash": "89ac309382c53b64a43a8f6b4ef5f6ecd22446cd9cd32d6ce0bfc105c54a078c",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "5ce4b85f91d425fd",
+    "name": "Zero Suppression",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Lowers the target’s visible aura to 0 while wearing these, making them difficult to locate by magical means.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "cd6a072aaf32dc716100111f22198a15419591dfa7fe16d179d4c17af1089563",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--zero-suppression--4785c760cd71",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 50,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "B",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Counter-Magic Shackles"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--zero-suppression--4785c760cd71",
+        "stableId": "mods--item-specific--zero-suppression--4785c760cd71",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "cd6a072aaf32dc716100111f22198a15419591dfa7fe16d179d4c17af1089563",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "3be26f7d1deacd87",
+    "name": "Zoom In",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>Can function like binoculars.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "2bb81a2733d753ceb552a505d321a39380f6981b985f22e6797ca760cf51c37f",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--zoom-in--01f973699875",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Eye Lens"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--zoom-in--01f973699875",
+        "stableId": "mods--item-specific--zoom-in--01f973699875",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "2bb81a2733d753ceb552a505d321a39380f6981b985f22e6797ca760cf51c37f",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  },
+  {
+    "_id": "0e1f459649dce4d0",
+    "name": "Zoom In (Eye only)",
+    "type": "equipment",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "description": "<section><h3>Effect</h3><p>You may spend 1 AP to gain a +10 bonus to your perception until the start of your next turn.</p></section>",
+      "source": "Flo's Madness · Artifices item mods",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+      "sourceHash": "fb3bc463f4700f0ab836dabd33a7e2f6fd486f97d21e881cc3b800cdb4381523",
+      "rulebookVersion": "Flo's Madness",
+      "stableId": "mods--item-specific--zoom-in-eye-only--65281caa0315",
+      "relationships": {},
+      "category": "Crafting Mods",
+      "subType": "Mod",
+      "cost": "",
+      "burden": "",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 20,
+      "craftingType": "Item-specific",
+      "quantity": 1,
+      "equipped": false,
+      "unitCost": "",
+      "modSlot": "A",
+      "polarityType": "",
+      "polarityUnits": 0,
+      "targetType": "Artifice",
+      "compatibleTargets": [
+        "Artifice Limb"
+      ],
+      "rarity": "",
+      "multiplier": "",
+      "growingTime": 0,
+      "difficulty": 0
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "flos-madness:mods--item-specific--zoom-in-eye-only--65281caa0315",
+        "stableId": "mods--item-specific--zoom-in-eye-only--65281caa0315",
+        "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439",
+        "sourceHash": "fb3bc463f4700f0ab836dabd33a7e2f6fd486f97d21e881cc3b800cdb4381523",
+        "rulebookVersion": "Flo's Madness",
+        "contentBuild": "0.6.0"
+      }
+    }
+  }
+]
