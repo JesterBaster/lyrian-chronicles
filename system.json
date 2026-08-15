@@ -2,7 +2,7 @@
   "id": "lyrian-chronicles",
   "title": "The Lyrian Chronicles",
   "description": "A fan-made Foundry VTT implementation of Angel's Sword Studios' Lyrian Chronicles TTRPG, using official game content with permission. Includes complete rulebook v0.13.1 compendiums, Flo's Madness crafting references, and gameplay automation.",
-  "version": "0.6.8",
+  "version": "0.6.9",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -302,7 +302,7 @@
   ],
   "url": "https://github.com/JesterBaster/lyrian-chronicles",
   "manifest": "https://github.com/JesterBaster/lyrian-chronicles/releases/latest/download/system.json",
-  "download": "https://github.com/JesterBaster/lyrian-chronicles/releases/download/v0.6.8/system.zip",
+  "download": "https://github.com/JesterBaster/lyrian-chronicles/releases/download/v0.6.9/system.zip",
   "license": "LICENSE.txt",
   "readme": "README.md"
 }

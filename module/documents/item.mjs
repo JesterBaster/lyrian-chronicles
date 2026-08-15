@@ -1,5 +1,6 @@
 import { LYRIAN } from "../config.mjs";
 import { renderAttackCard } from "../rules/attack-card.mjs";
+import { runExclusiveActorAction } from "../rules/action-transactions.mjs";
 
 /**
  * The Item document. Weapons and abilities know how to roll themselves.
@@ -27,6 +28,18 @@ export class LyrianItem extends Item {
 
     const actor = this.actor;
     if (!actor) return ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoActor"));
+
+    const action = await runExclusiveActorAction(actor, () =>
+      this._rollWeaponAttack(attackType, options)
+    );
+    if (!action.started) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.ActionInProgress"));
+    }
+    return action.value;
+  }
+
+  async _rollWeaponAttack(attackType, options) {
+    const actor = this.actor;
 
     const profile = LYRIAN.attackTypes[attackType];
     if (!profile) return;
@@ -88,6 +101,16 @@ export class LyrianItem extends Item {
 
     const actor = this.actor;
     if (!actor) return ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoActor"));
+
+    const action = await runExclusiveActorAction(actor, () => this._rollAbility(options));
+    if (!action.started) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.ActionInProgress"));
+    }
+    return action.value;
+  }
+
+  async _rollAbility(options) {
+    const actor = this.actor;
     const sys = this.system;
 
     // Once per round, unless Rapid.
