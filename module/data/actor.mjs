@@ -250,12 +250,14 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
       const penalty = sys.proficient ? { guard: 0, evasion: 0 } : LYRIAN.nonProficientArmorPenalty;
 
       if (cat.isShield) {
+        if (out.shield) continue;
         out.shield = item;
         out.blockValue += cat.block + (sys.blockBonus ?? 0);
         out.guard += cat.guard + penalty.guard;
         out.evasion += cat.evasion + penalty.evasion;
         out.initiative += cat.initiative;
       } else {
+        if (out.armor) continue;
         out.armor = item;
         out.guard += cat.guard + (sys.guardBonus ?? 0) + penalty.guard;
         out.evasion += cat.evasion + penalty.evasion;
