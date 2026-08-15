@@ -100,6 +100,17 @@ Static actor-state requirements are enforced automatically; encounter-dependent 
 ambiguous rules are presented for confirmation. A GM can pass
 `{ ignoreRequirements: true }` to `useAbility` when making an explicit ruling.
 
+Skill and expertise caps are enforced on the Actor document, so sheet edits and
+module/macro updates use the same rules. A GM receives an override confirmation in
+the sheet. GM-authored automation can make the same explicit ruling with:
+
+```js
+await actor.update(
+  { "system.skills.deception.rank": 16 },
+  { lyrianAllowSkillCapOverride: true }
+);
+```
+
 Hooks fired: `lyrianAttack`, `lyrianDamage`, `lyrianHealing`, `lyrianDowned`,
 `lyrianTurnStart`. The attack payload carries the attack type, weapon group,
 accuracy and damage rolls, crit state, keywords, pierce flags and per-target

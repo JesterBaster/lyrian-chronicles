@@ -418,18 +418,21 @@ export class LyrianCharacter extends LyrianActorBase {
       skill.stat = statKey;
       skill.total = stat + skill.rank + skill.bonus;
       skill.atCap = skill.rank >= this.skillCap;
-      this._prepareExpertises(skill);
+      skill.cap = Number.isFinite(this.skillCap) ? this.skillCap : null;
+      this._prepareExpertises(skill, this.skillCap);
     }
 
     for (const skill of Object.values(this.artisan)) {
       skill.total = skill.rank + skill.bonus;
       skill.atCap = skill.rank >= LYRIAN.skillCaps.artisan;
-      this._prepareExpertises(skill);
+      skill.cap = LYRIAN.skillCaps.artisan;
+      this._prepareExpertises(skill, LYRIAN.skillCaps.artisan);
     }
 
     for (const skill of Object.values(this.gathering)) {
       skill.total = skill.rank + skill.bonus;
       skill.atCap = skill.rank >= LYRIAN.skillCaps.gathering;
+      skill.cap = LYRIAN.skillCaps.gathering;
     }
   }
 
@@ -437,10 +440,12 @@ export class LyrianCharacter extends LyrianActorBase {
    * Give each expertise its own roll total, and record the best one so the
    * sheet can show what this skill is capable of at a glance.
    */
-  _prepareExpertises(skill) {
+  _prepareExpertises(skill, cap = Infinity) {
     let best = null;
     for (const expertise of skill.expertises ?? []) {
       expertise.total = skill.total + expertise.rank;
+      expertise.cap = Number.isFinite(cap) ? cap : null;
+      expertise.atCap = expertise.rank >= cap;
       if (!best || expertise.total > best.total) best = expertise;
     }
     skill.bestExpertise = best;
