@@ -24,7 +24,11 @@ const PACKS = {
   "player-abilities": { prefix: "player-abilities", type: "Item" },
   races: { prefix: "races", type: "Item" },
   classes: { prefix: "classes", type: "Item" },
-  items: { prefix: "items", type: "Item" },
+  weapons: { prefix: "weapons", type: "Item" },
+  "armor-shields": { prefix: "armor-shields", type: "Item" },
+  consumables: { prefix: "consumables", type: "Item" },
+  "gear-kits": { prefix: "gear-kits", type: "Item" },
+  artifices: { prefix: "artifices", type: "Item" },
   monsters: { prefix: "monsters", type: "Actor" },
   "monster-abilities": { prefix: "monster-abilities", type: "Item" },
 };
@@ -36,7 +40,11 @@ const EXPECTED = {
   "player-abilities": 1112,
   races: 48,
   classes: 181,
-  items: 206,
+  weapons: 45,
+  "armor-shields": 9,
+  consumables: 58,
+  "gear-kits": 31,
+  artifices: 47,
   monsters: 84,
   "monster-abilities": 307,
 };
@@ -145,13 +153,28 @@ function provenance(entry, description = "") {
   };
 }
 
+function itemPack(entry) {
+  const category = String(entry?.data?.type ?? "");
+  const subType = String(entry?.data?.subType ?? "");
+  const name = String(entry?.name ?? "");
+  if (category === "Artifice") return "artifices";
+  if (category === "Alchemy") return "consumables";
+  if (/armor/i.test(subType) || /^(Armor|Shield)/i.test(name)) return "armor-shields";
+  if (/weapon/i.test(subType) || ["Divine Arms", "Astra Relic"].includes(category)) return "weapons";
+  if (category !== "Crafting" && !/Materials|Mods/i.test(subType)) return "gear-kits";
+  return null;
+}
+
 function packForStableId(stableId) {
   if (/^(ability|key-ability)--/.test(stableId)) return ["player-abilities", "player-abilities"];
   if (stableId.startsWith("class--")) return ["classes", "classes"];
   if (stableId.startsWith("breakthrough--")) return ["breakthroughs", "breakthroughs"];
   if (/^(primary-race|ancestry)--/.test(stableId)) return ["races", "races"];
   if (/^(monster-ability|monster-action)--/.test(stableId)) return ["monster-abilities", "monster-abilities"];
-  if (stableId.startsWith("item--")) return ["items", "items"];
+  if (stableId.startsWith("item--")) {
+    const pack = itemPack(ENTRY_BY_STABLE_ID.get(stableId));
+    return pack ? [pack, "items"] : null;
+  }
   return null;
 }
 
@@ -517,7 +540,7 @@ function validateSnapshot(snapshot) {
     const key = `${entry.category}:${entry.stable_id}`;
     if (seen.has(key)) throw new Error(`Duplicate entry ${key}`);
     seen.add(key);
-    if (!PACKS[entry.category]) throw new Error(`Unknown category ${entry.category}`);
+    if (!PACKS[entry.category] && entry.category !== "items") throw new Error(`Unknown category ${entry.category}`);
     if (!entry.source_url || !entry.source_hash) throw new Error(`Missing provenance for ${key}`);
   }
 }
@@ -548,10 +571,14 @@ for (const entry of snapshot.entries) {
     case "monster-abilities": document = monsterAbilityByStableId.get(entry.stable_id); break;
     default: throw new Error(`Unsupported category ${entry.category}`);
   }
-  grouped[entry.category].push(document);
+  const outputPack = entry.category === "items" ? itemPack(entry) : entry.category;
+  if (outputPack) grouped[outputPack].push(document);
 }
 
 await mkdir(OUTPUT, { recursive: true });
+for (const file of await readdir(OUTPUT)) {
+  if (/^items-\d{2}\.json$/.test(file)) await rm(path.join(OUTPUT, file));
+}
 for (const file of await readdir(OUTPUT)) {
   if (Object.values(PACKS).some(({ prefix }) => new RegExp(`^${prefix}-\\d{2}\\.json$`).test(file))) {
     await rm(path.join(OUTPUT, file));

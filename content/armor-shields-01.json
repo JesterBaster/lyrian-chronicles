@@ -28,12 +28,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:armor-shields:item--armor-clothing",
+        "seedKey": "official:item--armor-clothing",
         "stableId": "item--armor-clothing",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "29656ee26b96e04519adf9c21c63db1f8d6f8d38d8cf2162fdd0229a67cead00",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -66,12 +66,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:armor-shields:item--armor-heavy",
+        "seedKey": "official:item--armor-heavy",
         "stableId": "item--armor-heavy",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d15525a2b2e978aed6f1f242389ffd9b1ec855e40682bb99c8b7942e93cca4ec",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -104,12 +104,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:armor-shields:item--armor-light",
+        "seedKey": "official:item--armor-light",
         "stableId": "item--armor-light",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "431b84916fcec297857d319996c9dd9b777abce55fdba777d2525deca3eb4343",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -142,12 +142,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:armor-shields:item--armor-medium",
+        "seedKey": "official:item--armor-medium",
         "stableId": "item--armor-medium",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "00582c1c0b8a68843c7fb02ad52fbb85543ae680e80e02d0f889a688a364634f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -180,12 +180,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:armor-shields:item--armor-plates",
+        "seedKey": "official:item--armor-plates",
         "stableId": "item--armor-plates",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ac8d46b5ff99657083b6affb453dafb29c452a31048ea889dc1bd276b093109a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -218,12 +218,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:armor-shields:item--armorsmithing-materials",
+        "seedKey": "official:item--armorsmithing-materials",
         "stableId": "item--armorsmithing-materials",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d7aa7a993c60a684c4da67f01dde662e1327ef118f54732e9c9bcbba9d2e80f9",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -256,12 +256,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:armor-shields:item--cloak",
+        "seedKey": "official:item--cloak",
         "stableId": "item--cloak",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0a816ec7c0de57641b07b56f055f1a6522a1d376c5efb68ce6b7f3a8bf2f6606",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -294,12 +294,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:armor-shields:item--shield",
+        "seedKey": "official:item--shield",
         "stableId": "item--shield",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "c454a92b12fe85b0d2eba3a8ebba9fbc332d36f86e4421f2191a4e64bfc62c57",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -332,12 +332,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:armor-shields:item--shield-great",
+        "seedKey": "official:item--shield-great",
         "stableId": "item--shield-great",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "87fcbc8c908696b1eeb1f51fdaceba6ae9d3a914363ceb36b61ae571b9d74e8e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   }

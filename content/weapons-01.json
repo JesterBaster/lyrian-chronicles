@@ -28,12 +28,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--axe-one-handed",
+        "seedKey": "official:item--axe-one-handed",
         "stableId": "item--axe-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7d452c6e25a3b48eff40ac44170a378f1449c91983b3df83500f07a607b1f96a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -66,12 +66,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--axe-two-handed",
+        "seedKey": "official:item--axe-two-handed",
         "stableId": "item--axe-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "66b1d4e0ef00a2e7ffb0c61f74ed41658457b001363e002b16b28f45b2b40b5a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -104,12 +104,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--bludgeoning-weapon-one-handed",
+        "seedKey": "official:item--bludgeoning-weapon-one-handed",
         "stableId": "item--bludgeoning-weapon-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "62f6683c157b83184b856b697a2fefdde121614c1adc433710d3cc507515ad2c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -142,12 +142,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--bludgeoning-weapon-two-handed",
+        "seedKey": "official:item--bludgeoning-weapon-two-handed",
         "stableId": "item--bludgeoning-weapon-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "547b655313adf8e3dcb841f72802a8a848202945733e05d344caa5fbf873c24f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -180,12 +180,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--bow-two-handed",
+        "seedKey": "official:item--bow-two-handed",
         "stableId": "item--bow-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0fa168010ab279818e2bd1a0ec435d1a9ab1430e206c225f20b5e816adeab810",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -218,12 +218,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--crossbow-one-handed",
+        "seedKey": "official:item--crossbow-one-handed",
         "stableId": "item--crossbow-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6a38312ed82e46edd850af677fb12a4bdddecce10d685fc7a8ecc4aab5a20059",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -256,12 +256,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--crossbow-two-handed",
+        "seedKey": "official:item--crossbow-two-handed",
         "stableId": "item--crossbow-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ed69b028bcb353902e12fb45e3b0258fd603dd85f8338fb5f469a3467f480fd6",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -294,12 +294,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--dueling-weapon-one-handed",
+        "seedKey": "official:item--dueling-weapon-one-handed",
         "stableId": "item--dueling-weapon-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6a0b052d4cc0c37f8bb622ff3a87d85a7bbb4d625fb0394d995247b755a5427c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -332,12 +332,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--gauntlets-one-handed",
+        "seedKey": "official:item--gauntlets-one-handed",
         "stableId": "item--gauntlets-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a80fedbca634fe804bf199843e1b5bab18ddaed312c55dcc07f462148e17525c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -370,12 +370,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--ghostblade",
+        "seedKey": "official:item--ghostblade",
         "stableId": "item--ghostblade",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cffa79237dcd3f2d0db538585a4c9d8832c43935bc0328be363f47e40edfafbe",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -408,12 +408,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--giant-scissors-two-handed",
+        "seedKey": "official:item--giant-scissors-two-handed",
         "stableId": "item--giant-scissors-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1ecef23870019481f24e53b777b722db6d86b9fb017126714e213c2d7c153458",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -446,12 +446,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--heavy-blade-two-handed",
+        "seedKey": "official:item--heavy-blade-two-handed",
         "stableId": "item--heavy-blade-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "4504665e95f10613043eb28cbacbd267ce1090d4d4d8adc1a039bc0e7edded1d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -484,12 +484,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--hori",
+        "seedKey": "official:item--hori",
         "stableId": "item--hori",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7bc02a4a09922faa1f1f312816c6e5ba085f7f345a988e3cbe5d332fd3a99f98",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -522,12 +522,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--katana-one-handed",
+        "seedKey": "official:item--katana-one-handed",
         "stableId": "item--katana-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "be7ffbaa65eff077fb505e851a6f6225349f6d022d2e5f6edf64a196c16940f5",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -560,12 +560,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--katana-two-handed",
+        "seedKey": "official:item--katana-two-handed",
         "stableId": "item--katana-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "10a933438dc301d3a63dd684fe67acf1e5bbe1a436d0ec748820d82ecfed1b33",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -598,12 +598,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--lance-one-handed",
+        "seedKey": "official:item--lance-one-handed",
         "stableId": "item--lance-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0a2763c1890ec5bb5b0b715d7d3d5f6546cd70b31a307cf2d1109d01f81bf22e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -636,12 +636,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--light-sword-one-handed",
+        "seedKey": "official:item--light-sword-one-handed",
         "stableId": "item--light-sword-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f17375bcdf3d6cab645814126e091ccf1cfe10e11231bbea1be9b0feff62ab8f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -674,12 +674,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--longsword-one-handed-two-handed",
+        "seedKey": "official:item--longsword-one-handed-two-handed",
         "stableId": "item--longsword-one-handed-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1b2c2acd23cd1de8bb1ef83a544b39ebe006094c9538176b35070d1bd9ce316b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -712,12 +712,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--musket-two-handed",
+        "seedKey": "official:item--musket-two-handed",
         "stableId": "item--musket-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0d7bd9258cbcbfca1d1d70963876e5b58000d373734a1084c6fbb8f29bfa16b7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -750,12 +750,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--pickaxe-one-handed",
+        "seedKey": "official:item--pickaxe-one-handed",
         "stableId": "item--pickaxe-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "83279ace923b27328d171f2547a1f9bd00137319d1c0aba5ba0524cbe9c7ed65",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -788,12 +788,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--pickaxe-two-handed",
+        "seedKey": "official:item--pickaxe-two-handed",
         "stableId": "item--pickaxe-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a419262f534cb91622dce2bcf3c18ee8a4884fffb8ef059ccff13d7e3e7f78aa",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -826,12 +826,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--pistol-one-handed",
+        "seedKey": "official:item--pistol-one-handed",
         "stableId": "item--pistol-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "17f4163b6ee28a6d0c96bdf8de0d1736407237af708b4e5d258963ff12da7d14",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -864,12 +864,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--polaris-pair",
+        "seedKey": "official:item--polaris-pair",
         "stableId": "item--polaris-pair",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f0cfdc6cee7e1837ed07e990172e7c2a7010e474d15aae18d9ef2fba43821348",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -902,12 +902,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--polearm-one-handed",
+        "seedKey": "official:item--polearm-one-handed",
         "stableId": "item--polearm-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "fb5cfe9c73d5915f41995b0bad733d19ff8a6d1f87c78211ef224680bed0777a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -940,12 +940,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--polearm-two-handed",
+        "seedKey": "official:item--polearm-two-handed",
         "stableId": "item--polearm-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a0fdaa6b28d4714e227c5e0946a38518e5d1fe1257bcbc449db3e7699a68abb7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -978,12 +978,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--saboteur-thread-daggers-one-handed",
+        "seedKey": "official:item--saboteur-thread-daggers-one-handed",
         "stableId": "item--saboteur-thread-daggers-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ab469fb1b2fd98eea7d94cc4ab134a0f4f13a44a6283e9ff8edb7fc21cb8a6d9",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1016,12 +1016,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--scythe-two-handed",
+        "seedKey": "official:item--scythe-two-handed",
         "stableId": "item--scythe-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "5317982fe142e0e977bda13d2e0a036ed722a8e49f0302436e74bd3529c3a86f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1054,12 +1054,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--set-of-missiles-one-handed",
+        "seedKey": "official:item--set-of-missiles-one-handed",
         "stableId": "item--set-of-missiles-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "23d583af602848c214a1fb613108d5734db956ee4a4227299978d53c5b5400e7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1092,12 +1092,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--shepherd-s-sling-one-handed",
+        "seedKey": "official:item--shepherd-s-sling-one-handed",
         "stableId": "item--shepherd-s-sling-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cdda99033e05fc30fd7745fc4bab3de8fbdff071043121d706952dfd7d5a9e8d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1130,12 +1130,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--shotgun-one-handed",
+        "seedKey": "official:item--shotgun-one-handed",
         "stableId": "item--shotgun-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6c9033b787ab423d67fbf3ec73710d61ac63a035ba5ee497aa0c2436113b9e34",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1168,12 +1168,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--shotgun-two-handed",
+        "seedKey": "official:item--shotgun-two-handed",
         "stableId": "item--shotgun-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "88003bd3c2ef677d45ccd1b5773a8ead2ac3f721105c48cf2c68bf3a22f8df9e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1206,12 +1206,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--sickle",
+        "seedKey": "official:item--sickle",
         "stableId": "item--sickle",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8ed54998643d94f67f429ed0d88d3ab73124c2745c10a23c766d1a35e1ac72c4",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1244,12 +1244,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--small-weapons-one-handed",
+        "seedKey": "official:item--small-weapons-one-handed",
         "stableId": "item--small-weapons-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "47f30cd2501249a990c18ca602b2b3179ebcf7af2a3e717f4992d37456d96ff7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1282,12 +1282,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--smith-s-hammer-one-handed",
+        "seedKey": "official:item--smith-s-hammer-one-handed",
         "stableId": "item--smith-s-hammer-one-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b46478f9839cc9e207770a337d311961346dc77bf024ad2eda3947f301329931",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1320,12 +1320,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--smith-s-hammer-two-handed",
+        "seedKey": "official:item--smith-s-hammer-two-handed",
         "stableId": "item--smith-s-hammer-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d2a6d72ad5b3f710087a6e139f703679e9ca51efcf97cdea9b6769ea18cba09b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1358,12 +1358,354 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:weapons:item--sniper-rifle-two-handed",
+        "seedKey": "official:item--sniper-rifle-two-handed",
         "stableId": "item--sniper-rifle-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d994e4f15137ba14a43c64cba7ff0c4c1e14c7f2e74ee23af416303807cb5049",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "cb87ec84936af249",
+    "name": "Staff (One-Handed)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/78755142-4d52-48b0-ad90-462857439763-Light Staff.lg.webp",
+    "system": {
+      "description": "<p>On damage with an attack made with this weapon, you may spend 1 Mana to push the target back 5ft.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Elemental Staff (35 points):</strong> You may alter the damage type from an attack made with this weapon for 0 AP. The damage type must be an element type you have mastered (usually unlocked through classes) or one that’s built into the weapon.</li><li><strong>Powerful Push (35 points): </strong>The knockback distance is increased to 10ft.</li></ul></li><li><i>B mods:</i><ul><li><strong>Efficiency (50 points)</strong>: The first basic attack you make each round may trigger the knockback effect without spending mana.</li><li><strong>Unstoppable Force (80 points): </strong>The knockback effect is now on hit rather than on damage.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "7e68bbcaa638be7a765d51dbb7cab93714785adcc909fe6555a04017dd458b11",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--staff-one-handed",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Channeling Weapon",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Carpentry",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--staff-one-handed",
+        "stableId": "item--staff-one-handed",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "7e68bbcaa638be7a765d51dbb7cab93714785adcc909fe6555a04017dd458b11",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "75395d8193d40f78",
+    "name": "Staff (Two-Handed)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/d5e66613-1b79-43c7-9a0b-a3c04d6f107f-2H Staff - Copy.lg.webp",
+    "system": {
+      "description": "<p>On damage with an attack made with this weapon, you may spend 1 Mana to push the target back 5ft.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Elemental Staff (35 points):</strong> You may alter the damage type from an attack made with this weapon for 0 AP. The damage type must be an element type you have mastered (usually unlocked through classes) or one that’s built into the weapon</li><li><strong>Powerful Push (35 points): </strong>The knockback distance is increased to 10ft.</li></ul></li><li><i>B mods:</i><ul><li><strong>Efficiency (50 points)</strong>: The first basic attack you make each round may trigger the knockback effect without spending mana.</li><li><strong>Unstoppable Force (80 points): </strong>The knockback effect is now on hit rather than on damage.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "8682fb9004608244a22a7d05461d0446f324cf559146f3a55387d7ff19b34029",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--staff-two-handed",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Channeling Weapon",
+      "cost": "1000 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Carpentry",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--staff-two-handed",
+        "stableId": "item--staff-two-handed",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "8682fb9004608244a22a7d05461d0446f324cf559146f3a55387d7ff19b34029",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "b2a2e4584de1bca3",
+    "name": "Thrown (One-Handed)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/a8b96aed-a6e7-428f-9c72-9a904df40816-Throwing Light.lg.webp",
+    "system": {
+      "description": "<p><strong>Switch Hit: </strong>This weapon can be used as a melee weapon without penalty. After making a ranged attack with this weapon, it returns to your hand.</p><p>Range: 30ft</p><h4>Mods:</h4><ul><li><i>A mods:</i><ul><li><strong>Skirmisher (35 points):</strong> After making a ranged attack with this weapon, you may move 5ft as if you had the light sword passive (Nimble).</li><li><strong>Spinning Axe (35 Points):</strong> This weapon also gains the axe passive (Wild Swing). You keep this effect even when throwing the weapon.</li></ul></li><li><i>B mods:</i><ul><li><strong>Throwing Hammer (50 points): </strong>Attacks with this weapon gain the Artillery keyword within 30ft.</li><li><strong>Ricocheting (50 points):</strong> Once per round when this weapon deals damage with a Heavy attack, you may make a Light attack against a different target within 20ft.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "20f93336d62fbf522debba3c13af70bc01cc17ac488cf51eafe8e178bc49991d",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--thrown-one-handed",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Weapon",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Blacksmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--thrown-one-handed",
+        "stableId": "item--thrown-one-handed",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "20f93336d62fbf522debba3c13af70bc01cc17ac488cf51eafe8e178bc49991d",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "b5165b2573ec2423",
+    "name": "Thrown (Two-Handed)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/ea7f1026-3e7d-47e6-b8fc-8a6e0a33e4bc-Throwing Weapon.lg.webp",
+    "system": {
+      "description": "<p><strong>Switch Hit: </strong>This weapon can be used as a melee weapon without penalty. After making a ranged attack with this weapon, it returns to your hand.</p><p>Range: 60ft</p><h4>Mods:</h4><ul><li><i>A mods:</i><ul><li><strong>Skirmisher (35 points):</strong> After making a ranged attack with this weapon, you may move 5ft as if you had the light sword passive (Nimble).</li><li><strong>Spinning Axe (35 Points):</strong> This weapon also gains the axe passive (Wild Swing). You keep this effect even when throwing the weapon.</li></ul></li><li><i>B mods:</i><ul><li><strong>Throwing Hammer (50 points): </strong>Attacks with this weapon gain the Artillery keyword within 30ft.</li><li><strong>Ricocheting (50 points):</strong> Once per round when this weapon deals damage with a Heavy attack, you may make a Light attack against a different target within 20ft.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "82cebe6559b19a30315ed92d852b34e525c717f3aaa42648682534859f299d5d",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--thrown-two-handed",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Weapon",
+      "cost": "1000 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Blacksmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--thrown-two-handed",
+        "stableId": "item--thrown-two-handed",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "82cebe6559b19a30315ed92d852b34e525c717f3aaa42648682534859f299d5d",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "157f86e2bb9fdf63",
+    "name": "Timeworn Katana",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/d213e50a-b43b-41f1-988b-0bb1d8331f76-Timeworn Katana - Copy.lg.webp",
+    "system": {
+      "description": "<p><strong>Current Wielder:</strong> Unknown</p><p>A rusty katana with a dull blade.</p><p>&nbsp;</p><p>Any attack made with this weapon does not deal damage immediately, but any damage it deals is stored (after the hit resolves). When the wielder sheathes this weapon, it deals true damage based on the damage stored. The damage each target takes is based on the damage that was stored against them.</p><p>Hits and damage remain stored this way for up to the end of an encounter or for up to a minute, whichever is longer.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "81767a3627ac6a3bca1237119147fd64624ab1779d195e168fa8f1926e072701",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--timeworn-katana",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Astra Relic",
+      "subType": "Main",
+      "cost": "-",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 0,
+      "craftingType": "",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--timeworn-katana",
+        "stableId": "item--timeworn-katana",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "81767a3627ac6a3bca1237119147fd64624ab1779d195e168fa8f1926e072701",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "60b5aa473e37f85e",
+    "name": "Twinblade (Two-handed)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/06e4056b-3cb3-4490-b0af-7677838a992c-Twinblade.lg.webp",
+    "system": {
+      "description": "<p><strong>Twin Strike:</strong> You can make dual wield attacks as if you were wielding two weapons.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Haladie Blade (20 points): </strong>Attacks with this weapon have -1 Power, but you can make 2 offhand attacks per turn instead of one.</li></ul></li><li><i>B mods:</i><ul><li><strong>Shadow-Type Saber (80 points): </strong>When engaged in melee and you take a block or dodge action and then you are attacked by another melee attack by a different enemy, you may use block or dodge against that attack for 0 RP.&nbsp; Applies once per turn</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "0fe53af7f59b767db996b9b957e338370f16cd354f4b7c03f2b0f9996e43cf04",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--twinblade-two-handed",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Weapon",
+      "cost": "1000 Clim",
+      "burden": "2",
+      "activationCost": "",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Blacksmithing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--twinblade-two-handed",
+        "stableId": "item--twinblade-two-handed",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "0fe53af7f59b767db996b9b957e338370f16cd354f4b7c03f2b0f9996e43cf04",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "d0b17bb4d0687285",
+    "name": "Wand (One-Handed)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/56531a1e-a8ad-4c0a-9908-9882ceb42c0c-1H Wand - Copy.lg.webp",
+    "system": {
+      "description": "<p><strong>Magic Blast:</strong> You may alter the damage type fired by an attack made with this weapon for 0 AP. The damage type must be an element type you have mastered (usually unlocked through classes) or one that’s built into the weapon. Each weapon has at least one element built in.</p><p>Range: 60ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Ornamental (10 points):</strong> You may use this weapon as one minor item such as an instrument or parasol.</li><li><strong>Echo Blast (20 points):</strong> When you make a basic Heavy attack, you may split the damage against two different targets in range. Make only 1 accuracy check against both.</li><li><strong>Warding Wand (35 points): </strong>You may spend 1 AP to gain 5 temporary HP until the start of your next turn.</li></ul></li><li><i>B mods:</i><ul><li><strong>Dedicated Focus (50 points):</strong> Gain +1 bonus to accuracy rolls, but can only fire elemental attacks of 1 element. Spells cast through this wand only gain that bonus if they deal that element of damage.</li><li><strong>Mana Core (80 points):</strong> When you deal max damage with an attack made with this weapon or with a spell cast through this weapon against an enemy in an encounter, your next spell this turn costs 1 less mana (min 0)</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1a0deaabc2599be8f5447cc639528bb9f21eefa20cf9a959e1227af46b76f9fe",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--wand-one-handed",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Channeling Weapon",
+      "cost": "500 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Carpentry",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--wand-one-handed",
+        "stableId": "item--wand-one-handed",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1a0deaabc2599be8f5447cc639528bb9f21eefa20cf9a959e1227af46b76f9fe",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "35e2f5fbc55e048c",
+    "name": "Wand (Two-Handed)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/9e2dc16c-189e-4159-94d2-5c58009d178a-2H Wand - Copy.lg.webp",
+    "system": {
+      "description": "<p><strong>Magic Blast:</strong> You may alter the damage type fired by an attack made with this weapon for 0 AP. The damage type must be an element type you have mastered (usually unlocked through classes) or one that’s built into the weapon. Each weapon has at least one element built in.</p><p>Range: 120ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Ornamental (10 points):</strong> You may use this weapon as one minor item such as an instrument or parasol.</li><li><strong>Echo Blast (20 points):</strong> When you make a basic Heavy attack, you may split the damage against two different targets in range. Make only 1 accuracy check against both.</li><li><strong>Warding Wand (35 points): </strong>You may spend 1 AP to gain 5 temporary HP until the start of your next turn.</li></ul></li><li><i>B mods:</i><ul><li><strong>Mana Surge (25 points):</strong> Once per round after you cast a spell, you may make a Light attack for 0 AP. Two-Handed wand only. This counts as your dual wield attack.</li><li><strong>Dedicated Focus (50 points):</strong> Gain +1 bonus to accuracy rolls, but can only fire elemental attacks of 1 element. Spells cast through this wand only gain that bonus if they deal that element of damage.</li><li><strong>Mana Core (80 points):</strong> When you deal max damage with an attack made with this weapon or with a spell cast through this weapon against an enemy in an encounter, your next spell this turn costs 1 less mana (min 0)</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1a8425b7bd37ed111a16071d5b64c18b1e7f4fbc81770d6d76cfdfa7d16f7dcb",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--wand-two-handed",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Channeling Weapon",
+      "cost": "1000 Clim",
+      "burden": "2",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Carpentry",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--wand-two-handed",
+        "stableId": "item--wand-two-handed",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1a8425b7bd37ed111a16071d5b64c18b1e7f4fbc81770d6d76cfdfa7d16f7dcb",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "adba267c43ea29ff",
+    "name": "Whip (One-Handed)",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/5368ff41-2146-4e6f-8bdb-6d40f4e03a25-Whip.lg.webp",
+    "system": {
+      "description": "<p>Whip Crack: You gain +5ft range on your weapon attacks. Weapon attacks made at max range (default of 10) gain +1 damage. Your threatened range is still 5ft.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Barbed Wire (10 points): </strong>Upon landing a critical hit with this weapon, apply Bleeding to the target.</li><li><strong>Fluttering Ribbon (35 points):</strong> At the start of your turn, you may change your threatened range to 5-10ft until the start of your next turn.</li></ul></li><li><i>B mods:</i><ul><li><strong>Binding Flow (50 points):</strong> When dealing damage with a Heavy attack, you may choose to not do damage to instead reduce a creature’s movement speed to 0 until the start of your next turn or until you move. Does not work against bosses or creatures bigger than you.</li><li><strong>Hooked Coil (80 points):</strong> When dealing damage with an attack of opportunity against an enemy leaving your range, you may pull them back 5ft. Only triggers once per turn.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "f6cf234f5c73a09a0b05a9e5f4148822ad1bc0f75b46007fadeba2a1125b1872",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--whip-one-handed",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Equipment",
+      "subType": "Specialized Weapon",
+      "cost": "750 clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 30,
+      "craftingType": "Carpentry",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--whip-one-handed",
+        "stableId": "item--whip-one-handed",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "f6cf234f5c73a09a0b05a9e5f4148822ad1bc0f75b46007fadeba2a1125b1872",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   }

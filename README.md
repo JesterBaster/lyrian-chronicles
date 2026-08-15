@@ -56,8 +56,8 @@ restart; changes to data model schemas need the world relaunched from the setup 
 The system seeds reviewed rules, keywords, breakthroughs, abilities, races, classes,
 weapons, armor, consumables, gear, artifices, crafting materials, item mods, monsters,
 and monster abilities. A separate Crafting Guide preserves explanatory notes from
-Flo's Madness. The former mixed Items & Equipment pack remains GM-only for one migration
-cycle so existing world references are not broken.
+Flo's Madness. The testing build uses only the focused equipment packs; the former mixed
+Items & Equipment pack has been removed.
 
 Prices ending in `c` in Flo's Madness are normalized as Clim. Amounts ending in `u` are
 normalized as units. Every crafting entry retains its source tab, effects, requirements,
