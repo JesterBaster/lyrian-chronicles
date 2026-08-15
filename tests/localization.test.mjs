@@ -14,6 +14,22 @@ test("the English localization catalog has no duplicate keys", () => {
   assert.deepEqual(duplicates, []);
 });
 
+test("localization keys have no scalar namespace collisions", () => {
+  const keys = Object.keys(LANGUAGE);
+  const keySet = new Set(keys);
+  const collisions = [];
+
+  for (const key of keys) {
+    const segments = key.split(".");
+    for (let index = 1; index < segments.length; index += 1) {
+      const prefix = segments.slice(0, index).join(".");
+      if (keySet.has(prefix)) collisions.push(`${prefix} conflicts with ${key}`);
+    }
+  }
+
+  assert.deepEqual(collisions, []);
+});
+
 function filesUnder(directory, extensions) {
   const files = [];
   const visit = (current) => {
