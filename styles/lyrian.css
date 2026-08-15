@@ -264,6 +264,11 @@
 .lyrian .lyr-prof-sources span,
 .lyrian .lyr-prof-sources em { font-size: 0.72rem; }
 .lyrian .lyr-prof-sources em { color: var(--lyr-ink-faint); }
+.lyrian .lyr-prof-choice { display: grid; gap: 0.35rem; margin-top: 0.35rem; }
+.lyrian .lyr-prof-choice__row { display: flex; gap: 0.4rem; align-items: center; }
+.lyrian .lyr-prof-choice__row select,
+.lyrian .lyr-prof-choice__row input { flex: 1; min-width: 12rem; }
+.lyrian .lyr-prof-choice__row button { flex: 0 0 auto; }
 .lyrian .lyr-prof-card { border-color: rgba(103, 164, 222, 0.25); }
 .lyrian .lyr-prof-card > header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--lyr-rule); margin-bottom: 0.7rem; padding-bottom: 0.55rem; }
 .lyrian .lyr-prof-card > header h2 { margin: 0; font-size: 0.88rem; text-transform: uppercase; }
