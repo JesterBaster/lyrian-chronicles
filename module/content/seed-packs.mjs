@@ -50,10 +50,25 @@ export async function seedSystemPacks({ force = false } = {}) {
 
   for (const packName of PACK_NAMES) {
     const pack = game.packs.get(`${SYSTEM_ID}.${packName}`);
-    if (!pack) continue;
+    if (!pack) {
+      summary[packName] = { error: "Compendium is not registered" };
+      continue;
+    }
 
-    const source = await _loadContent(catalog.packs?.[packName]?.files ?? []);
-    if (!source) continue;
+    const fileNames = catalog.packs?.[packName]?.files;
+    if (!Array.isArray(fileNames) || !fileNames.length) {
+      summary[packName] = { error: "Content index has no files for this pack" };
+      continue;
+    }
+
+    let source;
+    try {
+      source = await _loadContent(fileNames);
+    } catch (err) {
+      console.error(`Lyrian Chronicles | Loading ${packName} failed`, err);
+      summary[packName] = { error: err.message };
+      continue;
+    }
 
     // Read the index rather than hydrating documents — the ability pack can be
     // very large and getDocuments() on it is painfully slow.
@@ -133,8 +148,15 @@ export async function seedSystemPacks({ force = false } = {}) {
     }
   }
 
-  const clean = !Object.values(summary).some((r) => r.error);
+  const clean = Object.keys(summary).length === PACK_NAMES.length &&
+    !Object.values(summary).some((result) => result.error);
   if (clean) await game.settings.set(SYSTEM_ID, "contentSeedVersion", CONTENT_VERSION);
+  else {
+    ui.notifications.error(
+      "Lyrian Chronicles: some compendium packs could not be refreshed. Check the console for details.",
+      { permanent: true }
+    );
+  }
 
   if (total) {
     ui.notifications.info(
@@ -157,18 +179,14 @@ async function _loadContentIndex() {
 }
 
 async function _loadContent(fileNames) {
-  try {
-    const chunks = await Promise.all(fileNames.map(async (fileName) => {
-      const response = await fetch(`systems/${SYSTEM_ID}/content/${fileName}`);
-      if (!response.ok) throw new Error(`${fileName}: ${response.status}`);
-      const data = await response.json();
-      if (!Array.isArray(data)) throw new Error(`${fileName}: expected an array`);
-      return data;
-    }));
-    return chunks.flat();
-  } catch {
-    return null;
-  }
+  const chunks = await Promise.all(fileNames.map(async (fileName) => {
+    const response = await fetch(`systems/${SYSTEM_ID}/content/${fileName}`);
+    if (!response.ok) throw new Error(`${fileName}: ${response.status}`);
+    const data = await response.json();
+    if (!Array.isArray(data)) throw new Error(`${fileName}: expected an array`);
+    return data;
+  }));
+  return chunks.flat();
 }
 
 /* -------------------------------------------- */
@@ -188,17 +206,20 @@ export async function resetSystemPacks() {
     if (!pack) continue;
 
     const wasLocked = pack.locked;
-    if (wasLocked) await pack.configure({ locked: false });
+    try {
+      if (wasLocked) await pack.configure({ locked: false });
 
-    await pack.getIndex({ fields: [`flags.${SYSTEM_ID}.seedKey`] });
-    const ids = pack.index
-      .filter((e) => foundry.utils.getProperty(e, `flags.${SYSTEM_ID}.seedKey`))
-      .map((e) => e._id);
+      await pack.getIndex({ fields: [`flags.${SYSTEM_ID}.seedKey`] });
+      const ids = pack.index
+        .filter((e) => foundry.utils.getProperty(e, `flags.${SYSTEM_ID}.seedKey`))
+        .map((e) => e._id);
 
-    if (ids.length) {
-      await pack.documentClass.deleteDocuments(ids, { pack: pack.collection });
+      if (ids.length) {
+        await pack.documentClass.deleteDocuments(ids, { pack: pack.collection });
+      }
+    } finally {
+      if (wasLocked) await pack.configure({ locked: true });
     }
-    if (wasLocked) await pack.configure({ locked: true });
   }
 
   await game.settings.set(SYSTEM_ID, "contentSeedVersion", "");
