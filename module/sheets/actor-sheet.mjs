@@ -130,6 +130,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.isCharacter = actor.type === "character";
     context.isNPC = actor.type === "npc" || actor.type === "monster";
     context.editable = this.isEditable;
+    context.isGM = game.user.isGM;
     context.systemFields = actor.system.schema.fields;
 
     context.enrichedBiography = await foundry.applications.ux.TextEditor.implementation.enrichHTML(

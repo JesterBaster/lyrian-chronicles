@@ -15,6 +15,10 @@ import {
   featureSourceKey,
   indexGeneratedFeatures
 } from "../rules/progression.mjs";
+import {
+  formatSkillCapViolation,
+  skillCapViolations
+} from "../rules/skill-caps.mjs";
 
 /**
  * The Actor document for Lyrian Chronicles.
@@ -27,6 +31,53 @@ export class LyrianActor extends Actor {
   /** @override */
   prepareData() {
     super.prepareData();
+  }
+
+  /** @override Enforce character skill and expertise caps for every update source. */
+  async _preUpdate(changes, options, user) {
+    const allowed = await super._preUpdate(changes, options, user);
+    if (allowed === false || this.type !== "character") return allowed;
+
+    const violations = skillCapViolations(this.system, changes);
+    if (!violations.length) return allowed;
+
+    const gmOverride = Boolean(user?.isGM && options?.lyrianAllowSkillCapOverride);
+    if (gmOverride) return allowed;
+
+    const labels = {
+      expertise: game.i18n.localize("LYRIAN.SkillCap.Expertise"),
+      groups: {
+        skills: game.i18n.localize("LYRIAN.SkillCap.Main"),
+        artisan: game.i18n.localize("LYRIAN.SkillCap.Artisan"),
+        gathering: game.i18n.localize("LYRIAN.SkillCap.Gathering")
+      },
+      skills: {
+        skills: Object.fromEntries(Object.entries(LYRIAN.skills).map(([key, definition]) => [
+          key, game.i18n.localize(definition.label)
+        ])),
+        artisan: Object.fromEntries(Object.entries(LYRIAN.artisanSkills).map(([key, label]) => [
+          key, game.i18n.localize(label)
+        ])),
+        gathering: Object.fromEntries(Object.entries(LYRIAN.gatheringSkills).map(([key, label]) => [
+          key, game.i18n.localize(label)
+        ]))
+      }
+    };
+    const rows = violations.map((violation) =>
+      `<li>${formatSkillCapViolation(violation, labels)}</li>`).join("");
+
+    if (!user?.isGM) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.SkillCap.Blocked"));
+      return false;
+    }
+
+    const confirmed = await foundry.applications.api.DialogV2.confirm({
+      window: { title: game.i18n.localize("LYRIAN.SkillCap.OverrideTitle") },
+      content: `<p>${game.i18n.localize("LYRIAN.SkillCap.OverridePrompt")}</p><ul>${rows}</ul>`
+    });
+    if (!confirmed) return false;
+    options.lyrianAllowSkillCapOverride = true;
+    return allowed;
   }
 
   /* -------------------------------------------- */
