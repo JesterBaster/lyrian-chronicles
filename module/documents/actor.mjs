@@ -2,6 +2,10 @@ import { LYRIAN } from "../config.mjs";
 import { parseMonsterAttackProfile } from "../rules/monster-attack.mjs";
 import { renderAttackCard } from "../rules/attack-card.mjs";
 import {
+  queueActorTransaction,
+  runExclusiveActorAction
+} from "../rules/action-transactions.mjs";
+import {
   nonNegativeInteger,
   normalizeResourceCosts,
   positiveInteger
@@ -295,6 +299,16 @@ export class LyrianActor extends Actor {
     if (this.type !== "npc" && this.type !== "monster") return null;
     if (!["light", "heavy"].includes(attackType)) return null;
 
+    const action = await runExclusiveActorAction(this, () =>
+      this._rollMonsterAttack(attackType, options)
+    );
+    if (!action.started) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.ActionInProgress"));
+    }
+    return action.value;
+  }
+
+  async _rollMonsterAttack(attackType, options) {
     const key = attackType === "heavy" ? "heavyAttack" : "lightAttack";
     const profileText = this.system.official?.[key] ?? "";
     const profile = parseMonsterAttackProfile(profileText);
@@ -360,40 +374,42 @@ export class LyrianActor extends Actor {
    * Attempt to pay AP, RP and mana. Returns false and warns if you cannot.
    */
   async spendResources({ ap = 0, rp = 0, mana = 0 } = {}) {
-    const s = this.system;
-    const costs = normalizeResourceCosts({ ap, rp, mana });
-    if (!costs) {
-      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.InvalidAmount"));
-      return false;
-    }
+    return queueActorTransaction(this, async () => {
+      const s = this.system;
+      const costs = normalizeResourceCosts({ ap, rp, mana });
+      if (!costs) {
+        ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.InvalidAmount"));
+        return false;
+      }
 
-    const shortfalls = [];
-    if (costs.ap > s.ap.total) shortfalls.push(`${costs.ap} AP`);
-    if (costs.rp > s.rp.total) shortfalls.push(`${costs.rp} RP`);
-    if (costs.mana > s.mana.total) shortfalls.push(`${costs.mana} Mana`);
+      const shortfalls = [];
+      if (costs.ap > s.ap.total) shortfalls.push(`${costs.ap} AP`);
+      if (costs.rp > s.rp.total) shortfalls.push(`${costs.rp} RP`);
+      if (costs.mana > s.mana.total) shortfalls.push(`${costs.mana} Mana`);
 
-    if (shortfalls.length) {
-      ui.notifications.warn(
-        game.i18n.format("LYRIAN.Warn.NotEnoughResources", {
-          name: this.name,
-          cost: shortfalls.join(", ")
-        })
-      );
-      return false;
-    }
+      if (shortfalls.length) {
+        ui.notifications.warn(
+          game.i18n.format("LYRIAN.Warn.NotEnoughResources", {
+            name: this.name,
+            cost: shortfalls.join(", ")
+          })
+        );
+        return false;
+      }
 
-    const update = {};
-    for (const [key, cost] of Object.entries(costs)) {
-      if (!cost) continue;
-      // Temporary points are spent first — they expire, so burning them last wastes them.
-      const pool = s[key];
-      const fromTemp = Math.min(pool.temp ?? 0, cost);
-      update[`system.${key}.temp`] = (pool.temp ?? 0) - fromTemp;
-      update[`system.${key}.value`] = pool.value - (cost - fromTemp);
-    }
+      const update = {};
+      for (const [key, cost] of Object.entries(costs)) {
+        if (!cost) continue;
+        // Temporary points are spent first — they expire, so burning them last wastes them.
+        const pool = s[key];
+        const fromTemp = Math.min(pool.temp ?? 0, cost);
+        update[`system.${key}.temp`] = (pool.temp ?? 0) - fromTemp;
+        update[`system.${key}.value`] = pool.value - (cost - fromTemp);
+      }
 
-    await this.update(update);
-    return true;
+      await this.update(update);
+      return true;
+    });
   }
 
   /**
