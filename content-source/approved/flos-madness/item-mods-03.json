@@ -1,0 +1,980 @@
+[
+  {
+    "stableId": "mods--item-specific--focused-lens--5db783786bf4",
+    "name": "Focused Lens",
+    "displayName": "Focused Lens",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "When you deal damage with a mystic eye ability, you make immediately make a Light attack against one of the targets you damaged with it. This counts as your dual wield attack.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Eye Lens"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H17"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--focused-spin--0b94a755f6a9",
+    "name": "Focused Spin",
+    "displayName": "Focused Spin",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Your Sweeping Arc now instead targets the same creature as the target of your Heavy attack.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Scythe (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G30"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--fortress--79259184a067",
+    "name": "Fortress",
+    "displayName": "Fortress",
+    "modSlot": "Frame",
+    "craftingPoints": 20,
+    "effect": "Reduces the Initiative penalty by 1 and the Evasion/Dodge penalty by 2, but it also reduces the movement speed by 5ft.",
+    "targetType": "Armor",
+    "compatibleTargets": [
+      "Heavy Armor"
+    ],
+    "sourceSheets": [
+      "Armors"
+    ],
+    "sourceLocations": [
+      "Armors!A25:D25"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=1940579921"
+  },
+  {
+    "stableId": "mods--item-specific--fuel-optimization--1a847396237e",
+    "name": "Fuel Optimization",
+    "displayName": "Fuel Optimization",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "When activated, it now lasts until the end of the encounter on a single shell use.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Portable Vacuum"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G29"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--full-spin--bc9ea8df15c3",
+    "name": "Full Spin",
+    "displayName": "Full Spin",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "Your sweeping arc can now target all creatures within 5ft of you.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Scythe (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G30"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--fullering-groves--522ed039fba0",
+    "name": "Fullering Groves",
+    "displayName": "Fullering Groves",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "Gives Nimble II. After attacking an enemy with a light attack on your turn, you may move 10ft. This movement only provokes attacks of opportunity if that movement would put you out of melee range of the target.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Light Sword (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F20"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--fullpike--477366ac1f70",
+    "name": "Fullpike",
+    "displayName": "Fullpike",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Polearm weapon passive changes to +10ft and your threatened range becomes 5-15 ft. Having this item in your burden reduces your max RP by 1.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Polearm (One-Handed)",
+      "Polearm (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G26",
+      "Weapons!G27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--gladius-edge--2e6e8a6f0757",
+    "name": "Gladius Edge",
+    "displayName": "Gladius Edge",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "When you are struck by a critical hit and you do not defend against it, you can make a 0 RP opportunity attack before the triggering attack. You can spend 1 RP to instead make it a heavy attack.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Light Sword (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G20"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--grapple-launcher-arm-only--3a3bdfa18345",
+    "name": "Grapple Launcher (Arm only)",
+    "displayName": "Grapple Launcher (Arm only)",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Allows the user to install a grappling hook artifice in the arm, functioning just like the grappling hook would. (Grappling hook must be supplied separately and takes an errand action from an artificer to install). A grappling hook installed in the arm takes burden like usual and still takes an AP to activate, but requires no AP to pull out.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Artifice Limb"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--grip-design--91e1ff0f8f81",
+    "name": "Grip Design",
+    "displayName": "Grip Design",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "You may wield a Two-Handed weapon with the hand this gauntlet is on. Any other actions that require a free hand normally such as grabbing a potion not doable.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Gauntlets (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--group-escape--9f99c29c0430",
+    "name": "Group Escape",
+    "displayName": "Group Escape",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When used, up to 3 other allies within 10ft of you may choose to escape with you. Increases the AP cost by 2, potentially giving it the setup keyword.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Return Stone"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H33"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--group-veil--c959c47bb17d",
+    "name": "Group Veil",
+    "displayName": "Group Veil",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "While stationary, you may extend the effect of this device to all medium or smaller creatures within 5ft of you.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Personal Camoflage Field"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--gutsy-blade--2091d081c16f",
+    "name": "Gutsy Blade",
+    "displayName": "Gutsy Blade",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "The crit threshold of this weapon is lowered by 5, but you no longer maximize damage dice or gain full pierce on a crit.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Heavy Blade (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G4"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--haladie-blade--31f3ec283d20",
+    "name": "Haladie Blade",
+    "displayName": "Haladie Blade",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Attacks with this weapon have -1 Power, but you can make 2 offhand attacks per turn instead of one.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Twinblade (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F44"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--halberd--2ce785f8f463",
+    "name": "Halberd",
+    "displayName": "Halberd",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "This weapon also gains the axe passive (Wild Swing).",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Polearm (One-Handed)",
+      "Polearm (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F26",
+      "Weapons!F27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--hamon-line--6ff1e383740d",
+    "name": "Hamon Line",
+    "displayName": "Hamon Line",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Grants Keen II lowers the crit threshold by 2 (replaces Keen).",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Katana (One-Handed)",
+      "Katana (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G17",
+      "Weapons!G18"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--heavy-baton--542c6d984c57",
+    "name": "Heavy Baton",
+    "displayName": "Heavy Baton",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "This weapon is now considered a two-handed weapon.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Shock Stick"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G35"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--heavy-broadhead--240d6d168295",
+    "name": "Heavy Broadhead",
+    "displayName": "Heavy Broadhead",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Increases thrown power by 2 but boomerang/returning effects no longer work.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Polearm (One-Handed)",
+      "Polearm (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F26",
+      "Weapons!F27"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--heavy-crossguard--c0df7dd5a24f",
+    "name": "Heavy Crossguard",
+    "displayName": "Heavy Crossguard",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "You retain the guard bonus even while using the weapon with two hands, the block value increases by +4 when wielding with one hand and no other weapon or shield in your other hand.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Longsword (Versatile)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G21"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--heavy-punches--d40664986df8",
+    "name": "Heavy punches",
+    "displayName": "Heavy punches",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Unarmed attacks made with this weapon deal 5d6 damage instead of 4d6.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Power Gauntlets"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G28"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--heavy-tow-line--56a85db08ba3",
+    "name": "Heavy Tow Line",
+    "displayName": "Heavy Tow Line",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "The grappling hook can support 1 additional ally to move with you.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Grappling Hook Artifice"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--heroic-emblem--8e1441dbc8aa",
+    "name": "Heroic Emblem",
+    "displayName": "Heroic Emblem",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Grants a +1 power or +1 focus bonus, but cannot gain the benefits from base material bonuses. This bonus is actually 100% from hype.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Light Sword (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F20"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--hidden-device--70994bfcd9b3",
+    "name": "Hidden Device",
+    "displayName": "Hidden Device",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "The device is disguises as a regular object, making it not appear as a private communications device. (Closer inspection or perception checks may still reveal it as such).",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Private Communications Device"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H30"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--hollow-point-boat-tail-rounds--2b46c504590b",
+    "name": "Hollow Point Boat Tail Rounds",
+    "displayName": "Hollow Point Boat Tail Rounds",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "You gain a +1 bonus to your accuracy when making a basic Heavy or precise attack.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Sniper Rifle (Two-Handed)",
+      "Adjustable Lens Refractor Gun",
+      "Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!F39",
+      "Artifices!G3",
+      "Artifices!G32"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--hooked-coil--d9466b8f757c",
+    "name": "Hooked Coil",
+    "displayName": "Hooked Coil",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When dealing damage with an attack of opportunity against an enemy leaving your range, you may pull them back 5ft. Only triggers once per turn.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Whip (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G47"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--hover-mode--14ee5662fbba",
+    "name": "Hover Mode",
+    "displayName": "Hover Mode",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "When activated, the wearer can fly at half speed up to a maximum of 40ft high. If activated when higher than 40ft high, you glide down until you reach the 40ft height limit. Functions similarly to the Flight ability in regards to taking damage while flying.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Winged Backpack"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H47"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--iff-off--ad75aede338c",
+    "name": "IFF Off",
+    "displayName": "IFF Off",
+    "modSlot": "A",
+    "craftingPoints": 0,
+    "effect": "Your basic attack splash now hit all targets within range instead of only enemies.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cannon"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--incendiary-shell--8195ec8ccabb",
+    "name": "Incendiary Shell",
+    "displayName": "Incendiary Shell",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "The Light attack deals Fire damage and ignites flammable materials in its radius.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Cannon"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F8"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--increased-capacity--ead418f97535",
+    "name": "Increased Capacity",
+    "displayName": "Increased Capacity",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "When activated, the device now remains active for a week on the same shell.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Calibretto Device"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--increased-effect--0ec4c4d6555e",
+    "name": "Increased Effect",
+    "displayName": "Increased Effect",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Now boosts the spirit core values of your allies by 1000 instead of 500.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Astra Guidance Beacon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G10"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--increased-production--42f2cf053274",
+    "name": "Increased Production",
+    "displayName": "Increased Production",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "You may create two shells instead of 1 (costs more Fuel still).",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Shell Converter"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H34"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--increased-protection--f8af6914f765",
+    "name": "Increased Protection",
+    "displayName": "Increased Protection",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "The damage reduction is increased to 10.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Fire Robe",
+      "Lightning Rod",
+      "Snow Cloak"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H18",
+      "Artifices!H20",
+      "Artifices!H39"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--increased-range--b3c5702ffd4d",
+    "name": "Increased Range",
+    "displayName": "Increased Range — Night Vision Goggles",
+    "modSlot": "A",
+    "craftingPoints": 20,
+    "effect": "Increases the range at which these goggles are active by 60ft.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Night Vision Goggles"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G25"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--increased-range--79d5d916c10b",
+    "name": "Increased Range",
+    "displayName": "Increased Range — Space Time Anchor",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Increases the radius of the device by 10ft.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Space Time Anchor"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H41"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--infinite-replays--2003767fb4b9",
+    "name": "Infinite Replays",
+    "displayName": "Infinite Replays",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "A person may watch the recording by spending 1 mana rather than using a shell.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Memory Bubble"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G24"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--item-checker--26e03f76bea6",
+    "name": "Item Checker",
+    "displayName": "Item Checker",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "You can use the device to check objects to determine if they are corrupted with astra or safe to touch.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Calibretto Device"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--jury-rigged-shield--cf0603b093d7",
+    "name": "Jury Rigged Shield",
+    "displayName": "Jury Rigged Shield",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "Adds a shield generator, granting the airship a 15 HP shield. This shield can be switched on and off, but can only be replenished by changing the fuel cell.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Aerial Staff (Sparrow Model)"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G5"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--jury-rigged-cannon--b1ec40ae6ac4",
+    "name": "Jury-Rigged Cannon",
+    "displayName": "Jury-Rigged Cannon",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "Adds a small star cannon that fires an arcane blast from the front that deals heavy attack damage for 2 AP with 120ft Range.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Aerial Staff (Sparrow Model)"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G5"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--justice-lance--967b54c85cc5",
+    "name": "Justice Lance",
+    "displayName": "Justice Lance",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Your movement speed is capped at 25ft while this is in your burden. This weapon has an additional 5ft range and a 15ft threaten range.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Lance (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G19"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--katar--4507da4ae42f",
+    "name": "Katar",
+    "displayName": "Katar",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Grants Nimble. Nimble: After attacking an enemy with a light attack on your turn, you may move 5ft. This movement only provokes attacks of opportunity if that movement would put you out of melee range of the target.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Gauntlets (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G14"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--lancebreaker--e0757d0c3ea5",
+    "name": "Lancebreaker",
+    "displayName": "Lancebreaker",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "You gain a +2 Lancebreaker Power bonus against enemies wielding polearms or lances.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Axe (One-Handed)",
+      "Axe (Two-Handed)",
+      "Pickaxe (One-Handed)",
+      "Pickaxe (Two-Handed)",
+      "Sickle (One-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G2",
+      "Weapons!G3",
+      "Weapons!G23",
+      "Weapons!G24",
+      "Weapons!G35"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--lange-messer--afb67df1c2cf",
+    "name": "Lange Messer",
+    "displayName": "Lange Messer",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "Grants +1 to guard but increases burden by +1.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Longsword (Versatile)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!G21"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--launch-step--0ac914f46077",
+    "name": "Launch Step",
+    "displayName": "Launch Step",
+    "modSlot": "B",
+    "craftingPoints": 50,
+    "effect": "You can use this before making an attack to move 10ft before making an attack that benefits from this artifice.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Buster Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H13"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--light-control--261cbb82debc",
+    "name": "Light control",
+    "displayName": "Light control",
+    "modSlot": "A",
+    "craftingPoints": 10,
+    "effect": "The distance of light emitted can be any distance up to the normal max.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Northi Lantern"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G26"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--lightweight--b9a2aa5c38a0",
+    "name": "Lightweight",
+    "displayName": "Lightweight",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Reduces the Burden of this artifice by 1.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Blaster Weapon"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H12"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--lightweight-design--7c20190b7026",
+    "name": "Lightweight Design",
+    "displayName": "Lightweight Design",
+    "modSlot": "B",
+    "craftingPoints": 80,
+    "effect": "This artifice is no longer counted as a kit and can thus be stored easily in non-combat inventory.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Shell Converter"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!H34"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--long-barrel--072015ed7f83",
+    "name": "Long Barrel",
+    "displayName": "Long Barrel",
+    "modSlot": "B",
+    "craftingPoints": 25,
+    "effect": "Your weapon gains 240ft range, but you don’t armor pierce when shooting at targets further than 120ft away.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Musket (Two-Handed)",
+      "Adjustable Lens Refractor Gun"
+    ],
+    "sourceSheets": [
+      "Weapons",
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Weapons!G22",
+      "Artifices!H3"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--long-haft--281dbb8fed6e",
+    "name": "Long Haft",
+    "displayName": "Long Haft",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "You gain +5ft range on your weapon attacks and your threatened range becomes 10ft.",
+    "targetType": "Weapon",
+    "compatibleTargets": [
+      "Scythe (Two-Handed)"
+    ],
+    "sourceSheets": [
+      "Weapons"
+    ],
+    "sourceLocations": [
+      "Weapons!F30"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=0"
+  },
+  {
+    "stableId": "mods--item-specific--long-range--a01205ca9c89",
+    "name": "Long Range",
+    "displayName": "Long Range",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "The range of the weapon is increased to 120ft.",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Stun Gun"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G43"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  },
+  {
+    "stableId": "mods--item-specific--long-stick--4fbbe2edf20d",
+    "name": "Long Stick",
+    "displayName": "Long Stick",
+    "modSlot": "A",
+    "craftingPoints": 35,
+    "effect": "You gain +5ft range on your weapon attacks and your threatened range becomes 10ft",
+    "targetType": "Artifice",
+    "compatibleTargets": [
+      "Shock Stick"
+    ],
+    "sourceSheets": [
+      "Artifices"
+    ],
+    "sourceLocations": [
+      "Artifices!G35"
+    ],
+    "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit#gid=226802439"
+  }
+]
