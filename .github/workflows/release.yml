@@ -16,6 +16,14 @@ jobs:
       - name: Check out the tagged commit
         uses: actions/checkout@v4
 
+      - name: Run automated tests
+        run: node --test tests/*.test.mjs
+
+      - name: Validate source files
+        run: |
+          find module migrations -type f -name '*.mjs' -print0 | xargs -0 -n1 node --check
+          find . -type f -name '*.json' -not -path './.git/*' -print0 | xargs -0 -n1 node -e 'JSON.parse(require("fs").readFileSync(process.argv[1], "utf8"))'
+
       - name: Read the version from the tag
         id: version
         run: |
@@ -55,7 +63,7 @@ jobs:
         run: |
           # Foundry expects system.json at the root of the archive, not inside a folder.
           zip -r system.zip \
-            system.json README.md LICENSE.txt \
+            system.json README.md LICENSE.txt ATTRIBUTION.md \
             module/ migrations/ templates/ styles/ lang/ packs/ content/ images/ \
             -x '*.git*' '*.DS_Store'
 

@@ -42,7 +42,7 @@ export const LyrianAPI = {
   getActionSet(actor) {
     if (!actor) return null;
     const weapons = actor.items.filter((i) => i.type === "weapon");
-    const abilities = actor.items.filter((i) => i.type === "ability");
+    const abilities = actor.items.filter((i) => ["ability", "monsterAbility"].includes(i.type));
 
     return {
       resources: {

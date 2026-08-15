@@ -23,6 +23,7 @@ import { runMigrations } from "../migrations/migrate.mjs";
 import { LyrianAPI } from "./api.mjs";
 import { seedSystemPacks, resetSystemPacks } from "./content/seed-packs.mjs";
 import { runCharacterCreation } from "./apps/character-creation.mjs";
+import { resolveDefence } from "./rules/defence-resolution.mjs";
 
 const SYSTEM_ID = "lyrian-chronicles";
 
@@ -243,30 +244,93 @@ async function onChatAction(event, message) {
 
   if (action !== "applyDamage") return;
 
-  const defence = button.dataset.defence ?? "none";
-  const actorId = button.dataset.actorId;
+  const defence = ["none", "dodge", "block"].includes(button.dataset.defence)
+    ? button.dataset.defence
+    : "none";
+  const attack = flags.attack ?? {};
+  const targetIndex = button.dataset.targetIndex;
+  const indexedTarget = targetIndex === undefined ? null : attack.targets?.[Number(targetIndex)];
 
-  // Prefer an explicit target on the card, otherwise fall back to selected tokens.
-  let actors = [];
-  if (actorId) {
-    const actor = game.actors.get(actorId);
-    if (actor) actors = [actor];
+  let defenders = [];
+  if (indexedTarget) {
+    const document = await fromUuid(indexedTarget.tokenUuid ?? indexedTarget.actorUuid);
+    const actor = document?.actor ?? document;
+    if (actor) defenders = [{ actor, target: indexedTarget }];
   } else {
-    actors = canvas.tokens.controlled.map((t) => t.actor).filter(Boolean);
+    defenders = canvas.tokens.controlled
+      .filter((token) => token.actor)
+      .map((token) => {
+        const cover = token.document?.getFlag(SYSTEM_ID, "cover") ?? "none";
+        const values = token.actor.getDefencesAgainst({ cover });
+        return {
+          actor: token.actor,
+          target: {
+            actorUuid: token.actor.uuid,
+            tokenUuid: token.document.uuid,
+            dodgeEvasion: values.dodgeEvasion,
+            untargetable: values.untargetable,
+            hit: !values.untargetable && (attack.sureHit || attack.accuracy?.total >= values.evasion)
+          }
+        };
+      });
   }
 
-  if (!actors.length) {
+  if (!defenders.length) {
     return ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoTargetSelected"));
   }
 
-  for (const actor of actors) {
-    const result = await actor.applyDamage(flags.damage ?? 0, {
+  for (const { actor, target } of defenders) {
+    if (!game.user.isGM && !actor.isOwner) {
+      ui.notifications.warn(`You do not own ${actor.name}.`);
+      continue;
+    }
+
+    const resolved = actor.getFlag(SYSTEM_ID, "resolvedAttacks") ?? {};
+    if (resolved[message.id]) {
+      ui.notifications.warn(`${actor.name} has already resolved this attack.`);
+      continue;
+    }
+
+    const outcome = resolveDefence({
+      defence,
+      attackTotal: attack.accuracy?.total,
+      sureHit: attack.sureHit,
+      originalHit: target.hit,
+      untargetable: target.untargetable,
+      dodgeEvasion: target.dodgeEvasion
+    });
+    if (outcome.rpCost && !(await actor.spendResources({ rp: outcome.rpCost }))) continue;
+
+    // Store the claim on the defender, which its owner can update even when the
+    // attacker's ChatMessage belongs to another user. Keep only recent claims.
+    const recent = Object.fromEntries(Object.entries(resolved).slice(-49));
+    await actor.setFlag(SYSTEM_ID, "resolvedAttacks", {
+      ...recent,
+      [message.id]: { defence, at: Date.now() }
+    });
+    button.disabled = true;
+
+    if (!outcome.hits) {
+      await ChatMessage.create({
+        speaker: ChatMessage.getSpeaker({ actor }),
+        content: `<p><strong>${actor.name}</strong> ${outcome.reason === "dodged" ? "dodges the attack." : "takes no damage from the missed attack."}</p>`
+      });
+      continue;
+    }
+
+    let damage = attack.damage?.total ?? flags.damage ?? 0;
+    // Blocking prevents a critical hit, so replace maximised damage with a normal roll.
+    if (defence === "block" && attack.damage?.maximised && attack.damage.formula) {
+      damage = (await new Roll(attack.damage.formula).evaluate()).total;
+    }
+
+    const result = await actor.applyDamage(damage, {
       defence,
       fullPierce: flags.fullPierce || (flags.halfPierce && defence === "none"),
       pinpoint: flags.pinpoint ?? 0
     });
 
-    ChatMessage.create({
+    await ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor }),
       content: `<p>${game.i18n.format("LYRIAN.Msg.DamageApplied", {
         name: actor.name,
@@ -319,7 +383,7 @@ async function rollItemMacro(itemUuid) {
   const item = await fromUuid(itemUuid);
   if (!item) return ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.MacroMissing"));
   if (item.type === "weapon") return item.rollAttack("light");
-  if (item.type === "ability") return item.rollAbility();
+  if (item.type === "ability" || item.type === "monsterAbility") return item.rollAbility();
   return item.postToChat();
 }
 

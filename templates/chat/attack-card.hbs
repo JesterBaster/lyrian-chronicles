@@ -45,11 +45,13 @@
             {{#if t.untargetable}}In full cover — cannot be targeted{{else}}{{#if t.hit}}Hits Evasion {{t.evasion}}{{else}}Misses Evasion {{t.evasion}}{{/if}}{{/if}}
           </span>
           {{#if t.coverNotes}}<span class="lyrian-target__cover">{{t.coverNotes}}</span>{{/if}}
-          <span class="lyrian-target__buttons">
-            <button type="button" data-lyrian-action="applyDamage" data-defence="none" data-actor-id="{{t.id}}">Take it</button>
-            <button type="button" data-lyrian-action="applyDamage" data-defence="dodge" data-actor-id="{{t.id}}" title="Evasion {{t.dodgeEvasion}}">Dodge</button>
-            <button type="button" data-lyrian-action="applyDamage" data-defence="block" data-actor-id="{{t.id}}" title="Guard {{t.blockGuard}}">Block</button>
-          </span>
+          {{#if t.hit}}
+            <span class="lyrian-target__buttons">
+              <button type="button" data-lyrian-action="applyDamage" data-defence="none" data-target-index="{{@index}}">Take it</button>
+              <button type="button" data-lyrian-action="applyDamage" data-defence="dodge" data-target-index="{{@index}}" title="Costs 1 RP · Evasion {{t.dodgeEvasion}}">Dodge (1 RP)</button>
+              <button type="button" data-lyrian-action="applyDamage" data-defence="block" data-target-index="{{@index}}" title="Costs 1 RP · Guard {{t.blockGuard}}">Block (1 RP)</button>
+            </span>
+          {{/if}}
         </li>
       {{/each}}
     </ul>

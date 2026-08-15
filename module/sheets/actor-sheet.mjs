@@ -418,6 +418,28 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     }
 
     if (this.document.type !== "character") return result;
+    if (owned.type === "class") {
+      const exp = Number(owned.system.unlockCost ?? owned.system.tier * LYRIAN.progression.classCostPerTier);
+      if (this.document.system.exp.available < exp || this.document.system.interlude.points < 1) {
+        await owned.delete();
+        ui.notifications.warn(`Unlocking ${owned.name} requires ${exp} EXP and 1 Interlude Point.`);
+        return null;
+      }
+      const confirmed = await foundry.applications.api.DialogV2.confirm({
+        window: { title: `Unlock ${owned.name}?` },
+        content: `<p>Confirm that this character meets the class requirements, then spend <strong>${exp} EXP</strong> and <strong>1 Interlude Point</strong>.</p>`
+      });
+      if (!confirmed) {
+        await owned.delete();
+        return null;
+      }
+      await this.document.update({
+        "system.exp.spent": this.document.system.exp.spent + exp,
+        "system.interlude.points": this.document.system.interlude.points - 1
+      });
+      await this.document.syncProgressionFeatures();
+      return result;
+    }
     if (owned.type !== "race") return result;
 
     if (owned.system.raceKind === "ancestry") {
@@ -668,8 +690,30 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static async #onAdjustClassLevel(event, target) {
     const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
     if (!item || item.type !== "class") return;
-    const level = normalizeClassLevel(item.system.abilitiesUnlocked + Number(target.dataset.delta ?? 0));
+    const delta = Number(target.dataset.delta ?? 0);
+    const level = normalizeClassLevel(item.system.abilitiesUnlocked + delta);
     if (level === item.system.abilitiesUnlocked) return;
+
+    if (delta < 0) {
+      if (!game.user.isGM) return ui.notifications.warn("Only a GM can lower a class level.");
+      const confirmed = await foundry.applications.api.DialogV2.confirm({
+        window: { title: `Lower ${item.name}?` },
+        content: "<p>This removes the latest class ability and does not refund EXP.</p>"
+      });
+      if (!confirmed) return;
+    } else {
+      const exp = LYRIAN.progression.abilityCost;
+      if (this.document.system.exp.available < exp) {
+        return ui.notifications.warn(`${this.document.name} needs ${exp} available EXP.`);
+      }
+      const confirmed = await foundry.applications.api.DialogV2.confirm({
+        window: { title: `Advance ${item.name}?` },
+        content: `<p>Spend <strong>${exp} EXP</strong> to unlock the next class ability?</p>`
+      });
+      if (!confirmed) return;
+      const paid = await this.document.spendExp(exp, `${item.name} level ${level}`);
+      if (!paid) return;
+    }
     await item.update({ "system.abilitiesUnlocked": level });
     await this.document.syncProgressionFeatures();
   }
@@ -789,7 +833,23 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static async #onToggleEquip(event, target) {
     const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
     if (!item || !["weapon", "armor"].includes(item.type)) return;
-    await item.update({ "system.equipped": !item.system.equipped });
+    const equipping = !item.system.equipped;
+    if (equipping && item.type === "armor") {
+      const isShield = !!LYRIAN.armorCategories[item.system.category]?.isShield;
+      const conflicts = this.document.items.filter((other) =>
+        other.id !== item.id &&
+        other.type === "armor" &&
+        other.system.equipped &&
+        !!LYRIAN.armorCategories[other.system.category]?.isShield === isShield
+      );
+      if (conflicts.length) {
+        await this.document.updateEmbeddedDocuments(
+          "Item",
+          conflicts.map((other) => ({ _id: other.id, "system.equipped": false }))
+        );
+      }
+    }
+    await item.update({ "system.equipped": equipping });
   }
 
   /**

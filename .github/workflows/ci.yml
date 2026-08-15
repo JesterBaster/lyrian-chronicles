@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run tests
+        run: node --test tests/*.test.mjs
+
+      - name: Check JavaScript syntax
+        run: find module migrations tests -type f -name '*.mjs' -print0 | xargs -0 -n1 node --check
+
+      - name: Validate JSON
+        run: find . -type f -name '*.json' -not -path './.git/*' -print0 | xargs -0 -n1 node -e 'JSON.parse(require("fs").readFileSync(process.argv[1], "utf8"))'
+
+      - name: Check whitespace
+        run: git diff --check
+
+      - name: Verify manifest paths
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const manifest = JSON.parse(fs.readFileSync('system.json', 'utf8'));
+          for (const path of [...manifest.esmodules, ...manifest.styles, ...manifest.languages.map((entry) => entry.path)]) {
+            if (!fs.existsSync(path)) throw new Error(`Missing manifest file: ${path}`);
+          }
+          for (const pack of manifest.packs) {
+            if (!fs.existsSync(pack.path)) throw new Error(`Missing pack path: ${pack.path}`);
+          }
+          NODE

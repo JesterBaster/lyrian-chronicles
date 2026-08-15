@@ -67,9 +67,10 @@ crafting points, mod slot, and polarity data.
 
 Seeding runs by itself; there is nothing to install beyond the system. Packs
 ship **locked**, which is what you want: it stops accidental edits and makes
-updates clean. To customise an entry, right-click the compendium, choose *Toggle
-Edit Lock*, and change what you like — your edits survive future seeding because
-only missing entries are added.
+updates clean. Seeding refreshes official entries when their reviewed source changes.
+To customise one safely, import it into the world Items directory or copy it into
+a world-owned compendium first; edits made directly inside a system pack can be
+replaced by a later system update.
 
 To rebuild from scratch after changing a content file, run this in the console:
 
