@@ -155,7 +155,8 @@ export function convertOfficialEquipment(data, proficiencies = {}) {
         ...commonSystem(system),
         category: armor,
         equipped: Boolean(system.equipped),
-        proficient: armor === "clothing"
+        proficient: Boolean(proficiencies.assumeProficient)
+          || armor === "clothing"
           || hasProficiency(proficiencies.armor ?? [], ARMOR_PROFICIENCIES[armor]),
         guardBonus: 0,
         blockBonus: 0,
@@ -177,7 +178,8 @@ export function convertOfficialEquipment(data, proficiencies = {}) {
         hands: /two-handed/i.test(data.name ?? "") ? "two" : "one",
         damageType: "physical",
         equipped: Boolean(system.equipped),
-        proficient: hasProficiency(proficiencies.weapons ?? [], WEAPON_PROFICIENCIES[group]),
+        proficient: Boolean(proficiencies.assumeProficient)
+          || hasProficiency(proficiencies.weapons ?? [], WEAPON_PROFICIENCIES[group]),
         offHand: false,
         accuracyBonus: 0,
         damageBonus: 0,

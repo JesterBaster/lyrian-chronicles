@@ -59,6 +59,21 @@ test("official weapons become attack-ready weapon documents", () => {
   assert.equal(result.system.proficient, true);
 });
 
+test("NPC and monster equipment can be converted as automatically proficient", () => {
+  const weapon = convertOfficialEquipment(
+    official("Giant Scissors (Two-Handed)", "Artisan Weapon"),
+    { assumeProficient: true }
+  );
+  const armor = convertOfficialEquipment(
+    official("Armor (Heavy)", "Armor"),
+    { assumeProficient: true }
+  );
+  assert.equal(weapon.type, "weapon");
+  assert.equal(weapon.system.proficient, true);
+  assert.equal(armor.type, "armor");
+  assert.equal(armor.system.proficient, true);
+});
+
 test("non-weapon references become usable gear instead of inert equipment", () => {
   const result = convertOfficialEquipment(
     official("Adventurer's Kit", "Kit", { category: "Adventuring Essentials" })
