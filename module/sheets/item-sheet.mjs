@@ -125,49 +125,53 @@ export class LyrianItemSheet extends HandlebarsApplicationMixin(ItemSheetV2) {
 
     switch (item.type) {
       case "keyword":
-        add("Keyword", "gold");
+        add(game.i18n.localize("LYRIAN.UI.Keyword"), "gold");
         break;
       case "breakthrough":
-        add(sys.rawCost || `${sys.expCost} EXP`, "gold");
-        if (sys.repeatable) add("Repeatable");
+        add(sys.rawCost || game.i18n.format("LYRIAN.UI.ExpAmount", { exp: sys.expCost }), "gold");
+        if (sys.repeatable) add(game.i18n.localize("LYRIAN.UI.Repeatable"));
         break;
       case "ability":
-        if (sys.isKeyAbility) add("Key Ability", "gold");
+        if (sys.isKeyAbility) add(game.i18n.localize("LYRIAN.UI.KeyAbility"), "gold");
         add(sys.costLabel, "resource");
         add(sys.range);
-        add(sys.timing && sys.timing !== "action" ? this.#label(sys.timing) : "");
+        add(sys.timing && sys.timing !== "action"
+          ? game.i18n.localize(LYRIAN.abilityTiming[sys.timing] ?? sys.timing)
+          : "");
         break;
       case "class":
-        add(`Tier ${sys.tier}`, "gold");
+        add(game.i18n.format("LYRIAN.UI.TierNumber", { tier: sys.tier }), "gold");
         add(sys.role1);
         add(sys.role2);
-        if (sys.difficulty) add(`Difficulty ${sys.difficulty}`);
+        if (sys.difficulty) add(game.i18n.format("LYRIAN.UI.DifficultyValue", {
+          difficulty: sys.difficulty
+        }));
         break;
       case "race":
-        add(sys.raceKind === "ancestry" ? "Ancestry" : "Primary Race", "gold");
+        add(game.i18n.localize(sys.raceKind === "ancestry"
+          ? "LYRIAN.UI.Ancestry"
+          : "LYRIAN.UI.PrimaryRace"), "gold");
         if (sys.raceKind === "ancestry") add(sys.primaryRace);
         break;
       case "equipment":
         add(sys.category, "gold");
         add(sys.subType);
-        add(sys.cost ? `Cost ${sys.cost}` : "", "resource");
-        add(sys.modSlot ? `Slot ${sys.modSlot}` : "");
-        add(sys.craftingPoints ? `${sys.craftingPoints} crafting points` : "");
-        if (sys.burden) add(`Burden ${sys.burden}`);
+        add(sys.cost ? game.i18n.format("LYRIAN.UI.CostValue", { cost: sys.cost }) : "", "resource");
+        add(sys.modSlot ? game.i18n.format("LYRIAN.UI.SlotValue", { slot: sys.modSlot }) : "");
+        add(sys.craftingPoints ? game.i18n.format("LYRIAN.UI.CraftingPointsValue", {
+          points: sys.craftingPoints
+        }) : "");
+        if (sys.burden) add(game.i18n.format("LYRIAN.UI.BurdenValue", { burden: sys.burden }));
         break;
       case "monsterAbility":
-        add(sys.kind === "active-action" ? "Active Action" : "Passive", "gold");
+        add(game.i18n.localize(sys.kind === "active-action"
+          ? "LYRIAN.UI.ActiveAction"
+          : "LYRIAN.UI.Passive"), "gold");
         add(sys.costLabel, "resource");
         add(sys.range);
         break;
     }
     return chips;
-  }
-
-  #label(value) {
-    return String(value)
-      .replace(/([a-z])([A-Z])/g, "$1 $2")
-      .replace(/^./, (character) => character.toUpperCase());
   }
 
   async #enrichRelationships(item) {

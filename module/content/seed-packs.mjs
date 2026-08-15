@@ -153,7 +153,7 @@ export async function seedSystemPacks({ force = false } = {}) {
   if (clean) await game.settings.set(SYSTEM_ID, "contentSeedVersion", CONTENT_VERSION);
   else {
     ui.notifications.error(
-      "Lyrian Chronicles: some compendium packs could not be refreshed. Check the console for details.",
+      game.i18n.localize("LYRIAN.Seed.RefreshFailed"),
       { permanent: true }
     );
   }

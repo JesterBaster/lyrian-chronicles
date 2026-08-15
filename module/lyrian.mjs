@@ -288,7 +288,7 @@ async function onChatAction(event, message) {
 
   for (const { actor, target } of defenders) {
     if (!game.user.isGM && !actor.isOwner) {
-      ui.notifications.warn(`You do not own ${actor.name}.`);
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.NotOwner", { name: actor.name }));
       continue;
     }
 
@@ -321,7 +321,10 @@ async function onChatAction(event, message) {
       if (!outcome.hits) {
         await ChatMessage.create({
           speaker: ChatMessage.getSpeaker({ actor }),
-          content: `<p><strong>${actor.name}</strong> ${outcome.reason === "dodged" ? "dodges the attack." : "takes no damage from the missed attack."}</p>`
+          content: `<p>${game.i18n.format(
+            outcome.reason === "dodged" ? "LYRIAN.Msg.AttackDodged" : "LYRIAN.Msg.AttackMissed",
+            { name: actor.name }
+          )}</p>`
         });
         return { resolved: true };
       }
@@ -355,7 +358,7 @@ async function onChatAction(event, message) {
       continue;
     }
     if (resolution.value?.duplicate) {
-      ui.notifications.warn(`${actor.name} has already resolved this attack.`);
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.AttackResolved", { name: actor.name }));
       continue;
     }
     if (resolution.value?.resolved) button.disabled = true;

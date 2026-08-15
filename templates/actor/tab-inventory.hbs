@@ -3,19 +3,19 @@
   <div class="lyr-compendium-strip">
     <span>{{localize "LYRIAN.Inventory.DropSorted"}}</span>
     <div class="lyr-compendium-actions">
-      <button type="button" data-action="browsePack" data-pack="weapons">Weapons</button>
-      <button type="button" data-action="browsePack" data-pack="armor-shields">Armor</button>
-      <button type="button" data-action="browsePack" data-pack="consumables">Consumables</button>
-      <button type="button" data-action="browsePack" data-pack="gear-kits">Gear</button>
-      <button type="button" data-action="browsePack" data-pack="artifices">Artifices</button>
-      <button type="button" data-action="browsePack" data-pack="materials">Materials</button>
-      <button type="button" data-action="browsePack" data-pack="mods">Mods</button>
+      <button type="button" data-action="browsePack" data-pack="weapons">{{localize "LYRIAN.Inventory.Section.weapon"}}</button>
+      <button type="button" data-action="browsePack" data-pack="armor-shields">{{localize "LYRIAN.Inventory.Section.armor"}}</button>
+      <button type="button" data-action="browsePack" data-pack="consumables">{{localize "LYRIAN.UI.Consumables"}}</button>
+      <button type="button" data-action="browsePack" data-pack="gear-kits">{{localize "LYRIAN.Inventory.Section.gear"}}</button>
+      <button type="button" data-action="browsePack" data-pack="artifices">{{localize "LYRIAN.UI.Artifices"}}</button>
+      <button type="button" data-action="browsePack" data-pack="materials">{{localize "LYRIAN.UI.Materials"}}</button>
+      <button type="button" data-action="browsePack" data-pack="mods">{{localize "LYRIAN.UI.Mods"}}</button>
     </div>
   </div>
 
   <div class="lyr-section-head">
-    <h2 class="lyr-heading">Weapons</h2>
-    <button type="button" data-action="createItem" data-type="weapon">Add weapon</button>
+    <h2 class="lyr-heading">{{localize "LYRIAN.Inventory.Section.weapon"}}</h2>
+    <button type="button" data-action="createItem" data-type="weapon">{{localize "LYRIAN.Action.AddWeapon"}}</button>
   </div>
   <ul class="lyr-list">
     {{#each items.weapons as |item|}}
@@ -25,8 +25,8 @@
           <span class="lyr-row__name">{{item.name}}</span>
           <span class="lyr-row__meta">
             {{lyrianLocalizeKey "weaponGroups" item.system.group}} ·
-            burden {{item.system.burden}}
-            {{#unless item.system.proficient}} · <em class="lyr-warn">not proficient</em>{{/unless}}
+            {{localize "LYRIAN.UI.Burden"}} {{item.system.burden}}
+            {{#unless item.system.proficient}} · <em class="lyr-warn">{{localize "LYRIAN.UI.NotProficient"}}</em>{{/unless}}
           </span>
         </div>
         <div class="lyr-row__actions">
@@ -35,12 +35,12 @@
           <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
         </div>
       </li>
-    {{else}}<li class="lyr-empty">Unarmed.</li>{{/each}}
+    {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Unarmed"}}</li>{{/each}}
   </ul>
 
   <div class="lyr-section-head">
-    <h2 class="lyr-heading">Armour and shields</h2>
-    <button type="button" data-action="createItem" data-type="armor">Add armour</button>
+    <h2 class="lyr-heading">{{localize "LYRIAN.UI.ArmourShields"}}</h2>
+    <button type="button" data-action="createItem" data-type="armor">{{localize "LYRIAN.Action.AddArmour"}}</button>
   </div>
   <ul class="lyr-list">
     {{#each items.armor as |item|}}
@@ -50,8 +50,8 @@
           <span class="lyr-row__name">{{item.name}}</span>
           <span class="lyr-row__meta">
             {{lyrianLocalizeKey "armorCategories" item.system.category}} ·
-            guard {{lyrianSigned item.system.guard}} · block {{item.system.blockValue}} ·
-            evasion {{lyrianSigned item.system.evasionPenalty}}
+            {{localize "LYRIAN.Defence.Guard"}} {{lyrianSigned item.system.guard}} · {{localize "LYRIAN.Defence.Block"}} {{item.system.blockValue}} ·
+            {{localize "LYRIAN.Defence.Evasion"}} {{lyrianSigned item.system.evasionPenalty}}
           </span>
         </div>
         <div class="lyr-row__actions">
@@ -60,12 +60,12 @@
           <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
         </div>
       </li>
-    {{else}}<li class="lyr-empty">Unarmoured.</li>{{/each}}
+    {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Unarmoured"}}</li>{{/each}}
   </ul>
 
   <div class="lyr-section-head">
-    <h2 class="lyr-heading">Gear and materials</h2>
-    <button type="button" data-action="createItem" data-type="gear">Add gear</button>
+    <h2 class="lyr-heading">{{localize "LYRIAN.UI.GearMaterials"}}</h2>
+    <button type="button" data-action="createItem" data-type="gear">{{localize "LYRIAN.Action.AddGear"}}</button>
   </div>
   <ul class="lyr-list">
     {{#each items.gear as |item|}}
@@ -74,18 +74,18 @@
         <div class="lyr-row__body">
           <span class="lyr-row__name">{{item.name}}</span>
           <span class="lyr-row__meta">
-            x{{item.system.quantity}}
-            {{#if item.system.units}} · {{item.system.units}} units{{/if}}
-            {{#if item.system.countsAsBurden}} · burden {{item.system.totalBurden}}{{else}} · stowed{{/if}}
+            ×{{item.system.quantity}}
+            {{#if item.system.units}} · {{item.system.units}} {{localize "LYRIAN.UI.Units"}}{{/if}}
+            {{#if item.system.countsAsBurden}} · {{localize "LYRIAN.UI.Burden"}} {{item.system.totalBurden}}{{else}} · {{localize "LYRIAN.UI.Stowed"}}{{/if}}
           </span>
         </div>
         <div class="lyr-row__actions">
-          <button type="button" data-action="useItem">Show</button>
+          <button type="button" data-action="useItem">{{localize "LYRIAN.Action.Show"}}</button>
           <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
           <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
         </div>
       </li>
-    {{else}}<li class="lyr-empty">Travelling light.</li>{{/each}}
+    {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.TravellingLight"}}</li>{{/each}}
   </ul>
 
   {{#if items.equipment.length}}
@@ -100,12 +100,12 @@
             <span class="lyr-row__name">{{item.name}}</span>
             <span class="lyr-row__meta">
               {{item.system.category}}{{#if item.system.subType}} · {{item.system.subType}}{{/if}}
-              {{#if item.system.cost}} · cost {{item.system.cost}}{{/if}}
-              {{#if item.system.burden}} · burden {{item.system.burden}}{{/if}}
+              {{#if item.system.cost}} · {{localize "LYRIAN.UI.Cost"}} {{item.system.cost}}{{/if}}
+              {{#if item.system.burden}} · {{localize "LYRIAN.UI.Burden"}} {{item.system.burden}}{{/if}}
             </span>
           </div>
           <div class="lyr-row__actions">
-            <button type="button" data-action="useItem">Show</button>
+            <button type="button" data-action="useItem">{{localize "LYRIAN.Action.Show"}}</button>
             <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
             <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
           </div>
@@ -116,8 +116,8 @@
 
   {{#if isCharacter}}
     <div class="lyr-purse">
-      <label>Clim <input type="number" name="system.clim" value="{{system.clim}}" /></label>
-      <span class="lyr-note">Burden {{system.burden}} of {{config.burdenLimit}}</span>
+      <label>{{localize "LYRIAN.UI.Clim"}} <input type="number" name="system.clim" value="{{system.clim}}" /></label>
+      <span class="lyr-note">{{localize "LYRIAN.UI.BurdenSummary" burden=system.burden limit=config.burdenLimit}}</span>
     </div>
   {{/if}}
 </section>
