@@ -1,7 +1,7 @@
 const SYSTEM_ID = "lyrian-chronicles";
 
 /** Bump when content JSON changes so worlds pick up additions. */
-export const CONTENT_VERSION = "0.6.1-rulebook-0.13.1-flos-madness";
+export const CONTENT_VERSION = "0.6.2-rulebook-0.13.1-flos-madness-item-mods";
 
 /** Reviewed pack names, in mandatory rulebook review order. */
 const PACK_NAMES = [

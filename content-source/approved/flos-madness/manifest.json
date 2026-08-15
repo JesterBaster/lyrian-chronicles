@@ -4,13 +4,29 @@
   "sourceUrl": "https://docs.google.com/spreadsheets/d/1S7ygwpW8p6rqOjf7bfmfylhzx9R3uFfP3ZYBFGlDeLs/edit",
   "retrievedAt": "2026-08-15",
   "sourceHash": "73357852bb746e01f1c0cf9a44f30653b47aba296207954637f38dc1e9bffafb",
+  "itemModSnapshot": {
+    "retrievedAt": "2026-08-15",
+    "parts": [
+      { "file": "item-mods-01.json", "count": 100 },
+      { "file": "item-mods-02.json", "count": 100 },
+      { "file": "item-mods-03.json", "count": 98 }
+    ],
+    "excludedIncomplete": [
+      { "name": "Holographic Optic", "sourceLocation": "Artifices!G7", "reason": "Crafting-point cost is missing." },
+      { "name": "Wide Targeting", "sourceLocation": "Artifices!H7", "reason": "Crafting-point cost is missing." },
+      { "name": "Wing Outlining", "sourceLocation": "Artifices!H7", "reason": "Crafting-point cost is missing." }
+    ]
+  },
   "notation": {
     "u": "units",
     "c": "Clim"
   },
   "reviewedCounts": {
     "materials": 149,
-    "mods": 93,
+    "mods": 391,
+    "universalMods": 93,
+    "itemSpecificMods": 298,
+    "excludedIncompleteMods": 3,
     "craftingGuide": 11
   },
   "materialTabs": {
@@ -26,6 +42,9 @@
     "Universal Armor Mods": 50,
     "Universal Weapon Mods": 31,
     "Universal Crafting Mods": 5,
-    "Universal Artifice Mods": 7
+    "Universal Artifice Mods": 7,
+    "Weapons item mods": 148,
+    "Armors item mods": 26,
+    "Artifices item mods": 124
   }
 }

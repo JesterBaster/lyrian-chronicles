@@ -16,7 +16,7 @@ These JSON files are deterministic Foundry document sources compiled from the ap
 | 10 | `gear-kits-*.json` | 31 |
 | 11 | `artifices-*.json` | 47 |
 | 12 | `materials-*.json` | 149 |
-| 13 | `mods-*.json` | 93 |
+| 13 | `mods-*.json` | 391 |
 | 14 | `crafting-guide-*.json` | 11 |
 | 15 | `monsters-*.json` | 84 |
 | 16 | `monster-abilities-*.json` | 307 |
@@ -24,3 +24,5 @@ These JSON files are deterministic Foundry document sources compiled from the ap
 `compendium-index.json` tells the runtime which chunks belong to each pack. Run `node tools/build-compendiums.mjs` to rebuild the files. Do not hand-edit generated JSON. Every document has a deterministic 16-character ID, stable seed key, source URL, normalized source hash, and rulebook version.
 
 The old mixed item pack and prototype JSON files were removed during the testing phase.
+
+The Mods pack contains 93 universal mods and 298 reviewed item-specific mods from the Weapons, Armors, and Artifices tabs. Three Anti-Air Weapon Sight mods remain excluded because their crafting-point costs are blank in the source sheet.

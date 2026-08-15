@@ -110,10 +110,16 @@
     },
     "mods": {
       "type": "Item",
-      "count": 93,
+      "count": 391,
       "files": [
         "mods-01.json",
-        "mods-02.json"
+        "mods-02.json",
+        "mods-03.json",
+        "mods-04.json",
+        "mods-05.json",
+        "mods-06.json",
+        "mods-07.json",
+        "mods-08.json"
       ]
     },
     "crafting-guide": {

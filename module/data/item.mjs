@@ -364,6 +364,10 @@ export class LyrianEquipment extends LyrianItemBase {
     schema.polarityType = new fields.StringField({ blank: true, initial: "" });
     schema.polarityUnits = int(0, { min: 0 });
     schema.targetType = new fields.StringField({ blank: true, initial: "" });
+    schema.compatibleTargets = new fields.ArrayField(
+      new fields.StringField({ blank: false }),
+      { required: false, initial: [] }
+    );
     schema.rarity = new fields.StringField({ blank: true, initial: "" });
     schema.multiplier = new fields.StringField({ blank: true, initial: "" });
     schema.growingTime = int(0, { min: 0 });
