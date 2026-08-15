@@ -85,7 +85,8 @@ export class LyrianItem extends Item {
     const sys = this.system;
 
     // Once per round, unless Rapid.
-    if (sys.usedThisRound && !sys.isRapid) {
+    const enforceOncePerRound = game.settings.get("lyrian-chronicles", "enforceOncePerRound");
+    if (enforceOncePerRound && sys.usedThisRound && !sys.isRapid) {
       return ui.notifications.warn(
         game.i18n.format("LYRIAN.Warn.AlreadyUsed", { name: this.name })
       );
@@ -106,7 +107,7 @@ export class LyrianItem extends Item {
     }
 
     const updates = {};
-    if (!sys.isRapid) updates["system.usedThisRound"] = true;
+    if (enforceOncePerRound && !sys.isRapid) updates["system.usedThisRound"] = true;
     if (Object.keys(updates).length) await this.update(updates);
 
     if (sys.isSecretArt && actor.type === "character") {
@@ -238,6 +239,7 @@ export class LyrianItem extends Item {
             isCrit: !!data.isCrit
           }
         : null,
+      sureHit: !!data.sureHit,
       damage: data.damageRoll
         ? {
             total: data.damageRoll.total,
@@ -256,7 +258,10 @@ export class LyrianItem extends Item {
         tokenUuid: t.tokenUuid,
         name: t.name,
         evasion: t.evasion,
+        dodgeEvasion: t.dodgeEvasion,
         guard: t.guard,
+        blockGuard: t.blockGuard,
+        untargetable: t.untargetable,
         hit: t.hit
       }))
     };
