@@ -640,7 +640,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static async #onBrowsePack(event, target) {
     const packName = target.dataset.pack;
     const allowed = new Set([
-      "breakthroughs", "player-abilities", "races", "classes", "items",
+      "breakthroughs", "player-abilities", "races", "classes",
       "weapons", "armor-shields", "consumables", "gear-kits", "artifices", "materials", "mods",
       "monster-abilities"
     ]);

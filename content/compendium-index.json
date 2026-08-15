@@ -49,11 +49,39 @@
         "classes-02.json"
       ]
     },
-    "items": {
+    "weapons": {
       "type": "Item",
-      "count": 206,
+      "count": 45,
       "files": [
-        "items-01.json"
+        "weapons-01.json"
+      ]
+    },
+    "armor-shields": {
+      "type": "Item",
+      "count": 9,
+      "files": [
+        "armor-shields-01.json"
+      ]
+    },
+    "consumables": {
+      "type": "Item",
+      "count": 58,
+      "files": [
+        "consumables-01.json"
+      ]
+    },
+    "gear-kits": {
+      "type": "Item",
+      "count": 31,
+      "files": [
+        "gear-kits-01.json"
+      ]
+    },
+    "artifices": {
+      "type": "Item",
+      "count": 47,
+      "files": [
+        "artifices-01.json"
       ]
     },
     "monsters": {
@@ -69,44 +97,6 @@
       "count": 307,
       "files": [
         "monster-abilities-01.json"
-      ]
-    },
-    "weapons": {
-      "type": "Item",
-      "count": 45,
-      "files": [
-        "weapons-01.json",
-        "weapons-02.json"
-      ]
-    },
-    "armor-shields": {
-      "type": "Item",
-      "count": 9,
-      "files": [
-        "armor-shields-01.json"
-      ]
-    },
-    "consumables": {
-      "type": "Item",
-      "count": 58,
-      "files": [
-        "consumables-01.json",
-        "consumables-02.json"
-      ]
-    },
-    "gear-kits": {
-      "type": "Item",
-      "count": 31,
-      "files": [
-        "gear-kits-01.json"
-      ]
-    },
-    "artifices": {
-      "type": "Item",
-      "count": 47,
-      "files": [
-        "artifices-01.json",
-        "artifices-02.json"
       ]
     },
     "materials": {

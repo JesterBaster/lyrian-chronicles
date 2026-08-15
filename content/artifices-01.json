@@ -28,12 +28,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--adjustable-lens-refractor-gun",
+        "seedKey": "official:item--adjustable-lens-refractor-gun",
         "stableId": "item--adjustable-lens-refractor-gun",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "de327114ec242fcaf04c7be5d065084b64a647331d3b3d9895eab526e68c3b3f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -66,12 +66,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--aerial-staff-custom-model",
+        "seedKey": "official:item--aerial-staff-custom-model",
         "stableId": "item--aerial-staff-custom-model",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "981a7a9a27b508040e7e4bfa1037517390e49199a5b575cf8e6860e4def9c2a7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -104,12 +104,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--aerial-staff-sparrow-model",
+        "seedKey": "official:item--aerial-staff-sparrow-model",
         "stableId": "item--aerial-staff-sparrow-model",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1ff76d984f2eae6681effa0fce4e7737c8f5c103d8c53974ca28db9325041486",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -142,12 +142,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--aetherie-sensory-station",
+        "seedKey": "official:item--aetherie-sensory-station",
         "stableId": "item--aetherie-sensory-station",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ddcd0f961c649bb9ff008ca31d3ceaa144bb8755a3a790077ac080c4d29781a9",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -180,12 +180,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--anti-air-weapon-sight",
+        "seedKey": "official:item--anti-air-weapon-sight",
         "stableId": "item--anti-air-weapon-sight",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f6a00aebec4ed35d73ae10de50d4d0c17870afb2e8022f9aa6537328bf7302f2",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -218,12 +218,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--artifice-limb",
+        "seedKey": "official:item--artifice-limb",
         "stableId": "item--artifice-limb",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "9b918323a7796c65f551d3926e92c64a2695e337a963f0a92c2047412e55c8b2",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -256,12 +256,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--artifice-water-purifier",
+        "seedKey": "official:item--artifice-water-purifier",
         "stableId": "item--artifice-water-purifier",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b529d2678e84fedc37cf65a1cc5e075e965ae62c750fc14023dca27cb765c5e2",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -294,12 +294,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--astra-guidance-beacon",
+        "seedKey": "official:item--astra-guidance-beacon",
         "stableId": "item--astra-guidance-beacon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d3205a96b46c1d7a0e6ef4d0f9fa3944e055360f410f6246452f1bde8864f707",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -332,12 +332,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--binoculars",
+        "seedKey": "official:item--binoculars",
         "stableId": "item--binoculars",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "3fe43aed4fb6e13fbb8c105c3ce22254896e46bc7314956ac9bc736f413c1c42",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -370,12 +370,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--blaster-weapon",
+        "seedKey": "official:item--blaster-weapon",
         "stableId": "item--blaster-weapon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "51c1e7392233d7a049627c40beec357c4c1e06ce78934b4ce71c7351f074d3b6",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -408,12 +408,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--buster-weapon",
+        "seedKey": "official:item--buster-weapon",
         "stableId": "item--buster-weapon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ba3a356da4acb739a759b35396d0e5f959e454a3f92ab076a8cb55227e6ee01c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -446,12 +446,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--calibretto-device",
+        "seedKey": "official:item--calibretto-device",
         "stableId": "item--calibretto-device",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "942020fc9089eafdd8a726a1a7052b7cd411f2974b652b878996ec2bd21c82a5",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -484,12 +484,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--cannon-two-handed",
+        "seedKey": "official:item--cannon-two-handed",
         "stableId": "item--cannon-two-handed",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b20d7acd74f5fba93959f3eeb1f6e5ff69e8a7794c18e85b0b4f0b0e4f1ddb48",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -522,12 +522,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--chainsaw-artifice-two-handed-weapon",
+        "seedKey": "official:item--chainsaw-artifice-two-handed-weapon",
         "stableId": "item--chainsaw-artifice-two-handed-weapon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "be2411cacb651e76d5fcf39f39337be7738c1aadf016ab3930ee1d1abaa0205e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -560,12 +560,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--counter-magic-shackles",
+        "seedKey": "official:item--counter-magic-shackles",
         "stableId": "item--counter-magic-shackles",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "82eea8653138613eebc0a988f587b0ade1cd5d5c0614cfb812b46ce3ce42f8b4",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -598,12 +598,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--elemental-weapon-artifice",
+        "seedKey": "official:item--elemental-weapon-artifice",
         "stableId": "item--elemental-weapon-artifice",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "799558f27d255e97901536edfd49399d65cdc1b7537633526dc9e88f9bd48b92",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -636,12 +636,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--fire-robe",
+        "seedKey": "official:item--fire-robe",
         "stableId": "item--fire-robe",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1aa5ba1a8f86d167d359756591e15c9f7fd961b4af0c347b5d132cafd2e8a971",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -674,12 +674,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--grappling-hook-artifice",
+        "seedKey": "official:item--grappling-hook-artifice",
         "stableId": "item--grappling-hook-artifice",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f749f270b5ba85a9116f8c613abdef5fce3db5b081143d61cd78b90d0d4f9d86",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -712,12 +712,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--lightning-rod",
+        "seedKey": "official:item--lightning-rod",
         "stableId": "item--lightning-rod",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "3071dc3b3eb6904d37e9fda82ef15c883e275d7bfd75bf3846bc0af590959262",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -750,12 +750,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--long-distance-communications-array",
+        "seedKey": "official:item--long-distance-communications-array",
         "stableId": "item--long-distance-communications-array",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0fa7d4f76aaf9971924d9c525ec796a740905c79fee5f13bba89a5b87726850a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -788,12 +788,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--mana-vision-goggles",
+        "seedKey": "official:item--mana-vision-goggles",
         "stableId": "item--mana-vision-goggles",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "17be051f1f7a03c45a32a5bfcd192258f26332fe4486e4106cb12cfbf314c2c3",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -826,12 +826,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--medium-shell",
+        "seedKey": "official:item--medium-shell",
         "stableId": "item--medium-shell",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d63ac63358d3f1239f2db46ef4bfb2c1d1055751b06d7667fdec477c5f9464bb",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -864,12 +864,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--memory-bubble",
+        "seedKey": "official:item--memory-bubble",
         "stableId": "item--memory-bubble",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0f3e006b23d2eb5c7e935468dac9aae2a188f0e085cf0910e7760cf485f20d04",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -902,12 +902,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--night-vision-goggles",
+        "seedKey": "official:item--night-vision-goggles",
         "stableId": "item--night-vision-goggles",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2a73a0d6964b7bc4f6d5f684db88148d65b5ec81c7a76542f5dc269945d59abf",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -940,12 +940,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--northi-lantern",
+        "seedKey": "official:item--northi-lantern",
         "stableId": "item--northi-lantern",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "fab59b9c3b66912a66e8d3aa32f824679d187faf216c0457d20c2215aaf22278",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -978,12 +978,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--personal-camouflage-field",
+        "seedKey": "official:item--personal-camouflage-field",
         "stableId": "item--personal-camouflage-field",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e8b0f33b6d7d64afef67d64ac72297642b5640fed71db0a5f8b9efc8ae72215a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1016,12 +1016,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--photon-shield",
+        "seedKey": "official:item--photon-shield",
         "stableId": "item--photon-shield",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "755c557e3f873f52818578af3a6f2412c7718771a560c066a2610e6f4f92af5a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1054,12 +1054,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--portable-vacuum",
+        "seedKey": "official:item--portable-vacuum",
         "stableId": "item--portable-vacuum",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e1a41bdf3c40703341356530e4b98e5020feb16dc7f370415b587f8b08700a64",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1092,12 +1092,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--power-gauntlets",
+        "seedKey": "official:item--power-gauntlets",
         "stableId": "item--power-gauntlets",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "990a2dee0aa11dc4292ae611724e4d3b4eab936031faddd477c1a4b608ca5751",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1130,12 +1130,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--private-communications-device",
+        "seedKey": "official:item--private-communications-device",
         "stableId": "item--private-communications-device",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6deee6122727eb7e91c2f1420e7713be4ac384619d0ac5f527f574be944f36ae",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1168,12 +1168,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--projected-recorder-orb",
+        "seedKey": "official:item--projected-recorder-orb",
         "stableId": "item--projected-recorder-orb",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "16f9c3a766cdf23f05551b2d524b83e4b22c9632fe105f08419e96216e322444",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1206,12 +1206,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--refractor-gun",
+        "seedKey": "official:item--refractor-gun",
         "stableId": "item--refractor-gun",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "5816fc3c05b1ba2e0140701da78add5ebdcaf9d1a5883cceb1d4a3188447a1ce",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1244,12 +1244,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--return-stone",
+        "seedKey": "official:item--return-stone",
         "stableId": "item--return-stone",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a2b85c4997fd76d219245c863bf25127a0d916693da1645978ec7d1418e551f3",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1282,12 +1282,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--shell-converter",
+        "seedKey": "official:item--shell-converter",
         "stableId": "item--shell-converter",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b90ea156a6eb03374e8de22e2de8386127a9f441e4567be1d41148ec294cd492",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1320,12 +1320,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--shock-stick",
+        "seedKey": "official:item--shock-stick",
         "stableId": "item--shock-stick",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b7697089d7f22a989ebf4e583ad00d2540462b12d79b79fabd053a1931b7c6a9",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1358,12 +1358,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--short-range-communications-device",
+        "seedKey": "official:item--short-range-communications-device",
         "stableId": "item--short-range-communications-device",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "04861dd399a586b8ae8dc3f89cd166aeab3872e5399a0ea4448432cea9c42d3b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1396,12 +1396,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--silencer",
+        "seedKey": "official:item--silencer",
         "stableId": "item--silencer",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "917d38718c2a3b99f5867b517d194cb929edb99fe60ce08089a3d92bf8ce2ea5",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1434,12 +1434,354 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:artifices:item--small-shell",
+        "seedKey": "official:item--small-shell",
         "stableId": "item--small-shell",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "012ea1d89ca482d77f00bef5f25bbae6ee1e47fc7a1b44c218ad202272fdea79",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "cf88467032305dc3",
+    "name": "Snow Cloak",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/5527273c-90bf-4322-9494-bf3e497c6821-Snow Cloak.lg.webp",
+    "system": {
+      "description": "<p>A white cloak designed as the counterpart to the Fire Robe. Keeps the wearer warm in even the coldest of weathers.</p><p>Considered a cloak and takes the cloak slot.</p><p>Can be activated to give the wearer 5 damage reduction against frost damage until the end of the encounter. When this effect ends, the shell inside the cloak is immediately used up and needs to be replaced for the weather repelling effect to function.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Quick Activation (20 points): </strong>The activation cost is reduced to 0 AP.</li></ul></li><li><i>B mods:</i><ul><li><strong>Snowproof (25 points):</strong> While it's active, you are immune to Slowing effects caused by Frost damage.</li><li><strong>Increased Protection (80 points): </strong>The damage reduction is increased to 10.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "2993d9cf293e40bec203207a62f2a418d2308b18cb50bf5d02655da6357a462d",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--snow-cloak",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "3000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per arc",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--snow-cloak",
+        "stableId": "item--snow-cloak",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "2993d9cf293e40bec203207a62f2a418d2308b18cb50bf5d02655da6357a462d",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "c89f0b331c5011f4",
+    "name": "Soul Lamp",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/10258ab0-1c3b-44d7-9a4f-6d5f72c69393-Soul Lamp - Copy.lg.webp",
+    "system": {
+      "description": "<p>A lamp that can be attuned to the soul of a single person. While that person is alive, the lamp emits a light glow. Should the person die, the lamp’s light fades and the lamp then shatters into pieces.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Vivre Flame(10 points): </strong>The person who is attuned to the lamp must be present upon its creation, and a bit of their blood or magic must be inserted into the lamp.&nbsp;The soul lamp’s flame’s strength now corresponds to the health of the target, being a bright flame when the target is at 100% HP and becoming a Dim flicker when they are downed.</li></ul></li><li><i>B mods:</i><ul><li><strong>Damage Sensor (25 points):</strong> When the target takes damage, the flame flickers a different color.</li><li><strong>Directional Flame (80 points): </strong>The lamp contains a flame that points in the direction of the person the lamp is attuned to.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "bb0fd6306067c5eced562cde044350d3c07a3ee772b41e8520e1837a8866291a",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--soul-lamp",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "1500 Clim",
+      "burden": "0",
+      "activationCost": "-",
+      "shellSize": "S",
+      "fuelUsage": "1 shell at attunement",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--soul-lamp",
+        "stableId": "item--soul-lamp",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "bb0fd6306067c5eced562cde044350d3c07a3ee772b41e8520e1837a8866291a",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "0e0f5f4d750b72c9",
+    "name": "Space Time Anchor",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/5fb4b77e-217f-422a-99d8-134bcb8ad4ec-spacetimeanchor.lg.webp",
+    "system": {
+      "description": "<p>A large box that when put down and activated projects an area in a 40ft radius around it. Any creature inside cannot use any teleportation abilities. Any creature outside of the area trying to teleport inside is placed at the nearest edge of the area.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Quickened Activation (20 points): </strong>The activation cost is reduced by 1 AP.</li></ul></li><li><i>B mods:</i><ul><li><strong>Increased Range (25 points):</strong> Increases the radius of the device by 10ft.</li><li><strong>Anchor Backpack (50 points): </strong>You may carry the device around instead of placing it on the ground. However, your movement speed is reduced by 10ft if doing so while the device is active.</li><li><strong>Make Exception (80 points): </strong>Allies can still teleport while in the area.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "ebed098db178034a089ce18eeba3ad8affb8c5cbfa7e861a8e56120946c24630",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--space-time-anchor",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "4000 Clim",
+      "burden": "3",
+      "activationCost": "2 AP",
+      "shellSize": "M",
+      "fuelUsage": "1 shell per minute",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--space-time-anchor",
+        "stableId": "item--space-time-anchor",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "ebed098db178034a089ce18eeba3ad8affb8c5cbfa7e861a8e56120946c24630",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "7ef9f95fe0da4c37",
+    "name": "Spider Shoes",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/5240c583-dd2b-470c-a507-72e475b40ebb-spidershoes.lg.webp",
+    "system": {
+      "description": "<p>A pair of shoes that can be adjusted to fit the wearer. Upon use, the wearer is able to walk across any angled surface as if it was normal solid ground</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Web Resistance (10 points): </strong>You don't suffer any penalties from walking across webs either natural or created through magic or items.</li><li><strong>Quick Activation (20 points): </strong>The activation cost is reduced by 1 AP, to a minimum of 0.</li><li><strong>Ceiling Drop (20 points):</strong> You may cancel the effect of this artifice for 0 RP. When you do, if you were attached to a ceiling or vertical surface, treat the fall as if it was 100ft lower than it is.</li></ul></li><li><i>B mods:</i><ul><li><strong>Sticky Footing (50 points):</strong> You gain a +5 bonus to any saves that would knock you prone or knock you back.</li><li><strong>Skitter Away (80 points): </strong>When you move up a vertical surface from a horizontal one, your first movement of the round does not provoke an attack of opportunity.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "7828e33fc5b1f073e7ee3e29fe2ba5bd14f001809ee34fa7b022bb40329caf37",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--spider-shoes",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "2000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per minute",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--spider-shoes",
+        "stableId": "item--spider-shoes",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "7828e33fc5b1f073e7ee3e29fe2ba5bd14f001809ee34fa7b022bb40329caf37",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "ff03a30f6c3c7195",
+    "name": "Stun Gun",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/dabc4e4f-0758-4631-af67-0739f98930cb-Stun gun.lg.webp",
+    "system": {
+      "description": "<p>A Light gun that can be used by anyone proficient in Muskets, Pistols, Shotguns or Sniper Rifles. It has a range of 60ft and does normal Lightning damage. Upon reducing an enemy to 0 or lower HP, the target becomes stunned instead of killed. This stun lasts until the end of the encounter and an extra minute after that.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Training Stock (10 points): </strong>You can use this weapon even if you're not proficient with any of the above listed firearms.</li><li><strong>Long Range (35 points):</strong> The range of the weapon is increased to 120ft.</li></ul></li><li><i>B mods:</i><ul><li><strong>Capture Model (80 points): </strong>When dealing damage to a Grunt with a Heavy attack, they are stunned until &nbsp;the start of your next turn even if they are still above 0 HP.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "a9e2a6497d0acec1c2db4c3aee4b1508e176e78c72197cc8e53a2fef93d44a6e",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--stun-gun",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon",
+      "cost": "2000 Clim",
+      "burden": "1",
+      "activationCost": "-",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per encounter",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--stun-gun",
+        "stableId": "item--stun-gun",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "a9e2a6497d0acec1c2db4c3aee4b1508e176e78c72197cc8e53a2fef93d44a6e",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "39ba6e78adb1cdab",
+    "name": "Transforming Weapon",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/42be4032-ad2f-495a-a2ae-5a1468bff432-Transforming Weapon - Copy.lg.webp",
+    "system": {
+      "description": "<p>A transforming weapon is a weapon attachment that can attach to both melee and ranged weapons. While attached to two weapons, the wielder can press a button to consume a shell and transform the current active weapon into the other attached weapon.</p><p>Up to 5 shells fit into one weapon.</p><p>Weapons can be attached or detached for 4 AP each.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Smooth Operations (20 points): </strong>The first switch in an encounter does not consume a shell.</li></ul></li><li><i>B mods:</i><ul><li><strong>Triple Form (50 points): </strong>You may attach 3 weapons to this instead of 2.</li><li><strong>Quick Swap (80 points):</strong> You may activate this artifice for 0 RP instead of 0 AP.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "68a39bc05c230b2028e16d98ab8c747fe9470244d363731360be08a86b75c5d3",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--transforming-weapon",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Weapon Attachment",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "0 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per switch",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--transforming-weapon",
+        "stableId": "item--transforming-weapon",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "68a39bc05c230b2028e16d98ab8c747fe9470244d363731360be08a86b75c5d3",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "cb81608f6c17ef42",
+    "name": "Universal Translator",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/8bdbb5cb-52bb-4bbd-a8d3-d2392e273214-universal translator.lg.webp",
+    "system": {
+      "description": "<p>A small black box.&nbsp;</p><p>When a creature speaks into it while activated, everyone who hears the creature’s voice can automatically understand what they are saying, regardless of the language they are speaking in.&nbsp;</p><p>It cannot translate for creatures that lack a proper language such as animals.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Parley Mode (20 points): </strong>The device now translates all words spoken near it, allowing for easier two way communication.</li></ul></li><li><i>B mods:</i><ul><li><strong>Voice Amplification (50 points):</strong> In addition to translating, the speaker's voice is also amplified to be heard from over long distances as if shouting.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "8788c152094130f2136c05ed2dfafcefb4a36b117e4381efdf96f8d90ca492f3",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--universal-translator",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "1500 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per day",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--universal-translator",
+        "stableId": "item--universal-translator",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "8788c152094130f2136c05ed2dfafcefb4a36b117e4381efdf96f8d90ca492f3",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "3f9035cdb61342c3",
+    "name": "Wind Bubble",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/0bbc18eb-073d-49f7-b813-0b2abd6583b3-Wind Bubble - Copy.lg.webp",
+    "system": {
+      "description": "<p>A simple device that can be attached to the body or held in the hand. When activated, it creates a bubble of wind around the wielder that slows down falling speed to 40ft per round. If the wearer reaches the ground while in this bubble, they take no fall damage.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Quick Activation (20 points): </strong>The activation cost is reduced by 1 AP or 1 RP, to a minimum of 0.</li></ul></li><li><i>B mods:</i><ul><li><strong>Slow Fall (25 points):</strong> Reduces the falling speed down to 20ft per round.</li><li><strong>Underwater Mode (50 points)</strong>: If used underwater, the bubble provided you air as you slowly float upwards.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "8aabad44f1c0c02c9c8e4065455a85eaa0ab1ee94fd10340aad5b22777f89648",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--wind-bubble",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP or 1 RP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per use",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--wind-bubble",
+        "stableId": "item--wind-bubble",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "8aabad44f1c0c02c9c8e4065455a85eaa0ab1ee94fd10340aad5b22777f89648",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "f800631d6bc49469",
+    "name": "Winged Backpack",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/adaeaa2c-773a-4309-86e4-f0a062600740-Winged Backpack.lg.webp",
+    "system": {
+      "description": "<p>A backpack that looks ordinary at a first glance. It can store the same amount of items as a normal backpack. When activated, a pair of mechanical wings fold out. While the wings are out, you slow down your falling speed to 15ft per round and you are able to move horizontally as if normally moving. If you hit the ground while they are active, you do not take any falling damage. Lasts for 5 minues or until you hit the ground.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Quick Activation (20 points): </strong>The activation cost is reduced by 1 AP, to a minimum of 0.</li></ul></li><li><i>B mods:</i><ul><li><strong>Hover Mode (80 points): </strong>When activated, the wearer can fly at half speed up to a maximum of 40ft high. If activated when higher than 40ft high, you glide down until you reach the 40ft height limit. Functions similarly to the Flight ability in regards to taking damage while flying.</li></ul></li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "1adaf4fab1906bd0a19e7e821d762a1245c3f5fcab29f1447905b2df86f4ac8f",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--winged-backpack",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Artifice",
+      "subType": "Assist",
+      "cost": "2000 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "S",
+      "fuelUsage": "1 shell per use",
+      "craftingPoints": 30,
+      "craftingType": "Artificing",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--winged-backpack",
+        "stableId": "item--winged-backpack",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "1adaf4fab1906bd0a19e7e821d762a1245c3f5fcab29f1447905b2df86f4ac8f",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   }

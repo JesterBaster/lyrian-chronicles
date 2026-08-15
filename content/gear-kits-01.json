@@ -28,12 +28,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--advanced-surgery-kit",
+        "seedKey": "official:item--advanced-surgery-kit",
         "stableId": "item--advanced-surgery-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "129c8371bbc682d599664ff7647160a7b852ecd99957633eb979233ee506ed75",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -66,12 +66,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--adventurer-s-kit",
+        "seedKey": "official:item--adventurer-s-kit",
         "stableId": "item--adventurer-s-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1b1c77c16fa6fbce81ad4bcc2118216a5d3b01a9841a3073eb9e8db92049b85f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -104,12 +104,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--alchemist-s-alembic",
+        "seedKey": "official:item--alchemist-s-alembic",
         "stableId": "item--alchemist-s-alembic",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "59e6497cd2a85858cc12e9f58de4691d3f6e91d8cd3f933ce65b087578f489e9",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -142,12 +142,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--alchemy-rig",
+        "seedKey": "official:item--alchemy-rig",
         "stableId": "item--alchemy-rig",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e4b93f597041b07c8f0f895189a87d4c1f36a9d5b244fb22332f82d090152b7a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -180,12 +180,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--alchemy-rig-deluxe",
+        "seedKey": "official:item--alchemy-rig-deluxe",
         "stableId": "item--alchemy-rig-deluxe",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "75f379052196326b211ebd424c440fca043c22eab2276686d484d6a4cb1b8e74",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -218,12 +218,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--artificer-s-kit",
+        "seedKey": "official:item--artificer-s-kit",
         "stableId": "item--artificer-s-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0f4c641407927d5b121e97ee1cb939be61057a2fc2d7843d1aba213245552a81",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -256,12 +256,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--artificer-s-multitool",
+        "seedKey": "official:item--artificer-s-multitool",
         "stableId": "item--artificer-s-multitool",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e1360965a73c98b56e5b3b2c60d236fd46c566ac3736550972b853881f86e864",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -294,12 +294,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--backpack",
+        "seedKey": "official:item--backpack",
         "stableId": "item--backpack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6d0a632923c0589f2c8712ac7b80accce8b426fd0cc8d52b9f1cccf7a8ed997d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -332,12 +332,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--boar",
+        "seedKey": "official:item--boar",
         "stableId": "item--boar",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6779381cbe9d4f737edcc0c2f4d4b62e0c7aa73433d7a1811956fa5a88dfeb26",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -370,12 +370,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--camping-kit",
+        "seedKey": "official:item--camping-kit",
         "stableId": "item--camping-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2ac70093f7083f56723dc0f9891041ee67b6e91e465d57ad8eb5c5407cdadccf",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -408,12 +408,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--carpenter-s-chisel",
+        "seedKey": "official:item--carpenter-s-chisel",
         "stableId": "item--carpenter-s-chisel",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "afbc9ed9f7c60509b74e9a75e0e73f3b5035a4523c2742d8ce4035cf6367b33d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -446,12 +446,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--cart",
+        "seedKey": "official:item--cart",
         "stableId": "item--cart",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ef3ddbebf5e33261ed55d466d2e6eb8c51858df502ff1a803a3d077ac7cd69a0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -484,12 +484,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--cartographer-s-kit",
+        "seedKey": "official:item--cartographer-s-kit",
         "stableId": "item--cartographer-s-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "fc4b881bfb84cbfeb730d34302c630eeee11615e13c1bb4351e495dd0909b442",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -522,12 +522,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--culinary-kit",
+        "seedKey": "official:item--culinary-kit",
         "stableId": "item--culinary-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1eaef90fb64e1e5bb303b023cdda7d1ebdc064f35c7fd17ff4e38615ac17a7c7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -560,12 +560,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--equipment-patching-kit",
+        "seedKey": "official:item--equipment-patching-kit",
         "stableId": "item--equipment-patching-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "02543188e88048277863fc6e10f24fd6b4a0d0870271053a5f0008727a6e19b9",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -598,12 +598,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--eye-lens",
+        "seedKey": "official:item--eye-lens",
         "stableId": "item--eye-lens",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ebe7fdfd91f0a0d02140150882e0d5c36457ac282dd36e64eae4387a80f0b2b1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -636,12 +636,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--frying-pan",
+        "seedKey": "official:item--frying-pan",
         "stableId": "item--frying-pan",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "4261545c94adda2240af538d9bedff9c48664f200de3dfd965d34a01b463338f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -674,12 +674,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--fuel-cartridge-pack",
+        "seedKey": "official:item--fuel-cartridge-pack",
         "stableId": "item--fuel-cartridge-pack",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cfe2ee6a8b4fc807708bfd3663c74c3eefec1e9892c02a48991d094135b30f8c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -712,12 +712,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--giant-dragonfly",
+        "seedKey": "official:item--giant-dragonfly",
         "stableId": "item--giant-dragonfly",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2d2c46ff020f28e58c9c5e1b71b560182eabce344351bf43b7db44c68b06a866",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -750,12 +750,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--horse",
+        "seedKey": "official:item--horse",
         "stableId": "item--horse",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "9d1dfa1b1dc020668cf032b6f5fcc5a780393dac829a2613f2b84322f409eb3c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -788,12 +788,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--locking-seal",
+        "seedKey": "official:item--locking-seal",
         "stableId": "item--locking-seal",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f693684b7285893337c0051ab5c1a077ac97546825722f387b6832974887c016",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -826,12 +826,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--medical-kit",
+        "seedKey": "official:item--medical-kit",
         "stableId": "item--medical-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1bd62d9ad385283b900c00153418e026e8a5ae86601d83eff74f54a5871afd9f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -864,12 +864,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--military-ration",
+        "seedKey": "official:item--military-ration",
         "stableId": "item--military-ration",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "10bf74dd3911b5c393e58653e1489df702d23bc03c203cc5a8d5747c7dba3260",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -902,12 +902,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--minor-item",
+        "seedKey": "official:item--minor-item",
         "stableId": "item--minor-item",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d9d239f27338b627a18162dc61528a2e04989d536debad1fcd97a6a210f12a66",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -940,12 +940,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--mule",
+        "seedKey": "official:item--mule",
         "stableId": "item--mule",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "645d8af086489615fd1488e22f74e6a66b474dac39cffe38ae69876a6864446a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -978,12 +978,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--pegasus",
+        "seedKey": "official:item--pegasus",
         "stableId": "item--pegasus",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1211f8c80ae153de0a865d1cefabe745cba93d9a11f047ed02a138f48f20ad1c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1016,12 +1016,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--research-kit",
+        "seedKey": "official:item--research-kit",
         "stableId": "item--research-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "9bc59d28be51caefecad7a4011c55d61f7b894676e9e9bdd8f60523dce077590",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1054,12 +1054,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--surgery-kit",
+        "seedKey": "official:item--surgery-kit",
         "stableId": "item--surgery-kit",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cf484e54e192f74c4ed623ab10b6ba26695977ced9eae6191129f759f49cb230",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1092,12 +1092,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--torch",
+        "seedKey": "official:item--torch",
         "stableId": "item--torch",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "bcd0f3814ed68a74c93002e6d952f2a76dd479c21c7729bc2723a8d2ba40b2df",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1130,12 +1130,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--wolf",
+        "seedKey": "official:item--wolf",
         "stableId": "item--wolf",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "9f48e9b808f68319933005904235fbb179366732bdbdec6f49f1766ca5ed9d14",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1168,12 +1168,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:gear-kits:item--wyvern",
+        "seedKey": "official:item--wyvern",
         "stableId": "item--wyvern",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6d136f0f03208153b2e04ebbb506e02575c6b1e8abd1a696b0bb498ee962ec0c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   }

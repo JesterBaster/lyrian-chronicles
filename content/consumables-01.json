@@ -28,12 +28,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--antidote-shot-potion",
+        "seedKey": "official:item--antidote-shot-potion",
         "stableId": "item--antidote-shot-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "5097a40e8d5f7fbe9b7d43842ed92306a4f6405e1565be51ada23e04392b2f76",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -66,12 +66,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--axolotl-elixir",
+        "seedKey": "official:item--axolotl-elixir",
         "stableId": "item--axolotl-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d15b4294b642055a3ff3a91b14683a3d1ae8fd6e99fa5567528b0cf72c5aa294",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -104,12 +104,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--bear-elixir",
+        "seedKey": "official:item--bear-elixir",
         "stableId": "item--bear-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8f7018b18d64dfb6e28cd69e5662fbab62c38b3b072aeb99a1a12a4a3ff5ef21",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -142,12 +142,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--blood-elixir",
+        "seedKey": "official:item--blood-elixir",
         "stableId": "item--blood-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8909af80e23e42994d0e5bacac08c86968f7752513a045da1ec98b54c5ef9ff4",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -180,12 +180,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--breaching-flask",
+        "seedKey": "official:item--breaching-flask",
         "stableId": "item--breaching-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2447c1d6d43793430ab768b925b0f7f4dc8603d14804512fcb4eb0ae026c5e47",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -218,12 +218,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--bull-potion",
+        "seedKey": "official:item--bull-potion",
         "stableId": "item--bull-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "bb5269e6bdada8525fb835ad342c22bcbca7448319f53a0a0636be95c08ce8e1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -256,12 +256,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--cat-elixir",
+        "seedKey": "official:item--cat-elixir",
         "stableId": "item--cat-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f7a52242a729f0bd9a01aa5981547cd2ad22bd68c2771da0534851a166124a22",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -294,12 +294,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--cleansing-potion",
+        "seedKey": "official:item--cleansing-potion",
         "stableId": "item--cleansing-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "13cc865d4ea6c5dfe0686e12a4df8cb2fb3b6b4f61e995b938ff4a6de71facb1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -332,12 +332,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--corrosive-flask",
+        "seedKey": "official:item--corrosive-flask",
         "stableId": "item--corrosive-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0ac80411e6b8cb38c68cb405b3ac0b4c111de0b199dcdc22188ca6365f9831d4",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -370,12 +370,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--demonblood-potion",
+        "seedKey": "official:item--demonblood-potion",
         "stableId": "item--demonblood-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "92c0699d7e08587c23ef66f1a879c450247362b459500353fd742b1fe2ad4a41",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -408,12 +408,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--diamondize-potion",
+        "seedKey": "official:item--diamondize-potion",
         "stableId": "item--diamondize-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "66e8e5d29febead4074f2dde234b3be2a0ecd578ec76b3546e2ca4d7446ac9f4",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -446,12 +446,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--displacement-potion",
+        "seedKey": "official:item--displacement-potion",
         "stableId": "item--displacement-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1e6c2588a99b1aa220093747fe07ea4929c46609f32e160a79c8bf2bcedc274d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -484,12 +484,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--eagle-potion",
+        "seedKey": "official:item--eagle-potion",
         "stableId": "item--eagle-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "c6677dc22b18481de552e817d53680123a0e89010d72b003c01da5b14a75314a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -522,12 +522,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--elemental-grease",
+        "seedKey": "official:item--elemental-grease",
         "stableId": "item--elemental-grease",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b77defe7bc3fd25f0cfb79f0fde2b4ed5d033238c1ef7b29f42bed0cde765be0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -560,12 +560,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--elemental-immunity-elixir",
+        "seedKey": "official:item--elemental-immunity-elixir",
         "stableId": "item--elemental-immunity-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e1454dbc03eda8e9bfd1f98b92e890684c1a0f2290767003f57dba10f02c5211",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -598,12 +598,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--elemental-mixture-flask",
+        "seedKey": "official:item--elemental-mixture-flask",
         "stableId": "item--elemental-mixture-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e480c52219fe9113ed9ac873c913518e486536732ff25fb68336312763aca961",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -636,12 +636,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--elemental-resistance-elixir",
+        "seedKey": "official:item--elemental-resistance-elixir",
         "stableId": "item--elemental-resistance-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "93043f314d1941ddee19580a861875d16990bddefbe64c40fe3f168970132117",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -674,12 +674,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--falcon-elixir",
+        "seedKey": "official:item--falcon-elixir",
         "stableId": "item--falcon-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a0eaa70a31c5a444febc2519fd16db6ccc8e52f907c79086c32a8c278d5ed949",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -712,12 +712,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--flame-oil-flask",
+        "seedKey": "official:item--flame-oil-flask",
         "stableId": "item--flame-oil-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a782528e9ad6e133193efb47d3f90d21b610ba2f9d4a7d1e80ee9614a00d8e2f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -750,12 +750,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--flashbang-flask",
+        "seedKey": "official:item--flashbang-flask",
         "stableId": "item--flashbang-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "3a1468a6e0ccb8e8cc9c1fc16e3a69efc204935ef9b174a43717a4dd95ca81b3",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -788,12 +788,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--ghost-elixir",
+        "seedKey": "official:item--ghost-elixir",
         "stableId": "item--ghost-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0c0500864e3259ac772a9de5c64e487f968d9b0315958ca715015244774de238",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -826,12 +826,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--grapeshot-flask",
+        "seedKey": "official:item--grapeshot-flask",
         "stableId": "item--grapeshot-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2c4b7ffc988aaeb65c607a1f78a3a52c92b70a77fc1d38d3a7ca0d7b68114323",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -864,12 +864,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--greater-healing-potion",
+        "seedKey": "official:item--greater-healing-potion",
         "stableId": "item--greater-healing-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "c481cf400dff0d6741683557e20d7b4251cd0a125ac920c693cf3cda9f6e80e1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -902,12 +902,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--greater-shielding-potion",
+        "seedKey": "official:item--greater-shielding-potion",
         "stableId": "item--greater-shielding-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a8d736f8910e11bf2e3d308746418c269001caf672743de77a2152d3f80c387a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -940,12 +940,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--greater-speed-potion",
+        "seedKey": "official:item--greater-speed-potion",
         "stableId": "item--greater-speed-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "eab0709eb30fcaea7135f2839ae488f74a7e484fc0cb8b338d07a94977fed045",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -978,12 +978,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--growth-potion",
+        "seedKey": "official:item--growth-potion",
         "stableId": "item--growth-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "e06eddc559f7cd8eacf0451031f7ffd9e5501baa4da057d20777bdeda284ee9c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1016,12 +1016,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--healing-potion",
+        "seedKey": "official:item--healing-potion",
         "stableId": "item--healing-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "34ca8304aec8a374c1f6e38892becc3a1183b15da34ecd6d0adab62cbaff7dfe",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1054,12 +1054,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--horse-elixir",
+        "seedKey": "official:item--horse-elixir",
         "stableId": "item--horse-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ab672ea8f00b8ca32878eec84990009fabca0c30f3b09c09061e2de727245c28",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1092,12 +1092,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--ice-flask",
+        "seedKey": "official:item--ice-flask",
         "stableId": "item--ice-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "bdd1ffd6828ec3587426ab6580558bfaaa5dd1a5b1e0589aa9f44b9b7c5a4d11",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1130,12 +1130,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--immunity-elixir",
+        "seedKey": "official:item--immunity-elixir",
         "stableId": "item--immunity-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cf455ab702edf765be8aedf3dcb9f7100b761cb28db144d586acbc77db292e42",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1168,12 +1168,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--inky-oil-flask",
+        "seedKey": "official:item--inky-oil-flask",
         "stableId": "item--inky-oil-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a4044ab81852a68b5c61b5206bb056d7756be883e24f7d741327c3b7bb21c2f1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1206,12 +1206,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--isona-poison",
+        "seedKey": "official:item--isona-poison",
         "stableId": "item--isona-poison",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "15837a621f12f080a38bca8ed26c1715182ff769a5bc263905159baea0ba9972",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1244,12 +1244,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--lesser-diamondize-potion",
+        "seedKey": "official:item--lesser-diamondize-potion",
         "stableId": "item--lesser-diamondize-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b31c29f5b4322904ddceb050c03497929dafa54afafcc8766e99dac8dbd48173",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1282,12 +1282,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--lizard-elixir",
+        "seedKey": "official:item--lizard-elixir",
         "stableId": "item--lizard-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "46f763472e5b0dd44aab8747c093b7ffeb6b564631c31594cc8c4bfdf732f7ae",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1320,12 +1320,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--mage-s-blood",
+        "seedKey": "official:item--mage-s-blood",
         "stableId": "item--mage-s-blood",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cca3256cb8f9007c479e94bbfe5f276d289cd825b80352420a204be4e9a7a1cd",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1358,12 +1358,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--marlone-jelly-poison",
+        "seedKey": "official:item--marlone-jelly-poison",
         "stableId": "item--marlone-jelly-poison",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8b3d953eea73f03a20bc724be3656a23a6932ee2edc234da59d5c09b050d95df",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1396,12 +1396,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--mimic-potion",
+        "seedKey": "official:item--mimic-potion",
         "stableId": "item--mimic-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "704159af902fff9cc377945baabe5254ce33848e974bdf9212ec0edc2d212303",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1434,12 +1434,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--netting-flask",
+        "seedKey": "official:item--netting-flask",
         "stableId": "item--netting-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "81371c48af943ff9f5a669b80df7fce17b08b6bef584581b50873d649b8afabe",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1472,12 +1472,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--parrot-elixir",
+        "seedKey": "official:item--parrot-elixir",
         "stableId": "item--parrot-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cb3b2b02050c780524a40cdca7ec7f444515babb188fbe8f9ec2ca78e91a4176",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1510,12 +1510,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--portable-wall",
+        "seedKey": "official:item--portable-wall",
         "stableId": "item--portable-wall",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1756fc5752511c48d1aa43e575cb60cb9fce5df4e93dce5b5507cfcca14abd4d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1548,12 +1548,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--rabbit-elixir",
+        "seedKey": "official:item--rabbit-elixir",
         "stableId": "item--rabbit-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "2bf2088d3011eaea999f99cc3ab1c68d502225e72c3f2063d5d17926a7e509f6",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1586,12 +1586,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--reaper-elixir",
+        "seedKey": "official:item--reaper-elixir",
         "stableId": "item--reaper-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "67b178a29976c12b12b9704e59372492109fb2583db946ffdf7e759a1d5ea4b0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1624,12 +1624,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--shark-elixir",
+        "seedKey": "official:item--shark-elixir",
         "stableId": "item--shark-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "41d1a4bbaf00e508162ec0fb9e1b7cfeec4e0a8f293fa97eca85da6d175e034f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1662,12 +1662,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--shielding-potion",
+        "seedKey": "official:item--shielding-potion",
         "stableId": "item--shielding-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b95dc01120705d741944dd713c4e6d2aaa5fda5bc67cd4c02fb086622fb41ca7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1700,12 +1700,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--smoke-flask",
+        "seedKey": "official:item--smoke-flask",
         "stableId": "item--smoke-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7a4dc3fa13c4b82ab40c19a55a8d9642e5b3c1a6f269fbcf7c4fa11e8d7d698e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1738,12 +1738,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--souleater-elixir",
+        "seedKey": "official:item--souleater-elixir",
         "stableId": "item--souleater-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0c457c4c9d72635c4ead460ba160ca35918c5337a213987f68e2603bf2ddd286",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1776,12 +1776,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--speed-potion",
+        "seedKey": "official:item--speed-potion",
         "stableId": "item--speed-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1be93781a52b2401a226deb019a40a3bf0986dc502d26bcc684b8f6b8f9c55f4",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1814,12 +1814,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--sticky-glue-flask",
+        "seedKey": "official:item--sticky-glue-flask",
         "stableId": "item--sticky-glue-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0b286b07d17e2e64abb6e3a93a9cae63a3b06fe0833cf848f281e5ce23a911db",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1852,12 +1852,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--stone-serpent-s-kiss",
+        "seedKey": "official:item--stone-serpent-s-kiss",
         "stableId": "item--stone-serpent-s-kiss",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b4fecd8dc2b47edf56287f1d9ce148573b422412432adbb006295a626b68c376",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1890,12 +1890,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--suppression-potion",
+        "seedKey": "official:item--suppression-potion",
         "stableId": "item--suppression-potion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "3370ba4bad0759f107adfe63cf9750fe4c465559af64f0ad39b87f3f18a5f826",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1928,12 +1928,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--tunnel-elixir",
+        "seedKey": "official:item--tunnel-elixir",
         "stableId": "item--tunnel-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "3602b75ed2c21c449ae4fabdf068bf847cb01ba68582f48c40838302a1b770ca",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -1966,12 +1966,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--turtle-elixir",
+        "seedKey": "official:item--turtle-elixir",
         "stableId": "item--turtle-elixir",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "9561d8d40fe1c01b16f32ce949c6dbad358fd0771254c5d5128e74e55bf867f8",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2004,12 +2004,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--water-balloon",
+        "seedKey": "official:item--water-balloon",
         "stableId": "item--water-balloon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "57b8e511ae5c5179353144c36d6654afae61ccfa70470cb8a1daa67f54fcef5e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2042,12 +2042,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--weak-spider-poison",
+        "seedKey": "official:item--weak-spider-poison",
         "stableId": "item--weak-spider-poison",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ce924ae3c435cecd5c84955fff4ba86e3d197c104dc5f7c6c7b4a0b087475e8a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2080,12 +2080,12 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--weak-wyvern-poison",
+        "seedKey": "official:item--weak-wyvern-poison",
         "stableId": "item--weak-wyvern-poison",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7f11768f1968434a8f45fd009f197b756fd2f49b8bc9e6ee27a5433b41f7c090",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
       }
     }
   },
@@ -2118,12 +2118,88 @@
     },
     "flags": {
       "lyrian-chronicles": {
-        "seedKey": "catalog:consumables:item--web-flask",
+        "seedKey": "official:item--web-flask",
         "stableId": "item--web-flask",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a38352c2b570d784780dc7d5b3543ee9ce49123262cc210ee1718a3ab3175479",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.6.0"
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "6a5d4172a0eb6b3c",
+    "name": "Wolverine Elixir",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/e4547b95-5654-41fa-b985-a06321e02024-Wolverine Elixir.lg.webp",
+    "system": {
+      "description": "<p>An elixir that prevents non-lethal injuries.&nbsp; When drunk, you take 11 true damage. Until the end of the encounter, you do not suffer any injuries, except for a Mortal Wound (you can still lose HP and still become downed when reaching 0 HP).&nbsp;</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 2050 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Mystic Earth</li><li>1x Rare Fire</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "818a2065726e055866b1e4d48fd3ec17640428a47a848aa39844bbca9e59842d",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--wolverine-elixir",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Elixir",
+      "cost": "1250 Clim",
+      "burden": "1",
+      "activationCost": "1 AP",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 58,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--wolverine-elixir",
+        "stableId": "item--wolverine-elixir",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "818a2065726e055866b1e4d48fd3ec17640428a47a848aa39844bbca9e59842d",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "bb2010e775898835",
+    "name": "XL Healing Potion",
+    "type": "equipment",
+    "img": "https://cdn.angelssword.com/ttrpg/assets/3e6e1a41-a950-4691-8eb9-007a4d3cb580-xlhealingpotion.lg.webp",
+    "system": {
+      "description": "<p>Healing liquid in a vial made from various herbs and reagents. Spurs the body’s natural healing by converting mana into regeneration.&nbsp; Much purer and more difficult to create, uses special materials. When drank, you heal for 45 HP.</p><p><strong>Crafting:</strong><br><strong>Materials:</strong> 1800 Alchemy Materials<br><strong>Herbs:</strong></p><ul><li>1x Mystic Fire</li></ul>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+      "sourceHash": "083dbacaaaffc16078e101f2a225a65f5c2d3e609a0093e1e424ec2df9eb5250",
+      "rulebookVersion": "0.13.1",
+      "stableId": "item--xl-healing-potion",
+      "relationships": {
+        "_links": []
+      },
+      "category": "Alchemy",
+      "subType": "Potion",
+      "cost": "1000 Clim",
+      "burden": "1",
+      "activationCost": "0 AP, 6 Mana",
+      "shellSize": "",
+      "fuelUsage": "",
+      "craftingPoints": 55,
+      "craftingType": "Alchemy",
+      "quantity": 1,
+      "equipped": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:item--xl-healing-potion",
+        "stableId": "item--xl-healing-potion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
+        "sourceHash": "083dbacaaaffc16078e101f2a225a65f5c2d3e609a0093e1e424ec2df9eb5250",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0"
       }
     }
   }
