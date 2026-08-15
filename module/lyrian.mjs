@@ -24,9 +24,13 @@ import { LyrianAPI } from "./api.mjs";
 import { seedSystemPacks, resetSystemPacks } from "./content/seed-packs.mjs";
 import { runCharacterCreation } from "./apps/character-creation.mjs";
 import { resolveDefence } from "./rules/defence-resolution.mjs";
+import {
+  actionLockWarningKey,
+  initializeActionTransactions,
+  runExclusiveActorAction
+} from "./rules/action-transactions.mjs";
 
 const SYSTEM_ID = "lyrian-chronicles";
-const pendingAttackResolutions = new Set();
 
 /* -------------------------------------------- */
 /*  Initialisation                               */
@@ -288,15 +292,12 @@ async function onChatAction(event, message) {
       continue;
     }
 
-    const resolved = actor.getFlag(SYSTEM_ID, "resolvedAttacks") ?? {};
-    const resolutionKey = `${actor.uuid}:${message.id}`;
-    if (resolved[message.id] || pendingAttackResolutions.has(resolutionKey)) {
-      ui.notifications.warn(`${actor.name} has already resolved this attack.`);
-      continue;
-    }
+    const resolution = await runExclusiveActorAction(actor, async () => {
+      // Re-read inside the active-GM lock. Another browser may have resolved
+      // this card while this client was waiting for the authority response.
+      const resolved = actor.getFlag(SYSTEM_ID, "resolvedAttacks") ?? {};
+      if (resolved[message.id]) return { duplicate: true };
 
-    pendingAttackResolutions.add(resolutionKey);
-    try {
       const outcome = resolveDefence({
         defence,
         attackTotal: attack.accuracy?.total,
@@ -305,7 +306,9 @@ async function onChatAction(event, message) {
         untargetable: target.untargetable,
         dodgeEvasion: target.dodgeEvasion
       });
-      if (outcome.rpCost && !(await actor.spendResources({ rp: outcome.rpCost }))) continue;
+      if (outcome.rpCost && !(await actor.spendResources({ rp: outcome.rpCost }))) {
+        return { cancelled: true };
+      }
 
       // Store the claim on the defender, which its owner can update even when the
       // attacker's ChatMessage belongs to another user. Keep only recent claims.
@@ -314,14 +317,13 @@ async function onChatAction(event, message) {
         ...recent,
         [message.id]: { defence, at: Date.now() }
       });
-      button.disabled = true;
 
       if (!outcome.hits) {
         await ChatMessage.create({
           speaker: ChatMessage.getSpeaker({ actor }),
           content: `<p><strong>${actor.name}</strong> ${outcome.reason === "dodged" ? "dodges the attack." : "takes no damage from the missed attack."}</p>`
         });
-        continue;
+        return { resolved: true };
       }
 
       let damage = attack.damage?.total ?? flags.damage ?? 0;
@@ -345,9 +347,18 @@ async function onChatAction(event, message) {
           defence: game.i18n.localize(LYRIAN.defenceReactions[defence])
         })}</p>`
       });
-    } finally {
-      pendingAttackResolutions.delete(resolutionKey);
+      return { resolved: true };
+    });
+
+    if (!resolution.started) {
+      ui.notifications.warn(game.i18n.localize(actionLockWarningKey(resolution.reason)));
+      continue;
     }
+    if (resolution.value?.duplicate) {
+      ui.notifications.warn(`${actor.name} has already resolved this attack.`);
+      continue;
+    }
+    if (resolution.value?.resolved) button.disabled = true;
   }
 }
 
@@ -400,6 +411,13 @@ async function rollItemMacro(itemUuid) {
 
 Hooks.once("ready", async function () {
   console.log("Lyrian Chronicles | Ready");
+  initializeActionTransactions({
+    socket: game.socket,
+    users: () => game.users,
+    user: () => game.user,
+    resolveUuid: (uuid) => fromUuid(uuid)
+  });
+
   // Refresh the official source documents first. Migrations can then hydrate
   // older owned race items from the current compendium schema.
   if (game.settings.get(SYSTEM_ID, "autoSeedContent")) {

@@ -1,6 +1,9 @@
 import { LYRIAN } from "../config.mjs";
 import { renderAttackCard } from "../rules/attack-card.mjs";
-import { runExclusiveActorAction } from "../rules/action-transactions.mjs";
+import {
+  actionLockWarningKey,
+  runExclusiveActorAction
+} from "../rules/action-transactions.mjs";
 import { confirmItemRequirements } from "../rules/requirements.mjs";
 
 /**
@@ -34,7 +37,7 @@ export class LyrianItem extends Item {
       this._rollWeaponAttack(attackType, options)
     );
     if (!action.started) {
-      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.ActionInProgress"));
+      ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
     }
     return action.value;
   }
@@ -105,7 +108,7 @@ export class LyrianItem extends Item {
 
     const action = await runExclusiveActorAction(actor, () => this._rollAbility(options));
     if (!action.started) {
-      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.ActionInProgress"));
+      ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
     }
     return action.value;
   }

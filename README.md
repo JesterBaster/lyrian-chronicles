@@ -45,6 +45,7 @@ restart; changes to data model schemas need the world relaunched from the setup 
 | Defence | Chat card buttons for No reaction / Dodge / Block; Block uses `2×Toughness + armour block value` and can reduce damage to 0, everything else floors at 1 |
 | Initiative | `1d4 + Agility`, ties resolved in favour of players and bosses, then heroics, then grunts |
 | Action economy | 4 AP / `2 + Agility` RP for heroics, 2 AP / 1 RP for grunts; AP refreshes on turn start, RP on encounter start |
+| Action locking | One active GM authorizes each actor action lock, preventing two browsers from spending the same resources or resolving the same attack card concurrently |
 | Once per round | Non-Rapid abilities lock until the owner's next turn; one Secret Art per encounter |
 | Downed | 0 HP applies Downed and Prone (grunts die outright); negative max HP applies Mortal Wound |
 | Injuries | 1d10 injury table roll creates an Injury item on the actor |
@@ -99,6 +100,11 @@ Class unlocks, breakthrough drops, and ability use share this requirement evalua
 Static actor-state requirements are enforced automatically; encounter-dependent or
 ambiguous rules are presented for confirmation. A GM can pass
 `{ ignoreRequirements: true }` to `useAbility` when making an explicit ruling.
+
+Gameplay actions use the system socket declared in `system.json`. The active GM with the
+lowest user ID is selected deterministically as the lock authority; action execution stays
+on the requesting client and retains Foundry's normal ownership checks. Players are warned
+instead of making an unsafe update when no GM is connected.
 
 Skill and expertise caps are enforced on the Actor document, so sheet edits and
 module/macro updates use the same rules. A GM receives an override confirmation in
