@@ -2,6 +2,7 @@ import { LYRIAN } from "../config.mjs";
 import { parseMonsterAttackProfile } from "../rules/monster-attack.mjs";
 import { renderAttackCard } from "../rules/attack-card.mjs";
 import {
+  actionLockWarningKey,
   queueActorTransaction,
   runExclusiveActorAction
 } from "../rules/action-transactions.mjs";
@@ -354,7 +355,7 @@ export class LyrianActor extends Actor {
       this._rollMonsterAttack(attackType, options)
     );
     if (!action.started) {
-      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.ActionInProgress"));
+      ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
     }
     return action.value;
   }
