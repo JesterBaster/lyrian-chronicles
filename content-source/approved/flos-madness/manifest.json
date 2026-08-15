@@ -10,7 +10,10 @@
   },
   "reviewedCounts": {
     "materials": 149,
-    "mods": 93,
+    "mods": 391,
+    "universalMods": 93,
+    "itemSpecificMods": 298,
+    "excludedIncompleteMods": 3,
     "craftingGuide": 11
   },
   "materialTabs": {
@@ -26,6 +29,9 @@
     "Universal Armor Mods": 50,
     "Universal Weapon Mods": 31,
     "Universal Crafting Mods": 5,
-    "Universal Artifice Mods": 7
+    "Universal Artifice Mods": 7,
+    "Weapons item mods": 148,
+    "Armors item mods": 26,
+    "Artifices item mods": 124
   }
 }
