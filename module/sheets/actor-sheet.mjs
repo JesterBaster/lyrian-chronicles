@@ -159,6 +159,15 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     this._prepareStats(context);
     this._prepareItems(context);
+    context.equipmentConflicts = (actor.system.equipment?.armorConflicts ?? []).map(
+      ({ slot, active, item }) => ({
+        message: game.i18n.format("LYRIAN.Warn.EquipmentConflict", {
+          slot: game.i18n.localize(slot === "shield" ? "LYRIAN.UI.Shield" : "LYRIAN.UI.BodyArmour"),
+          active: active.name,
+          ignored: item.name
+        })
+      })
+    );
     if (context.isCharacter) this._prepareSkills(context);
     if (context.isCharacter) this._prepareProficiencies(context);
     if (context.isCharacter) this._prepareWorship(context);
@@ -1002,6 +1011,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           "Item",
           conflicts.map((other) => ({ _id: other.id, "system.equipped": false }))
         );
+        ui.notifications.info(game.i18n.format("LYRIAN.Msg.EquipmentReplaced", {
+          equipped: item.name,
+          stowed: conflicts.map((other) => other.name).join(", ")
+        }));
       }
     }
     await item.update({ "system.equipped": equipping });

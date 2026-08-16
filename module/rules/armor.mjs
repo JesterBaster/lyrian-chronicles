@@ -23,3 +23,21 @@ export function equippedArmorContribution(system = {}) {
     evasion: values.evasion + (penalty.evasion ?? 0)
   };
 }
+
+/**
+ * Select the one body-armour and one shield contribution that can apply.
+ * Later equipped items remain visible as conflicts instead of disappearing.
+ */
+export function equippedArmorSlots(items = []) {
+  const slots = { armor: null, shield: null, conflicts: [] };
+  for (const item of items) {
+    if (item?.type !== "armor" || !item.system?.equipped) continue;
+    const slot = armorValues(item.system).isShield ? "shield" : "armor";
+    if (!slots[slot]) {
+      slots[slot] = item;
+    } else {
+      slots.conflicts.push({ slot, active: slots[slot], item });
+    }
+  }
+  return slots;
+}
