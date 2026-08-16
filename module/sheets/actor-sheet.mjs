@@ -19,6 +19,7 @@ import {
   installedModFlag,
   isCraftingMod
 } from "../rules/mod-installation.mjs";
+import { hybridAncestryFamily } from "../rules/hybrid-race.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -348,14 +349,23 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     const primaryRace = buckets.races.find((item) => item.system.raceKind === "primary");
     const ancestry = buckets.races.find((item) => item.system.raceKind === "ancestry");
+    const hybrid = primaryRace?.getFlag("lyrian-chronicles", "hybridRace");
     const variant = primaryRace?.system.variants?.find(
       (choice) => choice.key === primaryRace.system.selectedVariant
     );
-    context.raceSummary = primaryRace ? { primary: primaryRace, ancestry, variant } : null;
-    const ancestryRule = raceAncestryRequirement(primaryRace?.name);
+    context.raceSummary = primaryRace ? {
+      primary: primaryRace,
+      ancestry,
+      variant,
+      displayName: hybrid?.displayName ?? primaryRace.name
+    } : null;
+    const expectedAncestryRace = hybrid?.ancestryPrimaryRace
+      || hybridAncestryFamily(hybrid?.type, primaryRace?.name)
+      || primaryRace?.name;
+    const ancestryRule = raceAncestryRequirement(expectedAncestryRace);
     context.ancestryRequirement = ancestryRule ? {
       ...ancestryRule,
-      missing: !ancestry || ancestry.system.primaryRace !== primaryRace.name
+      missing: !ancestry || ancestry.system.primaryRace !== expectedAncestryRace
     } : null;
     context.raceRows = buckets.races.map((item) => {
       const selection = selectedRaceSkillBonuses(item.system);
@@ -507,11 +517,15 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       const primary = this.document.items.find(
         (entry) => entry.type === "race" && entry.system.raceKind === "primary"
       );
-      if (!primary || primary.name !== owned.system.primaryRace) {
+      const hybrid = primary?.getFlag("lyrian-chronicles", "hybridRace");
+      const expectedPrimaryRace = hybrid?.ancestryPrimaryRace
+        || hybridAncestryFamily(hybrid?.type, primary?.name)
+        || primary?.name;
+      if (!primary || expectedPrimaryRace !== owned.system.primaryRace) {
         await owned.delete();
         ui.notifications.warn(game.i18n.format("LYRIAN.Race.PrimaryRequired", {
           name: owned.name,
-          race: owned.system.primaryRace
+          race: expectedPrimaryRace || owned.system.primaryRace
         }));
         return null;
       }

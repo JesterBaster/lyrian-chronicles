@@ -7,6 +7,7 @@ import {
 import { confirmItemRequirements } from "../rules/requirements.mjs";
 import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 import { requireActorActionPermission } from "../rules/action-permissions.mjs";
+import { isHybridBreakthrough } from "../rules/hybrid-race.mjs";
 
 /**
  * The Item document. Weapons and abilities know how to roll themselves.
@@ -16,9 +17,23 @@ export class LyrianItem extends Item {
   async _preCreate(data, options, user) {
     const allowed = await super._preCreate(data, options, user);
     if (allowed === false) return false;
+    options ??= {};
     this.updateSource({
       "system.schemaVersion": schemaVersionForCreation("Item", this.system?.schemaVersion)
     });
+    if (this.actor && isHybridBreakthrough(this) && !options.lyrianCharacterCreation &&
+        !options.lyrianAllowHybridOverride) {
+      if (!user?.isGM) {
+        ui.notifications.warn(game.i18n.localize("LYRIAN.Hybrid.CreationOnly"));
+        return false;
+      }
+      const confirmed = await foundry.applications.api.DialogV2.confirm({
+        window: { title: game.i18n.localize("LYRIAN.Hybrid.OverrideTitle") },
+        content: `<p>${game.i18n.localize("LYRIAN.Hybrid.OverridePrompt")}</p>`
+      });
+      if (!confirmed) return false;
+      options.lyrianAllowHybridOverride = true;
+    }
     return allowed;
   }
 

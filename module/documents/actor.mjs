@@ -226,11 +226,12 @@ export class LyrianActor extends Actor {
 
     const primary = races.find((item) => item.system.raceKind === "primary");
     const ancestry = races.find((item) => item.system.raceKind === "ancestry");
+    const hybrid = primary?.getFlag("lyrian-chronicles", "hybridRace");
     const variant = primary?.system.variants?.find(
       (choice) => choice.key === primary.system.selectedVariant
     );
     const details = {
-      race: primary?.name ?? "",
+      race: hybrid?.displayName ?? primary?.name ?? "",
       subrace: ancestry?.name ?? variant?.name ?? ""
     };
     if (this.system.details.race !== details.race || this.system.details.subrace !== details.subrace) {
