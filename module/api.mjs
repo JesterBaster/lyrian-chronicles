@@ -1,6 +1,7 @@
 import { LYRIAN } from "./config.mjs";
 import { parseMonsterAttackProfile } from "./rules/monster-attack.mjs";
 import { evaluateItemRequirements } from "./rules/requirements.mjs";
+import { availableUniversalAttacks } from "./rules/universal-attack.mjs";
 
 /**
  * Public API for modules such as Automated Animations, Token Action HUD,
@@ -45,6 +46,12 @@ export const LyrianAPI = {
     if (!actor) return null;
     const weapons = actor.items.filter((i) => i.type === "weapon");
     const abilities = actor.items.filter((i) => ["ability", "monsterAbility"].includes(i.type));
+    const universalAttacks = availableUniversalAttacks({
+      actorType: actor.type,
+      hasEquippedWeapon: weapons.some((weapon) => weapon.system.equipped),
+      attackTypes: LYRIAN.attackTypes,
+      apTotal: actor.system.ap.total
+    });
     const monsterAttacks = (actor.type === "npc" || actor.type === "monster")
       ? ["light", "heavy"].flatMap((type) => {
           const sourceProfile = actor.system.official?.[`${type}Attack`] ?? "";
@@ -84,6 +91,7 @@ export const LyrianAPI = {
           affordable: actor.system.ap.total >= profile.ap
         }))
       })),
+      universalAttacks,
       monsterAttacks,
       abilities: abilities.map((a) => ({
         itemId: a.id,
@@ -131,6 +139,13 @@ export const LyrianAPI = {
     const item = actor?.items.get(itemId);
     if (!item) throw new Error(`Lyrian API: no item ${itemId} on ${actor?.name}`);
     return item.rollAttack(attackType, options);
+  },
+
+  async rollUniversalAttack(actor, attackType = "light", options = {}) {
+    if (actor?.type !== "character" || !actor?.rollUniversalAttack) {
+      throw new Error(`Lyrian API: ${actor?.name ?? "actor"} cannot make a universal attack`);
+    }
+    return actor.rollUniversalAttack(attackType, options);
   },
 
   async rollMonsterAttack(actor, attackType = "light", options = {}) {

@@ -27,3 +27,20 @@ export function universalAttackProfile({
   const damageFormula = flat ? `${profile.damage} + ${flat}` : profile.damage;
   return { ap: profile.ap, accuracyBonus, damageFormula, pinpoint };
 }
+
+/** Build the weaponless actions exposed to HUD integrations. */
+export function availableUniversalAttacks({
+  actorType,
+  hasEquippedWeapon = false,
+  attackTypes = {},
+  apTotal = 0
+} = {}) {
+  if (actorType !== "character" || hasEquippedWeapon) return [];
+  return Object.entries(attackTypes).map(([type, profile]) => ({
+    type,
+    sourceKind: "universal",
+    sourceProfile: "unarmed",
+    apCost: profile.ap,
+    affordable: apTotal >= profile.ap
+  }));
+}

@@ -113,9 +113,9 @@ Hooks.once("init", function () {
  */
 Hooks.on("updateActor", (actor, changes) => {
   if (!actorHeaderNeedsRefresh(changes)) return;
-  const sheet = actor.sheet;
+  const sheet = actor._sheet;
   if (!sheet?.rendered) return;
-  void sheet.render({ force: true, parts: ["header"] });
+  void sheet.render({ parts: ["header"] });
 });
 
 /* -------------------------------------------- */

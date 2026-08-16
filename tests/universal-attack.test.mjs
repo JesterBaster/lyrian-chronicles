@@ -1,7 +1,10 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { universalAttackProfile } from "../module/rules/universal-attack.mjs";
+import {
+  availableUniversalAttacks,
+  universalAttackProfile
+} from "../module/rules/universal-attack.mjs";
 
 const attackTypes = {
   light: { ap: 1, accuracy: "focus", damage: "2d4", powerMultiplier: 1 },
@@ -61,4 +64,30 @@ test("a universal attack without Unarmed proficiency deals flat 1 damage", () =>
 
 test("unknown universal attack types are rejected", () => {
   assert.equal(universalAttackProfile({ attackType: "other", attackTypes }), null);
+});
+
+test("HUD universal actions exist only for weaponless characters", () => {
+  const actions = availableUniversalAttacks({
+    actorType: "character",
+    hasEquippedWeapon: false,
+    attackTypes,
+    apTotal: 1
+  });
+  assert.deepEqual(actions.map((action) => action.type), ["light", "heavy", "precise"]);
+  assert.equal(actions[0].affordable, true);
+  assert.equal(actions[1].affordable, false);
+  assert.equal(actions[0].sourceProfile, "unarmed");
+
+  assert.deepEqual(availableUniversalAttacks({
+    actorType: "character",
+    hasEquippedWeapon: true,
+    attackTypes,
+    apTotal: 4
+  }), []);
+  assert.deepEqual(availableUniversalAttacks({
+    actorType: "monster",
+    hasEquippedWeapon: false,
+    attackTypes,
+    apTotal: 4
+  }), []);
 });
