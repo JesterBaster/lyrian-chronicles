@@ -14,6 +14,11 @@ import {
 import { collectWorshipBenefits, DIVINES } from "../rules/worship.mjs";
 import { convertOfficialEquipment } from "../rules/equipment-import.mjs";
 import { confirmItemRequirements } from "../rules/requirements.mjs";
+import {
+  compatibleModTargets,
+  installedModFlag,
+  isCraftingMod
+} from "../rules/mod-installation.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -261,7 +266,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       races: [],
       gear: [],
       equipment: [],
-      injuries: []
+      injuries: [],
+      installedMods: []
     };
 
     for (const item of this.document.items) {
@@ -291,7 +297,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           buckets.races.push(item);
           break;
         case "gear":
-          buckets.gear.push(item);
+          if (item.getFlag("lyrian-chronicles", "installedMod")) buckets.installedMods.push(item);
+          else buckets.gear.push(item);
           break;
         case "equipment":
           buckets.equipment.push(item);
@@ -303,6 +310,15 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     }
 
     context.items = buckets;
+
+    // A deleted target must not make its installed Mod disappear from the sheet.
+    const ownedIds = new Set(this.document.items.map((item) => item.id));
+    const orphaned = buckets.installedMods.filter((mod) =>
+      !ownedIds.has(mod.getFlag("lyrian-chronicles", "installedMod")?.targetItemId));
+    if (orphaned.length) {
+      buckets.gear.push(...orphaned);
+      buckets.installedMods = buckets.installedMods.filter((mod) => !orphaned.includes(mod));
+    }
 
     const granted = this.document.items.filter(
       (item) => item.type === "ability" && item.getFlag("lyrian-chronicles", "featureSource")
@@ -395,6 +411,12 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   /** Complete race-specific choices when a Race is dragged from a compendium. */
   async _onDropItem(event, item) {
+    // Universal Crafting Mods apply to abstract crafting tools which the Actor
+    // inventory does not model as installable equipment yet; keep those as Gear.
+    if (isCraftingMod(item) && item.system.craftingType !== "Universal Crafting") {
+      return this.#installMod(event, item);
+    }
+
     const result = await super._onDropItem(event, item);
     const owned = Array.isArray(result) ? result[0] : result;
     if (!owned) return result;
@@ -568,6 +590,57 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     await this.document.syncProgressionFeatures();
     return result;
+  }
+
+  /** Install a dropped crafting Mod on one compatible owned Item. */
+  async #installMod(event, mod) {
+    const candidates = compatibleModTargets(mod, this.document.items);
+    const droppedOnId = event.target?.closest?.("[data-item-id]")?.dataset.itemId;
+    let target = droppedOnId ? this.document.items.get(droppedOnId) : null;
+
+    if (target && !candidates.includes(target)) {
+      return ui.notifications.warn(game.i18n.format("LYRIAN.Mod.Incompatible", {
+        mod: mod.name,
+        target: target.name
+      }));
+    }
+
+    if (!target && candidates.length === 1) target = candidates[0];
+    if (!target && candidates.length > 1) {
+      const options = candidates.map((item) =>
+        `<option value="${item.id}">${foundry.utils.escapeHTML(item.name)}</option>`).join("");
+      const targetId = await foundry.applications.api.DialogV2.prompt({
+        window: { title: game.i18n.format("LYRIAN.Mod.InstallTitle", { mod: mod.name }) },
+        content: `<div class="lyrian"><p>${game.i18n.localize("LYRIAN.Mod.InstallPrompt")}</p>
+          <select name="targetId">${options}</select></div>`,
+        ok: { callback: (dialogEvent, button) => button.form.elements.targetId?.value }
+      }).catch(() => null);
+      target = targetId ? this.document.items.get(targetId) : null;
+    }
+
+    if (!target) {
+      return ui.notifications.warn(game.i18n.format("LYRIAN.Mod.NoTarget", { mod: mod.name }));
+    }
+
+    const proficiencies = this.document.type === "character"
+      ? collectActorProficiencies(this.document).groups
+      : { weapons: [], armor: [] };
+    const converted = convertOfficialEquipment(mod.toObject(), this.document.type === "character" ? {
+      weapons: proficiencies.weapons.map((entry) => entry.name),
+      armor: proficiencies.armor.map((entry) => entry.name)
+    } : { assumeProficient: true });
+    if (!converted) return null;
+    foundry.utils.setProperty(
+      converted,
+      "flags.lyrian-chronicles.installedMod",
+      installedModFlag(mod, target)
+    );
+    const [installed] = await this.document.createEmbeddedDocuments("Item", [converted]);
+    ui.notifications.info(game.i18n.format("LYRIAN.Mod.Installed", {
+      mod: installed.name,
+      target: target.name
+    }));
+    return installed;
   }
 
   /** Prompt from the official pack for a valid ancestry belonging to a primary race. */

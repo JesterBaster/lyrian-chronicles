@@ -226,6 +226,13 @@ function registerHandlebarsHelpers() {
     const m = Number(max) || 1;
     return Math.clamp(Math.round((v / m) * 100), 0, 100);
   });
+
+  Handlebars.registerHelper("lyrianInstalledMods", (mods, targetId) =>
+    Array.from(mods ?? []).filter((mod) =>
+      mod.getFlag("lyrian-chronicles", "installedMod")?.targetItemId === targetId));
+
+  Handlebars.registerHelper("lyrianModSlot", (mod) =>
+    mod?.getFlag("lyrian-chronicles", "installedMod")?.slot ?? "");
 }
 
 /* -------------------------------------------- */
