@@ -45,6 +45,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollInitiative: LyrianActorSheet.#onRollInitiative,
       rollInjury: LyrianActorSheet.#onRollInjury,
       attack: LyrianActorSheet.#onAttack,
+      universalAttack: LyrianActorSheet.#onUniversalAttack,
       monsterAttack: LyrianActorSheet.#onMonsterAttack,
       useItem: LyrianActorSheet.#onUseItem,
       browsePack: LyrianActorSheet.#onBrowsePack,
@@ -320,6 +321,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     }
 
     context.items = buckets;
+    context.hasEquippedWeapon = buckets.weapons.some((weapon) => weapon.system.equipped);
 
     // A deleted target must not make its installed Mod disappear from the sheet.
     const ownedIds = new Set(this.document.items.map((item) => item.id));
@@ -811,6 +813,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
     if (!item) return;
     await item.rollAttack(target.dataset.attackType, { free: event.shiftKey });
+  }
+
+  static async #onUniversalAttack(event, target) {
+    await this.document.rollUniversalAttack(target.dataset.attackType, { free: event.shiftKey });
   }
 
   static async #onMonsterAttack(event, target) {

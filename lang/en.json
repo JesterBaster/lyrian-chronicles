@@ -107,6 +107,8 @@
   "LYRIAN.Attack.Light": "Light Attack",
   "LYRIAN.Attack.Heavy": "Heavy Attack",
   "LYRIAN.Attack.Precise": "Precise Attack",
+  "LYRIAN.Attack.Universal": "Universal Attack",
+  "LYRIAN.Hint.UniversalAttack": "No weapon equipped · Uses the Unarmed profile",
   "LYRIAN.Defence.None": "No reaction",
   "LYRIAN.Defence.Dodge": "Dodge",
   "LYRIAN.Defence.Block": "Block",

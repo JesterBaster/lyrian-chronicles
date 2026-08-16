@@ -1,5 +1,6 @@
 import { LYRIAN } from "../config.mjs";
 import { parseMonsterAttackProfile } from "../rules/monster-attack.mjs";
+import { universalAttackProfile } from "../rules/universal-attack.mjs";
 import { renderAttackCard } from "../rules/attack-card.mjs";
 import {
   actionLockWarningKey,
@@ -362,6 +363,65 @@ export class LyrianActor extends Actor {
       formula: `1d4 + ${this.system.initiative.value}`,
       flavour: game.i18n.localize("LYRIAN.Roll.Initiative")
     });
+  }
+
+  /** Roll a basic Light, Heavy, or Precise attack without an equipped weapon. */
+  async rollUniversalAttack(attackType = "light", options = {}) {
+    if (!requireActorActionPermission(this)) return null;
+    if (!["light", "heavy", "precise"].includes(attackType)) return null;
+
+    const action = await runExclusiveActorAction(this, () =>
+      this._rollUniversalAttack(attackType, options)
+    );
+    if (!action.started) {
+      ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
+    }
+    return action.value;
+  }
+
+  async _rollUniversalAttack(attackType, options) {
+    const profile = universalAttackProfile({
+      attackType,
+      attackTypes: LYRIAN.attackTypes,
+      power: this.system.stats.power.total,
+      focus: this.system.stats.focus.total,
+      standardAccuracy: this.system.accuracy.standard,
+      preciseAccuracy: this.system.accuracy.precise,
+      unarmedProficient: this.type !== "character" || !!this.system.proficiencies?.unarmed
+    });
+    if (!profile) return null;
+
+    if (!options.free) {
+      const paid = await this.spendResources({ ap: profile.ap });
+      if (!paid) return null;
+    }
+
+    const attackRoll = await new Roll(`1d20 + ${profile.accuracyBonus}`).evaluate();
+    const natural = attackRoll.dice[0]?.total ?? 0;
+    const isCrit = natural >= 20;
+    const damageRoll = await new Roll(profile.damageFormula, this.getRollData())
+      .evaluate({ maximize: isCrit });
+    const source = {
+      name: game.i18n.localize("LYRIAN.Attack.Universal"),
+      img: this.img,
+      uuid: this.uuid
+    };
+    const message = await renderAttackCard({
+      actor: this,
+      source,
+      sourceKind: "universal",
+      sourceProfile: "unarmed",
+      attackType,
+      damageType: "physical",
+      attackRoll,
+      damageRoll,
+      isCrit,
+      pinpoint: profile.pinpoint,
+      halfPierce: isCrit,
+      weaponGroup: "unarmed",
+      ranged: false
+    });
+    return { attackRoll, damageRoll, isCrit, message };
   }
 
   /** Roll a basic attack from an official compendium monster stat block. */
