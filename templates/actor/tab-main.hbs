@@ -54,6 +54,20 @@
     <div class="lyr-col">
       <h2 class="lyr-heading">{{localize "LYRIAN.UI.Attacks"}}</h2>
       <ul class="lyr-list">
+        {{#unless hasEquippedWeapon}}
+          <li class="lyr-row lyr-row--universal">
+            <img class="lyr-row__icon" src="{{actor.img}}" alt="" />
+            <div class="lyr-row__body">
+              <span class="lyr-row__name">{{localize "LYRIAN.Attack.Universal"}}</span>
+              <span class="lyr-row__meta">{{localize "LYRIAN.Hint.UniversalAttack"}}</span>
+            </div>
+            <div class="lyr-row__actions">
+              <button type="button" data-action="universalAttack" data-attack-type="light" title="{{localize "LYRIAN.Cost.OneAP"}}">{{localize "LYRIAN.Attack.Light"}}</button>
+              <button type="button" data-action="universalAttack" data-attack-type="heavy" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Heavy"}}</button>
+              <button type="button" data-action="universalAttack" data-attack-type="precise" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Precise"}}</button>
+            </div>
+          </li>
+        {{/unless}}
         {{#each items.weapons as |weapon|}}
           <li class="lyr-row {{#unless weapon.system.equipped}}lyr-row--stowed{{/unless}}" data-item-id="{{weapon.id}}">
             <img class="lyr-row__icon" src="{{weapon.img}}" alt="" />
