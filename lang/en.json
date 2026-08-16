@@ -715,5 +715,9 @@
   "LYRIAN.Proficiency.Choice.weapon-choice": "Weapon proficiency",
   "LYRIAN.Proficiency.Choice.weapons": "Weapon proficiency",
   "LYRIAN.Proficiency.Choice.armor": "Armour proficiency",
-  "LYRIAN.Proficiency.Choice.languages": "Language proficiency"
+  "LYRIAN.Proficiency.Choice.languages": "Language proficiency",
+  "LYRIAN.UI.BodyArmour": "Body Armour",
+  "LYRIAN.UI.Shield": "Shield",
+  "LYRIAN.Warn.EquipmentConflict": "Multiple {slot} items are equipped. {active} provides defence; {ignored} is ignored until stowed.",
+  "LYRIAN.Msg.EquipmentReplaced": "Equipped {equipped} and stowed {stowed}."
 }

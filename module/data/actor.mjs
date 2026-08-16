@@ -1,5 +1,5 @@
 import { LYRIAN } from "../config.mjs";
-import { equippedArmorContribution } from "../rules/armor.mjs";
+import { equippedArmorContribution, equippedArmorSlots } from "../rules/armor.mjs";
 import { derivedGuardValues } from "../rules/damage.mjs";
 import {
   raceAmbitionExp,
@@ -232,10 +232,18 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
       burden: 0,
       armor: null,
       shield: null,
+      armorConflicts: [],
       weapons: []
     };
 
     const items = this.parent?.items ?? [];
+    const armorSlots = equippedArmorSlots(items);
+    out.armor = armorSlots.armor;
+    out.shield = armorSlots.shield;
+    out.armorConflicts = armorSlots.conflicts;
+    const activeArmorIds = new Set(
+      [armorSlots.armor?.id, armorSlots.shield?.id].filter(Boolean)
+    );
 
     for (const item of items) {
       const sys = item.system;
@@ -255,15 +263,7 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
 
       const contribution = equippedArmorContribution(sys);
       out.burden += sys.burden ?? contribution.category.burden ?? 0;
-      if (!sys.equipped) continue;
-
-      if (contribution.isShield) {
-        if (out.shield) continue;
-        out.shield = item;
-      } else {
-        if (out.armor) continue;
-        out.armor = item;
-      }
+      if (!activeArmorIds.has(item.id)) continue;
 
       out.guard += contribution.guard;
       out.evasion += contribution.evasion;

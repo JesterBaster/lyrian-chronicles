@@ -1,7 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { armorValues, equippedArmorContribution } from "../module/rules/armor.mjs";
+import {
+  armorValues,
+  equippedArmorContribution,
+  equippedArmorSlots
+} from "../module/rules/armor.mjs";
 import { abilityWeaponAttackContext } from "../module/rules/ability-attack.mjs";
 import { derivedGuardValues, guardForDamage } from "../module/rules/damage.mjs";
 
@@ -55,4 +59,19 @@ test("non-weapon abilities keep a neutral weapon context", () => {
   }), {
     weapon: null, accuracyBonus: 8, critThreshold: 20, weaponGroup: null, ranged: null
   });
+});
+
+test("duplicate equipped armour is reported while only one item per slot applies", () => {
+  const bodyA = { id: "body-a", name: "Body A", type: "armor", system: { equipped: true, category: "light" } };
+  const bodyB = { id: "body-b", name: "Body B", type: "armor", system: { equipped: true, category: "heavy" } };
+  const shieldA = { id: "shield-a", name: "Shield A", type: "armor", system: { equipped: true, category: "shield" } };
+  const shieldB = { id: "shield-b", name: "Shield B", type: "armor", system: { equipped: true, category: "greatshield" } };
+  const slots = equippedArmorSlots([bodyA, bodyB, shieldA, shieldB]);
+
+  assert.equal(slots.armor, bodyA);
+  assert.equal(slots.shield, shieldA);
+  assert.deepEqual(slots.conflicts, [
+    { slot: "armor", active: bodyA, item: bodyB },
+    { slot: "shield", active: shieldA, item: shieldB }
+  ]);
 });

@@ -13,6 +13,10 @@
     </div>
   </div>
 
+  {{#each equipmentConflicts as |conflict|}}
+    <p class="lyr-warn"><i class="fa-solid fa-triangle-exclamation"></i> {{conflict.message}}</p>
+  {{/each}}
+
   <div class="lyr-section-head">
     <h2 class="lyr-heading">{{localize "LYRIAN.Inventory.Section.weapon"}}</h2>
     <button type="button" data-action="createItem" data-type="weapon">{{localize "LYRIAN.Action.AddWeapon"}}</button>
