@@ -7,13 +7,14 @@ const TAB_LABELS = {
   proficiencies: "Proficiencies",
   abilities: "Abilities",
   inventory: "Inventory",
+  crafting: "Crafting",
   progression: "Spirit Core",
   biography: "Story"
 };
 
 class ActorSheetV2Stub {
-  constructor(type) {
-    this.document = { type };
+  constructor(type, items = []) {
+    this.document = { type, items };
   }
 
   _prepareTabs() {
@@ -54,13 +55,26 @@ test("tab configuration uses explicit localization keys", () => {
   assert.equal(LyrianActorSheet.TABS.primary.labelPrefix, undefined);
 });
 
-test("character tabs use localized labels", () => {
-  const tabs = new LyrianActorSheet("character")._prepareTabs("primary");
+test("Artisan character tabs use localized labels", () => {
+  const tabs = new LyrianActorSheet("character", [
+    { type: "class", system: { artisan: true } }
+  ])._prepareTabs("primary");
 
   assert.deepEqual(
     Object.fromEntries(Object.entries(tabs).map(([id, tab]) => [id, tab.label])),
     TAB_LABELS
   );
+});
+
+test("non-Artisan characters hide the Crafting tab", () => {
+  const tabs = new LyrianActorSheet("character", [
+    { type: "class", system: { artisan: false } }
+  ])._prepareTabs("primary");
+
+  assert.equal(tabs.crafting, undefined);
+  assert.deepEqual(Object.keys(tabs), [
+    "main", "skills", "proficiencies", "abilities", "inventory", "progression", "biography"
+  ]);
 });
 
 for (const type of ["npc", "monster"]) {
