@@ -1,48 +1,11 @@
 <div class="lyr-creation-body">
 
   <nav class="lyr-steps">
-    {{#each (array "stats" "race" "class" "skills") as |id|}}
+    {{#each (array "race" "stats" "breakthroughs" "classes" "equipment" "inventory") as |id|}}
       <button type="button" class="lyr-step-btn {{#if (eq ../state.step id)}}is-active{{/if}}"
               data-action="goStep" data-step="{{id}}">{{localize (concat "LYRIAN.Creation.Step." id)}}</button>
     {{/each}}
   </nav>
-
-  {{#if (eq state.step "stats")}}
-    <section class="lyr-creation-step">
-      <h2 class="lyr-heading">{{localize "LYRIAN.UI.MainStats"}}</h2>
-      <p class="lyr-note">{{localize "LYRIAN.Creation.AssignMain" values=mainArray}}</p>
-      <div class="lyr-assign-grid">
-        {{#each mainStats as |stat|}}
-          <label class="lyr-assign">
-            <span>{{stat.label}}</span>
-            <select data-assign="main" data-stat="{{stat.key}}">
-              <option value="">—</option>
-              {{#each stat.options as |v|}}
-                <option value="{{v}}" {{#if (eq ../stat.assigned v)}}selected{{/if}}>{{v}}</option>
-              {{/each}}
-            </select>
-          </label>
-        {{/each}}
-      </div>
-
-      <h2 class="lyr-heading">{{localize "LYRIAN.UI.SubStats"}}</h2>
-      <p class="lyr-note">{{localize "LYRIAN.Creation.AssignSub" values=subArray}}</p>
-      <div class="lyr-assign-grid">
-        {{#each subStats as |stat|}}
-          <label class="lyr-assign">
-            <span>{{stat.label}}</span>
-            <select data-assign="sub" data-stat="{{stat.key}}">
-              <option value="">—</option>
-              {{#each stat.options as |v|}}
-                <option value="{{v}}" {{#if (eq ../stat.assigned v)}}selected{{/if}}>{{v}}</option>
-              {{/each}}
-            </select>
-          </label>
-        {{/each}}
-      </div>
-      {{#if statsComplete}}<p class="lyr-ok">{{localize "LYRIAN.Creation.StatsAssigned"}}</p>{{/if}}
-    </section>
-  {{/if}}
 
   {{#if (eq state.step "race")}}
     <section class="lyr-creation-step">
@@ -154,28 +117,44 @@
     </section>
   {{/if}}
 
-  {{#if (eq state.step "class")}}
+  {{#if (eq state.step "stats")}}
     <section class="lyr-creation-step">
-      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.StartingClass"}}</h2>
-      <p class="lyr-note">{{localize "LYRIAN.Creation.StartingBudget" classExp=config.progression.startingClassExp breakthroughExp=config.progression.startingBreakthroughExp classCost=config.progression.classCostPerTier}}</p>
-      {{#if classes.length}}
-        <div class="lyr-pick-grid">
-          {{#each classes as |cls|}}
-            <label class="lyr-pick {{#if (eq ../state.classId cls.id)}}is-picked{{/if}}">
-              <input type="radio" name="classId" value="{{cls.id}}" {{#if (eq ../state.classId cls.id)}}checked{{/if}} />
-              <img src="{{cls.img}}" alt="" />
-              <span>{{cls.name}}</span>
-            </label>
-          {{/each}}
-        </div>
-      {{else}}
-        <p class="lyr-empty">{{localize "LYRIAN.Creation.EmptyClasses"}}</p>
-      {{/if}}
-    </section>
-  {{/if}}
+      <h2 class="lyr-heading">{{localize "LYRIAN.UI.MainStats"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.AssignMain" values=mainArray}}</p>
+      <div class="lyr-assign-grid">
+        {{#each mainStats as |stat|}}
+          <label class="lyr-assign">
+            <span>{{stat.label}}</span>
+            <select data-assign="main" data-stat="{{stat.key}}">
+              <option value="">—</option>
+              {{#each stat.options as |v|}}
+                <option value="{{v}}" {{#if (eq ../stat.assigned v)}}selected{{/if}}>{{v}}</option>
+              {{/each}}
+            </select>
+          </label>
+        {{/each}}
+      </div>
 
-  {{#if (eq state.step "skills")}}
-    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">{{localize "LYRIAN.UI.SubStats"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.AssignSub" values=subArray}}</p>
+      <div class="lyr-assign-grid">
+        {{#each subStats as |stat|}}
+          <label class="lyr-assign">
+            <span>{{stat.label}}</span>
+            <select data-assign="sub" data-stat="{{stat.key}}">
+              <option value="">—</option>
+              {{#each stat.options as |v|}}
+                <option value="{{v}}" {{#if (eq ../stat.assigned v)}}selected{{/if}}>{{v}}</option>
+              {{/each}}
+            </select>
+          </label>
+        {{/each}}
+      </div>
+      {{#if statsComplete}}<p class="lyr-ok">{{localize "LYRIAN.Creation.StatsAssigned"}}</p>{{/if}}
+    
+      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.SkillPoints"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.SkillsInsideStats"}}</p>
+
       <h2 class="lyr-heading">{{localize "LYRIAN.Creation.SkillPoints"}}</h2>
       <p class="lyr-note">{{localize "LYRIAN.UI.Remaining"}}: <strong class="lyr-budget">{{skillPointsLeft}}</strong> {{localize "LYRIAN.UI.OfTotal" total=state.skillPoints}}</p>
       <div class="lyr-skill-buy">
@@ -209,11 +188,115 @@
           {{/each}}
         </div>
       {{/each}}
+    
+</section>
+  {{/if}}
+
+  {{#if (eq state.step "breakthroughs")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.StartingBreakthroughs"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.BreakthroughBudget" remaining=breakthroughExpLeft total=state.breakthroughBudget}}</p>
+      {{#if hybridMode}}
+        <div class="lyr-choice-summary">
+          <p><strong>{{localize "LYRIAN.Hybrid.Selected"}}:</strong> {{selectedHybridBreakthrough.name}}</p>
+          <p>{{localize "LYRIAN.UI.ExpAmount" exp=hybridCost}}</p>
+        </div>
+      {{/if}}
+      {{#if breakthroughs.length}}
+        <div class="lyr-pick-grid">
+          {{#each breakthroughs as |entry|}}
+            <article class="lyr-pick {{#if entry.selected}}is-picked{{/if}}">
+              <img src="{{entry.img}}" alt="" />
+              <span>{{entry.name}}</span>
+              <small>{{localize "LYRIAN.UI.ExpAmount" exp=entry.cost}}</small>
+              <button type="button" data-action="toggleBreakthrough" data-id="{{entry.id}}" data-cost="{{entry.cost}}">
+                {{#if entry.selected}}{{localize "LYRIAN.Creation.Remove"}}{{else}}{{localize "LYRIAN.Creation.Add"}}{{/if}}
+              </button>
+            </article>
+          {{/each}}
+        </div>
+      {{else}}
+        <p class="lyr-empty">{{localize "LYRIAN.Creation.EmptyBreakthroughs"}}</p>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if (eq state.step "classes")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.StartingClass"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.StartingBudget" classExp=config.progression.startingClassExp breakthroughExp=config.progression.startingBreakthroughExp classCost=config.progression.classCostPerTier}}</p>
+      {{#if classes.length}}
+        <div class="lyr-pick-grid">
+          {{#each classes as |cls|}}
+            <label class="lyr-pick {{#if (eq ../state.classId cls.id)}}is-picked{{/if}}">
+              <input type="radio" name="classId" value="{{cls.id}}" {{#if (eq ../state.classId cls.id)}}checked{{/if}} />
+              <img src="{{cls.img}}" alt="" />
+              <span>{{cls.name}}</span>
+            </label>
+          {{/each}}
+        </div>
+      {{else}}
+        <p class="lyr-empty">{{localize "LYRIAN.Creation.EmptyClasses"}}</p>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if (eq state.step "equipment")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.StartingEquipment"}}</h2>
+      <p class="lyr-note">{{localize "LYRIAN.Creation.EquipmentBudget" remaining=equipmentClimLeft total=config.progression.startingClim}}</p>
+      {{#if equipment.length}}
+        <div class="lyr-pick-grid">
+          {{#each equipment as |entry|}}
+            <article class="lyr-pick {{#if entry.selected}}is-picked{{/if}}">
+              <img src="{{entry.img}}" alt="" />
+              <span>{{entry.name}}</span>
+              <small>{{localize "LYRIAN.Creation.EquipmentCost" cost=entry.cost burden=entry.burden}}</small>
+              <button type="button" data-action="toggleEquipment" data-key="{{entry.key}}" data-cost="{{entry.cost}}">
+                {{#if entry.selected}}{{localize "LYRIAN.Creation.Remove"}}{{else}}{{localize "LYRIAN.Creation.Add"}}{{/if}}
+              </button>
+            </article>
+          {{/each}}
+        </div>
+      {{else}}
+        <p class="lyr-empty">{{localize "LYRIAN.Creation.EmptyEquipment"}}</p>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if (eq state.step "inventory")}}
+    <section class="lyr-creation-step">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.InventoryReview"}}</h2>
+      <div class="lyr-choice-summary">
+        <p><strong>{{localize "LYRIAN.UI.Race"}}:</strong> {{selectedRace.name}}{{#if selectedAncestry}} — {{selectedAncestry.name}}{{/if}}</p>
+        <p><strong>{{localize "LYRIAN.UI.Classes"}}:</strong> {{selectedClass.name}}</p>
+        <p><strong>{{localize "LYRIAN.UI.Breakthroughs"}}:</strong> {{selectedBreakthroughs.length}} · {{localize "LYRIAN.UI.ExpAmount" exp=breakthroughExpSpent}}</p>
+        <p><strong>{{localize "LYRIAN.Creation.SkillPoints"}}:</strong> {{skillPointsLeft}} {{localize "LYRIAN.UI.Remaining"}}</p>
+        <p><strong>{{localize "LYRIAN.UI.EquipmentDetails"}}:</strong> {{selectedEquipment.length}} · {{equipmentSpent}} {{localize "LYRIAN.UI.Clim"}}</p>
+        <p><strong>{{localize "LYRIAN.Creation.StartingClimRemaining"}}:</strong> {{equipmentClimLeft}}</p>
+      </div>
+      {{#if selectedEquipment.length}}
+        <div class="lyr-skill-buy">
+          {{#each selectedEquipment as |entry|}}
+            <div class="lyr-skill-buy__row">
+              <span class="lyr-skill-buy__name">{{entry.name}}</span>
+              <span>{{entry.cost}} {{localize "LYRIAN.UI.Clim"}}</span>
+            </div>
+          {{/each}}
+        </div>
+      {{else}}
+        <p class="lyr-empty">{{localize "LYRIAN.Creation.NoEquipmentSelected"}}</p>
+      {{/if}}
     </section>
   {{/if}}
 
   <footer class="lyr-creation-footer">
     <button type="button" data-action="reset">{{localize "LYRIAN.Action.Reset"}}</button>
-    <button type="button" class="lyr-primary" data-action="finish" {{#unless statsComplete}}disabled{{else}}{{#unless raceComplete}}disabled{{else}}{{#unless state.classId}}disabled{{/unless}}{{/unless}}{{/unless}}>{{localize "LYRIAN.Action.ApplyToSheet"}}</button>
+    {{#if (eq state.step "inventory")}}
+      <button type="button" class="lyr-primary" data-action="finish"
+        {{#unless statsComplete}}disabled{{else}}{{#unless raceComplete}}disabled{{else}}{{#unless state.classId}}disabled{{else}}{{#unless skillsComplete}}disabled{{/unless}}{{/unless}}{{/unless}}{{/unless}}>
+        {{localize "LYRIAN.Action.ApplyToSheet"}}
+      </button>
+    {{/if}}
   </footer>
 </div>
