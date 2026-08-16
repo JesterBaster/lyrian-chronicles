@@ -79,7 +79,7 @@ test("GM lock tokens prevent duplicate and stale releases", () => {
   assert.equal(locks.acquire("Actor.hero", "request-2", "player").granted, true);
 });
 
-test("action fingerprints cover resources, once-per-round items, and resolved cards", () => {
+test("action fingerprints cover resources and once-per-round items without resolved-card history", () => {
   const actor = {
     system: {
       ap: { value: 4, temp: 0 }, rp: { value: 3, temp: 1 },
@@ -97,7 +97,7 @@ test("action fingerprints cover resources, once-per-round items, and resolved ca
   assert.notEqual(actorActionFingerprint(actor), initial);
   actor.items[0].system.usedThisRound = false;
   actor.flags["lyrian-chronicles"].resolvedAttacks.card = { defence: "dodge" };
-  assert.notEqual(actorActionFingerprint(actor), initial);
+  assert.equal(actorActionFingerprint(actor), initial);
 });
 
 test("an abandoned GM lease expires and a heartbeat keeps a live action locked", () => {
@@ -126,7 +126,7 @@ test("two browser copies of one actor cannot overlap through the GM registry", a
           message.userId
         );
         queueMicrotask(() => listener({
-          protocol: 1,
+          protocol: 2,
           type: "lock-response",
           requestId: message.requestId,
           targetUserId: message.userId,
@@ -214,7 +214,7 @@ test("the GM rejects a request made from a stale actor snapshot", async () => {
         authorityLocks.release(message.actorUuid, message.requestId, message.userId, lock.token);
       }
       queueMicrotask(() => listener({
-        protocol: 1,
+        protocol: 2,
         type: "lock-response",
         requestId: message.requestId,
         targetUserId: message.userId,
@@ -234,6 +234,7 @@ test("the GM rejects a request made from a stale actor snapshot", async () => {
 
 test("the configured GM socket handler grants, holds, and releases a matching lease", async () => {
   const gm = { id: "gm", active: true, isGM: true };
+  const player = { id: "player", active: true, isGM: false };
   const actor = {
     uuid: "Actor.hero",
     system: {
@@ -241,7 +242,8 @@ test("the configured GM socket handler grants, holds, and releases a matching le
       mana: { value: 6, temp: 0 }, hp: { value: 20, temp: 0 },
       encounter: { secretArtUsed: false }
     },
-    items: [], flags: {}
+    items: [], flags: {},
+    testUserPermission: (user, permission) => user.id === "player" && permission === "OWNER"
   };
   let listener;
   const emitted = [];
@@ -252,13 +254,13 @@ test("the configured GM socket handler grants, holds, and releases a matching le
   };
   initializeActionTransactions({
     socket,
-    users: [gm],
+    users: [player, gm],
     user: gm,
     resolveUuid: async () => actor
   });
 
   const request = {
-    protocol: 1,
+    protocol: 2,
     type: "lock-request",
     actorUuid: actor.uuid,
     requestId: "request-1",
@@ -273,7 +275,7 @@ test("the configured GM socket handler grants, holds, and releases a matching le
   assert.equal(emitted.at(-1).reason, "busy");
 
   await listener({
-    protocol: 1,
+    protocol: 2,
     type: "lock-release",
     actorUuid: actor.uuid,
     requestId: request.requestId,
@@ -282,4 +284,50 @@ test("the configured GM socket handler grants, holds, and releases a matching le
   });
   await listener({ ...request, requestId: "request-3" });
   assert.equal(emitted.at(-1).granted, true);
+});
+
+test("the GM rejects lock requests from users without Actor ownership", async () => {
+  const gm = { id: "gm", active: true, isGM: true };
+  const player = { id: "player", active: true, isGM: false };
+  const actor = {
+    uuid: "Actor.hero",
+    system: {
+      ap: { value: 4, temp: 0 }, rp: { value: 3, temp: 0 },
+      mana: { value: 6, temp: 0 }, hp: { value: 20, temp: 0 },
+      encounter: { secretArtUsed: false }
+    },
+    items: [], flags: {},
+    testUserPermission: () => false
+  };
+  let listener;
+  const emitted = [];
+  const socket = {
+    on: (namespace, callback) => { listener = callback; },
+    off: () => {},
+    emit: (namespace, message) => { emitted.push(message); }
+  };
+  initializeActionTransactions({
+    socket, users: [player, gm], user: gm, resolveUuid: async () => actor
+  });
+  await listener({
+    protocol: 2, type: "lock-request", actorUuid: actor.uuid,
+    requestId: "forbidden", userId: player.id, state: actorActionFingerprint(actor)
+  });
+  assert.equal(emitted.at(-1).granted, false);
+  assert.equal(emitted.at(-1).reason, "forbidden");
+});
+
+test("a new GM authority waits one lease before granting locks", async () => {
+  let now = 1_000;
+  const gmA = { id: "gm-a", active: true, isGM: true };
+  const gmB = { id: "gm-b", active: true, isGM: true };
+  const users = [gmA, gmB];
+  const socket = { on: () => {}, off: () => {}, emit: () => {} };
+  initializeActionTransactions({ socket, users: () => users, user: () => gmB, now: () => now });
+  gmA.active = false;
+  const blocked = await runExclusiveActorAction({ uuid: "Actor.hero" }, async () => true);
+  assert.equal(blocked.started, false);
+  assert.equal(blocked.reason, "failover");
+  now += 15_001;
+  assert.equal((await runExclusiveActorAction({ uuid: "Actor.hero" }, async () => true)).started, true);
 });
