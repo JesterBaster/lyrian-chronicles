@@ -201,6 +201,7 @@ async function preloadTemplates() {
     "actor/tab-inventory",
     "actor/tab-progression",
     "actor/tab-biography",
+    "actor/tab-setup",
     "apps/character-creation",
     "item/header",
     "item/body",

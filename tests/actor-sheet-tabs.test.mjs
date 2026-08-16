@@ -9,7 +9,8 @@ const TAB_LABELS = {
   inventory: "Inventory",
   crafting: "Crafting",
   progression: "Spirit Core",
-  biography: "Story"
+  biography: "Story",
+  setup: "Setup"
 };
 
 class ActorSheetV2Stub {
@@ -53,6 +54,8 @@ test("tab configuration uses explicit localization keys", () => {
     Object.keys(TAB_LABELS).map((id) => [id, `LYRIAN.Tab.${id}`])
   );
   assert.equal(LyrianActorSheet.TABS.primary.labelPrefix, undefined);
+  assert.equal(LyrianActorSheet.TABS.primary.tabs.at(-1).id, "setup");
+  assert.equal(typeof LyrianActorSheet.DEFAULT_OPTIONS.actions.openCharacterCreation, "function");
 });
 
 test("Artisan character tabs use localized labels", () => {
@@ -73,7 +76,7 @@ test("non-Artisan characters hide the Crafting tab", () => {
 
   assert.equal(tabs.crafting, undefined);
   assert.deepEqual(Object.keys(tabs), [
-    "main", "skills", "proficiencies", "abilities", "inventory", "progression", "biography"
+    "main", "skills", "proficiencies", "abilities", "inventory", "progression", "biography", "setup"
   ]);
 });
 
