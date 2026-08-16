@@ -1,5 +1,15 @@
 import { LYRIAN } from "../config.mjs";
 import { raceSkillGrant } from "../rules/progression.mjs";
+import {
+  HYBRID_TYPES,
+  hybridAncestryFamily,
+  hybridRaceFlag,
+  hybridRule,
+  isHybridBreakthrough,
+  prepareHybridAncestryData,
+  prepareHybridPrimaryData,
+  validateHybridSelection
+} from "../rules/hybrid-race.mjs";
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
@@ -21,8 +31,11 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       step: "stats",
       mainAssign: {},        // stat key -> array value
       subAssign: {},
+      raceMode: "standard",
       raceId: null,
       ancestryId: null,
+      hybridType: "",
+      hybridBreakthroughId: null,
       raceMainChoice: "",
       raceSubChoice: "",
       raceVariant: "",
@@ -59,14 +72,47 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const s = this.state;
     const usedMain = Object.values(s.mainAssign);
     const usedSub = Object.values(s.subAssign);
-    const raceEntries = await this._packIndex("races");
+    const [raceEntries, breakthroughEntries] = await Promise.all([
+      this._packIndex("races"),
+      this._packIndex("breakthroughs")
+    ]);
     const races = raceEntries.filter((entry) => entry.system.raceKind === "primary");
     const selectedRace = races.find((entry) => entry.id === s.raceId) ?? null;
+    const hybrid = hybridRule(s.hybridType);
+    const ancestryPrimaryRace = s.raceMode === "hybrid"
+      ? hybridAncestryFamily(s.hybridType, selectedRace?.name)
+      : selectedRace?.name;
     const ancestries = selectedRace
       ? raceEntries.filter((entry) => entry.system.raceKind === "ancestry" &&
-          entry.system.primaryRace === selectedRace.name)
+          entry.system.primaryRace === ancestryPrimaryRace)
       : [];
     const selectedAncestry = ancestries.find((entry) => entry.id === s.ancestryId) ?? null;
+    const selectedHybridBreakthrough = breakthroughEntries.find(
+      (entry) => entry.system.stableId === hybrid?.breakthroughStableId
+    ) ?? null;
+    const hybridChoices = Object.values(HYBRID_TYPES).map((rule) => {
+      const breakthrough = breakthroughEntries.find(
+        (entry) => entry.system.stableId === rule.breakthroughStableId
+      );
+      const fixedPrimary = rule.primaryRaces.length === 1
+        ? races.find((race) => race.name === rule.primaryRaces[0])
+        : null;
+      return {
+        ...rule,
+        breakthroughId: breakthrough?.id ?? null,
+        description: breakthrough?.system.description ?? "",
+        fixedPrimaryId: fixedPrimary?.id ?? null
+      };
+    });
+    const hybridPrimaryOptions = s.hybridType === "faerieChimera"
+      ? races.filter((race) => HYBRID_TYPES.faerieChimera.primaryRaces.includes(race.name))
+      : [];
+    const hybridValidation = s.raceMode === "hybrid" ? validateHybridSelection({
+      type: s.hybridType,
+      primaryRace: selectedRace?.name,
+      ancestryPrimaryRace: selectedAncestry?.system.primaryRace,
+      budget: s.breakthroughBudget
+    }) : null;
     const raceSkillPools = [selectedRace, selectedAncestry].filter(Boolean).map((race) => {
       const grant = Number(race.system.skillGrant?.points)
         ? race.system.skillGrant
@@ -115,6 +161,14 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       ancestries,
       selectedRace,
       selectedAncestry,
+      hybridMode: s.raceMode === "hybrid",
+      hybridChoices,
+      hybridPrimaryOptions,
+      selectedHybridBreakthrough,
+      hybridCost: hybrid?.cost ?? 200,
+      hybridBudgetRemaining: hybrid ? s.breakthroughBudget - hybrid.cost : s.breakthroughBudget,
+      showRaceAmbition: Boolean(selectedRace?.system.ambition) &&
+        !(s.raceMode === "hybrid" && s.hybridType === "humanChimera"),
       raceNeedsMainChoice: !!selectedRace?.system.attributeBonuses?.chooseMain,
       raceNeedsSubChoice: !!selectedRace?.system.attributeBonuses?.chooseSub,
       raceVariants: selectedRace?.system.variants ?? [],
@@ -122,7 +176,8 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
         (!selectedRace.system.attributeBonuses?.chooseMain || !!s.raceMainChoice) &&
         (!selectedRace.system.attributeBonuses?.chooseSub || !!s.raceSubChoice) &&
         (!ancestries.length || !!s.ancestryId) &&
-        (!(selectedRace.system.variants?.length) || !!s.raceVariant),
+        (!(selectedRace.system.variants?.length) || !!s.raceVariant) &&
+        (s.raceMode !== "hybrid" || (hybridValidation?.valid && !!selectedHybridBreakthrough)),
       mainStatChoices: Object.entries(LYRIAN.mainStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
       subStatChoices: Object.entries(LYRIAN.subStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
       classes: await this._packIndex("classes"),
@@ -151,7 +206,8 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const index = await pack.getIndex({ fields: [
       "system.raceKind", "system.primaryRace", "system.attributes", "system.ambition",
       "system.attributeBonuses", "system.variants", "system.tier",
-      "system.grantedSkills", "system.skillGrant"
+      "system.grantedSkills", "system.skillGrant", "system.description",
+      "system.stableId", "system.expCost", "system.requirements", "system.relationships"
     ] });
     return index.map((e) => ({
       id: e._id, uuid: e.uuid, name: e.name, img: e.img, system: e.system ?? {}
@@ -181,6 +237,9 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
         const field = event.target.name;
         this.state[field] = event.target.value;
         if (field === "raceId") {
+          this.state.raceMode = "standard";
+          this.state.hybridType = "";
+          this.state.hybridBreakthroughId = null;
           this.state.ancestryId = null;
           this.state.raceMainChoice = "";
           this.state.raceSubChoice = "";
@@ -191,6 +250,47 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
             if (id !== this.state.raceId) delete this.state.raceSkillSpend[id];
           }
         }
+        this.render();
+      });
+    });
+
+    html.querySelectorAll("input[name='raceMode']").forEach((radio) => {
+      radio.addEventListener("change", () => {
+        this.state.raceMode = "hybrid";
+        this.state.raceId = null;
+        this.state.ancestryId = null;
+        this.state.hybridType = "";
+        this.state.hybridBreakthroughId = null;
+        this.state.raceMainChoice = "";
+        this.state.raceSubChoice = "";
+        this.state.raceVariant = "";
+        this.state.raceSkillSpend = {};
+        this.render();
+      });
+    });
+
+    html.querySelectorAll("input[name='hybridType']").forEach((radio) => {
+      radio.addEventListener("change", (event) => {
+        this.state.raceMode = "hybrid";
+        this.state.hybridType = event.target.value;
+        this.state.hybridBreakthroughId = event.target.dataset.breakthroughId || null;
+        this.state.raceId = event.target.dataset.fixedPrimaryId || null;
+        this.state.ancestryId = null;
+        this.state.raceMainChoice = "";
+        this.state.raceSubChoice = "";
+        this.state.raceVariant = "";
+        this.state.raceSkillSpend = {};
+        this.render();
+      });
+    });
+
+    html.querySelectorAll("input[name='hybridPrimaryRaceId']").forEach((radio) => {
+      radio.addEventListener("change", (event) => {
+        this.state.raceId = event.target.value;
+        this.state.ancestryId = null;
+        this.state.raceMainChoice = "";
+        this.state.raceSubChoice = "";
+        this.state.raceSkillSpend = {};
         this.render();
       });
     });
@@ -245,8 +345,11 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     this.state.subAssign = {};
     this.state.skillSpend = {};
     this.state.raceSkillSpend = {};
+    this.state.raceMode = "standard";
     this.state.raceId = null;
     this.state.ancestryId = null;
+    this.state.hybridType = "";
+    this.state.hybridBreakthroughId = null;
     this.state.raceMainChoice = "";
     this.state.raceSubChoice = "";
     this.state.raceVariant = "";
@@ -262,6 +365,100 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const s = this.state;
     const actor = this.actor;
     const p = LYRIAN.progression;
+
+    const racePack = game.packs.get("lyrian-chronicles.races");
+    const classPack = game.packs.get("lyrian-chronicles.classes");
+    const breakthroughPack = game.packs.get("lyrian-chronicles.breakthroughs");
+    const [primaryDoc, ancestryDoc, classDoc, hybridBreakthroughDoc] = await Promise.all([
+      s.raceId ? racePack?.getDocument(s.raceId) : null,
+      s.ancestryId ? racePack?.getDocument(s.ancestryId) : null,
+      s.classId ? classPack?.getDocument(s.classId) : null,
+      s.raceMode === "hybrid" && s.hybridBreakthroughId
+        ? breakthroughPack?.getDocument(s.hybridBreakthroughId)
+        : null
+    ]);
+    if (!primaryDoc || !classDoc || (s.ancestryId && !ancestryDoc)) {
+      return ui.notifications.warn(game.i18n.localize("LYRIAN.Creation.SourceMissing"));
+    }
+
+    const hybrid = hybridRule(s.hybridType);
+    if (s.raceMode === "hybrid") {
+      const validation = validateHybridSelection({
+        type: s.hybridType,
+        primaryRace: primaryDoc.name,
+        ancestryPrimaryRace: ancestryDoc?.system.primaryRace,
+        budget: s.breakthroughBudget
+      });
+      if (!validation.valid || hybridBreakthroughDoc?.system.stableId !== hybrid?.breakthroughStableId) {
+        return ui.notifications.warn(game.i18n.localize(`LYRIAN.Hybrid.Invalid.${validation.reason || "type"}`));
+      }
+    }
+
+    let faerieFlashLink = null;
+    if (s.raceMode === "hybrid" && s.hybridType === "faerieChimera" &&
+        primaryDoc.name === "Chimera" && ancestryDoc?.name === "High Fae") {
+      const index = await racePack.getIndex({ fields: ["system.stableId"] });
+      const faeEntry = index.find((entry) => entry.system?.stableId === "primary-race--fae");
+      const fae = faeEntry ? await racePack.getDocument(faeEntry._id) : null;
+      faerieFlashLink = fae?.system.relationships?._links?.find(
+        (link) => link.stableId === "ability--faerie-flash"
+      ) ?? null;
+      if (!faerieFlashLink) {
+        return ui.notifications.warn(game.i18n.localize("LYRIAN.Hybrid.FaerieFlashMissing"));
+      }
+    }
+
+    const toCreate = [];
+    const primaryData = s.raceMode === "hybrid"
+      ? prepareHybridPrimaryData(primaryDoc.toObject(), s.hybridType)
+      : primaryDoc.toObject();
+    delete primaryData._id;
+    primaryData.system.selectedMainStat = s.raceMainChoice;
+    primaryData.system.selectedSubStat = s.raceSubChoice;
+    primaryData.system.selectedVariant = s.raceVariant;
+    primaryData.system.selectedSkillBonuses = { ...(s.raceSkillSpend[s.raceId] ?? {}) };
+
+    if (s.raceMode === "hybrid") {
+      const flag = hybridRaceFlag(s.hybridType, primaryDoc.name, ancestryDoc.name);
+      primaryData.flags ??= {};
+      primaryData.flags["lyrian-chronicles"] ??= {};
+      primaryData.flags["lyrian-chronicles"].hybridRace = flag;
+    }
+    toCreate.push(primaryData);
+
+    if (ancestryDoc) {
+      const ancestryData = s.raceMode === "hybrid"
+        ? prepareHybridAncestryData(ancestryDoc.toObject(), {
+          type: s.hybridType,
+          primaryRace: primaryDoc.name,
+          faerieFlashLink
+        })
+        : ancestryDoc.toObject();
+      delete ancestryData._id;
+      ancestryData.system.selectedSkillBonuses = { ...(s.raceSkillSpend[s.ancestryId] ?? {}) };
+      toCreate.push(ancestryData);
+    }
+
+    const alreadyOwnedClass = actor.items.find(
+      (item) => item.type === "class" && item.system.stableId === classDoc.system.stableId
+    );
+    if (!alreadyOwnedClass) {
+      const classData = classDoc.toObject();
+      delete classData._id;
+      classData.system.abilitiesUnlocked = 1;
+      toCreate.push(classData);
+    }
+
+    if (hybridBreakthroughDoc) {
+      const breakthroughData = hybridBreakthroughDoc.toObject();
+      delete breakthroughData._id;
+      breakthroughData.flags ??= {};
+      breakthroughData.flags["lyrian-chronicles"] ??= {};
+      breakthroughData.flags["lyrian-chronicles"].hybridRace = hybridRaceFlag(
+        s.hybridType, primaryDoc.name, ancestryDoc.name
+      );
+      toCreate.push(breakthroughData);
+    }
 
     const update = {};
     for (const [key, value] of Object.entries(s.mainAssign)) {
@@ -295,34 +492,15 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       await actor.deleteEmbeddedDocuments("Item", existingRaces.map((item) => item.id));
     }
 
-    // Bring in the chosen race and class as owned items.
-    const toCreate = [];
-    for (const [packName, id] of [["races", s.raceId], ["races", s.ancestryId], ["classes", s.classId]]) {
-      if (!id) continue;
-      const pack = game.packs.get(`lyrian-chronicles.${packName}`);
-      const doc = await pack?.getDocument(id);
-      if (doc) {
-        const data = doc.toObject();
-        delete data._id;
-        if (doc.type === "race" && doc.system.raceKind === "primary") {
-          data.system.selectedMainStat = s.raceMainChoice;
-          data.system.selectedSubStat = s.raceSubChoice;
-          data.system.selectedVariant = s.raceVariant;
-        }
-        if (doc.type === "race") {
-          data.system.selectedSkillBonuses = { ...(s.raceSkillSpend[id] ?? {}) };
-        }
-        if (doc.type === "class") {
-          const alreadyOwned = actor.items.find(
-            (item) => item.type === "class" && item.system.stableId === doc.system.stableId
-          );
-          if (alreadyOwned) continue;
-          data.system.abilitiesUnlocked = 1;
-        }
-        toCreate.push(data);
-      }
+    const existingHybridBreakthroughs = actor.items.filter(
+      (item) => item.type === "breakthrough" && isHybridBreakthrough(item)
+    );
+    if (existingHybridBreakthroughs.length) {
+      await actor.deleteEmbeddedDocuments("Item", existingHybridBreakthroughs.map((item) => item.id));
     }
-    if (toCreate.length) await actor.createEmbeddedDocuments("Item", toCreate);
+    if (toCreate.length) {
+      await actor.createEmbeddedDocuments("Item", toCreate, { lyrianCharacterCreation: true });
+    }
 
     await actor.syncProgressionFeatures();
 

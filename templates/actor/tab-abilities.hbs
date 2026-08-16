@@ -40,7 +40,7 @@
 
   {{#if isCharacter}}
     <section class="lyr-feature-section">
-      <h3 class="lyr-feature-heading">{{localize "LYRIAN.UI.RacialTraits"}} {{#if raceSummary.primary}}<span>{{raceSummary.primary.name}}{{#if raceSummary.ancestry}} · {{raceSummary.ancestry.name}}{{/if}}{{#if raceSummary.variant}} · {{raceSummary.variant.name}}{{/if}}</span>{{/if}}</h3>
+      <h3 class="lyr-feature-heading">{{localize "LYRIAN.UI.RacialTraits"}} {{#if raceSummary.primary}}<span>{{raceSummary.displayName}}{{#if raceSummary.ancestry}} · {{raceSummary.ancestry.name}}{{/if}}{{#if raceSummary.variant}} · {{raceSummary.variant.name}}{{/if}}</span>{{/if}}</h3>
       <ul class="lyr-feature-list">
         {{#each racialTraits}}{{> grantRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.RacialTraits"}}</li>{{/each}}
       </ul>

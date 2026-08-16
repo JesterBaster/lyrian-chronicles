@@ -544,6 +544,11 @@
 .lyrian .lyr-pick.is-picked { border-color: var(--lyr-gold); box-shadow: 0 0 12px rgba(201, 162, 39, 0.2) inset; }
 .lyrian .lyr-pick img { width: 40px; height: 40px; object-fit: cover; border-radius: var(--lyr-radius); }
 .lyrian .lyr-pick input { position: absolute; opacity: 0; pointer-events: none; }
+.lyrian .lyr-pick__description {
+  width: 100%; max-height: 7rem; overflow-y: auto; text-align: left;
+  color: var(--lyr-ink-dim); font-size: 0.66rem; line-height: 1.35;
+}
+.lyrian .lyr-pick__description p { margin: 0.25rem 0; }
 .lyrian .lyr-skill-buy { display: flex; flex-direction: column; gap: 0.15rem; }
 .lyrian .lyr-skill-buy__row { display: grid; grid-template-columns: 1fr auto 1.5rem 2rem 1.5rem; align-items: center; gap: 0.3rem; padding: 0.1rem 0; }
 .lyrian .lyr-skill-buy__name { font-size: 0.82rem; }

@@ -49,18 +49,65 @@
       <h2 class="lyr-heading">{{localize "LYRIAN.UI.Race"}}</h2>
       {{#if races.length}}
         <div class="lyr-pick-grid">
+          <label class="lyr-pick {{#if hybridMode}}is-picked{{/if}}">
+            <input type="radio" name="raceMode" value="hybrid" {{#if hybridMode}}checked{{/if}} />
+            <img src="icons/svg/mystery-man.svg" alt="" />
+            <span>{{localize "LYRIAN.Hybrid.Name"}}</span>
+          </label>
           {{#each races as |race|}}
-            <label class="lyr-pick {{#if (eq ../state.raceId race.id)}}is-picked{{/if}}">
-              <input type="radio" name="raceId" value="{{race.id}}" {{#if (eq ../state.raceId race.id)}}checked{{/if}} />
+            <label class="lyr-pick {{#unless ../hybridMode}}{{#if (eq ../state.raceId race.id)}}is-picked{{/if}}{{/unless}}">
+              <input type="radio" name="raceId" value="{{race.id}}" {{#unless ../hybridMode}}{{#if (eq ../state.raceId race.id)}}checked{{/if}}{{/unless}} />
               <img src="{{race.img}}" alt="" />
               <span>{{race.name}}</span>
             </label>
           {{/each}}
         </div>
+
+        {{#if hybridMode}}
+          <h3 class="lyr-subheading">{{localize "LYRIAN.Hybrid.ChooseType"}}</h3>
+          <p class="lyr-note">{{localize "LYRIAN.Hybrid.CostHint" cost=hybridCost budget=state.breakthroughBudget}}</p>
+          <div class="lyr-pick-grid">
+            {{#each hybridChoices as |choice|}}
+              <label class="lyr-pick {{#if (eq ../state.hybridType choice.key)}}is-picked{{/if}}">
+                <input type="radio" name="hybridType" value="{{choice.key}}"
+                       data-breakthrough-id="{{choice.breakthroughId}}"
+                       data-fixed-primary-id="{{choice.fixedPrimaryId}}"
+                       {{#if (eq ../state.hybridType choice.key)}}checked{{/if}}
+                       {{#unless choice.breakthroughId}}disabled{{/unless}} />
+                <span>{{choice.displayName}}</span>
+                <small>{{localize "LYRIAN.UI.ExpAmount" exp=choice.cost}}</small>
+                {{#if choice.description}}<div class="lyr-pick__description">{{{choice.description}}}</div>{{/if}}
+              </label>
+            {{/each}}
+          </div>
+
+          {{#if (eq state.hybridType "faerieChimera")}}
+            <h3 class="lyr-subheading">{{localize "LYRIAN.Hybrid.ChoosePrimary"}}</h3>
+            <p class="lyr-note">{{localize "LYRIAN.Hybrid.PrimaryHint"}}</p>
+            <div class="lyr-pick-grid">
+              {{#each hybridPrimaryOptions as |race|}}
+                <label class="lyr-pick {{#if (eq ../state.raceId race.id)}}is-picked{{/if}}">
+                  <input type="radio" name="hybridPrimaryRaceId" value="{{race.id}}"
+                         {{#if (eq ../state.raceId race.id)}}checked{{/if}} />
+                  <img src="{{race.img}}" alt="" />
+                  <span>{{race.name}} ({{localize "LYRIAN.UI.PrimaryRace"}})</span>
+                </label>
+              {{/each}}
+            </div>
+          {{/if}}
+        {{/if}}
+
         {{#if selectedRace}}
           <div class="lyr-choice-summary">
+            {{#if hybridMode}}
+              <p><strong>{{localize "LYRIAN.Hybrid.Selected"}}:</strong> {{selectedHybridBreakthrough.name}}</p>
+              <p><strong>{{localize "LYRIAN.UI.Remaining"}}:</strong> {{localize "LYRIAN.UI.ExpAmount" exp=hybridBudgetRemaining}}</p>
+              {{#if (eq state.hybridType "humanChimera")}}
+                <p class="lyr-warn">{{localize "LYRIAN.Hybrid.HumanException"}}</p>
+              {{/if}}
+            {{/if}}
             {{#if selectedRace.system.attributes}}<p><strong>{{localize "LYRIAN.UI.Attributes"}}:</strong> {{selectedRace.system.attributes}}</p>{{/if}}
-            {{#if selectedRace.system.ambition}}<p><strong>{{localize "LYRIAN.UI.Ambition"}}:</strong> {{selectedRace.system.ambition}}</p>{{/if}}
+            {{#if showRaceAmbition}}<p><strong>{{localize "LYRIAN.UI.Ambition"}}:</strong> {{selectedRace.system.ambition}}</p>{{/if}}
           </div>
 
           {{#if raceNeedsMainChoice}}
