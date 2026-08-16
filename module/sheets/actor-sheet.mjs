@@ -21,6 +21,7 @@ import {
 } from "../rules/mod-installation.mjs";
 import { hybridAncestryFamily } from "../rules/hybrid-race.mjs";
 import { isHeaderOnlyRender } from "../rules/sheet-refresh.mjs";
+import { hasArtisanClass } from "../rules/crafting-access.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -79,6 +80,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     proficiencies: { template: "systems/lyrian-chronicles/templates/actor/tab-proficiencies.hbs" },
     abilities: { template: "systems/lyrian-chronicles/templates/actor/tab-abilities.hbs" },
     inventory: { template: "systems/lyrian-chronicles/templates/actor/tab-inventory.hbs" },
+    crafting: { template: "systems/lyrian-chronicles/templates/actor/tab-crafting.hbs" },
     progression: { template: "systems/lyrian-chronicles/templates/actor/tab-progression.hbs" },
     biography: { template: "systems/lyrian-chronicles/templates/actor/tab-biography.hbs" }
   };
@@ -92,6 +94,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         { id: "proficiencies", icon: "fa-solid fa-shield", label: "LYRIAN.Tab.proficiencies" },
         { id: "abilities", icon: "fa-solid fa-wand-sparkles", label: "LYRIAN.Tab.abilities" },
         { id: "inventory", icon: "fa-solid fa-sack", label: "LYRIAN.Tab.inventory" },
+        { id: "crafting", icon: "fa-solid fa-hammer", label: "LYRIAN.Tab.crafting" },
         { id: "progression", icon: "fa-solid fa-gem", label: "LYRIAN.Tab.progression" },
         { id: "biography", icon: "fa-solid fa-feather", label: "LYRIAN.Tab.biography" }
       ],
@@ -110,6 +113,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       delete parts.proficiencies;
       delete parts.progression;
     }
+    if (!hasArtisanClass(this.document)) delete parts.crafting;
     return parts;
   }
 
@@ -121,6 +125,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       delete tabs.proficiencies;
       delete tabs.progression;
     }
+    if (!hasArtisanClass(this.document)) delete tabs.crafting;
     for (const tab of Object.values(tabs)) {
       if (typeof tab.label === "string") tab.label = game.i18n.localize(tab.label);
     }
@@ -138,6 +143,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.system = actor.system;
     context.config = LYRIAN;
     context.isCharacter = actor.type === "character";
+    context.hasArtisanClass = hasArtisanClass(actor);
     context.isNPC = actor.type === "npc" || actor.type === "monster";
     context.editable = this.isEditable;
     context.isGM = game.user.isGM;
@@ -329,6 +335,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     }
 
     context.items = buckets;
+    context.artisanClasses = buckets.classes.filter((item) => item.system.artisan === true);
     context.hasEquippedWeapon = buckets.weapons.some((weapon) => weapon.system.equipped);
     context.showUniversalAttacks = context.isCharacter && !context.hasEquippedWeapon;
 

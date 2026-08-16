@@ -1,0 +1,44 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="crafting" data-group="primary" data-application-part="crafting">
+
+  <div class="lyr-compendium-strip lyr-compendium-strip--wrap">
+    <span>{{localize "LYRIAN.Hint.CraftingUnlocked"}}</span>
+    <button type="button" data-action="browsePack" data-pack="crafting-guide">{{localize "LYRIAN.UI.CraftingGuide"}}</button>
+    <button type="button" data-action="browsePack" data-pack="artifices">{{localize "LYRIAN.UI.Artifices"}}</button>
+    <button type="button" data-action="browsePack" data-pack="materials">{{localize "LYRIAN.UI.Materials"}}</button>
+    <button type="button" data-action="browsePack" data-pack="mods">{{localize "LYRIAN.UI.Mods"}}</button>
+  </div>
+
+  <h2 class="lyr-heading">{{localize "LYRIAN.UI.ArtisanClass"}}</h2>
+  <ul class="lyr-list">
+    {{#each artisanClasses as |item|}}
+      <li class="lyr-row {{#if item.system.mastered}}lyr-row--mastered{{/if}}" data-item-id="{{item.id}}">
+        <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+        <div class="lyr-row__body">
+          <span class="lyr-row__name">{{item.name}} {{#if item.system.mastered}}<em class="lyr-tag">{{localize "LYRIAN.UI.Mastered"}}</em>{{/if}}</span>
+          <span class="lyr-row__meta">{{localize "LYRIAN.UI.ClassSummary" tier=item.system.tier level=item.system.abilitiesUnlocked exp=item.system.expInvested}}</span>
+        </div>
+        <div class="lyr-row__actions">
+          <button type="button" class="lyr-icon" data-action="editItem" title="{{localize "LYRIAN.Action.Edit"}}"><i class="fa-solid fa-pen"></i></button>
+        </div>
+      </li>
+    {{else}}
+      <li class="lyr-empty">{{localize "LYRIAN.Empty.ArtisanClasses"}}</li>
+    {{/each}}
+  </ul>
+
+  <h2 class="lyr-heading">{{localize "LYRIAN.UI.ArtisanSkills"}}</h2>
+  <p class="lyr-note">{{localize "LYRIAN.Hint.ArtisanCheck"}}</p>
+  <div class="lyr-skill-groups">
+    <div class="lyr-skill-group">
+      {{#each artisanList as |skill|}}
+        <div class="lyr-skill-entry {{#if skill.atCap}}lyr-skill--capped{{/if}}">
+          <div class="lyr-skill">
+            <button type="button" class="lyr-skill__roll" data-action="rollArtisan" data-skill="{{skill.key}}">{{skill.label}}</button>
+            <span class="lyr-skill__total">{{lyrianSigned skill.total}}</span>
+            <span class="lyr-skill__rank" title="{{localize "LYRIAN.UI.Ranks"}}">{{skill.rank}}</span>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
