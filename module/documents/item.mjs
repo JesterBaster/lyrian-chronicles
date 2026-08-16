@@ -8,6 +8,7 @@ import { confirmItemRequirements } from "../rules/requirements.mjs";
 import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 import { requireActorActionPermission } from "../rules/action-permissions.mjs";
 import { isHybridBreakthrough } from "../rules/hybrid-race.mjs";
+import { abilityWeaponAttackContext } from "../rules/ability-attack.mjs";
 
 /**
  * The Item document. Weapons and abilities know how to roll themselves.
@@ -185,25 +186,26 @@ export class LyrianItem extends Item {
     if (!sys.hasAttack) return this.postToChat();
 
     const profile = LYRIAN.attackTypes[sys.attackType];
-    const accuracyBonus =
-      profile.accuracy === "doubleFocus"
-        ? actor.system.accuracy.precise
-        : actor.system.accuracy.standard;
+    const weaponContext = abilityWeaponAttackContext({
+      ability: sys,
+      weapon: actor.system.equipment?.weapons?.[0] ?? null,
+      profile,
+      accuracy: actor.system.accuracy
+    });
 
     const sureHit = sys.keywords?.has("sureHit");
-    const attackRoll = sureHit ? null : await new Roll(`1d20 + ${accuracyBonus}`).evaluate();
+    const attackRoll = sureHit
+      ? null
+      : await new Roll(`1d20 + ${weaponContext.accuracyBonus}`).evaluate();
     const natural = attackRoll?.dice[0]?.total ?? 0;
-    const isCrit = !sureHit && natural >= 20;
+    const isCrit = !sureHit && natural >= weaponContext.critThreshold;
 
     // Use the equipped weapon's damage if the ability rides on a weapon strike.
     let damageFormula = sys.damageFormula;
-    if (sys.usesWeapon || !damageFormula) {
-      const weapon = actor.system.equipment?.weapons?.[0];
-      if (weapon) {
-        const power = actor.system.stats.power.total;
-        const { formula, flat } = weapon.system.getDamageFormula(sys.attackType, power);
-        damageFormula = flat ? `${formula} + ${flat}` : formula;
-      }
+    if (weaponContext.weapon) {
+      const power = actor.system.stats.power.total;
+      const { formula, flat } = weaponContext.weapon.system.getDamageFormula(sys.attackType, power);
+      damageFormula = flat ? `${formula} + ${flat}` : formula;
     }
 
     const damageRoll = damageFormula
@@ -221,6 +223,8 @@ export class LyrianItem extends Item {
       halfPierce: isCrit || sys.keywords?.has("halfPierce"),
       fullPierce: sys.keywords?.has("fullPierce"),
       damageType: sys.damageType,
+      weaponGroup: weaponContext.weaponGroup,
+      ranged: weaponContext.ranged,
       sureHit,
       keywords: sys.keywords
     });

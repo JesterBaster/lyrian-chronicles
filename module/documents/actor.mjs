@@ -22,6 +22,7 @@ import {
 } from "../rules/skill-caps.mjs";
 import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 import { requireActorActionPermission } from "../rules/action-permissions.mjs";
+import { guardForDamage } from "../rules/damage.mjs";
 
 /**
  * The Actor document for Lyrian Chronicles.
@@ -545,10 +546,17 @@ export class LyrianActor extends Actor {
    * @param {string} [options.defence]  "none" | "dodge" | "block"
    * @param {boolean} [options.trueDamage]   Ignores Guard and temp HP entirely.
    * @param {boolean} [options.fullPierce]   Ignores Guard but not temp HP.
+   * @param {boolean} [options.halfPierce]   Ignores Guard unless the target Dodges or Blocks.
    * @param {number}  [options.pinpoint]     Ignore this many points of Guard.
    */
   async applyDamage(amount, options = {}) {
-    const { defence = "none", trueDamage = false, fullPierce = false, pinpoint = 0 } = options;
+    const {
+      defence = "none",
+      trueDamage = false,
+      fullPierce = false,
+      halfPierce = false,
+      pinpoint = 0
+    } = options;
     const s = this.system;
     const normalizedAmount = positiveInteger(amount);
     if (!normalizedAmount) {
@@ -560,11 +568,15 @@ export class LyrianActor extends Actor {
     let guardUsed = 0;
 
     if (!trueDamage) {
-      if (!fullPierce) {
-        const baseGuard = defence === "block" ? s.blockGuard : s.guard;
-        guardUsed = Math.max(0, baseGuard - normalizedPinpoint);
-        final = normalizedAmount - guardUsed;
-      }
+      guardUsed = guardForDamage({
+        defence,
+        guard: s.guard,
+        blockGuard: s.blockGuard,
+        fullPierce,
+        halfPierce,
+        pinpoint: normalizedPinpoint
+      });
+      final = normalizedAmount - guardUsed;
 
       // Only Block (or an equivalent reduction) can take an attack to zero.
       const floor = defence === "block" ? 0 : 1;
