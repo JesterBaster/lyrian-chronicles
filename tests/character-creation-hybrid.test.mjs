@@ -8,7 +8,9 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 globalThis.foundry = {
   applications: {
     api: {
-      ApplicationV2: class {},
+      ApplicationV2: class {
+        get state() { return 0; }
+      },
       HandlebarsApplicationMixin: (Base) => class extends Base {
         constructor(options) {
           super();
@@ -55,18 +57,25 @@ function byStable(entries, stableId) {
   return entries.find((entry) => entry.system.stableId === stableId);
 }
 
+test("wizard creation data does not overwrite ApplicationV2 render state", () => {
+  const app = creation();
+  assert.equal(app.state, 0);
+  assert.equal(app.creationState.step, "stats");
+  assert.deepEqual(app.creationState.mainAssign, {});
+});
+
 test("Human-Chimera wizard fixes Human primary and offers Chimera ancestries", async () => {
   const app = creation();
   const human = byStable(races, "primary-race--human");
   const hybrid = byStable(breakthroughs, "breakthrough--human-chimera-hybrid-race");
   const catfolk = byStable(races, "ancestry--catfolk");
-  app.state.raceMode = "hybrid";
-  app.state.hybridType = "humanChimera";
-  app.state.hybridBreakthroughId = hybrid._id;
-  app.state.raceId = human._id;
-  app.state.ancestryId = catfolk._id;
-  app.state.raceMainChoice = "power";
-  app.state.raceSubChoice = "presence";
+  app.creationState.raceMode = "hybrid";
+  app.creationState.hybridType = "humanChimera";
+  app.creationState.hybridBreakthroughId = hybrid._id;
+  app.creationState.raceId = human._id;
+  app.creationState.ancestryId = catfolk._id;
+  app.creationState.raceMainChoice = "power";
+  app.creationState.raceSubChoice = "presence";
 
   const context = await app._prepareContext();
   assert.equal(context.selectedRace.name, "Human");
@@ -82,11 +91,11 @@ test("Faerie-Chimera wizard always offers the opposite ancestry family", async (
   const chimera = byStable(races, "primary-race--chimera");
   const hybrid = byStable(breakthroughs, "breakthrough--faerie-chimera-hybrid-race");
   const highFae = byStable(races, "ancestry--high-fae");
-  app.state.raceMode = "hybrid";
-  app.state.hybridType = "faerieChimera";
-  app.state.hybridBreakthroughId = hybrid._id;
-  app.state.raceId = chimera._id;
-  app.state.ancestryId = highFae._id;
+  app.creationState.raceMode = "hybrid";
+  app.creationState.hybridType = "faerieChimera";
+  app.creationState.hybridBreakthroughId = hybrid._id;
+  app.creationState.raceId = chimera._id;
+  app.creationState.ancestryId = highFae._id;
 
   const context = await app._prepareContext();
   assert.equal(context.selectedRace.name, "Chimera");
