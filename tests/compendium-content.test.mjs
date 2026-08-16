@@ -58,71 +58,11 @@ test("manifest declares reviewed rules plus focused equipment and crafting packs
     "weapons", "armor-shields", "consumables", "gear-kits", "artifices", "materials", "mods", "crafting-guide",
     "monsters", "monster-abilities"
   ]);
-  assert.match(MANIFEST.version, /^\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.-]+)?$/);
-  const escapedVersion = MANIFEST.version.replaceAll(".", "\\\\.");
+  assert.match(MANIFEST.version, /^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?$/);
+  const escapedVersion = MANIFEST.version.replaceAll(".", "\\.");
   assert.match(
     MANIFEST.download,
-    new RegExp(`/releases/download/v?${escapedVersion}/system\\\\.zipimport assert from "node:assert/strict";
-import { createHash } from "node:crypto";
-import { execFile } from "node:child_process";
-import { mkdtemp, readFile, readdir } from "node:fs/promises";
-import os from "node:os";
-import path from "node:path";
-import test from "node:test";
-import { promisify } from "node:util";
-
-const run = promisify(execFile);
-const ROOT = path.resolve(import.meta.dirname, "..");
-const MANIFEST = JSON.parse(await readFile(path.join(ROOT, "system.json"), "utf8"));
-const SNAPSHOT_DIRECTORY = path.join(ROOT, "content-source", "approved", "0.13.1");
-const SNAPSHOT_MANIFEST = JSON.parse(await readFile(path.join(SNAPSHOT_DIRECTORY, "manifest.json"), "utf8"));
-const SNAPSHOT = {
-  ...SNAPSHOT_MANIFEST,
-  entries: (await Promise.all(SNAPSHOT_MANIFEST.parts.map(async (part) =>
-    JSON.parse(await readFile(path.join(SNAPSHOT_DIRECTORY, part.file), "utf8"))
-  ))).flat(),
-};
-
-const PACKS = {
-  "rules-setting-guide": 2,
-  keywords: 87,
-  breakthroughs: 89,
-  "player-abilities": 1112,
-  races: 48,
-  classes: 181,
-  weapons: 45,
-  "armor-shields": 9,
-  consumables: 58,
-  "gear-kits": 31,
-  artifices: 47,
-  monsters: 84,
-  "monster-abilities": 307,
-};
-const CRAFTING_PACKS = {
-  materials: 149,
-  mods: 391,
-  "crafting-guide": 11,
-};
-
-const CONTENT_INDEX = JSON.parse(await readFile(path.join(ROOT, "content", "compendium-index.json"), "utf8"));
-const content = {};
-for (const pack of Object.keys(PACKS)) {
-  content[pack] = (await Promise.all(CONTENT_INDEX.packs[pack].files.map(async (file) =>
-    JSON.parse(await readFile(path.join(ROOT, "content", file), "utf8"))
-  ))).flat();
-}
-
-function digest(value) {
-  return createHash("sha256").update(value).digest("hex");
-}
-
-test("manifest declares reviewed rules plus focused equipment and crafting packs", () => {
-  assert.deepEqual(MANIFEST.packs.map((pack) => pack.name), [
-    "rules-setting-guide", "keywords", "breakthroughs", "player-abilities", "races", "classes",
-    "weapons", "armor-shields", "consumables", "gear-kits", "artifices", "materials", "mods", "crafting-guide",
-    "monsters", "monster-abilities"
-  ]);
-)
+    new RegExp(`/releases/download/v?${escapedVersion}/system\\.zip$`)
   );
   assert.equal(MANIFEST.compatibility.minimum, "14");
   assert.equal(MANIFEST.compatibility.verified, "14");

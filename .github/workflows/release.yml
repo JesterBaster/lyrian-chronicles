@@ -45,7 +45,7 @@ jobs:
             m.manifest = process.env.MANIFEST;
             m.download = process.env.DOWNLOAD;
             m.url = `https://github.com/${process.env.REPO}`;
-            fs.writeFileSync("system.json", JSON.stringify(m, null, 2) + "\\n");
+            fs.writeFileSync("system.json", JSON.stringify(m, null, 2) + "\n");
           '
           echo "--- system.json ---"
           cat system.json
