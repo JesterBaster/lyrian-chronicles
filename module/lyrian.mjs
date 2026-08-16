@@ -25,6 +25,7 @@ import { seedSystemPacks, resetSystemPacks } from "./content/seed-packs.mjs";
 import { runCharacterCreation } from "./apps/character-creation.mjs";
 import { resolveDefence } from "./rules/defence-resolution.mjs";
 import { resolvedAttackFlagUpdate } from "./rules/resolved-attacks.mjs";
+import { actorHeaderNeedsRefresh } from "./rules/sheet-refresh.mjs";
 import {
   actionLockWarningKey,
   initializeActionTransactions,
@@ -99,6 +100,22 @@ Hooks.once("init", function () {
   registerSettings();
 
   return preloadTemplates();
+});
+
+/* -------------------------------------------- */
+/*  Live actor-sheet refresh                     */
+/* -------------------------------------------- */
+
+/**
+ * ApplicationV2 sheets do not consistently repaint the persistent header
+ * after a resource update arrives from a chat-card action. Refresh only that
+ * part on every client that currently has the affected Actor sheet open.
+ */
+Hooks.on("updateActor", (actor, changes) => {
+  if (!actorHeaderNeedsRefresh(changes)) return;
+  const sheet = actor.sheet;
+  if (!sheet?.rendered) return;
+  void sheet.render({ force: true, parts: ["header"] });
 });
 
 /* -------------------------------------------- */
