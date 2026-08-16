@@ -21,6 +21,7 @@ import {
   skillCapViolations
 } from "../rules/skill-caps.mjs";
 import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
+import { requireActorActionPermission } from "../rules/action-permissions.mjs";
 
 /**
  * The Actor document for Lyrian Chronicles.
@@ -363,6 +364,7 @@ export class LyrianActor extends Actor {
 
   /** Roll a basic attack from an official compendium monster stat block. */
   async rollMonsterAttack(attackType = "light", options = {}) {
+    if (!requireActorActionPermission(this)) return null;
     if (this.type !== "npc" && this.type !== "monster") return null;
     if (!["light", "heavy"].includes(attackType)) return null;
 
@@ -418,6 +420,7 @@ export class LyrianActor extends Actor {
   /* -------------------------------------------- */
 
   async _rollCheck({ formula, flavour, dc }) {
+    if (!requireActorActionPermission(this)) return null;
     const roll = await new Roll(formula, this.getRollData()).evaluate();
     let flavorText = flavour;
 
@@ -826,6 +829,7 @@ export class LyrianActor extends Actor {
    * Roll 1d10 on the injury table and create the matching Injury item.
    */
   async rollInjury() {
+    if (!requireActorActionPermission(this)) return null;
     const roll = await new Roll("1d10").evaluate();
     const entry = LYRIAN.injuryTable[roll.total];
     const name = game.i18n.localize(entry.label);

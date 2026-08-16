@@ -6,6 +6,7 @@ import {
 } from "../rules/action-transactions.mjs";
 import { confirmItemRequirements } from "../rules/requirements.mjs";
 import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
+import { requireActorActionPermission } from "../rules/action-permissions.mjs";
 
 /**
  * The Item document. Weapons and abilities know how to roll themselves.
@@ -43,6 +44,7 @@ export class LyrianItem extends Item {
 
     const actor = this.actor;
     if (!actor) return ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoActor"));
+    if (!requireActorActionPermission(actor)) return null;
 
     const action = await runExclusiveActorAction(actor, () =>
       this._rollWeaponAttack(attackType, options)
@@ -116,6 +118,7 @@ export class LyrianItem extends Item {
 
     const actor = this.actor;
     if (!actor) return ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoActor"));
+    if (!requireActorActionPermission(actor)) return null;
 
     const action = await runExclusiveActorAction(actor, () => this._rollAbility(options));
     if (!action.started) {
@@ -216,6 +219,7 @@ export class LyrianItem extends Item {
 
   /** Post a plain description card for items with no roll. */
   async postToChat() {
+    if (!requireActorActionPermission(this.actor)) return null;
     const content = await foundry.applications.handlebars.renderTemplate(
       "systems/lyrian-chronicles/templates/chat/item-card.hbs",
       { item: this, actor: this.actor, system: this.system }
