@@ -1,4 +1,6 @@
 import { LYRIAN } from "../config.mjs";
+import { equippedArmorContribution } from "../rules/armor.mjs";
+import { derivedGuardValues } from "../rules/damage.mjs";
 import {
   raceAmbitionExp,
   selectedRaceBonuses,
@@ -170,12 +172,16 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
     // by the character/NPC subclass after this runs, so they are finished there.
     this._finishPools(this.hp, this.mana);
 
-    // Defences.
-    this.guard = Math.max(0, gear.guard + toughness + this.defences.guardBonus);
-    this.blockGuard = Math.max(
-      0,
-      2 * toughness + gear.blockValue + this.defences.guardBonus + this.defences.blockBonus
-    );
+    // Guard and Block use separate effect channels.
+    const guardValues = derivedGuardValues({
+      toughness,
+      equipmentGuard: gear.guard,
+      equipmentBlockValue: gear.blockValue,
+      guardBonus: this.defences.guardBonus,
+      blockBonus: this.defences.blockBonus
+    });
+    this.guard = guardValues.guard;
+    this.blockGuard = guardValues.blockGuard;
     this.evasion = 7 + agility + gear.evasion + this.defences.evasionBonus;
     this.dodgeEvasion = this.evasion + LYRIAN.dodgeBonus;
     this.potency = 11 + focus + this.defences.potencyBonus;
@@ -247,27 +253,22 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
 
       if (item.type !== "armor") continue;
 
-      const cat = LYRIAN.armorCategories[sys.category] ?? LYRIAN.armorCategories.clothing;
-      out.burden += sys.burden ?? cat.burden ?? 0;
+      const contribution = equippedArmorContribution(sys);
+      out.burden += sys.burden ?? contribution.category.burden ?? 0;
       if (!sys.equipped) continue;
 
-      const penalty = sys.proficient ? { guard: 0, evasion: 0 } : LYRIAN.nonProficientArmorPenalty;
-
-      if (cat.isShield) {
+      if (contribution.isShield) {
         if (out.shield) continue;
         out.shield = item;
-        out.blockValue += cat.block + (sys.blockBonus ?? 0);
-        out.guard += cat.guard + penalty.guard;
-        out.evasion += cat.evasion + penalty.evasion;
-        out.initiative += cat.initiative;
       } else {
         if (out.armor) continue;
         out.armor = item;
-        out.guard += cat.guard + (sys.guardBonus ?? 0) + penalty.guard;
-        out.evasion += cat.evasion + penalty.evasion;
-        out.initiative += cat.initiative;
-        out.blockValue += cat.block + (sys.blockBonus ?? 0);
       }
+
+      out.guard += contribution.guard;
+      out.evasion += contribution.evasion;
+      out.initiative += contribution.initiative;
+      out.blockValue += contribution.blockValue;
     }
 
     return out;

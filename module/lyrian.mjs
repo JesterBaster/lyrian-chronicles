@@ -339,12 +339,16 @@ async function onChatAction(event, message) {
       let damage = attack.damage?.total ?? flags.damage ?? 0;
       // Blocking prevents a critical hit, so replace maximised damage with a normal roll.
       if (defence === "block" && attack.damage?.maximised && attack.damage.formula) {
-        damage = (await new Roll(attack.damage.formula).evaluate()).total;
+        const source = attack.sourceUuid ? await fromUuid(attack.sourceUuid) : null;
+        const attacker = attack.actorUuid ? await fromUuid(attack.actorUuid) : null;
+        const rollData = source?.getRollData?.() ?? attacker?.getRollData?.() ?? {};
+        damage = (await new Roll(attack.damage.formula, rollData).evaluate()).total;
       }
 
       const result = await actor.applyDamage(damage, {
         defence,
-        fullPierce: flags.fullPierce || (flags.halfPierce && defence === "none"),
+        fullPierce: flags.fullPierce,
+        halfPierce: flags.halfPierce,
         pinpoint: flags.pinpoint ?? 0
       });
 

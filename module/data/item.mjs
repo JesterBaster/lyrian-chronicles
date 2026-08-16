@@ -1,4 +1,5 @@
 import { LYRIAN } from "../config.mjs";
+import { armorValues } from "../rules/armor.mjs";
 
 const fields = foundry.data.fields;
 
@@ -170,13 +171,13 @@ export class LyrianArmor extends LyrianItemBase {
   }
 
   prepareDerivedData() {
-    const cat = LYRIAN.armorCategories[this.category] ?? {};
-    this.categoryData = cat;
-    this.isShield = !!cat.isShield;
-    this.guard = (cat.guard ?? 0) + this.guardBonus;
-    this.blockValue = (cat.block ?? 0) + this.blockBonus;
-    this.evasionPenalty = cat.evasion ?? 0;
-    this.initiativePenalty = cat.initiative ?? 0;
+    const values = armorValues(this);
+    this.categoryData = values.category;
+    this.isShield = values.isShield;
+    this.guard = values.guard;
+    this.blockValue = values.blockValue;
+    this.evasionPenalty = values.evasion;
+    this.initiativePenalty = values.initiative;
   }
 }
 
