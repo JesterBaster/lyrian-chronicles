@@ -66,7 +66,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       startEncounter: LyrianActorSheet.#onStartEncounter,
       takeRest: LyrianActorSheet.#onTakeRest,
       recoverInjury: LyrianActorSheet.#onRecoverInjury,
-      spendExpPrompt: LyrianActorSheet.#onSpendExp
+      spendExpPrompt: LyrianActorSheet.#onSpendExp,
+      openCharacterCreation: LyrianActorSheet.#onOpenCharacterCreation
     },
     dragDrop: [{ dragSelector: "[data-drag]", dropSelector: null }]
   };
@@ -82,7 +83,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     inventory: { template: "systems/lyrian-chronicles/templates/actor/tab-inventory.hbs" },
     crafting: { template: "systems/lyrian-chronicles/templates/actor/tab-crafting.hbs" },
     progression: { template: "systems/lyrian-chronicles/templates/actor/tab-progression.hbs" },
-    biography: { template: "systems/lyrian-chronicles/templates/actor/tab-biography.hbs" }
+    biography: { template: "systems/lyrian-chronicles/templates/actor/tab-biography.hbs" },
+    setup: { template: "systems/lyrian-chronicles/templates/actor/tab-setup.hbs" }
   };
 
   /** @override */
@@ -96,7 +98,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         { id: "inventory", icon: "fa-solid fa-sack", label: "LYRIAN.Tab.inventory" },
         { id: "crafting", icon: "fa-solid fa-hammer", label: "LYRIAN.Tab.crafting" },
         { id: "progression", icon: "fa-solid fa-gem", label: "LYRIAN.Tab.progression" },
-        { id: "biography", icon: "fa-solid fa-feather", label: "LYRIAN.Tab.biography" }
+        { id: "biography", icon: "fa-solid fa-feather", label: "LYRIAN.Tab.biography" },
+        { id: "setup", icon: "fa-solid fa-gears", label: "LYRIAN.Tab.setup" }
       ],
       initial: "main"
     }
@@ -112,6 +115,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       delete parts.skills;
       delete parts.proficiencies;
       delete parts.progression;
+      delete parts.setup;
     }
     if (!hasArtisanClass(this.document)) delete parts.crafting;
     return parts;
@@ -124,6 +128,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       delete tabs.skills;
       delete tabs.proficiencies;
       delete tabs.progression;
+      delete tabs.setup;
     }
     if (!hasArtisanClass(this.document)) delete tabs.crafting;
     for (const tab of Object.values(tabs)) {
@@ -1091,6 +1096,15 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static async #onRecoverInjury(event, target) {
     const id = target.closest("[data-item-id]")?.dataset.itemId;
     await this.document.recoverInjury(id);
+  }
+
+  static #onOpenCharacterCreation() {
+    if (!this.document.isOwner) {
+      return ui.notifications.warn(game.i18n.format("LYRIAN.Warn.NotOwner", {
+        name: this.document.name
+      }));
+    }
+    return game.lyrian.runCharacterCreation(this.document);
   }
 
   static async #onSpendExp() {
