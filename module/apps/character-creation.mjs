@@ -27,7 +27,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     this.actor = actor;
 
     const p = LYRIAN.progression;
-    this.state = {
+    this.creationState = {
       step: "stats",
       mainAssign: {},        // stat key -> array value
       subAssign: {},
@@ -69,7 +69,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
   /* -------------------------------------------- */
 
   async _prepareContext() {
-    const s = this.state;
+    const s = this.creationState;
     const usedMain = Object.values(s.mainAssign);
     const usedSub = Object.values(s.subAssign);
     const [raceEntries, breakthroughEntries] = await Promise.all([
@@ -226,8 +226,8 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
         const bucket = event.target.dataset.assign === "main" ? "mainAssign" : "subAssign";
         const key = event.target.dataset.stat;
         const value = Number(event.target.value);
-        if (!event.target.value) delete this.state[bucket][key];
-        else this.state[bucket][key] = value;
+        if (!event.target.value) delete this.creationState[bucket][key];
+        else this.creationState[bucket][key] = value;
         this.render();
       });
     });
@@ -235,19 +235,19 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     html.querySelectorAll("input[name='raceId'], input[name='ancestryId'], input[name='classId']").forEach((radio) => {
       radio.addEventListener("change", (event) => {
         const field = event.target.name;
-        this.state[field] = event.target.value;
+        this.creationState[field] = event.target.value;
         if (field === "raceId") {
-          this.state.raceMode = "standard";
-          this.state.hybridType = "";
-          this.state.hybridBreakthroughId = null;
-          this.state.ancestryId = null;
-          this.state.raceMainChoice = "";
-          this.state.raceSubChoice = "";
-          this.state.raceVariant = "";
-          this.state.raceSkillSpend = {};
+          this.creationState.raceMode = "standard";
+          this.creationState.hybridType = "";
+          this.creationState.hybridBreakthroughId = null;
+          this.creationState.ancestryId = null;
+          this.creationState.raceMainChoice = "";
+          this.creationState.raceSubChoice = "";
+          this.creationState.raceVariant = "";
+          this.creationState.raceSkillSpend = {};
         } else if (field === "ancestryId") {
-          for (const id of Object.keys(this.state.raceSkillSpend)) {
-            if (id !== this.state.raceId) delete this.state.raceSkillSpend[id];
+          for (const id of Object.keys(this.creationState.raceSkillSpend)) {
+            if (id !== this.creationState.raceId) delete this.creationState.raceSkillSpend[id];
           }
         }
         this.render();
@@ -256,48 +256,48 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
 
     html.querySelectorAll("input[name='raceMode']").forEach((radio) => {
       radio.addEventListener("change", () => {
-        this.state.raceMode = "hybrid";
-        this.state.raceId = null;
-        this.state.ancestryId = null;
-        this.state.hybridType = "";
-        this.state.hybridBreakthroughId = null;
-        this.state.raceMainChoice = "";
-        this.state.raceSubChoice = "";
-        this.state.raceVariant = "";
-        this.state.raceSkillSpend = {};
+        this.creationState.raceMode = "hybrid";
+        this.creationState.raceId = null;
+        this.creationState.ancestryId = null;
+        this.creationState.hybridType = "";
+        this.creationState.hybridBreakthroughId = null;
+        this.creationState.raceMainChoice = "";
+        this.creationState.raceSubChoice = "";
+        this.creationState.raceVariant = "";
+        this.creationState.raceSkillSpend = {};
         this.render();
       });
     });
 
     html.querySelectorAll("input[name='hybridType']").forEach((radio) => {
       radio.addEventListener("change", (event) => {
-        this.state.raceMode = "hybrid";
-        this.state.hybridType = event.target.value;
-        this.state.hybridBreakthroughId = event.target.dataset.breakthroughId || null;
-        this.state.raceId = event.target.dataset.fixedPrimaryId || null;
-        this.state.ancestryId = null;
-        this.state.raceMainChoice = "";
-        this.state.raceSubChoice = "";
-        this.state.raceVariant = "";
-        this.state.raceSkillSpend = {};
+        this.creationState.raceMode = "hybrid";
+        this.creationState.hybridType = event.target.value;
+        this.creationState.hybridBreakthroughId = event.target.dataset.breakthroughId || null;
+        this.creationState.raceId = event.target.dataset.fixedPrimaryId || null;
+        this.creationState.ancestryId = null;
+        this.creationState.raceMainChoice = "";
+        this.creationState.raceSubChoice = "";
+        this.creationState.raceVariant = "";
+        this.creationState.raceSkillSpend = {};
         this.render();
       });
     });
 
     html.querySelectorAll("input[name='hybridPrimaryRaceId']").forEach((radio) => {
       radio.addEventListener("change", (event) => {
-        this.state.raceId = event.target.value;
-        this.state.ancestryId = null;
-        this.state.raceMainChoice = "";
-        this.state.raceSubChoice = "";
-        this.state.raceSkillSpend = {};
+        this.creationState.raceId = event.target.value;
+        this.creationState.ancestryId = null;
+        this.creationState.raceMainChoice = "";
+        this.creationState.raceSubChoice = "";
+        this.creationState.raceSkillSpend = {};
         this.render();
       });
     });
 
     html.querySelectorAll("[data-race-choice]").forEach((select) => {
       select.addEventListener("change", (event) => {
-        this.state[event.target.dataset.raceChoice] = event.target.value;
+        this.creationState[event.target.dataset.raceChoice] = event.target.value;
         this.render();
       });
     });
@@ -308,21 +308,21 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
   /* -------------------------------------------- */
 
   static async #onGoStep(event, target) {
-    this.state.step = target.dataset.step;
+    this.creationState.step = target.dataset.step;
     this.render();
   }
 
   static async #onAdjustSkill(event, target) {
     const key = target.dataset.skill;
     const delta = Number(target.dataset.delta);
-    const current = this.state.skillSpend[key] ?? 0;
-    const spent = Object.values(this.state.skillSpend).reduce((a, b) => a + b, 0);
+    const current = this.creationState.skillSpend[key] ?? 0;
+    const spent = Object.values(this.creationState.skillSpend).reduce((a, b) => a + b, 0);
 
-    if (delta > 0 && spent >= this.state.skillPoints) return;
+    if (delta > 0 && spent >= this.creationState.skillPoints) return;
     const next = Math.max(0, current + delta);
 
-    if (next === 0) delete this.state.skillSpend[key];
-    else this.state.skillSpend[key] = next;
+    if (next === 0) delete this.creationState.skillSpend[key];
+    else this.creationState.skillSpend[key] = next;
     this.render();
   }
 
@@ -331,7 +331,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const key = target.dataset.skill;
     const delta = Number(target.dataset.delta);
     const maximum = Number(target.dataset.maximum) || 0;
-    const allocation = this.state.raceSkillSpend[raceId] ??= {};
+    const allocation = this.creationState.raceSkillSpend[raceId] ??= {};
     const spent = Object.values(allocation).reduce((a, b) => a + b, 0);
     if (delta > 0 && spent >= maximum) return;
     const next = Math.max(0, (allocation[key] ?? 0) + delta);
@@ -341,19 +341,19 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
   }
 
   static async #onReset() {
-    this.state.mainAssign = {};
-    this.state.subAssign = {};
-    this.state.skillSpend = {};
-    this.state.raceSkillSpend = {};
-    this.state.raceMode = "standard";
-    this.state.raceId = null;
-    this.state.ancestryId = null;
-    this.state.hybridType = "";
-    this.state.hybridBreakthroughId = null;
-    this.state.raceMainChoice = "";
-    this.state.raceSubChoice = "";
-    this.state.raceVariant = "";
-    this.state.classId = null;
+    this.creationState.mainAssign = {};
+    this.creationState.subAssign = {};
+    this.creationState.skillSpend = {};
+    this.creationState.raceSkillSpend = {};
+    this.creationState.raceMode = "standard";
+    this.creationState.raceId = null;
+    this.creationState.ancestryId = null;
+    this.creationState.hybridType = "";
+    this.creationState.hybridBreakthroughId = null;
+    this.creationState.raceMainChoice = "";
+    this.creationState.raceSubChoice = "";
+    this.creationState.raceVariant = "";
+    this.creationState.classId = null;
     this.render();
   }
 
@@ -362,7 +362,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
    * race and class documents.
    */
   static async #onFinish() {
-    const s = this.state;
+    const s = this.creationState;
     const actor = this.actor;
     const p = LYRIAN.progression;
 
