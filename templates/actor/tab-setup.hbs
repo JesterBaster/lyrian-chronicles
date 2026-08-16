@@ -1,0 +1,19 @@
+<section class="tab lyr-tab {{tab.cssClass}}" data-tab="setup" data-group="primary" data-application-part="setup">
+  <div class="lyr-reference-overview">
+    <section class="lyr-reference-card lyr-reference-card--wide">
+      <h3>{{localize "LYRIAN.Setup.Title"}}</h3>
+      <p>{{localize "LYRIAN.Setup.Description"}}</p>
+      <div class="lyr-alert">
+        <span>{{localize "LYRIAN.Setup.Warning"}}</span>
+      </div>
+      {{#if editable}}
+        <button type="button" class="lyr-primary lyr-wide" data-action="openCharacterCreation">
+          <i class="fa-solid fa-user-pen"></i>
+          {{localize "LYRIAN.Action.OpenCharacterCreation"}}
+        </button>
+      {{else}}
+        <p class="lyr-note">{{localize "LYRIAN.Setup.RequiresOwner"}}</p>
+      {{/if}}
+    </section>
+  </div>
+</section>
