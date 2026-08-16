@@ -8,7 +8,10 @@ import { confirmItemRequirements } from "../rules/requirements.mjs";
 import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 import { requireActorActionPermission } from "../rules/action-permissions.mjs";
 import { isHybridBreakthrough } from "../rules/hybrid-race.mjs";
-import { abilityWeaponAttackContext } from "../rules/ability-attack.mjs";
+import {
+  abilityWeaponAttackContext,
+  isCriticalHit
+} from "../rules/ability-attack.mjs";
 import { abilityRefused, abilitySucceeded } from "../rules/ability-result.mjs";
 
 /**
@@ -94,7 +97,7 @@ export class LyrianItem extends Item {
     const attackRoll = await new Roll(`1d20 + ${accuracyBonus}`).evaluate();
     const natural = attackRoll.dice[0]?.total ?? 0;
     const critThreshold = this.system.effectiveCrit ?? 20;
-    const isCrit = natural >= critThreshold;
+    const isCrit = isCriticalHit(natural, critThreshold);
 
     // Damage. A critical hit deals maximum damage instead of rolling.
     const { formula, flat } = this.system.getDamageFormula(attackType, power);
@@ -208,7 +211,7 @@ export class LyrianItem extends Item {
       ? null
       : await new Roll(`1d20 + ${weaponContext.accuracyBonus}`).evaluate();
     const natural = attackRoll?.dice[0]?.total ?? 0;
-    const isCrit = !sureHit && natural >= weaponContext.critThreshold;
+    const isCrit = !sureHit && isCriticalHit(natural, weaponContext.critThreshold);
 
     // Use the equipped weapon's damage if the ability rides on a weapon strike.
     let damageFormula = sys.damageFormula;

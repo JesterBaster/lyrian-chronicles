@@ -4,6 +4,7 @@ import path from "node:path";
 import test from "node:test";
 
 import { abilityRefused, abilitySucceeded } from "../module/rules/ability-result.mjs";
+import { isCriticalHit } from "../module/rules/ability-attack.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 
@@ -38,4 +39,12 @@ test("NPCs track Secret Art use per encounter", async () => {
   const itemSource = await readFile(path.join(ROOT, "module/documents/item.mjs"), "utf8");
   assert.match(dataSource, /export class LyrianNPC[\s\S]*schema\.encounter[\s\S]*secretArtUsed/);
   assert.doesNotMatch(itemSource, /isSecretArt && actor\.type === "character"/);
+});
+
+test("weapon, ability, and universal attacks share critical-hit detection", () => {
+  assert.equal(isCriticalHit(20), true);
+  assert.equal(isCriticalHit(19), false);
+  assert.equal(isCriticalHit(19, 19), true);
+  assert.equal(isCriticalHit(18, 19), false);
+  assert.equal(isCriticalHit(undefined), false);
 });

@@ -1,5 +1,6 @@
 import { LYRIAN } from "../config.mjs";
 import { parseMonsterAttackProfile } from "../rules/monster-attack.mjs";
+import { isCriticalHit } from "../rules/ability-attack.mjs";
 import { universalAttackProfile } from "../rules/universal-attack.mjs";
 import { renderAttackCard } from "../rules/attack-card.mjs";
 import {
@@ -367,6 +368,7 @@ export class LyrianActor extends Actor {
 
   /** Roll a basic Light, Heavy, or Precise attack without an equipped weapon. */
   async rollUniversalAttack(attackType = "light", options = {}) {
+    if (this.type !== "character") return null;
     if (!requireActorActionPermission(this)) return null;
     if (!["light", "heavy", "precise"].includes(attackType)) return null;
 
@@ -398,7 +400,7 @@ export class LyrianActor extends Actor {
 
     const attackRoll = await new Roll(`1d20 + ${profile.accuracyBonus}`).evaluate();
     const natural = attackRoll.dice[0]?.total ?? 0;
-    const isCrit = natural >= 20;
+    const isCrit = isCriticalHit(natural);
     const damageRoll = await new Roll(profile.damageFormula, this.getRollData())
       .evaluate({ maximize: isCrit });
     const source = {

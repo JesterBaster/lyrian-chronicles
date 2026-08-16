@@ -14,3 +14,9 @@ export function actorHeaderNeedsRefresh(changes = {}) {
     (system && Object.hasOwn(system, resource))
   );
 }
+
+/** True when ApplicationV2 requested only the persistent actor-sheet header. */
+export function isHeaderOnlyRender(options = {}) {
+  const parts = Array.from(options.parts ?? []);
+  return parts.length === 1 && parts[0] === "header";
+}

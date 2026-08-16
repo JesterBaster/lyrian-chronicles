@@ -16,3 +16,10 @@ export function abilityWeaponAttackContext({
     ranged: weaponDriven ? !!weapon.system?.isRanged : null
   };
 }
+
+/** Apply one shared natural-roll critical threshold across every attack path. */
+export function isCriticalHit(natural, threshold = 20) {
+  const roll = Number(natural);
+  const target = Number(threshold);
+  return Number.isFinite(roll) && Number.isFinite(target) && roll >= target;
+}

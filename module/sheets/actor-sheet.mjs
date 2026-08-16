@@ -20,6 +20,7 @@ import {
   isCraftingMod
 } from "../rules/mod-installation.mjs";
 import { hybridAncestryFamily } from "../rules/hybrid-race.mjs";
+import { isHeaderOnlyRender } from "../rules/sheet-refresh.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -141,6 +142,13 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.editable = this.isEditable;
     context.isGM = game.user.isGM;
     context.systemFields = actor.system.schema.fields;
+
+    // Resource updates repaint only the persistent header. Avoid enriching
+    // biography fields and rebuilding every item/skill bucket for four numbers.
+    if (isHeaderOnlyRender(options)) {
+      if (context.isCharacter) this._prepareWorship(context);
+      return context;
+    }
 
     context.enrichedBiography = await foundry.applications.ux.TextEditor.implementation.enrichHTML(
       actor.system.biography ?? "",
@@ -322,6 +330,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     context.items = buckets;
     context.hasEquippedWeapon = buckets.weapons.some((weapon) => weapon.system.equipped);
+    context.showUniversalAttacks = context.isCharacter && !context.hasEquippedWeapon;
 
     // A deleted target must not make its installed Mod disappear from the sheet.
     const ownedIds = new Set(this.document.items.map((item) => item.id));
