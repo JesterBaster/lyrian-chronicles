@@ -29,9 +29,10 @@ the setup screen.
 3. Settings → Actions → General → Workflow permissions → **Read and write permissions**.
    The workflow needs this to attach files to the release.
 
-You do not need to edit the URLs in `system.json`. The workflow overwrites `version`,
-`manifest`, `download` and `url` from the repository context at build time, so the
-placeholders in the committed file never matter.
+You do not need to edit the release URLs in `system.json` manually. Keep the committed
+manifest valid and internally consistent for local development and pull-request CI.
+When a release is published, the workflow stamps `version`, `manifest`, `download`
+and `url` from the release tag before running the release tests and building assets.
 
 ### Cutting a release
 
