@@ -82,6 +82,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
 
   async _prepareContext() {
     const s = this.creationState;
+    const p = LYRIAN.progression;
     const usedMain = Object.values(s.mainAssign);
     const usedSub = Object.values(s.subAssign);
     const [raceEntries, breakthroughEntries, classes, ...equipmentGroups] = await Promise.all([
