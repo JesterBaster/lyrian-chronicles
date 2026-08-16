@@ -9,6 +9,7 @@ import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 import { requireActorActionPermission } from "../rules/action-permissions.mjs";
 import { isHybridBreakthrough } from "../rules/hybrid-race.mjs";
 import { abilityWeaponAttackContext } from "../rules/ability-attack.mjs";
+import { abilityRefused, abilitySucceeded } from "../rules/ability-result.mjs";
 
 /**
  * The Item document. Weapons and abilities know how to roll themselves.
@@ -133,12 +134,16 @@ export class LyrianItem extends Item {
     if (this.type !== "ability" && this.type !== "monsterAbility") return this.postToChat();
 
     const actor = this.actor;
-    if (!actor) return ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoActor"));
-    if (!requireActorActionPermission(actor)) return null;
+    if (!actor) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoActor"));
+      return abilityRefused("no-actor");
+    }
+    if (!requireActorActionPermission(actor)) return abilityRefused("forbidden");
 
     const action = await runExclusiveActorAction(actor, () => this._rollAbility(options));
     if (!action.started) {
       ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
+      return abilityRefused(action.reason ?? "busy");
     }
     return action.value;
   }
@@ -149,20 +154,22 @@ export class LyrianItem extends Item {
 
     if (!options.ignoreRequirements || !game.user.isGM) {
       const allowed = await confirmItemRequirements(actor, this, options);
-      if (!allowed) return null;
+      if (!allowed) return abilityRefused("requirements");
     }
 
     // Once per round, unless Rapid.
     const enforceOncePerRound = game.settings.get("lyrian-chronicles", "enforceOncePerRound");
     if (enforceOncePerRound && sys.usedThisRound && !sys.isRapid) {
-      return ui.notifications.warn(
+      ui.notifications.warn(
         game.i18n.format("LYRIAN.Warn.AlreadyUsed", { name: this.name })
       );
+      return abilityRefused("already-used");
     }
 
     // One Secret Art per encounter.
-    if (sys.isSecretArt && actor.type === "character" && actor.system.encounter.secretArtUsed) {
-      return ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.SecretArtSpent"));
+    if (sys.isSecretArt && actor.system.encounter?.secretArtUsed) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.SecretArtSpent"));
+      return abilityRefused("secret-art-spent");
     }
 
     if (!options.free) {
@@ -171,19 +178,22 @@ export class LyrianItem extends Item {
         rp: sys.rpCost,
         mana: sys.manaCost
       });
-      if (!paid) return;
+      if (!paid) return abilityRefused("payment");
     }
 
     const updates = {};
     if (enforceOncePerRound && !sys.isRapid) updates["system.usedThisRound"] = true;
     if (Object.keys(updates).length) await this.update(updates);
 
-    if (sys.isSecretArt && actor.type === "character") {
+    if (sys.isSecretArt) {
       await actor.update({ "system.encounter.secretArtUsed": true });
     }
 
     // No attack payload: just describe the ability in chat.
-    if (!sys.hasAttack) return this.postToChat();
+    if (!sys.hasAttack) {
+      const message = await this.postToChat();
+      return abilitySucceeded({ message });
+    }
 
     const profile = LYRIAN.attackTypes[sys.attackType];
     const weaponContext = abilityWeaponAttackContext({
@@ -212,7 +222,7 @@ export class LyrianItem extends Item {
       ? await new Roll(damageFormula, this.getRollData()).evaluate({ maximize: isCrit })
       : null;
 
-    await renderAttackCard({
+    const message = await renderAttackCard({
       actor,
       source: this,
       attackType: sys.attackType,
@@ -229,7 +239,7 @@ export class LyrianItem extends Item {
       keywords: sys.keywords
     });
 
-    return { attackRoll, damageRoll, isCrit };
+    return abilitySucceeded({ attackRoll, damageRoll, isCrit, message });
   }
 
   /* -------------------------------------------- */
@@ -239,9 +249,21 @@ export class LyrianItem extends Item {
   /** Post a plain description card for items with no roll. */
   async postToChat() {
     if (!requireActorActionPermission(this.actor)) return null;
+    const enrichHTML = foundry.applications.ux.TextEditor.implementation.enrichHTML;
+    const enrichOptions = { relativeTo: this, rollData: this.getRollData() };
+    const [enrichedDescription, enrichedRequirement] = await Promise.all([
+      enrichHTML(this.system.description ?? "", enrichOptions),
+      enrichHTML(this.system.requirements ?? this.system.requirement ?? "", enrichOptions)
+    ]);
     const content = await foundry.applications.handlebars.renderTemplate(
       "systems/lyrian-chronicles/templates/chat/item-card.hbs",
-      { item: this, actor: this.actor, system: this.system }
+      {
+        item: this,
+        actor: this.actor,
+        system: this.system,
+        enrichedDescription,
+        enrichedRequirement
+      }
     );
 
     return ChatMessage.create({

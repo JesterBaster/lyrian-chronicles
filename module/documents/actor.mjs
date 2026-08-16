@@ -515,10 +515,10 @@ export class LyrianActor extends Actor {
   async startEncounter() {
     const update = {
       "system.ap.value": this.system.ap.max,
-      "system.rp.value": this.system.rp.max
+      "system.rp.value": this.system.rp.max,
+      "system.encounter.secretArtUsed": false
     };
     if (this.type === "character") {
-      update["system.encounter.secretArtUsed"] = false;
       update["system.encounter.encounterStartUsed"] = false;
       update["system.encounter.conclusionUsed"] = false;
       update["system.encounter.downedThisEncounter"] = 0;
@@ -622,7 +622,7 @@ export class LyrianActor extends Actor {
     if (hp <= -max) {
       await this.toggleStatusEffect("downed", { active: true });
       await this.toggleStatusEffect("mortalWound", { active: true });
-      ChatMessage.create({
+      await ChatMessage.create({
         speaker: ChatMessage.getSpeaker({ actor: this }),
         content: `<p><strong>${this.name}</strong> ${game.i18n.localize("LYRIAN.Msg.MortallyWounded")}</p>`
       });
@@ -643,7 +643,7 @@ export class LyrianActor extends Actor {
         });
       }
       Hooks.callAll("lyrianDowned", this);
-      ChatMessage.create({
+      await ChatMessage.create({
         speaker: ChatMessage.getSpeaker({ actor: this }),
         content: `<p><strong>${this.name}</strong> ${game.i18n.localize("LYRIAN.Msg.Downed")}</p>`
       });
@@ -728,7 +728,7 @@ export class LyrianActor extends Actor {
       return false;
     }
     await this.update({ "system.interlude.points": available - points });
-    ChatMessage.create({
+    await ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor: this }),
       content: `<p>${game.i18n.format("LYRIAN.Msg.InterludeSpent", {
         name: this.name,
@@ -768,7 +768,7 @@ export class LyrianActor extends Actor {
       (t) => t.threshold > before && t.threshold <= after
     );
     if (crossed) {
-      ChatMessage.create({
+      await ChatMessage.create({
         speaker: ChatMessage.getSpeaker({ actor: this }),
         content: `<p class="lyrian-banner">${game.i18n.format("LYRIAN.Msg.TierReached", {
           name: this.name, tier: game.i18n.localize(crossed.label)
@@ -776,7 +776,7 @@ export class LyrianActor extends Actor {
       });
     }
 
-    ChatMessage.create({
+    await ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor: this }),
       content: `<p>${game.i18n.format("LYRIAN.Msg.ExpSpent", {
         name: this.name,
@@ -805,7 +805,7 @@ export class LyrianActor extends Actor {
     if (!paid) return;
 
     await injury.delete();
-    ChatMessage.create({
+    await ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor: this }),
       content: `<p>${game.i18n.format("LYRIAN.Msg.InjuryHealed", {
         name: this.name, injury: injury.name
@@ -830,7 +830,7 @@ export class LyrianActor extends Actor {
     await this.toggleStatusEffect("downed", { active: false });
     await this.toggleStatusEffect("mortalWound", { active: false });
 
-    ChatMessage.create({
+    await ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor: this }),
       content: `<p>${game.i18n.format("LYRIAN.Msg.Rested", {
         name: this.name, hp: tempHp, mana: tempMana
