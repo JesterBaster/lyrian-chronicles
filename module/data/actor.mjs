@@ -485,6 +485,10 @@ export class LyrianNPC extends LyrianActorBase {
       weakAgainst: new fields.StringField({ blank: true, initial: "" })
     });
 
+    schema.encounter = new fields.SchemaField({
+      secretArtUsed: new fields.BooleanField({ initial: false })
+    });
+
     schema.gatherables = new fields.StringField({ blank: true, initial: "" });
     schema.tactics = new fields.HTMLField({ required: false, blank: true });
     schema.runningMonster = new fields.HTMLField({ required: false, blank: true });

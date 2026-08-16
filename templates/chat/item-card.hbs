@@ -7,6 +7,6 @@
     </div>
   </header>
   {{#if system.range}}<p class="lyrian-card__line"><strong>{{localize "LYRIAN.UI.Range"}}</strong> {{system.range}}</p>{{/if}}
-  {{#if system.requirement}}<p class="lyrian-card__line"><strong>{{localize "LYRIAN.UI.Requirement"}}</strong> {{system.requirement}}</p>{{/if}}
-  <div class="lyrian-card__text">{{{system.description}}}</div>
+  {{#if enrichedRequirement}}<div class="lyrian-card__line"><strong>{{localize "LYRIAN.UI.Requirement"}}</strong> {{{enrichedRequirement}}}</div>{{/if}}
+  <div class="lyrian-card__text">{{{enrichedDescription}}}</div>
 </div>

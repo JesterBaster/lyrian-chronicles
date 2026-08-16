@@ -42,7 +42,7 @@ export class LyrianCombat extends Combat {
     for (const combatant of this.combatants) {
       await combatant.actor?.startEncounter?.();
     }
-    ChatMessage.create({
+    await ChatMessage.create({
       content: `<p class="lyrian-banner">${game.i18n.localize("LYRIAN.Msg.EncounterStart")}</p>`
     });
     return result;
@@ -58,7 +58,7 @@ export class LyrianCombat extends Combat {
 
   /** @override */
   async endCombat() {
-    ChatMessage.create({
+    await ChatMessage.create({
       content: `<p class="lyrian-banner">${game.i18n.localize("LYRIAN.Msg.EncounterConclusion")}</p>`
     });
     return super.endCombat();
