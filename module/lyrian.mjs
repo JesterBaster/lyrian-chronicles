@@ -24,6 +24,7 @@ import { LyrianAPI } from "./api.mjs";
 import { seedSystemPacks, resetSystemPacks } from "./content/seed-packs.mjs";
 import { runCharacterCreation } from "./apps/character-creation.mjs";
 import { resolveDefence } from "./rules/defence-resolution.mjs";
+import { resolvedAttackFlagUpdate } from "./rules/resolved-attacks.mjs";
 import {
   actionLockWarningKey,
   initializeActionTransactions,
@@ -317,13 +318,14 @@ async function onChatAction(event, message) {
         return { cancelled: true };
       }
 
-      // Store the claim on the defender, which its owner can update even when the
-      // attacker's ChatMessage belongs to another user. Keep only recent claims.
-      const recent = Object.fromEntries(Object.entries(resolved).slice(-49));
-      await actor.setFlag(SYSTEM_ID, "resolvedAttacks", {
-        ...recent,
-        [message.id]: { defence, at: Date.now() }
-      });
+      // Store the claim on the defender and explicitly delete old keys.
+      // Foundry merges flag objects, so setFlag alone cannot prune omitted entries.
+      await actor.update(resolvedAttackFlagUpdate({
+        systemId: SYSTEM_ID,
+        resolved,
+        messageId: message.id,
+        value: { defence, at: Date.now() }
+      }));
 
       if (!outcome.hits) {
         await ChatMessage.create({

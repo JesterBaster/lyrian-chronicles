@@ -1,6 +1,6 @@
 const SYSTEM_ID = "lyrian-chronicles";
 const SOCKET_NAMESPACE = `system.${SYSTEM_ID}`;
-const PROTOCOL = 1;
+const PROTOCOL = 2;
 const DEFAULT_REQUEST_TIMEOUT = 10_000;
 const DEFAULT_LEASE_DURATION = 15_000;
 const HEARTBEAT_INTERVAL = 5_000;
@@ -11,6 +11,8 @@ const pendingLockRequests = new Map();
 
 let requestCounter = 0;
 let runtime = null;
+let observedAuthorityId = null;
+let authorityReadyAt = 0;
 
 /** Pick one active GM deterministically so every client uses the same authority. */
 export function selectActionAuthority(users) {
@@ -98,20 +100,12 @@ export function actorActionFingerprint(actor) {
     .filter((item) => ["ability", "monsterAbility"].includes(item.type))
     .map((item) => [item.id, Boolean(item.system?.usedThisRound)])
     .sort(([a], [b]) => String(a).localeCompare(String(b)));
-  const resolvedAttacks = actor.getFlag?.(SYSTEM_ID, "resolvedAttacks")
-    ?? actor.flags?.[SYSTEM_ID]?.resolvedAttacks
-    ?? {};
-  const resolvedCards = Object.entries(resolvedAttacks)
-    .sort(([a], [b]) => String(a).localeCompare(String(b)))
-    .map(([id, value]) => [id, value?.defence ?? "", Number(value?.at ?? 0)]);
-
   return JSON.stringify({
     resources,
     encounter: {
       secretArtUsed: Boolean(system.encounter?.secretArtUsed)
     },
-    itemLocks,
-    resolvedCards
+    itemLocks
   });
 }
 
@@ -125,12 +119,33 @@ function emit(payload) {
 }
 
 function currentAuthority() {
-  return selectActionAuthority(runtime?.users?.());
+  const authority = selectActionAuthority(runtime?.users?.());
+  const authorityId = authority?.id ?? null;
+  if (observedAuthorityId !== null && authorityId !== observedAuthorityId) {
+    registry.clear();
+    authorityReadyAt = (runtime?.now?.() ?? Date.now()) + DEFAULT_LEASE_DURATION;
+  }
+  observedAuthorityId = authorityId;
+  return authority;
+}
+
+function authorityAcceptingLocks() {
+  return (runtime?.now?.() ?? Date.now()) >= authorityReadyAt;
 }
 
 function isCurrentAuthority() {
   const authority = currentAuthority();
   return Boolean(authority && authority.id === runtime?.user?.()?.id);
+}
+
+function userById(userId) {
+  return Array.from(runtime?.users?.() ?? []).find((user) => user?.id === userId) ?? null;
+}
+
+function canUserActForActor(user, actor) {
+  if (!user?.active || !actor) return false;
+  if (user.isGM) return true;
+  return Boolean(actor.testUserPermission?.(user, "OWNER"));
 }
 
 function respondToLockRequest(message, result) {
@@ -148,9 +163,8 @@ async function onSocketMessage(message) {
 
   if (message.type === "lock-request") {
     if (!isCurrentAuthority()) return;
-    const result = registry.acquire(message.actorUuid, message.requestId, message.userId);
-    if (!result.granted) {
-      respondToLockRequest(message, result);
+    if (!authorityAcceptingLocks()) {
+      respondToLockRequest(message, { granted: false, reason: "failover" });
       return;
     }
 
@@ -160,11 +174,17 @@ async function onSocketMessage(message) {
     } catch (error) {
       console.error("Lyrian Chronicles | Could not resolve actor for action lock", error);
     }
-    if (!actor || actorActionFingerprint(actor) !== message.state) {
-      registry.release(message.actorUuid, message.requestId, message.userId, result.token);
-      respondToLockRequest(message, { granted: false, reason: actor ? "stale" : "invalid" });
+    const requester = userById(message.userId);
+    if (!actor || !canUserActForActor(requester, actor)) {
+      respondToLockRequest(message, { granted: false, reason: "forbidden" });
       return;
     }
+    if (actorActionFingerprint(actor) !== message.state) {
+      respondToLockRequest(message, { granted: false, reason: "stale" });
+      return;
+    }
+
+    const result = registry.acquire(message.actorUuid, message.requestId, message.userId);
     respondToLockRequest(message, result);
     return;
   }
@@ -192,7 +212,14 @@ async function onSocketMessage(message) {
 }
 
 /** Register the Foundry system socket listener after the world is ready. */
-export function initializeActionTransactions({ socket, users, user, resolveUuid, requestTimeout } = {}) {
+export function initializeActionTransactions({
+  socket,
+  users,
+  user,
+  resolveUuid,
+  requestTimeout,
+  now = () => Date.now()
+} = {}) {
   runtime?.socket?.off?.(SOCKET_NAMESPACE, onSocketMessage);
 
   runtime = {
@@ -200,8 +227,11 @@ export function initializeActionTransactions({ socket, users, user, resolveUuid,
     users: typeof users === "function" ? users : () => users,
     user: typeof user === "function" ? user : () => user,
     resolveUuid,
+    now,
     requestTimeout: Number(requestTimeout) > 0 ? Number(requestTimeout) : DEFAULT_REQUEST_TIMEOUT
   };
+  observedAuthorityId = selectActionAuthority(runtime.users())?.id ?? null;
+  authorityReadyAt = 0;
   if (!runtime.socket) return false;
   socket.on(SOCKET_NAMESPACE, onSocketMessage);
   return true;
@@ -216,6 +246,8 @@ export function resetActionTransactions() {
   registry.clear();
   runtime?.socket?.off?.(SOCKET_NAMESPACE, onSocketMessage);
   runtime = null;
+  observedAuthorityId = null;
+  authorityReadyAt = 0;
 }
 
 async function acquireAuthoritativeLock(actor) {
@@ -228,6 +260,8 @@ async function acquireAuthoritativeLock(actor) {
   const actorUuid = actor?.uuid;
   const requestId = nextRequestId(user.id);
   if (!actorUuid) return { granted: false, reason: "invalid" };
+
+  if (!authorityAcceptingLocks()) return { granted: false, reason: "failover" };
 
   if (authority.id === user.id) {
     const result = registry.acquire(actorUuid, requestId, user.id);
