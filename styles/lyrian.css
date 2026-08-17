@@ -541,7 +541,12 @@
   color: var(--lyr-ink);
 }
 /* Search filtering hides entries, emptied tier groups, and the no-match note. */
-.lyrian .is-filtered { display: none; }
+/* Utility, so it has to beat component display rules. `.lyrian .lyr-pick`
+   sets display:flex at the same specificity and is declared later, which
+   silently won and left every searched entry visible. Marked important
+   rather than reordered, because source order is not a property a rule
+   added later would preserve. */
+.lyrian .is-filtered { display: none !important; }
 .lyrian .lyr-pick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 0.45rem; }
 .lyrian .lyr-pick {
   position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.25rem;

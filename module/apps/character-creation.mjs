@@ -2,6 +2,7 @@ import { LYRIAN } from "../config.mjs";
 import { normalizeClassLevel, raceSkillGrant } from "../rules/progression.mjs";
 import { convertOfficialEquipment } from "../rules/equipment-import.mjs";
 import { captureScroll, restoreScroll } from "../rules/scroll-state.mjs";
+import { matchesSearch } from "../rules/search-filter.mjs";
 import {
   HYBRID_TYPES,
   hybridAncestryFamily,
@@ -506,11 +507,10 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
   _applySearch(list) {
     const scope = this.element.querySelector(`[data-search-scope="${list}"]`);
     if (!scope) return;
-    const query = String(this.searchQueries[list] ?? "").trim().toLowerCase();
+    const query = this.searchQueries[list];
 
     for (const entry of scope.querySelectorAll("[data-search-name]")) {
-      const match = !query || entry.dataset.searchName.toLowerCase().includes(query);
-      entry.classList.toggle("is-filtered", !match);
+      entry.classList.toggle("is-filtered", !matchesSearch(entry.dataset.searchName, query));
     }
     // A tier heading with everything filtered out from under it is just noise.
     for (const group of scope.querySelectorAll("[data-search-group]")) {
