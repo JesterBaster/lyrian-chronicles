@@ -121,8 +121,8 @@ export function applyCreationInput(state, target = {}) {
 /**
  * Guided character creation.
  *
- * Walks the rulebook character-creation decisions in order: race, stats and
- * skills, breakthroughs, class, equipment, then an inventory review. Everything
+ * Walks the rulebook character-creation decisions in order: race, class and
+ * levels, breakthroughs, stats and skills, equipment, then review. Everything
  * it does is a normal document update, so a GM who prefers to build by hand can
  * ignore it entirely.
  */
