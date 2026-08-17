@@ -535,6 +535,13 @@
 .lyrian .lyr-assign-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.45rem; }
 .lyrian .lyr-assign { display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.68rem; font-variant: small-caps; letter-spacing: 0.06em; color: var(--lyr-ink-dim); }
 .lyrian .lyr-assign select { font-family: var(--lyr-font-num); }
+.lyrian .lyr-search {
+  width: 100%; margin: 0 0 0.5rem; padding: 0.35rem 0.5rem; font-size: 0.78rem;
+  background: var(--lyr-plate); border: 1px solid var(--lyr-rule); border-radius: var(--lyr-radius);
+  color: var(--lyr-ink);
+}
+/* Search filtering hides entries, emptied tier groups, and the no-match note. */
+.lyrian .is-filtered { display: none; }
 .lyrian .lyr-pick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 0.45rem; }
 .lyrian .lyr-pick {
   position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.25rem;

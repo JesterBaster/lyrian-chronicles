@@ -250,3 +250,43 @@ test("Faerie-Chimera wizard always offers the opposite ancestry family", async (
   assert.ok(context.ancestries.every((entry) => entry.system.primaryRace === "Fae"));
   assert.equal(context.raceComplete, true);
 });
+
+test("wizard groups classes by tier, ascending and alphabetical within a tier", async () => {
+  const app = creation();
+  const context = await app._prepareContext();
+
+  assert.deepEqual(context.classGroups.map((group) => group.tier), [1, 2, 3]);
+
+  // Grouping must not drop or duplicate a class.
+  const grouped = context.classGroups.flatMap((group) => group.classes);
+  assert.equal(grouped.length, context.classes.length);
+  assert.equal(new Set(grouped.map((entry) => entry.id)).size, context.classes.length);
+
+  for (const group of context.classGroups) {
+    for (const entry of group.classes) {
+      assert.equal(Math.max(1, Number(entry.system.tier) || 1), group.tier);
+    }
+    const names = group.classes.map((entry) => entry.name);
+    assert.deepEqual(names, [...names].sort((a, b) => a.localeCompare(b)));
+  }
+});
+
+test("classes with a missing or invalid tier fall into tier 1", async () => {
+  const app = creation();
+  const originalPackIndex = app._packIndex;
+  app._packIndex = async (pack) => {
+    if (pack !== "classes") return originalPackIndex(pack);
+    return [
+      { id: "no-tier", name: "Untiered", img: "", system: {} },
+      { id: "bad-tier", name: "Broken", img: "", system: { tier: "not a number" } },
+      { id: "tier-two", name: "Second", img: "", system: { tier: 2 } }
+    ];
+  };
+
+  const context = await app._prepareContext();
+  assert.deepEqual(context.classGroups.map((group) => group.tier), [1, 2]);
+  assert.deepEqual(
+    context.classGroups[0].classes.map((entry) => entry.id).sort(),
+    ["bad-tier", "no-tier"]
+  );
+});
