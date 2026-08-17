@@ -750,5 +750,6 @@
   "LYRIAN.Creation.StartingClimRemaining": "Clim remaining",
   "LYRIAN.Creation.NoEquipmentSelected": "No starting equipment selected.",
   "LYRIAN.Creation.Add": "Add",
-  "LYRIAN.Creation.Remove": "Remove"
+  "LYRIAN.Creation.Remove": "Remove",
+  "LYRIAN.Creation.Incomplete": "Complete the race, stats and skills, class, and all starting budgets before applying the character."
 }
