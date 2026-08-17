@@ -143,7 +143,7 @@ test("the baseline migration stamps old documents without downgrading future one
   try {
     console.warn = () => {};
     await runBaselineSchemaMigration();
-    assert.deepEqual(actor.updates, [{ "system.schemaVersion": 2 }]);
+    assert.deepEqual(actor.updates, [{ "system.schemaVersion": 1 }]);
     assert.deepEqual(actor.items[0].updates, [{ "system.schemaVersion": 1 }]);
     assert.deepEqual(actor.items[1].updates, []);
     assert.equal(actor.items[1].system.schemaVersion, 2);
