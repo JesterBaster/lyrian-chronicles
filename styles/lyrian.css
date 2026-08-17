@@ -693,3 +693,29 @@
 .lyrian-card.lyr-check-card .lyr-check-card__outcome.is-failure { border-color: var(--lyr-hp); }
 .lyrian-card.lyr-check-card .lyr-check-card__dc { color: var(--lyr-ink-dim); font-variant: small-caps; letter-spacing: 0.05em; }
 .lyrian-card.lyr-check-card .dice-roll { margin-top: 0.4rem; }
+
+/* --------------------------------------------------------------------------
+   Foldable sections
+   -------------------------------------------------------------------------- */
+
+/* Native <details>, so folding works without script and stays keyboard
+   reachable. The marker is replaced with a caret that sits before the
+   existing heading rather than shifting it. */
+.lyrian .lyr-fold > summary {
+  cursor: pointer; list-style: none;
+  display: flex; align-items: center; gap: 0.4rem;
+}
+.lyrian .lyr-fold > summary::-webkit-details-marker { display: none; }
+.lyrian .lyr-fold > summary::before {
+  content: "\f0da"; /* fa-caret-right */
+  font-family: "Font Awesome 6 Free", "Font Awesome 5 Free"; font-weight: 900;
+  font-size: 0.75rem; color: var(--lyr-gold-dim); flex: 0 0 auto;
+  transition: transform 120ms ease;
+}
+.lyrian .lyr-fold[open] > summary::before { transform: rotate(90deg); }
+.lyrian .lyr-fold > summary:hover::before { color: var(--lyr-gold-bright); }
+/* The heading inside a summary keeps its own styling but must not force a
+   line of its own, or the caret and count wrap away from the title. */
+.lyrian .lyr-fold > summary > h2,
+.lyrian .lyr-fold > summary > h3 { margin: 0; flex: 1 1 auto; }
+.lyrian .lyr-fold > summary > button { flex: 0 0 auto; }

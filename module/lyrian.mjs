@@ -28,6 +28,7 @@ import { resolvedAttackFlagUpdate } from "./rules/resolved-attacks.mjs";
 import { boundedDamage, legitimateAttackProfile } from "./rules/attack-verification.mjs";
 import { actorHeaderNeedsRefresh } from "./rules/sheet-refresh.mjs";
 import { normalizeHealingAmount } from "./rules/healing.mjs";
+import { isCollapsed } from "./rules/collapsible.mjs";
 import {
   actionLockWarningKey,
   initializeActionTransactions,
@@ -258,6 +259,13 @@ function registerHandlebarsHelpers() {
     const entry = CONFIG.LYRIAN[table]?.[key];
     const label = typeof entry === "string" ? entry : entry?.label;
     return label ? game.i18n.localize(label) : key;
+  });
+
+  // Emits the `open` attribute, so a section renders already folded rather
+  // than flashing open and snapping shut once a render hook runs.
+  Handlebars.registerHelper("lyrianSectionOpen", (scope, id) => {
+    const state = game.user?.getFlag(SYSTEM_ID, "collapsedSections") ?? {};
+    return isCollapsed(state, scope, id) ? "" : "open";
   });
 
   if (!Handlebars.helpers.array) {
