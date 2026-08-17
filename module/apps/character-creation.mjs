@@ -21,6 +21,13 @@ function numberFrom(value) {
   return match ? Number(match[0]) : 0;
 }
 
+function itemList(collection = []) {
+  if (Array.isArray(collection)) return collection;
+  if (Array.isArray(collection.contents)) return collection.contents;
+  if (typeof collection.values === "function") return [...collection.values()];
+  return Array.from(collection);
+}
+
 /** Return the official compendium equipment ID preserved on an embedded item. */
 export function officialEquipmentSourceId(item = {}) {
   return item.getFlag?.("lyrian-chronicles", "officialEquipment")?.sourceItemId ??
@@ -39,7 +46,7 @@ export function wizardEquipmentPlan({
   previouslyApplied = false
 } = {}) {
   const existingSourceIds = new Set(
-    Array.from(actorItems).map(officialEquipmentSourceId).filter(Boolean)
+    itemList(actorItems).map(officialEquipmentSourceId).filter(Boolean)
   );
   const selectedAlreadyOwned = equipmentDocs.filter((doc) => existingSourceIds.has(doc.id));
   const newDocs = equipmentDocs.filter((doc) => !existingSourceIds.has(doc.id));
@@ -63,7 +70,7 @@ export async function reconcileWizardClass({
   toCreate = []
 } = {}) {
   const level = normalizeClassLevel(classLevel);
-  const existing = Array.from(actorItems).find(
+  const existing = itemList(actorItems).find(
     (item) => item.type === "class" && item.system?.stableId === classDoc?.system?.stableId
   );
   if (existing) {
@@ -683,8 +690,8 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       toCreate.push(breakthroughData);
     }
 
-    const hasWizardCore = actor.items.some((item) => item.type === "race") &&
-      actor.items.some((item) => item.type === "class");
+    const hasWizardCore = Boolean(actor.items.find((item) => item.type === "race")) &&
+      Boolean(actor.items.find((item) => item.type === "class"));
     const equipmentPlan = wizardEquipmentPlan({
       actorItems: actor.items,
       equipmentDocs,
