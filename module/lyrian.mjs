@@ -237,6 +237,7 @@ async function preloadTemplates() {
     "item/body",
     "item/description",
     "chat/attack-card",
+    "chat/check-card",
     "chat/craft-card",
     "chat/healing-card",
     "chat/item-card"

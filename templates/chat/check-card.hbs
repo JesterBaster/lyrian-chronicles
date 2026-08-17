@@ -1,0 +1,30 @@
+<div class="lyrian-card lyr-check-card">
+  <header class="lyrian-card__head">
+    <div>
+      <h3>{{title}}</h3>
+      <span class="lyrian-card__sub">{{roll.formula}}</span>
+    </div>
+    <div class="lyr-check-card__total {{#if outcome}}{{#if outcome.success}}is-success{{else}}is-failure{{/if}}{{/if}}">
+      {{roll.total}}
+    </div>
+  </header>
+
+  {{#if outcome}}
+    <div class="lyr-check-card__outcome {{#if outcome.success}}is-success{{else}}is-failure{{/if}}">
+      <span class="lyr-check-card__dc">{{localize "LYRIAN.UI.DC"}} {{outcome.dc}}</span>
+      <strong>
+        {{#if outcome.success}}
+          {{localize "LYRIAN.Roll.Success"}}
+        {{else}}
+          {{localize "LYRIAN.Roll.Failure"}}
+        {{/if}}
+      </strong>
+    </div>
+  {{/if}}
+
+  <div class="dice-roll">
+    <div class="dice-result">
+      {{{tooltip}}}
+    </div>
+  </div>
+</div>
