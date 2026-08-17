@@ -767,5 +767,6 @@
   "LYRIAN.Creation.Check.Stats": "Main and sub stats",
   "LYRIAN.Creation.Check.Skills": "Starting and racial skill points",
   "LYRIAN.Creation.Check.Equipment": "Equipment Clim budget",
-  "LYRIAN.Creation.IncompleteDetail": "Cannot apply yet. Complete: {missing}."
+  "LYRIAN.Creation.IncompleteDetail": "Cannot apply yet. Complete: {missing}.",
+  "LYRIAN.Warn.AttackSourceUnverified": "This attack cannot be verified from its original actor and source. A GM must resolve this legacy or missing-source card."
 }
