@@ -26,7 +26,11 @@ globalThis.game = {
   packs: new Map()
 };
 
-const { LyrianCharacterCreation } = await import("../module/apps/character-creation.mjs");
+const {
+  LyrianCharacterCreation,
+  applyCreationInput,
+  creationClassCost
+} = await import("../module/apps/character-creation.mjs");
 
 function indexEntry(entry) {
   return {
@@ -65,34 +69,39 @@ test("wizard creation data does not overwrite ApplicationV2 render state", () =>
 });
 
 
-test("wizard binds stat and class controls after the ApplicationV2 render", async () => {
+test("wizard native form state updates stats, class, and class level", () => {
   const app = creation();
-  const handlers = {};
-  const statSelect = {
-    dataset: { assign: "main", stat: "power" },
-    value: "5",
-    addEventListener: (type, handler) => { handlers.stat = handler; }
-  };
-  const classRadio = {
-    name: "classId",
-    value: classes[0]._id,
-    addEventListener: (type, handler) => { handlers.class = handler; }
-  };
-  app.element = {
-    querySelectorAll: (selector) => {
-      if (selector === "[data-assign]") return [statSelect];
-      if (selector.includes("classId")) return [classRadio];
-      return [];
-    }
-  };
-  app.render = () => {};
-
-  await app._onRender({}, {});
-  handlers.stat({ target: statSelect });
-  handlers.class({ target: classRadio });
+  applyCreationInput(app.creationState, { name: "mainAssign.power", value: "5" });
+  applyCreationInput(app.creationState, { name: "subAssign.cunning", value: "4" });
+  applyCreationInput(app.creationState, { name: "classId", value: classes[0]._id });
+  applyCreationInput(app.creationState, { name: "classLevel", value: "6" });
 
   assert.equal(app.creationState.mainAssign.power, 5);
+  assert.equal(app.creationState.subAssign.cunning, 4);
   assert.equal(app.creationState.classId, classes[0]._id);
+  assert.equal(app.creationState.classLevel, 6);
+
+  applyCreationInput(app.creationState, { name: "mainAssign.power", value: "" });
+  assert.equal("power" in app.creationState.mainAssign, false);
+});
+
+test("class creation cost includes unlock and chosen levels", () => {
+  assert.equal(creationClassCost({ tier: 1 }, 1), 100);
+  assert.equal(creationClassCost({ tier: 1 }, 8), 800);
+  assert.equal(creationClassCost({ tier: 3 }, 4), 600);
+});
+
+test("wizard template uses the requested order and keeps Apply clickable", async () => {
+  const template = await readFile(
+    path.join(ROOT, "templates", "apps", "character-creation.hbs"), "utf8"
+  );
+  const order = [
+    '"race"', '"classes"', '"breakthroughs"', '"stats"', '"equipment"', '"review"'
+  ].map((step) => template.indexOf(step));
+  assert.ok(order.every((position) => position >= 0));
+  assert.deepEqual([...order].sort((a, b) => a - b), order);
+  assert.match(template, /data-action="finish"/);
+  assert.doesNotMatch(template, /data-action="finish"[^>]*disabled/);
 });
 
 test("wizard context tracks optional Breakthrough and equipment budgets", async () => {
