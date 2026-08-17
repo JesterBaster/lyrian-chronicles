@@ -195,6 +195,10 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     super(options);
     this.actor = actor;
 
+    // Search text is deliberately kept off creationState: it filters the view
+    // only, and must not survive a reset or count towards a finished wizard.
+    this.searchQueries = { classes: "", breakthroughs: "", equipment: "" };
+
     const p = LYRIAN.progression;
     this.creationState = {
       step: "race",
@@ -346,6 +350,20 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const skillsComplete = skillPointsLeft === 0 &&
       raceSkillPools.every((pool) => pool.remaining === 0);
     const selectedClass = classes.find((entry) => entry.id === s.classId) ?? null;
+    // Classes are grouped by their own tier so the list reads as a progression
+    // ladder rather than one long alphabetical run.
+    const classGroups = Array.from(
+      classes.reduce((groups, entry) => {
+        const tier = Math.max(1, Number(entry.system.tier) || 1);
+        if (!groups.has(tier)) groups.set(tier, []);
+        groups.get(tier).push(entry);
+        return groups;
+      }, new Map()),
+      ([tier, entries]) => ({
+        tier,
+        classes: entries.sort((a, b) => a.name.localeCompare(b.name))
+      })
+    ).sort((a, b) => a.tier - b.tier);
     const classLevel = normalizeClassLevel(s.classLevel);
     const classCost = selectedClass ? creationClassCost(selectedClass.system, classLevel) : 0;
     const classLevels = Array.from({ length: p.maxClassLevel }, (_, index) => {
@@ -416,6 +434,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       mainStatChoices: Object.entries(LYRIAN.mainStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
       subStatChoices: Object.entries(LYRIAN.subStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
       classes,
+      classGroups,
       selectedClass,
       classLevel,
       classLevels,
@@ -446,6 +465,50 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       subArray: LYRIAN.subStatArray.join(", "),
       isStep: (id) => s.step === id
     };
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Wire the pick-list search boxes.
+   *
+   * Filtering runs against the DOM instead of the form pipeline on purpose: the
+   * wizard re-renders on every form change, so routing search text through it
+   * would tear the input out from under the cursor on each keystroke.
+   */
+  _onRender(context, options) {
+    super._onRender?.(context, options);
+    for (const input of this.element.querySelectorAll("[data-search-list]")) {
+      const list = input.dataset.searchList;
+      input.value = this.searchQueries[list] ?? "";
+      input.addEventListener("input", () => {
+        this.searchQueries[list] = input.value;
+        this._applySearch(list);
+      });
+      this._applySearch(list);
+    }
+  }
+
+  /** Hide entries that do not match the stored query, plus any emptied group. */
+  _applySearch(list) {
+    const scope = this.element.querySelector(`[data-search-scope="${list}"]`);
+    if (!scope) return;
+    const query = String(this.searchQueries[list] ?? "").trim().toLowerCase();
+
+    for (const entry of scope.querySelectorAll("[data-search-name]")) {
+      const match = !query || entry.dataset.searchName.toLowerCase().includes(query);
+      entry.classList.toggle("is-filtered", !match);
+    }
+    // A tier heading with everything filtered out from under it is just noise.
+    for (const group of scope.querySelectorAll("[data-search-group]")) {
+      const remaining = group.querySelectorAll("[data-search-name]:not(.is-filtered)").length;
+      group.classList.toggle("is-filtered", remaining === 0);
+    }
+    const noMatches = scope.querySelector("[data-search-empty]");
+    if (noMatches) {
+      const remaining = scope.querySelectorAll("[data-search-name]:not(.is-filtered)").length;
+      noMatches.classList.toggle("is-filtered", remaining > 0);
+    }
   }
 
   /* -------------------------------------------- */

@@ -122,14 +122,26 @@
       <h2 class="lyr-heading">{{localize "LYRIAN.Creation.StartingClass"}}</h2>
       <p class="lyr-note">{{localize "LYRIAN.Creation.StartingBudget" classExp=config.progression.startingClassExp breakthroughExp=config.progression.startingBreakthroughExp classCost=config.progression.classCostPerTier}}</p>
       {{#if classes.length}}
-        <div class="lyr-pick-grid">
-          {{#each classes as |cls|}}
-            <label class="lyr-pick {{#if (eq ../state.classId cls.id)}}is-picked{{/if}}">
-              <input type="radio" name="classId" value="{{cls.id}}" {{#if (eq ../state.classId cls.id)}}checked{{/if}} />
-              <img src="{{cls.img}}" alt="" />
-              <span>{{cls.name}}</span>
-            </label>
+        <input type="search" class="lyr-search" data-search-list="classes"
+               placeholder="{{localize "LYRIAN.Creation.SearchClasses"}}"
+               aria-label="{{localize "LYRIAN.Creation.SearchClasses"}}" />
+        <div data-search-scope="classes">
+          {{#each classGroups as |group|}}
+            <div data-search-group>
+              <h3 class="lyr-subheading">{{localize "LYRIAN.Creation.ClassTier" tier=group.tier}}</h3>
+              <div class="lyr-pick-grid">
+                {{#each group.classes as |cls|}}
+                  <label class="lyr-pick {{#if (eq @root.state.classId cls.id)}}is-picked{{/if}}"
+                         data-search-name="{{cls.name}}">
+                    <input type="radio" name="classId" value="{{cls.id}}" {{#if (eq @root.state.classId cls.id)}}checked{{/if}} />
+                    <img src="{{cls.img}}" alt="" />
+                    <span>{{cls.name}}</span>
+                  </label>
+                {{/each}}
+              </div>
+            </div>
           {{/each}}
+          <p class="lyr-empty is-filtered" data-search-empty>{{localize "LYRIAN.Creation.NoSearchMatches"}}</p>
         </div>
       {{else}}
         <p class="lyr-empty">{{localize "LYRIAN.Creation.EmptyClasses"}}</p>
@@ -163,9 +175,13 @@
         </div>
       {{/if}}
       {{#if breakthroughs.length}}
+        <input type="search" class="lyr-search" data-search-list="breakthroughs"
+               placeholder="{{localize "LYRIAN.Creation.SearchBreakthroughs"}}"
+               aria-label="{{localize "LYRIAN.Creation.SearchBreakthroughs"}}" />
+        <div data-search-scope="breakthroughs">
         <div class="lyr-pick-grid">
           {{#each breakthroughs as |entry|}}
-            <article class="lyr-pick {{#if entry.selected}}is-picked{{/if}}">
+            <article class="lyr-pick {{#if entry.selected}}is-picked{{/if}}" data-search-name="{{entry.name}}">
               <img src="{{entry.img}}" alt="" />
               <span>{{entry.name}}</span>
               <small>{{localize "LYRIAN.UI.ExpAmount" exp=entry.cost}}</small>
@@ -174,6 +190,8 @@
               </button>
             </article>
           {{/each}}
+        </div>
+        <p class="lyr-empty is-filtered" data-search-empty>{{localize "LYRIAN.Creation.NoSearchMatches"}}</p>
         </div>
       {{else}}
         <p class="lyr-empty">{{localize "LYRIAN.Creation.EmptyBreakthroughs"}}</p>
@@ -192,7 +210,7 @@
             <select name="mainAssign.{{stat.key}}">
               <option value="">—</option>
               {{#each stat.options as |v|}}
-                <option value="{{v}}" {{#if (eq ../stat.assigned v)}}selected{{/if}}>{{v}}</option>
+                <option value="{{v}}" {{#if (eq stat.assigned v)}}selected{{/if}}>{{v}}</option>
               {{/each}}
             </select>
           </label>
@@ -208,7 +226,7 @@
             <select name="subAssign.{{stat.key}}">
               <option value="">—</option>
               {{#each stat.options as |v|}}
-                <option value="{{v}}" {{#if (eq ../stat.assigned v)}}selected{{/if}}>{{v}}</option>
+                <option value="{{v}}" {{#if (eq stat.assigned v)}}selected{{/if}}>{{v}}</option>
               {{/each}}
             </select>
           </label>
@@ -259,9 +277,13 @@
       <h2 class="lyr-heading">{{localize "LYRIAN.Creation.StartingEquipment"}}</h2>
       <p class="lyr-note">{{localize "LYRIAN.Creation.EquipmentBudget" remaining=equipmentClimLeft total=config.progression.startingClim}}</p>
       {{#if equipment.length}}
+        <input type="search" class="lyr-search" data-search-list="equipment"
+               placeholder="{{localize "LYRIAN.Creation.SearchEquipment"}}"
+               aria-label="{{localize "LYRIAN.Creation.SearchEquipment"}}" />
+        <div data-search-scope="equipment">
         <div class="lyr-pick-grid">
           {{#each equipment as |entry|}}
-            <article class="lyr-pick {{#if entry.selected}}is-picked{{/if}}">
+            <article class="lyr-pick {{#if entry.selected}}is-picked{{/if}}" data-search-name="{{entry.name}}">
               <img src="{{entry.img}}" alt="" />
               <span>{{entry.name}}</span>
               <small>{{localize "LYRIAN.Creation.EquipmentCost" cost=entry.cost burden=entry.burden}}</small>
@@ -270,6 +292,8 @@
               </button>
             </article>
           {{/each}}
+        </div>
+        <p class="lyr-empty is-filtered" data-search-empty>{{localize "LYRIAN.Creation.NoSearchMatches"}}</p>
         </div>
       {{else}}
         <p class="lyr-empty">{{localize "LYRIAN.Creation.EmptyEquipment"}}</p>
