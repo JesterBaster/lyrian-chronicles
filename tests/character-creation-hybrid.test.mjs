@@ -29,7 +29,9 @@ globalThis.game = {
 const {
   LyrianCharacterCreation,
   applyCreationInput,
-  creationClassCost
+  creationClassCost,
+  reconcileWizardClass,
+  wizardEquipmentPlan
 } = await import("../module/apps/character-creation.mjs");
 
 function indexEntry(entry) {
@@ -102,6 +104,86 @@ test("wizard template uses the requested order and keeps Apply clickable", async
   assert.deepEqual([...order].sort((a, b) => a - b), order);
   assert.match(template, /data-action="finish"/);
   assert.doesNotMatch(template, /data-action="finish"[^>]*disabled/);
+});
+
+
+test("wizard finish does not duplicate owned official equipment or refund Clim", () => {
+  const sword = { id: "sword", system: { cost: "1,000 Clim" } };
+  const potion = { id: "potion", system: { cost: "250 Clim" } };
+  const ownedSword = {
+    flags: {
+      "lyrian-chronicles": {
+        officialEquipment: { sourceItemId: "sword" }
+      }
+    }
+  };
+
+  const firstRun = wizardEquipmentPlan({
+    actorItems: [],
+    equipmentDocs: [sword],
+    currentClim: 0,
+    startingClim: 3000
+  });
+  assert.deepEqual(firstRun.newDocs, [sword]);
+  assert.equal(firstRun.clim, 2000);
+
+  const sameSelection = wizardEquipmentPlan({
+    actorItems: [ownedSword],
+    equipmentDocs: [sword],
+    currentClim: 2000,
+    startingClim: 3000,
+    previouslyApplied: true
+  });
+  assert.deepEqual(sameSelection.newDocs, []);
+  assert.equal(sameSelection.clim, 2000);
+
+  const addedSelection = wizardEquipmentPlan({
+    actorItems: [ownedSword],
+    equipmentDocs: [sword, potion],
+    currentClim: 2000,
+    startingClim: 3000,
+    previouslyApplied: true
+  });
+  assert.deepEqual(addedSelection.newDocs, [potion]);
+  assert.equal(addedSelection.clim, 1750);
+});
+
+test("wizard finish applies reviewed level to an already-owned class", async () => {
+  const updates = [];
+  const owned = {
+    type: "class",
+    system: { stableId: "class--pierrot", abilitiesUnlocked: 1 },
+    update: async (change) => updates.push(change)
+  };
+  const classDoc = {
+    system: { stableId: "class--pierrot" },
+    toObject: () => ({
+      _id: "source",
+      type: "class",
+      system: { stableId: "class--pierrot", abilitiesUnlocked: 1 }
+    })
+  };
+  const toCreate = [];
+
+  const existingResult = await reconcileWizardClass({
+    actorItems: [owned],
+    classDoc,
+    classLevel: 6,
+    toCreate
+  });
+  assert.equal(existingResult.created, false);
+  assert.deepEqual(updates, [{ "system.abilitiesUnlocked": 6 }]);
+  assert.deepEqual(toCreate, []);
+
+  const freshResult = await reconcileWizardClass({
+    actorItems: [],
+    classDoc,
+    classLevel: 4,
+    toCreate
+  });
+  assert.equal(freshResult.created, true);
+  assert.equal(toCreate[0].system.abilitiesUnlocked, 4);
+  assert.equal("_id" in toCreate[0], false);
 });
 
 test("wizard context tracks optional Breakthrough and equipment budgets", async () => {
