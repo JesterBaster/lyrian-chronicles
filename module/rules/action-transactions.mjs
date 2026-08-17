@@ -96,16 +96,34 @@ export function actorActionFingerprint(actor) {
       temp: Number(system[key]?.temp ?? 0)
     }
   ]));
-  const itemLocks = Array.from(actor.items ?? [])
+  const items = Array.from(actor.items ?? []);
+  const itemLocks = items
     .filter((item) => ["ability", "monsterAbility"].includes(item.type))
     .map((item) => [item.id, Boolean(item.system?.usedThisRound)])
     .sort(([a], [b]) => String(a).localeCompare(String(b)));
+  const inventory = items
+    .filter((item) => item.type === "gear")
+    .map((item) => [item.id, Number(item.system?.quantity ?? 0)])
+    .sort(([a], [b]) => String(a).localeCompare(String(b)));
+  const crafting = Array.from(system.crafting?.projects ?? [], (project) => ({
+    skill: String(project.skill ?? ""),
+    dc: Number(project.dc ?? 0),
+    materials: Array.from(project.materials ?? [], (material) => [
+      String(material.itemId ?? ""),
+      Number(material.quantity ?? 0)
+    ]),
+    outputUuid: String(project.outputUuid ?? ""),
+    attempts: Number(project.attempts ?? 0),
+    completed: Boolean(project.completed)
+  }));
   return JSON.stringify({
     resources,
     encounter: {
       secretArtUsed: Boolean(system.encounter?.secretArtUsed)
     },
-    itemLocks
+    itemLocks,
+    inventory,
+    crafting
   });
 }
 
