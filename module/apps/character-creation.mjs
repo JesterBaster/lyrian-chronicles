@@ -21,6 +21,70 @@ function numberFrom(value) {
   return match ? Number(match[0]) : 0;
 }
 
+function itemList(collection = []) {
+  if (Array.isArray(collection)) return collection;
+  if (Array.isArray(collection.contents)) return collection.contents;
+  if (typeof collection.values === "function") return [...collection.values()];
+  return Array.from(collection);
+}
+
+/** Return the official compendium equipment ID preserved on an embedded item. */
+export function officialEquipmentSourceId(item = {}) {
+  return item.getFlag?.("lyrian-chronicles", "officialEquipment")?.sourceItemId ??
+    item.flags?.["lyrian-chronicles"]?.officialEquipment?.sourceItemId ?? "";
+}
+
+/**
+ * Plan idempotent equipment creation and currency spending for a wizard finish.
+ * Existing official selections are retained, not duplicated or charged again.
+ */
+export function wizardEquipmentPlan({
+  actorItems = [],
+  equipmentDocs = [],
+  currentClim = 0,
+  startingClim = 0,
+  previouslyApplied = false
+} = {}) {
+  const existingSourceIds = new Set(
+    itemList(actorItems).map(officialEquipmentSourceId).filter(Boolean)
+  );
+  const selectedAlreadyOwned = equipmentDocs.filter((doc) => existingSourceIds.has(doc.id));
+  const newDocs = equipmentDocs.filter((doc) => !existingSourceIds.has(doc.id));
+  const newCost = newDocs.reduce((total, doc) => total + numberFrom(doc.system?.cost), 0);
+  const rerun = Boolean(previouslyApplied) || selectedAlreadyOwned.length > 0;
+  const baseClim = rerun ? Number(currentClim) || 0 : Number(startingClim) || 0;
+  return {
+    newDocs,
+    selectedAlreadyOwned,
+    newCost,
+    rerun,
+    clim: Math.max(0, baseClim - newCost)
+  };
+}
+
+/** Update an owned class to the reviewed level, or queue a new embedded class. */
+export async function reconcileWizardClass({
+  actorItems = [],
+  classDoc,
+  classLevel = 1,
+  toCreate = []
+} = {}) {
+  const level = normalizeClassLevel(classLevel);
+  const existing = itemList(actorItems).find(
+    (item) => item.type === "class" && item.system?.stableId === classDoc?.system?.stableId
+  );
+  if (existing) {
+    await existing.update({ "system.abilitiesUnlocked": level });
+    return { existing, created: false, level };
+  }
+  if (!classDoc) return { existing: null, created: false, level };
+  const classData = classDoc.toObject();
+  delete classData._id;
+  classData.system.abilitiesUnlocked = level;
+  toCreate.push(classData);
+  return { existing: null, created: true, level };
+}
+
 /** Calculate the creation EXP invested in one class at a chosen level. */
 export function creationClassCost(classSystem = {}, level = 1) {
   const unlockCost = Math.max(1, Number(classSystem.tier) || 1) * LYRIAN.progression.classCostPerTier;
@@ -598,15 +662,12 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       toCreate.push(ancestryData);
     }
 
-    const alreadyOwnedClass = actor.items.find(
-      (item) => item.type === "class" && item.system.stableId === classDoc.system.stableId
-    );
-    if (!alreadyOwnedClass) {
-      const classData = classDoc.toObject();
-      delete classData._id;
-      classData.system.abilitiesUnlocked = normalizeClassLevel(s.classLevel);
-      toCreate.push(classData);
-    }
+    await reconcileWizardClass({
+      actorItems: actor.items,
+      classDoc,
+      classLevel: s.classLevel,
+      toCreate
+    });
 
     for (const doc of breakthroughDocs) {
       const alreadyOwned = actor.items.find(
@@ -629,7 +690,18 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       toCreate.push(breakthroughData);
     }
 
-    for (const doc of equipmentDocs) {
+    const hasWizardCore = Boolean(actor.items.find((item) => item.type === "race")) &&
+      Boolean(actor.items.find((item) => item.type === "class"));
+    const equipmentPlan = wizardEquipmentPlan({
+      actorItems: actor.items,
+      equipmentDocs,
+      currentClim: actor.system.clim,
+      startingClim: p.startingClim,
+      previouslyApplied: Boolean(
+        actor.getFlag("lyrian-chronicles", "characterCreation")?.applied || hasWizardCore
+      )
+    });
+    for (const doc of equipmentPlan.newDocs) {
       const equipmentData = convertOfficialEquipment(doc.toObject());
       if (equipmentData) toCreate.push(equipmentData);
     }
@@ -649,10 +721,8 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     // class purchased already has a small core.
     update["system.exp.total"] = p.startingClassExp + p.startingBreakthroughExp;
     update["system.interlude.points"] = p.startingInterludePoints;
-    const equipmentSpent = equipmentDocs.reduce(
-      (total, doc) => total + numberFrom(doc.system.cost), 0
-    );
-    update["system.clim"] = Math.max(0, p.startingClim - equipmentSpent);
+    update["system.clim"] = equipmentPlan.clim;
+    update["flags.lyrian-chronicles.characterCreation.applied"] = true;
 
     // Refill pools to the new maxima.
     const tough = s.mainAssign.toughness ?? 3;
