@@ -14,6 +14,7 @@ import {
 } from "../rules/ability-attack.mjs";
 import { abilityRefused, abilitySucceeded } from "../rules/ability-result.mjs";
 import { prepareItemChatContent } from "../rules/chat-content.mjs";
+import { buildHealingPayload } from "../rules/healing.mjs";
 
 /**
  * The Item document. Weapons and abilities know how to roll themselves.
@@ -193,10 +194,17 @@ export class LyrianItem extends Item {
       await actor.update({ "system.encounter.secretArtUsed": true });
     }
 
-    // No attack payload: just describe the ability in chat.
+    // Healing is rolled alongside any attack rather than instead of it, so a
+    // drain ability resolves both halves from a single activation.
+    const healingRoll = (sys.hasHealing && sys.healingFormula)
+      ? await new Roll(sys.healingFormula, this.getRollData()).evaluate()
+      : null;
+
     if (!sys.hasAttack) {
-      const message = await this.postToChat();
-      return abilitySucceeded({ message });
+      const message = healingRoll
+        ? await this.postHealingCard(healingRoll)
+        : await this.postToChat();
+      return abilitySucceeded({ healingRoll, message });
     }
 
     const profile = LYRIAN.attackTypes[sys.attackType];
@@ -243,7 +251,9 @@ export class LyrianItem extends Item {
       keywords: sys.keywords
     });
 
-    return abilitySucceeded({ attackRoll, damageRoll, isCrit, message });
+    if (healingRoll) await this.postHealingCard(healingRoll);
+
+    return abilitySucceeded({ attackRoll, damageRoll, isCrit, healingRoll, message });
   }
 
   /* -------------------------------------------- */
@@ -277,5 +287,38 @@ export class LyrianItem extends Item {
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
       content
     });
+  }
+
+  /**
+   * Post a healing result with an apply button.
+   *
+   * The amount is carried in the message flags rather than read back out of
+   * the rendered card, so editing the HTML cannot inflate what gets applied.
+   */
+  async postHealingCard(roll) {
+    const healing = buildHealingPayload({
+      actorUuid: this.actor?.uuid,
+      itemUuid: this.uuid,
+      itemName: this.name,
+      roll
+    });
+    const content = await foundry.applications.handlebars.renderTemplate(
+      "systems/lyrian-chronicles/templates/chat/healing-card.hbs",
+      {
+        item: this,
+        actor: this.actor,
+        healing,
+        tooltip: await roll.getTooltip()
+      }
+    );
+
+    const message = await ChatMessage.create({
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      content,
+      rolls: [roll],
+      flags: { "lyrian-chronicles": { healing } }
+    });
+    Hooks.callAll("lyrianHealingRolled", healing);
+    return message;
   }
 }

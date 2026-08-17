@@ -986,8 +986,10 @@ export class LyrianActor extends Actor {
    * this is the single place progression happens.
    * @param {number} exp
    * @param {string} reason
+   * @param {object}  [options]
+   * @param {boolean} [options.announce]  Overrides the announceExpSpending setting.
    */
-  async spendExp(exp, reason = "") {
+  async spendExp(exp, reason = "", options = {}) {
     if (this.type !== "character") return false;
     exp = positiveInteger(exp);
     if (!exp) {
@@ -1018,15 +1020,22 @@ export class LyrianActor extends Actor {
       });
     }
 
-    await ChatMessage.create({
-      speaker: ChatMessage.getSpeaker({ actor: this }),
-      content: `<p>${game.i18n.format("LYRIAN.Msg.ExpSpent", {
-        name: this.name,
-        exp,
-        reason: reason || game.i18n.localize("LYRIAN.Interlude.Training"),
-        core: after
-      })}</p>`
-    });
+    // Levelling a class routes through here, so this fires on every advance.
+    // The milestone banner above is deliberately not suppressed: crossing a
+    // tier loosens the skill rank cap, which the table needs to see.
+    const announce = options.announce
+      ?? game.settings.get("lyrian-chronicles", "announceExpSpending");
+    if (announce) {
+      await ChatMessage.create({
+        speaker: ChatMessage.getSpeaker({ actor: this }),
+        content: `<p>${game.i18n.format("LYRIAN.Msg.ExpSpent", {
+          name: this.name,
+          exp,
+          reason: reason || game.i18n.localize("LYRIAN.Interlude.Training"),
+          core: after
+        })}</p>`
+      });
+    }
     return true;
   }
 

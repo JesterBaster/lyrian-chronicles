@@ -195,6 +195,14 @@
       <label class="lyr-check"><input type="checkbox" name="system.usesWeapon" {{checked system.usesWeapon}} /> {{localize "LYRIAN.UI.UseWeaponDamage"}}</label>
     </div>
   </fieldset>
+
+  <fieldset class="lyr-attack-block">
+    <legend>{{localize "LYRIAN.UI.Healing"}}</legend>
+    <label class="lyr-check"><input type="checkbox" name="system.hasHealing" {{checked system.hasHealing}} /> {{localize "LYRIAN.UI.AbilityHeals"}}</label>
+    <div class="lyr-field-grid">
+      <label>{{localize "LYRIAN.UI.HealingFormula"}} <input type="text" name="system.healingFormula" value="{{system.healingFormula}}" placeholder="{{localize "LYRIAN.Placeholder.HealingFormula"}}" /></label>
+    </div>
+  </fieldset>
 {{/if}}
 
 {{#if (eq type "keyword")}}

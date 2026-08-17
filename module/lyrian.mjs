@@ -27,6 +27,7 @@ import { resolveDefence } from "./rules/defence-resolution.mjs";
 import { resolvedAttackFlagUpdate } from "./rules/resolved-attacks.mjs";
 import { boundedDamage, legitimateAttackProfile } from "./rules/attack-verification.mjs";
 import { actorHeaderNeedsRefresh } from "./rules/sheet-refresh.mjs";
+import { normalizeHealingAmount } from "./rules/healing.mjs";
 import {
   actionLockWarningKey,
   initializeActionTransactions,
@@ -156,6 +157,15 @@ function registerSettings() {
     default: true
   });
 
+  game.settings.register(SYSTEM_ID, "announceExpSpending", {
+    name: "LYRIAN.Settings.AnnounceExpSpending.Name",
+    hint: "LYRIAN.Settings.AnnounceExpSpending.Hint",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+
   game.settings.register(SYSTEM_ID, "craftingConsumesMaterials", {
     name: "LYRIAN.Settings.CraftingConsumesMaterials.Name",
     hint: "LYRIAN.Settings.CraftingConsumesMaterials.Hint",
@@ -228,6 +238,7 @@ async function preloadTemplates() {
     "item/description",
     "chat/attack-card",
     "chat/craft-card",
+    "chat/healing-card",
     "chat/item-card"
   ].map((p) => `systems/${SYSTEM_ID}/templates/${p}.hbs`);
 
@@ -286,6 +297,39 @@ Hooks.on("renderChatMessageHTML", (message, html) => {
 });
 
 /**
+ * Apply a rolled healing amount to every controlled token.
+ *
+ * The amount comes from the message flags rather than the rendered card, so a
+ * client cannot inflate it by editing the HTML. Ownership is still checked per
+ * actor, and applyHealing itself caps at maximum HP.
+ */
+async function applyHealingFromCard(healing) {
+  const amount = normalizeHealingAmount(healing.total);
+  if (!amount) return;
+
+  const targets = canvas.tokens.controlled.filter((token) => token.actor);
+  if (!targets.length) {
+    return ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoTargetSelected"));
+  }
+
+  for (const token of targets) {
+    const actor = token.actor;
+    if (!game.user.isGM && !actor.isOwner) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.NotOwner", { name: actor.name }));
+      continue;
+    }
+    await actor.applyHealing(amount);
+    await ChatMessage.create({
+      speaker: ChatMessage.getSpeaker({ actor }),
+      content: `<p>${game.i18n.format("LYRIAN.Msg.HealingApplied", {
+        name: actor.name,
+        amount
+      })}</p>`
+    });
+  }
+}
+
+/**
  * Resolve the defender's reaction and apply damage from an attack card.
  */
 async function onChatAction(event, message) {
@@ -294,6 +338,7 @@ async function onChatAction(event, message) {
   const action = button.dataset.lyrianAction;
   const flags = message.flags[SYSTEM_ID] ?? {};
 
+  if (action === "applyHealing") return applyHealingFromCard(flags.healing ?? {});
   if (action !== "applyDamage") return;
 
   const defence = ["none", "dodge", "block"].includes(button.dataset.defence)

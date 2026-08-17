@@ -235,6 +235,11 @@ export class LyrianAbility extends LyrianItemBase {
     });
     schema.usesWeapon = new fields.BooleanField({ initial: false });
 
+    // Optional healing payload. Independent of the attack block, because a
+    // drain ability both deals damage and restores health from one activation.
+    schema.hasHealing = new fields.BooleanField({ initial: false });
+    schema.healingFormula = new fields.StringField({ blank: true, initial: "" });
+
     // Ability tracking.
     schema.classSource = new fields.StringField({ blank: true, initial: "" });
     schema.classStep = int(0, { min: 0, max: 8 });
