@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import {
@@ -104,4 +105,27 @@ test("craft payload contains stable public result data", () => {
     outputName: "Longsword",
     attempts: 2
   });
+});
+
+test("Actor craft pipeline consumes before rolling and persists the whole project array", () => {
+  const source = readFileSync(new URL("../module/documents/actor.mjs", import.meta.url), "utf8");
+  const start = source.indexOf("async _attemptCraft(projectIndex)");
+  const end = source.indexOf("/** Resist an effect", start);
+  const pipeline = source.slice(start, end);
+
+  assert.ok(start >= 0 && end > start);
+  assert.ok(pipeline.indexOf("updateEmbeddedDocuments") < pipeline.indexOf("rollArtisan"));
+  assert.match(pipeline, /if \(success\) \{[\s\S]*createEmbeddedDocuments/);
+  assert.match(pipeline, /system\.crafting\.projects/);
+  assert.match(pipeline, /Hooks\.callAll\("lyrianCraft"/);
+});
+
+test("artisan project rolls pass DC through the existing check helper", () => {
+  const source = readFileSync(new URL("../module/documents/actor.mjs", import.meta.url), "utf8");
+  const start = source.indexOf("async rollArtisan");
+  const end = source.indexOf("_resolveExpertise", start);
+  const method = source.slice(start, end);
+
+  assert.match(method, /dc: options\.dc/);
+  assert.match(method, /createMessage: options\.createMessage/);
 });
