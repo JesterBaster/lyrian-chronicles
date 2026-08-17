@@ -12,7 +12,7 @@ import {
 } from "../module/rules/schema-versioning.mjs";
 
 test("document schema versions are normalized and independent", () => {
-  assert.equal(currentDocumentSchemaVersion("Actor"), 1);
+  assert.equal(currentDocumentSchemaVersion("Actor"), 2);
   assert.equal(currentDocumentSchemaVersion("Item"), 1);
   assert.equal(normalizeSchemaVersion(undefined), 0);
   assert.equal(normalizeSchemaVersion(-1), 0);
@@ -23,8 +23,8 @@ test("schema migration plans are monotonic", () => {
   assert.deepEqual(planDocumentSchemaMigration("Actor", 0), {
     status: "pending",
     current: 0,
-    target: 1,
-    update: { "system.schemaVersion": 1 }
+    target: 2,
+    update: { "system.schemaVersion": 2 }
   });
   assert.deepEqual(planDocumentSchemaMigration("Item", 1), {
     status: "current", current: 1, target: 1, update: null
@@ -35,7 +35,7 @@ test("schema migration plans are monotonic", () => {
 });
 
 test("new documents start current without downgrading future imports", () => {
-  assert.equal(schemaVersionForCreation("Actor", 0), 1);
+  assert.equal(schemaVersionForCreation("Actor", 0), 2);
   assert.equal(schemaVersionForCreation("Item", undefined), 1);
   assert.equal(schemaVersionForCreation("Item", 2), 2);
   assert.deepEqual(stampDocumentSourceSchema("Item", {
@@ -143,7 +143,7 @@ test("the baseline migration stamps old documents without downgrading future one
   try {
     console.warn = () => {};
     await runBaselineSchemaMigration();
-    assert.deepEqual(actor.updates, [{ "system.schemaVersion": 1 }]);
+    assert.deepEqual(actor.updates, [{ "system.schemaVersion": 2 }]);
     assert.deepEqual(actor.items[0].updates, [{ "system.schemaVersion": 1 }]);
     assert.deepEqual(actor.items[1].updates, []);
     assert.equal(actor.items[1].system.schemaVersion, 2);
