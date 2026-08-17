@@ -25,6 +25,7 @@ import { seedSystemPacks, resetSystemPacks } from "./content/seed-packs.mjs";
 import { runCharacterCreation } from "./apps/character-creation.mjs";
 import { resolveDefence } from "./rules/defence-resolution.mjs";
 import { resolvedAttackFlagUpdate } from "./rules/resolved-attacks.mjs";
+import { boundedDamage, legitimateAttackProfile } from "./rules/attack-verification.mjs";
 import { actorHeaderNeedsRefresh } from "./rules/sheet-refresh.mjs";
 import {
   actionLockWarningKey,
@@ -332,6 +333,14 @@ async function onChatAction(event, message) {
         untargetable: target.untargetable,
         dodgeEvasion: target.dodgeEvasion
       });
+      const verifiedAttack = outcome.hits
+        ? await legitimateAttackProfile({ attack })
+        : null;
+      if (outcome.hits && !verifiedAttack && !game.user.isGM) {
+        ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.AttackSourceUnverified"));
+        return { cancelled: true };
+      }
+
       if (outcome.rpCost && !(await actor.spendResources({ rp: outcome.rpCost }))) {
         return { cancelled: true };
       }
@@ -356,9 +365,34 @@ async function onChatAction(event, message) {
         return { resolved: true };
       }
 
-      let damage = attack.damage?.total ?? flags.damage ?? 0;
-      // Blocking prevents a critical hit, so replace maximised damage with a normal roll.
-      if (defence === "block" && attack.damage?.maximised && attack.damage.formula) {
+      const claimedDamage = attack.damage?.total ?? flags.damage ?? 0;
+      let damage = claimedDamage;
+      let pierce = {
+        fullPierce: Boolean(flags.fullPierce),
+        halfPierce: Boolean(flags.halfPierce),
+        pinpoint: flags.pinpoint ?? 0
+      };
+
+      if (verifiedAttack) {
+        const bounded = boundedDamage({ claimed: claimedDamage, ceiling: verifiedAttack.ceiling });
+        damage = bounded.amount;
+        pierce = verifiedAttack.pierce;
+        if (bounded.clamped) {
+          console.warn("Lyrian Chronicles | Rejected forged attack damage", {
+            messageId: message.id,
+            actorUuid: attack.actorUuid,
+            sourceUuid: attack.sourceUuid,
+            claimed: claimedDamage,
+            ceiling: verifiedAttack.ceiling
+          });
+        }
+
+        // Blocking prevents a critical hit. Re-roll only the verified source formula.
+        if (defence === "block" && attack.damage?.maximised) {
+          damage = (await new Roll(verifiedAttack.formula, verifiedAttack.rollData).evaluate()).total;
+        }
+      } else if (defence === "block" && attack.damage?.maximised && attack.damage.formula) {
+        // GM-only compatibility fallback for cards whose source no longer resolves.
         const source = attack.sourceUuid ? await fromUuid(attack.sourceUuid) : null;
         const attacker = attack.actorUuid ? await fromUuid(attack.actorUuid) : null;
         const rollData = source?.getRollData?.() ?? attacker?.getRollData?.() ?? {};
@@ -367,9 +401,7 @@ async function onChatAction(event, message) {
 
       const result = await actor.applyDamage(damage, {
         defence,
-        fullPierce: flags.fullPierce,
-        halfPierce: flags.halfPierce,
-        pinpoint: flags.pinpoint ?? 0
+        ...pierce
       });
 
       await ChatMessage.create({
