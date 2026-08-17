@@ -154,8 +154,6 @@
     
       <h2 class="lyr-heading">{{localize "LYRIAN.Creation.SkillPoints"}}</h2>
       <p class="lyr-note">{{localize "LYRIAN.Creation.SkillsInsideStats"}}</p>
-
-      <h2 class="lyr-heading">{{localize "LYRIAN.Creation.SkillPoints"}}</h2>
       <p class="lyr-note">{{localize "LYRIAN.UI.Remaining"}}: <strong class="lyr-budget">{{skillPointsLeft}}</strong> {{localize "LYRIAN.UI.OfTotal" total=state.skillPoints}}</p>
       <div class="lyr-skill-buy">
         {{#each skills as |skill|}}
@@ -293,8 +291,7 @@
   <footer class="lyr-creation-footer">
     <button type="button" data-action="reset">{{localize "LYRIAN.Action.Reset"}}</button>
     {{#if (eq state.step "inventory")}}
-      <button type="button" class="lyr-primary" data-action="finish"
-        {{#unless statsComplete}}disabled{{else}}{{#unless raceComplete}}disabled{{else}}{{#unless state.classId}}disabled{{else}}{{#unless skillsComplete}}disabled{{/unless}}{{/unless}}{{/unless}}{{/unless}}>
+      <button type="button" class="lyr-primary" data-action="finish" {{#unless creationReady}}disabled{{/unless}}>
         {{localize "LYRIAN.Action.ApplyToSheet"}}
       </button>
     {{/if}}
