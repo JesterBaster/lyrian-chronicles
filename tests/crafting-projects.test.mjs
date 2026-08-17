@@ -123,7 +123,7 @@ test("Actor craft pipeline consumes before rolling and persists the whole projec
 test("artisan project rolls pass DC through the existing check helper", () => {
   const source = readFileSync(new URL("../module/documents/actor.mjs", import.meta.url), "utf8");
   const start = source.indexOf("async rollArtisan");
-  const end = source.indexOf("_resolveExpertise", start);
+  const end = source.indexOf("/**\n   * Work out", start);
   const method = source.slice(start, end);
 
   assert.match(method, /dc: options\.dc/);
