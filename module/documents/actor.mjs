@@ -782,6 +782,14 @@ export class LyrianActor extends Actor {
    * @param {number}  [options.pinpoint]     Ignore this many points of Guard.
    */
   async applyDamage(amount, options = {}) {
+    // Serialized for the same reason spendResources is: this reads hp and temp,
+    // then writes values derived from them. Two cards resolving against one
+    // target at once would otherwise both read the pre-damage total and the
+    // second write would silently discard the first hit.
+    return queueActorTransaction(this, () => this.#applyDamage(amount, options));
+  }
+
+  async #applyDamage(amount, options = {}) {
     const {
       defence = "none",
       trueDamage = false,
@@ -836,13 +844,15 @@ export class LyrianActor extends Actor {
 
   /** Heal, respecting max HP. */
   async applyHealing(amount) {
-    const normalizedAmount = positiveInteger(amount);
-    if (!normalizedAmount) return this.system.hp.value;
-    const newHp = Math.min(this.system.hp.max, this.system.hp.value + normalizedAmount);
-    await this.update({ "system.hp.value": newHp });
-    if (newHp > 0) await this.toggleStatusEffect("downed", { active: false });
-    Hooks.callAll("lyrianHealing", this, normalizedAmount);
-    return newHp;
+    return queueActorTransaction(this, async () => {
+      const normalizedAmount = positiveInteger(amount);
+      if (!normalizedAmount) return this.system.hp.value;
+      const newHp = Math.min(this.system.hp.max, this.system.hp.value + normalizedAmount);
+      await this.update({ "system.hp.value": newHp });
+      if (newHp > 0) await this.toggleStatusEffect("downed", { active: false });
+      Hooks.callAll("lyrianHealing", this, normalizedAmount);
+      return newHp;
+    });
   }
 
   /* -------------------------------------------- */

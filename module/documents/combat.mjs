@@ -48,12 +48,42 @@ export class LyrianCombat extends Combat {
     return result;
   }
 
+  /** Round and combatant last refreshed, so one turn never refreshes twice. */
+  #refreshed = "";
+
   /** @override */
   async nextTurn() {
     const result = await super.nextTurn();
     // Heroic characters regain AP at the start of each of their turns.
-    await this.combatant?.actor?.refreshTurn?.();
+    await this.#refreshCurrentTurn();
     return result;
+  }
+
+  /**
+   * @override
+   * The tracker's "next round" control calls this directly rather than going
+   * through nextTurn, so without it the first combatant of every round begins
+   * with stale AP and their once-per-round abilities still locked.
+   */
+  async nextRound() {
+    const result = await super.nextRound();
+    await this.#refreshCurrentTurn();
+    return result;
+  }
+
+  /**
+   * Refresh whoever's turn just started, at most once per turn.
+   * Core nextTurn() delegates to nextRound() when the round rolls over, so
+   * both overrides fire for that single turn and the guard keeps AP from being
+   * restored — and lyrianTurnStart from being broadcast — twice.
+   */
+  async #refreshCurrentTurn() {
+    const combatant = this.combatant;
+    if (!combatant) return;
+    const key = `${this.round}:${combatant.id}`;
+    if (key === this.#refreshed) return;
+    this.#refreshed = key;
+    await combatant.actor?.refreshTurn?.();
   }
 
   /** @override */
