@@ -192,6 +192,11 @@ export const LyrianAPI = {
     return message?.flags?.["lyrian-chronicles"]?.attack ?? null;
   },
 
+  /** Pull the stable crafting result payload off a ChatMessage. */
+  getCraftData(message) {
+    return message?.flags?.["lyrian-chronicles"]?.craft ?? null;
+  },
+
   /** True if this message is a Lyrian attack card. */
   isAttackCard(message) {
     return !!this.getAttackData(message);
@@ -208,6 +213,7 @@ export const LyrianAPI = {
  * `lyrianHealing`  (actor, amount)         after healing is applied
  * `lyrianDowned`   (actor)                 when an actor drops to 0 HP
  * `lyrianTurnStart`(actor)                 when AP refreshes on a turn
+ * `lyrianCraft`    (data)                  after a craft attempt resolves
  *
  * The attack payload shape, stable across releases:
  * {
@@ -224,5 +230,6 @@ export const LYRIAN_HOOKS = {
   damage: "lyrianDamage",
   healing: "lyrianHealing",
   downed: "lyrianDowned",
-  turnStart: "lyrianTurnStart"
+  turnStart: "lyrianTurnStart",
+  craft: "lyrianCraft"
 };
