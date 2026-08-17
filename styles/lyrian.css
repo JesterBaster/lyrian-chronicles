@@ -524,10 +524,10 @@
    -------------------------------------------------------------------------- */
 
 .lyrian .lyr-creation-body { padding: 0.85rem; display: flex; flex-direction: column; gap: 0.8rem; height: 100%; }
-.lyrian .lyr-steps { display: flex; gap: 0.2rem; border-bottom: 1px solid var(--lyr-rule); padding-bottom: 0.4rem; }
+.lyrian .lyr-steps { display: flex; gap: 0.15rem; border-bottom: 1px solid var(--lyr-rule); padding-bottom: 0.4rem; overflow-x: auto; }
 .lyrian .lyr-step-btn {
-  flex: 1; padding: 0.35rem; font-family: var(--lyr-font-display); font-variant: small-caps;
-  letter-spacing: 0.09em; font-size: 0.8rem; background: none; border: none;
+  flex: 1 0 5rem; padding: 0.35rem 0.2rem; font-family: var(--lyr-font-display); font-variant: small-caps;
+  letter-spacing: 0.05em; font-size: 0.7rem; background: none; border: none;
   border-bottom: 2px solid transparent; color: var(--lyr-ink-dim); cursor: pointer;
 }
 .lyrian .lyr-step-btn.is-active { color: var(--lyr-gold-bright); border-bottom-color: var(--lyr-gold); }
