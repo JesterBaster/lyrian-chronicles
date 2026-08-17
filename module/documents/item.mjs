@@ -13,6 +13,7 @@ import {
   isCriticalHit
 } from "../rules/ability-attack.mjs";
 import { abilityRefused, abilitySucceeded } from "../rules/ability-result.mjs";
+import { prepareItemChatContent } from "../rules/chat-content.mjs";
 
 /**
  * The Item document. Weapons and abilities know how to roll themselves.
@@ -254,10 +255,13 @@ export class LyrianItem extends Item {
     if (!requireActorActionPermission(this.actor)) return null;
     const enrichHTML = foundry.applications.ux.TextEditor.implementation.enrichHTML;
     const enrichOptions = { relativeTo: this, rollData: this.getRollData() };
-    const [enrichedDescription, enrichedRequirement] = await Promise.all([
-      enrichHTML(this.system.description ?? "", enrichOptions),
-      enrichHTML(this.system.requirements ?? this.system.requirement ?? "", enrichOptions)
-    ]);
+    const { enrichedDescription, enrichedRequirement } = await prepareItemChatContent({
+      description: this.system.description,
+      requirement: this.system.requirements ?? this.system.requirement,
+      enrichHTML,
+      cleanHTML: foundry.utils.cleanHTML,
+      enrichOptions
+    });
     const content = await foundry.applications.handlebars.renderTemplate(
       "systems/lyrian-chronicles/templates/chat/item-card.hbs",
       {
