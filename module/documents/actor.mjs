@@ -25,6 +25,11 @@ import {
 import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 import { requireActorActionPermission } from "../rules/action-permissions.mjs";
 import { guardForDamage } from "../rules/damage.mjs";
+import {
+  buildCraftPayload,
+  normalizeCraftProject,
+  planCraftMaterials
+} from "../rules/crafting.mjs";
 
 /**
  * The Actor document for Lyrian Chronicles.
@@ -280,7 +285,9 @@ export class LyrianActor extends Actor {
       formula: `1d10 + ${bonus}`,
       flavour: game.i18n.format("LYRIAN.Roll.CraftingCheck", {
         skill: `${game.i18n.localize(LYRIAN.artisanSkills[skillKey])}${suffix}`
-      })
+      }),
+      dc: options.dc,
+      createMessage: options.createMessage
     });
   }
 
@@ -322,6 +329,128 @@ export class LyrianActor extends Actor {
         skill: game.i18n.localize(LYRIAN.gatheringSkills[skillKey])
       })
     });
+  }
+
+  /**
+   * Attempt one free-form crafting project under the shared actor action lock.
+   * Materials are consumed before the check and are never restored on failure.
+   */
+  async attemptCraft(projectIndex) {
+    if (this.type !== "character" || !requireActorActionPermission(this)) return null;
+    const action = await runExclusiveActorAction(this, () => this._attemptCraft(projectIndex));
+    if (!action.started) {
+      ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
+    }
+    return action.value;
+  }
+
+  async _attemptCraft(projectIndex) {
+    const index = Number(projectIndex);
+    const projects = Array.from(
+      this.system.crafting?.projects ?? [],
+      (project) => normalizeCraftProject(project)
+    );
+    const project = projects[index];
+    if (!project) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.CraftProjectMissing"));
+      return null;
+    }
+    if (project.completed) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftCompleted", {
+        name: project.name
+      }));
+      return null;
+    }
+    if (!LYRIAN.artisanSkills[project.skill]) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.UnknownArtisan", {
+        skill: project.skill
+      }));
+      return null;
+    }
+
+    const output = project.outputUuid ? await fromUuid(project.outputUuid) : null;
+    if (!output?.toObject) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftOutputMissing", {
+        name: project.outputName || project.name
+      }));
+      return null;
+    }
+    const outputData = output.toObject();
+    delete outputData._id;
+
+    const consumesMaterials = game.settings.get(
+      "lyrian-chronicles",
+      "craftingConsumesMaterials"
+    );
+    const materialPlan = planCraftMaterials({
+      materials: project.materials,
+      items: this.items,
+      consume: consumesMaterials
+    });
+    if (!materialPlan.ok) {
+      const shortage = materialPlan.shortages[0];
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftMaterialShort", {
+        name: shortage.name,
+        required: shortage.required,
+        available: shortage.available
+      }));
+      return null;
+    }
+
+    if (materialPlan.updates.length) {
+      await this.updateEmbeddedDocuments("Item", materialPlan.updates);
+    }
+
+    const roll = await this.rollArtisan(project.skill, {
+      dc: project.dc,
+      useBest: true,
+      createMessage: false
+    });
+    if (!roll) return null;
+
+    const success = roll.total >= project.dc;
+    project.attempts += 1;
+    if (success) {
+      await this.createEmbeddedDocuments("Item", [outputData]);
+      project.completed = true;
+    }
+    projects[index] = project;
+    await this.update({ "system.crafting.projects": projects });
+
+    const skillLabel = game.i18n.localize(LYRIAN.artisanSkills[project.skill]);
+    const craftData = buildCraftPayload({
+      actorUuid: this.uuid,
+      projectIndex: index,
+      project,
+      skillLabel,
+      roll,
+      success,
+      materials: materialPlan.spent,
+      consumed: consumesMaterials
+    });
+    const tooltip = await roll.getTooltip();
+    const content = await foundry.applications.handlebars.renderTemplate(
+      "systems/lyrian-chronicles/templates/chat/craft-card.hbs",
+      {
+        actor: this,
+        project,
+        skillLabel,
+        roll,
+        dc: project.dc,
+        success,
+        materials: materialPlan.spent,
+        consumed: consumesMaterials,
+        tooltip
+      }
+    );
+    const message = await ChatMessage.create({
+      speaker: ChatMessage.getSpeaker({ actor: this }),
+      content,
+      rolls: [roll],
+      flags: { "lyrian-chronicles": { craft: craftData } }
+    });
+    Hooks.callAll("lyrianCraft", craftData);
+    return { roll, success, message, craft: craftData };
   }
 
   /** Resist an effect: 2d10 + Toughness against the caster's Potency. */
@@ -483,7 +612,7 @@ export class LyrianActor extends Actor {
 
   /* -------------------------------------------- */
 
-  async _rollCheck({ formula, flavour, dc }) {
+  async _rollCheck({ formula, flavour, dc, createMessage = true }) {
     if (!requireActorActionPermission(this)) return null;
     const roll = await new Roll(formula, this.getRollData()).evaluate();
     let flavorText = flavour;
@@ -496,10 +625,12 @@ export class LyrianActor extends Actor {
       flavorText += ` — DC ${dc}: <strong>${tag}</strong>`;
     }
 
-    await roll.toMessage({
-      speaker: ChatMessage.getSpeaker({ actor: this }),
-      flavor: flavorText
-    });
+    if (createMessage) {
+      await roll.toMessage({
+        speaker: ChatMessage.getSpeaker({ actor: this }),
+        flavor: flavorText
+      });
+    }
     return roll;
   }
 
