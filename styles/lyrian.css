@@ -534,7 +534,25 @@
 .lyrian .lyr-creation-step { flex: 1; overflow-y: auto; }
 .lyrian .lyr-assign-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.45rem; }
 .lyrian .lyr-assign { display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.68rem; font-variant: small-caps; letter-spacing: 0.06em; color: var(--lyr-ink-dim); }
-.lyrian .lyr-assign select { font-family: var(--lyr-font-num); }
+.lyrian .lyr-assign__header { display: flex; align-items: center; justify-content: space-between; gap: 0.4rem; }
+.lyrian .lyr-assign__value {
+  min-width: 2rem; padding: 0.1rem 0.35rem; text-align: center;
+  font: 700 1rem var(--lyr-font-num); color: var(--lyr-void);
+  background: var(--lyr-gold-bright); border-radius: var(--lyr-radius);
+}
+.lyrian .lyr-assign select {
+  min-height: 2.25rem; font: 700 1rem var(--lyr-font-num);
+  color: var(--lyr-ink); background-color: var(--lyr-void); color-scheme: dark;
+}
+.lyrian .lyr-assign select option { color: var(--lyr-ink); background-color: var(--lyr-void); }
+.lyrian .lyr-choice-search {
+  width: 100%; min-height: 2.25rem; margin: 0.35rem 0 0.65rem; padding: 0.35rem 0.55rem;
+  font-size: 0.82rem;
+}
+.lyrian .lyr-tier-list, .lyrian .lyr-tier-group { display: grid; gap: 0.55rem; }
+.lyrian .lyr-tier-group { padding-bottom: 0.65rem; border-bottom: 1px solid var(--lyr-rule); }
+.lyrian .lyr-tier-group:last-child { border-bottom: 0; }
+.lyrian [data-filter-text][hidden], .lyrian [data-filter-group][hidden] { display: none !important; }
 .lyrian .lyr-pick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 0.45rem; }
 .lyrian .lyr-pick {
   position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.25rem;
