@@ -751,5 +751,21 @@
   "LYRIAN.Creation.NoEquipmentSelected": "No starting equipment selected.",
   "LYRIAN.Creation.Add": "Add",
   "LYRIAN.Creation.Remove": "Remove",
-  "LYRIAN.Creation.Incomplete": "Complete the race, stats and skills, class, and all starting budgets before applying the character."
+  "LYRIAN.Creation.Incomplete": "Complete the race, stats and skills, class, and all starting budgets before applying the character.",
+  "LYRIAN.Creation.Step.review": "Review",
+  "LYRIAN.Creation.Review": "Character Review",
+  "LYRIAN.Creation.ClassLevel": "Starting Class Level",
+  "LYRIAN.Creation.ClassLevelOption": "Level {level} — {cost} EXP",
+  "LYRIAN.Creation.ClassBudget": "Class EXP: {spent} spent, {remaining} remaining of {total}.",
+  "LYRIAN.Creation.LevelValue": "Level {level}",
+  "LYRIAN.Creation.Readiness": "Ready to Apply",
+  "LYRIAN.Creation.Complete": "Complete",
+  "LYRIAN.Creation.Missing": "Missing",
+  "LYRIAN.Creation.Check.Race": "Race and ancestry choices",
+  "LYRIAN.Creation.Check.Classes": "Class and level budget",
+  "LYRIAN.Creation.Check.Breakthroughs": "Breakthrough EXP budget",
+  "LYRIAN.Creation.Check.Stats": "Main and sub stats",
+  "LYRIAN.Creation.Check.Skills": "Starting and racial skill points",
+  "LYRIAN.Creation.Check.Equipment": "Equipment Clim budget",
+  "LYRIAN.Creation.IncompleteDetail": "Cannot apply yet. Complete: {missing}."
 }
