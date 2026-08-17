@@ -14,9 +14,9 @@ test("bounded damage preserves honest claims at or below the ceiling", () => {
 
 test("bounded damage collapses forged, negative, missing, and non-numeric claims", () => {
   assert.deepEqual(boundedDamage({ claimed: 99999, ceiling: 12 }), { amount: 12, clamped: true });
-  assert.deepEqual(boundedDamage({ claimed: -10, ceiling: 12 }), { amount: 0, clamped: false });
-  assert.deepEqual(boundedDamage({ claimed: "not-a-number", ceiling: 12 }), { amount: 0, clamped: false });
-  assert.deepEqual(boundedDamage({ ceiling: 12 }), { amount: 0, clamped: false });
+  assert.deepEqual(boundedDamage({ claimed: -10, ceiling: 12 }), { amount: 0, clamped: true });
+  assert.deepEqual(boundedDamage({ claimed: "not-a-number", ceiling: 12 }), { amount: 0, clamped: true });
+  assert.deepEqual(boundedDamage({ ceiling: 12 }), { amount: 0, clamped: true });
 });
 
 test("verified pierce comes from real keywords and the real precise profile", () => {
