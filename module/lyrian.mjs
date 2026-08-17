@@ -156,6 +156,15 @@ function registerSettings() {
     default: true
   });
 
+  game.settings.register(SYSTEM_ID, "craftingConsumesMaterials", {
+    name: "LYRIAN.Settings.CraftingConsumesMaterials.Name",
+    hint: "LYRIAN.Settings.CraftingConsumesMaterials.Hint",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: true
+  });
+
   game.settings.register(SYSTEM_ID, "contentSeedVersion", {
     scope: "world",
     config: false,
@@ -200,6 +209,7 @@ async function preloadTemplates() {
     "actor/tab-proficiencies",
     "actor/tab-abilities",
     "actor/tab-inventory",
+    "actor/tab-crafting",
     "actor/tab-progression",
     "actor/tab-biography",
     "actor/tab-setup",
@@ -208,6 +218,7 @@ async function preloadTemplates() {
     "item/body",
     "item/description",
     "chat/attack-card",
+    "chat/craft-card",
     "chat/item-card"
   ].map((p) => `systems/${SYSTEM_ID}/templates/${p}.hbs`);
 
