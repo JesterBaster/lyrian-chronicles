@@ -1,5 +1,5 @@
 import { forEachDocument } from "./migrate.mjs";
-import { planDocumentSchemaMigration } from "../module/rules/schema-versioning.mjs";
+import { normalizeSchemaVersion } from "../module/rules/schema-versioning.mjs";
 
 /**
  * 0.6.14 — establish independent persisted schema revisions for every Actor
@@ -9,14 +9,14 @@ import { planDocumentSchemaMigration } from "../module/rules/schema-versioning.m
 export async function runMigration() {
   for (const documentName of ["Actor", "Item"]) {
     await forEachDocument(documentName, async (document) => {
-      const plan = planDocumentSchemaMigration(documentName, document.system?.schemaVersion);
-      if (plan.status === "future") {
+      const current = normalizeSchemaVersion(document.system?.schemaVersion);
+      if (current > 1) {
         console.warn(
-          `Lyrian Chronicles | Preserving future ${documentName} schema ${plan.current} on ${document.uuid}`
+          `Lyrian Chronicles | Preserving future ${documentName} schema ${current} on ${document.uuid}`
         );
         return;
       }
-      if (plan.update) await document.update(plan.update);
+      if (current < 1) await document.update({ "system.schemaVersion": 1 });
     }, { includeLockedSystemPacks: true });
   }
 }
