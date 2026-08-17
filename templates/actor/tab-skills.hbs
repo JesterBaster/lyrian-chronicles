@@ -37,8 +37,9 @@
 
   <div class="lyr-skill-groups">
     {{#each skillGroups as |group|}}
-      <div class="lyr-skill-group">
-        <h3 class="lyr-skill-group__title">{{group.label}} <em>{{group.value}}</em></h3>
+      <details class="lyr-skill-group lyr-fold" data-collapse-scope="skills"
+               data-collapse-id="{{group.key}}" {{{lyrianSectionOpen "skills" group.key}}}>
+        <summary class="lyr-skill-group__title">{{group.label}} <em>{{group.value}}</em></summary>
         {{#each group.skills as |skill|}}
           <div class="lyr-skill-entry {{#if skill.atCap}}lyr-skill--capped{{/if}}">
             <div class="lyr-skill">
@@ -53,7 +54,7 @@
             {{> expertiseBlock expertises=skill.expertises key=skill.key group="skills" rollAction="rollSkill"}}
           </div>
         {{/each}}
-      </div>
+      </details>
     {{/each}}
   </div>
 

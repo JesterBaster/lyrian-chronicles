@@ -17,117 +17,97 @@
     <p class="lyr-warn"><i class="fa-solid fa-triangle-exclamation"></i> {{conflict.message}}</p>
   {{/each}}
 
-  <div class="lyr-section-head">
-    <h2 class="lyr-heading">{{localize "LYRIAN.Inventory.Section.weapon"}}</h2>
-    <button type="button" data-action="createItem" data-type="weapon">{{localize "LYRIAN.Action.AddWeapon"}}</button>
-  </div>
-  <ul class="lyr-list">
-    {{#each items.weapons as |item|}}
-      <li class="lyr-row" data-item-id="{{item.id}}">
-        <img class="lyr-row__icon" src="{{item.img}}" alt="" />
-        <div class="lyr-row__body">
-          <span class="lyr-row__name">{{item.name}}</span>
-          <span class="lyr-row__meta">
-            {{lyrianLocalizeKey "weaponGroups" item.system.group}} ·
-            {{localize "LYRIAN.UI.Burden"}} {{item.system.burden}}
-            {{#unless item.system.proficient}} · <em class="lyr-warn">{{localize "LYRIAN.UI.NotProficient"}}</em>{{/unless}}
-          </span>
-          {{#each (lyrianInstalledMods @root.items.installedMods item.id) as |mod|}}
-            <span class="lyr-row__meta" data-item-id="{{mod.id}}">
-              {{localize "LYRIAN.UI.Mods"}}: {{mod.name}} · {{localize "LYRIAN.UI.SlotValue" slot=(lyrianModSlot mod)}}
-              <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
-              <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
-            </span>
-          {{/each}}
-        </div>
-        <div class="lyr-row__actions">
-          <button type="button" class="lyr-icon" data-action="toggleEquip"><i class="fa-solid {{#if item.system.equipped}}fa-hand-fist{{else}}fa-box{{/if}}"></i></button>
-          <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
-          <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
-        </div>
-      </li>
-    {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Unarmed"}}</li>{{/each}}
-  </ul>
-
-  <div class="lyr-section-head">
-    <h2 class="lyr-heading">{{localize "LYRIAN.UI.ArmourShields"}}</h2>
-    <button type="button" data-action="createItem" data-type="armor">{{localize "LYRIAN.Action.AddArmour"}}</button>
-  </div>
-  <ul class="lyr-list">
-    {{#each items.armor as |item|}}
-      <li class="lyr-row" data-item-id="{{item.id}}">
-        <img class="lyr-row__icon" src="{{item.img}}" alt="" />
-        <div class="lyr-row__body">
-          <span class="lyr-row__name">{{item.name}}</span>
-          <span class="lyr-row__meta">
-            {{lyrianLocalizeKey "armorCategories" item.system.category}} ·
-            {{localize "LYRIAN.Defence.Guard"}} {{lyrianSigned item.system.guard}} · {{localize "LYRIAN.Defence.Block"}} {{item.system.blockValue}} ·
-            {{localize "LYRIAN.Defence.Evasion"}} {{lyrianSigned item.system.evasionPenalty}}
-          </span>
-          {{#each (lyrianInstalledMods @root.items.installedMods item.id) as |mod|}}
-            <span class="lyr-row__meta" data-item-id="{{mod.id}}">
-              {{localize "LYRIAN.UI.Mods"}}: {{mod.name}} · {{localize "LYRIAN.UI.SlotValue" slot=(lyrianModSlot mod)}}
-              <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
-              <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
-            </span>
-          {{/each}}
-        </div>
-        <div class="lyr-row__actions">
-          <button type="button" class="lyr-icon" data-action="toggleEquip"><i class="fa-solid {{#if item.system.equipped}}fa-shield{{else}}fa-box{{/if}}"></i></button>
-          <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
-          <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
-        </div>
-      </li>
-    {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Unarmoured"}}</li>{{/each}}
-  </ul>
-
-  <div class="lyr-section-head">
-    <h2 class="lyr-heading">{{localize "LYRIAN.UI.GearMaterials"}}</h2>
-    <button type="button" data-action="createItem" data-type="gear">{{localize "LYRIAN.Action.AddGear"}}</button>
-  </div>
-  <ul class="lyr-list">
-    {{#each items.gear as |item|}}
-      <li class="lyr-row" data-item-id="{{item.id}}">
-        <img class="lyr-row__icon" src="{{item.img}}" alt="" />
-        <div class="lyr-row__body">
-          <span class="lyr-row__name">{{item.name}}</span>
-          <span class="lyr-row__meta">
-            ×{{item.system.quantity}}
-            {{#if item.system.units}} · {{item.system.units}} {{localize "LYRIAN.UI.Units"}}{{/if}}
-            {{#if item.system.countsAsBurden}} · {{localize "LYRIAN.UI.Burden"}} {{item.system.totalBurden}}{{else}} · {{localize "LYRIAN.UI.Stowed"}}{{/if}}
-          </span>
-          {{#each (lyrianInstalledMods @root.items.installedMods item.id) as |mod|}}
-            <span class="lyr-row__meta" data-item-id="{{mod.id}}">
-              {{localize "LYRIAN.UI.Mods"}}: {{mod.name}} · {{localize "LYRIAN.UI.SlotValue" slot=(lyrianModSlot mod)}}
-              <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
-              <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
-            </span>
-          {{/each}}
-        </div>
-        <div class="lyr-row__actions">
-          <button type="button" data-action="useItem">{{localize "LYRIAN.Action.Show"}}</button>
-          <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
-          <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
-        </div>
-      </li>
-    {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.TravellingLight"}}</li>{{/each}}
-  </ul>
-
-  {{#if items.equipment.length}}
-    <div class="lyr-section-head">
-      <h2 class="lyr-heading">{{localize "LYRIAN.Inventory.OtherOfficial"}}</h2>
-    </div>
+  <details class="lyr-fold" data-collapse-scope="inventory" data-collapse-id="weapons" {{{lyrianSectionOpen "inventory" "weapons"}}}>
+    <summary class="lyr-section-head">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Inventory.Section.weapon"}}</h2>
+      <button type="button" data-action="createItem" data-type="weapon">{{localize "LYRIAN.Action.AddWeapon"}}</button>
+    </summary>
     <ul class="lyr-list">
-      {{#each items.equipment as |item|}}
+      {{#each items.weapons as |item|}}
         <li class="lyr-row" data-item-id="{{item.id}}">
           <img class="lyr-row__icon" src="{{item.img}}" alt="" />
           <div class="lyr-row__body">
             <span class="lyr-row__name">{{item.name}}</span>
             <span class="lyr-row__meta">
-              {{item.system.category}}{{#if item.system.subType}} · {{item.system.subType}}{{/if}}
-              {{#if item.system.cost}} · {{localize "LYRIAN.UI.Cost"}} {{item.system.cost}}{{/if}}
-              {{#if item.system.burden}} · {{localize "LYRIAN.UI.Burden"}} {{item.system.burden}}{{/if}}
+              {{lyrianLocalizeKey "weaponGroups" item.system.group}} ·
+              {{localize "LYRIAN.UI.Burden"}} {{item.system.burden}}
+              {{#unless item.system.proficient}} · <em class="lyr-warn">{{localize "LYRIAN.UI.NotProficient"}}</em>{{/unless}}
             </span>
+            {{#each (lyrianInstalledMods @root.items.installedMods item.id) as |mod|}}
+              <span class="lyr-row__meta" data-item-id="{{mod.id}}">
+                {{localize "LYRIAN.UI.Mods"}}: {{mod.name}} · {{localize "LYRIAN.UI.SlotValue" slot=(lyrianModSlot mod)}}
+                <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+                <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+              </span>
+            {{/each}}
+          </div>
+          <div class="lyr-row__actions">
+            <button type="button" class="lyr-icon" data-action="toggleEquip"><i class="fa-solid {{#if item.system.equipped}}fa-hand-fist{{else}}fa-box{{/if}}"></i></button>
+            <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+            <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </li>
+      {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Unarmed"}}</li>{{/each}}
+    </ul>
+  </details>
+
+  <details class="lyr-fold" data-collapse-scope="inventory" data-collapse-id="armor" {{{lyrianSectionOpen "inventory" "armor"}}}>
+    <summary class="lyr-section-head">
+      <h2 class="lyr-heading">{{localize "LYRIAN.UI.ArmourShields"}}</h2>
+      <button type="button" data-action="createItem" data-type="armor">{{localize "LYRIAN.Action.AddArmour"}}</button>
+    </summary>
+    <ul class="lyr-list">
+      {{#each items.armor as |item|}}
+        <li class="lyr-row" data-item-id="{{item.id}}">
+          <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+          <div class="lyr-row__body">
+            <span class="lyr-row__name">{{item.name}}</span>
+            <span class="lyr-row__meta">
+              {{lyrianLocalizeKey "armorCategories" item.system.category}} ·
+              {{localize "LYRIAN.Defence.Guard"}} {{lyrianSigned item.system.guard}} · {{localize "LYRIAN.Defence.Block"}} {{item.system.blockValue}} ·
+              {{localize "LYRIAN.Defence.Evasion"}} {{lyrianSigned item.system.evasionPenalty}}
+            </span>
+            {{#each (lyrianInstalledMods @root.items.installedMods item.id) as |mod|}}
+              <span class="lyr-row__meta" data-item-id="{{mod.id}}">
+                {{localize "LYRIAN.UI.Mods"}}: {{mod.name}} · {{localize "LYRIAN.UI.SlotValue" slot=(lyrianModSlot mod)}}
+                <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+                <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+              </span>
+            {{/each}}
+          </div>
+          <div class="lyr-row__actions">
+            <button type="button" class="lyr-icon" data-action="toggleEquip"><i class="fa-solid {{#if item.system.equipped}}fa-shield{{else}}fa-box{{/if}}"></i></button>
+            <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+            <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+          </div>
+        </li>
+      {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Unarmoured"}}</li>{{/each}}
+    </ul>
+  </details>
+
+  <details class="lyr-fold" data-collapse-scope="inventory" data-collapse-id="gear" {{{lyrianSectionOpen "inventory" "gear"}}}>
+    <summary class="lyr-section-head">
+      <h2 class="lyr-heading">{{localize "LYRIAN.UI.GearMaterials"}}</h2>
+      <button type="button" data-action="createItem" data-type="gear">{{localize "LYRIAN.Action.AddGear"}}</button>
+    </summary>
+    <ul class="lyr-list">
+      {{#each items.gear as |item|}}
+        <li class="lyr-row" data-item-id="{{item.id}}">
+          <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+          <div class="lyr-row__body">
+            <span class="lyr-row__name">{{item.name}}</span>
+            <span class="lyr-row__meta">
+              ×{{item.system.quantity}}
+              {{#if item.system.units}} · {{item.system.units}} {{localize "LYRIAN.UI.Units"}}{{/if}}
+              {{#if item.system.countsAsBurden}} · {{localize "LYRIAN.UI.Burden"}} {{item.system.totalBurden}}{{else}} · {{localize "LYRIAN.UI.Stowed"}}{{/if}}
+            </span>
+            {{#each (lyrianInstalledMods @root.items.installedMods item.id) as |mod|}}
+              <span class="lyr-row__meta" data-item-id="{{mod.id}}">
+                {{localize "LYRIAN.UI.Mods"}}: {{mod.name}} · {{localize "LYRIAN.UI.SlotValue" slot=(lyrianModSlot mod)}}
+                <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+                <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+              </span>
+            {{/each}}
           </div>
           <div class="lyr-row__actions">
             <button type="button" data-action="useItem">{{localize "LYRIAN.Action.Show"}}</button>
@@ -135,8 +115,36 @@
             <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
           </div>
         </li>
-      {{/each}}
+      {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.TravellingLight"}}</li>{{/each}}
     </ul>
+  </details>
+
+  {{#if items.equipment.length}}
+    <details class="lyr-fold" data-collapse-scope="inventory" data-collapse-id="equipment" {{{lyrianSectionOpen "inventory" "equipment"}}}>
+      <summary class="lyr-section-head">
+        <h2 class="lyr-heading">{{localize "LYRIAN.Inventory.OtherOfficial"}}</h2>
+      </summary>
+      <ul class="lyr-list">
+        {{#each items.equipment as |item|}}
+          <li class="lyr-row" data-item-id="{{item.id}}">
+            <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+            <div class="lyr-row__body">
+              <span class="lyr-row__name">{{item.name}}</span>
+              <span class="lyr-row__meta">
+                {{item.system.category}}{{#if item.system.subType}} · {{item.system.subType}}{{/if}}
+                {{#if item.system.cost}} · {{localize "LYRIAN.UI.Cost"}} {{item.system.cost}}{{/if}}
+                {{#if item.system.burden}} · {{localize "LYRIAN.UI.Burden"}} {{item.system.burden}}{{/if}}
+              </span>
+            </div>
+            <div class="lyr-row__actions">
+              <button type="button" data-action="useItem">{{localize "LYRIAN.Action.Show"}}</button>
+              <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+              <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    </details>
   {{/if}}
 
   {{#if isCharacter}}

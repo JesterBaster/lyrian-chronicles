@@ -22,6 +22,7 @@ import {
 import { hybridAncestryFamily } from "../rules/hybrid-race.mjs";
 import { isHeaderOnlyRender } from "../rules/sheet-refresh.mjs";
 import { captureScroll, restoreScroll } from "../rules/scroll-state.mjs";
+import { withCollapsed } from "../rules/collapsible.mjs";
 import {
   CUSTOM_OUTPUT_TYPES,
   normalizeCraftProject
@@ -484,6 +485,26 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   _onRender(context, options) {
     super._onRender?.(context, options);
+
+    // Remember which sections the reader folded away. Stored on the User, so
+    // two players viewing one sheet do not overwrite each other's view.
+    // Several section headers carry an Add button. A click anywhere in a
+    // summary folds the section, so the button would run its action and
+    // collapse what it just added to.
+    this.element.querySelectorAll("details[data-collapse-scope] > summary").forEach((summary) => {
+      summary.addEventListener("click", (event) => {
+        if (event.target.closest("button, a, input, select, textarea")) event.preventDefault();
+      });
+    });
+
+    this.element.querySelectorAll("details[data-collapse-scope]").forEach((section) => {
+      section.addEventListener("toggle", async () => {
+        const { collapseScope, collapseId } = section.dataset;
+        const state = game.user.getFlag("lyrian-chronicles", "collapsedSections") ?? {};
+        const next = withCollapsed(state, collapseScope, collapseId, !section.open);
+        await game.user.setFlag("lyrian-chronicles", "collapsedSections", next);
+      });
+    });
 
     this.element.querySelectorAll("[data-expertise-field]").forEach((input) => {
       input.addEventListener("change", async (event) => {
