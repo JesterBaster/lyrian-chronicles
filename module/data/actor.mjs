@@ -328,6 +328,32 @@ export class LyrianCharacter extends LyrianActorBase {
       }, {})
     );
 
+    schema.crafting = new fields.SchemaField({
+      projects: new fields.ArrayField(
+        new fields.SchemaField({
+          name: new fields.StringField({ required: true, blank: true, initial: "" }),
+          skill: new fields.StringField({
+            required: true,
+            initial: "blacksmith",
+            choices: Object.keys(LYRIAN.artisanSkills)
+          }),
+          dc: int(15),
+          materials: new fields.ArrayField(
+            new fields.SchemaField({
+              itemId: new fields.StringField({ required: true, blank: true, initial: "" }),
+              quantity: int(0, { min: 0 })
+            }),
+            { required: false, initial: [] }
+          ),
+          outputUuid: new fields.StringField({ required: true, blank: true, initial: "" }),
+          outputName: new fields.StringField({ required: true, blank: true, initial: "" }),
+          attempts: int(0, { min: 0 }),
+          completed: new fields.BooleanField({ initial: false })
+        }),
+        { required: false, initial: [] }
+      )
+    });
+
     schema.proficiencies = new fields.SchemaField({
       weapons: new fields.SetField(new fields.StringField(), { required: false }),
       armor: new fields.SetField(new fields.StringField(), { required: false }),
