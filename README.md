@@ -50,7 +50,7 @@ restart; changes to data model schemas need the world relaunched from the setup 
 | Downed | 0 HP applies Downed and Prone (grunts die outright); negative max HP applies Mortal Wound |
 | Injuries | 1d10 injury table roll creates an Injury item on the actor |
 | Skills | `d20 + sub stat + ranks + expertise`, with the 15 / 20 / uncapped rank cap tracked from Spirit Core |
-| Crafting & gathering | GM-defined projects consume owned Gear per attempt, roll `d10 + artisan + best expertise` against DC, create the dropped output on success, and keep gathering as `d10 + skill` checks |
+| Crafting & gathering | Projects consume owned Gear per attempt, roll `d10 + artisan + best expertise` against DC, and on success create either a copy of a dropped Item or a custom weapon, armor or gear item, optionally installing owned Mods into the result; gathering stays `d10 + skill` checks |
 
 ## Compendium content
 
@@ -143,8 +143,13 @@ token untargetable. Size differences shift Evasion by 1 per step.
 Cover, stealth, grapple escape power, mounted combat, gathering node points and depletion,
 interlude bookkeeping, and the housing rules remain resolved by the GM. Crafting projects use
 a single d10-vs-DC attempt with inventory consumption; they intentionally do not use dice pools
-or progress tracks. That is deliberate: automating them before you have played a few
+or progress tracks. A custom item is forged with default stats and edited on its own item
+sheet afterwards, because the rulebook sets no costing for arbitrary weapon and armor values.
+That is deliberate: automating them before you have played a few
 sessions tends to lock in the wrong assumptions.
+
+By default only the GM defines projects. Enable **Players may author crafting projects** in
+system settings to let players create their own, including custom output and mods.
 
 ## Layout
 
