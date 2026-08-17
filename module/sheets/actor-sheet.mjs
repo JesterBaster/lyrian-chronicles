@@ -497,6 +497,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     // through Foundry form expansion. Persist the complete project list instead.
     this.element.querySelectorAll("[data-crafting-field]").forEach((input) => {
       input.addEventListener("change", async () => {
+        // The controls are also disabled in the template, but that is markup a
+        // client can edit. Every other project write checks this, so this one must.
+        if (!this._mayEditProjects()) return;
         await this.document.update({
           "system.crafting.projects": this._readCraftingProjects()
         });
@@ -509,9 +512,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const outputDrop = event.target?.closest?.("[data-craft-output-drop]");
     const projectRow = outputDrop?.closest?.("[data-crafting-project]");
     if (projectRow && this.document.type === "character") {
-      const mayEdit = game.user.isGM
-        || game.settings.get("lyrian-chronicles", "craftingPlayerProjects");
-      if (!mayEdit) return null;
+      if (!this._mayEditProjects()) return null;
       const index = Number(projectRow.dataset.projectIndex);
       const projects = this._readCraftingProjects();
       if (!projects[index]) return null;
