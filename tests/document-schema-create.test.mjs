@@ -35,7 +35,7 @@ test("new Actors and Items are stamped with their current schema revisions", asy
   await actor._preCreate({}, {}, {});
   await item._preCreate({}, {}, {});
 
-  assert.deepEqual(actor.sourceUpdates, [{ "system.schemaVersion": 1 }]);
+  assert.deepEqual(actor.sourceUpdates, [{ "system.schemaVersion": 2 }]);
   assert.deepEqual(item.sourceUpdates, [{ "system.schemaVersion": 1 }]);
 });
 
