@@ -1,5 +1,5 @@
 import { LYRIAN } from "../config.mjs";
-import { raceSkillGrant } from "../rules/progression.mjs";
+import { normalizeClassLevel, raceSkillGrant } from "../rules/progression.mjs";
 import { convertOfficialEquipment } from "../rules/equipment-import.mjs";
 import {
   HYBRID_TYPES,
@@ -19,6 +19,103 @@ const EQUIPMENT_PACKS = Object.freeze(["weapons", "armor-shields", "consumables"
 function numberFrom(value) {
   const match = String(value ?? "").replaceAll(",", "").match(/\d+/);
   return match ? Number(match[0]) : 0;
+}
+
+/** Calculate the creation EXP invested in one class at a chosen level. */
+export function creationClassCost(classSystem = {}, level = 1) {
+  const unlockCost = Math.max(1, Number(classSystem.tier) || 1) * LYRIAN.progression.classCostPerTier;
+  return unlockCost + (normalizeClassLevel(level) - 1) * LYRIAN.progression.abilityCost;
+}
+
+/**
+ * Apply one Foundry V14 form input to wizard state.
+ * Keeping this pure makes dropdown, radio, and level behavior regression-testable.
+ */
+export function applyCreationInput(state, target = {}) {
+  const name = String(target.name ?? "");
+  const value = String(target.value ?? "");
+
+  if (name.startsWith("mainAssign.") || name.startsWith("subAssign.")) {
+    const [bucket, key] = name.split(".");
+    if (!key) return false;
+    if (!value) delete state[bucket][key];
+    else state[bucket][key] = Number(value);
+    return true;
+  }
+
+  if (name === "raceId") {
+    state.raceId = value || null;
+    state.raceMode = "standard";
+    state.hybridType = "";
+    state.hybridBreakthroughId = null;
+    state.ancestryId = null;
+    state.raceMainChoice = "";
+    state.raceSubChoice = "";
+    state.raceVariant = "";
+    state.raceSkillSpend = {};
+    return true;
+  }
+
+  if (name === "raceMode") {
+    state.raceMode = "hybrid";
+    state.raceId = null;
+    state.ancestryId = null;
+    state.hybridType = "";
+    state.hybridBreakthroughId = null;
+    state.raceMainChoice = "";
+    state.raceSubChoice = "";
+    state.raceVariant = "";
+    state.raceSkillSpend = {};
+    return true;
+  }
+
+  if (name === "hybridType") {
+    state.raceMode = "hybrid";
+    state.hybridType = value;
+    state.hybridBreakthroughId = target.dataset?.breakthroughId || null;
+    state.raceId = target.dataset?.fixedPrimaryId || null;
+    state.ancestryId = null;
+    state.raceMainChoice = "";
+    state.raceSubChoice = "";
+    state.raceVariant = "";
+    state.raceSkillSpend = {};
+    return true;
+  }
+
+  if (name === "hybridPrimaryRaceId") {
+    state.raceId = value || null;
+    state.ancestryId = null;
+    state.raceMainChoice = "";
+    state.raceSubChoice = "";
+    state.raceSkillSpend = {};
+    return true;
+  }
+
+  if (name === "ancestryId") {
+    state.ancestryId = value || null;
+    for (const id of Object.keys(state.raceSkillSpend)) {
+      if (id !== state.raceId) delete state.raceSkillSpend[id];
+    }
+    return true;
+  }
+
+  if (name === "classId") {
+    state.classId = value || null;
+    state.classLevel = 1;
+    return true;
+  }
+
+  if (name === "classLevel") {
+    state.classLevel = normalizeClassLevel(value);
+    return true;
+  }
+
+  if (["raceMainChoice", "raceSubChoice", "raceVariant"].includes(name)) {
+    state[name] = value;
+    return true;
+  }
+
+  return false;
 }
 
 /**
@@ -48,6 +145,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       raceSubChoice: "",
       raceVariant: "",
       classId: null,
+      classLevel: 1,
       breakthroughIds: [],
       equipmentIds: [],
       skillPoints: p.startingSkillPoints,
@@ -60,9 +158,15 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
 
   static DEFAULT_OPTIONS = {
     id: "lyrian-character-creation",
+    tag: "form",
     classes: ["lyrian", "lyr-creation"],
     position: { width: 640, height: 700 },
     window: { title: "LYRIAN.Creation.Title", resizable: true },
+    form: {
+      closeOnSubmit: false,
+      submitOnChange: true,
+      handler: LyrianCharacterCreation.#onChangeForm
+    },
     actions: {
       goStep: LyrianCharacterCreation.#onGoStep,
       adjustSkill: LyrianCharacterCreation.#onAdjustSkill,
@@ -178,9 +282,13 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const skillsComplete = skillPointsLeft === 0 &&
       raceSkillPools.every((pool) => pool.remaining === 0);
     const selectedClass = classes.find((entry) => entry.id === s.classId) ?? null;
-    const classCost = selectedClass
-      ? (Number(selectedClass.system.expCost) || Number(selectedClass.system.tier) * p.classCostPerTier)
-      : 0;
+    const classLevel = normalizeClassLevel(s.classLevel);
+    const classCost = selectedClass ? creationClassCost(selectedClass.system, classLevel) : 0;
+    const classLevels = Array.from({ length: p.maxClassLevel }, (_, index) => {
+      const level = index + 1;
+      const cost = selectedClass ? creationClassCost(selectedClass.system, level) : 0;
+      return { level, cost, affordable: cost <= s.expBudget };
+    });
     const statsComplete =
       Object.keys(s.mainAssign).length === 4 && Object.keys(s.subAssign).length === 5;
     const raceComplete = !!selectedRace &&
@@ -189,8 +297,15 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       (!ancestries.length || !!s.ancestryId) &&
       (!(selectedRace.system.variants?.length) || !!s.raceVariant) &&
       (s.raceMode !== "hybrid" || (hybridValidation?.valid && !!selectedHybridBreakthrough));
-    const creationReady = statsComplete && raceComplete && skillsComplete && !!selectedClass &&
-      classCost <= s.expBudget && breakthroughExpLeft >= 0 && equipmentClimLeft >= 0;
+    const creationChecks = [
+      { key: "race", label: game.i18n.localize("LYRIAN.Creation.Check.Race"), complete: raceComplete },
+      { key: "classes", label: game.i18n.localize("LYRIAN.Creation.Check.Classes"), complete: !!selectedClass && classCost <= s.expBudget },
+      { key: "breakthroughs", label: game.i18n.localize("LYRIAN.Creation.Check.Breakthroughs"), complete: breakthroughExpLeft >= 0 },
+      { key: "stats", label: game.i18n.localize("LYRIAN.Creation.Check.Stats"), complete: statsComplete },
+      { key: "skills", label: game.i18n.localize("LYRIAN.Creation.Check.Skills"), complete: skillsComplete },
+      { key: "equipment", label: game.i18n.localize("LYRIAN.Creation.Check.Equipment"), complete: equipmentClimLeft >= 0 }
+    ];
+    const creationReady = creationChecks.every((check) => check.complete);
 
     return {
       actor: this.actor,
@@ -238,7 +353,11 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       subStatChoices: Object.entries(LYRIAN.subStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
       classes,
       selectedClass,
+      classLevel,
+      classLevels,
       classCost,
+      classExpLeft: s.expBudget - classCost,
+      creationChecks,
       creationReady,
       breakthroughs,
       selectedBreakthroughs,
@@ -285,91 +404,10 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
 
   /* -------------------------------------------- */
 
-  /** Bind the inputs that fire `change` rather than `click`. */
-  async _onRender(context, options) {
-    await super._onRender?.(context, options);
-    const html = this.element;
-
-    html.querySelectorAll("[data-assign]").forEach((select) => {
-      select.addEventListener("change", (event) => {
-        const bucket = event.target.dataset.assign === "main" ? "mainAssign" : "subAssign";
-        const key = event.target.dataset.stat;
-        const value = Number(event.target.value);
-        if (!event.target.value) delete this.creationState[bucket][key];
-        else this.creationState[bucket][key] = value;
-        this.render();
-      });
-    });
-
-    html.querySelectorAll("input[name='raceId'], input[name='ancestryId'], input[name='classId']").forEach((radio) => {
-      radio.addEventListener("change", (event) => {
-        const field = event.target.name;
-        this.creationState[field] = event.target.value;
-        if (field === "raceId") {
-          this.creationState.raceMode = "standard";
-          this.creationState.hybridType = "";
-          this.creationState.hybridBreakthroughId = null;
-          this.creationState.ancestryId = null;
-          this.creationState.raceMainChoice = "";
-          this.creationState.raceSubChoice = "";
-          this.creationState.raceVariant = "";
-          this.creationState.raceSkillSpend = {};
-        } else if (field === "ancestryId") {
-          for (const id of Object.keys(this.creationState.raceSkillSpend)) {
-            if (id !== this.creationState.raceId) delete this.creationState.raceSkillSpend[id];
-          }
-        }
-        this.render();
-      });
-    });
-
-    html.querySelectorAll("input[name='raceMode']").forEach((radio) => {
-      radio.addEventListener("change", () => {
-        this.creationState.raceMode = "hybrid";
-        this.creationState.raceId = null;
-        this.creationState.ancestryId = null;
-        this.creationState.hybridType = "";
-        this.creationState.hybridBreakthroughId = null;
-        this.creationState.raceMainChoice = "";
-        this.creationState.raceSubChoice = "";
-        this.creationState.raceVariant = "";
-        this.creationState.raceSkillSpend = {};
-        this.render();
-      });
-    });
-
-    html.querySelectorAll("input[name='hybridType']").forEach((radio) => {
-      radio.addEventListener("change", (event) => {
-        this.creationState.raceMode = "hybrid";
-        this.creationState.hybridType = event.target.value;
-        this.creationState.hybridBreakthroughId = event.target.dataset.breakthroughId || null;
-        this.creationState.raceId = event.target.dataset.fixedPrimaryId || null;
-        this.creationState.ancestryId = null;
-        this.creationState.raceMainChoice = "";
-        this.creationState.raceSubChoice = "";
-        this.creationState.raceVariant = "";
-        this.creationState.raceSkillSpend = {};
-        this.render();
-      });
-    });
-
-    html.querySelectorAll("input[name='hybridPrimaryRaceId']").forEach((radio) => {
-      radio.addEventListener("change", (event) => {
-        this.creationState.raceId = event.target.value;
-        this.creationState.ancestryId = null;
-        this.creationState.raceMainChoice = "";
-        this.creationState.raceSubChoice = "";
-        this.creationState.raceSkillSpend = {};
-        this.render();
-      });
-    });
-
-    html.querySelectorAll("[data-race-choice]").forEach((select) => {
-      select.addEventListener("change", (event) => {
-        this.creationState[event.target.dataset.raceChoice] = event.target.value;
-        this.render();
-      });
-    });
+  /** Handle all dropdown and radio changes through ApplicationV2's native form pipeline. */
+  static async #onChangeForm(event) {
+    if (!applyCreationInput(this.creationState, event.target)) return;
+    await this.render();
   }
 
   /* -------------------------------------------- */
@@ -455,6 +493,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     this.creationState.raceSubChoice = "";
     this.creationState.raceVariant = "";
     this.creationState.classId = null;
+    this.creationState.classLevel = 1;
     this.creationState.breakthroughIds = [];
     this.creationState.equipmentIds = [];
     this.creationState.step = "race";
@@ -471,7 +510,11 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const p = LYRIAN.progression;
     const context = await this._prepareContext();
     if (!context.creationReady) {
-      return ui.notifications.warn(game.i18n.localize("LYRIAN.Creation.Incomplete"));
+      const missing = context.creationChecks.filter((check) => !check.complete)
+        .map((check) => check.label).join(", ");
+      return ui.notifications.warn(
+        game.i18n.format("LYRIAN.Creation.IncompleteDetail", { missing })
+      );
     }
 
     const racePack = game.packs.get("lyrian-chronicles.races");
@@ -561,7 +604,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     if (!alreadyOwnedClass) {
       const classData = classDoc.toObject();
       delete classData._id;
-      classData.system.abilitiesUnlocked = 1;
+      classData.system.abilitiesUnlocked = normalizeClassLevel(s.classLevel);
       toCreate.push(classData);
     }
 
