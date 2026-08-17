@@ -21,6 +21,7 @@ import {
 } from "../rules/mod-installation.mjs";
 import { hybridAncestryFamily } from "../rules/hybrid-race.mjs";
 import { isHeaderOnlyRender } from "../rules/sheet-refresh.mjs";
+import { captureScroll, restoreScroll } from "../rules/scroll-state.mjs";
 import {
   CUSTOM_OUTPUT_TYPES,
   normalizeCraftProject
@@ -464,6 +465,23 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
    * into an object keyed "0", which an ArrayField rejects. So these inputs are
    * kept out of the form submission and written as a complete array instead.
    */
+  /** @override Capture the scroll offset before a part is swapped out. */
+  _preSyncPartState(partId, newElement, priorElement, state) {
+    super._preSyncPartState?.(partId, newElement, priorElement, state);
+    state.lyrianScrollTop = captureScroll(this.element);
+  }
+
+  /**
+   * @override
+   * Nineteen handlers here write to the document, and each write re-renders.
+   * Without this, adding an expertise or stepping a class level threw the
+   * reader back to the top of the sheet.
+   */
+  _syncPartState(partId, newElement, priorElement, state) {
+    super._syncPartState?.(partId, newElement, priorElement, state);
+    restoreScroll(this.element, state.lyrianScrollTop);
+  }
+
   _onRender(context, options) {
     super._onRender?.(context, options);
 
