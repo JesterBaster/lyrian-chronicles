@@ -178,6 +178,19 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const skillsComplete = skillPointsLeft === 0 &&
       raceSkillPools.every((pool) => pool.remaining === 0);
     const selectedClass = classes.find((entry) => entry.id === s.classId) ?? null;
+    const classCost = selectedClass
+      ? (Number(selectedClass.system.expCost) || Number(selectedClass.system.tier) * p.classCostPerTier)
+      : 0;
+    const statsComplete =
+      Object.keys(s.mainAssign).length === 4 && Object.keys(s.subAssign).length === 5;
+    const raceComplete = !!selectedRace &&
+      (!selectedRace.system.attributeBonuses?.chooseMain || !!s.raceMainChoice) &&
+      (!selectedRace.system.attributeBonuses?.chooseSub || !!s.raceSubChoice) &&
+      (!ancestries.length || !!s.ancestryId) &&
+      (!(selectedRace.system.variants?.length) || !!s.raceVariant) &&
+      (s.raceMode !== "hybrid" || (hybridValidation?.valid && !!selectedHybridBreakthrough));
+    const creationReady = statsComplete && raceComplete && skillsComplete && !!selectedClass &&
+      classCost <= s.expBudget && breakthroughExpLeft >= 0 && equipmentClimLeft >= 0;
 
     return {
       actor: this.actor,
@@ -203,8 +216,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
         options: LYRIAN.subStatArray.filter((v) => !usedSub.includes(v) || s.subAssign[key] === v)
       })),
 
-      statsComplete:
-        Object.keys(s.mainAssign).length === 4 && Object.keys(s.subAssign).length === 5,
+      statsComplete,
 
       races,
       ancestries,
@@ -221,19 +233,13 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       raceNeedsMainChoice: !!selectedRace?.system.attributeBonuses?.chooseMain,
       raceNeedsSubChoice: !!selectedRace?.system.attributeBonuses?.chooseSub,
       raceVariants: selectedRace?.system.variants ?? [],
-      raceComplete: !!selectedRace &&
-        (!selectedRace.system.attributeBonuses?.chooseMain || !!s.raceMainChoice) &&
-        (!selectedRace.system.attributeBonuses?.chooseSub || !!s.raceSubChoice) &&
-        (!ancestries.length || !!s.ancestryId) &&
-        (!(selectedRace.system.variants?.length) || !!s.raceVariant) &&
-        (s.raceMode !== "hybrid" || (hybridValidation?.valid && !!selectedHybridBreakthrough)),
+      raceComplete,
       mainStatChoices: Object.entries(LYRIAN.mainStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
       subStatChoices: Object.entries(LYRIAN.subStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
       classes,
       selectedClass,
-      classCost: selectedClass
-        ? (Number(selectedClass.system.expCost) || Number(selectedClass.system.tier) * p.classCostPerTier)
-        : 0,
+      classCost,
+      creationReady,
       breakthroughs,
       selectedBreakthroughs,
       breakthroughExpSpent,
@@ -463,6 +469,10 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const s = this.creationState;
     const actor = this.actor;
     const p = LYRIAN.progression;
+    const context = await this._prepareContext();
+    if (!context.creationReady) {
+      return ui.notifications.warn(game.i18n.localize("LYRIAN.Creation.Incomplete"));
+    }
 
     const racePack = game.packs.get("lyrian-chronicles.races");
     const classPack = game.packs.get("lyrian-chronicles.classes");
