@@ -28,6 +28,28 @@ function itemList(collection = []) {
   return Array.from(collection);
 }
 
+/** Group official classes by numeric tier, with predictable alphabetical ordering. */
+export function groupClassesByTier(classes = []) {
+  const groups = new Map();
+  for (const entry of classes) {
+    const tier = Math.max(1, Number(entry.system?.tier) || 1);
+    const searchText = [
+      entry.name,
+      `tier ${tier}`,
+      entry.system?.requirements
+    ].filter(Boolean).join(" ").toLocaleLowerCase();
+    if (!groups.has(tier)) groups.set(tier, []);
+    groups.get(tier).push({ ...entry, tier, searchText });
+  }
+
+  return [...groups.entries()]
+    .sort(([a], [b]) => a - b)
+    .map(([tier, entries]) => ({
+      tier,
+      entries: entries.sort((a, b) => a.name.localeCompare(b.name))
+    }));
+}
+
 /** Return the official compendium equipment ID preserved on an embedded item. */
 export function officialEquipmentSourceId(item = {}) {
   return item.getFlag?.("lyrian-chronicles", "officialEquipment")?.sourceItemId ??
@@ -246,6 +268,31 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     body: { template: "systems/lyrian-chronicles/templates/apps/character-creation.hbs" }
   };
 
+  /** Keep large compendium choice lists searchable without mutating wizard state. */
+  _onRender(context, options) {
+    super._onRender(context, options);
+    const root = this.element;
+    if (!root?.querySelectorAll) return;
+
+    for (const input of root.querySelectorAll("[data-choice-search]")) {
+      input.addEventListener("input", () => {
+        const target = input.dataset.choiceSearch;
+        const query = input.value.trim().toLocaleLowerCase();
+        const list = [...root.querySelectorAll("[data-choice-list]")]
+          .find((element) => element.dataset.choiceList === target);
+        if (!list) return;
+
+        for (const choice of list.querySelectorAll("[data-filter-text]")) {
+          choice.hidden = Boolean(query) &&
+            !String(choice.dataset.filterText ?? "").toLocaleLowerCase().includes(query);
+        }
+        for (const group of list.querySelectorAll("[data-filter-group]")) {
+          group.hidden = !group.querySelector("[data-filter-text]:not([hidden])");
+        }
+      });
+    }
+  }
+
   /* -------------------------------------------- */
 
   async _prepareContext() {
@@ -346,6 +393,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const skillsComplete = skillPointsLeft === 0 &&
       raceSkillPools.every((pool) => pool.remaining === 0);
     const selectedClass = classes.find((entry) => entry.id === s.classId) ?? null;
+    const classTiers = groupClassesByTier(classes);
     const classLevel = normalizeClassLevel(s.classLevel);
     const classCost = selectedClass ? creationClassCost(selectedClass.system, classLevel) : 0;
     const classLevels = Array.from({ length: p.maxClassLevel }, (_, index) => {
@@ -416,6 +464,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       mainStatChoices: Object.entries(LYRIAN.mainStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
       subStatChoices: Object.entries(LYRIAN.subStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
       classes,
+      classTiers,
       selectedClass,
       classLevel,
       classLevels,
