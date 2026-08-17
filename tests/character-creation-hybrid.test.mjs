@@ -60,8 +60,64 @@ function byStable(entries, stableId) {
 test("wizard creation data does not overwrite ApplicationV2 render state", () => {
   const app = creation();
   assert.equal(app.state, 0);
-  assert.equal(app.creationState.step, "stats");
+  assert.equal(app.creationState.step, "race");
   assert.deepEqual(app.creationState.mainAssign, {});
+});
+
+
+test("wizard binds stat and class controls after the ApplicationV2 render", async () => {
+  const app = creation();
+  const handlers = {};
+  const statSelect = {
+    dataset: { assign: "main", stat: "power" },
+    value: "5",
+    addEventListener: (type, handler) => { handlers.stat = handler; }
+  };
+  const classRadio = {
+    name: "classId",
+    value: classes[0]._id,
+    addEventListener: (type, handler) => { handlers.class = handler; }
+  };
+  app.element = {
+    querySelectorAll: (selector) => {
+      if (selector === "[data-assign]") return [statSelect];
+      if (selector.includes("classId")) return [classRadio];
+      return [];
+    }
+  };
+  app.render = () => {};
+
+  await app._onRender({}, {});
+  handlers.stat({ target: statSelect });
+  handlers.class({ target: classRadio });
+
+  assert.equal(app.creationState.mainAssign.power, 5);
+  assert.equal(app.creationState.classId, classes[0]._id);
+});
+
+test("wizard context tracks optional Breakthrough and equipment budgets", async () => {
+  const app = creation();
+  const optional = breakthroughs.find((entry) => !String(entry.system.stableId).includes("hybrid-race"));
+  app.creationState.breakthroughIds = [optional._id];
+  app.creationState.equipmentIds = ["weapons:test-weapon"];
+  const originalPackIndex = app._packIndex;
+  app._packIndex = async (pack) => {
+    if (pack === "weapons") {
+      return [{
+        id: "test-weapon",
+        name: "Test Weapon",
+        img: "icons/svg/sword.svg",
+        system: { cost: "250 Clim", burden: "1" }
+      }];
+    }
+    return originalPackIndex(pack);
+  };
+
+  const context = await app._prepareContext();
+  assert.equal(context.selectedBreakthroughs.length, 1);
+  assert.equal(context.breakthroughExpLeft, 300 - Number(optional.system.expCost));
+  assert.equal(context.selectedEquipment.length, 1);
+  assert.equal(context.equipmentClimLeft, 2750);
 });
 
 test("Human-Chimera wizard fixes Human primary and offers Chimera ancestries", async () => {

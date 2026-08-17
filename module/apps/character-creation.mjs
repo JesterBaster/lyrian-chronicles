@@ -1,5 +1,6 @@
 import { LYRIAN } from "../config.mjs";
 import { raceSkillGrant } from "../rules/progression.mjs";
+import { convertOfficialEquipment } from "../rules/equipment-import.mjs";
 import {
   HYBRID_TYPES,
   hybridAncestryFamily,
@@ -13,13 +14,20 @@ import {
 
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
+const EQUIPMENT_PACKS = Object.freeze(["weapons", "armor-shields", "consumables", "gear-kits"]);
+
+function numberFrom(value) {
+  const match = String(value ?? "").replaceAll(",", "").match(/\d+/);
+  return match ? Number(match[0]) : 0;
+}
+
 /**
  * Guided character creation.
  *
- * Walks the four decisions the rulebook front-loads: assign the stat arrays,
- * pick a race, buy a starting class, and distribute skill points. Everything
- * it does is a normal document update, so a GM who prefers to build by hand
- * can ignore it entirely.
+ * Walks the rulebook character-creation decisions in order: race, stats and
+ * skills, breakthroughs, class, equipment, then an inventory review. Everything
+ * it does is a normal document update, so a GM who prefers to build by hand can
+ * ignore it entirely.
  */
 export class LyrianCharacterCreation extends HandlebarsApplicationMixin(ApplicationV2) {
   constructor(actor, options = {}) {
@@ -28,7 +36,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
 
     const p = LYRIAN.progression;
     this.creationState = {
-      step: "stats",
+      step: "race",
       mainAssign: {},        // stat key -> array value
       subAssign: {},
       raceMode: "standard",
@@ -40,6 +48,8 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       raceSubChoice: "",
       raceVariant: "",
       classId: null,
+      breakthroughIds: [],
+      equipmentIds: [],
       skillPoints: p.startingSkillPoints,
       skillSpend: {},        // skill key -> ranks bought
       raceSkillSpend: {},    // race compendium ID -> skill bonuses
@@ -57,6 +67,8 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       goStep: LyrianCharacterCreation.#onGoStep,
       adjustSkill: LyrianCharacterCreation.#onAdjustSkill,
       adjustRaceSkill: LyrianCharacterCreation.#onAdjustRaceSkill,
+      toggleBreakthrough: LyrianCharacterCreation.#onToggleBreakthrough,
+      toggleEquipment: LyrianCharacterCreation.#onToggleEquipment,
       finish: LyrianCharacterCreation.#onFinish,
       reset: LyrianCharacterCreation.#onReset
     }
@@ -70,11 +82,14 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
 
   async _prepareContext() {
     const s = this.creationState;
+    const p = LYRIAN.progression;
     const usedMain = Object.values(s.mainAssign);
     const usedSub = Object.values(s.subAssign);
-    const [raceEntries, breakthroughEntries] = await Promise.all([
+    const [raceEntries, breakthroughEntries, classes, ...equipmentGroups] = await Promise.all([
       this._packIndex("races"),
-      this._packIndex("breakthroughs")
+      this._packIndex("breakthroughs"),
+      this._packIndex("classes"),
+      ...EQUIPMENT_PACKS.map((pack) => this._packIndex(pack))
     ]);
     const races = raceEntries.filter((entry) => entry.system.raceKind === "primary");
     const selectedRace = races.find((entry) => entry.id === s.raceId) ?? null;
@@ -130,6 +145,53 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       };
     }).filter((pool) => pool.points && pool.skills.length);
 
+    const hybridStableIds = new Set(Object.values(HYBRID_TYPES).map((rule) => rule.breakthroughStableId));
+    const hybridExpSpent = s.raceMode === "hybrid" ? Number(hybrid?.cost ?? 0) : 0;
+    const breakthroughs = breakthroughEntries
+      .filter((entry) => !hybridStableIds.has(entry.system.stableId))
+      .map((entry) => ({
+        ...entry,
+        cost: Number(entry.system.expCost) || 0,
+        selected: s.breakthroughIds.includes(entry.id)
+      }));
+    const selectedBreakthroughs = breakthroughs.filter((entry) => entry.selected);
+    const breakthroughExpSpent = hybridExpSpent +
+      selectedBreakthroughs.reduce((total, entry) => total + entry.cost, 0);
+    const breakthroughExpLeft = s.breakthroughBudget - breakthroughExpSpent;
+
+    const equipment = equipmentGroups.flatMap((entries, index) => entries.map((entry) => {
+      const key = `${EQUIPMENT_PACKS[index]}:${entry.id}`;
+      return {
+        ...entry,
+        key,
+        packName: EQUIPMENT_PACKS[index],
+        cost: numberFrom(entry.system.cost),
+        burden: numberFrom(entry.system.burden),
+        selected: s.equipmentIds.includes(key)
+      };
+    })).sort((a, b) => a.name.localeCompare(b.name));
+    const selectedEquipment = equipment.filter((entry) => entry.selected);
+    const equipmentSpent = selectedEquipment.reduce((total, entry) => total + entry.cost, 0);
+    const equipmentClimLeft = p.startingClim - equipmentSpent;
+    const skillPointsLeft = s.skillPoints -
+      Object.values(s.skillSpend).reduce((a, b) => a + b, 0);
+    const skillsComplete = skillPointsLeft === 0 &&
+      raceSkillPools.every((pool) => pool.remaining === 0);
+    const selectedClass = classes.find((entry) => entry.id === s.classId) ?? null;
+    const classCost = selectedClass
+      ? (Number(selectedClass.system.expCost) || Number(selectedClass.system.tier) * p.classCostPerTier)
+      : 0;
+    const statsComplete =
+      Object.keys(s.mainAssign).length === 4 && Object.keys(s.subAssign).length === 5;
+    const raceComplete = !!selectedRace &&
+      (!selectedRace.system.attributeBonuses?.chooseMain || !!s.raceMainChoice) &&
+      (!selectedRace.system.attributeBonuses?.chooseSub || !!s.raceSubChoice) &&
+      (!ancestries.length || !!s.ancestryId) &&
+      (!(selectedRace.system.variants?.length) || !!s.raceVariant) &&
+      (s.raceMode !== "hybrid" || (hybridValidation?.valid && !!selectedHybridBreakthrough));
+    const creationReady = statsComplete && raceComplete && skillsComplete && !!selectedClass &&
+      classCost <= s.expBudget && breakthroughExpLeft >= 0 && equipmentClimLeft >= 0;
+
     return {
       actor: this.actor,
       state: s,
@@ -154,8 +216,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
         options: LYRIAN.subStatArray.filter((v) => !usedSub.includes(v) || s.subAssign[key] === v)
       })),
 
-      statsComplete:
-        Object.keys(s.mainAssign).length === 4 && Object.keys(s.subAssign).length === 5,
+      statsComplete,
 
       races,
       ancestries,
@@ -172,15 +233,21 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       raceNeedsMainChoice: !!selectedRace?.system.attributeBonuses?.chooseMain,
       raceNeedsSubChoice: !!selectedRace?.system.attributeBonuses?.chooseSub,
       raceVariants: selectedRace?.system.variants ?? [],
-      raceComplete: !!selectedRace &&
-        (!selectedRace.system.attributeBonuses?.chooseMain || !!s.raceMainChoice) &&
-        (!selectedRace.system.attributeBonuses?.chooseSub || !!s.raceSubChoice) &&
-        (!ancestries.length || !!s.ancestryId) &&
-        (!(selectedRace.system.variants?.length) || !!s.raceVariant) &&
-        (s.raceMode !== "hybrid" || (hybridValidation?.valid && !!selectedHybridBreakthrough)),
+      raceComplete,
       mainStatChoices: Object.entries(LYRIAN.mainStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
       subStatChoices: Object.entries(LYRIAN.subStats).map(([key, label]) => ({ key, label: game.i18n.localize(label) })),
-      classes: await this._packIndex("classes"),
+      classes,
+      selectedClass,
+      classCost,
+      creationReady,
+      breakthroughs,
+      selectedBreakthroughs,
+      breakthroughExpSpent,
+      breakthroughExpLeft,
+      equipment,
+      selectedEquipment,
+      equipmentSpent,
+      equipmentClimLeft,
 
       skills: Object.entries(LYRIAN.skills).map(([key, def]) => ({
         key,
@@ -188,7 +255,8 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
         stat: game.i18n.localize(LYRIAN.subStats[def.stat]),
         ranks: s.skillSpend[key] ?? 0
       })),
-      skillPointsLeft: s.skillPoints - Object.values(s.skillSpend).reduce((a, b) => a + b, 0),
+      skillPointsLeft,
+      skillsComplete,
       raceSkillPools,
 
       mainArray: LYRIAN.mainStatArray.join(", "),
@@ -207,7 +275,8 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       "system.raceKind", "system.primaryRace", "system.attributes", "system.ambition",
       "system.attributeBonuses", "system.variants", "system.tier",
       "system.grantedSkills", "system.skillGrant", "system.description",
-      "system.stableId", "system.expCost", "system.requirements", "system.relationships"
+      "system.stableId", "system.expCost", "system.requirements", "system.relationships",
+      "system.cost", "system.burden", "system.category", "system.subType", "system.quantity"
     ] });
     return index.map((e) => ({
       id: e._id, uuid: e.uuid, name: e.name, img: e.img, system: e.system ?? {}
@@ -217,8 +286,8 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
   /* -------------------------------------------- */
 
   /** Bind the inputs that fire `change` rather than `click`. */
-  _onRender(context, options) {
-    super._onRender?.(context, options);
+  async _onRender(context, options) {
+    await super._onRender?.(context, options);
     const html = this.element;
 
     html.querySelectorAll("[data-assign]").forEach((select) => {
@@ -326,6 +395,38 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     this.render();
   }
 
+  static async #onToggleBreakthrough(event, target) {
+    const id = target.dataset.id;
+    const cost = Number(target.dataset.cost) || 0;
+    const selected = this.creationState.breakthroughIds;
+    if (selected.includes(id)) {
+      this.creationState.breakthroughIds = selected.filter((entryId) => entryId !== id);
+    } else {
+      const context = await this._prepareContext();
+      if (context.breakthroughExpLeft < cost) {
+        return ui.notifications.warn(game.i18n.localize("LYRIAN.Creation.BreakthroughBudgetExceeded"));
+      }
+      this.creationState.breakthroughIds = [...selected, id];
+    }
+    this.render();
+  }
+
+  static async #onToggleEquipment(event, target) {
+    const key = target.dataset.key;
+    const cost = Number(target.dataset.cost) || 0;
+    const selected = this.creationState.equipmentIds;
+    if (selected.includes(key)) {
+      this.creationState.equipmentIds = selected.filter((entryKey) => entryKey !== key);
+    } else {
+      const context = await this._prepareContext();
+      if (context.equipmentClimLeft < cost) {
+        return ui.notifications.warn(game.i18n.localize("LYRIAN.Creation.EquipmentBudgetExceeded"));
+      }
+      this.creationState.equipmentIds = [...selected, key];
+    }
+    this.render();
+  }
+
   static async #onAdjustRaceSkill(event, target) {
     const raceId = target.dataset.raceId;
     const key = target.dataset.skill;
@@ -354,6 +455,9 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     this.creationState.raceSubChoice = "";
     this.creationState.raceVariant = "";
     this.creationState.classId = null;
+    this.creationState.breakthroughIds = [];
+    this.creationState.equipmentIds = [];
+    this.creationState.step = "race";
     this.render();
   }
 
@@ -365,19 +469,31 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     const s = this.creationState;
     const actor = this.actor;
     const p = LYRIAN.progression;
+    const context = await this._prepareContext();
+    if (!context.creationReady) {
+      return ui.notifications.warn(game.i18n.localize("LYRIAN.Creation.Incomplete"));
+    }
 
     const racePack = game.packs.get("lyrian-chronicles.races");
     const classPack = game.packs.get("lyrian-chronicles.classes");
     const breakthroughPack = game.packs.get("lyrian-chronicles.breakthroughs");
-    const [primaryDoc, ancestryDoc, classDoc, hybridBreakthroughDoc] = await Promise.all([
+    const [primaryDoc, ancestryDoc, classDoc, hybridBreakthroughDoc, breakthroughDocs, equipmentDocs] = await Promise.all([
       s.raceId ? racePack?.getDocument(s.raceId) : null,
       s.ancestryId ? racePack?.getDocument(s.ancestryId) : null,
       s.classId ? classPack?.getDocument(s.classId) : null,
       s.raceMode === "hybrid" && s.hybridBreakthroughId
         ? breakthroughPack?.getDocument(s.hybridBreakthroughId)
-        : null
+        : null,
+      Promise.all(s.breakthroughIds.map((id) => breakthroughPack?.getDocument(id))),
+      Promise.all(s.equipmentIds.map((key) => {
+        const separator = key.indexOf(":");
+        const packName = key.slice(0, separator);
+        const id = key.slice(separator + 1);
+        return game.packs.get(`lyrian-chronicles.${packName}`)?.getDocument(id);
+      }))
     ]);
-    if (!primaryDoc || !classDoc || (s.ancestryId && !ancestryDoc)) {
+    if (!primaryDoc || !classDoc || (s.ancestryId && !ancestryDoc) ||
+        breakthroughDocs.some((doc) => !doc) || equipmentDocs.some((doc) => !doc)) {
       return ui.notifications.warn(game.i18n.localize("LYRIAN.Creation.SourceMissing"));
     }
 
@@ -449,6 +565,16 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       toCreate.push(classData);
     }
 
+    for (const doc of breakthroughDocs) {
+      const alreadyOwned = actor.items.find(
+        (item) => item.type === "breakthrough" && item.system.stableId === doc.system.stableId
+      );
+      if (alreadyOwned) continue;
+      const breakthroughData = doc.toObject();
+      delete breakthroughData._id;
+      toCreate.push(breakthroughData);
+    }
+
     if (hybridBreakthroughDoc) {
       const breakthroughData = hybridBreakthroughDoc.toObject();
       delete breakthroughData._id;
@@ -458,6 +584,11 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
         s.hybridType, primaryDoc.name, ancestryDoc.name
       );
       toCreate.push(breakthroughData);
+    }
+
+    for (const doc of equipmentDocs) {
+      const equipmentData = convertOfficialEquipment(doc.toObject());
+      if (equipmentData) toCreate.push(equipmentData);
     }
 
     const update = {};
@@ -475,7 +606,10 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     // class purchased already has a small core.
     update["system.exp.total"] = p.startingClassExp + p.startingBreakthroughExp;
     update["system.interlude.points"] = p.startingInterludePoints;
-    update["system.clim"] = p.startingClim;
+    const equipmentSpent = equipmentDocs.reduce(
+      (total, doc) => total + numberFrom(doc.system.cost), 0
+    );
+    update["system.clim"] = Math.max(0, p.startingClim - equipmentSpent);
 
     // Refill pools to the new maxima.
     const tough = s.mainAssign.toughness ?? 3;
