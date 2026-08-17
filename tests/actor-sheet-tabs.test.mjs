@@ -69,15 +69,13 @@ test("Artisan character tabs use localized labels", () => {
   );
 });
 
-test("non-Artisan characters hide the Crafting tab", () => {
+test("every character exposes the Crafting tab", () => {
   const tabs = new LyrianActorSheet("character", [
     { type: "class", system: { artisan: false } }
   ])._prepareTabs("primary");
 
-  assert.equal(tabs.crafting, undefined);
-  assert.deepEqual(Object.keys(tabs), [
-    "main", "skills", "proficiencies", "abilities", "inventory", "progression", "biography", "setup"
-  ]);
+  assert.equal(tabs.crafting.label, "Crafting");
+  assert.deepEqual(Object.keys(tabs), Object.keys(TAB_LABELS));
 });
 
 for (const type of ["npc", "monster"]) {

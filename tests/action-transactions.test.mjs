@@ -79,14 +79,25 @@ test("GM lock tokens prevent duplicate and stale releases", () => {
   assert.equal(locks.acquire("Actor.hero", "request-2", "player").granted, true);
 });
 
-test("action fingerprints cover resources and once-per-round items without resolved-card history", () => {
+test("action fingerprints cover resources, item locks, crafting inventory, and projects", () => {
   const actor = {
     system: {
       ap: { value: 4, temp: 0 }, rp: { value: 3, temp: 1 },
       mana: { value: 6, temp: 0 }, hp: { value: 20, temp: 2 },
-      encounter: { secretArtUsed: false }
+      encounter: { secretArtUsed: false },
+      crafting: { projects: [{
+        skill: "blacksmith",
+        dc: 15,
+        materials: [{ itemId: "iron", quantity: 2 }],
+        outputUuid: "Item.sword",
+        attempts: 0,
+        completed: false
+      }] }
     },
-    items: [{ id: "ability", type: "ability", system: { usedThisRound: false } }],
+    items: [
+      { id: "ability", type: "ability", system: { usedThisRound: false } },
+      { id: "iron", type: "gear", system: { quantity: 4 } }
+    ],
     flags: { "lyrian-chronicles": { resolvedAttacks: {} } }
   };
   const initial = actorActionFingerprint(actor);
@@ -96,6 +107,12 @@ test("action fingerprints cover resources and once-per-round items without resol
   actor.items[0].system.usedThisRound = true;
   assert.notEqual(actorActionFingerprint(actor), initial);
   actor.items[0].system.usedThisRound = false;
+  actor.items[1].system.quantity = 3;
+  assert.notEqual(actorActionFingerprint(actor), initial);
+  actor.items[1].system.quantity = 4;
+  actor.system.crafting.projects[0].attempts = 1;
+  assert.notEqual(actorActionFingerprint(actor), initial);
+  actor.system.crafting.projects[0].attempts = 0;
   actor.flags["lyrian-chronicles"].resolvedAttacks.card = { defence: "dodge" };
   assert.equal(actorActionFingerprint(actor), initial);
 });

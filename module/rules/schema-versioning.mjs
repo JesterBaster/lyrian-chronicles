@@ -4,7 +4,7 @@
  * changes, then add a migration step before stamping the new revision.
  */
 export const DOCUMENT_SCHEMA_VERSIONS = Object.freeze({
-  Actor: 1,
+  Actor: 2,
   Item: 1
 });
 

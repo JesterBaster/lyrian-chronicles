@@ -2,30 +2,49 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 
-import { hasArtisanClass } from "../module/rules/crafting-access.mjs";
-
-const item = (artisan) => ({ type: "class", system: { artisan } });
-
-test("Crafting access requires an owned Artisan class on a character", () => {
-  assert.equal(hasArtisanClass({ type: "character", items: [item(true)] }), true);
-  assert.equal(hasArtisanClass({ type: "character", items: [item(false)] }), false);
-  assert.equal(hasArtisanClass({ type: "character", items: [{ type: "race", system: { artisan: true } }] }), false);
-  assert.equal(hasArtisanClass({ type: "monster", items: [item(true)] }), false);
-  assert.equal(hasArtisanClass({ type: "npc", items: [item(true)] }), false);
-  assert.equal(hasArtisanClass(null), false);
-});
-
-test("Actor sheet registers and conditionally removes the Crafting part and tab", () => {
+test("Crafting is a character-only ApplicationV2 part and tab", () => {
   const source = readFileSync(new URL("../module/sheets/actor-sheet.mjs", import.meta.url), "utf8");
+
   assert.match(source, /crafting: \{ template: .*tab-crafting\.hbs/);
-  assert.match(source, /if \(!hasArtisanClass\(this\.document\)\) delete parts\.crafting/);
-  assert.match(source, /if \(!hasArtisanClass\(this\.document\)\) delete tabs\.crafting/);
+  assert.match(source, /id: "crafting".*fa-solid fa-hammer/);
+  assert.match(source, /delete parts\.crafting/);
+  assert.match(source, /delete tabs\.crafting/);
+  assert.doesNotMatch(source, /hasArtisanClass/);
 });
 
-test("Crafting template exposes artisan rolls and approved crafting packs", () => {
-  const source = readFileSync(new URL("../templates/actor/tab-crafting.hbs", import.meta.url), "utf8");
-  assert.match(source, /data-action="rollArtisan"/);
-  for (const pack of ["crafting-guide", "artifices", "materials", "mods"]) {
-    assert.match(source, new RegExp(`data-pack="${pack}"`));
+test("Crafting registers every project action and preloads both templates", () => {
+  const sheet = readFileSync(new URL("../module/sheets/actor-sheet.mjs", import.meta.url), "utf8");
+  const bootstrap = readFileSync(new URL("../module/lyrian.mjs", import.meta.url), "utf8");
+
+  for (const action of [
+    "addProject", "removeProject", "addProjectMaterial", "removeProjectMaterial",
+    "attemptCraft", "setProjectOutput"
+  ]) {
+    assert.match(sheet, new RegExp(`${action}: LyrianActorSheet\\.#on`));
   }
+  assert.match(bootstrap, /"actor\/tab-crafting"/);
+  assert.match(bootstrap, /"chat\/craft-card"/);
+});
+
+test("nested project fields avoid form names and preserve tab css state", () => {
+  const template = readFileSync(new URL("../templates/actor/tab-crafting.hbs", import.meta.url), "utf8");
+
+  assert.match(template, /class="tab lyr-tab \{\{tab\.cssClass\}\}"/);
+  assert.match(template, /data-crafting-project/);
+  assert.match(template, /data-crafting-field/);
+  assert.doesNotMatch(template, /name="system\.crafting\.projects/);
+  assert.match(template, /data-craft-output-drop/);
+});
+
+test("artisan and gathering editors exist only on Crafting", () => {
+  const skills = readFileSync(new URL("../templates/actor/tab-skills.hbs", import.meta.url), "utf8");
+  const crafting = readFileSync(new URL("../templates/actor/tab-crafting.hbs", import.meta.url), "utf8");
+
+  assert.doesNotMatch(skills, /data-action="rollArtisan"/);
+  assert.doesNotMatch(skills, /data-action="rollGathering"/);
+  assert.doesNotMatch(skills, /name="system\.(artisan|gathering)\./);
+  assert.match(crafting, /data-action="rollArtisan"/);
+  assert.match(crafting, /data-action="rollGathering"/);
+  assert.match(crafting, /name="system\.artisan\./);
+  assert.match(crafting, /name="system\.gathering\./);
 });

@@ -50,7 +50,7 @@ restart; changes to data model schemas need the world relaunched from the setup 
 | Downed | 0 HP applies Downed and Prone (grunts die outright); negative max HP applies Mortal Wound |
 | Injuries | 1d10 injury table roll creates an Injury item on the actor |
 | Skills | `d20 + sub stat + ranks + expertise`, with the 15 / 20 / uncapped rank cap tracked from Spirit Core |
-| Crafting & gathering | `d10 + skill + expertise` rolls for artisan and gathering checks |
+| Crafting & gathering | GM-defined projects consume owned Gear per attempt, roll `d10 + artisan + best expertise` against DC, create the dropped output on success, and keep gathering as `d10 + skill` checks |
 
 ## Compendium content
 
@@ -93,7 +93,8 @@ api.getActionSet(actor);        // everything a HUD needs in one call
 api.rollAttack(actor, itemId, "heavy");
 api.rollMonsterAttack(actor, "light");
 await api.evaluateRequirements(actor, itemId); // pass, fail, or manual confirmation
-api.getAttackData(chatMessage); // structured payload, or null
+api.getAttackData(chatMessage); // structured attack payload, or null
+api.getCraftData(chatMessage);  // structured crafting result, or null
 ```
 
 Class unlocks, breakthrough drops, and ability use share this requirement evaluator.
@@ -118,7 +119,7 @@ await actor.update(
 ```
 
 Hooks fired: `lyrianAttack`, `lyrianDamage`, `lyrianHealing`, `lyrianDowned`,
-`lyrianTurnStart`. The attack payload carries the attack type, weapon group,
+`lyrianTurnStart`, and `lyrianCraft`. The attack payload carries the attack type, weapon group,
 accuracy and damage rolls, crit state, keywords, pierce flags and per-target
 results with UUIDs — enough for Automated Animations to key off Light, Heavy or
 Precise, and for a HUD to build buttons without touching internals. NPC and monster
@@ -139,9 +140,10 @@ token untargetable. Size differences shift Evasion by 1 per step.
 
 ## What is left to the table
 
-Cover, stealth, grapple escape power, mounted combat, crafting dice pools, gathering node
-points, interlude bookkeeping and the housing rules are all supported by fields on the sheet
-but resolved by the GM. That is deliberate: automating them before you have played a few
+Cover, stealth, grapple escape power, mounted combat, gathering node points and depletion,
+interlude bookkeeping, and the housing rules remain resolved by the GM. Crafting projects use
+a single d10-vs-DC attempt with inventory consumption; they intentionally do not use dice pools
+or progress tracks. That is deliberate: automating them before you have played a few
 sessions tends to lock in the wrong assumptions.
 
 ## Layout

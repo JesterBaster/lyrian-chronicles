@@ -57,36 +57,4 @@
     {{/each}}
   </div>
 
-  <div class="lyr-columns">
-    <div class="lyr-col">
-      <h2 class="lyr-heading">{{localize "LYRIAN.UI.ArtisanSkills"}}</h2>
-      <p class="lyr-note">{{localize "LYRIAN.Hint.ArtisanCheck"}}</p>
-      {{#each artisanList as |skill|}}
-        <div class="lyr-skill-entry {{#if skill.atCap}}lyr-skill--capped{{/if}}">
-          <div class="lyr-skill">
-            <button type="button" class="lyr-skill__roll" data-action="rollArtisan" data-skill="{{skill.key}}">{{skill.label}}</button>
-            <span class="lyr-skill__total">{{lyrianSigned skill.total}}</span>
-            <input class="lyr-skill__rank" type="number" name="system.artisan.{{skill.key}}.rank"
-                   value="{{skill.rank}}" min="0" step="1"
-                   {{#unless @root.isGM}}max="{{skill.cap}}"{{/unless}} />
-          </div>
-          {{> expertiseBlock expertises=skill.expertises key=skill.key group="artisan" rollAction="rollArtisan"}}
-        </div>
-      {{/each}}
-    </div>
-
-    <div class="lyr-col">
-      <h2 class="lyr-heading">{{localize "LYRIAN.UI.GatheringSkills"}}</h2>
-      <p class="lyr-note">{{localize "LYRIAN.Hint.GatheringCheck"}}</p>
-      {{#each gatheringList as |skill|}}
-        <div class="lyr-skill {{#if skill.atCap}}lyr-skill--capped{{/if}}">
-          <button type="button" class="lyr-skill__roll" data-action="rollGathering" data-skill="{{skill.key}}">{{skill.label}}</button>
-          <span class="lyr-skill__total">{{lyrianSigned skill.total}}</span>
-          <input class="lyr-skill__rank" type="number" name="system.gathering.{{skill.key}}.rank"
-                 value="{{skill.rank}}" min="0" step="1"
-                 {{#unless @root.isGM}}max="{{skill.cap}}"{{/unless}} />
-        </div>
-      {{/each}}
-    </div>
-  </div>
 </section>
