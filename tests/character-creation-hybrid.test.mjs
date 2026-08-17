@@ -30,6 +30,7 @@ const {
   LyrianCharacterCreation,
   applyCreationInput,
   creationClassCost,
+  groupClassesByTier,
   reconcileWizardClass,
   wizardEquipmentPlan
 } = await import("../module/apps/character-creation.mjs");
@@ -93,6 +94,18 @@ test("class creation cost includes unlock and chosen levels", () => {
   assert.equal(creationClassCost({ tier: 3 }, 4), 600);
 });
 
+test("wizard classes are grouped by numeric tier and sorted by name", () => {
+  const groups = groupClassesByTier([
+    { id: "c", name: "Zephyr", system: { tier: 2 } },
+    { id: "a", name: "Bard", system: { tier: 1 } },
+    { id: "b", name: "Artisan", system: { tier: 1 } }
+  ]);
+
+  assert.deepEqual(groups.map((group) => group.tier), [1, 2]);
+  assert.deepEqual(groups[0].entries.map((entry) => entry.name), ["Artisan", "Bard"]);
+  assert.match(groups[1].entries[0].searchText, /tier 2/);
+});
+
 test("wizard template uses the requested order and keeps Apply clickable", async () => {
   const template = await readFile(
     path.join(ROOT, "templates", "apps", "character-creation.hbs"), "utf8"
@@ -104,6 +117,10 @@ test("wizard template uses the requested order and keeps Apply clickable", async
   assert.deepEqual([...order].sort((a, b) => a - b), order);
   assert.match(template, /data-action="finish"/);
   assert.doesNotMatch(template, /data-action="finish"[^>]*disabled/);
+  assert.equal((template.match(/data-choice-search=/g) ?? []).length, 3);
+  assert.match(template, /data-choice-list="classes"/);
+  assert.match(template, /classTiers/);
+  assert.equal((template.match(/lyr-assign__value/g) ?? []).length, 2);
 });
 
 
