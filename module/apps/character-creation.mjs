@@ -1,6 +1,7 @@
 import { LYRIAN } from "../config.mjs";
 import { normalizeClassLevel, raceSkillGrant } from "../rules/progression.mjs";
 import { convertOfficialEquipment } from "../rules/equipment-import.mjs";
+import { captureScroll, restoreScroll } from "../rules/scroll-state.mjs";
 import {
   HYBRID_TYPES,
   hybridAncestryFamily,
@@ -468,6 +469,18 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
   }
 
   /* -------------------------------------------- */
+
+  /** @override Capture the scroll offset before the part is swapped out. */
+  _preSyncPartState(partId, newElement, priorElement, state) {
+    super._preSyncPartState?.(partId, newElement, priorElement, state);
+    state.lyrianScrollTop = captureScroll(this.element);
+  }
+
+  /** @override Put the reader back where they were after the swap. */
+  _syncPartState(partId, newElement, priorElement, state) {
+    super._syncPartState?.(partId, newElement, priorElement, state);
+    restoreScroll(this.element, state.lyrianScrollTop);
+  }
 
   /**
    * Wire the pick-list search boxes.
