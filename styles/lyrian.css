@@ -573,6 +573,10 @@
   --lyr-rule: rgba(201, 162, 39, 0.22);
   --lyr-gold: #c9a227; --lyr-gold-bright: #e6c258;
   --lyr-hp: #d94a5a; --lyr-ink: #e6e3dc; --lyr-ink-dim: #8b93a5;
+  /* Chat cards render outside .application.lyrian, so anything they use has
+     to be redeclared here rather than inherited from the sheet palette. */
+  --lyr-guard: #5fbf7a; --lyr-radius: 4px;
+  --lyr-font-display: "Cinzel", "Modesto Condensed", "Palatino Linotype", Georgia, serif;
 
   background: linear-gradient(160deg, var(--lyr-plate), var(--lyr-void));
   border: 1px solid var(--lyr-rule); border-left: 3px solid var(--lyr-gold);
@@ -663,3 +667,24 @@
 .lyrian .lyr-craft-project__custom .lyr-note { grid-column: 1 / -1; margin: 0; }
 .lyrian .lyr-craft-attempt { justify-self: end; min-width: 10rem; }
 .lyrian-card.lyr-craft-card .lyrian-card__line { display: flex; gap: 0.4rem; align-items: baseline; }
+
+/* Check cards: the title and total read at a glance, detail sits underneath. */
+.lyrian-card.lyr-check-card .lyrian-card__head { justify-content: space-between; }
+.lyrian-card.lyr-check-card .lyr-check-card__total {
+  min-width: 2.4rem; padding: 0.1rem 0.5rem; text-align: center;
+  font-family: var(--lyr-font-display); font-size: 1.5rem; line-height: 1.2;
+  color: var(--lyr-gold-bright);
+  background: rgba(0, 0, 0, 0.25); border: 1px solid var(--lyr-rule); border-radius: var(--lyr-radius);
+}
+.lyrian-card.lyr-check-card .lyr-check-card__total.is-success { color: var(--lyr-guard); border-color: currentColor; }
+.lyrian-card.lyr-check-card .lyr-check-card__total.is-failure { color: var(--lyr-hp); border-color: currentColor; }
+.lyrian-card.lyr-check-card .lyr-check-card__outcome {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem;
+  margin-top: 0.4rem; padding: 0.25rem 0.45rem;
+  font-size: 0.78rem; border-radius: var(--lyr-radius);
+  border: 1px solid var(--lyr-rule); background: rgba(0, 0, 0, 0.18);
+}
+.lyrian-card.lyr-check-card .lyr-check-card__outcome.is-success { border-color: var(--lyr-guard); }
+.lyrian-card.lyr-check-card .lyr-check-card__outcome.is-failure { border-color: var(--lyr-hp); }
+.lyrian-card.lyr-check-card .lyr-check-card__dc { color: var(--lyr-ink-dim); font-variant: small-caps; letter-spacing: 0.05em; }
+.lyrian-card.lyr-check-card .dice-roll { margin-top: 0.4rem; }

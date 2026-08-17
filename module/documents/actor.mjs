@@ -25,6 +25,7 @@ import {
 import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 import { requireActorActionPermission } from "../rules/action-permissions.mjs";
 import { guardForDamage } from "../rules/damage.mjs";
+import { buildCheckPayload, namedCheckTitle } from "../rules/check-card.mjs";
 import {
   buildCraftPayload,
   normalizeCraftProject,
@@ -273,7 +274,7 @@ export class LyrianActor extends Actor {
 
     return this._rollCheck({
       formula: `1d20 + ${bonus}`,
-      flavour: label + suffix,
+      flavour: namedCheckTitle(label, suffix),
       dc: options.dc
     });
   }
@@ -512,7 +513,7 @@ export class LyrianActor extends Actor {
   async rollAttribute(label, value, options = {}) {
     return this._rollCheck({
       formula: `1d20 + ${Number(value) || 0}`,
-      flavour: label,
+      flavour: namedCheckTitle(label),
       dc: options.dc
     });
   }
@@ -654,22 +655,37 @@ export class LyrianActor extends Actor {
   async _rollCheck({ formula, flavour, dc, createMessage = true }) {
     if (!requireActorActionPermission(this)) return null;
     const roll = await new Roll(formula, this.getRollData()).evaluate();
-    let flavorText = flavour;
+    if (!createMessage) return roll;
 
-    if (Number.isNumeric(dc)) {
-      const success = roll.total >= dc;
-      const tag = success
-        ? game.i18n.localize("LYRIAN.Roll.Success")
-        : game.i18n.localize("LYRIAN.Roll.Failure");
-      flavorText += ` — DC ${dc}: <strong>${tag}</strong>`;
-    }
+    const outcome = Number.isNumeric(dc)
+      ? { dc, success: roll.total >= dc }
+      : null;
 
-    if (createMessage) {
-      await roll.toMessage({
-        speaker: ChatMessage.getSpeaker({ actor: this }),
-        flavor: flavorText
-      });
-    }
+    const content = await foundry.applications.handlebars.renderTemplate(
+      "systems/lyrian-chronicles/templates/chat/check-card.hbs",
+      {
+        actor: this,
+        title: flavour,
+        roll,
+        outcome,
+        tooltip: await roll.getTooltip()
+      }
+    );
+
+    const messageData = {
+      speaker: ChatMessage.getSpeaker({ actor: this }),
+      content,
+      rolls: [roll],
+      flags: {
+        "lyrian-chronicles": {
+          check: buildCheckPayload({ actorUuid: this.uuid, title: flavour, roll, outcome })
+        }
+      }
+    };
+    // Rendering our own card bypasses Roll#toMessage, which is what would
+    // normally honour a blind or whispered roll mode — so apply it by hand.
+    ChatMessage.applyRollMode(messageData, game.settings.get("core", "rollMode"));
+    await ChatMessage.create(messageData);
     return roll;
   }
 
