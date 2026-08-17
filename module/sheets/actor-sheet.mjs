@@ -21,7 +21,7 @@ import {
 } from "../rules/mod-installation.mjs";
 import { hybridAncestryFamily } from "../rules/hybrid-race.mjs";
 import { isHeaderOnlyRender } from "../rules/sheet-refresh.mjs";
-import { hasArtisanClass } from "../rules/crafting-access.mjs";
+import { normalizeCraftProject } from "../rules/crafting.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -67,7 +67,13 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       takeRest: LyrianActorSheet.#onTakeRest,
       recoverInjury: LyrianActorSheet.#onRecoverInjury,
       spendExpPrompt: LyrianActorSheet.#onSpendExp,
-      openCharacterCreation: LyrianActorSheet.#onOpenCharacterCreation
+      openCharacterCreation: LyrianActorSheet.#onOpenCharacterCreation,
+      addProject: LyrianActorSheet.#onAddProject,
+      removeProject: LyrianActorSheet.#onRemoveProject,
+      addProjectMaterial: LyrianActorSheet.#onAddProjectMaterial,
+      removeProjectMaterial: LyrianActorSheet.#onRemoveProjectMaterial,
+      attemptCraft: LyrianActorSheet.#onAttemptCraft,
+      setProjectOutput: LyrianActorSheet.#onSetProjectOutput
     },
     dragDrop: [{ dragSelector: "[data-drag]", dropSelector: null }]
   };
@@ -114,10 +120,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (this.document.type === "npc" || this.document.type === "monster") {
       delete parts.skills;
       delete parts.proficiencies;
+      delete parts.crafting;
       delete parts.progression;
       delete parts.setup;
     }
-    if (!hasArtisanClass(this.document)) delete parts.crafting;
     return parts;
   }
 
@@ -127,10 +133,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     if (this.document.type === "npc" || this.document.type === "monster") {
       delete tabs.skills;
       delete tabs.proficiencies;
+      delete tabs.crafting;
       delete tabs.progression;
       delete tabs.setup;
     }
-    if (!hasArtisanClass(this.document)) delete tabs.crafting;
     for (const tab of Object.values(tabs)) {
       if (typeof tab.label === "string") tab.label = game.i18n.localize(tab.label);
     }
@@ -148,7 +154,6 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.system = actor.system;
     context.config = LYRIAN;
     context.isCharacter = actor.type === "character";
-    context.hasArtisanClass = hasArtisanClass(actor);
     context.isNPC = actor.type === "npc" || actor.type === "monster";
     context.editable = this.isEditable;
     context.isGM = game.user.isGM;
@@ -189,6 +194,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       })
     );
     if (context.isCharacter) this._prepareSkills(context);
+    if (context.isCharacter) this._prepareCrafting(context);
     if (context.isCharacter) this._prepareProficiencies(context);
     if (context.isCharacter) this._prepareWorship(context);
 
@@ -257,6 +263,26 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.skillCapLabel = Number.isFinite(context.system.skillCap)
       ? context.system.skillCap
       : "∞";
+  }
+
+  /** Prepare free-form projects and owned Gear stacks for the Crafting tab. */
+  _prepareCrafting(context) {
+    context.craftingProjects = Array.from(
+      context.system.crafting?.projects ?? [],
+      (project) => normalizeCraftProject(project)
+    );
+    context.craftingMaterialOptions = this.document.items
+      .filter((item) => item.type === "gear")
+      .map((item) => ({
+        id: item.id,
+        name: item.name,
+        quantity: item.system.quantity ?? 0
+      }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+    context.taskDifficulties = Object.entries(LYRIAN.taskDifficulty).map(([dc, label]) => ({
+      dc: Number(dc),
+      label: game.i18n.localize(label)
+    }));
   }
 
   /** Collect automatic and player-selected proficiencies without duplicates. */
@@ -449,10 +475,34 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         if (row) await LyrianActorSheet.#onSaveProficiencyChoice.call(this, event, row);
       });
     });
+
+    // Project fields have no form names because nested ArrayFields do not round-trip
+    // through Foundry form expansion. Persist the complete project list instead.
+    this.element.querySelectorAll("[data-crafting-field]").forEach((input) => {
+      input.addEventListener("change", async () => {
+        await this.document.update({
+          "system.crafting.projects": this._readCraftingProjects()
+        });
+      });
+    });
   }
 
   /** Complete race-specific choices when a Race is dragged from a compendium. */
   async _onDropItem(event, item) {
+    const outputDrop = event.target?.closest?.("[data-craft-output-drop]");
+    const projectRow = outputDrop?.closest?.("[data-crafting-project]");
+    if (projectRow && this.document.type === "character") {
+      if (!game.user.isGM) return null;
+      const index = Number(projectRow.dataset.projectIndex);
+      const projects = this._readCraftingProjects();
+      if (!projects[index]) return null;
+      projects[index].outputUuid = item.uuid;
+      projects[index].outputName = item.name;
+      projects[index].completed = false;
+      await this.document.update({ "system.crafting.projects": projects });
+      return item;
+    }
+
     // Universal Crafting Mods apply to abstract crafting tools which the Actor
     // inventory does not model as installable equipment yet; keep those as Gear.
     if (isCraftingMod(item) && item.system.craftingType !== "Universal Crafting") {
@@ -776,9 +826,84 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     await item.update({ "system.selectedSkillBonuses": choice });
   }
 
+  /** Read the current project editor without using nested form names. */
+  _readCraftingProjects() {
+    const source = Array.from(
+      this.document.system.crafting?.projects ?? [],
+      (project) => normalizeCraftProject(project)
+    );
+    const rows = this.element.querySelectorAll("[data-crafting-project]");
+    return Array.from(rows, (row) => {
+      const index = Number(row.dataset.projectIndex);
+      const current = source[index] ?? normalizeCraftProject();
+      const materials = Array.from(
+        row.querySelectorAll("[data-crafting-material]"),
+        (materialRow) => ({
+          itemId: materialRow.querySelector("[data-material-item]")?.value ?? "",
+          quantity: Number(materialRow.querySelector("[data-material-quantity]")?.value ?? 0)
+        })
+      );
+      return normalizeCraftProject({
+        ...current,
+        name: row.querySelector("[data-project-name]")?.value ?? current.name,
+        skill: row.querySelector("[data-project-skill]")?.value ?? current.skill,
+        dc: Number(row.querySelector("[data-project-dc]")?.value ?? current.dc),
+        materials
+      });
+    });
+  }
+
   /* -------------------------------------------- */
   /*  Actions                                      */
   /* -------------------------------------------- */
+
+  static async #onAddProject() {
+    const projects = this._readCraftingProjects();
+    projects.push(normalizeCraftProject());
+    await this.document.update({ "system.crafting.projects": projects });
+  }
+
+  static async #onRemoveProject(event, target) {
+    const index = Number(target.dataset.projectIndex);
+    const projects = this._readCraftingProjects().filter((_, row) => row !== index);
+    await this.document.update({ "system.crafting.projects": projects });
+  }
+
+  static async #onAddProjectMaterial(event, target) {
+    const index = Number(target.dataset.projectIndex);
+    const projects = this._readCraftingProjects();
+    if (!projects[index]) return;
+    projects[index].materials.push({ itemId: "", quantity: 0 });
+    await this.document.update({ "system.crafting.projects": projects });
+  }
+
+  static async #onRemoveProjectMaterial(event, target) {
+    const projectIndex = Number(target.dataset.projectIndex);
+    const materialIndex = Number(target.dataset.materialIndex);
+    const projects = this._readCraftingProjects();
+    if (!projects[projectIndex]) return;
+    projects[projectIndex].materials = projects[projectIndex].materials
+      .filter((_, index) => index !== materialIndex);
+    await this.document.update({ "system.crafting.projects": projects });
+  }
+
+  static async #onAttemptCraft(event, target) {
+    const index = Number(target.dataset.projectIndex);
+    await this.document.update({
+      "system.crafting.projects": this._readCraftingProjects()
+    });
+    await this.document.attemptCraft(index);
+  }
+
+  static async #onSetProjectOutput(event, target) {
+    const index = Number(target.dataset.projectIndex);
+    const projects = this._readCraftingProjects();
+    if (!projects[index]) return;
+    projects[index].outputUuid = "";
+    projects[index].outputName = "";
+    projects[index].completed = false;
+    await this.document.update({ "system.crafting.projects": projects });
+  }
 
   static async #onRollSkill(event, target) {
     const index = target.dataset.expertiseIndex;
@@ -848,7 +973,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static async #onBrowsePack(event, target) {
     const packName = target.dataset.pack;
     const allowed = new Set([
-      "breakthroughs", "player-abilities", "races", "classes",
+      "breakthroughs", "player-abilities", "races", "classes", "crafting-guide",
       "weapons", "armor-shields", "consumables", "gear-kits", "artifices", "materials", "mods",
       "monster-abilities"
     ]);
