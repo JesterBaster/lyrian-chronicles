@@ -15,6 +15,12 @@
     {{/if}}
   </div>
 
+  <datalist id="lyrian-craft-difficulties">
+    {{#each taskDifficulties as |difficulty|}}
+      <option value="{{difficulty.dc}}">{{difficulty.label}}</option>
+    {{/each}}
+  </datalist>
+
   <div class="lyr-craft-projects">
     {{#each craftingProjects as |project projectIndex|}}
       <article class="lyr-craft-project {{#if project.completed}}is-complete{{/if}}"
@@ -43,7 +49,7 @@
           </label>
           <label>
             <span>{{localize "LYRIAN.UI.DC"}}</span>
-            <input type="number" data-crafting-field data-project-dc value="{{project.dc}}" step="1"
+            <input type="number" data-crafting-field data-project-dc value="{{project.dc}}" step="1" list="lyrian-craft-difficulties"
                    {{#unless @root.isGM}}disabled{{/unless}} />
           </label>
         </div>
