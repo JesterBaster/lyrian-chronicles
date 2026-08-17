@@ -1,0 +1,26 @@
+<div class="lyrian-card lyr-healing-card">
+  <header class="lyrian-card__head">
+    <img src="{{item.img}}" alt="" />
+    <div>
+      <h3>{{healing.itemName}}</h3>
+      <span class="lyrian-card__sub">{{localize "LYRIAN.Heal.Card"}}</span>
+    </div>
+  </header>
+
+  <div class="dice-roll">
+    <div class="dice-result">
+      <div class="dice-formula">{{healing.formula}}</div>
+      {{{tooltip}}}
+      <h4 class="dice-total">{{healing.total}}</h4>
+    </div>
+  </div>
+
+  <div class="lyrian-card__actions">
+    <button type="button" data-lyrian-action="applyHealing">
+      <i class="fa-solid fa-heart"></i>
+      {{localize "LYRIAN.Heal.Apply" amount=healing.total}}
+    </button>
+  </div>
+
+  <p class="lyrian-card__hint">{{localize "LYRIAN.Heal.SelectHint"}}</p>
+</div>
