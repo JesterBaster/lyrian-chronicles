@@ -21,7 +21,10 @@ import {
 } from "../rules/mod-installation.mjs";
 import { hybridAncestryFamily } from "../rules/hybrid-race.mjs";
 import { isHeaderOnlyRender } from "../rules/sheet-refresh.mjs";
-import { normalizeCraftProject } from "../rules/crafting.mjs";
+import {
+  CUSTOM_OUTPUT_TYPES,
+  normalizeCraftProject
+} from "../rules/crafting.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -72,6 +75,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       removeProject: LyrianActorSheet.#onRemoveProject,
       addProjectMaterial: LyrianActorSheet.#onAddProjectMaterial,
       removeProjectMaterial: LyrianActorSheet.#onRemoveProjectMaterial,
+      addProjectMod: LyrianActorSheet.#onAddProjectMod,
+      removeProjectMod: LyrianActorSheet.#onRemoveProjectMod,
       attemptCraft: LyrianActorSheet.#onAttemptCraft,
       setProjectOutput: LyrianActorSheet.#onSetProjectOutput
     },
@@ -279,6 +284,18 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         quantity: item.system.quantity ?? 0
       }))
       .sort((a, b) => a.name.localeCompare(b.name));
+    context.craftingModOptions = this.document.items
+      .filter((item) => isCraftingMod(item)
+        && !item.getFlag("lyrian-chronicles", "installedMod"))
+      .map((item) => ({ id: item.id, name: item.name }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+    context.craftingOutputTypes = CUSTOM_OUTPUT_TYPES.map((type) => ({
+      key: type,
+      label: game.i18n.localize(`LYRIAN.Craft.OutputType.${type}`)
+    }));
+    // Players author their own projects only when the table has opted in.
+    context.canEditProjects = context.isGM
+      || game.settings.get("lyrian-chronicles", "craftingPlayerProjects");
     context.taskDifficulties = Object.entries(LYRIAN.taskDifficulty).map(([dc, label]) => ({
       dc: Number(dc),
       label: game.i18n.localize(label)
@@ -492,7 +509,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const outputDrop = event.target?.closest?.("[data-craft-output-drop]");
     const projectRow = outputDrop?.closest?.("[data-crafting-project]");
     if (projectRow && this.document.type === "character") {
-      if (!game.user.isGM) return null;
+      const mayEdit = game.user.isGM
+        || game.settings.get("lyrian-chronicles", "craftingPlayerProjects");
+      if (!mayEdit) return null;
       const index = Number(projectRow.dataset.projectIndex);
       const projects = this._readCraftingProjects();
       if (!projects[index]) return null;
@@ -826,6 +845,15 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     await item.update({ "system.selectedSkillBonuses": choice });
   }
 
+  /**
+   * Whether this user may author crafting projects.
+   * Hiding the controls is presentation; this is what actually holds.
+   */
+  _mayEditProjects() {
+    return game.user.isGM
+      || game.settings.get("lyrian-chronicles", "craftingPlayerProjects");
+  }
+
   /** Read the current project editor without using nested form names. */
   _readCraftingProjects() {
     const source = Array.from(
@@ -843,12 +871,19 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           quantity: Number(materialRow.querySelector("[data-material-quantity]")?.value ?? 0)
         })
       );
+      const mods = Array.from(
+        row.querySelectorAll("[data-crafting-mod]"),
+        (modRow) => ({ itemId: modRow.querySelector("[data-mod-item]")?.value ?? "" })
+      );
       return normalizeCraftProject({
         ...current,
         name: row.querySelector("[data-project-name]")?.value ?? current.name,
         skill: row.querySelector("[data-project-skill]")?.value ?? current.skill,
         dc: Number(row.querySelector("[data-project-dc]")?.value ?? current.dc),
-        materials
+        customType: row.querySelector("[data-project-custom-type]")?.value ?? current.customType,
+        customName: row.querySelector("[data-project-custom-name]")?.value ?? current.customName,
+        materials,
+        mods
       });
     });
   }
@@ -858,18 +893,21 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   /* -------------------------------------------- */
 
   static async #onAddProject() {
+    if (!this._mayEditProjects()) return;
     const projects = this._readCraftingProjects();
     projects.push(normalizeCraftProject());
     await this.document.update({ "system.crafting.projects": projects });
   }
 
   static async #onRemoveProject(event, target) {
+    if (!this._mayEditProjects()) return;
     const index = Number(target.dataset.projectIndex);
     const projects = this._readCraftingProjects().filter((_, row) => row !== index);
     await this.document.update({ "system.crafting.projects": projects });
   }
 
   static async #onAddProjectMaterial(event, target) {
+    if (!this._mayEditProjects()) return;
     const index = Number(target.dataset.projectIndex);
     const projects = this._readCraftingProjects();
     if (!projects[index]) return;
@@ -878,12 +916,33 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #onRemoveProjectMaterial(event, target) {
+    if (!this._mayEditProjects()) return;
     const projectIndex = Number(target.dataset.projectIndex);
     const materialIndex = Number(target.dataset.materialIndex);
     const projects = this._readCraftingProjects();
     if (!projects[projectIndex]) return;
     projects[projectIndex].materials = projects[projectIndex].materials
       .filter((_, index) => index !== materialIndex);
+    await this.document.update({ "system.crafting.projects": projects });
+  }
+
+  static async #onAddProjectMod(event, target) {
+    if (!this._mayEditProjects()) return;
+    const index = Number(target.dataset.projectIndex);
+    const projects = this._readCraftingProjects();
+    if (!projects[index]) return;
+    projects[index].mods.push({ itemId: "" });
+    await this.document.update({ "system.crafting.projects": projects });
+  }
+
+  static async #onRemoveProjectMod(event, target) {
+    if (!this._mayEditProjects()) return;
+    const projectIndex = Number(target.dataset.projectIndex);
+    const modIndex = Number(target.dataset.modIndex);
+    const projects = this._readCraftingProjects();
+    if (!projects[projectIndex]) return;
+    projects[projectIndex].mods = projects[projectIndex].mods
+      .filter((_, index) => index !== modIndex);
     await this.document.update({ "system.crafting.projects": projects });
   }
 
@@ -896,6 +955,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #onSetProjectOutput(event, target) {
+    if (!this._mayEditProjects()) return;
     const index = Number(target.dataset.projectIndex);
     const projects = this._readCraftingProjects();
     if (!projects[index]) return;

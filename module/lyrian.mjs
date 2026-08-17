@@ -165,6 +165,15 @@ function registerSettings() {
     default: true
   });
 
+  game.settings.register(SYSTEM_ID, "craftingPlayerProjects", {
+    name: "LYRIAN.Settings.CraftingPlayerProjects.Name",
+    hint: "LYRIAN.Settings.CraftingPlayerProjects.Hint",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: false
+  });
+
   game.settings.register(SYSTEM_ID, "contentSeedVersion", {
     scope: "world",
     config: false,

@@ -1,5 +1,6 @@
 import { LYRIAN } from "../config.mjs";
 import { equippedArmorContribution, equippedArmorSlots } from "../rules/armor.mjs";
+import { CUSTOM_OUTPUT_TYPES } from "../rules/crafting.mjs";
 import { derivedGuardValues } from "../rules/damage.mjs";
 import {
   raceAmbitionExp,
@@ -345,8 +346,23 @@ export class LyrianCharacter extends LyrianActorBase {
             }),
             { required: false, initial: [] }
           ),
+          mods: new fields.ArrayField(
+            new fields.SchemaField({
+              itemId: new fields.StringField({ required: true, blank: true, initial: "" })
+            }),
+            { required: false, initial: [] }
+          ),
           outputUuid: new fields.StringField({ required: true, blank: true, initial: "" }),
           outputName: new fields.StringField({ required: true, blank: true, initial: "" }),
+          // Blank means "copy the linked output". Set, it forges a bare item of
+          // this type so a project can make something that does not exist yet.
+          customType: new fields.StringField({
+            required: true,
+            blank: true,
+            initial: "",
+            choices: ["", ...CUSTOM_OUTPUT_TYPES]
+          }),
+          customName: new fields.StringField({ required: true, blank: true, initial: "" }),
           attempts: int(0, { min: 0 }),
           completed: new fields.BooleanField({ initial: false })
         }),

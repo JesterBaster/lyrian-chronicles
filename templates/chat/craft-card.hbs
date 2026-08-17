@@ -35,8 +35,19 @@
 
   {{#if success}}
     <p class="lyrian-card__line">
-      <strong>{{localize "LYRIAN.Craft.Output"}}</strong> {{project.outputName}}
+      <strong>{{localize "LYRIAN.Craft.Output"}}</strong> {{outputName}}
+      {{#if custom}}<em class="lyr-tag">{{localize "LYRIAN.Craft.Custom"}}</em>{{/if}}
     </p>
+    {{#if mods.length}}
+      <div class="lyrian-card__text">
+        <strong>{{localize "LYRIAN.Craft.ModsInstalled"}}</strong>
+        <ul>
+          {{#each mods as |mod|}}
+            <li>{{mod.name}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/if}}
   {{/if}}
 
   <div class="dice-roll">

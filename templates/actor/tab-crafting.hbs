@@ -10,7 +10,7 @@
 
   <div class="lyr-section-head">
     <h2 class="lyr-heading">{{localize "LYRIAN.Craft.Projects"}}</h2>
-    {{#if isGM}}
+    {{#if canEditProjects}}
       <button type="button" data-action="addProject"><i class="fa-solid fa-plus"></i> {{localize "LYRIAN.Craft.AddProject"}}</button>
     {{/if}}
   </div>
@@ -27,10 +27,10 @@
                data-crafting-project data-project-index="{{projectIndex}}">
         <header class="lyr-craft-project__header">
           <input type="text" data-crafting-field data-project-name value="{{project.name}}"
-                 placeholder="{{localize "LYRIAN.Craft.ProjectName"}}" {{#unless @root.isGM}}disabled{{/unless}} />
+                 placeholder="{{localize "LYRIAN.Craft.ProjectName"}}" {{#unless @root.canEditProjects}}disabled{{/unless}} />
           <span>{{localize "LYRIAN.Craft.Attempts"}}: {{project.attempts}}</span>
           {{#if project.completed}}<em class="lyr-tag">{{localize "LYRIAN.Craft.Completed"}}</em>{{/if}}
-          {{#if @root.isGM}}
+          {{#if @root.canEditProjects}}
             <button type="button" class="lyr-icon" data-action="removeProject"
                     data-project-index="{{projectIndex}}" title="{{localize "LYRIAN.Action.Remove"}}">
               <i class="fa-solid fa-trash"></i>
@@ -41,7 +41,7 @@
         <div class="lyr-craft-project__check">
           <label>
             <span>{{localize "LYRIAN.Craft.ArtisanSkill"}}</span>
-            <select data-crafting-field data-project-skill {{#unless @root.isGM}}disabled{{/unless}}>
+            <select data-crafting-field data-project-skill {{#unless @root.canEditProjects}}disabled{{/unless}}>
               {{#each @root.artisanList as |skill|}}
                 <option value="{{skill.key}}" {{#if (eq skill.key project.skill)}}selected{{/if}}>{{skill.label}}</option>
               {{/each}}
@@ -50,14 +50,14 @@
           <label>
             <span>{{localize "LYRIAN.UI.DC"}}</span>
             <input type="number" data-crafting-field data-project-dc value="{{project.dc}}" step="1" list="lyrian-craft-difficulties"
-                   {{#unless @root.isGM}}disabled{{/unless}} />
+                   {{#unless @root.canEditProjects}}disabled{{/unless}} />
           </label>
         </div>
 
         <div class="lyr-craft-project__materials">
           <div class="lyr-section-head">
             <h3>{{localize "LYRIAN.UI.Materials"}}</h3>
-            {{#if @root.isGM}}
+            {{#if @root.canEditProjects}}
               <button type="button" data-action="addProjectMaterial" data-project-index="{{projectIndex}}">
                 <i class="fa-solid fa-plus"></i> {{localize "LYRIAN.Craft.AddMaterial"}}
               </button>
@@ -65,7 +65,7 @@
           </div>
           {{#each project.materials as |material materialIndex|}}
             <div class="lyr-craft-material" data-crafting-material data-material-index="{{materialIndex}}">
-              <select data-crafting-field data-material-item {{#unless @root.isGM}}disabled{{/unless}}>
+              <select data-crafting-field data-material-item {{#unless @root.canEditProjects}}disabled{{/unless}}>
                 <option value="">{{localize "LYRIAN.Craft.ChooseMaterial"}}</option>
                 {{#each @root.craftingMaterialOptions as |option|}}
                   <option value="{{option.id}}" {{#if (eq option.id material.itemId)}}selected{{/if}}>
@@ -75,8 +75,8 @@
               </select>
               <input type="number" data-crafting-field data-material-quantity value="{{material.quantity}}"
                      min="0" step="1" title="{{localize "LYRIAN.UI.Quantity"}}"
-                     {{#unless @root.isGM}}disabled{{/unless}} />
-              {{#if @root.isGM}}
+                     {{#unless @root.canEditProjects}}disabled{{/unless}} />
+              {{#if @root.canEditProjects}}
                 <button type="button" class="lyr-icon" data-action="removeProjectMaterial"
                         data-project-index="{{projectIndex}}" data-material-index="{{materialIndex}}"
                         title="{{localize "LYRIAN.Action.Remove"}}">
@@ -89,21 +89,78 @@
           {{/each}}
         </div>
 
+        <div class="lyr-craft-project__mods">
+          <div class="lyr-section-head">
+            <h3>{{localize "LYRIAN.Craft.Mods"}}</h3>
+            {{#if @root.canEditProjects}}
+              <button type="button" data-action="addProjectMod" data-project-index="{{projectIndex}}">
+                <i class="fa-solid fa-plus"></i> {{localize "LYRIAN.Craft.AddMod"}}
+              </button>
+            {{/if}}
+          </div>
+          {{#each project.mods as |mod modIndex|}}
+            <div class="lyr-craft-mod" data-crafting-mod data-mod-index="{{modIndex}}">
+              <select data-crafting-field data-mod-item {{#unless @root.canEditProjects}}disabled{{/unless}}>
+                <option value="">{{localize "LYRIAN.Craft.ChooseMod"}}</option>
+                {{#each @root.craftingModOptions as |option|}}
+                  <option value="{{option.id}}" {{#if (eq option.id mod.itemId)}}selected{{/if}}>
+                    {{option.name}}
+                  </option>
+                {{/each}}
+              </select>
+              {{#if @root.canEditProjects}}
+                <button type="button" class="lyr-icon" data-action="removeProjectMod"
+                        data-project-index="{{projectIndex}}" data-mod-index="{{modIndex}}"
+                        title="{{localize "LYRIAN.Action.Remove"}}">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              {{/if}}
+            </div>
+          {{else}}
+            <p class="lyr-note">{{localize "LYRIAN.Craft.NoMods"}}</p>
+          {{/each}}
+        </div>
+
         <div class="lyr-craft-output" data-craft-output-drop>
           <div>
             <strong>{{localize "LYRIAN.Craft.Output"}}</strong>
             {{#if project.outputName}}
               <span>{{project.outputName}}</span>
+            {{else if project.customType}}
+              <span class="lyr-note">{{localize "LYRIAN.Craft.ForgedFromScratch"}}</span>
             {{else}}
               <span class="lyr-note">{{localize "LYRIAN.Craft.DropOutput"}}</span>
             {{/if}}
           </div>
-          {{#if @root.isGM}}
+          {{#if @root.canEditProjects}}
             <button type="button" class="lyr-icon" data-action="setProjectOutput"
                     data-project-index="{{projectIndex}}" title="{{localize "LYRIAN.Craft.ClearOutput"}}">
               <i class="fa-solid fa-xmark"></i>
             </button>
           {{/if}}
+        </div>
+
+        <div class="lyr-craft-project__custom">
+          <label>
+            <span>{{localize "LYRIAN.Craft.CustomType"}}</span>
+            <select data-crafting-field data-project-custom-type
+                    {{#unless @root.canEditProjects}}disabled{{/unless}}>
+              <option value="">{{localize "LYRIAN.Craft.CustomTypeNone"}}</option>
+              {{#each @root.craftingOutputTypes as |type|}}
+                <option value="{{type.key}}" {{#if (eq type.key project.customType)}}selected{{/if}}>
+                  {{type.label}}
+                </option>
+              {{/each}}
+            </select>
+          </label>
+          <label>
+            <span>{{localize "LYRIAN.Craft.CustomName"}}</span>
+            <input type="text" data-crafting-field data-project-custom-name
+                   value="{{project.customName}}"
+                   placeholder="{{localize "LYRIAN.Craft.CustomNamePlaceholder"}}"
+                   {{#unless @root.canEditProjects}}disabled{{/unless}} />
+          </label>
+          <p class="lyr-note">{{localize "LYRIAN.Hint.CraftCustom"}}</p>
         </div>
 
         <button type="button" class="lyr-craft-attempt" data-action="attemptCraft"

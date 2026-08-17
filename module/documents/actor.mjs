@@ -28,8 +28,11 @@ import { guardForDamage } from "../rules/damage.mjs";
 import {
   buildCraftPayload,
   normalizeCraftProject,
-  planCraftMaterials
+  planCraftMaterials,
+  planCraftMods,
+  resolveCraftOutput
 } from "../rules/crafting.mjs";
+import { installedModFlag } from "../rules/mod-installation.mjs";
 
 /**
  * The Actor document for Lyrian Chronicles.
@@ -368,15 +371,31 @@ export class LyrianActor extends Actor {
       return null;
     }
 
-    const output = project.outputUuid ? await fromUuid(project.outputUuid) : null;
-    if (!output?.toObject) {
+    // A linked output that no longer resolves is a broken project, not a custom
+    // one. Falling through to a forged item would quietly swap the result.
+    const base = project.outputUuid ? await fromUuid(project.outputUuid) : null;
+    const outputPlan = (project.outputUuid && !base?.toObject)
+      ? { ok: false }
+      : resolveCraftOutput({
+          project,
+          base,
+          fallbackName: game.i18n.localize("LYRIAN.Craft.UnnamedOutput")
+        });
+    if (!outputPlan.ok) {
       ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftOutputMissing", {
         name: project.outputName || project.name
       }));
       return null;
     }
-    const outputData = output.toObject();
-    delete outputData._id;
+    const outputData = outputPlan.data;
+
+    const modPlan = planCraftMods({ mods: project.mods, items: this.items });
+    if (!modPlan.ok) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftModMissing", {
+        name: modPlan.missing[0].name
+      }));
+      return null;
+    }
 
     const consumesMaterials = game.settings.get(
       "lyrian-chronicles",
@@ -411,7 +430,21 @@ export class LyrianActor extends Actor {
     const success = roll.total >= project.dc;
     project.attempts += 1;
     if (success) {
-      await this.createEmbeddedDocuments("Item", [outputData]);
+      const [created] = await this.createEmbeddedDocuments("Item", [outputData]);
+      // Mods are installed as flagged copies pointing at the new item, matching
+      // how a Mod dropped onto owned gear is installed from the inventory tab.
+      if (created && modPlan.mods.length) {
+        await this.createEmbeddedDocuments("Item", modPlan.mods.map((mod) => {
+          const modData = mod.toObject();
+          delete modData._id;
+          foundry.utils.setProperty(
+            modData,
+            "flags.lyrian-chronicles.installedMod",
+            installedModFlag(mod, created)
+          );
+          return modData;
+        }));
+      }
       project.completed = true;
     }
     projects[index] = project;
@@ -426,7 +459,10 @@ export class LyrianActor extends Actor {
       roll,
       success,
       materials: materialPlan.spent,
-      consumed: consumesMaterials
+      consumed: consumesMaterials,
+      mods: modPlan.mods,
+      custom: outputPlan.custom,
+      outputType: outputData.type ?? ""
     });
     const tooltip = await roll.getTooltip();
     const content = await foundry.applications.handlebars.renderTemplate(
@@ -440,6 +476,9 @@ export class LyrianActor extends Actor {
         success,
         materials: materialPlan.spent,
         consumed: consumesMaterials,
+        outputName: outputData.name,
+        custom: outputPlan.custom,
+        mods: modPlan.mods,
         tooltip
       }
     );

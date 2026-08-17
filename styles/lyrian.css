@@ -642,5 +642,17 @@
   border-radius: var(--lyr-radius); background: rgba(201, 162, 39, 0.05);
 }
 .lyrian .lyr-craft-output > div { display: grid; gap: 0.15rem; }
+.lyrian .lyr-craft-project__mods {
+  display: grid; gap: 0.35rem; padding-top: 0.4rem; border-top: 1px solid var(--lyr-rule-soft);
+}
+.lyrian .lyr-craft-project__mods h3 { margin: 0; color: var(--lyr-ink-dim); font-size: 0.8rem; }
+.lyrian .lyr-craft-mod {
+  display: grid; grid-template-columns: minmax(0, 1fr) 2rem; gap: 0.35rem;
+}
+.lyrian .lyr-craft-project__custom {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.5rem;
+  padding-top: 0.4rem; border-top: 1px solid var(--lyr-rule-soft);
+}
+.lyrian .lyr-craft-project__custom .lyr-note { grid-column: 1 / -1; margin: 0; }
 .lyrian .lyr-craft-attempt { justify-self: end; min-width: 10rem; }
 .lyrian-card.lyr-craft-card .lyrian-card__line { display: flex; gap: 0.4rem; align-items: baseline; }
