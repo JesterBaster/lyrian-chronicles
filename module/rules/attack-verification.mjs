@@ -29,9 +29,11 @@ function keywordSet(sourceKeywords = []) {
 /** Clamp an untrusted chat-card damage claim to a legitimate maximum. */
 export function boundedDamage({ claimed, ceiling } = {}) {
   const maximum = finiteNonNegative(ceiling);
-  const requested = finiteNonNegative(claimed);
+  const rawClaim = Number(claimed);
+  const validClaim = Number.isFinite(rawClaim) && rawClaim >= 0;
+  const requested = validClaim ? rawClaim : 0;
   const amount = Math.min(requested, maximum);
-  return { amount, clamped: amount !== requested };
+  return { amount, clamped: !validClaim || amount !== requested };
 }
 
 /** Derive guard-piercing effects from the real source and real attack profile. */
