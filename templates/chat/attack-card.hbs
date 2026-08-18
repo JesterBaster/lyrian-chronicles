@@ -28,6 +28,19 @@
     {{/if}}
   </div>
 
+  {{#if attackTooltip}}
+    <details class="lyrian-card__dice">
+      <summary>{{localize "LYRIAN.UI.Accuracy"}}</summary>
+      <div class="dice-roll"><div class="dice-result">{{{attackTooltip}}}</div></div>
+    </details>
+  {{/if}}
+  {{#if damageTooltip}}
+    <details class="lyrian-card__dice">
+      <summary>{{localize "LYRIAN.UI.Damage"}}</summary>
+      <div class="dice-roll"><div class="dice-result">{{{damageTooltip}}}</div></div>
+    </details>
+  {{/if}}
+
   {{#if (or pinpoint halfPierce fullPierce)}}
     <p class="lyrian-card__tags">
       {{#if pinpoint}}<span>{{localize "LYRIAN.Keyword.Pinpoint"}} {{pinpoint}}</span>{{/if}}

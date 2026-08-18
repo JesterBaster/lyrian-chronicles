@@ -120,8 +120,12 @@ export async function renderAttackCard({
     damageTypeLabel: game.i18n.localize(LYRIAN.damageTypes[damageType]?.label ?? ""),
     attackRoll,
     attackTotal: attackRoll?.total,
+    attackTooltip: await attackRoll?.getTooltip() ?? "",
     damageRoll,
     damageTotal: damageRoll?.total ?? 0,
+    // A maximised crit is not a roll result, so it gets no breakdown — the
+    // dice were never consulted and showing faces would misrepresent it.
+    damageTooltip: isCrit ? "" : await damageRoll?.getTooltip() ?? "",
     isCrit,
     sureHit,
     pinpoint,

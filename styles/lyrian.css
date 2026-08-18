@@ -719,3 +719,13 @@
 .lyrian .lyr-fold > summary > h2,
 .lyrian .lyr-fold > summary > h3 { margin: 0; flex: 1 1 auto; }
 .lyrian .lyr-fold > summary > button { flex: 0 0 auto; }
+
+/* Dice breakdowns on attack cards. Folded by default so the card stays a
+   summary, but the faces are there when a result is worth questioning. */
+.lyrian-card__dice { margin-top: 0.3rem; }
+.lyrian-card__dice > summary {
+  cursor: pointer; font-size: 0.64rem; color: var(--lyr-ink-dim);
+  font-variant: small-caps; letter-spacing: 0.06em;
+}
+.lyrian-card__dice > summary:hover { color: var(--lyr-gold-bright); }
+.lyrian-card__dice .dice-roll { margin-top: 0.2rem; }
