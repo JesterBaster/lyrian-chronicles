@@ -17,6 +17,7 @@ import { confirmItemRequirements } from "../rules/requirements.mjs";
 import {
   compatibleModTargets,
   installedModFlag,
+  isCompatibleModTarget,
   isCraftingMod
 } from "../rules/mod-installation.mjs";
 import { hybridAncestryFamily } from "../rules/hybrid-race.mjs";
@@ -598,10 +599,22 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       return item;
     }
 
-    // Universal Crafting Mods apply to abstract crafting tools which the Actor
-    // inventory does not model as installable equipment yet; keep those as Gear.
+    // A Mod installs only when it is dropped onto the item it goes into.
+    //
+    // It used to install wherever it landed, guessing a target from whatever
+    // was compatible. Every Mod in the book is a Universal Armor or Universal
+    // Weapon Mod, so that path caught all of them: none could ever be dropped
+    // into the inventory as stock, which left the crafting project's Mod list
+    // permanently empty — and a Mod dropped with no compatible target owned
+    // was discarded with a warning rather than kept.
     if (isCraftingMod(item) && item.system.craftingType !== "Universal Crafting") {
-      return this.#installMod(event, item);
+      const targetId = event.target?.closest?.("[data-item-id]")?.dataset.itemId;
+      const target = targetId ? this.document.items.get(targetId) : null;
+      if (target && isCompatibleModTarget(item, target)) {
+        return this.#installMod(event, item);
+      }
+      // Anything else keeps the Mod: it lands in the inventory as stock, ready
+      // to be listed on a crafting project or dragged onto a real target later.
     }
 
     const result = await super._onDropItem(event, item);
