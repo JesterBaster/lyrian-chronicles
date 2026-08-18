@@ -87,10 +87,56 @@ test("folding is driven by a deliberate header click, not the toggle event", () 
     !/addEventListener\("toggle"/.test(source),
     "a toggle listener records folds the reader never asked for"
   );
-  assert.match(source, /details\[data-collapse-scope\] > summary/);
-  assert.match(source, /addEventListener\("click"/);
+  assert.match(source, /#bindOnce\("details\[data-collapse-scope\] > summary", "click"/);
 
   // Controls inside a header must act without folding the section.
   assert.match(source, /closest\("button, a, input, select, textarea, \[data-action\]"\)/);
   assert.match(source, /event\.preventDefault\(\)/);
+});
+
+test("listeners are bound once per element, not once per render", () => {
+  const source = readFileSync("module/sheets/actor-sheet.mjs", "utf8");
+
+  // _onRender runs after every render, including the header-only repaint that
+  // follows a resource change — and that repaint leaves other parts' DOM in
+  // place. Binding unconditionally stacked a listener each time, so one later
+  // click ran the fold handler repeatedly and flipped the section back and forth.
+  assert.match(source, /element\.dataset\.lyrianBound === type/);
+  assert.match(source, /element\.dataset\.lyrianBound = type/);
+
+  const render = source.slice(source.indexOf("  _onRender(context, options)"));
+  const body = render.slice(0, render.indexOf("\n  }"));
+  assert.ok(
+    !/addEventListener/.test(body),
+    "_onRender must bind through #bindOnce so nothing stacks across renders"
+  );
+});
+
+test("the abilities tab folds only the groupings worth folding", () => {
+  const template = readFileSync("templates/actor/tab-abilities.hbs", "utf8");
+  const ids = [...template.matchAll(/data-collapse-id="([^"]*)"/g)].map((m) => m[1]);
+
+  // Racial traits, each class, and passives stay foldable. The four timing
+  // lists were merged, so nothing folds an ability away by its timing.
+  assert.deepEqual(ids.sort(), ["class-{{group.item.id}}", "passives", "racial"]);
+  for (const gone of ["actions", "reactions", "encounter-start", "encounter-conclusion"]) {
+    assert.ok(!ids.includes(gone), `${gone} should no longer be its own section`);
+  }
+});
+
+test("merging the timing lists keeps every ability reachable", () => {
+  const sheet = readFileSync("module/sheets/actor-sheet.mjs", "utf8");
+  // Every bucket that had its own section must feed the merged list, or those
+  // abilities would vanish from the sheet entirely.
+  const merged = sheet.slice(sheet.indexOf("buckets.activeAbilities = ["));
+  for (const bucket of ["abilities", "reactions", "encounterStart", "encounterConclusion"]) {
+    assert.match(merged.slice(0, 300), new RegExp(`\\.\\.\\.buckets\\.${bucket}`));
+  }
+  // Passives keep their own section and must not be folded into the list.
+  assert.ok(!/\.\.\.buckets\.passives/.test(merged.slice(0, 300)));
+
+  const template = readFileSync("templates/actor/tab-abilities.hbs", "utf8");
+  assert.match(template, /\{\{#each items\.activeAbilities\}\}/);
+  // Timing moves onto the row, so merging loses no information.
+  assert.match(template, /lyrianLocalizeKey "abilityTiming" this\.system\.timing/);
 });
