@@ -26,6 +26,7 @@ import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 import { requireActorActionPermission } from "../rules/action-permissions.mjs";
 import { guardForDamage } from "../rules/damage.mjs";
 import { buildCheckPayload, namedCheckTitle } from "../rules/check-card.mjs";
+import { initiativeTargets } from "../rules/initiative.mjs";
 import {
   buildCraftPayload,
   normalizeCraftProject,
@@ -529,10 +530,30 @@ export class LyrianActor extends Actor {
 
   /** Roll initiative outside of the tracker: 1d4 + Agility. */
   async rollInitiativeCheck() {
-    return this._rollCheck({
+    const roll = await this._rollCheck({
       formula: `1d4 + ${this.system.initiative.value}`,
       flavour: game.i18n.localize("LYRIAN.Roll.Initiative")
     });
+    if (!roll) return roll;
+
+    // Write the result through to the encounter. Without this the roll was
+    // only a chat card, so a player who rolled from their sheet still showed
+    // as unrolled in the tracker and the GM had to roll for them again.
+    const targets = initiativeTargets({
+      combatants: game.combat?.combatants ?? [],
+      actorId: this.id,
+      controlledTokenIds: canvas?.tokens?.controlled?.map((token) => token.id) ?? []
+    });
+    const writable = targets.filter((combatant) => combatant.isOwner);
+    if (writable.length) {
+      await game.combat.updateEmbeddedDocuments(
+        "Combatant",
+        writable.map((combatant) => ({ _id: combatant.id, initiative: roll.total }))
+      );
+    } else if (targets.length) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.InitiativeNotOwned"));
+    }
+    return roll;
   }
 
   /** Roll a basic Light, Heavy, or Precise attack without an equipped weapon. */

@@ -471,16 +471,25 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
 
   /* -------------------------------------------- */
 
-  /** @override Capture the scroll offset before the part is swapped out. */
+  /**
+   * @override
+   * Capture once, before the first part is swapped out. The scrolling element
+   * here is .lyr-creation-step, which lives inside the part and is therefore
+   * rebuilt from scratch, so its offset has to be read before it is gone.
+   */
   _preSyncPartState(partId, newElement, priorElement, state) {
     super._preSyncPartState?.(partId, newElement, priorElement, state);
-    state.lyrianScrollTop = captureScroll(this.element);
+    this.#scrollOffsets ??= captureScroll(this.element);
   }
 
-  /** @override Put the reader back where they were after the swap. */
-  _syncPartState(partId, newElement, priorElement, state) {
-    super._syncPartState?.(partId, newElement, priorElement, state);
-    restoreScroll(this.element, state.lyrianScrollTop);
+  /** Offsets held between the pre-sync capture and the post-render restore. */
+  #scrollOffsets = null;
+
+  /** @override Restore once the replacement content is actually in the DOM. */
+  _onRender(context, options) {
+    this.#onRenderSearch(context, options);
+    restoreScroll(this.element, this.#scrollOffsets);
+    this.#scrollOffsets = null;
   }
 
   /**
@@ -490,7 +499,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
    * wizard re-renders on every form change, so routing search text through it
    * would tear the input out from under the cursor on each keystroke.
    */
-  _onRender(context, options) {
+  #onRenderSearch(context, options) {
     super._onRender?.(context, options);
     for (const input of this.element.querySelectorAll("[data-search-list]")) {
       const list = input.dataset.searchList;
