@@ -53,6 +53,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       rollInjury: LyrianActorSheet.#onRollInjury,
       attack: LyrianActorSheet.#onAttack,
       universalAttack: LyrianActorSheet.#onUniversalAttack,
+      multiAttack: LyrianActorSheet.#onMultiAttack,
       monsterAttack: LyrianActorSheet.#onMonsterAttack,
       useItem: LyrianActorSheet.#onUseItem,
       browsePack: LyrianActorSheet.#onBrowsePack,
@@ -1072,6 +1073,37 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #onUniversalAttack(event, target) {
     await this.document.rollUniversalAttack(target.dataset.attackType, { free: event.shiftKey });
+  }
+
+  /** Ask how many of each attack type to make, then resolve them together. */
+  static async #onMultiAttack(event, target) {
+    const itemId = target.closest("[data-item-id]")?.dataset.itemId ?? "";
+    const available = this.document.system.ap.total;
+    const rows = Object.entries(LYRIAN.attackTypes).map(([key, profile]) => `
+      <label class="lyr-multi-attack__row">
+        <span>${game.i18n.localize(profile.label)}</span>
+        <em>${game.i18n.format("LYRIAN.Attack.MultiApEach", { ap: profile.ap })}</em>
+        <input type="number" name="${key}" value="0" min="0" step="1" />
+      </label>`).join("");
+
+    const counts = await foundry.applications.api.DialogV2.prompt({
+      window: { title: game.i18n.localize("LYRIAN.Attack.MultiTitle") },
+      content: `<div class="lyrian lyr-multi-attack">
+        <p class="lyr-note">${game.i18n.format("LYRIAN.Attack.MultiHint", { ap: available })}</p>
+        ${rows}
+      </div>`,
+      ok: {
+        label: game.i18n.localize("LYRIAN.Attack.MultiConfirm"),
+        callback: (dialogEvent, button) => Object.fromEntries(
+          Object.keys(LYRIAN.attackTypes).map((key) => [
+            key, Number(button.form.elements[key]?.value) || 0
+          ])
+        )
+      }
+    }).catch(() => null);
+    if (!counts) return;
+
+    await this.document.rollMultiAttack({ itemId, counts, free: event.shiftKey });
   }
 
   static async #onMonsterAttack(event, target) {
