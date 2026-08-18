@@ -2,7 +2,11 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 
-import { isUnarmedProficient } from "../module/rules/proficiencies.mjs";
+import {
+  BASELINE_WEAPON_PROFICIENCIES,
+  UNARMED_PROFICIENCY,
+  isUnarmedProficient
+} from "../module/rules/proficiencies.mjs";
 import { universalAttackProfile } from "../module/rules/universal-attack.mjs";
 
 const attackTypes = { light: { ap: 1, accuracy: "focus", damage: "2d4", powerMultiplier: 1 } };
@@ -12,7 +16,12 @@ test("proficiency is read from where the grant is actually stored", () => {
   // the weapon proficiency "Unarmed" — not to the separate boolean.
   assert.equal(isUnarmedProficient({ proficiencies: { weapons: ["Unarmed"] } }), true);
   assert.equal(isUnarmedProficient({ proficiencies: { weapons: new Set(["Unarmed"]) } }), true);
-  assert.equal(isUnarmedProficient({ proficiencies: { weapons: ["Longsword"] } }), false);
+});
+
+test("Unarmed is baseline, so a character carrying no grant still has it", () => {
+  // The rulebook's flat-1 unproficient case is deliberately out of reach.
+  assert.equal(BASELINE_WEAPON_PROFICIENCIES.includes(UNARMED_PROFICIENCY), true);
+  assert.equal(isUnarmedProficient({ proficiencies: { weapons: ["Longsword"] } }), true);
 });
 
 test("stored names match regardless of case or spacing", () => {
@@ -24,10 +33,20 @@ test("the legacy boolean still counts, so nobody loses a grant", () => {
   assert.equal(isUnarmedProficient({ proficiencies: { unarmed: true, weapons: [] } }), true);
 });
 
-test("an actor with nothing recorded is not proficient", () => {
-  assert.equal(isUnarmedProficient({}), false);
-  assert.equal(isUnarmedProficient(undefined), false);
-  assert.equal(isUnarmedProficient({ proficiencies: {} }), false);
+test("an actor with nothing recorded still gets the baseline", () => {
+  assert.equal(isUnarmedProficient({}), true);
+  assert.equal(isUnarmedProficient(undefined), true);
+  assert.equal(isUnarmedProficient({ proficiencies: {} }), true);
+});
+
+test("the baseline is a list, not a hardcoded answer", () => {
+  // Dropping Unarmed from the list must restore the rulebook rule without
+  // needing any other change, so the check has to read the real sources.
+  const source = readFileSync("module/rules/proficiencies.mjs", "utf8");
+  const body = source.slice(source.indexOf("export function isUnarmedProficient"));
+  assert.match(body.slice(0, 400), /BASELINE_WEAPON_PROFICIENCIES/);
+  assert.match(body.slice(0, 400), /proficiencies\?\.weapons/);
+  assert.ok(!/^\s*return true;/m.test(body.slice(0, 400)), "must not be a constant");
 });
 
 test("a proficient character swings for weapon damage, not a flat point", () => {

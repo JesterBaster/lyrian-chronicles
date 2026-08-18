@@ -116,7 +116,9 @@ test("automatic grants win over duplicate manual selections and retain sources",
     }
   };
   const result = collectActorProficiencies(actor);
-  assert.deepEqual(result.groups.weapons.map((entry) => entry.name), ["Bludgeoning Weapons", "Small Weapons"]);
+  // Unarmed is baseline, so it heads every character's weapon list.
+  assert.deepEqual(result.groups.weapons.map((entry) => entry.name),
+    ["Unarmed", "Bludgeoning Weapons", "Small Weapons"]);
   assert.deepEqual(result.groups.armor.map((entry) => entry.name), ["Light Armor"]);
   assert.deepEqual(result.groups.languages.map((entry) => entry.name), ["Common", "Sylvan"]);
   assert.ok(result.sources.some((source) => source.name === "Pierrot — Pierrot's Journey"));
@@ -144,7 +146,7 @@ test("saved source-owned choices become automatic proficiencies", () => {
     }
   };
   const result = collectActorProficiencies(actor);
-  assert.deepEqual(result.groups.weapons.map((entry) => entry.name), ["Light Swords"]);
+  assert.deepEqual(result.groups.weapons.map((entry) => entry.name), ["Unarmed", "Light Swords"]);
   assert.deepEqual(result.groups.languages.map((entry) => entry.name), ["Common", "Northi"]);
   assert.ok(result.groups.weapons.every((entry) => entry.granted));
   assert.equal(result.sources[0].choices[0].title, "Additional language or dialect");

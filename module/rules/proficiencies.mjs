@@ -129,31 +129,42 @@ export function proficiencyKey(value) {
     .replace(/\s+/g, " ");
 }
 
-/** Normalize common official spelling/plural variants while preserving homebrew names. */
 /** The name unarmed proficiency is stored under, per the CANONICAL map above. */
 export const UNARMED_PROFICIENCY = "Unarmed";
 
 /**
+ * Weapon proficiencies every character has without being granted them.
+ *
+ * Unarmed is baseline here by table decision. The rulebook's alternative —
+ * an unproficient unarmed strike dealing a flat 1 point instead of a full
+ * One-Handed weapon's damage — is therefore not reached. Remove the entry to
+ * put that rule back; everything else reads this list rather than assuming.
+ */
+export const BASELINE_WEAPON_PROFICIENCIES = Object.freeze([UNARMED_PROFICIENCY]);
+
+/**
  * Whether a character is proficient with unarmed strikes.
  *
- * The rulebook makes this the difference between a flat 1 point of damage and
- * a full One-Handed weapon's damage, so it has to be read from where the
- * proficiency is actually stored. Gaining it — from a race, a class, or the
- * proficiencies tab — canonicalizes to the weapon proficiency "Unarmed"; the
- * separate `proficiencies.unarmed` boolean has no writer anywhere in the
- * system, so reading only that meant every character was treated as
- * unproficient forever.
+ * True for everyone while Unarmed is baseline, but written to read the real
+ * sources rather than return a constant, so removing it from the baseline
+ * restores the rulebook behaviour without touching anything else.
  *
- * The boolean is still honoured, so any character that does carry it set keeps
- * the grant.
+ * A grant from a race, a class or the proficiencies tab canonicalizes to the
+ * weapon proficiency "Unarmed" and is stored by name. The separate
+ * `proficiencies.unarmed` boolean has no writer anywhere in the system, but is
+ * still honoured so a document carrying it set keeps the grant.
  */
 export function isUnarmedProficient(system) {
   if (system?.proficiencies?.unarmed) return true;
-  const stored = system?.proficiencies?.weapons ?? [];
   const target = proficiencyKey(UNARMED_PROFICIENCY);
-  return Array.from(stored).some((name) => proficiencyKey(name) === target);
+  const held = [
+    ...BASELINE_WEAPON_PROFICIENCIES,
+    ...Array.from(system?.proficiencies?.weapons ?? [])
+  ];
+  return held.some((name) => proficiencyKey(name) === target);
 }
 
+/** Normalize common official spelling/plural variants while preserving homebrew names. */
 export function canonicalProficiency(value, requestedKind = "weapons") {
   const key = proficiencyKey(value);
   const known = CANONICAL[key];
@@ -399,6 +410,15 @@ export function collectActorProficiencies(actor) {
       sourceRows.push({ name, entries: [...new Set(entries)], choices: sourceChoices });
     }
   };
+
+  // Present on every sheet as a granted proficiency, so what the attack code
+  // assumes and what the player reads are the same thing.
+  for (const name of BASELINE_WEAPON_PROFICIENCIES) {
+    const canonical = canonicalProficiency(name, "weapons");
+    automatic.weapons.set(canonical.key, {
+      name: canonical.name, kind: "weapons", key: canonical.key, granted: true, sources: []
+    });
+  }
 
   for (const item of actor.items ?? []) {
     if (item.type === "race") {

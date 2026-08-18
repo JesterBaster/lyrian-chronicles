@@ -23,6 +23,35 @@
     </div>
   {{/if}}
 
+  {{#if isNPC}}
+    {{#if editable}}
+      <details class="lyr-fold lyr-statblock" data-collapse-scope="main" data-collapse-id="statblock"
+               {{{lyrianSectionOpen "main" "statblock"}}}>
+        <summary class="lyr-heading">{{localize "LYRIAN.UI.OfficialStatBlock"}}</summary>
+        <p class="lyr-note">{{localize "LYRIAN.Hint.OfficialStatBlock"}}</p>
+        <label class="lyr-check">
+          <input type="checkbox" name="system.official.enabled" {{checked system.official.enabled}} />
+          {{localize "LYRIAN.UI.UseOfficialStatBlock"}}
+        </label>
+        <div class="lyr-field-grid">
+          <label>{{localize "LYRIAN.Resource.HP"}} <input type="number" name="system.official.hp" value="{{system.official.hp}}" /></label>
+          <label>{{localize "LYRIAN.Resource.Mana"}} <input type="number" name="system.official.mana" value="{{system.official.mana}}" /></label>
+          <label>{{localize "LYRIAN.Resource.AP"}} <input type="number" name="system.official.ap" value="{{system.official.ap}}" /></label>
+          <label>{{localize "LYRIAN.Resource.RP"}} <input type="number" name="system.official.rp" value="{{system.official.rp}}" /></label>
+          <label>{{localize "LYRIAN.Defence.Initiative"}} <input type="number" name="system.official.initiative" value="{{system.official.initiative}}" /></label>
+          <label>{{localize "LYRIAN.Defence.Evasion"}} <input type="number" name="system.official.evasion" value="{{system.official.evasion}}" /></label>
+          <label>{{localize "LYRIAN.Defence.Dodge"}} <input type="number" name="system.official.dodgeEvasion" value="{{system.official.dodgeEvasion}}" /></label>
+          <label>{{localize "LYRIAN.Defence.Guard"}} <input type="number" name="system.official.guard" value="{{system.official.guard}}" /></label>
+          <label>{{localize "LYRIAN.Defence.Block"}} <input type="number" name="system.official.blockGuard" value="{{system.official.blockGuard}}" /></label>
+          <label>{{localize "LYRIAN.UI.Movement"}} <input type="number" name="system.official.movement" value="{{system.official.movement}}" /></label>
+        </div>
+        <label>{{localize "LYRIAN.Attack.Light"}} <input type="text" name="system.official.lightAttack" value="{{system.official.lightAttack}}" placeholder="{{localize "LYRIAN.Placeholder.MonsterAttack"}}" /></label>
+        <label>{{localize "LYRIAN.Attack.Heavy"}} <input type="text" name="system.official.heavyAttack" value="{{system.official.heavyAttack}}" placeholder="{{localize "LYRIAN.Placeholder.MonsterAttack"}}" /></label>
+        <label>{{localize "LYRIAN.UI.NotableSkills"}} <input type="text" name="system.official.notableSkills" value="{{system.official.notableSkills}}" /></label>
+      </details>
+    {{/if}}
+  {{/if}}
+
   <div class="lyr-columns">
     <div class="lyr-col">
       <h2 class="lyr-heading">{{localize "LYRIAN.UI.MainStats"}}</h2>
