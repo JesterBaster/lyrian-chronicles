@@ -130,6 +130,30 @@ export function proficiencyKey(value) {
 }
 
 /** Normalize common official spelling/plural variants while preserving homebrew names. */
+/** The name unarmed proficiency is stored under, per the CANONICAL map above. */
+export const UNARMED_PROFICIENCY = "Unarmed";
+
+/**
+ * Whether a character is proficient with unarmed strikes.
+ *
+ * The rulebook makes this the difference between a flat 1 point of damage and
+ * a full One-Handed weapon's damage, so it has to be read from where the
+ * proficiency is actually stored. Gaining it — from a race, a class, or the
+ * proficiencies tab — canonicalizes to the weapon proficiency "Unarmed"; the
+ * separate `proficiencies.unarmed` boolean has no writer anywhere in the
+ * system, so reading only that meant every character was treated as
+ * unproficient forever.
+ *
+ * The boolean is still honoured, so any character that does carry it set keeps
+ * the grant.
+ */
+export function isUnarmedProficient(system) {
+  if (system?.proficiencies?.unarmed) return true;
+  const stored = system?.proficiencies?.weapons ?? [];
+  const target = proficiencyKey(UNARMED_PROFICIENCY);
+  return Array.from(stored).some((name) => proficiencyKey(name) === target);
+}
+
 export function canonicalProficiency(value, requestedKind = "weapons") {
   const key = proficiencyKey(value);
   const known = CANONICAL[key];

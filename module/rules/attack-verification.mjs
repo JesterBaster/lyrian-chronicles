@@ -1,4 +1,5 @@
 import { LYRIAN } from "../config.mjs";
+import { isUnarmedProficient } from "./proficiencies.mjs";
 import { abilityWeaponAttackContext } from "./ability-attack.mjs";
 import { parseMonsterAttackProfile } from "./monster-attack.mjs";
 import { universalAttackProfile } from "./universal-attack.mjs";
@@ -132,7 +133,7 @@ export async function legitimateAttackProfile({
       focus: actorFocus(actor),
       standardAccuracy: actor.system?.accuracy?.standard,
       preciseAccuracy: actor.system?.accuracy?.precise,
-      unarmedProficient: actor.type !== "character" || !!actor.system?.proficiencies?.unarmed
+      unarmedProficient: actor.type !== "character" || isUnarmedProficient(actor.system)
     });
     formula = profile?.damageFormula ?? null;
   } else if (attack.sourceKind === "item" || !attack.sourceKind) {

@@ -24,6 +24,7 @@ import {
 } from "../rules/skill-caps.mjs";
 import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 import { requireActorActionPermission } from "../rules/action-permissions.mjs";
+import { isUnarmedProficient } from "../rules/proficiencies.mjs";
 import { guardForDamage } from "../rules/damage.mjs";
 import { buildCheckPayload, namedCheckTitle } from "../rules/check-card.mjs";
 import { initiativeTargets } from "../rules/initiative.mjs";
@@ -643,7 +644,7 @@ export class LyrianActor extends Actor {
       focus: this.system.stats.focus.total,
       standardAccuracy: this.system.accuracy.standard,
       preciseAccuracy: this.system.accuracy.precise,
-      unarmedProficient: this.type !== "character" || !!this.system.proficiencies?.unarmed
+      unarmedProficient: this.type !== "character" || isUnarmedProficient(this.system)
     });
     if (!profile) return null;
 
