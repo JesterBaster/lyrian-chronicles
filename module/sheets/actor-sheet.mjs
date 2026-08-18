@@ -23,6 +23,7 @@ import { hybridAncestryFamily } from "../rules/hybrid-race.mjs";
 import { isHeaderOnlyRender } from "../rules/sheet-refresh.mjs";
 import { captureScroll, restoreScroll } from "../rules/scroll-state.mjs";
 import { withCollapsed } from "../rules/collapsible.mjs";
+import { queueDocumentWrite } from "../rules/action-transactions.mjs";
 import {
   CUSTOM_OUTPUT_TYPES,
   normalizeCraftProject
@@ -62,7 +63,6 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       chooseRequiredAncestry: LyrianActorSheet.#onChooseRequiredAncestry,
       addProficiency: LyrianActorSheet.#onAddProficiency,
       removeProficiency: LyrianActorSheet.#onRemoveProficiency,
-      saveProficiencyChoice: LyrianActorSheet.#onSaveProficiencyChoice,
       createItem: LyrianActorSheet.#onCreateItem,
       editItem: LyrianActorSheet.#onEditItem,
       deleteItem: LyrianActorSheet.#onDeleteItem,
@@ -503,12 +503,16 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         const { collapseScope, collapseId } = section.dataset;
         const collapsed = section.open;
         section.open = !collapsed;
-        const state = game.user.getFlag("lyrian-chronicles", "collapsedSections") ?? {};
-        await game.user.setFlag(
-          "lyrian-chronicles",
-          "collapsedSections",
-          withCollapsed(state, collapseScope, collapseId, collapsed)
-        );
+        // Serialized: folding two sections quickly meant both handlers read the
+        // same stored value and the second write dropped the first fold.
+        await queueDocumentWrite(game.user, async () => {
+          const state = game.user.getFlag("lyrian-chronicles", "collapsedSections") ?? {};
+          await game.user.setFlag(
+            "lyrian-chronicles",
+            "collapsedSections",
+            withCollapsed(state, collapseScope, collapseId, collapsed)
+          );
+        });
       });
     });
 
@@ -1217,6 +1221,13 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   }
 
   static async #onSaveProficiencyChoice(event, target) {
+    // Serialized for the same reason the fold state is: this reads the whole
+    // selection map and writes it back, so two quick edits would lose one.
+    return queueDocumentWrite(this.document, () =>
+      LyrianActorSheet.#saveProficiencyChoice.call(this, event, target));
+  }
+
+  static async #saveProficiencyChoice(event, target) {
     const row = target.closest("[data-proficiency-choice]");
     const id = row?.dataset.choiceId;
     const index = Number(row?.dataset.choiceIndex);
