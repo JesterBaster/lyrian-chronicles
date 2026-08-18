@@ -15,6 +15,7 @@
       <div class="lyr-row__body">
         <span class="lyr-row__name">{{this.name}}</span>
         <span class="lyr-row__meta">
+          {{lyrianLocalizeKey "abilityTiming" this.system.timing}} ·
           {{this.system.costLabel}}
           {{#if this.system.range}} · {{this.system.range}}{{/if}}
           {{#if this.system.requirement}} · {{localize "LYRIAN.UI.Requires"}} {{this.system.requirement}}{{/if}}
@@ -58,33 +59,10 @@
     {{/each}}
   {{/if}}
 
-  <details class="lyr-fold" data-collapse-scope="abilities" data-collapse-id="actions" {{{lyrianSectionOpen "abilities" "actions"}}}>
-    <summary class="lyr-subheading">{{#if isCharacter}}{{localize "LYRIAN.UI.OtherActions"}}{{else}}{{localize "LYRIAN.UI.Actions"}}{{/if}}</summary>
-    <ul class="lyr-list">
-      {{#each items.abilities}}{{> abilityRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.ActiveAbilities"}}</li>{{/each}}
-    </ul>
-  </details>
-
-  <details class="lyr-fold" data-collapse-scope="abilities" data-collapse-id="reactions" {{{lyrianSectionOpen "abilities" "reactions"}}}>
-    <summary class="lyr-subheading">{{localize "LYRIAN.UI.Reactions"}}</summary>
-    <ul class="lyr-list">
-      {{#each items.reactions}}{{> abilityRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Reactions"}}</li>{{/each}}
-    </ul>
-  </details>
-
-  <details class="lyr-fold" data-collapse-scope="abilities" data-collapse-id="encounter-start" {{{lyrianSectionOpen "abilities" "encounter-start"}}}>
-    <summary class="lyr-subheading">{{localize "LYRIAN.Timing.EncounterStart"}}</summary>
-    <ul class="lyr-list">
-      {{#each items.encounterStart}}{{> abilityRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.UI.None"}}</li>{{/each}}
-    </ul>
-  </details>
-
-  <details class="lyr-fold" data-collapse-scope="abilities" data-collapse-id="encounter-conclusion" {{{lyrianSectionOpen "abilities" "encounter-conclusion"}}}>
-    <summary class="lyr-subheading">{{localize "LYRIAN.Timing.EncounterConclusion"}}</summary>
-    <ul class="lyr-list">
-      {{#each items.encounterConclusion}}{{> abilityRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.UI.None"}}</li>{{/each}}
-    </ul>
-  </details>
+  <h3 class="lyr-subheading">{{#if isCharacter}}{{localize "LYRIAN.UI.OtherActions"}}{{else}}{{localize "LYRIAN.UI.Actions"}}{{/if}}</h3>
+  <ul class="lyr-list">
+    {{#each items.activeAbilities}}{{> abilityRow}}{{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.ActiveAbilities"}}</li>{{/each}}
+  </ul>
 
   <details class="lyr-fold" data-collapse-scope="abilities" data-collapse-id="passives" {{{lyrianSectionOpen "abilities" "passives"}}}>
     <summary class="lyr-subheading">{{localize "LYRIAN.UI.Passives"}}</summary>

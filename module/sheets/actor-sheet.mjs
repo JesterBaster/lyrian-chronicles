@@ -407,6 +407,17 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       buckets[key] = buckets[key].filter((item) => !grantedIds.has(item.id));
     }
 
+    // One list rather than four. Splitting actions, reactions and the two
+    // encounter timings into separate sections meant deciding which heading an
+    // ability belonged under before you could find it; the timing is shown on
+    // each row instead. Order still reads actions, reactions, then encounter.
+    buckets.activeAbilities = [
+      ...buckets.abilities,
+      ...buckets.reactions,
+      ...buckets.encounterStart,
+      ...buckets.encounterConclusion
+    ];
+
     const featureView = (item) => ({
       item,
       role: item.getFlag("lyrian-chronicles", "featureSource")?.role ?? "Trait",
@@ -481,6 +492,25 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     this.#scrollOffsets ??= captureScroll(this.element);
   }
 
+  /**
+   * Attach a listener to each element exactly once.
+   *
+   * _onRender runs after every render, including the header-only repaint that
+   * follows any resource change — and that repaint leaves the other parts'
+   * DOM untouched. Binding unconditionally therefore stacked another listener
+   * on the same element every time a player spent AP, so one later click on a
+   * section header ran the fold handler several times and flipped it back and
+   * forth. Replaced elements are new nodes without the mark, so they still get
+   * wired exactly once.
+   */
+  #bindOnce(selector, type, handler) {
+    for (const element of this.element.querySelectorAll(selector)) {
+      if (element.dataset.lyrianBound === type) continue;
+      element.dataset.lyrianBound = type;
+      element.addEventListener(type, handler);
+    }
+  }
+
   _onRender(context, options) {
     super._onRender?.(context, options);
 
@@ -491,67 +521,59 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     // in a summary opens or closes the section — so listening to toggle meant
     // pressing Add both created the item and folded away the list it went
     // into, which then also shortened the page and threw the scroll to the top.
-    this.element.querySelectorAll("details[data-collapse-scope] > summary").forEach((summary) => {
-      summary.addEventListener("click", async (event) => {
-        // Let controls inside the header do their own job, without folding.
-        if (event.target.closest("button, a, input, select, textarea, [data-action]")) {
-          event.preventDefault();
-          return;
-        }
+    this.#bindOnce("details[data-collapse-scope] > summary", "click", async (event) => {
+      // Let controls inside the header do their own job, without folding.
+      if (event.target.closest("button, a, input, select, textarea, [data-action]")) {
         event.preventDefault();
-        const section = summary.closest("details[data-collapse-scope]");
-        const { collapseScope, collapseId } = section.dataset;
-        const collapsed = section.open;
-        section.open = !collapsed;
-        // Serialized: folding two sections quickly meant both handlers read the
-        // same stored value and the second write dropped the first fold.
-        await queueDocumentWrite(game.user, async () => {
-          const state = game.user.getFlag("lyrian-chronicles", "collapsedSections") ?? {};
-          await game.user.setFlag(
-            "lyrian-chronicles",
-            "collapsedSections",
-            withCollapsed(state, collapseScope, collapseId, collapsed)
-          );
-        });
+        return;
+      }
+      event.preventDefault();
+      const section = event.currentTarget.closest("details[data-collapse-scope]");
+      const { collapseScope, collapseId } = section.dataset;
+      const collapsed = section.open;
+      section.open = !collapsed;
+      // Serialized: folding two sections quickly meant both handlers read the
+      // same stored value and the second write dropped the first fold.
+      await queueDocumentWrite(game.user, async () => {
+        const state = game.user.getFlag("lyrian-chronicles", "collapsedSections") ?? {};
+        await game.user.setFlag(
+          "lyrian-chronicles",
+          "collapsedSections",
+          withCollapsed(state, collapseScope, collapseId, collapsed)
+        );
       });
     });
 
-    this.element.querySelectorAll("[data-expertise-field]").forEach((input) => {
-      input.addEventListener("change", async (event) => {
-        const { group, skill } = event.target.dataset;
-        const rows = this.element.querySelectorAll(
-          `[data-expertise-row][data-group="${group}"][data-skill="${skill}"]`
-        );
+    this.#bindOnce("[data-expertise-field]", "change", async (event) => {
+      const { group, skill } = event.currentTarget.dataset;
+      const rows = this.element.querySelectorAll(
+        `[data-expertise-row][data-group="${group}"][data-skill="${skill}"]`
+      );
 
-        const expertises = Array.from(rows).map((row) => ({
-          name: row.querySelector("[data-expertise-name]")?.value ?? "",
-          rank: Number(row.querySelector("[data-expertise-rank]")?.value ?? 0)
-        }));
+      const expertises = Array.from(rows).map((row) => ({
+        name: row.querySelector("[data-expertise-name]")?.value ?? "",
+        rank: Number(row.querySelector("[data-expertise-rank]")?.value ?? 0)
+      }));
 
-        await this.document.update({ [`system.${group}.${skill}.expertises`]: expertises });
-      });
+      await this.document.update({ [`system.${group}.${skill}.expertises`]: expertises });
     });
 
     // Proficiency choices save as soon as the player changes them. These
     // controls intentionally have no form names, so the normal sheet submit
     // cannot duplicate or flatten the source-owned selection data.
-    this.element.querySelectorAll("[data-proficiency-choice-value]").forEach((input) => {
-      input.addEventListener("change", async (event) => {
-        const row = event.currentTarget.closest("[data-proficiency-choice]");
-        if (row) await LyrianActorSheet.#onSaveProficiencyChoice.call(this, event, row);
-      });
+    this.#bindOnce("[data-proficiency-choice-value]", "change", async (event) => {
+      const row = event.currentTarget.closest("[data-proficiency-choice]");
+      if (row) await LyrianActorSheet.#onSaveProficiencyChoice.call(this, event, row);
     });
 
     // Project fields have no form names because nested ArrayFields do not round-trip
     // through Foundry form expansion. Persist the complete project list instead.
-    this.element.querySelectorAll("[data-crafting-field]").forEach((input) => {
-      input.addEventListener("change", async () => {
-        // The controls are also disabled in the template, but that is markup a
-        // client can edit. Every other project write checks this, so this one must.
-        if (!this._mayEditProjects()) return;
-        await this.document.update({
-          "system.crafting.projects": this._readCraftingProjects()
-        });
+    this.#bindOnce("[data-crafting-field]", "change", async () => {
+      // The controls are also disabled in the template, but that is markup a
+      // client can edit. Every other project write checks this, so this one must.
+      if (!this._mayEditProjects()) return;
+      await this.document.update({
+        "system.crafting.projects": this._readCraftingProjects()
       });
     });
 
