@@ -28,6 +28,11 @@ import { guardForDamage } from "../rules/damage.mjs";
 import { buildCheckPayload, namedCheckTitle } from "../rules/check-card.mjs";
 import { initiativeTargets } from "../rules/initiative.mjs";
 import {
+  expandAttackPlan,
+  multiAttackCost,
+  normalizeAttackCounts
+} from "../rules/multi-attack.mjs";
+import {
   buildCraftPayload,
   normalizeCraftProject,
   planCraftMaterials,
@@ -554,6 +559,65 @@ export class LyrianActor extends Actor {
       ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.InitiativeNotOwned"));
     }
     return roll;
+  }
+
+  /**
+   * Resolve several basic attacks from one activation, with or without a weapon.
+   *
+   * @param {object}  [options]
+   * @param {string}  [options.itemId]  Weapon to swing; omitted means unarmed.
+   * @param {object}  [options.counts]  Attacks wanted per type, e.g. {light: 2}.
+   * @param {boolean} [options.free]    Skip the AP cost entirely.
+   */
+  async rollMultiAttack({ itemId = "", counts = {}, free = false } = {}) {
+    if (!requireActorActionPermission(this)) return null;
+
+    const plan = normalizeAttackCounts(counts, LYRIAN.attackTypes);
+    if (!plan.length) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoAttacksChosen"));
+      return null;
+    }
+
+    const weapon = itemId ? this.items.get(itemId) : null;
+    if (itemId && weapon?.type !== "weapon") {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoWeapon"));
+      return null;
+    }
+    if (!weapon && this.type !== "character") {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.NoWeapon"));
+      return null;
+    }
+
+    // One lock for the whole sequence. The per-attack entry points take the
+    // same lock, so calling them here would refuse every swing after the first.
+    const action = await runExclusiveActorAction(this, () =>
+      this._rollMultiAttack(plan, weapon, free)
+    );
+    if (!action.started) {
+      ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
+    }
+    return action.value;
+  }
+
+  async _rollMultiAttack(plan, weapon, free) {
+    const cost = multiAttackCost(plan, LYRIAN.attackTypes);
+    // Charged once, so the sequence either happens or costs nothing.
+    if (!free && cost > 0) {
+      const paid = await this.spendResources({ ap: cost });
+      if (!paid) return null;
+    }
+
+    const results = [];
+    for (const attackType of expandAttackPlan(plan)) {
+      const result = weapon
+        ? await weapon._rollWeaponAttack(attackType, { free: true })
+        : await this._rollUniversalAttack(attackType, { free: true });
+      results.push(result ?? null);
+    }
+
+    const payload = { actorUuid: this.uuid, plan, cost, attacks: results.length };
+    Hooks.callAll("lyrianMultiAttack", payload);
+    return { ...payload, results };
   }
 
   /** Roll a basic Light, Heavy, or Precise attack without an equipped weapon. */
