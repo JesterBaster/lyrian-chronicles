@@ -1,35 +1,53 @@
 /**
- * Preserve an application's scroll offset across a part replacement.
+ * Preserve scroll offsets across a re-render.
  *
- * ApplicationV2 swaps a whole part element on every re-render. The scroll
- * container is `.window-content`, which sits outside the part and so survives
- * the swap — but while the old content is detached it holds nothing, and the
- * browser clamps its scrollTop to zero. The offset is therefore captured
- * before the swap and written back immediately after.
+ * Two different things scroll in this system, and they fail for different
+ * reasons:
  *
- * This matters wherever a control re-renders the whole view: pressing + or -
- * on a skill in the creation wizard rebuilt the page and threw the reader back
- * to the top, which made allocating points down the list unusable.
+ *   .window-content   sits outside the rendered parts, so it survives the swap
+ *                     — but while the old content is detached it holds nothing
+ *                     and the browser clamps its offset to zero.
+ *   .lyr-creation-step  sits *inside* the part, so the element itself is
+ *                     destroyed and rebuilt and its offset starts at zero.
+ *
+ * An earlier version only looked at .window-content, which meant the creation
+ * wizard — whose scrolling element is the step, not the window — kept jumping
+ * to the top on every skill +/-.
  */
 
-/** The scrolling element for a windowed application, if it has one. */
-function scroller(element) {
-  return element?.querySelector?.(".window-content") ?? null;
-}
-
-/** Read the current scroll offset, or 0 when there is nothing scrolling. */
-export function captureScroll(element) {
-  return scroller(element)?.scrollTop ?? 0;
-}
+/** Elements that can scroll, in the order they are captured and restored. */
+const SCROLLERS = Object.freeze([".window-content", ".lyr-creation-step", ".lyr-tab"]);
 
 /**
- * Write a captured offset back.
- * A zero offset is skipped: it is both the default and the value a collapsed
- * container reports, so writing it can only ever be a no-op or a bug.
+ * Read every non-zero scroll offset under an application root.
+ * Offsets of zero are skipped: they are the default, so recording them would
+ * only ever let a later restore fight a legitimate position.
  */
-export function restoreScroll(element, top) {
-  const target = Number(top) || 0;
-  if (target <= 0) return;
-  const element_ = scroller(element);
-  if (element_) element_.scrollTop = target;
+export function captureScroll(element) {
+  const offsets = {};
+  if (typeof element?.querySelectorAll !== "function") return offsets;
+
+  for (const selector of SCROLLERS) {
+    const nodes = Array.from(element.querySelectorAll(selector));
+    nodes.forEach((node, index) => {
+      const top = Number(node?.scrollTop) || 0;
+      if (top > 0) offsets[`${selector}|${index}`] = top;
+    });
+  }
+  return offsets;
+}
+
+/** Write captured offsets back onto whatever now occupies the same positions. */
+export function restoreScroll(element, offsets) {
+  if (typeof element?.querySelectorAll !== "function") return;
+  if (!offsets || typeof offsets !== "object") return;
+
+  for (const [key, value] of Object.entries(offsets)) {
+    const top = Number(value) || 0;
+    if (top <= 0) continue;
+    const divider = key.lastIndexOf("|");
+    if (divider < 0) continue;
+    const node = element.querySelectorAll(key.slice(0, divider))[Number(key.slice(divider + 1))];
+    if (node) node.scrollTop = top;
+  }
 }

@@ -76,3 +76,21 @@ test("foldable sections use summary, not a heading the browser will not toggle",
     }
   }
 });
+
+test("folding is driven by a deliberate header click, not the toggle event", () => {
+  const source = readFileSync("module/sheets/actor-sheet.mjs", "utf8");
+
+  // Listening to `toggle` meant pressing Add — which sits inside the header —
+  // both created the item and folded away the list it went into, which then
+  // shortened the page and threw the scroll to the top.
+  assert.ok(
+    !/addEventListener\("toggle"/.test(source),
+    "a toggle listener records folds the reader never asked for"
+  );
+  assert.match(source, /details\[data-collapse-scope\] > summary/);
+  assert.match(source, /addEventListener\("click"/);
+
+  // Controls inside a header must act without folding the section.
+  assert.match(source, /closest\("button, a, input, select, textarea, \[data-action\]"\)/);
+  assert.match(source, /event\.preventDefault\(\)/);
+});

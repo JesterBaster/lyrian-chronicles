@@ -4,65 +4,76 @@ import test from "node:test";
 
 import { captureScroll, restoreScroll } from "../module/rules/scroll-state.mjs";
 
-/** Minimal stand-in for the application root and its scrolling child. */
-function application(scrollTop = 0, { missing = false } = {}) {
-  const content = { scrollTop };
-  return {
-    content,
-    element: {
-      querySelector: (selector) =>
-        (!missing && selector === ".window-content") ? content : null
-    }
-  };
+/** Stand-in for an application root, given selector -> scrollTop values. */
+function application(map = {}) {
+  const nodes = {};
+  for (const [selector, tops] of Object.entries(map)) {
+    nodes[selector] = tops.map((scrollTop) => ({ scrollTop }));
+  }
+  return { nodes, element: { querySelectorAll: (selector) => nodes[selector] ?? [] } };
 }
 
-test("the window's scroll offset is captured", () => {
-  const app = application(420);
-  assert.equal(captureScroll(app.element), 420);
+test("offsets are captured per element and keyed by position", () => {
+  const app = application({ ".window-content": [420] });
+  assert.deepEqual(captureScroll(app.element), { ".window-content|0": 420 });
+});
+
+test("a scroller inside the replaced part is captured too", () => {
+  // The creation wizard scrolls .lyr-creation-step, not .window-content. Only
+  // looking at the window meant the wizard's offset was never saved at all.
+  const app = application({ ".window-content": [0], ".lyr-creation-step": [260] });
+  assert.deepEqual(captureScroll(app.element), { ".lyr-creation-step|0": 260 });
+});
+
+test("resting offsets are not recorded", () => {
+  const app = application({ ".window-content": [0], ".lyr-tab": [0, 0] });
+  assert.deepEqual(captureScroll(app.element), {});
 });
 
 test("capturing tolerates an application that is not rendered", () => {
-  assert.equal(captureScroll(null), 0);
-  assert.equal(captureScroll(undefined), 0);
-  assert.equal(captureScroll({}), 0);
-  assert.equal(captureScroll(application(0, { missing: true }).element), 0);
+  assert.deepEqual(captureScroll(null), {});
+  assert.deepEqual(captureScroll(undefined), {});
+  assert.deepEqual(captureScroll({}), {});
 });
 
-test("a captured offset is written back after the swap", () => {
-  const app = application(0);
-  restoreScroll(app.element, 420);
-  assert.equal(app.content.scrollTop, 420);
+test("offsets are written back onto whatever now holds the same position", () => {
+  const app = application({ ".window-content": [0], ".lyr-creation-step": [0] });
+  restoreScroll(app.element, { ".window-content|0": 420, ".lyr-creation-step|0": 260 });
+  assert.equal(app.nodes[".window-content"][0].scrollTop, 420);
+  assert.equal(app.nodes[".lyr-creation-step"][0].scrollTop, 260);
+});
+
+test("several scrollers of one kind keep their own offsets", () => {
+  const app = application({ ".lyr-tab": [0, 0, 0] });
+  restoreScroll(app.element, { ".lyr-tab|0": 10, ".lyr-tab|2": 30 });
+  assert.deepEqual(app.nodes[".lyr-tab"].map((n) => n.scrollTop), [10, 0, 30]);
 });
 
 test("restoring never forces a jump to the top", () => {
-  // Zero is both the default and what a collapsed container reports, so
-  // writing it could only undo a legitimate position.
-  const app = application(150);
-  restoreScroll(app.element, 0);
-  assert.equal(app.content.scrollTop, 150);
-  restoreScroll(app.element, -20);
-  assert.equal(app.content.scrollTop, 150);
-  restoreScroll(app.element, "nonsense");
-  assert.equal(app.content.scrollTop, 150);
+  const app = application({ ".window-content": [150] });
+  for (const bad of [0, -20, "nonsense", null]) {
+    restoreScroll(app.element, { ".window-content|0": bad });
+    assert.equal(app.nodes[".window-content"][0].scrollTop, 150);
+  }
 });
 
-test("restoring tolerates an application that is not rendered", () => {
-  assert.doesNotThrow(() => restoreScroll(null, 100));
-  assert.doesNotThrow(() => restoreScroll({}, 100));
-  assert.doesNotThrow(() => restoreScroll(application(0, { missing: true }).element, 100));
+test("restoring tolerates missing elements and malformed state", () => {
+  const app = application({ ".window-content": [0] });
+  assert.doesNotThrow(() => restoreScroll(null, { ".window-content|0": 10 }));
+  assert.doesNotThrow(() => restoreScroll(app.element, null));
+  assert.doesNotThrow(() => restoreScroll(app.element, { "no-divider": 10 }));
+  assert.doesNotThrow(() => restoreScroll(app.element, { ".missing|0": 10 }));
 });
 
-test("both re-rendering applications preserve scroll across a part swap", () => {
-  // The creation wizard re-renders on every skill +/-, and the actor sheet
-  // re-renders on every document write, so both need the pair.
+test("both re-rendering applications capture early and restore after render", () => {
   for (const path of ["module/apps/character-creation.mjs", "module/sheets/actor-sheet.mjs"]) {
     const source = readFileSync(path, "utf8");
-    assert.match(source, /_preSyncPartState\(partId, newElement, priorElement, state\)/, path);
-    assert.match(source, /state\.lyrianScrollTop = captureScroll\(this\.element\)/, path);
-    assert.match(source, /restoreScroll\(this\.element, state\.lyrianScrollTop\)/, path);
-    // Dropping the super call would discard Foundry's own focus and
-    // scrollable-element handling.
-    assert.match(source, /super\._preSyncPartState\?\.\(/, path);
-    assert.match(source, /super\._syncPartState\?\.\(/, path);
+    // Captured once before the first part is swapped, since a scroller inside
+    // the part no longer exists by the time the replacement is in place.
+    assert.match(source, /#scrollOffsets \?\?= captureScroll\(this\.element\)/, path);
+    // Restored from _onRender rather than _syncPartState, so every part is
+    // present and the page is its final height before the offset is written.
+    assert.match(source, /restoreScroll\(this\.element, this\.#scrollOffsets\)/, path);
+    assert.match(source, /this\.#scrollOffsets = null/, path);
   }
 });

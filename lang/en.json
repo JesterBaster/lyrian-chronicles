@@ -262,6 +262,7 @@
   "LYRIAN.Warn.NoActor": "This item is not owned by an actor.",
   "LYRIAN.Warn.NotEnoughResources": "{name} cannot pay {cost}.",
   "LYRIAN.Warn.InvalidAmount": "Enter a valid whole-number amount.",
+  "LYRIAN.Warn.InitiativeNotOwned": "You do not have permission to set initiative for this combatant.",
   "LYRIAN.Warn.ActionInProgress": "Wait for the current action to finish.",
   "LYRIAN.Warn.ActionStateChanged": "That actor changed on another client. Review the updated resources and try again.",
   "LYRIAN.Warn.NoActionAuthority": "An active GM is required to authorize gameplay actions. Ask the GM to reconnect, then try again.",

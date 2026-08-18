@@ -466,21 +466,18 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
    * into an object keyed "0", which an ArrayField rejects. So these inputs are
    * kept out of the form submission and written as a complete array instead.
    */
-  /** @override Capture the scroll offset before a part is swapped out. */
-  _preSyncPartState(partId, newElement, priorElement, state) {
-    super._preSyncPartState?.(partId, newElement, priorElement, state);
-    state.lyrianScrollTop = captureScroll(this.element);
-  }
+  /** Offsets held between the pre-sync capture and the post-render restore. */
+  #scrollOffsets = null;
 
   /**
    * @override
-   * Nineteen handlers here write to the document, and each write re-renders.
-   * Without this, adding an expertise or stepping a class level threw the
-   * reader back to the top of the sheet.
+   * Capture once, before the first part is swapped out. Nineteen handlers here
+   * write to the document and each write re-renders, so without this, adding an
+   * expertise or stepping a class level threw the reader back to the top.
    */
-  _syncPartState(partId, newElement, priorElement, state) {
-    super._syncPartState?.(partId, newElement, priorElement, state);
-    restoreScroll(this.element, state.lyrianScrollTop);
+  _preSyncPartState(partId, newElement, priorElement, state) {
+    super._preSyncPartState?.(partId, newElement, priorElement, state);
+    this.#scrollOffsets ??= captureScroll(this.element);
   }
 
   _onRender(context, options) {
@@ -488,21 +485,29 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     // Remember which sections the reader folded away. Stored on the User, so
     // two players viewing one sheet do not overwrite each other's view.
-    // Several section headers carry an Add button. A click anywhere in a
-    // summary folds the section, so the button would run its action and
-    // collapse what it just added to.
+    // Folding is driven by a deliberate click on the header, never by the
+    // toggle event. Several headers carry an Add button, and a click anywhere
+    // in a summary opens or closes the section — so listening to toggle meant
+    // pressing Add both created the item and folded away the list it went
+    // into, which then also shortened the page and threw the scroll to the top.
     this.element.querySelectorAll("details[data-collapse-scope] > summary").forEach((summary) => {
-      summary.addEventListener("click", (event) => {
-        if (event.target.closest("button, a, input, select, textarea")) event.preventDefault();
-      });
-    });
-
-    this.element.querySelectorAll("details[data-collapse-scope]").forEach((section) => {
-      section.addEventListener("toggle", async () => {
+      summary.addEventListener("click", async (event) => {
+        // Let controls inside the header do their own job, without folding.
+        if (event.target.closest("button, a, input, select, textarea, [data-action]")) {
+          event.preventDefault();
+          return;
+        }
+        event.preventDefault();
+        const section = summary.closest("details[data-collapse-scope]");
         const { collapseScope, collapseId } = section.dataset;
+        const collapsed = section.open;
+        section.open = !collapsed;
         const state = game.user.getFlag("lyrian-chronicles", "collapsedSections") ?? {};
-        const next = withCollapsed(state, collapseScope, collapseId, !section.open);
-        await game.user.setFlag("lyrian-chronicles", "collapsedSections", next);
+        await game.user.setFlag(
+          "lyrian-chronicles",
+          "collapsedSections",
+          withCollapsed(state, collapseScope, collapseId, collapsed)
+        );
       });
     });
 
@@ -544,6 +549,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         });
       });
     });
+
+    // Last, once every part is in place and the page is its final height.
+    restoreScroll(this.element, this.#scrollOffsets);
+    this.#scrollOffsets = null;
   }
 
   /** Complete race-specific choices when a Race is dragged from a compendium. */
