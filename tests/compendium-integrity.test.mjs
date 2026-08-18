@@ -155,3 +155,26 @@ test("every stable id a class or race grants from has a link to follow", () => {
   }
   assert.ok(checked > 500, "expected classes and races to reference many grants");
 });
+
+test("a GM can edit the official stat block a monster runs on", () => {
+  // Every shipped monster ships with official.enabled and a full block, but
+  // nothing could edit it: a homebrew monster could never turn it on, and a
+  // shipped one's numbers could never be corrected.
+  const main = readFileSync("templates/actor/tab-main.hbs", "utf8");
+  assert.match(main, /name="system\.official\.enabled"/);
+  for (const field of ["hp", "mana", "ap", "rp", "initiative", "evasion",
+    "dodgeEvasion", "guard", "blockGuard", "movement", "lightAttack",
+    "heavyAttack", "notableSkills"]) {
+    assert.match(main, new RegExp(`name="system\\.official\\.${field}"`),
+      `official.${field} has no input`);
+  }
+});
+
+test("the stat block editor is for NPCs only, and only when editable", () => {
+  const main = readFileSync("templates/actor/tab-main.hbs", "utf8");
+  const block = main.slice(main.indexOf('data-collapse-id="statblock"'));
+  const opening = main.slice(0, main.indexOf('data-collapse-id="statblock"'));
+  // Characters have no official block, and a locked sheet must stay read-only.
+  assert.match(opening.slice(-400), /\{\{#if isNPC\}\}\s*\{\{#if editable\}\}/);
+  assert.ok(block.length > 0);
+});
