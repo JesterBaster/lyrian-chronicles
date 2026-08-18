@@ -375,6 +375,18 @@ export async function runExclusiveActorAction(actor, operation) {
  * the result of the previous update. Gameplay actions additionally use the
  * active-GM lock above to prevent stale reads between different clients.
  */
+/**
+ * Serialize writes to any one document, not just an Actor's resources.
+ *
+ * Read-modify-write against a stored object — a flag, a settings map — loses an
+ * edit whenever two of them overlap: both read the same starting value and the
+ * second write discards the first. Queueing makes each read see the previous
+ * result.
+ */
+export async function queueDocumentWrite(document, operation) {
+  return queueActorTransaction(document, operation);
+}
+
 export async function queueActorTransaction(actor, operation) {
   if (!actor) return operation();
 
