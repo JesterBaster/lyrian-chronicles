@@ -381,6 +381,12 @@
 .lyrian .lyr-row__meta { font-size: 0.66rem; color: var(--lyr-ink-dim); }
 .lyrian .lyr-row__actions { display: flex; gap: 0.2rem; flex: 0 0 auto; }
 .lyrian .lyr-row__actions button { font-size: 0.68rem; padding: 0.16rem 0.45rem; }
+/* Damage type picker on an attack row. Sized to sit in the button strip
+   without stretching the row taller than the buttons beside it. */
+.lyrian .lyr-damage-type { font-size: 0.66rem; padding: 0.1rem 0.2rem; max-width: 8.5rem; background: var(--lyr-plate); border: 1px solid var(--lyr-rule); color: var(--lyr-ink); border-radius: 3px; }
+.lyrian .lyr-damage-type:hover:not(:disabled) { border-color: var(--lyr-gold); }
+.lyrian .lyr-damage-type:disabled { opacity: 0.55; }
+
 /* The dual wield follow-up, while the window is open. */
 .lyrian .lyr-row__actions button.is-free { border-color: var(--lyr-gold); color: var(--lyr-gold-bright); }
 .lyrian .lyr-row__actions button.is-free em { font-style: normal; font-size: 0.58rem; letter-spacing: 0.06em; opacity: 0.85; }

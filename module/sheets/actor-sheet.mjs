@@ -26,6 +26,7 @@ import { captureScroll, restoreScroll } from "../rules/scroll-state.mjs";
 import { withCollapsed } from "../rules/collapsible.mjs";
 import { weaponsDisplacedBy } from "../rules/weapon-slots.mjs";
 import { pendingDualWieldWeaponId } from "../rules/dual-wield.mjs";
+import { damageTypeChoices, resolveDamageType } from "../rules/damage-types.mjs";
 import { queueDocumentWrite } from "../rules/action-transactions.mjs";
 import {
   CUSTOM_OUTPUT_TYPES,
@@ -428,8 +429,21 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       held: heldIds.has(weapon.id),
       // Equipped, but there is no hand free for it.
       conflicted: Boolean(weapon.system.equipped) && !heldIds.has(weapon.id),
-      dualWieldFree: weapon.id === freeWeaponId
+      dualWieldFree: weapon.id === freeWeaponId,
+      // Grouped per row with the current type already marked, so the picker
+      // needs no comparison and no depth-climbing in the template.
+      damageTypeChoices: damageTypeChoices(LYRIAN.damageTypes, {
+        localize: (key) => game.i18n.localize(key),
+        selected: weapon.system.damageType
+      })
     }));
+
+    // The same picker for unarmed strikes, whose type lives on the actor
+    // because there is no weapon Item to carry it.
+    context.universalDamageTypeChoices = damageTypeChoices(LYRIAN.damageTypes, {
+      localize: (key) => game.i18n.localize(key),
+      selected: context.system.universalDamageType
+    });
 
     // A deleted target must not make its installed Mod disappear from the sheet.
     const ownedIds = new Set(this.document.items.map((item) => item.id));
@@ -622,6 +636,21 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       await this.document.update({
         "system.crafting.projects": this._readCraftingProjects()
       });
+    });
+
+    // Damage type pickers on the attack rows. No form names: a weapon's type
+    // lives on the Item, and a name= here would aim the actor's own submit at
+    // a path it does not have.
+    this.#bindOnce("[data-damage-type]", "change", async (event) => {
+      const select = event.currentTarget;
+      const damageType = select.value;
+      if (!LYRIAN.damageTypes[damageType]) return;
+      if (select.dataset.damageType === "universal") {
+        await this.document.update({ "system.universalDamageType": damageType });
+        return;
+      }
+      const itemId = select.closest("[data-item-id]")?.dataset.itemId;
+      await this.document.items.get(itemId)?.update({ "system.damageType": damageType });
     });
 
     // Last, once every part is in place and the page is its final height.
