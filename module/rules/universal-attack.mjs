@@ -28,14 +28,18 @@ export function universalAttackProfile({
   return { ap: profile.ap, accuracyBonus, damageFormula, pinpoint };
 }
 
-/** Build the weaponless actions exposed to HUD integrations. */
+/**
+ * Build the unarmed actions exposed to HUD integrations.
+ *
+ * Offered whether or not a weapon is held: abilities call for an unarmed
+ * strike while armed, and there is no other way to roll one.
+ */
 export function availableUniversalAttacks({
   actorType,
-  hasEquippedWeapon = false,
   attackTypes = {},
   apTotal = 0
 } = {}) {
-  if (actorType !== "character" || hasEquippedWeapon) return [];
+  if (actorType !== "character") return [];
   return Object.entries(attackTypes).map(([type, profile]) => ({
     type,
     sourceKind: "universal",

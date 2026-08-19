@@ -1,5 +1,6 @@
 import { LYRIAN } from "../config.mjs";
 import { equippedArmorContribution, equippedArmorSlots } from "../rules/armor.mjs";
+import { equippedWeaponSlots } from "../rules/weapon-slots.mjs";
 import { CUSTOM_OUTPUT_TYPES } from "../rules/crafting.mjs";
 import { derivedGuardValues } from "../rules/damage.mjs";
 import {
@@ -234,7 +235,11 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
       armor: null,
       shield: null,
       armorConflicts: [],
-      weapons: []
+      weapons: [],
+      mainHand: null,
+      offHand: null,
+      weaponConflicts: [],
+      dualWielding: false
     };
 
     const items = this.parent?.items ?? [];
@@ -254,9 +259,10 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
         continue;
       }
 
+      // Burden counts every weapon carried; which ones are *held* is decided
+      // by the hand slots below.
       if (item.type === "weapon") {
         out.burden += sys.burden ?? 0;
-        if (sys.equipped) out.weapons.push(item);
         continue;
       }
 
@@ -271,6 +277,16 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
       out.initiative += contribution.initiative;
       out.blockValue += contribution.blockValue;
     }
+
+    const weaponSlots = equippedWeaponSlots(items, {
+      shieldEquipped: Boolean(armorSlots.shield),
+      proficientWith: (weapon) => weapon.system?.proficient !== false
+    });
+    out.mainHand = weaponSlots.mainHand;
+    out.offHand = weaponSlots.offHand;
+    out.weaponConflicts = weaponSlots.conflicts;
+    out.dualWielding = weaponSlots.dualWielding;
+    out.weapons = weaponSlots.held;
 
     return out;
   }

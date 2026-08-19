@@ -24,6 +24,7 @@ import { hybridAncestryFamily } from "../rules/hybrid-race.mjs";
 import { isHeaderOnlyRender } from "../rules/sheet-refresh.mjs";
 import { captureScroll, restoreScroll } from "../rules/scroll-state.mjs";
 import { withCollapsed } from "../rules/collapsible.mjs";
+import { weaponsDisplacedBy } from "../rules/weapon-slots.mjs";
 import { queueDocumentWrite } from "../rules/action-transactions.mjs";
 import {
   CUSTOM_OUTPUT_TYPES,
@@ -389,7 +390,23 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     context.items = buckets;
     context.artisanClasses = buckets.classes.filter((item) => item.system.artisan === true);
     context.hasEquippedWeapon = buckets.weapons.some((weapon) => weapon.system.equipped);
-    context.showUniversalAttacks = context.isCharacter && !context.hasEquippedWeapon;
+    // Always offered. An ability can call for an unarmed strike while a weapon
+    // is held, and hiding the row left no way to roll one.
+    context.showUniversalAttacks = context.isCharacter;
+    context.heldWeapons = context.system.equipment?.weapons ?? [];
+    context.weaponConflicts = context.system.equipment?.weaponConflicts ?? [];
+    context.dualWielding = Boolean(context.system.equipment?.dualWielding);
+
+    // The overview lists what is in hand. Everything else is offered as a
+    // switch rather than a second set of attack buttons, so the sheet can
+    // never show two weapons swinging at once.
+    const heldIds = new Set(context.heldWeapons.map((weapon) => weapon.id));
+    context.weaponRows = buckets.weapons.map((weapon) => ({
+      item: weapon,
+      held: heldIds.has(weapon.id),
+      // Equipped, but there is no hand free for it.
+      conflicted: Boolean(weapon.system.equipped) && !heldIds.has(weapon.id)
+    }));
 
     // A deleted target must not make its installed Mod disappear from the sheet.
     const ownedIds = new Set(this.document.items.map((item) => item.id));
@@ -1355,7 +1372,39 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           stowed: conflicts.map((other) => other.name).join(", ")
         }));
       }
+
+      // A shield needs the off hand, which is exactly where the second weapon
+      // of a dual-wielding pair is.
+      const offHand = isShield ? this.document.system.equipment?.offHand : null;
+      if (offHand) {
+        await offHand.update({ "system.equipped": false });
+        ui.notifications.info(game.i18n.format("LYRIAN.Msg.EquipmentReplaced", {
+          equipped: item.name,
+          stowed: offHand.name
+        }));
+      }
     }
+
+    // Weapons are held in hands, so equipping one is a switch: anything that
+    // no longer fits is stowed. Two One-Handed weapons stay held together —
+    // that is dual wielding — but a Two-Handed weapon takes both hands.
+    if (equipping && item.type === "weapon") {
+      const displaced = weaponsDisplacedBy(item, this.document.items, {
+        shieldEquipped: Boolean(this.document.system.equipment?.shield),
+        proficientWith: (weapon) => weapon.system?.proficient !== false
+      });
+      if (displaced.length) {
+        await this.document.updateEmbeddedDocuments(
+          "Item",
+          displaced.map((other) => ({ _id: other.id, "system.equipped": false }))
+        );
+        ui.notifications.info(game.i18n.format("LYRIAN.Msg.EquipmentReplaced", {
+          equipped: item.name,
+          stowed: displaced.map((other) => other.name).join(", ")
+        }));
+      }
+    }
+
     await item.update({ "system.equipped": equipping });
   }
 

@@ -66,10 +66,9 @@ test("unknown universal attack types are rejected", () => {
   assert.equal(universalAttackProfile({ attackType: "other", attackTypes }), null);
 });
 
-test("HUD universal actions exist only for weaponless characters", () => {
+test("HUD universal actions exist for every character", () => {
   const actions = availableUniversalAttacks({
     actorType: "character",
-    hasEquippedWeapon: false,
     attackTypes,
     apTotal: 1
   });
@@ -78,15 +77,17 @@ test("HUD universal actions exist only for weaponless characters", () => {
   assert.equal(actions[1].affordable, false);
   assert.equal(actions[0].sourceProfile, "unarmed");
 
-  assert.deepEqual(availableUniversalAttacks({
-    actorType: "character",
-    hasEquippedWeapon: true,
-    attackTypes,
-    apTotal: 4
-  }), []);
+  // Holding a weapon does not take unarmed strikes away — abilities call for
+  // them while armed, and there is no other way to roll one.
+  assert.deepEqual(
+    availableUniversalAttacks({ actorType: "character", attackTypes, apTotal: 4 })
+      .map((action) => action.type),
+    ["light", "heavy", "precise"]
+  );
+
+  // Monsters roll their own stat-block attacks instead.
   assert.deepEqual(availableUniversalAttacks({
     actorType: "monster",
-    hasEquippedWeapon: false,
     attackTypes,
     apTotal: 4
   }), []);
