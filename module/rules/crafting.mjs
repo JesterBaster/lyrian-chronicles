@@ -113,12 +113,29 @@ export function resolveCraftOutput({ project = {}, base = null, fallbackName = "
 
 /**
  * Resolve the owned Mods a project installs into its result.
+ *
  * Rows naming a stack that is no longer carried are reported rather than
  * silently dropped, so a stale project does not quietly forge a bare item.
+ * A Mod that does not fit what is being made is reported the same way: the
+ * output is checked before any material is spent, because installing an
+ * armour Mod into a sword is not a thing the rules allow.
+ *
+ * @param {object}   [options]
+ * @param {object[]} [options.mods]     The project's mod rows.
+ * @param {object[]} [options.items]    Everything the actor owns.
+ * @param {object}   [options.output]   The item data a success would create.
+ * @param {(mod: object, target: object) => boolean} [options.isCompatible]
  */
-export function planCraftMods({ mods = [], items = [] } = {}) {
+export function planCraftMods({
+  mods = [],
+  items = [],
+  output = null,
+  isCompatible = null
+} = {}) {
   const missing = [];
+  const incompatible = [];
   const resolved = [];
+  const seen = new Set();
 
   for (const line of mods) {
     const itemId = String(line?.itemId ?? "");
@@ -128,10 +145,23 @@ export function planCraftMods({ mods = [], items = [] } = {}) {
       missing.push({ itemId, name: itemId });
       continue;
     }
+    // One stack installs once. A row repeated by a mis-click would otherwise
+    // install the same Mod twice and consume a stack that is not there.
+    if (seen.has(itemId)) continue;
+    seen.add(itemId);
+    if (output && isCompatible && !isCompatible(item, output)) {
+      incompatible.push({ itemId, name: item.name ?? itemId });
+      continue;
+    }
     resolved.push(item);
   }
 
-  return { ok: missing.length === 0, missing, mods: resolved };
+  return {
+    ok: missing.length === 0 && incompatible.length === 0,
+    missing,
+    incompatible,
+    mods: resolved
+  };
 }
 
 /** Build the stable payload stored on craft chat messages and emitted by the hook. */

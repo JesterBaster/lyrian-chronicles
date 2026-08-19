@@ -124,6 +124,33 @@
     </ul>
   </details>
 
+  {{#if items.modStock.length}}
+    <details class="lyr-fold" data-collapse-scope="inventory" data-collapse-id="mods" {{{lyrianSectionOpen "inventory" "mods"}}}>
+      <summary class="lyr-section-head">
+        <h2 class="lyr-heading">{{localize "LYRIAN.Inventory.Section.mods"}}</h2>
+      </summary>
+      <p class="lyr-note">{{localize "LYRIAN.Hint.ModStock"}}</p>
+      <ul class="lyr-list">
+        {{#each items.modStock as |item|}}
+          <li class="lyr-row" data-item-id="{{item.id}}">
+            <img class="lyr-row__icon" src="{{item.img}}" alt="" />
+            <div class="lyr-row__body">
+              <span class="lyr-row__name">{{item.name}}</span>
+              <span class="lyr-row__meta">
+                {{item.system.craftingType}} · {{localize "LYRIAN.UI.SlotValue" slot=item.system.modSlot}}
+              </span>
+            </div>
+            <div class="lyr-row__actions">
+              <button type="button" class="lyr-icon" data-action="postItem" title="{{localize "LYRIAN.Action.ShowInChat"}}"><i class="fa-solid fa-comment"></i></button>
+              <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
+              <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          </li>
+        {{else}}<li class="lyr-empty">{{localize "LYRIAN.Empty.Mods"}}</li>{{/each}}
+      </ul>
+    </details>
+  {{/if}}
+
   {{#if items.equipment.length}}
     <details class="lyr-fold" data-collapse-scope="inventory" data-collapse-id="equipment" {{{lyrianSectionOpen "inventory" "equipment"}}}>
       <summary class="lyr-section-head">

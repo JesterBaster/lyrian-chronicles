@@ -40,7 +40,7 @@ import {
   planCraftMods,
   resolveCraftOutput
 } from "../rules/crafting.mjs";
-import { installedModFlag } from "../rules/mod-installation.mjs";
+import { installedModFlag, isCompatibleModTarget } from "../rules/mod-installation.mjs";
 
 /**
  * The Actor document for Lyrian Chronicles.
@@ -397,10 +397,23 @@ export class LyrianActor extends Actor {
     }
     const outputData = outputPlan.data;
 
-    const modPlan = planCraftMods({ mods: project.mods, items: this.items });
-    if (!modPlan.ok) {
+    // Checked against the planned output, before any material is spent.
+    const modPlan = planCraftMods({
+      mods: project.mods,
+      items: this.items,
+      output: outputData,
+      isCompatible: isCompatibleModTarget
+    });
+    if (modPlan.missing.length) {
       ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftModMissing", {
         name: modPlan.missing[0].name
+      }));
+      return null;
+    }
+    if (modPlan.incompatible.length) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftModIncompatible", {
+        mod: modPlan.incompatible[0].name,
+        output: outputData.name
       }));
       return null;
     }
@@ -452,6 +465,9 @@ export class LyrianActor extends Actor {
           );
           return modData;
         }));
+        // The stock is spent, exactly as the materials were. Leaving it behind
+        // let one Mod be forged into an unlimited number of items.
+        await this.deleteEmbeddedDocuments("Item", modPlan.mods.map((mod) => mod.id));
       }
       project.completed = true;
     }
