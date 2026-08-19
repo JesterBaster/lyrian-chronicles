@@ -59,6 +59,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       multiAttack: LyrianActorSheet.#onMultiAttack,
       monsterAttack: LyrianActorSheet.#onMonsterAttack,
       useItem: LyrianActorSheet.#onUseItem,
+      postItem: LyrianActorSheet.#onPostItem,
       browsePack: LyrianActorSheet.#onBrowsePack,
       adjustClassLevel: LyrianActorSheet.#onAdjustClassLevel,
       allocateRaceSkills: LyrianActorSheet.#onAllocateRaceSkills,
@@ -1325,6 +1326,18 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       await item.rollAbility({ free: event.shiftKey });
     }
     else await item.postToChat();
+  }
+
+  /**
+   * Show an item to the table without using it.
+   *
+   * Deliberately never rolls and never spends: an ability posted this way
+   * costs no AP and is not marked as used, so a player can ask "what does
+   * this do?" without committing to it.
+   */
+  static async #onPostItem(event, target) {
+    const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
+    await item?.postToChat();
   }
 
   static async #onCreateItem(event, target) {

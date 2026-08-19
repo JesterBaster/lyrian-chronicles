@@ -3,10 +3,17 @@
     <img src="{{item.img}}" alt="" />
     <div>
       <h3>{{item.name}}</h3>
-      {{#if system.costLabel}}<span class="lyrian-card__sub">{{system.costLabel}}</span>{{/if}}
+      <span class="lyrian-card__sub">{{typeLabel}}</span>
     </div>
   </header>
-  {{#if system.range}}<p class="lyrian-card__line"><strong>{{localize "LYRIAN.UI.Range"}}</strong> {{system.range}}</p>{{/if}}
+  {{#if stats.length}}
+    <ul class="lyrian-card__stats">
+      {{#each stats as |stat|}}
+        <li><span>{{stat.label}}</span> <strong>{{stat.value}}</strong></li>
+      {{/each}}
+    </ul>
+  {{/if}}
+  {{#if keywords.length}}<p class="lyrian-card__line"><strong>{{localize "LYRIAN.UI.Keywords"}}</strong> {{#each keywords}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</p>{{/if}}
   {{#if enrichedRequirement}}<div class="lyrian-card__line"><strong>{{localize "LYRIAN.UI.Requirement"}}</strong> {{{enrichedRequirement}}}</div>{{/if}}
   <div class="lyrian-card__text">{{{enrichedDescription}}}</div>
 </div>
