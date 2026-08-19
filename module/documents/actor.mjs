@@ -41,6 +41,7 @@ import {
   resolveCraftOutput
 } from "../rules/crafting.mjs";
 import { installedModFlag, isCompatibleModTarget } from "../rules/mod-installation.mjs";
+import { resolveDamageType } from "../rules/damage-types.mjs";
 
 /**
  * The Actor document for Lyrian Chronicles.
@@ -685,7 +686,7 @@ export class LyrianActor extends Actor {
       sourceKind: "universal",
       sourceProfile: "unarmed",
       attackType,
-      damageType: "physical",
+      damageType: resolveDamageType(this.system.universalDamageType, LYRIAN.damageTypes),
       attackRoll,
       damageRoll,
       isCrit,
@@ -744,7 +745,7 @@ export class LyrianActor extends Actor {
       sourceKind: "monsterProfile",
       sourceProfile: profileText,
       attackType,
-      damageType: "physical",
+      damageType: resolveDamageType(this.system.universalDamageType, LYRIAN.damageTypes),
       attackRoll,
       damageRoll,
       legacyMonsterAttack

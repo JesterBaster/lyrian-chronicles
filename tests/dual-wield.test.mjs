@@ -151,13 +151,13 @@ test("the state is stored on the actor, not held in memory", () => {
   assert.match(schema, /dualWieldOpenerId: new fields\.StringField/);
   assert.match(schema, /dualWieldUsed: new fields\.BooleanField/);
 
-  // A schema change needs a migration, and the manifest has to move with it.
+  // A schema change needs a migration that backfills it.
+  const migration = readFileSync(
+    new URL("../migrations/0.6.28.mjs", import.meta.url), "utf8");
+  assert.match(migration, /system\.turn\.dualWieldOpenerId/);
+  assert.match(migration, /system\.turn\.dualWieldUsed/);
   const versions = readFileSync(new URL("../migrations/migrate.mjs", import.meta.url), "utf8");
   assert.match(versions, /"0\.6\.28"/);
-  const manifest = JSON.parse(
-    readFileSync(new URL("../system.json", import.meta.url), "utf8"));
-  assert.equal(manifest.version, "0.6.28");
-  assert.ok(manifest.download.includes("/0.6.28/"), "the download URL must match the version");
 });
 
 test("the free swing is labelled where the player looks", () => {

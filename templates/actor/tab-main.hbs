@@ -1,5 +1,19 @@
 <section class="tab lyr-tab {{tab.cssClass}}" data-tab="main" data-group="primary" data-application-part="main">
 
+  {{#*inline "damageTypePicker"}}
+    <select class="lyr-damage-type" data-damage-type="{{scope}}"
+            aria-label="{{localize "LYRIAN.UI.DamageTypeFor" name=name}}"
+            {{#unless @root.editable}}disabled{{/unless}}>
+      {{#each choices as |group|}}
+        <optgroup label="{{group.label}}">
+          {{#each group.options as |option|}}
+            <option value="{{option.key}}" {{#if option.selected}}selected{{/if}}>{{option.label}}</option>
+          {{/each}}
+        </optgroup>
+      {{/each}}
+    </select>
+  {{/inline}}
+
   {{#if system.official.enabled}}
     <div class="lyr-reference-overview lyr-monster-overview">
       <section class="lyr-reference-card">
@@ -7,6 +21,7 @@
         <dl class="lyr-facts">
           {{#if system.official.lightAttack}}<div><dt>{{localize "LYRIAN.Attack.Light"}}</dt><dd>{{system.official.lightAttack}} <button type="button" data-action="monsterAttack" data-attack-type="light" title="{{localize "LYRIAN.Hint.FreeRoll"}}">{{localize "LYRIAN.Action.Roll"}}</button></dd></div>{{/if}}
           {{#if system.official.heavyAttack}}<div><dt>{{localize "LYRIAN.Attack.Heavy"}}</dt><dd>{{system.official.heavyAttack}} <button type="button" data-action="monsterAttack" data-attack-type="heavy" title="{{localize "LYRIAN.Hint.FreeRoll"}}">{{localize "LYRIAN.Action.Roll"}}</button></dd></div>{{/if}}
+          {{#if isNPC}}<div><dt>{{localize "LYRIAN.UI.DamageType"}}</dt><dd>{{> damageTypePicker scope="universal" choices=universalDamageTypeChoices name=actor.name}}</dd></div>{{/if}}
           {{#if system.official.notableSkills}}<div><dt>{{localize "LYRIAN.UI.NotableSkills"}}</dt><dd>{{system.official.notableSkills}}</dd></div>{{/if}}
           {{#if system.details.recommended}}<div><dt>{{localize "LYRIAN.UI.Recommended"}}</dt><dd>{{system.details.recommended}}</dd></div>{{/if}}
         </dl>
@@ -91,6 +106,7 @@
               <span class="lyr-row__meta">{{localize "LYRIAN.Hint.UniversalAttack"}}</span>
             </div>
             <div class="lyr-row__actions">
+              {{> damageTypePicker scope="universal" choices=universalDamageTypeChoices name=(localize "LYRIAN.Attack.Universal")}}
               <button type="button" data-action="universalAttack" data-attack-type="light" title="{{localize "LYRIAN.Cost.OneAP"}}">{{localize "LYRIAN.Attack.Light"}}</button>
               <button type="button" data-action="universalAttack" data-attack-type="heavy" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Heavy"}}</button>
               <button type="button" data-action="universalAttack" data-attack-type="precise" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Precise"}}</button>
@@ -122,6 +138,7 @@
                 <button type="button" data-action="attack" data-attack-type="heavy" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Heavy"}}</button>
                 <button type="button" data-action="attack" data-attack-type="precise" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Precise"}}</button>
                 <button type="button" data-action="multiAttack" title="{{localize "LYRIAN.Attack.MultiTitle"}}"><i class="fa-solid fa-layer-group"></i> {{localize "LYRIAN.Attack.Multi"}}</button>
+                {{> damageTypePicker scope="weapon" choices=row.damageTypeChoices name=row.item.name}}
               {{/if}}
               <button type="button" class="lyr-icon" data-action="toggleEquip" title="{{#if row.held}}{{localize "LYRIAN.Action.Stow"}}{{else}}{{localize "LYRIAN.Action.Wield"}}{{/if}}">
                 <i class="fa-solid {{#if row.held}}fa-hand-fist{{else}}fa-box{{/if}}"></i>

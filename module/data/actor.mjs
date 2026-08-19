@@ -124,6 +124,16 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
 
     schema.biography = new fields.HTMLField({ required: false, blank: true });
 
+    // The damage type of an attack this actor makes without a weapon Item to
+    // carry one: a character's unarmed strike, and a monster's stat-block
+    // attack. Both were hardcoded to physical, which left a monk with burning
+    // fists and an acid-spitting beast alike dealing plain physical damage.
+    schema.universalDamageType = new fields.StringField({
+      required: true,
+      initial: "physical",
+      choices: Object.keys(LYRIAN.damageTypes)
+    });
+
     // Per-turn state, cleared by refreshTurn. Stored rather than held in
     // memory so a reload part way through a turn cannot hand back a free
     // attack that was already taken.

@@ -16,6 +16,7 @@ import { abilityRefused, abilitySucceeded } from "../rules/ability-result.mjs";
 import { prepareItemChatContent } from "../rules/chat-content.mjs";
 import { itemChatKeywords, itemChatStats } from "../rules/item-summary.mjs";
 import { dualWieldFollowUp } from "../rules/dual-wield.mjs";
+import { resolveDamageType } from "../rules/damage-types.mjs";
 import { buildHealingPayload } from "../rules/healing.mjs";
 
 /**
@@ -145,7 +146,7 @@ export class LyrianItem extends Item {
       isCrit,
       pinpoint,
       halfPierce: isCrit,
-      damageType: this.system.damageType,
+      damageType: resolveDamageType(this.system.damageType, LYRIAN.damageTypes),
       weaponGroup: this.system.group,
       ranged: !!this.system.isRanged,
       keywords: this.system.keywords,
