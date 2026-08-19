@@ -614,6 +614,12 @@
 .lyrian-card button { font-size: 0.68rem; padding: 0.16rem 0.5rem; background: var(--lyr-plate); border: 1px solid var(--lyr-rule); color: var(--lyr-ink); border-radius: 3px; cursor: pointer; }
 .lyrian-card button:hover { border-color: var(--lyr-gold); color: var(--lyr-gold-bright); }
 .lyrian-card__line { font-size: 0.74rem; margin: 0.15rem 0; }
+/* Shared-item stat lines. Wraps rather than scrolls: a chat log is narrow and
+   a weapon can carry half a dozen of these. */
+.lyrian-card__stats { display: flex; flex-wrap: wrap; gap: 0.2rem 0.5rem; margin: 0.4rem 0 0.2rem; padding: 0; list-style: none; }
+.lyrian-card__stats li { display: flex; gap: 0.25rem; align-items: baseline; font-size: 0.68rem; background: var(--lyr-void); border: 1px solid var(--lyr-rule); border-radius: 999px; padding: 0.05rem 0.5rem; }
+.lyrian-card__stats span { color: var(--lyr-ink-dim); font-variant: small-caps; letter-spacing: 0.06em; }
+.lyrian-card__stats strong { color: var(--lyr-gold-bright); font-weight: 600; }
 .lyrian-card__text { font-size: 0.8rem; margin-top: 0.4rem; }
 
 .lyrian-banner { text-align: center; font-family: "Cinzel", "Modesto Condensed", Georgia, serif; font-variant: small-caps; letter-spacing: 0.16em; color: #c9a227; }

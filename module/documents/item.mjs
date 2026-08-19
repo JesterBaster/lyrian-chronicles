@@ -14,6 +14,7 @@ import {
 } from "../rules/ability-attack.mjs";
 import { abilityRefused, abilitySucceeded } from "../rules/ability-result.mjs";
 import { prepareItemChatContent } from "../rules/chat-content.mjs";
+import { itemChatKeywords, itemChatStats } from "../rules/item-summary.mjs";
 import { buildHealingPayload } from "../rules/healing.mjs";
 
 /**
@@ -260,8 +261,14 @@ export class LyrianItem extends Item {
   /*  Chat output                                  */
   /* -------------------------------------------- */
 
-  /** Post a plain description card for items with no roll. */
-  async postToChat() {
+  /**
+   * Post a plain description card for items with no roll.
+   *
+   * Nothing is spent and nothing is rolled: this is the "show the table what
+   * this is" path, so it carries the stat lines a reader would otherwise have
+   * to open the sheet for.
+   */
+  async postToChat({ rollMode } = {}) {
     if (!requireActorActionPermission(this.actor)) return null;
     const enrichHTML = foundry.applications.ux.TextEditor.implementation.enrichHTML;
     const enrichOptions = { relativeTo: this, rollData: this.getRollData() };
@@ -272,21 +279,33 @@ export class LyrianItem extends Item {
       cleanHTML: foundry.utils.cleanHTML,
       enrichOptions
     });
+    const localizeKey = (table, key) => {
+      const entry = LYRIAN[table]?.[key];
+      const label = typeof entry === "string" ? entry : entry?.label;
+      return label ? game.i18n.localize(label) : key;
+    };
     const content = await foundry.applications.handlebars.renderTemplate(
       "systems/lyrian-chronicles/templates/chat/item-card.hbs",
       {
         item: this,
         actor: this.actor,
         system: this.system,
+        typeLabel: game.i18n.localize(`TYPES.Item.${this.type}`),
+        stats: itemChatStats(this, { localize: (key) => game.i18n.localize(key), localizeKey }),
+        keywords: itemChatKeywords(this, { localizeKey }),
         enrichedDescription,
         enrichedRequirement
       }
     );
 
-    return ChatMessage.create({
+    const messageData = {
       speaker: ChatMessage.getSpeaker({ actor: this.actor }),
       content
-    });
+    };
+    // Honour the user's current whisper setting so a GM can show one player a
+    // monster ability without the rest of the table reading it.
+    ChatMessage.applyRollMode(messageData, rollMode ?? game.settings.get("core", "rollMode"));
+    return ChatMessage.create(messageData);
   }
 
   /**

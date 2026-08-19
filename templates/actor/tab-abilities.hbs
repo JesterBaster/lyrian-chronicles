@@ -23,6 +23,7 @@
       </div>
       <div class="lyr-row__actions">
         <button type="button" data-action="useItem">{{localize "LYRIAN.Action.Use"}}</button>
+        <button type="button" class="lyr-icon" data-action="postItem" title="{{localize "LYRIAN.Action.ShowInChat"}}"><i class="fa-solid fa-comment"></i></button>
         <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
         <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
       </div>
@@ -35,6 +36,7 @@
       <img class="lyr-row__icon" src="{{item.img}}" alt="" />
       <button type="button" class="lyr-feature-name" data-action="{{#if usable}}useItem{{else}}editItem{{/if}}">{{item.name}}</button>
       <em class="lyr-feature-role">{{role}}</em>
+      <button type="button" class="lyr-icon" data-action="postItem" title="{{localize "LYRIAN.Action.ShowInChat"}}"><i class="fa-solid fa-comment"></i></button>
       <button type="button" class="lyr-icon" data-action="editItem" title="{{localize "LYRIAN.Action.Open"}}"><i class="fa-solid fa-pen"></i></button>
     </li>
   {{/inline}}

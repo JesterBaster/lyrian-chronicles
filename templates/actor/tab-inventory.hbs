@@ -36,6 +36,7 @@
             {{#each (lyrianInstalledMods @root.items.installedMods item.id) as |mod|}}
               <span class="lyr-row__meta" data-item-id="{{mod.id}}">
                 {{localize "LYRIAN.UI.Mods"}}: {{mod.name}} · {{localize "LYRIAN.UI.SlotValue" slot=(lyrianModSlot mod)}}
+                <button type="button" class="lyr-icon" data-action="postItem" title="{{localize "LYRIAN.Action.ShowInChat"}}"><i class="fa-solid fa-comment"></i></button>
                 <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
                 <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
               </span>
@@ -43,6 +44,7 @@
           </div>
           <div class="lyr-row__actions">
             <button type="button" class="lyr-icon" data-action="toggleEquip"><i class="fa-solid {{#if item.system.equipped}}fa-hand-fist{{else}}fa-box{{/if}}"></i></button>
+            <button type="button" class="lyr-icon" data-action="postItem" title="{{localize "LYRIAN.Action.ShowInChat"}}"><i class="fa-solid fa-comment"></i></button>
             <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
             <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
           </div>
@@ -70,6 +72,7 @@
             {{#each (lyrianInstalledMods @root.items.installedMods item.id) as |mod|}}
               <span class="lyr-row__meta" data-item-id="{{mod.id}}">
                 {{localize "LYRIAN.UI.Mods"}}: {{mod.name}} · {{localize "LYRIAN.UI.SlotValue" slot=(lyrianModSlot mod)}}
+                <button type="button" class="lyr-icon" data-action="postItem" title="{{localize "LYRIAN.Action.ShowInChat"}}"><i class="fa-solid fa-comment"></i></button>
                 <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
                 <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
               </span>
@@ -77,6 +80,7 @@
           </div>
           <div class="lyr-row__actions">
             <button type="button" class="lyr-icon" data-action="toggleEquip"><i class="fa-solid {{#if item.system.equipped}}fa-shield{{else}}fa-box{{/if}}"></i></button>
+            <button type="button" class="lyr-icon" data-action="postItem" title="{{localize "LYRIAN.Action.ShowInChat"}}"><i class="fa-solid fa-comment"></i></button>
             <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
             <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
           </div>
@@ -104,13 +108,14 @@
             {{#each (lyrianInstalledMods @root.items.installedMods item.id) as |mod|}}
               <span class="lyr-row__meta" data-item-id="{{mod.id}}">
                 {{localize "LYRIAN.UI.Mods"}}: {{mod.name}} · {{localize "LYRIAN.UI.SlotValue" slot=(lyrianModSlot mod)}}
+                <button type="button" class="lyr-icon" data-action="postItem" title="{{localize "LYRIAN.Action.ShowInChat"}}"><i class="fa-solid fa-comment"></i></button>
                 <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
                 <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
               </span>
             {{/each}}
           </div>
           <div class="lyr-row__actions">
-            <button type="button" data-action="useItem">{{localize "LYRIAN.Action.Show"}}</button>
+            <button type="button" data-action="postItem">{{localize "LYRIAN.Action.Show"}}</button>
             <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
             <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
           </div>
@@ -137,7 +142,7 @@
               </span>
             </div>
             <div class="lyr-row__actions">
-              <button type="button" data-action="useItem">{{localize "LYRIAN.Action.Show"}}</button>
+              <button type="button" data-action="postItem">{{localize "LYRIAN.Action.Show"}}</button>
               <button type="button" class="lyr-icon" data-action="editItem"><i class="fa-solid fa-pen"></i></button>
               <button type="button" class="lyr-icon" data-action="deleteItem"><i class="fa-solid fa-trash"></i></button>
             </div>
