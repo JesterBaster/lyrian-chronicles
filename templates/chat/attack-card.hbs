@@ -3,7 +3,7 @@
     <img src="{{item.img}}" alt="" />
     <div>
       <h3>{{item.name}}</h3>
-      <span class="lyrian-card__sub">{{attackTypeLabel}}{{#if damageTypeLabel}} · {{damageTypeLabel}}{{/if}}</span>
+      <span class="lyrian-card__sub">{{attackTypeLabel}}{{#if damageTypeLabel}} · {{damageTypeLabel}}{{/if}}{{#if dualWield}} · {{localize "LYRIAN.Attack.DualWieldFree"}}{{/if}}</span>
     </div>
     {{#if isCrit}}<span class="lyrian-crit">{{localize "LYRIAN.UI.Critical"}}</span>{{/if}}
   </header>

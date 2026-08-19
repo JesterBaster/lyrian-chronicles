@@ -843,7 +843,12 @@ export class LyrianActor extends Actor {
    * and should survive the refresh until it is spent or cleared by hand.
    */
   async refreshTurn() {
-    await this.update({ "system.ap.value": this.system.ap.max });
+    await this.update({
+      "system.ap.value": this.system.ap.max,
+      // "Once on your turn" — the dual wield window is a new one each turn.
+      "system.turn.dualWieldOpenerId": "",
+      "system.turn.dualWieldUsed": false
+    });
     Hooks.callAll("lyrianTurnStart", this);
     // Once-per-round ability locks reset when your turn comes round again.
     const locked = this.items.filter(
@@ -866,7 +871,9 @@ export class LyrianActor extends Actor {
     const update = {
       "system.ap.value": this.system.ap.max,
       "system.rp.value": this.system.rp.max,
-      "system.encounter.secretArtUsed": false
+      "system.encounter.secretArtUsed": false,
+      "system.turn.dualWieldOpenerId": "",
+      "system.turn.dualWieldUsed": false
     };
     if (this.type === "character") {
       update["system.encounter.encounterStartUsed"] = false;

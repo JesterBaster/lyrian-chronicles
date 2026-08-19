@@ -90,6 +90,7 @@ export async function renderAttackCard({
   weaponGroup = null,
   ranged = null,
   keywords = [],
+  dualWield = false,
   legacyMonsterAttack = null
 } = {}) {
   const targets = Array.from(game.user.targets).map((token) => {
@@ -131,6 +132,9 @@ export async function renderAttackCard({
     pinpoint,
     halfPierce,
     fullPierce,
+    // The free off-hand swing. Called out so a player can tell it landed
+    // without checking their AP against what they expected to spend.
+    dualWield,
     targets,
     hasTargets: targets.length > 0
   };

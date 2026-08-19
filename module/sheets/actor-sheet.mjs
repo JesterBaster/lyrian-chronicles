@@ -25,6 +25,7 @@ import { isHeaderOnlyRender } from "../rules/sheet-refresh.mjs";
 import { captureScroll, restoreScroll } from "../rules/scroll-state.mjs";
 import { withCollapsed } from "../rules/collapsible.mjs";
 import { weaponsDisplacedBy } from "../rules/weapon-slots.mjs";
+import { pendingDualWieldWeaponId } from "../rules/dual-wield.mjs";
 import { queueDocumentWrite } from "../rules/action-transactions.mjs";
 import {
   CUSTOM_OUTPUT_TYPES,
@@ -413,11 +414,21 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     // switch rather than a second set of attack buttons, so the sheet can
     // never show two weapons swinging at once.
     const heldIds = new Set(context.heldWeapons.map((weapon) => weapon.id));
+    // The off-hand light attack that is currently free, so the button can say
+    // 0 AP rather than leaving the player to spend AP finding out.
+    const freeWeaponId = pendingDualWieldWeaponId({
+      mainHandId: context.system.equipment?.mainHand?.id ?? "",
+      offHandId: context.system.equipment?.offHand?.id ?? "",
+      dualWielding: context.dualWielding,
+      openerId: context.system.turn?.dualWieldOpenerId ?? "",
+      used: Boolean(context.system.turn?.dualWieldUsed)
+    });
     context.weaponRows = buckets.weapons.map((weapon) => ({
       item: weapon,
       held: heldIds.has(weapon.id),
       // Equipped, but there is no hand free for it.
-      conflicted: Boolean(weapon.system.equipped) && !heldIds.has(weapon.id)
+      conflicted: Boolean(weapon.system.equipped) && !heldIds.has(weapon.id),
+      dualWieldFree: weapon.id === freeWeaponId
     }));
 
     // A deleted target must not make its installed Mod disappear from the sheet.
