@@ -195,15 +195,21 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     this._prepareStats(context);
     this._prepareItems(context);
-    context.equipmentConflicts = (actor.system.equipment?.armorConflicts ?? []).map(
-      ({ slot, active, item }) => ({
+    context.equipmentConflicts = [
+      ...(actor.system.equipment?.armorConflicts ?? []).map(({ slot, active, item }) => ({
         message: game.i18n.format("LYRIAN.Warn.EquipmentConflict", {
           slot: game.i18n.localize(slot === "shield" ? "LYRIAN.UI.Shield" : "LYRIAN.UI.BodyArmour"),
           active: active.name,
           ignored: item.name
         })
-      })
-    );
+      })),
+      // A weapon with no hand free is inactive for the same reason a second
+      // suit of armour is, and the inventory is where a reader looks to find
+      // out why something they equipped is doing nothing.
+      ...(actor.system.equipment?.weaponConflicts ?? []).map((item) => ({
+        message: game.i18n.format("LYRIAN.Warn.WeaponConflict", { ignored: item.name })
+      }))
+    ];
     if (context.isCharacter) this._prepareSkills(context);
     if (context.isCharacter) this._prepareCrafting(context);
     if (context.isCharacter) this._prepareProficiencies(context);
@@ -283,7 +289,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       (project) => normalizeCraftProject(project)
     );
     context.craftingMaterialOptions = this.document.items
-      .filter((item) => item.type === "gear")
+      // An installed Mod is Gear carrying a flag, so it would otherwise be
+      // offered as raw material and consumed off the item it is fitted to.
+      .filter((item) => item.type === "gear"
+        && !item.getFlag("lyrian-chronicles", "installedMod"))
       .map((item) => ({
         id: item.id,
         name: item.name,
@@ -346,7 +355,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       gear: [],
       equipment: [],
       injuries: [],
-      installedMods: []
+      installedMods: [],
+      modStock: []
     };
 
     for (const item of this.document.items) {
@@ -380,7 +390,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           else buckets.gear.push(item);
           break;
         case "equipment":
-          buckets.equipment.push(item);
+          // Mods keep the equipment type so their install data survives, but
+          // they are stock for crafting, not "other official gear".
+          if (isCraftingMod(item)) buckets.modStock.push(item);
+          else buckets.equipment.push(item);
           break;
         case "injury":
           buckets.injuries.push(item);
@@ -389,8 +402,6 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     }
 
     context.items = buckets;
-    context.artisanClasses = buckets.classes.filter((item) => item.system.artisan === true);
-    context.hasEquippedWeapon = buckets.weapons.some((weapon) => weapon.system.equipped);
     // Always offered. An ability can call for an unarmed strike while a weapon
     // is held, and hiding the row left no way to roll one.
     context.showUniversalAttacks = context.isCharacter;
@@ -521,11 +532,17 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
    * section header ran the fold handler several times and flipped it back and
    * forth. Replaced elements are new nodes without the mark, so they still get
    * wired exactly once.
+   *
+   * The mark records the selector as well as the event type. Keyed on the type
+   * alone, a second same-type listener on an element already bound by another
+   * selector would be dropped without a trace.
    */
   #bindOnce(selector, type, handler) {
+    const key = `${type}|${selector}`;
     for (const element of this.element.querySelectorAll(selector)) {
-      if (element.dataset.lyrianBound === type) continue;
-      element.dataset.lyrianBound = type;
+      const bound = element.dataset.lyrianBound?.split("\n") ?? [];
+      if (bound.includes(key)) continue;
+      element.dataset.lyrianBound = [...bound, key].join("\n");
       element.addEventListener(type, handler);
     }
   }
@@ -639,7 +656,12 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const owned = Array.isArray(result) ? result[0] : result;
     if (!owned) return result;
 
-    if (owned.type === "equipment") {
+    // A Mod that lands in the inventory as stock keeps its own type. Converting
+    // it to Gear drops craftingType, modSlot and compatibleTargets — the only
+    // fields that make it a Mod — so isCraftingMod stopped recognising it, the
+    // crafting tab's Mod list stayed empty and it could no longer be installed
+    // on anything either.
+    if (owned.type === "equipment" && !isCraftingMod(owned)) {
       const isCharacter = this.document.type === "character";
       const proficiency = isCharacter ? collectActorProficiencies(this.document).groups : null;
       const convertedData = convertOfficialEquipment(owned.toObject(), isCharacter ? {
@@ -858,6 +880,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       installedModFlag(mod, target)
     );
     const [installed] = await this.document.createEmbeddedDocuments("Item", [converted]);
+    // Installing spends the stock. Without this, dragging an owned Mod onto a
+    // weapon left the original in the inventory, so one purchased Mod could be
+    // installed on an unlimited number of items.
+    if (mod.parent === this.document) await mod.delete();
     ui.notifications.info(game.i18n.format("LYRIAN.Mod.Installed", {
       mod: installed.name,
       target: target.name

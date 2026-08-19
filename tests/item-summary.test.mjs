@@ -149,8 +149,9 @@ test("both tabs offer sharing, and the gear buttons cannot consume", () => {
 
   // Every ability row shape: the loose list, and the class/race grant rows.
   assert.equal((abilities.match(/data-action="postItem"/g) ?? []).length, 2);
-  // Weapons, armour, gear, other official gear, and the three mod sub-rows.
-  assert.equal((inventory.match(/data-action="postItem"/g) ?? []).length, 7);
+  // Weapons, armour, gear, mod stock, other official gear, and the three
+  // installed-mod sub-rows.
+  assert.equal((inventory.match(/data-action="postItem"/g) ?? []).length, 8);
 
   // The old Show buttons ran through useItem, which rolls abilities and would
   // consume anything given a use path later.

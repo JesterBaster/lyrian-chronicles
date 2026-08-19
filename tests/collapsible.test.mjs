@@ -101,8 +101,13 @@ test("listeners are bound once per element, not once per render", () => {
   // follows a resource change — and that repaint leaves other parts' DOM in
   // place. Binding unconditionally stacked a listener each time, so one later
   // click ran the fold handler repeatedly and flipped the section back and forth.
-  assert.match(source, /element\.dataset\.lyrianBound === type/);
-  assert.match(source, /element\.dataset\.lyrianBound = type/);
+  assert.match(source, /bound\.includes\(key\)/);
+  assert.match(source, /element\.dataset\.lyrianBound = \[\.\.\.bound, key\]/);
+
+  // The mark records the selector as well as the event type. Keyed on the type
+  // alone, a second same-type listener on an element already bound by another
+  // selector would be skipped without a trace.
+  assert.match(source, /const key = `\$\{type\}\|\$\{selector\}`/);
 
   const render = source.slice(source.indexOf("  _onRender(context, options)"));
   const body = render.slice(0, render.indexOf("\n  }"));
