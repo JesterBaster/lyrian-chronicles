@@ -98,25 +98,33 @@
             </div>
           </li>
         {{/if}}
-        {{#each items.weapons as |weapon|}}
-          <li class="lyr-row {{#unless weapon.system.equipped}}lyr-row--stowed{{/unless}}" data-item-id="{{weapon.id}}">
-            <img class="lyr-row__icon" src="{{weapon.img}}" alt="" />
+        {{#if dualWielding}}
+          <li class="lyr-note">{{localize "LYRIAN.Hint.DualWielding"}}</li>
+        {{/if}}
+        {{#each weaponRows as |row|}}
+          <li class="lyr-row {{#unless row.held}}lyr-row--stowed{{/unless}}" data-item-id="{{row.item.id}}">
+            <img class="lyr-row__icon" src="{{row.item.img}}" alt="" />
             <div class="lyr-row__body">
-              <span class="lyr-row__name">{{weapon.name}}</span>
+              <span class="lyr-row__name">{{row.item.name}}
+                {{#if row.held}}<em class="lyr-tag">{{localize "LYRIAN.UI.Held"}}</em>{{/if}}
+                {{#if row.conflicted}}<em class="lyr-warn">{{localize "LYRIAN.UI.NoHandFree"}}</em>{{/if}}
+              </span>
               <span class="lyr-row__meta">
-                {{lyrianLocalizeKey "weaponGroups" weapon.system.group}} ·
-                {{#if weapon.system.isTwoHanded}}{{localize "LYRIAN.UI.TwoHanded"}}{{else}}{{localize "LYRIAN.UI.OneHanded"}}{{/if}} ·
-                {{weapon.system.range}} {{localize "LYRIAN.Unit.Feet"}}
-                {{#if (lt weapon.system.effectiveCrit 20)}} · {{localize "LYRIAN.UI.CritOn"}} {{weapon.system.effectiveCrit}}+{{/if}}
+                {{lyrianLocalizeKey "weaponGroups" row.item.system.group}} ·
+                {{#if row.item.system.isTwoHanded}}{{localize "LYRIAN.UI.TwoHanded"}}{{else}}{{localize "LYRIAN.UI.OneHanded"}}{{/if}} ·
+                {{row.item.system.range}} {{localize "LYRIAN.Unit.Feet"}}
+                {{#if (lt row.item.system.effectiveCrit 20)}} · {{localize "LYRIAN.UI.CritOn"}} {{row.item.system.effectiveCrit}}+{{/if}}
               </span>
             </div>
             <div class="lyr-row__actions">
-              <button type="button" data-action="attack" data-attack-type="light" title="{{localize "LYRIAN.Cost.OneAP"}}">{{localize "LYRIAN.Attack.Light"}}</button>
-              <button type="button" data-action="attack" data-attack-type="heavy" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Heavy"}}</button>
-              <button type="button" data-action="attack" data-attack-type="precise" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Precise"}}</button>
-              <button type="button" data-action="multiAttack" title="{{localize "LYRIAN.Attack.MultiTitle"}}"><i class="fa-solid fa-layer-group"></i> {{localize "LYRIAN.Attack.Multi"}}</button>
-              <button type="button" class="lyr-icon" data-action="toggleEquip" title="{{localize "LYRIAN.Action.EquipStow"}}">
-                <i class="fa-solid {{#if weapon.system.equipped}}fa-hand-fist{{else}}fa-box{{/if}}"></i>
+              {{#if row.held}}
+                <button type="button" data-action="attack" data-attack-type="light" title="{{localize "LYRIAN.Cost.OneAP"}}">{{localize "LYRIAN.Attack.Light"}}</button>
+                <button type="button" data-action="attack" data-attack-type="heavy" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Heavy"}}</button>
+                <button type="button" data-action="attack" data-attack-type="precise" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Precise"}}</button>
+                <button type="button" data-action="multiAttack" title="{{localize "LYRIAN.Attack.MultiTitle"}}"><i class="fa-solid fa-layer-group"></i> {{localize "LYRIAN.Attack.Multi"}}</button>
+              {{/if}}
+              <button type="button" class="lyr-icon" data-action="toggleEquip" title="{{#if row.held}}{{localize "LYRIAN.Action.Stow"}}{{else}}{{localize "LYRIAN.Action.Wield"}}{{/if}}">
+                <i class="fa-solid {{#if row.held}}fa-hand-fist{{else}}fa-box{{/if}}"></i>
               </button>
               <button type="button" class="lyr-icon" data-action="editItem" title="{{localize "LYRIAN.Action.Edit"}}"><i class="fa-solid fa-pen"></i></button>
             </div>

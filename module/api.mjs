@@ -45,10 +45,11 @@ export const LyrianAPI = {
   getActionSet(actor) {
     if (!actor) return null;
     const weapons = actor.items.filter((i) => i.type === "weapon");
+    const heldWeaponIds = new Set(
+      (actor.system.equipment?.weapons ?? []).map((weapon) => weapon.id));
     const abilities = actor.items.filter((i) => ["ability", "monsterAbility"].includes(i.type));
     const universalAttacks = availableUniversalAttacks({
       actorType: actor.type,
-      hasEquippedWeapon: weapons.some((weapon) => weapon.system.equipped),
       attackTypes: LYRIAN.attackTypes,
       apTotal: actor.system.ap.total
     });
@@ -82,6 +83,8 @@ export const LyrianAPI = {
         name: w.name,
         img: w.img,
         equipped: w.system.equipped,
+        // Equipped says it is ready to hand; held says a hand is actually on it.
+        held: heldWeaponIds.has(w.id),
         group: w.system.group,
         ranged: w.system.isRanged,
         range: w.system.range,
