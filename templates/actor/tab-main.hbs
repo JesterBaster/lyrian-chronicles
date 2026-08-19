@@ -118,7 +118,7 @@
             </div>
             <div class="lyr-row__actions">
               {{#if row.held}}
-                <button type="button" data-action="attack" data-attack-type="light" title="{{localize "LYRIAN.Cost.OneAP"}}">{{localize "LYRIAN.Attack.Light"}}</button>
+                <button type="button" data-action="attack" data-attack-type="light" class="{{#if row.dualWieldFree}}is-free{{/if}}" title="{{#if row.dualWieldFree}}{{localize "LYRIAN.Cost.FreeAP"}}{{else}}{{localize "LYRIAN.Cost.OneAP"}}{{/if}}">{{localize "LYRIAN.Attack.Light"}}{{#if row.dualWieldFree}} <em>{{localize "LYRIAN.Cost.ZeroAP"}}</em>{{/if}}</button>
                 <button type="button" data-action="attack" data-attack-type="heavy" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Heavy"}}</button>
                 <button type="button" data-action="attack" data-attack-type="precise" title="{{localize "LYRIAN.Cost.TwoAP"}}">{{localize "LYRIAN.Attack.Precise"}}</button>
                 <button type="button" data-action="multiAttack" title="{{localize "LYRIAN.Attack.MultiTitle"}}"><i class="fa-solid fa-layer-group"></i> {{localize "LYRIAN.Attack.Multi"}}</button>

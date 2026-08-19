@@ -124,6 +124,16 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
 
     schema.biography = new fields.HTMLField({ required: false, blank: true });
 
+    // Per-turn state, cleared by refreshTurn. Stored rather than held in
+    // memory so a reload part way through a turn cannot hand back a free
+    // attack that was already taken.
+    schema.turn = new fields.SchemaField({
+      // The weapon whose light attack opened the dual wield window.
+      dualWieldOpenerId: new fields.StringField({ blank: true, initial: "" }),
+      // Whether this turn's one free follow-up has been spent.
+      dualWieldUsed: new fields.BooleanField({ initial: false })
+    });
+
     return schema;
   }
 

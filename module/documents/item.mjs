@@ -15,6 +15,7 @@ import {
 import { abilityRefused, abilitySucceeded } from "../rules/ability-result.mjs";
 import { prepareItemChatContent } from "../rules/chat-content.mjs";
 import { itemChatKeywords, itemChatStats } from "../rules/item-summary.mjs";
+import { dualWieldFollowUp } from "../rules/dual-wield.mjs";
 import { buildHealingPayload } from "../rules/healing.mjs";
 
 /**
@@ -84,10 +85,35 @@ export class LyrianItem extends Item {
     const profile = LYRIAN.attackTypes[attackType];
     if (!profile) return;
 
+    // Dual wielding grants one free light attack per turn, from the hand that
+    // did not open the pair. Resolved before the cost is paid, and the turn
+    // state is written whether or not this attack was the free one — a heavy
+    // swing in between closes the window.
+    const equipment = actor.system.equipment ?? {};
+    const turn = actor.system.turn ?? {};
+    const dualWield = dualWieldFollowUp({
+      attackType,
+      weaponId: this.id,
+      mainHandId: equipment.mainHand?.id ?? "",
+      offHandId: equipment.offHand?.id ?? "",
+      dualWielding: Boolean(equipment.dualWielding),
+      openerId: turn.dualWieldOpenerId ?? "",
+      used: Boolean(turn.dualWieldUsed)
+    });
     // Pay AP unless the attack is free.
-    if (!options.free) {
+    const free = options.free || dualWield.free;
+    if (!free) {
       const paid = await actor.spendResources({ ap: profile.ap });
+      // Nothing happened, so the window is left exactly as it was.
       if (!paid) return;
+    }
+
+    if (dualWield.openerId !== (turn.dualWieldOpenerId ?? "")
+      || dualWield.used !== Boolean(turn.dualWieldUsed)) {
+      await actor.update({
+        "system.turn.dualWieldOpenerId": dualWield.openerId,
+        "system.turn.dualWieldUsed": dualWield.used
+      });
     }
 
     const power = actor.system.stats.power.total;
@@ -122,10 +148,11 @@ export class LyrianItem extends Item {
       damageType: this.system.damageType,
       weaponGroup: this.system.group,
       ranged: !!this.system.isRanged,
-      keywords: this.system.keywords
+      keywords: this.system.keywords,
+      dualWield: dualWield.free
     });
 
-    return { attackRoll, damageRoll, isCrit };
+    return { attackRoll, damageRoll, isCrit, dualWield: dualWield.free };
   }
 
   /* -------------------------------------------- */
