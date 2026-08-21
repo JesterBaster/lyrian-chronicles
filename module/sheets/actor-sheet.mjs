@@ -79,6 +79,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       recoverInjury: LyrianActorSheet.#onRecoverInjury,
       spendExpPrompt: LyrianActorSheet.#onSpendExp,
       openCharacterCreation: LyrianActorSheet.#onOpenCharacterCreation,
+      openTrade: LyrianActorSheet.#onOpenTrade,
       addProject: LyrianActorSheet.#onAddProject,
       removeProject: LyrianActorSheet.#onRemoveProject,
       addProjectMaterial: LyrianActorSheet.#onAddProjectMaterial,
@@ -1404,6 +1405,12 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   static async #onPostItem(event, target) {
     const item = this.document.items.get(target.closest("[data-item-id]")?.dataset.itemId);
     await item?.postToChat();
+  }
+
+  /** Offer a trade from this actor to another. */
+  static async #onOpenTrade() {
+    const { LyrianTradeOffer } = await import("../apps/trade-offer.mjs");
+    new LyrianTradeOffer({ actor: this.document }).render(true);
   }
 
   static async #onCreateItem(event, target) {

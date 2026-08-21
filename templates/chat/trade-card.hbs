@@ -1,0 +1,18 @@
+<div class="lyrian-card lyr-trade-card">
+  <header class="lyrian-card__head">
+    <div>
+      <h3>{{localize "LYRIAN.Trade.CardTitle"}}</h3>
+      <span class="lyrian-card__sub">{{offer.fromName}} → {{offer.toName}}</span>
+    </div>
+  </header>
+  {{#if offer.note}}<p class="lyrian-card__line">{{offer.note}}</p>{{/if}}
+  <ul class="lyrian-card__stats">
+    {{#each give.items as |line|}}<li><span>{{../offer.fromName}}</span> <strong>{{line.name}} ×{{line.quantity}}</strong></li>{{/each}}
+    {{#if give.clim}}<li><span>{{offer.fromName}}</span> <strong>{{localize "LYRIAN.UI.Clim"}} {{give.clim}}</strong></li>{{/if}}
+    {{#each take.items as |line|}}<li><span>{{../offer.toName}}</span> <strong>{{line.name}} ×{{line.quantity}}</strong></li>{{/each}}
+    {{#if take.clim}}<li><span>{{offer.toName}}</span> <strong>{{localize "LYRIAN.UI.Clim"}} {{take.clim}}</strong></li>{{/if}}
+  </ul>
+  <p class="lyrian-card__line">
+    {{#if settled}}{{localize "LYRIAN.Trade.CardSettled"}}{{else}}<em class="lyr-warn">{{localize "LYRIAN.Trade.CardFailed"}}</em>{{/if}}
+  </p>
+</div>

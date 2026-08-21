@@ -21,6 +21,7 @@ import { LyrianActorSheet } from "./sheets/actor-sheet.mjs";
 import { LyrianItemSheet } from "./sheets/item-sheet.mjs";
 import { runMigrations } from "../migrations/migrate.mjs";
 import { LyrianAPI } from "./api.mjs";
+import { initializeTrading } from "./trade/trade-service.mjs";
 import { seedSystemPacks, resetSystemPacks } from "./content/seed-packs.mjs";
 import { runCharacterCreation } from "./apps/character-creation.mjs";
 import { resolveDefence } from "./rules/defence-resolution.mjs";
@@ -241,7 +242,10 @@ async function preloadTemplates() {
     "chat/check-card",
     "chat/craft-card",
     "chat/healing-card",
-    "chat/item-card"
+    "chat/item-card",
+    "chat/trade-card",
+    "apps/trade-offer",
+    "apps/trade-review"
   ].map((p) => `systems/${SYSTEM_ID}/templates/${p}.hbs`);
 
   return foundry.applications.handlebars.loadTemplates(paths);
@@ -565,6 +569,7 @@ Hooks.once("ready", async function () {
     user: () => game.user,
     resolveUuid: (uuid) => fromUuid(uuid)
   });
+  initializeTrading();
 
   // Refresh the official source documents first. Migrations can then hydrate
   // older owned race items from the current compendium schema.

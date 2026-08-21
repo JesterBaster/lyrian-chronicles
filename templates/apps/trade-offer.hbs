@@ -1,0 +1,100 @@
+<div class="lyr-trade__body">
+  <section class="lyr-trade__partner">
+    <label>
+      {{localize "LYRIAN.Trade.Partner"}}
+      <select data-trade-partner>
+        <option value="">{{localize "LYRIAN.Trade.ChoosePartner"}}</option>
+        {{#each partners as |partner|}}
+          <option value="{{partner.uuid}}" {{#if partner.selected}}selected{{/if}}>{{partner.name}}{{#if partner.isNPC}} ({{localize "LYRIAN.Trade.NPC"}}){{/if}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <p class="lyr-note">{{localize "LYRIAN.Trade.PartnerHint"}}</p>
+  </section>
+
+  <div class="lyr-trade__columns">
+    <section class="lyr-trade__side">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Trade.YouGive"}}</h2>
+      <ul class="lyr-list lyr-list--tight">
+        {{#each giveRows as |row|}}
+          <li class="lyr-row {{#if row.chosen}}lyr-row--chosen{{/if}}" data-item-id="{{row.id}}">
+            <img class="lyr-row__icon" src="{{row.img}}" alt="" />
+            <div class="lyr-row__body">
+              <span class="lyr-row__name">{{row.name}}</span>
+              <span class="lyr-row__meta">
+                {{localize "LYRIAN.Trade.Held"}} {{row.stack}}
+                {{#if row.equipped}} · {{localize "LYRIAN.UI.Held"}}{{/if}}
+                {{#if row.mods}} · {{localize "LYRIAN.UI.Mods"}} {{row.mods}}{{/if}}
+              </span>
+            </div>
+            <div class="lyr-row__actions">
+              {{#if row.chosen}}
+                <input type="number" min="0" max="{{row.stack}}" step="1" value="{{row.chosen}}"
+                       data-trade-quantity data-item-id="{{row.id}}" data-side="give"
+                       aria-label="{{localize "LYRIAN.Trade.Quantity"}}" />
+              {{/if}}
+              <button type="button" data-action="toggleItem" data-item-id="{{row.id}}" data-side="give" data-stack="{{row.stack}}">
+                {{#if row.chosen}}{{localize "LYRIAN.Trade.Remove"}}{{else}}{{localize "LYRIAN.Trade.Add"}}{{/if}}
+              </button>
+            </div>
+          </li>
+        {{else}}<li class="lyr-empty">{{localize "LYRIAN.Trade.NothingToOffer"}}</li>{{/each}}
+      </ul>
+      <label class="lyr-trade__clim">
+        {{localize "LYRIAN.UI.Clim"}}
+        <input type="number" min="0" step="1" value="{{giveClim}}" data-trade-clim="give" />
+        <span class="lyr-note">{{localize "LYRIAN.Trade.Purse"}} {{purse}}</span>
+      </label>
+    </section>
+
+    <section class="lyr-trade__side">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Trade.YouAsk"}}</h2>
+      {{#if target}}
+        {{#if canSeeTarget}}
+          <ul class="lyr-list lyr-list--tight">
+            {{#each takeRows as |row|}}
+              <li class="lyr-row {{#if row.chosen}}lyr-row--chosen{{/if}}" data-item-id="{{row.id}}">
+                <img class="lyr-row__icon" src="{{row.img}}" alt="" />
+                <div class="lyr-row__body">
+                  <span class="lyr-row__name">{{row.name}}</span>
+                  <span class="lyr-row__meta">{{localize "LYRIAN.Trade.Held"}} {{row.stack}}</span>
+                </div>
+                <div class="lyr-row__actions">
+                  {{#if row.chosen}}
+                    <input type="number" min="0" max="{{row.stack}}" step="1" value="{{row.chosen}}"
+                           data-trade-quantity data-item-id="{{row.id}}" data-side="take"
+                           aria-label="{{localize "LYRIAN.Trade.Quantity"}}" />
+                  {{/if}}
+                  <button type="button" data-action="toggleItem" data-item-id="{{row.id}}" data-side="take" data-stack="{{row.stack}}">
+                    {{#if row.chosen}}{{localize "LYRIAN.Trade.Remove"}}{{else}}{{localize "LYRIAN.Trade.Add"}}{{/if}}
+                  </button>
+                </div>
+              </li>
+            {{else}}<li class="lyr-empty">{{localize "LYRIAN.Trade.NothingThere"}}</li>{{/each}}
+          </ul>
+        {{else}}
+          <p class="lyr-note">{{localize "LYRIAN.Trade.CannotSeeInventory"}}</p>
+        {{/if}}
+        <label class="lyr-trade__clim">
+          {{localize "LYRIAN.UI.Clim"}}
+          <input type="number" min="0" step="1" value="{{takeClim}}" data-trade-clim="take" />
+          {{#if canSeeTarget}}<span class="lyr-note">{{localize "LYRIAN.Trade.Purse"}} {{targetPurse}}</span>{{/if}}
+        </label>
+      {{else}}
+        <p class="lyr-note">{{localize "LYRIAN.Trade.ChoosePartnerFirst"}}</p>
+      {{/if}}
+    </section>
+  </div>
+
+  <label class="lyr-trade__note">
+    {{localize "LYRIAN.Trade.Note"}}
+    <input type="text" value="{{note}}" data-trade-note placeholder="{{localize "LYRIAN.Trade.NotePlaceholder"}}" />
+  </label>
+
+  <footer class="lyr-creation-footer">
+    <span class="lyr-note">{{localize "LYRIAN.Trade.SettleHint"}}</span>
+    <button type="button" class="lyr-primary" data-action="send" {{#unless ready}}disabled{{/unless}}>
+      {{localize "LYRIAN.Trade.Send"}}
+    </button>
+  </footer>
+</div>

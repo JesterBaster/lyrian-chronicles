@@ -13,6 +13,11 @@
     </div>
   </div>
 
+  <div class="lyr-section-head">
+    <span class="lyr-note">{{localize "LYRIAN.Trade.InventoryHint"}}</span>
+    <button type="button" data-action="openTrade"><i class="fa-solid fa-right-left"></i> {{localize "LYRIAN.Trade.Open"}}</button>
+  </div>
+
   {{#each equipmentConflicts as |conflict|}}
     <p class="lyr-warn"><i class="fa-solid fa-triangle-exclamation"></i> {{conflict.message}}</p>
   {{/each}}
