@@ -516,8 +516,14 @@
 .lyrian .lyr-keyword--on { border-color: var(--lyr-gold); color: var(--lyr-gold-bright); }
 .lyrian .lyr-keyword--manual { border-style: dashed; opacity: 0.8; }
 
-.lyrian button { font-family: var(--lyr-font-body); background: var(--lyr-plate-2); border: 1px solid var(--lyr-rule); color: var(--lyr-ink); border-radius: var(--lyr-radius); cursor: pointer; }
-.lyrian button:hover { border-color: var(--lyr-gold); color: var(--lyr-gold-bright); background: var(--lyr-raised); }
+/* Scoped to the sheet's own content, never the window chrome.
+   Foundry renders its header controls — close, copy document UUID, toggle
+   controls — as buttons carrying their Font Awesome classes on the button
+   element itself. `.lyrian button` is a class plus an element, which outranks
+   `.fa-solid`, so it replaced the icon font with a text font and painted our
+   plate background behind it: three boxed tofu glyphs instead of icons. */
+.lyrian .window-content button { font-family: var(--lyr-font-body); background: var(--lyr-plate-2); border: 1px solid var(--lyr-rule); color: var(--lyr-ink); border-radius: var(--lyr-radius); cursor: pointer; }
+.lyrian .window-content button:hover { border-color: var(--lyr-gold); color: var(--lyr-gold-bright); background: var(--lyr-raised); }
 .lyrian .lyr-primary { background: var(--lyr-gold); color: var(--lyr-void); border-color: var(--lyr-gold); font-weight: 600; }
 .lyrian .lyr-primary:hover { background: var(--lyr-gold-bright); color: var(--lyr-void); }
 .lyrian .lyr-primary:disabled { opacity: 0.35; cursor: not-allowed; }
@@ -635,7 +641,7 @@
 
 /* Accessibility ----------------------------------------------------------- */
 
-.lyrian button:focus-visible, .lyrian input:focus-visible, .lyrian select:focus-visible { outline: 2px solid var(--lyr-gold); outline-offset: 1px; }
+.lyrian .window-content button:focus-visible, .lyrian input:focus-visible, .lyrian select:focus-visible { outline: 2px solid var(--lyr-gold); outline-offset: 1px; }
 @media (prefers-reduced-motion: reduce) { .lyrian .lyr-res__fill { transition: none; } }
 
 /* Crafting projects */
