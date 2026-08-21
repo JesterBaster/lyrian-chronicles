@@ -124,6 +124,10 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
 
     schema.biography = new fields.HTMLField({ required: false, blank: true });
 
+    // Coin. On the base rather than on characters alone, because a merchant
+    // NPC needs a purse for a trade to move money in both directions.
+    schema.clim = int(0, { min: 0 });
+
     // The damage type of an attack this actor makes without a weapon Item to
     // carry one: a character's unarmed strike, and a monster's stat-block
     // attack. Both were hardcoded to physical, which left a monk with burning
@@ -330,6 +334,8 @@ export class LyrianCharacter extends LyrianActorBase {
       errandPoints: int(0)
     });
 
+    // Characters start with the rulebook's purse; the field itself lives on
+    // the base so an NPC merchant has somewhere to keep takings.
     schema.clim = int(LYRIAN.progression.startingClim);
 
     // Main skills: ranks plus a single named expertise.

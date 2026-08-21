@@ -759,3 +759,26 @@
 .lyrian .lyr-multi-attack__row em {
   font-style: normal; font-size: 0.7rem; color: var(--lyr-ink-dim);
 }
+
+/* --------------------------------------------------------------------------
+   Trading
+   -------------------------------------------------------------------------- */
+
+.lyrian .lyr-trade__body { display: flex; flex-direction: column; gap: 0.6rem; padding: 0.7rem; }
+.lyrian .lyr-trade__partner select { width: 100%; padding: 0.25rem; }
+/* Two columns while there is room; one below, because the offer is still
+   readable stacked and a squeezed pair of item lists is not. */
+.lyrian .lyr-trade__columns { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+.lyrian .lyr-trade__side { display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; background: var(--lyr-plate); border: 1px solid var(--lyr-rule); border-radius: var(--lyr-radius); padding: 0.5rem; }
+.lyrian .lyr-trade__side .lyr-list { max-height: 15rem; overflow-y: auto; }
+.lyrian .lyr-trade__clim { display: flex; align-items: center; gap: 0.4rem; font-size: 0.72rem; }
+.lyrian .lyr-trade__clim input { width: 5rem; text-align: right; font-family: var(--lyr-font-num); }
+.lyrian .lyr-trade__note { display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.72rem; }
+.lyrian .lyr-trade__note input { padding: 0.25rem; }
+.lyrian .lyr-trade__quote { font-style: italic; color: var(--lyr-ink-dim); border-left: 2px solid var(--lyr-rule); padding-left: 0.5rem; margin: 0; }
+.lyrian .lyr-row--chosen { border-left-color: var(--lyr-gold); background: var(--lyr-raised); }
+.lyrian .lyr-trade__side .lyr-row__actions input { width: 3.4rem; text-align: right; font-family: var(--lyr-font-num); }
+
+@media (max-width: 560px) {
+  .lyrian .lyr-trade__columns { grid-template-columns: 1fr; }
+}

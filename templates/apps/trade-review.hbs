@@ -1,0 +1,49 @@
+<div class="lyr-trade__body">
+  <p class="lyr-note">{{localize "LYRIAN.Trade.ReviewHint" from=offer.fromName to=offer.toName}}</p>
+  {{#if offer.note}}<p class="lyr-trade__quote">{{offer.note}}</p>{{/if}}
+
+  <div class="lyr-trade__columns">
+    <section class="lyr-trade__side">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Trade.YouReceive"}}</h2>
+      <ul class="lyr-list lyr-list--tight">
+        {{#each incoming.items as |line|}}
+          <li class="lyr-row">
+            <img class="lyr-row__icon" src="{{line.img}}" alt="" />
+            <div class="lyr-row__body">
+              <span class="lyr-row__name">{{line.name}}{{#if line.missing}} <em class="lyr-warn">{{localize "LYRIAN.Trade.Gone"}}</em>{{/if}}</span>
+              <span class="lyr-row__meta">×{{line.quantity}}</span>
+            </div>
+          </li>
+        {{/each}}
+        {{#if incoming.clim}}<li class="lyr-row"><div class="lyr-row__body"><span class="lyr-row__name">{{localize "LYRIAN.UI.Clim"}} {{incoming.clim}}</span></div></li>{{/if}}
+        {{#unless incoming.any}}<li class="lyr-empty">{{localize "LYRIAN.Trade.Nothing"}}</li>{{/unless}}
+      </ul>
+    </section>
+
+    <section class="lyr-trade__side">
+      <h2 class="lyr-heading">{{localize "LYRIAN.Trade.YouGiveUp"}}</h2>
+      <ul class="lyr-list lyr-list--tight">
+        {{#each outgoing.items as |line|}}
+          <li class="lyr-row">
+            <img class="lyr-row__icon" src="{{line.img}}" alt="" />
+            <div class="lyr-row__body">
+              <span class="lyr-row__name">{{line.name}}{{#if line.missing}} <em class="lyr-warn">{{localize "LYRIAN.Trade.Gone"}}</em>{{/if}}</span>
+              <span class="lyr-row__meta">×{{line.quantity}}</span>
+            </div>
+          </li>
+        {{/each}}
+        {{#if outgoing.clim}}<li class="lyr-row"><div class="lyr-row__body"><span class="lyr-row__name">{{localize "LYRIAN.UI.Clim"}} {{outgoing.clim}}</span></div></li>{{/if}}
+        {{#unless outgoing.any}}<li class="lyr-empty">{{localize "LYRIAN.Trade.Nothing"}}</li>{{/unless}}
+      </ul>
+    </section>
+  </div>
+
+  <footer class="lyr-creation-footer">
+    {{#if canAnswer}}
+      <button type="button" data-action="decline">{{localize "LYRIAN.Trade.Decline"}}</button>
+      <button type="button" class="lyr-primary" data-action="accept">{{localize "LYRIAN.Trade.Accept"}}</button>
+    {{else}}
+      <span class="lyr-note">{{localize "LYRIAN.Trade.NotYoursToAnswer"}}</span>
+    {{/if}}
+  </footer>
+</div>
