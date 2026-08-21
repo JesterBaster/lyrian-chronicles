@@ -515,7 +515,15 @@ Hooks.on("hotbarDrop", (bar, data, slot) => {
 for (const hook of ["createItem", "updateItem", "deleteItem"]) {
   Hooks.on(hook, async (item) => {
     if (!item.actor || !["race", "class"].includes(item.type)) return;
-    await item.actor.syncProgressionFeatures();
+    try {
+      await item.actor.syncProgressionFeatures();
+    } catch (err) {
+      // A hook handler's rejection has nobody to catch it, so a sync that
+      // races a deletion surfaced as an uncaught error with a stack pointing
+      // here rather than at what actually failed. Reconciliation is
+      // best-effort and runs again on the next change; report and carry on.
+      console.error(`Lyrian Chronicles | Progression sync failed for ${item.actor.name}`, err);
+    }
   });
 }
 

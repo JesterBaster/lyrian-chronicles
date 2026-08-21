@@ -74,8 +74,10 @@ test("rolls that already read as a complete phrase are not renamed", () => {
 test("the check card honours roll mode and ships its template", () => {
   const source = readFileSync("module/documents/actor.mjs", "utf8");
   // Rendering a custom card bypasses Roll#toMessage, which is what normally
-  // applies a blind or whispered roll mode.
-  assert.match(source, /ChatMessage\.applyRollMode\(messageData, game\.settings\.get\("core", "rollMode"\)\)/);
+  // applies a blind or whispered roll mode. Named by intent rather than by
+  // the core method, which was renamed in v14 — tests/chat-mode.test.mjs
+  // covers the helper that absorbs that.
+  assert.match(source, /applyChatMode\(messageData, game\.settings\.get\("core", "rollMode"\)\)/);
   assert.match(source, /templates\/chat\/check-card\.hbs/);
 
   const boot = readFileSync("module/lyrian.mjs", "utf8");

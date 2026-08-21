@@ -47,3 +47,23 @@ export async function prepareItemChatContent({
     enrichedRequirement: cleanHTML(requirementHTML)
   };
 }
+
+/**
+ * Apply a whisper/blind mode to chat message data before it is created.
+ *
+ * Rendering our own card bypasses `Roll#toMessage`, which is what would
+ * normally honour the mode — so every card that wants it has to say so. The
+ * core method was renamed in v14 (`applyRollMode` → `applyMode`), and this is
+ * the one place that names it: the older name is still accepted so the system
+ * keeps working on a core that predates the rename.
+ *
+ * @param {object} messageData          Mutated in place, as the core method does.
+ * @param {string} mode                 "publicroll" | "gmroll" | "blindroll" | "selfroll"
+ * @param {object} [ChatMessageClass]   Injected for tests.
+ * @returns {object} The same messageData.
+ */
+export function applyChatMode(messageData, mode, ChatMessageClass = globalThis.ChatMessage) {
+  const apply = ChatMessageClass?.applyMode ?? ChatMessageClass?.applyRollMode;
+  apply?.call(ChatMessageClass, messageData, mode);
+  return messageData;
+}
