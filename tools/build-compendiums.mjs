@@ -200,7 +200,7 @@ function relationshipMetadata(relationships) {
   });
 }
 
-function flags(entry) {
+function flags(entry, remoteImage = "") {
   return {
     [SYSTEM_ID]: {
       seedKey: `official:${entry.stable_id}`,
@@ -209,19 +209,37 @@ function flags(entry) {
       sourceHash: entry.source_hash,
       rulebookVersion: entry.rulebook_version,
       contentBuild: entry.category === "races" ? RACE_CONTENT_BUILD : CONTENT_BUILD,
+      ...(remoteImage ? { remoteImage } : {}),
     },
   };
 }
 
-function baseDocument(entry, type, img, system) {
+function baseDocument(entry, type, img, system, remoteImage = "") {
   return {
     _id: idFor(`${entry.category}:${entry.stable_id}`),
     name: entry.name,
     type,
     img,
     system,
-    flags: flags(entry),
+    flags: flags(entry, remoteImage),
   };
+}
+
+/**
+ * Choose the artwork a document ships with.
+ *
+ * The official art is hosted on a CDN that sends no Access-Control-Allow-Origin
+ * header. A plain <img> does not need one, so sheet portraits looked fine — but
+ * canvas textures do, so every monster token using that art failed to draw with
+ * a CORS error and the token rendered as nothing at all.
+ *
+ * So the bundled icon wins, and the remote URL is kept in a flag rather than
+ * thrown away: nothing is lost, a GM can still paste it onto a token by hand,
+ * and if the CDN ever sends the header this becomes a one-line change back.
+ */
+function artwork(data, fallback) {
+  const remote = data?.imageSmUrl || data?.imageLgUrl || "";
+  return { img: fallback, remoteImage: String(remote) };
 }
 
 const fallbackIcons = {
@@ -333,7 +351,8 @@ function buildRace(entry) {
     ...(entry.relationships ?? {}),
     variant_traits: variants.map((choice) => choice.abilityStableId).filter(Boolean)
   };
-  return baseDocument(entry, "race", data.imageSmUrl || data.imageLgUrl || fallbackIcons.race, {
+  const art = artwork(data, fallbackIcons.race);
+  return baseDocument(entry, "race", art.img, {
     ...provenance({ ...entry, relationships }, data.description),
     raceKind: isPrimary ? "primary" : "ancestry",
     primaryRace: isPrimary ? entry.name : String(data.primaryRace ?? ""),
@@ -353,13 +372,14 @@ function buildRace(entry) {
     selectedSkillBonuses: {},
     size: "medium",
     speed: 20,
-  });
+  }, art.remoteImage);
 }
 
 function buildClass(entry) {
   const data = entry.data;
   const relations = entry.relationships;
-  return baseDocument(entry, "class", data.imageSmUrl || data.imageLgUrl || fallbackIcons.class, {
+  const art = artwork(data, fallbackIcons.class);
+  return baseDocument(entry, "class", art.img, {
     ...provenance(entry, data.description),
     tier: number(data.tier, 1),
     difficulty: number(data.difficulty, 0),
@@ -374,12 +394,13 @@ function buildClass(entry) {
     requirements: String(data.requirements ?? ""),
     artisan: /artisan/i.test(`${data.role1 ?? ""} ${data.role2 ?? ""}`),
     gathering: /gather/i.test(`${data.role1 ?? ""} ${data.role2 ?? ""}`),
-  });
+  }, art.remoteImage);
 }
 
 function buildEquipment(entry) {
   const data = entry.data;
-  return baseDocument(entry, "equipment", data.imageSmUrl || data.imageLgUrl || fallbackIcons.equipment, {
+  const art = artwork(data, fallbackIcons.equipment);
+  return baseDocument(entry, "equipment", art.img, {
     ...provenance(entry, data.description),
     category: String(data.type ?? ""),
     subType: String(data.subType ?? ""),
@@ -392,7 +413,7 @@ function buildEquipment(entry) {
     craftingType: String(data.craftingType ?? ""),
     quantity: 1,
     equipped: false,
-  });
+  }, art.remoteImage);
 }
 
 function buildMonsterAbility(entry) {
@@ -456,10 +477,10 @@ function buildMonster(entry, monsterAbilityByStableId) {
     .map((stableId) => monsterAbilityByStableId.get(stableId))
     .filter(Boolean)
     .map((document) => embeddedAbility(entry.stable_id, document));
-  const img = data.imageSmUrl || data.imageLgUrl || fallbackIcons.monster;
+  const art = artwork(data, fallbackIcons.monster);
 
   return {
-    ...baseDocument(entry, "monster", img, {
+    ...baseDocument(entry, "monster", art.img, {
       hp: { value: hp, max: hp, temp: 0, maxBonus: 0 },
       mana: { value: mana, max: mana, temp: 0, maxBonus: 0 },
       ap: { value: ap, max: ap, temp: 0, bonus: 0 },
@@ -518,13 +539,13 @@ function buildMonster(entry, monsterAbilityByStableId) {
         rulebookVersion: entry.rulebook_version,
         relationships: entry.relationships,
       },
-    }),
+    }, art.remoteImage),
     items: embedded,
     prototypeToken: {
       name: entry.name,
       displayName: 20,
       disposition: -1,
-      texture: { src: img },
+      texture: { src: art.img },
       actorLink: false,
     },
   };
@@ -584,11 +605,24 @@ for (const file of await readdir(OUTPUT)) {
     await rm(path.join(OUTPUT, file));
   }
 }
+// Packs this build does not own are carried over rather than dropped.
+//
+// Three packs — materials, mods and the crafting guide — are not produced by
+// this tool at all. Rebuilding used to write a fresh index containing only
+// what it had just generated, so running the documented command silently
+// removed them from the index and the runtime stopped seeding 551 documents.
+let previousIndex = {};
+try {
+  previousIndex = JSON.parse(await readFile(path.join(OUTPUT, "compendium-index.json"), "utf8"));
+} catch {
+  previousIndex = {};   // A first build has nothing to preserve.
+}
+
 const contentIndex = {
   schema_version: 1,
   rulebook_version: snapshot.rulebook_version,
   generated_from: path.relative(ROOT, SOURCE),
-  packs: {},
+  packs: { ...(previousIndex.packs ?? {}) },
 };
 for (const [category, config] of Object.entries(PACKS)) {
   const documents = grouped[category].sort((a, b) => a.name.localeCompare(b.name));

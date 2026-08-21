@@ -3,7 +3,7 @@
     "_id": "a104f391a2401fd0",
     "name": "Axe (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/7cad43b9-a030-4818-91c6-cf9f6025cf0f-tomahawk.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Wild Swing:</strong> When attacking a target, you still deal 4 (Light Attack) or 8 (Heavy/Precise Attack) damage if the attack misses. This is reduced by guard (to a minimum of 1). On damage effects do not trigger from this damage.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Reinforced Langet (10 points): </strong>This weapon cannot be disarmed.</li><li><strong>Bearded Extension (20 points): </strong>Wild Swing now ignores guard, but the damage is reduced to 2 (light attack) or 4 (heavy attack).</li><li><strong>Rotational Stability (35 points):</strong> If a target moves away from you when you attack with this weapon and your next attack this turn is a throwing attack using this weapon against that target, that attack gains lock on.</li></ul></li><li><i>B mods:</i><ul><li><strong>Boomerang Wing (25 points):</strong> After using a throwing attack with this weapon, you can return the weapon to your hand for 0 RP.</li><li><strong>Lancebreaker (80 points): </strong>You gain a +2 Lancebreaker Power bonus against enemies wielding polearms or lances.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -33,7 +33,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7d452c6e25a3b48eff40ac44170a378f1449c91983b3df83500f07a607b1f96a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/7cad43b9-a030-4818-91c6-cf9f6025cf0f-tomahawk.lg.webp"
       }
     }
   },
@@ -41,7 +42,7 @@
     "_id": "fe40c10d57439858",
     "name": "Axe (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/9f964f09-6b03-4357-8c9f-c80e14c0cca4-Labrys.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Wild Swing:</strong> When attacking a target, you still deal 4 (Light Attack) or 8 (Heavy/Precise Attack) damage if the attack misses. This is reduced by guard (to a minimum of 1). On damage effects do not trigger from this damage.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Reinforced Langet (10 points): </strong>This weapon cannot be disarmed.</li><li><strong>Bearded Extension (20 points): </strong>Wild Swing now ignores guard, but the damage is reduced to 2 (light attack) or 4 (heavy attack).</li><li><strong>Rotational Stability (35 points):</strong> If a target moves away from you when you attack with this weapon and your next attack this turn is a throwing attack using this weapon against that target, that attack gains lock on.</li></ul></li><li><i>B mods:</i><ul><li><strong>Boomerang Wing (25 points):</strong> After using a throwing attack with this weapon, you can return the weapon to your hand for 0 RP.</li><li><strong>Lancebreaker (80 points): </strong>You gain a +2 Lancebreaker Power bonus against enemies wielding polearms or lances.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -71,7 +72,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "66b1d4e0ef00a2e7ffb0c61f74ed41658457b001363e002b16b28f45b2b40b5a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9f964f09-6b03-4357-8c9f-c80e14c0cca4-Labrys.lg.webp"
       }
     }
   },
@@ -79,7 +81,7 @@
     "_id": "cbdc428ae40aff21",
     "name": "Bludgeoning Weapon (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/c49bbe27-abfc-456e-937a-103e4f398567-Bludgeoning.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>&nbsp;<strong>Hollow Blow:</strong> When attacking and hitting a target, you deal additional damage if they Block. This damage is 2 on a Light/Precise attack or 4 on a Heavy attack.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Flexible Handle (10 points):</strong> When dealing damage to a target, the minimum damage you deal is always 2. (this does not trigger on damage effects if damage would be 0 otherwise).</li><li><strong>Chain Flail (35 points): </strong>Cannot be defended against by 0 RP actions.&nbsp;Attacks made with this weapon do not count as consuming 0 RP actions.</li></ul></li><li><i>B mods:</i><ul><li><strong>Weighted Poll Upsetting (25 points):</strong> When making 3 separate attacks against a target, the third attack you make with “Weighted Poll Upsetting” knocks the target back 10ft on damage.</li><li><strong>Flanged Head (50 points):</strong> When you crit with this weapon, the damage is still maximized even against blocking targets.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -109,7 +111,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "62f6683c157b83184b856b697a2fefdde121614c1adc433710d3cc507515ad2c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/c49bbe27-abfc-456e-937a-103e4f398567-Bludgeoning.lg.webp"
       }
     }
   },
@@ -117,7 +120,7 @@
     "_id": "e73ebc71acbd3851",
     "name": "Bludgeoning Weapon (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/812c8d5c-a8c4-4d7b-8f50-7e63391b6375-Bludgeoning Heavy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>&nbsp;<strong>Hollow Blow:</strong> When attacking and hitting a target, you deal additional damage if they Block. This damage is 2 on a Light/Precise attack or 4 on a Heavy attack.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Flexible Handle (10 points):</strong> When dealing damage to a target, the minimum damage you deal is always 2. (this does not trigger on damage effects if damage would be 0 otherwise).</li><li><strong>Chain Flail (35 points): </strong>Cannot be defended against by 0 RP actions.&nbsp;Attacks made with this weapon do not count as consuming 0 RP actions.</li></ul></li><li><i>B mods:</i><ul><li><strong>Weighted Poll Upsetting (25 points):</strong> When making 3 separate attacks against a target, the third attack you make with “Weighted Poll Upsetting” knocks the target back 10ft on damage.</li><li><strong>Flanged Head (50 points):</strong> When you crit with this weapon, the damage is still maximized even against blocking targets.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -147,7 +150,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "547b655313adf8e3dcb841f72802a8a848202945733e05d344caa5fbf873c24f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/812c8d5c-a8c4-4d7b-8f50-7e63391b6375-Bludgeoning Heavy.lg.webp"
       }
     }
   },
@@ -155,7 +159,7 @@
     "_id": "56afe17cda2bb279",
     "name": "Bow (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/220d268c-920a-4f10-9877-bc200eb39834-Bow.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>High Ground</strong>: If fired against a target who is at least 10ft lower than you are, you may treat the attack as coming from the sky and calculate any low cover as if the attack originated from above the target.</p><p>Range: 240ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Recurve (20 points):</strong> Range increased by 60ft.</li></ul></li><li><i>B mods:</i><ul><li><strong>Shortbow (25 points):</strong> Range reduced to 120ft but when making a basic&nbsp; light attack, you can make a second light attack for 0 AP once per turn. This counts as your dual wield attack.</li><li><strong>Bodkin Arrows (25 points):</strong> Grants Hollow Blow: When attacking and hitting a target, you deal additional damage if they Block. This damage is 2 on a Light/Precise attack or 4 on a Heavy attack.</li><li><strong>Broadhead Arrows (50 points): </strong>Deals +1 damage against light armor or unarmored targets.</li><li><strong>Blunthead Arrows (80 points):</strong> First basic heavy attack per round dazes targets on damage.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -185,7 +189,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0fa168010ab279818e2bd1a0ec435d1a9ab1430e206c225f20b5e816adeab810",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/220d268c-920a-4f10-9877-bc200eb39834-Bow.lg.webp"
       }
     }
   },
@@ -193,7 +198,7 @@
     "_id": "3238097f3e3b835d",
     "name": "Crossbow (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/ebf79cd1-84aa-4a26-9f08-ad89ca0e019b-1H Crossbow - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Armor Pierce:</strong> Treats the enemy's Guard as if it was 1 lower if within 30ft of the target.</p><p>Range: 60ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Wrist-mounted (35 points):</strong> One handed crossbow only, range lowered to 30ft. Is mounted on your wrist and is always considered drawn + can hold a weapon in that hand.</li><li><strong>Windlass Arbalest (35 points):</strong> Two handed crossbow only. Basic attacks with this weapon gain full pierce within 30 ft.&nbsp;However must be reloaded for 2 AP or 1 RP before it can be used again.</li></ul></li><li><i>B mods:</i><ul><li><strong>Extended Draw (50 points):</strong> Your armor piercing effect range is increased to 60ft. If combined with a wrist mounted crossbow, increases the range but not the armor piercing range to 60ft.</li><li><strong>Repeater (80 points):</strong> When you make 3 attacks with this weapon in 1 turn, you may make an additional light attack.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -223,7 +228,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6a38312ed82e46edd850af677fb12a4bdddecce10d685fc7a8ecc4aab5a20059",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/ebf79cd1-84aa-4a26-9f08-ad89ca0e019b-1H Crossbow - Copy.lg.webp"
       }
     }
   },
@@ -231,7 +237,7 @@
     "_id": "0e1994f02f7d9caa",
     "name": "Crossbow (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/639dbd3c-4366-447e-8eeb-58a080868366-2H Crossbow - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Armor Pierce:</strong> Treats the enemy's Guard as if it was 2 lower if within 30ft of the target.</p><p>Range: 120ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Wrist-mounted (35 points):</strong> One handed crossbow only, range lowered to 30ft. Is mounted on your wrist and is always considered drawn + can hold a weapon in that hand.</li><li><strong>Windlass Arbalest (35 points):</strong> Two handed crossbow only. Basic attacks with this weapon gain full pierce within 30 ft.&nbsp;However after every attack (even without the benefit), it must be reloaded for 2 AP or 1 RP before it can be used again. This attack has the augment keyword when it gains full pierce.</li></ul></li><li><i>B mods:</i><ul><li><strong>Extended Draw (50 points):</strong> Your armor piercing (and arbalest full pierce) effect range is increased to 60ft.</li><li><strong>Repeater (80 points):</strong> When you make 3 attacks with this weapon in 1 turn, you may make an additional light attack.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -261,7 +267,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ed69b028bcb353902e12fb45e3b0258fd603dd85f8338fb5f469a3467f480fd6",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/639dbd3c-4366-447e-8eeb-58a080868366-2H Crossbow - Copy.lg.webp"
       }
     }
   },
@@ -269,7 +276,7 @@
     "_id": "30bdd0f770192c44",
     "name": "Dueling Weapon (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/0a28dbf1-cc9b-4e24-9579-f03e46f4679f-DuelingWeapon.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Dueling:</strong> When attacking a single enemy during a turn at least 3 times with this weapon, your next Dodge or Block against that enemy costs 0 RP until the start of your next turn. This property cannot be used if you target any other enemy during your turn or if you spend AP making a Heavy attack against the target.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Spade Lunga (10 points):</strong> When moving at least 40ft towards an enemy, increases the range of your next attack made with this weapon by 5 ft.</li><li><strong>Ornate Blade (35 points): </strong>Moving into the target’s threatened zone the first time in a turn counts as 1 attack for the requirement to activate Dueling.</li></ul></li><li><i>B mods:</i><ul><li><strong>Paired Duelers (25 points):</strong> When wielding two dueling weapons with paired duelers, your offhand extra attack counts as one attack for your dueling bonus on your main hand weapon.</li><li><strong>Passato Sotto (80 points):</strong> You may make 1 Heavy attack with this weapon and still gain the dueling effect.</li><li><strong>Ferrobri Grip (80 points):</strong> &nbsp;Dueling weapon passive changes to Aggressive Dueling: When attacking a single enemy 3 times with this weapon in 1 turn, your next basic attack with this weapon this turn has its cost reduced by 1 AP. Once per round.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -299,7 +306,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6a0b052d4cc0c37f8bb622ff3a87d85a7bbb4d625fb0394d995247b755a5427c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/0a28dbf1-cc9b-4e24-9579-f03e46f4679f-DuelingWeapon.lg.webp"
       }
     }
   },
@@ -307,7 +315,7 @@
     "_id": "3d220545e77f7b89",
     "name": "Gauntlets (One-handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/7b02ceb3-5d18-475e-a470-5f82f273ffcf-Claw.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Unarmed Combat:</strong> Attacks with this weapon count as unarmed attacks for the purposes of Unarmed Strike. If you are proficient in unarmed attacks, you are automatically proficient in this weapon. Otherwise, you are never proficient in this weapon.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Simple Design (10 points):</strong> You are considered proficient with these even if you normally would not be.</li><li><strong>Red Gauntlets (20 points):</strong> For every AP spent on basic movement, you gain +2 damage to your next attack with this weapon (up to a maximum of +4 dmg).</li><li><strong>Grip Design (20 points):</strong> You may wield a Two-Handed weapon with the hand this gauntlet is on. Any other actions that require a free hand normally such as grabbing a potion not doable.</li><li><strong>Martial Mastery (35 points): </strong>You may have your attacks deal Elemental damage instead of physical based on your mastered classes. Bajiquan for Fire, Monk for Water, Sky Talon for Wind and Still Stone for Earth, Transcendent Lightning for Lightning, Five Harmonies for Holy, Black Oath for Dark.</li></ul></li><li><i>B mods:</i><ul><li><strong>Brown Gauntlets (25 points):</strong> While wearing this item, you gain a +4 Shield bonus to your block. This stacks with Still Stone Style's Shielding Fist, but not with other shields.</li><li><strong>Wrist Claw (50 points):</strong> While wearing this item, you may still hold an item in that hand as if it was empty.</li><li><strong>Katar (50 points):</strong> Grants Nimble. Nimble: After attacking an enemy with a light attack on your turn, you may move 5ft. This movement only provokes attacks of opportunity if that movement would put you out of melee range of the target.</li><li><strong>Black Gauntlets (80 points):</strong> When dealing damage with this weapon, you may take true damage equal to the damage dice (ie 6 on a d6) to maximize the damage of one die.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -337,7 +345,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a80fedbca634fe804bf199843e1b5bab18ddaed312c55dcc07f462148e17525c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/7b02ceb3-5d18-475e-a470-5f82f273ffcf-Claw.lg.webp"
       }
     }
   },
@@ -345,7 +354,7 @@
     "_id": "087145a39429d3ab",
     "name": "Ghostblade",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/e2e8b69a-33cf-421e-ab8a-08f2bbdd45fc-Ghost Blade - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Current Wielder:&nbsp;</strong>Unknown</p><p>A weapon that mimics the movement and attacks of ghostly creatures.</p><p>&nbsp;</p><p><strong>Level 1:</strong><br>For your first 20ft of movement during a turn, you become Ethereal. You do not provoke attacks of opportunity and may move through solid objects.</p><p>&nbsp;</p><p><strong>Level 2:</strong><br>Once per arc, you may use Soul Pierce</p><p>&nbsp;</p><p><strong>Soul Pierce</strong><br><strong>Cost:&nbsp;</strong>2 AP<br><strong>Keywords:&nbsp;</strong>Sure Hit, Full Pierce<br><strong>Range:&nbsp;</strong>Melee Weapon Range<br><strong>Requirement:&nbsp;</strong>-<br><strong>Description:&nbsp;</strong><br>You may make a Precise attack against the target that deals maximum Heavy damage and lowers the target’s mana by 5. If the target has 0 or less mana after this, they take an additional maximum Heavy damage.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -375,7 +384,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cffa79237dcd3f2d0db538585a4c9d8832c43935bc0328be363f47e40edfafbe",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/e2e8b69a-33cf-421e-ab8a-08f2bbdd45fc-Ghost Blade - Copy.lg.webp"
       }
     }
   },
@@ -383,7 +393,7 @@
     "_id": "0270518554e63798",
     "name": "Giant Scissors (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/6345b726-ad8d-4dfd-9430-8bb6f7a29c57-Combat_Scissors_-_Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>Giant Scissors are used by Foragers in their activities. &nbsp;With proficiency, they count as a 2h weapon that can be used as a foraging tool.<br><br><strong>Shearing:</strong> You deal +1 damage against unarmored targets.&nbsp;</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Elegant Executioner (35 points):</strong> Reduces Vivisect AP cost by 1.</li><li><strong>Diamond Tip (35 points): </strong>Shearing now always deals +1 damage regardless of armor.</li></ul></li><li><i>B mods:</i><ul><li><strong>Executioner's Blade (50 points):</strong> Heavy basic attacks strike an adjacent target in range with a light attack. Once per round.</li><li><strong>Separation (80 points): </strong>You can separate the Giant Scissors into two pieces for 0 AP (Quick), allowing you to dual wield them.&nbsp;You can use Separation again to put them back together.&nbsp;The passive changes from Shearing to Shearing Flurry which instead grants +1 accuracy to unarmored targets.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -413,7 +423,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1ecef23870019481f24e53b777b722db6d86b9fb017126714e213c2d7c153458",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/6345b726-ad8d-4dfd-9430-8bb6f7a29c57-Combat_Scissors_-_Copy.lg.webp"
       }
     }
   },
@@ -421,7 +432,7 @@
     "_id": "0799e69dbccd78e4",
     "name": "Heavy Blade (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f305e5f9-fd38-4fcc-a5cf-a972d86ef234-Greatsword.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Overpower:</strong> When you land a critical hit with a Heavy Blade, you deal an additional 1d4 damage if it was a light attack or precise attack and an additional 1d12 damage if it was a heavy attack. This extra damage is not automatically maximized from rolling a critical hit, but you keep the extra damage even if the target blocked the critical hit.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Overwhelming Edge (20 points):</strong> You cannot be disarmed or parried.</li><li><strong>Wide Blade (35 points): </strong>When you are wielding this in two hands and don’t make an attack with this weapon on your turn you can grant yourself or an adjacent ally low cover against ranged attacks for 0 RP until the start of your next turn. Can only use this once per round.</li></ul></li><li><i>B mods:</i><ul><li><strong>Quakemaker (25 points):</strong> Critical hits render the target prone regardless of if they hit or not.</li><li><strong>Gutsy Blade (50 points): </strong>The crit threshold of this weapon is lowered by 5, but you no longer maximize damage dice or gain full pierce on a crit.</li><li><strong>Executioner's Blade (50 points):</strong> Heavy basic attacks strike an adjacent target in range with a light attack. Once per round.</li><li><strong>Unreasonable Mass (80 points):</strong> Heavy attacks gain 1 additional dice in damage (5d6-&gt;6d6) but suffer -1 accuracy on all attacks.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -451,7 +462,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "4504665e95f10613043eb28cbacbd267ce1090d4d4d8adc1a039bc0e7edded1d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f305e5f9-fd38-4fcc-a5cf-a972d86ef234-Greatsword.lg.webp"
       }
     }
   },
@@ -459,7 +471,7 @@
     "_id": "1b983b82c1c48d04",
     "name": "Hori",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/ec27f050-5c1d-4d35-a414-2b2f3d6bcb07-Hori.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>Hori knives are used by Foragers in their activities. &nbsp;With proficiency, they count as small weapons that can be used as a foraging tool.</p><p><br><strong>Hidden Weapon:</strong> You may draw this weapon for 0 AP. Each combat, after you draw the weapon if the next attack you make that round is using this weapon and is a basic Light or Heavy attack, it gains the Trick Attack keyword. After benefiting from this bonus, you cannot do so again the same combat even if drawing a different weapon with this ability.</p><h4><br>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Aerodynamic Design (10 points):</strong> Boomerang/Return effects cannot be used with this.&nbsp;For 1 RP you can throw the dagger, making a light ranged attack.&nbsp; On damage, the target is slowed until the end of its next turn.</li><li><strong>Compact Ergonomics (20 points):</strong> When your other hand is free and you take a movement action that costs RP, that movement range is increased by 5ft.&nbsp;</li><li><strong>Parrying Dagger (20 points):</strong> If you don’t use this weapon to make an attack during your turn, you gain a +4 bonus to your Block until the start of your next turn. You also gain a +4 bonus to your ‘damage’ roll when using the Parry ability.</li><li><strong>Flat Pommel (35 points):</strong> When your other hand is free, you use your free hand to push the target into targets increasing melee heavy attack damage to 5d6.</li></ul></li><li><i>B mods:</i><ul><li><strong>Poisoner Weapon (25 points):</strong> Applying poison to this weapon costs -1 AP (min 0).</li><li><strong>Butterfly Knife (50 points):</strong> Your first light attack each round with this weapon gains Trick Attack, but it can no longer make Heavy attacks.</li><li><strong>Ring Pommel (50 points):</strong> If you make a heavy attack that the target defends against, you do not trigger attacks of opportunity from them until the start of your next turn.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -489,7 +501,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7bc02a4a09922faa1f1f312816c6e5ba085f7f345a988e3cbe5d332fd3a99f98",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/ec27f050-5c1d-4d35-a414-2b2f3d6bcb07-Hori.lg.webp"
       }
     }
   },
@@ -497,7 +510,7 @@
     "_id": "bbf53bdda9b73b2e",
     "name": "Katana (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/35ec8673-a836-42af-a5bf-37755e0a2ed9-Katana.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Keen:</strong> You score a critical hit on a 19 or 20.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Mastercrafted Saya (20 points): </strong>The first single target attack made with this weapon per combat also draws the weapon simultaneously.&nbsp; This first attack has its crit threshold lowered by 1.</li><li><strong>Sori Curve (20 points):</strong> When you roll a 1 on an accuracy roll, you can reroll the attack. Your target(s) can make an opportunity attack, even with a ranged weapon.&nbsp; This opportunity attack does not provoke other opportunity attacks.</li><li><strong>Beneri Special (35 points): </strong>Grants a +1/+1 Bonus, doesn’t stack with material bonuses.&nbsp;Weapon shatters, becoming irreparably broken on a 1 roll for an accuracy roll.</li></ul></li><li><i>B mods:</i><ul><li><strong>Equilibrium Forging (25 points):</strong> You do not roll damage on this weapon, but deal slightly higher than average damage. Instead it deals 6 damage on light attacks or 15 damage (1h) or 19 damage (2h).&nbsp;Critical strikes apply maximum damage as normal.</li><li><strong>Hamon Line (50 points): </strong>Grants Keen II lowers the crit threshold by 2 (replaces Keen).</li><li><strong>Swallow's Edge (80 points):</strong> The crit threshold decreases by 1 for each attack made this turn with a Swallow’s Edge weapon.&nbsp;This bonus resets if you land a critical hit. If both your mainhand and offhand weapon have this mod, the effect aplies to both weapons at the same time.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -527,7 +540,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "be7ffbaa65eff077fb505e851a6f6225349f6d022d2e5f6edf64a196c16940f5",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/35ec8673-a836-42af-a5bf-37755e0a2ed9-Katana.lg.webp"
       }
     }
   },
@@ -535,7 +549,7 @@
     "_id": "edbd4e4b1de312a1",
     "name": "Katana (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/26afe7c2-44cf-4b44-ad6e-e477328a4938-Katana Heavy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Keen:</strong> You score a critical hit on a 19 or 20.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Mastercrafted Saya (20 points): </strong>The first single target attack made with this weapon per combat also draws the weapon simultaneously.&nbsp; This first attack has its crit threshold lowered by 1.</li><li><strong>Sori Curve (20 points):</strong> When you roll a 1 on an accuracy roll, you can reroll the attack. Your target(s) can make an opportunity attack, even with a ranged weapon.&nbsp; This opportunity attack does not provoke other opportunity attacks.</li><li><strong>Beneri Special (35 points): </strong>Grants a +1/+1 Bonus, doesn’t stack with material bonuses.&nbsp;Weapon shatters, becoming irreparably broken on a 1 roll for an accuracy roll.</li></ul></li><li><i>B mods:</i><ul><li><strong>Equilibrium Forging (25 points):</strong> You do not roll damage on this weapon, but deal slightly higher than average damage. Instead it deals 6 damage on light attacks or 15 damage (1h) or 19 damage (2h).&nbsp;Critical strikes apply maximum damage as normal.</li><li><strong>Hamon Line (50 points): </strong>Grants Keen II lowers the crit threshold by 2 (replaces Keen).</li><li><strong>Swallow's Edge (80 points):</strong> The crit threshold decreases by 1 for each attack made this turn with a Swallow’s Edge weapon.&nbsp;This bonus resets if you land a critical hit. If both your mainhand and offhand weapon have this mod, the effect aplies to both weapons at the same time.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -565,7 +579,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "10a933438dc301d3a63dd684fe67acf1e5bbe1a436d0ec748820d82ecfed1b33",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/26afe7c2-44cf-4b44-ad6e-e477328a4938-Katana Heavy.lg.webp"
       }
     }
   },
@@ -573,7 +588,7 @@
     "_id": "fbd69acd3bae69f3",
     "name": "Lance (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/0fdfbd6f-fd2d-4828-a46d-bbc6efe1fcd2-Lance.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Charger Weapon:</strong> Can only be used while mounted. Counts as a polearm weapon and has all the same properties of one. Your first attack made with this weapon type after moving at least 20ft deal maximum damage instead of rolling.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Crown Tip (10 points):</strong> The first basic attack per round made immediately after moving 50ft or more, dismounts mounted targets on damage.</li><li><strong>Demi-Lance (20 points): </strong>Can be used while dismounted as a normal spear, but loses its movement max damage bonus unless mounted.</li></ul></li><li><i>B mods:</i><ul><li><strong>Justice Lance (50 points):</strong> Your movement speed is capped at 25ft while this is in your burden. This weapon has an additional 5ft range and a 15ft threaten range.</li><li><strong>Shield Lance (80 points):</strong> When spending at least 3 AP to move in one turn, your next basic defense before the start of your next turn costs 1 less RP.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -603,7 +618,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0a2763c1890ec5bb5b0b715d7d3d5f6546cd70b31a307cf2d1109d01f81bf22e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/0fdfbd6f-fd2d-4828-a46d-bbc6efe1fcd2-Lance.lg.webp"
       }
     }
   },
@@ -611,7 +627,7 @@
     "_id": "18457f879e2e0a31",
     "name": "Light Sword (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/5daa38b4-3f68-4410-90c3-97efa2f1811f-Light Sword - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>&nbsp;<strong>Nimble</strong>: After attacking an enemy with a light attack on your turn, you may move 5ft. This movement&nbsp;<strong>only&nbsp;</strong>provokes attacks of opportunity if that movement would put you out of melee range of the target.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Single Edge (20 points): </strong>Nimble instead becomes Nimble Rotation. After attacking you can no longer move away from the enemy, but you can sidestep to anywhere adjacent to the enemy taking the most direct path possible when making a melee attack.&nbsp;This cannot be used if the target is reduced to 0 HP from the attack.</li><li><strong>Heroic Emblem (20 points):</strong> Grants a +1 power or +1 focus bonus, but cannot gain the benefits from base material bonuses.&nbsp;This bonus is actually 100% from hype.</li><li><strong>Fullering Groves (35 points):</strong> Gives Nimble II. After attacking an enemy with a light attack on your turn, you may move 10ft.&nbsp; This movement only provokes attacks of opportunity if that movement would put you out of melee range of the target.</li></ul></li><li><i>B mods:</i><ul><li><strong>Extended Quillons (25 points): &nbsp;</strong>Grants +1 to guard when out of RP.</li><li><strong>Weighted Edge (25 points):</strong> You may use Nimble (and Nimble II or Nimble Rotation etc if you have those instead) even after making a Heavy or Precise attack.</li><li><strong>Gladius Edge (50 points):</strong> When you are struck by a critical hit and you do not defend against it, you can make a 0 RP opportunity attack before the triggering attack.&nbsp;You can spend 1 RP to instead make it a heavy attack.</li><li><strong>Axebreaker (80 points): </strong>You gain a +2 Axebreaker Power bonus against enemies wielding axes.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -641,7 +657,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f17375bcdf3d6cab645814126e091ccf1cfe10e11231bbea1be9b0feff62ab8f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5daa38b4-3f68-4410-90c3-97efa2f1811f-Light Sword - Copy.lg.webp"
       }
     }
   },
@@ -649,7 +666,7 @@
     "_id": "f7a5a5c3f77b9701",
     "name": "Longsword (One-Handed/Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/609485cd-8f67-43e1-8e40-47c485acf5e8-Longsword.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Versatile:</strong> At the start of your turn, before you make any attacks you may choose to treat this as either a One-Handed weapon or a Two-Handed weapon. When using a longsword as a One-Handed weapon and no other weapon or shield, you may treat the longsword as a shield as well. When using it as a Two-Handed Weapon, you deal an additional 1d4 damage on a critical hit. This extra damage is not automatically maximized from rolling a critical hit, but you keep the extra damage even if the target blocked the critical hit.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Catch Pommel (10 points):</strong> When using the Longsword with one hand, once per round you can extend the range of your attack by 5ft.</li><li><strong>War Sword (20 points):</strong> Your first basic attack made with this weapon after moving at least 20ft maximizes one damage dice of your choice instead of rolling.</li><li><strong>Bastard Sword (35 points):</strong> You gain a +1 Armorbreaker Power bonus against targets in Heavy armor or higher.</li></ul></li><li><i>B mods:</i><ul><li><strong>Extended Quillons (25 points):</strong> Grants +1 to guard when out of RP.</li><li><strong>Heavy Crossguard (25 points):</strong> You retain the Block bonus even while using the weapon with two hands, the block value increases by +4 when wielding with one hand and no other weapon or shield in your other hand.</li><li><strong>Lange Messer (50 points): </strong>Grants +1 to guard but increases burden by +1.</li><li><strong>Axebreaker (80 points):</strong> &nbsp;You gain a +2 Axebreaker Power bonus against targets wielding axes.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -679,7 +696,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1b2c2acd23cd1de8bb1ef83a544b39ebe006094c9538176b35070d1bd9ce316b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/609485cd-8f67-43e1-8e40-47c485acf5e8-Longsword.lg.webp"
       }
     }
   },
@@ -687,7 +705,7 @@
     "_id": "317bb3fd7055173a",
     "name": "Musket (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/d085bff4-565a-495c-ab68-a4606e289685-Musket - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Superior Armor Pierce:</strong> Treats the enemy’s Guard as if it was 1 lower.</p><p>Range: 120ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Range Finder (20 points): </strong>You add a range finder to the weapon. This does not increase its range, but does allow you to look through the lens for a +10 perception bonus against things further than 60ft away. In addition, you can tell how far objects are from you when doing this.</li><li><strong>Bayonet (35 points): </strong>You may make melee attacks with this weapon that deal Physical(Piercing) damage without provoking attacks of opportunity. These attacks don't do 2h melee damage.</li></ul></li><li><i>B mods:</i><ul><li><strong>Long Barrel (25 points):</strong> Your weapon gains 240ft range, but you don’t armor pierce when shooting at targets further than 120ft away.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -717,7 +735,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0d7bd9258cbcbfca1d1d70963876e5b58000d373734a1084c6fbb8f29bfa16b7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/d085bff4-565a-495c-ab68-a4606e289685-Musket - Copy.lg.webp"
       }
     }
   },
@@ -725,7 +744,7 @@
     "_id": "68de395fb403046a",
     "name": "Pickaxe (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/8a93e65a-ea51-454e-ad10-87f2cf660bfd-Pickaxe.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>Pickaxes are used by Miners in their activities. With proficiency, they are treated as a One-Handed axe that can be used as a miner's tool.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Reinforced Langet (10 points): </strong>This weapon cannot be disarmed.</li><li><strong>Bearded Extension (20 points): </strong>Wild Swing now ignores guard, but the damage is reduced to 2 (light attack) or 4 (heavy attack).</li><li><strong>Rotational Stability (35 points):</strong> If a target moves away from you when you attack with this weapon and your next attack this turn is a throwing attack using this weapon against that target, that attack gains lock on.</li></ul></li><li><i>B mods:</i><ul><li><strong>Boomerang Wing (25 points):</strong> After using a throwing attack with this weapon, you can return the weapon to your hand for 0 RP.</li><li><strong>Lancebreaker (80 points): </strong>You gain a +2 Lancebreaker Power bonus against enemies wielding polearms or lances.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -755,7 +774,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "83279ace923b27328d171f2547a1f9bd00137319d1c0aba5ba0524cbe9c7ed65",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/8a93e65a-ea51-454e-ad10-87f2cf660bfd-Pickaxe.lg.webp"
       }
     }
   },
@@ -763,7 +783,7 @@
     "_id": "b81767f2fbfb7f91",
     "name": "Pickaxe (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/7505e43c-ebc0-4820-a193-87a432a052cf-Pickaxe.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>Pickaxes are used by Miners in their activities. With proficiency, they are treated as a Two-Handed axe that can be used as a miner's tool.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Reinforced Langet (10 points): </strong>This weapon cannot be disarmed.</li><li><strong>Bearded Extension (20 points): </strong>Wild Swing now ignores guard, but the damage is reduced to 2 (light attack) or 4 (heavy attack).</li><li><strong>Rotational Stability (35 points):</strong> If a target moves away from you when you attack with this weapon and your next attack this turn is a throwing attack using this weapon against that target, that attack gains lock on.</li></ul></li><li><i>B mods:</i><ul><li><strong>Boomerang Wing (25 points):</strong> After using a throwing attack with this weapon, you can return the weapon to your hand for 0 RP.</li><li><strong>Lancebreaker (80 points): </strong>You gain a +2 Lancebreaker Power bonus against enemies wielding polearms or lances.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -793,7 +813,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a419262f534cb91622dce2bcf3c18ee8a4884fffb8ef059ccff13d7e3e7f78aa",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/7505e43c-ebc0-4820-a193-87a432a052cf-Pickaxe.lg.webp"
       }
     }
   },
@@ -801,7 +822,7 @@
     "_id": "8be5bbaa0b93caf8",
     "name": "Pistol (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/a15f6817-91f1-4e18-9b06-3d5f3326ebe6-Pistol.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Two-Handed Grip:</strong> You may sheath or draw this weapon for 0 AP once per turn. When you use two hands to make attacks with this weapon, you get a +1 (Light or Heavy attack) or +2 (Precise attack) bonus to your accuracy roll.</p><p><strong>Range:</strong> 60ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Blast Diverter (10 points):</strong> Once per turn, attacks from this weapon cause the target to only be able to make heavy attacks of opportunity&nbsp; against you until the end of your turn.</li><li><strong>Double Action (35 points):</strong> Accuracy is reduced by 3, but attacks with this weapon reduce the target’s ranged accuracy by 1 (stacking) until the start of your next turn regardless of if they hit or not.&nbsp; Doesn’t affect boss enemies.</li></ul></li><li><i>B mods:</i><ul><li><strong>Match Barrel (50 points):</strong> The range of this weapon is increased by 60ft.</li><li><strong>Beavertail Grip (50 points):</strong> When making a light attack at a target you can move 10ft in a straight line towards them.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -831,7 +852,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "17f4163b6ee28a6d0c96bdf8de0d1736407237af708b4e5d258963ff12da7d14",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/a15f6817-91f1-4e18-9b06-3d5f3326ebe6-Pistol.lg.webp"
       }
     }
   },
@@ -839,7 +861,7 @@
     "_id": "b5bbcc3d4a872636",
     "name": "Polaris Pair",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/1f8224ca-25a6-4478-bdb0-5e081d3cadc5-Polaris Pair.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><i>A pair of blue shortswords that are always calling out to each other.</i></p><p>While the wielder has one of the weapons in their hand, they may summon the other weapon at no cost, regardless of distance. Both swords are treated as Light Swords.</p><p>If the dual wield offhand attack made with this weapon is made against a target that was previously attacked by the main hand attack, the attack gains Lock-on.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -869,7 +891,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f0cfdc6cee7e1837ed07e990172e7c2a7010e474d15aae18d9ef2fba43821348",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/1f8224ca-25a6-4478-bdb0-5e081d3cadc5-Polaris Pair.lg.webp"
       }
     }
   },
@@ -877,7 +900,7 @@
     "_id": "1d97d2455d7e5623",
     "name": "Polearm (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/75abbadf-2439-4378-afb9-ba87cd20284c-Trident.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Polearm:</strong> You gain +5ft range on your weapon attacks and your threatened range becomes 5-10ft.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Heavy Broadhead (10 points):</strong> Increases thrown power by 2 but boomerang/returning effects no longer work.</li><li><strong>Shepherd's Lanza (20 points):</strong> Fall damage is reduced by 60ft while wielding.</li><li><strong>Halberd (35 points): </strong>This weapon also gains the axe passive (Wild Swing).</li></ul></li><li><i>B mods:</i><ul><li><strong>Winged Lugs (25 points):</strong> Increase guard by 1 and Block by 2 and reduce evasion by 1 while wielding.</li><li><strong>Fullpike (25 points):</strong> Polearm weapon passive changes to +10ft and your threatened range becomes 5-15 ft. Having this item in your burden reduces your max RP by 1.</li><li><strong>Yari Point Taper (50 points):</strong> After making a basic heavy attack, strike another target immediately behind the first with a light attack.</li><li><strong>Swordbreaker (80 points):</strong> &nbsp;You gain a +2 Swordbreaker Power bonus against targets wielding light blades and heavy blades.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -907,7 +930,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "fb5cfe9c73d5915f41995b0bad733d19ff8a6d1f87c78211ef224680bed0777a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/75abbadf-2439-4378-afb9-ba87cd20284c-Trident.lg.webp"
       }
     }
   },
@@ -915,7 +939,7 @@
     "_id": "c2d74f6e47c05087",
     "name": "Polearm (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/002cec00-cd3e-45c9-91f7-c19ee76fc9e3-Halberd.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Polearm:</strong> You gain +5ft range on your weapon attacks and your threatened range becomes 5-10ft.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Heavy Broadhead (10 points):</strong> Increases thrown power by 2 but boomerang/returning effects no longer work.</li><li><strong>Shepherd's Lanza (20 points):</strong> Fall damage is reduced by 60ft while wielding.</li><li><strong>Halberd (35 points): </strong>This weapon also gains the axe passive (Wild Swing).</li></ul></li><li><i>B mods:</i><ul><li><strong>Winged Lugs (25 points):</strong> Increase guard by 1 and Block by 2 and reduce evasion by 1 while wielding.</li><li><strong>Fullpike (25 points):</strong> Polearm weapon passive changes to +10ft and your threatened range becomes 5-15 ft. Having this item in your burden reduces your max RP by 1.</li><li><strong>Yari Point Taper (50 points):</strong> After making a basic heavy attack, strike another target immediately behind the first with a light attack.</li><li><strong>Swordbreaker (80 points):</strong> &nbsp;You gain a +2 Swordbreaker Power bonus against targets wielding light blades and heavy blades.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -945,7 +969,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "a0fdaa6b28d4714e227c5e0946a38518e5d1fe1257bcbc449db3e7699a68abb7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/002cec00-cd3e-45c9-91f7-c19ee76fc9e3-Halberd.lg.webp"
       }
     }
   },
@@ -953,7 +978,7 @@
     "_id": "3eb2f1830064c288",
     "name": "Saboteur Thread Daggers (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/0cfdc271-a138-4b40-8795-b8756198cd6f-Thread Dagger - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Wired Weapon:</strong> You may draw or sheath this weapon for 0 AP once per turn. You may throw this weapon up to 30ft as if it was a throwing weapon. You may recall the weapon after throwing it for 0 AP.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Compact Ergonomics (20 points):</strong> When your other hand is free and you take a movement action that costs RP, that movement range is increased by 5ft.&nbsp;</li><li><strong>Parrying Dagger (20 points):</strong> If you don’t use this weapon to make an attack during your turn, you gain a +4 Shield bonus to your Block until the start of your next turn. You also gain a +4 bonus to your ‘damage’ roll when using the Parry ability.</li><li><strong>Flat Pommel (35 points):</strong> When your other hand is free, you use your free hand to push the target into targets increasing melee heavy attack damage to 5d6.</li></ul></li><li><i>B mods:</i><ul><li><strong>Poisoner Weapon (25 points):</strong> Applying poison to this weapon costs -1 AP (min 0).</li><li><strong>Butterfly Knife (50 points):</strong> Your first light attack each round with this weapon gains Trick Attack, but it can no longer make Heavy attacks.</li><li><strong>Ring Pommel (50 points):</strong> If you make a heavy attack that the target defends against, you do not trigger attacks of opportunity from them until the start of your next turn.</li><li><strong>Rappel (80 points):</strong> After you deal damage with a thrown attack with this weapon, you may move up to 30ft towards the target. Can only be done once per round.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -983,7 +1008,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "ab469fb1b2fd98eea7d94cc4ab134a0f4f13a44a6283e9ff8edb7fc21cb8a6d9",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/0cfdc271-a138-4b40-8795-b8756198cd6f-Thread Dagger - Copy.lg.webp"
       }
     }
   },
@@ -991,7 +1017,7 @@
     "_id": "3e72c00774af032b",
     "name": "Scythe (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/4a4df63a-ad7e-4577-b7de-6251ef40ac0b-Scythe.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Sweeping Arc:</strong> Once per round, when you make a Heavy attack against a target, you may make a Light attack against a different enemy within your range.</p><h4>Mods:</h4><ul><li><i>A mods:</i><ul><li><strong>Spinning Dance (20 points):</strong> You may move 5ft after making your Heavy attack, but before making your Sweeping Arc attack.</li><li><strong>Long Haft (35 points): </strong>You gain +5ft range on your weapon attacks and your threatened range becomes 10ft.</li></ul></li><li><i>B mods:</i><ul><li><strong>Rapid Spins (50 points):</strong> Your Sweeping Arc can now be used two times per round.</li><li><strong>Focused Spin (50 points): </strong>Your Sweeping Arc now instead targets the same creature as the target of your Heavy attack.</li><li><strong>Full Spin (80 points):</strong> Your sweeping arc can now target all creatures within 5ft of you.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1021,7 +1047,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "5317982fe142e0e977bda13d2e0a036ed722a8e49f0302436e74bd3529c3a86f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/4a4df63a-ad7e-4577-b7de-6251ef40ac0b-Scythe.lg.webp"
       }
     }
   },
@@ -1029,7 +1056,7 @@
     "_id": "a03173a2a23d750f",
     "name": "Set of Missiles (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/23d2531a-d1a6-4ac1-8ab6-e2d708ccec81-MIssiles.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Stealthy Throwing: </strong>You draw one instance of this weapon at the start of making an attack (the rest remain on your equipment). Making an attack while stealthed with this weapon does not break your stealth.</p><p>Range: 30ft</p><h4>Mods:</h4><ul><li><i>A mods:</i><ul><li><strong>Featherflight (35 points):</strong> Range is increased to 60ft, but the remain stealthed mechanic only applies when attacking within 30ft.</li></ul></li><li><i>B mods:</i><ul><li><strong>Poison Container (25 points): </strong>Poison can be pre-applied to the container and then sealed. Once the lid is opened and a missile is drawn, it is considered to be applied and begins to use up its application limit and duration.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1059,7 +1086,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "23d583af602848c214a1fb613108d5734db956ee4a4227299978d53c5b5400e7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/23d2531a-d1a6-4ac1-8ab6-e2d708ccec81-MIssiles.lg.webp"
       }
     }
   },
@@ -1067,7 +1095,7 @@
     "_id": "d90947cc0561ce38",
     "name": "Shepherd's Sling (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/2d413434-05e0-472d-8dd4-237ddf529009-Sling.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>A sling that throws carved stones at high speed as a projectile. &nbsp;<br><br>Range: 60ft<br><br><strong>Giant Killer:</strong> &nbsp;Cannot be dual wielded with another sling. You can overcharge your basic heavy attack for 1 AP to deal 9 extra damage.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><i>Soon</i></li></ul></li><li><i>B mods:</i><ul><li><strong>Anti-Goliath (50 points):</strong> You gain a +1 Size Power bonus on attacks against creatures that are Large or bigger.</li><li><strong>Explosive Rock (80 points):</strong> When making the Overcharge attack, you may deal the extra damage to all creatures within 5ft of the original target. In addition, this extra damage becomes a Light damage roll for all creatures except the original target instead of the flat 9 damage.<br>&nbsp;</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1097,7 +1125,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "cdda99033e05fc30fd7745fc4bab3de8fbdff071043121d706952dfd7d5a9e8d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/2d413434-05e0-472d-8dd4-237ddf529009-Sling.lg.webp"
       }
     }
   },
@@ -1105,7 +1134,7 @@
     "_id": "29905936ab8e8c88",
     "name": "Shotgun (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/37c36c97-01d1-4a52-8569-b508b492fbbf-1h shotgun.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Point Blank:</strong> Can be fired while in melee range of an enemy without provoking an attack of opportunity.</p><p>Range: 15ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Dragon's Breath (10 points): </strong>The first basic attack you make with this weapon in a round inflicts burning 5 regardless of it hits or not. (If used with Open Choke mod, this can affect that attack).</li><li><strong>Proof Load (20 points):</strong> When you make a heavy attack with this weapon, you may knock yourself back 5ft.</li><li><strong>Point Blank (20 points):</strong> You may make AoO’s as if this was a melee weapon with a 5ft threaten range.</li></ul></li><li><i>B mods:</i><ul><li><strong>Slugs (50 points): </strong>Your range is doubled.</li><li><strong>Open Choke (80 points):</strong> The first basic light attack you make with this weapon in a round makes a Light attack against all enemies in a 45 degree cone up to range.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1135,7 +1164,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "6c9033b787ab423d67fbf3ec73710d61ac63a035ba5ee497aa0c2436113b9e34",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/37c36c97-01d1-4a52-8569-b508b492fbbf-1h shotgun.lg.webp"
       }
     }
   },
@@ -1143,7 +1173,7 @@
     "_id": "e993db0e10a099bc",
     "name": "Shotgun (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/632847ed-31d2-4876-bdd0-9475f7632fae-2h shotgun.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Point Blank:</strong> Can be fired while in melee range of an enemy without provoking an attack of opportunity.</p><p>Range: 30ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Dragon's Breath (10 points): </strong>The first basic attack you make with this weapon in a round inflicts burning 5 regardless of it hits or not.</li><li><strong>Proof Load (20 points):</strong> When you make a heavy attack with this weapon, you may knock yourself back 5ft.</li><li><strong>Point Blank (20 points):</strong> You may make AoO’s as if this was a melee weapon with a 5ft threaten range.</li></ul></li><li><i>B mods:</i><ul><li><strong>Slugs (50 points): </strong>Your range is doubled.</li><li><strong>Double Barrel (50 points):</strong> Two-handed only. The first single target heavy attack you make with this weapon per round also light attacks the same target afterwards. This counts as your dual wield attack.</li><li><strong>Open Choke (80 points):</strong> The first basic light attack you make with this weapon in a round makes a Light attack against all enemies in a 45 degree cone up to range.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1173,7 +1203,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "88003bd3c2ef677d45ccd1b5773a8ead2ac3f721105c48cf2c68bf3a22f8df9e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/632847ed-31d2-4876-bdd0-9475f7632fae-2h shotgun.lg.webp"
       }
     }
   },
@@ -1181,7 +1212,7 @@
     "_id": "6e0adfb73782969b",
     "name": "Sickle",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/9da36353-d67f-4821-ba1d-32d047e94fe4-Sickle.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>Sickle's are used by Farmers in their activities. With proficiency, they are treated as a One-Handed axe that can be used as a farmer's tool.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Reinforced Langet (10 points): </strong>This weapon cannot be disarmed.</li><li><strong>Bearded Extension (20 points): </strong>Wild Swing now ignores guard, but the damage is reduced to 2 (light attack) or 4 (heavy attack).</li><li><strong>Rotational Stability (35 points):</strong> If a target moves away from you when you attack with this weapon and your next attack this turn is a throwing attack using this weapon against that target, that attack gains lock on.</li></ul></li><li><i>B mods:</i><ul><li><strong>Boomerang Wing (25 points):</strong> After using a throwing attack with this weapon, you can return the weapon to your hand for 0 RP.</li><li><strong>Lancebreaker (80 points): </strong>You gain a +2 Lancebreaker Power bonus against enemies wielding polearms or lances.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1211,7 +1242,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8ed54998643d94f67f429ed0d88d3ab73124c2745c10a23c766d1a35e1ac72c4",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9da36353-d67f-4821-ba1d-32d047e94fe4-Sickle.lg.webp"
       }
     }
   },
@@ -1219,7 +1251,7 @@
     "_id": "b002204082a0f900",
     "name": "Small Weapons (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/94a8ac62-e81b-4f9c-bea5-5d8e1314b708-Dagger.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Hidden Weapon:</strong> You may draw this weapon for 0 AP. Each combat, after you draw the weapon if the next attack you make that round is using this weapon and is a basic Light or Heavy attack, it gains the Trick Attack keyword. After benefiting from this bonus, you cannot do so again the same combat even if drawing a different weapon with this ability.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Aerodynamic Design (10 points):</strong> Boomerang/Return effects cannot be used with this.&nbsp;For 1 RP you can throw the dagger, making a light ranged attack.&nbsp; On damage, the target is slowed until the end of its next turn.</li><li><strong>Spring-loaded (20 points): </strong>You do not need to draw and wield this weapon to use it, it is worn in your equipment. However, you can only attack once per round with it. If your first attack with it in a fight is a basic attack, it activates Hidden Weapon as if you drew it right before attacking, though this still does not allow you to benefit from Hidden Weapon multiple times per combat. This weapon can no longer be used to make thrown weapon attacks and cannot be drawn normally. <i>Designed by Nya.</i></li><li><strong>Compact Ergonomics (20 points):</strong> When your other hand is free and you take a movement action that costs RP, that movement range is increased by 5ft.&nbsp;</li><li><strong>Parrying Dagger (20 points):</strong> If you don’t use this weapon to make an attack during your turn, you gain a +4 Shield bonus to your Block until the start of your next turn. You also gain a +4 bonus to your ‘damage’ roll when using the Parry ability.</li><li><strong>Flat Pommel (35 points):</strong> When your other hand is free, you use your free hand to push the blade into targets increasing melee heavy attack damage to 5d6.</li></ul></li><li><i>B mods:</i><ul><li><strong>Poisoner Weapon (25 points):</strong> Applying poison to this weapon costs -1 AP (min 0).</li><li><strong>Butterfly Knife (50 points):</strong> Your first light attack each round with this weapon gains Trick Attack, but it can no longer make Heavy attacks.</li><li><strong>Ring Pommel (50 points):</strong> If you make a heavy attack that the target defends against, you do not trigger attacks of opportunity from them until the start of your next turn.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1249,7 +1281,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "47f30cd2501249a990c18ca602b2b3179ebcf7af2a3e717f4992d37456d96ff7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/94a8ac62-e81b-4f9c-bea5-5d8e1314b708-Dagger.lg.webp"
       }
     }
   },
@@ -1257,7 +1290,7 @@
     "_id": "84549bfbf4d0dc6b",
     "name": "Smith's Hammer (One-handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/03585547-e1d2-482c-b21a-c026d1812953-Blacksmithhammer.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>Core crafting tool. Allows you to craft items as a Blacksmith or Armorsmith.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Flexible Handle (10 points):</strong> When dealing damage to a target, the minimum damage you deal is always 2. (this does not trigger on damage effects if damage would be 0 otherwise).</li><li><strong>Chain Flail (35 points): </strong>Cannot be defended against by 0 RP actions.&nbsp;Attacks made with this weapon do not count as consuming 0 RP actions.</li></ul></li><li><i>B mods:</i><ul><li><strong>Weighted Poll Upsetting (25 points):</strong> When making 3 separate attacks against a target, the third attack you make with “Weighted Poll Upsetting” knocks the target back 10ft on damage.</li><li><strong>Flanged Head (50 points):</strong> When you crit with this weapon, the damage is still maximized even against blocking targets.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1287,7 +1320,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "b46478f9839cc9e207770a337d311961346dc77bf024ad2eda3947f301329931",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/03585547-e1d2-482c-b21a-c026d1812953-Blacksmithhammer.lg.webp"
       }
     }
   },
@@ -1295,7 +1329,7 @@
     "_id": "ac98d3aaca446a62",
     "name": "Smith's Hammer (Two-handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f5f9fac1-8e91-4a6f-9c41-2ce3fdd57b59-2H Smithing Hammer - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>Core crafting tool. Allows you to craft items as a Blacksmith or Armorsmith.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Flexible Handle (10 points):</strong> When dealing damage to a target, the minimum damage you deal is always 2. (this does not trigger on damage effects if damage would be 0 otherwise).</li><li><strong>Chain Flail (35 points): </strong>Cannot be defended against by 0 RP actions.&nbsp;Attacks made with this weapon do not count as consuming 0 RP actions.</li></ul></li><li><i>B mods:</i><ul><li><strong>Weighted Poll Upsetting (25 points):</strong> When making 3 separate attacks against a target, the third attack you make with “Weighted Poll Upsetting” knocks the target back 10ft on damage.</li><li><strong>Flanged Head (50 points):</strong> When you crit with this weapon, the damage is still maximized even against blocking targets.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1325,7 +1359,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d2a6d72ad5b3f710087a6e139f703679e9ca51efcf97cdea9b6769ea18cba09b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f5f9fac1-8e91-4a6f-9c41-2ce3fdd57b59-2H Smithing Hammer - Copy.lg.webp"
       }
     }
   },
@@ -1333,7 +1368,7 @@
     "_id": "e306a15e640ae4ff",
     "name": "Sniper Rifle (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/07624366-b741-46bd-bd94-e7ecf4a1d774-Sniper - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Snipe:</strong> Looking through a sniper scope gives you a +10 bonus to Perception when looking at things further than 60ft away.</p><p>Range: 720ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Semi-Automatic (20 points):</strong> The first time you miss with a basic Heavy attack in a round you can follow up with a light attack against the same target. This counts as your dual wield attack.</li><li><strong>Hollow Point Boat Tail Rounds (35 points):</strong> You gain a +1 bonus to your accuracy when making a basic Heavy or precise attack.</li><li><strong>Armor Piercing Rounds (35 points): </strong>The first attack you make each round with this weapon treats the enemy guard as if it were 4 lower.</li></ul></li><li><i>B mods:</i><ul><li><strong>Bipod (50 points):</strong> All attacks with this weapon gain the Prone keyword. While prone, you are considered to have low cover against ranged attacks.</li><li><strong>Snipe (80 points):</strong> If you did not move this turn or the previous turn you gain a +1d4 bonus to your accuracy roll on attacks made with a Sniper Rifle. If you already have the Sniper's Snipe ability, the effect is 4 instead of rolling when used with this weapon.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1363,7 +1398,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "d994e4f15137ba14a43c64cba7ff0c4c1e14c7f2e74ee23af416303807cb5049",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/07624366-b741-46bd-bd94-e7ecf4a1d774-Sniper - Copy.lg.webp"
       }
     }
   },
@@ -1371,7 +1407,7 @@
     "_id": "cb87ec84936af249",
     "name": "Staff (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/78755142-4d52-48b0-ad90-462857439763-Light Staff.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>On damage with an attack made with this weapon, you may spend 1 Mana to push the target back 5ft.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Elemental Staff (35 points):</strong> You may alter the damage type from an attack made with this weapon for 0 AP. The damage type must be an element type you have mastered (usually unlocked through classes) or one that’s built into the weapon.</li><li><strong>Powerful Push (35 points): </strong>The knockback distance is increased to 10ft.</li></ul></li><li><i>B mods:</i><ul><li><strong>Efficiency (50 points)</strong>: The first basic attack you make each round may trigger the knockback effect without spending mana.</li><li><strong>Unstoppable Force (80 points): </strong>The knockback effect is now on hit rather than on damage.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1401,7 +1437,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "7e68bbcaa638be7a765d51dbb7cab93714785adcc909fe6555a04017dd458b11",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/78755142-4d52-48b0-ad90-462857439763-Light Staff.lg.webp"
       }
     }
   },
@@ -1409,7 +1446,7 @@
     "_id": "75395d8193d40f78",
     "name": "Staff (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/d5e66613-1b79-43c7-9a0b-a3c04d6f107f-2H Staff - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>On damage with an attack made with this weapon, you may spend 1 Mana to push the target back 5ft.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Elemental Staff (35 points):</strong> You may alter the damage type from an attack made with this weapon for 0 AP. The damage type must be an element type you have mastered (usually unlocked through classes) or one that’s built into the weapon</li><li><strong>Powerful Push (35 points): </strong>The knockback distance is increased to 10ft.</li></ul></li><li><i>B mods:</i><ul><li><strong>Efficiency (50 points)</strong>: The first basic attack you make each round may trigger the knockback effect without spending mana.</li><li><strong>Unstoppable Force (80 points): </strong>The knockback effect is now on hit rather than on damage.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1439,7 +1476,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "8682fb9004608244a22a7d05461d0446f324cf559146f3a55387d7ff19b34029",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/d5e66613-1b79-43c7-9a0b-a3c04d6f107f-2H Staff - Copy.lg.webp"
       }
     }
   },
@@ -1447,7 +1485,7 @@
     "_id": "b2a2e4584de1bca3",
     "name": "Thrown (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/a8b96aed-a6e7-428f-9c72-9a904df40816-Throwing Light.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Switch Hit: </strong>This weapon can be used as a melee weapon without penalty. After making a ranged attack with this weapon, it returns to your hand.</p><p>Range: 30ft</p><h4>Mods:</h4><ul><li><i>A mods:</i><ul><li><strong>Skirmisher (35 points):</strong> After making a ranged attack with this weapon, you may move 5ft as if you had the light sword passive (Nimble).</li><li><strong>Spinning Axe (35 Points):</strong> This weapon also gains the axe passive (Wild Swing). You keep this effect even when throwing the weapon.</li></ul></li><li><i>B mods:</i><ul><li><strong>Throwing Hammer (50 points): </strong>Attacks with this weapon gain the Artillery keyword within 30ft.</li><li><strong>Ricocheting (50 points):</strong> Once per round when this weapon deals damage with a Heavy attack, you may make a Light attack against a different target within 20ft.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1477,7 +1515,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "20f93336d62fbf522debba3c13af70bc01cc17ac488cf51eafe8e178bc49991d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/a8b96aed-a6e7-428f-9c72-9a904df40816-Throwing Light.lg.webp"
       }
     }
   },
@@ -1485,7 +1524,7 @@
     "_id": "b5165b2573ec2423",
     "name": "Thrown (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/ea7f1026-3e7d-47e6-b8fc-8a6e0a33e4bc-Throwing Weapon.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Switch Hit: </strong>This weapon can be used as a melee weapon without penalty. After making a ranged attack with this weapon, it returns to your hand.</p><p>Range: 60ft</p><h4>Mods:</h4><ul><li><i>A mods:</i><ul><li><strong>Skirmisher (35 points):</strong> After making a ranged attack with this weapon, you may move 5ft as if you had the light sword passive (Nimble).</li><li><strong>Spinning Axe (35 Points):</strong> This weapon also gains the axe passive (Wild Swing). You keep this effect even when throwing the weapon.</li></ul></li><li><i>B mods:</i><ul><li><strong>Throwing Hammer (50 points): </strong>Attacks with this weapon gain the Artillery keyword within 30ft.</li><li><strong>Ricocheting (50 points):</strong> Once per round when this weapon deals damage with a Heavy attack, you may make a Light attack against a different target within 20ft.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1515,7 +1554,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "82cebe6559b19a30315ed92d852b34e525c717f3aaa42648682534859f299d5d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/ea7f1026-3e7d-47e6-b8fc-8a6e0a33e4bc-Throwing Weapon.lg.webp"
       }
     }
   },
@@ -1523,7 +1563,7 @@
     "_id": "157f86e2bb9fdf63",
     "name": "Timeworn Katana",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/d213e50a-b43b-41f1-988b-0bb1d8331f76-Timeworn Katana - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Current Wielder:</strong> Unknown</p><p>A rusty katana with a dull blade.</p><p>&nbsp;</p><p>Any attack made with this weapon does not deal damage immediately, but any damage it deals is stored (after the hit resolves). When the wielder sheathes this weapon, it deals true damage based on the damage stored. The damage each target takes is based on the damage that was stored against them.</p><p>Hits and damage remain stored this way for up to the end of an encounter or for up to a minute, whichever is longer.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1553,7 +1593,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "81767a3627ac6a3bca1237119147fd64624ab1779d195e168fa8f1926e072701",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/d213e50a-b43b-41f1-988b-0bb1d8331f76-Timeworn Katana - Copy.lg.webp"
       }
     }
   },
@@ -1561,7 +1602,7 @@
     "_id": "60b5aa473e37f85e",
     "name": "Twinblade (Two-handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/06e4056b-3cb3-4490-b0af-7677838a992c-Twinblade.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Twin Strike:</strong> You can make dual wield attacks as if you were wielding two weapons.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Haladie Blade (20 points): </strong>Attacks with this weapon have -1 Power, but you can make 2 offhand attacks per turn instead of one.</li></ul></li><li><i>B mods:</i><ul><li><strong>Shadow-Type Saber (80 points): </strong>When engaged in melee and you take a block or dodge action and then you are attacked by another melee attack by a different enemy, you may use block or dodge against that attack for 0 RP.&nbsp; Applies once per turn</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1591,7 +1632,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "0fe53af7f59b767db996b9b957e338370f16cd354f4b7c03f2b0f9996e43cf04",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/06e4056b-3cb3-4490-b0af-7677838a992c-Twinblade.lg.webp"
       }
     }
   },
@@ -1599,7 +1641,7 @@
     "_id": "d0b17bb4d0687285",
     "name": "Wand (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/56531a1e-a8ad-4c0a-9908-9882ceb42c0c-1H Wand - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Magic Blast:</strong> You may alter the damage type fired by an attack made with this weapon for 0 AP. The damage type must be an element type you have mastered (usually unlocked through classes) or one that’s built into the weapon. Each weapon has at least one element built in.</p><p>Range: 60ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Ornamental (10 points):</strong> You may use this weapon as one minor item such as an instrument or parasol.</li><li><strong>Echo Blast (20 points):</strong> When you make a basic Heavy attack, you may split the damage against two different targets in range. Make only 1 accuracy check against both.</li><li><strong>Warding Wand (35 points): </strong>You may spend 1 AP to gain 5 temporary HP until the start of your next turn.</li></ul></li><li><i>B mods:</i><ul><li><strong>Dedicated Focus (50 points):</strong> Gain +1 bonus to accuracy rolls, but can only fire elemental attacks of 1 element. Spells cast through this wand only gain that bonus if they deal that element of damage.</li><li><strong>Mana Core (80 points):</strong> When you deal max damage with an attack made with this weapon or with a spell cast through this weapon against an enemy in an encounter, your next spell this turn costs 1 less mana (min 0)</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1629,7 +1671,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1a0deaabc2599be8f5447cc639528bb9f21eefa20cf9a959e1227af46b76f9fe",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/56531a1e-a8ad-4c0a-9908-9882ceb42c0c-1H Wand - Copy.lg.webp"
       }
     }
   },
@@ -1637,7 +1680,7 @@
     "_id": "35e2f5fbc55e048c",
     "name": "Wand (Two-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/9e2dc16c-189e-4159-94d2-5c58009d178a-2H Wand - Copy.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p><strong>Magic Blast:</strong> You may alter the damage type fired by an attack made with this weapon for 0 AP. The damage type must be an element type you have mastered (usually unlocked through classes) or one that’s built into the weapon. Each weapon has at least one element built in.</p><p>Range: 120ft</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Ornamental (10 points):</strong> You may use this weapon as one minor item such as an instrument or parasol.</li><li><strong>Echo Blast (20 points):</strong> When you make a basic Heavy attack, you may split the damage against two different targets in range. Make only 1 accuracy check against both.</li><li><strong>Warding Wand (35 points): </strong>You may spend 1 AP to gain 5 temporary HP until the start of your next turn.</li></ul></li><li><i>B mods:</i><ul><li><strong>Mana Surge (25 points):</strong> Once per round after you cast a spell, you may make a Light attack for 0 AP. Two-Handed wand only. This counts as your dual wield attack.</li><li><strong>Dedicated Focus (50 points):</strong> Gain +1 bonus to accuracy rolls, but can only fire elemental attacks of 1 element. Spells cast through this wand only gain that bonus if they deal that element of damage.</li><li><strong>Mana Core (80 points):</strong> When you deal max damage with an attack made with this weapon or with a spell cast through this weapon against an enemy in an encounter, your next spell this turn costs 1 less mana (min 0)</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1667,7 +1710,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "1a8425b7bd37ed111a16071d5b64c18b1e7f4fbc81770d6d76cfdfa7d16f7dcb",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9e2dc16c-189e-4159-94d2-5c58009d178a-2H Wand - Copy.lg.webp"
       }
     }
   },
@@ -1675,7 +1719,7 @@
     "_id": "adba267c43ea29ff",
     "name": "Whip (One-Handed)",
     "type": "equipment",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/5368ff41-2146-4e6f-8bdb-6d40f4e03a25-Whip.lg.webp",
+    "img": "icons/svg/item-bag.svg",
     "system": {
       "description": "<p>Whip Crack: You gain +5ft range on your weapon attacks. Weapon attacks made at max range (default of 10) gain +1 damage. Your threatened range is still 5ft.</p><h4>Mods</h4><ul><li><i>A mods:</i><ul><li><strong>Barbed Wire (10 points): </strong>Upon landing a critical hit with this weapon, apply Bleeding to the target.</li><li><strong>Fluttering Ribbon (35 points):</strong> At the start of your turn, you may change your threatened range to 5-10ft until the start of your next turn.</li></ul></li><li><i>B mods:</i><ul><li><strong>Binding Flow (50 points):</strong> When dealing damage with a Heavy attack, you may choose to not do damage to instead reduce a creature’s movement speed to 0 until the start of your next turn or until you move. Does not work against bosses or creatures bigger than you.</li><li><strong>Hooked Coil (80 points):</strong> When dealing damage with an attack of opportunity against an enemy leaving your range, you may pull them back 5ft. Only triggers once per turn.</li></ul></li></ul>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1705,7 +1749,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/items/undefined",
         "sourceHash": "f6cf234f5c73a09a0b05a9e5f4148822ad1bc0f75b46007fadeba2a1125b1872",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5368ff41-2146-4e6f-8bdb-6d40f4e03a25-Whip.lg.webp"
       }
     }
   }

@@ -1,9 +1,93 @@
 [
   {
+    "_id": "1ae64bd2cd1f9990",
+    "name": "Mage",
+    "type": "class",
+    "img": "icons/svg/book.svg",
+    "system": {
+      "description": "<p>Mages are initiates of the arcane, who’ve mastered the basics and proven their skill in both control and power. By drawing in ambient mana and blending it with their own, they can cast devastating spells of all kinds. The path of a Mage is as varied as the Mages themselves.</p><p>Some might start off their journey at the Merlin's Academy of Magic, while others are self taught or might become the pupil of a wandering teacher.</p><p>While still considered beginners in the journey of Magic, Mages are quite powerful on their own with many considering a skilled mage to be worth the equivalent of an entire squad of infantry.</p>",
+      "source": "The Lyrian Chronicles v0.13.1",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mage",
+      "sourceHash": "36eba26d45fa6ece5855720c30cb924576f8690b9b94b1b322b0d2d461d6d0a4",
+      "rulebookVersion": "0.13.1",
+      "stableId": "class--mage",
+      "relationships": {
+        "key_ability": "key-ability--mage-s-journey",
+        "abilities": [
+          "ability--decipher-magic",
+          "ability--arcane-barrier",
+          "ability--glittershards"
+        ],
+        "ultimate_ability": "ability--magic-missile",
+        "_links": [
+          {
+            "stableId": "key-ability--mage-s-journey",
+            "name": "Mage's Journey",
+            "pack": "player-abilities",
+            "documentId": "b16f65d269e7a15e",
+            "uuid": "Compendium.lyrian-chronicles.player-abilities.Item.b16f65d269e7a15e"
+          },
+          {
+            "stableId": "ability--decipher-magic",
+            "name": "Decipher Magic",
+            "pack": "player-abilities",
+            "documentId": "ae262ddeae1b6929",
+            "uuid": "Compendium.lyrian-chronicles.player-abilities.Item.ae262ddeae1b6929"
+          },
+          {
+            "stableId": "ability--arcane-barrier",
+            "name": "Arcane Barrier",
+            "pack": "player-abilities",
+            "documentId": "991642982ad4d120",
+            "uuid": "Compendium.lyrian-chronicles.player-abilities.Item.991642982ad4d120"
+          },
+          {
+            "stableId": "ability--glittershards",
+            "name": "Glittershards",
+            "pack": "player-abilities",
+            "documentId": "c9bcfd1826182199",
+            "uuid": "Compendium.lyrian-chronicles.player-abilities.Item.c9bcfd1826182199"
+          },
+          {
+            "stableId": "ability--magic-missile",
+            "name": "Magic Missile",
+            "pack": "player-abilities",
+            "documentId": "052c7a960678eb66",
+            "uuid": "Compendium.lyrian-chronicles.player-abilities.Item.052c7a960678eb66"
+          }
+        ]
+      },
+      "tier": 1,
+      "difficulty": 2,
+      "role1": "Utility",
+      "role2": "Controller",
+      "guide": "<p>Mages offer supportive control to the party, out of combat utility and a barrage of long range spells to wither down the most evasive of targets.&nbsp;</p><p>Sense Magic and Decipher Magic both serve as out of combat investigation tools. Sense Magic gives information, while Decipher Magic actively lets you disable magical fields.</p><p>Arcane Barrier is a defensive tool that lets mages effectively block without having a high guard. If an attack did a low amount of damage, you may be able to use the Block reaction afterwards with the barrier still up and still get some value out of it.</p><p>Glittershards is their control ability. It covers a 15x15ft area which is a decent area and be can be used primarily to block enemy ranged attackers from shooting you. The mana cost on it is low, so you can feel free to drop it and recast it in a better position if the need arises.</p><p>Magic Missile is light attack that should be used against dodge heavy characters. If you know the enemy is not going to die from 1 missile, you can overcharge it and fire a second one for the same cost again. The target has to react to both of them with separate reactions, so you'll be doing some good damage or burning reactions with it.</p>",
+      "skills": "You gain +5 skill points to spend on Appraise, Medicine, Magic, Religion, History, Flight, Artifice or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
+      "heart": "You gain +1 to Reason",
+      "soul": "You gain +1 to either Focus or Power.",
+      "abilitiesUnlocked": 1,
+      "keyAbilities": "key-ability--mage-s-journey",
+      "requirements": "<p>None.</p>",
+      "artisan": false,
+      "gathering": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:class--mage",
+        "stableId": "class--mage",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mage",
+        "sourceHash": "36eba26d45fa6ece5855720c30cb924576f8690b9b94b1b322b0d2d461d6d0a4",
+        "rulebookVersion": "0.13.1",
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/d40d5226-c0df-4e80-bbda-1c9bdb83faef-Mage New - Copy.lg.webp"
+      }
+    }
+  },
+  {
     "_id": "f1699c579006ad0e",
     "name": "Mage Knight",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/01615d97-17cc-44bd-921d-2bf22bf29e67-Mage Knight - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>First fielded by Westria during the growing advent of the Church of Light and cavalry’s importance on the battlefield, the Mage Knight brought both magical support and healing to the highly mobile battlefront. While originally simply an order of priest-knights, Mage Knights would eventually grow to encompass all forms of magical casting. Whether it was raining down spells or utilizing their unique training to heal mount and rider both, the Mage Knight could turn the tide of a battle with their mere presence. And while there were countless stories throughout the ages of holy knights bringing men back from the brink of death, there were none as debated as the story of Dame Madeline Benoit and Sir Owain Morgan.</p><p>As told and accepted by Westrian historians, Dame Madeline Benoit was a human Mage Knight without equal. Gentle and nurturing to her allies and able to bring her enemies low with figurative hellfire, she held a near saintly presence in the Church of Light. Debates would still sometimes crop up among the clergy as to her suitability as a Saint but her history was both ill documented and controversial, depending on who was asked. There was no dispute of her actual existence as her name was recorded as a Holy Knight of Kari, but there was a much debated feat in her history: Sir Owain Morgan and the proliferation of Great Knights into Westria’s military.</p><p>While there were many versions of the tale, the most accepted one in Westria followed a series of reasonably set in stone facts. During the many border incursions from Northi as it tried to wrest control of the Nuren Plains from their ancestral owners, it was said that Dame Madeline Benoit helped devastate a Northi skirmishing force. Not only was she instrumental in capturing many of the Northi knights, she graciously tended to their wounds with a special focus on Sir Owain Morgan. The dogfolk Great Knight had taken the brunt of the Westrian counterattack as he shielded his men and required significantly more care than the others. In fact, he traveled back to Westria for further treatment while his men were released back to Northi. It was said that, in his gratitude, he volunteered the skills of the Great Knight and allowed Westrian artisans to study his and his mount’s armor. And while there was debate on the validity of that tale for the origin of the proliferation of Great Knights into the Westrian military, they paled in comparison to the vicious arguments that revolved around the love story between Dame Madeline and Sir Owain.</p><p>The most commonly accepted telling of the great love between Madeline and Owain was that of star crossed lovers fighting destiny and the world to be together. What started as simple care for a wounded knight became tender affection as the months of Owain’s recovery ran on. Some accounts painted a picture of desperate, forbidden love with various forces working to keep them apart. Secret marriages, hidden lineages, and fantastical courtly intrigue plagued the romance novel market with few authors making any attempts to disguise their protagonists. The reality of it was much simpler and all the sweeter for it.</p><p>Neither Madeline or Owain had the heart to return to the constant fighting between their two countries and retired from their respective militaries. The legend among the Benoit household was that the pair had a private wedding in the garden of Madeline’s childhood home and then departed for destinations unknown. The rumor was that they spent time as traveling knights, wandering Lyr and helping those in need. And while those actions had never definitively been attributed to Dame Madeline and Sir Owain, what couldn’t be denied was when they both turned back up in solid historical record.</p><p>They would found Morgan Ranch in what would later become Dacquoise, near the future site of the city of Madeline. It was there that the retired knights, happily married for an unclear amount of time, had begun taking on students and ranch hands to teach the art of horsemanship, knighthood, and magic. While the ranch itself did not last into modern times, the house itself was maintained and the legacy of chivalry was upheld by the descendants of those students. Collectively, and informally, they called themselves the Knights of Morgan and dedicated themselves to helping those in need whenever and wherever they were found.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -78,7 +162,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mage-knight",
         "sourceHash": "0e49bfe7e093a458eac6d1b3512eeaacf0d4e8a6c562ab39e46bf4c7139d59a1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/01615d97-17cc-44bd-921d-2bf22bf29e67-Mage Knight - Copy.lg.webp"
       }
     }
   },
@@ -86,7 +171,7 @@
     "_id": "de4359a00d78ed00",
     "name": "Magitechnician ",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/0d7668e6-537c-4794-b02f-32947041c699-Artificer II-2.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Expert Magitechnicans are the true pioneers of artificing, creating new inventions out of piles of metal parts and magical fuel. &nbsp;The most famous of which is the world renown artificer only known as \"Angel\". &nbsp;During the annual Magitechnician Fair held by the Riannon Institute of Alchemy in Mothergreen, a mysterious artifice arrived as an entry. &nbsp;It was a common Buster Weapon, but it was the intense modifications made to its efficiency that were the awe of all adventurers that laid eyes upon it. &nbsp;Despite winning the 1st prize at the fair, no one came to claim the prize... and had become known as the \"Angel-Type\" Buster Artifice—named after the pseudonym used by the crafter.</p><p>Once an artifice only used by fighters, the Angel-Type Buster Artifice started to spread amongst more defensively oriented users—often placed on daggers for quick, practical deployment. &nbsp;Despite the speculations as to Angel's identity, few suspected the creator was a local from their own town. Their inability to discover Angel's true identity was due to preconceived notions of who or what a renowned artificer should look like.</p><p>In reality, \"Angel\" was one of the early members of the Angel's Sword Guild—a notorious Adventurer's guild that created trouble wherever they went. &nbsp;But quietly hidden away in her workshop, surrounded by plush toys and scattered mechanical parts, Ayrara Ravness—a young Fae who appears no older than a ten-year old human crafts some of the most innovative artifices in Axia. &nbsp;She rarely takes commissions from outsiders, instead preferring to work exclusively with those whom her whims favor. &nbsp;In truth, more often than not, her workshop finds itself closed due to the insistence of her half-sister Elly, who continually drags her away on yet another adventure.&nbsp;</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -161,7 +246,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/magitechnician-",
         "sourceHash": "0a7d8dc755006bdbdc714bf4820721d3f73e489c9599e06d7b4df463735d99c1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/0d7668e6-537c-4794-b02f-32947041c699-Artificer II-2.lg.webp"
       }
     }
   },
@@ -169,7 +255,7 @@
     "_id": "6e59ed2cf5b60a44",
     "name": "Maid",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/c339b341-34ce-4b1d-a645-a2ac9d10b8c6-Maid.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>The din of battle had finally faded, replaced with a sudden uneasy silence. Ronan wasted no time in rushing through the line of jagged thorns that had appeared at the beginning of the ambush, his sword arm heavy as he hacked his way through.&nbsp;<i>Milla!</i> He was too breathless to shout.&nbsp;<i>I can’t believe we left her like that!</i></p><p>She was just a maid they were escorting along a quiet route toward Mothergreen. No one could have predicted a fiend attack! The unsettling stillness made his blood chill, thinking of the polite girl mutilated in their absence. He finally punched through the thorn wall and stumbled to a stop. Balro stumbled as he bumped into him from behind, the salamander lancer equally stunned by the scene in front of him.</p><p>Aoife pushed him forward, her hands already pulling a faintly glowing healing potion from her pouch. “What are you standing here for--” The elf dropped the potion in shock.</p><p>In the clearing behind the thorn wall was Milla, her maid outfit pristine from her frilly hat to her “<i>it’s shortened for mobility”</i> skirt. Whisps of Astra were fading from the remnants of three kratos corpses. She was quietly sweeping around one of the kratos, the Astra dissipating with each pass of her broom. But the most jarring image was the full tea set sitting on a moss covered stump. It was pristine, the small porcelain kettle steaming gently and was flanked by crisp, freshly made cookies. The tainted smell of Astra was rapidly being replaced by warm butterscotch and soothing tea. There was a small plate and teacup arrayed round the stump for each of them.</p><p>“I apologize for the delay in refreshments,” Milla said with a small bow and a professional smile. Her eyes slid from the fully evaporating kratos corpse to the tea set and a blush started to fade into visibility on her cheeks. “I…did have to use some of the fine silver. But you can be assured, I’ve thoroughly cleaned them!”</p><p>She took a breath and her smile returned, the practiced nature of it softened by her blush. “Take a moment to enjoy, the tea is at the perfect temperature. I’ll be handling the clean up. Please, do not hesitate to call on me.”</p><p>Ronan and the others found themselves enjoying tasty, freshly made cookies and tea while watching on with astonishment as Milla “cleaned” the battlefield. That included somehow sweeping the entire wall of thorns away with her broom and a feather duster.</p><p>Just what was this maid?!</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -244,7 +330,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/maid",
         "sourceHash": "d00b2067253ca6ddfcc56a971d6ce6d3cf48d386e53592a588ad1710468ec655",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/c339b341-34ce-4b1d-a645-a2ac9d10b8c6-Maid.lg.webp"
       }
     }
   },
@@ -252,7 +339,7 @@
     "_id": "de67eab8446a8cb8",
     "name": "Marksman",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/5a108fcf-10d5-4216-bb40-2bc0526979cc-Marksman - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Marksman is a single-target ranged powerhouse.  They rain heavy damage onto the enemy from afar and can be devastating if not stopped.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -327,7 +414,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/marksman",
         "sourceHash": "86f750a74207b80bf551dd3249452135ec36b0c32873a9ae9b7418d401484151",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5a108fcf-10d5-4216-bb40-2bc0526979cc-Marksman - Copy.lg.webp"
       }
     }
   },
@@ -335,7 +423,7 @@
     "_id": "4ee4b5b110723d87",
     "name": "Martial Artist",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/c023d8a8-47f7-4cce-8bc2-f48b4a18d453-Martial_Artist_2_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Martial Artists are fighters who’ve turned their bodies into finely tuned weapons. All across the world of Lyr, you can find them practicing different arts and styles. The true might of the Martial Artist is their mastery of Zaipher, the skill of tapping into their internal mana to heal themselves and deal devastating magic-enhanced blows.</p><p>Zaipher doesn't have the raw power of Arcane magic, but what it lacks in volume, it makes up for in blazing speed. Martial Artists utilize &nbsp;quick, sudden bursts of energy that can take an enemy by surprise.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -410,7 +498,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/martial-artist",
         "sourceHash": "1bd249a3190393fd60de0410538a996378e4ffecfc1c34b527b2a71a37c7a75c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/c023d8a8-47f7-4cce-8bc2-f48b4a18d453-Martial_Artist_2_-_Copy.lg.webp"
       }
     }
   },
@@ -418,7 +507,7 @@
     "_id": "d2a1b16b521b01a0",
     "name": "Master Armorer",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/8b9e335a-604e-48df-b4b3-b9552952e08a-Armorsmith_2_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>The sign hanging above the smithy’s door was marked in the nonsensical scratchings that the Kiraran’s called writing. Thankfully, a smaller sign hanging from the first displayed a carving of eastern armor set beside a hammer. There were no special adornments to the signs nor any of the colorful standing banners that stood outside the more famous guild shops. Charles was here chasing a rumor and had had to shake his guides to pursue. A non-affiliated armorsmith, almost unheard of in the cultural ethos of Kirara. With a last glance at the humble, undecorated exterior (sturdy construction, he grudgingly admitted), he slid open the door.</p><p>A bell knocked gently against the top of the door as he pushed it along its runner, tinkling awkwardly. It wasn’t at all like a more practical swinging door that would send a bell ringing clearly, the timbre just a little off. Heat washed over him as he stepped inside, flowing from a doorway only half covered in a split cloth screen. A large desk occupied a significant portion of the floor next to what he could only assume was the entrance to the attached forge, its proportions just a little too large to be comfortable for him to work at. Delicate etching tools, magical crystals, and large grinding bowls covered most of the desk with reams of paper taking up a tiny sliver of one side and the front half of a strangely shaped breastplate taking up the remaining space. Armor stands displayed stunning examples of the lamellar armor favored by Kiraran warriors, each a masterpiece in their own right (although he doubted their protective capabilities when compared to good, Westrian plate).</p><p>Charles stepped fully into the shop and slid the door closed behind him, enduring that awkward bell jingle again. With the sound of the busy street muted, he could make out a low conversation drifting in from the forge over the quiet roar of a stoked fire. He waited a moment more before he determined the owner wouldn’t have heard the bell and he’d have to wait for him to come back out to the front desk. But that would let him get a good look at the craftsmanship of the armor without bias.</p><p>Twenty minutes later, he carefully set the elaborate helmet he’d been turning over back on its stand, irritation at being ignored for so long rising. He was half tempted to leave but he didn’t know when else he’d be able to be free of his minders to visit again. He took several steps toward the fabric barrier of the forge door when a shadow loomed behind it. A hulking hand, grey as stone, parted the curtain and a massive…creature ducked through the doorway. A hand that could close into a fist the size of a cannon ball, arms as thick around as he was at the waist. Leg muscles straining against silk trousers with every movement, and a heavy, many pocketed leather apron to cover the wide expanse of chest. Charles had seen Oni before, but the one before him was the largest he’d ever even heard of.</p><p>The huge Oni blinked in surprise and said something in Kiraran back through the forge door, his voice like the rumble of a rockslide. A cheerful, high and clear voice called back, a woman’s voice. Then a feminine roar of effort followed by the crash of a hammer on metal. The giant rumbled a chuckle and said something to him.</p><p>“Uh…sorry. I don’t…” A series of furious hammer impacts punctuated by more cute roars interrupted him.</p><p>“Ah. No problem,” the huge Oni said, his accent heavy. He gestured toward the cluttered desk, which Charles obligingly moved to stand in front of. The Oni did something and suddenly the deafening sound of the crashing hammer vanished. The huge man then settled behind the desk and somehow made it look tiny and cramped.</p><p>“Welcome Mako Forge! What do for you?”</p><p>Charles cleared his throat and pulled out a small bundle of paper from inside his coat. “Well, Mako, I have a requ--”</p><p>“Ha! Me? Not Mako! Tate,” the Oni pointed to himself with his thumb. “Tate.”</p><p>“Tate then,” Charles returned. He almost wished he had his translators with him. “I have a request and I heard your forge might be able to handle it.” He held out the plans (well, more like rough ideas) for Tate and watched, fascinated, as the giant deftly flipped through them. He almost didn’t notice that Tate had pulled on a pair of spectacles, making the giant of a man even more incongruous sitting behind the desk.</p><p>“Hmm.” Charles could almost feel that hum through his feet, like a mountain was thinking. “You want stop&nbsp;<i>tepo</i>. Yes?”</p><p>“Uh…tehpuh?”</p><p>Tate stared at him and then turned the plans around to tap a massive finger on the drawing of a musket.</p><p>“<i>Tepo</i>.”</p><p>“Oh, a gun! Yes. I want the armor to stop…tehpuh.”</p><p>“Hmm. Hmm.” Tate flipped the pages pack to the first and set them down on top of a spread of tools. “Can make. For you?”</p><p>“Yes, for me. For proof, too.”</p><p>“You want&nbsp;<i>mahu?</i>” Tate preempted Charles’s question by tapping a glass vial full of faintly glowing crystal shards. He wanted to know if he wanted the armor enchanted. “No&nbsp;<i>mahu</i> more hard.”</p><p>“Uh, no. No mah-hoo.”</p><p>“Good. Good. Can make.” Tate raised a massive fist and banged it on the wall behind him. He shouted something in Kiraran and it only took moments before the curtain parted again from the forge. Charles felt his mouth go dry and he tried not to stare. Never before had he seen a woman so…so proportioned! Her every boisterous movement as she nearly skipped to Tate seemed to be a test of her scant clothing to contain her and sent her braided red hair dancing. Her skin glistened with sweat from the forge, that perfect cream color that some Kiraran’s seemed to possess naturally and would send women back home into conniptions of envy. His mind stalled and stuttered when Tate handed the voluptuous beauty his plans. If Tate was a giant then the woman before him was a pixie. If she was more than five feet tall, he’d eat his hat. And she looked even smaller contrasted to Tate’s bulk even sitting at the desk.</p><p>He caught Tate’s grin even as the man pulled the startled woman against him, bringing her to giggling. “This Mako-chan, my wife,” he said proudly. “Best forge in Kirara.”</p><p>The woman, Mako, chattered something scolding at Tate and peeled his grip off her like he had all the strength of a toddler. She flipped through the plans more slowly than her husband, shifting side to side as she made interested noises.</p><p>“<i>Mahu nai-no?”</i> she asked.</p><p>“<i>Hah,”</i> was Tate’s reply.</p><p>That answer seemed to excite the woman and she turned to look up at Charles, eyes gleaming with anticipation. She gave him a thumbs up and tossed the plans back to Tate with an excited chatter of orders. Tate laughed and shooed her back to the forge. Charles stood in stunned silence with the laughing Oni for a long moment before the huge man said anything.</p><p>“Mako-chan very excited,” he explained needlessly.</p><p>Charles left Mako’s Forge in a slight daze, light a good amount of gold, but with the promise of a set of non-magical nor artifice plate armor that could stop bullets. He was to pick it up in a week. But as strange as the couple was, he was certain the quality of the armor would be beyond reproach. Maybe they’d consider moving to Westria? They obviously didn’t play Kiraran political games…</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -493,7 +582,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/master-armorer",
         "sourceHash": "1265251a9ac7731626b65e80e321d84a1845225da6a6f2211d194cb043839b3a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/8b9e335a-604e-48df-b4b3-b9552952e08a-Armorsmith_2_-_Copy.lg.webp"
       }
     }
   },
@@ -501,7 +591,7 @@
     "_id": "ee56d17c6d594a04",
     "name": "Medic",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/bf82b844-d4a6-42e1-b753-4c4ae62065b1-LyraMedic.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>She flinched at the echoing crack of combined musket fire that briefly drowned out the crash of combat that was getting closer by the minute and the cries of the wounded. She curled her tail closer, interposing the bulk of it between her patient and the sounds of fighting. Smoke choked the air as buildings burned. She ignored that as best she could as she finished tying off the bandage over the temporary sealant she’d slathered over the wounded soldier’s wounds. He hissed between his teeth but gave her a shaky nod in thanks as she helped him to his feet. That patch should last him until he could get himself back to the rear and evacuated. Hopefully.<br><br>He staggered as he took a step and she caught him before he could fall.<br><br>“I have some painkillers--”<br><br>“No, no. I can make it. Save it for someone who needs it,” he interrupted. She watched him limp away and shook her head fondly. Everyone in Dacquoise was such a nobly brave idiot.</p><p>“Lyra!”</p><p>She looked up at the panicked shout. Captain Claire was rushing toward her, his breastplate scorched and he was missing his shield. That was not good. He was supposed to be in command of the unit down the block.&nbsp;<br><br>“You need to get out of here! The line is collapsing!”</p><p>The sound of fighting crescendo'd as Dacquoise soldiers rounded the corner down the street at a sprint. Most didn’t even have their weapons, so desperate in their need to escape. Taking up the rear was a heavily armored lamia, his iconic circular shield like a mobile wall that deflected a barrage of arrows and magical blasts. Some hits sparked off his armor and scales but he ignored them as he swung his spear in wide arcs, knocking back the pursuing invaders. He was buying time.</p><p>“Keep moving men!” Captain Claire called out.</p><p>As if in defiance of that command, one of the few soldiers that still had a weapon skidded to a halt and took a knee, raising his musket. The single shot was a far cry from the volleys from earlier but it still took one of the invaders down just before he could slip behind the lamia spearmaster’s flank. He was rewarded for his bravery with a magical energy beam that seared into his side, dropping him to the ground. But his intervention did allow the lamia to keep up his delaying action for a little bit longer.</p><p>Without thinking about it, Lyra rushed forward and coiled around the downed musketeer. Before he could protest, she had a bandage pressed to his side with one hand while she injected a painkiller with the other.</p><p>“Lyra, leave him and run!”</p><p>She ignored Captain Claire.</p><p>“You should go,” the musketeer hissed out.</p><p>She ignored him too.</p><p>“I’ve got you, just give me a minute.”</p><p>“Faster would be better, lady medic!” the spearmaster shouted. “Get him on his feet and go!”</p><p>“No,” the musketeer shook his head. “Leave me and make sure Nikolaos gets away! We can’t--we can’t lose him!”</p><p>“We’re all getting away,” Lyra insisted even as she winced as an arrow skipped off her scales. “Get ready to run!”</p><p>The cities of Dacquoise were burning but that didn’t mean she was going to leave anyone behind if she could help it.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -576,7 +666,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/medic",
         "sourceHash": "45618dcbb599d8ba84bb8122ee7d6319d53407a5f2937a6b7992f67afd38cea0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/bf82b844-d4a6-42e1-b753-4c4ae62065b1-LyraMedic.lg.webp"
       }
     }
   },
@@ -584,7 +675,7 @@
     "_id": "ffdbc20fcebc38a2",
     "name": "Merchant",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/9da2d546-c949-498d-a08c-d61ac0229839-Merchant.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>“Brielle! Where were we putting the ominously glowing magical samples again?!”</p><p>Brielle lowered her clipboard and turned away from where she was cataloguing the bulk order of magical fuel and refined shells that was slated to head out on the next shipment to Pecorine. There had been a spike in demand for not just food but for magical fuels, more complex artifices, and advanced raw materials. Unfortunately, the horrible rumors coming from Mirane (fueled by Prince Casimir, of course!) had really had an impact on the amount of supplies they could send. It was all sure to blow over eventually and she knew Fontina and Pecorine would be doing their best with the situation at hand.</p><p>“Those samples should be set aside for review by Captain Yasha,” she called back.</p><p>“Got it!” Valenise called back, throwing a sloppy Axian salute before hefting the crate with a grunt. Honestly, that girl made everything look light as a feather sometimes. Brielle would have to remind her to be more careful in the future. There were plenty of hands about that could help lift things, after all. Madeline’s warehouse district wasn’t large but it was efficient and there were a lot of volunteers that helped out when every new shipment arrived or needed to go out.</p><p>She turned back to her cataloging and just got the box finished when a small hand tugged at her dress. Mimolette was looking up at her with the innocence of a little girl who knew she was in a place she wasn’t supposed to be but curiosity had won out anyway.</p><p>“Mimo…what did Fontina say about wandering around the city by yourself?” Brielle didn’t bring up that she was also not supposed to be anywhere near the warehouse district or the heavy lifting. She was small enough still that she would be hard to notice by the workers.</p><p>“I’m not by myself,” Mimolette protested. She lifted the stuffed bunny as proof. “See? Molly is here with me!”</p><p>&nbsp;“You know Molly doesn’t count,” Brielle admonished gently. Mimolette pouted.</p><p>“I know…but I wanted to see if Pecopeco sent me another plushie!”</p><p>Brielle sighed with a fond smile. She didn’t know who out there was making those silly little plush dolls with the strange faces but Mimolette had loved them the moment she saw one. “Our sister isn’t sending them to you, they’re for everyone in Madeline.”</p><p>Mimolette’s pout got deeper. “But I’m in Madeline…”</p><p>“Mimolette? Mimolette? Where are you, Mimo?”</p><p>Brielle stared down at Mimolette with an exasperated smile and a climbing eyebrow. It seemed Mascarpona was Mimolette’s escort today and had lost her in the shuffle of shipment day.</p><p>“Over here, ‘Pona!” She raised her hand and waved with her clipboard.</p><p>“No, don’t call her over!” Mimolette complained, already turning to run. Brielle, with the instincts of an older sister, already had a hand on Mimolette’s shoulder before she could turn. “No fair…”</p><p>It only took moments for her dashing little sister to come into view, nimbly maneuvering around carts, crates, and workers. She had a relieved look as soon as she caught sight of Mimolette, the grip on her rapier loosening.</p><p>“Thanks, Brielle,” Mascarpona said, quickly taking hold of her littlest sister and leading her away and out of the area. “If you run off again, I’m leaving you with Asiagia and she’ll talk to you about flowers until your ears fall off.”</p><p>Brielle smiled fondly and got back to work. This procurement request wouldn’t fill itself, after all.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -659,7 +750,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/merchant",
         "sourceHash": "cff201f031287f39e1268a2835694726c927dd3731f075b21964bd4c5beb6d73",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9da2d546-c949-498d-a08c-d61ac0229839-Merchant.lg.webp"
       }
     }
   },
@@ -667,7 +759,7 @@
     "_id": "c440043e99166db8",
     "name": "Mime",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f2a02914-5fbc-4c71-adeb-a625918edd62-mime.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Mary couldn’t quite understand what she was seeing. Their caravan had been attacked by hobgoblins, which their guards had dutifully moved to engage. They were fighting among the trees, working together to root out the hobs and unfortunately fully engaged and unable to respond to the second group of hobs that had been waiting. Merchants and fathers had picked up brooms, rakes, and shovels. Anything to defend themselves with as they ushered the women and children behind them.</p><p>But it was the young man that had silently been riding along with them that stepped forward to confront the small group of hobs on his own. He gestured with a smile that he’d be perfectly okay and that everyone should stay back. Mary thought he must be a mage or a martial artist of some kind. And she was kind of right. Instead of calling down sparkling magic and fire or punching and kicking his way through the hobs he just…acted like he was pulling out…something. A gun? He behaved like he had a real gun in his hands, dramatically loading it. But…he didn’t have anything in his hands.</p><p>Was he crazy? Was it actually magic?<br><br>Everyone was surprised when there was the loud crack of a gun going off and one of the hobs tumbled to the ground. The…mage -- he had to be a mage -- twirled his invisible gun and blew silently like he was blowing away smoke from the barrel of a real gun. He dramatically fell into a showy stance and three more gunshots rang out, dropping just as many hobs. The last one seemed to get over whatever strange magic this was and charged at the man.</p><p>Again, he reacted dramatically and silently, acting out dropping his invisible gun and putting his hands out in some attempt to stop the enraged hob. Everyone was as shocked as the hob was when it slammed into an invisible wall inches from the man’s outstretched hands. Stunned by the sudden impact, the hob staggered backwards, giving the man time to do…what was he doing?</p><p>He was reaching over his shoulder like he was gripping the handle of something slung over his back. He hefted whatever it was like it weighed a lot and dramatically tilted as it dragged him sideways. A puff of dirt appeared as an indent was carved out of the ground by whatever it was. Acting like he was lifting something massive, the man silently wound up with a dramatic stance, one leg lifted. Then he brought his invisible weapon down, smashing the hob into the road in a sickening crack.</p><p>Was that…a giant hammer? An invisible giant hammer?</p><p>The man rocked on his feet to regain his balance and made a show of wiping his brow and heaving a relieved sigh. Then he turned back to all of them and gave a cheerful thumbs up.</p><p>“What…the hell was that?” Mary heard her dad mutter. She wanted to know too. She’d never heard of invisible magic like this!</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -742,7 +834,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mime",
         "sourceHash": "50063a569285d6319506915876a18b4953505810ba23802748160df1d893f8e3",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f2a02914-5fbc-4c71-adeb-a625918edd62-mime.lg.webp"
       }
     }
   },
@@ -750,7 +843,7 @@
     "_id": "2e2d6949f1b22f08",
     "name": "Miner",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/9ce987fe-1a2b-4e29-a69c-503d5e26ee61-Miner_New_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>The advent of the Adventurer and the use of internal magic began an age of heroes. Of feats great and small immortalized in legends and small tavern tales. But quietly, beyond the glory of heroes, the same power that let them set their names ablaze in history gave rise to something more modest. The crunch of a shovel slicing into the ground or the ring of the pickaxe against stone were not the sounds of heroes, but to the humble Miner, they represented greatness.&nbsp;</p><p>Utilizing their own internal mana to augment their strength and precision, individual Miners were able to gather on a scale that used to take teams of a dozen or more to match. Be it stone for roads and castle walls or rare metals to be forged into legendary weapons, Miners represented the bedrock of architects and smiths the world over. While Mining Guilds obviously emerged to organize and regulate rich mining opportunities, solitary Miners were still common in villages and the frontiers of society. A single Miner with an abundant area to gather from could easily support an entire town’s needs for stone and metal.</p><p>And while it was common for Miners to have hired protectors, especially within the guilds, it was a foolish attacker that believed them to be easy targets. That same power and precision that allowed a Miner to shatter rock with ease and peel raw ore from the earth was just as easily turned toward their defense. It was a foolish bandit or adventurer that underestimated the rending power of a Miner’s pickaxe.&nbsp;</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -825,7 +918,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/miner",
         "sourceHash": "7bb253d8a559f8231d3ba3e2e9389a53f769b75967e73f885deee7b7f2bedf92",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9ce987fe-1a2b-4e29-a69c-503d5e26ee61-Miner_New_-_Copy.lg.webp"
       }
     }
   },
@@ -833,7 +927,7 @@
     "_id": "dbc8f888771815ea",
     "name": "Mist Veil Elegy",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/c96aaf6d-aa5b-41bc-b0a5-5186e9ce1dbe-Songstress.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>The vale stretched far below, a green hollow wrapped in morning fog. From the ridge, the Songstress raised her flute and pressed her lips to the reed. A single note slipped into the air and the mist stirred in answer.</p><p>It flowed like a tide, rolling down the slope until the travelers below found themselves swallowed by a pale shroud. At first they moved with confidence, torches and laughter breaking the veil, but soon their steps slowed. Their voices faltered. The mist thickened around them, drinking their warmth, their strength, their very breath.</p><p>A dissonant chord thrummed through the haze, and the travelers stumbled as one. The mist struck in unison with the note, and bodies crumpled soundlessly into the grass. The fog grew denser, heavier, a chorus swelling unseen within its folds.</p><p><i>\"Why do you play?\"&nbsp;</i>A familiar voice whispered in the wind.</p><p>The flute rose again. A mournful melody spilled into the air:&nbsp;<i>A pair of shackles hanging from the wall / A candle guttering in the dark, its flame shrinking / a lone tree shedding its last leaves / a vast tide rising, unstoppable / The endless horizon and silence beyond it.</i></p><p>That was her answer.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -908,7 +1002,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mist-veil-elegy",
         "sourceHash": "94307ba27116ff255c9cc32e7e6dd36ceed673dcc5b065ccb05315a4e316c617",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/c96aaf6d-aa5b-41bc-b0a5-5186e9ce1dbe-Songstress.lg.webp"
       }
     }
   },
@@ -916,7 +1011,7 @@
     "_id": "8be13f88f13e4868",
     "name": "Mogul",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/9323e703-9599-4f75-8d9e-fa0740127ef4-mogul.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Pecorine stared nervously at the disheveled bandits and fought the instinct to adjust her glasses from where they’d slipped slightly down her nose. She didn’t want to provoke them by bringing her hands down from where she had them raised. Three of the bandits were struggling with the ties and tarp over the supply wagon and she figured it would only be a minute before they got frustrated enough to start hacking at the ropes. Her escorts were scowling at the bandits, their weapons stacked on the frosty ground nearby. Well, the crimson haired demon girl, Exa, was flexing her fists, ready to start punching the moment it wouldn’t get Pecorine killed.</p><p>The bandit leader stepped forward, ignoring his subordinates still arguing over the supply wagon. They didn’t want to ruin the tarp or ropes because they were as valuable for their survival as the money and supplies in the wagon.</p><p>“Miss Pecorine, how nice to see you again.”</p><p>She had no idea who this man was.<br><br>“Y-yes, um,” she hesitated, trying to put a name to the weather-beaten face before giving up. “Things look like they haven’t been going well.”</p><p>He scoffed. “Of course they haven’t! Ever since that bitch Aniela kicked us out, we’ve had to fend for ourselves!” Some of the other bandits grumbled in agreement.</p><p><i>Oh,</i> she thought. These were some of the delinquents that Aniela had asked to leave after they had been caught trying to steal from Maid Mall. It was…safer for them than to let the expeditioners handle it themselves.</p><p>“But you’ve always been good to us, Miss Pecorine,” the leader continued. “Always with fair prices, always making sure everyone could get a little something.”</p><p>Well, she tried. Honestly, it had mostly been Aniela’s idea. To prevent hoarding and to reduce the exploitation of other expeditioners. Because while she wanted to support everyone here in Mirane as best she could, she still needed to send regular shipments back out home to Madeline. Some things money just couldn’t buy and a lot of those things could be found in the Astra Line, apparently. She didn’t know how much help what she managed to collect did for everyone back home. Fontina was really stingy with war news, but she chose to believe that it was all worth it.</p><p>And it was unfortunate that this poor man thought that just because she was nice and a little bit scared of fighting that she’d just give away the things meant for Princess Cherry and Madeline. A bad decision on Mr. Gundy’s part--</p><p>Gundy! That was his name!</p><p>Poor Mr. Gundy had no idea what was about to hit him. Literally.</p><p>“Well, I’m sorry, Mr. Gundy.”</p><p>“Who the hell is Gundy? My name is--”</p><p>Pecorine spread the fingers on her still raised right hand open and closed and open again. Whatever Mr. Gundy had been about to say was interrupted as his head snapped back in a spray of blood. Moments later, a deep gunshot echoed through the mountains. Pecorine leapt away from the nearest bandits just as Exa let out an excited whoop, wings and a fiery halo appearing over her head as she launched herself with a wide grin into the nearest bandit. The poor man barely had time to yelp before he was being punched repeatedly in the face. The rest of her guards used that opening to collect their weapons and demonstrate their displeasure at being ambushed.</p><p>Pecorine just…tried to stay out of the way. They were professionals, after all.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -991,7 +1086,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mogul",
         "sourceHash": "0d2b391f895aa286ef2f952dbe235b33a16f942b8662707e6f0b576578f47583",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9323e703-9599-4f75-8d9e-fa0740127ef4-mogul.lg.webp"
       }
     }
   },
@@ -999,7 +1095,7 @@
     "_id": "7fc3e7f0c395be95",
     "name": "Monk",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/9b606b5e-f63e-4662-a415-d192dac29c79-Monk.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Monks are graceful fighters in tune with their inner self.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1074,7 +1170,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/monk",
         "sourceHash": "2ace2009fcca0f553fa33f5f6819681d7705313e5413d953c60351792914dcd7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9b606b5e-f63e-4662-a415-d192dac29c79-Monk.lg.webp"
       }
     }
   },
@@ -1082,7 +1179,7 @@
     "_id": "00be4cf4f105c333",
     "name": "Mycomancer",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/cb77ce75-4bff-46e2-9cbb-904ea82792a0-Mycomancer - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Mycomancers are powerful mages that harness the power of fungi to heal allies and destroy enemies. They try to understand death through mycology.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1157,7 +1254,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mycomancer",
         "sourceHash": "13e68a92a9fd88b83b373506e232928488d1e4e6bf228d126878ef7b365dcb49",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/cb77ce75-4bff-46e2-9cbb-904ea82792a0-Mycomancer - Copy.lg.webp"
       }
     }
   },
@@ -1165,7 +1263,7 @@
     "_id": "4f0d7681e5a27cf5",
     "name": "Mystic Eyes of Destruction",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/4a9f011a-4ac2-4035-b759-2f71c3633d0e-Destruction.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>The deck rocked beneath me and storm clouds writhed above. Rain splattered against my skin as I lay on my back, limbs tingling with phantom shocks of pain dancing through me. Memories of a similar moment came over me, of me looking up in confusion at my parents for the first time, their huge blue faces alight with wonder. Papa and Tousan. Ostracized by the village for loving each other, for bringing life to a doll like me. Like everyone in the village, they were meant to take on Oni wives so they could have more Oni children that would continue the lineage of mystic eyes our village was known for. To keep the supply of warriors coming, to feed the constant wars between other lords that used our warriors as mercenaries.</p><p>A muffled roar cut through the crashing waves and rain. Briefly, the rain stopped as a shadow flew overhead, then it returned in a deluge. The ship shuddered and people cried out in panic. I pushed myself to my feet with the help of a railing, the sea alarmingly close as the ship plunged down the back of a wave.<br><br>“Honoka!” An Oni woman stumbled toward me, holding a bow with a snapped string. “Thank the gods you weren’t thrown over!”</p><p>I gripped the woman’s shoulder to steady her. “I’m okay! How’s the rest of the fleet?”<br><br>She shook her head, tears mingling with the rain running down her face. “They’re gone, Honoka! That damned dragon sank them all! We’re only still here because of Masahiro’s barrier and it’s failing!”</p><p>Gone. Papa. Tousan. Everyone left from our village that had managed to escape the forces that wanted to wipe us out. My grip on the railing tightened, my delicate looking, porcelain skin splintering the wood with frightening ease. And with the failing barrier, we would be next. How was it possible the Ryujin had something this powerful? Dragons were a myth, a legend. There shouldn’t be one crushing our armies or sinking our fleet. It didn’t matter, it was here and it was killing us. Killing my family. My eyes burned, the technique that I had painstakingly learned flaring to life. The pride of our village.<br><br>Eyes of Destruction.</p><p>Our warriors were infamous for being able to cut down men from dozens of paces with just a glare or destroy anything we settled our gaze on. It was why we were in demand. And it was why we were being destroyed.</p><p>The dragon descended, a flying mountain of scales and rage. A flare of light erupted from its maw and shattered our barrier and it dove toward our helpless ship, to crush us. Then something impossible happened. We weren’t crushed and thrown into the sea at the mercy of the storm. The dragon shrank, collapsing into a man, a Ryujin in pristine armor. He started speaking, denouncing our family. Our clan. That our destruction was the will of the Emperor.</p><p>He was good with a sword, his katana flashing as he cut down the battered crew and disoriented fighters. He gleamed, honey gold light flaring around him like a sunrise. I met him in the middle of the ship and his surprise let me deflect away the killing blow on a young boy, not even an apprentice.<br><br>“A doll?”</p><p>“I am a Tokiha warrior.”<br><br>He seemed startled to see the gleaming crimson of my eyes. He took a step back, suddenly less confident in his reduced state. He seemed to be regretting not just destroying the ship while he was a dragon. The golden light around him flared brighter and I could see the shadow of a dragon looming behind him. My eyes shone and then the world briefly lost all color. And Void claimed his transformation. He staggered in shock and barely deflected away my sword. But he couldn’t deflect my gaze. My eyes shone and he choked, his throat cut by an invisible blade. I cut his head off, just to be sure, and kicked his body overboard.</p><p>But the damage was done. With so little crew left, with so much damage, we couldn’t weather the storm. We fought just as hard against any enemy, but it was futile. And I had to watch as my friends, my family, sank and drowned. And as I stared up at the swirling storm clouds, I let myself sink beneath the waves, hoping that the crushing depths would let me join my family in death.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1240,7 +1338,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mystic-eyes-of-destruction",
         "sourceHash": "dd7589919e492bc763ad86ecd261e05cc28eea94eee001f25b12528c8dc01272",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/4a9f011a-4ac2-4035-b759-2f71c3633d0e-Destruction.lg.webp"
       }
     }
   },
@@ -1248,7 +1347,7 @@
     "_id": "2c2df3795e0b0edd",
     "name": "Mystic Eyes of Domination",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/7ac32d53-3523-4497-8744-c9b3b034074d-domination.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>“Send the next one in, please.”</p><p>Arrio Wi Vanian looked down and checked the profile pinned to his clipboard as the insensate volunteer was carried out by a pair of stoic nurses. He marked the check boxes appropriately for a full circuit collapse and spirit core regression and then signed it. Another failure. Catastrophic, this time. He hesitated a moment and then also checked the box for supplementary aid to be given to the boy’s family. It would probably take him decades to recover the use of his circuits and become a productive member of society again.</p><p>He moved over to the small desk and began organizing his paperwork like he did after every new volunteer left the testing room. He found his gaze lingering on a frustrating report, eyes scanning over the most important parts.</p><p><i>…discovered in a low Lu clan, it appears to be a spontaneous manifestation of similar progress to our own efforts…</i></p><p><i>…fully stable and functioning. It’s clear it does not match the Lir Aseria in potency or breadth but it demonstrates that the bloodline that housed such a potent Eye still lingers in the population, if diluted. Code Name: Domination.</i></p><p><i>…could not secure the cooperation of Cora Lu Milinen as she has relocated to Axias. Please authorize an Acquisition.</i></p><p>Of course, no Acquisition was authorized. The heads of Wi Vanian did not want to aggravate any adventuring guilds based out of Mothergreen, even one as small and new as the Silver Wings. They were barely even monitoring the girl, for Kari’s sake. And of course, none of the girl’s family showed any signs of manifesting an Eye or even matching circuit or spirit core readings to indicate they ever would. Frustrating.</p><p>The door to the room opened quietly on smooth hinges and a nurse shuffled in, more paperwork in her hands. “Doctor, your next patient,” she said, hands steady as a member of Un ought to be. He took them with a nod and clipped them to his board, eyes already scanning them.</p><p>“Thank you, send them in.”</p><p>Two more nurses and a nervous young woman entered the room. The nurses directed her to sit on the examination bed and then waited patiently off to the side. If the initial exam went well, they would be the test targets of this girl’s Eye.</p><p>“Miss…” Arrio checked the paperwork, a slight frown touching the corner of his lips. Not a member of a high Family. “Miss Cutilia, thank you for participating in this study. Please follow my instructions to the best of your ability.”</p><p>The girl nodded and he began his examination with careful study of her circuits, her spirit core, and her eyes. She did possess these new “Eyes of Domination”, as evidence of the swirling sigils that snapped into existence when she channeled mana to her eyes. But it was a far cry from the sheer presence of Lir Aseria. It had been over thirty years since those fools and those greater fools that had followed them had tried their rebellion. Thirty years since the last holder of the Eyes of Command had been killed -- by the clan head Endo himself no less! The fool! And he’d lost control of his daughter as well! The last dregs of Lir Aseria blood they’d had control over and he’d let her fall in with those thrice damned adventurers!</p><p>And now…now they couldn’t touch her. The Angel’s Sword Guild may be young but they had gathered power to themselves in amounts that couldn’t be easily countered. One day, they’d make a mistake and Wi Vanian would be ready.</p><p>But for now…he forced a friendly, professional smile to his face.</p><p>“Well done, Miss Cutilia. You’ve taken the treatment well and your circuits are stable. Next, we’ll run some tests of your capabilities. The nurses will assist you with that.”<br><br>As Miss Cutilia began to express her power, tentatively calling out commands to the nurses in turn, he dutifully recorded the results. They were well within the standards of Domination, only a handful of seconds or a few minutes of influence before the mana unravelled. If only they hadn’t lost their one success. What they’d done back then was impossible now, the recovered Lir Aseria Eyes from the rebellion were too far degraded for implantation. They still had use for making the infusions that helped their test subjects develop Domination, but…he could still remember the subtle shiver of power from that girl, one eye gleaming with that Lir Aseria golden glow. But they’d lost her, too.&nbsp;</p><p>She’d just vanished in the night from a secure room in the most secure facility Wi Vanian operated. No guards could remember anything, no sensors were tripped, and the recording orbs just showed one moment where their pride and joy was safe in bed and the next an empty, otherwise undisturbed room. Records of her spirit core readings, the successful implantation reports, the unique alchemical mixtures used…all of it was gone. Erased from secure rooms and artifice recorders like they’d never been. Only their memories of what they’d had remained.</p><p>He shook himself from his sour thoughts and offered Miss Cutilia a smile, the girl gasping in air and sweating from the amount of mana she’d had to channel. “Thank you for your assistance, Miss Cutilia. Please follow the nurses back to your room.”&nbsp;</p><p>He turned his attention to the nurses. “And send in the next, please.”</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1323,7 +1422,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/mystic-eyes-of-domination",
         "sourceHash": "6ed0b2211a050a0971b4bc0a6e116d35cd7e519b99cfaccc13f431a772f2cb3e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/7ac32d53-3523-4497-8744-c9b3b034074d-domination.lg.webp"
       }
     }
   },
@@ -1331,7 +1431,7 @@
     "_id": "445dd505fd3200f0",
     "name": "Naturalist",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f9ada395-560f-411c-ba6e-68d62242bc1b-Naturalist.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p><i>“Bennachd na Yggdrasil ar lenbhse.”</i> The Blessing of Yggdrasil upon this child. A faint green sheen flickered over the soldier’s body before sinking into him, through his armor and into his skin. The poor demon was staring at her with pain filled panic but relaxed as soon as the blessed regrowth of Yggdrasil soothed his wounds. Roisin gave the boy a reassuring smile and moved onto the next of the injured. The distant war to the south had reached the borders of Easter in the form of demon refugees and wounded. Those dear Salamanders were doing their best but they just didn’t have the touch of Yggdrasil to help ease away their pains.</p><p>Roisin moved through the triage tents for the wounded, stopping to bless the worse off with regrowth but offering others the gift of fresh flowers. Not just a pretty thing and a blessing but as a sign to the other healers that the patient would last without blessed healing and to turn their attention to the more grievously wounded.</p><p>“Healer! We need a healer over here!”<br><br>She gently patted the cheek of the poor child (all of these soldiers were so young!) and made her way over to the commotion. Two demon soldiers were gingerly lowering a third soldier onto a bed. A fourth was holding a blood stained bandage to some wound on her friend’s torso. Demons were a remarkably resilient people who healed quickly but even their naturally regenerative blood could be overwhelmed.</p><p>“Let me see her, children. Let me through, please,” she said, gently nudging the anxious soldiers aside. The leaves in her skirt rustled as she knelt down next to the wounded girl and she carefully lifted the bandage to see--</p><p>“Oh my, you poor dear.”</p><p>“C-can you save her? Miss? Please, you have to save her!”<br><br>“Your friend is in the hands of Yggdrasil and the World weeps with Her children.”<br><br>Roisin smiled at the confused demons and lifted her hands to rest on the wounded girl’s head and over her wound.<br><br>“<i>Bennachd na Yggdrasil ar lenbhse,</i></p><p><i>Fremha na Matha, cenglai a bhrist.</i></p><p><i>Dullega Crann na Domhain, seidigh beath as nua.</i></p><p><i>Tog om spiorai nert a dhih,</i></p><p><i>Is go ndena do glas slan ei.</i>”</p><p>The Blessing of Regrowth took hold with Yggdrasil’s verdant light and Roisin pushed her own spirit into it, joining briefly with the grandeur of the&nbsp;<i>Matha</i> before gifting that energy to the wounded girl. With a sound like leaves dancing in the wind, the healing energy seeped into the girl, sealing her wound and soothing her pain.<br><br>“There, that wasn’t so bad, was it?”<br><br>--<br><br>Translators notes:&nbsp;<br><br>The Blessing of Yggdrasil upon this child,</p><p>Roots of the Mother, bind what is broken.</p><p>Leaves of the World Tree, breathe life anew.</p><p>Take from my spirit the strength that is needed,</p><p>And let your verdant grace make them whole.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1406,7 +1506,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/naturalist",
         "sourceHash": "f56c6373e7b0369b185f02ee74e3982f1b1c4b86f579e5c4bac9ef941228eb6c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f9ada395-560f-411c-ba6e-68d62242bc1b-Naturalist.lg.webp"
       }
     }
   },
@@ -1414,7 +1515,7 @@
     "_id": "46880a952b0b29e2",
     "name": "Necromancer",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/33c261c6-5114-4c27-ad61-d241a8968606-Necromancer - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Necromancers manipulate the dead. Feared and hated by most people, and often justifiably so.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1489,7 +1590,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/necromancer",
         "sourceHash": "4139b0d3e2c9c4c2781e3309b1a26b9c2a9444157144d9344896501331c1db20",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/33c261c6-5114-4c27-ad61-d241a8968606-Necromancer - Copy.lg.webp"
       }
     }
   },
@@ -1497,7 +1599,7 @@
     "_id": "3c5743e4dc4a6bb5",
     "name": "Necromaster",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/ea8fc6e4-b49d-4cd3-8081-38d37b27de2d-adultkathelyne.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p><i>“And then the Headmaster -- wait…wasn’t it Headmistress? No no, that stinky old man was definitely the Headmaster! He had that huge beard…yeah! -- where was I? Oh yeah, then the Headmaster showed up and my beloved Jean Claude--”</i></p><p>Eleri pricked her finger with her needle as she jumped in surprise (she did not let out a surprised “Nya!” and no one would be able to prove it!). A skeleton with a permanent skewed grin had dropped a random assortment of old, mostly ruined clothing next to her. It clattered away and Eleri let out a sigh of relief, absently smoothing her poofed up tail while absently sucking on the finger she’d accidentally stabbed. With her focus striped from her frantic sewing, she took the time to take stock of the others.&nbsp;</p><p>Yuzuki was off to one side going through choreography with a skeleton dressed in a tattered wizard’s robe complete with glued on white beard and a huge, wide brimmed conical hat. Her katana was still sheathed at her side as she made exaggerated practice swings at the skeleton with a vaguely sword shaped stick. Her puffy tanuki tail was stiff with her concentration and worry and her cute little round ears were focused forward.</p><p>Celyn was nervously looking around as she scribbled in her journal. As she watched, Celyn scribbled out whatever it was she was writing and started again. The lyrics to the song that was demanded didn’t seem to be going well. Eleri wanted to get up and comfort the poor girl…and not just because Celyn had the softest, fluffiest hugs that Eleri absolutely did not fake twisted ankles to get bed time cuddles with.</p><p>Katsuro was currently the focus of their host’s ire. Kathelyne the Necromancer, stomping her feet like the child she looked like, was berating him about…a tree?&nbsp;</p><p>“It’s supposed to be a cherry tree! With the pink flowers! Not a sad willow! PAY ATTENTION NEXT TIME!”</p><p>The kitsune was apologizing about the mistake before he darted away, looking for anything that might let him make pink cherry blossoms. That wasn’t the first time Kathelyne had gotten on them about details. Details she hadn’t included in her story at all! Eleri hadn’t deserved to have that freaky giant skeleton monster looming over her while the necromancer berated her about getting the Riannon Institute uniforms wrong! How was she supposed to know what some Mothergreen school uniform looked like?!</p><p>Her gaze finally drifted over to Laurent and she couldn’t help but let her eyes linger. He’d taken off his shirt and armor sometime while she had been sewing and the dappled sunlight coming through the canopy above was making him practically glisten. He was using Katsuro’s axes and hatchets to roughly build out the stage and he’d been doing a lot of heavy lifting. Technically, he was supposed to be in the big fight at the end of the play too, but their paladin was the only one strong enough to lift those heavy logs and boards.</p><p>Another pile of discarded clothes (she didn’t want to think too hard about it, but they were probably from adventurers who had died to this maniac!) landed next to her as another skeleton clattered up to her. This one…gave her the shivers as the thing turned around, as the tail of what once was a lamia moved in a slithering motion…but the rib bones acted like little millipede legs. With one last shiver, Eleri got back to work. She had to finish the uniforms so they could get out of here. And the only way out was to perform Kathlyne’s very creatively titled: “The Stupid Riannon Institute Expelled Me For Making Cute Friends And I Hate Them!”</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1572,7 +1674,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/necromaster",
         "sourceHash": "b836d6013b7c14aa3e8ac03c805e5d42f121789bdb927426fbb990585a1df9b6",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/ea8fc6e4-b49d-4cd3-8081-38d37b27de2d-adultkathelyne.lg.webp"
       }
     }
   },
@@ -1580,7 +1683,7 @@
     "_id": "dad19e32c8ee9589",
     "name": "Ninja",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/ebff4edb-a5cc-4f7a-82ec-8a8e0bf3f755-Ninja New - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Kiraran rogues who use a mix of physical prowess and magical arts to slay their enemies in the darkness.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1655,7 +1758,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/ninja",
         "sourceHash": "883b00f35e2163449ddd6f1082224d4414fe164475416a646ce9b498626f1bd1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/ebff4edb-a5cc-4f7a-82ec-8a8e0bf3f755-Ninja New - Copy.lg.webp"
       }
     }
   },
@@ -1663,7 +1767,7 @@
     "_id": "44af262de5a3cacb",
     "name": "Nomad",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/54adef74-783f-477c-ba38-f94c4fe669be-Nomad - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>It was difficult to pin down the origins of anything throughout history. Plenty of ideas and methods were known to crop up simultaneously among completely isolated groups by simple happenstance. However, it was largely accepted that the idea of modern cavalry began with the arrival of nomadic human tribes from the north east of Lyr. Masters of their stocky, resilient horses, they migrated south west out of the tundra and steppe due to extremely harsh seasons and famine. Forced to avoid the forests of Easter to the south and pushed away from the budding kingdoms in Northi to the west, the nomadic humans settled in the lush plains of Axia and Nuren. Their art of mounted archery gave them unparalleled hunting abilities and made them maddeningly difficult to chase down, even from the fleet footed catfolk and rabbitfolk.</p><p>For a time, the Nomads roamed plains, breeding ever stronger horses and leading a relatively simple life. They didn’t know that their presence forced the kingdoms of Northi to push their influence west into Susururu Forest, displacing wolf-folk and lamiafolk, and to the selkies of Houkaina on the coast. But eventually, with nowhere to continue expanding aside from the frigid north, Northi returned its attention to the plains. Utilizing enslaved centaurs as mounts, the catfolk hoped to narrow the mobility gap and to be able to finally hunt down the annoying humans. But without any static settlements and their mastery of the plains, the Nomads were still able to control the pace of any battles or hunts.</p><p>Simultaneous to the more concentrated efforts from Northi, humans from Westria began to treat with the nomadic tribes of the Nuren Plains. They traded for horses, for trainers, and offered riches beyond the nomadic tribes’ wildest dreams for empty land. Northi wasn’t alone in dreaming of securing the plains for their potential wealth of farmland, but the humans from the south recognized that the Nomads had completely stalled chimeran expansion with their mastery of horses and Westria had long been praying for something that would let them protect themselves from the chimera and fae. Humans had a long history of domesticating animals to help balance the strengths of their neighbors: dogs for hunting, oxen for burden…the introduction of horses was simply another method to overcome their weaknesses.</p><p>With a combination of various deals with the nomads and utilizing their own methods against them, Westria was finally able to push its borders to the edge of the forest and the Nuren River. Their actions unfortunately displaced or eradicated tribes of nomads that resisted the territorial grab. Some historians believe that ancient, bad blood was one of the larger factors for the rise of independent nations along Westria’s north eastern border. Many humans from the plains regions could still claim ancestors from those nomadic tribes and while there was no official animosity, some were convinced there was an overarching reason they had carved out their independence from both Northi and Westria.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1738,7 +1842,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/nomad",
         "sourceHash": "c485d7fa12afd36a1c5e6942683bf53d94d3863f0e84eedbf504d8743880cbc8",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/54adef74-783f-477c-ba38-f94c4fe669be-Nomad - Copy.lg.webp"
       }
     }
   },
@@ -1746,7 +1851,7 @@
     "_id": "345d99eb715b2917",
     "name": "Onmyoji ",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/bd558aba-bfce-4a44-bd13-38aab5478709-Onmyoji - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Scribes who use magic paper and ink to create magic talismans imbued with spells.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1821,7 +1926,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/onmyoji-",
         "sourceHash": "b9ca59c25ccc0968b78726f86f10e45146114feb470af2f517576070a5303868",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/bd558aba-bfce-4a44-bd13-38aab5478709-Onmyoji - Copy.lg.webp"
       }
     }
   },
@@ -1829,7 +1935,7 @@
     "_id": "61610913de6f47ae",
     "name": "Oracle",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/99cfef01-bc0c-4ee5-9b60-2df4e755725e-Oracle - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Mysterious people that work on the edge of Magic and Divinity, utilizing enigmatic powers to see the future whether by instinct or divine intervention.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1904,7 +2010,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/oracle",
         "sourceHash": "4f72ff0ffed253869d2da942b113ef923e7ea7722c5fcc9858a2b34b66c26ed7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/99cfef01-bc0c-4ee5-9b60-2df4e755725e-Oracle - Copy.lg.webp"
       }
     }
   },
@@ -1912,7 +2019,7 @@
     "_id": "f1d29114013acaa5",
     "name": "Peltast",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/491918da-c2e3-4afc-b734-e23f4dac5b10-Peltast - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "A specialist in using throwing weapons.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1987,7 +2094,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/peltast",
         "sourceHash": "84580c364e4b732e4c7f0cd67f936a6b3ed5125bdb889acd808db8549ac8d160",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/491918da-c2e3-4afc-b734-e23f4dac5b10-Peltast - Copy.lg.webp"
       }
     }
   },
@@ -1995,7 +2103,7 @@
     "_id": "e314c560582a55cb",
     "name": "Phantom Thief",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/1c20218f-378b-4971-acf3-d75b06a9d3aa-Phantom_Thief_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>“Why is the hardest part of the heist always climbing?” Jack grumbled as he pulled himself up another few feet, fingers finding the barest of purchase in the seams between the stones that made up the wall he was climbing. He paused, head tilting and then shaking with an exasperated sigh. Another detection field. The TENTH ONE. With little effort, he reached out with one hand and flicked his fingers against the magical threads of the bounded field, his own magical energy seeping seamlessly into the web of detection. Moments later, he passed right through it like a ghost, just like all of the others.</p><p>“I knew Merlin Academy was said to be well protected but this is just ridiculous.” He swung himself up to a closed window, high up the tower he’d been scaling. If his intel was right, he just needed to unlock this window, bypass the detection ward, and he’d be just down the hall from his target. Neither the ward or lock gave him much trouble and he was inside a well kept classroom. Stadium seating style with large desks and benches running the length of each level. Nice open space front and center for whatever magic practice they did in this particular class.</p><p>Jack gave an impressed whistle as he crossed the room. No wonder Northi mages trained at Merlin were so annoying; they were well trained AND snobby aristocrats. He’d never had a classroom half as good during his studies.</p><p>Still shaking his head at it all, he slipped into the hall. Look left, look right, look left again because that always bit him in the ass if he didn’t and he was clear. He took a right from the classroom and was slipping into the target room within a minute. Still no alarms, guards, or inconveniently appearing students. Just him and the manuscript perched oh so nicely on a stand in the middle of the room.</p><p>Jack rolled his eyes to the mage hiding under an invisibility spell to his left. “Man, that’s a pretty obvious trap you know?” he told the man. The mage startled in surprise and his spell shattered, motes of magic dripping off him like rain.</p><p>“What--how did--” the mage cleared his throat and straightened his shoulders before marching resolutely between Jack and his prize. “You certainly live up to your reputation, Mister Harlequin.”</p><p>Jack smiled but obviously the man couldn’t see that through his mask. “Please, call me Diamond. Harlequin makes me feel like my old man.”</p><p>The mage scoffed, his little kitty ears flatting with his irritation, and raised his hands, fingers splayed and magic gathering. “It doesn’t matter what you call yourself, you’re not leaving here and you’re certainly not touching that manuscript. The alarm is already sounded, you’ll not be escaping the entirety of Merlin Academy’s staff.”</p><p>Jack didn’t have the heart to tell him the alarm had, in fact, not sounded. He was holding the activation thread coiled around his pinky, after all.&nbsp;</p><p>“Look, you don’t have to go through all this trouble. Just let me have that bit of paper and I won’t have to embarrass you. Okay?”</p><p>The mage flicked his fingers and in a sharp voice said, “<i>Cyrin!</i>”</p><p>An anemic yellow bolt of magic crossed the distance between them in an eyeblink…and splattered against the door behind him ineffectually. With a smirk tugging his lips, he ran his hand through the wake of the spell, gathering the echo of it and reconstructing it in the space of a breath.</p><p>“<i>Cyrin!</i>” he echoed mockingly. His copied spell hit the mage dead in the chest and expanded, wrapping around him like magical ropes. It even made a magical blindfold and gag. Nasty spell for a mage to get hit by. Jack gingerly stepped over the bound and struggling mage, hands snagging and redirecting the threads of even more barriers and wards around the manuscript. With a final snipping motion for the&nbsp;<i>sticking ward</i> on the bundle of papers itself, he plucked it from its stand. A brief flip through revealed a dizzying array of mechanical and magical information and the confusing combination of it all to make some sort of armatae.</p><p>Exactly like the customer said. Perfect. He was about to make his client in Dacquoise very happy. As he stepped back over the mage, he dropped his marker. At first glance, it looked like a playing card but the white face of it only had a depiction of his mask.</p><p>“Well, it was fun, but I won’t be seeing you. But feel free to tell everyone about Diamond Harlequin, would you?”</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2070,7 +2178,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/phantom-thief",
         "sourceHash": "e41518e1460fc16a9d13dcaf8f97a1ac0cd1a68a734be69ced998b2b5c463d6e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/1c20218f-378b-4971-acf3-d75b06a9d3aa-Phantom_Thief_-_Copy.lg.webp"
       }
     }
   },
@@ -2078,7 +2187,7 @@
     "_id": "66ddb503d395b40e",
     "name": "Phosphomancer",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/5d5c5d49-1e1f-4505-8bb6-9dec90331d21-Phosphomancer_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p><i>By CCeles.</i></p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2153,7 +2262,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/phosphomancer",
         "sourceHash": "64f5ddc5595d48a41d43a91f0b7f4deb7e4eb7d087c70ebbbc91893d5e378ce5",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5d5c5d49-1e1f-4505-8bb6-9dec90331d21-Phosphomancer_-_Copy.lg.webp"
       }
     }
   },
@@ -2161,7 +2271,7 @@
     "_id": "ce6a6d23e4d4b79f",
     "name": "Pierrot",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/95a736fd-5f37-478d-82f5-f3380a136a05-Pierrot.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Laughter and cheers filled the air. Animals roared to the delight of a crowd under a massive tent, likely prancing in a circle with mock fierceness. His family was in one of those tents, enjoying the entertainment of the circus. Owen had only left to find a snack, to replace the one someone had accidentally knocked out of his hands. He had a pocket full of clim that clinked as he walked and that had drawn attention.</p><p>So now he was cornered in a dark alley between tents by a trio of tall, rabbitfolk boys. His tail flicked in agitation as he backed away. The gleam of the knife held by the leader caught the light with a sinister shine.</p><p>“Look, kid, just give us the money, yeah?” the leader rabbitfolk said, gesturing with his knife. “We’re not gonna hurt you, we’re just hungry, see?”</p><p>“O-okay,” he agreed, trembling hands fumbling into his pocket. In his nerves, he dropped the money at his feet. The three rabbitfolk scowled at him.</p><p>“Tch. Typical useless cat. What the hell are you doing, huh?”</p><p>“S-sorry! I-I didn’t mean--”</p><p><i>Splat!</i></p><p>The rabbitfolk on the right staggered sideways as a pie, of all things, smacked him in the side of the head. He shook his head, dazed and surprised by the sudden pie.</p><p>“What the hell? Who the hell are you?!”</p><p>Owen turned to look and was just as confused as the three muggers. It was a clown. White outfit, white face painted with dramatic tears, a flower pin, and massive red shoes.&nbsp;</p><p>“Gentlemen, this is a place of laughter and fun. Why don’t you just forget about all of this and enjoy the circus?”</p><p>“Look buddy,” the leader said, taking stomping steps toward the clown until he loomed right over him. “This isn’t any of your business, yeah? Just walk away.”</p><p><i>Honk!</i></p><p>Quick as a flash, the clown reached up and stuck a large, circular red nose on the rabbitfolk leader’s face and squeezed it.</p><p>“You--!” his shout was interrupted with a startled gurgling as the flower on the clown’s chest sprayed water into his face.</p><p>The non-pied member of the group shouted and stepped forward only for his feet to flip out from underneath him, a banana peel flying into the air comically. He hit the ground with a thud and then a surprised squawk as another pie slapped into his face.</p><p>“Maybe you boys should leave, you’re pretty accident prone,” the clown said nonchalantly, twirling yet another pie on the tip of his finger. Unwilling to face more pies, banana peels, and humiliation, the rabbitfolk fled.<br><br>“Well, good riddance to sour souls. You okay, kid?”</p><p>“Y-yeah. Thank you!”</p><p>“Don’t mention it. Why don’t you get back to your family?” And before Owen could complain that he was out here to find something to eat, the clown held out a steaming fresh corndog and the coins he’d dropped.</p><p>“Enjoy the circus!”</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2236,7 +2346,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/pierrot",
         "sourceHash": "49eb2fb1d618b658a73a4338b653913106b209d8054d0d2bf2f54ad8ddc72326",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/95a736fd-5f37-478d-82f5-f3380a136a05-Pierrot.lg.webp"
       }
     }
   },
@@ -2244,7 +2355,7 @@
     "_id": "51f9a947e645aaef",
     "name": "Priest",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/e1a6b805-dca7-4178-8997-14e5b24c6385-Priest - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Priests belong to a religion and utilize the mystery of divine power to protect and heal allies.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2319,7 +2430,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/priest",
         "sourceHash": "d03c649868c682bd9b66f89ae044ae1c63834cf4f44cc4fd44b07d6ebbc2b385",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/e1a6b805-dca7-4178-8997-14e5b24c6385-Priest - Copy.lg.webp"
       }
     }
   },
@@ -2327,7 +2439,7 @@
     "_id": "5de6247c5adf6c7a",
     "name": "Protector",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/a4158747-888b-457f-9d85-04a00027f8d1-protector.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Heavily armored warriors with large shields that protect their allies.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2402,7 +2514,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/protector",
         "sourceHash": "5709f9035df64baa622ca9599dc0237b56b4102f4e1fd3de87687a36ae69c811",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/a4158747-888b-457f-9d85-04a00027f8d1-protector.lg.webp"
       }
     }
   },
@@ -2410,7 +2523,7 @@
     "_id": "aa007e47aeed597f",
     "name": "Pyromancer",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/a04c29d1-7951-47ae-9511-26be17535372-Pyromancer - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Mages the specialize in fire magic.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2485,7 +2598,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/pyromancer",
         "sourceHash": "7d87cec2151f06b04cc1454d07b520cd84aec65503612d0b45e0da410a35b055",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/a04c29d1-7951-47ae-9511-26be17535372-Pyromancer - Copy.lg.webp"
       }
     }
   },
@@ -2493,7 +2607,7 @@
     "_id": "34f10a40a3256cb7",
     "name": "Pyromaster",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/924afd61-4716-4b34-a0f7-733bc5822607-pyromaster.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Fire mages who have reached the pinnacle of fire control.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2568,7 +2682,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/pyromaster",
         "sourceHash": "fce0e6f738b77d5969d46a73498b51135e0435393ca11c400eeb94d897065cbd",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/924afd61-4716-4b34-a0f7-733bc5822607-pyromaster.lg.webp"
       }
     }
   },
@@ -2576,7 +2691,7 @@
     "_id": "6b24643c7c5de2a0",
     "name": "Ranger",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/37ddd5f6-5875-4f3a-a1d5-40274cec13ca-Ranger New - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Rangers hail from the ranks of expert hunters and skilled military marksmen. Their senses and instincts are keen—taking down targets from incredible distances. Whether wielding bows, crossbows, or rifles, Rangers are always ready with an oppressive rain of missiles.</p><p>An expert ranger has the ability to pick out targets of opportunity. They quickly zero in on the most vulnerable enemies, picking them off with precision. It’s this talent for oppressively breaking down the opposition that makes Rangers so effective in battle.</p><p>Rangers have trained the ability to flood mana into their optical magic circuits—granting them the ability to see further and more sharply.&nbsp; They spot threats from great distances and then strike them with pinpoint accuracy.</p><p>They're a welcome addition to any adventuring party.&nbsp; With sharp focus and deadly accuracy that makes them fearsome opponents.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2651,7 +2766,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/ranger",
         "sourceHash": "1b3fe0c5eb6f678b02d786fdea7b3a39fc231ca64ab6a0a8e154585bb09071d6",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/37ddd5f6-5875-4f3a-a1d5-40274cec13ca-Ranger New - Copy.lg.webp"
       }
     }
   },
@@ -2659,7 +2775,7 @@
     "_id": "06873e9959779667",
     "name": "Reaver",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/b6584525-b4b3-44b8-b797-f6293e026158-assets2Ftask_01k72ctszsf24ap3wkjd9setbx2F1759943552_img_0.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Marcus stared at his ‘mentor’ with exasperation as the zoalith catfolk demonstrated a series of strikes against a reinforced training dummy. Captain Kreman was undeniably skilled and had raw power behind his strikes to boot. However…</p><p>“UuuuooohRAH!” the catfolk exclaimed, bringing his greatsword down in a heavy, two handed strike with a crash. Dirt and dust exploded around him, obscuring everything from view. A stiff breeze rushed through the training area revealing Captain Kreman in a dramatic pose and Marcus could see him looking out of the corner of his eye to make sure he was seen.</p><p>With a self satisfied smile, Captain Kreman stood up and stabbed his sword down into the dirt. Marcus could practically feel Vice-Captain Aislyn’s glare at the Captain’s actions from somewhere in the growing camp and the amount of extra maintenance his sword would need.</p><p>“See? That’s how it’s done! You do it.”</p><p>Macrus had not, in fact, seen how it was done. Captain Kreman had attacked the training dummy at full speed and had only shouted at the top of his lungs in various strange ways instead of explaining the technique Marcus was learning. Still, trying to point that out to the Captain would only get him confused so Marcus just resigned himself into being chastised mid technique and finally being taught properly. He stepped up and settled into a stance that was meant to build and maintain momentum in his blade so he could strike with little warning on anyone approaching him.</p><p>“You’re standing wrong,” Captain Kreman said.</p><p>Marcus waited for some sort of correction for a long moment before he adjusted his footing and lifted his sword again.</p><p>“Wrong!” A light kick hit him in the side of the foot and he nearly staggered. “Like that!”</p><p>He checked his footing and tried to memorize how it felt and then began to spin his sword around him, the tip whistling as he built up speed.</p><p>“Huh…not bad.” And with no further warning, Captain Kreman stepped into the sweeping area of his sword. He couldn’t have stopped his blade if he wanted to and he was very grateful when the Captain deflected his unintentional blow with apparent ease. The catfolk man nodded with a frown. “Good power but…”</p><p>“But?” Marcus asked, ready for any sort of criticism that would help him improve.</p><p>“Where is your warcry?!”</p><p>Marcus stared at the Captain. “What?”</p><p>“How can you expect to put full power into your strikes if you’re not putting full power through yourself?!” Captain Kreman brushed him aside with the flat of his sword and took up a stance.</p><p>“Like this!” He swung down. “URAH!”&nbsp;</p><p>He cut to the side in a leg level strike. “OOUUAH!”&nbsp;</p><p>He leapt into the air with a flip, his sword leading the way down “SHUWAH!”</p><p>The air became heavy with magic and then Captain Kreman began to spin. “UUOOH-RAH-RAH-RAH-RAH-RAH-RAH!” Every strike of his spin on the dummy was punctuated by an increasingly louder ‘warcry’.</p><p>Marcus stared, taking it all in, watching his mentor’s feet, his stance, the angle of his sword, and even the rush of magic as it spun through the air. This, at least, was something he could learn from.</p><p>He’d leave out the warcry, though.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2734,7 +2850,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/reaver",
         "sourceHash": "9034e93e422d0d4b4056abb0a09eed32dbccf084db266866c919d7a03281167a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/b6584525-b4b3-44b8-b797-f6293e026158-assets2Ftask_01k72ctszsf24ap3wkjd9setbx2F1759943552_img_0.lg.webp"
       }
     }
   },
@@ -2742,7 +2859,7 @@
     "_id": "143c4ebeba78acba",
     "name": "Rogue",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/287d3173-585a-4f16-b0a6-01be1696fd01-Rogue New - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Rogues are the shadowy denizens of the underworld, using subterfuge and cunning to outsmart their enemies. They know how to create confusion and chaos, slipping in for the perfect strike when the moment is just right. A Rogue’s greatest strength lies in understanding their own weaknesses. They never fight fair, always looking to tip the scales in their favor.</p><p>You’ll find Rogues lurking in the dark corners of Lyr’s cities, where they navigate the underbelly with ease. But they’re not just criminals or street-level operatives. Many are recruited by official agencies, prized for their abilities in gathering information and conducting espionage. Their unique skill set also makes them invaluable members of adventuring parties, where their knack for stealth and strategy can turn the tide in any situation.</p><p>Rogues thrive in the shadows, always one step ahead, always ready to seize the advantage.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2817,7 +2934,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/rogue",
         "sourceHash": "8c7307ed78f1caf7346965f1cbe6d1af11d9be0d6cf4af15c20e6397a8c1b9ee",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/287d3173-585a-4f16-b0a6-01be1696fd01-Rogue New - Copy.lg.webp"
       }
     }
   },
@@ -2825,7 +2943,7 @@
     "_id": "a658acb1f600d101",
     "name": "Saboteur",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/8e497286-47d7-47f5-8d3d-4bbda83da699-Sabateur - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Rogues that create opportunities for their teammates, breaking through and creating their own entrances while hindering the enemy.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2900,7 +3018,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/saboteur",
         "sourceHash": "614b2ade0ece410b93e07a89ed2effb4787bd7092d799b65dff13aa13e961d79",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/8e497286-47d7-47f5-8d3d-4bbda83da699-Sabateur - Copy.lg.webp"
       }
     }
   },
@@ -2908,7 +3027,7 @@
     "_id": "dd36c8005a8f0eb6",
     "name": "Sage",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/9fc9f328-68d9-4f3e-98f6-7c409bf54100-Sage - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Sages are spellcasters that excel in augmenting spells.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2983,7 +3102,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sage",
         "sourceHash": "134ae08256d71ce1c6d8d996dd2497a6c58cc3c9cdcaf735e3fbc03d08a069db",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9fc9f328-68d9-4f3e-98f6-7c409bf54100-Sage - Copy.lg.webp"
       }
     }
   },
@@ -2991,7 +3111,7 @@
     "_id": "fcef00bd280db30c",
     "name": "Sanctioner",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/e2a7ded4-f70a-4047-9c43-4e3da9c832a6-Sanctioner.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Miriam’s robes snapped in the wind, the dusty canyon air tugging at her hair and making her squint to keep the grit out. The sounds of battle echoed off the high rock walls as a formation of knights on foot surged forward under the guidance of a standard bearing paladin. Their formation was perfect, a disciplined line of armor, spears, and shields. Opposing them on the left flank and blocking any attempts to break out of the canyon was an irregular demon unit a quarter their size. But even with a paladin leading them, they were stymied. The air practically sizzled with the amount of mana choking the area, a result of the blasphemous forms the demons had taken.</p><p>Divine Release, they called it. An insult is what it was. There was nothing Divine about their hellish powers, their horns and tails and hideous wings. But…the power they had was undeniable. She watched as a tiny speck of a demon girl with red hair and no weapons shot from her lines like a cannonball, her fists cracking plate armor and shattering bodies. Her wings gave her grace, letting her change directions at a whim or turn leaps into brief flight. The paladin leading the knights challenged her and Miriam had to watch as the girl danced around his greatsword, eyes glimmering with some unholy magic. Her blows turned light, almost like taps against his enchanted armor but the paladin recoiled and crumpled like he’d been struck by a giant hammer. He fell and the demons rushed in to push back the now leaderless knights.</p><p>A bolt of magic hissed by her head and she refocused on her own fight. The center of the demon’s defensive line was far more organized than the wild flanks and they had mages in support. She lifted her hand in supplication briefly, golden light haloing around her before she extended her hand. The bolt of light staggered one of the frontline defenders, the holy energy clinging to his skin until one of the forward knights landed a strike. The holy energy flowed back into the knight, bolstering his stamina as he pressed the attack.</p><p>She had to be strategic with her magic. She wasn’t like a priest in the back, tending to the wounded. She was trained for the front lines, to turn damage and potential into recovery for her allies. To bring the Wrath of Kari to her enemies while providing the Succor of Her Light as the scriptures dictated. To bring holy cleansing to this Kari forsaken land!</p><p>But these demons just weren’t cooperating! Even with the help of those filthy cats and whatever trickery they’d used, the campaign in Sorthen had been successful beyond all expectations. Until now. Until these canyons! The demon rabble had organized and the push through the country had stalled. A frustrated snarl accompanied her next blast of holy light, blowing through the defenses of a faltering frontliner. His spot was filled almost instantly by the next in line before the opening could be capitalized on.</p><p>A low whistling cut faintly through the din of battle, its sound so strange that it stood out. It was a sound they all knew, something they were warned about and that the cats had said they would handle. But there were no cats here now. No aeromancers.</p><p>Miriam watched in growing fury as a trio of aerial mages swooped in from on high, missiles of magic, devastating beams, and condensed mana bombs fell into the back lines of their formations, scattering mages, riflemen, and healers alike. The aerial mages turned their attack runs into sharp climbs, expertly avoiding any return fire as they gained altitude for another attack run.</p><p>--</p><p><i>“The Battle of Three Passes was the one, great chance for the demons of Sorthen to turn back the invasion during the Four Swords War. Utilizing a new form of long range communication, General Ar’Golan maneuvered his forces into a blocking position at the Rake, a trio of canyons to the north of the capital and the fastest direct corridor to Marlone Bay. With the enemy forces split and communications finally able to move between demon commanders, Sorthen forces inflicted dire casualties on the invaders, particularly those of Westria due to the split nature of the attack and the lack of aeromancer support to combat demon aerial mages. The defense only lasted two weeks until the breakdown of demon communications removed their coordination and the demon forces retreated.</i></p><p><i>This two week delay in the invasion is said to be the only reason Sorthen continues to exist as a nation today.” - The Great War by Alan Printon</i></p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3066,7 +3186,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sanctioner",
         "sourceHash": "560fda7bf3b006ded7330ff382abf6b8115ab504414766a8a9747e6cf174965f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/e2a7ded4-f70a-4047-9c43-4e3da9c832a6-Sanctioner.lg.webp"
       }
     }
   },
@@ -3074,7 +3195,7 @@
     "_id": "2ae7bff10ed851c6",
     "name": "Scout",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f8982260-6854-43ff-a53d-138434749106-Scout.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>In the frostbitten silence at the edge of the Astra Lands, survival doesn’t just come from strength, it comes from knowing where not to step. The first to cross the threshold past Mirane were not conquerors or scholars, but a scattered few with sharpened senses and silent tread.</p><p>It was the scouts, led by Elyne Ravas, that laid the first trail into the Astra Lands. Long, long before the existence of the Dragon Claw Alliance or the Mirane Expeditioner's Alliance, they were the ones that cleared the path, placed the first markers and discovered how vast the lands truly were. The things learned during that time were passed on and are still shared to this day.</p><p>The scout’s role is not simply to guide, but to witness. To thread through impossible terrain, observe the unspeakable, and return with clarity while others return with nothing at all. Whether alone or among allies, they mark the path. Not for glory, but so others may live long enough to see it.</p><p><i>\"Eyes sharp, steps light. Leave no echo but the truth.\"</i> -Ravas</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3149,7 +3270,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/scout",
         "sourceHash": "bdf76d0dc8040534f648b3a465f2f897509779d3be2dee3872be0fa487e34a59",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f8982260-6854-43ff-a53d-138434749106-Scout.lg.webp"
       }
     }
   },
@@ -3157,7 +3279,7 @@
     "_id": "ccff9fd629360a96",
     "name": "Searing Lotus Style",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/678b8fd7-0332-46bf-bb1c-cbea52ee6932-searinglotus.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Aine watched as injured soldiers ran past her through a narrow pass. She hadn’t expected things to be easy when she set out with her comrades from Glassworks, answering the surprising call for help from the Demons, but the sheer weight of numbers the combined Northi-Westrian forces brought to bear was mind boggling. They had lost the battle, that was clear and obvious, but her unit’s objective had been complete. The relic was safely smuggled out of the now burning city while they had held the rear guard.</p><p>She didn’t know what the relic was, she didn’t know why it was so important, she didn’t know why half her comrades were dead and the rest injured, but she had to hope that it was something that would turn the tide of the war.<br><br>“Keep going!” she shouted after the few remaining Salamanders and Demons that had hesitated when she hadn’t followed them. She turned fully toward the approaching humans and brought her longsword down with a sharp motion. Fire bloomed along the blade, so hot that it began to sear the grass nearby and caused the humans to come to a wary halt at the sheer heat of it. The tip of her blade scratched a molten line in the stone between her and the enemy.</p><p><strong>“If you cross that, I'll be forced to kill you,”&nbsp;</strong>she warned, her voice holding an echo of a wildfire.&nbsp;</p><p>Their response was just laughter and a cautious approach, swordsmen fanning out and a pair of riflemen hurrying to load their weapons. She let out a scorching breath and let Fire become a reality in the world around her. The air shimmered and the stone slagged into molten puddles around her. Scorching wind flew around her, the sudden heat displacing air aggressively and sending her hair dancing. She took a defensive stance and waited for the first man to gain his nerve. Their courage was bolstered by more men coming up the pass, ready to push the chase for her withdrawing men.</p><p>The first man to cross into her domain barely had time to scream before he was scorched to ash and bone. Those that tried to bypass her found that she had placed herself too neatly in the pass opening and they had to dance back with severe burns. Rifles range out and she was forced to deflect away one shot with her sword while the others were wildly off target, the heat haze throwing off their aim.</p><p>She couldn’t hold them forever and she knew she would die here. But she would burn as much time and as many men as she could, the flame of hope in her heart that the artifact would all be worth it, that it would bring an end to the war.</p><p><strong>“Come, then! I’ll burn you all to ash!”</strong></p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3232,7 +3354,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/searing-lotus-style",
         "sourceHash": "5ee279972e3862d5dc44688516e9cfdaaf8938b086a3b700c55c93b03640c352",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/678b8fd7-0332-46bf-bb1c-cbea52ee6932-searinglotus.lg.webp"
       }
     }
   },
@@ -3240,7 +3363,7 @@
     "_id": "5ead4a6d92691f84",
     "name": "Seven Sorrows Sword Style",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/39a4137d-f018-49e5-9852-37c64495cf8a-AlyciaClaes-SevenSorrow.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>“Fayto Zhelti! It is time for your end!” Lightning struck dramatically, thunder rolled, and the wind snapped at her cloak.</p><p>“I am The Lone Wolf of Rosania, The Darkness Against the World, the Reaper With No Witness, The Seventh Sorrow of Lyr! In the name of Her Dark Radiance Heira, I, Alycia Claes, will defeat you!”</p><p>She readied her combat stance, her hand raised by her face, her scythe roiling with Dark magic.</p><p>“Alycia! Get down from there before you get struck by lightning!” her eternal rival shouted back. As if to punctuate the danger, another lightning strike split a tree that was far too close for comfort in a storm of splinters and embers. Hastily, Alycia jumped down from her perch to land before her rival, brushing her skirt out a few times before returning to her stance.</p><p>“Bold of you to attempt a magical sneak attack!”</p><p>“It’s a thunder storm and you have a metal pole, there was no magic needed,” Fayto replied flatly. “And did you add another name?”<br>&nbsp;</p><p>“N-no! You are mistaken!” Alycia shook her head, her twin tails flying and then pointed her scythe at Fayto. “Don’t distract me! Today is your end! You can’t escape me again!”</p><p>Fayto exchanged looks with her party, obviously playing something to run away again. Then she looked at Alycia seriously, hand on her sword. “Look, if you just wanted to spar, just say so. But we’re kind of in a hurry. There’s a lightning drake attacking villages nearby and we’re hunting it.”</p><p>“Oh.” Alycia lowered her scythe. “Then let’s vanquish it! I, obviously, will take the lead and defeat it myself! You can support me!”</p><p>“Yeah, yeah, let’s just go. It’s probably roosting in the mountains to the east.” Alycia fell into step with Fayto, looking at her rival’s father and brother. They had quietly amused looks on their faces. Alycia bit her lip as she stared at Krono Zhelti and opened her mouth to--</p><p>“Don’t you dare start flirting with my brother again.”</p><p>Alycia’s mouth snapped shut and she pouted.</p><p>“And I can’t believe you copied my hairstyle, Alycia!”</p><p>“What? You don’t own the twin tail style!”</p><p>“You even have the same ribbons I use! Did you get those in Florentine, too?”</p><p>“Hmph! You’re just jealous it looks better on me!” Alycia said, turning to point at Fayto for emphasis.</p><p>“They’re like long lost sisters,” Krono said to his father with a quiet laugh.</p><p>“Kari, give me strength,” Fayto said, pinching the bridge of her nose. “At least cover your legs! It’s indecent!”</p><p>“My body is the very image of Heira, I will not!” Alycia folded her arms and looked away. “Prude.”</p><p>“Prude?!”</p><p>Krono looked at his father and his father looked at him. “I think they missed each other.”</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3315,7 +3438,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/seven-sorrows-sword-style",
         "sourceHash": "f3a24fa04de58c5d6079c077bf1ff93ceb5744f7b1fad2e690bf03fc9a90a164",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/39a4137d-f018-49e5-9852-37c64495cf8a-AlyciaClaes-SevenSorrow.lg.webp"
       }
     }
   },
@@ -3323,7 +3447,7 @@
     "_id": "6a903e0ad43932ac",
     "name": "Shadow Thief",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/8b77dcba-84b1-4d23-88dc-7a6fa8758bd6-Shadow_Thief_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "The Shadow Thief is a stealthy and cunning character, specializing in thievery, deception, and infiltration. They excel at slipping into enemy territory undetected and stealing valuable items or information, using their quick reflexes and agility to escape undetected.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3398,7 +3522,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shadow-thief",
         "sourceHash": "ad8fb3a2dcdbf84337c414079552011b6a85b16a2d5cd3d61e982cf8b90ea83e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/8b77dcba-84b1-4d23-88dc-7a6fa8758bd6-Shadow_Thief_-_Copy.lg.webp"
       }
     }
   },
@@ -3406,7 +3531,7 @@
     "_id": "bec7baa3e8a0addf",
     "name": "Shadowbringer",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/5ce5244e-5202-4737-a317-08ff8ea002f3-ShadowBringer_1_T3_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>-</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3481,7 +3606,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shadowbringer",
         "sourceHash": "e53ec6e6b079d45afd72392dbc8514c2a7a9a3bc55ceb4b1b6b1373dd54c4b42",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5ce5244e-5202-4737-a317-08ff8ea002f3-ShadowBringer_1_T3_-_Copy.lg.webp"
       }
     }
   },
@@ -3489,7 +3615,7 @@
     "_id": "53738273097cdef8",
     "name": "Shield Paladin",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f13401da-21d5-4eb5-9919-fc9fafb2612c-Shield Paladin - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Paladins are powerful warriors who receive their powers from their god. Shield paladins are frontline defenders and healers who can keep their weaker allies safe.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3564,7 +3690,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shield-paladin",
         "sourceHash": "256877033d3ae806d911bd09807aa6f1c227e15f32d755d38a4d6cfd2279ffe1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f13401da-21d5-4eb5-9919-fc9fafb2612c-Shield Paladin - Copy.lg.webp"
       }
     }
   },
@@ -3572,7 +3699,7 @@
     "_id": "273ebaa61a086997",
     "name": "Shield Saint",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/6641df57-126e-4d50-857b-19275e71b589-Shield_Saint_raw.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>The sworn shieldbrother or sister of a Sword Saint. Like its twin saint, the Shield Saint originally hails from Kirara where it fights together with their chosen partner.</p><p>The Shield Saint is trained in defensive techniques whose purpose is to allow for their partner to focus purely on offense while the Shield Saint absorbs the hits. At first these techniques were merely physical, but over time the nature has evolved into a more spiritual connection. The bond between a Shield Saint and their partner links their very souls together and neither can be bonded again until one of them passes away. Because of this, the partner a Shield Saint chooses is very important and in Kirara most pairs are selected based on compatibility at an early age. It is not uncommon for a Sword Saint and Shield Saint pair to be romantically involved with each other.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3647,7 +3774,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shield-saint",
         "sourceHash": "d8a56fe99c54ab236b04baa4353aaba43edc13c32961d01310285bad85eb472b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/6641df57-126e-4d50-857b-19275e71b589-Shield_Saint_raw.lg.webp"
       }
     }
   },
@@ -3655,7 +3783,7 @@
     "_id": "0a4f1f331a830a60",
     "name": "Shieldwarden",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/7421be02-4de3-4390-9959-360a34c99d1d-Shield Warden - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Shielding mages</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3730,7 +3858,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shieldwarden",
         "sourceHash": "2e438fc7dc83b65503fb866b107c61ab6613e53463984f3a9aa9becb14dee95b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/7421be02-4de3-4390-9959-360a34c99d1d-Shield Warden - Copy.lg.webp"
       }
     }
   },
@@ -3738,7 +3867,7 @@
     "_id": "f7af2593be3d6ba2",
     "name": "Shinigami Eyes",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/917dc518-af9e-4beb-b803-8755f5f4c42c-Shinigami Eyes - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Shinigami Eyes are mystic eyes that allow the user to perceive the death of things. This manifests in the shape of lines and points on a creature’s body, which can be cut or stabbed.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3813,7 +3942,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/shinigami-eyes",
         "sourceHash": "32d6e1ac60f763007c866a3b491311fc53ffd89e91d36eea2d25333216f4b81e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/917dc518-af9e-4beb-b803-8755f5f4c42c-Shinigami Eyes - Copy.lg.webp"
       }
     }
   },
@@ -3821,7 +3951,7 @@
     "_id": "df85292ab18aa523",
     "name": "Sky Knight",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/4c09abe2-7b67-45f5-a460-92c1b8bcdc76-Sky Knight - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>As was common with most innovations that made radical leaps, the history of the Sky Knights was steeped in warfare. Like the development of the Cavalier, learning to take to the sky on the backs of winged mounts stemmed from a need to counter a threat. Aerial Mages from Sorthen had long since, and in some cases continue, dominated the skies as scouts, couriers, and as untouchable bombardment specialists. With no modern airships to deter them and no Aeromancers to threaten them, both Northi and Westria searched for a solution. Nearly simultaneously, the two countries developed their own methods.</p><p>From the mountains and hills near Mount Merlin, Northi tamed the wild pegasi. Harpy hunters were the first to capture and tame the wild flying horses and harpy run ranches continue to produce the highest quality mounts with specialized breeds tailored for various tasks. A pegasus’s agility and speed in the air let the chimeran knights of Northi put up a challenge to Sorthen aerial units in terms of scouting, but their limited endurance and fragile wings made them less suited as couriers and frontline combatants.&nbsp;</p><p>Westria took a nuisance that plagued their southeastern border along the mountains near Jav and turned it into a solution. Wyverns roosting in the mountains and forests were regularly dealt with by adventurers and knights but some enterprising (and foolhardy) beast tamers decided to attempt to tame newly hatched wyverns as companions. With some false starts, they succeeded and it wasn’t long before an interest in training them as mounts emerged. Slower and less nimble in the air than their pegasi counterparts, a wyvern’s thick scales and devastating Reginleiv made them much more suitable as flying heavy cavalry.</p><p>To this day, there is little overlap in the Sky Knight forces of Northi and Westria. While each side failed to deploy units that could directly counter Aerial Mages, their arrival on the battlefield removed Sorthen’s complete dominance of the air. Modern Sky Knight adventurers utilize whatever type of mount that suits their style (or that they can afford) and continue to fill their historical roles as scouts, couriers, and aerial cavalry.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3896,7 +4026,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sky-knight",
         "sourceHash": "27740ba73ae1b1204ada92db9db96eb6abdbf6b8cc5b8e91c9c37965fce202aa",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/4c09abe2-7b67-45f5-a460-92c1b8bcdc76-Sky Knight - Copy.lg.webp"
       }
     }
   },
@@ -3904,7 +4035,7 @@
     "_id": "f99576ffaecdeb15",
     "name": "Sky Talon Style",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/9da7b699-84b8-4600-a061-0c4c9b3c1dab-Sky_Talon_2_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>The various clans of Harpies and Tengu’s live in harmony together on Mt Merlin. This was not always the case.</p><p>A long time ago, the two races were in a violent territorial dispute over the mountain. The tengu held control over it when the harpies moved in. The tengu were worried about the threat of these sudden newcomers, while the harpies considered Mt Merlin part of Northi’s territory and thus their land by right.</p><p>The tengu had both the numbers and defender’s advantage and quickly moved to forcefully expel the invaders after the brief set of negotiations broke down. However, they had lacked knowledge of the Harpy’s innate mastery of the wind. Their downbursts would snipe tengu’s out of the sky without any recourse and the first battle ended in a crushing defeat for the crows.</p><p>Seizing the momentum, the harpies pushed forward and suppressed the tengu’s, who were unable to use their usual flying combat strategies. Hope seemed lost. Until, Dawn Waits Above stepped out of her solitary training from the highest peaks of the mountains.</p><p>Dawn gifted onto her fellow tengu’s a martial arts style that let them harness the power of the wind themselves. They managed to fly faster and land extremely quickly to avoid the dangerous blasts of wind coming from the sky. Once they closed the gap, their wind-infused fists knocked the harpies out of the sky themselves where they were beaten into submission.</p><p>With the new techniques, the tides of the battle shifted into a stalemate. With neither side having an advantage and enough blood already spilled, the two races agreed to stop fighting. The tengu’s settled on the higher peaks, always being able to look down on the harpies and keep watch over them.</p><p>Even after that short war, the Sky Talon Style remains a commonly used martial arts style to this day. The tengu’s of Mt Merlin will never forget how vulnerable they were, while other aspiring martial artists see the style as a way to mimic the strength of the flying races.</p><p><i>“Fall not like a bird losing flight, but like a blade from heaven.” Dawn Waits Above, 3rd scroll of the Sky Talon Style.</i></p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3979,7 +4110,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sky-talon-style",
         "sourceHash": "45d62b50d3e81a77cbe38af099784a74e1687795a4b9c05c862b3253c80418f4",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9da7b699-84b8-4600-a061-0c4c9b3c1dab-Sky_Talon_2_-_Copy.lg.webp"
       }
     }
   },
@@ -3987,7 +4119,7 @@
     "_id": "d65cf262e2efcac0",
     "name": "Sniper",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/b41b6c09-fa51-4c7a-977c-d44d32d1e46e-sniper.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Snipers are expert marksmen that use sniper rifles to devastating effect.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4062,7 +4194,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sniper",
         "sourceHash": "0660ab57f30c459548932e7877b4c2a018c3edc60babeae38858e30e8dde19bd",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/b41b6c09-fa51-4c7a-977c-d44d32d1e46e-sniper.lg.webp"
       }
     }
   },
@@ -4070,7 +4203,7 @@
     "_id": "2770adf2ad844301",
     "name": "Sorcerer",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/dbf2830c-3029-411d-b5be-c1a69c7e2fcc-hf_20260329_192618_e249682c-e6fb-4f93-bc6d-a9b4f132c655.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>“Why can’t I just use a wand? This is hard!”<br><br>Kori flexed her fingers as the magic she was trying to channel into a magical blast fizzled underneath her skin. Her tutor, Mister Corwin, tutted as he watched her stoically. But most importantly, he didn’t hand her her wand. Her long ears twitched and flattened back, mirroring the annoyance on her face.<br><br>“Mister Corwin!”<br><br>“You are the Crown Princess of Ithelia, Princess Itia. The magical traditions and strengths of your family run in your blood. This power and these spells are your heritage and the source of pride and defense of the kingdom.”<br><br>Kori continued to pout. Mister Corwin sighed lightly.<br><br>“If you can channel this magic without a focus today, I’ll inform the Queen of how well you’re doing in your studies. I’m sure she’ll reward you for your diligence.”</p><p>Kori’s pout vanished in an instant, thoughts of treats and sweets swirling through her mind. With a shake of her head that caused her ears to flop about, she turned her attention back to the target dummy a few paces away.</p><p>“Remember, focus not just on your own magic, but the magic in the air and the stone beneath your feet. Open yourself up to the flow of worldy magic and become a conduit…”<br><br>She tuned out Mister Corwin’s lecture, taking a breath as she reached out with the part of her that was real but unreal at the same time. She breathed in, a phantom breath mirroring her, filling her with an energy that made her blood feel fizzy. She brought her hand up and breathed out steadily, picturing the magic pulling in from the air and floor beneath her feet, into her core, and up her arm.<br><br>“<i>Taro!”</i>&nbsp;<br><br>Her skin tingled and a prismatic sheen covered her arm for a moment before it leapt from her outstretched hand in a bolt, hitting the target dummy with a resounding crash that knocked it over and left a scorched divot on the shoulder.</p><p>“I did it!” Kori spun around with a wide grin, her dress fluttering around her ankles.&nbsp;<br><br>“You did, Princess. Well done. Now, do it again, faster.”</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4145,7 +4278,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sorcerer",
         "sourceHash": "16a61a06db6353d045e09285516f73aab12d48f399b69f7ce414c15559e9ad88",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/dbf2830c-3029-411d-b5be-c1a69c7e2fcc-hf_20260329_192618_e249682c-e6fb-4f93-bc6d-a9b4f132c655.lg.webp"
       }
     }
   },
@@ -4153,7 +4287,7 @@
     "_id": "ef7ce1b7e6d8ffef",
     "name": "Spearmaster",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/5f8fdafb-6a46-4cf6-b646-deb2a5bedb85-Spearmaster_Lamia_raw.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>An expert spear fighter.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4228,7 +4362,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/spearmaster",
         "sourceHash": "f6bb0d69f4d597779a1ab712e26e56df0d09fbdf66a01bdff878bdfbbec98525",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5f8fdafb-6a46-4cf6-b646-deb2a5bedb85-Spearmaster_Lamia_raw.lg.webp"
       }
     }
   },
@@ -4236,7 +4371,7 @@
     "_id": "61c84e6db1d234f1",
     "name": "Spell Blademaster",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/4bcd4e73-8520-461b-975e-14494ae48802-Spell_Blademaster_raw.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Spellblades that have mastered their art.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4311,7 +4446,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/spell-blademaster",
         "sourceHash": "da3ab00e36db88ae32fd5ff4978c6cf39b9f1b1a3eb63c403cc79bc2771f8bb5",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/4bcd4e73-8520-461b-975e-14494ae48802-Spell_Blademaster_raw.lg.webp"
       }
     }
   },
@@ -4319,7 +4455,7 @@
     "_id": "0d0142ec781ed904",
     "name": "Spellblade",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/5e895d65-76e0-44db-927a-d5a8ff1c21e8-Spell Blade - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Spellblades are melee fighters that enchant their weapons with magic.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4394,7 +4530,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/spellblade",
         "sourceHash": "0d782d19a750e16dfb7376eed332a8d5feeb7a705f5e19ad963b157bfd981533",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5e895d65-76e0-44db-927a-d5a8ff1c21e8-Spell Blade - Copy.lg.webp"
       }
     }
   },
@@ -4402,7 +4539,7 @@
     "_id": "b5ffb07f49e182c1",
     "name": "Starcaller",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/ae52b8ab-197b-478a-ad5d-995f4280370c-Starcaller.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Astrea Lu Novar stood on a cliff overlooking the plains in the distance. Already she could see the Westrian forces approach in a tight combat formation towards the severely outnumbered Sorthen forces that hugged the edge of the forest. They were weakened and the Westrian had brought many paladins for this fight. However, the Westrians probably weren’t expecting her.</p><p>She looked at her younger brother and nodded. He shouted commands and all around her she could feel their subordinates set up their defensive barrier of stars. Sorthen saboteurs could probably sneak through it, but Westrians? They would kill themselves trying to break through.</p><p>As this happened, the Westrians had begun to engage the forces below. Astra raised her hand to the sky and dozens followed after her. “Target the healers.” She gave a simple command and uncountable stars began to form above the heads of the humans. Their panic and attempts to flee and find cover did little to save them from the magical energy that exploded onto the battlefield.</p><p>With the healers weakened or killed, she directed her attention to the paladins still cutting through her fellow demons in the frontline. A point of white-gold light ignited in the air above their leader. The air tightened around it, distorting faintly like a heat haze with a ring of plasma forming around it. And then it ruptures, exploding outwards in a violent flare leaving nothing but a crater where the man once was.</p><p>The rest scramble for a counteroffensive, but that too would be pointless. After all, how could one fight the sky itself?</p><p><i>“When you see a falling star, do not wish. Run.”</i></p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4477,7 +4614,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/starcaller",
         "sourceHash": "a7ebaf1360039dd031088df745396c20af3cc3395d37e4a134911413759ba910",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/ae52b8ab-197b-478a-ad5d-995f4280370c-Starcaller.lg.webp"
       }
     }
   },
@@ -4485,7 +4623,7 @@
     "_id": "9e3a493ce40d4a44",
     "name": "Still Stone Style",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/a74d48f6-94f6-4101-9958-a3d0a536756b-Still_Stone_Style_T2_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>The Nio have stood at the gates of shrines, temples, and holy places for centuries, carved in stone yet bound in spirit. Many of them never stir, sleeping away decades in statue form. But history remembers the few who did awaken when their sacred grounds were threatened.</p><p>The most famous account comes from the fall of the Twin Gate of Renkoji, The temple,one of the oldest temples that existed in Kirara, was guarded by two great Nio known as Agyo and Ungyo</p><p>When an enemy force descended upon the shrine, the monks inside knew that they would not be able to hold it. But the wardens stepped down from their pedestals for the first time in living memory. They fought without weapons, their arms and fists breaking spears like kindling, their bodies weathering blows that would have felled a dozen warriors. When enemies slipped past, the guardians leapt to intercept, placing themselves between blade and priest.</p><p>The monks of Renkōji observed their movements in awe. After the battle, when the twin wardens finally fell and their bodies shattered at the temple threshold, the surviving disciples etched every move into scrolls. They called it the Still Stone Style, named so out of respect for the guardians who gave their life to protect them.</p><p>To this day, Nio and other devoted martial artists practice the style, its philosophy unchanged: To become the wall between your enemies and your friends.</p><p><i>“Let your body be like jade, unyielding and pure.” -Still Stone Style 5th scroll.</i></p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4560,7 +4698,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/still-stone-style",
         "sourceHash": "aaeb53f87b20deccc584275d60de88c5bf41d8c59dfeeee25d54cdaf6b4debb6",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/a74d48f6-94f6-4101-9958-a3d0a536756b-Still_Stone_Style_T2_-_Copy.lg.webp"
       }
     }
   },
@@ -4568,7 +4707,7 @@
     "_id": "e993e2849743d5e5",
     "name": "Strategist",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/2e1140cb-8477-46c9-b90a-5f9ffe4513ac-Strategist_New_1_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Shannon studied the field as she idly leaned to avoid a bolt of magical fire. Kane and Mara were making a fighting retreat not too far away, the burly guardian ensuring the much smaller demon woman was safe while providing her the openings to harass the three enemies pressuring them. Behind the line of melee, Kaede was darting around a frustrated pyromancer, most of her attacks deflecting off hasty arcane barriers as she disrupted his attempts to bring his firepower to bear. Shannon’s own pistol weighed heavily in her hand but the enemy mage was out of range and she didn’t want to risk hitting her team by firing into the melee. And besides, her best contribution wasn’t necessarily to provide ranged fire support, but to be slightly removed from the battle to help guide it.</p><p>And suddenly, a moment. The enemy team’s highlander was screened by his teammates and was making an all or nothing push against Mara.</p><p>“Fall back!” she commanded, mana surging through her voice and the air to lend it that much more punch. Her fan snapped open and closed in a triple rhythm, carrying an equal amount of meaning to her order. Not a full retreat but a bait to break their ranks and counter attack.</p><p>“Kaede, you too!” The aggressive catgirl blinked and then darted away from the pyromancer she’d been hassling, ending up slightly behind the enemy front line. That confused them even more as they struggled to decide if breaking Shannon’s defensive formation was the play or to punish the now seemingly vulnerable Kaede. But before they could make up their mind, Kane and Mara suddenly planted their feet and turned, taking the chasing highlander by surprise as they re-engaged him.</p><p>“Now swing the hammer! Anvil formation!”</p><p>Kaede seemed to glide right through the staggered enemy frontline formation and slammed into the back of the highlander. The man went tumbling from her axe strike and didn’t get back up. Suddenly, the battlefield had reversed itself and the pressure had instantly shifted. The enemy confusedly reformed their battered front line and a fireball crashed into Kane’s shield to no seeming effect.</p><p>But that breath of a moment had allowed her team to recover their footing and bearings. It was time to end it.</p><p><strong>“Secret Art: Shock and Awe!”</strong></p><p>Energy swirled around Shannon as she snapped her fan shut and pointed it directly at the reeling enemy. “Take them!”</p><p>It was over seconds later and she barely heard the judge announce Team Shannon as the winners over the cheering crowd.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4643,7 +4782,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/strategist",
         "sourceHash": "7e30948eb25a5a56b5d1d1f5927cae2515b98b9270c75981a0145d0b86588186",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/2e1140cb-8477-46c9-b90a-5f9ffe4513ac-Strategist_New_1_-_Copy.lg.webp"
       }
     }
   },
@@ -4651,7 +4791,7 @@
     "_id": "af5ee23236ffd343",
     "name": "Summoner",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/391f0d05-04bb-425f-b973-4c4a479c8630-Summoner_raw.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>A summoning that contracts with Eidolons.</p><p>(See Summoning Contract breakthroughs for which eidolons you can contract with.)</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4726,7 +4866,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/summoner",
         "sourceHash": "d18d23e5c4c121d7a3f3bdc99ecf6a9c3ebc0c092decb4478db1fe43715a7c66",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/391f0d05-04bb-425f-b973-4c4a479c8630-Summoner_raw.lg.webp"
       }
     }
   },
@@ -4734,7 +4875,7 @@
     "_id": "e0e05db529568e19",
     "name": "Swashbuckler",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/96ac54f4-e8cb-4fab-98d7-3f47d1eecefd-Swashbuckler2.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>The deck rolled under her feet and rain lashed down in windblown sheets. Lightning flashed in the near distance, the roar of the thunder nearly drowned out by the crashing waves. Her long blue coat snapped in the wind as she brought her swords up in a parry, steel ringing against steel. She grinned, stepping back with a flourishing spin of her cutlasses.<br><br>“You’ve got skill, kid!” she praised.<br><br>“It’s over, Captain Rook! Your crew has abandoned you, you have nowhere to run!” the kid shouted, a young Lieutenant. Half a dozen of his comrades were collapsed on the deck behind him. There were a handful still on their feet, muskets aimed but unwilling to fire into the melee. If their powder would even spark in this storm, they weren’t protecting their frizzen pans at all from the rain. They were part of the Holy Westrian Navy, uniforms that were normally crisp and white with golden highlighting hanging heavy with water and blood stains, and had laid this ambush specifically to capture her. Well…ambush was giving them a little too much credit, she’d known this ‘merchant ship’ had been packed with Navy men before it left port. But who was she to say no to such a polite challenge?</p><p>“Well, if yer so keen to bring me in, c’mon then.” She gestured with one of her blades and then rasped them against each other as she settled into an easy stance that seemed to ignore the heavy pitching of the deck.</p><p>The heavy blow of his longsword slid easily off her cutlass in a neat deflection and she retaliated with an embarrassing swat to the rear as she danced past him, sending him staggering. Then she lunged, her sword ringing against the base of his, knocking it from his hands and overboard into the ocean. Her second sword, she hooked behind his knee with the back of the blade, sending him sprawling. Before he could push himself up, she planted a boot on his chest and leveled her cutlass at his throat.</p><p>“Need to watch that footing, kid. Could get ya killed!”<br><br>“W-what are you men waiting for?! Shoot her!” The musketmen snapped their aim up and fired.</p><p>Well, they clicked, at least. “Gotta keep that powder dry!” she coached with a laugh.<br><br>“Anyway, as fun as this was, I gotta get going. What’s your name, anyway?”<br><br>“Lieutenant Mortimer Augustus--”<br><br>“That’s a horrible name, Mort!” Rook stepped back, her swords rasping back home into their scabbards. “Better luck next time!”<br><br>Before Lieutenant Mort could say anything else, Rook grabbed onto a rope that suddenly landed between them from above and she was pulled off her feet into the sky. Faintly, through the rain, a small airship could be seen as it pulled up and away. When Rook was firmly back on deck of her ship, she patted the men on the shoulder that hauled her up and gratefully accepted her Captain’s Hat from her first officer.</p><p>“Alright lads, back home to Vivian! We got what we wanted today!”</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4809,7 +4950,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/swashbuckler",
         "sourceHash": "95177ffa294cd24df6220ba486834224b953944eded3f70047b01ec0ea3247cf",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/96ac54f4-e8cb-4fab-98d7-3f47d1eecefd-Swashbuckler2.lg.webp"
       }
     }
   },
@@ -4817,7 +4959,7 @@
     "_id": "31c2ef8896e22922",
     "name": "Sword Paladin",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/671de505-978c-4070-8717-803f6cd1cbf8-Sword Paladin - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Paladins are powerful warriors who receive their powers from their god. Sword paladins are fearless juggernauts from whom escape is nearly impossible.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4892,7 +5034,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sword-paladin",
         "sourceHash": "b6e08d587d8383fbd5f85afe52332bd2abf5dd197859f77245ab06d87d8e037e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/671de505-978c-4070-8717-803f6cd1cbf8-Sword Paladin - Copy.lg.webp"
       }
     }
   },
@@ -4900,7 +5043,7 @@
     "_id": "9459ab33449ba472",
     "name": "Sword Saint",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/80ff7542-1f80-4301-85c8-2ca34aaab7ef-Sword_Saint_New_1_raw.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "A warrior with peerless skill in swordsmanship.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4975,7 +5118,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/sword-saint",
         "sourceHash": "22b82aa7a4bb3554b5fedb5ee36448c8eec71f918da2d75a0797b180880b7de6",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/80ff7542-1f80-4301-85c8-2ca34aaab7ef-Sword_Saint_New_1_raw.lg.webp"
       }
     }
   },
@@ -4983,7 +5127,7 @@
     "_id": "868d2c6071c6b350",
     "name": "Tactician",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/3422ad34-1cc8-4cc6-8e5e-d3eddc264749-Tactician_New_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Tacticians are capable battlefield commanders that augment their allies’ natural abilities through tactical advance and organization.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5058,7 +5202,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/tactician",
         "sourceHash": "8a0c64d51644cd6f79a2a930235ded33b59f3eb5bc1247a4c55925884aaffef1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/3422ad34-1cc8-4cc6-8e5e-d3eddc264749-Tactician_New_-_Copy.lg.webp"
       }
     }
   },
@@ -5066,7 +5211,7 @@
     "_id": "f4b7456ff627e6a4",
     "name": "Tavern Brawler",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/6c022fa0-5984-433c-979c-19e855c4f974-Tavern Brawler - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Fighters who have learned the art of a drunken brawl.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5141,7 +5286,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/tavern-brawler",
         "sourceHash": "b37ac8be4b56af4cb9f8e371a9d041a0505b253feb59eaf306a7704453f11e1e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/6c022fa0-5984-433c-979c-19e855c4f974-Tavern Brawler - Copy.lg.webp"
       }
     }
   },
@@ -5149,7 +5295,7 @@
     "_id": "ce3e89d613e0cd15",
     "name": "Temporal Trickster",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/e2ac3a48-8e5c-4690-a858-4ddacb88b732-Temporal_Trickster_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>-</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5224,7 +5370,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/temporal-trickster",
         "sourceHash": "34435f02c93f16d04559cbc6ed8dd35db0f6776ce9c0375f9b48f653e76c2556",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/e2ac3a48-8e5c-4690-a858-4ddacb88b732-Temporal_Trickster_-_Copy.lg.webp"
       }
     }
   },
@@ -5232,7 +5379,7 @@
     "_id": "70550bfb7b29c50e",
     "name": "Thief",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/d0fad295-896d-46b1-88cf-77209ca19e0a-20250508_1436_Rabbitfolk Thief Adventure_simple_compose_01jtqy7tmhee9tdcp6wvpcw6cc.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Pickpockets and scallywags.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5307,7 +5454,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/thief",
         "sourceHash": "4d4c9ec7c5b15b6ad17a48703c2403553f1b3f2905d1e3fdfd2f33fac61356e6",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/d0fad295-896d-46b1-88cf-77209ca19e0a-20250508_1436_Rabbitfolk Thief Adventure_simple_compose_01jtqy7tmhee9tdcp6wvpcw6cc.lg.webp"
       }
     }
   },
@@ -5315,7 +5463,7 @@
     "_id": "3c247f45ccc622c8",
     "name": "Timberwright",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/42983684-e451-4063-8789-51e9b49a7726-Carpenter_2_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Enid's Dogfolk ears drooped down as the Timberwright foreman scolded her. &nbsp;So zealous to learn and finish her tasks, she worked with great effort—but alone, to put the finishing touches on a wall frame that would be a part of a new facility for a famous adventuring guild. &nbsp;Overwhelmed with work Enid nearly fell over from exhaustion before her mentor told her to take a break.</p><p>\"A big project like this, you could do it with just one person sure,\" the Timberwright folded his arms across his chest and nodded in thought. &nbsp;\"But you have to learn to work with others Eni. &nbsp;Mothergreen wasn't built in a day... and it wasn't built with one builder. &nbsp;We craftsmen have to stick together and help each other out... that's how we create things that are beloved by many. &nbsp;Things that will be remembered long before we pass.\"</p><p>Enid yawned and then hit herself for the disrespect, \"Teacher, I just want to make sure that it gets done, so I have to do it myself right?\"</p><p>Her mentor smiled, \"Perhaps this time you can, but there will be a time when you have to learn to work with others. &nbsp;You're always off on your own.\"</p><p>Months passed and the Lumberwright put Enid in charge of a big project—to go along with a team to build barracks for the workers of a new magical fuel mine. &nbsp;The Chimera girl, who was comfortable in her solitude was quite happy to keep to herself in the middle of the march column—when suddenly a scream rang out.</p><p>\"Hobs... out here?!\" the fighter shouted.</p><p>A miner clutched his pickaxe as he spun around, swinging his pickaxe at the hobgoblins wildly as they ducked and weaved through every strike delivering small cuts and blows with every dodge. &nbsp;The acolyte, in an attempt to assist tripped into the miner as they fell into a pile on the ground. &nbsp;</p><p>The Hobgoblin went in for a heavy blow on the two twisted upon the ground as the fighter stepped in to guard them. &nbsp;Enid clutched her axe, swallowed hard and stepped forward as her untrained nerves shook her to the core. &nbsp;The Hob did as Hobs do, spinning his blade wildly as he slathered the blade with its own tongue in a taunt.</p><p>Enid nearly lost her grip with her axe, thoughts flashing across her mind—\"I don't know how to fight...I can't do this alone.\" &nbsp;She looked up at the Hob and then back to the Fighter when her mentors words echoed clearly in her mind, \"There will be a time where you have to learn to work with others.\" &nbsp;She hit herself lightly once more, glancing once more at the seasoned fighter beside her.</p><p>The Hobgoblin lunged, blade whistling through the air as iron met iron in rhythmic percussion. &nbsp;The Fighter's heel dug in, knowing that he couldn't evade or have his comrades injured by the beast. &nbsp;He leaned back and then delivered a light kick to push the Hobgoblin away. &nbsp;Much to his shock, a force pushed back on his foot.</p><p>Standing behind the Hobgloblin, waiting for her chance to strike in unison, she pulled the blade of her axe back as it dripped with Hob blood. &nbsp;The creature whined as it fell to the ground, blood pooling underneath it. &nbsp;It was a perfectly coordinated attack.</p><p>Enid smiled in relief as her mentor's words were realized, \"Let's stick together...\" she said quietly, more to herself than anyone else as the Fighter nodded in approval. &nbsp;The Chimera felt the wisdom of her Timberwright mentor that day, carried on the wind. &nbsp;\"That's how we build something that lasts.\"</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5390,7 +5538,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/timberwright",
         "sourceHash": "33d604852fa4d6042628c2447bb543c3de945b7a05a9796d3462b74fc8523bdb",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/42983684-e451-4063-8789-51e9b49a7726-Carpenter_2_-_Copy.lg.webp"
       }
     }
   },
@@ -5398,7 +5547,7 @@
     "_id": "8ea56fb92ecd1fb5",
     "name": "Time Thief",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/85da060d-945e-40be-bab6-27fec6c55f06-Time Thief - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Time Thieves manipulate time to pull off perfect heists.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5473,7 +5622,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/time-thief",
         "sourceHash": "69c1ac219a0876683092bad457f1f352873accc2be4d828e83a1dff9b9db1539",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/85da060d-945e-40be-bab6-27fec6c55f06-Time Thief - Copy.lg.webp"
       }
     }
   },
@@ -5481,7 +5631,7 @@
     "_id": "8ceb3ed09025c0db",
     "name": "Transcendent Lightning Style",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/7fff6fb2-55ec-4139-9cbd-104fbe0d98ed-Trancscendent Lightning Style - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Natsuki blinked in confusion at her surroundings, the wind from the mountains tugging at her robes and hair. Lightning danced around her limbs and she was tense, like a battle was upon her. Bells and gongs rang behind her from a village, all indicating some sort of attack. Which would explain why she was there, ready to defend them.</p><p>But she didn’t remember anything that would have warranted her assuming the Stance of Heavenly Lightning. Had she been training? …No, that wasn’t wise if she was there to defend the village. Like a fog slowly lifting, she remembered being dispatched from the temple to investigate missing villagers nearby and…even a completely wiped out hamlet.</p><p>In a flash, her mind cleared. A huge face loomed in front of her, lipless mouth spread in a permanent, horrific grin. Empty eye sockets bore down on her as it opened its mouth.</p><p><i>Akuma</i>, her mind identified.&nbsp;<i>Too large to be a bakemono, too little devastation to be a kaiju</i>.<i> A kaibutsu, then. And a tricky one at that.</i></p><p>She traced the thin, tentacle-like neck back to the main body, a pulsing globule of flesh as large as a house. Other heads grinned at her from their own serpentine necks. They were quiet, no longer singing, as if they wanted to enjoy her terror as she was devoured. Like it had probably picked off villagers one by one, using its song to make everyone forget until it struck again.</p><p>But the akuma had made a grave mistake. Its weapon was song and sound. But her’s…her’s was what thunder chased and could never catch.</p><p>The air cracked and the akuma howled in agony as she came to a stop on the other side of it, lighting glittering across her skin and snapping at the wind.</p><p>“Lightning Release,” she said, the mantra unnecessary but it felt appropriate. “Living Lightning.”</p><p>All she had to do was kill the akuma before it could sing again. Simple as that. Natsuki clenched her fists and thunder boomed again, desperately giving chase to her lightning.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5556,7 +5706,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/transcendent-lightning-style",
         "sourceHash": "d315d3492d59667b0cc676ded981cd3f9e8b21068893fa800c14db651bc4b005",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/7fff6fb2-55ec-4139-9cbd-104fbe0d98ed-Trancscendent Lightning Style - Copy.lg.webp"
       }
     }
   },
@@ -5564,7 +5715,7 @@
     "_id": "64c4f921f89e8486",
     "name": "Transmuter",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/6d81e9d2-02ce-47f2-9ae6-258dd733ae7d-Transmuter_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>In the dust of an artisan's workshop or in the open clearings of a logging company, the hum and chirps of transmutation can be heard. &nbsp;Transmutation is an art, a magic as ancient as Lyr. &nbsp;Long before the shadows of the great calamity, Transmuters were scholars who questioned the very nature of existence. &nbsp;This pursuit led to a mastery over both destruction and creation, spinning the threads of reality itself into a tapestry.</p><p>Transmutation is the second branch of alchemy and created a revolution in society. &nbsp;It replaced primitive methods such as smelting and manual refinement—which previously had artisans sweating over blazing crucibles into the dark hours of the night. &nbsp;It isn't uncommon for master craftsmen to have a Transmuter in their employ or as a partner, processing material in the atelier or even helping with the crafting itself. &nbsp;In fact, nowadays there is rarely a town across Lyr without at least one person versed in the basics of this ancient art.</p><p>Transmuters manipulate matter at its core, unraveling its threads and rebuilding them into entire new forms. &nbsp;They can shatter stone into dust, or create small figurines from blocks of wood. &nbsp;The control of Transmutation is only limited by skill and imagination. Transmutation is the second branch of Alchemy, which itself is one of the great pillars of Arcane Magic.</p><p>Yet with great power comes great peril. &nbsp;Those who understand Transmutation know that creation and destruction are two sides of the same coin. &nbsp;It requires a sound mind and body to walk the delicate balance, making Transmuters some of the most respected Artisans in any community they are in. &nbsp;<br>&nbsp;</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5639,7 +5790,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/transmuter",
         "sourceHash": "b067e22188536471371b2f2f44b70ceafce669d51db42c04dc11e7a191ea958e",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/6d81e9d2-02ce-47f2-9ae6-258dd733ae7d-Transmuter_-_Copy.lg.webp"
       }
     }
   },
@@ -5647,7 +5799,7 @@
     "_id": "5d4cbc7d536e6ee3",
     "name": "Trapper",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/d7c57658-0c85-4593-ba8a-8a48c1a93237-Trapper.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Carter’s breath came in sharp gasps as he leapt over a fallen log, his boots scraping the moss off the top with how narrowly he cleared it. Behind him, frustrated yells followed him as his pursuers crashed through the thick brush and thorny bushes. He knew the forest around him better than his hometown and that gave him an advantage, but the catfolk chasing him were both faster and more nimble than he was. It was taking every trick he knew to stay ahead of the poachers.</p><p>The twang of a bowstring had him juking right and diving over a particularly nastily thorny berry bush, just barely avoiding the arrow that snapped past him. He landed and rolled, still careful of his own bow and supply of arrows, and he felt a smile pull at his lips. The forest opened up slightly into a small clearing with limited brush and only a couple fallen trees for cover. The old scorch marks on some of the trees told him that there had likely been a lightning strike that had briefly burned out the area some months ago. This was exactly where he expected to get “caught”.</p><p>He carefully retreated to the center of the small clearing and collapsed back against one of the scorched logs. He was still catching his breath when the three catfolk pushed into the open area, eyes scanning around before locking on him. They raised their bows and the leader stepped forward a few paces.</p><p>“Finally! You know there was no way for you to outrun us. Now you’re just gonna die tired,” the poacher boasted. He raised his bow and knocked an arrow. “Just stay still for a second, will you?”</p><p>Carter grinned. “Sure, buddy.” With the hand that was out of sight of the catfolk, he cut three small lines. There was the horrible snap and crunch of a bear trap snapping closed on a leg followed almost instantly by the surprised shriek of a catgirl suddenly finding herself tangled in a net and hanging twenty feet off the ground. The catfolk caught in the bear trap barely had much time to scream in pain himself before a log swung out of the trees and caught him straight in the chest, carrying him fully out of the clearing in a crash.</p><p>The poacher leader took a surprised step back and fell with a startled yelp, the support for the pit trap he’d walked over no longer in place. Carter hopped to his feet and jogged over to the hole, absently eyeing the hanging catgirl. She’d dropped her bow and had fumbled her knife in her struggles, so she was good and stuck. He peaked over into the hole with a smug grin, bow in hand and arrow ready.</p><p>“Why don’t we have a nice conversation about why you don’t poach in my forests, huh?”</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5722,7 +5874,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/trapper",
         "sourceHash": "d91d58ffbe127d44d3196a7ff60f27cab8ddd3535c33dfa18f07635cce805eb5",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/d7c57658-0c85-4593-ba8a-8a48c1a93237-Trapper.lg.webp"
       }
     }
   },
@@ -5730,7 +5883,7 @@
     "_id": "e2b5412841c249f0",
     "name": "Trickster",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/426f7a6c-f2c0-4231-b871-9263884f9080-Trickster_raw.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Tricksters are a support class that cause chaos on the battlefield. &nbsp;The world is a stage.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5805,7 +5958,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/trickster",
         "sourceHash": "36c1866ac4a1d3db525aa4e8e0be7d75a2455d414a0d983b29a7e392e8375eaa",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/426f7a6c-f2c0-4231-b871-9263884f9080-Trickster_raw.lg.webp"
       }
     }
   },
@@ -5813,7 +5967,7 @@
     "_id": "f2dba21dc2a28080",
     "name": "True Shinigami Eyes",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/7b1a5f0d-54a3-4b9a-9cbc-051b14606a64-True_Shinigami_Eyes_raw.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Wielders of the shinigami eyes, rare as they are, have the ability to perceive the death of living things. For most of them, that is where it ends. However, there are those who over time grow an even deeper understanding of death. They can see the death not just of living things, but also of objects and even non-physical things such as magic. This enhanced perception has given those wielders the name of the ‘True Shinigami Eyes’.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5888,7 +6042,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/true-shinigami-eyes",
         "sourceHash": "804c3701a4ac2b7e31c9148b0aa382d20cd6918930fb171cb26dd5a6a4e3b693",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/7b1a5f0d-54a3-4b9a-9cbc-051b14606a64-True_Shinigami_Eyes_raw.lg.webp"
       }
     }
   },
@@ -5896,7 +6051,7 @@
     "_id": "4d78aa0449ee94a7",
     "name": "Vampire",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/6adbfe62-ddee-4361-823f-83f2446035b7-Vampire6.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Vampires are those who are cursed, using their cursed abilities to their advantage.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -5971,7 +6126,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/vampire",
         "sourceHash": "c9389f54642bfc0641275eccfd1cf4062dacd8810b2158e3cc5720968d5d078c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/6adbfe62-ddee-4361-823f-83f2446035b7-Vampire6.lg.webp"
       }
     }
   },
@@ -5979,7 +6135,7 @@
     "_id": "bd42ba98a2895984",
     "name": "Vampire Lord",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/19f4d362-d7d1-427f-98f2-4dcc9bf5d3df-Vampire_Lord_2_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Vampire Lords drift through the pages of history like living shadows—accursed souls chained to undeath by the very forces that empower them. In dimly lit taverns, alongside whispered tales of Dragons and other legendary horrors, travelers speak of eerie encounters and boast of glimpses caught at the corner of a moonlit eye. Whether these sightings are truth or fancy, one thing is certain: the name Vampire Lord stirs fear and fascination in equal measure.</p><p>Unlike lesser Vampires who lose themselves to bloodlust or despair, Vampire Lords have embraced their curse, searching its depths to forge a power all their own. They understand their twisted existence at a level few can rival, developing uncanny resistances to the sun’s harsh sting and other infamous banes of their kind. Yet what truly sets them apart is their mastery over the delicate threads connecting the Arcane, Faith, and Astra—allowing them to skirt the borders of Higher Order Magic. Their Vampiric Domination arises from this warped interplay of energies, a distant, corrupted echo of the Mystic Eye once claimed by the fabled Aseria clan of Sorthen.</p><p>That unholy gift grants them the power to ensnare weaker minds, exerting a terrible control that echoes across dark corridors and silent chambers. Even so, few mortals have battled a Vampire Lord and returned with their lives, for these lords of night prefer to move in secrecy. Outwardly, they can seem disarmingly regal—yet beneath that lies a being forever dancing on the razor’s edge between life and the endless darkness. Should you cross paths with a Vampire Lord, know this—their secrets run deeper than any mortal can fathom, and their hunger, while tempered, still seeks knowledge and power in their cursed existence.&nbsp;</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -6054,7 +6210,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/vampire-lord",
         "sourceHash": "a53f5896384e1e691cef079ce06c0b0c63e4d4ab6e785d2c3438aed6b1e3ba63",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/19f4d362-d7d1-427f-98f2-4dcc9bf5d3df-Vampire_Lord_2_-_Copy.lg.webp"
       }
     }
   },
@@ -6062,7 +6219,7 @@
     "_id": "4dd1e1cc18dab864",
     "name": "Veilguard",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/80a67f4c-158e-4c7a-8987-2ee223a5d1f6-Veilguard_Lamia_T3_-_Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>-</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -6137,7 +6294,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/veilguard",
         "sourceHash": "c43d7ae45b4c99e67d78c12a0e8377bf5434c15a2371ff4f712f0aa8a85d92c7",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/80a67f4c-158e-4c7a-8987-2ee223a5d1f6-Veilguard_Lamia_T3_-_Copy.lg.webp"
       }
     }
   },
@@ -6145,7 +6303,7 @@
     "_id": "3e0f75b84212fff2",
     "name": "Venomancer",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/0f22eb99-9177-437d-8fe4-c17718af26c8-venomancer.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>“I’m always cleaning up messes,” Selle complained, gesturing toward the scattered papers, books, and broken chairs. A few drops of dense liquid dropped from the tip of one of her fingers and landed on a wrinkled piece of paper. The mana dense liquid sizzled on contact, quickly burning a hole through the thin material and continued to bubble as it slowly scorched a divot into the wooden floor.<br><br>“Go here, Selle. Remove the complication, Selle. They saw too much, Selle. Wi Vaniin’s are supposed to make sure things stay quiet, Selle.” She flicked her wrist and snapped her fingers. The man that had been trying to sneak his way out the door dropped to the ground in a clatter, gasping and clutching at his throat, the venom in his system resonating with her mana and seizing his muscles. She glanced at him to make sure he stopped twitching before turning back to her captive audience of one. The goblin struggled against his bonds, rocking the chair she had bound him to.&nbsp;</p><p>“Look, neither one of us want me to be here,” she said, reaching out to steady him so he’d stop making that irritating clomping noise with the chair. “But you got yourself some really sensitive information and I need you to tell me--”</p><p>A glint of something behind the terrified goblin caught her eye and she only realized she’d thrown him aside after she had shakily lifted a framed picture from his messy desk. Those eyes. The smile. The hat. The&nbsp;<i>signature!</i><br><br>“--where did you get this?!”</p><p>The goblin grunted something high pitched through his gag.</p><p>“This is a First Edition Signed Camielelieananu Portrait! Only fifty of these exist in the world! They were a unique promotional item handed out to the first buyers of her Fundamentals of Alchemy book!”<br><br>Selle clutched the portrait gently to her chest and turned with wide, frantic eyes to her captive. All thoughts of recovering the Wi Vanian research data for Endo completely forgotten.<br><br>“Did you meet her? Did she sign your book? DID SHE SHAKE YOUR HAND?!”</p><p>The sounds of crashing and muffled screaming continued from the isolated workshop escalated as Selle began a renewed hunt for something precious. That book had to be here!</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -6220,7 +6378,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/venomancer",
         "sourceHash": "5c5f1dc4f36ae69311633ec83e35dec23500cb133fa020c933059f22f1a8789d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/0f22eb99-9177-437d-8fe4-c17718af26c8-venomancer.lg.webp"
       }
     }
   },
@@ -6228,7 +6387,7 @@
     "_id": "1a113c024eb11353",
     "name": "Venomblade",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/495bd9e7-ed33-4209-bcd5-7743a772c2ce-venomblade.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p><i>Drip. Drip. Drip.</i><br><br>The normal and constant sounds of the swamp were silent, allowing the drops of viscous poison falling from her needles to be clearly audible. Ruo Shui tapped her chin as she stared at the gasping trio in front of her. Shiny needles protruded from gaps in their armor or through their clothing, the dense magic infused venom eating away at them from within. They were fighting it off but it was making their movements sluggish as they turned energies inward to purge it, making them increasingly easy targets. One of their number, their fourth, was already face down in the swampy water, unmoving, his cat tail drifting in the stagnant water like a moldy stick. A wannabe assassin that had tried to take her by surprise.</p><p>“This didn’t need to happen,” she said as she stepped easily through the knee deep water. “You were warned to not trespass in Hei lands, you were warned to turn back. And now you’ve paid your price.”</p><p>She stopped over the man in heavy armor as he definitely stood to his full height, the fresh venom she’d inflicted on him finally being overcome by his own magic.</p><p>“You killed our friend! You killed Iolo!”</p><p>Ruo Shui stared at the man for a long moment. “He literally tried to stab me in the back while we were talking. I feel like it’s a little bit deserved, don’t you?”</p><p>The man clicked his tongue in irritation and shifted to look back at his other two companions. They were worse off than he was, exhausted and looking ready to collapse into the water.&nbsp;</p><p>“Fine,” he said eventually through gritted teeth. “Let us get our friend and we’ll leave.”</p><p>He took a step to do just that.</p><p>“Oh, I don’t think so,” she said. He froze, his guard coming up. “You can leave, you and your pretty little lady friends. But your…Iolo, was it? Well, he belongs to the swamp now. And the swamp is Hei land…and you wouldn’t be intending on stealing from us…would you?”</p><p>Ruo Shui watched in satisfaction as the reduced party staggered away, retreating back toward…wherever it was they came from. Probably from the south and Sarjes. There was a new crop of explorers coming from there recently. Once they were fully out of sight and the sounds of the swamp began to return to normal, she turned to the body of Iolo. She honestly didn’t care about him, he could rot in the swamp. But…those knives of his on the other hand. Those had been masterfully made and had delightful little mechanical devices attached to them. She wondered what other trinkets and items he might have on him. Any edge was an edge she’d secure for her people.</p><p><i>Translator’s Note: “Iolo” is a catfolk traditional name and is pronounced “Yolo” in the common tongue.</i></p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -6303,7 +6462,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/venomblade",
         "sourceHash": "bbf5f3bc541ffbad8793e72bc6ee362984131da651e1734bb8e5b6c5e4c99c41",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/495bd9e7-ed33-4209-bcd5-7743a772c2ce-venomblade.lg.webp"
       }
     }
   },
@@ -6311,7 +6471,7 @@
     "_id": "cf7185a7d8a96958",
     "name": "Warding Mage",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/86782b39-37b7-475b-b270-a7157656b0aa-Warding Mage - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "Warding Mages focus on creating bounded fields that ward off intruders.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -6386,7 +6546,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/warding-mage",
         "sourceHash": "9da275b2b30e42b964a433c4628a91dbd7376450b9f0a6ce16a2da7895a183cb",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/86782b39-37b7-475b-b270-a7157656b0aa-Warding Mage - Copy.lg.webp"
       }
     }
   },
@@ -6394,7 +6555,7 @@
     "_id": "2fe179dc6fed35d6",
     "name": "Wave Palm Style",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/6733992d-77f6-467a-8d63-9e744fb1a409-Wave Palm Style - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "The Wave Palm style does not strike with force, but disrupts the enemies internal lifeforce.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -6469,7 +6630,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/wave-palm-style",
         "sourceHash": "f0ae206e9f6309d302e9933a855c20b3c10289f92bae4511779b72b4ac4ff479",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/6733992d-77f6-467a-8d63-9e744fb1a409-Wave Palm Style - Copy.lg.webp"
       }
     }
   },
@@ -6477,7 +6639,7 @@
     "_id": "f2682f9ef7dc9eb4",
     "name": "Wildheart",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/b0e1361f-5743-44d7-a902-21c35ec0c30e-WildHeart_raw.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>A better animal summoner.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -6552,7 +6714,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/wildheart",
         "sourceHash": "001084d8674a8cb82332bd6cd3553b72cdf62965154dcd0d6814cc5cc54f86d8",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/b0e1361f-5743-44d7-a902-21c35ec0c30e-WildHeart_raw.lg.webp"
       }
     }
   },
@@ -6560,7 +6723,7 @@
     "_id": "654e56263e38d53c",
     "name": "Windbringer",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/c0d90e64-8546-42e5-b085-41373a61b8d7-Wind Bringer - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "A supportive wind user that speeds up allies and hampers enemies.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -6635,7 +6798,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/windbringer",
         "sourceHash": "6379c951c442921bdc328c897c3b019c49d97c833ef25ee62deba55b655af8a1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/c0d90e64-8546-42e5-b085-41373a61b8d7-Wind Bringer - Copy.lg.webp"
       }
     }
   },
@@ -6643,7 +6807,7 @@
     "_id": "1666a59ee0d9f062",
     "name": "Zen Warrior",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f8d45199-306b-44d5-ab1d-8eaa9e71ab70-Zen_Warrior_raw.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "<p>Zen Warriors are mobile monks with both offensive and defensive capabilities.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -6718,7 +6882,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/zen-warrior",
         "sourceHash": "dc576831fa3cfffd074f0c14dee68440967c0071eb7f556ab4537c851cf8da5d",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f8d45199-306b-44d5-ab1d-8eaa9e71ab70-Zen_Warrior_raw.lg.webp"
       }
     }
   },
@@ -6726,7 +6891,7 @@
     "_id": "656cfc3fd5413654",
     "name": "Zephyr Warder",
     "type": "class",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/c3a4a408-83c2-43bc-a942-15a7b91da529-Zephyr Warder - Copy.lg.webp",
+    "img": "icons/svg/book.svg",
     "system": {
       "description": "A supportive wind user that can protect against and help with ranged attacks.",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -6801,7 +6966,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/classes/zephyr-warder",
         "sourceHash": "2ce7be089c203811cc98861b8109c434a0014768255dce11dfcdd36d1d511f10",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/c3a4a408-83c2-43bc-a942-15a7b91da529-Zephyr Warder - Copy.lg.webp"
       }
     }
   }

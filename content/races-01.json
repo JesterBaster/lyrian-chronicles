@@ -3,7 +3,7 @@
     "_id": "9c31ca65e71505ac",
     "name": "Ancient Marionette",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/5209e9d5-9bea-4b26-91ec-093be7d3e7e2-Marionette_new_2_hand_doll_work_start.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Ancient Marionettes: Lost to time and sea, the Ancient Marionettes stand as enigmatic remnants of a past long forgotten. Once components of the colossal arcane superweapon known as a \"Divine Arms\", these constructs now serve as hosts to sentient magic, giving life and consciousness to their once dormant forms. Rescued from the wreckage of a bygone vessel that met its fate in the waters surrounding the Isle of Kirara, these inert marionettes were left on the enchanted shore, their purpose and power seemingly lost to the ages. However, the island's potent, ambient magic, a phenomenon that gives birth to the unique entities known as youkai, saw in these Ancient Marionettes an opportunity - bodies ready to house their formless essence. As the island's pervasive magic seeped into the marionettes, they awoke from their lifeless slumber. The youkai spirits, now housed in these ancient bodies, began to stir, imbuing them with a consciousness that mirrored their own. Thus, the Ancient Marionettes were reborn, not as weapons of war but as sentient beings in their own right, the symbiosis of ancient technology and living magic. Physically, Ancient Marionettes resemble their former selves - intricate, humanoid forms, wrought from an alloy seemingly immune to the ravages of time and sea. Strange, arcane symbols adorn their bodies, pulsating with a soft, ethereal glow that intensifies when they harness their magical abilities. Their eyes, once empty and hollow, now shine with the vibrant spark of sentient life. Despite their imposing exterior, these reborn constructs possess an inherent gentleness, a testament to the youkai spirit within them. They are beings of thought and contemplation, bound by a curiosity of their new existence, their strange past, and the world they find themselves in. The Ancient Marionettes stand as a testament to the transformative power of magic, a symbol of a union between the ancient and the new, and a unique addition to the diverse inhabitants of the Isle of Kirara.</p><p><strong>Size</strong>: Medium<br><br><i>Winner of the 2023 Alpha Race Creation Contest (Constructs) by PurpleXCompleX.</i></p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -84,7 +84,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/ancient-marionette",
         "sourceHash": "b7098b2a60e128a37d8ab22c475f837e883419b97c0daf8a0540fa1a9b092bca",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5209e9d5-9bea-4b26-91ec-093be7d3e7e2-Marionette_new_2_hand_doll_work_start.sm.webp"
       }
     }
   },
@@ -92,7 +93,7 @@
     "_id": "79c4639e846706dd",
     "name": "Anubis",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/bfaa0f98-412d-4e53-b69a-75c8093b4539-Anubis_Female_2_-_Copy.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>The Anubis are a unique race of Fae from the southwestern region of Telsin, known for their deep respect for life, death, and the natural order. With dark hair, bronze skin, and their unique Jackal-like ears, the Anubis see themselves as guardians of the living and the dead alike. While their own lifespans are exceptionally long, they hold a profound reverence for the brief lives of other beings, viewing them as precious gifts to be treasured even beyond death. This belief extends to the Anubis’ role in mediating spiritual affairs and protecting the deceased from desecration.</p><p>Renowned for their honesty and strong sense of karma, the Anubis possess an almost supernatural ability to discern lies, making them respected yet sometimes avoided as arbiters. Their ceremonial attire includes light-colored clothing, adorned with golden jewelry and polished river stones—symbols of lineage often passed down or given as offerings to the deceased.</p><p>Skilled at laying disturbed spirits to rest, they hold a complex relationship with necromancy, respecting it when practiced with reverence. Anubis Necromancers act as graveyard caretakers and conduct important funerary rites, roles woven into their cultural fabric and essential to their purpose across the region, which has garnered respect in spiritual circles even as far as Northi.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -173,7 +174,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/anubis",
         "sourceHash": "64f779097f7b45f9ed099151fb4535cd7dde6d6802ae79155a051123adf560f1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/bfaa0f98-412d-4e53-b69a-75c8093b4539-Anubis_Female_2_-_Copy.sm.webp"
       }
     }
   },
@@ -181,7 +183,7 @@
     "_id": "a23e65944d0cc03a",
     "name": "Bearfolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/5a23f930-a766-4d5b-9221-1b542a366145-Bearfolk.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Bearfolk are a proud and enduring branch of the Chimera, towering humanoids with dense fur, heavy frames, and deep, resonant voices. Most stand a head taller than the average human and carry the strength to match it, yet behind their massive build lies a quiet and thoughtful nature. Bearfolk are often the last to speak up and do so in short sentences, not speaking any more words than are necessary.</p><p>Their culture prizes food, patience, community, and comfort. To a bearfolk, food shared is a sacred bond. Most live in small family holds scattered through the colder reaches of Northi. Their settlements, half-buried in snow and stone, are renowned for their hospitality.</p><p>Despite their imposing nature, bearfolk often display surprising cunning. They are famous, perhaps infamous, for their uncanny ability to blend into society. Through sheer confidence or a kind of cosmic absurdity, a bearfolk in a robe and hat can convince entire villages that they are “definitely not a bear.” Scholars call this phenomenon&nbsp;<i>Bear Shock</i>, and no one has yet figured out how or why it works.</p><p>Bearfolk have an uncomplicated and big love for food. To them, a good meal is one of life’s purest pleasures and a sign of prosperity hard-earned through long winters and heavy labor. They’ll eat nearly anything that fills the belly, but they have an undeniable fondness for sweets: honey, candied fruits, and rare confections that melt on the tongue. Many bearfolk adventurers quietly hoard local delicacies from the regions they visit, trading stories and bites of food with the same enthusiasm others reserve for treasure.</p><p>Bearfolk adventurers are often wanderers who leave their homes to test their might or seek rare foods from distant lands. Some serve as guardians and caravan escorts, others simply follow their instincts wherever they lead. Their role in parties is usually that of a frontliner, delivering heavy blows with their paws.</p><p><i>“Full belly, calm heart.”</i></p><p>Size: M</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -262,7 +264,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/bearfolk",
         "sourceHash": "4cc4c5fdec58e5fee3513746b0b525584d187c27c1335ce0b190dceb198fa004",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5a23f930-a766-4d5b-9221-1b542a366145-Bearfolk.sm.webp"
       }
     }
   },
@@ -270,7 +273,7 @@
     "_id": "b5bae392a056449a",
     "name": "Bullfolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/e40bff9a-b70d-4eaf-8fa8-ab03c91539fa-Bullfolk.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Bullfolk are a sub-race of Chimera, native to the rolling foothills around the northern mountains of Northi. Technically the same sub-race as Cowfolk, the extreme sexual dimorphism between Bullfolk and Cowfolk make them physically and visibly distinct. While Cowfolk possess short and curvy figures, Bullfolk tower over those around them with muscular builds. However, it is only the foolish that believe the hulking stature of Bullfolk is a sign of brutish agility and intelligence, as they are quite nimble and some of the most clever architects.&nbsp;</p><p>Bullfolk culture prizes bonds more than any one thing. Bonds between friends, family, and partners. If a Bullfolk offers you their honest friendship, it is a friendship they will maintain and protect fiercely. If they offer you their partnership, they will never stray. This level of devotion can be off putting to some as it is often devoid of any need or requirement for reciprocation. Sometimes, especially for those used to betrayal in their lives, it feels “too good to be true”. And many don’t get the full extent of their devotion until their Bullfolk friend follows them on a harrowing journey or stands defiantly in front of a monster to protect them. But beware betraying a Bullfolk that has formed that bond with you. Because it is not your friend you will have to worry about, but their family should they ever learn about it.&nbsp;<br><br>Bullfolk are often craftsmen of some kind and it is common for Bullfolk in a community to be the go-to for any construction needs. Even Bullfolk that never take up the professions of hammer, saw, and forge often have hobbies in whittling, weaving, or even painting. The most untrained Bullfolk will still have a knack for the lay of a foundation, the set of a roof, or the plane of a chair. Handmade and personal gifts are common to receive from a Bullfolk during birthdays, holidays, or special occasions.</p><p>Bullfolk adventurers are almost always a friend joining someone they care for on a journey, although some simply travel from their homes for the sheer novelty of seeing the rest of the world. They are at home in the frontline, using their size and stature to guard and protect their allies with sheer mass and devastating blows.</p><p>And importantly: headbutt a Bullfolk at your own risk.</p><p><strong>Male only.</strong></p><p><strong>Size:</strong> M</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -343,7 +346,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/bullfolk",
         "sourceHash": "12425fe43cd1bd03caa327302bfc1aa8d3545f6358c486acb06e08bfe0889dfd",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/e40bff9a-b70d-4eaf-8fa8-ab03c91539fa-Bullfolk.sm.webp"
       }
     }
   },
@@ -351,7 +355,7 @@
     "_id": "b5e7927daf28ac0f",
     "name": "Cait Sith",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/fb8ca4ac-2b5c-4a19-a589-053a8250a5aa-Cait_Sith_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Cait Sith are a rare subrace of the fae, distinguished by their dual forms and elusive nature within the realm of Lyr. Originating from the lands of Avalon, Cait Sith often appear as enchanting Fae adorned with delicate cat ears atop their heads, leading many to mistake them for the more common Catfolk. However, their true versatility is revealed in their ability to assume the form of an actual cat, a transformation that many Cait Sith embrace and many stay in for most of their lives. This shapeshifting capability allows them to seamlessly integrate into various environments, particularly human dwellings, where they often masquerade as beloved house cats. Their preference for a relaxed and lounging lifestyle reflects the tranquil culture of Avalon, where comfort and leisure are highly valued. In their feline guise, Cait Sith seek out the warmth and attention of humans, enjoying the care and adoration bestowed upon them. &nbsp;Cait Sith are known to become irked when they do not receive the expected adoration, such as being left milk, leading them to orchestrate mischievous pranks on those who neglect their whims.</p><p>Despite their seemingly benign and playful demeanor, Cait Sith harbor a deep-seated animosity towards their mortal enemies, the Black Dogs, also known as Cu Sith. These shapeshifting dog Fae from Sylvan share an intense mutual detest, often culminating in deadly duels that underscore the severity of their rivalry. Beyond their playful tricks, Cait Sith possess a formidable and sinister ability to manipulate the life force of weakened enemies, using this dark magic as a potent weapon to eliminate threats. This unique combination of charm and lethal power makes Cait Sith both captivating and dangerous. Players who choose Cait Sith characters have the possibility of living double lives as they pretend to be normal cats, using trickery and haunting forces to their means. &nbsp;Their intense rivalry with the Black Dogs can also make for some interesting and fun roleplaying moments.</p><p><strong>Size</strong>: Medium (when not in cat form)</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -432,7 +436,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/cait-sith",
         "sourceHash": "0c023859f97cd8f13e01c4f965d57f57528eed4f3798d4489db949df9f1234e3",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/fb8ca4ac-2b5c-4a19-a589-053a8250a5aa-Cait_Sith_raw.sm.webp"
       }
     }
   },
@@ -440,7 +445,7 @@
     "_id": "8700f94d8fe74e5c",
     "name": "Catfolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/29021f50-7d80-438a-bd41-04fbe0167bc1-Catfolk_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>The Catfolk, a subrace of the Chimera, are the most populous inhabitants of the world, surpassing even Humans in numbers. Predominantly hailing from the nation of Northi, their agile and instinctual nature once allowed them to dominate vast continents through swift and strategic warfare. Today, their presence is found everywhere, thriving from the enchanted Fae forests of Easter to the tranquil Kiraran Islands. This widespread distribution showcases their remarkable adaptability and resilience, enabling them to flourish in diverse environments and integrate seamlessly with various cultures.</p><p>Playing a Catfolk means embodying grace, agility, and a keen survival instinct. Their heritage as former rulers and fierce warriors grants them a natural prowess in both combat and leadership, making them ideal for roles that require quick thinking and dexterity. Catfolk are fiercely independent yet deeply communal, valuing both personal achievement and the strength of their kin. Whether navigating the political landscapes of Northi’s cities or exploring uncharted wilds, Catfolk characters bring a dynamic blend of tradition and innovation, resilience and adaptability, to any adventuring party</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -521,7 +526,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/catfolk",
         "sourceHash": "3cf50ea66da67c437ab6b259f96d4a701fd8dd8cef6d0e7d03429a89d52f481f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/29021f50-7d80-438a-bd41-04fbe0167bc1-Catfolk_New_raw.sm.webp"
       }
     }
   },
@@ -529,7 +535,7 @@
     "_id": "47831c5fbe3d23a6",
     "name": "Centaur",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/2d6acf01-9565-48cf-a1ab-8d43f5d3d6fe-Centaur_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Centaurs, a proud subrace of the Chimera, predominantly inhabit the expansive great plains of Northi and extend into the rugged Nuren territories of Axias. Renowned for their formidable size and unmatched speed, Centaurs thrive in open landscapes where they can harness their natural agility to navigate the vast expanses effortlessly. Their preference for the untamed wilderness often keeps them apart from bustling city life, though resilient individuals can be found adapting to urban environments despite the challenges their stature presents. Centaurs live in tight-knit tribal villages, valuing strong familial bonds within their specific tribes over a unified racial identity. This tribal allegiance fosters a deep sense of loyalty and reliability, making each Centaur a steadfast ally and a formidable presence on the battlefield.</p><p>Historically, Centaurs played a crucial role during the Great Divine War by joining the Susururu Rebellion, where their strength and speed were indispensable in both medical evacuation and logistical support. Their legacy as dependable warriors and medics underscores their reputation for being strong, fast, and reliable. However, a dark chapter in their history—enslavement by the Catfolk as mounts—has left lingering distrust towards the Catfolk, shaping their interactions and alliances in the present day. Playing a Centaur means embodying resilience and independence, drawing upon their tribal heritage to navigate both the challenges of the wild and the complexities of a world still healing from past conflicts. Centaur characters bring a unique blend of physical prowess and unwavering loyalty, making them ideal for roles that require both strength and strategic support within any adventuring party.</p><p><strong>Size</strong>: Large</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -610,7 +616,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/centaur",
         "sourceHash": "d6be658fb389a04cf9585e39fde4cdbb61805fcc8a0cbc7b674a950b3bf65e15",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/2d6acf01-9565-48cf-a1ab-8d43f5d3d6fe-Centaur_raw.sm.webp"
       }
     }
   },
@@ -618,7 +625,7 @@
     "_id": "78bb26d2ba54864c",
     "name": "Chimera",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/1bf33da4-b9ac-44cf-ae53-ce85f84ee58f-Slime_GIrl_New_raw_1.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Chimera are creatures that have been mutated due to magic and have gained sentience. &nbsp;Almost all Chimera can be traced back to areas of high magical concentration and a lifeform that was mutated. &nbsp;Despite being quite varied in physical characteristics, all Chimera are effectively the same race at their core. &nbsp;It is unknown how arcane magic was able to pattern itself in such a way…</p><p>From Slime Chimera to the more common Feline Chimeras, there are varied sub-races that can be found throughout the world. And those sub-races can vary widely, even within the same phenotypes. Coloration, ear and tail shapes, and even number of physical characteristics. These widely varying phenotypes are broadly categorized in two ways: kanolith and zoalith.</p><p>Kanolith chimera have limited physical characteristics. Most kanoliths will have ears, tails, or both corresponding to their sub-race. Kanoliths are the most common type of chimera overall and what most will think of when imagining a chimera of any sub-race.</p><p>Zoalith chimera have exaggerated or prevalent physical characteristics. Fur, scales, replaced or altered limbs, and animalistic face shapes are all examples of zoalith features. This often leads to zoalith chimera having a far more “bestial” appearance which can sometimes bring social challenges. While zoalith chimera are overall rarer than kanolith, there are some sub-races that this trend is reversed. Centaurs, harpies, lamiafolk, and slimefolk are all examples of sub-races which trend toward zoalith.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -687,7 +694,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/primary/chimera",
         "sourceHash": "ea90b827fab08ccc06043be82c364babce4f10dcc437d0b63d038d0bf0a6d24a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/1bf33da4-b9ac-44cf-ae53-ce85f84ee58f-Slime_GIrl_New_raw_1.sm.webp"
       }
     }
   },
@@ -695,7 +703,7 @@
     "_id": "9d9c28a674236c1a",
     "name": "Cowfolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/7f085395-6d99-496c-bfdc-ebd00bb52f90-cowfolk.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Cowfolk are a sub-race of Chimera, native to the rolling foothills around the northern mountains of Northi. Technically the same sub-race as Bullfolk, the extreme sexual dimorphism between Cowfolk and Bullfolk make them physically and visibly distinct. While Bullfolk tower over those around them with muscular builds, Cowfolk possess short and curvy figures. However, it is only the foolish that believe the dainty stature of Cowfolk is a vulnerability, as they are deceptively resilient and strong for their size.<br><br>Cowfolk culture prizes bonds more than any one thing. Bonds between friends, family, and partners. If a Cowfolk offers you their honest friendship, it is a friendship they will maintain and protect fiercely. If they offer you their partnership, they will never stray. This level of devotion can be off putting to some as it is often devoid of any need or requirement for reciprocation. Sometimes, especially for those used to betrayal in their lives, it feels “too good to be true”. And many don’t get the full extent of their devotion until their Cowfolk friend follows them on a harrowing journey or stands defiantly in front of a monster to protect them. But beware betraying a Cowfolk that has formed that bond with you. Because it is not your friend you will have to worry about, but their family should they ever learn about it.&nbsp;</p><p>When they settle in one place for long enough, Cowfolk often get incredibly domestic and there has never been an account of an uncomfortable or unwelcoming Cowfolk home. It doesn’t matter if it’s a home, an inn room, or a long term camp site, leave a Cowfolk in one place for long enough and you’ll begin to find trinkets, warm blankets, hand made cushions, and well stocked food supplies building up over time. However, they are rarely tied down to any location and will cheerfully pack everything up or even leave things behind to continue traveling.</p><p>Cowfolk adventurers are almost always a friend joining someone they care for on a journey, although some simply travel from their homes for the sheer novelty of seeing the rest of the world. They often take up frontline roles to directly support or protect their friends as a sturdy foundation of any party’s composition.<br><br>And most importantly: never, ever ask a Cowfolk for her milk unless you share a very, very close bond with her.</p><p><strong>Female only</strong></p><p><strong>Size:</strong> M</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -776,7 +784,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/cowfolk",
         "sourceHash": "b253310ac23bfaccb719bf698d04b44d1095d2ae21b7ddb788bc1333e9e050ba",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/7f085395-6d99-496c-bfdc-ebd00bb52f90-cowfolk.sm.webp"
       }
     }
   },
@@ -784,7 +793,7 @@
     "_id": "76a5983a43408707",
     "name": "Cu Sith",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/400a6a16-e1d5-49f2-b7c9-fbe5518b8511-dog.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Cu Sith are a rare subrace of Fae, distinguished by their dual forms and steadfast nature. They originated from the lands of Sylvan within Easter and appear as enchanting, dogfolk-like Fae with dog ears atop their heads and emotive tails. Their true forms, however, are that of a small or medium sized dog, indistinguishable from any normal dog. This shapeshifting allows them to blend into most environments, especially areas with other races, where they sometimes take on the role of beloved pet or guardian. They can form strong bonds with others in this guise and history is full of stories of mysteriously intelligent dogs caring for their owners, rescuing children, or driving off attackers from families and villages.&nbsp;</p><p>One particularly strange series of events in history involved the royal family pet of the Kingdom of Sayce. Located on the eastern edge of Northi on the shores of Sayce Lake, the small kingdom held a double dominating trade position of controlling lake and river travel in eastern Northi and also airship travel as they benefited from a major leyline running through the kingdom. Shortly before King Leonard Rune Leon of Northi began his push for unifying the entire country, the Trehaerne family colluded with the neighboring Kingdom of Eynion in an attempt to overthrow the Sayce’s and take control of the Kingdom by allowing assassins to stage in their estate. If things had gone to plan, the entire Sayce family would have been wiped out and the Trehaerne’s would have inherited the throne. However, in a series of unbelievable events, the Sayce family dog tripped up, foiled, uncovered, and in one account, even took up a sword in his jaws and fought off an assassin when he went directly after Princess Lowri in a furious duel. The machinations of the Trehaerne family and the Kingdom of Eynion was presented to King Leonard and justice was seen to, the Kingdom of Sayce was one of the first to join the growing movement of unification. After that event, regardless of the truth behind the more exaggerated stories, the Sayce Royal Flag has included the silhouette of that dog.</p><p>Because of their loyal and dedicated nature, Cu Sith have a deep hatred toward the flighty and cruel Cait Sith. The shapeshifting cats from Avalon share this mutual detestment and this often leads to deadly duels. It is speculated that Cu Sith began to venture out into the wider world beyond Easter as a direct opposition to the Cait Sith and to protect others from being taken advantage of. The Cu Sith’s haunting bark is one of their most useful tools in driving off or defeating Cait Sith and also reinforces the perception of the deep animosity between cats and dogs.</p><p>Size: M</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -865,7 +874,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/cu-sith",
         "sourceHash": "5aa79bbf49a99a7509b9cab524110cd07413cfa2d497823f0739ccfc07c23aad",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/400a6a16-e1d5-49f2-b7c9-fbe5518b8511-dog.sm.webp"
       }
     }
   },
@@ -873,7 +883,7 @@
     "_id": "e6906ef3ae032614",
     "name": "Demon",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/7a2206e1-b5dc-433d-bc13-ee552982d128-Demon_Portrait_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>In Demon lore, they were the descendants of Angels who had rebelled against providence.&nbsp; Losing their angelic wings and methods to absorb the Divine might of Light, they’ve adapted techniques to burn their own life force to temporarily tap into their powers.&nbsp; The dangerous technique called&nbsp;<strong>Divine Release</strong>, is highly praised as the pinnacle of a demon’s powers.</p><p>While originally slandered as “demons” by humans and the angels of old, the demons have embraced the name as proof of their rebellion.&nbsp;</p><p>Demons appear as humanoids, and but have varying secondary characteristics.&nbsp; Some have tiny wings that are devoid of the providence absorbing “feathers”, while some have various kinds of horns or eye patterns.&nbsp; Some even have pointed ears like the fae.</p><p>The Demon city of Sorthen exists as an aristocratic meritocracy, where the power balance shifts, houses die and new ones are born based on their contribution to society. &nbsp;These Demon houses all grant their offspring a middle name, this name referencing their roles in society from servants to soldiers to scholars. &nbsp;Each family passes down the techniques of their role, specializing for the greatest efficiency. None of these roles are looked down upon, and it is considered an honor to fulfill your purpose to the highest capability. &nbsp;While the tradition of adhering to house societal roles, they are not inflexible. &nbsp;It is not unusual for an individual to carve out a new life path if they demonstrate exceptional merit, and straying from that assigned family role would then not be viewed negatively.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1077,7 +1087,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/primary/demon",
         "sourceHash": "603d8602727976c6feb4a1c904dde4e4d311638f143f07ae51667336d85e7be9",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/7a2206e1-b5dc-433d-bc13-ee552982d128-Demon_Portrait_New_raw.sm.webp"
       }
     }
   },
@@ -1085,7 +1096,7 @@
     "_id": "32654ac46cb756a3",
     "name": "Dogfolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f9683abe-e632-4f5c-a8ca-68213901ecfb-Dog_Folk_1_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Dogfolk are renowned for their unwavering culture of loyalty and honor, embodying the virtues that make them esteemed allies and steadfast companions within the realm of Lyr. Their deep-seated sense of duty often leads them to trust and support those to whom they have sworn allegiance, even in the face of betrayal. This inherent trustworthiness has, unfortunately, made Dogfolk susceptible to exploitation throughout history. Prior to the reign of King Leo of Northi, the fragmented kingdoms and city-states of the Catfolk frequently abused the Dogfolk’s loyalty, coercing them into servitude and neglecting their rightful honor. King Leo's ascension marked a pivotal shift, as he championed the protection of Dogfolk rights and endeavored to eradicate the oppressive practices that had long plagued them. While Queen Renia has largely upheld King Leo’s reforms, some remnants of the old abuses linger, maintaining a delicate balance of power and respect.</p><p>Due to their intense culture of loyalty and honor, Dogfolk are celebrated as the finest bodyguards in all of Lyr, their dedication making them virtually impervious to bribery or betrayal. This steadfastness ensures that they remain reliable protectors, whether guarding noble estates or adventuring parties traversing treacherous landscapes. &nbsp;Those Dogfolk who do commit betrayal, are properly dealt with by their own—bearing the mark of a torn or cropped ears. Players who choose to embody a Dogfolk character can expect to play roles that emphasize loyalty, protection, and honor, making them ideal for those who wish to portray loyal retainers or powerful guardians.</p><p>Size: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1158,7 +1169,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/dogfolk",
         "sourceHash": "cf16193b2c9dfdcc7612eb0419206624d2020fdee348c13723067d789053e09f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f9683abe-e632-4f5c-a8ca-68213901ecfb-Dog_Folk_1_raw.sm.webp"
       }
     }
   },
@@ -1166,7 +1178,7 @@
     "_id": "251e85cfc3543120",
     "name": "Dryad",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/788952e5-495f-453d-af58-f2ac1bba7f22-Dryad_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Dryads, an enchanting subrace of the Fae, are deeply intertwined with the natural world, making them rare visitors beyond the verdant expanses of their forest homes. Predominantly hailing from the enchanted woods of Easter, a select few have established their presence in the forest territories of Susururu in Northi. While urban environments are seldom their preference, some Dryads venture into cities driven by necessity or purpose, often finding solace only in their work as they navigate the concrete jungles far from their beloved woodlands. Their existence is a harmonious blend of isolation and duty, maintaining a delicate balance between their innate connection to nature and the demands of the wider world.</p><p>Central to Dryad culture is the sacred tradition of planting a new tree with each birth, symbolizing a celebration of life and the enduring bond within their communities. These family groves serve as living testaments to their heritage, meticulously tended by each generation to honor their lineage and the cycle of life. Regardless of where their paths may lead, Dryads are bound by an unwavering commitment to return and pay respects to their families, reinforcing the importance of kinship and continuity. Visually, Dryads are a breathtaking embodiment of nature's diversity, adorned with green or leafy hair, plant-like or wooden skin, and an array of natural features that reflect their individual connection to the flora around them. Playing a Dryad allows one to channel the grace and resilience of the forest, bringing a profound sense of harmony and natural beauty to any adventuring party.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1239,7 +1251,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/dryad",
         "sourceHash": "dbfff3ee3f28d939f67b8e3edd976da3fd0e03689fb50d44b0ec8aa093cdcb8b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/788952e5-495f-453d-af58-f2ac1bba7f22-Dryad_raw.sm.webp"
       }
     }
   },
@@ -1247,7 +1260,7 @@
     "_id": "36242015b04c3420",
     "name": "Dullahan",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/84ccb202-81d6-4830-8944-6d1dc016f5f0-Dullahan_male_1_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>The Dullahan are a subspecies of Fae that are often shunned even from Fae society due to their association with death. Dullahan are able to subconsciously feel death and are in some way pulled towards it. For this reason, most Dullahan end up leaving the Fae society of Easter. The long lifespans of the Fae and the relative stability of their lands make deaths a rarity. Dullahan have little concept of family, and a child Dullahan matures within a year. In non-fae society, Dullahan are unjustly feared and reviled as the harbingers of death as it follows either shortly after a Dullahan appears or it appears right before a Dullahan does. Because of this, it is rare for a Dullahan to ever truly settle down in a place and even most travelling Dullahan have a way to hide their appearance. Male Dullahan often have to resort to magic, while female ones can get away with a hooded cloak and good head placement.</p><p>Dullahan have two distinctively different appearances, similar to the Kanolith and Zoalith variants of Chimera's. Regardless of the variant, they share that the Dullahan is a humanoid figure that is clad almost entirely in armor. The male version of a Dullahan is commonly found without a head all together, where as the female Dullahan tends to carry a Fae head with her oftentimes carrying it in her arms. Curiously enough, this armor is normally entirely decorative and offers no more protection than normal flesh would. It is only when a Dullahan picks up a suit of armor and merges it with themselves that their armor becomes resilient.&nbsp;</p><p>Dullahan adventurers are rare and viewed with mixed opinions. Some believe in the superstition that they cause death and treat it with caution. Others view their attraction to death as either a free warning sign or a hint as to where money could be found. Personality wise, Dullahans often have a rather morbid sense of humor and a nihilistic outlook on the world. They struggle to make meaningful connections but value the ones that they do.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1320,7 +1333,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/dullahan",
         "sourceHash": "2bd1f69a5f681aeb7f200efefdf83e8c726cb0bab52582be48b94668a6cec19c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/84ccb202-81d6-4830-8944-6d1dc016f5f0-Dullahan_male_1_raw.sm.webp"
       }
     }
   },
@@ -1328,7 +1342,7 @@
     "_id": "f04980384cdb3f9b",
     "name": "Fae",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/42158447-1039-4c70-992b-00b67e562492-Dryad_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>The Fae are widely considered the first people that populated Lyra.&nbsp; They are beings that were born from the will of nature and the world itself.&nbsp; Faeries can be quite varied in culture and demeanor, some using their age immortality to achieve great wisdom-- while others might use it to laze about and be merry.</p><p>The most common type of Fae are the High Fae which appear as youthful humanoids with pointed ears and eyes that come in various colors and patterns</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1395,7 +1409,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/primary/fae",
         "sourceHash": "bcf14d17cfe122260c9f7dd4504397bd1cd33679df74dc6263a6988341681201",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/42158447-1039-4c70-992b-00b67e562492-Dryad_raw.sm.webp"
       }
     }
   },
@@ -1403,7 +1418,7 @@
     "_id": "a4daa80fd6db6825",
     "name": "Gnome",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/928c7955-ff4e-4d8c-8f43-8b5f2b520a48-Gnome_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Gnomes, often referred to as \"mine faeries,\" are a reclusive subrace of the Fae known for their curiosity and mastery of the earth's hidden treasures. Preferring the solitude of subterranean environments, Gnomes are predominantly found throughout the foothills of Easter's Mountains, with a resilient few making their homes in the depths of Mt. Merlin in Northi. Their affinity for hunting and uncovering buried riches drives them to explore the intricate network of tunnels and caverns, where their adept burrowing skills and knowledge of the terrain set them apart from other Fae. This solitary nature fosters a culture of independence and self-reliance, as many Gnomes choose to embark on treasure hunts alone, guided by their own instincts and expertise.</p><p>Equipped with the unique ability to shape their mana into formidable claws, Gnomes effortlessly carve through earth and stone, creating intricate tunnels or devising cunning pitfalls to outwit their adversaries. This magical prowess not only enhances their efficiency in excavation and exploration but also serves as a strategic advantage in defending their hard-earned treasures. Playing a Gnome means embracing a life of exploration and discovery, leveraging their resourcefulness and dexterity to navigate both the physical and magical challenges of the world. Gnome characters bring a blend of resilience, surprise, and unwavering determination to any adventuring party, making them great teammates who can create unique tactical advantages.</p><p><strong>Size</strong>: Small</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1484,7 +1499,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/gnome",
         "sourceHash": "7e26b88f0479f247c6591ec3c1f79e78f05d74ef3b2beca8df0c18e754ad67cf",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/928c7955-ff4e-4d8c-8f43-8b5f2b520a48-Gnome_New_raw.sm.webp"
       }
     }
   },
@@ -1492,7 +1508,7 @@
     "_id": "6ab87e76273a45bf",
     "name": "Harpy",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/99a9bd79-fb97-4298-abf9-331d6d78d652-Harpy_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Harpies are a prideful race of Chimera, originally inhabiting the foothills of Mt. Merlin, where their natural command over the skies first took flight.&nbsp; Renowed for their aerial prowess, every Harpy child is given a swallow to raise as a pet, carefully studying the birds' unpredictable aerial acrobatics to hone their own flying skills.&nbsp; This early training instills young Harpies with a fierce pride and confidence in their wings, reinforcing the significance of flight to their cultural identity.&nbsp; As they mature, they become adept aerial hunters, using their keen perception and swift reflexes to hunt various hard to reach game on the sheer cliffs.</p><p>In the lower elevations of their homes, the Harpy clans maintain a steady relationship with the Tengu, who dwell in the colder, snowier peaks of Mt. Merlin.&nbsp; Both groups gather periodically to train together, testing their skills in friendly competitions and forging bonds through trade.&nbsp; Because Harpies reside closer to the more accessible areas of Lyr, they are often the more visible face of this winged alliance, facilitating most interactions between the Tengu and the main population.</p><p>Players that want to express skyborne freedom will find Harpies to be an ideal choice.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1573,7 +1589,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/harpy",
         "sourceHash": "2ccf5a29c1b22045517433d60b8f83c590f95260e2147e9413d0a748cadecfe0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/99a9bd79-fb97-4298-abf9-331d6d78d652-Harpy_raw.sm.webp"
       }
     }
   },
@@ -1581,7 +1598,7 @@
     "_id": "11c40221d3550040",
     "name": "High Fae",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/d0109c79-5c10-49ac-8fcc-adb5a1e4c190-High_Fae_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>The High Fae, the most populous subrace among the Fae, are the heart of Easter's capitals. Dominating the grand cities of Avalon and Sylvan, these urban strongholds have grown into the largest metropolises in the region, attracting Fae from all corners of the world. Unlike their more reclusive kin, High Fae embrace innovation and possess an insatiable wanderlust, driving their rapid expansion and fostering a dynamic society where tradition meets progress. Despite their affinity for forming a great society, High Fae remain deeply connected to nature, seamlessly blending architectural marvels with the natural landscapes that surround them.</p><p>Possessing eyes imbued with powerful arcane circuits, all Fae can create minor distortions in the minds of others, but the High Fae have honed this ability to extraordinary levels. They can manipulate the fabric of space with precision, allowing them to teleport at will, a skill that grants them unparalleled agility and strategic advantage both in daily life and in the heat of conflict. Playing a High Fae means embodying a blend of grace, ingenuity, and magical prowess, making them ideal for roles that require both creativity and tactical finesse. Their unique abilities and forward-thinking mindset enable High Fae characters to navigate complex social structures and adapt swiftly to ever-changing circumstances.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1654,7 +1671,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/high-fae",
         "sourceHash": "e0b42d293c2ef37c06b4bc50aa62ca566a9a88a69b1f211470d16c05d0d66b76",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/d0109c79-5c10-49ac-8fcc-adb5a1e4c190-High_Fae_New_raw.sm.webp"
       }
     }
   },
@@ -1662,7 +1680,7 @@
     "_id": "b3c4f9e23215cf3b",
     "name": "Horse-Folk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/5bab2c6b-68df-49e1-827b-2bc13d44dcde-Horsefolk4tmp.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Horse-folk are Kanolith versions of Centaurs. (Placeholder)</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1735,7 +1753,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/horse-folk",
         "sourceHash": "737f16cf1e4d0afc1a603460682733f00246ef0429f07e0ed146168592ad0f54",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5bab2c6b-68df-49e1-827b-2bc13d44dcde-Horsefolk4tmp.sm.webp"
       }
     }
   },
@@ -1743,7 +1762,7 @@
     "_id": "e0fe591d63d890c3",
     "name": "Human",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/aa638108-9b8e-48ad-9e58-c7451e054c42-Sword_Saint_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>The origin of humans is not quite clear-- a race of generally homogenous characteristics in comparison to the other races.&nbsp; Despite their similarity, humans are varied in nature and have adapted to many different environments.&nbsp; Humans are quick learners and quick to adapt, a haste that is unseen in some of the other races, a byproduct of their generally shorter lifespans.</p><p>For a reason still unknown, the humans are blessed by providence-- the great power of divine light and are born with a special attunement for it regardless of their religion.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1830,7 +1849,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/primary/human",
         "sourceHash": "31926f95b6170a86335f38db5eefa72de9371af198abea47abb126c28de72f0a",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/aa638108-9b8e-48ad-9e58-c7451e054c42-Sword_Saint_New_raw.sm.webp"
       }
     }
   },
@@ -1838,7 +1858,7 @@
     "_id": "19d1b45524e4c1cf",
     "name": "Jiangshi",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/0bb88010-ef02-4169-be18-51ee62c139c3-Jiangshi_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Jiangshi, a &nbsp;subrace of Youkai, are beings that inhabit and reanimate dead bodies. When a Jiangshi is born from a Youkai parent, a mitama—the undeveloped Youkai spirit—is inserted into the corpse of a physical being, such as a Human or Chimera. A distinctive talisman is affixed to their head, signifying their status and anchoring their existence within the host body. This bond prevents the corpse from decaying and grants the Jiangshi the ability to restore the dead body and benefit from healing, making them resilient on the battlefield. Predominantly found within the confines of Kirara, Jiangshi are rare and often face discrimination in other nations due to their unsettling forms and their relentless ferocity in combat, where they operate without experiencing pain or fatigue.</p><p>Playing a Jiangshi involves embodying both strength and vulnerability. The unbreakable bond between the Jiangshi and their host body means that any severe damage to the corpse results in the Jiangshi's demise, introducing a critical vulnerability despite their formidable nature. In regions outside of Kirara, Jiangshi often encounter mistrust and prejudice. Additionally, a rising trend sees non-Youkai individuals traveling to Kirara to offer the corpses of their loved ones as hosts, driven by a deep desire to reconnect with those who have passed. This dynamic adds layers of emotional complexity and narrative tension for Jiangshi characters, who must navigate their powerful abilities alongside societal challenges. Jiangshi bring a unique combination of endurance, and a rich backstory to any adventuring party, making them compelling choices for players seeking depth and roleplaying potential.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -1919,7 +1939,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/jiangshi",
         "sourceHash": "38afacf2eb7936856eca127da9787360cd3b6a29eb828b397498d31af87d36d1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/0bb88010-ef02-4169-be18-51ee62c139c3-Jiangshi_New_raw.sm.webp"
       }
     }
   },
@@ -1927,7 +1948,7 @@
     "_id": "cf1bcdd1d4a48794",
     "name": "Kitsune",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/655c0d7a-ab8a-4fbc-8a0d-b960d927569b-Kitsune_2_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Kitsune are the most prevalent subrace of Youkai, enchanting the world with their graceful presence. Manifesting as graceful fox spirits adorned with multiple tails, each tail symbolizes their age, wisdom, and magical prowess. Renowned for their mastery of illusions and arcane arts, Kitsune seamlessly blend deception and enchantment, making them formidable sorcerers and cunning tricksters. As the first Youkai to unite and establish a cohesive society, Kitsune laid the foundational stone for Youkai civilization on the mist-shrouded Kiraran Isles, a region rich in magical energy that perfectly complements their innate abilities. The capital city of Al Hazard, founded by the enigmatic Kitsune Grandmaster Zathegi—whose true form and gender remain shrouded in mystery—stands as a testament to their ingenuity and enigma. Al Hazard, one of the oldest surviving cities in all of Lyr, continues to thrive as a beacon of Kitsune culture and magical excellence.&nbsp;</p><p>Playing a Kitsune means embracing a character steeped in tradition, mystique, and an unwavering appreciation for beauty and art. With a natural affinity for illusion and magic that can shape both perception and reality, Kitsune seamlessly integrate their artistic talents into their magical practices, making them exceptional artisans. In Kitsune society, those who create or embody beauty are held in the highest reverence, fostering a culture that celebrates artistic expression and craftsmanship. Kitsune characters excel in roles that require a flair for the dramatic, whether as spellcasters, diplomats, spies, or master artisans. Their rich cultural heritage offers deep narrative potential, allowing players to explore themes of identity, legacy, and creativeness. Despite their magical and artistic talents, Kitsune are often viewed with suspicion by others, remnants of which persist in societal prejudices and mistrust outside Kirara. This dynamic provides ample opportunities for character development, as Kitsune navigate their place in a world that both reveres and fears their magical and artistic heritage. Kitsune bring a unique blend of charm, intelligence, magical versatility, and artistic prowess to an adventuring party, making them captivating and influential allies.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2000,7 +2021,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/kitsune",
         "sourceHash": "7145ec9eba507cf95c51312eb9d550880701cbb3fe85ab57d77ce0dabc8faee0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/655c0d7a-ab8a-4fbc-8a0d-b960d927569b-Kitsune_2_New_raw.sm.webp"
       }
     }
   },
@@ -2008,7 +2030,7 @@
     "_id": "e4260631c171bfa2",
     "name": "Lamiafolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/477ad1a6-d8f3-4910-9c69-bf03f594e82b-Lamia_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Lamia are a subrace of the Chimera, native to the expansive great plains of Northi, though some communities have also established themselves within the dense forests. These graceful beings are characterized by their serpentine lower bodies, which, while imposing, present challenges in mobility within urban settings. To overcome this, many Lamia adventurers master transformative spells that allow them to adopt a more humanoid form, enhancing their versatility and adaptability in urban environments. Lamia society places immense value on family, with large family units sharing expansive homes that serve as both living spaces and communal hubs. This strong emphasis on familial bonds fosters a deep sense of loyalty and cooperation within their tribes, making Lamia individuals steadfast allies and dedicated protectors of their kin.</p><p>Historically, the Lamia have forged strong alliances with Centaur tribes, cohabiting in harmonious co-species settlements such as the renowned city of Nuren in Dacquoise, Axia. During the Great Divine War, Lamia phalanxes, in tandem with Centaur flanking tactics, played a pivotal role in stalling Northi's conquest of Nuren, showcasing their exceptional prowess in melee combat. Lamia excel in close-quarters battle, utilizing their powerful tails to grapple and constrict enemies with lethal efficiency. Additionally, their coiling tactics have been employed defensively, allowing them to coil around allies in peril to shield them with their armored scales. Playing a Lamia means embracing a character of formidable strength, strategic combat skills, and unwavering dedication to family and tribe. Their unique blend of melee expertise and defensive adaptability offers players the opportunity to craft characters who are both resilient warriors and compassionate protectors, enriching any adventuring party with their dual heritage of strength and unity.</p><p><strong>Size</strong>: Large</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2089,7 +2111,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/lamiafolk",
         "sourceHash": "d28294532e656e24ceb38d88c59824f1df286935a8e048b061e4551deb68a202",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/477ad1a6-d8f3-4910-9c69-bf03f594e82b-Lamia_New_raw.sm.webp"
       }
     }
   },
@@ -2097,7 +2120,7 @@
     "_id": "fb76c5bac1616d34",
     "name": "Lizardfolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/2e182663-0ab1-49ec-bebe-663abb6cbc66-sirlizard.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Lizardfolk are a subspecies of Chimera native to the marshes and wetlands west of Sorthen. Their settlements are built with elegant hydromantic engineering, blending magic and design to rise above the flooded terrain—floating walkways, moisture-shielded libraries, and algae-filtered alchemical workshops are common. Though geographically remote, Lizardfolk settlements are self-sufficient and technologically sophisticated, designed for longevity in a land where the air hums with decay.</p><p>They are visually distinct with scaled limbs, slit-pupil eyes, and long muscular tails. This has led them to claim they descend from dragons. Kobolds, who claim the same origin, often reject these assertions outright, calling them fakers, pretenders and other more hostile insults. While there are some disputes regarding their heritage, these conflicts rarely lead to anything more than name calling from both sides.</p><p>By nature and culture, Lizardfolk are calm, deliberate, and slow to anger. Their society values stability, precision, and patience. Qualities that serve them well in a landscape where impulsiveness leads quickly to sinking mud or venomous fangs. Leadership is typically granted to those who demonstrate long-term vision rather than charisma, and decisions are often made after exhaustive study and debate. Artisans, scholars, and hydromancers hold great respect in their society, particularly those who contribute to the subtle shaping of their ever-changing environment.</p><p>Lizardfolk adventurers are uncommon but unmistakable. Those who leave the swamps often do so with deliberate purpose, seeking knowledge, reclaiming lost relics, or testing themselves against the wider world to affirm their strength and legacy. Unlike the boastful or glory-driven, Lizardfolk adventurers tend to approach danger with methodical caution and a long-term mindset, favoring preparation over bravado. Many act as medics, scouts, or tacticians within mixed parties, relying on their natural resilience, amphibious mobility, and calm under pressure. While some companions find them difficult to read, those who earn a Lizardfolk’s trust often find themselves with an unwavering ally—patient, perceptive, and quietly formidable.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2178,7 +2201,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/lizardfolk",
         "sourceHash": "dcfc55fc93958f281de6100d0012b0c3f1d17c84d7803eeaa5dd204261f83b36",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/2e182663-0ab1-49ec-bebe-663abb6cbc66-sirlizard.sm.webp"
       }
     }
   },
@@ -2186,7 +2210,7 @@
     "_id": "16fa05a4ab138b74",
     "name": "Mothfolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/6ccdabf7-a9f4-4f73-86cf-7a27674cc85f-Mothgirl.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Mothfolk are a rarely seen subspecies of Chimera marked by their gossamer wings, feathery antennae, and luminous red eyes with black sclera.&nbsp;</p><p>Unlike most Chimera, Mothfolk live startlingly brief lives. They mature within a few years and rarely live past forty. As a result, their society is built not on permanence, but on beauty, memory, and motion. Each generation considers itself a brief candle that is meant to burn brightly, not last forever. While they are generally gentle and introspective, their views on mortality make them eerily calm or even reckless in the face of death.</p><p>Mothfolk are&nbsp;nomadic, traveling in small groups as they follow seasonal shifts, changes in ambient magic or other signs. They rarely construct permanent dwellings, preferring temporary silk-covered domes or high-hanging cocoons spun between old trees or ruin pillars.</p><p>Despite their gentle demeanor, Mothfolk face&nbsp;distinct challenges. Their alien appearance, especially the more bestial Zoalith mothfolk, evokes unease in most people. There are many negative rumors and myths surrounding the mothfolk and thus the elusive mothfolk avoid interacting with others unless absolutely necessary.</p><p>Mothfolk adventurers often embrace the path of a frontliner or scout. Their short lives push them to live boldly, though not always recklessly. They approach danger like a moth approaches flame: fully aware of the risk, but compelled nonetheless. Those who party with a mothfolk should restrain their impulses, or they might find themselves caught in the same inferno.</p><p><i>“Better to burn with brilliance for a moment, than fade forgotten in stillness.”</i></p><p><strong>Size</strong>: Small</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2267,7 +2291,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/mothfolk",
         "sourceHash": "d76cfd8534e38f5b1f51d3cdf40b5259343886061e61e3513d8b115e265b1718",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/6ccdabf7-a9f4-4f73-86cf-7a27674cc85f-Mothgirl.sm.webp"
       }
     }
   },
@@ -2275,7 +2300,7 @@
     "_id": "b4f87fafc4279d6d",
     "name": "Nekomata",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/b8683138-0ac5-41c7-b620-7fae8ce5d216-nekomata.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Nekomata are a rare and often misunderstood sub-race of Youkai. They are deeply associated with death in most Youkai cultures and folklore ties them to first developing the methods and talismans needed to birth Jiangshi. In more recent times, with increasing trade and travel between Kirara and Lyr, Nekomata are often mistaken for Catfolk by Lyrian natives, with their primary distinguishing feature being their twin cat tails.</p><p>Nekomata are most often solitary wanderers with only the rare villages to be found hidden in dense mountain forests. In fact, most people in Kirara will go their entire long lives without ever seeing a Nekomata. Unfortunately, this elusiveness makes any stories or tales involving a Nekomata stand out all the more and the most memorable are almost always those that are shocking. This has given Nekomata an undeserved reputation of hostility and maliciousness in Youkai society due to the actions of cruel pranksters, arsonists, and serial killers throughout history. A Nekomata traveling through Kirara will often find their actions and steps watched carefully by suspicious townsfolk and guards, although this reputation hasn’t spread well into Lyr.</p><p>Beyond their ability to puppet the recently deceased and their close connection with death, Nekomata are most known for their grudges. They do not forget an insult, a thrown stone, or a slight nor the faces and voices of the ones that said the words or threw the stones. It is likely that many of the cruel pranks, burned buildings, and slaughtered families are from a Nekomata settling their grudge decades later.<br><br>Nekomata adventurers are often cautious to trust their companions but will form deep bonds if their trust isn’t betrayed. In fact, adventuring parties that have a long standing Nekomata member would be wise to keep an eye on their twin-tailed friend, especially when insults begin to fly. Because a Nekomata holding a grudge for themselves is dangerous, but a Nekomata that is holding a grudge in defense of a friend is something lethal.<br><br>And a Nekomata using the corpses of their recently defeated enemies to help in looting is a perfectly normal cultural quirk.</p><p><i>“I remember the stone you threw twenty winters ago. Do you?”</i></p><p>Size: M</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2356,7 +2381,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/nekomata",
         "sourceHash": "73ad75b91832d3561166b5a0ca6e8d420adaa2e7b36a57563cf8655bc8871996",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/b8683138-0ac5-41c7-b620-7fae8ce5d216-nekomata.sm.webp"
       }
     }
   },
@@ -2364,7 +2390,7 @@
     "_id": "c85ae04ac347e8ec",
     "name": "Nio",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/643b0e9d-7040-4df5-88c2-08f6650934e1-Nio_Close_-_Copy.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>The Nio are ancient stone guardians. sentient statues who once stood vigil over sacred temples, hidden groves, and ancestral shrines across the lands of Kirara and beyond. Sometimes confused with gargoyles, the Nio possess intelligence and empathy whereas gargoyles typically attack anyone that comes close.</p><p>The Nio have little in terms of a society or community. They often spend most of their life in a sacred sleep. While resting in this form they do not eat and they do not age making them the perfect guards. It is not uncommon for a Nio to spend decades in this form until their services are required again and a Nio usually serves alone, or with just one other Nio.</p><p>Most Nio speak little, and when they do, it is with a slow, resonant cadence. They are not heartless, but they value purpose above sentiment. Their sense of duty is absolute, and many of them refuse to step away from their warded locations, even when the world has long forgotten them.</p><p>Some Nio now wander, their temples lost to time or desecrated by war. These unbounded Nio seek new causes or companions to protect, and may imprint upon individuals they deem righteous. Others serve monasteries or empires as living monuments, standing sentinel in gardens, courtyards, and graveyards alike.</p><p>Nio adventurers lean towards frontline roles, many of them relying on their hardened skin to absorb blows. By nature, most of them are also more accustomed to using melee weapons or unarmed combat as statues with other weapons are simply less common.</p><p>Those traveling with an Nio will find a reliable and loyal ally. Just don’t expect great conversations.</p><p><i>“The world may forget. But I remain.”</i></p><p>Size: M</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2445,7 +2471,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/nio",
         "sourceHash": "ddf759f4c2fb0a93068d0b804ffdd7c7c470867bf4bf1fdc8e90e11d3e346a1f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/643b0e9d-7040-4df5-88c2-08f6650934e1-Nio_Close_-_Copy.sm.webp"
       }
     }
   },
@@ -2453,7 +2480,7 @@
     "_id": "1583df713660e37c",
     "name": "Oni",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/c674920e-2796-4247-9f6a-d929c869dff7-Oni_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Their magical power is focused toward power and male Oni are generally large, strong, and sometimes brutish. Contrarily, female Oni are often very beautiful, by human standards. However, an Oni's appearance has little in common with their physical strength and despite their appearance, Oni are often calm and introspective. Oni are sometimes mistaken for Demons due to their horns. Most Oni also enjoy alcohol, which makes even the calmest incredibly rowdy. They tend to have incredibly powerful Ki, and even without training they tend to be able to affect the Ki of others.</p><p><strong>Size</strong>: Medium<br><br><i>Winner of the 2023 Alpha Race Creation Contest by AShyMoth.</i></p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2534,7 +2561,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/oni",
         "sourceHash": "11991b4de7cdf73266d4855d25166a2e0579b6eb1a0b63a81fa882c15551cae0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/c674920e-2796-4247-9f6a-d929c869dff7-Oni_New_raw.sm.webp"
       }
     }
   },
@@ -2542,7 +2570,7 @@
     "_id": "7eea5d1c9a2192c0",
     "name": "Phoenix",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/2d6e53a4-9cbf-45f2-859e-787b2829f42e-Phoenix_Folk_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Phoenix Chimera are a rare subrace of Chimera, with only a few families known to exist within Lyr. &nbsp;Most of these families reside in the solitary heights of Mt. Merlin, where their isolation is not driven by culture or pride, but by a constant threat of danger. &nbsp;Legends speak of the miraculous healing power held within Phoenix feathers—the ability to cure all sickness, including death—which has made these unfortunate Chimera the prime targets for bounty hunters. &nbsp;</p><p>The pursuit of esoteric medicine pushed the Phoenixfolk into hiding, making them mysterious beings when they do venture away from home. To keep themselves safe from exploitation and to increase their chances of survival, Phoenix Chimera often disguise themselves as other avianfolk Chimera, blending into different communities to avoid detection.</p><p>In some of the darker corners of the world, Phoenixfolk have been kidnapped and forced into cages, their plumes and tears harvested for monetary gain. &nbsp;Taking advantage of their Fiery Rebirth, some of these captured Phoenixfolk are taken to the brink of death repeatedly to have their ashes harvested.</p><p>Players who decide to play Phoenixfolk should be prepared to engage in themes of concealment and mystery, where the threat of kidnapping could be around any corner.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2623,7 +2651,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/phoenix",
         "sourceHash": "3f05a65d98058312aa9c6b905507a08d76210c69f1be3dcf3fe950de7df5d768",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/2d6e53a4-9cbf-45f2-859e-787b2829f42e-Phoenix_Folk_raw.sm.webp"
       }
     }
   },
@@ -2631,7 +2660,7 @@
     "_id": "d8b1aa5723944f11",
     "name": "Pixie",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/26edf9e8-1d56-404a-b1e9-1041c062d5bd-Pixie_new_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Pixies are the diminutive subrace of the Fae, known for their delicate wings and vibrant presence within the forest canopies of Lyr. These tiny flying beings craft their homes in hollowed-out sections of ancient trees, seamlessly blending with the natural environment to remain elusive and hard to spot. Despite their small stature and physical fragility, Pixies possess incredible agility, allowing them to dart through the air with unparalleled grace. Their ability to soar above the battlefield provides them with strategic advantages, enabling them to outmaneuver larger foes and support their allies from above. Pixies embody a carefree spirit, often approaching life with a playful and lighthearted demeanor, taking challenges as they come without the weight of undue seriousness.</p><p>Living primarily within Fae communities and scattered throughout the vast forests of Lyr, Pixies maintain an aloof and independent nature, preferring solitude or the company of their kin over the complexities of larger societies. However, their significance transcends their playful exterior, as evidenced by the legendary Pixie Leaflit, a member of the Hero Signum's party that triumphed over the Goddess of Evil, Heira. This historic alliance is immortalized by a statue of the party, the oldest known monument in Lyr, nestled deep within Mt. Merlin. Playing a Pixie means embracing a character that combines agility, and a spirited approach to life. &nbsp;They are perfect for players that enjoy tactical thinking and nimble movements, as they bring unwavering optimism to their allies.</p><p><strong>Size</strong>: Tiny<br>&nbsp;</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2712,7 +2741,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/pixie",
         "sourceHash": "31af56bb36686286893eddbfe90af63c48b724c9edb90f34b89be3fbc89cc9b0",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/26edf9e8-1d56-404a-b1e9-1041c062d5bd-Pixie_new_raw.sm.webp"
       }
     }
   },
@@ -2720,7 +2750,7 @@
     "_id": "e37078dc88047984",
     "name": "Rabbitfolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/c6143f74-80cd-4115-a655-f48dd40d86fc-RabbitFolk_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Rabbitfolk are a resilient subrace of the Chimera, predominantly hailing from the slums of Northi and Westria. Historically looked down on by the Catfolk, they continue to face prejudice from some older-minded individuals who view them as inferior. Rabbitfolk often have incredibly large families and very deep ties to community and to support themselves, they tend to take on less desirable jobs throughout the city. It is not uncommon for entire businesses to be run by extended families of Rabbitfolk or by joint community ventures. Due to this focus on family and community, Rabbitfolk tend to create very strong bonds with any companions they spend long periods of time with. It is not unheard of for long-time coworkers, school friends, or adventuring companions to suddenly find themselves as “part of the family” and inducted into an expansive extended family. However, despite their industrious nature, persistent social stigma has driven many Rabbitfolk to seek alternative means of livelihood, sometimes turning to crime as a desperate measure to ensure their families' well-being.</p><p>At the helm of Mothergreen's infamous Lorenz Mafia is Fiona MacCocairy, a determined Rabbitfolk girl who strives to bring honor to the underworld. Fiona has initiated a battle of optics, working tirelessly to clean up the Mafia and institute strict codes of honor, thereby bringing a semblance of respect and legitimacy to even their criminal trade. Her efforts highlight the tragic reality that many Rabbitfolk's involvement in crime stems from a profound desire to provide for their loved ones at any cost. Playing a Rabbitfolk is ideal for players who wish to embody characters with large, extended families, expansive communities, and explore the underworld and adverse conditions.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2801,7 +2831,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/rabbitfolk",
         "sourceHash": "1dd8c4ca1888c1e9cd98ced21f2167fe1331575a7c3ad3eee72f665190bda2da",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/c6143f74-80cd-4115-a655-f48dd40d86fc-RabbitFolk_New_raw.sm.webp"
       }
     }
   },
@@ -2809,7 +2840,7 @@
     "_id": "aa8fe7a13d03bebe",
     "name": "Raijin",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/146c2bec-a405-485c-b463-f5a79dd0b544-Raijin_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Raijin are an exceptionally rare subrace of Youkai, embodying the very essence of lightning crystallized into sentient form. Their bodies are conduits of electrical energy, with vibrant arcs of lightning coursing through and emanating around them, granting them an electrifying presence that is both mesmerizing and formidable. Possessing incredible speed and agility, Raijin can catch and consume lightning, harnessing its raw power to fuel their abilities and enhance their combat prowess. This mastery over electrical energy not only makes them swift and lethal on the battlefield but also allows them to manipulate their surroundings with bursts of lightning-infused magic. Due to the intense energy that flows through and around them, Raijin often feel uncomfortable amidst the energetic fields of their own kind, which compels them to lead solitary lives.</p><p>Historically, Raijin have traversed the farthest and most remote reaches of Lyr, their nomadic lifestyles a testament to their independence and relentless pursuit of personal goals. On the battlefield, Raijin excel as lone warriors or as leaders of small, focused units, utilizing their incredible energy to wipe out enemies in single combat. Their unique abilities allow them to absorb lightning, rendering them impervious to such assaults, and to imbue their weapons with crackling electricity, transforming them into fearsome instruments of battle. This dual mastery not only enhances their offensive capabilities but also instills fear in their adversaries. While typically solitary, Raijin can bring tactical advantages to an adventuring party, wreathing their weapons in electricity for a powerful frontal assault. Players who thrive as lone wolves and enjoy infusing weapons with power, will find playing a Raijin immensely rewarding. Additionally, those who aspire to lead or prefer to follow their own desires without hesitation will resonate with the Raijin's independent and dynamic nature, making them captivating and influential allies.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2890,7 +2921,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/raijin",
         "sourceHash": "b902e86b84f072be5fd3f9d1c3b96e26bd99f9957066c8d2b4d8fa76c6e197d1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/146c2bec-a405-485c-b463-f5a79dd0b544-Raijin_raw.sm.webp"
       }
     }
   },
@@ -2898,7 +2930,7 @@
     "_id": "d027367aa137be69",
     "name": "Ratfolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/e38f4317-1911-4ba0-8bdf-a28429f25370-Ratfolk_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Ratfolk are a versatile subrace of the Chimera, seamlessly integrated into all walks of life throughout the vast lands of Lyr. Found all over from the bustling cities like Westria to the expansive plains of Axias, Ratfolk are renowned for their exceptional adaptability and resourcefulness. Their prehensile tails grant them unparalleled dexterity, making them adept laborers and specialists in performing a wide array of odd jobs. Whether working as carpenters in the city, or tracking down dungeons as adventurers, they can be found living their day to day lives with a sense of purpose, taking it one day at a time. Ratfolk are agile experts being incredibly hard to catch. Despite their presence in diverse environments, Ratfolk maintain a strong sense of community through large family units, though they often venture out to pursue individual endeavors, returning periodically to reunite with their kin.</p><p>Playing a Ratfolk means embodying a character that excels in versatility and everyday practicality. Ideal for players who enjoy characters skilled in various tasks and adept at handling diverse challenges, Ratfolk bring a unique blend of hardworking efficiency and laid-back charm to any adventuring party. Their ability to perform multiple roles with ease makes them invaluable in both combat and non-combat scenarios, while their relaxed demeanor fosters a harmonious and approachable presence within the group. Whether taking on the role of a diligent craftsman, a cunning scout, or a dependable support character, Ratfolk offer players the opportunity to create relatable and multifaceted personas. For those seeking to portray a character that balances productivity with a relaxed, everyday person feel, Ratfolk are the perfect choice, adding practicality to an adventuring party.</p><p><strong>Size</strong>: Small</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -2979,7 +3011,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/ratfolk",
         "sourceHash": "1449aa4f84a769ef51be11a9f6702f47117477cb946c93ea00fab14ec68759ee",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/e38f4317-1911-4ba0-8bdf-a28429f25370-Ratfolk_raw.sm.webp"
       }
     }
   },
@@ -2987,7 +3020,7 @@
     "_id": "f4e669c9815bb0fd",
     "name": "Red Pandafolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f8abd986-8dfe-4084-bea4-11e4af0cf4bb-Red_Panda_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Red Pandas are a solitary subrace of Chimera, renowned for their ability to seamlessly integrate into diverse cultures across the expansive realm of Lyr. Unlike other races that form tight-knit communities, Red Pandas prefer to forge individual paths, often immersing themselves in the societies they inhabit rather than clustering with their kin. Their aloof and relaxed demeanor masks a deep-seated competence, as they approach every task with a lightheartedness that not only enhances their own resilience but also uplifts the morale of those around them. This carefree attitude does not diminish their effectiveness; rather, it complements their exceptional agility and acrobatic prowess, making them elusive and unpredictable in both social interactions and combat scenarios.</p><p>Despite their easygoing nature, Red Pandas are inherently cautious and can be easily spooked, a trait that paradoxically transforms them into formidable fighters. Their heightened awareness and instinctual fear responses enable them to navigate and survive even the most perilous situations with remarkable dexterity and strategic finesse. Those who underestimate the Red Panda's seemingly detached attitude often find themselves outmaneuvered and defeated by these slippery warriors. In gameplay, Red Pandas are ideal for players who wish to embody characters that have a \"my pace\" attitude, utilizing their acrobatic skills and evasive techniques to outsmart opponents. Embracing a Red Panda character offers a unique blend of aloof charm and combat versatility, providing both strategic advantages and a dynamic presence.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3060,7 +3093,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/red-pandafolk",
         "sourceHash": "3c16b9c13f4bb9f52a75c9ace14b61eaf1a48480c8fb5f04d54fa2c9f46b2698",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f8abd986-8dfe-4084-bea4-11e4af0cf4bb-Red_Panda_raw.sm.webp"
       }
     }
   },
@@ -3068,7 +3102,7 @@
     "_id": "b56b81e6d53f8e58",
     "name": "Ryujin",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/43fde452-f149-47d6-987a-1b391668ec02-Ryujin2.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Ryujin are a rare and prideful sub-race of Youkai with distinctive draconic features. Claiming to be the only true direct descendants of mythical dragons, Ryujin are often at odds with Lizardfolk and Kobolds, who both claim the same - though Ryujin don’t give the opinions of “lesser races” much thought in that regard. Overall, Ryujin are regal and intimidating with a presence that commands a room and a glare that can silence a crowd.</p><p>Culturally, Ryujin live together and apart from the rest of Kiraran society. They don’t tend to form Ryujin villages but instead take on leadership roles in other Youkai communities as exclusive merchants, mayors, governors, or just wealthy nobles leveraging their wealth and power. They demand a level of excellence from those around them that causes communities they’re in to both be free of corruption and require full, constant effort of improvement that can drive people away in search for an easier, simpler life.</p><p>But what Ryujin demand of others, they demand of themselves even more intensely. Ryujin craftsmen will spend decades perfecting a single work to be worthy of their effort and lineage. Warriors will master techniques passed down from master to student for hundreds of years and often fight with an elegance that would be more at home on a stage than a battlefield. Scholars and mages dissect and understand their chosen fields to degrees of minutia reserved for specialist universities. Striking up a conversation about a Ryujin’s interest will be a sure method of being regaled with the proper impact angles for hammering the shape of a katana, an arcane breakdown of individual elements of the Glittershard spell, or a detailed retelling down to individual combatants of an ancient, obscure battle.</p><p>But most mysterious of all are Ryujin adventurers. Often young and still in training (for a Ryujin), their drive to seek out the wonders of the world is second to none. The pride and drive for excellence is still present but there is often an underlying goal or purpose in their traveling the world. Ryujin adventurers are often knowledgeable in history and lost knowledge and they always seem to be searching for something, an ancient item or manuscript or tome. Unless you are extremely close to a Ryujin, it is not recommended to press them on the details of their search.</p><p><i>“You are ignorant of what stands before you.”</i></p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3149,7 +3183,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/ryujin",
         "sourceHash": "e2287f0808fd101ac37f9ecea39fd112e971c3d13576188c7cb97572d037eae1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/43fde452-f149-47d6-987a-1b391668ec02-Ryujin2.sm.webp"
       }
     }
   },
@@ -3157,7 +3192,7 @@
     "_id": "335047c1ac9f3ddc",
     "name": "Salamander",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/00d216aa-75f5-41e2-9738-2837cedb930a-Salamander_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Salamanders are a proud, fiercely independent race, valuing personal strength and mastery over their innate fire magic. They are artisans at heart, channeling their elemental gifts into crafts that demand intense heat and fine control, such as metalwork, glassblowing, and the forging of enchanted items. In Sorthen, where these arts are highly respected, Salamanders have carved out a niche for themselves as master crafters, known for producing items of rare beauty and resilience.</p><p>While they have a somewhat insular culture, valuing Salamander kinship and traditions, they are not unwelcoming to outsiders. In Glassteps, their primary settlement, Salamanders coexist harmoniously with Demons and other races.</p><p>Salamander society places a strong emphasis on self-expression through craft. Each Salamander seeks to leave a mark on the world through their creations, which often hold personal or spiritual significance. Their apprenticeships are long and arduous, as young Salamanders must learn to temper their fiery nature and master their powers before they are considered full artisans. This mastery is symbolized by the ritual creation of a “Soulforge,” a unique piece of art that captures the essence of the Salamander’s inner fire and serves as a testament to their skill and control.</p><p><strong>Size</strong>: Medium<br><br><i>Winner of the 2023 Alpha Race Creation Contest (Elementals) by Sabbrewolf.</i></p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3238,7 +3273,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/salamander",
         "sourceHash": "5fa50ab23654724230ae209d7875b0e880fa98a404c3349bdaa2dd04a5714403",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/00d216aa-75f5-41e2-9738-2837cedb930a-Salamander_New_raw.sm.webp"
       }
     }
   },
@@ -3246,7 +3282,7 @@
     "_id": "cf6ca8e062d92f66",
     "name": "Selkie",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/62453f7f-970c-4675-bd26-5528477cf4ae-Selkie_1_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Selkies are mesmerizing Aquatic Fae primarily found off the tranquil shores of Houkaina, where their presence enriches the vibrant merfolk society. Although relatively rare, many Selkies have become prominent members of Houkaina, contributing significantly to its cultural and magical tapestry. While a majority of Selkies cherish their seaside abodes, a notable number venture beyond the coast, establishing homes near rivers or lakes to remain close to their beloved water sources. This preference for aquatic environments underscores their deep connection to water, allowing them to seamlessly integrate into various aquatic communities and adapt to both marine and freshwater realms. Central to Selkie identity is the magic seal cloak, a precious item bestowed upon them at birth, much like the Tengu. This cloak grants Selkies the ability to transform into their elusive Seal Form, a transformation shrouded in mystery as it remains unclear whether the seal form or their humanoid appearance came first. In their Seal Form, Selkies exhibit extraordinary speed and agility underwater, making them nearly impossible to capture and allowing them to navigate the depths with unparalleled grace.</p><p>A defining cultural aspect of the Selkies is the profound significance of their seal cloaks. According to longstanding oral traditions, if a person were to steal a Selkie's cloak, the Selkie is culturally obligated to marry them. Although this obligation is not enforced by law, many Selkies take this tradition seriously, fiercely protecting their sealskin cloaks from theft—with many learning magic methods at an early age to summon and protect this cloak. &nbsp;Additionally, Selkies possess the innate ability to infuse water with their own mana, enabling them to manipulate it for various magical applications, which makes them exceptional Hydromancers and Cryomancers. Their early mastery of spells related to hiding and summoning their magic items further enhances their mystical prowess. Players who choose to play a Selkie character will appreciate the blend of aquatic grace and magical versatility, making Selkies ideal for those who wish to explore the freedom of the ocean and mystery of an aquatic Fae society.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3327,7 +3363,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/selkie",
         "sourceHash": "60708691e3e94b6ea1cae5b14a8db764f53b3d82219efb6a136443d94fde5b11",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/62453f7f-970c-4675-bd26-5528477cf4ae-Selkie_1_raw.sm.webp"
       }
     }
   },
@@ -3335,7 +3372,7 @@
     "_id": "539b3b0ff9116fc3",
     "name": "Sheepfolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/358ecfc9-4aef-46b6-b219-0d9ab68e71a0-sheep.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Sheepfolk are a sub-race of Chimera, native to the plains and lake coastline of what is now southern Axias, most sheepfolk now live in the plains area within Northi between Axias and Eisenstadt. Born with a natural sensitivity to magic, Sheepfolk have historically built settlements and migrated along major leylines. They were of critical help to sages in mapping and studying these invisible rivers of magical energy and many airship captains today feel it is good luck to have a sheepfolk on board. This deep sensitivity to magic comes from unique spirit circuits linked to their hair follicles, allowing unprecedented detection ability to magical energies and signals. Additionally, this sensitivity (and the natural talent to send magical signals as well) allows a sheepfolk to sense and smooth away the chaotic magical rhythm of physical exhaustion and mental fatigue. It’s said that the best night sleep a person can get is in the arms of or resting on the lap of a sheepfolk.</p><p>However, this magical sensitivity made sheepfolk uniquely useful in one very critical field: communications. With their innate ability to sense and send magical signals, they are commonly hired, trained, or conscripted into militaries. Historically, the use of sheepfolk and advancing artifice communication technology allowed Northi to dominate conflicts with accurate maneuver warfare. Only the overwhelming might of Westrian paladins and the scouting and aerial advantages of the demon aerial mages prevented Northi domination of the peninsula in full. This paradigm nearly changed radically during the Four Swords War. Sheepfolk communication specialists began utilizing new jamming artifices. Not only were these specialists key in continuing Northi’s domination of communication range and quality, but they were also able to use these new tools to isolate Sorthen communication signals and adaptively jam them. This removal of critical communication ability combined with the joint strike with Westrian forces and newly implemented aeromancers finally allowed the demons to be pushed back.<br><br>A major setback in the conflict drew the attention of sheepfolk after the war’s conclusion. Somehow, someway, the demons had briefly established completely untraceable and secure communications between their command posts in the south and their last general in the field. This limited communication allowed the demons to organize a blocking action at the Battle of Three Passes where General Ar’Golan’s battalion was able to hold back the invasion for weeks, allowing the evacuation of the remaining demon forces to Marlone Bay. This feat, which suddenly failed at the end of the battle, was investigated and the work of Aetherie Lu’Pana was discovered. Since the end of the war, the techniques and technology of the Aetherie has spread like a blaze through the sheepfolk communities, building on and allowing them to improve their own innate abilities to levels they’d never gone before. It is commonly thought among the sheepfolk that the late Aetherie Lu’Pana must have had sheepfolk help or had studied sheepfolk extensively to develop what she had.</p><p>Sheepfolk adventurers are often quiet, having grown up where needing to speak up to be heard was unnecessary, and they tend to shy away from those who are loud (both in actual volume and in showing off their magical energy). They will also think it is quite normal for groups to request them to act as a communication hub, even among new parties or strangers. But their comforting embrace and comfortable dreams are only for friends.</p><p><strong>Size:</strong> Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3416,7 +3453,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/sheepfolk",
         "sourceHash": "76d61d9b511f16a534ca9b877a2752ae9570db0b39a256859985cdbb1c68626b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/358ecfc9-4aef-46b6-b219-0d9ab68e71a0-sheep.sm.webp"
       }
     }
   },
@@ -3424,7 +3462,7 @@
     "_id": "aa723f6554bc4a6b",
     "name": "Slimefolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/b98ee1c4-9982-4439-9851-9bc3e150ec9a-Slime_GIrl_New_raw_1.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Slimefolk are a rare subrace of Chimera, tracing their lineage back to slime creatures that inhabit every corner of Lyr. Despite their gelatinous origins, Slimefolk possess a humanoid form that mirrors their unique personalities, and while this can change over time, it cannot be willingly altered without great strain and training. To better integrate into diverse societies and mitigate the unsettling responses to the nature of their true forms, many Slimefolk's first exposure to magic is a basic glamour spell, allowing them to seamlessly blend in and navigate social landscapes with ease.</p><p>Highly independent by nature, Slimefolk typically do not form tight-knit communities with other Slimefolk, largely due to their rarity and solitary tendencies. While they do not possess an inherent sex, Slimefolk have developed the ability to emulate sexual characteristics to facilitate social interactions and relationships. Their exceptional ability to blend into any society means that others often perceive them as members of different, more humanoid races, unaware of their true slimy heritage. This chameleon-like quality makes Slimefolk ideal for players who wish to navigate complex social environments undetected, while also having access to unique techniques that can surprise and outmaneuver others when needed. Embracing a Slimefolk character means valuing independence and adaptability, offering both strategic advantages and a versatile role.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3497,7 +3535,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/slimefolk",
         "sourceHash": "601f6cabc0c4bf01ce4823739154b2f5b845ff817849b80886b513a1a4d852ff",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/b98ee1c4-9982-4439-9851-9bc3e150ec9a-Slime_GIrl_New_raw_1.sm.webp"
       }
     }
   },
@@ -3505,7 +3544,7 @@
     "_id": "a48337354a4cb1b9",
     "name": "Spiderfolk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/bcbd0587-bc0f-430c-9e27-fc30009a600b-Spider_Girl_1_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Spiderfolk are a unique and industrious subrace of the Chimera, descended from ground spiders that mutated into a more humanoid direction. Their multiple arms enhance their dexterity, making them exceptional at multitasking and performing a wide array of tasks simultaneously. While they do not naturally use webs beyond utility purposes, a few Spiderfolk have trained to imbue their webs with mana, transforming them into incredibly durable tools for combat and defense.</p><p>In the heart of Northi City, Spiderfolk often purchase small, seemingly uninhabitable plots of land and build their homes vertically, creating spider houses that are architectural marvels with furniture often bolted sideways into the walls. Many Spiderfolk are renowned as masterful chefs, such as Master Chef Vinia Lalune, who runs Northi's most luxurious restaurant, \"Silk And Kettle.\" Her culinary creations have earned her widespread acclaim, showcasing the Spiderfolk's exceptional multitasking abilities in the kitchen. Players who wish to embody characters skilled in object interaction and vertical gameplay, will find Spiderfolk to be an ideal choice.&nbsp;</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3578,7 +3617,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/spiderfolk",
         "sourceHash": "23f2dc617ce3cbb54e068cde842e50e78699252a5fcffb332524f23055e89090",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/bcbd0587-bc0f-430c-9e27-fc30009a600b-Spider_Girl_1_raw.sm.webp"
       }
     }
   },
@@ -3586,7 +3626,7 @@
     "_id": "79dc9b1701f06251",
     "name": "Suryan",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/a1ad5de2-177c-4bac-afe3-d5069b4e8511-Suryan.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Suryan are a secluded sub-race of Youkai. Often described as “light given form”, the radiance that surrounds them is unmistakable and they are a spectacle for those who have never seen a Suryan before. Most Suryan are deeply spiritual and hold a reverence for light and its nurturing properties.</p><p>Suryan villages and towns tend to be located in high mountain valleys, as close to the sun as can be managed while still able to support crops. The warm light each Suryan gives off makes their villages pleasantly welcoming and even the most inhospitable seeming locations team with trees, farms, and wildlife due to their influence. It is not uncommon to scale a frigid mountain pass only to descend into a shallow valley full of warm sunlight and green nature fully at odds with the surrounding mountains.</p><p>These villages and towns often support mountaintop monasteries where Suryan monks learn and meditate on the Five Harmonies, with the first and oldest,&nbsp;<i>Divyajyotiḥ Ālayaḥ</i>, being located in a secluded section of the&nbsp;<i>Nāganṛtya Parvataḥ</i> placed upon the highest peak,&nbsp;<i>Nīlāmbaraśikharaḥ</i>. Five Harmonies monasteries produce revered wisdoms and graceful healers and are common pilgrimages for the wealthy and destitute alike.</p><p>Suryan adventurers carry that spirituality and sense of community with them on their journeys. While not all will be mystical monks capable of weaving light into healing threads, their willingness to help even in small ways is a common behavior. A Suryan adventurer is just as comfortable clearing the wilderness of dangerous monsters as they are cheerfully helping a farmer harvest their crops. Many Suryan have been taught from a young age the basic mysticism of Five Harmonies as a guiding principle, although those born and raised outside of those mountain communities may lack that connection.</p><p>Expect Suryan companions to be spiritual and compassionate to those around them.</p><p><i>“Jīvanaḥ jyotibhiḥ jāyate. All life springs from light.”</i></p><p><i>TL Notes:</i></p><p><i>Nāganṛtya Parvataḥ</i> - The Mountains of the Dragon Dance</p><p><i>Nīlāmbaraśikharaḥ -&nbsp;</i>The Blue-Robed Peak, in this case blue-robed is a poetic epithet for the sky.&nbsp;</p><p><i>Divyajyotiḥ Ālayaḥ</i> - The Sanctuary of Divine Light</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3667,7 +3707,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/suryan",
         "sourceHash": "839dae8162a272887808fec59313f37ffa1db691ef6ed19346d556caf8a25b3c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/a1ad5de2-177c-4bac-afe3-d5069b4e8511-Suryan.sm.webp"
       }
     }
   },
@@ -3675,7 +3716,7 @@
     "_id": "9a113e2c4f816369",
     "name": "Sylph",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/dc5cbccc-fb71-4454-b465-b6258cc88b36-Sylph.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>The Sylph are a subrace of Fae that are particularly blessed by the Wind. Said to have been born of the breeze that danced through the branches and leaves of Yggdrasil herself, there are no beings on Lyr that are more attuned to the wind than a Sylph. To the Sylph, the sky and the wind are their natural companions and hold all the joys and secrets of the world.</p><p>Sylph villages and cities are built high in the treetops of Easter, wrapping naturally around the massive ancient trees and they rarely have any way of accessing them without flight. These villages can be uncomfortable for visitors as they sway and flex naturally with the trees they’re a part of. The hovering farms are one of the many spectacles of their villages, unique vertical farmland suspended high above the forest floor and are the only place Starlight Berries can be grown, one of the most coveted fruits in Easter.</p><p>With their close connection to the sky, Sylph’s first developed the method to pluck stars from above as Starcallers, although they rarely used these skills for harm. Sylph Starcallers are the centerpiece for all manner of celebrations in Easter, providing a spectacle of falling starlight that not even the most elaborate fireworks displays of Kirara can rival.</p><p>Sylph adventurers tend to be free spirits, enamored with exploration and discovering all the ways the wind can rush over the stones or twist through distant forests. They have long traditions of archery and agile swordsmanship and they often scoff at the proclaimed control aeromancers boast over the wind and delight in watching their supposed master of the winds fail in the face of the Blessing of Wind.</p><p>Sylph companions can be trusted to be skilled and focused in their chosen profession although they can sometimes be distracted by an interesting curl of wind through the leaves.</p><p><strong>Size:</strong> Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3756,7 +3797,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/sylph",
         "sourceHash": "5fa15d0a1be747900aaf22ba6be879da6275599d172ee76265af33052b34a493",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/dc5cbccc-fb71-4454-b465-b6258cc88b36-Sylph.sm.webp"
       }
     }
   },
@@ -3764,7 +3806,7 @@
     "_id": "4c6da914cbda0006",
     "name": "Tengu",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/7ab01cfa-8df2-445c-a55d-716a8ca8c1f9-Tengu_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Tengu are a distinguished subrace of Youkai, recognizable as humanoids adorned with majestic wings that grant them the ability to soar through the skies of Lyr. Originating from the rugged mountains of Mt. Merlin, Tengu reside alongside the dangerous Astra Line, a region teeming with chaotic astra energy and perilous creatures known as Fiends. Each Tengu possesses the unique ability to summon a supernatural mask, meticulously crafted to reflect their individual essence. When donned, these masks suppress their innate aura and presence, rendering them nearly invisible to magical detection. This ability is crucial for their survival, as it allows them to navigate the treacherous landscapes at the border of the Astra Line undetected by the ever-present threat of Fiends. Renowned as fierce warriors and specialist Fiend hunters, they have developed the technique of bathing their weapons in their own aura. &nbsp;This specialty technique creating properties similar to silver weapons to shatter Fiendish defenses. Tengu play a pivotal role in safeguarding their homeland and by proxy the homelands of others, maintaining the delicate balance between order and chaos.</p><p>Despite many Tengu villages falling under the jurisdiction of Northi, the kingdom respects their autonomy, recognizing the invaluable protection Tengu provide by keeping Fiends at bay. This mutual respect fosters a harmonious relationship, with the citizens of Northi viewing the presence of Tengu as a blessing rather than a burden. Tengu society is built on principles of strength, honor, and resilience, making them ideal companions for those who seek to embody the spirit of a fierce slayer. Players who are drawn to characters that harness the power of flight, excel in combat, and specialize in hunting formidable monsters will find the Tengu subrace exceptionally rewarding. Embracing a Tengu character means stepping into the role of a vigilant protector, capable of swift aerial maneuvers and specialist knowledge of Fiends, guiding the party's path against the most evil of creatures.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3845,7 +3887,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/tengu",
         "sourceHash": "7e431ae40c07534f19950a66b72b1e6c8df96a5143b8e54880f071919723be90",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/7ab01cfa-8df2-445c-a55d-716a8ca8c1f9-Tengu_New_raw.sm.webp"
       }
     }
   },
@@ -3853,7 +3896,7 @@
     "_id": "c6cbb188f08250dc",
     "name": "Unseelie",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/21049a01-d7ca-4e0c-a793-77084ba0d948-Unseelie_-_Copy.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>The Unseelie are a feared and infamous branch of the Fae, marked by their dark complexions, dagger-thin features, and eyes that shimmer like oil in moonlight. The Unseelie dwell in eternal gloom, deep in the heart of the Eastern Forests where sunlight never reaches, and where even other Fae dare not tread.</p><p>Unseelie society is one of discipline, cruelty, and control. Though they rarely harm each other, their reputation for depravity is well-earned. They take great pride in the art of suffering, perfecting pain as both punishment and expression. Captives brought into the dark woods are not killed quickly, if at all. They are kept, their torment prolonged by methods that are as surgical as they are sadistic. To the Unseelie, mercy is wasteful, and empathy is an affliction to be corrected.</p><p>Despite this darkness, or perhaps because of it, Unseelie adventurers are not rare. They often leave the forest not out of exile, but ambition. In the wider world, their talents for interrogation, infiltration, and assassination find both fear and value. While some become little more than thugs or enforcers, others integrate into adventuring parties, happy to do the \"dirty work\" others shy from.&nbsp;</p><p>Unseelie adventurers gravitate toward melee combat, preferring to witness an enemy’s suffering from up close, though many also learn some form of healing. They typically excel at sabotage, torture, and covert operations. Unseelie also generally have no moral restrictions and will use whatever tactic ensures victory.</p><p>While some Unseelie may suppress their darker instincts, most do not apologize for what they are. Those who travel with an Unseelie should always keep that in mind, lest they find themselves with a dagger in the back.</p><p><i>“Death is not punishment. It is a mercy.”</i></p><p>Size: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -3934,7 +3977,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/unseelie",
         "sourceHash": "1231d793a81035423554f0a9e37fcab38b44cbf786262eb761e16daea615e700",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/21049a01-d7ca-4e0c-a793-77084ba0d948-Unseelie_-_Copy.sm.webp"
       }
     }
   },
@@ -3942,7 +3986,7 @@
     "_id": "f83fac0825d885a4",
     "name": "Willo Wisp",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/29b6fbd8-d105-4aa1-84cc-f07f88e993d3-willowisp_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Willo Wisps are mischievous faeries of light, known for their playful nature and enchanting presence within the forests of Lyr. Primarily nocturnal, these elusive beings possess the innate ability to emit and manipulate light, creating mesmerizing displays that captivate all who witness them. While most Willo Wisps thrive under the cover of darkness, a select few have adapted to living during the daytime, blending their luminous abilities with the natural light to remain hidden yet active. Their strong connection with Faerie Light Eyes grants them the power to weave intricate illusions, allowing them to strike at the minds of their targets and manipulate perceptions with ease. Historically, before relations between the Fae and other races improved, many adventurers who dared to explore the Eastern forests were lured to their doom by Willo Wisps. Those unfortunate souls whose eyes met the fiery blue glow of activated Faerie Light Eyes were ensnared in illusions, guiding them toward their deaths to never be seen again.</p><p>Despite the legends and cautionary tales passed down through generations, Willo Wisps themselves harbor no ill will toward these prejudices; in fact, many revel in the fear and mystery surrounding them. Stories among Human and Chimera alike continue to warn children against venturing into the woods at night, lest a Willo Wisp lead them to an early demise. This enigmatic behavior adds a layer of allure and intrigue to the Willo Wisps, making them a compelling choice for players who wish to embody a race with inherent magical eye powers or embody the classic mischievous fae who delight in the fearful tales spun about them.</p><p><strong>Size</strong>: Small</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4023,7 +4067,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/willo-wisp",
         "sourceHash": "57386981b1f90018f17a2a295e98e288c3656b729508ac8473910f323c3aefd4",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/29b6fbd8-d105-4aa1-84cc-f07f88e993d3-willowisp_raw.sm.webp"
       }
     }
   },
@@ -4031,7 +4076,7 @@
     "_id": "53ccc6aa81aed973",
     "name": "Wolf-folk",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/bbc0991c-0884-48cb-8df2-5bd76ddfd8c5-Wolf_Folk_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Wolf-folk are a distinguished subrace of Chimera, inhabiting the rugged snowy peaks of Mt. Merlin and extending their presence to the vast expanses of Susururu Forest, where the largest populations thrive. These resilient beings have developed a predatory instinct that enables them to meticulously hone in on and swiftly eliminate their prey, striking decisively when they detect any sign of weakness. Renowned as some of the finest hunters in the realm, Wolf-folk sustain themselves by thriving on nature's bounty, establishing and maintaining small, tightly-knit villages among their own kind. Their exceptional hunting prowess is complemented by their remarkable teamwork; Wolf-folk excel in collaborating with trusted allies, skillfully exploiting any openings their companions create to maximize their effectiveness in both combat and survival scenarios.</p><p>The hunting skill of Wolf-folk is highly esteemed, particularly their animal furs, which are considered the best in the realm. These furs are meticulously prepared and sought after by merchants who journey to the remote, forested, and mountainous villages where Wolf-folk reside. The quality and durability of their furs make them invaluable commodities, enhancing the reputation of Wolf-folk artisans across Lyr. Despite their isolated habitats, the Wolf-folk maintain a robust network of trade and interaction with outside merchants, ensuring that their villages remain prosperous and their skills highly regarded. Players that want to play keen hunters who work well with others would enjoy what Wolf-folk have to offer.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4112,7 +4157,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/wolf-folk",
         "sourceHash": "1cc269d6ea28e53fa0ed253eb7fabdbf2c72a4d62c8f3bb38cb77b329e6e8b0f",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/bbc0991c-0884-48cb-8df2-5bd76ddfd8c5-Wolf_Folk_raw.sm.webp"
       }
     }
   },
@@ -4120,7 +4166,7 @@
     "_id": "673c01465cb06117",
     "name": "Youkai",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/6cdb70f8-f6b5-43c2-a494-361d0f916d92-Jiangshi_New_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Contrary to popular belief, Youkai are not the same as Chimera.&nbsp; Rather than being lifeforms that have attained sentience through magical mutations, Youkai were once ambient magic that binded together to form lifeforms.&nbsp; Hailing from the misty isle of Kirara, the Youkai are the rarest race amongst the population of Lyr.</p><p>Like Chimera, the Youkai lineages are divided into Sub-Races.</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4187,7 +4233,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/primary/youkai",
         "sourceHash": "b6cc3390040bac7fb28304e272d6bf6b621cc39d521c61f17e660085477048cd",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/6cdb70f8-f6b5-43c2-a494-361d0f916d92-Jiangshi_New_raw.sm.webp"
       }
     }
   },
@@ -4195,7 +4242,7 @@
     "_id": "907c5fb37fd7230a",
     "name": "Yuki-Onna",
     "type": "race",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/b3f43b68-adc1-44c8-9b03-8adceecdb2d3-Yuki-Onna_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "description": "<p>Yuki-Onna are an rare subrace of Youkai, exclusively female snow spirits who embody the serene yet formidable essence of winter. Primarily inhabiting the frigid regions around Mt. Merlin, the eastern fringes of Easter's forest, and the vast expanses of the Mirane Tundra, Yuki-Onna live in tightly-knit tribes that reflect their deep connection to their icy environments. These Youkai are incredibly rare outside their snowy homelands, with only those possessing powerful soul cores daring to traverse into warmer climates. In the magical sanctuary of Kirara, a sizeable population of Yuki-Onna thrives, thanks to the strong ambient magic that allows them to withstand the heat. Their presence in Kirara not only highlights their resilience but also their drive to adapt to different climates.</p><p>Yuki-Onna are renowned for their mastery of cryomancy, a powerful form of magic that allows them to control and manipulate ice and snow. This mastery was exemplified by the legendary cryomancer, Mirane, who was mentored by the Tsurara tribe of Yuki-Onna in the creation of the Eternal Mirane Cage—a legendary-class spell. Following the sealing of a dangerous Fiend by Mirane, Yuki-Onna played a crucial role in the subsequent expedition to eliminate the threat, showcasing their prowess as fierce warriors and reliable allies. Playing a Yuki-Onna is ideal for players who relish the roles of outsiders and travelers, embracing characters who navigate the world with grace despite its hostility. Their unique abilities and tribal heritage offer a rich narrative experience, perfect for those seeking to portray resilient and independent spirits who are unafraid to journey far from home in pursuit of their goals.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.1",
@@ -4276,7 +4323,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/races/secondary/yuki-onna",
         "sourceHash": "a0690a61f6438b532dac8a8a0bd8d64399bf49f3cdd2922e34fdaf704c579501",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.1"
+        "contentBuild": "0.5.1",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/b3f43b68-adc1-44c8-9b03-8adceecdb2d3-Yuki-Onna_raw.sm.webp"
       }
     }
   }
