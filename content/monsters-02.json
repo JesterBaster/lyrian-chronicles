@@ -3,7 +3,7 @@
     "_id": "5acef390cb347cf0",
     "name": "Mana Slime",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/829e0e86-aaf8-446a-8354-dac3d0bd3542-magic.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 30,
@@ -147,7 +147,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/mana-slime",
         "sourceHash": "ccd08d7d6080222f084e95cacb3fddc35606c8acc75f03595f3168bb7f4e6368",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/829e0e86-aaf8-446a-8354-dac3d0bd3542-magic.sm.webp"
       }
     },
     "items": [
@@ -434,7 +435,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/829e0e86-aaf8-446a-8354-dac3d0bd3542-magic.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -443,7 +444,7 @@
     "_id": "cc396b54a60308d0",
     "name": "Manticore",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/e2441f49-c6a9-4146-81ce-b6687f147531-Manticore_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 80,
@@ -585,7 +586,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/manticore",
         "sourceHash": "75d508f4dbd915aac6d98520b541bb764d0d5565bb1b2475b479fdecee76b90b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/e2441f49-c6a9-4146-81ce-b6687f147531-Manticore_raw.sm.webp"
       }
     },
     "items": [
@@ -794,7 +796,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/e2441f49-c6a9-4146-81ce-b6687f147531-Manticore_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -803,7 +805,7 @@
     "_id": "d0412f59ee6cc48b",
     "name": "Minotaur",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/e67ec0e8-567a-48c2-89fb-dfb26ded7a8e-Minotaur_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 90,
@@ -943,7 +945,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/minotaur",
         "sourceHash": "cfae69f55ea33313a1b444e7e90a609cdbba74c9c164b7ee040ac41f3dbf73a1",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/e67ec0e8-567a-48c2-89fb-dfb26ded7a8e-Minotaur_raw.sm.webp"
       }
     },
     "items": [
@@ -1076,7 +1079,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/e67ec0e8-567a-48c2-89fb-dfb26ded7a8e-Minotaur_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -1085,7 +1088,7 @@
     "_id": "2888ea75a879f87b",
     "name": "Ogre",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/5ea505c8-22c7-4fd0-922a-8f819aa69376-Ogre_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 100,
@@ -1225,7 +1228,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/ogre",
         "sourceHash": "5ccab752d26da09b2e180f4481a04438b054cae8857624dee4a6d8e107c3ff4b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5ea505c8-22c7-4fd0-922a-8f819aa69376-Ogre_raw.sm.webp"
       }
     },
     "items": [
@@ -1356,7 +1360,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/5ea505c8-22c7-4fd0-922a-8f819aa69376-Ogre_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -1365,7 +1369,7 @@
     "_id": "b3bd58211c8831c6",
     "name": "Pipoltr",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/b63577f2-5d04-4eff-9c33-a18e4ba07f39-Pipoltr_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 90,
@@ -1507,7 +1511,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/pipoltr",
         "sourceHash": "5436616106afc632475a4ab4ae749fb3c47b48a4a83e5dcea278faa2de02b916",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/b63577f2-5d04-4eff-9c33-a18e4ba07f39-Pipoltr_raw.sm.webp"
       }
     },
     "items": [
@@ -1714,7 +1719,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/b63577f2-5d04-4eff-9c33-a18e4ba07f39-Pipoltr_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -1723,7 +1728,7 @@
     "_id": "bc44d69da9cbd498",
     "name": "Priest",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/eea439d7-3799-4dc4-8753-32af5bb799c6-Priest_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 80,
@@ -1864,7 +1869,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/priest",
         "sourceHash": "4bfdc97086c608b07e09c8f70b20aa7100b8ac77c2e0218089bd5b857ebffe65",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/eea439d7-3799-4dc4-8753-32af5bb799c6-Priest_raw.sm.webp"
       }
     },
     "items": [
@@ -2040,7 +2046,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/eea439d7-3799-4dc4-8753-32af5bb799c6-Priest_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -2049,7 +2055,7 @@
     "_id": "75d014131fefdeb0",
     "name": "Raiju",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/a6c9d940-331f-4f14-9c40-cc64280e4713-Raiju_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 25,
@@ -2190,7 +2196,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/raiju",
         "sourceHash": "583331c0a13436f9b404b81346c075877b7c010f33dc97e3a4195cb80866cb04",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/a6c9d940-331f-4f14-9c40-cc64280e4713-Raiju_raw.sm.webp"
       }
     },
     "items": [
@@ -2358,7 +2365,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/a6c9d940-331f-4f14-9c40-cc64280e4713-Raiju_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -2367,7 +2374,7 @@
     "_id": "d3dfc4bc8a70e5c8",
     "name": "Rhinoceros Beetle",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f332b611-e7a3-4154-bdc8-04e4a51177c9-Rhino_Beetle_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 25,
@@ -2507,7 +2514,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/rhinoceros-beetle",
         "sourceHash": "f731cd2d6d5ecbbf19c967af012b7839dd3c8fe3e573ad1642619596fbace9d2",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f332b611-e7a3-4154-bdc8-04e4a51177c9-Rhino_Beetle_raw.sm.webp"
       }
     },
     "items": [
@@ -2634,7 +2642,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/f332b611-e7a3-4154-bdc8-04e4a51177c9-Rhino_Beetle_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -2643,7 +2651,7 @@
     "_id": "7d15a30b3aca98a3",
     "name": "Rime Vermin",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/2bba7bbe-70c0-4b47-872d-efe122ff970b-Ice skitterer.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 20,
@@ -2784,7 +2792,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/rime-vermin",
         "sourceHash": "b9eb69c508185766a04aaeea639969950270ae8332e1a76415e56b4993a55c19",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/2bba7bbe-70c0-4b47-872d-efe122ff970b-Ice skitterer.sm.webp"
       }
     },
     "items": [
@@ -2952,7 +2961,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/2bba7bbe-70c0-4b47-872d-efe122ff970b-Ice skitterer.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -2961,7 +2970,7 @@
     "_id": "281018d711dfa15f",
     "name": "Rogue",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/d0be5f8c-610d-429b-a379-4dea2e70d484-Rogue_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 15,
@@ -3102,7 +3111,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/rogue",
         "sourceHash": "ab734d187a5e15fda086b137e8914382fd74d918bc7f02b04deaf4a21c07e161",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/d0be5f8c-610d-429b-a379-4dea2e70d484-Rogue_raw.sm.webp"
       }
     },
     "items": [
@@ -3271,7 +3281,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/d0be5f8c-610d-429b-a379-4dea2e70d484-Rogue_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -3280,7 +3290,7 @@
     "_id": "969341bd8cdbc8c0",
     "name": "Skeletal Champion",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/159f0057-7cf3-4bd8-a6b1-46755716a007-skeletalchamp.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 65,
@@ -3421,7 +3431,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/skeletal-champion",
         "sourceHash": "54477433988a6d6c931e5442e8f806f6dda7a3cf5c527fe998d98149a7c28402",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/159f0057-7cf3-4bd8-a6b1-46755716a007-skeletalchamp.sm.webp"
       }
     },
     "items": [
@@ -3591,7 +3602,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/159f0057-7cf3-4bd8-a6b1-46755716a007-skeletalchamp.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -3600,7 +3611,7 @@
     "_id": "b143f8d7987da822",
     "name": "Skeletal Monstrosity",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f3b5b96a-1010-4950-bf10-e94b4a10cd9b-Skeletal_Monstrosity_2_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 140,
@@ -3744,7 +3755,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/skeletal-monstrosity",
         "sourceHash": "3a51424ff3d22b2790ae553b5b51e48fc5084380d73bf758c5d9f59fa8d2baef",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f3b5b96a-1010-4950-bf10-e94b4a10cd9b-Skeletal_Monstrosity_2_raw.sm.webp"
       }
     },
     "items": [
@@ -4030,7 +4042,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/f3b5b96a-1010-4950-bf10-e94b4a10cd9b-Skeletal_Monstrosity_2_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -4039,7 +4051,7 @@
     "_id": "f640048a8b387345",
     "name": "Skeleton",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/c38312c8-407e-4829-80f6-83c8d3f74b75-Skeleton_1_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 25,
@@ -4178,7 +4190,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/skeleton",
         "sourceHash": "a9e3a1de2275997f62508869caba2e017714a6c76f32661216eb655c099695ba",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/c38312c8-407e-4829-80f6-83c8d3f74b75-Skeleton_1_raw.sm.webp"
       }
     },
     "items": [
@@ -4305,7 +4318,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/c38312c8-407e-4829-80f6-83c8d3f74b75-Skeleton_1_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -4314,7 +4327,7 @@
     "_id": "962294262b682b3f",
     "name": "Slime",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/a511541f-bf4f-4749-a8a1-dadb1bbf1864-common.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 40,
@@ -4455,7 +4468,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/slime",
         "sourceHash": "b8aa79ea980c025a076850848338a39bc15df04c78dc6e38cb817d2e2996eb70",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/a511541f-bf4f-4749-a8a1-dadb1bbf1864-common.sm.webp"
       }
     },
     "items": [
@@ -4623,7 +4637,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/a511541f-bf4f-4749-a8a1-dadb1bbf1864-common.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -4632,7 +4646,7 @@
     "_id": "b76baa52dccd8364",
     "name": "Sniper",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/12635e11-c3a6-46c4-936e-d7978ed2c16a-Sniper_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 60,
@@ -4773,7 +4787,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/sniper",
         "sourceHash": "95e5a9f0109ab0bac0d769486c4346c780663f82b646d679acb0db9f651077e2",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/12635e11-c3a6-46c4-936e-d7978ed2c16a-Sniper_raw.sm.webp"
       }
     },
     "items": [
@@ -4941,7 +4956,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/12635e11-c3a6-46c4-936e-d7978ed2c16a-Sniper_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -4950,7 +4965,7 @@
     "_id": "aca3d194b10fa34e",
     "name": "Tactician",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/42cb83ff-8a61-49a4-b7db-4aa505b28c93-Tactician_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 70,
@@ -5093,7 +5108,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/tactician",
         "sourceHash": "118d592c1b6997a1c83fc4a81b179d99c6de06869d0c0592e101f87a337835f3",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/42cb83ff-8a61-49a4-b7db-4aa505b28c93-Tactician_raw.sm.webp"
       }
     },
     "items": [
@@ -5339,7 +5355,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/42cb83ff-8a61-49a4-b7db-4aa505b28c93-Tactician_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -5348,7 +5364,7 @@
     "_id": "415cc1cedde94638",
     "name": "Tank",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/0fa30a89-68b7-49fc-82dd-878f7d8d53d2-tank_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 40,
@@ -5487,7 +5503,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/tank",
         "sourceHash": "5338bcd932d705f533a80edadbc8e230ec91ed92f3f3cab9a5d7090b480bbaed",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/0fa30a89-68b7-49fc-82dd-878f7d8d53d2-tank_raw.sm.webp"
       }
     },
     "items": [
@@ -5577,7 +5594,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/0fa30a89-68b7-49fc-82dd-878f7d8d53d2-tank_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -5586,7 +5603,7 @@
     "_id": "01e825bf2d642b41",
     "name": "Troll",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/eb4cb323-3fde-4286-a0e0-2216f726afe8-Troll_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 100,
@@ -5726,7 +5743,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/troll",
         "sourceHash": "e0048c60fbe0b308867f87290ed3aa97fb9a7e11dc28ae824d684eff20408d95",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/eb4cb323-3fde-4286-a0e0-2216f726afe8-Troll_raw.sm.webp"
       }
     },
     "items": [
@@ -5853,7 +5871,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/eb4cb323-3fde-4286-a0e0-2216f726afe8-Troll_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -5862,7 +5880,7 @@
     "_id": "ee1552f4759b1033",
     "name": "Unstable Efreet",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/9dd04371-2c1a-410a-888f-d6124d513641-Unstable_Efreet_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 20,
@@ -6003,7 +6021,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/unstable-efreet",
         "sourceHash": "a7a62cf5efac4fbdc7b36bc4551378409951c37c59cd94d5fe01c50ca3572a29",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9dd04371-2c1a-410a-888f-d6124d513641-Unstable_Efreet_raw.sm.webp"
       }
     },
     "items": [
@@ -6169,7 +6188,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/9dd04371-2c1a-410a-888f-d6124d513641-Unstable_Efreet_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -6178,7 +6197,7 @@
     "_id": "8c322786c6ceb664",
     "name": "Warrior",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/8a1a66c9-71e9-4380-8cb3-a4af48a0169f-Warrior_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 75,
@@ -6319,7 +6338,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/warrior",
         "sourceHash": "611085627fc6f5011fad99022ec872b2ef7b4aa9856d04f409c75ee04fb9c974",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/8a1a66c9-71e9-4380-8cb3-a4af48a0169f-Warrior_raw.sm.webp"
       }
     },
     "items": [
@@ -6487,7 +6507,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/8a1a66c9-71e9-4380-8cb3-a4af48a0169f-Warrior_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -6496,7 +6516,7 @@
     "_id": "0f26d1c154787e4b",
     "name": "Water Slime",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/32adf002-d57f-473c-83c7-35f0da806e8b-water.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 35,
@@ -6640,7 +6660,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/water-slime",
         "sourceHash": "4450baa130aa14ee102e9965a2af37ea933bd36625c2f58c675c7cd340d2f3ca",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/32adf002-d57f-473c-83c7-35f0da806e8b-water.sm.webp"
       }
     },
     "items": [
@@ -6927,7 +6948,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/32adf002-d57f-473c-83c7-35f0da806e8b-water.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -6936,7 +6957,7 @@
     "_id": "cd5f2538569ac33d",
     "name": "Westrian Heavy Paladin",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/c61c607c-d182-4093-8a96-ba5d4291652c-Enemy_Paladin_-_Raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 75,
@@ -7077,7 +7098,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/westrian-heavy-paladin",
         "sourceHash": "f226e33dd8a6425bf04ad00a7cbbbe2c891320da8a9ae8b89827d424202368fb",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/c61c607c-d182-4093-8a96-ba5d4291652c-Enemy_Paladin_-_Raw.sm.webp"
       }
     },
     "items": [
@@ -7249,7 +7271,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/c61c607c-d182-4093-8a96-ba5d4291652c-Enemy_Paladin_-_Raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -7258,7 +7280,7 @@
     "_id": "0fa2773c8afa2a28",
     "name": "Wight",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/0ac05118-fcb1-47bc-91fa-2ac255fde9a3-Wight_1_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 20,
@@ -7399,7 +7421,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/wight",
         "sourceHash": "78f58f44da62b22faf579c0de776a8ae3e157e17baaada7091343ca8700ff848",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/0ac05118-fcb1-47bc-91fa-2ac255fde9a3-Wight_1_raw.sm.webp"
       }
     },
     "items": [
@@ -7570,7 +7593,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/0ac05118-fcb1-47bc-91fa-2ac255fde9a3-Wight_1_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -7579,7 +7602,7 @@
     "_id": "615be1f27e03956c",
     "name": "Wind Slime",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f33e71dd-c075-4ebf-a8e7-2780eba9a54c-wind.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 25,
@@ -7723,7 +7746,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/wind-slime",
         "sourceHash": "5158be221adaa2a26d9e911762ffa87f067d7d62f564167c5c2844ecde6885f2",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f33e71dd-c075-4ebf-a8e7-2780eba9a54c-wind.sm.webp"
       }
     },
     "items": [
@@ -8010,7 +8034,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/f33e71dd-c075-4ebf-a8e7-2780eba9a54c-wind.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -8019,7 +8043,7 @@
     "_id": "fdfe48e09d48a1e7",
     "name": "Wolf",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/f51dc53f-784c-4c9e-9df1-5e910c521bac-Wolf_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 25,
@@ -8160,7 +8184,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/wolf",
         "sourceHash": "782cd5878ca1f652c9de5f84b412035069b1a315559bec87bc397dfb69d58564",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/f51dc53f-784c-4c9e-9df1-5e910c521bac-Wolf_raw.sm.webp"
       }
     },
     "items": [
@@ -8328,7 +8353,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/f51dc53f-784c-4c9e-9df1-5e910c521bac-Wolf_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -8337,7 +8362,7 @@
     "_id": "696750e682b65f1f",
     "name": "Wraith",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/4d00ef33-8eaf-46a0-a6f6-2fbdff631af1-Wraith_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 60,
@@ -8482,7 +8507,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/wraith",
         "sourceHash": "4d8e7ad231039d60a83b922d9242c8782ee686d77fad68e8db52ce3d0ae4363b",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/4d00ef33-8eaf-46a0-a6f6-2fbdff631af1-Wraith_raw.sm.webp"
       }
     },
     "items": [
@@ -8809,7 +8835,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/4d00ef33-8eaf-46a0-a6f6-2fbdff631af1-Wraith_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -8818,7 +8844,7 @@
     "_id": "af62f0faa22849aa",
     "name": "Wyrm (Fire)",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/2ec47897-5219-4c9b-9360-f340577f0f47-Fire_Wyrm_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 400,
@@ -8963,7 +8989,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/wyrm--fire-",
         "sourceHash": "367c128304a8e847510ca337e13f25467f29df2937bc97a8dd672f8f175fa44c",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/2ec47897-5219-4c9b-9360-f340577f0f47-Fire_Wyrm_raw.sm.webp"
       }
     },
     "items": [
@@ -9290,7 +9317,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/2ec47897-5219-4c9b-9360-f340577f0f47-Fire_Wyrm_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }
@@ -9299,7 +9326,7 @@
     "_id": "9df871d198502648",
     "name": "Zombies",
     "type": "monster",
-    "img": "https://cdn.angelssword.com/ttrpg/assets/fec1c509-ef0e-4ad4-85ae-6254e9065893-Zombie_raw.sm.webp",
+    "img": "icons/svg/mystery-man.svg",
     "system": {
       "hp": {
         "value": 40,
@@ -9439,7 +9466,8 @@
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.1/monsters/zombies",
         "sourceHash": "bdbf76a8feaee54a76f4ef399e57d5953dc08f3b8c96c7f33f554e14d6a10fa8",
         "rulebookVersion": "0.13.1",
-        "contentBuild": "0.5.0"
+        "contentBuild": "0.5.0",
+        "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/fec1c509-ef0e-4ad4-85ae-6254e9065893-Zombie_raw.sm.webp"
       }
     },
     "items": [
@@ -9568,7 +9596,7 @@
       "displayName": 20,
       "disposition": -1,
       "texture": {
-        "src": "https://cdn.angelssword.com/ttrpg/assets/fec1c509-ef0e-4ad4-85ae-6254e9065893-Zombie_raw.sm.webp"
+        "src": "icons/svg/mystery-man.svg"
       },
       "actorLink": false
     }

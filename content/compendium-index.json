@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "rulebook_version": "0.13.1",
-  "generated_from": "official v0.13.1 and Flo's Madness",
+  "generated_from": "content-source/approved/0.13.1",
   "packs": {
     "rules-setting-guide": {
       "type": "JournalEntry",
