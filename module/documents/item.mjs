@@ -13,7 +13,7 @@ import {
   isCriticalHit
 } from "../rules/ability-attack.mjs";
 import { abilityRefused, abilitySucceeded } from "../rules/ability-result.mjs";
-import { prepareItemChatContent } from "../rules/chat-content.mjs";
+import { applyChatMode, prepareItemChatContent } from "../rules/chat-content.mjs";
 import { itemChatKeywords, itemChatStats } from "../rules/item-summary.mjs";
 import { dualWieldFollowUp } from "../rules/dual-wield.mjs";
 import { resolveDamageType } from "../rules/damage-types.mjs";
@@ -332,7 +332,7 @@ export class LyrianItem extends Item {
     };
     // Honour the user's current whisper setting so a GM can show one player a
     // monster ability without the rest of the table reading it.
-    ChatMessage.applyRollMode(messageData, rollMode ?? game.settings.get("core", "rollMode"));
+    applyChatMode(messageData, rollMode ?? game.settings.get("core", "rollMode"));
     return ChatMessage.create(messageData);
   }
 

@@ -42,6 +42,7 @@ import {
 } from "../rules/crafting.mjs";
 import { installedModFlag, isCompatibleModTarget } from "../rules/mod-installation.mjs";
 import { resolveDamageType } from "../rules/damage-types.mjs";
+import { applyChatMode } from "../rules/chat-content.mjs";
 
 /**
  * The Actor document for Lyrian Chronicles.
@@ -240,7 +241,13 @@ export class LyrianActor extends Actor {
       const source = item.getFlag("lyrian-chronicles", "featureSource");
       return duplicateIds.has(item.id) || !expected.has(featureSourceKey(source));
     });
-    if (remove.length) await this.deleteEmbeddedDocuments("Item", remove.map((item) => item.id));
+    // Re-checked against the collection rather than trusted from the scan
+    // above: several awaits have happened since (fromUuid reaches a pack), and
+    // deleting a class cascades, so a feature listed here may already be gone.
+    // deleteEmbeddedDocuments throws on an id it cannot find, and one missing
+    // id rejects the whole call — taking the update and create passes with it.
+    const removeIds = remove.map((item) => item.id).filter((id) => this.items.has(id));
+    if (removeIds.length) await this.deleteEmbeddedDocuments("Item", removeIds);
     if (update.length) await this.updateEmbeddedDocuments("Item", update);
     if (create.length) await this.createEmbeddedDocuments("Item", create);
 
@@ -787,7 +794,7 @@ export class LyrianActor extends Actor {
     };
     // Rendering our own card bypasses Roll#toMessage, which is what would
     // normally honour a blind or whispered roll mode — so apply it by hand.
-    ChatMessage.applyRollMode(messageData, game.settings.get("core", "rollMode"));
+    applyChatMode(messageData, game.settings.get("core", "rollMode"));
     await ChatMessage.create(messageData);
     return roll;
   }
