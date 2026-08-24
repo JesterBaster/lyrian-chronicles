@@ -43,7 +43,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
   /** @override */
   static DEFAULT_OPTIONS = {
     classes: ["lyrian", "sheet", "actor"],
-    position: { width: 820, height: 800 },
+    // 820 was chosen for a layout that could not go narrower. Everything
+    // wraps now, so the sheet opens smaller and leaves the table visible.
+    position: { width: 720, height: 780 },
     window: { resizable: true },
     form: { submitOnChange: true },
     actions: {
