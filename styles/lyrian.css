@@ -50,7 +50,13 @@
   font-family: var(--lyr-font-body);
 }
 
-.application.lyrian .window-content { background: var(--lyr-void); padding: 0; overflow-y: auto; }
+.application.lyrian .window-content {
+  background: var(--lyr-void); padding: 0; overflow-y: auto;
+  /* Layout below asks how wide the *sheet* is. A viewport media query cannot
+     answer that — a 400px sheet on a 2560px monitor matches none of them — so
+     every breakpoint in this file is a container query against this element. */
+  container: lyrsheet / inline-size;
+}
 
 /* --------------------------------------------------------------------------
    Header
@@ -63,6 +69,23 @@
   gap: 0.75rem; padding: 0.85rem; margin: 0.6rem;
   background: linear-gradient(160deg, var(--lyr-plate) 0%, var(--lyr-night) 100%);
   border: 1px solid var(--lyr-rule); border-radius: var(--lyr-radius);
+}
+
+/* The header grid floors at about 570px — 96 + 180 + 230 plus gaps — so it
+   is restacked rather than left to overflow. */
+@container lyrsheet (max-width: 620px) {
+  .lyrian .lyr-header {
+    grid-template-columns: 96px minmax(0, 1fr);
+    grid-template-areas: "portrait identity" "resources resources" "defences defences";
+  }
+}
+@container lyrsheet (max-width: 380px) {
+  .lyrian .lyr-header {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "portrait" "identity" "resources" "defences";
+    justify-items: center; text-align: center;
+  }
+  .lyrian .lyr-identity, .lyrian .lyr-resources { width: 100%; }
 }
 
 .lyrian .lyr-portrait {
@@ -184,6 +207,10 @@
 .lyrian nav.tabs {
   display: flex; gap: 0.15rem; background: var(--lyr-night);
   border-top: 1px solid var(--lyr-rule); border-bottom: 1px solid var(--lyr-rule); padding: 0.25rem 0.6rem;
+  /* Ten tabs in a row that could not wrap was the widest thing on the sheet:
+     roughly 900px before anything else was laid out, which is what forced the
+     window wide enough to cover the screen. */
+  flex-wrap: wrap;
 }
 .lyrian nav.tabs .item {
   padding: 0.35rem 0.8rem; font-family: var(--lyr-font-display); font-variant: small-caps;
@@ -192,6 +219,15 @@
 }
 .lyrian nav.tabs .item:hover { color: var(--lyr-gold); }
 .lyrian nav.tabs .item.active { color: var(--lyr-gold-bright); background: var(--lyr-plate-2); border-color: var(--lyr-rule); }
+
+/* Narrower sheets buy room back from the tab labels before wrapping them. */
+@container lyrsheet (max-width: 640px) {
+  .lyrian nav.tabs { padding: 0.25rem 0.35rem; }
+  .lyrian nav.tabs .item { padding: 0.3rem 0.5rem; font-size: 0.78rem; letter-spacing: 0.04em; }
+}
+@container lyrsheet (max-width: 420px) {
+  .lyrian nav.tabs .item { padding: 0.28rem 0.4rem; font-size: 0.72rem; letter-spacing: 0.02em; }
+}
 
 .lyrian .lyr-tab { padding: 0.8rem; }
 .lyrian .lyr-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
@@ -369,6 +405,8 @@
 .lyrian .lyr-list--tight { gap: 0.14rem; }
 .lyrian .lyr-row {
   display: flex; align-items: center; gap: 0.5rem; padding: 0.35rem 0.45rem;
+  /* So a long action strip drops to its own line instead of overflowing. */
+  flex-wrap: wrap;
   background: var(--lyr-plate); border: 1px solid var(--lyr-rule);
   border-left: 2px solid var(--lyr-gold-dim); border-radius: var(--lyr-radius);
 }
@@ -376,16 +414,31 @@
 .lyrian .lyr-row--spent { opacity: 0.45; border-left-color: var(--lyr-hp); }
 .lyrian .lyr-row--mastered { border-left-color: var(--lyr-gold-bright); }
 .lyrian .lyr-row__icon { width: 28px; height: 28px; object-fit: cover; border-radius: var(--lyr-radius); flex: 0 0 auto; }
-.lyrian .lyr-row__body { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.lyrian .lyr-row__body { flex: 1 1 7rem; min-width: 0; display: flex; flex-direction: column; }
 .lyrian .lyr-row__name { font-size: 0.88rem; }
 .lyrian .lyr-row__meta { font-size: 0.66rem; color: var(--lyr-ink-dim); }
-.lyrian .lyr-row__actions { display: flex; gap: 0.2rem; flex: 0 0 auto; }
+.lyrian .lyr-row__actions {
+  display: flex; gap: 0.2rem; flex-wrap: wrap; justify-content: flex-end;
+  /* Shrinkable, unlike the old `flex: 0 0 auto`, and free to wrap within
+     itself before the whole strip drops below the name. */
+  flex: 0 1 auto; min-width: 0; margin-left: auto;
+}
 .lyrian .lyr-row__actions button { font-size: 0.68rem; padding: 0.16rem 0.45rem; }
 /* Damage type picker on an attack row. Sized to sit in the button strip
    without stretching the row taller than the buttons beside it. */
-.lyrian .lyr-damage-type { font-size: 0.66rem; padding: 0.1rem 0.2rem; max-width: 8.5rem; background: var(--lyr-plate); border: 1px solid var(--lyr-rule); color: var(--lyr-ink); border-radius: 3px; }
+.lyrian .lyr-damage-type { font-size: 0.66rem; padding: 0.1rem 0.2rem; flex: 0 1 8.5rem; min-width: 4.5rem; background: var(--lyr-plate); border: 1px solid var(--lyr-rule); color: var(--lyr-ink); border-radius: 3px; }
 .lyrian .lyr-damage-type:hover:not(:disabled) { border-color: var(--lyr-gold); }
 .lyrian .lyr-damage-type:disabled { opacity: 0.55; }
+
+/* The picker is the widest control on an attack row, so it is what gives way
+   first. Placed after the base rule above: an equal-specificity container
+   query declared earlier would simply lose the cascade. */
+@container lyrsheet (max-width: 780px) {
+  .lyrian .lyr-damage-type { flex-basis: 7rem; }
+}
+@container lyrsheet (max-width: 560px) {
+  .lyrian .lyr-damage-type { flex-basis: 5.5rem; }
+}
 
 /* The dual wield follow-up, while the window is open. */
 .lyrian .lyr-row__actions button.is-free { border-color: var(--lyr-gold); color: var(--lyr-gold-bright); }
@@ -528,7 +581,7 @@
 .lyrian .lyr-primary:hover { background: var(--lyr-gold-bright); color: var(--lyr-void); }
 .lyrian .lyr-primary:disabled { opacity: 0.35; cursor: not-allowed; }
 
-@media (max-width: 520px) {
+@container lyrsheet (max-width: 520px) {
   .lyrian .lyr-reference-overview { grid-template-columns: 1fr; }
   .lyrian .lyr-reference-card--wide { grid-column: auto; }
   .lyrian .lyr-source-link span { display: none; }
@@ -779,6 +832,6 @@
 .lyrian .lyr-row--chosen { border-left-color: var(--lyr-gold); background: var(--lyr-raised); }
 .lyrian .lyr-trade__side .lyr-row__actions input { width: 3.4rem; text-align: right; font-family: var(--lyr-font-num); }
 
-@media (max-width: 560px) {
+@container lyrsheet (max-width: 560px) {
   .lyrian .lyr-trade__columns { grid-template-columns: 1fr; }
 }
