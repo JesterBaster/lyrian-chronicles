@@ -471,25 +471,12 @@
 .lyrian .lyr-spirit label { display: flex; justify-content: space-between; align-items: center; gap: 0.4rem; font-size: 0.74rem; color: var(--lyr-ink-dim); }
 .lyrian .lyr-spirit input { width: 5.2rem; text-align: right; font-family: var(--lyr-font-num); }
 
-.lyrian .lyr-readout { font-size: 0.74rem; color: var(--lyr-ink-dim); }
-.lyrian .lyr-readout strong { font-family: var(--lyr-font-num); color: var(--lyr-gold-bright); margin-left: 0.35rem; }
-.lyrian .lyr-linkbtn { font-size: 0.66rem; padding: 0.2rem 0.45rem; margin-top: 0.15rem; }
 .lyrian .lyr-purse { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; margin-top: 0.6rem; }
 .lyrian .lyr-purse input { width: 7rem; text-align: right; font-family: var(--lyr-font-num); }
 
 /* --------------------------------------------------------------------------
-   Downtime
+   Progression actions
    -------------------------------------------------------------------------- */
-
-.lyrian .lyr-interlude-head {
-  display: grid; grid-template-columns: auto 1fr; gap: 0.9rem; align-items: center; padding: 0.75rem;
-  background: var(--lyr-plate); border: 1px solid var(--lyr-rule); border-radius: var(--lyr-radius);
-}
-.lyrian .lyr-interlude-points { display: flex; flex-direction: column; align-items: center; gap: 0.2rem; }
-.lyrian .lyr-interlude-points__label { font-size: 0.58rem; font-variant: small-caps; letter-spacing: 0.12em; color: var(--lyr-ink-dim); }
-.lyrian .lyr-interlude-points input { width: 3.6rem; text-align: center; font-family: var(--lyr-font-num); font-size: 1.3rem; background: var(--lyr-void); border: 1px solid var(--lyr-gold); color: var(--lyr-gold-bright); }
-.lyrian .lyr-interlude-points__sub { font-size: 0.62rem; color: var(--lyr-ink-dim); display: flex; align-items: center; gap: 0.3rem; }
-.lyrian .lyr-interlude-points__sub input { width: 2.6rem; font-size: 0.8rem; border-color: var(--lyr-rule); color: var(--lyr-ink); }
 
 .lyrian .lyr-action-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0.45rem; }
 .lyrian .lyr-action-card {
@@ -522,7 +509,6 @@
   color: var(--lyr-ink-dim); font-size: 0.64rem; line-height: 1.1;
 }
 .lyrian .lyr-summary-chip--gold { border-color: var(--lyr-gold-dim); color: var(--lyr-gold-bright); }
-.lyrian .lyr-summary-chip--resource { border-color: rgba(91, 154, 219, 0.4); color: #8fc2f2; }
 .lyrian .lyr-source-link {
   display: inline-flex; align-items: center; gap: 0.3rem; flex: 0 0 auto; padding: 0.28rem 0.48rem;
   border: 1px solid var(--lyr-rule); border-radius: var(--lyr-radius); color: var(--lyr-gold);

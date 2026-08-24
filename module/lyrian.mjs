@@ -573,9 +573,26 @@ Hooks.once("ready", async function () {
 
   // Refresh the official source documents first. Migrations can then hydrate
   // older owned race items from the current compendium schema.
+  //
+  // The two are isolated on purpose. Seeding refreshes content; migrations
+  // repair schema. seedSystemPacks throws outright when the content index is
+  // missing, and that rejection used to escape the hook — so the world was
+  // left un-migrated with nothing but a console trace to explain why.
   if (game.settings.get(SYSTEM_ID, "autoSeedContent")) {
-    await seedSystemPacks();
+    try {
+      await seedSystemPacks();
+    } catch (err) {
+      console.error("Lyrian Chronicles | Seeding compendium content failed", err);
+      ui.notifications.error(game.i18n.localize("LYRIAN.Seed.Failed"), { permanent: true });
+    }
   }
 
-  await runMigrations(SYSTEM_ID, game.system.version);
+  try {
+    await runMigrations(SYSTEM_ID, game.system.version);
+  } catch (err) {
+    // Each migration already reports its own failure and stops. This catches
+    // anything that goes wrong around the loop rather than inside it.
+    console.error("Lyrian Chronicles | Migration run failed", err);
+    ui.notifications.error(game.i18n.localize("LYRIAN.Migration.Interrupted"), { permanent: true });
+  }
 });

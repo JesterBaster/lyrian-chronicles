@@ -940,7 +940,12 @@ export class LyrianActor extends Actor {
     let final = normalizedAmount;
     let guardUsed = 0;
 
-    if (!trueDamage) {
+    // The table can turn automatic Guard off and subtract it by hand. The
+    // setting has always been offered in the world options; until now nothing
+    // read it, so switching it off changed nothing.
+    const subtractGuard = game.settings.get("lyrian-chronicles", "autoApplyGuard");
+
+    if (!trueDamage && subtractGuard) {
       guardUsed = guardForDamage({
         defence,
         guard: s.guard,
