@@ -92,6 +92,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       craftAction: LyrianActorSheet.#onCraftAction,
       installCraftMod: LyrianActorSheet.#onInstallCraftMod,
       endCraft: LyrianActorSheet.#onEndCraft,
+      restartCraft: LyrianActorSheet.#onRestartCraft,
       setProjectOutput: LyrianActorSheet.#onSetProjectOutput
     },
     dragDrop: [{ dragSelector: "[data-drag]", dropSelector: null }]
@@ -309,7 +310,14 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       .sort((a, b) => a.name.localeCompare(b.name));
     // Merged onto each project rather than kept in a parallel array: the
     // template then reads one object per card and needs no lookup helper.
-    context.craftingProjects = context.craftingProjects.map((project) => {
+    // Every Mod any project has already paid for. One physical stack backs one
+    // craft, so a committed Mod is neither stock nor available to a second
+    // project — offering it there would charge twice for one item.
+    const committed = new Map();
+    context.craftingProjects.forEach((project, row) => {
+      for (const mod of project.installedMods ?? []) committed.set(mod.itemId, row);
+    });
+    context.craftingProjects = context.craftingProjects.map((project, projectRow) => {
       const status = craftStatus(project);
       const fitted = new Set((project.installedMods ?? []).map((mod) => mod.itemId));
       return {
@@ -326,7 +334,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         // paid for, can be fitted — and only if the points are there.
         pendingMods: (project.mods ?? [])
           .map((row) => this.document.items.get(row.itemId))
-          .filter((mod) => mod && !fitted.has(mod.id))
+          .filter((mod) => mod && !fitted.has(mod.id)
+            && !(committed.has(mod.id) && committed.get(mod.id) !== projectRow))
           .map((mod) => {
             const cost = Math.max(0, Math.trunc(Number(mod.system?.craftingPoints) || 0));
             return {
@@ -338,6 +347,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           })
       };
     });
+    // Still listed as a choice even when another project has paid for it: the
+    // row is a plan, not a payment. Paying twice is what `pendingMods` and
+    // `installProjectMod` refuse.
     context.craftingModOptions = this.document.items
       .filter((item) => isCraftingMod(item)
         && !item.getFlag("lyrian-chronicles", "installedMod"))
@@ -1192,6 +1204,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
   static async #onEndCraft(event, target) {
     await this.document.endCraft(Number(target.dataset.projectIndex));
+  }
+
+  static async #onRestartCraft(event, target) {
+    await this.document.restartCraft(Number(target.dataset.projectIndex));
   }
 
   static async #onSetProjectOutput(event, target) {

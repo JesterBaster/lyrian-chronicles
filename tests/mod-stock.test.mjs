@@ -141,7 +141,7 @@ test("an incompatible Mod is refused while the player can still choose again", (
   assert.notEqual(start, -1, "the install step is missing");
   const body = ACTOR.slice(start, ACTOR.indexOf("\n  /**", start));
 
-  assert.match(body, /isCompatibleModTarget\(mod, plan\.data\)/);
+  assert.match(body, /isCompatibleModTarget\(mod, target\)/);
   assert.match(body, /LYRIAN\.Warn\.CraftModIncompatible/);
   assert.ok(
     body.indexOf("isCompatibleModTarget") < body.indexOf("installCraftMod("),

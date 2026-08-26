@@ -48,6 +48,8 @@ import {
   installCraftMod
 } from "../rules/crafting-session.mjs";
 import { craftValue } from "../rules/craft-value.mjs";
+import { convertOfficialEquipment } from "../rules/equipment-import.mjs";
+import { collectActorProficiencies } from "../rules/proficiencies.mjs";
 import { resolveDamageType } from "../rules/damage-types.mjs";
 import { applyChatMode } from "../rules/chat-content.mjs";
 
@@ -520,10 +522,29 @@ export class LyrianActor extends Actor {
     // than silently declining to fit it when the craft resolves.
     const base = project.outputUuid ? await fromUuid(project.outputUuid) : null;
     const plan = resolveCraftOutput({ project, base, fallbackName: project.name });
-    if (plan.ok && !isCompatibleModTarget(mod, plan.data)) {
+    // Checked against what the craft will actually produce, not the reference
+    // document it copies. A compendium entry is type "equipment", and every
+    // Universal Weapon and Universal Armor Mod tests the target's type — so
+    // checking the unconverted copy rejected all 81 of them out of hand.
+    const target = plan.ok
+      ? this._craftOutputItem(plan.data, plan.fromBase ? base?.name : "")
+      : null;
+    if (plan.ok && !isCompatibleModTarget(mod, target)) {
       ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftModIncompatible", {
         mod: mod.name,
-        output: plan.data.name
+        output: target.name
+      }));
+      return null;
+    }
+
+    // One physical stack, one craft. Two projects could otherwise each pay for
+    // the same Mod, and whichever resolved first would consume it — leaving
+    // the other charged for a Mod that is no longer there to fit.
+    const committedElsewhere = projects.some((other, row) => row !== index
+      && (other.installedMods ?? []).some((entry) => entry.itemId === mod.id));
+    if (committedElsewhere) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Craft.ModRefused.committed", {
+        mod: mod.name
       }));
       return null;
     }
@@ -549,6 +570,51 @@ export class LyrianActor extends Actor {
     return { project: projects[index], status: craftStatus(projects[index]) };
   }
 
+  /**
+   * Put a finished project back to the start, keeping the plan.
+   *
+   * A craft that fell short loses its materials, not its blueprint: the same
+   * item can be attempted again. Without this the row is dead once it ends,
+   * and the only way to try again is to delete the project and retype the
+   * name, skill, target, dice, materials, Mods and output link.
+   */
+  async restartCraft(projectIndex) {
+    if (this.type !== "character" || !requireActorActionPermission(this)) return null;
+    const action = await runExclusiveActorAction(this, () => this._restartCraft(projectIndex));
+    if (!action.started) {
+      ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
+    }
+    return action.value;
+  }
+
+  async _restartCraft(projectIndex) {
+    const found = this._craftProject(projectIndex);
+    if (!found) return null;
+    const { index, projects, project } = found;
+    if (!project.finished && !project.completed) {
+      ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.CraftNotFinished"));
+      return null;
+    }
+
+    projects[index] = {
+      ...project,
+      points: 0,
+      diceSpent: 0,
+      usedActions: [],
+      // The Mods paid for last time were consumed into the item that was made,
+      // or are still in stock if it was not. Either way nothing is paid for on
+      // this attempt yet.
+      installedMods: [],
+      finished: false,
+      completed: false
+    };
+    await this.update({ "system.crafting.projects": projects });
+    ui.notifications.info(game.i18n.format("LYRIAN.Craft.Restarted", {
+      name: project.name || game.i18n.localize("LYRIAN.Craft.UnnamedOutput")
+    }));
+    return { project: projects[index], status: craftStatus(projects[index]) };
+  }
+
   /** End a craft deliberately, before the dice run out. */
   async endCraft(projectIndex) {
     if (this.type !== "character" || !requireActorActionPermission(this)) return null;
@@ -557,6 +623,43 @@ export class LyrianActor extends Actor {
       ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
     }
     return action.value;
+  }
+
+  /**
+   * Turn a craft's output into an item the character can actually use.
+   *
+   * A project linked to a compendium entry copies a reference document of type
+   * "equipment", which nothing can equip or attack with. Dropping one into the
+   * inventory converts it to a weapon, armor or gear item; a craft has to do
+   * the same or the reward for a successful craft is an unusable page.
+   *
+   * Anything the converter does not recognise — a material, an artifice with
+   * no weapon mapping — is left exactly as it was rather than forced into a
+   * shape the rules do not give it.
+   *
+   * `detectionName` is the stock entry's own name, and matters because the
+   * converter reads the type out of it: "Armor (Medium)" is what makes an
+   * armour an armour, and "Axe (One-Handed)" is what puts an axe in the axe
+   * proficiency group. Naming a craft "Bob's Blade" would otherwise cost it
+   * its armour type outright, or drop a weapon into the improvised group.
+   *
+   * @param {object} data
+   * @param {string} [detectionName]  The base entry's name, when it was renamed.
+   */
+  _craftOutputItem(data, detectionName = "") {
+    if (data?.type !== "equipment") return data;
+    const groups = this.type === "character"
+      ? collectActorProficiencies(this).groups
+      : null;
+    const stockName = detectionName || data.name;
+    const converted = convertOfficialEquipment({ ...data, name: stockName }, groups ? {
+      weapons: groups.weapons.map((entry) => entry.name),
+      armor: groups.armor.map((entry) => entry.name)
+    } : { assumeProficient: true });
+    if (!converted) return data;
+    // The type came from the stock name; the label is whatever the smith chose.
+    converted.name = data.name;
+    return converted;
   }
 
   /**
@@ -572,8 +675,10 @@ export class LyrianActor extends Actor {
       return {
         name: item?.name ?? "",
         quantity: Math.max(0, Math.trunc(Number(line?.quantity) || 0)),
-        cost: item?.system?.cost ?? 0,
-        unitCost: item?.system?.unitCost ?? 0
+        // Owned Gear stores its price as `value`, a number. Only an
+        // unconverted compendium entry carries the `cost` string, so both are
+        // read: reading `cost` alone priced every material at nothing.
+        value: item?.system?.value ?? item?.system?.cost ?? 0
       };
     }).filter((line) => line.quantity > 0);
   }
@@ -606,7 +711,13 @@ export class LyrianActor extends Actor {
       return null;
     }
 
-    const outputData = outputPlan.data;
+    // A compendium entry is a reference document of type "equipment": it can
+    // be read but not equipped or attacked with. Crafting a longsword has to
+    // produce a longsword you can swing, so the copy goes through the same
+    // conversion a drop into the inventory does.
+    const outputData = this._craftOutputItem(
+      outputPlan.data, outputPlan.fromBase ? base?.name : "");
+
     // The Book Price of what was made, by the source spreadsheet's rule:
     // base item cost + 25 Clim per crafting point of every Mod + materials.
     const value = craftValue({
@@ -616,8 +727,14 @@ export class LyrianActor extends Actor {
     });
     if (status.succeeds && value.total > 0 && outputData) {
       // A crafted item is worth what it cost to make, not what the stock
-      // entry it was copied from is listed at.
-      foundry.utils.setProperty(outputData, "system.cost", `${value.total} Clim`);
+      // entry it was copied from is listed at. Which field holds that depends
+      // on the type: only "equipment" has a `cost` string, and writing it onto
+      // a weapon would be dropped by the schema without a word.
+      if (outputData.type === "equipment") {
+        foundry.utils.setProperty(outputData, "system.cost", `${value.total} Clim`);
+      } else {
+        foundry.utils.setProperty(outputData, "system.value", value.total);
+      }
     }
 
     let installed = [];
@@ -628,6 +745,17 @@ export class LyrianActor extends Actor {
       const paid = (project.installedMods ?? [])
         .map((entry) => this.items.get(entry.itemId))
         .filter((mod) => mod && isCompatibleModTarget(mod, outputData));
+      // Points were spent on every entry. One that cannot be fitted now — the
+      // stack was sold, or the craft ended up making something else — is worth
+      // saying out loud rather than quietly charging for nothing.
+      if (paid.length < (project.installedMods ?? []).length) {
+        const lost = (project.installedMods ?? [])
+          .filter((entry) => !paid.some((mod) => mod.id === entry.itemId))
+          .map((entry) => entry.name || entry.itemId);
+        ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftModLost", {
+          mods: lost.join(", ")
+        }));
+      }
       if (created && paid.length) {
         await this.createEmbeddedDocuments("Item", paid.map((mod) => {
           const modData = mod.toObject();
