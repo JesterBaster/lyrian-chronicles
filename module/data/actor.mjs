@@ -385,6 +385,11 @@ export class LyrianCharacter extends LyrianActorBase {
           requiredPoints: int(30, { min: 0 }),
           // How many Crafting Dice the craft has to spend on actions.
           craftingDice: int(4, { min: 0 }),
+          // A crafting tool's bonuses: "+1 (or +2) to each crafting dice roll"
+          // and "+5 (or +10) once at the end of your craft". Unbounded below
+          // so a GM can express a penalty for improvised tools.
+          diceBonus: int(0),
+          finishBonus: int(0),
 
           // Live session state. A craft is worked at across several actions,
           // so where it has got to has to survive a reload.

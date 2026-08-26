@@ -699,8 +699,8 @@
   color: var(--lyr-gold-bright); font-family: var(--lyr-font-display); font-size: 1rem;
 }
 .lyrian .lyr-craft-project__check {
-  /* Three fields now — skill, crafting HP, dice — so they wrap rather than
-     forcing the card wider than the sheet. */
+  /* Five fields now — skill, crafting HP, dice, and a tool's two bonuses —
+     so they wrap rather than forcing the card wider than the sheet. */
   display: flex; flex-wrap: wrap; gap: 0.55rem;
 }
 .lyrian .lyr-craft-project__check label:first-child { flex: 1 1 11rem; min-width: 0; }
@@ -723,6 +723,17 @@
 .lyrian .lyr-craft-material {
   display: grid; grid-template-columns: minmax(0, 1fr) 5rem 2rem; gap: 0.35rem;
 }
+/* The Book Price breakdown on a resolved craft card, collapsed by default so
+   a chat log of crafts does not turn into a ledger. */
+.lyr-craft-value { margin-top: 0.4rem; }
+.lyr-craft-value > summary {
+  cursor: pointer; color: var(--lyr-gold-bright); font-size: 0.72rem;
+  font-variant: small-caps; letter-spacing: 0.06em;
+}
+.lyr-craft-value .lyrian-card__stats { flex-direction: column; align-items: stretch; }
+.lyr-craft-value .lyrian-card__stats li { justify-content: space-between; border-radius: var(--lyr-radius); }
+.lyr-craft-value .lyrian-card__stats span { font-variant: normal; letter-spacing: 0; overflow-wrap: anywhere; }
+
 .lyrian .lyr-craft-output {
   display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
   min-height: 3rem; padding: 0.55rem; border: 1px dashed var(--lyr-gold-dim);

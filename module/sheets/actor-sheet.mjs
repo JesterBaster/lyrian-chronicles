@@ -707,6 +707,13 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       projects[index].outputUuid = item.uuid;
       projects[index].outputName = item.name;
       projects[index].completed = false;
+      // Every craftable in the compendium carries its own crafting-point cost,
+      // so the target is read off what is being made rather than typed in.
+      // Only before the craft starts: overwriting the target mid-craft would
+      // move the goalposts on points already rolled.
+      const points = Math.max(0, Math.trunc(Number(item.system?.craftingPoints) || 0));
+      if (points && !projects[index].diceSpent) projects[index].requiredPoints = points;
+      if (!projects[index].name) projects[index].name = item.name;
       await this.document.update({ "system.crafting.projects": projects });
       return item;
     }
@@ -1093,6 +1100,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
           row.querySelector("[data-project-required]")?.value ?? current.requiredPoints),
         craftingDice: Number(
           row.querySelector("[data-project-dice]")?.value ?? current.craftingDice),
+        diceBonus: Number(
+          row.querySelector("[data-project-dice-bonus]")?.value ?? current.diceBonus),
+        finishBonus: Number(
+          row.querySelector("[data-project-finish-bonus]")?.value ?? current.finishBonus),
         customType: row.querySelector("[data-project-custom-type]")?.value ?? current.customType,
         customName: row.querySelector("[data-project-custom-name]")?.value ?? current.customName,
         materials,

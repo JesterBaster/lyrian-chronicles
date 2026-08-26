@@ -47,6 +47,7 @@ import {
   craftStatus,
   installCraftMod
 } from "../rules/crafting-session.mjs";
+import { craftValue } from "../rules/craft-value.mjs";
 import { resolveDamageType } from "../rules/damage-types.mjs";
 import { applyChatMode } from "../rules/chat-content.mjs";
 
@@ -559,6 +560,25 @@ export class LyrianActor extends Actor {
   }
 
   /**
+   * Price a project's material lines against the stacks they were drawn from.
+   *
+   * The stacks are read at resolve time rather than when they were consumed:
+   * spending units changes a stack's quantity, never its listed cost, and a
+   * depleted stack is left in the inventory at zero rather than deleted.
+   */
+  _craftMaterialPrices(project) {
+    return Array.from(project?.materials ?? [], (line) => {
+      const item = this.items.get(String(line?.itemId ?? ""));
+      return {
+        name: item?.name ?? "",
+        quantity: Math.max(0, Math.trunc(Number(line?.quantity) || 0)),
+        cost: item?.system?.cost ?? 0,
+        unitCost: item?.system?.unitCost ?? 0
+      };
+    }).filter((line) => line.quantity > 0);
+  }
+
+  /**
    * Settle a craft: build the item if the points reached its crafting HP,
    * and otherwise report the failure. The materials are already gone either
    * way, which is what the rules say a failed craft costs.
@@ -587,6 +607,19 @@ export class LyrianActor extends Actor {
     }
 
     const outputData = outputPlan.data;
+    // The Book Price of what was made, by the source spreadsheet's rule:
+    // base item cost + 25 Clim per crafting point of every Mod + materials.
+    const value = craftValue({
+      base: outputData,
+      mods: project.installedMods,
+      materials: this._craftMaterialPrices(project)
+    });
+    if (status.succeeds && value.total > 0 && outputData) {
+      // A crafted item is worth what it cost to make, not what the stock
+      // entry it was copied from is listed at.
+      foundry.utils.setProperty(outputData, "system.cost", `${value.total} Clim`);
+    }
+
     let installed = [];
     if (status.succeeds) {
       const [created] = await this.createEmbeddedDocuments("Item", [outputData]);
@@ -631,7 +664,8 @@ export class LyrianActor extends Actor {
       mods: installed,
       custom: outputPlan.custom,
       outputType: outputData?.type ?? "",
-      status
+      status,
+      value: status.succeeds ? value : null
     });
     const content = await foundry.applications.handlebars.renderTemplate(
       "systems/lyrian-chronicles/templates/chat/craft-card.hbs",
@@ -644,6 +678,7 @@ export class LyrianActor extends Actor {
         outputName: outputData?.name ?? project.name,
         custom: outputPlan.custom,
         mods: installed,
+        value: status.succeeds ? value : null,
         resolved: true
       }
     );

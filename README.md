@@ -50,7 +50,7 @@ restart; changes to data model schemas need the world relaunched from the setup 
 | Downed | 0 HP applies Downed and Prone (grunts die outright); negative max HP applies Mortal Wound |
 | Injuries | 1d10 injury table roll creates an Injury item on the actor |
 | Skills | `d20 + sub stat + ranks + expertise`, with the 15 / 20 / uncapped rank cap tracked from Spirit Core |
-| Crafting & gathering | Projects consume owned Gear per attempt, roll `d10 + artisan + best expertise` against DC, and on success create either a copy of a dropped Item or a custom weapon, armor or gear item, optionally installing owned Mods into the result; gathering stays `d10 + skill` checks |
+| Crafting & gathering | Projects consume owned Gear, then accumulate Crafting Points across Basic Craft, Beginner's Luck, Steady Craft and Standard Finish until they reach the item's Crafting HP; spare points fit compatible owned Mods, a tool's crafting and finish bonuses apply, and success creates either a copy of a dropped Item or a custom weapon, armor or gear item priced at its Book Price; gathering stays `d10 + skill` checks |
 
 ## Compendium content
 
@@ -141,12 +141,19 @@ token untargetable. Size differences shift Evasion by 1 per step.
 ## What is left to the table
 
 Cover, stealth, grapple escape power, mounted combat, gathering node points and depletion,
-interlude bookkeeping, and the housing rules remain resolved by the GM. Crafting projects use
-a single d10-vs-DC attempt with inventory consumption; they intentionally do not use dice pools
-or progress tracks. A custom item is forged with default stats and edited on its own item
-sheet afterwards, because the rulebook sets no costing for arbitrary weapon and armor values.
-That is deliberate: automating them before you have played a few
-sessions tends to lock in the wrong assumptions.
+interlude bookkeeping, and the housing rules remain resolved by the GM. A custom item is forged
+with default stats and edited on its own item sheet afterwards, because the rulebook sets no
+costing for arbitrary weapon and armor values. That is deliberate: automating them before you
+have played a few sessions tends to lock in the wrong assumptions.
+
+Dropping a compendium item onto a project reads its Crafting HP off the item, so the target
+is only typed by hand for something the packs do not carry. A crafting tool's bonuses are
+entered per project: **Tool Bonus** applies to every crafting dice roll, **Finish Bonus**
+once when the craft is settled. A finished craft is priced by Flo's Madness's Book Price rule
+— base item cost, 25 Clim per crafting point of each Mod, plus materials — and the chat card
+shows the breakdown line by line. The baseline ingot a recipe already includes in the item's
+own cost is not detectable from the data, so every material listed is priced; drop that line
+from the project if your table follows the sheet's "(Ignored)" convention.
 
 By default only the GM defines projects. Enable **Players may author crafting projects** in
 system settings to let players create their own, including custom output and mods.

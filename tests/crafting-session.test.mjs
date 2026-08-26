@@ -200,6 +200,68 @@ test("a new session starts empty and sanitises its inputs", () => {
   assert.equal(craftStatus(empty).succeeds, true, "nothing required is trivially met");
 });
 
+/* -------------------------------------------- */
+/*  A crafting tool's two bonuses                */
+/* -------------------------------------------- */
+
+test("a tool's crafting bonus rides on every crafting dice roll", () => {
+  // "A crafting bonus gives you +1 (or +2) to each crafting dice roll."
+  let session = newCraftSession({ requiredPoints: 30, craftingDice: 4, diceBonus: 2 });
+
+  session = applyCraftAction(session, "basicCraft", { dieTotal: 6, skillBonus: 5 }).session;
+  assert.equal(session.points, 13, "6 + 5 skill + 2 tool");
+
+  // Steady Craft's die does not bounce, but it is still a crafting dice roll.
+  session = applyCraftAction(session, "steadyCraft", { skillBonus: 5 }).session;
+  assert.equal(session.points, 25, "5 fixed + 5 skill + 2 tool");
+
+  // Beginner's Luck drops the skill, not the tool.
+  session = applyCraftAction(session, "beginnersLuck", { dieTotal: 9, skillBonus: 5 }).session;
+  assert.equal(session.points, 36, "9 + 2 tool, no skill");
+});
+
+test("Standard Finish gets no tool bonus, having no roll to put it on", () => {
+  let session = newCraftSession({ requiredPoints: 30, craftingDice: 4, diceBonus: 2 });
+  session = applyCraftAction(session, "basicCraft", { dieTotal: 6, skillBonus: 5 }).session;
+  assert.equal(session.points, 13);
+
+  const finish = applyCraftAction(session, "standardFinish", {});
+  assert.equal(finish.session.points, 26, "doubled, and nothing else added");
+});
+
+test("a tool's finish bonus counts towards the target but is never spendable", () => {
+  // "The finish bonus gives you a +5 (or +10) bonus once at the end of your
+  // craft." It is guaranteed, so it counts in the projection — but a Mod is
+  // paid for during the craft, out of points actually banked.
+  let session = newCraftSession({ requiredPoints: 30, craftingDice: 4, finishBonus: 10 });
+  session = applyCraftAction(session, "basicCraft", { dieTotal: 6, skillBonus: 5 }).session;
+  session = applyCraftAction(session, "basicCraft", { dieTotal: 9, skillBonus: 5 }).session;
+  assert.equal(session.points, 25);
+
+  const status = craftStatus(session);
+  assert.equal(status.points, 25, "banked");
+  assert.equal(status.finalPoints, 35, "with the finish bonus that lands at the end");
+  assert.equal(status.succeeds, true, "35 clears 30");
+  assert.equal(status.surplus, 5);
+
+  // 30 points of Mod cannot be bought out of 25 banked, whatever the finish
+  // bonus will eventually add.
+  assert.equal(installCraftMod(session, { itemId: "m", name: "Recurve", cost: 30 }).refused, "points");
+  const fitted = installCraftMod(session, { itemId: "m", name: "Recurve", cost: 20 });
+  assert.equal(fitted.session.points, 5);
+  assert.equal(craftStatus(fitted.session).finalPoints, 15, "and now it is 15 short");
+  assert.equal(craftStatus(fitted.session).succeeds, false);
+});
+
+test("a session with no tool behaves exactly as before", () => {
+  const session = newCraftSession({ requiredPoints: 30, craftingDice: 4 });
+  assert.equal(session.diceBonus, 0);
+  assert.equal(session.finishBonus, 0);
+  const status = craftStatus(session);
+  assert.equal(status.finalPoints, status.points);
+  assert.equal(status.finishBonus, 0);
+});
+
 test("an unknown action is refused rather than crashing", () => {
   const session = newCraftSession({ requiredPoints: 5, craftingDice: 3 });
   assert.deepEqual(canUseCraftAction(session, "sabotage"), { ok: false, reason: "unknown" });

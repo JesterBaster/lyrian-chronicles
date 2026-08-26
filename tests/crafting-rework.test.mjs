@@ -112,7 +112,7 @@ test("the tab offers the actions and shows where the craft stands", () => {
   assert.match(TEMPLATE, /data-action="craftAction"[\s\S]{0,120}data-craft-action="\{\{action\.key\}\}"/);
   assert.match(TEMPLATE, /data-action="installCraftMod"/);
   assert.match(TEMPLATE, /data-action="endCraft"/);
-  assert.match(TEMPLATE, /\{\{project\.status\.points\}\}/);
+  assert.match(TEMPLATE, /\{\{project\.status\.finalPoints\}\}/);
   assert.doesNotMatch(TEMPLATE, /data-action="attemptCraft"/);
 
   // The rework added a third field to a row built for two, and inputs carry an

@@ -30,7 +30,10 @@
   {{/unless}}
 
   <ul class="lyrian-card__stats">
-    <li><span>{{localize "LYRIAN.Craft.Points"}}</span> <strong>{{status.points}} / {{status.required}}</strong></li>
+    <li><span>{{localize "LYRIAN.Craft.Points"}}</span> <strong>{{status.finalPoints}} / {{status.required}}</strong></li>
+    {{#if status.finishBonus}}
+      <li><span>{{localize "LYRIAN.Craft.FinishBonus"}}</span> <strong>{{lyrianSigned status.finishBonus}}</strong></li>
+    {{/if}}
     <li><span>{{localize "LYRIAN.Craft.Dice"}}</span> <strong>{{status.diceRemaining}}</strong></li>
     {{#if status.shortfall}}
       <li><span>{{localize "LYRIAN.Craft.Short"}}</span> <strong>{{status.shortfall}}</strong></li>
@@ -59,6 +62,28 @@
         <strong>{{localize "LYRIAN.UI.Mods"}}</strong>
         {{#each mods as |mod|}}{{mod.name}}{{#unless @last}}, {{/unless}}{{/each}}
       </p>
+    {{/if}}
+    {{#if value}}
+      <details class="lyr-craft-value">
+        <summary>{{localize "LYRIAN.Craft.BookPrice" total=value.total}}</summary>
+        <ul class="lyrian-card__stats">
+          {{#each value.lines as |line|}}
+            <li>
+              <span>
+                {{~#if (eq line.kind "mod")~}}
+                  {{localize "LYRIAN.Craft.ValueModLine" name=line.name points=line.points}}
+                {{~else if (eq line.kind "material")~}}
+                  {{localize "LYRIAN.Craft.ValueMaterialLine" name=line.name quantity=line.quantity}}
+                {{~else~}}
+                  {{line.name}}
+                {{~/if~}}
+              </span>
+              <strong>{{line.clim}}</strong>
+            </li>
+          {{/each}}
+        </ul>
+        <p class="lyr-note">{{localize "LYRIAN.Hint.CraftBookPrice"}}</p>
+      </details>
     {{/if}}
   {{/if}}
 </div>

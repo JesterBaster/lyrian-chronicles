@@ -113,6 +113,8 @@ export function actorActionFingerprint(actor) {
     points: Number(project.points ?? 0),
     diceSpent: Number(project.diceSpent ?? 0),
     craftingDice: Number(project.craftingDice ?? 0),
+    diceBonus: Number(project.diceBonus ?? 0),
+    finishBonus: Number(project.finishBonus ?? 0),
     installedMods: Array.from(project.installedMods ?? [], (mod) =>
       String(mod?.itemId ?? "")),
     finished: Boolean(project.finished),
