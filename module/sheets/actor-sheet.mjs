@@ -27,6 +27,7 @@ import { withCollapsed } from "../rules/collapsible.mjs";
 import { weaponsDisplacedBy } from "../rules/weapon-slots.mjs";
 import { pendingDualWieldWeaponId } from "../rules/dual-wield.mjs";
 import { damageTypeChoices, resolveDamageType } from "../rules/damage-types.mjs";
+import { craftActionOptions, craftStatus } from "../rules/crafting-session.mjs";
 import { queueDocumentWrite } from "../rules/action-transactions.mjs";
 import {
   CUSTOM_OUTPUT_TYPES,
@@ -88,7 +89,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       removeProjectMaterial: LyrianActorSheet.#onRemoveProjectMaterial,
       addProjectMod: LyrianActorSheet.#onAddProjectMod,
       removeProjectMod: LyrianActorSheet.#onRemoveProjectMod,
-      attemptCraft: LyrianActorSheet.#onAttemptCraft,
+      craftAction: LyrianActorSheet.#onCraftAction,
+      installCraftMod: LyrianActorSheet.#onInstallCraftMod,
+      endCraft: LyrianActorSheet.#onEndCraft,
       setProjectOutput: LyrianActorSheet.#onSetProjectOutput
     },
     dragDrop: [{ dragSelector: "[data-drag]", dropSelector: null }]
@@ -304,6 +307,37 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         quantity: item.system.quantity ?? 0
       }))
       .sort((a, b) => a.name.localeCompare(b.name));
+    // Merged onto each project rather than kept in a parallel array: the
+    // template then reads one object per card and needs no lookup helper.
+    context.craftingProjects = context.craftingProjects.map((project) => {
+      const status = craftStatus(project);
+      const fitted = new Set((project.installedMods ?? []).map((mod) => mod.itemId));
+      return {
+        ...project,
+        status,
+        actions: craftActionOptions(project).map((action) => ({
+          ...action,
+          label: game.i18n.localize(`LYRIAN.Craft.Action.${action.key}`),
+          hint: action.available
+            ? game.i18n.format("LYRIAN.Craft.DiceCost", { dice: action.dice })
+            : game.i18n.localize(`LYRIAN.Craft.Refused.${action.reason}`)
+        })),
+        // Only Mods the project lists, that are still owned and not already
+        // paid for, can be fitted — and only if the points are there.
+        pendingMods: (project.mods ?? [])
+          .map((row) => this.document.items.get(row.itemId))
+          .filter((mod) => mod && !fitted.has(mod.id))
+          .map((mod) => {
+            const cost = Math.max(0, Math.trunc(Number(mod.system?.craftingPoints) || 0));
+            return {
+              id: mod.id,
+              name: mod.name,
+              cost,
+              affordable: status.points >= cost && !status.finished
+            };
+          })
+      };
+    });
     context.craftingModOptions = this.document.items
       .filter((item) => isCraftingMod(item)
         && !item.getFlag("lyrian-chronicles", "installedMod"))
@@ -1055,7 +1089,10 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         ...current,
         name: row.querySelector("[data-project-name]")?.value ?? current.name,
         skill: row.querySelector("[data-project-skill]")?.value ?? current.skill,
-        dc: Number(row.querySelector("[data-project-dc]")?.value ?? current.dc),
+        requiredPoints: Number(
+          row.querySelector("[data-project-required]")?.value ?? current.requiredPoints),
+        craftingDice: Number(
+          row.querySelector("[data-project-dice]")?.value ?? current.craftingDice),
         customType: row.querySelector("[data-project-custom-type]")?.value ?? current.customType,
         customName: row.querySelector("[data-project-custom-name]")?.value ?? current.customName,
         materials,
@@ -1122,12 +1159,28 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     await this.document.update({ "system.crafting.projects": projects });
   }
 
-  static async #onAttemptCraft(event, target) {
+  /**
+   * Take one crafting action.
+   *
+   * The editor is flushed first: the fields carry no form names, so an edit
+   * to the target or the dice budget is only in the DOM until something
+   * writes it, and acting on a stale project would use the old numbers.
+   */
+  static async #onCraftAction(event, target) {
     const index = Number(target.dataset.projectIndex);
     await this.document.update({
       "system.crafting.projects": this._readCraftingProjects()
     });
-    await this.document.attemptCraft(index);
+    await this.document.craftAction(index, target.dataset.craftAction);
+  }
+
+  static async #onInstallCraftMod(event, target) {
+    const index = Number(target.dataset.projectIndex);
+    await this.document.installProjectMod(index, target.dataset.modItemId);
+  }
+
+  static async #onEndCraft(event, target) {
+    await this.document.endCraft(Number(target.dataset.projectIndex));
   }
 
   static async #onSetProjectOutput(event, target) {

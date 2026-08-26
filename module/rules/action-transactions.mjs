@@ -107,7 +107,15 @@ export function actorActionFingerprint(actor) {
     .sort(([a], [b]) => String(a).localeCompare(String(b)));
   const crafting = Array.from(system.crafting?.projects ?? [], (project) => ({
     skill: String(project.skill ?? ""),
-    dc: Number(project.dc ?? 0),
+    requiredPoints: Number(project.requiredPoints ?? 0),
+    // The live session, not just the setup. These are what a crafting action
+    // changes, so a snapshot without them cannot tell that one happened.
+    points: Number(project.points ?? 0),
+    diceSpent: Number(project.diceSpent ?? 0),
+    craftingDice: Number(project.craftingDice ?? 0),
+    installedMods: Array.from(project.installedMods ?? [], (mod) =>
+      String(mod?.itemId ?? "")),
+    finished: Boolean(project.finished),
     materials: Array.from(project.materials ?? [], (material) => [
       String(material.itemId ?? ""),
       Number(material.quantity ?? 0)

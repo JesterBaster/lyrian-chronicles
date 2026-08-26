@@ -67,7 +67,11 @@ test("installing a Mod spends the stock it came from", () => {
 });
 
 test("crafting spends the Mods it forges in", () => {
-  assert.match(ACTOR, /deleteEmbeddedDocuments\("Item", modPlan\.mods\.map\(\(mod\) => mod\.id\)\)/);
+  // Only the Mods actually paid for out of crafting points are fitted, and
+  // the stock is consumed — leaving it behind let one Mod be forged into an
+  // unlimited number of items.
+  assert.match(ACTOR, /deleteEmbeddedDocuments\("Item", paid\.map\(\(mod\) => mod\.id\)\)/);
+  assert.match(ACTOR, /\(project\.installedMods \?\? \[\]\)[\s\S]{0,200}isCompatibleModTarget/);
 });
 
 /* -------------------------------------------- */
@@ -129,14 +133,19 @@ test("without an output to check against, compatibility is not guessed at", () =
   assert.deepEqual(plan.incompatible, []);
 });
 
-test("the craft refuses on either fault, and checks before spending", () => {
-  const craft = ACTOR.slice(ACTOR.indexOf("async _attemptCraft"));
-  const body = craft.slice(0, craft.indexOf("\n  /**", 1));
-  assert.match(body, /modPlan\.missing\.length/);
-  assert.match(body, /modPlan\.incompatible\.length/);
+test("an incompatible Mod is refused while the player can still choose again", () => {
+  // The check moved: a Mod is now fitted mid-craft by spending points, so it
+  // is validated when the button is pressed rather than when the craft ends.
+  // Declining silently at the end would take the points and give nothing.
+  const start = ACTOR.indexOf("async _installProjectMod(projectIndex, modItemId)");
+  assert.notEqual(start, -1, "the install step is missing");
+  const body = ACTOR.slice(start, ACTOR.indexOf("\n  /**", start));
+
+  assert.match(body, /isCompatibleModTarget\(mod, plan\.data\)/);
+  assert.match(body, /LYRIAN\.Warn\.CraftModIncompatible/);
   assert.ok(
-    body.indexOf("planCraftMods") < body.indexOf("updateEmbeddedDocuments"),
-    "materials must not be consumed before the mod plan is known to be sound"
+    body.indexOf("isCompatibleModTarget") < body.indexOf("installCraftMod("),
+    "compatibility is settled before any points are charged"
   );
 });
 

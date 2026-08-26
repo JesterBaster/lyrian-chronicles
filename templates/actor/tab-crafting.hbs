@@ -48,9 +48,15 @@
             </select>
           </label>
           <label>
-            <span>{{localize "LYRIAN.UI.DC"}}</span>
-            <input type="number" data-crafting-field data-project-dc value="{{project.dc}}" step="1" list="lyrian-craft-difficulties"
+            <span>{{localize "LYRIAN.Craft.RequiredPoints"}}</span>
+            <input type="number" data-crafting-field data-project-required value="{{project.requiredPoints}}"
+                   min="0" step="1" list="lyrian-craft-difficulties"
                    {{#unless @root.canEditProjects}}disabled{{/unless}} />
+          </label>
+          <label>
+            <span>{{localize "LYRIAN.Craft.CraftingDice"}}</span>
+            <input type="number" data-crafting-field data-project-dice value="{{project.craftingDice}}"
+                   min="0" step="1" {{#unless @root.canEditProjects}}disabled{{/unless}} />
           </label>
         </div>
 
@@ -163,10 +169,59 @@
           <p class="lyr-note">{{localize "LYRIAN.Hint.CraftCustom"}}</p>
         </div>
 
-        <button type="button" class="lyr-craft-attempt" data-action="attemptCraft"
-                data-project-index="{{projectIndex}}" {{#if project.completed}}disabled{{/if}}>
-          <i class="fa-solid fa-hammer"></i> {{localize "LYRIAN.Craft.Attempt"}}
-        </button>
+          <div class="lyr-craft-session">
+            <div class="lyr-craft-progress">
+              <span class="lyr-craft-points">{{project.status.points}}<em>/{{project.status.required}}</em></span>
+              <span class="lyr-craft-meta">
+                {{localize "LYRIAN.Craft.DiceLeft" dice=project.status.diceRemaining}}
+                {{#if project.status.shortfall}} · {{localize "LYRIAN.Craft.Shortfall" points=project.status.shortfall}}
+                {{else}} · {{localize "LYRIAN.Craft.Surplus" points=project.status.surplus}}{{/if}}
+              </span>
+            </div>
+            <span class="lyr-craft-bar" role="presentation">
+              <span class="lyr-craft-bar__fill {{#if project.status.succeeds}}is-met{{/if}}"
+                    style="width: {{lyrianPercent project.status.points project.status.required}}%"></span>
+            </span>
+
+            {{#if project.status.canAct}}
+              <div class="lyr-craft-actions">
+                {{#each project.actions as |action|}}
+                  <button type="button" data-action="craftAction"
+                          data-craft-action="{{action.key}}" data-project-index="{{projectIndex}}"
+                          {{#unless action.available}}disabled{{/unless}} title="{{action.hint}}">
+                    {{action.label}} <em>{{action.dice}}</em>
+                  </button>
+                {{/each}}
+              </div>
+            {{/if}}
+
+            {{#if project.pendingMods.length}}
+              <div class="lyr-craft-fit">
+                <span class="lyr-note">{{localize "LYRIAN.Craft.FitMods"}}</span>
+                {{#each project.pendingMods as |mod|}}
+                  <button type="button" data-action="installCraftMod"
+                          data-mod-item-id="{{mod.id}}" data-project-index="{{projectIndex}}"
+                          {{#unless mod.affordable}}disabled{{/unless}}>
+                    {{mod.name}} <em>{{mod.cost}}</em>
+                  </button>
+                {{/each}}
+              </div>
+            {{/if}}
+
+            {{#if project.installedMods.length}}
+              <p class="lyr-note">{{localize "LYRIAN.Craft.Fitted"}}
+                {{#each project.installedMods as |mod|}}{{mod.name}} ({{mod.cost}}){{#unless @last}}, {{/unless}}{{/each}}
+              </p>
+            {{/if}}
+
+            {{#unless project.status.finished}}
+              <button type="button" class="lyr-craft-attempt" data-action="endCraft"
+                      data-project-index="{{projectIndex}}">
+                <i class="fa-solid fa-hammer"></i>
+                {{#if project.status.succeeds}}{{localize "LYRIAN.Craft.FinishSuccess"}}{{else}}{{localize "LYRIAN.Craft.FinishNow"}}{{/if}}
+              </button>
+            {{/unless}}
+          </div>
       </article>
     {{else}}
       <p class="lyr-empty">{{localize "LYRIAN.Craft.EmptyProjects"}}</p>

@@ -37,10 +37,16 @@ import {
   buildCraftPayload,
   normalizeCraftProject,
   planCraftMaterials,
-  planCraftMods,
   resolveCraftOutput
 } from "../rules/crafting.mjs";
 import { installedModFlag, isCompatibleModTarget } from "../rules/mod-installation.mjs";
+import {
+  CRAFT_ACTIONS,
+  applyCraftAction,
+  canUseCraftAction,
+  craftStatus,
+  installCraftMod
+} from "../rules/crafting-session.mjs";
 import { resolveDamageType } from "../rules/damage-types.mjs";
 import { applyChatMode } from "../rules/chat-content.mjs";
 
@@ -364,6 +370,34 @@ export class LyrianActor extends Actor {
   }
 
   async _attemptCraft(projectIndex) {
+    // Kept so an old macro or module calling attemptCraft still does something
+    // sensible: take one Basic Craft, which is what a single "attempt" was.
+    return this._craftAction(projectIndex, "basicCraft");
+  }
+
+  /**
+   * Take one crafting action on a project.
+   *
+   * A craft is worked at over several actions rather than settled by one roll,
+   * so this advances the session and leaves it open. Materials are spent on the
+   * first action: the rules lose them on a failed craft, and a craft that is
+   * never finished is a craft that failed.
+   *
+   * @param {number} projectIndex
+   * @param {string} actionKey   A key of CRAFT_ACTIONS.
+   */
+  async craftAction(projectIndex, actionKey) {
+    if (this.type !== "character" || !requireActorActionPermission(this)) return null;
+    const action = await runExclusiveActorAction(this, () =>
+      this._craftAction(projectIndex, actionKey));
+    if (!action.started) {
+      ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
+    }
+    return action.value;
+  }
+
+  /** Read a project by index, or warn and return null. */
+  _craftProject(projectIndex) {
     const index = Number(projectIndex);
     const projects = Array.from(
       this.system.crafting?.projects ?? [],
@@ -374,21 +408,168 @@ export class LyrianActor extends Actor {
       ui.notifications.warn(game.i18n.localize("LYRIAN.Warn.CraftProjectMissing"));
       return null;
     }
+    return { index, projects, project };
+  }
+
+  async _craftAction(projectIndex, actionKey) {
+    const found = this._craftProject(projectIndex);
+    if (!found) return null;
+    const { index, projects, project } = found;
+
     if (project.completed) {
-      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftCompleted", {
-        name: project.name
-      }));
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftCompleted", { name: project.name }));
       return null;
     }
     if (!LYRIAN.artisanSkills[project.skill]) {
-      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.UnknownArtisan", {
-        skill: project.skill
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.UnknownArtisan", { skill: project.skill }));
+      return null;
+    }
+
+    const allowed = canUseCraftAction(project, actionKey);
+    if (!allowed.ok) {
+      ui.notifications.warn(game.i18n.localize(`LYRIAN.Craft.Refused.${allowed.reason}`));
+      return null;
+    }
+
+    // Materials go in as the craft begins, and are not returned.
+    const consumesMaterials = game.settings.get("lyrian-chronicles", "craftingConsumesMaterials");
+    let spent = [];
+    if (!project.diceSpent) {
+      const materialPlan = planCraftMaterials({
+        materials: project.materials,
+        items: this.items,
+        consume: consumesMaterials
+      });
+      if (!materialPlan.ok) {
+        const shortage = materialPlan.shortages[0];
+        ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftMaterialShort", {
+          name: shortage.name,
+          required: shortage.required,
+          available: shortage.available
+        }));
+        return null;
+      }
+      if (materialPlan.updates.length) {
+        await this.updateEmbeddedDocuments("Item", materialPlan.updates);
+      }
+      spent = materialPlan.spent;
+    }
+
+    // The skill bonus is needed apart from the die: Beginners Luck drops it,
+    // and Steady Craft replaces the die but keeps it.
+    const skill = this.system.artisan?.[project.skill];
+    const { bonus, suffix } = this._resolveExpertise(skill ?? {}, { useBest: true });
+
+    const definition = CRAFT_ACTIONS[actionKey];
+    let roll = null;
+    let dieTotal = 0;
+    if (definition.formula) {
+      roll = await new Roll(definition.formula).evaluate();
+      dieTotal = roll.total;
+    }
+
+    const applied = applyCraftAction(project, actionKey, { dieTotal, skillBonus: bonus });
+    if (applied.refused) return null;
+
+    projects[index] = { ...project, ...applied.session };
+    await this.update({ "system.crafting.projects": projects });
+
+    const status = craftStatus(projects[index]);
+    await this._postCraftAction({
+      project: projects[index],
+      actionKey,
+      roll,
+      added: applied.added,
+      doubled: applied.doubled,
+      status,
+      suffix,
+      materials: spent,
+      consumed: consumesMaterials && spent.length > 0
+    });
+
+    // Spending the last die ends the craft, so resolve it rather than leaving
+    // the player with a finished session and no result.
+    if (status.finished) return this._resolveCraft(index);
+    return { project: projects[index], status, roll, added: applied.added };
+  }
+
+  /** Spend accumulated crafting points on one of the project's Mods. */
+  async installProjectMod(projectIndex, modItemId) {
+    if (this.type !== "character" || !requireActorActionPermission(this)) return null;
+    const action = await runExclusiveActorAction(this, () =>
+      this._installProjectMod(projectIndex, modItemId));
+    if (!action.started) {
+      ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
+    }
+    return action.value;
+  }
+
+  async _installProjectMod(projectIndex, modItemId) {
+    const found = this._craftProject(projectIndex);
+    if (!found) return null;
+    const { index, projects, project } = found;
+
+    const mod = this.items.get(String(modItemId ?? ""));
+    if (!mod) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftModMissing", { name: modItemId }));
+      return null;
+    }
+
+    // Checked here, where the player can still choose differently, rather
+    // than silently declining to fit it when the craft resolves.
+    const base = project.outputUuid ? await fromUuid(project.outputUuid) : null;
+    const plan = resolveCraftOutput({ project, base, fallbackName: project.name });
+    if (plan.ok && !isCompatibleModTarget(mod, plan.data)) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftModIncompatible", {
+        mod: mod.name,
+        output: plan.data.name
       }));
       return null;
     }
 
-    // A linked output that no longer resolves is a broken project, not a custom
-    // one. Falling through to a forged item would quietly swap the result.
+    const cost = Math.max(0, Math.trunc(Number(mod.system?.craftingPoints) || 0));
+    const result = installCraftMod(project, { itemId: mod.id, name: mod.name, cost });
+    if (result.refused) {
+      ui.notifications.warn(game.i18n.format(`LYRIAN.Craft.ModRefused.${result.refused}`, {
+        mod: mod.name,
+        cost,
+        points: project.points
+      }));
+      return null;
+    }
+
+    projects[index] = { ...project, ...result.session };
+    await this.update({ "system.crafting.projects": projects });
+    ui.notifications.info(game.i18n.format("LYRIAN.Craft.ModFitted", {
+      mod: mod.name,
+      cost,
+      points: projects[index].points
+    }));
+    return { project: projects[index], status: craftStatus(projects[index]) };
+  }
+
+  /** End a craft deliberately, before the dice run out. */
+  async endCraft(projectIndex) {
+    if (this.type !== "character" || !requireActorActionPermission(this)) return null;
+    const action = await runExclusiveActorAction(this, () => this._resolveCraft(projectIndex));
+    if (!action.started) {
+      ui.notifications.warn(game.i18n.localize(actionLockWarningKey(action.reason)));
+    }
+    return action.value;
+  }
+
+  /**
+   * Settle a craft: build the item if the points reached its crafting HP,
+   * and otherwise report the failure. The materials are already gone either
+   * way, which is what the rules say a failed craft costs.
+   */
+  async _resolveCraft(projectIndex) {
+    const found = this._craftProject(projectIndex);
+    if (!found) return null;
+    const { index, projects, project } = found;
+    if (project.completed) return null;
+
+    const status = craftStatus(project);
     const base = project.outputUuid ? await fromUuid(project.outputUuid) : null;
     const outputPlan = (project.outputUuid && !base?.toObject)
       ? { ok: false }
@@ -397,73 +578,25 @@ export class LyrianActor extends Actor {
           base,
           fallbackName: game.i18n.localize("LYRIAN.Craft.UnnamedOutput")
         });
-    if (!outputPlan.ok) {
+
+    if (status.succeeds && !outputPlan.ok) {
       ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftOutputMissing", {
         name: project.outputName || project.name
       }));
       return null;
     }
+
     const outputData = outputPlan.data;
-
-    // Checked against the planned output, before any material is spent.
-    const modPlan = planCraftMods({
-      mods: project.mods,
-      items: this.items,
-      output: outputData,
-      isCompatible: isCompatibleModTarget
-    });
-    if (modPlan.missing.length) {
-      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftModMissing", {
-        name: modPlan.missing[0].name
-      }));
-      return null;
-    }
-    if (modPlan.incompatible.length) {
-      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftModIncompatible", {
-        mod: modPlan.incompatible[0].name,
-        output: outputData.name
-      }));
-      return null;
-    }
-
-    const consumesMaterials = game.settings.get(
-      "lyrian-chronicles",
-      "craftingConsumesMaterials"
-    );
-    const materialPlan = planCraftMaterials({
-      materials: project.materials,
-      items: this.items,
-      consume: consumesMaterials
-    });
-    if (!materialPlan.ok) {
-      const shortage = materialPlan.shortages[0];
-      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.CraftMaterialShort", {
-        name: shortage.name,
-        required: shortage.required,
-        available: shortage.available
-      }));
-      return null;
-    }
-
-    if (materialPlan.updates.length) {
-      await this.updateEmbeddedDocuments("Item", materialPlan.updates);
-    }
-
-    const roll = await this.rollArtisan(project.skill, {
-      dc: project.dc,
-      useBest: true,
-      createMessage: false
-    });
-    if (!roll) return null;
-
-    const success = roll.total >= project.dc;
-    project.attempts += 1;
-    if (success) {
+    let installed = [];
+    if (status.succeeds) {
       const [created] = await this.createEmbeddedDocuments("Item", [outputData]);
-      // Mods are installed as flagged copies pointing at the new item, matching
-      // how a Mod dropped onto owned gear is installed from the inventory tab.
-      if (created && modPlan.mods.length) {
-        await this.createEmbeddedDocuments("Item", modPlan.mods.map((mod) => {
+      // Only Mods actually paid for during the craft are fitted, and only
+      // those that suit what was made.
+      const paid = (project.installedMods ?? [])
+        .map((entry) => this.items.get(entry.itemId))
+        .filter((mod) => mod && isCompatibleModTarget(mod, outputData));
+      if (created && paid.length) {
+        await this.createEmbeddedDocuments("Item", paid.map((mod) => {
           const modData = mod.toObject();
           delete modData._id;
           foundry.utils.setProperty(
@@ -473,55 +606,85 @@ export class LyrianActor extends Actor {
           );
           return modData;
         }));
-        // The stock is spent, exactly as the materials were. Leaving it behind
-        // let one Mod be forged into an unlimited number of items.
-        await this.deleteEmbeddedDocuments("Item", modPlan.mods.map((mod) => mod.id));
+        await this.deleteEmbeddedDocuments("Item", paid.map((mod) => mod.id));
       }
-      project.completed = true;
+      installed = paid;
     }
-    projects[index] = project;
+
+    projects[index] = {
+      ...project,
+      finished: true,
+      completed: status.succeeds,
+      attempts: project.attempts + 1
+    };
     await this.update({ "system.crafting.projects": projects });
 
-    const skillLabel = game.i18n.localize(LYRIAN.artisanSkills[project.skill]);
+    const skillLabel = game.i18n.localize(LYRIAN.artisanSkills[project.skill] ?? project.skill);
     const craftData = buildCraftPayload({
       actorUuid: this.uuid,
       projectIndex: index,
-      project,
+      project: projects[index],
       skillLabel,
-      roll,
-      success,
-      materials: materialPlan.spent,
-      consumed: consumesMaterials,
-      mods: modPlan.mods,
+      success: status.succeeds,
+      materials: [],
+      consumed: true,
+      mods: installed,
       custom: outputPlan.custom,
-      outputType: outputData.type ?? ""
+      outputType: outputData?.type ?? "",
+      status
     });
-    const tooltip = await roll.getTooltip();
+    const content = await foundry.applications.handlebars.renderTemplate(
+      "systems/lyrian-chronicles/templates/chat/craft-card.hbs",
+      {
+        actor: this,
+        project: projects[index],
+        skillLabel,
+        status,
+        success: status.succeeds,
+        outputName: outputData?.name ?? project.name,
+        custom: outputPlan.custom,
+        mods: installed,
+        resolved: true
+      }
+    );
+    const messageData = {
+      speaker: ChatMessage.getSpeaker({ actor: this }),
+      content,
+      flags: { "lyrian-chronicles": { craft: craftData } }
+    };
+    applyChatMode(messageData, game.settings.get("core", "rollMode"));
+    const message = await ChatMessage.create(messageData);
+
+    Hooks.callAll("lyrianCraft", craftData);
+    return { success: status.succeeds, status, message, craft: craftData };
+  }
+
+  /** Post the result of a single crafting action. */
+  async _postCraftAction({ project, actionKey, roll, added, doubled, status, suffix, materials, consumed }) {
     const content = await foundry.applications.handlebars.renderTemplate(
       "systems/lyrian-chronicles/templates/chat/craft-card.hbs",
       {
         actor: this,
         project,
-        skillLabel,
+        actionLabel: game.i18n.localize(`LYRIAN.Craft.Action.${actionKey}`),
+        skillLabel: `${game.i18n.localize(LYRIAN.artisanSkills[project.skill] ?? project.skill)}${suffix ?? ""}`,
         roll,
-        dc: project.dc,
-        success,
-        materials: materialPlan.spent,
-        consumed: consumesMaterials,
-        outputName: outputData.name,
-        custom: outputPlan.custom,
-        mods: modPlan.mods,
-        tooltip
+        added,
+        doubled,
+        status,
+        materials,
+        consumed,
+        tooltip: roll ? await roll.getTooltip() : ""
       }
     );
-    const message = await ChatMessage.create({
+    const messageData = {
       speaker: ChatMessage.getSpeaker({ actor: this }),
       content,
-      rolls: [roll],
-      flags: { "lyrian-chronicles": { craft: craftData } }
-    });
-    Hooks.callAll("lyrianCraft", craftData);
-    return { roll, success, message, craft: craftData };
+      rolls: roll ? [roll] : []
+    };
+    applyChatMode(messageData, game.settings.get("core", "rollMode"));
+    const message = await ChatMessage.create(messageData);
+    return message;
   }
 
   /** Resist an effect: 2d10 + Toughness against the caster's Potency. */

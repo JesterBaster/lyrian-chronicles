@@ -21,13 +21,20 @@ test("crafting projects normalize nested schema values", () => {
   assert.deepEqual(normalizeCraftProject({
     name: "Greaves",
     skill: "blacksmith",
-    dc: "15",
+    requiredPoints: "40",
+    craftingDice: "5",
     materials: [{ itemId: "iron", quantity: "2" }],
     attempts: "3"
   }), {
     name: "Greaves",
     skill: "blacksmith",
-    dc: 15,
+    requiredPoints: 40,
+    craftingDice: 5,
+    points: 0,
+    diceSpent: 0,
+    usedActions: [],
+    installedMods: [],
+    finished: false,
     materials: [{ itemId: "iron", quantity: 2 }],
     mods: [],
     outputUuid: "",
@@ -37,6 +44,33 @@ test("crafting projects normalize nested schema values", () => {
     attempts: 3,
     completed: false
   });
+});
+
+test("a project written before the rework keeps its DC as the target", () => {
+  // The craft used to be one roll against a DC. Reading that as the crafting
+  // HP is the closest honest reading of what a GM who typed 15 intended, and
+  // it beats resetting a planned project to the default.
+  const migrated = normalizeCraftProject({ name: "Old", dc: 15 });
+  assert.equal(migrated.requiredPoints, 15);
+  assert.equal("dc" in migrated, false, "the DC does not survive alongside it");
+
+  // An explicit target always wins over a leftover DC.
+  assert.equal(normalizeCraftProject({ dc: 15, requiredPoints: 60 }).requiredPoints, 60);
+  assert.equal(normalizeCraftProject({}).requiredPoints, 30, "and a fresh project has a default");
+});
+
+test("session state survives a round trip through the normalizer", () => {
+  // The sheet rewrites the whole array on every edit, so anything it drops is
+  // lost mid-craft.
+  const live = normalizeCraftProject({
+    points: 32, diceSpent: 3, usedActions: ["steadyCraft"],
+    installedMods: [{ itemId: "m", name: "Recurve", cost: 20 }], finished: false
+  });
+  assert.equal(live.points, 32);
+  assert.equal(live.diceSpent, 3);
+  assert.deepEqual(live.usedActions, ["steadyCraft"]);
+  assert.deepEqual(live.installedMods, [{ itemId: "m", name: "Recurve", cost: 20 }]);
+  assert.deepEqual(normalizeCraftProject(live), live, "and again, unchanged");
 });
 
 test("an unsupported custom output type is discarded", () => {
@@ -87,7 +121,8 @@ test("craft payload contains stable public result data", () => {
   const project = {
     name: "Greaves",
     skill: "blacksmith",
-    dc: 15,
+    requiredPoints: 40,
+    points: 44,
     outputUuid: "Compendium.items.sword",
     outputName: "Longsword",
     attempts: 2
@@ -110,7 +145,9 @@ test("craft payload contains stable public result data", () => {
     projectName: "Greaves",
     skill: "blacksmith",
     skillLabel: "Blacksmith",
-    dc: 15,
+    requiredPoints: 40,
+    points: 44,
+    status: null,
     roll: { total: 18, formula: "1d10 + 10" },
     success: true,
     materials: [{ itemId: "iron", name: "Iron", quantity: 2 }],
@@ -124,17 +161,33 @@ test("craft payload contains stable public result data", () => {
   });
 });
 
-test("Actor craft pipeline consumes before rolling and persists the whole project array", () => {
+test("materials are spent as the craft opens, before any dice are rolled", () => {
   const source = readFileSync(new URL("../module/documents/actor.mjs", import.meta.url), "utf8");
-  const start = source.indexOf("async _attemptCraft(projectIndex)");
-  const end = source.indexOf("/** Resist an effect", start);
-  const pipeline = source.slice(start, end);
+  const start = source.indexOf("async _craftAction(projectIndex, actionKey)");
+  const action = source.slice(start, source.indexOf("\n  /**", start));
+  assert.ok(start >= 0, "the craft action is missing");
 
-  assert.ok(start >= 0 && end > start);
-  assert.ok(pipeline.indexOf("updateEmbeddedDocuments") < pipeline.indexOf("rollArtisan"));
-  assert.match(pipeline, /if \(success\) \{[\s\S]*createEmbeddedDocuments/);
-  assert.match(pipeline, /system\.crafting\.projects/);
-  assert.match(pipeline, /Hooks\.callAll\("lyrianCraft"/);
+  // Spent once, when the craft begins rather than per action — otherwise a
+  // five-action craft would eat five times the materials.
+  assert.match(action, /if \(!project\.diceSpent\) \{/);
+  assert.ok(
+    action.indexOf("updateEmbeddedDocuments") < action.indexOf("new Roll("),
+    "the cost is paid before the dice decide anything"
+  );
+  assert.match(action, /system\.crafting\.projects/);
+});
+
+test("the item is built only when the points reached the target", () => {
+  const source = readFileSync(new URL("../module/documents/actor.mjs", import.meta.url), "utf8");
+  const start = source.indexOf("async _resolveCraft(projectIndex)");
+  const resolve = source.slice(start, source.indexOf("\n  /** Post the result", start));
+  assert.ok(start >= 0, "the resolve step is missing");
+
+  assert.match(resolve, /if \(status\.succeeds\) \{[\s\S]*createEmbeddedDocuments/);
+  assert.match(resolve, /system\.crafting\.projects/);
+  assert.match(resolve, /Hooks\.callAll\("lyrianCraft"/);
+  // A failed craft still ends: the project must not stay open forever.
+  assert.match(resolve, /finished: true/);
 });
 
 test("artisan project rolls pass DC through the existing check helper", () => {

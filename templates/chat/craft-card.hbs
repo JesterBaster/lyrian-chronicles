@@ -1,60 +1,64 @@
-<div class="lyrian-card lyr-craft-card">
+<div class="lyrian-card lyr-craft-card {{#if resolved}}{{#if success}}is-success{{else}}is-failure{{/if}}{{/if}}">
   <header class="lyrian-card__head">
+    <img src="{{actor.img}}" alt="" />
     <div>
-      <h3>{{project.name}}</h3>
-      <span class="lyrian-card__sub">{{skillLabel}} · {{localize "LYRIAN.UI.DC"}} {{dc}}</span>
+      <h3>{{#if project.name}}{{project.name}}{{else}}{{localize "LYRIAN.Craft.UnnamedOutput"}}{{/if}}</h3>
+      <span class="lyrian-card__sub">
+        {{#if resolved}}{{localize "LYRIAN.Craft.CraftEnded"}}{{else}}{{actionLabel}} · {{skillLabel}}{{/if}}
+      </span>
     </div>
   </header>
 
-  <div class="lyrian-card__line">
-    <strong>{{localize "LYRIAN.Craft.Result"}}</strong>
-    {{roll.total}}
-    {{#if success}}
-      <span class="lyr-ok">{{localize "LYRIAN.Roll.Success"}}</span>
-    {{else}}
-      <span class="lyr-warn">{{localize "LYRIAN.Roll.Failure"}}</span>
-    {{/if}}
-  </div>
-
-  {{#if consumed}}
-    <div class="lyrian-card__text">
-      <strong>{{localize "LYRIAN.Craft.MaterialsSpent"}}</strong>
-      {{#if materials.length}}
-        <ul>
-          {{#each materials as |material|}}
-            <li>{{material.name}} ×{{material.quantity}}</li>
-          {{/each}}
-        </ul>
-      {{else}}
-        <p>{{localize "LYRIAN.Craft.NoMaterials"}}</p>
-      {{/if}}
+  {{#if roll}}
+    <div class="dice-roll">
+      <div class="dice-result">
+        <div class="dice-formula">{{roll.formula}}</div>
+        {{{tooltip}}}
+        <h4 class="dice-total">{{roll.total}}</h4>
+      </div>
     </div>
-  {{else}}
-    <p class="lyrian-card__line">{{localize "LYRIAN.Craft.ConsumptionDisabled"}}</p>
   {{/if}}
 
-  {{#if success}}
+  {{#unless resolved}}
     <p class="lyrian-card__line">
-      <strong>{{localize "LYRIAN.Craft.Output"}}</strong> {{outputName}}
-      {{#if custom}}<em class="lyr-tag">{{localize "LYRIAN.Craft.Custom"}}</em>{{/if}}
+      {{#if doubled}}
+        <strong>{{localize "LYRIAN.Craft.Doubled"}}</strong>
+      {{else}}
+        <strong>{{localize "LYRIAN.Craft.PointsAdded" points=added}}</strong>
+      {{/if}}
+    </p>
+  {{/unless}}
+
+  <ul class="lyrian-card__stats">
+    <li><span>{{localize "LYRIAN.Craft.Points"}}</span> <strong>{{status.points}} / {{status.required}}</strong></li>
+    <li><span>{{localize "LYRIAN.Craft.Dice"}}</span> <strong>{{status.diceRemaining}}</strong></li>
+    {{#if status.shortfall}}
+      <li><span>{{localize "LYRIAN.Craft.Short"}}</span> <strong>{{status.shortfall}}</strong></li>
+    {{/if}}
+  </ul>
+
+  {{#if materials.length}}
+    <p class="lyrian-card__line">
+      <strong>{{localize "LYRIAN.UI.Materials"}}</strong>
+      {{#each materials as |material|}}{{material.name}} ×{{material.quantity}}{{#unless @last}}, {{/unless}}{{/each}}
+      {{#unless consumed}} <em>({{localize "LYRIAN.Craft.NotConsumed"}})</em>{{/unless}}
+    </p>
+  {{/if}}
+
+  {{#if resolved}}
+    <p class="lyrian-card__line">
+      {{#if success}}
+        <strong>{{localize "LYRIAN.Craft.Succeeded" name=outputName}}</strong>
+        {{#if custom}} <em>{{localize "LYRIAN.Craft.CustomMade"}}</em>{{/if}}
+      {{else}}
+        <strong>{{localize "LYRIAN.Craft.Failed"}}</strong>
+      {{/if}}
     </p>
     {{#if mods.length}}
-      <div class="lyrian-card__text">
-        <strong>{{localize "LYRIAN.Craft.ModsInstalled"}}</strong>
-        <ul>
-          {{#each mods as |mod|}}
-            <li>{{mod.name}}</li>
-          {{/each}}
-        </ul>
-      </div>
+      <p class="lyrian-card__line">
+        <strong>{{localize "LYRIAN.UI.Mods"}}</strong>
+        {{#each mods as |mod|}}{{mod.name}}{{#unless @last}}, {{/unless}}{{/each}}
+      </p>
     {{/if}}
   {{/if}}
-
-  <div class="dice-roll">
-    <div class="dice-result">
-      <div class="dice-formula">{{roll.formula}}</div>
-      {{{tooltip}}}
-      <h4 class="dice-total">{{roll.total}}</h4>
-    </div>
-  </div>
 </div>

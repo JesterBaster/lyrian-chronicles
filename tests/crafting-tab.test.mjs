@@ -18,7 +18,9 @@ test("Crafting registers every project action and preloads both templates", () =
 
   for (const action of [
     "addProject", "removeProject", "addProjectMaterial", "removeProjectMaterial",
-    "attemptCraft", "setProjectOutput"
+    "addProjectMod", "removeProjectMod", "setProjectOutput",
+    // The craft is worked over several actions rather than one attempt.
+    "craftAction", "installCraftMod", "endCraft"
   ]) {
     assert.match(sheet, new RegExp(`${action}: LyrianActorSheet\\.#on`));
   }

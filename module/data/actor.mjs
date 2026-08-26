@@ -380,7 +380,31 @@ export class LyrianCharacter extends LyrianActorBase {
             initial: "blacksmith",
             choices: Object.keys(LYRIAN.artisanSkills)
           }),
-          dc: int(15),
+          // The item's crafting HP: the points the craft must reach to
+          // succeed. Replaces the old single-roll DC.
+          requiredPoints: int(30, { min: 0 }),
+          // How many Crafting Dice the craft has to spend on actions.
+          craftingDice: int(4, { min: 0 }),
+
+          // Live session state. A craft is worked at across several actions,
+          // so where it has got to has to survive a reload.
+          points: int(0, { min: 0 }),
+          diceSpent: int(0, { min: 0 }),
+          usedActions: new fields.ArrayField(
+            new fields.StringField({ blank: false }),
+            { required: false, initial: [] }
+          ),
+          installedMods: new fields.ArrayField(
+            new fields.SchemaField({
+              itemId: new fields.StringField({ required: true, blank: true, initial: "" }),
+              name: new fields.StringField({ required: true, blank: true, initial: "" }),
+              cost: int(0, { min: 0 })
+            }),
+            { required: false, initial: [] }
+          ),
+          // The craft has ended, successfully or not.
+          finished: new fields.BooleanField({ initial: false }),
+
           materials: new fields.ArrayField(
             new fields.SchemaField({
               itemId: new fields.StringField({ required: true, blank: true, initial: "" }),
