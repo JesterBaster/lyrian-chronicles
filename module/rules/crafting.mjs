@@ -14,10 +14,25 @@ export const CUSTOM_OUTPUT_TYPES = Object.freeze(["weapon", "armor", "gear"]);
 /** Return a serializable crafting project with safe schema defaults. */
 export function normalizeCraftProject(project = {}) {
   const customType = String(project.customType ?? "");
+  // A project written before the points rework carries a DC instead of a
+  // target. Reading it as the target keeps an in-flight project meaningful
+  // rather than silently resetting it to the default.
+  const required = project.requiredPoints ?? project.dc;
   return {
     name: String(project.name ?? ""),
     skill: String(project.skill ?? "blacksmith"),
-    dc: whole(project.dc, 15),
+    requiredPoints: Math.max(0, whole(required, 30)),
+    craftingDice: Math.max(0, whole(project.craftingDice, 4)),
+    points: Math.max(0, whole(project.points, 0)),
+    diceSpent: Math.max(0, whole(project.diceSpent, 0)),
+    usedActions: Array.from(project.usedActions ?? [], (key) => String(key ?? ""))
+      .filter(Boolean),
+    installedMods: Array.from(project.installedMods ?? [], (mod) => ({
+      itemId: String(mod?.itemId ?? ""),
+      name: String(mod?.name ?? ""),
+      cost: Math.max(0, whole(mod?.cost, 0))
+    })),
+    finished: Boolean(project.finished),
     materials: Array.from(project.materials ?? [], (material) => ({
       itemId: String(material?.itemId ?? ""),
       quantity: Math.max(0, whole(material?.quantity, 0))
@@ -170,13 +185,14 @@ export function buildCraftPayload({
   projectIndex,
   project,
   skillLabel,
-  roll,
+  roll = null,
   success,
   materials,
   consumed,
   mods = [],
   custom = false,
-  outputType = ""
+  outputType = "",
+  status = null
 }) {
   return {
     actorUuid,
@@ -184,8 +200,13 @@ export function buildCraftPayload({
     projectName: project.name,
     skill: project.skill,
     skillLabel,
-    dc: project.dc,
-    roll: { total: roll.total, formula: roll.formula },
+    requiredPoints: project.requiredPoints,
+    points: project.points,
+    // Settling a craft carries no roll of its own — the dice were rolled by
+    // the actions that led here — so this is null rather than a fabricated
+    // zero that a consumer would read as a roll that happened.
+    roll: roll ? { total: roll.total, formula: roll.formula } : null,
+    status: status ? { ...status } : null,
     success: Boolean(success),
     materials: Array.from(materials ?? [], ({ itemId, name, quantity }) => ({
       itemId, name, quantity

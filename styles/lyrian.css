@@ -699,8 +699,19 @@
   color: var(--lyr-gold-bright); font-family: var(--lyr-font-display); font-size: 1rem;
 }
 .lyrian .lyr-craft-project__check {
-  display: grid; grid-template-columns: minmax(180px, 1fr) 7rem; gap: 0.55rem;
+  /* Three fields now — skill, crafting HP, dice — so they wrap rather than
+     forcing the card wider than the sheet. */
+  display: flex; flex-wrap: wrap; gap: 0.55rem;
 }
+.lyrian .lyr-craft-project__check label:first-child { flex: 1 1 11rem; min-width: 0; }
+.lyrian .lyr-craft-project__check label { flex: 1 1 6rem; min-width: 0; }
+/* An input carries an intrinsic width of roughly 180px from its default size
+   attribute, which is what was holding these rows open. */
+.lyrian .lyr-craft-project input,
+.lyrian .lyr-craft-project select { width: 100%; min-width: 0; }
+/* A field label is a single long word in small caps; let it break rather than
+   set the column's floor. */
+.lyrian .lyr-craft-project__check label > span { overflow-wrap: anywhere; }
 .lyrian .lyr-craft-project__check label { display: grid; gap: 0.2rem; }
 .lyrian .lyr-craft-project__check label > span {
   color: var(--lyr-ink-dim); font-size: 0.65rem; text-transform: uppercase;
@@ -726,10 +737,32 @@
   display: grid; grid-template-columns: minmax(0, 1fr) 2rem; gap: 0.35rem;
 }
 .lyrian .lyr-craft-project__custom {
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.5rem;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 0.5rem;
   padding-top: 0.4rem; border-top: 1px solid var(--lyr-rule-soft);
 }
 .lyrian .lyr-craft-project__custom .lyr-note { grid-column: 1 / -1; margin: 0; }
+
+/* The live craft: how far the points have got, and what can still be spent. */
+.lyrian .lyr-craft-session { display: flex; flex-direction: column; gap: 0.45rem; margin-top: 0.6rem; padding-top: 0.55rem; border-top: 1px solid var(--lyr-rule); }
+.lyrian .lyr-craft-progress { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.35rem 0.7rem; }
+.lyrian .lyr-craft-points { font-family: var(--lyr-font-num); font-size: 1.45rem; color: var(--lyr-gold-bright); line-height: 1; }
+.lyrian .lyr-craft-points em { font-style: normal; font-size: 0.8rem; color: var(--lyr-ink-faint); }
+.lyrian .lyr-craft-meta { font-size: 0.68rem; color: var(--lyr-ink-dim); }
+/* A sibling of the progress line rather than a flex child of it: a 100%
+   flex-basis overflows once the row's gap is added on top. */
+.lyrian .lyr-craft-bar { width: 100%; box-sizing: border-box; height: 5px; background: var(--lyr-void); border: 1px solid var(--lyr-rule-soft); border-radius: 999px; overflow: hidden; }
+.lyrian .lyr-craft-bar__fill { display: block; height: 100%; background: linear-gradient(90deg, var(--lyr-gold-dim), var(--lyr-gold)); transition: width 180ms ease; }
+.lyrian .lyr-craft-bar__fill.is-met { background: linear-gradient(90deg, #2f7a48, var(--lyr-guard)); }
+.lyrian .lyr-craft-actions, .lyrian .lyr-craft-fit { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; }
+.lyrian .lyr-craft-actions button em, .lyrian .lyr-craft-fit button em {
+  font-style: normal; font-size: 0.6rem; margin-left: 0.3rem; padding: 0 0.3rem;
+  border-radius: 999px; background: var(--lyr-void); color: var(--lyr-gold);
+}
+.lyrian .lyr-craft-actions button:disabled, .lyrian .lyr-craft-fit button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* The craft card's two settled outcomes. */
+.lyrian-card.lyr-craft-card.is-success { border-left-color: var(--lyr-guard); }
+.lyrian-card.lyr-craft-card.is-failure { border-left-color: var(--lyr-hp); }
 .lyrian .lyr-craft-attempt { justify-self: end; min-width: 10rem; }
 .lyrian-card.lyr-craft-card .lyrian-card__line { display: flex; gap: 0.4rem; align-items: baseline; }
 
