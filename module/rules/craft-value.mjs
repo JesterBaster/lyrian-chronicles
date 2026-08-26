@@ -24,12 +24,13 @@
 export const CLIM_PER_CRAFTING_POINT = 25;
 
 /**
- * Read a Clim figure out of the strings the compendium ships.
+ * Read a Clim figure out of either shape the system stores.
  *
- * Costs arrive as "1,050 Clim", "300c", "Original Weapon + 3000" or plain
- * numbers. Only the first number is taken: "Original Weapon + 3000" prices the
- * artifice conversion, not the weapon under it, and inventing a total for the
- * weapon is not this function's call.
+ * A compendium entry carries a string — "1,050 Clim", "300c", "Original Weapon
+ * + 3000" — while an owned item carries `value` as a plain number, because
+ * dropping one converts it. Only the first number of a string is taken:
+ * "Original Weapon + 3000" prices the artifice conversion, not the weapon
+ * under it, and inventing a total for the weapon is not this function's call.
  */
 export function parseClim(value) {
   if (typeof value === "number") return Number.isFinite(value) ? Math.max(0, Math.trunc(value)) : 0;
@@ -51,13 +52,15 @@ export function modClim(craftingPoints) {
  * @param {object}   [options]
  * @param {object}   [options.base]       The item data a success creates.
  * @param {object[]} [options.mods]       Mods installed, each with a crafting-point cost.
- * @param {object[]} [options.materials]  Material lines spent: name, quantity, cost, unitCost.
+ * @param {object[]} [options.materials]  Material lines spent: name, quantity, value.
  * @returns {{base: number, mods: number, materials: number, total: number, lines: object[]}}
  */
 export function craftValue({ base = null, mods = [], materials = [] } = {}) {
   const lines = [];
 
-  const baseClim = parseClim(base?.system?.cost);
+  // A linked compendium base states `cost` as a string; an owned item that was
+  // dropped and converted states `value` as a number. Either is the same price.
+  const baseClim = parseClim(base?.system?.cost || base?.system?.value);
   if (base) {
     lines.push({ kind: "base", name: base.name ?? "", clim: baseClim });
   }
@@ -72,18 +75,14 @@ export function craftValue({ base = null, mods = [], materials = [] } = {}) {
 
   let materialsClim = 0;
   for (const line of materials ?? []) {
-    // The sheet prices a material by the lot it is sold in — "Tamahagane
-    // 1050c / 2000u" means 1050 Clim buys the 2000-unit lot a craft draws an
-    // ingot from — while a project row spends units off a stack. Pricing per
-    // unit reconciles the two: 2000 units of Tamahagane costs 1050c, which is
-    // what the worked example pays for its one ingot.
-    //
-    // A material sold by the piece ("1 Core", "1 Hide") has no unit count, so
-    // the lot is one and the row's quantity multiplies the listed cost.
-    const each = parseClim(line?.cost);
-    const perLot = Math.max(1, parseClim(line?.unitCost) || 1);
+    // A project row spends whole stacks, not units: `planCraftMaterials`
+    // decrements the item's `quantity`, and a dropped material arrives as one
+    // stack holding `units` units and worth `value` Clim. So the sheet's
+    // "1 Tamahagane Ingot (1050c)" is one stack at its listed price, and
+    // dividing by a unit count would have priced it at a fraction of a Clim.
+    const each = parseClim(line?.value);
     const quantity = Math.max(0, Math.trunc(Number(line?.quantity ?? 1) || 0));
-    const clim = Math.round((each * quantity) / perLot);
+    const clim = each * quantity;
     materialsClim += clim;
     lines.push({ kind: "material", name: line?.name ?? "", quantity, clim });
   }

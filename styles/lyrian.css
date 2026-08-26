@@ -586,6 +586,16 @@
 }
 .lyrian .lyr-step-btn.is-active { color: var(--lyr-gold-bright); border-bottom-color: var(--lyr-gold); }
 .lyrian .lyr-creation-step { flex: 1; overflow-y: auto; }
+/* The block confirming what a creation step selected. It carried no rule at
+   all, so a confirmed race or class read as loose paragraphs against the step
+   behind it. */
+.lyrian .lyr-choice-summary {
+  display: grid; gap: 0.3rem; margin-top: 0.5rem; padding: 0.55rem;
+  border: 1px solid var(--lyr-rule); border-left: 2px solid var(--lyr-gold-dim);
+  border-radius: var(--lyr-radius); background: var(--lyr-void);
+}
+.lyrian .lyr-choice-summary > p { margin: 0; }
+
 .lyrian .lyr-assign-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.45rem; }
 .lyrian .lyr-assign { display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.68rem; font-variant: small-caps; letter-spacing: 0.06em; color: var(--lyr-ink-dim); }
 .lyrian .lyr-assign select { font-family: var(--lyr-font-num); }

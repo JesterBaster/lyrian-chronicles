@@ -47,9 +47,7 @@ test("the source spreadsheet's worked missile price comes out exactly", () => {
       { name: "Featherflight", cost: 35 },
       { name: "Momentum", cost: 25 }
     ],
-    materials: [
-      { name: "Dark Iron", quantity: 1000, cost: "550 Clim", unitCost: "1,000 units" }
-    ]
+    materials: [{ name: "Dark Iron", quantity: 1, value: 550 }]
   });
 
   assert.equal(value.base, 500);
@@ -58,56 +56,32 @@ test("the source spreadsheet's worked missile price comes out exactly", () => {
   assert.equal(value.total, 2925);
 });
 
-test("a material is priced by the lot it is sold in", () => {
-  // "Tamahagane 1050c / 2000u" — 1050 Clim buys the 2000-unit lot a craft
-  // draws one ingot from, so spending the lot costs the listed price.
-  const lot = craftValue({
-    materials: [{ name: "Tamahagane", quantity: 2000, cost: "1,050 Clim", unitCost: "2,000 units" }]
-  });
-  assert.equal(lot.total, 1050);
+test("a material row spends whole stacks at the stack's price", () => {
+  // A project row's quantity is a count of stacks, not of units:
+  // planCraftMaterials decrements the owned item's `quantity`, and one dropped
+  // "Tamahagane — Blacksmithing" stack is one 2000-unit ingot worth 1050 Clim.
+  // Dividing by that unit count priced an ingot at half a Clim.
+  const one = craftValue({ materials: [{ name: "Tamahagane", quantity: 1, value: 1050 }] });
+  assert.equal(one.total, 1050);
 
-  const half = craftValue({
-    materials: [{ name: "Tamahagane", quantity: 1000, cost: "1,050 Clim", unitCost: "2,000 units" }]
-  });
-  assert.equal(half.total, 525);
-
-  // Sold by the piece — "1 Core", "1 Hide" — there is no unit count, so the
-  // row's quantity multiplies the listed price instead of dividing it.
-  const pieces = craftValue({
-    materials: [{ name: "Dire Hide", quantity: 3, cost: "600 Clim", unitCost: "1 Hide" }]
-  });
-  assert.equal(pieces.total, 1800);
+  const three = craftValue({ materials: [{ name: "Tamahagane", quantity: 3, value: 1050 }] });
+  assert.equal(three.total, 3150);
 });
 
-test("the breakdown names every line so a GM can drop one", () => {
-  // The sheet writes "Iron Ingot (Ignored)" against the baseline metal a
-  // recipe already includes, and nothing in the data marks which material
-  // that is. Everything listed is priced and shown, rather than guessed at.
-  const value = craftValue({
-    base: { name: "Armor (Medium)", system: { cost: "1,000 Clim" } },
-    mods: [{ name: "Berserker Armor", cost: 10 }],
-    materials: [
-      { name: "Iron", quantity: 500, cost: "300 Clim", unitCost: "500 units" },
-      { name: "Tamahagane", quantity: 2000, cost: "1,050 Clim", unitCost: "2,000 units" }
-    ]
-  });
+test("a base is priced from whichever field its type carries", () => {
+  // A compendium entry is type "equipment" and states cost as a string; the
+  // weapon a craft actually produces states value as a number. Reading only
+  // one of the two silently priced half the crafts at nothing.
+  const reference = craftValue({ base: { name: "Longsword", system: { cost: "1,000 Clim" } } });
+  assert.equal(reference.total, 1000);
 
-  assert.deepEqual(value.lines.map((line) => [line.kind, line.name, line.clim]), [
-    ["base", "Armor (Medium)", 1000],
-    ["mod", "Berserker Armor", 250],
-    ["material", "Iron", 300],
-    ["material", "Tamahagane", 1050]
-  ]);
-  assert.equal(value.total, 2600);
-
-  // Dropping the ignored baseline ingot leaves the sheet's own figure for
-  // this armour before its polarity infusion: 1000 + 1050 + 250.
-  assert.equal(value.total - 300, 2300);
+  const converted = craftValue({ base: { name: "Longsword", system: { value: 1000 } } });
+  assert.equal(converted.total, 1000);
 });
 
 test("a material row spending nothing is not priced", () => {
   const value = craftValue({
-    materials: [{ name: "Iron", quantity: 0, cost: "300 Clim", unitCost: "500 units" }]
+    materials: [{ name: "Iron", quantity: 0, value: 300 }]
   });
   assert.equal(value.total, 0);
   assert.deepEqual(value.lines, [{ kind: "material", name: "Iron", quantity: 0, clim: 0 }]);

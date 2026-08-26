@@ -147,7 +147,10 @@ costing for arbitrary weapon and armor values. That is deliberate: automating th
 have played a few sessions tends to lock in the wrong assumptions.
 
 Dropping a compendium item onto a project reads its Crafting HP off the item, so the target
-is only typed by hand for something the packs do not carry. A crafting tool's bonuses are
+is only typed by hand for something the packs do not carry. A successful craft converts the
+copy into a real weapon, armor or gear item — a compendium entry is a reference page that
+cannot be equipped — and a craft that ends short can be started again from the same project
+rather than rebuilt. A crafting tool's bonuses are
 entered per project: **Tool Bonus** applies to every crafting dice roll, **Finish Bonus**
 once when the craft is settled. A finished craft is priced by Flo's Madness's Book Price rule
 — base item cost, 25 Clim per crafting point of each Mod, plus materials — and the chat card

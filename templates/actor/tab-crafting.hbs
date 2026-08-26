@@ -225,13 +225,20 @@
               </p>
             {{/if}}
 
-            {{#unless project.status.finished}}
+            {{#if project.status.finished}}
+              <button type="button" class="lyr-craft-attempt" data-action="restartCraft"
+                      data-project-index="{{projectIndex}}">
+                <i class="fa-solid fa-rotate-left"></i>
+                {{localize "LYRIAN.Craft.Restart"}}
+              </button>
+              <p class="lyr-note">{{localize "LYRIAN.Hint.CraftRestart"}}</p>
+            {{else}}
               <button type="button" class="lyr-craft-attempt" data-action="endCraft"
                       data-project-index="{{projectIndex}}">
                 <i class="fa-solid fa-hammer"></i>
                 {{#if project.status.succeeds}}{{localize "LYRIAN.Craft.FinishSuccess"}}{{else}}{{localize "LYRIAN.Craft.FinishNow"}}{{/if}}
               </button>
-            {{/unless}}
+            {{/if}}
           </div>
       </article>
     {{else}}

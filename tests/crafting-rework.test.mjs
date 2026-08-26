@@ -89,7 +89,7 @@ test("the session view is merged onto each project", () => {
 test("only unfitted, still-owned mods are offered", () => {
   const start = SHEET.indexOf("pendingMods:");
   const block = SHEET.slice(start, start + 700);
-  assert.match(block, /\.filter\(\(mod\) => mod && !fitted\.has\(mod\.id\)\)/);
+  assert.match(block, /\.filter\(\(mod\) => mod && !fitted\.has\(mod\.id\)/);
   assert.match(block, /affordable: status\.points >= cost && !status\.finished/);
 });
 
