@@ -23,6 +23,10 @@ export function normalizeCraftProject(project = {}) {
     skill: String(project.skill ?? "blacksmith"),
     requiredPoints: Math.max(0, whole(required, 30)),
     craftingDice: Math.max(0, whole(project.craftingDice, 4)),
+    // A crafting tool's two bonuses: one on every crafting roll, one applied
+    // once when the craft is settled. Signed, because a GM may want a penalty.
+    diceBonus: whole(project.diceBonus, 0),
+    finishBonus: whole(project.finishBonus, 0),
     points: Math.max(0, whole(project.points, 0)),
     diceSpent: Math.max(0, whole(project.diceSpent, 0)),
     usedActions: Array.from(project.usedActions ?? [], (key) => String(key ?? ""))
@@ -192,7 +196,8 @@ export function buildCraftPayload({
   mods = [],
   custom = false,
   outputType = "",
-  status = null
+  status = null,
+  value = null
 }) {
   return {
     actorUuid,
@@ -207,6 +212,9 @@ export function buildCraftPayload({
     // zero that a consumer would read as a roll that happened.
     roll: roll ? { total: roll.total, formula: roll.formula } : null,
     status: status ? { ...status } : null,
+    // The Book Price the craft came to, or null when it failed and produced
+    // nothing to price.
+    value: value ? { ...value } : null,
     success: Boolean(success),
     materials: Array.from(materials ?? [], ({ itemId, name, quantity }) => ({
       itemId, name, quantity

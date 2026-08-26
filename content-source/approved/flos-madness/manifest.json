@@ -7,17 +7,47 @@
   "itemModSnapshot": {
     "retrievedAt": "2026-08-15",
     "parts": [
-      { "file": "item-mods-01.json", "count": 50 },
-      { "file": "item-mods-02.json", "count": 50 },
-      { "file": "item-mods-03.json", "count": 50 },
-      { "file": "item-mods-04.json", "count": 50 },
-      { "file": "item-mods-05.json", "count": 50 },
-      { "file": "item-mods-06.json", "count": 48 }
+      {
+        "file": "item-mods-01.json",
+        "count": 50
+      },
+      {
+        "file": "item-mods-02.json",
+        "count": 50
+      },
+      {
+        "file": "item-mods-03.json",
+        "count": 50
+      },
+      {
+        "file": "item-mods-04.json",
+        "count": 50
+      },
+      {
+        "file": "item-mods-05.json",
+        "count": 50
+      },
+      {
+        "file": "item-mods-06.json",
+        "count": 48
+      }
     ],
     "excludedIncomplete": [
-      { "name": "Holographic Optic", "sourceLocation": "Artifices!G7", "reason": "Crafting-point cost is missing." },
-      { "name": "Wide Targeting", "sourceLocation": "Artifices!H7", "reason": "Crafting-point cost is missing." },
-      { "name": "Wing Outlining", "sourceLocation": "Artifices!H7", "reason": "Crafting-point cost is missing." }
+      {
+        "name": "Holographic Optic",
+        "sourceLocation": "Artifices!G7",
+        "reason": "Crafting-point cost is missing."
+      },
+      {
+        "name": "Wide Targeting",
+        "sourceLocation": "Artifices!H7",
+        "reason": "Crafting-point cost is missing."
+      },
+      {
+        "name": "Wing Outlining",
+        "sourceLocation": "Artifices!H7",
+        "reason": "Crafting-point cost is missing."
+      }
     ]
   },
   "notation": {
@@ -49,5 +79,57 @@
     "Weapons item mods": 148,
     "Armors item mods": 26,
     "Artifices item mods": 124
+  },
+  "pricingRule": {
+    "sourceSheet": "Table of Contents — Pricing",
+    "retrievedAt": "2026-08-26",
+    "formula": "Base Item Cost + 25 Clim per crafting point of each Mod (250c per 10cp) + Material Cost",
+    "workedExamples": [
+      {
+        "item": "Set of Missiles",
+        "lines": [
+          "Set of Missiles 500c",
+          "Iron Ingot (Ignored)",
+          "Dark Iron Ingot 550c",
+          "Alloying Dark Iron 15cp = 375c",
+          "Featherflight 35cp = 875c",
+          "Momentum 25cp = 625c"
+        ],
+        "total": 2925,
+        "reproduced": true
+      },
+      {
+        "item": "Medium Armor",
+        "lines": [
+          "Medium Armor 1000c",
+          "Iron Ingot (Ignored)",
+          "Tamahagane Ingot 1050c",
+          "Sunfire Infusion 80cp = 2000c",
+          "4000 Salachar units for Sunfire polarity = 2000c",
+          "Berserker 10cp = 250c"
+        ],
+        "total": 6300,
+        "reproduced": false,
+        "note": "Every line but the polarity units reproduces exactly. The sheet prices 4000 Salachar units at 2000c (0.5c/unit); Salachar's own listing is 1550c per 3000u (0.5167c/unit), which gives 2067c. The per-unit rate from the material listing is used rather than hard-coding the rounded figure."
+      }
+    ],
+    "toolBonuses": {
+      "sourceSheet": "Blacksmithing Materials — column note",
+      "quote": "For tools, there is a crafting bonus and a finish bonus. A crafting bonus gives you +1 (or +2) to each crafting dice roll. The finish bonus gives you a +5 (or +10) bonus once at the end of your craft. For Tools that function as weapons you have to choose between a stat bonus OR the crafting bonus, you do not get both."
+    },
+    "craftingDiceSources": {
+      "herbMixes": {
+        "Small Herb Mix": 1,
+        "Medium Herb Mix": 2,
+        "Large Herb Mix": 3,
+        "Supreme Herb Mix": 4
+      },
+      "farmQuality": {
+        "Average": 1,
+        "Good": 2,
+        "Excellent": 3,
+        "Supreme": 4
+      }
+    }
   }
 }

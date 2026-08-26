@@ -50,12 +50,22 @@ export const CRAFT_ACTIONS = Object.freeze({
 });
 
 /** A fresh session for a project, with nothing spent. */
-export function newCraftSession({ requiredPoints = 0, craftingDice = 0 } = {}) {
+export function newCraftSession({
+  requiredPoints = 0,
+  craftingDice = 0,
+  diceBonus = 0,
+  finishBonus = 0
+} = {}) {
   return {
     points: 0,
     diceSpent: 0,
     craftingDice: Math.max(0, Math.trunc(Number(craftingDice) || 0)),
     requiredPoints: Math.max(0, Math.trunc(Number(requiredPoints) || 0)),
+    // A crafting tool's bonuses, from the source spreadsheet: "A crafting
+    // bonus gives you +1 (or +2) to each crafting dice roll. The finish bonus
+    // gives you a +5 (or +10) bonus once at the end of your craft."
+    diceBonus: Math.trunc(Number(diceBonus) || 0),
+    finishBonus: Math.trunc(Number(finishBonus) || 0),
     usedActions: [],
     installedMods: [],
     finished: false
@@ -125,8 +135,13 @@ export function applyCraftAction(session, actionKey, { dieTotal = 0, skillBonus 
     return { session: next, added: next.points - before, doubled: true };
   }
 
+  // The tool's per-roll bonus rides on the die, so Steady Craft's fixed 5
+  // gets it too — the rule is a bonus to the crafting dice roll, and Steady
+  // Craft is still one, it just does not bounce.
   const die = action.fixedDie ?? (Number(dieTotal) || 0);
-  const added = die + (action.addsSkill ? (Number(skillBonus) || 0) : 0);
+  const added = die
+    + (Number(session.diceBonus) || 0)
+    + (action.addsSkill ? (Number(skillBonus) || 0) : 0);
   next.points = (next.points ?? 0) + added;
   if (action.ends) next.finished = true;
 
@@ -171,16 +186,23 @@ export function craftStatus(session = {}) {
   const required = session.requiredPoints ?? 0;
   const points = session.points ?? 0;
   const remaining = diceRemaining(session);
+  // A tool's finish bonus lands once, at the end. It is counted into the
+  // projection because it is guaranteed — the craft will get it — but never
+  // into `points`, which is the pool Mods are actually paid out of.
+  const finishBonus = Math.trunc(Number(session.finishBonus) || 0);
+  const finalPoints = Math.max(0, points + finishBonus);
   return {
     points,
+    finishBonus,
+    finalPoints,
     required,
-    shortfall: Math.max(0, required - points),
-    surplus: Math.max(0, points - required),
+    shortfall: Math.max(0, required - finalPoints),
+    surplus: Math.max(0, finalPoints - required),
     diceRemaining: remaining,
     finished: Boolean(session.finished),
     // "If you end your crafting and your crafting points does not equal the
     // items crafting HP, then the craft fails."
-    succeeds: points >= required,
+    succeeds: finalPoints >= required,
     canAct: !session.finished && remaining > 0
   };
 }

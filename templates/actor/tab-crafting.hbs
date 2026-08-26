@@ -58,6 +58,16 @@
             <input type="number" data-crafting-field data-project-dice value="{{project.craftingDice}}"
                    min="0" step="1" {{#unless @root.canEditProjects}}disabled{{/unless}} />
           </label>
+          <label title="{{localize "LYRIAN.Hint.CraftDiceBonus"}}">
+            <span>{{localize "LYRIAN.Craft.DiceBonus"}}</span>
+            <input type="number" data-crafting-field data-project-dice-bonus value="{{project.diceBonus}}"
+                   step="1" {{#unless @root.canEditProjects}}disabled{{/unless}} />
+          </label>
+          <label title="{{localize "LYRIAN.Hint.CraftFinishBonus"}}">
+            <span>{{localize "LYRIAN.Craft.FinishBonus"}}</span>
+            <input type="number" data-crafting-field data-project-finish-bonus value="{{project.finishBonus}}"
+                   step="1" {{#unless @root.canEditProjects}}disabled{{/unless}} />
+          </label>
         </div>
 
         <div class="lyr-craft-project__materials">
@@ -171,16 +181,17 @@
 
           <div class="lyr-craft-session">
             <div class="lyr-craft-progress">
-              <span class="lyr-craft-points">{{project.status.points}}<em>/{{project.status.required}}</em></span>
+              <span class="lyr-craft-points">{{project.status.finalPoints}}<em>/{{project.status.required}}</em></span>
               <span class="lyr-craft-meta">
                 {{localize "LYRIAN.Craft.DiceLeft" dice=project.status.diceRemaining}}
+                {{#if project.status.finishBonus}} · {{localize "LYRIAN.Craft.IncludesFinish" bonus=project.status.finishBonus}}{{/if}}
                 {{#if project.status.shortfall}} · {{localize "LYRIAN.Craft.Shortfall" points=project.status.shortfall}}
                 {{else}} · {{localize "LYRIAN.Craft.Surplus" points=project.status.surplus}}{{/if}}
               </span>
             </div>
             <span class="lyr-craft-bar" role="presentation">
               <span class="lyr-craft-bar__fill {{#if project.status.succeeds}}is-met{{/if}}"
-                    style="width: {{lyrianPercent project.status.points project.status.required}}%"></span>
+                    style="width: {{lyrianPercent project.status.finalPoints project.status.required}}%"></span>
             </span>
 
             {{#if project.status.canAct}}
