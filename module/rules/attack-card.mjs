@@ -3,6 +3,20 @@ import { LYRIAN } from "../config.mjs";
 const SYSTEM_ID = "lyrian-chronicles";
 
 /** Build the stable, serializable payload exposed to modules and chat actions. */
+/**
+ * The canvas token an attack came from.
+ *
+ * A token's own actor knows its token directly. A linked actor does not, so
+ * its active tokens on the current scene are used — and only when there is
+ * exactly one, because picking between three copies would be a guess.
+ */
+export function attackerTokenUuid(actor) {
+  if (!actor) return null;
+  if (actor.token) return actor.token.uuid;
+  const tokens = actor.getActiveTokens?.(false, true) ?? [];
+  return tokens.length === 1 ? tokens[0].uuid : null;
+}
+
 export function buildAttackPayload({
   actor,
   source,
@@ -24,6 +38,10 @@ export function buildAttackPayload({
 } = {}) {
   return {
     actorUuid: actor?.uuid ?? null,
+    // The token that swung, not just the actor that owns it. An effect module
+    // draws from a place on the canvas, and an unlinked actor with three
+    // tokens on the board cannot say which one that is from the actor alone.
+    tokenUuid: attackerTokenUuid(actor),
     // Existing integrations use these item-shaped fields. They remain present
     // for monster profiles, with itemUuid null and the monster as the display source.
     itemUuid: sourceKind === "item" ? source?.uuid ?? null : null,

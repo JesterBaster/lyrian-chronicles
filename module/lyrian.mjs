@@ -24,6 +24,7 @@ import { LyrianAPI } from "./api.mjs";
 import { initializeTrading } from "./trade/trade-service.mjs";
 import { seedSystemPacks, resetSystemPacks } from "./content/seed-packs.mjs";
 import { runCharacterCreation } from "./apps/character-creation.mjs";
+import { registerIntegrations } from "./integrations/index.mjs";
 import { resolveDefence } from "./rules/defence-resolution.mjs";
 import { resolvedAttackFlagUpdate } from "./rules/resolved-attacks.mjs";
 import { boundedDamage, legitimateAttackProfile } from "./rules/attack-verification.mjs";
@@ -58,6 +59,10 @@ Hooks.once("init", function () {
   };
 
   CONFIG.LYRIAN = LYRIAN;
+
+  // Optional module integrations. Each waits on a hook only its module fires,
+  // so this is inert on a table that has installed none of them.
+  registerIntegrations();
 
   // Documents.
   CONFIG.Actor.documentClass = LyrianActor;
@@ -445,6 +450,7 @@ async function onChatAction(event, message) {
 
       const claimedDamage = attack.damage?.total ?? flags.damage ?? 0;
       let damage = claimedDamage;
+      let blockRoll = null;
       let pierce = {
         fullPierce: Boolean(flags.fullPierce),
         halfPierce: Boolean(flags.halfPierce),
@@ -467,14 +473,16 @@ async function onChatAction(event, message) {
 
         // Blocking prevents a critical hit. Re-roll only the verified source formula.
         if (defence === "block" && attack.damage?.maximised) {
-          damage = (await new Roll(verifiedAttack.formula, verifiedAttack.rollData).evaluate()).total;
+          blockRoll = await new Roll(verifiedAttack.formula, verifiedAttack.rollData).evaluate();
+          damage = blockRoll.total;
         }
       } else if (defence === "block" && attack.damage?.maximised && attack.damage.formula) {
         // GM-only compatibility fallback for cards whose source no longer resolves.
         const source = attack.sourceUuid ? await fromUuid(attack.sourceUuid) : null;
         const attacker = attack.actorUuid ? await fromUuid(attack.actorUuid) : null;
         const rollData = source?.getRollData?.() ?? attacker?.getRollData?.() ?? {};
-        damage = (await new Roll(attack.damage.formula, rollData).evaluate()).total;
+        blockRoll = await new Roll(attack.damage.formula, rollData).evaluate();
+        damage = blockRoll.total;
       }
 
       const result = await actor.applyDamage(damage, {
@@ -482,6 +490,10 @@ async function onChatAction(event, message) {
         ...pierce
       });
 
+      // Blocking a crit rolls fresh damage, and that roll decided how much the
+      // blocker took. It was evaluated and thrown away: the table never saw the
+      // dice, and a 3D dice module had nothing to animate because the message
+      // carried no roll. Attaching it fixes both.
       await ChatMessage.create({
         speaker: ChatMessage.getSpeaker({ actor }),
         content: `<p>${game.i18n.format("LYRIAN.Msg.DamageApplied", {
@@ -489,7 +501,8 @@ async function onChatAction(event, message) {
           amount: result.applied,
           guard: result.guardUsed,
           defence: game.i18n.localize(LYRIAN.defenceReactions[defence])
-        })}</p>`
+        })}</p>`,
+        rolls: blockRoll ? [blockRoll] : []
       });
       return { resolved: true };
     });
