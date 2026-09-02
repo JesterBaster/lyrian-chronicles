@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 /**
@@ -64,8 +65,11 @@ function stubActor(overrides = {}) {
       get: (id) => items.get(id),
       [Symbol.iterator]: () => items.entries()
     },
+    // Mirrors the real schema: LYRIAN.mainStats is the config table of keys,
+    // the actor stores those values at system.stats. A stub that used the
+    // config name as the path made a HUD reading the wrong one look correct.
     system: {
-      mainStats: { power: { total: 3 }, focus: { total: 2 }, agility: { total: 1 }, toughness: { total: 4 } },
+      stats: { power: { total: 3 }, focus: { total: 2 }, agility: { total: 1 }, toughness: { total: 4 } },
       subStats: { fitness: { total: 2 }, cunning: { total: 0 }, reason: { total: 1 }, awareness: { total: 1 }, presence: { total: 0 } },
       skills: { athletics: { total: 5, atCap: true } },
       artisan: { blacksmith: { total: 3 } },
@@ -106,6 +110,24 @@ async function buildFor(actor) {
 }
 
 /* -------------------------------------------- */
+
+test("the stub's stat paths are the ones the actor schema really uses", () => {
+  // The HUD read `system.mainStats` — the name of the *config table*, not the
+  // path on the actor — and every main stat showed +0. A stub built from the
+  // same misreading made it look right, so the paths are pinned against the
+  // schema itself.
+  const schema = readFileSync(
+    new URL("../module/data/actor.mjs", import.meta.url), "utf8");
+  assert.match(schema, /schema\.stats = new fields\.SchemaField\(/);
+  assert.match(schema, /schema\.subStats = new fields\.SchemaField\(/);
+  assert.doesNotMatch(schema, /schema\.mainStats = /,
+    "there is no system.mainStats; LYRIAN.mainStats is the key table");
+
+  const stub = stubActor().system;
+  assert.ok(stub.stats, "the stub must store main stats where the actor does");
+  assert.ok(stub.subStats);
+  assert.equal(stub.mainStats, undefined, "and must not offer a path the actor lacks");
+});
 
 test("the system registers itself with TAH Core, no companion module needed", () => {
   assert.ok(registered, "tokenActionHudSystemReady never fired");
@@ -148,6 +170,8 @@ test("a character's HUD carries their weapons, abilities and checks", async () =
   actor.addItem({ id: "a1", name: "Cleave", type: "ability", system: { timing: "action", apCost: 2 } });
   actor.addItem({ id: "a2", name: "Parry", type: "ability", system: { timing: "reaction", rpCost: 1 } });
   actor.addItem({ id: "a3", name: "Toughened", type: "ability", system: { timing: "passive" } });
+  actor.addItem({ id: "a4", name: "Refine Ore", type: "ability", system: { timing: "crafting" } });
+  actor.addItem({ id: "a5", name: "Opening Gambit", type: "ability", system: { timing: "encounterStart" } });
   actor.addItem({ id: "g1", name: "Rope", type: "gear", system: { quantity: 3 } });
 
   const handler = await buildFor(actor);
@@ -157,16 +181,23 @@ test("a character's HUD carries their weapons, abilities and checks", async () =
   assert.equal(byGroup.weapons[0].cssClass, "active", "an equipped weapon is marked");
   assert.equal(byGroup.weapons[0].info1.text, "+2");
 
-  // Abilities split by timing rather than piling onto one shelf.
-  assert.deepEqual(byGroup.actions.map((a) => a.name), ["Cleave"]);
+  // Abilities split by timing rather than piling onto one shelf. A crafting
+  // ability is not spent in a fight, so it must not bury the ones that are —
+  // while an encounter's opening beat happens in one and stays.
+  assert.deepEqual(byGroup.actions.map((a) => a.name).sort(), ["Cleave", "Opening Gambit"]);
   assert.deepEqual(byGroup.reactions.map((a) => a.name), ["Parry"]);
   assert.deepEqual(byGroup.passives.map((a) => a.name), ["Toughened"]);
+  assert.deepEqual(byGroup.downtime.map((a) => a.name), ["Refine Ore"]);
 
   assert.deepEqual(byGroup.gear.map((a) => a.name), ["Rope"]);
   assert.equal(byGroup.gear[0].info1.text, "3");
 
   // Stats, skills and the save are all present as checks.
-  assert.ok(byGroup.stats.some((a) => a.encodedValue === "stat|power"));
+  const power = byGroup.stats.find((a) => a.encodedValue === "stat|power");
+  assert.ok(power, "the main stats are missing");
+  assert.equal(power.info1.text, "+3", "a main stat must show the actor's value, not +0");
+  const reason = byGroup.stats.find((a) => a.encodedValue === "stat|reason");
+  assert.equal(reason.info1.text, "+1", "and so must a sub stat");
   assert.ok(byGroup.stats.some((a) => a.encodedValue === "save|save"));
   assert.ok(byGroup.skills.some((a) => a.encodedValue === "skill|athletics"));
   assert.ok(byGroup.artisan.some((a) => a.encodedValue === "artisan|blacksmith"));

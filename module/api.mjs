@@ -115,6 +115,40 @@ export const LyrianAPI = {
         label: game.i18n.localize(LYRIAN.skills[key].label),
         total: actor.system.skills?.[key]?.total ?? 0
       })),
+      // The stat tables name the keys; the actor stores their values under
+      // `stats` and `subStats`. Both are flattened here because a caller
+      // rolling a check does not care which table a key came from.
+      stats: [
+        ...Object.keys(LYRIAN.mainStats).map((key) => ({
+          key,
+          label: game.i18n.localize(LYRIAN.mainStats[key]),
+          main: true,
+          total: actor.system.stats?.[key]?.total ?? 0
+        })),
+        ...Object.keys(LYRIAN.subStats).map((key) => ({
+          key,
+          label: game.i18n.localize(LYRIAN.subStats[key]),
+          main: false,
+          total: actor.system.subStats?.[key]?.total ?? 0
+        }))
+      ],
+      artisan: Object.keys(LYRIAN.artisanSkills).map((key) => ({
+        key,
+        label: game.i18n.localize(LYRIAN.artisanSkills[key]),
+        total: actor.system.artisan?.[key]?.total ?? 0
+      })),
+      gathering: Object.keys(LYRIAN.gatheringSkills).map((key) => ({
+        key,
+        label: game.i18n.localize(LYRIAN.gatheringSkills[key]),
+        total: actor.system.gathering?.[key]?.total ?? 0
+      })),
+      // What a move costs and how far it goes, for a ruler or a HUD that wants
+      // to say whether the token can still get there.
+      movement: {
+        speed: actor.system.movement?.total ?? 0,
+        fly: actor.system.movement?.fly ?? 0,
+        swim: actor.system.movement?.swim ?? 0
+      },
       defences: {
         evasion: actor.system.evasion,
         dodgeEvasion: actor.system.dodgeEvasion,

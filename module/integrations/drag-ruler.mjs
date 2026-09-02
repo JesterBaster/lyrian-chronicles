@@ -10,8 +10,6 @@
  * Registered through `dragRuler.registerSystem`, the system-side half of the
  * API — `registerModule` is for companion packages.
  */
-import { LYRIAN } from "../config.mjs";
-
 const SYSTEM_ID = "lyrian-chronicles";
 
 /**
@@ -82,6 +80,3 @@ export function registerDragRuler() {
     dragRuler.registerSystem(SYSTEM_ID, LyrianSpeedProvider);
   });
 }
-
-/** Exported for the tests: the base speed a fresh actor starts from. */
-export const BASE_SPEED = LYRIAN.baseSpeed;

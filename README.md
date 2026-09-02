@@ -89,7 +89,10 @@ change without a major version bump.
 
 ```js
 const api = game.lyrian.api;
-api.getActionSet(actor);        // everything a HUD needs in one call
+api.getActionSet(actor);        // everything a HUD needs in one call:
+                                // resources, attacks, universal and monster attacks,
+                                // abilities, skills, stats, artisan, gathering,
+                                // movement and defences
 api.rollAttack(actor, itemId, "heavy");
 api.rollMonsterAttack(actor, "light");
 await api.evaluateRequirements(actor, itemId); // pass, fail, or manual confirmation
@@ -209,7 +212,7 @@ and nothing here runs on a table that has not installed it.
 
 | Module | What you get |
 | --- | --- |
-| **Token Action HUD Core** | A full HUD, built by the system. **No companion module to install** — the usual `token-action-hud-<system>` package does not exist for Lyrian and is not needed. Four tabs: Combat (weapons, the universal light/heavy/precise attacks, actions and reactions), Checks (stats, the save, skills, artisan, gathering), Inventory, Utility (passives, initiative, rest, injury table). A weapon button is a light attack; **Ctrl-click** for heavy, **Alt-click** for precise, **right-click** to open the item. Shift-click a universal attack to take it free. Token Action HUD Core requires socketlib, as it does for every system. |
+| **Token Action HUD Core** | A full HUD, built by the system. **No companion module to install** — the usual `token-action-hud-<system>` package does not exist for Lyrian and is not needed. Four tabs: Combat (weapons, the universal light/heavy/precise attacks, actions and reactions), Checks (stats, the save, skills, artisan, gathering), Inventory, Utility (passives, downtime abilities, initiative, rest, injury table). Abilities sort themselves by timing, so a crafting or gathering ability does not bury the ones you can spend in a fight. A weapon button is a light attack; **Ctrl-click** for heavy, **Alt-click** for precise, **right-click** to open the item. Shift-click a universal attack to take it free. The HUD is per-token: selecting several tokens at once shows nothing. Token Action HUD Core requires socketlib, as it does for every system. |
 | **Drag Ruler** | Movement is bought out of the same Action Points as everything else, so the drag is banded by what the token can still pay for: green for one move, gold for everything the remaining AP buys, red when there is no AP left. Flight and swim speeds widen the band when they are faster. |
 | **Dice So Nice!** | Every roll the system makes is attached to its chat message, so all of them animate — including the fresh damage roll made when a block cancels a critical hit, which used to be evaluated and thrown away where nobody could see it. Ships a Lyrian gold colourway as the table default, which does not override a colour someone has already chosen. |
 | **Sequencer** | Needs no registration — it is a macro library. What it needs from a system is somewhere to draw from and to: `lyrianAttack` carries `tokenUuid` for the attacking token and a `tokenUuid` per target, so `.atLocation()` and `.stretchTo()` work without guessing which token an actor meant. |

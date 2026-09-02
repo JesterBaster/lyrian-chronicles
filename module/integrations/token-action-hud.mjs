@@ -30,6 +30,7 @@ const GROUP = Object.freeze({
   actions: { id: "actions", name: "LYRIAN.TAH.Group.Actions", type: "system" },
   reactions: { id: "reactions", name: "LYRIAN.TAH.Group.Reactions", type: "system" },
   passives: { id: "passives", name: "LYRIAN.TAH.Group.Passives", type: "system" },
+  downtime: { id: "downtime", name: "LYRIAN.TAH.Group.Downtime", type: "system" },
   stats: { id: "stats", name: "LYRIAN.TAH.Group.Stats", type: "system" },
   skills: { id: "skills", name: "LYRIAN.TAH.Group.Skills", type: "system" },
   artisan: { id: "artisan", name: "LYRIAN.TAH.Group.Artisan", type: "system" },
@@ -39,8 +40,16 @@ const GROUP = Object.freeze({
   utility: { id: "utility", name: "LYRIAN.TAH.Group.Utility", type: "system" }
 });
 
-/** Ability timings that belong on the reaction shelf rather than the action one. */
+/**
+ * Where an ability's timing puts it.
+ *
+ * Everything not listed here is an action. Crafting, gathering and interlude
+ * abilities are not spent in a fight, so putting them on the combat shelf
+ * buried the abilities that are — an encounter's opening and closing beats
+ * still belong there, because they happen in one.
+ */
 const REACTION_TIMINGS = new Set(["reaction"]);
+const DOWNTIME_TIMINGS = new Set(["interlude", "crafting", "gathering"]);
 
 /**
  * Which attack a click means.
@@ -141,17 +150,24 @@ export function registerTokenActionHud() {
         if (!all.length) return;
 
         const timingOf = (id) => this.actor.items.get(id)?.system?.timing ?? "action";
-        const passives = all.filter((action) => timingOf(action.id) === "passive");
-        const reactions = all.filter((action) => REACTION_TIMINGS.has(timingOf(action.id)));
-        const actions = all.filter((action) =>
-          !passives.includes(action) && !reactions.includes(action));
+        const shelf = (timing) => {
+          if (timing === "passive") return "passives";
+          if (REACTION_TIMINGS.has(timing)) return "reactions";
+          if (DOWNTIME_TIMINGS.has(timing)) return "downtime";
+          return "actions";
+        };
 
-        if (actions.length) this.addActions(actions, GROUP.actions);
-        if (reactions.length) this.addActions(reactions, GROUP.reactions);
-        if (passives.length) this.addActions(passives, GROUP.passives);
+        const shelves = { actions: [], reactions: [], passives: [], downtime: [] };
+        for (const action of all) shelves[shelf(timingOf(action.id))].push(action);
+        for (const [group, actions] of Object.entries(shelves)) {
+          if (actions.length) this.addActions(actions, GROUP[group]);
+        }
       }
 
       #buildStats() {
+        // The config tables are named `mainStats` and `subStats`; the actor
+        // stores them at `system.stats` and `system.subStats`. Reading the
+        // config name as a data path silently showed every main stat as +0.
         const entries = [
           ...Object.keys(LYRIAN.mainStats).map((key) => [key, LYRIAN.mainStats[key], "stats"]),
           ...Object.keys(LYRIAN.subStats).map((key) => [key, LYRIAN.subStats[key], "subStats"])
@@ -323,6 +339,7 @@ export function registerTokenActionHud() {
               name: i18n("LYRIAN.TAH.Tab.Utility"),
               groups: [
                 { ...groups.passives, nestId: "utility_passives" },
+                { ...groups.downtime, nestId: "utility_downtime" },
                 { ...groups.utility, nestId: "utility_utility" }
               ]
             }
