@@ -69,7 +69,7 @@ jobs:
 
           # Fail loudly rather than shipping an archive Foundry cannot install.
           unzip -l system.zip | grep -q ' system.json$' || { echo "system.json not at archive root"; exit 1; }
-          for required in module/lyrian.mjs styles/lyrian.css lang/en.json content/materials-01.json content/mods-01.json content/crafting-guide-01.json; do
+          for required in module/lyrian.mjs module/integrations/index.mjs styles/lyrian.css lang/en.json content/materials-01.json content/mods-01.json content/crafting-guide-01.json; do
             unzip -l system.zip | grep -q " $required$" || { echo "missing $required"; exit 1; }
           done
           echo "archive contents verified"

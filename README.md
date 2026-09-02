@@ -119,10 +119,13 @@ await actor.update(
 ```
 
 Hooks fired: `lyrianAttack`, `lyrianDamage`, `lyrianHealing`, `lyrianDowned`,
-`lyrianTurnStart`, and `lyrianCraft`. The attack payload carries the attack type, weapon group,
-accuracy and damage rolls, crit state, keywords, pierce flags and per-target
-results with UUIDs — enough for Automated Animations to key off Light, Heavy or
-Precise, and for a HUD to build buttons without touching internals. NPC and monster
+`lyrianTurnStart`, `lyrianMultiAttack`, `lyrianTrade`, and `lyrianCraft`. The attack payload
+carries the attack type, weapon group, accuracy and damage rolls, crit state, keywords,
+pierce flags, the attacking `tokenUuid`, and per-target results with both actor and token
+UUIDs — enough for Automated Animations to key off Light, Heavy or Precise, for Sequencer
+to draw an effect from the attacker to each target, and for a HUD to build buttons without
+touching internals. `tokenUuid` is null when the actor is not on the canvas, or when a
+linked actor has several tokens on the scene and no one of them is the attacker. NPC and monster
 basic profiles appear in `getActionSet(actor).monsterAttacks` and use the same target,
 Dodge / Block, damage and chat-card pipeline as character attacks.
 
@@ -197,10 +200,22 @@ real schema field, so effects apply cleanly before derived stats are calculated.
 
 ## Modules
 
-Generic modules work: Dice So Nice, Token Action HUD (core), Drag Ruler, FXMaster, Monk's
-Token Bar, Sequencer, Automated Animations, and anything else that operates on scenes,
-tokens, journals or chat. System-specific modules do not — a D&D 5e module reads
-`system.abilities.str` and finds nothing here.
+Generic modules work: FXMaster, Monk's Token Bar, Automated Animations, and anything
+else that operates on scenes, tokens, journals or chat. System-specific modules do not —
+a D&D 5e module reads `system.abilities.str` and finds nothing here.
+
+Six modules are supported directly. Install the module; there is nothing to configure,
+and nothing here runs on a table that has not installed it.
+
+| Module | What you get |
+| --- | --- |
+| **Token Action HUD Core** | A full HUD, built by the system. **No companion module to install** — the usual `token-action-hud-<system>` package does not exist for Lyrian and is not needed. Four tabs: Combat (weapons, the universal light/heavy/precise attacks, actions and reactions), Checks (stats, the save, skills, artisan, gathering), Inventory, Utility (passives, initiative, rest, injury table). A weapon button is a light attack; **Ctrl-click** for heavy, **Alt-click** for precise, **right-click** to open the item. Shift-click a universal attack to take it free. Token Action HUD Core requires socketlib, as it does for every system. |
+| **Drag Ruler** | Movement is bought out of the same Action Points as everything else, so the drag is banded by what the token can still pay for: green for one move, gold for everything the remaining AP buys, red when there is no AP left. Flight and swim speeds widen the band when they are faster. |
+| **Dice So Nice!** | Every roll the system makes is attached to its chat message, so all of them animate — including the fresh damage roll made when a block cancels a critical hit, which used to be evaluated and thrown away where nobody could see it. Ships a Lyrian gold colourway as the table default, which does not override a colour someone has already chosen. |
+| **Sequencer** | Needs no registration — it is a macro library. What it needs from a system is somewhere to draw from and to: `lyrianAttack` carries `tokenUuid` for the attacking token and a `tokenUuid` per target, so `.atLocation()` and `.stretchTo()` work without guessing which token an actor meant. |
+| **Quick Insert** | Works as shipped. Its own integrations are compiled into that module for a fixed list of systems, so there is nothing for a system to register — but the omnibar indexes every document and compendium here, and its results drop onto Lyrian sheets through Foundry's standard drop handling, which is what the sheets already accept. |
+| **Find the Culprit** | Nothing to do, by design. It bisects your module list to find which one is causing a problem and never touches system data. |
+
 
 If you want to publish your own companion module, its `system.json` should list
 `"relationships": { "systems": [{ "id": "lyrian-chronicles" }] }`, and it can hook into
