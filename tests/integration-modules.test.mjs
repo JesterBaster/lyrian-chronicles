@@ -121,6 +121,29 @@ test("an attack says which token swung, not just which actor", () => {
 });
 
 /* -------------------------------------------- */
+/*  The public action set                        */
+/* -------------------------------------------- */
+
+test("getActionSet offers everything the system's own HUD uses", () => {
+  // The API is documented as "everything a HUD needs in one call". The HUD
+  // this system ships also builds stat, artisan and gathering buttons, which
+  // a third party could not have got from the API at all.
+  const api = readFileSync(new URL("../module/api.mjs", import.meta.url), "utf8");
+  const set = api.slice(api.indexOf("getActionSet(actor)"), api.indexOf("Performing actions"));
+
+  for (const key of ["resources:", "attacks:", "universalAttacks", "monsterAttacks",
+    "abilities:", "skills:", "stats:", "artisan:", "gathering:", "movement:", "defences:"]) {
+    assert.ok(set.includes(key), `getActionSet is missing ${key}`);
+  }
+
+  // And it must read the same paths the actor really uses, not the config
+  // table names beside them.
+  assert.match(set, /actor\.system\.stats\?\.\[key\]/);
+  assert.match(set, /actor\.system\.subStats\?\.\[key\]/);
+  assert.doesNotMatch(set, /actor\.system\.mainStats/);
+});
+
+/* -------------------------------------------- */
 /*  Wiring                                       */
 /* -------------------------------------------- */
 
