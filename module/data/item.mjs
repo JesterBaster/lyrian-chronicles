@@ -251,6 +251,8 @@ export class LyrianAbility extends LyrianItemBase {
   prepareDerivedData() {
     this.isRapid = this.keywords?.has("rapid") ?? false;
     this.isSecretArt = (this.keywords?.has("secretArt") ?? false) || this.timing === "secretArt";
+    // "This ability counts as your dual wield attack for the turn."
+    this.isDualWield = this.keywords?.has("dualWield") ?? false;
     this.isReaction = this.rpCost > 0 && this.apCost === 0;
     this.costLabel = [
       this.apCost ? `${this.apCost} AP` : null,

@@ -2281,9 +2281,7 @@
       "manaCost": 1,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "4 AP, 1 Mana",
       "otherCosts": "",
@@ -2781,9 +2779,7 @@
       "manaCost": 1,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "2 AP, 1 Mana",
       "otherCosts": "",
@@ -3114,9 +3110,7 @@
       "manaCost": 0,
       "upkeep": 0,
       "timing": "reaction",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "1 RP",
       "otherCosts": "",
@@ -9742,9 +9736,7 @@
       "manaCost": 2,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "0 AP, 2 Mana",
       "otherCosts": "",
@@ -11602,9 +11594,7 @@
       "manaCost": 0,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "1 AP",
       "otherCosts": "",
@@ -12081,9 +12071,7 @@
       "manaCost": 0,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "",
       "otherCosts": "",
@@ -12642,9 +12630,7 @@
       "manaCost": 0,
       "upkeep": 0,
       "timing": "reaction",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "1 RP",
       "otherCosts": "",

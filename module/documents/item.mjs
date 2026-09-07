@@ -206,6 +206,17 @@ export class LyrianItem extends Item {
       return abilityRefused("secret-art-spent");
     }
 
+    // "You cannot use this ability if you have already made a dual wield
+    // attack this turn." The turn's free off-hand swing and an ability with
+    // this keyword are the same allowance, so each has to see the other —
+    // otherwise a player takes both and attacks twice for free.
+    if (sys.isDualWield && actor.system.turn?.dualWieldUsed) {
+      ui.notifications.warn(
+        game.i18n.format("LYRIAN.Warn.DualWieldSpent", { name: this.name })
+      );
+      return abilityRefused("dual-wield-spent");
+    }
+
     if (!options.free) {
       const paid = await actor.spendResources({
         ap: sys.apCost,
@@ -218,6 +229,12 @@ export class LyrianItem extends Item {
     const updates = {};
     if (enforceOncePerRound && !sys.isRapid) updates["system.usedThisRound"] = true;
     if (Object.keys(updates).length) await this.update(updates);
+
+    // "After using it, you cannot make another dual wield attack this turn."
+    // Spent after payment, so a refused ability does not burn the allowance.
+    if (sys.isDualWield && !actor.system.turn?.dualWieldUsed) {
+      await actor.update({ "system.turn.dualWieldUsed": true });
+    }
 
     if (sys.isSecretArt) {
       await actor.update({ "system.encounter.secretArtUsed": true });

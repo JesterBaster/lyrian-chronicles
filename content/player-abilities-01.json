@@ -787,9 +787,7 @@
       "manaCost": 0,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "2 AP",
       "otherCosts": "",
@@ -852,9 +850,7 @@
       "manaCost": 1,
       "upkeep": 0,
       "timing": "reaction",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "1 RP, 1 Mana",
       "otherCosts": "",
@@ -3733,9 +3729,7 @@
       "manaCost": 0,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "",
       "otherCosts": "",
@@ -5277,9 +5271,7 @@
       "manaCost": 2,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "0 AP, 2 Mana",
       "otherCosts": "",
@@ -6687,9 +6679,7 @@
       "manaCost": 2,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "1 AP, 2 Mana",
       "otherCosts": "",
@@ -7960,9 +7950,7 @@
       "manaCost": 0,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "-1 AP",
       "otherCosts": "",
@@ -8345,9 +8333,7 @@
       "manaCost": 0,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "",
       "otherCosts": "",
@@ -9891,9 +9877,7 @@
       "manaCost": 0,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "",
       "otherCosts": "",
@@ -14603,9 +14587,7 @@
       "manaCost": 2,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "0 RP, 2 Mana",
       "otherCosts": "",
@@ -16385,7 +16367,7 @@
       "timing": "action",
       "keywords": [
         "Unarmed Strike",
-        "Dual Wield"
+        "dualWield"
       ],
       "rawKeywords": "Unarmed Strike,Dual Wield",
       "rawCost": "1 AP",
@@ -17493,9 +17475,7 @@
       "manaCost": 0,
       "upkeep": 0,
       "timing": "action",
-      "keywords": [
-        "-"
-      ],
+      "keywords": [],
       "rawKeywords": "-",
       "rawCost": "1 AP",
       "otherCosts": "",
