@@ -3267,7 +3267,7 @@
       "classId": "fusilier",
       "name": "Fusilier",
       "description": "<p>Annie idly twirled her pistol around her finger, keeping half an ear to the negotiations off to her right but most of her attention was on the nervous looking…toll collectors in front of her. The roads through Northi were generally safe but sometimes patrols could be bribed or some nobles started feuding under the table. That would often lead to bandits hired on to harass travelers or worse, someone clever having figured out something sneaky to get away with openly “tax collecting” on a major road. Granted, this little patch of “royal road” was off the beaten path a bit but it did serve as a major artery of trade between some of the southern duchies and was one of the direct trade links into Axias further south. A lot of money moved up and down this and other similar roads.</p><p>She and her group had been commissioned out of Mothergreen to investigate and put a stop to the robberies with the obvious hope that being third parties would prevent any current noble disagreements from turning into a localized conflict. No one wanted the trade disruption that would cause, nor the attention.</p><p>Still, she wasn’t sure why Roland was still playing along with the thieves. It had been his idea to disguise their mission as yet another trade run and he was playing the part of the minor noble in charge of the whole thing. Annie felt lucky that they’d decided to let her play as the “guard”  but she wasn’t sure if that was because she was a catfolk and might be considered a guide of sorts or if her party didn’t trust her not to shoot anyone that annoyed her.</p><p>Well…they were right about that, at least.</p><p>She was about to call out to Roland to just get this over with when the “negotiations” broke down into yelling and the head bandit drawing his sword.</p><p>“Finally!”</p><p>Without waiting for anyone to say anything more, her pistol stopped spinning with a solid clack and her off hand came up and worked the hammer, snapping two shots off so fast they sounded like one. One of the bandits she’d been having a staring contest with hastily dove out of the way but she didn’t give them much time to do anything but ready their own weapons before she spun to her feet and pulled a second pistol from behind her back. It was heavy, custom, and her precious, precious baby. The jingle of the belt sent her tail swishing with glee. Twenty-four rounds in a quick release belt that hung under the pistol in a heavy loop.</p><p>Her laughter was drowned out by the constant roar of thunder as she began spraying bullets toward the cluster of bandits. That’d keep them honest until Roland and the others got their heads in the game!</p>",
-      "difficulty": "3",
+      "difficulty": "2",
       "role1": "Striker",
       "role2": "Controller",
       "requirements": "Ranger mastered.",
@@ -3294,7 +3294,7 @@
       ],
       "ultimate_ability": "ability--suppressive-fire"
     },
-    "source_hash": "0f9c0ef8e4fd6bda097c69305f15813c92081e25109ce76fd6098bcec34525fc"
+    "source_hash": "fcf69f8a1842ecfacaf9f7629c2dcf991e13d871b04506d6b2c566f3958b34ce"
   },
   {
     "stable_id": "class--geomancer",
@@ -4540,7 +4540,7 @@
       "classId": "manifestor",
       "name": "Manifestor",
       "description": "<p>Tomoko took a steadying breath as she stepped into the courtyard. Master Moriyama stood with his arms crossed on the raised wooden deck of the dojo, golden scales gleaming on his cheeks and horns standing proudly in the morning sunlight. As a Ryujin, he demanded perfection in all things and believed disagreements between students or visitors should be settled in challenges of skill. Or, in her case, a duel to settle the insult of her family’s art.</p><p>Her ears twitched and her tails flicked nervously as she came to a stop on the hard packed dirt of the courtyard. Across from her stood a hulking man built like a statue, a Nio that had arrived as a guard for the supply caravan that brought food to the dojo regularly. He was a former student of Master Moriyama and had scoffed at her when he’d been observing her practicing. She hadn’t even said anything, just ignored it and continued running through her forms. Her friend, however…well, she wasn’t sure how Naoko insulting this man meant she had to duel him, but one did not argue with Master Moriyama. It was probably some sort of lesson in that she should stand up for herself.</p><p>“Let’s get this over with, little fox,” the Nio rumbled. He took a stance that looked more like a mountain standing indifferently before a typhoon than a person getting ready to fight.</p><p>Tomoko bowed to Master Moriyama and then bowed to her opponent. Then she slid into her own stance, her tails spreading out behind her, tips alighting with foxfire. The blue fire rushed from the tips of her tail, engulfing her briefly. A ghostly copy of herself formed, half a step to the side and behind her. She shifted her stance, her copy following her movements in wisps of spiritual fire and embers.</p><p>“Ready,” Master Moriyama intoned. She could feel his eyes shift from her to her opponent. “Begin.”</p><p>Before the Nio could take a step, her manifestation crossed the distance between them with only the speed something that wasn’t tangible could attain. The intangible seeming uppercut took the stone man with the force of a magical battering ram. In a flicker, her body collapsed into a ball of foxfire, tracing a fading line to her copy and she was suddenly there. A thought anchored her manifestation back to her and she brought a swift knee up to continue the pressure of surprise but the man stopped it cold with one hand. It was like trying to knee through a boulder.</p><p>He sneered down at her, bringing a powerful blow down toward her only to hit the ground as she and her manifestation flashed to one side, a bolt of foxfire slapping him in the face, which only seemed to annoy him.</p><p>“I’ve fought slippery kitsune like you before,” he grumbled through gritted teeth. His followup kick had just as much power as his first blow but she easily evaded it. The ground rumbled with the impact and she didn’t waste time in exploiting his overextention, converging her next blow with her manifestation that amplified the blow, sending the man staggering back. She took a step back and reset her stance. She took a steady breath and cut a glance at Master Moriyama.</p><p>“Continue,” the Ryujin said flatly. But he wasn’t staring at her, he was staring at the Nio rubbing his chest. When had this turned from a lesson for her to a lesson to an ex-student?</p>",
-      "difficulty": "3",
+      "difficulty": "2",
       "role1": "Striker",
       "role2": "Specialist",
       "requirements": "None",
@@ -4552,7 +4552,7 @@
       "skills": "You gain +5 skill points to spend in Athletics, Perception, History, Magic, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness, Reason or Presence.",
       "soul": "You gain +1 to Focus, Power, Agility or Toughness.",
-      "tier": "2",
+      "tier": "1",
       "ultimateAbility": "CONVERGING BLOW",
       "imageSmUrl": "https://cdn.angelssword.com/ttrpg/assets/20897b6c-73ed-41cf-9948-7e8ce6ba0726-manifestor.sm.webp",
       "imageLgUrl": "https://cdn.angelssword.com/ttrpg/assets/20897b6c-73ed-41cf-9948-7e8ce6ba0726-manifestor.lg.webp",
@@ -4567,7 +4567,7 @@
       ],
       "ultimate_ability": "ability--converging-blow"
     },
-    "source_hash": "8d83dbc974b462d406b3cf42f283e9161581a1ec916eb8852eb1116409f7b65a"
+    "source_hash": "31afae346d465271aea0fa2a5ec16b7fcad64e2ba782a64c5b99389253faffc6"
   },
   {
     "stable_id": "class--marksman",

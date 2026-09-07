@@ -55,7 +55,7 @@
       "classId": "mystic-eyes-of-petrification",
       "name": "Mystic Eyes of Petrification",
       "description": "<p>I stared intensely at the ant crawling across the rock in front of me, eyes squinting in my concentration. Freeze, stone, stop, STOP!</p><p>The ant, heedless of my growing frustration, continued its path and disappeared into the grass. I let out a huff of frustration and collapsed back into the comfort of my coiled tail. I flicked the tip of my tail in irritation as I watched my sister stare calmly at a plucked flower she was holding by the stem. The blue patterns on her tail slowly gleamed brightly and her left eye glowed a light leeching silver. The flower crackled as silver light washed over it, leaving stone in its wake until the entire flower was perfectly petrified without a single crack. She gently planted it next to the half dozen others she had already petrified. She’d paint them this evening and give them to Mama to sell tomorrow.</p><p>“Stop pouting, your face will get stuck like that,” she said with a smile, her eyes returning to its bright green color.</p><p>“I’m not pouting,” I denied. I squished my cheeks with my hands and shifted so I could watch my sister as she carefully snipped another flower, turning it in her fingers to decide if it was unique enough to petrify. As far as I knew, no one outside the family knew my sister could do this, they simply thought she was skilled at carving stone or some kind of geomancer. I wasn’t supposed to talk about it.</p><p>“How do you do it?” I asked as she set the flower aside in a vase and began reaching for another one.</p><p>“Magic,” she said with a smile.</p><p>“Cara! I’m serious!”</p><p>My sister shook her head and set her clippers down before she slithered across the grass to me. I adjusted my tail and sat up as she coiled around me, pulling me back so her chin rested on the top of my head and her arms wrapped around my belly.</p><p>“And so am I. It’s magic, little one. Like this.”</p><p>The patterns on her tail glowed blue as she channeled her mana. I was always jealous of her patterns; they swooshed along the top of her tail in twists and crosses but mine…mine was just a boring magenta line.</p><p>“Pay attention,” she chided. “Can you feel it, how my mana swirls and gathers first up from the base of my tail, then up into my chest?”</p><p>I closed my eyes and nodded hesitantly. There was a warm tingle, like little flutters of warm butterfly wings that I could feel in my tail and back. Cara released a breath slowly and her tail patterns stopped glowing.</p><p>“It’s just a little magic pushed and gathered in just the right way,” she said. “You’ll need to practice reaching it and circulating it. And when you’re older…I’ll teach you how to make eternal flowers, too.”</p>",
-      "difficulty": "3",
+      "difficulty": "2",
       "role1": "Controller",
       "role2": "",
       "requirements": "Evil Eye mastered or Lamiafolk plus any tier 2 mastered.\n\nAt least 1 mystic eye slot open.",
@@ -67,7 +67,7 @@
       "skills": "You gain +5 skill points to spend in Perception, Insight, Medicine, Art, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Awareness.",
       "soul": "You gain +1 to Focus.",
-      "tier": "2",
+      "tier": "3",
       "ultimateAbility": "PETRIFY",
       "imageSmUrl": "https://cdn.angelssword.com/ttrpg/assets/9b6167e8-3114-40e0-987a-35d3cfa1a287-petrificationeyes.sm.webp",
       "imageLgUrl": "https://cdn.angelssword.com/ttrpg/assets/9b6167e8-3114-40e0-987a-35d3cfa1a287-petrificationeyes.lg.webp",
@@ -82,7 +82,7 @@
       ],
       "ultimate_ability": "ability--petrify"
     },
-    "source_hash": "0dc7f8f904cb8bbb2609a75733f965b1ca89ba8aad89811c208f12f9e0ef6303"
+    "source_hash": "63045ed250dbf38598b8ede3cd266fb75fff0744c536c15192fd4569a435c7ce"
   },
   {
     "stable_id": "class--naturalist",
@@ -1824,7 +1824,7 @@
       "skills": "You gain +5 skill points to spend in Athletics, Perception, Insight, Medicine, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "heart": "You gain +1 to Fitness.",
       "soul": "You gain +1 to Focus, Agility or Toughness.",
-      "tier": "2",
+      "tier": "3",
       "ultimateAbility": "UNMOVING MOUNTAIN",
       "imageSmUrl": "https://cdn.angelssword.com/ttrpg/assets/9db63a20-4983-414f-b931-b5237711e86b-stillstonet3.sm.webp",
       "imageLgUrl": "https://cdn.angelssword.com/ttrpg/assets/9db63a20-4983-414f-b931-b5237711e86b-stillstonet3.lg.webp",
@@ -1839,7 +1839,7 @@
       ],
       "ultimate_ability": "ability--unmoving-mountain"
     },
-    "source_hash": "1ed76bebd59c75f71924e8ce8182735f6032f5e6c6dbfe4ec5b62cbadfca24ae"
+    "source_hash": "915fac6a491397254bc7cadb02074d52d1da83c873f539afb67921055105529d"
   },
   {
     "stable_id": "class--strategist",

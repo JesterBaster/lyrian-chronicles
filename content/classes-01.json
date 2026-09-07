@@ -6224,7 +6224,7 @@
       "description": "<p>Annie idly twirled her pistol around her finger, keeping half an ear to the negotiations off to her right but most of her attention was on the nervous looking…toll collectors in front of her. The roads through Northi were generally safe but sometimes patrols could be bribed or some nobles started feuding under the table. That would often lead to bandits hired on to harass travelers or worse, someone clever having figured out something sneaky to get away with openly “tax collecting” on a major road. Granted, this little patch of “royal road” was off the beaten path a bit but it did serve as a major artery of trade between some of the southern duchies and was one of the direct trade links into Axias further south. A lot of money moved up and down this and other similar roads.</p><p>She and her group had been commissioned out of Mothergreen to investigate and put a stop to the robberies with the obvious hope that being third parties would prevent any current noble disagreements from turning into a localized conflict. No one wanted the trade disruption that would cause, nor the attention.</p><p>Still, she wasn’t sure why Roland was still playing along with the thieves. It had been his idea to disguise their mission as yet another trade run and he was playing the part of the minor noble in charge of the whole thing. Annie felt lucky that they’d decided to let her play as the “guard”  but she wasn’t sure if that was because she was a catfolk and might be considered a guide of sorts or if her party didn’t trust her not to shoot anyone that annoyed her.</p><p>Well…they were right about that, at least.</p><p>She was about to call out to Roland to just get this over with when the “negotiations” broke down into yelling and the head bandit drawing his sword.</p><p>“Finally!”</p><p>Without waiting for anyone to say anything more, her pistol stopped spinning with a solid clack and her off hand came up and worked the hammer, snapping two shots off so fast they sounded like one. One of the bandits she’d been having a staring contest with hastily dove out of the way but she didn’t give them much time to do anything but ready their own weapons before she spun to her feet and pulled a second pistol from behind her back. It was heavy, custom, and her precious, precious baby. The jingle of the belt sent her tail swishing with glee. Twenty-four rounds in a quick release belt that hung under the pistol in a heavy loop.</p><p>Her laughter was drowned out by the constant roar of thunder as she began spraying bullets toward the cluster of bandits. That’d keep them honest until Roland and the others got their heads in the game!</p>",
       "source": "The Lyrian Chronicles v0.13.2",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/classes/fusilier",
-      "sourceHash": "0f9c0ef8e4fd6bda097c69305f15813c92081e25109ce76fd6098bcec34525fc",
+      "sourceHash": "fcf69f8a1842ecfacaf9f7629c2dcf991e13d871b04506d6b2c566f3958b34ce",
       "rulebookVersion": "0.13.2",
       "stableId": "class--fusilier",
       "relationships": {
@@ -6274,7 +6274,7 @@
         ]
       },
       "tier": 2,
-      "difficulty": 3,
+      "difficulty": 2,
       "role1": "Striker",
       "role2": "Controller",
       "guide": "<p>-</p>",
@@ -6292,7 +6292,7 @@
         "seedKey": "official:class--fusilier",
         "stableId": "class--fusilier",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/classes/fusilier",
-        "sourceHash": "0f9c0ef8e4fd6bda097c69305f15813c92081e25109ce76fd6098bcec34525fc",
+        "sourceHash": "fcf69f8a1842ecfacaf9f7629c2dcf991e13d871b04506d6b2c566f3958b34ce",
         "rulebookVersion": "0.13.2",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/2e8f5376-47b1-49f6-92f5-790b964b775c-fusilier.sm.webp"
