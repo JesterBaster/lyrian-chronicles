@@ -4784,9 +4784,7 @@
           "rpCost": 0,
           "manaCost": 0,
           "timing": "action",
-          "keywords": [
-            "-"
-          ],
+          "keywords": [],
           "rawKeywords": "-",
           "range": "Self",
           "requirement": "<p>Must be mounted.</p>",
@@ -4825,9 +4823,7 @@
           "rpCost": 0,
           "manaCost": 0,
           "timing": "action",
-          "keywords": [
-            "-"
-          ],
+          "keywords": [],
           "rawKeywords": "-",
           "range": "Melee Weapon Range",
           "requirement": "",
@@ -15423,9 +15419,7 @@
           "rpCost": 0,
           "manaCost": 1,
           "timing": "action",
-          "keywords": [
-            "-"
-          ],
+          "keywords": [],
           "rawKeywords": "-",
           "range": "160ft",
           "requirement": "<p>Must be flying.</p>",
@@ -16143,9 +16137,7 @@
           "rpCost": 0,
           "manaCost": 0,
           "timing": "action",
-          "keywords": [
-            "-"
-          ],
+          "keywords": [],
           "rawKeywords": "-",
           "range": "Self",
           "requirement": "<p>Must be mounted.</p>",

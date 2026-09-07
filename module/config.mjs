@@ -295,7 +295,8 @@ LYRIAN.abilityKeywords = {
   stealth: "LYRIAN.Keyword.Stealth",
   upkeep: "LYRIAN.Keyword.Upkeep",
   secretArt: "LYRIAN.Keyword.SecretArt",
-  downed: "LYRIAN.Keyword.Downed"
+  downed: "LYRIAN.Keyword.Downed",
+  dualWield: "LYRIAN.Keyword.DualWield"
 };
 
 LYRIAN.abilityTiming = {

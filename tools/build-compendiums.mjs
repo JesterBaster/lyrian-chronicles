@@ -122,13 +122,19 @@ const AUTOMATED_KEYWORDS = new Map([
   ["upkeep", "upkeep"],
   ["secretart", "secretArt"],
   ["downed", "downed"],
+  ["dualwield", "dualWield"],
 ]);
 
 function keywords(value) {
-  return terms(value).map((term) => {
-    const normalized = term.toLowerCase().replace(/[^a-z0-9]+/g, "");
-    return AUTOMATED_KEYWORDS.get(normalized) ?? term;
-  });
+  return terms(value)
+    // The rulebook writes "-" where an ability has no keywords. Carrying that
+    // through made it a keyword of its own on 45 abilities, rendered as a chip
+    // and listed on their chat cards.
+    .filter((term) => !/^[-\u2013\u2014]+$/.test(term))
+    .map((term) => {
+      const normalized = term.toLowerCase().replace(/[^a-z0-9]+/g, "");
+      return AUTOMATED_KEYWORDS.get(normalized) ?? term;
+    });
 }
 
 function timingFor(data, kind = "ability") {
