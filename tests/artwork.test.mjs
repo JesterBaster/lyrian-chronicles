@@ -173,7 +173,10 @@ test("the generator prefers the bundled icon over the remote URL", () => {
 test("worlds pick the change up: content version and migration both move", () => {
   const seed = readFileSync(
     new URL("../module/content/seed-packs.mjs", import.meta.url), "utf8");
-  assert.match(seed, /CONTENT_VERSION = "0\.6\.3-/,
+  // The marker, not the number: the point is that the artwork rework is
+  // reflected in the seed version, and pinning the digits made every later
+  // content update fail a test about artwork.
+  assert.match(seed, /CONTENT_VERSION = "[^"]*-local-artwork"/,
     "an unchanged content version leaves existing worlds on the old artwork");
 
   const migration = readFileSync(

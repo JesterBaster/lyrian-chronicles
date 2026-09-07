@@ -7,7 +7,7 @@ for Foundry VTT v14. Mechanics are transcribed from the core rulebook:
 Power / Focus / Agility / Toughness, the AP and RP economy, Guard–Block–Dodge defence,
 skills with expertise, classes, breakthroughs, and Spirit Core progression.
 
-The system includes reviewed official rulebook v0.13.1 content plus focused equipment and
+The system includes reviewed official rulebook v0.13.2 content plus focused equipment and
 crafting compendiums, with source links, stable cross-references, and official artwork where available.
 
 ## Install

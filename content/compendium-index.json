@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "rulebook_version": "0.13.1",
-  "generated_from": "content-source/approved/0.13.1",
+  "rulebook_version": "0.13.2",
+  "generated_from": "content-source/approved/0.13.2",
   "packs": {
     "rules-setting-guide": {
       "type": "JournalEntry",
@@ -12,7 +12,7 @@
     },
     "keywords": {
       "type": "Item",
-      "count": 87,
+      "count": 92,
       "files": [
         "keywords-01.json"
       ]
@@ -26,7 +26,7 @@
     },
     "player-abilities": {
       "type": "Item",
-      "count": 1112,
+      "count": 1137,
       "files": [
         "player-abilities-01.json",
         "player-abilities-02.json",
@@ -36,14 +36,14 @@
     },
     "races": {
       "type": "Item",
-      "count": 48,
+      "count": 49,
       "files": [
         "races-01.json"
       ]
     },
     "classes": {
       "type": "Item",
-      "count": 181,
+      "count": 185,
       "files": [
         "classes-01.json",
         "classes-02.json"
