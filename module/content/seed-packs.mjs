@@ -3,7 +3,7 @@ import { stampDocumentSourceSchema } from "../rules/schema-versioning.mjs";
 const SYSTEM_ID = "lyrian-chronicles";
 
 /** Bump when content JSON changes so worlds pick up additions. */
-export const CONTENT_VERSION = "0.6.3-rulebook-0.13.1-flos-madness-local-artwork";
+export const CONTENT_VERSION = "0.6.4-rulebook-0.13.2-flos-madness-local-artwork";
 
 /** Reviewed pack names, in mandatory rulebook review order. */
 const PACK_NAMES = [

@@ -9,7 +9,7 @@ import {
 } from "../module/rules/progression.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const SOURCE = process.argv[2] || path.join(ROOT, "content-source", "approved", "0.13.1");
+const SOURCE = process.argv[2] || path.join(ROOT, "content-source", "approved", "0.13.2");
 const OUTPUT = process.argv[3] || path.join(ROOT, "content");
 const SYSTEM_ID = "lyrian-chronicles";
 const CONTENT_BUILD = "0.5.0";
@@ -35,11 +35,11 @@ const PACKS = {
 
 const EXPECTED = {
   "rules-setting-guide": 2,
-  keywords: 87,
+  keywords: 92,
   breakthroughs: 89,
-  "player-abilities": 1112,
-  races: 48,
-  classes: 181,
+  "player-abilities": 1137,
+  races: 49,
+  classes: 185,
   weapons: 45,
   "armor-shields": 9,
   consumables: 58,
@@ -144,7 +144,7 @@ function provenance(entry, description = "") {
   const relationshipLinks = relationshipMetadata(entry.relationships);
   return {
     description,
-    source: "The Lyrian Chronicles v0.13.1",
+    source: "The Lyrian Chronicles v0.13.2",
     sourceUrl: entry.source_url,
     sourceHash: entry.source_hash,
     rulebookVersion: entry.rulebook_version,
@@ -552,7 +552,7 @@ function buildMonster(entry, monsterAbilityByStableId) {
 }
 
 function validateSnapshot(snapshot) {
-  if (snapshot.rulebook_version !== "0.13.1") throw new Error("Expected rulebook v0.13.1");
+  if (snapshot.rulebook_version !== "0.13.2") throw new Error("Expected rulebook v0.13.2");
   if (snapshot.unresolved_relationships?.length) {
     throw new Error(`Snapshot has ${snapshot.unresolved_relationships.length} unresolved relationships`);
   }

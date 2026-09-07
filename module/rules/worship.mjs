@@ -1,12 +1,12 @@
 /**
  * Approved Divine data used by the character sheet.
  *
- * Source: The Lyrian Chronicles v0.13.1, Divine's Chosen breakthrough.
+ * Source: The Lyrian Chronicles v0.13.2, Divine's Chosen breakthrough.
  * Re-verified against the current official breakthroughs page on 2026-08-15.
  */
 export const WORSHIP_RULE_SOURCE = Object.freeze({
-  rulebookVersion: "0.13.1",
-  sourceUrl: "https://rpg.angelssword.com/game/0.13.1/breakthroughs",
+  rulebookVersion: "0.13.2",
+  sourceUrl: "https://rpg.angelssword.com/game/0.13.2/breakthroughs",
   sourceHash: "3fef449288e5c9a1c587cd068733b07c34734ba7ad3523ee533e86cb1ded1320",
   verifiedAt: "2026-08-15"
 });

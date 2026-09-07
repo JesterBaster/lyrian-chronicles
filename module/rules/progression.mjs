@@ -1,7 +1,7 @@
 export const CLASS_FEATURE_LEVELS = Object.freeze([1, 2, 4, 6, 8]);
 
 export const REQUIRED_ANCESTRIES = Object.freeze({
-  chimera: { name: "Chimera", count: 19 },
+  chimera: { name: "Chimera", count: 20 },
   fae: { name: "Fae", count: 13 },
   youkai: { name: "Youkai", count: 11 }
 });

@@ -21,7 +21,8 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 
 test("Fae, Chimera, and Youkai require their complete official ancestry sets", async () => {
   assert.deepEqual(raceAncestryRequirement("Fae"), { name: "Fae", count: 13 });
-  assert.deepEqual(raceAncestryRequirement("Chimera"), { name: "Chimera", count: 19 });
+  // 0.13.2 added Pigfolk.
+  assert.deepEqual(raceAncestryRequirement("Chimera"), { name: "Chimera", count: 20 });
   assert.deepEqual(raceAncestryRequirement("Youkai"), { name: "Youkai", count: 11 });
   assert.equal(raceAncestryRequirement("Human"), null);
   assert.equal(raceAncestryRequirement("Demon"), null);
