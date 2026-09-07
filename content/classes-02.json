@@ -428,7 +428,7 @@
       "description": "<p>Tomoko took a steadying breath as she stepped into the courtyard. Master Moriyama stood with his arms crossed on the raised wooden deck of the dojo, golden scales gleaming on his cheeks and horns standing proudly in the morning sunlight. As a Ryujin, he demanded perfection in all things and believed disagreements between students or visitors should be settled in challenges of skill. Or, in her case, a duel to settle the insult of her family’s art.</p><p>Her ears twitched and her tails flicked nervously as she came to a stop on the hard packed dirt of the courtyard. Across from her stood a hulking man built like a statue, a Nio that had arrived as a guard for the supply caravan that brought food to the dojo regularly. He was a former student of Master Moriyama and had scoffed at her when he’d been observing her practicing. She hadn’t even said anything, just ignored it and continued running through her forms. Her friend, however…well, she wasn’t sure how Naoko insulting this man meant she had to duel him, but one did not argue with Master Moriyama. It was probably some sort of lesson in that she should stand up for herself.</p><p>“Let’s get this over with, little fox,” the Nio rumbled. He took a stance that looked more like a mountain standing indifferently before a typhoon than a person getting ready to fight.</p><p>Tomoko bowed to Master Moriyama and then bowed to her opponent. Then she slid into her own stance, her tails spreading out behind her, tips alighting with foxfire. The blue fire rushed from the tips of her tail, engulfing her briefly. A ghostly copy of herself formed, half a step to the side and behind her. She shifted her stance, her copy following her movements in wisps of spiritual fire and embers.</p><p>“Ready,” Master Moriyama intoned. She could feel his eyes shift from her to her opponent. “Begin.”</p><p>Before the Nio could take a step, her manifestation crossed the distance between them with only the speed something that wasn’t tangible could attain. The intangible seeming uppercut took the stone man with the force of a magical battering ram. In a flicker, her body collapsed into a ball of foxfire, tracing a fading line to her copy and she was suddenly there. A thought anchored her manifestation back to her and she brought a swift knee up to continue the pressure of surprise but the man stopped it cold with one hand. It was like trying to knee through a boulder.</p><p>He sneered down at her, bringing a powerful blow down toward her only to hit the ground as she and her manifestation flashed to one side, a bolt of foxfire slapping him in the face, which only seemed to annoy him.</p><p>“I’ve fought slippery kitsune like you before,” he grumbled through gritted teeth. His followup kick had just as much power as his first blow but she easily evaded it. The ground rumbled with the impact and she didn’t waste time in exploiting his overextention, converging her next blow with her manifestation that amplified the blow, sending the man staggering back. She took a step back and reset her stance. She took a steady breath and cut a glance at Master Moriyama.</p><p>“Continue,” the Ryujin said flatly. But he wasn’t staring at her, he was staring at the Nio rubbing his chest. When had this turned from a lesson for her to a lesson to an ex-student?</p>",
       "source": "The Lyrian Chronicles v0.13.2",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/classes/manifestor",
-      "sourceHash": "8d83dbc974b462d406b3cf42f283e9161581a1ec916eb8852eb1116409f7b65a",
+      "sourceHash": "31afae346d465271aea0fa2a5ec16b7fcad64e2ba782a64c5b99389253faffc6",
       "rulebookVersion": "0.13.2",
       "stableId": "class--manifestor",
       "relationships": {
@@ -477,8 +477,8 @@
           }
         ]
       },
-      "tier": 2,
-      "difficulty": 3,
+      "tier": 1,
+      "difficulty": 2,
       "role1": "Striker",
       "role2": "Specialist",
       "guide": "<p>-</p>",
@@ -496,7 +496,7 @@
         "seedKey": "official:class--manifestor",
         "stableId": "class--manifestor",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/classes/manifestor",
-        "sourceHash": "8d83dbc974b462d406b3cf42f283e9161581a1ec916eb8852eb1116409f7b65a",
+        "sourceHash": "31afae346d465271aea0fa2a5ec16b7fcad64e2ba782a64c5b99389253faffc6",
         "rulebookVersion": "0.13.2",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/20897b6c-73ed-41cf-9948-7e8ce6ba0726-manifestor.sm.webp"
@@ -1604,7 +1604,7 @@
       "description": "<p>I stared intensely at the ant crawling across the rock in front of me, eyes squinting in my concentration. Freeze, stone, stop, STOP!</p><p>The ant, heedless of my growing frustration, continued its path and disappeared into the grass. I let out a huff of frustration and collapsed back into the comfort of my coiled tail. I flicked the tip of my tail in irritation as I watched my sister stare calmly at a plucked flower she was holding by the stem. The blue patterns on her tail slowly gleamed brightly and her left eye glowed a light leeching silver. The flower crackled as silver light washed over it, leaving stone in its wake until the entire flower was perfectly petrified without a single crack. She gently planted it next to the half dozen others she had already petrified. She’d paint them this evening and give them to Mama to sell tomorrow.</p><p>“Stop pouting, your face will get stuck like that,” she said with a smile, her eyes returning to its bright green color.</p><p>“I’m not pouting,” I denied. I squished my cheeks with my hands and shifted so I could watch my sister as she carefully snipped another flower, turning it in her fingers to decide if it was unique enough to petrify. As far as I knew, no one outside the family knew my sister could do this, they simply thought she was skilled at carving stone or some kind of geomancer. I wasn’t supposed to talk about it.</p><p>“How do you do it?” I asked as she set the flower aside in a vase and began reaching for another one.</p><p>“Magic,” she said with a smile.</p><p>“Cara! I’m serious!”</p><p>My sister shook her head and set her clippers down before she slithered across the grass to me. I adjusted my tail and sat up as she coiled around me, pulling me back so her chin rested on the top of my head and her arms wrapped around my belly.</p><p>“And so am I. It’s magic, little one. Like this.”</p><p>The patterns on her tail glowed blue as she channeled her mana. I was always jealous of her patterns; they swooshed along the top of her tail in twists and crosses but mine…mine was just a boring magenta line.</p><p>“Pay attention,” she chided. “Can you feel it, how my mana swirls and gathers first up from the base of my tail, then up into my chest?”</p><p>I closed my eyes and nodded hesitantly. There was a warm tingle, like little flutters of warm butterfly wings that I could feel in my tail and back. Cara released a breath slowly and her tail patterns stopped glowing.</p><p>“It’s just a little magic pushed and gathered in just the right way,” she said. “You’ll need to practice reaching it and circulating it. And when you’re older…I’ll teach you how to make eternal flowers, too.”</p>",
       "source": "The Lyrian Chronicles v0.13.2",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/classes/mystic-eyes-of-petrification",
-      "sourceHash": "0dc7f8f904cb8bbb2609a75733f965b1ca89ba8aad89811c208f12f9e0ef6303",
+      "sourceHash": "63045ed250dbf38598b8ede3cd266fb75fff0744c536c15192fd4569a435c7ce",
       "rulebookVersion": "0.13.2",
       "stableId": "class--mystic-eyes-of-petrification",
       "relationships": {
@@ -1653,8 +1653,8 @@
           }
         ]
       },
-      "tier": 2,
-      "difficulty": 3,
+      "tier": 3,
+      "difficulty": 2,
       "role1": "Controller",
       "role2": "",
       "guide": "<p>-</p>",
@@ -1672,7 +1672,7 @@
         "seedKey": "official:class--mystic-eyes-of-petrification",
         "stableId": "class--mystic-eyes-of-petrification",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/classes/mystic-eyes-of-petrification",
-        "sourceHash": "0dc7f8f904cb8bbb2609a75733f965b1ca89ba8aad89811c208f12f9e0ef6303",
+        "sourceHash": "63045ed250dbf38598b8ede3cd266fb75fff0744c536c15192fd4569a435c7ce",
         "rulebookVersion": "0.13.2",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9b6167e8-3114-40e0-987a-35d3cfa1a287-petrificationeyes.sm.webp"
@@ -4964,7 +4964,7 @@
       "description": "<p>Caravan guard. He always returned to the familiar. Maybe it was just the nature of the Nio, but he found the consistency comforting. And after that humbling he’d received back home…well, perhaps the nature of caravans to cross great distances, even oceans, was part of it too. This land was new, at least to him. With strange peoples and strange customs. But familiar dangers. Akuma haunted these foreign lands just like Kirara, monsters attacked farmers, and bandits preyed on the unprotected.</p><p>“Mashro! Are they still coming?”</p><p>He winced at the butchering of his name. The cat woman (he’d thought her a nekomata at first!) still couldn’t pronounce it correctly. How hard was Masahiro to say?</p><p>“They still come,” he called back. “Continue to the fort, I will hold them here.”</p><p>He met the woman’s eyes, noted how her tail flicked in agitation. Then with a sigh, she shook her head. “I’m not paying you if you die on me!”</p><p>“I will meet you. Go. Quickly.”</p><p>She started shouting and spurring the beasts pulling the wagons faster. Masahiro nodded and turned back toward the pass opening. It had been a sanctioned exploratory expedition to the north of these lands, into what they called the ‘Astra’. Akuma had found them and they had been retreating south from them for nearly a week but the monsters were dogged and did not tire while they had needed to rest their beasts at the northern base of the pass. He placed himself at the peak of the pass, staring down at the twisted lands beyond and the akuma rushing up the slope. They slowed when they saw him approaching more cautiously, obviously looking out for some form of ambush.</p><p>There were four of them and they were like a madman had mixed the most dangerous parts of a wild boar and a great wolf into one creature. Bristing fur, tusks, sleek and powerful bodies, and standing nearly as tall as he was. He stretched out his senses as the beasts rushed toward him. Bakemono, at least. This many were dangerous but…well, he was eager to see how well his training in the years since he left home had served him.</p><p>Masahiro uncrossed his arms and brought one foot down in an impact that seemed to rattle the mountains. He was the unassailable peak, the immovable boulder. He was the stone that refused the river and made IT bend. When they reached him, their teeth and claws skidded across granite skin and they could not withstand the steady crushing of the mountain.</p><p>It didn’t take as long as he’d thought. He had some new scratches that would heal over the next week and a new story to tell. With a smirk, he began to walk down the mountain toward his charges. He turned his gaze up to the sky as he walked and idly wondered if that swift kitsune was also training hard back home. He’d like a rematch the next time he saw her.</p>",
       "source": "The Lyrian Chronicles v0.13.2",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/classes/still-stone-testament",
-      "sourceHash": "1ed76bebd59c75f71924e8ce8182735f6032f5e6c6dbfe4ec5b62cbadfca24ae",
+      "sourceHash": "915fac6a491397254bc7cadb02074d52d1da83c873f539afb67921055105529d",
       "rulebookVersion": "0.13.2",
       "stableId": "class--still-stone-testament",
       "relationships": {
@@ -5013,7 +5013,7 @@
           }
         ]
       },
-      "tier": 2,
+      "tier": 3,
       "difficulty": 3,
       "role1": "Defender",
       "role2": "",
@@ -5032,7 +5032,7 @@
         "seedKey": "official:class--still-stone-testament",
         "stableId": "class--still-stone-testament",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.2/classes/still-stone-testament",
-        "sourceHash": "1ed76bebd59c75f71924e8ce8182735f6032f5e6c6dbfe4ec5b62cbadfca24ae",
+        "sourceHash": "915fac6a491397254bc7cadb02074d52d1da83c873f539afb67921055105529d",
         "rulebookVersion": "0.13.2",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/9db63a20-4983-414f-b931-b5237711e86b-stillstonet3.sm.webp"

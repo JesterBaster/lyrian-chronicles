@@ -1,0 +1,1112 @@
+[
+ {
+  "name": "Abjurer",
+  "slug": "abjurer",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Acolyte",
+  "slug": "acolyte",
+  "tier": 1,
+  "difficulty": 3
+ },
+ {
+  "name": "Adventurer",
+  "slug": "adventurer",
+  "tier": 1,
+  "difficulty": 1
+ },
+ {
+  "name": "Aerial Mage",
+  "slug": "aerial-mage",
+  "tier": 2,
+  "difficulty": 4
+ },
+ {
+  "name": "Aeromancer",
+  "slug": "aeromancer",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Aeromaster",
+  "slug": "aeromaster",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Aetherie",
+  "slug": "aetherie",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Agrarian",
+  "slug": "agrarian",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Alchemeister",
+  "slug": "alchemeister",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Alchemist",
+  "slug": "alchemist",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Alkahest",
+  "slug": "alkahest",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Amanita",
+  "slug": "amanita",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Angelblooded",
+  "slug": "angelblooded",
+  "tier": 2,
+  "difficulty": 1
+ },
+ {
+  "name": "Animal Summoner",
+  "slug": "animal-summoner",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Anti-Mage",
+  "slug": "anti-mage",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Arcanist",
+  "slug": "arcanist",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Archer",
+  "slug": "archer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Archsage",
+  "slug": "archsage",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Armiger",
+  "slug": "armiger",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Armorsmith",
+  "slug": "armorsmith",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Artificer",
+  "slug": "artificer",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Assassin",
+  "slug": "assassin",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Aurora Blade Style",
+  "slug": "aurora-blade-style",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Bajiquan Style",
+  "slug": "bajiquan-style",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Bard",
+  "slug": "bard",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Battle Mage",
+  "slug": "battle-mage",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Battlemaster",
+  "slug": "battlemaster",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Berserker",
+  "slug": "berserker",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Biochemist",
+  "slug": "biochemist",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Black Oath Style",
+  "slug": "black-oath-style",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Blacksmith",
+  "slug": "blacksmith",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Bloodbinder",
+  "slug": "bloodbinder",
+  "tier": 2,
+  "difficulty": 4
+ },
+ {
+  "name": "Bodyguard",
+  "slug": "bodyguard",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Botanist",
+  "slug": "botanist",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Brawler",
+  "slug": "brawler",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Cannoneer",
+  "slug": "cannoneer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Carpenter",
+  "slug": "carpenter",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Cavalier",
+  "slug": "cavalier",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Chronofighter",
+  "slug": "chronofighter",
+  "tier": 2,
+  "difficulty": 4
+ },
+ {
+  "name": "Chronomancer",
+  "slug": "chronomancer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Colossus",
+  "slug": "colossus",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Cryomancer",
+  "slug": "cryomancer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Culinarian",
+  "slug": "culinarian",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Cultivator",
+  "slug": "cultivator",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Curse Knight",
+  "slug": "curse-knight",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Cutthroat",
+  "slug": "cutthroat",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Daionmyoji",
+  "slug": "daionmyoji",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Dark Priest",
+  "slug": "dark-priest",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Deadeye",
+  "slug": "deadeye",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Death Knight",
+  "slug": "death-knight",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Dragoon",
+  "slug": "dragoon",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Duelist",
+  "slug": "duelist",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Earthcleaving Style",
+  "slug": "earthcleaving-style",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Electromancer",
+  "slug": "electromancer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Electromaster",
+  "slug": "electromaster",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Elementalist",
+  "slug": "elementalist",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Eremancer",
+  "slug": "eremancer",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Evil Eye",
+  "slug": "evil-eye",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Exalted Blade",
+  "slug": "exalted-blade",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Exalted Shield",
+  "slug": "exalted-shield",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Excavator",
+  "slug": "excavator",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Executor",
+  "slug": "executor",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Fae Knight",
+  "slug": "fae-knight",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Fae Knight: Willow Style",
+  "slug": "fae-knight--willow-style",
+  "tier": 3,
+  "difficulty": 4
+ },
+ {
+  "name": "Faerie Light Eyes",
+  "slug": "faerie-light-eyes",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Farmer",
+  "slug": "farmer",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Fencer",
+  "slug": "fencer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Fighter",
+  "slug": "fighter",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Five Harmonies Style",
+  "slug": "five-harmonies-style",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Flame Sentinel",
+  "slug": "flame-sentinel",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Flash Star Blade Style",
+  "slug": "flash-star-blade-style-",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Flowing Wind Style",
+  "slug": "flowing-wind-style",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Forager",
+  "slug": "forager",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Forgemaster",
+  "slug": "forgemaster",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Fusilier",
+  "slug": "fusilier",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Geomancer",
+  "slug": "geomancer",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Geomaster",
+  "slug": "geomaster",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Grandmaster",
+  "slug": "grandmaster",
+  "tier": 2,
+  "difficulty": 4
+ },
+ {
+  "name": "Granite Warden",
+  "slug": "granite-warden",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Gravitect",
+  "slug": "gravitect",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Graviturge",
+  "slug": "graviturge",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Great Berserker",
+  "slug": "great-berserker",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Great Knight",
+  "slug": "great-knight",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Guardian",
+  "slug": "guardian",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Gun Paladin",
+  "slug": "gun-paladin",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Gunfu",
+  "slug": "gunfu",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Gunslinger",
+  "slug": "gunslinger",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Harrier",
+  "slug": "harrier",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "High Priest",
+  "slug": "high-priest",
+  "tier": 3,
+  "difficulty": 1
+ },
+ {
+  "name": "Highlander",
+  "slug": "highlander",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Hoarfrost",
+  "slug": "hoarfrost",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Hussar",
+  "slug": "hussar",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Hydromancer",
+  "slug": "hydromancer",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Iai Style",
+  "slug": "iai-style",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Idol",
+  "slug": "idol",
+  "tier": 1,
+  "difficulty": 1
+ },
+ {
+  "name": "Jewel Idol",
+  "slug": "jewel-idol",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Jonin",
+  "slug": "jonin",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Knight-Paramount",
+  "slug": "knight-paramount",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Lancer",
+  "slug": "lancer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Mage",
+  "slug": "mage",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Mage Knight",
+  "slug": "mage-knight",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Magitechnician",
+  "slug": "magitechnician-",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Maid",
+  "slug": "maid",
+  "tier": 1,
+  "difficulty": 1
+ },
+ {
+  "name": "Manifestor",
+  "slug": "manifestor",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Marksman",
+  "slug": "marksman",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Martial Artist",
+  "slug": "martial-artist",
+  "tier": 1,
+  "difficulty": 1
+ },
+ {
+  "name": "Master Armorer",
+  "slug": "master-armorer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Medic",
+  "slug": "medic",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Merchant",
+  "slug": "merchant",
+  "tier": 1,
+  "difficulty": 1
+ },
+ {
+  "name": "Mime",
+  "slug": "mime",
+  "tier": 1,
+  "difficulty": 3
+ },
+ {
+  "name": "Miner",
+  "slug": "miner",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Mist Veil Elegy",
+  "slug": "mist-veil-elegy",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Mogul",
+  "slug": "mogul",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Monk",
+  "slug": "monk",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Mycomancer",
+  "slug": "mycomancer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Mystic Eyes of Destruction",
+  "slug": "mystic-eyes-of-destruction",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Mystic Eyes of Domination",
+  "slug": "mystic-eyes-of-domination",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Mystic Eyes of Petrification",
+  "slug": "mystic-eyes-of-petrification",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Naturalist",
+  "slug": "naturalist",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Necromancer",
+  "slug": "necromancer",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Necromaster",
+  "slug": "necromaster",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Ninja",
+  "slug": "ninja",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Nomad",
+  "slug": "nomad",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Onmyoji",
+  "slug": "onmyoji-",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Oracle",
+  "slug": "oracle",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Peltast",
+  "slug": "peltast",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Phantom Thief",
+  "slug": "phantom-thief",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Phosphomancer",
+  "slug": "phosphomancer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Pierrot",
+  "slug": "pierrot",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Priest",
+  "slug": "priest",
+  "tier": 2,
+  "difficulty": 1
+ },
+ {
+  "name": "Protector",
+  "slug": "protector",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Pyromancer",
+  "slug": "pyromancer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Pyromaster",
+  "slug": "pyromaster",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Ranger",
+  "slug": "ranger",
+  "tier": 1,
+  "difficulty": 1
+ },
+ {
+  "name": "Reaver",
+  "slug": "reaver",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Rogue",
+  "slug": "rogue",
+  "tier": 1,
+  "difficulty": 3
+ },
+ {
+  "name": "Saboteur",
+  "slug": "saboteur",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Sage",
+  "slug": "sage",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Sanctioner",
+  "slug": "sanctioner",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Scout",
+  "slug": "scout",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Searing Lotus Style",
+  "slug": "searing-lotus-style",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Seven Sorrows Sword Style",
+  "slug": "seven-sorrows-sword-style",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Shadow Thief",
+  "slug": "shadow-thief",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Shadowbringer",
+  "slug": "shadowbringer",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Shield Paladin",
+  "slug": "shield-paladin",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Shield Saint",
+  "slug": "shield-saint",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Shieldwarden",
+  "slug": "shieldwarden",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Shinigami Eyes",
+  "slug": "shinigami-eyes",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Sky Knight",
+  "slug": "sky-knight",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Sky Talon Style",
+  "slug": "sky-talon-style",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Sniper",
+  "slug": "sniper",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Sorcerer",
+  "slug": "sorcerer",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Spearmaster",
+  "slug": "spearmaster",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Spell Blademaster",
+  "slug": "spell-blademaster",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Spellblade",
+  "slug": "spellblade",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Starcaller",
+  "slug": "starcaller",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Still Stone Style",
+  "slug": "still-stone-style",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Still Stone Testament",
+  "slug": "still-stone-testament",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Strategist",
+  "slug": "strategist",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Summoner",
+  "slug": "summoner",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Swashbuckler",
+  "slug": "swashbuckler",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Sword Paladin",
+  "slug": "sword-paladin",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Sword Saint",
+  "slug": "sword-saint",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Tactician",
+  "slug": "tactician",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Tavern Brawler",
+  "slug": "tavern-brawler",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Temporal Trickster",
+  "slug": "temporal-trickster",
+  "tier": 3,
+  "difficulty": 4
+ },
+ {
+  "name": "Thief",
+  "slug": "thief",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Timberwright",
+  "slug": "timberwright",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Time Thief",
+  "slug": "time-thief",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Transcendent Lightning Style",
+  "slug": "transcendent-lightning-style",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Transmuter",
+  "slug": "transmuter",
+  "tier": 1,
+  "difficulty": 2
+ },
+ {
+  "name": "Trapper",
+  "slug": "trapper",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Trickster",
+  "slug": "trickster",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "True Shinigami Eyes",
+  "slug": "true-shinigami-eyes",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Vampire",
+  "slug": "vampire",
+  "tier": 1,
+  "difficulty": 3
+ },
+ {
+  "name": "Vampire Lord",
+  "slug": "vampire-lord",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Veilguard",
+  "slug": "veilguard",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Venomancer",
+  "slug": "venomancer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Venomblade",
+  "slug": "venomblade",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Warding Mage",
+  "slug": "warding-mage",
+  "tier": 2,
+  "difficulty": 3
+ },
+ {
+  "name": "Wave Palm Style",
+  "slug": "wave-palm-style",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Wildheart",
+  "slug": "wildheart",
+  "tier": 3,
+  "difficulty": 3
+ },
+ {
+  "name": "Windbringer",
+  "slug": "windbringer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
+  "name": "Zen Warrior",
+  "slug": "zen-warrior",
+  "tier": 3,
+  "difficulty": 2
+ },
+ {
+  "name": "Zephyr Warder",
+  "slug": "zephyr-warder",
+  "tier": 2,
+  "difficulty": 2
+ }
+]

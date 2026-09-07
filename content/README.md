@@ -39,7 +39,16 @@ node tools/build-compendiums.mjs
 ```
 
 `--report` prints exactly which fields the merge took from the incoming snapshot,
-and `tests/rulebook-merge.test.mjs` pins every rule about what it refuses. Then
+and `tests/rulebook-merge.test.mjs` pins every rule about what it refuses.
+
+**Check tier and difficulty by hand.** They are drawn on the site as filled pip
+glyphs rather than numbers, so a capture has to count them and can be wrong
+without looking wrong: the 0.13.2 capture returned one constant for all 185
+classes. The merge protects those two fields, so only classes new in the update
+are exposed. `tests/class-tier-difficulty.test.mjs` pins all 185 against
+`tests/fixtures/class-tier-difficulty-<version>.json`; refresh that fixture from
+the site on each update, and re-run it — a correct count reproduces every
+pre-existing class exactly, which is what makes the new ones trustworthy. Then
 update `EXPECTED`, the `SOURCE` default and the version guard in
 `tools/build-compendiums.mjs`, and `CONTENT_VERSION` in
 `module/content/seed-packs.mjs` so existing worlds re-seed.
