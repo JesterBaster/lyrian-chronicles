@@ -893,6 +893,8 @@
   "LYRIAN.Settings.AnnounceExpSpending.Name": "Announce EXP spending in chat",
   "LYRIAN.Settings.AnnounceExpSpending.Hint": "Post a chat message whenever a character commits EXP, including class advances. Tier milestones are always announced, because crossing one raises the skill rank cap.",
   "LYRIAN.Settings.CraftingConsumesMaterials.Hint": "Consume the configured Gear quantities on every crafting attempt. Disable this for tables that track materials manually.",
+  "LYRIAN.Settings.StartingClim.Name": "Starting Clim",
+  "LYRIAN.Settings.StartingClim.Hint": "The Clim a character is created with. The rulebook says 3000; a campaign that starts richer — the Angel's Sword sheet's \"Mirane?\" box makes it 4000 — sets its own figure here.",
   "LYRIAN.Settings.CraftingPlayerProjects.Name": "Players may author crafting projects",
   "LYRIAN.Settings.CraftingPlayerProjects.Hint": "Let players create and edit projects on their own sheet, including custom output and mods. Leave this off to keep project definition with the GM.",
   "LYRIAN.Hint.CraftingProjects": "A project consumes owned Gear, then accumulates Crafting Points across crafting actions until they reach the item's Crafting HP. Spare points fit Mods; falling short loses the materials.",

@@ -182,6 +182,15 @@ function registerSettings() {
     default: true
   });
 
+  game.settings.register(SYSTEM_ID, "startingClim", {
+    name: "LYRIAN.Settings.StartingClim.Name",
+    hint: "LYRIAN.Settings.StartingClim.Hint",
+    scope: "world",
+    config: true,
+    type: Number,
+    default: LYRIAN.progression.startingClim
+  });
+
   game.settings.register(SYSTEM_ID, "craftingPlayerProjects", {
     name: "LYRIAN.Settings.CraftingPlayerProjects.Name",
     hint: "LYRIAN.Settings.CraftingPlayerProjects.Hint",
