@@ -1,5 +1,6 @@
 import { LYRIAN } from "../config.mjs";
-import { normalizeClassLevel, raceSkillGrant } from "../rules/progression.mjs";
+import { normalizeClassLevel, raceSkillGrant, startingClim as tableStartingClim }
+  from "../rules/progression.mjs";
 import { convertOfficialEquipment } from "../rules/equipment-import.mjs";
 import { captureScroll, restoreScroll } from "../rules/scroll-state.mjs";
 import { matchesSearch } from "../rules/search-filter.mjs";
@@ -346,7 +347,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
     })).sort((a, b) => a.name.localeCompare(b.name));
     const selectedEquipment = equipment.filter((entry) => entry.selected);
     const equipmentSpent = selectedEquipment.reduce((total, entry) => total + entry.cost, 0);
-    const equipmentClimLeft = p.startingClim - equipmentSpent;
+    const equipmentClimLeft = tableStartingClim() - equipmentSpent;
     const skillPointsLeft = s.skillPoints -
       Object.values(s.skillSpend).reduce((a, b) => a + b, 0);
     const skillsComplete = skillPointsLeft === 0 &&
@@ -781,7 +782,7 @@ export class LyrianCharacterCreation extends HandlebarsApplicationMixin(Applicat
       actorItems: actor.items,
       equipmentDocs,
       currentClim: actor.system.clim,
-      startingClim: p.startingClim,
+      startingClim: tableStartingClim(),
       previouslyApplied: Boolean(
         actor.getFlag("lyrian-chronicles", "characterCreation")?.applied || hasWizardCore
       )

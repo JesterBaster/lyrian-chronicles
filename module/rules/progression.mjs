@@ -1,3 +1,28 @@
+/**
+ * The Clim a character is created with.
+ *
+ * The rulebook says 3000. A table running a campaign that starts richer — the
+ * Angel's Sword character sheet has a "Mirane?" box that makes it 4000 — sets
+ * its own figure, and the creation wizard uses that instead of the book's.
+ * Read through here rather than off the config so the two cannot drift.
+ */
+export function startingClim(config = globalThis.CONFIG?.LYRIAN ?? null) {
+  const fallback = Number(config?.progression?.startingClim);
+  const base = Number.isFinite(fallback) ? fallback : 3000;
+  try {
+    const raw = game.settings.get("lyrian-chronicles", "startingClim");
+    // An unset or cleared setting is not a choice of zero. Number(null) and
+    // Number("") are both 0, so they have to be ruled out before the coercion
+    // or a blank field would quietly start every character penniless.
+    if (raw === null || raw === undefined || raw === "") return base;
+    const chosen = Number(raw);
+    return Number.isFinite(chosen) && chosen >= 0 ? chosen : base;
+  } catch {
+    // Settings are not registered yet, or this is running outside Foundry.
+    return base;
+  }
+}
+
 export const CLASS_FEATURE_LEVELS = Object.freeze([1, 2, 4, 6, 8]);
 
 export const REQUIRED_ANCESTRIES = Object.freeze({
