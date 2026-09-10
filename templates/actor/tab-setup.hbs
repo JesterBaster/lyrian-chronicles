@@ -15,5 +15,20 @@
         <p class="lyr-note">{{localize "LYRIAN.Setup.RequiresOwner"}}</p>
       {{/if}}
     </section>
+
+    <section class="lyr-reference-card lyr-reference-card--wide">
+      <h3>{{localize "LYRIAN.Setup.ExportTitle"}}</h3>
+      <p>{{localize "LYRIAN.Setup.ExportDescription"}}</p>
+      <ol class="lyr-note lyr-export-steps">
+        <li>{{localize "LYRIAN.Setup.ExportStepTemplate"}}</li>
+        <li>{{localize "LYRIAN.Setup.ExportStepPick"}}</li>
+        <li>{{localize "LYRIAN.Setup.ExportStepSave"}}</li>
+      </ol>
+      <button type="button" class="lyr-primary lyr-wide" data-action="exportCharacterSheet">
+        <i class="fa-solid fa-file-export"></i>
+        {{localize "LYRIAN.Action.ExportCharacterSheet"}}
+      </button>
+      <p class="lyr-note">{{localize "LYRIAN.Setup.ExportFormulaNote"}}</p>
+    </section>
   </div>
 </section>
