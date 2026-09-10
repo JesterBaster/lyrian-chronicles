@@ -22,6 +22,7 @@ import {
 } from "../rules/mod-installation.mjs";
 import { hybridAncestryFamily } from "../rules/hybrid-race.mjs";
 import { isHeaderOnlyRender } from "../rules/sheet-refresh.mjs";
+import { duplicatesOwnedAbility, withoutGranted } from "../rules/ability-sections.mjs";
 import { captureScroll, restoreScroll } from "../rules/scroll-state.mjs";
 import { withCollapsed } from "../rules/collapsible.mjs";
 import { weaponsDisplacedBy } from "../rules/weapon-slots.mjs";
@@ -506,9 +507,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const granted = this.document.items.filter(
       (item) => item.type === "ability" && item.getFlag("lyrian-chronicles", "featureSource")
     );
-    const grantedIds = new Set(granted.map((item) => item.id));
     for (const key of ["abilities", "reactions", "encounterStart", "encounterConclusion", "passives"]) {
-      buckets[key] = buckets[key].filter((item) => !grantedIds.has(item.id));
+      buckets[key] = withoutGranted(buckets[key], granted);
     }
 
     // One list rather than four. Splitting actions, reactions and the two
@@ -783,6 +783,20 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     }
 
     if (this.document.type !== "character") return result;
+    // An ability the actor already has, dropped again, becomes a second Item
+    // with the same name — one listed under the class that granted it and one
+    // under Other Actions. Turned away the same way a duplicate class is.
+    if (owned.type === "ability") {
+      const duplicate = duplicatesOwnedAbility(owned, [...this.document.items]);
+      if (duplicate) {
+        await owned.delete();
+        ui.notifications.warn(game.i18n.format("LYRIAN.Requirement.DuplicateAbility", {
+          name: owned.name
+        }));
+        return null;
+      }
+    }
+
     if (owned.type === "class") {
       const duplicate = this.document.items.find((item) =>
         item.id !== owned.id && item.type === "class" &&
