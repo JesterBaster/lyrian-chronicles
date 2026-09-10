@@ -82,63 +82,6 @@ game.lyrian.seedSystemPacks({ force: true });
 
 Automatic seeding can be disabled in Settings if you maintain your own content.
 
-## Exporting to the spreadsheet
-
-The **Setup** tab on a character sheet writes that character into your own copy of Angel's Sword's
-Character Creation Sheet. Download the sheet from them as `.xlsx` — in Google Sheets, *File →
-Download → Microsoft Excel* — click **Export to Spreadsheet**, pick that file, and a filled copy
-downloads. Nothing is uploaded and no template ships with the system: the sheet is Angel's Sword's
-to distribute, and a copy bundled here would be stale by their next revision.
-
-Four tabs are filled:
-
-| Tab | What is written |
-| --- | --- |
-| Core | Name, race, gender/age/height/weight/worship, the creation-array picks, stat bonuses, skill points and expertises, crafting skills, classes and levels |
-| Abilities | Ability names, split into the active and passive blocks by their timing |
-| Breakthrough | Breakthrough names and the EXP actually spent on each |
-| Inventory | Item name, equipped or carried, amount, burden, Clim value and description |
-
-Only the boxes a player types into. HP, evasion, guard, damage and EXP costs are left to the
-spreadsheet's own formulas, so its totals stay an independent check on Foundry's rather than a copy
-of them. On the Abilities and Breakthrough tabs the sheet looks up cost, keywords, range,
-requirement and description from its own reference tabs, so only the name is written — and a name
-those tabs do not carry is reported before you find six blank columns beside it. Everything else in
-the file comes back untouched, drawings and all.
-
-Any player can export a character they can open; it reads the actor and changes nothing, so it needs
-no world permission and no GM setup. Where a character does not fit the sheet — stats that do not
-form the creation array, more abilities than the sheet has rows — the export still runs and says
-what it left out. A tab an older copy of the template does not have is skipped rather than fatal.
-
-## Importing from the spreadsheet
-
-The same tab imports. Pick a filled copy of the sheet and the Setup tab reads it back onto the
-character: stats, skills, crafting skills and identity are updated, and classes, abilities,
-breakthroughs and inventory are matched against the compendiums and added.
-
-Nothing is written until you have seen a summary of what would be — how many entries will be added,
-how many the character already has, and how many the compendiums do not carry. Names that could not
-be placed are listed so you can add them by hand.
-
-**An import adds and updates; it never deletes.** A spreadsheet is a copy of a character, not the
-authority on one, so anything gained in Foundry since the last export is kept. Stats, skills and
-identity are overwritten wherever the sheet has a value, and a blank cell is left as it is rather
-than treated as a zero. Items the character already has by name are left alone rather than added
-twice, and a race is never added on top of one the character already has — every race item adds its
-stat bonuses, so a second would silently double them.
-
-Matching tries an exact name first, then case-insensitively, then ignoring punctuation and spacing —
-in that order, so an exact hit always wins outright. Against the shipped content this places all
-1,137 abilities, all 89 breakthroughs and all 185 classes the spreadsheet lists. Where a name
-matches more than one entry — 40 abilities share a name with a class's key ability — the first is
-taken, as the spreadsheet's own lookup does, and the preview lists them so you can check.
-
-What the sheet says and what the compendium says are kept apart. The pack owns what an item *is* —
-its burden, price and rules text. The sheet owns what this character's copy looks like: how many
-there are, whether they are worn, what level a class reached, and what a breakthrough actually cost
-at your table. Importing needs owner permission, unlike exporting.
-
 ## Modules and the public API
 
 `game.lyrian.api` is a stability promise — names and payload shapes will not
