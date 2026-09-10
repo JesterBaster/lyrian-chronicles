@@ -117,7 +117,7 @@ test("official equipment becomes a real item, but a Mod stays a Mod", async () =
 
 test("the race is created too, and a broken uuid is reported not thrown", async () => {
   const { create, failed } = await plannedItemData({
-    raceItem: { name: "Human", uuid: "uuid:human" },
+    raceItem: { name: "Human", uuid: "uuid:human", status: "create" },
     items: {
       abilities: { create: [{ name: "Ghost", entry: { uuid: "uuid:missing" } }] }
     }
@@ -125,6 +125,16 @@ test("the race is created too, and a broken uuid is reported not thrown", async 
 
   assert.deepEqual(create.map((item) => item.name), ["Human"]);
   assert.deepEqual(failed, [{ kind: "abilities", name: "Ghost", uuid: "uuid:missing" }]);
+});
+
+test("a race the actor already has is never created a second time", async () => {
+  // Every race Item adds its stat bonuses, so a second copy doubles them.
+  for (const status of ["existing", "conflict"]) {
+    const { create } = await plannedItemData({
+      raceItem: { name: "Human", uuid: "uuid:human", status }, items: {}
+    }, { resolve });
+    assert.deepEqual(create, [], `a ${status} race must not be created`);
+  }
 });
 
 test("a resolve that throws is a failure, not an aborted import", async () => {
@@ -148,7 +158,7 @@ test("a resolve that throws is a failure, not an aborted import", async () => {
 
 test("the summary counts what a player is about to agree to", () => {
   const plan = {
-    raceItem: { name: "Human", uuid: "u" },
+    raceItem: { name: "Human", uuid: "u", status: "create" },
     counts: {
       abilities: { create: 3, existing: 1, unmatched: 2 },
       classes: { create: 1, existing: 0, unmatched: 0 }

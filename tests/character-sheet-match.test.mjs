@@ -11,6 +11,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import { LYRIAN } from "../module/config.mjs";
+import { ambiguousNames, unmatchedNames } from "../module/rules/character-sheet-apply.mjs";
 import {
   buildImportPlan,
   labelIndex,
@@ -183,4 +184,89 @@ test("an empty sheet plans nothing", () => {
   assert.equal(plan.raceItem, null);
   assert.deepEqual(plannedActorUpdate(plan), {});
   assert.deepEqual(plan.counts.abilities, { create: 0, existing: 0, unmatched: 0 });
+});
+
+/* -------------------------------------------- */
+/*  Not stacking what must not stack             */
+/* -------------------------------------------- */
+
+test("a race already held is reported, never added a second time", () => {
+  // Every race Item on an actor adds its stat bonuses, so importing the same
+  // sheet twice used to double them.
+  const plan = buildImportPlan({ race: "Human" }, PACKS, {
+    localize, existing: [{ name: "Human", type: "race" }]
+  });
+
+  assert.equal(plan.raceItem.status, "existing");
+  assert.deepEqual(plan.warnings, []);
+});
+
+test("a race that differs from the one held is left to the player", () => {
+  const plan = buildImportPlan({ race: "Human" }, PACKS, {
+    localize, existing: [{ name: "Fae", type: "race" }]
+  });
+
+  assert.equal(plan.raceItem.status, "conflict");
+  assert.deepEqual(plan.warnings, [{ kind: "raceConflict", label: "Human" }]);
+});
+
+test("a race on a character with none is created", () => {
+  const plan = buildImportPlan({ race: "Human" }, PACKS, { localize });
+  assert.equal(plan.raceItem.status, "create");
+  assert.equal(plan.raceItem.uuid, "Compendium.x.races.1");
+});
+
+test("a race the packs do not carry is reported rather than ignored", () => {
+  const plan = buildImportPlan({ race: "Tribble" }, PACKS, { localize });
+  assert.equal(plan.raceItem, null);
+  assert.deepEqual(plan.warnings, [{ kind: "unknownRace", label: "Tribble" }]);
+});
+
+test("holding a weapon does not block importing an ability of that name", () => {
+  // Names collide across types in the rulebook, and the sheet's own tabs keep
+  // them apart, so the check has to as well.
+  const packs = {
+    ...PACKS,
+    abilities: [{ name: "Cleave", uuid: "ability" }],
+    inventory: [{ name: "Cleave", uuid: "weapon" }]
+  };
+  const plan = buildImportPlan(
+    { abilities: [{ name: "Cleave" }], inventory: [{ name: "Cleave" }] },
+    packs,
+    { localize, existing: [{ name: "Cleave", type: "weapon" }] }
+  );
+
+  assert.deepEqual(plan.counts.abilities, { create: 1, existing: 0, unmatched: 0 });
+  assert.equal(plan.items.abilities.create[0].entry.uuid, "ability");
+  assert.deepEqual(plan.counts.inventory, { create: 0, existing: 1, unmatched: 0 });
+});
+
+/* -------------------------------------------- */
+
+test("a name the compendiums carry twice is flagged, not silently guessed", () => {
+  // 40 of the shipped abilities share a name with a class's key ability. The
+  // spreadsheet's own lookup takes the first too, so the import matches its
+  // behaviour — and says so.
+  const packs = {
+    ...PACKS,
+    abilities: [
+      { name: "Advanced Artificing", uuid: "ability" },
+      { name: "Advanced Artificing", uuid: "key-ability" }
+    ]
+  };
+  const plan = buildImportPlan({ abilities: [{ name: "Advanced Artificing" }] }, packs, { localize });
+
+  assert.equal(plan.items.abilities.create[0].entry.uuid, "ability", "the first is taken");
+  assert.deepEqual(plan.warnings,
+    [{ kind: "ambiguousName", label: "Advanced Artificing", count: 2 }]);
+
+  // It is imported, so it does not belong on the "not found" line.
+  assert.deepEqual(unmatchedNames(plan), []);
+  assert.deepEqual(ambiguousNames(plan), ["Advanced Artificing"]);
+});
+
+test("a name matched once carries no ambiguity", () => {
+  const plan = buildImportPlan({ abilities: [{ name: "Cleave" }] }, PACKS, { localize });
+  assert.deepEqual(plan.warnings, []);
+  assert.equal(matchName("Cleave", PACKS.abilities).count, 1);
 });

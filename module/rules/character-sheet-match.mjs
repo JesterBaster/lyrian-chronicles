@@ -34,15 +34,23 @@ export function matchName(name, index = []) {
   const wanted = String(name ?? "").trim();
   if (!wanted) return null;
 
-  const exact = index.find((entry) => entry.name === wanted);
-  if (exact) return { entry: exact, how: "exact" };
-
   const lower = wanted.toLowerCase();
-  const caseless = index.find((entry) => String(entry.name ?? "").trim().toLowerCase() === lower);
-  if (caseless) return { entry: caseless, how: "caseless" };
+  const tiers = [
+    ["exact", (entry) => entry.name === wanted],
+    ["caseless", (entry) => String(entry.name ?? "").trim().toLowerCase() === lower],
+    ["normalised", (entry) => sameLabel(entry.name, wanted)]
+  ];
 
-  const normalised = index.find((entry) => sameLabel(entry.name, wanted));
-  return normalised ? { entry: normalised, how: "normalised" } : null;
+  for (const [how, test] of tiers) {
+    const found = index.filter(test);
+    // `count` is how many entries the winning rule matched, not how many exist:
+    // 40 of the shipped abilities share a name with a class's key ability of
+    // the same name, and the sheet carries nothing to tell them apart. The
+    // first is taken — as the spreadsheet's own lookup does — but the caller
+    // is told, so a player can correct it rather than discover it later.
+    if (found.length) return { entry: found[0], how, count: found.length };
+  }
+  return null;
 }
 
 /**
@@ -54,13 +62,18 @@ export function matchName(name, index = []) {
 export function matchNames(entries = [], index = []) {
   const matched = [];
   const unmatched = [];
+  const ambiguous = [];
   for (const source of entries) {
     const name = typeof source === "string" ? source : source?.name;
     const found = matchName(name, index);
-    if (found) matched.push({ name, entry: found.entry, how: found.how, source });
-    else unmatched.push(typeof source === "string" ? { name } : source);
+    if (!found) {
+      unmatched.push(typeof source === "string" ? { name } : source);
+      continue;
+    }
+    matched.push({ name, entry: found.entry, how: found.how, count: found.count, source });
+    if (found.count > 1) ambiguous.push({ name, count: found.count });
   }
-  return { matched, unmatched };
+  return { matched, unmatched, ambiguous };
 }
 
 /* -------------------------------------------- */
@@ -85,6 +98,36 @@ function keyFor(label, index) {
 }
 
 /* -------------------------------------------- */
+
+/** The item types each group of the plan can produce. */
+export const ITEM_TYPES = Object.freeze({
+  classes: ["class"],
+  abilities: ["ability"],
+  breakthroughs: ["breakthrough"],
+  inventory: ["weapon", "armor", "gear", "equipment"],
+  race: ["race"]
+});
+
+/** Decide what to do about the sheet's race, given what the actor already has. */
+function planRace(name, index, heldRaces, warnings) {
+  const wanted = String(name ?? "").trim();
+  if (!wanted) return null;
+
+  const found = matchName(wanted, index ?? []);
+  if (!found) {
+    warnings.push({ kind: "unknownRace", label: wanted });
+    return null;
+  }
+
+  const base = { name: found.entry.name, uuid: found.entry.uuid, how: found.how };
+  if (!heldRaces?.size) return { ...base, status: "create" };
+  if (heldRaces.has(wanted.toLowerCase()) || heldRaces.has(found.entry.name.trim().toLowerCase())) {
+    return { ...base, status: "existing" };
+  }
+
+  warnings.push({ kind: "raceConflict", label: wanted });
+  return { ...base, status: "conflict" };
+}
 
 /**
  * Everything an import would change, as data.
@@ -143,27 +186,50 @@ export function buildImportPlan(character = {}, packs = {}, { localize = (key) =
 
   // An item the actor already has is left alone rather than added twice; the
   // sheet carries no identity beyond the name, so the name is all there is.
-  const held = new Set((existing ?? []).map((item) => String(item?.name ?? "").trim().toLowerCase()));
-  const split = (entries, index) => {
+  //
+  // Held names are counted per item type, not in one pile. A character with a
+  // weapon called "Cleave" would otherwise never be able to import the ability
+  // of that name, and names do collide across types in the rulebook.
+  const heldByType = new Map();
+  for (const item of existing ?? []) {
+    const name = String(item?.name ?? "").trim().toLowerCase();
+    if (!name) continue;
+    const type = String(item?.type ?? "");
+    if (!heldByType.has(type)) heldByType.set(type, new Set());
+    heldByType.get(type).add(name);
+  }
+  const holds = (types, name) => types.some((type) =>
+    heldByType.get(type)?.has(String(name ?? "").trim().toLowerCase()));
+
+  const split = (entries, index, types) => {
     const wanted = (entries ?? []).filter((entry) => String(entry?.name ?? "").trim());
-    const alreadyHeld = wanted.filter((entry) => held.has(entry.name.trim().toLowerCase()));
-    const fresh = wanted.filter((entry) => !held.has(entry.name.trim().toLowerCase()));
-    const { matched, unmatched } = matchNames(fresh, index);
+    const alreadyHeld = wanted.filter((entry) => holds(types, entry.name));
+    const fresh = wanted.filter((entry) => !holds(types, entry.name));
+    const { matched, unmatched, ambiguous } = matchNames(fresh, index);
+    for (const entry of ambiguous) {
+      warnings.push({ kind: "ambiguousName", label: entry.name, count: entry.count });
+    }
     return { create: matched, existing: alreadyHeld, unmatched };
   };
 
   const items = {
-    classes: split(character.classes, packs.classes),
-    abilities: split(character.abilities, packs.abilities),
-    breakthroughs: split(character.breakthroughs, packs.breakthroughs),
-    inventory: split(character.inventory, packs.inventory)
+    classes: split(character.classes, packs.classes, ITEM_TYPES.classes),
+    abilities: split(character.abilities, packs.abilities, ITEM_TYPES.abilities),
+    breakthroughs: split(character.breakthroughs, packs.breakthroughs, ITEM_TYPES.breakthroughs),
+    inventory: split(character.inventory, packs.inventory, ITEM_TYPES.inventory)
   };
 
-  const race = character.race
-    ? matchName(character.race, packs.races ?? [])
-    : null;
+  // A race is never stacked. Every race Item on an actor adds its stat bonuses,
+  // so a second one silently doubles them — which is what re-importing the same
+  // sheet used to do. A race that differs from the one already held is reported
+  // and left alone, because swapping it means removing the old one and this
+  // never removes anything.
+  const raceItem = planRace(
+    character.race, packs.races, heldByType.get(ITEM_TYPES.race[0]), warnings
+  );
 
   return {
+    raceItem,
     details: {
       name: character.name ?? "",
       race: character.race ?? "",
@@ -174,7 +240,6 @@ export function buildImportPlan(character = {}, packs = {}, { localize = (key) =
       weight: character.identity?.weight ?? "",
       worship: character.identity?.worships ?? ""
     },
-    raceItem: race ? { name: race.entry.name, uuid: race.entry.uuid, how: race.how } : null,
     stats: statBlock(character.mainStats, mainIndex, "main"),
     subStats: statBlock(character.subStats, subIndex, "sub"),
     skills,

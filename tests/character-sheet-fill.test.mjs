@@ -18,6 +18,7 @@ import {
   characterExportView,
   exportWarningMessages,
   fillCharacterSheet,
+  MAX_WORKBOOK_BYTES,
   readCharacterSheet
 } from "../module/rules/character-sheet-workbook.mjs";
 
@@ -463,4 +464,23 @@ test("a sheet with only a Core tab reads back what it has", async () => {
   assert.deepEqual(character.abilities, [], "absent, not undefined");
   assert.deepEqual(character.breakthroughs, []);
   assert.deepEqual(character.inventory, []);
+});
+
+test("a file that is not a workbook at all gets the same plain answer", async () => {
+  // A player who picks a PDF should be told it is not the character sheet,
+  // rather than handed "no end-of-directory record" and a console to read.
+  const notEvenAZip = new TextEncoder().encode("%PDF-1.7\nnot a spreadsheet");
+  await assert.rejects(() => fillCharacterSheet(notEvenAZip, {}), /NotAWorkbook/);
+  await assert.rejects(() => readCharacterSheet(notEvenAZip), /NotAWorkbook/);
+
+  await assert.rejects(() => fillCharacterSheet(new Uint8Array(0), {}), /NotAWorkbook/);
+  await assert.rejects(() => fillCharacterSheet(undefined, {}), /NotAWorkbook/);
+});
+
+test("a file too big to be the sheet is refused before it is inflated", async () => {
+  // Picking the wrong file is an ordinary mistake; inflating a video in the
+  // browser locks the tab up with no way back.
+  const huge = { length: MAX_WORKBOOK_BYTES + 1 };
+  await assert.rejects(() => fillCharacterSheet(huge, {}), /WorkbookTooLarge/);
+  await assert.rejects(() => readCharacterSheet(huge), /WorkbookTooLarge/);
 });

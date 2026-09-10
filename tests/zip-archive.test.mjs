@@ -89,3 +89,39 @@ test("a trailing comment does not hide the directory", async () => {
   const back = await readArchive(withComment);
   assert.equal(read(back.get("a.xml")), "<a/>");
 });
+
+test("every entry carries a date that is actually a date", async () => {
+  // Leaving the DOS fields at zero writes month 0 and day 0. `unzip` shrugs,
+  // but anything that builds a real date from it does not.
+  const archive = await writeArchive(new Map([["a.txt", new TextEncoder().encode("hello")]]));
+  const view = new DataView(archive.buffer);
+
+  const time = view.getUint16(10, true);
+  const date = view.getUint16(12, true);
+  assert.equal(time, 0);
+  assert.equal(date & 0x1f, 1, "day of month");
+  assert.equal((date >> 5) & 0x0f, 1, "month");
+  assert.equal(date >>> 9, 0, "years since 1980");
+});
+
+test("a name that is not ASCII says so, and one that is stays quiet", async () => {
+  const bytes = new TextEncoder().encode("x");
+  const plain = await writeArchive(new Map([["a.txt", bytes]]));
+  assert.equal(new DataView(plain.buffer).getUint16(6, true), 0,
+    "an ASCII name needs no promise, and the header matches every other writer's");
+
+  const unicode = await writeArchive(new Map([["café.txt", bytes]]));
+  assert.equal(new DataView(unicode.buffer).getUint16(6, true) & 0x0800, 0x0800,
+    "bit 11 is what tells a reader the name is UTF-8 before it decodes one");
+
+  const back = await readArchive(unicode);
+  assert.deepEqual([...back.keys()], ["café.txt"]);
+});
+
+test("the same content written twice gives the same bytes", async () => {
+  // A fixed timestamp rather than the clock, so an export is reproducible.
+  const entries = () => new Map([["a.txt", new TextEncoder().encode("hello")]]);
+  const first = await writeArchive(entries());
+  const second = await writeArchive(entries());
+  assert.deepEqual([...first], [...second]);
+});

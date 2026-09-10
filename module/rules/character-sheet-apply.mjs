@@ -55,7 +55,11 @@ export async function plannedItemData(plan = {}, { resolve, proficiencies = {} }
   const failed = [];
 
   const entries = [];
-  if (plan.raceItem) entries.push({ kind: "races", uuid: plan.raceItem.uuid, source: {} });
+  // Only when the plan actually asked for one: a race the actor already holds,
+  // or one that conflicts with it, is reported rather than stacked.
+  if (plan.raceItem?.status === "create") {
+    entries.push({ kind: "races", uuid: plan.raceItem.uuid, name: plan.raceItem.name, source: {} });
+  }
   for (const [kind, group] of Object.entries(plan.items ?? {})) {
     for (const match of group.create ?? []) {
       entries.push({ kind, uuid: match.entry?.uuid, source: match.source ?? {}, name: match.name });
@@ -93,20 +97,36 @@ export async function plannedItemData(plan = {}, { resolve, proficiencies = {} }
 export function importSummary(plan = {}) {
   const counts = plan.counts ?? {};
   const total = (field) => Object.values(counts).reduce((sum, group) => sum + (group[field] ?? 0), 0);
+  const race = plan.raceItem?.status;
   return {
-    create: total("create") + (plan.raceItem ? 1 : 0),
-    existing: total("existing"),
+    create: total("create") + (race === "create" ? 1 : 0),
+    existing: total("existing") + (race === "existing" ? 1 : 0),
     unmatched: total("unmatched"),
     warnings: (plan.warnings ?? []).length
   };
 }
 
-/** Every name an import could not place, for the preview's list. */
+/**
+ * Every name an import could not place, for the preview's list.
+ *
+ * A name that matched more than one document is not one of these — it will be
+ * imported, just possibly as the wrong one of the two. That belongs in its own
+ * line, or a player reads "not found" about something that was.
+ */
 export function unmatchedNames(plan = {}) {
   const names = [];
   for (const group of Object.values(plan.items ?? {})) {
     for (const entry of group.unmatched ?? []) names.push(entry.name);
   }
-  for (const warning of plan.warnings ?? []) names.push(warning.label);
+  for (const warning of plan.warnings ?? []) {
+    if (warning.kind !== "ambiguousName") names.push(warning.label);
+  }
   return names;
+}
+
+/** Names the compendiums carry more than one of, which the player must settle. */
+export function ambiguousNames(plan = {}) {
+  return (plan.warnings ?? [])
+    .filter((warning) => warning.kind === "ambiguousName")
+    .map((warning) => warning.label);
 }

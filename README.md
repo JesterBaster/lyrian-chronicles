@@ -123,12 +123,16 @@ be placed are listed so you can add them by hand.
 
 **An import adds and updates; it never deletes.** A spreadsheet is a copy of a character, not the
 authority on one, so anything gained in Foundry since the last export is kept. Stats, skills and
-identity are overwritten with the sheet's values; items the character already has by name are left
-alone rather than added twice.
+identity are overwritten wherever the sheet has a value, and a blank cell is left as it is rather
+than treated as a zero. Items the character already has by name are left alone rather than added
+twice, and a race is never added on top of one the character already has — every race item adds its
+stat bonuses, so a second would silently double them.
 
 Matching tries an exact name first, then case-insensitively, then ignoring punctuation and spacing —
 in that order, so an exact hit always wins outright. Against the shipped content this places all
-1,137 abilities, all 89 breakthroughs and all 185 classes the spreadsheet lists.
+1,137 abilities, all 89 breakthroughs and all 185 classes the spreadsheet lists. Where a name
+matches more than one entry — 40 abilities share a name with a class's key ability — the first is
+taken, as the spreadsheet's own lookup does, and the preview lists them so you can check.
 
 What the sheet says and what the compendium says are kept apart. The pack owns what an item *is* —
 its burden, price and rules text. The sheet owns what this character's copy looks like: how many

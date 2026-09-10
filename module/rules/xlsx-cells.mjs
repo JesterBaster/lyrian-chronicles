@@ -41,8 +41,20 @@ function decodeXml(value) {
     .replace(/&amp;/g, "&");   // last, or an &amp;lt; decodes twice
 }
 
+/**
+ * Escape a value for an XML text node, and drop what XML cannot hold at all.
+ *
+ * The control characters go first and without ceremony: XML 1.0 forbids them
+ * outright, there is no escape that makes them legal, and one of them anywhere
+ * in the file makes the whole workbook unopenable. They arrive by ordinary
+ * means — an item name pasted out of a PDF or a Word document — and the export
+ * would otherwise report success and hand back a file Excel refuses, with
+ * nothing to say why. Tab, newline and carriage return are the three XML keeps.
+ */
 export function encodeXml(value) {
   return String(value ?? "")
+    // eslint-disable-next-line no-control-regex
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, "")
     .replace(/&/g, "&amp;")    // first, for the same reason
     .replace(/</g, "&lt;").replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;").replace(/'/g, "&apos;");

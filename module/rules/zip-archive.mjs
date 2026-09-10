@@ -17,6 +17,20 @@ const END_OF_DIRECTORY = 0x06054b50;
 const STORED = 0;
 const DEFLATED = 8;
 
+/**
+ * 1980-01-01 00:00, in the packed DOS fields a ZIP header carries.
+ *
+ * Leaving the fields at zero writes month 0 and day 0, which is not a date at
+ * all — `unzip` shrugs but anything that builds a real date from it does not.
+ * A fixed one rather than the clock also makes an export reproducible: the same
+ * character written twice gives the same bytes.
+ */
+const DOS_TIME = 0;
+const DOS_DATE = (0 << 9) | (1 << 5) | 1;
+
+/** Bit 11 promises the name is UTF-8, which a reader needs before it decodes one. */
+const UTF8_NAME = 0x0800;
+
 /** CRC-32, which every entry carries and a reader will check. */
 const CRC_TABLE = (() => {
   const table = new Uint32Array(256);
@@ -119,6 +133,9 @@ export async function writeArchive(entries) {
 
   for (const [name, contents] of entries) {
     const nameBytes = encoder.encode(name);
+    // Pure ASCII needs no promise, and not making one keeps the header
+    // identical to what every other writer produces for the same name.
+    const flags = /^[\x20-\x7e]*$/.test(name) ? 0 : UTF8_NAME;
     const body = contents ?? new Uint8Array(0);
     const deflated = await deflateRaw(body);
     // Compression that makes a part bigger is not compression.
@@ -131,8 +148,10 @@ export async function writeArchive(entries) {
     const headerView = new DataView(header.buffer);
     headerView.setUint32(0, LOCAL_HEADER, true);
     headerView.setUint16(4, 20, true);            // version needed
-    headerView.setUint16(6, 0, true);             // flags: no data descriptor
+    headerView.setUint16(6, flags, true);          // no data descriptor
     headerView.setUint16(8, method, true);
+    headerView.setUint16(10, DOS_TIME, true);
+    headerView.setUint16(12, DOS_DATE, true);
     headerView.setUint32(14, checksum, true);
     headerView.setUint32(18, payload.length, true);
     headerView.setUint32(22, body.length, true);
@@ -140,7 +159,7 @@ export async function writeArchive(entries) {
     header.set(nameBytes, 30);
 
     parts.push(header, payload);
-    directory.push({ nameBytes, method, checksum, payload, body, offset });
+    directory.push({ nameBytes, flags, method, checksum, payload, body, offset });
     offset += header.length + payload.length;
   }
 
@@ -151,7 +170,10 @@ export async function writeArchive(entries) {
     recordView.setUint32(0, CENTRAL_HEADER, true);
     recordView.setUint16(4, 20, true);            // version made by
     recordView.setUint16(6, 20, true);            // version needed
+    recordView.setUint16(8, entry.flags, true);
     recordView.setUint16(10, entry.method, true);
+    recordView.setUint16(12, DOS_TIME, true);
+    recordView.setUint16(14, DOS_DATE, true);
     recordView.setUint32(16, entry.checksum, true);
     recordView.setUint32(20, entry.payload.length, true);
     recordView.setUint32(24, entry.body.length, true);

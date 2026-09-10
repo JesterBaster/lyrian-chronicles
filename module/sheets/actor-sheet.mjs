@@ -43,6 +43,7 @@ import {
 } from "../rules/character-sheet-workbook.mjs";
 import { buildImportPlan, plannedActorUpdate } from "../rules/character-sheet-match.mjs";
 import {
+  ambiguousNames,
   importSummary,
   plannedItemData,
   unmatchedNames
@@ -50,6 +51,20 @@ import {
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
+
+/**
+ * Which message a failed spreadsheet read deserves.
+ *
+ * The two a player can act on are named; anything else is a bug and says so
+ * rather than blaming their file.
+ */
+function workbookErrorKey(error, fallback) {
+  if (error?.message === "WorkbookTooLarge") return "LYRIAN.Warn.WorkbookTooLarge";
+  if (error?.message === "MissingSheet" || error?.message === "NotAWorkbook") {
+    return "LYRIAN.Warn.ExportNotTheTemplate";
+  }
+  return fallback;
+}
 
 /**
  * Character and NPC sheet.
@@ -1710,10 +1725,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         count: result.written.length
       }));
     } catch (error) {
-      const key = error?.message === "MissingSheet" || error?.message === "NotAWorkbook"
-        ? "LYRIAN.Warn.ExportNotTheTemplate"
-        : "LYRIAN.Warn.ExportFailed";
-      ui.notifications.error(game.i18n.localize(key));
+      ui.notifications.error(game.i18n.localize(workbookErrorKey(error, "LYRIAN.Warn.ExportFailed")));
       console.error("Lyrian Chronicles | character sheet export failed", error);
     } finally {
       target.disabled = false;
@@ -1784,21 +1796,28 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       });
 
       const summary = importSummary(plan);
-      const missing = unmatchedNames(plan);
-      const detail = missing.length
-        ? `<p class="lyr-note">${game.i18n.format("LYRIAN.Import.Unmatched", {
-            names: missing.join(", ")
-          })}</p>`
-        : "";
+      // Every name below came out of a file the player chose, so none of it is
+      // trusted markup — it is escaped before it reaches the dialog.
+      const escape = foundry.utils.escapeHTML;
+      const note = (key, names) => (names.length
+        ? `<p class="lyr-note">${game.i18n.format(key, { names: escape(names.join(", ")) })}</p>`
+        : "");
 
       const confirmed = await foundry.applications.api.DialogV2.confirm({
         window: { title: game.i18n.localize("LYRIAN.Import.Title") },
         content: `<p>${game.i18n.format("LYRIAN.Import.Summary", {
-          name: plan.details.name || actor.name,
+          name: escape(plan.details.name || actor.name),
           create: summary.create,
           existing: summary.existing,
           unmatched: summary.unmatched
-        })}</p><p>${game.i18n.localize("LYRIAN.Import.NeverDeletes")}</p>${detail}`
+        })}</p><p>${game.i18n.localize("LYRIAN.Import.NeverDeletes")}</p>`
+          + note("LYRIAN.Import.Unmatched", unmatchedNames(plan))
+          + note("LYRIAN.Import.Ambiguous", ambiguousNames(plan))
+          + (plan.raceItem?.status === "conflict"
+            ? `<p class="lyr-note">${game.i18n.format("LYRIAN.Import.RaceConflict", {
+                name: escape(plan.raceItem.name)
+              })}</p>`
+            : "")
       });
       if (!confirmed) return;
 
@@ -1817,16 +1836,13 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
       if (failed.length) {
         ui.notifications.warn(game.i18n.format("LYRIAN.Warn.ImportUnresolved", {
-          names: failed.map((entry) => entry.name).filter(Boolean).join(", "),
+          names: failed.map((entry) => entry.name).filter(Boolean).join(", ") || "—",
           count: failed.length
         }));
       }
       ui.notifications.info(game.i18n.format("LYRIAN.Import.Done", { count: create.length }));
     } catch (error) {
-      const key = error?.message === "MissingSheet" || error?.message === "NotAWorkbook"
-        ? "LYRIAN.Warn.ExportNotTheTemplate"
-        : "LYRIAN.Warn.ImportFailed";
-      ui.notifications.error(game.i18n.localize(key));
+      ui.notifications.error(game.i18n.localize(workbookErrorKey(error, "LYRIAN.Warn.ImportFailed")));
       console.error("Lyrian Chronicles | character sheet import failed", error);
     } finally {
       target.disabled = false;

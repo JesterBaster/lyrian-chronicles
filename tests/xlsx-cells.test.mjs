@@ -128,3 +128,25 @@ test("a sheet's name resolves to the part that holds it", () => {
   assert.equal(paths.get("EXP & Transactions"), "xl/worksheets/sheet7.xml",
     "the tab name is what a caller knows it by, entities and all");
 });
+
+test("characters XML cannot hold are dropped, not escaped", () => {
+  // There is no escape that makes a control character legal in XML 1.0, and one
+  // anywhere in the file makes the whole workbook unopenable — with nothing in
+  // the export to say why. They arrive by ordinary means: an item name pasted
+  // out of a PDF.
+  const nul = String.fromCharCode(0);
+  const bell = String.fromCharCode(7);
+  const formFeed = String.fromCharCode(12);
+  assert.equal(encodeXml(`Rope${bell} (coiled)`), "Rope (coiled)");
+  assert.equal(encodeXml(`a${nul}b${formFeed}c`), "abc");
+
+  // The three XML does keep, because a description legitimately holds them.
+  assert.equal(encodeXml("a\tb\nc\rd"), "a\tb\nc\rd");
+
+  // And the ordinary escaping still happens.
+  assert.equal(encodeXml(`Tom${bell} & "Jerry"`), "Tom &amp; &quot;Jerry&quot;");
+
+  const sheet = '<row r="1"><c r="A1" s="2"/></row>';
+  const { xml } = writeCell(sheet, "A1", `Rope${nul}`);
+  assert.match(xml, /<t xml:space="preserve">Rope<\/t>/);
+});

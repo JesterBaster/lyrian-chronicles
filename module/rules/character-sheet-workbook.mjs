@@ -203,7 +203,7 @@ export function characterExportView(actor, { localize = (key) => key } = {}) {
  */
 export async function fillCharacterSheet(template, character, { sheetNames = {} } = {}) {
   const names = { ...SHEET_NAMES, ...sheetNames };
-  const entries = await readArchive(template);
+  const entries = await openWorkbook(template);
   const decoder = new TextDecoder();
   const encoder = new TextEncoder();
   const text = (path) => (entries.has(path) ? decoder.decode(entries.get(path)) : "");
@@ -299,7 +299,7 @@ export async function fillCharacterSheet(template, character, { sheetNames = {} 
  */
 export async function readCharacterSheet(workbook, { sheetNames = {} } = {}) {
   const names = { ...SHEET_NAMES, ...sheetNames };
-  const entries = await readArchive(workbook);
+  const entries = await openWorkbook(workbook);
   const decoder = new TextDecoder();
   const text = (path) => (entries.has(path) ? decoder.decode(entries.get(path)) : "");
 
@@ -403,6 +403,33 @@ export function exportWarningMessages({ warnings = [], refused = [] } = {}) {
   }
 
   return messages;
+}
+
+/**
+ * The largest file worth trying to open.
+ *
+ * The template is under a megabyte. This is not a limit anyone will meet by
+ * accident with the right file — it is there because picking the wrong one is
+ * an ordinary mistake, and inflating a video in the browser locks the tab up
+ * with no way back.
+ */
+export const MAX_WORKBOOK_BYTES = 32 * 1024 * 1024;
+
+/**
+ * Unpack a workbook, reporting anything unreadable as the same plain answer.
+ *
+ * A player who picks a PDF should be told it is not the character sheet, not
+ * handed "no end-of-directory record" and a console to read.
+ */
+async function openWorkbook(bytes) {
+  if (!bytes?.length) throw new Error("NotAWorkbook");
+  if (bytes.length > MAX_WORKBOOK_BYTES) throw new Error("WorkbookTooLarge");
+  try {
+    return await readArchive(bytes);
+  } catch (error) {
+    if (error?.message === "WorkbookTooLarge") throw error;
+    throw new Error("NotAWorkbook");
+  }
 }
 
 /** A filename a player will recognise a week later. */
