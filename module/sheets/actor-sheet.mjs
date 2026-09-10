@@ -38,11 +38,33 @@ import {
   characterExportView,
   exportFileName,
   exportWarningMessages,
-  fillCharacterSheet
+  fillCharacterSheet,
+  readCharacterSheet
 } from "../rules/character-sheet-workbook.mjs";
+import { buildImportPlan, plannedActorUpdate } from "../rules/character-sheet-match.mjs";
+import {
+  ambiguousNames,
+  importSummary,
+  plannedItemData,
+  unmatchedNames
+} from "../rules/character-sheet-apply.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
+
+/**
+ * Which message a failed spreadsheet read deserves.
+ *
+ * The two a player can act on are named; anything else is a bug and says so
+ * rather than blaming their file.
+ */
+function workbookErrorKey(error, fallback) {
+  if (error?.message === "WorkbookTooLarge") return "LYRIAN.Warn.WorkbookTooLarge";
+  if (error?.message === "MissingSheet" || error?.message === "NotAWorkbook") {
+    return "LYRIAN.Warn.ExportNotTheTemplate";
+  }
+  return fallback;
+}
 
 /**
  * Character and NPC sheet.
@@ -101,7 +123,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       endCraft: LyrianActorSheet.#onEndCraft,
       restartCraft: LyrianActorSheet.#onRestartCraft,
       setProjectOutput: LyrianActorSheet.#onSetProjectOutput,
-      exportCharacterSheet: LyrianActorSheet.#onExportCharacterSheet
+      exportCharacterSheet: LyrianActorSheet.#onExportCharacterSheet,
+      importCharacterSheet: LyrianActorSheet.#onImportCharacterSheet
     },
     dragDrop: [{ dragSelector: "[data-drag]", dropSelector: null }]
   };
@@ -1702,11 +1725,125 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         count: result.written.length
       }));
     } catch (error) {
-      const key = error?.message === "MissingSheet" || error?.message === "NotAWorkbook"
-        ? "LYRIAN.Warn.ExportNotTheTemplate"
-        : "LYRIAN.Warn.ExportFailed";
-      ui.notifications.error(game.i18n.localize(key));
+      ui.notifications.error(game.i18n.localize(workbookErrorKey(error, "LYRIAN.Warn.ExportFailed")));
       console.error("Lyrian Chronicles | character sheet export failed", error);
+    } finally {
+      target.disabled = false;
+    }
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * The compendium names an import matches against.
+   *
+   * Indexes, not documents: 1,138 abilities loaded in full to match a dozen
+   * names would be a long wait for nothing. The matched few are fetched
+   * afterwards, once it is known which ones are wanted.
+   */
+  async #importIndexes() {
+    const index = async (...packNames) => {
+      const rows = [];
+      for (const packName of packNames) {
+        const pack = game.packs.get(`lyrian-chronicles.${packName}`);
+        if (!pack) continue;
+        for (const entry of await pack.getIndex()) {
+          rows.push({ name: entry.name, uuid: entry.uuid });
+        }
+      }
+      return rows;
+    };
+
+    return {
+      abilities: await index("player-abilities"),
+      breakthroughs: await index("breakthroughs"),
+      classes: await index("classes"),
+      races: await index("races"),
+      inventory: await index(
+        "weapons", "armor-shields", "consumables", "gear-kits", "artifices", "materials", "mods"
+      )
+    };
+  }
+
+  /**
+   * Read a filled spreadsheet onto this character.
+   *
+   * Owner-only, unlike exporting, because this writes. Nothing happens until
+   * the player has seen a summary of what would: the plan is built, previewed
+   * and only then applied.
+   *
+   * An import adds and updates; it never deletes. A sheet is a copy of a
+   * character rather than the authority on one, and a player who has been
+   * playing since they last exported would otherwise lose everything since.
+   */
+  static async #onImportCharacterSheet(event, target) {
+    const actor = this.document;
+    if (!actor.isOwner) {
+      return ui.notifications.warn(game.i18n.format("LYRIAN.Warn.NotOwner", { name: actor.name }));
+    }
+
+    const picked = await pickFile({
+      accept: ".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    });
+    if (!picked) return;
+
+    target.disabled = true;
+    try {
+      const { character } = await readCharacterSheet(picked.bytes);
+      const plan = buildImportPlan(character, await this.#importIndexes(), {
+        localize: (key) => game.i18n.localize(key),
+        existing: actor.items.map((item) => ({ name: item.name, type: item.type }))
+      });
+
+      const summary = importSummary(plan);
+      // Every name below came out of a file the player chose, so none of it is
+      // trusted markup — it is escaped before it reaches the dialog.
+      const escape = foundry.utils.escapeHTML;
+      const note = (key, names) => (names.length
+        ? `<p class="lyr-note">${game.i18n.format(key, { names: escape(names.join(", ")) })}</p>`
+        : "");
+
+      const confirmed = await foundry.applications.api.DialogV2.confirm({
+        window: { title: game.i18n.localize("LYRIAN.Import.Title") },
+        content: `<p>${game.i18n.format("LYRIAN.Import.Summary", {
+          name: escape(plan.details.name || actor.name),
+          create: summary.create,
+          existing: summary.existing,
+          unmatched: summary.unmatched
+        })}</p><p>${game.i18n.localize("LYRIAN.Import.NeverDeletes")}</p>`
+          + note("LYRIAN.Import.Unmatched", unmatchedNames(plan))
+          + note("LYRIAN.Import.Ambiguous", ambiguousNames(plan))
+          + (plan.raceItem?.status === "conflict"
+            ? `<p class="lyr-note">${game.i18n.format("LYRIAN.Import.RaceConflict", {
+                name: escape(plan.raceItem.name)
+              })}</p>`
+            : "")
+      });
+      if (!confirmed) return;
+
+      const proficiency = collectActorProficiencies(actor).groups;
+      const { create, failed } = await plannedItemData(plan, {
+        resolve: async (uuid) => (await fromUuid(uuid))?.toObject() ?? null,
+        proficiencies: {
+          weapons: proficiency.weapons.map((entry) => entry.name),
+          armor: proficiency.armor.map((entry) => entry.name)
+        }
+      });
+
+      const update = plannedActorUpdate(plan);
+      if (Object.keys(update).length) await actor.update(update);
+      if (create.length) await actor.createEmbeddedDocuments("Item", create);
+
+      if (failed.length) {
+        ui.notifications.warn(game.i18n.format("LYRIAN.Warn.ImportUnresolved", {
+          names: failed.map((entry) => entry.name).filter(Boolean).join(", ") || "—",
+          count: failed.length
+        }));
+      }
+      ui.notifications.info(game.i18n.format("LYRIAN.Import.Done", { count: create.length }));
+    } catch (error) {
+      ui.notifications.error(game.i18n.localize(workbookErrorKey(error, "LYRIAN.Warn.ImportFailed")));
+      console.error("Lyrian Chronicles | character sheet import failed", error);
     } finally {
       target.disabled = false;
     }

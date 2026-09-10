@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
-  assignStatArray, coreSheetCells, discoverCoreLayout, locateBlankRun, locateRows, sameLabel
+  assignStatArray, coreSheetCells, discoverCoreLayout, locateRows, rowRange, sameLabel
 } from "../module/rules/character-sheet-export.mjs";
 
 /* -------------------------------------------- */
@@ -36,10 +36,13 @@ test("a block is found by its own labels, not by a remembered row", () => {
   assert.equal(after.get("Stealth"), 12);
 });
 
-test("a free list is however many blank rows the template leaves", () => {
-  const sheet = { A15: "", A16: "", A17: "Taken", A18: "" };
-  assert.deepEqual(locateBlankRun((ref) => sheet[ref] ?? "", { column: "A", from: 15, to: 18 }),
-    [15, 16, 18]);
+test("a free list is the whole range, filled or not", () => {
+  // Skipping the rows that already hold something would append a second copy
+  // below the first on a re-export, and would make the block unfindable when
+  // reading a filled sheet back.
+  assert.deepEqual(rowRange(15, 18), [15, 16, 17, 18]);
+  assert.deepEqual(rowRange(9, 9), [9]);
+  assert.deepEqual(rowRange(9, 8), [], "an empty range, not a negative one");
 });
 
 /* -------------------------------------------- */
@@ -213,8 +216,8 @@ test("the layout is read from the template, arrays included", () => {
     E45: "Focus", E46: "Power", E47: "Agility", E48: "Toughness",
     G45: "Fitness", G46: "Cunning", G47: "Reason", G48: "Awareness", G49: "Presence",
     E9: "Athletics", E10: "Riding", E11: "Stealth",
-    N9: "", N10: "", N11: "Taken",
-    A15: "", A16: "", A17: "Taken"
+    N9: "", N10: "", N11: "Blacksmithing",
+    A15: "", A16: "", A17: "Fighter"
   };
   const layout = discoverCoreLayout((ref) => sheet[ref] ?? "");
 
@@ -224,8 +227,12 @@ test("the layout is read from the template, arrays included", () => {
   assert.deepEqual([...layout.mainBonusRows.values()],
     ["Focus", "Power", "Agility", "Toughness"]);
   assert.equal(layout.skillRows.get("Stealth"), 11);
-  assert.deepEqual(layout.craftingRows, [9, 10, 12, 13, 14]);
-  assert.deepEqual(layout.classRows.slice(0, 2), [15, 16]);
+  // The free lists are their whole range. A sheet that already holds a crafting
+  // skill or a class still reports the row it sits on, so a second export
+  // overwrites that row rather than writing a duplicate underneath it.
+  assert.deepEqual(layout.craftingRows, [9, 10, 11, 12, 13, 14]);
+  assert.deepEqual(layout.classRows.slice(0, 3), [15, 16, 17]);
+  assert.equal(layout.classRows.length, 21);
 });
 
 test("a template with a changed array is followed, not corrected", () => {

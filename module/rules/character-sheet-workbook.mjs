@@ -22,6 +22,12 @@ import {
 } from "./xlsx-cells.mjs";
 import { coreSheetCells, discoverCoreLayout } from "./character-sheet-export.mjs";
 import {
+  readAbilitySheet,
+  readBreakthroughSheet,
+  readCoreSheet,
+  readInventorySheet
+} from "./character-sheet-import.mjs";
+import {
   abilitySheetCells,
   breakthroughSheetCells,
   discoverAbilityLayout,
@@ -197,7 +203,7 @@ export function characterExportView(actor, { localize = (key) => key } = {}) {
  */
 export async function fillCharacterSheet(template, character, { sheetNames = {} } = {}) {
   const names = { ...SHEET_NAMES, ...sheetNames };
-  const entries = await readArchive(template);
+  const entries = await openWorkbook(template);
   const decoder = new TextDecoder();
   const encoder = new TextEncoder();
   const text = (path) => (entries.has(path) ? decoder.decode(entries.get(path)) : "");
@@ -281,6 +287,64 @@ export async function fillCharacterSheet(template, character, { sheetNames = {} 
 }
 
 /**
+ * Read a filled sheet back into the same view the export writes.
+ *
+ * Deliberately the same entry shape as `characterExportView`, so a workbook can
+ * be exported, imported and compared field for field. Nothing here touches an
+ * actor or a compendium: names come back as names.
+ *
+ * @param {Uint8Array} workbook   A filled copy of the template.
+ * @param {{sheetNames?: object}} [options]
+ * @returns {Promise<{character: object, tabs: string[]}>}
+ */
+export async function readCharacterSheet(workbook, { sheetNames = {} } = {}) {
+  const names = { ...SHEET_NAMES, ...sheetNames };
+  const entries = await openWorkbook(workbook);
+  const decoder = new TextDecoder();
+  const text = (path) => (entries.has(path) ? decoder.decode(entries.get(path)) : "");
+
+  const book = text("xl/workbook.xml");
+  if (!book) throw new Error("NotAWorkbook");
+
+  const paths = sheetPathsByName(book, text("xl/_rels/workbook.xml.rels"));
+  const shared = readSharedStrings(text("xl/sharedStrings.xml"));
+  const sheetXml = (name) => {
+    const path = paths.get(name);
+    return path && entries.has(path) ? decoder.decode(entries.get(path)) : null;
+  };
+
+  const core = sheetXml(names.core);
+  if (core === null) throw new Error("MissingSheet");
+
+  const read = (ref) => readCell(core, ref, shared).value;
+  const character = readCoreSheet(read, discoverCoreLayout(read));
+  const present = [names.core];
+
+  const abilities = sheetXml(names.abilities);
+  if (abilities !== null) {
+    const columns = (column) => readColumn(abilities, column, shared);
+    character.abilities = readAbilitySheet(columns, discoverAbilityLayout(columns));
+    present.push(names.abilities);
+  } else character.abilities = [];
+
+  const breakthrough = sheetXml(names.breakthrough);
+  if (breakthrough !== null) {
+    const columns = (column) => readColumn(breakthrough, column, shared);
+    character.breakthroughs = readBreakthroughSheet(columns, discoverBreakthroughLayout(columns));
+    present.push(names.breakthrough);
+  } else character.breakthroughs = [];
+
+  const inventory = sheetXml(names.inventory);
+  if (inventory !== null) {
+    const columns = (column) => readColumn(inventory, column, shared);
+    character.inventory = readInventorySheet(columns, discoverInventoryLayout(columns));
+    present.push(names.inventory);
+  } else character.inventory = [];
+
+  return { character, tabs: present };
+}
+
+/**
  * Turn an export result into the warnings a player can act on.
  *
  * Returned as keys and data rather than formatted text so this stays testable
@@ -339,6 +403,33 @@ export function exportWarningMessages({ warnings = [], refused = [] } = {}) {
   }
 
   return messages;
+}
+
+/**
+ * The largest file worth trying to open.
+ *
+ * The template is under a megabyte. This is not a limit anyone will meet by
+ * accident with the right file — it is there because picking the wrong one is
+ * an ordinary mistake, and inflating a video in the browser locks the tab up
+ * with no way back.
+ */
+export const MAX_WORKBOOK_BYTES = 32 * 1024 * 1024;
+
+/**
+ * Unpack a workbook, reporting anything unreadable as the same plain answer.
+ *
+ * A player who picks a PDF should be told it is not the character sheet, not
+ * handed "no end-of-directory record" and a console to read.
+ */
+async function openWorkbook(bytes) {
+  if (!bytes?.length) throw new Error("NotAWorkbook");
+  if (bytes.length > MAX_WORKBOOK_BYTES) throw new Error("WorkbookTooLarge");
+  try {
+    return await readArchive(bytes);
+  } catch (error) {
+    if (error?.message === "WorkbookTooLarge") throw error;
+    throw new Error("NotAWorkbook");
+  }
 }
 
 /** A filename a player will recognise a week later. */

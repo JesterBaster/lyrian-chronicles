@@ -17,7 +17,9 @@ import { CORE_SKILL_LABELS } from "../module/rules/character-sheet-export.mjs";
 import {
   characterExportView,
   exportWarningMessages,
-  fillCharacterSheet
+  fillCharacterSheet,
+  MAX_WORKBOOK_BYTES,
+  readCharacterSheet
 } from "../module/rules/character-sheet-workbook.mjs";
 
 const encoder = new TextEncoder();
@@ -390,4 +392,95 @@ test("a character who does not fit the sheet is told what was left out", () => {
   assert.equal(messages[0].data.stats, "Power, Focus");
   assert.equal(messages[4].data.count, 2, "one message for the lot, not one each");
   assert.deepEqual(exportWarningMessages({}), []);
+});
+
+/* -------------------------------------------- */
+/*  Round trip                                   */
+/* -------------------------------------------- */
+
+/** Everything the sheet can carry, in a shape two views can be compared in. */
+const comparable = (view) => ({
+  name: view.name, race: view.race, subRace: view.subRace, identity: view.identity,
+  mainStats: view.mainStats.filter((s) => s.value || s.bonus)
+    .map(({ label, value, bonus }) => ({ label, value, bonus }))
+    .sort((a, b) => a.label.localeCompare(b.label)),
+  subStats: view.subStats.filter((s) => s.value || s.bonus)
+    .map(({ label, value, bonus }) => ({ label, value, bonus }))
+    .sort((a, b) => a.label.localeCompare(b.label)),
+  skills: view.skills.filter((s) => s.rank || s.expertise)
+    .map(({ label, rank, expertise }) => ({ label, rank, expertise }))
+    .sort((a, b) => a.label.localeCompare(b.label)),
+  // The sheet has a label column and no key column, so keys are dropped.
+  craftingSkills: view.craftingSkills.map(({ label, rank }) => ({ label, rank })),
+  classes: view.classes,
+  // The sheet groups abilities into an active block and a passive one, so it
+  // cannot preserve the order they sat in on the actor — only the membership.
+  abilities: [...view.abilities].sort((a, b) => a.name.localeCompare(b.name)),
+  breakthroughs: view.breakthroughs,
+  inventory: view.inventory.map(({ name, location, quantity, burden, value, description }) =>
+    ({ name, location, quantity, burden, value, description }))
+});
+
+test("a character exported and read back is the character that went in", async () => {
+  const template = await templateArchive();
+  const before = characterExportView(ACTOR, { localize });
+  const filled = await fillCharacterSheet(template, before);
+  const { character: after, tabs } = await readCharacterSheet(filled.bytes);
+
+  assert.deepEqual(tabs, ["Core", "Abilities", "Breakthrough", "Inventory"]);
+  assert.deepEqual(comparable(after), comparable(before));
+});
+
+test("exporting twice does not write the character in twice", async () => {
+  // The free lists — crafting skills and classes — are the ones at risk: a
+  // layout that named only the blank rows would put the second copy under the
+  // first, and the reader would find both.
+  const template = await templateArchive();
+  const view = characterExportView(ACTOR, { localize });
+  const once = await fillCharacterSheet(template, view);
+  const twice = await fillCharacterSheet(once.bytes, view);
+
+  const { character } = await readCharacterSheet(twice.bytes);
+  assert.deepEqual(comparable(character), comparable(view));
+});
+
+test("reading a file that is not the template says so", async () => {
+  const notAWorkbook = await writeArchive(new Map([["notes.txt", bytes("hello")]]));
+  await assert.rejects(() => readCharacterSheet(notAWorkbook), /NotAWorkbook/);
+});
+
+test("a sheet with only a Core tab reads back what it has", async () => {
+  const full = await readArchive(await templateArchive());
+  const trimmed = new Map([...full].filter(([name]) => !name.startsWith("xl/worksheets/sheet2")));
+  trimmed.set("xl/workbook.xml", bytes('<?xml version="1.0"?><workbook><sheets>' +
+    '<sheet name="Core" sheetId="1" r:id="rId1"/></sheets></workbook>'));
+
+  const filled = await fillCharacterSheet(await writeArchive(trimmed),
+    characterExportView(ACTOR, { localize }));
+  const { character, tabs } = await readCharacterSheet(filled.bytes);
+
+  assert.deepEqual(tabs, ["Core"]);
+  assert.equal(character.name, "Kaelen Vos");
+  assert.deepEqual(character.abilities, [], "absent, not undefined");
+  assert.deepEqual(character.breakthroughs, []);
+  assert.deepEqual(character.inventory, []);
+});
+
+test("a file that is not a workbook at all gets the same plain answer", async () => {
+  // A player who picks a PDF should be told it is not the character sheet,
+  // rather than handed "no end-of-directory record" and a console to read.
+  const notEvenAZip = new TextEncoder().encode("%PDF-1.7\nnot a spreadsheet");
+  await assert.rejects(() => fillCharacterSheet(notEvenAZip, {}), /NotAWorkbook/);
+  await assert.rejects(() => readCharacterSheet(notEvenAZip), /NotAWorkbook/);
+
+  await assert.rejects(() => fillCharacterSheet(new Uint8Array(0), {}), /NotAWorkbook/);
+  await assert.rejects(() => fillCharacterSheet(undefined, {}), /NotAWorkbook/);
+});
+
+test("a file too big to be the sheet is refused before it is inflated", async () => {
+  // Picking the wrong file is an ordinary mistake; inflating a video in the
+  // browser locks the tab up with no way back.
+  const huge = { length: MAX_WORKBOOK_BYTES + 1 };
+  await assert.rejects(() => fillCharacterSheet(huge, {}), /WorkbookTooLarge/);
+  await assert.rejects(() => readCharacterSheet(huge), /WorkbookTooLarge/);
 });
