@@ -13,11 +13,72 @@
 
 import { LYRIAN } from "../config.mjs";
 import { readArchive, writeArchive } from "./zip-archive.mjs";
-import { readCell, readSharedStrings, sheetPathsByName, writeCells } from "./xlsx-cells.mjs";
+import {
+  readCell,
+  readColumn,
+  readSharedStrings,
+  sheetPathsByName,
+  writeCells
+} from "./xlsx-cells.mjs";
 import { coreSheetCells, discoverCoreLayout } from "./character-sheet-export.mjs";
+import {
+  abilitySheetCells,
+  breakthroughSheetCells,
+  discoverAbilityLayout,
+  discoverBreakthroughLayout,
+  discoverInventoryLayout,
+  INVENTORY_LOCATIONS,
+  inventorySheetCells,
+  plainText
+} from "./character-sheet-tabs.mjs";
 
-/** The template's tab that this fills. */
-export const CORE_SHEET_NAME = "Core";
+/** The template's tabs that this fills, and the two it reads names from. */
+export const SHEET_NAMES = Object.freeze({
+  core: "Core",
+  abilities: "Abilities",
+  breakthrough: "Breakthrough",
+  inventory: "Inventory",
+  allAbilities: "All Abilities",
+  allBreakthroughs: "Breakthroughs"
+});
+
+/** Kept for callers written against the first release of this module. */
+export const CORE_SHEET_NAME = SHEET_NAMES.core;
+
+/** Item types that belong on the Inventory tab. */
+const INVENTORY_TYPES = Object.freeze(["weapon", "armor", "gear", "equipment"]);
+
+/**
+ * The number at the front of a field that may not be one.
+ *
+ * Equipment stores cost and burden as free text, because the rulebook writes
+ * things like "1,200 Clim" and "1 (2 while worn)". The sheet wants a number,
+ * and the leading one is the only part that is reliably meant.
+ */
+function leadingNumber(value) {
+  if (typeof value === "number") return Number.isFinite(value) ? value : 0;
+  const match = /-?\d+(?:\.\d+)?/.exec(String(value ?? "").replaceAll(",", ""));
+  return match ? Number(match[0]) : 0;
+}
+
+/** One row of the Inventory tab. */
+function inventoryLine(item) {
+  const sys = item?.system ?? {};
+  const quantity = Number(sys.quantity) > 0 ? Number(sys.quantity) : 1;
+  const each = leadingNumber(sys.burden);
+  return {
+    name: item?.name ?? "",
+    // Column B is a fixed dropdown that rejects anything not on it, and
+    // equipped versus carried is the only part of it the system models.
+    location: sys.equipped ? INVENTORY_LOCATIONS.equipped : INVENTORY_LOCATIONS.carried,
+    quantity,
+    // Gear works out its own total, which is not always the obvious product:
+    // a non-combat item that is not a kit carries no burden at all.
+    burden: typeof sys.totalBurden === "number" ? sys.totalBurden : each * quantity,
+    value: leadingNumber(sys.value ?? sys.cost),
+    description: plainText(sys.description)
+  };
+}
 
 /** Named expertises as the sheet writes them: one cell, comma separated. */
 function expertiseLabel(entry) {
@@ -78,6 +139,21 @@ export function characterExportView(actor, { localize = (key) => key } = {}) {
       level: Number(item.system?.abilitiesUnlocked) || 1
     }));
 
+  // The sheet splits abilities into an active block and a passive one. Every
+  // timing the system has except `passive` is something the character does on
+  // their turn or in reaction, so they all belong above the divide.
+  const abilities = items
+    .filter((item) => item.type === "ability")
+    .map((item) => ({ name: item.name, passive: item.system?.timing === "passive" }));
+
+  const breakthroughs = items
+    .filter((item) => item.type === "breakthrough")
+    .map((item) => ({ name: item.name, expCost: Number(item.system?.expCost) || 0 }));
+
+  const inventory = items
+    .filter((item) => INVENTORY_TYPES.includes(item.type))
+    .map(inventoryLine);
+
   return {
     name: actor?.name ?? "",
     race: details.race ?? "",
@@ -93,7 +169,10 @@ export function characterExportView(actor, { localize = (key) => key } = {}) {
     subStats: statList(LYRIAN.subStats, system.subStats),
     skills,
     craftingSkills,
-    classes
+    classes,
+    abilities,
+    breakthroughs,
+    inventory
   };
 }
 
@@ -104,12 +183,20 @@ export function characterExportView(actor, { localize = (key) => key } = {}) {
  * touch comes back byte for byte, which is what keeps the 17 drawings, the
  * validations and the 12,678 formulas that make the sheet worth exporting to.
  *
+ * Cell references come back qualified with their tab — `Core!B45` — because
+ * four tabs share a coordinate space and an unqualified `A2` says nothing.
+ *
+ * A tab the template does not have is skipped rather than fatal. Only the Core
+ * tab is required, since a file without one is not this spreadsheet at all.
+ *
  * @param {Uint8Array} template   The player's own .xlsx.
  * @param {object} character      From `characterExportView`.
- * @param {{sheetName?: string}} [options]
- * @returns {Promise<{bytes: Uint8Array, warnings: object[], written: string[], refused: object[]}>}
+ * @param {{sheetNames?: object}} [options]
+ * @returns {Promise<{bytes: Uint8Array, warnings: object[], written: string[],
+ *                    refused: object[], tabs: object[]}>}
  */
-export async function fillCharacterSheet(template, character, { sheetName = CORE_SHEET_NAME } = {}) {
+export async function fillCharacterSheet(template, character, { sheetNames = {} } = {}) {
+  const names = { ...SHEET_NAMES, ...sheetNames };
   const entries = await readArchive(template);
   const decoder = new TextDecoder();
   const encoder = new TextEncoder();
@@ -119,19 +206,78 @@ export async function fillCharacterSheet(template, character, { sheetName = CORE
   if (!workbook) throw new Error("NotAWorkbook");
 
   const paths = sheetPathsByName(workbook, text("xl/_rels/workbook.xml.rels"));
-  const path = paths.get(sheetName);
-  if (!path || !entries.has(path)) throw new Error("MissingSheet");
-
   const shared = readSharedStrings(text("xl/sharedStrings.xml"));
-  const sheet = decoder.decode(entries.get(path));
-  const read = (ref) => readCell(sheet, ref, shared).value;
+  const sheetXml = (name) => {
+    const path = paths.get(name);
+    return path && entries.has(path) ? decoder.decode(entries.get(path)) : null;
+  };
 
-  const layout = discoverCoreLayout(read);
-  const { cells, warnings } = coreSheetCells(character, layout);
-  const { xml, written, refused } = writeCells(sheet, cells);
+  /** Every name on one column of a reference tab, or undefined if it is absent. */
+  const referenceNames = (name, column) => {
+    const xml = sheetXml(name);
+    if (xml === null) return undefined;
+    return [...readColumn(xml, column, shared).values()]
+      .map((cell) => cell.value).filter(Boolean);
+  };
 
-  entries.set(path, encoder.encode(xml));
-  return { bytes: await writeArchive(entries), warnings, written, refused };
+  const warnings = [];
+  const written = [];
+  const refused = [];
+  const tabs = [];
+
+  /** Map one tab, write it back, and record what happened under its own name. */
+  const applyTab = (name, build) => {
+    const xml = sheetXml(name);
+    if (xml === null) {
+      if (name === names.core) throw new Error("MissingSheet");
+      tabs.push({ tab: name, present: false, written: [], refused: [], warnings: [] });
+      return;
+    }
+
+    const result = build(xml);
+    const output = writeCells(xml, result.cells);
+    entries.set(paths.get(name), encoder.encode(output.xml));
+
+    const qualify = (ref) => `${name}!${ref}`;
+    const tabWritten = output.written.map(qualify);
+    const tabRefused = output.refused.map((entry) => ({ ...entry, ref: qualify(entry.ref) }));
+    const tabWarnings = result.warnings.map((entry) => ({ ...entry, tab: name }));
+
+    written.push(...tabWritten);
+    refused.push(...tabRefused);
+    warnings.push(...tabWarnings);
+    tabs.push({
+      tab: name, present: true,
+      written: tabWritten, refused: tabRefused, warnings: tabWarnings
+    });
+  };
+
+  applyTab(names.core, (xml) =>
+    coreSheetCells(character, discoverCoreLayout((ref) => readCell(xml, ref, shared).value)));
+
+  // Both of these are looked up by name against a reference tab, so the names
+  // are checked against the same list the formula consults. Where the template
+  // has no such tab, the check is skipped rather than failing every name.
+  const knownAbilities = referenceNames(names.allAbilities, "B");
+  applyTab(names.abilities, (xml) => {
+    const columns = (column) => readColumn(xml, column, shared);
+    return abilitySheetCells(character, discoverAbilityLayout(columns), { known: knownAbilities });
+  });
+
+  const knownBreakthroughs = referenceNames(names.allBreakthroughs, "A");
+  applyTab(names.breakthrough, (xml) => {
+    const columns = (column) => readColumn(xml, column, shared);
+    return breakthroughSheetCells(
+      character, discoverBreakthroughLayout(columns), { known: knownBreakthroughs }
+    );
+  });
+
+  applyTab(names.inventory, (xml) => {
+    const columns = (column) => readColumn(xml, column, shared);
+    return inventorySheetCells(character, discoverInventoryLayout(columns));
+  });
+
+  return { bytes: await writeArchive(entries), warnings, written, refused, tabs };
 }
 
 /**
@@ -145,6 +291,8 @@ export async function fillCharacterSheet(template, character, { sheetName = CORE
  */
 export function exportWarningMessages({ warnings = [], refused = [] } = {}) {
   const messages = [];
+  const overflowed = [];
+  const unmatched = [];
 
   for (const warning of warnings) {
     if (warning.kind === "statArray") {
@@ -154,9 +302,26 @@ export function exportWarningMessages({ warnings = [], refused = [] } = {}) {
       });
     } else if (warning.kind === "skillRow") {
       messages.push({ key: "LYRIAN.Warn.ExportSkillRow", data: { label: warning.label } });
-    } else if (warning.kind === "craftingOverflow" || warning.kind === "classOverflow") {
-      messages.push({ key: "LYRIAN.Warn.ExportOverflow", data: { label: warning.label } });
+    } else if (warning.kind === "unknownAbility" || warning.kind === "unknownBreakthrough") {
+      unmatched.push(warning.label);
+    } else if (warning.kind.endsWith("Overflow")) {
+      overflowed.push(warning.label);
     }
+  }
+
+  // Overflow and unmatched names come in runs — a character with nine classes
+  // too many would otherwise raise nine identical notifications.
+  if (overflowed.length) {
+    messages.push({
+      key: "LYRIAN.Warn.ExportOverflow",
+      data: { labels: overflowed.join(", "), count: overflowed.length }
+    });
+  }
+  if (unmatched.length) {
+    messages.push({
+      key: "LYRIAN.Warn.ExportUnknownName",
+      data: { labels: unmatched.join(", "), count: unmatched.length }
+    });
   }
 
   // A refused cell means the template has moved under us — one message for the

@@ -81,23 +81,88 @@ function coreSheetXml() {
   return `<?xml version="1.0" encoding="UTF-8"?><worksheet><sheetData>${body}</sheetData></worksheet>`;
 }
 
+/** The Abilities tab: two name blocks, each row looking the rest up. */
+function abilitiesSheetXml() {
+  const rows = [];
+  const lookupRow = (row) => `<row r="${row}">` +
+    ["B", "C", "D", "E", "F", "G"].map((col) =>
+      `<c r="${col}${row}"><f>IF(A${row}="","",INDEX('All Abilities'!H:H,MATCH(A${row},` +
+      `'All Abilities'!B:B,0)))</f><v></v></c>`).join("") +
+    `<c r="A${row}" s="3"/></row>`;
+
+  rows.push('<row r="1"><c r="A1" t="inlineStr"><is><t>Active Ability Name</t></is></c>' +
+    '<c r="B1" t="inlineStr"><is><t>Cost</t></is></c></row>');
+  for (let row = 2; row <= 4; row += 1) rows.push(lookupRow(row));
+  rows.push('<row r="5"><c r="A5" t="inlineStr"><is><t>Passive Ability Name</t></is></c>' +
+    '<c r="B5" t="inlineStr"><is><t>Cost</t></is></c></row>');
+  for (let row = 6; row <= 7; row += 1) rows.push(lookupRow(row));
+  // The real sheet stamps its version below the last block; the run must stop.
+  rows.push('<row r="8"><c r="A8" t="inlineStr"><is><t>2.0</t></is></c></row>');
+
+  return `<?xml version="1.0"?><worksheet><sheetData>${rows.join("")}</sheetData></worksheet>`;
+}
+
+function breakthroughSheetXml() {
+  const rows = ['<row r="1"><c r="A1" t="inlineStr"><is><t>Breakthrough</t></is></c>' +
+    '<c r="B1" t="inlineStr"><is><t>XP Spent</t></is></c></row>'];
+  for (let row = 2; row <= 4; row += 1) {
+    rows.push(`<row r="${row}"><c r="A${row}" s="3"/><c r="B${row}"><v>0</v></c>` +
+      `<c r="C${row}"><f>IF(A${row}="","",INDEX(Breakthroughs!C:C,MATCH(TRUE,` +
+      `ISNUMBER(SEARCH(Breakthroughs!A:A,A${row})),0)))</f><v></v></c></row>`);
+  }
+  return `<?xml version="1.0"?><worksheet><sheetData>${rows.join("")}</sheetData></worksheet>`;
+}
+
+function inventorySheetXml() {
+  const rows = ['<row r="1"><c r="A1" t="inlineStr"><is><t>Expedition Inventory</t></is></c></row>'];
+  for (let row = 2; row <= 4; row += 1) {
+    const cells = ["A", "B", "C", "D", "E", "G"].map((col) => `<c r="${col}${row}" s="9"/>`).join("");
+    // The burden total on row 2 is what tells a reader where the rows end.
+    const total = row === 2 ? '<c r="H2"><f>SUM(D2:D4)</f><v>0</v></c>' : "";
+    rows.push(`<row r="${row}">${cells}${total}</row>`);
+  }
+  return `<?xml version="1.0"?><worksheet><sheetData>${rows.join("")}</sheetData></worksheet>`;
+}
+
+/** A reference tab, as Google exports one: a dead function with a cached value. */
+function referenceSheetXml(column, header, names) {
+  const cached = (ref, value) =>
+    `<c r="${ref}" t="str"><f>IFERROR(__xludf.DUMMYFUNCTION("COMPUTED_VALUE"),"${value}")</f>` +
+    `<v>${value}</v></c>`;
+  const rows = [`<row r="1">${cached(`${column}1`, header)}</row>`];
+  names.forEach((name, index) => {
+    const row = index + 2;
+    rows.push(`<row r="${row}">${cached(`${column}${row}`, name)}</row>`);
+  });
+  return `<?xml version="1.0"?><worksheet><sheetData>${rows.join("")}</sheetData></worksheet>`;
+}
+
+const KNOWN_ABILITIES = ["Cleave", "Iron Skin", "Riposte"];
+const KNOWN_BREAKTHROUGHS = ["Angelblooded (Human)", "Arachne (Spiderfolk)"];
+
 async function templateArchive() {
   return writeArchive(new Map([
     ["[Content_Types].xml", bytes('<?xml version="1.0"?><Types/>')],
     ["xl/workbook.xml", bytes(
       '<?xml version="1.0"?><workbook><sheets>' +
-      '<sheet name="Core" sheetId="1" r:id="rId1"/>' +
-      '<sheet name="Abilities" sheetId="2" r:id="rId2"/>' +
+      ["Core", "Abilities", "Breakthrough", "Inventory", "All Abilities", "Breakthroughs"]
+        .map((name, index) =>
+          `<sheet name="${name}" sheetId="${index + 1}" r:id="rId${index + 1}"/>`).join("") +
       "</sheets></workbook>"
     )],
     ["xl/_rels/workbook.xml.rels", bytes(
       '<?xml version="1.0"?><Relationships>' +
-      '<Relationship Id="rId1" Type="worksheet" Target="worksheets/sheet1.xml"/>' +
-      '<Relationship Id="rId2" Type="worksheet" Target="worksheets/sheet2.xml"/>' +
+      Array.from({ length: 6 }, (_, index) =>
+        `<Relationship Id="rId${index + 1}" Type="worksheet" ` +
+        `Target="worksheets/sheet${index + 1}.xml"/>`).join("") +
       "</Relationships>"
     )],
     ["xl/worksheets/sheet1.xml", bytes(coreSheetXml())],
-    ["xl/worksheets/sheet2.xml", bytes('<?xml version="1.0"?><worksheet><sheetData/></worksheet>')],
+    ["xl/worksheets/sheet2.xml", bytes(abilitiesSheetXml())],
+    ["xl/worksheets/sheet3.xml", bytes(breakthroughSheetXml())],
+    ["xl/worksheets/sheet4.xml", bytes(inventorySheetXml())],
+    ["xl/worksheets/sheet5.xml", bytes(referenceSheetXml("B", "Name", KNOWN_ABILITIES))],
+    ["xl/worksheets/sheet6.xml", bytes(referenceSheetXml("A", "Name", KNOWN_BREAKTHROUGHS))],
     ["xl/media/image1.png", new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10, 9, 9, 9])]
   ]));
 }
@@ -123,7 +188,27 @@ const ACTOR = {
     artisan: { blacksmith: { rank: 4 } },
     gathering: { mining: { rank: 2 } }
   },
-  items: [{ type: "class", name: "Fighter", system: { abilitiesUnlocked: 3 } }]
+  items: [
+    { type: "class", name: "Fighter", system: { abilitiesUnlocked: 3 } },
+    { type: "ability", name: "Cleave", system: { timing: "action" } },
+    { type: "ability", name: "Riposte", system: { timing: "reaction" } },
+    { type: "ability", name: "Iron Skin", system: { timing: "passive" } },
+    { type: "ability", name: "Homebrew Smash", system: { timing: "action" } },
+    { type: "breakthrough", name: "Angelblooded (Human) — level 3", system: { expCost: 100 } },
+    { type: "breakthrough", name: "Totally Made Up", system: { expCost: 250 } },
+    {
+      type: "weapon", name: "Longsword",
+      system: { burden: 2, value: 150, equipped: true, description: "<p>A <b>sturdy</b> blade.</p>" }
+    },
+    {
+      type: "gear", name: "Iron Ingot",
+      system: { quantity: 5, burden: 1, value: 20, combatItem: true, totalBurden: 5 }
+    },
+    {
+      type: "equipment", name: "Alchemy Rig",
+      system: { quantity: 1, burden: "2 (4 assembled)", cost: "1,200 Clim" }
+    }
+  ]
 };
 
 const EN_LABELS = {
@@ -142,8 +227,10 @@ test("an actor comes back out of the workbook where a player would have typed th
   const view = characterExportView(ACTOR, { localize });
   const result = await fillCharacterSheet(template, view);
 
-  assert.deepEqual(result.warnings, []);
   assert.deepEqual(result.refused, []);
+  assert.deepEqual(result.warnings.map((entry) => entry.label),
+    ["Homebrew Smash", "Totally Made Up"],
+    "the two names the reference tabs do not carry, and nothing else");
 
   const entries = await readArchive(result.bytes);
   const sheet = new TextDecoder().decode(entries.get("xl/worksheets/sheet1.xml"));
@@ -178,6 +265,65 @@ test("an actor comes back out of the workbook where a player would have typed th
   assert.equal(read("C15"), "3");
 });
 
+test("the other three tabs come back filled, each in its own block", async () => {
+  const template = await templateArchive();
+  const result = await fillCharacterSheet(template, characterExportView(ACTOR, { localize }));
+  const entries = await readArchive(result.bytes);
+  const decode = new TextDecoder();
+  const on = (part) => {
+    const xml = decode.decode(entries.get(part));
+    return (ref) => readCell(xml, ref).value;
+  };
+
+  const abilities = on("xl/worksheets/sheet2.xml");
+  assert.deepEqual([abilities("A2"), abilities("A3"), abilities("A4")],
+    ["Cleave", "Riposte", "Homebrew Smash"], "a reaction is still something you do");
+  assert.equal(abilities("A5"), "Passive Ability Name", "the header is not an ability row");
+  assert.equal(abilities("A6"), "Iron Skin", "the only passive, below the divide");
+  assert.equal(abilities("A8"), "2.0", "the version stamp survives the run ending");
+
+  const breakthroughs = on("xl/worksheets/sheet3.xml");
+  assert.equal(breakthroughs("A2"), "Angelblooded (Human) — level 3");
+  assert.equal(breakthroughs("B2"), "100", "the EXP actually spent");
+
+  const inventory = on("xl/worksheets/sheet4.xml");
+  assert.deepEqual([inventory("A2"), inventory("B2"), inventory("C2"), inventory("D2"),
+    inventory("E2"), inventory("G2")],
+    ["Longsword", "Combat Loadout", "1", "2", "150", "A sturdy blade."]);
+  assert.deepEqual([inventory("A3"), inventory("B3"), inventory("C3"), inventory("D3")],
+    ["Iron Ingot", "Backpack", "5", "5"], "the stack's burden, not one ingot's");
+  // Free-text cost and burden on equipment: the leading number is what is meant.
+  assert.deepEqual([inventory("A4"), inventory("D4"), inventory("E4")],
+    ["Alchemy Rig", "2", "1200"]);
+
+  // The tab breakdown names each sheet, since four tabs share a coordinate space.
+  assert.deepEqual(result.tabs.map((tab) => tab.tab),
+    ["Core", "Abilities", "Breakthrough", "Inventory"]);
+  assert.equal(result.written.every((ref) => ref.includes("!")), true);
+});
+
+test("a template missing the newer tabs still exports its Core", async () => {
+  const full = await readArchive(await templateArchive());
+  const trimmed = new Map([...full].filter(([name]) =>
+    !["xl/worksheets/sheet3.xml", "xl/worksheets/sheet4.xml"].includes(name)));
+  trimmed.set("xl/workbook.xml", bytes('<?xml version="1.0"?><workbook><sheets>' +
+    '<sheet name="Core" sheetId="1" r:id="rId1"/>' +
+    '<sheet name="Abilities" sheetId="2" r:id="rId2"/></sheets></workbook>'));
+
+  const result = await fillCharacterSheet(await writeArchive(trimmed),
+    characterExportView(ACTOR, { localize }));
+
+  const byTab = Object.fromEntries(result.tabs.map((tab) => [tab.tab, tab]));
+  assert.equal(byTab.Core.present, true);
+  assert.equal(byTab.Core.written.length > 0, true);
+  assert.equal(byTab.Breakthrough.present, false, "absent, not fatal");
+  assert.equal(byTab.Inventory.present, false);
+
+  // With no reference tab to check against, names are written unchecked rather
+  // than every one of them reported as unknown.
+  assert.equal(result.warnings.some((entry) => entry.kind === "unknownAbility"), false);
+});
+
 test("everything the export did not touch comes back byte for byte", async () => {
   const template = await templateArchive();
   const before = await readArchive(template);
@@ -187,8 +333,10 @@ test("everything the export did not touch comes back byte for byte", async () =>
   assert.deepEqual([...after.keys()], [...before.keys()], "no part added, dropped or reordered");
   const changed = [...before.keys()]
     .filter((name) => Buffer.compare(Buffer.from(before.get(name)), Buffer.from(after.get(name))));
-  assert.deepEqual(changed, ["xl/worksheets/sheet1.xml"],
-    "the drawings, the other tabs and the content types are all left alone");
+  assert.deepEqual(changed, [
+    "xl/worksheets/sheet1.xml", "xl/worksheets/sheet2.xml",
+    "xl/worksheets/sheet3.xml", "xl/worksheets/sheet4.xml"
+  ], "the drawings, the reference tabs and the content types are all left alone");
 });
 
 test("the sheet keeps its own formulas", async () => {

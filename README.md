@@ -90,15 +90,26 @@ Download → Microsoft Excel* — click **Export to Spreadsheet**, pick that fil
 downloads. Nothing is uploaded and no template ships with the system: the sheet is Angel's Sword's
 to distribute, and a copy bundled here would be stale by their next revision.
 
-Only the boxes a player types into are written — name, race, the creation-array picks, stat bonuses,
-skill points and expertises, crafting skills and classes. HP, evasion, guard, damage and EXP costs
-are left to the spreadsheet's own formulas, so its totals stay an independent check on Foundry's
-rather than a copy of them. Everything else in the file comes back untouched, drawings and all.
+Four tabs are filled:
+
+| Tab | What is written |
+| --- | --- |
+| Core | Name, race, gender/age/height/weight/worship, the creation-array picks, stat bonuses, skill points and expertises, crafting skills, classes and levels |
+| Abilities | Ability names, split into the active and passive blocks by their timing |
+| Breakthrough | Breakthrough names and the EXP actually spent on each |
+| Inventory | Item name, equipped or carried, amount, burden, Clim value and description |
+
+Only the boxes a player types into. HP, evasion, guard, damage and EXP costs are left to the
+spreadsheet's own formulas, so its totals stay an independent check on Foundry's rather than a copy
+of them. On the Abilities and Breakthrough tabs the sheet looks up cost, keywords, range,
+requirement and description from its own reference tabs, so only the name is written — and a name
+those tabs do not carry is reported before you find six blank columns beside it. Everything else in
+the file comes back untouched, drawings and all.
 
 Any player can export a character they can open; it reads the actor and changes nothing, so it needs
 no world permission and no GM setup. Where a character does not fit the sheet — stats that do not
-form the creation array, more classes than the sheet has rows — the export still runs and says what
-it left out.
+form the creation array, more abilities than the sheet has rows — the export still runs and says
+what it left out. A tab an older copy of the template does not have is skipped rather than fatal.
 
 ## Modules and the public API
 

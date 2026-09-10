@@ -45,7 +45,31 @@ const ACTOR = {
   },
   items: [
     { type: "class", name: "Fighter", system: { abilitiesUnlocked: 3 } },
-    { type: "weapon", name: "Longsword", system: {} }
+    { type: "ability", name: "Cleave", system: { timing: "action" } },
+    { type: "ability", name: "Riposte", system: { timing: "reaction" } },
+    { type: "ability", name: "Iron Skin", system: { timing: "passive" } },
+    { type: "breakthrough", name: "Angelblooded (Human)", system: { expCost: 100 } },
+    { type: "keyword", name: "Isolated", system: {} },
+    {
+      type: "weapon", name: "Longsword",
+      system: { burden: 2, value: 150, equipped: true, description: "<p>A <i>blade</i>.</p>" }
+    },
+    {
+      type: "armor", name: "Chain Shirt",
+      system: { burden: 3, value: 300, equipped: false }
+    },
+    {
+      type: "gear", name: "Iron Ingot",
+      system: { quantity: 5, burden: 1, value: 20, combatItem: true, totalBurden: 5 }
+    },
+    {
+      type: "gear", name: "Cookbook",
+      system: { quantity: 1, burden: 4, value: 10, combatItem: false, isKit: false, totalBurden: 0 }
+    },
+    {
+      type: "equipment", name: "Alchemy Rig",
+      system: { quantity: 2, burden: "2 (4 assembled)", cost: "1,200 Clim" }
+    }
   ]
 };
 
@@ -99,4 +123,47 @@ test("the filename survives a name that is mostly punctuation", () => {
   assert.equal(exportFileName("../../etc/passwd"), "etcpasswd-lyrian-sheet.xlsx");
   assert.equal(exportFileName("???"), "character-lyrian-sheet.xlsx");
   assert.equal(exportFileName(""), "character-lyrian-sheet.xlsx");
+});
+
+test("abilities are split by timing, and only `passive` is passive", () => {
+  const view = characterExportView(ACTOR, { localize });
+  assert.deepEqual(view.abilities, [
+    { name: "Cleave", passive: false },
+    { name: "Riposte", passive: false },
+    { name: "Iron Skin", passive: true }
+  ]);
+});
+
+test("breakthroughs carry the cost the system charged", () => {
+  const view = characterExportView(ACTOR, { localize });
+  assert.deepEqual(view.breakthroughs, [{ name: "Angelblooded (Human)", expCost: 100 }]);
+});
+
+test("the inventory takes the four carryable types and nothing else", () => {
+  const view = characterExportView(ACTOR, { localize });
+  assert.deepEqual(view.inventory.map((line) => line.name),
+    ["Longsword", "Chain Shirt", "Iron Ingot", "Cookbook", "Alchemy Rig"],
+    "a keyword, a class, an ability and a breakthrough are not things you carry");
+
+  const byName = Object.fromEntries(view.inventory.map((line) => [line.name, line]));
+
+  // Equipped is the only part of the sheet's four-way location dropdown the
+  // system can actually answer, so it answers that and leaves the rest.
+  assert.equal(byName.Longsword.location, "Combat Loadout");
+  assert.equal(byName["Chain Shirt"].location, "Backpack");
+  assert.equal(byName.Longsword.description, "A blade.");
+
+  // Weapons and armor carry no quantity field; they are one item.
+  assert.equal(byName["Chain Shirt"].quantity, 1);
+  assert.equal(byName["Chain Shirt"].burden, 3);
+
+  // Gear knows its own total, and a non-combat item that is not a kit is
+  // weightless however heavy its burden field says it is.
+  assert.equal(byName["Iron Ingot"].burden, 5);
+  assert.equal(byName.Cookbook.burden, 0);
+
+  // Equipment stores both as free text; the leading number is what is meant,
+  // and the burden is per item so it still multiplies out.
+  assert.equal(byName["Alchemy Rig"].burden, 4);
+  assert.equal(byName["Alchemy Rig"].value, 1200);
 });
