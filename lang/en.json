@@ -21,6 +21,7 @@
   "LYRIAN.Requirement.Failed": "{name}'s requirements are not met.",
   "LYRIAN.Requirement.ConfirmTitle": "Confirm requirements for {name}",
   "LYRIAN.Requirement.Duplicate": "{name} is not repeatable and is already owned.",
+  "LYRIAN.Requirement.DuplicateAbility": "{name} is already on this character, so the copy was not added.",
   "LYRIAN.SkillCap.Main": "Skill",
   "LYRIAN.SkillCap.Artisan": "Artisan skill",
   "LYRIAN.SkillCap.Gathering": "Gathering skill",
