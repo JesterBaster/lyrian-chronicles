@@ -82,6 +82,24 @@ game.lyrian.seedSystemPacks({ force: true });
 
 Automatic seeding can be disabled in Settings if you maintain your own content.
 
+## Exporting to the spreadsheet
+
+The **Setup** tab on a character sheet writes that character into your own copy of Angel's Sword's
+Character Creation Sheet. Download the sheet from them as `.xlsx` — in Google Sheets, *File →
+Download → Microsoft Excel* — click **Export to Spreadsheet**, pick that file, and a filled copy
+downloads. Nothing is uploaded and no template ships with the system: the sheet is Angel's Sword's
+to distribute, and a copy bundled here would be stale by their next revision.
+
+Only the boxes a player types into are written — name, race, the creation-array picks, stat bonuses,
+skill points and expertises, crafting skills and classes. HP, evasion, guard, damage and EXP costs
+are left to the spreadsheet's own formulas, so its totals stay an independent check on Foundry's
+rather than a copy of them. Everything else in the file comes back untouched, drawings and all.
+
+Any player can export a character they can open; it reads the actor and changes nothing, so it needs
+no world permission and no GM setup. Where a character does not fit the sheet — stats that do not
+form the creation array, more classes than the sheet has rows — the export still runs and says what
+it left out.
+
 ## Modules and the public API
 
 `game.lyrian.api` is a stability promise — names and payload shapes will not

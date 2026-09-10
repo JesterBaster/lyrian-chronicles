@@ -33,6 +33,13 @@ import {
   CUSTOM_OUTPUT_TYPES,
   normalizeCraftProject
 } from "../rules/crafting.mjs";
+import { downloadBytes, pickFile } from "../rules/file-transfer.mjs";
+import {
+  characterExportView,
+  exportFileName,
+  exportWarningMessages,
+  fillCharacterSheet
+} from "../rules/character-sheet-workbook.mjs";
 
 const { ActorSheetV2 } = foundry.applications.sheets;
 const { HandlebarsApplicationMixin } = foundry.applications.api;
@@ -93,7 +100,8 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       installCraftMod: LyrianActorSheet.#onInstallCraftMod,
       endCraft: LyrianActorSheet.#onEndCraft,
       restartCraft: LyrianActorSheet.#onRestartCraft,
-      setProjectOutput: LyrianActorSheet.#onSetProjectOutput
+      setProjectOutput: LyrianActorSheet.#onSetProjectOutput,
+      exportCharacterSheet: LyrianActorSheet.#onExportCharacterSheet
     },
     dragDrop: [{ dragSelector: "[data-drag]", dropSelector: null }]
   };
@@ -1653,6 +1661,55 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
 
     if (!amount?.exp) return;
     await this.document.spendExp(amount.exp, amount.reason);
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Fill the player's own copy of the Angel's Sword sheet from this actor.
+   *
+   * Reading only, so anyone who can open the sheet can do it — a player needs
+   * no world permission and the GM needs to set nothing up. The template is
+   * whatever file they pick: none is bundled, because the sheet belongs to
+   * Angel's Sword and a copy shipped here would be out of date by the next
+   * revision.
+   */
+  static async #onExportCharacterSheet(event, target) {
+    const picked = await pickFile({
+      accept: ".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    });
+    if (!picked) return;
+
+    target.disabled = true;
+    try {
+      const view = characterExportView(this.document, {
+        localize: (key) => game.i18n.localize(key)
+      });
+      const result = await fillCharacterSheet(picked.bytes, view);
+      downloadBytes(
+        result.bytes,
+        exportFileName(this.document.name),
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      );
+
+      // Refusals and warnings are reported rather than thrown: a sheet that
+      // filled 30 of its 33 cells is still worth having, and the player is the
+      // only one who can tell whether the three that failed mattered.
+      for (const warning of exportWarningMessages(result)) {
+        ui.notifications.warn(game.i18n.format(warning.key, warning.data));
+      }
+      ui.notifications.info(game.i18n.format("LYRIAN.Setup.ExportDone", {
+        count: result.written.length
+      }));
+    } catch (error) {
+      const key = error?.message === "MissingSheet" || error?.message === "NotAWorkbook"
+        ? "LYRIAN.Warn.ExportNotTheTemplate"
+        : "LYRIAN.Warn.ExportFailed";
+      ui.notifications.error(game.i18n.localize(key));
+      console.error("Lyrian Chronicles | character sheet export failed", error);
+    } finally {
+      target.disabled = false;
+    }
   }
 
 }
