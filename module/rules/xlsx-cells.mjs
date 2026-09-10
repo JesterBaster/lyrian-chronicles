@@ -63,11 +63,7 @@ export function readSharedStrings(xml) {
  *          `formula` is set when the cell computes its own value, which is the
  *          signal never to write to it.
  */
-export function readCell(sheetXml, ref, sharedStrings = []) {
-  const match = cellPattern(ref).exec(String(sheetXml ?? ""));
-  if (!match) return { value: "", formula: "", empty: true };
-
-  const [, attributes, body = ""] = match;
+function decodeCell(attributes = "", body = "", sharedStrings = []) {
   const formula = /<f[^>]*>([\s\S]*?)<\/f>/.exec(body)?.[1] ?? "";
   const type = /\st="([^"]+)"/.exec(attributes)?.[1] ?? "";
 
@@ -83,6 +79,42 @@ export function readCell(sheetXml, ref, sharedStrings = []) {
   }
 
   return { value, formula: decodeXml(formula), empty: !body.trim() };
+}
+
+export function readCell(sheetXml, ref, sharedStrings = []) {
+  const match = cellPattern(ref).exec(String(sheetXml ?? ""));
+  if (!match) return { value: "", formula: "", empty: true };
+  const [, attributes, body = ""] = match;
+  return decodeCell(attributes, body, sharedStrings);
+}
+
+/**
+ * Read a whole column in one pass.
+ *
+ * `readCell` rescans the sheet from the start for every reference, which is
+ * fine for the thirty-odd cells an export writes and hopeless for the 1,138
+ * ability names the template keeps on a reference tab — that would be a
+ * thousand scans of a megabyte. This makes one.
+ *
+ * A cell absent from the XML is absent from the Map, which is the one thing
+ * `readCell` cannot tell you: it reports a missing cell and an existing blank
+ * one identically. Knowing the difference is how a caller finds where a block
+ * of rows actually ends.
+ *
+ * @param {string} sheetXml
+ * @param {string} column   "A", "AB", …
+ * @param {string[]} [sharedStrings]
+ * @returns {Map<number, {value: string, formula: string, empty: boolean}>}  row → cell
+ */
+export function readColumn(sheetXml, column, sharedStrings = []) {
+  // The digits must follow the column letters immediately, so scanning for "A"
+  // never matches "AA1" — the `\d+` fails on the second letter.
+  const pattern = new RegExp(`<c r="${column}(\\d+)"([^>/]*)(?:/>|>([\\s\\S]*?)</c>)`, "g");
+  const cells = new Map();
+  for (const [, row, attributes, body = ""] of String(sheetXml ?? "").matchAll(pattern)) {
+    cells.set(Number(row), decodeCell(attributes, body, sharedStrings));
+  }
+  return cells;
 }
 
 /**
