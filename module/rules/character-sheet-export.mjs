@@ -42,13 +42,18 @@ export function locateRows(read, { column, from, to, labels }) {
   return found;
 }
 
-/** The first run of blank rows in a column, which is where a list may be written. */
-export function locateBlankRun(read, { column, from, to }) {
-  const rows = [];
-  for (let row = from; row <= to; row += 1) {
-    if (!read(`${column}${row}`)) rows.push(row);
-  }
-  return rows;
+/**
+ * The rows a free list occupies.
+ *
+ * A plain range, and not "the blank ones in the range" as this once was.
+ * Blankness is a property of an empty template, not of the block: on a sheet
+ * that already holds three crafting skills it names rows four to six, so
+ * re-exporting the same character appends a second copy below the first. It
+ * also makes the block unfindable when reading a filled sheet back, which is
+ * the same bug wearing a different hat.
+ */
+export function rowRange(from, to) {
+  return Array.from({ length: Math.max(0, to - from + 1) }, (_, index) => from + index);
 }
 
 /**
@@ -125,8 +130,8 @@ export function discoverCoreLayout(read) {
     skillRows: locateRows(read, {
       column: "E", from: 9, to: 35, labels: CORE_SKILL_LABELS
     }),
-    craftingRows: locateBlankRun(read, { column: "N", from: 9, to: 14 }),
-    classRows: locateBlankRun(read, { column: "A", from: 15, to: 35 })
+    craftingRows: rowRange(9, 14),
+    classRows: rowRange(15, 35)
   };
 }
 

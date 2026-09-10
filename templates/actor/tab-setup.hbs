@@ -30,5 +30,21 @@
       </button>
       <p class="lyr-note">{{localize "LYRIAN.Setup.ExportFormulaNote"}}</p>
     </section>
+
+    <section class="lyr-reference-card lyr-reference-card--wide">
+      <h3>{{localize "LYRIAN.Setup.ImportTitle"}}</h3>
+      <p>{{localize "LYRIAN.Setup.ImportDescription"}}</p>
+      <div class="lyr-alert">
+        <span>{{localize "LYRIAN.Setup.ImportWarning"}}</span>
+      </div>
+      {{#if editable}}
+        <button type="button" class="lyr-primary lyr-wide" data-action="importCharacterSheet">
+          <i class="fa-solid fa-file-import"></i>
+          {{localize "LYRIAN.Action.ImportCharacterSheet"}}
+        </button>
+      {{else}}
+        <p class="lyr-note">{{localize "LYRIAN.Setup.ImportRequiresOwner"}}</p>
+      {{/if}}
+    </section>
   </div>
 </section>

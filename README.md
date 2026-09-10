@@ -111,6 +111,30 @@ no world permission and no GM setup. Where a character does not fit the sheet �
 form the creation array, more abilities than the sheet has rows — the export still runs and says
 what it left out. A tab an older copy of the template does not have is skipped rather than fatal.
 
+## Importing from the spreadsheet
+
+The same tab imports. Pick a filled copy of the sheet and the Setup tab reads it back onto the
+character: stats, skills, crafting skills and identity are updated, and classes, abilities,
+breakthroughs and inventory are matched against the compendiums and added.
+
+Nothing is written until you have seen a summary of what would be — how many entries will be added,
+how many the character already has, and how many the compendiums do not carry. Names that could not
+be placed are listed so you can add them by hand.
+
+**An import adds and updates; it never deletes.** A spreadsheet is a copy of a character, not the
+authority on one, so anything gained in Foundry since the last export is kept. Stats, skills and
+identity are overwritten with the sheet's values; items the character already has by name are left
+alone rather than added twice.
+
+Matching tries an exact name first, then case-insensitively, then ignoring punctuation and spacing —
+in that order, so an exact hit always wins outright. Against the shipped content this places all
+1,137 abilities, all 89 breakthroughs and all 185 classes the spreadsheet lists.
+
+What the sheet says and what the compendium says are kept apart. The pack owns what an item *is* —
+its burden, price and rules text. The sheet owns what this character's copy looks like: how many
+there are, whether they are worn, what level a class reached, and what a breakthrough actually cost
+at your table. Importing needs owner permission, unlike exporting.
+
 ## Modules and the public API
 
 `game.lyrian.api` is a stability promise — names and payload shapes will not
