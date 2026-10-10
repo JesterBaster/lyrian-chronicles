@@ -3262,7 +3262,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/classes/fusilier",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "2da8c4d6-290a-46e1-9d4a-7c9d41d96589"
+    },
     "data": {
       "classId": "fusilier",
       "name": "Fusilier",
@@ -4535,7 +4537,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/classes/manifestor",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "bd5f5b98-4d24-4307-b17e-3de0c90180e6"
+    },
     "data": {
       "classId": "manifestor",
       "name": "Manifestor",

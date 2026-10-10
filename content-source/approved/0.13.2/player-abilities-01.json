@@ -2804,7 +2804,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "61a0e3a0-8071-4fdd-b8f5-39577cebd090"
+    },
     "data": {
       "trueAbilityId": "break-piggy-bank",
       "name": "Break Piggy Bank",
@@ -2992,7 +2994,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "4f86b40d-0fc6-4dbe-9bc9-c0e5d0f2b4e7"
+    },
     "data": {
       "trueAbilityId": "burst-fire",
       "name": "Burst Fire",
@@ -4428,7 +4432,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "93604300-a544-415f-a1a3-8c81afc881db"
+    },
     "data": {
       "trueAbilityId": "converging-blow",
       "name": "Converging Blow",
@@ -7791,7 +7797,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "112e3b7e-27f3-43df-be82-58e42bb11f9b"
+    },
     "data": {
       "trueAbilityId": "eat-anything",
       "name": "Eat Anything",
@@ -9715,7 +9723,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "52c844dc-6b8c-4d03-863f-d0107e499ec9"
+    },
     "data": {
       "trueAbilityId": "fast-cartridge",
       "name": "Fast Cartridge",
@@ -13846,7 +13856,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "8bf2fb03-0d71-4cb7-beb2-6881bcc5a49b"
+    },
     "data": {
       "trueAbilityId": "infinite-punches",
       "name": "Infinite Punches",
