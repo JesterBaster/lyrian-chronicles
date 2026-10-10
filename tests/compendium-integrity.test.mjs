@@ -178,3 +178,21 @@ test("the stat block editor is for NPCs only, and only when editable", () => {
   assert.match(opening.slice(-400), /\{\{#if isNPC\}\}\s*\{\{#if editable\}\}/);
   assert.ok(block.length > 0);
 });
+
+test("every approved entry carries the feed's own id for what it is", () => {
+  // The build resolves links between entries through these ids, and they are
+  // the one identity that survives between pulls — the feed's other id is
+  // regenerated every time. Hand-added entries used to skip it: 35 of them,
+  // from the classes, abilities, keywords and ancestry added after the first
+  // capture. Journal pages are written from rulebook prose and have no record.
+  const dir = "content-source/approved/0.13.2";
+  const missing = [];
+  for (const file of readdirSync(dir).filter((name) => /-\d{2}\.json$/.test(name))) {
+    for (const entry of JSON.parse(readFileSync(`${dir}/${file}`, "utf8"))) {
+      if (entry.category === "rules-setting-guide") continue;
+      if (!entry.source_ids?.index_id) missing.push(entry.stable_id);
+    }
+  }
+  assert.deepEqual(missing, [],
+    "add source_ids.index_id from the feed record (its indexId) for each of these");
+});

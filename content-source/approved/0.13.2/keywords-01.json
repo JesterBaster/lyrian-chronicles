@@ -196,7 +196,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/keywords",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "f4984d72-97b8-49e3-863e-74ee6a4fc38f"
+    },
     "data": {
       "keywordId": "calcification",
       "name": "Calcification",
@@ -402,7 +404,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/keywords",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "22c9dcf4-e234-44bf-8c45-92279f6ce991"
+    },
     "data": {
       "keywordId": "dual-wield",
       "name": "Dual Wield",
@@ -741,7 +745,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/keywords",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "f1efcd8b-ffb4-471e-bd13-5f94f59fab91"
+    },
     "data": {
       "keywordId": "mandate",
       "name": "Mandate",
@@ -928,7 +934,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/keywords",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "3d1753c3-7dbe-4a23-bc96-22cd276565df"
+    },
     "data": {
       "keywordId": "petrify",
       "name": "Petrify",
@@ -1115,7 +1123,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/keywords",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "ef176906-aa9d-48ce-94e1-0f94ba555856"
+    },
     "data": {
       "keywordId": "salvo",
       "name": "Salvo",

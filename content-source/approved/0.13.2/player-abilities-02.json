@@ -6,7 +6,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "91946156-2e92-44d3-b020-6e3757bf6043"
+    },
     "data": {
       "trueAbilityId": "maximum-firerate",
       "name": "Maximum Firerate",
@@ -69,7 +71,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "f9653c86-42d1-4360-9ced-bb483ffba38b"
+    },
     "data": {
       "trueAbilityId": "medusa-s-glance",
       "name": "Medusa's Glance",
@@ -131,7 +135,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "ed4301c7-e18f-4db0-964d-5989cc136587"
+    },
     "data": {
       "trueAbilityId": "mercantile",
       "name": "Mercantile",
@@ -529,7 +535,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "601a7a20-7661-42e4-a54e-8966f10840fa"
+    },
     "data": {
       "trueAbilityId": "mountain-s-verdict",
       "name": "Mountain's Verdict",
@@ -1503,7 +1511,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "f8d3a19c-f5dd-4a6c-9436-d911a3014ba8"
+    },
     "data": {
       "trueAbilityId": "partial-petrification",
       "name": "Partial Petrification",
@@ -1782,7 +1792,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "0d7e7d7a-dec1-48ba-a872-40b62543a13f"
+    },
     "data": {
       "trueAbilityId": "petrify",
       "name": "Petrify",
@@ -1812,7 +1824,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "08291d34-101c-42a9-a1de-69e271593557"
+    },
     "data": {
       "trueAbilityId": "petrifying-gaze",
       "name": "Petrifying Gaze",
@@ -1842,7 +1856,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "dec387ce-5ba0-4e8b-8152-0b6b9b986edc"
+    },
     "data": {
       "trueAbilityId": "phantasmal-uppercut",
       "name": "Phantasmal Uppercut",
@@ -1872,7 +1888,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "2e8aa111-dae1-4e2c-acf4-4da05f237bf8"
+    },
     "data": {
       "trueAbilityId": "phantom-step",
       "name": "Phantom Step",
@@ -6465,7 +6483,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "4a914c8b-388d-45f1-850c-d9279cbd3616"
+    },
     "data": {
       "trueAbilityId": "secret-art--manifest",
       "name": "Secret Art: Manifest",
@@ -7695,7 +7715,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "a87ee686-1140-4f31-9152-9748c7018ee6"
+    },
     "data": {
       "trueAbilityId": "seismic-reversal",
       "name": "Seismic Reversal",
@@ -10359,7 +10381,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "74ecafc8-3164-479d-b7d8-648562839df9"
+    },
     "data": {
       "trueAbilityId": "stone-rebuke",
       "name": "Stone Rebuke",
@@ -10822,7 +10846,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "cb53296a-f519-4379-b0ff-612a95b900fd"
+    },
     "data": {
       "trueAbilityId": "suppressive-fire",
       "name": "Suppressive Fire",
@@ -12732,7 +12758,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "c7a91f54-9fa0-4488-9a85-5203c5a324a1"
+    },
     "data": {
       "trueAbilityId": "unmoving-mountain",
       "name": "Unmoving Mountain",
@@ -12762,7 +12790,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "4d24a7ac-cea9-47fd-8230-1e207a34839b"
+    },
     "data": {
       "trueAbilityId": "unpetrify",
       "name": "Unpetrify",
@@ -15542,7 +15572,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "db22c344-3981-4e24-ba8d-43d5978c0746"
+    },
     "data": {
       "abilityId": "enduring-earth",
       "name": "Enduring Earth",

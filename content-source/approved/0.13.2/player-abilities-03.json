@@ -1246,7 +1246,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "395a01f6-e8e2-4192-abdd-0e80005b3c42"
+    },
     "data": {
       "abilityId": "manifestor-s-journey",
       "name": "Manifestor's Journey",
@@ -1831,7 +1833,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "58cbf29d-9a65-4fd6-9ed4-6412228e25a8"
+    },
     "data": {
       "abilityId": "petrification-eye",
       "name": "Petrification Eye",
@@ -2075,7 +2079,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/abilities",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "fb0d9f7a-7c1d-4cae-b86b-604f60c0a093"
+    },
     "data": {
       "abilityId": "recoil-control",
       "name": "Recoil Control",

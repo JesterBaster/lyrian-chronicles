@@ -50,7 +50,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/classes/mystic-eyes-of-petrification",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "f50c8cba-9520-4c9c-ba1c-84f8f315a44a"
+    },
     "data": {
       "classId": "mystic-eyes-of-petrification",
       "name": "Mystic Eyes of Petrification",
@@ -1807,7 +1809,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/classes/still-stone-testament",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "762ac0f8-8032-41f5-99d8-cecc750085f8"
+    },
     "data": {
       "classId": "still-stone-testament",
       "name": "Still Stone Testament",

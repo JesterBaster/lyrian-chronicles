@@ -1148,7 +1148,9 @@
     "source_url": "https://rpg.angelssword.com/game/0.13.2/races/secondary/pigfolk",
     "rulebook_version": "0.13.2",
     "retrieved_at": "2026-09-07T16:59:31.813774Z",
-    "source_ids": {},
+    "source_ids": {
+      "index_id": "3d532951-1370-4ca7-b5c4-fc9ab976eec0"
+    },
     "data": {
       "ancestryId": "pigfolk",
       "name": "Pigfolk",
