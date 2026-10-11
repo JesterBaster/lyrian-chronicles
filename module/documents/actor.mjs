@@ -15,6 +15,7 @@ import {
 } from "../rules/numeric-input.mjs";
 import {
   classFeatureGrants,
+  creationClim,
   featureSourceKey,
   indexGeneratedFeatures
 } from "../rules/progression.mjs";
@@ -70,8 +71,10 @@ export class LyrianActor extends Actor {
   async _preCreate(data, options, user) {
     const allowed = await super._preCreate(data, options, user);
     if (allowed === false) return false;
+    const clim = creationClim(this.type, data);
     this.updateSource({
-      "system.schemaVersion": schemaVersionForCreation("Actor", this.system?.schemaVersion)
+      "system.schemaVersion": schemaVersionForCreation("Actor", this.system?.schemaVersion),
+      ...(clim === null ? {} : { "system.clim": clim })
     });
     return allowed;
   }

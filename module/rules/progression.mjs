@@ -23,6 +23,26 @@ export function startingClim(config = globalThis.CONFIG?.LYRIAN ?? null) {
   }
 }
 
+/**
+ * The Clim a character being created should start with, or null to leave it.
+ *
+ * The schema's default is the rulebook's 3000, fixed when the schema was
+ * defined, so a character made with Create Actor ignored the table's Starting
+ * Clim setting until someone ran the wizard. Anything that arrives with its own
+ * Clim — a duplicate, an import, a compendium entry — keeps it: that figure was
+ * chosen, and this only fills in for one that was not.
+ *
+ * @param {string} type     The actor type being created.
+ * @param {object} data     The creation data, nested or with flat keys.
+ * @param {number} chosen   The table's starting figure.
+ * @returns {number|null}
+ */
+export function creationClim(type, data = {}, chosen = startingClim()) {
+  if (type !== "character") return null;
+  const given = data?.system?.clim ?? data?.["system.clim"];
+  return given === undefined || given === null ? chosen : null;
+}
+
 export const CLASS_FEATURE_LEVELS = Object.freeze([1, 2, 4, 6, 8]);
 
 export const REQUIRED_ANCESTRIES = Object.freeze({

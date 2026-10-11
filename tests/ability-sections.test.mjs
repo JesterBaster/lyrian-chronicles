@@ -13,6 +13,7 @@ import test from "node:test";
 import {
   duplicatesOwnedAbility,
   isGrantedFeature,
+  listedAbilities,
   withoutGranted
 } from "../module/rules/ability-sections.mjs";
 
@@ -109,4 +110,15 @@ test("only abilities are checked, and only ones with something to match on", () 
   // Two hand-made abilities with no name are not duplicates of each other.
   const blank = ability("a2", "");
   assert.equal(duplicatesOwnedAbility(blank, [ability("a1", ""), blank]), null);
+});
+
+test("the full list keeps each ability once, in the actor's own order", () => {
+  const granted = ability("g1", "Cleave", { stableId: "ability--cleave", source: CLASS_GRANT });
+  const mine = ability("a1", "Cleave", { stableId: "ability--cleave" });
+  const other = ability("a2", "Riposte", { stableId: "ability--riposte" });
+  const passive = ability("a3", "Iron Skin", { stableId: "ability--iron-skin" });
+
+  assert.deepEqual(listedAbilities([mine, other, granted, passive]).map((i) => i.id),
+    ["a2", "g1", "a3"]);
+  assert.deepEqual(listedAbilities([]), []);
 });

@@ -67,3 +67,22 @@ export function duplicatesOwnedAbility(candidate, owned = []) {
   return owned.find((item) =>
     item?.id !== candidate.id && item?.type === "ability" && identity(item) === wanted) ?? null;
 }
+
+/**
+ * Every ability a list should show, each once.
+ *
+ * The sheet gets this by dropping duplicates from Other Actions while showing
+ * the granted copies in their race and class sections. Anything that lists an
+ * actor's abilities in one go — Token Action HUD — needs the same answer, or a
+ * stray second copy the sheet has stopped showing turns up there twice.
+ * Order is the actor's own.
+ *
+ * @param {object[]} items  Abilities, granted and otherwise.
+ * @returns {object[]}
+ */
+export function listedAbilities(items = []) {
+  const granted = items.filter(isGrantedFeature);
+  const others = items.filter((item) => !isGrantedFeature(item));
+  const kept = new Set([...granted, ...withoutGranted(others, granted)]);
+  return items.filter((item) => kept.has(item));
+}

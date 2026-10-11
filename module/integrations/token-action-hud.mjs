@@ -13,6 +13,7 @@
  * runs, or throws, when TAH Core is absent.
  */
 import { LYRIAN } from "../config.mjs";
+import { listedAbilities } from "../rules/ability-sections.mjs";
 
 const SYSTEM_ID = "lyrian-chronicles";
 
@@ -146,7 +147,13 @@ export function registerTokenActionHud() {
           if (costs) action.info1 = { text: costs, title: i18n("LYRIAN.UI.Cost") };
           return action;
         };
-        const all = this.#itemActions(["ability", "monsterAbility"], "ability", decorate);
+        // The same set the sheet shows: a granted ability once, not again for a
+        // stray second copy of it the actor also holds.
+        const owned = Array.from(this.items ?? []).map(([, item]) => item)
+          .filter((item) => ["ability", "monsterAbility"].includes(item.type));
+        const listed = new Set(listedAbilities(owned).map((item) => item.id));
+        const all = this.#itemActions(["ability", "monsterAbility"], "ability", decorate)
+          .filter((action) => listed.has(action.id));
         if (!all.length) return;
 
         const timingOf = (id) => this.actor.items.get(id)?.system?.timing ?? "action";
