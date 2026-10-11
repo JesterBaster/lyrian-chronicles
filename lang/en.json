@@ -800,6 +800,7 @@
   "LYRIAN.UI.Unnamed": "Unnamed",
   "LYRIAN.UI.Unspent": "Unspent",
   "LYRIAN.UI.UpkeepAP": "Upkeep AP",
+  "LYRIAN.UI.AttackCount": "Attacks per use",
   "LYRIAN.UI.UseWeaponDamage": "Use Weapon Damage",
   "LYRIAN.UI.ValueClim": "Value (Clim)",
   "LYRIAN.UI.WeakAgainst": "Weak Against",

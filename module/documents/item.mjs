@@ -9,6 +9,7 @@ import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 import { requireActorActionPermission } from "../rules/action-permissions.mjs";
 import { isHybridBreakthrough } from "../rules/hybrid-race.mjs";
 import {
+  abilityAttackCount,
   abilityWeaponAttackContext,
   isCriticalHit
 } from "../rules/ability-attack.mjs";
@@ -253,6 +254,28 @@ export class LyrianItem extends Item {
       return abilitySucceeded({ healingRoll, message });
     }
 
+    // One use, several strikes: the ability's cost was paid above, once, and
+    // each strike rolls its own accuracy, crit and damage on its own card, so
+    // a target can react to each and the damage check verifies each.
+    const count = abilityAttackCount(sys.attackCount);
+    const attacks = [];
+    for (let strike = 0; strike < count; strike += 1) {
+      attacks.push(await this._rollAbilityStrike(actor, sys));
+    }
+
+    if (healingRoll) await this.postHealingCard(healingRoll);
+
+    // The first strike's fields keep their old names, for anything reading
+    // them; `attacks` carries every strike.
+    const [first] = attacks;
+    return abilitySucceeded({ ...first, attacks, healingRoll });
+  }
+
+  /**
+   * One strike of an ability's attack: accuracy, crit, damage and its card.
+   * @returns {Promise<{attackRoll: Roll|null, damageRoll: Roll|null, isCrit: boolean, message: ChatMessage}>}
+   */
+  async _rollAbilityStrike(actor, sys) {
     const profile = LYRIAN.attackTypes[sys.attackType];
     const weaponContext = abilityWeaponAttackContext({
       ability: sys,
@@ -297,9 +320,7 @@ export class LyrianItem extends Item {
       keywords: sys.keywords
     });
 
-    if (healingRoll) await this.postHealingCard(healingRoll);
-
-    return abilitySucceeded({ attackRoll, damageRoll, isCrit, healingRoll, message });
+    return { attackRoll, damageRoll, isCrit, message };
   }
 
   /* -------------------------------------------- */

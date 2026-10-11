@@ -31,6 +31,7 @@
           {{/each}}
         </select>
       </label>
+      <label>{{localize "LYRIAN.UI.AttackCount"}} <input type="number" name="system.attackCount" value="{{system.attackCount}}" min="1" max="12" step="1" /></label>
       <label class="lyr-check"><input type="checkbox" name="system.usesWeapon" {{checked system.usesWeapon}} /> {{localize "LYRIAN.UI.UseWeaponDamage"}}</label>
     </div>
   </fieldset>

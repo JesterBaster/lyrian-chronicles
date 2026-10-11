@@ -1,5 +1,6 @@
 import { LYRIAN } from "../config.mjs";
 import { armorValues } from "../rules/armor.mjs";
+import { MAX_ABILITY_ATTACKS } from "../rules/ability-attack.mjs";
 
 const fields = foundry.data.fields;
 
@@ -234,6 +235,12 @@ export class LyrianAbility extends LyrianItemBase {
       choices: Object.keys(LYRIAN.damageTypes)
     });
     schema.usesWeapon = new fields.BooleanField({ initial: false });
+    // How many times one use makes that attack. Every multi-attack ability in
+    // the rulebook repeats a single attack type — Double Punch makes two
+    // Lights, Burst Fire three, Maximum Firerate eight — so a count on the one
+    // payload covers them, where a list of separate attacks would cover nothing
+    // more. An unset value reads as 1, so existing abilities need no migration.
+    schema.attackCount = int(1, { min: 1, max: MAX_ABILITY_ATTACKS });
 
     // Optional healing payload. Independent of the attack block, because a
     // drain ability both deals damage and restores health from one activation.
