@@ -15,6 +15,7 @@ import {
 } from "../rules/ability-attack.mjs";
 import { abilityRefused, abilitySucceeded } from "../rules/ability-result.mjs";
 import { REFUND_FLAG, refundRecord, refundWindow } from "../rules/ability-refund.mjs";
+import { isHeldWeapon } from "../rules/weapon-slots.mjs";
 import { applyChatMode, prepareItemChatContent } from "../rules/chat-content.mjs";
 import { itemChatKeywords, itemChatStats } from "../rules/item-summary.mjs";
 import { dualWieldFollowUp } from "../rules/dual-wield.mjs";
@@ -87,6 +88,14 @@ export class LyrianItem extends Item {
 
     const profile = LYRIAN.attackTypes[attackType];
     if (!profile) return;
+
+    // Only a weapon in hand can swing. The sheet only ever offered held
+    // weapons, but nothing here checked, so Token Action HUD and macros could
+    // attack with a greatsword stowed in a pack, or one with no hand free.
+    if (!isHeldWeapon(this, actor)) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.WeaponNotHeld", { name: this.name }));
+      return;
+    }
 
     // Dual wielding grants one free light attack per turn, from the hand that
     // did not open the pair. Resolved before the cost is paid, and the turn

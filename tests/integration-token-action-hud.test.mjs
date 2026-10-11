@@ -174,6 +174,9 @@ test("a character's HUD carries their weapons, abilities and checks", async () =
   actor.addItem({ id: "a5", name: "Opening Gambit", type: "ability", system: { timing: "encounterStart" } });
   actor.addItem({ id: "g1", name: "Rope", type: "gear", system: { quantity: 3 } });
 
+  // In hand, as the sheet decides it: equipment.weapons is the held list.
+  actor.system.equipment = { weapons: [{ id: "w1" }] };
+
   const handler = await buildFor(actor);
   const byGroup = Object.fromEntries(handler.added.map(({ group, actions }) => [group.id, actions]));
 
@@ -379,4 +382,16 @@ test("a character's universal attacks say they are unarmed", async () => {
   }
   // A monster's is its statblock attack, so it keeps the plain name.
   for (const name of names(monster)) assert.doesNotMatch(name, /Unarmed/);
+});
+
+test("a stowed weapon gets no attack buttons", async () => {
+  // It cannot swing, so three buttons that each refuse would only mislead.
+  const actor = stubActor();
+  actor.addItem({ id: "w1", name: "Greatsword", type: "weapon", system: { equipped: true } });
+  actor.addItem({ id: "w2", name: "Dagger", type: "weapon", system: { equipped: false } });
+  actor.system.equipment = { weapons: [{ id: "w1" }] };
+
+  const handler = await buildFor(actor);
+  const weapons = handler.added.find(({ group }) => group.id === "weapons")?.actions ?? [];
+  assert.deepEqual([...new Set(weapons.map((a) => a.encodedValue.split("|")[1]))], ["w1"]);
 });

@@ -865,6 +865,7 @@
   "LYRIAN.Proficiency.Choice.languages": "Language proficiency",
   "LYRIAN.UI.BodyArmour": "Body Armour",
   "LYRIAN.UI.Shield": "Shield",
+  "LYRIAN.Warn.WeaponNotHeld": "{name} is not in hand. Wield it first to attack with it.",
   "LYRIAN.Warn.WeaponConflict": "{ignored} is equipped but no hand is free for it. Stow another weapon to use it.",
   "LYRIAN.Warn.EquipmentConflict": "Multiple {slot} items are equipped. {active} provides defence; {ignored} is ignored until stowed.",
   "LYRIAN.Msg.EquipmentReplaced": "Equipped {equipped} and stowed {stowed}.",
