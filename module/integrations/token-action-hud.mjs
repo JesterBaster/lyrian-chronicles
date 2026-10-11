@@ -59,6 +59,9 @@ const DOWNTIME_TIMINGS = new Set(["interlude", "crafting", "gathering"]);
  * be. The modifiers are named in every weapon's tooltip so they are not folk
  * knowledge.
  */
+/** The basic attacks every weapon offers, in the order the sheet shows them. */
+const WEAPON_ATTACKS = Object.freeze(["light", "heavy", "precise"]);
+
 export function attackTypeForEvent({ ctrl = false, alt = false } = {}) {
   if (ctrl) return "heavy";
   if (alt) return "precise";
@@ -107,7 +110,11 @@ export function registerTokenActionHud() {
       }
 
       #buildWeapons() {
-        const actions = this.#itemActions(["weapon"], "weapon", (action, item) => {
+        // One button per attack, not one per weapon with the rest behind
+        // modifier keys. A weapon that only did a Light attack on a plain click
+        // sent players to the Attacks group's Heavy button instead — which is
+        // the unarmed strike, so a greatsword's 5d6 heavy came out as 4d6.
+        const weapons = this.#itemActions(["weapon"], "weapon", (action, item) => {
           const damage = item.system?.damageBonus;
           const accuracy = item.system?.accuracyBonus;
           if (Number.isFinite(accuracy) && accuracy) {
@@ -119,6 +126,16 @@ export function registerTokenActionHud() {
           action.tooltip = i18n("LYRIAN.TAH.Tooltip.Weapon");
           return action;
         });
+        const actions = weapons.flatMap((weapon) => WEAPON_ATTACKS.map((type) => {
+          const label = i18n(LYRIAN.attackTypes[type].label);
+          return {
+            ...weapon,
+            id: `${weapon.id}-${type}`,
+            name: `${weapon.name}: ${label}`,
+            listName: `${i18n("LYRIAN.TAH.ActionType.weapon")}: ${weapon.name}: ${label}`,
+            encodedValue: ["weapon", weapon.id, type].join(this.delimiter)
+          };
+        }));
         if (actions.length) this.addActions(actions, GROUP.weapons);
       }
 
@@ -127,10 +144,18 @@ export function registerTokenActionHud() {
         // A monster's official profile has no precise attack, so offering one
         // would be a button that declines every time it is pressed.
         const types = isCharacter ? ["light", "heavy", "precise"] : ["light", "heavy"];
+        // A character's universal attack is an unarmed strike whatever they are
+        // holding, and has to say so: unlabelled, it read as *the* Heavy Attack
+        // and was pressed in place of the weapon's own. A monster's is its
+        // statblock attack, so it keeps the plain name.
+        const named = (type) => {
+          const label = i18n(LYRIAN.attackTypes[type].label);
+          return isCharacter ? i18n("LYRIAN.TAH.UnarmedAttack").replace("{attack}", label) : label;
+        };
         const actions = types.map((type) => ({
           id: `universal-${type}`,
-          name: i18n(LYRIAN.attackTypes[type].label),
-          listName: `${i18n("LYRIAN.TAH.ActionType.attack")}: ${i18n(LYRIAN.attackTypes[type].label)}`,
+          name: named(type),
+          listName: `${i18n("LYRIAN.TAH.ActionType.attack")}: ${named(type)}`,
           encodedValue: ["attack", type].join(this.delimiter),
           info1: { text: `${LYRIAN.attackTypes[type].ap} AP`, title: i18n("LYRIAN.UI.ActionPoints") }
         }));
@@ -247,7 +272,7 @@ export function registerTokenActionHud() {
     class LyrianRollHandler extends coreModule.api.RollHandler {
       /** @override */
       async handleActionClick(event, encodedValue) {
-        const [actionType, id] = String(encodedValue ?? "").split(this.delimiter);
+        const [actionType, id, chosenAttack] = String(encodedValue ?? "").split(this.delimiter);
         const actor = this.actor;
         if (!actor) return;
 
@@ -259,8 +284,12 @@ export function registerTokenActionHud() {
 
         switch (actionType) {
           case "weapon":
+            // The button names its attack. A modifier still overrides it, so a
+            // player who learned Ctrl for heavy keeps getting heavy.
             return actor.items.get(id)?.rollAttack(
-              attackTypeForEvent({ ctrl: this.isCtrl, alt: this.isAlt })
+              (this.isCtrl || this.isAlt)
+                ? attackTypeForEvent({ ctrl: this.isCtrl, alt: this.isAlt })
+                : (LYRIAN.attackTypes[chosenAttack] ? chosenAttack : "light")
             );
           case "ability":
             return actor.items.get(id)?.rollAbility();

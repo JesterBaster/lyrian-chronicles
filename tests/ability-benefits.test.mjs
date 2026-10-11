@@ -83,7 +83,10 @@ test("only the keywords with real machinery behind them are enforced", () => {
 test("once per round is enforced, and Rapid is exempt", () => {
   const body = itemDocument.slice(itemDocument.indexOf("async _rollAbility"));
   assert.match(body, /enforceOncePerRound && sys\.usedThisRound && !sys\.isRapid/);
-  assert.match(body, /if \(enforceOncePerRound && !sys\.isRapid\) updates\["system\.usedThisRound"\] = true/);
+  // The same condition marks the ability used; it is named so the use can
+  // record that it was the one to set it, for a refund to clear.
+  assert.match(body, /const markedUsedThisRound = Boolean\(enforceOncePerRound && !sys\.isRapid\)/);
+  assert.match(body, /if \(markedUsedThisRound\) updates\["system\.usedThisRound"\] = true/);
   assert.match(itemModel, /this\.isRapid = this\.keywords\?\.has\("rapid"\)/);
 });
 

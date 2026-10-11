@@ -1066,7 +1066,14 @@ export class LyrianActor extends Actor {
     }
 
     const attackRoll = await new Roll(`1d20 + ${profile.accuracy}`).evaluate();
-    const damageRoll = await new Roll(profile.damageFormula).evaluate();
+    // A statblock attack crits like any other: a natural 20 that hits deals
+    // maximum damage and gains half-pierce, and Block can still turn it — the
+    // card has to say so for the defence buttons to know. This path used to
+    // roll plain damage and tell the card nothing, so a monster on its official
+    // statblock never critted at all.
+    const natural = attackRoll.dice[0]?.total ?? 0;
+    const isCrit = isCriticalHit(natural);
+    const damageRoll = await new Roll(profile.damageFormula).evaluate({ maximize: isCrit });
     const legacyMonsterAttack = {
       actorUuid: this.uuid,
       attackType,
@@ -1084,9 +1091,11 @@ export class LyrianActor extends Actor {
       damageType: resolveDamageType(this.system.universalDamageType, LYRIAN.damageTypes),
       attackRoll,
       damageRoll,
+      isCrit,
+      halfPierce: isCrit,
       legacyMonsterAttack
     });
-    return { attackRoll, damageRoll, message };
+    return { attackRoll, damageRoll, isCrit, message };
   }
 
   /* -------------------------------------------- */
@@ -1160,6 +1169,10 @@ export class LyrianActor extends Actor {
       }
 
       const update = {};
+      // What came out of each pool, so a refund can put it back where it was.
+      // Returned in place of `true`: an object is just as truthy to every
+      // caller that only asks whether the payment went through.
+      const spent = {};
       for (const [key, cost] of Object.entries(costs)) {
         if (!cost) continue;
         // Temporary points are spent first — they expire, so burning them last wastes them.
@@ -1167,10 +1180,11 @@ export class LyrianActor extends Actor {
         const fromTemp = Math.min(pool.temp ?? 0, cost);
         update[`system.${key}.temp`] = (pool.temp ?? 0) - fromTemp;
         update[`system.${key}.value`] = pool.value - (cost - fromTemp);
+        spent[key] = { temp: fromTemp, value: cost - fromTemp };
       }
 
       await this.update(update);
-      return true;
+      return spent;
     });
   }
 
