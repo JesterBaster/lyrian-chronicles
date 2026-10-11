@@ -310,3 +310,25 @@ test("an unknown action and an empty HUD are refused quietly", async () => {
   await noActor.buildSystemActions();
   assert.deepEqual(noActor.added, [], "no token selected means no actions, not a crash");
 });
+
+test("an ability the sheet shows once is not shown twice in the HUD", async () => {
+  // A class grant plus the player's own copy of the same ability are two Items.
+  // The sheet lists it once, under the class; the HUD read every Item and
+  // showed both.
+  const actor = stubActor();
+  actor.addItem({
+    id: "g1", name: "Cleave", type: "ability",
+    system: { timing: "action", stableId: "ability--cleave" },
+    flags: { "lyrian-chronicles": { featureSource: { kind: "class", sourceItemId: "c1" } } }
+  });
+  actor.addItem({
+    id: "a1", name: "Cleave", type: "ability",
+    system: { timing: "action", stableId: "ability--cleave" }
+  });
+  actor.addItem({ id: "a2", name: "Riposte", type: "ability", system: { timing: "action" } });
+
+  const handler = await buildFor(actor);
+  const actions = handler.added.find(({ group }) => group.id === "actions")?.actions ?? [];
+  assert.deepEqual(actions.map((a) => a.id).sort(), ["a2", "g1"],
+    "the granted copy is the one kept, as on the sheet");
+});

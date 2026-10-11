@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 
-import { startingClim } from "../module/rules/progression.mjs";
+import { creationClim, startingClim } from "../module/rules/progression.mjs";
 
 const CREATION = readFileSync(
   new URL("../module/apps/character-creation.mjs", import.meta.url), "utf8");
@@ -62,4 +62,29 @@ test("the setting is registered and described", () => {
   assert.match(LYRIAN_MJS, /default: LYRIAN\.progression\.startingClim/);
   assert.ok(LANG["LYRIAN.Settings.StartingClim.Name"]);
   assert.ok(LANG["LYRIAN.Settings.StartingClim.Hint"]);
+});
+
+test("a character made without the wizard still starts with the table's purse", () => {
+  // The schema default is the book's 3000, fixed when the schema is defined, so
+  // Create Actor ignored a 4000-Clim table until someone ran the wizard.
+  assert.equal(creationClim("character", { name: "Kaelen", type: "character" }, 4000), 4000);
+  assert.equal(creationClim("character", { system: {} }, 4000), 4000);
+});
+
+test("Clim that was chosen is kept, and only characters are touched", () => {
+  // A duplicate, an import or a compendium entry carries a figure on purpose.
+  assert.equal(creationClim("character", { system: { clim: 120 } }, 4000), null);
+  assert.equal(creationClim("character", { system: { clim: 0 } }, 4000), null,
+    "a deliberate zero is a choice, not a blank");
+  assert.equal(creationClim("character", { "system.clim": 50 }, 4000), null, "flat keys too");
+
+  // NPCs and monsters have their own purse, and none by default.
+  assert.equal(creationClim("npc", {}, 4000), null);
+  assert.equal(creationClim("monster", {}, 4000), null);
+});
+
+test("actor creation actually asks", () => {
+  const source = readFileSync(new URL("../module/documents/actor.mjs", import.meta.url), "utf8");
+  const preCreate = source.slice(source.indexOf("async _preCreate("), source.indexOf("async _preUpdate("));
+  assert.match(preCreate, /creationClim\(this\.type, data\)/);
 });
