@@ -14,7 +14,7 @@ import {
   isCriticalHit
 } from "../rules/ability-attack.mjs";
 import { abilityRefused, abilitySucceeded } from "../rules/ability-result.mjs";
-import { REFUND_FLAG, refundRecord } from "../rules/ability-refund.mjs";
+import { REFUND_FLAG, refundRecord, refundWindow } from "../rules/ability-refund.mjs";
 import { applyChatMode, prepareItemChatContent } from "../rules/chat-content.mjs";
 import { itemChatKeywords, itemChatStats } from "../rules/item-summary.mjs";
 import { dualWieldFollowUp } from "../rules/dual-wield.mjs";
@@ -257,7 +257,8 @@ export class LyrianItem extends Item {
       spent,
       markedUsedThisRound,
       markedSecretArt,
-      markedDualWield
+      markedDualWield,
+      window: refundWindow(game.combat)
     });
 
     // Healing is rolled alongside any attack rather than instead of it, so a

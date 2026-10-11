@@ -27,7 +27,7 @@ import { captureScroll, restoreScroll } from "../rules/scroll-state.mjs";
 import { withCollapsed } from "../rules/collapsible.mjs";
 import { weaponsDisplacedBy } from "../rules/weapon-slots.mjs";
 import { pendingDualWieldWeaponId } from "../rules/dual-wield.mjs";
-import { damageTypeChoices, resolveDamageType } from "../rules/damage-types.mjs";
+import { damageTypeChoices } from "../rules/damage-types.mjs";
 import { craftActionOptions, craftStatus } from "../rules/crafting-session.mjs";
 import { queueDocumentWrite } from "../rules/action-transactions.mjs";
 import {

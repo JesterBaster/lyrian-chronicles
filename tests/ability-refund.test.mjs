@@ -12,9 +12,12 @@ import test from "node:test";
 
 import {
   isRefundable,
+  refundPermission,
   refundRecord,
   refundSummary,
-  refundUpdates
+  refundUpdates,
+  refundWindow,
+  sameWindow
 } from "../module/rules/ability-refund.mjs";
 
 const pools = (ap, rp, mana) => ({
@@ -115,4 +118,83 @@ test("one use writes one record, on its first card", () => {
   const strike = item.slice(item.indexOf("async _rollAbilityStrike("));
   assert.doesNotMatch(strike.slice(0, strike.indexOf("\n  }\n")), /_attachRefund/,
     "a strike that also recorded one would let a three-hit ability be refunded three times");
+});
+
+/* -------------------------------------------- */
+/*  When a refund may reset an allowance         */
+/* -------------------------------------------- */
+
+test("an old card cannot hand out a second Secret Art", () => {
+  // The exploit: use a Secret Art, start a new encounter, use another, then
+  // refund the first card. Clearing the flag would allow a third.
+  const encounterOne = refundWindow({ id: "combat-1", round: 2, turn: 1 });
+  const encounterTwo = refundWindow({ id: "combat-2", round: 1, turn: 0 });
+  const record = refundRecord({
+    spent: { mana: { temp: 0, value: 3 } }, markedSecretArt: true, window: encounterOne
+  });
+
+  const inWindow = sameWindow(record.window, encounterTwo);
+  assert.equal(inWindow, false);
+  assert.deepEqual(refundPermission({ isOwner: true, inWindow }),
+    { allowed: false, resetsAllowances: false }, "the player cannot");
+
+  const gm = refundPermission({ isGM: true, inWindow });
+  assert.deepEqual(gm, { allowed: true, resetsAllowances: false }, "the GM can, for the mana only");
+  const { actor } = refundUpdates(record, pools([0, 4], [0, 3], [2, 8]), gm);
+  assert.equal(actor["system.mana.value"], 5);
+  assert.equal("system.encounter.secretArtUsed" in actor, false,
+    "the flag may be the second Secret Art's, so it stays");
+});
+
+test("an old card cannot repeat a once-per-round ability", () => {
+  const roundOne = refundWindow({ id: "c", round: 1, turn: 2 });
+  const roundTwo = refundWindow({ id: "c", round: 2, turn: 2 });
+  const record = refundRecord({
+    spent: { ap: { temp: 0, value: 2 } }, markedUsedThisRound: true, window: roundOne
+  });
+  const late = refundPermission({ isGM: true, inWindow: sameWindow(record.window, roundTwo) });
+  assert.deepEqual(refundUpdates(record, pools([2, 4], [0, 3], [0, 8]), late).item, {});
+});
+
+test("within the turn it was made, the owner gets everything back", () => {
+  const now = refundWindow({ id: "c", round: 3, turn: 1 });
+  const record = refundRecord({
+    spent: { ap: { temp: 0, value: 2 } }, markedUsedThisRound: true, markedDualWield: true, window: now
+  });
+  const permission = refundPermission({ isOwner: true, inWindow: sameWindow(record.window, now) });
+  assert.deepEqual(permission, { allowed: true, resetsAllowances: true });
+
+  const { actor, item, resetAllowances } = refundUpdates(record, pools([1, 4], [0, 3], [0, 8]), permission);
+  assert.equal(actor["system.ap.value"], 3);
+  assert.equal(actor["system.turn.dualWieldUsed"], false);
+  assert.deepEqual(item, { "system.usedThisRound": false });
+  assert.equal(resetAllowances, true);
+});
+
+test("out of combat there are no turns to pass, so it stays refundable", () => {
+  assert.deepEqual(refundWindow(null), { combat: null, round: null, turn: null });
+  assert.equal(sameWindow(refundWindow(null), refundWindow(undefined)), true);
+  // But a use made out of combat is not "now" once a fight has started.
+  assert.equal(sameWindow(refundWindow(null), refundWindow({ id: "c", round: 1, turn: 0 })), false);
+});
+
+test("a card from before windows existed is only ever the GM's to refund", () => {
+  const legacy = refundRecord({ spent: { ap: { temp: 0, value: 1 } }, markedUsedThisRound: true });
+  assert.equal(legacy.window, null);
+  const inWindow = sameWindow(legacy.window, refundWindow(null));
+  assert.equal(inWindow, false);
+  assert.equal(refundPermission({ isOwner: true, inWindow }).allowed, false);
+  assert.deepEqual(refundPermission({ isGM: true, inWindow }), { allowed: true, resetsAllowances: false });
+});
+
+test("someone who does not own the character cannot refund it at all", () => {
+  assert.equal(refundPermission({ isOwner: false, inWindow: true }).allowed, false);
+});
+
+test("a use records its moment, and the menu and refund both ask permission", () => {
+  assert.match(item, /window: refundWindow\(game\.combat\)/);
+  assert.match(menu, /inWindow: sameWindow\(record\?\.window, refundWindow\(game\.combat\)\)/);
+  assert.match(menu, /resetsAllowances: permission\.resetsAllowances/);
+  // The option is hidden from a player whose turn has passed, not just refused.
+  assert.match(menu, /return permissionFor\(record, actor\)\.allowed;/);
 });

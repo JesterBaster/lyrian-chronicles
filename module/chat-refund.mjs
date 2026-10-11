@@ -8,9 +8,13 @@
  * is exact rather than estimated — and once given, the card says so and the
  * option goes away, so it cannot be refunded twice.
  *
- * Only the actor's owner or a GM sees the option. Damage or healing already
- * applied is not undone: that went through its own buttons, and reversing it
- * is a GM's call rather than a resource refund.
+ * The actor's owner can refund during the turn the use was made in. A GM can
+ * refund at any time, but after that turn only the resources come back: an
+ * allowance by then may belong to a newer use, and clearing it would hand the
+ * character a second Secret Art or a repeat of a once-per-round ability.
+ *
+ * Damage or healing already applied is not undone: that went through its own
+ * buttons, and reversing it is a GM's call rather than a resource refund.
  *
  * Built against Foundry v14's context menu entry: `label`, `visible(target)`
  * and `onClick(event, target)`. The v13 names `name`, `condition` and
@@ -20,8 +24,11 @@ import { queueActorTransaction } from "./rules/action-transactions.mjs";
 import {
   isRefundable,
   REFUND_FLAG,
+  refundPermission,
   refundSummary,
-  refundUpdates
+  refundUpdates,
+  refundWindow,
+  sameWindow
 } from "./rules/ability-refund.mjs";
 
 const SCOPE = "lyrian-chronicles";
@@ -37,13 +44,21 @@ function recordOf(message) {
   return message?.getFlag?.(SCOPE, REFUND_FLAG) ?? null;
 }
 
-/** Whether this user may refund this card: there is something left, and the actor is theirs. */
+/** Who may refund this card, now, and whether doing so resets the allowances. */
+function permissionFor(record, actor) {
+  return refundPermission({
+    isGM: game.user.isGM,
+    isOwner: Boolean(actor?.isOwner),
+    inWindow: sameWindow(record?.window, refundWindow(game.combat))
+  });
+}
+
+/** Whether to offer the option: there is something left, and this user may take it. */
 function canRefund(message) {
   const record = recordOf(message);
   if (!isRefundable(record)) return false;
-  if (game.user.isGM) return true;
   const actor = record.actorUuid ? fromUuidSync(record.actorUuid) : null;
-  return Boolean(actor?.isOwner);
+  return permissionFor(record, actor).allowed;
 }
 
 /**
@@ -62,8 +77,11 @@ export async function refundAbilityUse(message) {
     ui.notifications.warn(game.i18n.localize("LYRIAN.Refund.ActorGone"));
     return null;
   }
-  if (!game.user.isGM && !actor.isOwner) {
-    ui.notifications.warn(game.i18n.format("LYRIAN.Warn.NotOwner", { name: actor.name }));
+  const permission = permissionFor(record, actor);
+  if (!permission.allowed) {
+    ui.notifications.warn(game.i18n.localize(actor.isOwner
+      ? "LYRIAN.Refund.TurnOver"
+      : "LYRIAN.Refund.NotYours"));
     return null;
   }
 
@@ -78,8 +96,10 @@ export async function refundAbilityUse(message) {
   }
 
   // In the same queue as spending, so a refund and a use cannot interleave.
-  const { restored } = await queueActorTransaction(actor, async () => {
-    const updates = refundUpdates(record, actor.system);
+  const { restored, resetAllowances } = await queueActorTransaction(actor, async () => {
+    const updates = refundUpdates(record, actor.system, {
+      resetsAllowances: permission.resetsAllowances
+    });
     if (Object.keys(updates.actor).length) await actor.update(updates.actor);
     const item = record.itemUuid ? await fromUuid(record.itemUuid) : null;
     if (item && Object.keys(updates.item).length) await item.update(updates.item);
@@ -92,11 +112,14 @@ export async function refundAbilityUse(message) {
     mana: game.i18n.localize("LYRIAN.Resource.Mana")
   });
   const name = foundry.utils.escapeHTML(record.itemName || "");
+  // Said plainly when a later GM refund gave resources but left the
+  // allowances: the ability may still read as used, and that is deliberate.
+  const key = resetAllowances
+    ? (summary ? "LYRIAN.Refund.Done" : "LYRIAN.Refund.DoneNoCost")
+    : (summary ? "LYRIAN.Refund.DoneLate" : "LYRIAN.Refund.DoneLateNoCost");
   await ChatMessage.create({
     speaker: ChatMessage.getSpeaker({ actor }),
-    content: `<p>${summary
-      ? game.i18n.format("LYRIAN.Refund.Done", { name, refund: summary })
-      : game.i18n.format("LYRIAN.Refund.DoneNoCost", { name })}</p>`
+    content: `<p>${game.i18n.format(key, { name, refund: summary })}</p>`
   });
   return restored;
 }
