@@ -25,6 +25,7 @@ import { initializeTrading } from "./trade/trade-service.mjs";
 import { seedSystemPacks, resetSystemPacks } from "./content/seed-packs.mjs";
 import { runCharacterCreation } from "./apps/character-creation.mjs";
 import { registerIntegrations } from "./integrations/index.mjs";
+import { registerChatRefund } from "./chat-refund.mjs";
 import { resolveDefence } from "./rules/defence-resolution.mjs";
 import { resolvedAttackFlagUpdate } from "./rules/resolved-attacks.mjs";
 import { boundedDamage, legitimateAttackProfile } from "./rules/attack-verification.mjs";
@@ -63,6 +64,9 @@ Hooks.once("init", function () {
   // Optional module integrations. Each waits on a hook only its module fires,
   // so this is inert on a table that has installed none of them.
   registerIntegrations();
+
+  // Right-click an ability's card to refund that use.
+  registerChatRefund();
 
   // Documents.
   CONFIG.Actor.documentClass = LyrianActor;

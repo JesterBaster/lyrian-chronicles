@@ -48,6 +48,7 @@ restart; changes to data model schemas need the world relaunched from the setup 
 | Action locking | One active GM authorizes each actor action lock, preventing two browsers from spending the same resources or resolving the same attack card concurrently |
 | Once per round | Non-Rapid abilities lock until the owner's next turn; one Secret Art per encounter |
 | Downed | 0 HP applies Downed and Prone (grunts die outright); negative max HP applies Mortal Wound |
+| Refunds | Right-click an ability's chat card and choose **Refund this use** to get back the AP, RP and mana it spent and the once-per-round, Secret Art or dual wield allowance it used. Damage already applied is left to the GM |
 | Injuries | 1d10 injury table roll creates an Injury item on the actor |
 | Skills | `d20 + sub stat + ranks + expertise`, with the 15 / 20 / uncapped rank cap tracked from Spirit Core |
 | Crafting & gathering | Projects consume owned Gear, then accumulate Crafting Points across Basic Craft, Beginner's Luck, Steady Craft and Standard Finish until they reach the item's Crafting HP; spare points fit compatible owned Mods, a tool's crafting and finish bonuses apply, and success creates either a copy of a dropped Item or a custom weapon, armor or gear item priced at its Book Price; gathering stays `d10 + skill` checks |
@@ -193,7 +194,9 @@ Create Items in a compendium and drag them onto sheets:
 
 - **Class** items track tier and progression through level 8.
 - **Ability** items carry AP / RP / mana costs, keywords, and an optional attack payload.
-  Tick *Use equipped weapon damage* for abilities that ride on a weapon strike.
+  Tick *Use equipped weapon damage* for abilities that ride on a weapon strike, and set
+  *Attacks per use* for one that strikes more than once (Double Punch is 2, Burst Fire 3).
+  Monster abilities take the same attack and healing fields.
 - **Breakthrough** items record EXP cost and level.
 
 Passive bonuses are best handled with Active Effects targeting keys such as

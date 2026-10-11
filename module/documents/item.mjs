@@ -14,6 +14,7 @@ import {
   isCriticalHit
 } from "../rules/ability-attack.mjs";
 import { abilityRefused, abilitySucceeded } from "../rules/ability-result.mjs";
+import { REFUND_FLAG, refundRecord } from "../rules/ability-refund.mjs";
 import { applyChatMode, prepareItemChatContent } from "../rules/chat-content.mjs";
 import { itemChatKeywords, itemChatStats } from "../rules/item-summary.mjs";
 import { dualWieldFollowUp } from "../rules/dual-wield.mjs";
@@ -218,6 +219,7 @@ export class LyrianItem extends Item {
       return abilityRefused("dual-wield-spent");
     }
 
+    let spent = null;
     if (!options.free) {
       const paid = await actor.spendResources({
         ap: sys.apCost,
@@ -225,21 +227,38 @@ export class LyrianItem extends Item {
         mana: sys.manaCost
       });
       if (!paid) return abilityRefused("payment");
+      spent = paid;
     }
 
+    // Each mark is only recorded as this use's when this use set it. All three
+    // were refused above if already set, so here they are always fresh.
+    const markedUsedThisRound = Boolean(enforceOncePerRound && !sys.isRapid);
+    const markedDualWield = Boolean(sys.isDualWield && !actor.system.turn?.dualWieldUsed);
+    const markedSecretArt = Boolean(sys.isSecretArt);
+
     const updates = {};
-    if (enforceOncePerRound && !sys.isRapid) updates["system.usedThisRound"] = true;
+    if (markedUsedThisRound) updates["system.usedThisRound"] = true;
     if (Object.keys(updates).length) await this.update(updates);
 
     // "After using it, you cannot make another dual wield attack this turn."
     // Spent after payment, so a refused ability does not burn the allowance.
-    if (sys.isDualWield && !actor.system.turn?.dualWieldUsed) {
+    if (markedDualWield) {
       await actor.update({ "system.turn.dualWieldUsed": true });
     }
 
-    if (sys.isSecretArt) {
+    if (markedSecretArt) {
       await actor.update({ "system.encounter.secretArtUsed": true });
     }
+
+    const refund = refundRecord({
+      actorUuid: actor.uuid,
+      itemUuid: this.uuid,
+      itemName: this.name,
+      spent,
+      markedUsedThisRound,
+      markedSecretArt,
+      markedDualWield
+    });
 
     // Healing is rolled alongside any attack rather than instead of it, so a
     // drain ability resolves both halves from a single activation.
@@ -251,6 +270,7 @@ export class LyrianItem extends Item {
       const message = healingRoll
         ? await this.postHealingCard(healingRoll)
         : await this.postToChat();
+      await this._attachRefund(message, refund);
       return abilitySucceeded({ healingRoll, message });
     }
 
@@ -265,10 +285,28 @@ export class LyrianItem extends Item {
 
     if (healingRoll) await this.postHealingCard(healingRoll);
 
+    // On the first card only: one use, one refund, however many strikes.
+    const [first] = attacks;
+    await this._attachRefund(first?.message, refund);
+
     // The first strike's fields keep their old names, for anything reading
     // them; `attacks` carries every strike.
-    const [first] = attacks;
     return abilitySucceeded({ ...first, attacks, healingRoll });
+  }
+
+  /**
+   * Note on a use's card what it cost, so the card can give it back.
+   *
+   * Best-effort: a card that cannot carry the note simply offers no refund,
+   * and the use itself has already happened either way.
+   */
+  async _attachRefund(message, record) {
+    if (!record || typeof message?.setFlag !== "function") return;
+    try {
+      await message.setFlag("lyrian-chronicles", REFUND_FLAG, record);
+    } catch (error) {
+      console.warn("Lyrian Chronicles | could not record a refund on the card", error);
+    }
   }
 
   /**

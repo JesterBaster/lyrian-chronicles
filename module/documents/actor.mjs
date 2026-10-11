@@ -1169,6 +1169,10 @@ export class LyrianActor extends Actor {
       }
 
       const update = {};
+      // What came out of each pool, so a refund can put it back where it was.
+      // Returned in place of `true`: an object is just as truthy to every
+      // caller that only asks whether the payment went through.
+      const spent = {};
       for (const [key, cost] of Object.entries(costs)) {
         if (!cost) continue;
         // Temporary points are spent first — they expire, so burning them last wastes them.
@@ -1176,10 +1180,11 @@ export class LyrianActor extends Actor {
         const fromTemp = Math.min(pool.temp ?? 0, cost);
         update[`system.${key}.temp`] = (pool.temp ?? 0) - fromTemp;
         update[`system.${key}.value`] = pool.value - (cost - fromTemp);
+        spent[key] = { temp: fromTemp, value: cost - fromTemp };
       }
 
       await this.update(update);
-      return true;
+      return spent;
     });
   }
 
