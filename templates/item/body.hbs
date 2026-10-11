@@ -1,3 +1,49 @@
+{{!-- Keywords, attack and healing: what an ability does when used. Shared by
+     player and monster abilities, which have the same fields and roll the same
+     way; monster abilities simply never showed them. Only one of the two
+     sections ever renders, so the names cannot collide. --}}
+{{#*inline "abilityPayload"}}
+  <fieldset class="lyr-keywords">
+    <legend>{{localize "LYRIAN.UI.Keywords"}}</legend>
+    {{#each keywordChoices as |kw|}}
+      <button type="button" class="lyr-keyword {{#if kw.active}}lyr-keyword--on{{/if}} {{#unless kw.automated}}lyr-keyword--manual{{/unless}}"
+              data-action="toggleKeyword" data-keyword="{{kw.key}}"
+              title="{{#if kw.automated}}{{localize "LYRIAN.Hint.AutomatedKeyword"}}{{else}}{{localize "LYRIAN.Hint.ManualKeyword"}}{{/if}}">{{kw.label}}</button>
+    {{/each}}
+  </fieldset>
+
+  <fieldset class="lyr-attack-block">
+    <legend>{{localize "LYRIAN.UI.Attack"}}</legend>
+    <label class="lyr-check"><input type="checkbox" name="system.hasAttack" {{checked system.hasAttack}} /> {{localize "LYRIAN.UI.AbilityMakesAttack"}}</label>
+    <div class="lyr-field-grid">
+      <label>{{localize "LYRIAN.UI.AttackType"}}
+        <select name="system.attackType">
+          {{#each config.attackTypes as |at key|}}
+            <option value="{{key}}" {{#if (eq ../system.attackType key)}}selected{{/if}}>{{localize at.label}}</option>
+          {{/each}}
+        </select>
+      </label>
+      <label>{{localize "LYRIAN.UI.DamageFormula"}} <input type="text" name="system.damageFormula" value="{{system.damageFormula}}" placeholder="{{localize "LYRIAN.Placeholder.DamageFormula"}}" /></label>
+      <label>{{localize "LYRIAN.UI.DamageType"}}
+        <select name="system.damageType">
+          {{#each config.damageTypes as |dt key|}}
+            <option value="{{key}}" {{#if (eq ../system.damageType key)}}selected{{/if}}>{{localize dt.label}}</option>
+          {{/each}}
+        </select>
+      </label>
+      <label class="lyr-check"><input type="checkbox" name="system.usesWeapon" {{checked system.usesWeapon}} /> {{localize "LYRIAN.UI.UseWeaponDamage"}}</label>
+    </div>
+  </fieldset>
+
+  <fieldset class="lyr-attack-block">
+    <legend>{{localize "LYRIAN.UI.Healing"}}</legend>
+    <label class="lyr-check"><input type="checkbox" name="system.hasHealing" {{checked system.hasHealing}} /> {{localize "LYRIAN.UI.AbilityHeals"}}</label>
+    <div class="lyr-field-grid">
+      <label>{{localize "LYRIAN.UI.HealingFormula"}} <input type="text" name="system.healingFormula" value="{{system.healingFormula}}" placeholder="{{localize "LYRIAN.Placeholder.HealingFormula"}}" /></label>
+    </div>
+  </fieldset>
+{{/inline}}
+
 <section class="lyr-item-body" data-application-part="body">
 
 {{#unless editable}}
@@ -164,45 +210,7 @@
     <label>{{localize "LYRIAN.UI.FromClass"}} <input type="text" name="system.classSource" value="{{system.classSource}}" /></label>
   </div>
 
-  <fieldset class="lyr-keywords">
-    <legend>{{localize "LYRIAN.UI.Keywords"}}</legend>
-    {{#each keywordChoices as |kw|}}
-      <button type="button" class="lyr-keyword {{#if kw.active}}lyr-keyword--on{{/if}} {{#unless kw.automated}}lyr-keyword--manual{{/unless}}"
-              data-action="toggleKeyword" data-keyword="{{kw.key}}"
-              title="{{#if kw.automated}}{{localize "LYRIAN.Hint.AutomatedKeyword"}}{{else}}{{localize "LYRIAN.Hint.ManualKeyword"}}{{/if}}">{{kw.label}}</button>
-    {{/each}}
-  </fieldset>
-
-  <fieldset class="lyr-attack-block">
-    <legend>{{localize "LYRIAN.UI.Attack"}}</legend>
-    <label class="lyr-check"><input type="checkbox" name="system.hasAttack" {{checked system.hasAttack}} /> {{localize "LYRIAN.UI.AbilityMakesAttack"}}</label>
-    <div class="lyr-field-grid">
-      <label>{{localize "LYRIAN.UI.AttackType"}}
-        <select name="system.attackType">
-          {{#each config.attackTypes as |at key|}}
-            <option value="{{key}}" {{#if (eq ../system.attackType key)}}selected{{/if}}>{{localize at.label}}</option>
-          {{/each}}
-        </select>
-      </label>
-      <label>{{localize "LYRIAN.UI.DamageFormula"}} <input type="text" name="system.damageFormula" value="{{system.damageFormula}}" placeholder="{{localize "LYRIAN.Placeholder.DamageFormula"}}" /></label>
-      <label>{{localize "LYRIAN.UI.DamageType"}}
-        <select name="system.damageType">
-          {{#each config.damageTypes as |dt key|}}
-            <option value="{{key}}" {{#if (eq ../system.damageType key)}}selected{{/if}}>{{localize dt.label}}</option>
-          {{/each}}
-        </select>
-      </label>
-      <label class="lyr-check"><input type="checkbox" name="system.usesWeapon" {{checked system.usesWeapon}} /> {{localize "LYRIAN.UI.UseWeaponDamage"}}</label>
-    </div>
-  </fieldset>
-
-  <fieldset class="lyr-attack-block">
-    <legend>{{localize "LYRIAN.UI.Healing"}}</legend>
-    <label class="lyr-check"><input type="checkbox" name="system.hasHealing" {{checked system.hasHealing}} /> {{localize "LYRIAN.UI.AbilityHeals"}}</label>
-    <div class="lyr-field-grid">
-      <label>{{localize "LYRIAN.UI.HealingFormula"}} <input type="text" name="system.healingFormula" value="{{system.healingFormula}}" placeholder="{{localize "LYRIAN.Placeholder.HealingFormula"}}" /></label>
-    </div>
-  </fieldset>
+  {{> abilityPayload}}
 {{/if}}
 
 {{#if (eq type "keyword")}}
@@ -223,6 +231,7 @@
     <label>{{localize "LYRIAN.UI.Range"}} <input type="text" name="system.range" value="{{system.range}}" /></label>
     <label>{{localize "LYRIAN.UI.Requirement"}} <input type="text" name="system.requirement" value="{{system.requirement}}" /></label>
   </div>
+  {{> abilityPayload}}
 {{/if}}
 
 {{#if (eq type "class")}}

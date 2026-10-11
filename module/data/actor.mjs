@@ -3,6 +3,7 @@ import { equippedArmorContribution, equippedArmorSlots } from "../rules/armor.mj
 import { equippedWeaponSlots } from "../rules/weapon-slots.mjs";
 import { CUSTOM_OUTPUT_TYPES } from "../rules/crafting.mjs";
 import { derivedGuardValues } from "../rules/damage.mjs";
+import { statblockAccuracy } from "../rules/monster-attack.mjs";
 import {
   raceAmbitionExp,
   selectedRaceBonuses,
@@ -644,6 +645,12 @@ export class LyrianNPC extends LyrianActorBase {
       this.dodgeEvasion = this.official.dodgeEvasion;
       this.initiative.value = this.official.initiative;
       this.movement.total = this.official.movement;
+      // The statblock replaces the Focus part; an effect's bonus still applies.
+      const printed = statblockAccuracy(this.official, this.stats.focus.total);
+      if (printed) {
+        const bonus = this.defences.accuracyBonus;
+        this.accuracy = { standard: printed.standard + bonus, precise: printed.precise + bonus };
+      }
       this._finishPools(this.hp, this.mana);
     } else {
       const economy = LYRIAN.actionEconomy[this.rank] ?? LYRIAN.actionEconomy.grunt;
