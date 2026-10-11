@@ -82,3 +82,17 @@ export function weaponsDisplacedBy(weapon, items = [], options = {}) {
   const held = new Set(slots.held.map((item) => item.id));
   return others.filter((item) => !held.has(item.id));
 }
+
+/**
+ * Whether an actor is holding this weapon, so it can attack with it.
+ *
+ * Held means in a hand this turn — what `equippedWeaponSlots` put in
+ * `system.equipment.weapons`, and what the sheet already uses to decide which
+ * weapons get attack buttons. Equipped but displaced (no hand free) is not
+ * held, and neither is stowed.
+ */
+export function isHeldWeapon(weapon, actor) {
+  if (!weapon?.id) return false;
+  const held = actor?.system?.equipment?.weapons ?? [];
+  return held.some((entry) => entry?.id === weapon.id);
+}

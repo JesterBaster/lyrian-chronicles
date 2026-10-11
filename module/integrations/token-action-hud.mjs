@@ -14,6 +14,7 @@
  */
 import { LYRIAN } from "../config.mjs";
 import { listedAbilities } from "../rules/ability-sections.mjs";
+import { isHeldWeapon } from "../rules/weapon-slots.mjs";
 
 const SYSTEM_ID = "lyrian-chronicles";
 
@@ -114,6 +115,11 @@ export function registerTokenActionHud() {
         // modifier keys. A weapon that only did a Light attack on a plain click
         // sent players to the Attacks group's Heavy button instead — which is
         // the unarmed strike, so a greatsword's 5d6 heavy came out as 4d6.
+        // Held weapons only, as on the sheet: a stowed weapon cannot swing, and
+        // offering three buttons that each refuse is worse than none.
+        const held = new Set(Array.from(this.items ?? []).map(([, item]) => item)
+          .filter((item) => item.type === "weapon" && isHeldWeapon(item, this.actor))
+          .map((item) => item.id));
         const weapons = this.#itemActions(["weapon"], "weapon", (action, item) => {
           const damage = item.system?.damageBonus;
           const accuracy = item.system?.accuracyBonus;
@@ -126,7 +132,8 @@ export function registerTokenActionHud() {
           action.tooltip = i18n("LYRIAN.TAH.Tooltip.Weapon");
           return action;
         });
-        const actions = weapons.flatMap((weapon) => WEAPON_ATTACKS.map((type) => {
+        const actions = weapons.filter((weapon) => held.has(weapon.id))
+          .flatMap((weapon) => WEAPON_ATTACKS.map((type) => {
           const label = i18n(LYRIAN.attackTypes[type].label);
           return {
             ...weapon,

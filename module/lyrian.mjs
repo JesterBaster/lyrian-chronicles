@@ -1,7 +1,6 @@
 import { LYRIAN } from "./config.mjs";
-import { LyrianActorBase, LyrianCharacter, LyrianNPC } from "./data/actor.mjs";
+import { LyrianCharacter, LyrianNPC } from "./data/actor.mjs";
 import {
-  LyrianItemBase,
   LyrianKeyword,
   LyrianWeapon,
   LyrianArmor,
