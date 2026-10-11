@@ -1066,7 +1066,14 @@ export class LyrianActor extends Actor {
     }
 
     const attackRoll = await new Roll(`1d20 + ${profile.accuracy}`).evaluate();
-    const damageRoll = await new Roll(profile.damageFormula).evaluate();
+    // A statblock attack crits like any other: a natural 20 that hits deals
+    // maximum damage and gains half-pierce, and Block can still turn it — the
+    // card has to say so for the defence buttons to know. This path used to
+    // roll plain damage and tell the card nothing, so a monster on its official
+    // statblock never critted at all.
+    const natural = attackRoll.dice[0]?.total ?? 0;
+    const isCrit = isCriticalHit(natural);
+    const damageRoll = await new Roll(profile.damageFormula).evaluate({ maximize: isCrit });
     const legacyMonsterAttack = {
       actorUuid: this.uuid,
       attackType,
@@ -1084,9 +1091,11 @@ export class LyrianActor extends Actor {
       damageType: resolveDamageType(this.system.universalDamageType, LYRIAN.damageTypes),
       attackRoll,
       damageRoll,
+      isCrit,
+      halfPierce: isCrit,
       legacyMonsterAttack
     });
-    return { attackRoll, damageRoll, message };
+    return { attackRoll, damageRoll, isCrit, message };
   }
 
   /* -------------------------------------------- */
