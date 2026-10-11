@@ -177,9 +177,13 @@ test("a character's HUD carries their weapons, abilities and checks", async () =
   const handler = await buildFor(actor);
   const byGroup = Object.fromEntries(handler.added.map(({ group, actions }) => [group.id, actions]));
 
-  assert.deepEqual(byGroup.weapons.map((a) => a.name), ["Longsword"]);
+  // Each attack is its own button, so a Heavy needs no modifier key.
+  assert.deepEqual(byGroup.weapons.map((a) => a.encodedValue),
+    ["weapon|w1|light", "weapon|w1|heavy", "weapon|w1|precise"]);
+  assert.match(byGroup.weapons[1].name, /^Longsword: /, "the weapon is named on every button");
   assert.equal(byGroup.weapons[0].cssClass, "active", "an equipped weapon is marked");
   assert.equal(byGroup.weapons[0].info1.text, "+2");
+  assert.equal(new Set(byGroup.weapons.map((a) => a.id)).size, 3, "ids stay unique");
 
   // Abilities split by timing rather than piling onto one shelf. A crafting
   // ability is not spent in a fight, so it must not bury the ones that are —
@@ -331,4 +335,48 @@ test("an ability the sheet shows once is not shown twice in the HUD", async () =
   const actions = handler.added.find(({ group }) => group.id === "actions")?.actions ?? [];
   assert.deepEqual(actions.map((a) => a.id).sort(), ["a2", "g1"],
     "the granted copy is the one kept, as on the sheet");
+});
+
+/* -------------------------------------------- */
+/*  Two-handed Heavy reported as 4d6             */
+/* -------------------------------------------- */
+
+test("a weapon's Heavy button makes that weapon's heavy attack", async () => {
+  // The report: two-handed melee heavies dealt 4d6, not 5d6. The weapon's own
+  // heavy is 5d6 — but on a plain click the HUD only did a Light, so players
+  // pressed the Attacks group's Heavy, which is the unarmed strike.
+  const actor = stubActor();
+  const weapon = actor.addItem({ id: "w1", name: "Greatsword", type: "weapon", system: {} });
+  const handler = new (registered.api.SystemManager)().getRollHandler("core");
+  Object.defineProperty(handler, "actor", { value: actor });
+
+  await handler.handleActionClick(null, "weapon|w1|heavy");
+  assert.deepEqual(weapon.rolls.at(-1), ["rollAttack", "heavy"]);
+  assert.deepEqual(actor.calls, [], "the weapon, not the unarmed strike");
+
+  await handler.handleActionClick(null, "weapon|w1|precise");
+  assert.deepEqual(weapon.rolls.at(-1), ["rollAttack", "precise"]);
+
+  // A modifier still wins, for anyone who learned Ctrl for heavy.
+  handler.isCtrl = true;
+  await handler.handleActionClick(null, "weapon|w1|light");
+  assert.deepEqual(weapon.rolls.at(-1), ["rollAttack", "heavy"]);
+  handler.isCtrl = false;
+
+  // A value naming no real attack falls back to light rather than throwing.
+  await handler.handleActionClick(null, "weapon|w1|nonsense");
+  assert.deepEqual(weapon.rolls.at(-1), ["rollAttack", "light"]);
+});
+
+test("a character's universal attacks say they are unarmed", async () => {
+  const character = await buildFor(stubActor());
+  const monster = await buildFor(stubActor({ type: "npc" }));
+  const names = (handler) => handler.added
+    .find(({ group }) => group.id === "attacks").actions.map((a) => a.name);
+
+  for (const name of names(character)) {
+    assert.match(name, /Unarmed/, `${name} reads as the weapon's attack`);
+  }
+  // A monster's is its statblock attack, so it keeps the plain name.
+  for (const name of names(monster)) assert.doesNotMatch(name, /Unarmed/);
 });

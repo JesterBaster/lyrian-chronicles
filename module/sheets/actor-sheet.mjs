@@ -474,6 +474,9 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       openerId: context.system.turn?.dualWieldOpenerId ?? "",
       used: Boolean(context.system.turn?.dualWieldUsed)
     });
+    // Whether the universal row's "no weapon equipped" hint is true. It was
+    // shown regardless, above the weapons, and read as the main attack.
+    context.anyWeaponHeld = buckets.weapons.some((weapon) => heldIds.has(weapon.id));
     context.weaponRows = buckets.weapons.map((weapon) => ({
       item: weapon,
       held: heldIds.has(weapon.id),
