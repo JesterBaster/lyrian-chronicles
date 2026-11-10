@@ -157,3 +157,19 @@ test("a race qualified by sex is confirmed by hand when it is the only match", (
   assert.equal(evaluate(["Oni"]).status, REQUIREMENT_STATUS.MANUAL);
   assert.equal(evaluate(["Human"]).status, REQUIREMENT_STATUS.FAIL);
 });
+
+test("the Mystic Eyes classes accept the race in place of mastering Evil Eye", () => {
+  const text = "Evil Eye mastered or Oni plus any tier 2 mastered. At least 1 mystic eye slot open.";
+  const local = {
+    ...catalog,
+    classes: [...catalog.classes, { name: "Evil Eye", tier: 1 }],
+    races: ["Oni", "Human"]
+  };
+  const evaluate = (actor) => evaluateRequirement(text, { ...context(actor), catalog: local });
+  const tierTwo = { name: "Thief", tier: 2, level: 8 };
+  const evilEye = { name: "Evil Eye", tier: 1, level: 8 };
+  assert.notEqual(evaluate({ races: ["Oni"], classes: [tierTwo] }).status, REQUIREMENT_STATUS.FAIL);
+  assert.notEqual(evaluate({ races: ["Human"], classes: [evilEye, tierTwo] }).status, REQUIREMENT_STATUS.FAIL);
+  assert.equal(evaluate({ races: ["Oni"], classes: [] }).status, REQUIREMENT_STATUS.FAIL);
+  assert.equal(evaluate({ races: ["Human"], classes: [tierTwo] }).status, REQUIREMENT_STATUS.FAIL);
+});
