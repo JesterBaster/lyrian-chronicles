@@ -325,6 +325,9 @@
     <label>{{localize "LYRIAN.UI.Units"}} <input type="number" name="system.units" value="{{system.units}}" /></label>
     <label class="lyr-check"><input type="checkbox" name="system.combatItem" {{checked system.combatItem}} /> {{localize "LYRIAN.UI.CombatItem"}}</label>
     <label class="lyr-check"><input type="checkbox" name="system.isKit" {{checked system.isKit}} /> {{localize "LYRIAN.UI.Kit"}}</label>
+    {{#if system.isKit}}
+    <label class="lyr-check"><input type="checkbox" name="system.stored" {{checked system.stored}} /> {{localize "LYRIAN.UI.KitStored"}}</label>
+    {{/if}}
   </div>
 {{/if}}
 

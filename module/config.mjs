@@ -80,6 +80,12 @@ LYRIAN.gatheringSkills = {
   fishing: "LYRIAN.Gathering.Fishing"
 };
 
+/**
+ * Skill and expertise rank caps (rulebook 0.13.3, Skill cap): 15, raised by 5
+ * at 5k Spirit Core, removed at Skybound tier (10k). The `skybound*` key names
+ * predate 0.13.3, when the 5k step was itself called Skybound; they are kept so
+ * world macros and modules reading them keep working.
+ */
 LYRIAN.skillCaps = {
   base: 15,
   skyboundBonus: 5,
@@ -325,12 +331,37 @@ LYRIAN.progression = {
   maxClassLevel: 8
 };
 
-/** Spirit core milestones. Purely informational on the sheet. */
+/**
+ * Spirit Core tiers shown on the sheet. The rulebook names one: Skybound, at
+ * 10k Spirit Core (0.13.3, Skill cap). Below it a character has no tier name.
+ */
 LYRIAN.spiritCoreTiers = [
-  { threshold: 0, label: "LYRIAN.Tier.Grounded" },
-  { threshold: 5000, label: "LYRIAN.Tier.Skybound" },
-  { threshold: 10000, label: "LYRIAN.Tier.Ascendant" }
+  { threshold: 0, label: "" },
+  { threshold: 10000, label: "LYRIAN.Tier.Skybound" }
 ];
+
+/**
+ * Spirit Core thresholds announced in chat when crossed, because each one
+ * loosens the skill rank cap (see LYRIAN.skillCaps).
+ */
+LYRIAN.spiritCoreMilestones = [
+  { threshold: 5000, message: "LYRIAN.Milestone.SkillCapRaised" },
+  { threshold: 10000, message: "LYRIAN.Milestone.Skybound" }
+];
+
+/**
+ * Rulebook 0.13.3, Skybound Trial: "Until the trial is completed, EXP cannot
+ * be spent past 9999 exp. Any excess EXP obtained before completing the trial
+ * is stored, up to a maximum of 1000 stored exp."
+ *
+ * Spent EXP is Spirit Core, and Skybound tier is 10k Spirit Core, so the hold
+ * is on Spirit Core. The stored-EXP ceiling is reported, not enforced: EXP is
+ * awarded by the GM, who decides what happens to anything past it.
+ */
+LYRIAN.skyboundTrial = {
+  spiritCoreLimit: 9999,
+  storedExpLimit: 1000
+};
 
 /** The 1d10 injury table rolled after being downed. */
 LYRIAN.injuryTable = {

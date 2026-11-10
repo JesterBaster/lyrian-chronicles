@@ -428,14 +428,18 @@ export class LyrianGear extends LyrianItemBase {
     schema.value = int(0, { min: 0 });
     schema.combatItem = new fields.BooleanField({ initial: true });
     schema.isKit = new fields.BooleanField({ initial: false });
+    // Rulebook 0.13.3: a kit picked up on an adventure can be stored for 0
+    // Burden, but cannot be used for the rest of that adventure.
+    schema.stored = new fields.BooleanField({ initial: false });
     schema.materialType = new fields.StringField({ blank: true, initial: "" });
     schema.units = int(0, { min: 0 });
     return schema;
   }
 
   prepareDerivedData() {
-    // Kits always count as burden even though they are non-combat items.
-    this.countsAsBurden = this.combatItem || this.isKit;
+    // Kits always count as burden even though they are non-combat items,
+    // unless stored for the adventure.
+    this.countsAsBurden = this.isKit ? !this.stored : this.combatItem;
     this.totalBurden = this.countsAsBurden ? this.burden * this.quantity : 0;
   }
 }

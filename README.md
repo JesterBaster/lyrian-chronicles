@@ -7,7 +7,7 @@ for Foundry VTT v14. Mechanics are transcribed from the core rulebook:
 Power / Focus / Agility / Toughness, the AP and RP economy, Guard–Block–Dodge defence,
 skills with expertise, classes, breakthroughs, and Spirit Core progression.
 
-The system includes reviewed official rulebook v0.13.2 content plus focused equipment and
+The system includes reviewed official rulebook v0.13.3 content plus focused equipment and
 crafting compendiums, with source links, stable cross-references, and official artwork where available.
 
 ## Install
@@ -51,6 +51,8 @@ restart; changes to data model schemas need the world relaunched from the setup 
 | Refunds | Right-click an ability's chat card and choose **Refund this use** to get back the AP, RP and mana it spent and the once-per-round, Secret Art or dual wield allowance it used. Damage already applied is left to the GM |
 | Injuries | 1d10 injury table roll creates an Injury item on the actor |
 | Skills | `d20 + sub stat + ranks + expertise`, with the 15 / 20 / uncapped rank cap tracked from Spirit Core |
+| Skybound | Skybound tier starts at 10,000 Spirit Core. Until **Skybound Trial completed** is ticked on the Spirit Core tab, EXP cannot raise Spirit Core past 9,999; the tab flags unspent EXP above the 1,000 a character may store meanwhile |
+| Burden | Combat items and carried kits count toward the limit of 10; a kit marked **Stored** counts 0 but cannot be used that adventure |
 | Crafting & gathering | Projects consume owned Gear, then accumulate Crafting Points across Basic Craft, Beginner's Luck, Steady Craft and Standard Finish until they reach the item's Crafting HP; spare points fit compatible owned Mods, a tool's crafting and finish bonuses apply, and success creates either a copy of a dropped Item or a custom weapon, armor or gear item priced at its Book Price; gathering stays `d10 + skill` checks |
 
 ## Compendium content

@@ -11,13 +11,16 @@
     <div class="lyr-spirit__core">
       <span class="lyr-spirit__label">{{localize "LYRIAN.UI.SpiritCore"}}</span>
       <strong class="lyr-spirit__value">{{system.spiritCore}}</strong>
-      <em>{{localize system.tier.label}}</em>
+      {{#if system.tier.label}}<em>{{localize system.tier.label}}</em>{{/if}}
+      <label class="lyr-check"><input type="checkbox" name="system.skyboundTrial" {{checked system.skyboundTrial}} /> {{localize "LYRIAN.UI.SkyboundTrial"}}</label>
     </div>
     <div class="lyr-spirit__exp">
       <label>{{localize "LYRIAN.UI.ExpEarned"}} <input type="number" name="system.exp.total" value="{{system.exp.total}}" /></label>
       <label>{{localize "LYRIAN.UI.ExpSpent"}} <input type="number" name="system.exp.spent" value="{{system.exp.spent}}" /></label>
       {{#if system.ambitionExp}}<span class="lyr-note">{{localize "LYRIAN.Hint.AmbitionExp" exp=system.ambitionExp}}</span>{{/if}}
       <span class="lyr-note">{{localize "LYRIAN.UI.Unspent"}}: <strong>{{system.exp.available}}</strong></span>
+      {{#if skybound.held}}<span class="lyr-note">{{localize "LYRIAN.Hint.SkyboundHeld" limit=skybound.limit stored=skybound.stored}}</span>{{/if}}
+      {{#if skybound.overStored}}<span class="lyr-note lyr-warn">{{localize "LYRIAN.Hint.SkyboundStoredOver" exp=skybound.available stored=skybound.stored}}</span>{{/if}}
     </div>
     <div class="lyr-spirit__interlude">
       <label>{{localize "LYRIAN.UI.InterludePoints"}} <input type="number" name="system.interlude.points" value="{{system.interlude.points}}" /></label>
