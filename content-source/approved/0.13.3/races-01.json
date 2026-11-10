@@ -17,7 +17,7 @@
       "attributes": "You gain +1 in toughness and +1 in awareness.",
       "proficiencies": "You can speak, read and write Common as well as the special dialect of your sub-race. ",
       "skills": "You gain +5 skill points in either Magic, Survival, Animal Husbandry, Perception, Insight, Linguistics or Artifice.",
-      "ambition": "--",
+      "ambition": "",
       "ability1": "cadfb72a-b7a9-440f-8d69-da4d3092c0f2",
       "ability2": "",
       "wi": {
@@ -65,7 +65,7 @@
         "ability--fight-or-flight"
       ]
     },
-    "source_hash": "aee0459fe1d100c7bdc1e4ad224f39c2a4c737bfa37516671351906420b7d840"
+    "source_hash": "4b7bf6bde8faba0b8aa8b81cec3f31ef1d4c7e75e496018596ae71c5ac024b96"
   },
   {
     "stable_id": "primary-race--demon",
@@ -85,7 +85,7 @@
       "attributes": "You gain +1 in Power and +1 in Reason.",
       "proficiencies": "You can speak, read, write Common and Sorthen.  You also gain proficiency in one common weapon or +5 skill points in a skill relating to your demon clan.",
       "skills": "You gain +5 skill points in either Common Knowledge, Magic, Religion, History, Flight, Artifice.",
-      "ambition": "--",
+      "ambition": "",
       "ability1": "75120cd3-9056-429b-b614-5ee38f7c8d1c",
       "ability2": "34774ae5-c638-4229-8966-72c279bc7c3a",
       "wi": {
@@ -143,7 +143,7 @@
         "ability--instinct"
       ]
     },
-    "source_hash": "e93515282f27e6812be091c55d432624806f83c0e28fef9cbac4841967d739e6"
+    "source_hash": "7284c11e57efb287e9b1e6cceb873d877687c3a6104fb16bf3ad2ae9b4dad2df"
   },
   {
     "stable_id": "primary-race--fae",
@@ -163,7 +163,7 @@
       "attributes": "You gain +1 in Agility and +1 in Cunning.",
       "proficiencies": "You can speak, read and write Sylvan, as well as Common.",
       "skills": "You gain +5 skill points in either Magic, Medicine, Negotiation, Intimidation, Insight.",
-      "ambition": "--",
+      "ambition": "",
       "ability1": "cc310c04-2d58-4361-9629-49fcf0cf2e52",
       "ability2": "",
       "wi": {
@@ -211,7 +211,7 @@
         "ability--faerie-flash"
       ]
     },
-    "source_hash": "6fe08d8a634d09a9e39026edaa6964f8cd8119651d04764e30ac9999c1a3b59c"
+    "source_hash": "60a5cc235c853b6aafe4ee269b0252512ca3a51cd5ef874c1dddd3eddd4bfbf9"
   },
   {
     "stable_id": "primary-race--human",
@@ -300,7 +300,7 @@
       "attributes": "You gain +1 in Focus and +1 in Presence.",
       "proficiencies": "You can speak, read and write Kiraran, as well as Common. ",
       "skills": "You gain +5 skill points in either Insight, Intimidation, Magic, Medicine, Negotiation",
-      "ambition": "--",
+      "ambition": "",
       "ability1": "b447ce81-f722-4d68-8b70-7d22637b81c3",
       "ability2": "",
       "wi": {
@@ -348,7 +348,7 @@
         "ability--spiritual-sync"
       ]
     },
-    "source_hash": "a2f893eee1787d99b91f26a98bfbe24da8f31f76a2b5ac8754babf271db4ee6d"
+    "source_hash": "b9df2751e0c91d02dc9e1a7b8db2030c4527c517a58fed678fc8d5b3fbd4d558"
   },
   {
     "stable_id": "ancestry--ancient-marionette",

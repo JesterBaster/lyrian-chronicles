@@ -14201,8 +14201,8 @@
       "name": "Aerial Mage",
       "benefit1": "You may use Aerial Mode Switch.",
       "benefit2": "While grounded and riding an Aerial Stave, you may reload 2 shells instead of 1 when taking the Reload Artifice basic action on your staff. You may do this even if your hands would normally be full and can draw both shells with 1 action.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Aerial Mode Switch",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "6e451755-7b48-489d-a4dd-1674db385ec6"
     },
     "relationships": {
@@ -14214,7 +14214,7 @@
         }
       ]
     },
-    "source_hash": "86135c053110c4a70039e5a70d1823024b86577cfdded52c60f39892bedc0682"
+    "source_hash": "788cbffd48ac88d2e4179b1639b755c5c6d8efed3f25fcf972823b91dd596ed2"
   },
   {
     "stable_id": "key-ability--aftershocks",
@@ -14356,8 +14356,8 @@
       "name": "Armorsmithing Expert",
       "benefit1": "You gain the Master Armorer's core crafting abilities",
       "benefit2": "You may craft using Mithril, Orihalcum, Primehide and Dragonscale materials.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Armorsmithing Expert",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "e024ea8e-fd06-4e45-b837-c60868a24644"
     },
     "relationships": {
@@ -14369,7 +14369,7 @@
         }
       ]
     },
-    "source_hash": "4e42c81bf11dd62ee116b2f5a6256c12a8a72001253b1bc48ed31dea3f039abd"
+    "source_hash": "d21d2e5348f18a2eea58e611da758ad49d09b6dfa99ba73d31e3bc745af0e2dc"
   },
   {
     "stable_id": "key-ability--arms-mastery",
@@ -14448,8 +14448,8 @@
       "abilityId": "augmented-casting---increased-reach",
       "name": "Augmented Casting - Increased Reach",
       "benefit1": "You may use Increased Reach.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Increased Reach",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "9aa90707-ef3a-4698-a757-76b3b5744a01"
     },
@@ -14462,7 +14462,7 @@
         }
       ]
     },
-    "source_hash": "ddda908a24807f6b898466feb34fc230491be9037410404edbd863524239fbef"
+    "source_hash": "b10fdff933a8f3f7b8f472cc5722277fc1027da6aaa7397428bec796ecca0543"
   },
   {
     "stable_id": "key-ability--augmented-casting-persistent-spell",
@@ -14479,8 +14479,8 @@
       "abilityId": "augmented_casting_-_persistent_spell",
       "name": "Augmented Casting - Persistent Spell",
       "benefit1": "You may use Persistent Spell.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Persistent Spell",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "fdb444d2-decb-4ec1-85cc-4d54b549d74c"
     },
@@ -14493,7 +14493,7 @@
         }
       ]
     },
-    "source_hash": "76026d815cbcc30199c1d33071fc07d782469394a17285b0dff5a168298c655d"
+    "source_hash": "110b95346bd128f1ff7e2bf079dc85f06ff339b1ec56cd4be3430bfdaa5b20de"
   },
   {
     "stable_id": "key-ability--authority",
@@ -14572,8 +14572,8 @@
       "abilityId": "bone-armor",
       "name": "Bone Armor",
       "benefit1": "You may use Bone Armor.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Bone Armor",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "3b8f6012-79db-41e3-aa09-c9490c0c90dd"
     },
@@ -14586,7 +14586,7 @@
         }
       ]
     },
-    "source_hash": "16d27f08d01047fb53c8486b92021ee72ba35213f5020e5b6a3adad0f1b2787c"
+    "source_hash": "07ffe6939b5782f5576fa22e128cf308ab0baf234c950bf15f5925d90567ff26"
   },
   {
     "stable_id": "key-ability--botany-study",
@@ -14634,8 +14634,8 @@
       "abilityId": "boundless-wind",
       "name": "Boundless Wind",
       "benefit1": "You may use Boundless Wind Stance.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Boundless Wind Stance",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "75017c9e-52da-4bc9-9d3d-626faee21f77"
     },
@@ -14648,7 +14648,7 @@
         }
       ]
     },
-    "source_hash": "0cacf2f83fbad048a2ba1abf7d59baacb49eb29889f043f0b5767b56c12fef3a"
+    "source_hash": "94e709b047417d8d7748672c3c0a770488c1cb14a04b136af81c3bad8495f531"
   },
   {
     "stable_id": "key-ability--brace",
@@ -14698,7 +14698,7 @@
       "benefit1": "You gain proficiency in Cannons.",
       "benefit2": "Your attacks with the Cannon keyword ignore the 1 attack limitation of cannons.",
       "benefit3": "You may use Rocket Jump.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "cc55e00f-152d-4d8c-9c83-a7fb575a3393"
     },
     "relationships": {
@@ -14710,7 +14710,7 @@
         }
       ]
     },
-    "source_hash": "bb43641e39e26b240f387deedeef178ebe7ee9ae3173bd29e3c8a9cbcc8dbe0f"
+    "source_hash": "10b18cb4c638a9da99c68b5aa96c422844d59a76116f6b3b2f7cf032cdd3abf4"
   },
   {
     "stable_id": "key-ability--carpenter-basics",
@@ -14759,8 +14759,8 @@
       "name": "Celestial Artillery",
       "benefit1": "When attacking an enemy outdoors that’s further than 80ft away, your spells with the Celestial keyword gain the Artillery keyword.",
       "benefit2": "You may use Comet.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Comet",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "1414e402-1079-4c0d-9c47-000082b2dabe"
     },
     "relationships": {
@@ -14772,7 +14772,7 @@
         }
       ]
     },
-    "source_hash": "462e4f5cd22968853c89f04b04b36e5e935cfca9272d2d94a51990b6204f6c05"
+    "source_hash": "b2bbfcd5ca946bf36eda5a53633aad899b6ea248d6196312994ceab557481db7"
   },
   {
     "stable_id": "key-ability--cloudstep",
@@ -14789,8 +14789,8 @@
       "abilityId": "cloudstep",
       "name": "Cloudstep",
       "benefit1": "You may use Cloudstep.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Cloudstep",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "a52f1ca5-bec1-4b5a-9674-cb2c568ef0be"
     },
@@ -14803,7 +14803,7 @@
         }
       ]
     },
-    "source_hash": "2e7631309e4c4b8cb60731989711d707fad0244e4c636fd18ba5573dd917d047"
+    "source_hash": "2b1b679809b32b1debdddb4ed801e7ec7f694b0530dd8b4c1695a21c6512ac1f"
   },
   {
     "stable_id": "key-ability--controlled-blaze",
@@ -15104,8 +15104,8 @@
       "name": "Death Perception",
       "benefit1": "You may use Death Perception.",
       "benefit2": "One of your eyes becomes a Shinigami Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Death Perception",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "ad9a0274-32df-4eb4-ae68-19a4d7ed220f"
     },
     "relationships": {
@@ -15117,7 +15117,7 @@
         }
       ]
     },
-    "source_hash": "9b9f51040cc9e95941727d44711b0381bab2aaad552d9a80c5f29083eb843440"
+    "source_hash": "b0c6ee7269b3614a3a74877628542f74e9ecdd127a3a1c80fdcc2ceaf25e046b"
   },
   {
     "stable_id": "key-ability--deflect-everything",
@@ -15227,8 +15227,8 @@
       "abilityId": "discern-immunities",
       "name": "Discern Immunities",
       "benefit1": "You may use Discern Immunities.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Discern Immunities",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "87c13302-1eaf-44ee-88d5-fa6c0551629f"
     },
@@ -15241,7 +15241,7 @@
         }
       ]
     },
-    "source_hash": "44d4a519beee25aef6e812affe315fcd48eadace957e485c732368b2ebf963eb"
+    "source_hash": "54a11fdd9251e1aa3cfa690e8094ed53f59cc80d2d579a11a780ef603a729f9b"
   },
   {
     "stable_id": "key-ability--divine-weapon",
@@ -15297,8 +15297,8 @@
       "abilityId": "draw_elements",
       "name": "Draw Elements",
       "benefit1": "You may use Draw Elements.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Draw Elements",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "f8c3cbae-1fed-4c8e-8557-1fa232a546f3"
     },
@@ -15311,7 +15311,7 @@
         }
       ]
     },
-    "source_hash": "f375b2d882ba81ebee4abfc4b4582320171fb2066d9b5df0a5ddf2f935495ada"
+    "source_hash": "85d47ef36d6e36f85d2db2ddcc41fbe5b568e011527edf5f06ef9e42824b3854"
   },
   {
     "stable_id": "key-ability--draw-elements-ii",
@@ -15328,8 +15328,8 @@
       "abilityId": "draw-elements-ii",
       "name": "Draw Elements II",
       "benefit1": "You may use Draw Elements II.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Draw Elements II",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "832dda9e-c2f0-496b-b678-77b42c24b4a1"
     },
@@ -15342,7 +15342,7 @@
         }
       ]
     },
-    "source_hash": "57e50443a6aea45da6d14c6577ee70c29a201c013cc702fdf4ed94c650a74383"
+    "source_hash": "97665e8fe162e37dcb7902efd600615bc3072656347aba881fa6f9bf59fb1230"
   },
   {
     "stable_id": "key-ability--earth-weapon",
@@ -15390,8 +15390,8 @@
       "abilityId": "elemental-convergence",
       "name": "Elemental Convergence",
       "benefit1": "You may use Elemental Convergence.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Elemental Convergence",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "16a663c5-487c-4795-afef-21be2cfc5842"
     },
@@ -15404,7 +15404,7 @@
         }
       ]
     },
-    "source_hash": "f25b1e2cdbf8f4d1563a4ed6997496d7af12701584987bff03a441e370351d54"
+    "source_hash": "d2233b6a434720402cd74a3a8f061121ed0388c4f527e4a1e7ed03dad03b460e"
   },
   {
     "stable_id": "key-ability--emergency-shields",
@@ -15452,8 +15452,8 @@
       "abilityId": "empty_body",
       "name": "Empty Body",
       "benefit1": "You may use Empty Body.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Empty Body",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "dc114d27-65ef-4f11-8fd9-b569ac6480a4"
     },
@@ -15466,7 +15466,7 @@
         }
       ]
     },
-    "source_hash": "ebf4b3b868cd90c7f5e6b3f72d235a258fa1e8986357e61cff5e8fba2d1950fe"
+    "source_hash": "f4787eb2ad2cb274771836d94ca5f030c71d1f853ed2573e46069c31dc6ad2c7"
   },
   {
     "stable_id": "key-ability--enduring-earth",
@@ -15512,8 +15512,8 @@
       "abilityId": "envenom-weapon",
       "name": "Envenom Weapon",
       "benefit1": "You may use Envenom Weapon.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Envenom Weapon",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "98023eff-92f0-4c40-ae62-9ecdda4441c8"
     },
@@ -15526,7 +15526,7 @@
         }
       ]
     },
-    "source_hash": "5478e4f60b201c889bbccaa35510fc78a77db21ad434c3414d60648f7611e3b0"
+    "source_hash": "930f3f9c6cfbe837e47edd96af9e8ccdb790f66a435a759b51ee0d6e30a271fa"
   },
   {
     "stable_id": "key-ability--eternal-flames",
@@ -15574,8 +15574,8 @@
       "abilityId": "eternal-mirane-cage",
       "name": "Eternal Mirane Cage",
       "benefit1": "You may use Eternal Mirane Cage.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Eternal Mirane Cage",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "7f7c91d1-0f03-48d3-a595-9ac48e134409"
     },
@@ -15588,7 +15588,7 @@
         }
       ]
     },
-    "source_hash": "f5a0cefc6aba0066e189c5780f7a18bd6992a1eedc9cfa3506570a6dec995e59"
+    "source_hash": "5dca835557e9ac3b5f28a1333593339cfd87d513ec690fea71c287dbb26bce27"
   },
   {
     "stable_id": "key-ability--evil-eye",
@@ -15636,8 +15636,8 @@
       "abilityId": "execute-the-heretic",
       "name": "Execute the Heretic",
       "benefit1": "You may use Execute Heretic",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Execute Heretic",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "eff6d4b1-5a40-44eb-a578-1e7ab1168c3b"
     },
@@ -15650,7 +15650,7 @@
         }
       ]
     },
-    "source_hash": "a99aacd315da555de8b34f08e1889968d8fa0dbd03c6c889d2e8b46273cf9ac6"
+    "source_hash": "a7ac17fe347d346f5cc8c08d857d74d638e848a4cd551f9dbec3249bbb20e456"
   },
   {
     "stable_id": "key-ability--expanded-circuits",
@@ -15730,8 +15730,8 @@
       "name": "Expert Alchemist",
       "benefit1": "You gain Alchemeister Core Crafting Abilities.",
       "benefit2": "When using Throw Potion, you may infuse it using your own mana. You spend X mana and the mana cost the target needs to pay to benefit from the potion is reduced by X (the mana cost cannot go below 0).",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Alchemeister Core Crafting",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "926351fb-d8b4-424b-95de-c5db8a604344"
     },
     "relationships": {
@@ -15743,7 +15743,7 @@
         }
       ]
     },
-    "source_hash": "e03fd8d4272fa9fe2561506c9c7904d7dfcf6d2203359bdba72860f14e27d663"
+    "source_hash": "0a6412be11a07e820750506e120f9d65504e0d46448f2cb80c5c0758059c4772"
   },
   {
     "stable_id": "key-ability--expert-farmer",
@@ -15760,8 +15760,8 @@
       "abilityId": "expert-farmer",
       "name": "Expert Farmer",
       "benefit1": "You may use the Agrarian's core crafting abilities.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Expert Farmer",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "231512ae-3d9b-451c-a22b-8997dac58407"
     },
@@ -15774,7 +15774,7 @@
         }
       ]
     },
-    "source_hash": "2b475cb5354d909069b5ab345ab60ad48f5abce328f64fdb79c79dd5d021fa3b"
+    "source_hash": "05bfaa14c57bd89a7737f036ceabc4bc2a5bf814cff48870b390b7de35a85fe2"
   },
   {
     "stable_id": "key-ability--expert-scribe",
@@ -15917,7 +15917,7 @@
       "benefit1": "You gain proficiency in the scythe specialized weapon and can use it as farming tool. You also gain proficiency in the Sickle and can use it as a farming tool and One-Handed axe.",
       "benefit2": "You can plant seeds in plots of land that sprout into harvestable Food and Alchemy materials. You can work 10 plots of land.",
       "benefit3": "You gain Farmer core abilities.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "aa50566f-e237-4022-b119-5cdccbd438e4"
     },
     "relationships": {
@@ -15929,7 +15929,7 @@
         }
       ]
     },
-    "source_hash": "02595a7e2cfce4f4da2beaa152fb7d5945239083da761088676eb4a34bc6cb0b"
+    "source_hash": "5373356b7812ae228e4d65996eec815d67946e0619f6c8a2a6e8c41796cc144b"
   },
   {
     "stable_id": "key-ability--fighter-s-journey",
@@ -15977,8 +15977,8 @@
       "abilityId": "fire-stance",
       "name": "Fire Stance",
       "benefit1": "You may use Tempestuous Fire Stance",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Tempestuous Fire Stance",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "6e0bbe1d-2559-413e-81fa-9902475e714d"
     },
@@ -15991,7 +15991,7 @@
         }
       ]
     },
-    "source_hash": "d32a777fb2a3789ae668b9e7dd4e86047530a795b29ae3491323f42a6f7f478d"
+    "source_hash": "343d5c68dd33fef54316f0bbb7a20b2d134adfbb46d1d882de3cb5bc1c41105c"
   },
   {
     "stable_id": "key-ability--fire-weapon",
@@ -16039,8 +16039,8 @@
       "abilityId": "five-harmonies-",
       "name": "Five Harmonies ",
       "benefit1": "You may use Luminous Form Stance.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Luminous Form Stance",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "423d0a8f-630b-451a-896e-6ebb4f127a85"
     },
@@ -16053,7 +16053,7 @@
         }
       ]
     },
-    "source_hash": "125232b945b504657b84adf7bf761c6e27b117e7b8c99e44af86fab48efa8bb4"
+    "source_hash": "46bb90cd9f273c3ca85a91fe4464fab24a0f15a8112aa96ea40d8a6395e13f3f"
   },
   {
     "stable_id": "key-ability--focused-weapons",
@@ -16071,8 +16071,8 @@
       "name": "Focused Weapons",
       "benefit1": "You gain Forgemaster Core Crafting Abilities.",
       "benefit2": "You can craft using Mithril and Orihalcum.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Forgemaster Core Crafting",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "13876827-f77a-4039-a96b-07bdaac32734"
     },
     "relationships": {
@@ -16084,6 +16084,6 @@
         }
       ]
     },
-    "source_hash": "6600924a70d1c44d2970dd0aa7344e2d041f59bac7b347381d856b04b806cd5f"
+    "source_hash": "b8e0b018e7b842c7efad78c53237d2995b168c05f27cf07142cbe12668c0b16a"
   }
 ]

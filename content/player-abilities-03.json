@@ -1,296 +1,5 @@
 [
   {
-    "_id": "6cb1986cbe6b3b2f",
-    "name": "Lord's Dominion",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You can partially resist the effect of the sun. You may now spend 1 round in the sun before you start taking damage. Spending a turn outside of the sun resets this effect, giving you another round where you do not suffer the negative effects.</p></section><section><h3>Benefit 2</h3><p>You gain +1 Vampire Lord bonus to Presence.</p></section>",
-      "source": "The Lyrian Chronicles v0.13.3",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "8be1fc9ee15fffa75d0046bab445246e6fe56903462d37e7ef2b8065d887f9b8",
-      "rulebookVersion": "0.13.3",
-      "stableId": "key-ability--lord-s-dominion",
-      "relationships": {
-        "associated_ability": null,
-        "classes": [
-          {
-            "class": "class--vampire-lord",
-            "slot": "keyAbility"
-          }
-        ],
-        "_links": [
-          {
-            "stableId": "class--vampire-lord",
-            "name": "Vampire Lord",
-            "pack": "classes",
-            "documentId": "bd42ba98a2895984",
-            "uuid": "Compendium.lyrian-chronicles.classes.Item.bd42ba98a2895984"
-          }
-        ]
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [],
-      "rawKeywords": "",
-      "rawCost": "",
-      "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You can partially resist the effect of the sun. You may now spend 1 round in the sun before you start taking damage. Spending a turn outside of the sun resets this effect, giving you another round where you do not suffer the negative effects.</p></section><section><h3>Benefit 2</h3><p>You gain +1 Vampire Lord bonus to Presence.</p></section>",
-      "isKeyAbility": true,
-      "patchVersion": "0.13.3",
-      "range": "",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "class--vampire-lord",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:key-ability--lord-s-dominion",
-        "stableId": "key-ability--lord-s-dominion",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "8be1fc9ee15fffa75d0046bab445246e6fe56903462d37e7ef2b8065d887f9b8",
-        "rulebookVersion": "0.13.3",
-        "contentBuild": "0.5.0"
-      }
-    }
-  },
-  {
-    "_id": "5fee5325669503a5",
-    "name": "Loyalty",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>When standing within 5ft of a heroic ally, your Guard is increased by 1 and your Block is increased by 2.</p>",
-      "source": "The Lyrian Chronicles v0.13.3",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "dbe431ddcf186583d06f058bdff2b3e199a7f09c1615f541f76420ddabea07ca",
-      "rulebookVersion": "0.13.3",
-      "stableId": "ability--loyalty",
-      "relationships": {
-        "classes": [],
-        "_links": []
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [],
-      "rawKeywords": "",
-      "rawCost": "",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.3",
-      "range": "",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--loyalty",
-        "stableId": "ability--loyalty",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "dbe431ddcf186583d06f058bdff2b3e199a7f09c1615f541f76420ddabea07ca",
-        "rulebookVersion": "0.13.3",
-        "contentBuild": "0.5.0"
-      }
-    }
-  },
-  {
-    "_id": "b62eb07d909ce2cd",
-    "name": "Lucid Sleep",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "High Fae remain aware of their surroundings while they sleep and do not suffer from Surprised from being asleep.",
-      "source": "The Lyrian Chronicles v0.13.3",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "f6633183a41e26e4ee3e5d45c5ced98952e12d1bc54128ff8c6ec7142f2aae89",
-      "rulebookVersion": "0.13.3",
-      "stableId": "ability--lucid-sleep",
-      "relationships": {
-        "classes": [],
-        "_links": []
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [],
-      "rawKeywords": "",
-      "rawCost": "",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.3",
-      "range": "",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--lucid-sleep",
-        "stableId": "ability--lucid-sleep",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "f6633183a41e26e4ee3e5d45c5ced98952e12d1bc54128ff8c6ec7142f2aae89",
-        "rulebookVersion": "0.13.3",
-        "contentBuild": "0.5.0"
-      }
-    }
-  },
-  {
-    "_id": "030fe4a9c395988f",
-    "name": "Luminous Form Stance",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>You enter the Luminous Form Stance and create the&nbsp;<strong>Threads of Light.</strong> These manifest spiritual cloth, spectral arms or something similar that enhances your reach.</p><p>While in this stance, you gain an additional 10ft range on your unarmed attacks and your threatened range becomes 5-15ft. Whenever you deal damage to an enemy with an unarmed strike ability (not basic attacks), you gain 1 stack of Harmony up to a maximum of 5. You cannot gain more than 1 Harmony per use of ability.</p><p>When you leave this stance all stacks are lost.</p><p>This stance lasts until you enter a different stance or you willingly move, with the exception of movement abilities with the unarmed strike keyword. Abilities from allies that allow you to move, such as Gravitional Ki, count as willing movement.</p>",
-      "source": "The Lyrian Chronicles v0.13.3",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "52f140f8ba410dd1f3536603a4f2f939b85aece6960b30db94b1d20eb4c12785",
-      "rulebookVersion": "0.13.3",
-      "stableId": "ability--luminous-form-stance",
-      "relationships": {
-        "classes": [],
-        "_links": []
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 1,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [
-        "Stance",
-        "Stacking"
-      ],
-      "rawKeywords": "Stance,Stacking",
-      "rawCost": "0 AP, 1 Mana",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.3",
-      "range": "Self",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--luminous-form-stance",
-        "stableId": "ability--luminous-form-stance",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "52f140f8ba410dd1f3536603a4f2f939b85aece6960b30db94b1d20eb4c12785",
-        "rulebookVersion": "0.13.3",
-        "contentBuild": "0.5.0"
-      }
-    }
-  },
-  {
-    "_id": "19104543879e7cc8",
-    "name": "Lunge",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>The attack range of your next basic Light, Heavy or Precise Attack with a melee weapon is doubled.</p>",
-      "source": "The Lyrian Chronicles v0.13.3",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "71317d83e6b6d0c8c0f6174cfc8289a10bb460f6017843b0d76bd86c56b0185b",
-      "rulebookVersion": "0.13.3",
-      "stableId": "ability--lunge",
-      "relationships": {
-        "classes": [
-          {
-            "class": "class--fencer",
-            "slot": "ability2"
-          },
-          {
-            "class": "class--lancer",
-            "slot": "ability1"
-          }
-        ],
-        "_links": [
-          {
-            "stableId": "class--fencer",
-            "name": "Fencer",
-            "pack": "classes",
-            "documentId": "9d3adaab67a1f0f6",
-            "uuid": "Compendium.lyrian-chronicles.classes.Item.9d3adaab67a1f0f6"
-          },
-          {
-            "stableId": "class--lancer",
-            "name": "Lancer",
-            "pack": "classes",
-            "documentId": "eee219803de15654",
-            "uuid": "Compendium.lyrian-chronicles.classes.Item.eee219803de15654"
-          }
-        ]
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [],
-      "rawKeywords": "",
-      "rawCost": "0 AP",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.3",
-      "range": "Self",
-      "requirement": "<p>-</p>",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "class--fencer, class--lancer",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--lunge",
-        "stableId": "ability--lunge",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "71317d83e6b6d0c8c0f6174cfc8289a10bb460f6017843b0d76bd86c56b0185b",
-        "rulebookVersion": "0.13.3",
-        "contentBuild": "0.5.0"
-      }
-    }
-  },
-  {
     "_id": "09549684e86f59be",
     "name": "Mage Armor",
     "type": "ability",
@@ -350,10 +59,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Mage Armor</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Mage Armor</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Mage Armor</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "d9383c842de09d3f337724d2e8ac56f0ef664b76d1cb451ef6fa09746b517dcf",
+      "sourceHash": "fa170d8cd56c0fa2187634cee2f811021c19faf0f156c5c2f52f30bf6c2a91d5",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--mage-armor",
       "relationships": {
@@ -390,7 +99,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Mage Armor</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Mage Armor</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Mage Armor</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -409,7 +118,7 @@
         "seedKey": "official:key-ability--mage-armor",
         "stableId": "key-ability--mage-armor",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "d9383c842de09d3f337724d2e8ac56f0ef664b76d1cb451ef6fa09746b517dcf",
+        "sourceHash": "fa170d8cd56c0fa2187634cee2f811021c19faf0f156c5c2f52f30bf6c2a91d5",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -485,10 +194,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You can use Blue Tide.</p></section><section><h3>Benefit 2</h3><p>You gain Elemental Mastery: Water</p></section><section><h3>Benefit 3</h3><p>You gain the ability to walk on water and skate across its surface—every 10ft of water surface movement only costs 5ft of movement.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You can use Blue Tide.</p></section><section><h3>Benefit 2</h3><p>You gain Elemental Mastery: Water</p></section><section><h3>Benefit 3</h3><p>You gain the ability to walk on water and skate across its surface—every 10ft of water surface movement only costs 5ft of movement.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "a1072c17f80f231130ae42f5c0017cfe842dab39c03cfd24a1d37611e295342f",
+      "sourceHash": "b66d379f86d6068e1c755848b94047dd68bdc286295b4fce01206ce1cd435ca2",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--mage-of-the-tides",
       "relationships": {
@@ -525,7 +234,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You can use Blue Tide.</p></section><section><h3>Benefit 2</h3><p>You gain Elemental Mastery: Water</p></section><section><h3>Benefit 3</h3><p>You gain the ability to walk on water and skate across its surface—every 10ft of water surface movement only costs 5ft of movement.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You can use Blue Tide.</p></section><section><h3>Benefit 2</h3><p>You gain Elemental Mastery: Water</p></section><section><h3>Benefit 3</h3><p>You gain the ability to walk on water and skate across its surface—every 10ft of water surface movement only costs 5ft of movement.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -544,7 +253,7 @@
         "seedKey": "official:key-ability--mage-of-the-tides",
         "stableId": "key-ability--mage-of-the-tides",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "a1072c17f80f231130ae42f5c0017cfe842dab39c03cfd24a1d37611e295342f",
+        "sourceHash": "b66d379f86d6068e1c755848b94047dd68bdc286295b4fce01206ce1cd435ca2",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -556,10 +265,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in the Channeling weapon group&#39;s weapons and gain Arcane Mastery. Mastery of an element allows you to use it in Channeling weapon attacks and use it to perform minor tricks relating to it.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points in the Magic skill. You can exchange any skill point for 2 expertise points, but must spend them in this skill.</p></section><section><h3>Benefit 3</h3><p>You can use Sense Magic.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in the Channeling weapon group&#39;s weapons and gain Arcane Mastery. Mastery of an element allows you to use it in Channeling weapon attacks and use it to perform minor tricks relating to it.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points in the Magic skill. You can exchange any skill point for 2 expertise points, but must spend them in this skill.</p></section><section><h3>Benefit 3</h3><p>You can use Sense Magic.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "70362ce14ff283123af05c132088ee20f3d9da7a40a6a14f370d73a1cfe4705b",
+      "sourceHash": "01f066b11fe5346dd6ffb7b55e88cf56773473061c6479df5d45dfd577df9e43",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--mage-s-journey",
       "relationships": {
@@ -596,7 +305,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in the Channeling weapon group&#39;s weapons and gain Arcane Mastery. Mastery of an element allows you to use it in Channeling weapon attacks and use it to perform minor tricks relating to it.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points in the Magic skill. You can exchange any skill point for 2 expertise points, but must spend them in this skill.</p></section><section><h3>Benefit 3</h3><p>You can use Sense Magic.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in the Channeling weapon group&#39;s weapons and gain Arcane Mastery. Mastery of an element allows you to use it in Channeling weapon attacks and use it to perform minor tricks relating to it.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points in the Magic skill. You can exchange any skill point for 2 expertise points, but must spend them in this skill.</p></section><section><h3>Benefit 3</h3><p>You can use Sense Magic.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -615,7 +324,7 @@
         "seedKey": "official:key-ability--mage-s-journey",
         "stableId": "key-ability--mage-s-journey",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "70362ce14ff283123af05c132088ee20f3d9da7a40a6a14f370d73a1cfe4705b",
+        "sourceHash": "01f066b11fe5346dd6ffb7b55e88cf56773473061c6479df5d45dfd577df9e43",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -960,10 +669,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in staves (broom), small weapons, sets of missiles and light armor.</p></section><section><h3>Benefit 2</h3><p>You gain 5 skill points to spend in Athletics, Stealth, Roguecraft, Medicine, Common Knowledge, Linguistics, Appraise, History, Perception, Insight, Survival or Intimidation. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You may use Graceful Service.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in staves (broom), small weapons, sets of missiles and light armor.</p></section><section><h3>Benefit 2</h3><p>You gain 5 skill points to spend in Athletics, Stealth, Roguecraft, Medicine, Common Knowledge, Linguistics, Appraise, History, Perception, Insight, Survival or Intimidation. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You may use Graceful Service.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "bce2379a9117c6debb8d286bbe18729bc9b34f562289212a6131e5cbd7854e37",
+      "sourceHash": "a8fe6548f40eb46c3d3bf1458f5a3e0b6fdad66a9ec9851a00c798cb9434f009",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--maid-training",
       "relationships": {
@@ -1000,7 +709,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in staves (broom), small weapons, sets of missiles and light armor.</p></section><section><h3>Benefit 2</h3><p>You gain 5 skill points to spend in Athletics, Stealth, Roguecraft, Medicine, Common Knowledge, Linguistics, Appraise, History, Perception, Insight, Survival or Intimidation. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You may use Graceful Service.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in staves (broom), small weapons, sets of missiles and light armor.</p></section><section><h3>Benefit 2</h3><p>You gain 5 skill points to spend in Athletics, Stealth, Roguecraft, Medicine, Common Knowledge, Linguistics, Appraise, History, Perception, Insight, Survival or Intimidation. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You may use Graceful Service.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -1019,7 +728,7 @@
         "seedKey": "official:key-ability--maid-training",
         "stableId": "key-ability--maid-training",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "bce2379a9117c6debb8d286bbe18729bc9b34f562289212a6131e5cbd7854e37",
+        "sourceHash": "a8fe6548f40eb46c3d3bf1458f5a3e0b6fdad66a9ec9851a00c798cb9434f009",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -1383,10 +1092,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Mana Sight.</p></section><section><h3>Benefit 2</h3><p>One of your eyes becomes an Life Perception Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.</p></section><section><h3>Benefit 3</h3><p>When making an attack with the Mystic Eye keyword that use the Life Perception eye, you ignore 1 point of guard.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Mana Sight.</p></section><section><h3>Benefit 2</h3><p>One of your eyes becomes an Life Perception Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.</p></section><section><h3>Benefit 3</h3><p>When making an attack with the Mystic Eye keyword that use the Life Perception eye, you ignore 1 point of guard.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "ebd1d2604cf9d0ad5b5fc96eedf16eeb170cdcc5506c95810698e5c2ae239a1b",
+      "sourceHash": "c33dc8f1e7fb4c5f27e9ca5641be7d81d931c3624840d17a750e6e532a2a7a31",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--mana-sight",
       "relationships": {
@@ -1423,7 +1132,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Mana Sight.</p></section><section><h3>Benefit 2</h3><p>One of your eyes becomes an Life Perception Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.</p></section><section><h3>Benefit 3</h3><p>When making an attack with the Mystic Eye keyword that use the Life Perception eye, you ignore 1 point of guard.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Mana Sight.</p></section><section><h3>Benefit 2</h3><p>One of your eyes becomes an Life Perception Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.</p></section><section><h3>Benefit 3</h3><p>When making an attack with the Mystic Eye keyword that use the Life Perception eye, you ignore 1 point of guard.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -1442,7 +1151,7 @@
         "seedKey": "official:key-ability--mana-sight",
         "stableId": "key-ability--mana-sight",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "ebd1d2604cf9d0ad5b5fc96eedf16eeb170cdcc5506c95810698e5c2ae239a1b",
+        "sourceHash": "c33dc8f1e7fb4c5f27e9ca5641be7d81d931c3624840d17a750e6e532a2a7a31",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -1454,10 +1163,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in 1 common melee weapon, light armor and shields.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Athletics, Perception, History, Magic, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You may use Secret Art: Manifest</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in 1 common melee weapon, light armor and shields.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Athletics, Perception, History, Magic, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You may use Secret Art: Manifest</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "4eaf82cecd164b33ee733534cedf36d7517ec505d2ae71e9f4bd1a4d2c0f1b44",
+      "sourceHash": "1ac8ea91635c6ccb707df97f4fa1eca7d566c2c40534521548f93800877f993a",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--manifestor-s-journey",
       "relationships": {
@@ -1486,7 +1195,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in 1 common melee weapon, light armor and shields.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Athletics, Perception, History, Magic, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You may use Secret Art: Manifest</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in 1 common melee weapon, light armor and shields.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Athletics, Perception, History, Magic, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You may use Secret Art: Manifest</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -1505,7 +1214,7 @@
         "seedKey": "official:key-ability--manifestor-s-journey",
         "stableId": "key-ability--manifestor-s-journey",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "4eaf82cecd164b33ee733534cedf36d7517ec505d2ae71e9f4bd1a4d2c0f1b44",
+        "sourceHash": "1ac8ea91635c6ccb707df97f4fa1eca7d566c2c40534521548f93800877f993a",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -1711,10 +1420,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Athletics, Perception, Insight, Medicine, Intimidation or a relevant Expert Knowledge skill (By DM approval). You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Discipline.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Athletics, Perception, Insight, Medicine, Intimidation or a relevant Expert Knowledge skill (By DM approval). You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Discipline.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "e515e5368b338063151671466fa6d83ebcba11b9fc4f63c37edc3cd896fc353a",
+      "sourceHash": "82ba2f3f1559a1ef417f8705ebb1e865e555fbfc388e831423b065e4bfdd95dd",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--martial-artist-s-journey",
       "relationships": {
@@ -1751,7 +1460,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Athletics, Perception, Insight, Medicine, Intimidation or a relevant Expert Knowledge skill (By DM approval). You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Discipline.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Athletics, Perception, Insight, Medicine, Intimidation or a relevant Expert Knowledge skill (By DM approval). You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Discipline.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -1770,7 +1479,7 @@
         "seedKey": "official:key-ability--martial-artist-s-journey",
         "stableId": "key-ability--martial-artist-s-journey",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "e515e5368b338063151671466fa6d83ebcba11b9fc4f63c37edc3cd896fc353a",
+        "sourceHash": "82ba2f3f1559a1ef417f8705ebb1e865e555fbfc388e831423b065e4bfdd95dd",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -1845,10 +1554,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>Your spells with the Gravity keyword deal extra damage to the target based on its size. They deal an additional 1 damage to large creatures and an additional 3 to Huge creatures.</p></section><section><h3>Benefit 2</h3><p>You may use Gravity Crush.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Gravity Crush</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>Your spells with the Gravity keyword deal extra damage to the target based on its size. They deal an additional 1 damage to large creatures and an additional 3 to Huge creatures.</p></section><section><h3>Benefit 2</h3><p>You may use Gravity Crush.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "b479e8072fbab23fbf081e042ffc2c31ceee9e790b79eca7c0784040b20aa591",
+      "sourceHash": "f780f462d1f68e09b48e84bcab0717bcef9ab42c144873f9e2760997ce74a2e8",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--mass-index",
       "relationships": {
@@ -1885,7 +1594,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>Your spells with the Gravity keyword deal extra damage to the target based on its size. They deal an additional 1 damage to large creatures and an additional 3 to Huge creatures.</p></section><section><h3>Benefit 2</h3><p>You may use Gravity Crush.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Gravity Crush</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>Your spells with the Gravity keyword deal extra damage to the target based on its size. They deal an additional 1 damage to large creatures and an additional 3 to Huge creatures.</p></section><section><h3>Benefit 2</h3><p>You may use Gravity Crush.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -1904,7 +1613,7 @@
         "seedKey": "official:key-ability--mass-index",
         "stableId": "key-ability--mass-index",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "b479e8072fbab23fbf081e042ffc2c31ceee9e790b79eca7c0784040b20aa591",
+        "sourceHash": "f780f462d1f68e09b48e84bcab0717bcef9ab42c144873f9e2760997ce74a2e8",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -2150,7 +1859,7 @@
       "range": "Melee Weapon Range",
       "requirement": "",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -2175,10 +1884,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in small weapons, set of missiles and light armor.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Medicine. You can exchange any skill point for 2 expertise points, but must spend them in this skill.</p></section><section><h3>Benefit 3</h3><p>You gain the benefits of First Response.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in small weapons, set of missiles and light armor.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Medicine. You can exchange any skill point for 2 expertise points, but must spend them in this skill.</p></section><section><h3>Benefit 3</h3><p>You gain the benefits of First Response.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "601d161184ee07f41d4539fb03de0d02c2120ef3b08fc566a9b76e7fa788b590",
+      "sourceHash": "dcf3b7aca62094141a8455577ef30b562002f154be3617cfbccd7dc216d0b998",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--medic-s-journey",
       "relationships": {
@@ -2215,7 +1924,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in small weapons, set of missiles and light armor.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Medicine. You can exchange any skill point for 2 expertise points, but must spend them in this skill.</p></section><section><h3>Benefit 3</h3><p>You gain the benefits of First Response.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in small weapons, set of missiles and light armor.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points to spend in Medicine. You can exchange any skill point for 2 expertise points, but must spend them in this skill.</p></section><section><h3>Benefit 3</h3><p>You gain the benefits of First Response.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -2234,7 +1943,7 @@
         "seedKey": "official:key-ability--medic-s-journey",
         "stableId": "key-ability--medic-s-journey",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "601d161184ee07f41d4539fb03de0d02c2120ef3b08fc566a9b76e7fa788b590",
+        "sourceHash": "dcf3b7aca62094141a8455577ef30b562002f154be3617cfbccd7dc216d0b998",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -3029,10 +2738,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in the Aetherie Sensory Station.</p></section><section><h3>Benefit 2</h3><p>You may use Mind Connection.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Mind Connection</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in the Aetherie Sensory Station.</p></section><section><h3>Benefit 2</h3><p>You may use Mind Connection.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "ed6f37435089d2e4d7bccb9a78a15aab5d5719df1556044954321e0ca32f25f5",
+      "sourceHash": "b578f4d24ecd4bcecd40e1d3236a3129f8af0ef3346f0e9a7e31ab7b496fab9c",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--mission-control",
       "relationships": {
@@ -3069,7 +2778,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in the Aetherie Sensory Station.</p></section><section><h3>Benefit 2</h3><p>You may use Mind Connection.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Mind Connection</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in the Aetherie Sensory Station.</p></section><section><h3>Benefit 2</h3><p>You may use Mind Connection.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -3088,7 +2797,7 @@
         "seedKey": "official:key-ability--mission-control",
         "stableId": "key-ability--mission-control",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "ed6f37435089d2e4d7bccb9a78a15aab5d5719df1556044954321e0ca32f25f5",
+        "sourceHash": "b578f4d24ecd4bcecd40e1d3236a3129f8af0ef3346f0e9a7e31ab7b496fab9c",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -3270,7 +2979,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>Must be mounted.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -3930,7 +3639,7 @@
       "range": "Ranged Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -4020,10 +3729,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>At the start of your turn you may pay upkeep 1 mana for each Regrowth you have on an ally. If you do, you may extend its duration by 1 turn. You can choose this upkeep separately for each Regrowth.</p></section><section><h3>Benefit 2</h3><p>You may use Regrowth.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Regrowth</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>At the start of your turn you may pay upkeep 1 mana for each Regrowth you have on an ally. If you do, you may extend its duration by 1 turn. You can choose this upkeep separately for each Regrowth.</p></section><section><h3>Benefit 2</h3><p>You may use Regrowth.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "e5682ec31ac7cb078f5aacfd82c198f1c1b32342560659b74f8601996b95baea",
+      "sourceHash": "2f21da0326bc4eabbc3d5111f3207ff000042724708ec38f820f9ca412a7c3f4",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--natural-cycle",
       "relationships": {
@@ -4060,7 +3769,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>At the start of your turn you may pay upkeep 1 mana for each Regrowth you have on an ally. If you do, you may extend its duration by 1 turn. You can choose this upkeep separately for each Regrowth.</p></section><section><h3>Benefit 2</h3><p>You may use Regrowth.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Regrowth</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>At the start of your turn you may pay upkeep 1 mana for each Regrowth you have on an ally. If you do, you may extend its duration by 1 turn. You can choose this upkeep separately for each Regrowth.</p></section><section><h3>Benefit 2</h3><p>You may use Regrowth.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -4079,7 +3788,7 @@
         "seedKey": "official:key-ability--natural-cycle",
         "stableId": "key-ability--natural-cycle",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "e5682ec31ac7cb078f5aacfd82c198f1c1b32342560659b74f8601996b95baea",
+        "sourceHash": "2f21da0326bc4eabbc3d5111f3207ff000042724708ec38f820f9ca412a7c3f4",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -4380,10 +4089,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in both Small Weapons and Sets of Missiles.</p></section><section><h3>Benefit 2</h3><p>You may use Ninja Run.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Ninja Run</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in both Small Weapons and Sets of Missiles.</p></section><section><h3>Benefit 2</h3><p>You may use Ninja Run.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "60f31f1ed4137b3696beb32c25a9b744961d9441191768f3389b3fe7cde20437",
+      "sourceHash": "a94636a05dd94d9d901dc43aa93f80cb05459c51588ea586618215af15b4141f",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--ninja-style",
       "relationships": {
@@ -4420,7 +4129,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in both Small Weapons and Sets of Missiles.</p></section><section><h3>Benefit 2</h3><p>You may use Ninja Run.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Ninja Run</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in both Small Weapons and Sets of Missiles.</p></section><section><h3>Benefit 2</h3><p>You may use Ninja Run.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -4439,7 +4148,7 @@
         "seedKey": "official:key-ability--ninja-style",
         "stableId": "key-ability--ninja-style",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "60f31f1ed4137b3696beb32c25a9b744961d9441191768f3389b3fe7cde20437",
+        "sourceHash": "a94636a05dd94d9d901dc43aa93f80cb05459c51588ea586618215af15b4141f",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -4451,10 +4160,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>Your Ninja Run now lasts for the entire turn.</p></section><section><h3>Benefit 2</h3><p>You may use Genjutsu Kai</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Genjutsu Kai</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>Your Ninja Run now lasts for the entire turn.</p></section><section><h3>Benefit 2</h3><p>You may use Genjutsu Kai</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "cbb5c8a34d451b8a2d489aba8e17edeefb38102f4da3adb6f182fff924e9aba3",
+      "sourceHash": "5027957d86cc7276a513d69c1dcfb6adad7b3c9250681674ea0b633ce8e84bd3",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--ninja-techniques",
       "relationships": {
@@ -4491,7 +4200,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>Your Ninja Run now lasts for the entire turn.</p></section><section><h3>Benefit 2</h3><p>You may use Genjutsu Kai</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Genjutsu Kai</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>Your Ninja Run now lasts for the entire turn.</p></section><section><h3>Benefit 2</h3><p>You may use Genjutsu Kai</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -4510,7 +4219,7 @@
         "seedKey": "official:key-ability--ninja-techniques",
         "stableId": "key-ability--ninja-techniques",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "cbb5c8a34d451b8a2d489aba8e17edeefb38102f4da3adb6f182fff924e9aba3",
+        "sourceHash": "5027957d86cc7276a513d69c1dcfb6adad7b3c9250681674ea0b633ce8e84bd3",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -5330,7 +5039,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>Two-Handed weapons only.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -6000,10 +5709,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Past Self.</p></section><section><h3>Benefit 2</h3><p>Using the Delay encounter start action does not consume your encounter start action use and may use it multiple times.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Past Self</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Past Self.</p></section><section><h3>Benefit 2</h3><p>Using the Delay encounter start action does not consume your encounter start action use and may use it multiple times.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "24cb18c35900f9b5aa99e68e75d0906718f500f954c170eb6eae50842e79fb85",
+      "sourceHash": "344b8d9952111da798c9f838d10658687607a497b7460249b484cf5594798dfc",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--past-self",
       "relationships": {
@@ -6040,7 +5749,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Past Self.</p></section><section><h3>Benefit 2</h3><p>Using the Delay encounter start action does not consume your encounter start action use and may use it multiple times.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Past Self</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Past Self.</p></section><section><h3>Benefit 2</h3><p>Using the Delay encounter start action does not consume your encounter start action use and may use it multiple times.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -6059,7 +5768,7 @@
         "seedKey": "official:key-ability--past-self",
         "stableId": "key-ability--past-self",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "24cb18c35900f9b5aa99e68e75d0906718f500f954c170eb6eae50842e79fb85",
+        "sourceHash": "344b8d9952111da798c9f838d10658687607a497b7460249b484cf5594798dfc",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -6309,7 +6018,7 @@
       "range": "Ranged Weapon Range",
       "requirement": "<p>Sniper Rifles only.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -6699,10 +6408,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>One of your eyes becomes a Petrification Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.</p></section><section><h3>Benefit 2</h3><p>You may use Unpetrify.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Unpetrify</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>One of your eyes becomes a Petrification Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.</p></section><section><h3>Benefit 2</h3><p>You may use Unpetrify.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "4207734242444ed6be46aaab0787c0dc5979befa5ecb7116d93fff574bc34397",
+      "sourceHash": "105930d0ee3b06d6f41f2a31a13a9eddbea92725a4a56a7060b8c00b264fa076",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--petrification-eye",
       "relationships": {
@@ -6731,7 +6440,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>One of your eyes becomes a Petrification Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.</p></section><section><h3>Benefit 2</h3><p>You may use Unpetrify.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Unpetrify</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>One of your eyes becomes a Petrification Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.</p></section><section><h3>Benefit 2</h3><p>You may use Unpetrify.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -6750,7 +6459,7 @@
         "seedKey": "official:key-ability--petrification-eye",
         "stableId": "key-ability--petrification-eye",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "4207734242444ed6be46aaab0787c0dc5979befa5ecb7116d93fff574bc34397",
+        "sourceHash": "105930d0ee3b06d6f41f2a31a13a9eddbea92725a4a56a7060b8c00b264fa076",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -7025,10 +6734,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You are able to disable and modify t2 and t3 bounded fields.</p></section><section><h3>Benefit 2</h3><p>You may use Stolen Skill.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Stolen Skill</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You are able to disable and modify t2 and t3 bounded fields.</p></section><section><h3>Benefit 2</h3><p>You may use Stolen Skill.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "5d60190dd7e9a46a86937233efad0b59dbe8ab4ab6920a09b9c5103d4e9dc5c3",
+      "sourceHash": "17d09c59a8462962e539283e7336d4243426863a5494428e35c63274b21c93d5",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--phantom-thief",
       "relationships": {
@@ -7065,7 +6774,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You are able to disable and modify t2 and t3 bounded fields.</p></section><section><h3>Benefit 2</h3><p>You may use Stolen Skill.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Stolen Skill</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You are able to disable and modify t2 and t3 bounded fields.</p></section><section><h3>Benefit 2</h3><p>You may use Stolen Skill.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -7084,7 +6793,7 @@
         "seedKey": "official:key-ability--phantom-thief",
         "stableId": "key-ability--phantom-thief",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "5d60190dd7e9a46a86937233efad0b59dbe8ab4ab6920a09b9c5103d4e9dc5c3",
+        "sourceHash": "17d09c59a8462962e539283e7336d4243426863a5494428e35c63274b21c93d5",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -7325,7 +7034,7 @@
       "range": "A target in melee weapon range and a target directly behind the first target in melee weapon range.",
       "requirement": "<p>Polearm only.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -8013,7 +7722,7 @@
       "range": "5ft",
       "requirement": "<p>Pistol only.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -8078,7 +7787,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>Target is below half HP of their original max HP (Before True Death reductions).</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -8143,7 +7852,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>Target is below half HP of their original max HP (Before True Death reductions).</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -8867,7 +8576,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -9738,10 +9447,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You can summon puppets under your control using Summon Piece. While these puppets follow movement rules as described in the abilities and are always Medium size, they can appear as whatever you wish, decided when you take this class.</p></section><section><h3>Benefit 2</h3><p>As an EP action, you may change the appearance of your pieces.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Summon Piece</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You can summon puppets under your control using Summon Piece. While these puppets follow movement rules as described in the abilities and are always Medium size, they can appear as whatever you wish, decided when you take this class.</p></section><section><h3>Benefit 2</h3><p>As an EP action, you may change the appearance of your pieces.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "c7fd300b5b84befb7a46e1e3ed29682e5196bfb5bdd3856510378a2a13ca0b43",
+      "sourceHash": "042695f1da7dfcc485d52fa23e0795fed3e8687958ad5f39c99c50fd1d94e1fa",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--puppet-grandmaster",
       "relationships": {
@@ -9778,7 +9487,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You can summon puppets under your control using Summon Piece. While these puppets follow movement rules as described in the abilities and are always Medium size, they can appear as whatever you wish, decided when you take this class.</p></section><section><h3>Benefit 2</h3><p>As an EP action, you may change the appearance of your pieces.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Summon Piece</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You can summon puppets under your control using Summon Piece. While these puppets follow movement rules as described in the abilities and are always Medium size, they can appear as whatever you wish, decided when you take this class.</p></section><section><h3>Benefit 2</h3><p>As an EP action, you may change the appearance of your pieces.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -9797,7 +9506,7 @@
         "seedKey": "official:key-ability--puppet-grandmaster",
         "stableId": "key-ability--puppet-grandmaster",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "c7fd300b5b84befb7a46e1e3ed29682e5196bfb5bdd3856510378a2a13ca0b43",
+        "sourceHash": "042695f1da7dfcc485d52fa23e0795fed3e8687958ad5f39c99c50fd1d94e1fa",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -10044,7 +9753,7 @@
       "range": "Ranged Weapon Range",
       "requirement": "<p>Cannon only.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -10566,7 +10275,7 @@
       "range": "60ft",
       "requirement": "",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -10710,10 +10419,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Raise Undead.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Raise Undead</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Raise Undead.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "fe917987df314dc93a1f947ec8846a2177432052f472375424e7e4a6d6ed438d",
+      "sourceHash": "3c96f45c01f61508df53c5ea2bb37f6c96c1d4c681ccffbf614c758ab91879ad",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--raise-undead",
       "relationships": {
@@ -10750,7 +10459,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Raise Undead.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Raise Undead</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Raise Undead.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -10769,7 +10478,7 @@
         "seedKey": "official:key-ability--raise-undead",
         "stableId": "key-ability--raise-undead",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "fe917987df314dc93a1f947ec8846a2177432052f472375424e7e4a6d6ed438d",
+        "sourceHash": "3c96f45c01f61508df53c5ea2bb37f6c96c1d4c681ccffbf614c758ab91879ad",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -10849,10 +10558,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in light and medium armor, a common ranged weapon group and a common melee weapon group.</p></section><section><h3>Benefit 2</h3><p>You gain 5 points in one of the following: Appraise, Athletics, Stealth, Medicine, Perception, Survival, Animal Husbandry or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Status Assessment.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in light and medium armor, a common ranged weapon group and a common melee weapon group.</p></section><section><h3>Benefit 2</h3><p>You gain 5 points in one of the following: Appraise, Athletics, Stealth, Medicine, Perception, Survival, Animal Husbandry or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Status Assessment.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "3c9fe94f2d1037fe1a644d0ea623da23af9322d4fc1e4753e6dda8940426e901",
+      "sourceHash": "1cf4c0b953b07a3b5ec63e83534b4e246f017238a989e54b7fab15dac8ff6279",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--ranger-s-journey",
       "relationships": {
@@ -10889,7 +10598,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in light and medium armor, a common ranged weapon group and a common melee weapon group.</p></section><section><h3>Benefit 2</h3><p>You gain 5 points in one of the following: Appraise, Athletics, Stealth, Medicine, Perception, Survival, Animal Husbandry or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Status Assessment.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in light and medium armor, a common ranged weapon group and a common melee weapon group.</p></section><section><h3>Benefit 2</h3><p>You gain 5 points in one of the following: Appraise, Athletics, Stealth, Medicine, Perception, Survival, Animal Husbandry or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Status Assessment.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -10908,7 +10617,7 @@
         "seedKey": "official:key-ability--ranger-s-journey",
         "stableId": "key-ability--ranger-s-journey",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "3c9fe94f2d1037fe1a644d0ea623da23af9322d4fc1e4753e6dda8940426e901",
+        "sourceHash": "1cf4c0b953b07a3b5ec63e83534b4e246f017238a989e54b7fab15dac8ff6279",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -10920,10 +10629,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Ki Blast II.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Ki Blast II</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Ki Blast II.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "04f11fb1c260dc6fb8b7786bf5fa8820fadcd81cc9a52cf124eb23bedae142ed",
+      "sourceHash": "3565336c43355a6b15040bade974815e988b5123ca53888358d4849ea3a8c077",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--rapid-blasts",
       "relationships": {
@@ -10960,7 +10669,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Ki Blast II.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Ki Blast II</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Ki Blast II.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -10979,7 +10688,7 @@
         "seedKey": "official:key-ability--rapid-blasts",
         "stableId": "key-ability--rapid-blasts",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "04f11fb1c260dc6fb8b7786bf5fa8820fadcd81cc9a52cf124eb23bedae142ed",
+        "sourceHash": "3565336c43355a6b15040bade974815e988b5123ca53888358d4849ea3a8c077",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -11169,10 +10878,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Receive Oracle.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Receive Oracle</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Receive Oracle.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "b3576ade150a6d8b3bbe647a2edea9be5fe899bed0b94e4caa3dca3e153c1d77",
+      "sourceHash": "d8dec9916e9fa25fd5bd4f0e6e426804650ccb53711b888603bcae4abf97b9ea",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--receive-oracle",
       "relationships": {
@@ -11209,7 +10918,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Receive Oracle.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Receive Oracle</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Receive Oracle.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -11228,7 +10937,7 @@
         "seedKey": "official:key-ability--receive-oracle",
         "stableId": "key-ability--receive-oracle",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "b3576ade150a6d8b3bbe647a2edea9be5fe899bed0b94e4caa3dca3e153c1d77",
+        "sourceHash": "d8dec9916e9fa25fd5bd4f0e6e426804650ccb53711b888603bcae4abf97b9ea",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -11280,7 +10989,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -12236,10 +11945,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Resheathe.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Resheathe</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Resheathe.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "88181ece783f69788bfa5cd2d0301266f3245f352c4d628bdbd03bc79db4c674",
+      "sourceHash": "c3b885206230dc996d3864cfb6f4df14e0f07a26ef5367b1994c3d576e6e6575",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--resheathe",
       "relationships": {
@@ -12276,7 +11985,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Resheathe.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Resheathe</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Resheathe.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -12295,7 +12004,7 @@
         "seedKey": "official:key-ability--resheathe",
         "stableId": "key-ability--resheathe",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "88181ece783f69788bfa5cd2d0301266f3245f352c4d628bdbd03bc79db4c674",
+        "sourceHash": "c3b885206230dc996d3864cfb6f4df14e0f07a26ef5367b1994c3d576e6e6575",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -12703,7 +12412,7 @@
       "range": "Melee Weapon Range",
       "requirement": "May only be used after you use the Parry fencer ability and you regained the RP.",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -12768,7 +12477,7 @@
       "range": "Melee Weapon Range",
       "requirement": "May only be used after you use the Parry fencer ability and you regained the RP.",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -12974,10 +12683,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency with light armor and with one of the following weapon groups: Small weapons, Light swords, Dueling weapons and Set of missiles.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points in Roguecraft and +5 skill points to spend in Athletics, Stealth, Deception, Perception, Insight, Negotiation, Intimidation or a relevant Expert Knowledge skill (By DM Approval).  You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Feint.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency with light armor and with one of the following weapon groups: Small weapons, Light swords, Dueling weapons and Set of missiles.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points in Roguecraft and +5 skill points to spend in Athletics, Stealth, Deception, Perception, Insight, Negotiation, Intimidation or a relevant Expert Knowledge skill (By DM Approval).  You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Feint.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "071691dcd7dccfb494a963f730f959bd36b381984fc9c5b7eadfdf71c5f103df",
+      "sourceHash": "4e73713bd80dff150442807b788c9ff1e1c976a6c37a3a051b2280d99c46def0",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--rogue-s-journey",
       "relationships": {
@@ -13014,7 +12723,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency with light armor and with one of the following weapon groups: Small weapons, Light swords, Dueling weapons and Set of missiles.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points in Roguecraft and +5 skill points to spend in Athletics, Stealth, Deception, Perception, Insight, Negotiation, Intimidation or a relevant Expert Knowledge skill (By DM Approval).  You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Feint.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency with light armor and with one of the following weapon groups: Small weapons, Light swords, Dueling weapons and Set of missiles.</p></section><section><h3>Benefit 2</h3><p>You gain +5 skill points in Roguecraft and +5 skill points to spend in Athletics, Stealth, Deception, Perception, Insight, Negotiation, Intimidation or a relevant Expert Knowledge skill (By DM Approval).  You can exchange any skill point for 2 expertise points, but must spend them in these skills.</p></section><section><h3>Benefit 3</h3><p>You can use Feint.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -13033,7 +12742,7 @@
         "seedKey": "official:key-ability--rogue-s-journey",
         "stableId": "key-ability--rogue-s-journey",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "071691dcd7dccfb494a963f730f959bd36b381984fc9c5b7eadfdf71c5f103df",
+        "sourceHash": "4e73713bd80dff150442807b788c9ff1e1c976a6c37a3a051b2280d99c46def0",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -13263,7 +12972,7 @@
       "range": "Ranged Weapon Range",
       "requirement": "<p>Must be mounted and taking a movement action.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -13470,10 +13179,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in Saboteur Thread Daggers.</p></section><section><h3>Benefit 2</h3><p>You may use Presence Concealment.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Presence Concealment</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in Saboteur Thread Daggers.</p></section><section><h3>Benefit 2</h3><p>You may use Presence Concealment.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "091e5dac8c00a028380c878aa008c77b8aa69f23a03566a96214ec2f55236211",
+      "sourceHash": "82a450c03c14c6dc80553ce162943d05e516ccb473407e8cf3b20f42a18b2183",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--saboteur",
       "relationships": {
@@ -13510,7 +13219,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in Saboteur Thread Daggers.</p></section><section><h3>Benefit 2</h3><p>You may use Presence Concealment.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Presence Concealment</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in Saboteur Thread Daggers.</p></section><section><h3>Benefit 2</h3><p>You may use Presence Concealment.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -13529,7 +13238,7 @@
         "seedKey": "official:key-ability--saboteur",
         "stableId": "key-ability--saboteur",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "091e5dac8c00a028380c878aa008c77b8aa69f23a03566a96214ec2f55236211",
+        "sourceHash": "82a450c03c14c6dc80553ce162943d05e516ccb473407e8cf3b20f42a18b2183",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -14103,10 +13812,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in Pistols.</p></section><section><h3>Benefit 2</h3><p>You may use Take Cover!.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Take Cover!</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain proficiency in Pistols.</p></section><section><h3>Benefit 2</h3><p>You may use Take Cover!.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "c4741067d728f508448f3f0784cd43930f9d219bca93a78211e29647d0f263f1",
+      "sourceHash": "a8a109bfbc5a79fade6d61d323d08c2c809efdd0332546da03568826131d3492",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--scholar-of-tactics",
       "relationships": {
@@ -14143,7 +13852,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in Pistols.</p></section><section><h3>Benefit 2</h3><p>You may use Take Cover!.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Take Cover!</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain proficiency in Pistols.</p></section><section><h3>Benefit 2</h3><p>You may use Take Cover!.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -14162,7 +13871,7 @@
         "seedKey": "official:key-ability--scholar-of-tactics",
         "stableId": "key-ability--scholar-of-tactics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "c4741067d728f508448f3f0784cd43930f9d219bca93a78211e29647d0f263f1",
+        "sourceHash": "a8a109bfbc5a79fade6d61d323d08c2c809efdd0332546da03568826131d3492",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -14285,7 +13994,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>An enemy provokes an attack of opportunity.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -15167,7 +14876,7 @@
       "range": "Ranged Weapon Range",
       "requirement": "<p>Enemy must be unaware of your presence. Can only be used on the first turn of an encounter and must be your first attack.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -15635,7 +15344,7 @@
       "range": "Self",
       "requirement": "<p>Two-handed weapons only. Slashing weapons only.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -15901,7 +15610,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>Target has your Mark of Justice on them.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -16497,7 +16206,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -16964,7 +16673,7 @@
       "range": "Ranged Weapon Range",
       "requirement": "",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -17753,7 +17462,7 @@
       "range": "Self",
       "requirement": "<p>Must be mounted on a mount mentioned in the description.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -17952,7 +17661,7 @@
       "range": "Self",
       "requirement": "<p>Must be mounted.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -18017,7 +17726,7 @@
       "range": "Ranged Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -18084,7 +17793,7 @@
       "range": "60ft",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -18420,7 +18129,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>Attack must be made with a Blacksmith's Hammer.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -18499,6 +18208,407 @@
         "stableId": "ability--secret-art-shield-wall",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
         "sourceHash": "26cf08a98014df289b8887513f73ff3466ee4643f67fd0bea6e7fb941049b7fd",
+        "rulebookVersion": "0.13.3",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "785bbd1184aec66f",
+    "name": "Secret Art: Shock & Awe",
+    "type": "ability",
+    "img": "icons/svg/lightning.svg",
+    "system": {
+      "description": "<p>You and up to 3 other allies within range gain 3 AP they must spend immediately. On their next turn, they regain 1 less AP.</p><p>These AP may not be spent on Setup abilities and normal once per turn ability limitations apply.</p>",
+      "source": "The Lyrian Chronicles v0.13.3",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+      "sourceHash": "62021f4a7f283aa6182510dbdac3b85a924cddadffc35c55174839f22af91f71",
+      "rulebookVersion": "0.13.3",
+      "stableId": "ability--secret-art-shock-awe",
+      "relationships": {
+        "classes": [
+          {
+            "class": "class--strategist",
+            "slot": "ultimateAbility"
+          }
+        ],
+        "_links": [
+          {
+            "stableId": "class--strategist",
+            "name": "Strategist",
+            "pack": "classes",
+            "documentId": "e993e2849743d5e5",
+            "uuid": "Compendium.lyrian-chronicles.classes.Item.e993e2849743d5e5"
+          }
+        ]
+      },
+      "apCost": 4,
+      "rpCost": 0,
+      "manaCost": 1,
+      "upkeep": 0,
+      "timing": "action",
+      "keywords": [
+        "secretArt"
+      ],
+      "rawKeywords": "Secret Art",
+      "rawCost": "4 AP, 1 Mana",
+      "otherCosts": "",
+      "benefits": "",
+      "isKeyAbility": false,
+      "patchVersion": "0.13.3",
+      "range": "40ft",
+      "requirement": "",
+      "hasAttack": false,
+      "attackType": "light",
+      "damageFormula": "",
+      "damageType": "physical",
+      "usesWeapon": false,
+      "classSource": "class--strategist",
+      "classStep": 0,
+      "usedThisRound": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:ability--secret-art-shock-awe",
+        "stableId": "ability--secret-art-shock-awe",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+        "sourceHash": "62021f4a7f283aa6182510dbdac3b85a924cddadffc35c55174839f22af91f71",
+        "rulebookVersion": "0.13.3",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "1835041c35bb71c9",
+    "name": "Secret Art: Shot From The Blue",
+    "type": "ability",
+    "img": "icons/svg/lightning.svg",
+    "system": {
+      "description": "<p>You recall hiring a sniper specifically for a situation like this.&nbsp;</p><p>The sniper mercenary, off screen, takes a single shot at the target before retreating.&nbsp;You grant the signal, and the sniper fires, dealing heavy damage with full pierce and sure hit to the target. This shot uses the stats from the Sniper NPC, attacking with +6 Accuracy (if relevant) and dealing 4d6+10 damage.</p><p>Shot From The Blue does not gain Sure Hit and Full Pierce against targets with Instinct.<br><br>If the target is a grunt, kill them instantly.</p>",
+      "source": "The Lyrian Chronicles v0.13.3",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+      "sourceHash": "68a9adde95c6d6e9969d869dd32372f50f0975dbf962c68fd905c074177d573b",
+      "rulebookVersion": "0.13.3",
+      "stableId": "ability--secret-art-shot-from-the-blue",
+      "relationships": {
+        "classes": [
+          {
+            "class": "class--mogul",
+            "slot": "ultimateAbility"
+          }
+        ],
+        "_links": [
+          {
+            "stableId": "class--mogul",
+            "name": "Mogul",
+            "pack": "classes",
+            "documentId": "8be13f88f13e4868",
+            "uuid": "Compendium.lyrian-chronicles.classes.Item.8be13f88f13e4868"
+          }
+        ]
+      },
+      "apCost": 0,
+      "rpCost": 0,
+      "manaCost": 3,
+      "upkeep": 0,
+      "timing": "action",
+      "keywords": [
+        "Flashback",
+        "secretArt"
+      ],
+      "rawKeywords": "Flashback,Secret Art",
+      "rawCost": "0 RP, 3 Mana",
+      "otherCosts": "",
+      "benefits": "",
+      "isKeyAbility": false,
+      "patchVersion": "0.13.3",
+      "range": "Self",
+      "requirement": "<p>Target is outdoors or reasonably visible from outdoors. Costs 500 Clim to use.</p>",
+      "hasAttack": false,
+      "attackType": "light",
+      "damageFormula": "",
+      "damageType": "physical",
+      "usesWeapon": false,
+      "classSource": "class--mogul",
+      "classStep": 0,
+      "usedThisRound": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:ability--secret-art-shot-from-the-blue",
+        "stableId": "ability--secret-art-shot-from-the-blue",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+        "sourceHash": "68a9adde95c6d6e9969d869dd32372f50f0975dbf962c68fd905c074177d573b",
+        "rulebookVersion": "0.13.3",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "468efea031e2a026",
+    "name": "Secret Art: Skeletal Champion",
+    "type": "ability",
+    "img": "icons/svg/lightning.svg",
+    "system": {
+      "description": "<p>You drain the surrounding area of energy and form a skeletal champion until the end of the encounter. (Stats can be found in the Monster page)</p><p>This champion takes 2 of your summon limit. Any zombies you had active when you summoned this are instead converted into temporary HP for the champion at a rate of 5 HP per zombie.</p><p>The champion acts after you on the initiative, but cannot take AP actions on the turn it is summoned.</p><p><strong>Upkeep:</strong> 2 AP</p><p><strong>Overcharge</strong>: You may spend 5 mana to give your summon the ability to act on the turn it is summoned.</p>",
+      "source": "The Lyrian Chronicles v0.13.3",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+      "sourceHash": "347744547574380bc756d34fe06acc471d509dcbdf5dfaea9813cfb644a8e2f6",
+      "rulebookVersion": "0.13.3",
+      "stableId": "ability--secret-art-skeletal-champion",
+      "relationships": {
+        "classes": [
+          {
+            "class": "class--necromaster",
+            "slot": "ultimateAbility"
+          }
+        ],
+        "_links": [
+          {
+            "stableId": "class--necromaster",
+            "name": "Necromaster",
+            "pack": "classes",
+            "documentId": "3c5743e4dc4a6bb5",
+            "uuid": "Compendium.lyrian-chronicles.classes.Item.3c5743e4dc4a6bb5"
+          }
+        ]
+      },
+      "apCost": 4,
+      "rpCost": 0,
+      "manaCost": 2,
+      "upkeep": 0,
+      "timing": "action",
+      "keywords": [
+        "Summon",
+        "secretArt",
+        "upkeep",
+        "Overcharge"
+      ],
+      "rawKeywords": "Summon,Secret Art,Upkeep,Overcharge",
+      "rawCost": "4 AP, 2 Mana",
+      "otherCosts": "",
+      "benefits": "",
+      "isKeyAbility": false,
+      "patchVersion": "0.13.3",
+      "range": "40ft",
+      "requirement": "",
+      "hasAttack": false,
+      "attackType": "light",
+      "damageFormula": "",
+      "damageType": "physical",
+      "usesWeapon": false,
+      "classSource": "class--necromaster",
+      "classStep": 0,
+      "usedThisRound": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:ability--secret-art-skeletal-champion",
+        "stableId": "ability--secret-art-skeletal-champion",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+        "sourceHash": "347744547574380bc756d34fe06acc471d509dcbdf5dfaea9813cfb644a8e2f6",
+        "rulebookVersion": "0.13.3",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "66753beaa6c1d5e1",
+    "name": "Secret Art: Spectrum Blade",
+    "type": "ability",
+    "img": "icons/svg/lightning.svg",
+    "system": {
+      "description": "<p>Until the end of the encounter, you enchant your weapon with every single element. When using Elemental Strike or Elemental Sweep, you may choose which effect you want regardless of the damage type your attack deals. When you deal damage, you apply the damage type that would deal the most damage.</p><p>In addition, your weapon gains a +1 Power bonus until the end of the encounter. If it already had a +1 Power bonus through an enchantment, this bonus is instead increased to +2.</p><p>If you are not holding the enchanted weapon at the start of your turn, your weapon loses this benefit.</p>",
+      "source": "The Lyrian Chronicles v0.13.3",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+      "sourceHash": "c9bd6e88898d33f13f3122a43d00d77f582d3644191a675c07118be290dde09b",
+      "rulebookVersion": "0.13.3",
+      "stableId": "ability--secret-art-spectrum-blade",
+      "relationships": {
+        "classes": [
+          {
+            "class": "class--spell-blademaster",
+            "slot": "ultimateAbility"
+          }
+        ],
+        "_links": [
+          {
+            "stableId": "class--spell-blademaster",
+            "name": "Spell Blademaster",
+            "pack": "classes",
+            "documentId": "61c84e6db1d234f1",
+            "uuid": "Compendium.lyrian-chronicles.classes.Item.61c84e6db1d234f1"
+          }
+        ]
+      },
+      "apCost": 1,
+      "rpCost": 0,
+      "manaCost": 2,
+      "upkeep": 0,
+      "timing": "action",
+      "keywords": [
+        "Enchantment",
+        "secretArt"
+      ],
+      "rawKeywords": "Enchantment,Secret Art",
+      "rawCost": "1 AP, 2 Mana",
+      "otherCosts": "",
+      "benefits": "",
+      "isKeyAbility": false,
+      "patchVersion": "0.13.3",
+      "range": "Self",
+      "requirement": "",
+      "hasAttack": false,
+      "attackType": "light",
+      "damageFormula": "",
+      "damageType": "physical",
+      "usesWeapon": false,
+      "classSource": "class--spell-blademaster",
+      "classStep": 0,
+      "usedThisRound": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:ability--secret-art-spectrum-blade",
+        "stableId": "ability--secret-art-spectrum-blade",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+        "sourceHash": "c9bd6e88898d33f13f3122a43d00d77f582d3644191a675c07118be290dde09b",
+        "rulebookVersion": "0.13.3",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "3ced765be715b185",
+    "name": "Secret Art: Spirit Stigma",
+    "type": "ability",
+    "img": "icons/svg/lightning.svg",
+    "system": {
+      "description": "<p>You stigmatize the targets spirit, they are inflicted with Spirit Stigma until the start of your next turn. A target with Spirit Stigma counts as a willing ally for your Eremancer abilities and damaging them fulfills the Malevolent&nbsp; Phantasm requirement.</p>",
+      "source": "The Lyrian Chronicles v0.13.3",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+      "sourceHash": "914fb36be9a262e3ff2f38dc667b8dee4a0103d7d99c04c8b7be8a8e5f0a69ce",
+      "rulebookVersion": "0.13.3",
+      "stableId": "ability--secret-art-spirit-stigma",
+      "relationships": {
+        "classes": [
+          {
+            "class": "class--eremancer",
+            "slot": "ultimateAbility"
+          }
+        ],
+        "_links": [
+          {
+            "stableId": "class--eremancer",
+            "name": "Eremancer",
+            "pack": "classes",
+            "documentId": "c533e6972f011f0b",
+            "uuid": "Compendium.lyrian-chronicles.classes.Item.c533e6972f011f0b"
+          }
+        ]
+      },
+      "apCost": 0,
+      "rpCost": 0,
+      "manaCost": 0,
+      "upkeep": 0,
+      "timing": "action",
+      "keywords": [
+        "secretArt",
+        "Spell",
+        "Dark"
+      ],
+      "rawKeywords": "Secret Art,Spell,Dark",
+      "rawCost": "0 AP",
+      "otherCosts": "",
+      "benefits": "",
+      "isKeyAbility": false,
+      "patchVersion": "0.13.3",
+      "range": "60ft",
+      "requirement": "",
+      "hasAttack": false,
+      "attackType": "light",
+      "damageFormula": "",
+      "damageType": "physical",
+      "usesWeapon": false,
+      "classSource": "class--eremancer",
+      "classStep": 0,
+      "usedThisRound": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:ability--secret-art-spirit-stigma",
+        "stableId": "ability--secret-art-spirit-stigma",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+        "sourceHash": "914fb36be9a262e3ff2f38dc667b8dee4a0103d7d99c04c8b7be8a8e5f0a69ce",
+        "rulebookVersion": "0.13.3",
+        "contentBuild": "0.5.0"
+      }
+    }
+  },
+  {
+    "_id": "a9a9e048ed04d3bb",
+    "name": "Secret Art: Summon Eidolon",
+    "type": "ability",
+    "img": "icons/svg/lightning.svg",
+    "system": {
+      "description": "<p>Your contracted Eidolon hears your call and sends a proxy of themselves to fight for you.&nbsp; The Eidolon called and the costs are dependent on your attunement.&nbsp; Lasts up to 5 minutes.&nbsp; You must pay the upkeep cost under the Eidolon’s&nbsp;<strong>Summon</strong> Skill or the Eidolon vanishes.</p><p>Unless the summon has a skill that says otherwise, a summon acts after you on initiative, but cannot act the round it is summoned, except for RP actions.</p><p><strong>Overcharge</strong>: You may spend 5 mana to give your summon the ability to act on the turn it is summoned.</p>",
+      "source": "The Lyrian Chronicles v0.13.3",
+      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+      "sourceHash": "7c21182b8eff684e0013dbaaeea0c82668594e3cac7f07387ce9b99e91e54130",
+      "rulebookVersion": "0.13.3",
+      "stableId": "ability--secret-art-summon-eidolon",
+      "relationships": {
+        "classes": [
+          {
+            "class": "class--summoner",
+            "slot": "ultimateAbility"
+          }
+        ],
+        "_links": [
+          {
+            "stableId": "class--summoner",
+            "name": "Summoner",
+            "pack": "classes",
+            "documentId": "af5ee23236ffd343",
+            "uuid": "Compendium.lyrian-chronicles.classes.Item.af5ee23236ffd343"
+          }
+        ]
+      },
+      "apCost": 0,
+      "rpCost": 0,
+      "manaCost": 0,
+      "upkeep": 0,
+      "timing": "action",
+      "keywords": [
+        "Summon",
+        "Spell",
+        "upkeep",
+        "secretArt",
+        "Overcharge"
+      ],
+      "rawKeywords": "Summon,Spell,Upkeep,Secret Art,Overcharge",
+      "rawCost": "",
+      "otherCosts": "",
+      "benefits": "",
+      "isKeyAbility": false,
+      "patchVersion": "0.13.3",
+      "range": "30ft",
+      "requirement": "",
+      "hasAttack": false,
+      "attackType": "light",
+      "damageFormula": "",
+      "damageType": "physical",
+      "usesWeapon": false,
+      "classSource": "class--summoner",
+      "classStep": 0,
+      "usedThisRound": false
+    },
+    "flags": {
+      "lyrian-chronicles": {
+        "seedKey": "official:ability--secret-art-summon-eidolon",
+        "stableId": "ability--secret-art-summon-eidolon",
+        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
+        "sourceHash": "7c21182b8eff684e0013dbaaeea0c82668594e3cac7f07387ce9b99e91e54130",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }

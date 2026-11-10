@@ -1,406 +1,5 @@
 [
   {
-    "_id": "785bbd1184aec66f",
-    "name": "Secret Art: Shock & Awe",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>You and up to 3 other allies within range gain 3 AP they must spend immediately. On their next turn, they regain 1 less AP.</p><p>These AP may not be spent on Setup abilities and normal once per turn ability limitations apply.</p>",
-      "source": "The Lyrian Chronicles v0.13.3",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "62021f4a7f283aa6182510dbdac3b85a924cddadffc35c55174839f22af91f71",
-      "rulebookVersion": "0.13.3",
-      "stableId": "ability--secret-art-shock-awe",
-      "relationships": {
-        "classes": [
-          {
-            "class": "class--strategist",
-            "slot": "ultimateAbility"
-          }
-        ],
-        "_links": [
-          {
-            "stableId": "class--strategist",
-            "name": "Strategist",
-            "pack": "classes",
-            "documentId": "e993e2849743d5e5",
-            "uuid": "Compendium.lyrian-chronicles.classes.Item.e993e2849743d5e5"
-          }
-        ]
-      },
-      "apCost": 4,
-      "rpCost": 0,
-      "manaCost": 1,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [
-        "secretArt"
-      ],
-      "rawKeywords": "Secret Art",
-      "rawCost": "4 AP, 1 Mana",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.3",
-      "range": "40ft",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "class--strategist",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--secret-art-shock-awe",
-        "stableId": "ability--secret-art-shock-awe",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "62021f4a7f283aa6182510dbdac3b85a924cddadffc35c55174839f22af91f71",
-        "rulebookVersion": "0.13.3",
-        "contentBuild": "0.5.0"
-      }
-    }
-  },
-  {
-    "_id": "1835041c35bb71c9",
-    "name": "Secret Art: Shot From The Blue",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>You recall hiring a sniper specifically for a situation like this.&nbsp;</p><p>The sniper mercenary, off screen, takes a single shot at the target before retreating.&nbsp;You grant the signal, and the sniper fires, dealing heavy damage with full pierce and sure hit to the target. This shot uses the stats from the Sniper NPC, attacking with +6 Accuracy (if relevant) and dealing 4d6+10 damage.</p><p>Shot From The Blue does not gain Sure Hit and Full Pierce against targets with Instinct.<br><br>If the target is a grunt, kill them instantly.</p>",
-      "source": "The Lyrian Chronicles v0.13.3",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "68a9adde95c6d6e9969d869dd32372f50f0975dbf962c68fd905c074177d573b",
-      "rulebookVersion": "0.13.3",
-      "stableId": "ability--secret-art-shot-from-the-blue",
-      "relationships": {
-        "classes": [
-          {
-            "class": "class--mogul",
-            "slot": "ultimateAbility"
-          }
-        ],
-        "_links": [
-          {
-            "stableId": "class--mogul",
-            "name": "Mogul",
-            "pack": "classes",
-            "documentId": "8be13f88f13e4868",
-            "uuid": "Compendium.lyrian-chronicles.classes.Item.8be13f88f13e4868"
-          }
-        ]
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 3,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [
-        "Flashback",
-        "secretArt"
-      ],
-      "rawKeywords": "Flashback,Secret Art",
-      "rawCost": "0 RP, 3 Mana",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.3",
-      "range": "Self",
-      "requirement": "<p>Target is outdoors or reasonably visible from outdoors. Costs 500 Clim to use.</p>",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "class--mogul",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--secret-art-shot-from-the-blue",
-        "stableId": "ability--secret-art-shot-from-the-blue",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "68a9adde95c6d6e9969d869dd32372f50f0975dbf962c68fd905c074177d573b",
-        "rulebookVersion": "0.13.3",
-        "contentBuild": "0.5.0"
-      }
-    }
-  },
-  {
-    "_id": "468efea031e2a026",
-    "name": "Secret Art: Skeletal Champion",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>You drain the surrounding area of energy and form a skeletal champion until the end of the encounter. (Stats can be found in the Monster page)</p><p>This champion takes 2 of your summon limit. Any zombies you had active when you summoned this are instead converted into temporary HP for the champion at a rate of 5 HP per zombie.</p><p>The champion acts after you on the initiative, but cannot take AP actions on the turn it is summoned.</p><p><strong>Upkeep:</strong> 2 AP</p><p><strong>Overcharge</strong>: You may spend 5 mana to give your summon the ability to act on the turn it is summoned.</p>",
-      "source": "The Lyrian Chronicles v0.13.3",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "347744547574380bc756d34fe06acc471d509dcbdf5dfaea9813cfb644a8e2f6",
-      "rulebookVersion": "0.13.3",
-      "stableId": "ability--secret-art-skeletal-champion",
-      "relationships": {
-        "classes": [
-          {
-            "class": "class--necromaster",
-            "slot": "ultimateAbility"
-          }
-        ],
-        "_links": [
-          {
-            "stableId": "class--necromaster",
-            "name": "Necromaster",
-            "pack": "classes",
-            "documentId": "3c5743e4dc4a6bb5",
-            "uuid": "Compendium.lyrian-chronicles.classes.Item.3c5743e4dc4a6bb5"
-          }
-        ]
-      },
-      "apCost": 4,
-      "rpCost": 0,
-      "manaCost": 2,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [
-        "Summon",
-        "secretArt",
-        "upkeep",
-        "Overcharge"
-      ],
-      "rawKeywords": "Summon,Secret Art,Upkeep,Overcharge",
-      "rawCost": "4 AP, 2 Mana",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.3",
-      "range": "40ft",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "class--necromaster",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--secret-art-skeletal-champion",
-        "stableId": "ability--secret-art-skeletal-champion",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "347744547574380bc756d34fe06acc471d509dcbdf5dfaea9813cfb644a8e2f6",
-        "rulebookVersion": "0.13.3",
-        "contentBuild": "0.5.0"
-      }
-    }
-  },
-  {
-    "_id": "66753beaa6c1d5e1",
-    "name": "Secret Art: Spectrum Blade",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>Until the end of the encounter, you enchant your weapon with every single element. When using Elemental Strike or Elemental Sweep, you may choose which effect you want regardless of the damage type your attack deals. When you deal damage, you apply the damage type that would deal the most damage.</p><p>In addition, your weapon gains a +1 Power bonus until the end of the encounter. If it already had a +1 Power bonus through an enchantment, this bonus is instead increased to +2.</p><p>If you are not holding the enchanted weapon at the start of your turn, your weapon loses this benefit.</p>",
-      "source": "The Lyrian Chronicles v0.13.3",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "c9bd6e88898d33f13f3122a43d00d77f582d3644191a675c07118be290dde09b",
-      "rulebookVersion": "0.13.3",
-      "stableId": "ability--secret-art-spectrum-blade",
-      "relationships": {
-        "classes": [
-          {
-            "class": "class--spell-blademaster",
-            "slot": "ultimateAbility"
-          }
-        ],
-        "_links": [
-          {
-            "stableId": "class--spell-blademaster",
-            "name": "Spell Blademaster",
-            "pack": "classes",
-            "documentId": "61c84e6db1d234f1",
-            "uuid": "Compendium.lyrian-chronicles.classes.Item.61c84e6db1d234f1"
-          }
-        ]
-      },
-      "apCost": 1,
-      "rpCost": 0,
-      "manaCost": 2,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [
-        "Enchantment",
-        "secretArt"
-      ],
-      "rawKeywords": "Enchantment,Secret Art",
-      "rawCost": "1 AP, 2 Mana",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.3",
-      "range": "Self",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "class--spell-blademaster",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--secret-art-spectrum-blade",
-        "stableId": "ability--secret-art-spectrum-blade",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "c9bd6e88898d33f13f3122a43d00d77f582d3644191a675c07118be290dde09b",
-        "rulebookVersion": "0.13.3",
-        "contentBuild": "0.5.0"
-      }
-    }
-  },
-  {
-    "_id": "3ced765be715b185",
-    "name": "Secret Art: Spirit Stigma",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>You stigmatize the targets spirit, they are inflicted with Spirit Stigma until the start of your next turn. A target with Spirit Stigma counts as a willing ally for your Eremancer abilities and damaging them fulfills the Malevolent&nbsp; Phantasm requirement.</p>",
-      "source": "The Lyrian Chronicles v0.13.3",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "914fb36be9a262e3ff2f38dc667b8dee4a0103d7d99c04c8b7be8a8e5f0a69ce",
-      "rulebookVersion": "0.13.3",
-      "stableId": "ability--secret-art-spirit-stigma",
-      "relationships": {
-        "classes": [
-          {
-            "class": "class--eremancer",
-            "slot": "ultimateAbility"
-          }
-        ],
-        "_links": [
-          {
-            "stableId": "class--eremancer",
-            "name": "Eremancer",
-            "pack": "classes",
-            "documentId": "c533e6972f011f0b",
-            "uuid": "Compendium.lyrian-chronicles.classes.Item.c533e6972f011f0b"
-          }
-        ]
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [
-        "secretArt",
-        "Spell",
-        "Dark"
-      ],
-      "rawKeywords": "Secret Art,Spell,Dark",
-      "rawCost": "0 AP",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.3",
-      "range": "60ft",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "class--eremancer",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--secret-art-spirit-stigma",
-        "stableId": "ability--secret-art-spirit-stigma",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "914fb36be9a262e3ff2f38dc667b8dee4a0103d7d99c04c8b7be8a8e5f0a69ce",
-        "rulebookVersion": "0.13.3",
-        "contentBuild": "0.5.0"
-      }
-    }
-  },
-  {
-    "_id": "a9a9e048ed04d3bb",
-    "name": "Secret Art: Summon Eidolon",
-    "type": "ability",
-    "img": "icons/svg/lightning.svg",
-    "system": {
-      "description": "<p>Your contracted Eidolon hears your call and sends a proxy of themselves to fight for you.&nbsp; The Eidolon called and the costs are dependent on your attunement.&nbsp; Lasts up to 5 minutes.&nbsp; You must pay the upkeep cost under the Eidolon’s&nbsp;<strong>Summon</strong> Skill or the Eidolon vanishes.</p><p>Unless the summon has a skill that says otherwise, a summon acts after you on initiative, but cannot act the round it is summoned, except for RP actions.</p><p><strong>Overcharge</strong>: You may spend 5 mana to give your summon the ability to act on the turn it is summoned.</p>",
-      "source": "The Lyrian Chronicles v0.13.3",
-      "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "7c21182b8eff684e0013dbaaeea0c82668594e3cac7f07387ce9b99e91e54130",
-      "rulebookVersion": "0.13.3",
-      "stableId": "ability--secret-art-summon-eidolon",
-      "relationships": {
-        "classes": [
-          {
-            "class": "class--summoner",
-            "slot": "ultimateAbility"
-          }
-        ],
-        "_links": [
-          {
-            "stableId": "class--summoner",
-            "name": "Summoner",
-            "pack": "classes",
-            "documentId": "af5ee23236ffd343",
-            "uuid": "Compendium.lyrian-chronicles.classes.Item.af5ee23236ffd343"
-          }
-        ]
-      },
-      "apCost": 0,
-      "rpCost": 0,
-      "manaCost": 0,
-      "upkeep": 0,
-      "timing": "action",
-      "keywords": [
-        "Summon",
-        "Spell",
-        "upkeep",
-        "secretArt",
-        "Overcharge"
-      ],
-      "rawKeywords": "Summon,Spell,Upkeep,Secret Art,Overcharge",
-      "rawCost": "",
-      "otherCosts": "",
-      "benefits": "",
-      "isKeyAbility": false,
-      "patchVersion": "0.13.3",
-      "range": "30ft",
-      "requirement": "",
-      "hasAttack": false,
-      "attackType": "light",
-      "damageFormula": "",
-      "damageType": "physical",
-      "usesWeapon": false,
-      "classSource": "class--summoner",
-      "classStep": 0,
-      "usedThisRound": false
-    },
-    "flags": {
-      "lyrian-chronicles": {
-        "seedKey": "official:ability--secret-art-summon-eidolon",
-        "stableId": "ability--secret-art-summon-eidolon",
-        "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "7c21182b8eff684e0013dbaaeea0c82668594e3cac7f07387ce9b99e91e54130",
-        "rulebookVersion": "0.13.3",
-        "contentBuild": "0.5.0"
-      }
-    }
-  },
-  {
     "_id": "8f9cf170cda42e29",
     "name": "Secret Art: Surge of Elements",
     "type": "ability",
@@ -779,7 +378,7 @@
       "range": "Melee Weapon Range",
       "requirement": "Katana only.",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -2247,10 +1846,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>The range of your darkvision increases by 60ft.</p></section><section><h3>Benefit 2</h3><p>You may use Darkvision.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Darkvision</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>The range of your darkvision increases by 60ft.</p></section><section><h3>Benefit 2</h3><p>You may use Darkvision.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "4bc44a52e9983eb70f99895313f744ab7b9f13da907c098dbd9220b889e56f86",
+      "sourceHash": "b112aa411202065d83f78ff5a819b420906998c573385a5c9670ff580ed369e4",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--shared-darkness",
       "relationships": {
@@ -2287,7 +1886,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>The range of your darkvision increases by 60ft.</p></section><section><h3>Benefit 2</h3><p>You may use Darkvision.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Darkvision</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>The range of your darkvision increases by 60ft.</p></section><section><h3>Benefit 2</h3><p>You may use Darkvision.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -2306,7 +1905,7 @@
         "seedKey": "official:key-ability--shared-darkness",
         "stableId": "key-ability--shared-darkness",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "4bc44a52e9983eb70f99895313f744ab7b9f13da907c098dbd9220b889e56f86",
+        "sourceHash": "b112aa411202065d83f78ff5a819b420906998c573385a5c9670ff580ed369e4",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -2759,10 +2358,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Shield the Fallen.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Shield the Fallen</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Shield the Fallen.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "aa2252573a881d1454bbfe96af89038a0dee2fdffcaa344566402fa5ab9357a9",
+      "sourceHash": "3026c2119d4f5e380d0748754af157b1ce17e64877dff22341843b143f8fd5c6",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--shield-the-fallen",
       "relationships": {
@@ -2799,7 +2398,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Shield the Fallen.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Shield the Fallen</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Shield the Fallen.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -2818,7 +2417,7 @@
         "seedKey": "official:key-ability--shield-the-fallen",
         "stableId": "key-ability--shield-the-fallen",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "aa2252573a881d1454bbfe96af89038a0dee2fdffcaa344566402fa5ab9357a9",
+        "sourceHash": "3026c2119d4f5e380d0748754af157b1ce17e64877dff22341843b143f8fd5c6",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -2870,7 +2469,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>Two-handed weapons only.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -3024,10 +2623,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Vital Drive II.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Vital Drive II</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Vital Drive II.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "ceb7a5c7436817a534d447e26c9f2e70464ed19b8d3be1089aba617126eac786",
+      "sourceHash": "4f480fbf8aa98a3ef4f80474f88ab6d555f768cd2a66c7c6c9ff46077862aa66",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--shrug-it-off",
       "relationships": {
@@ -3064,7 +2663,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Vital Drive II.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Vital Drive II</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Vital Drive II.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -3083,7 +2682,7 @@
         "seedKey": "official:key-ability--shrug-it-off",
         "stableId": "key-ability--shrug-it-off",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "ceb7a5c7436817a534d447e26c9f2e70464ed19b8d3be1089aba617126eac786",
+        "sourceHash": "4f480fbf8aa98a3ef4f80474f88ab6d555f768cd2a66c7c6c9ff46077862aa66",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -3528,7 +3127,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -4032,7 +3631,7 @@
       "range": "Ranged Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -4225,7 +3824,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -4547,10 +4146,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain Elemental Mastery: Dark</p></section><section><h3>Benefit 2</h3><p>You may use Soul Absorption.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Soul Absorption</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain Elemental Mastery: Dark</p></section><section><h3>Benefit 2</h3><p>You may use Soul Absorption.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "52d3b411b3829aa668eaf2bb027fb336015f30acdac16be953043873256423ce",
+      "sourceHash": "058064a653cf214d3daf8ca2ee8a3597d1440705e0aaf4bd2541d512e5fa5e58",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--soul-absorption",
       "relationships": {
@@ -4587,7 +4186,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain Elemental Mastery: Dark</p></section><section><h3>Benefit 2</h3><p>You may use Soul Absorption.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Soul Absorption</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain Elemental Mastery: Dark</p></section><section><h3>Benefit 2</h3><p>You may use Soul Absorption.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -4606,7 +4205,7 @@
         "seedKey": "official:key-ability--soul-absorption",
         "stableId": "key-ability--soul-absorption",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "52d3b411b3829aa668eaf2bb027fb336015f30acdac16be953043873256423ce",
+        "sourceHash": "058064a653cf214d3daf8ca2ee8a3597d1440705e0aaf4bd2541d512e5fa5e58",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -4775,7 +4374,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -4852,10 +4451,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Sound the retreat</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Sound the retreat</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Sound the retreat</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "cd97d157966b013ec9ce3a93c2f6c5ffe693cdc8b8ecd586f5619a107a14e437",
+      "sourceHash": "2eea3ff88ce5478c0a2b2d2376ca1933392c5a4b2bb4b0a4d0091c432d9679d0",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--sound-the-retreat",
       "relationships": {
@@ -4892,7 +4491,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Sound the retreat</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Sound the retreat</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Sound the retreat</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -4911,7 +4510,7 @@
         "seedKey": "official:key-ability--sound-the-retreat",
         "stableId": "key-ability--sound-the-retreat",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "cd97d157966b013ec9ce3a93c2f6c5ffe693cdc8b8ecd586f5619a107a14e437",
+        "sourceHash": "2eea3ff88ce5478c0a2b2d2376ca1933392c5a4b2bb4b0a4d0091c432d9679d0",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -5951,10 +5550,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You can use Spore Symbiote.</p></section><section><h3>Benefit 2</h3><p>You gain Earth Elemental Mastery.</p></section><section><h3>Benefit 3</h3><p>You can create a cute mushroom cap hat to wear.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You can use Spore Symbiote.</p></section><section><h3>Benefit 2</h3><p>You gain Earth Elemental Mastery.</p></section><section><h3>Benefit 3</h3><p>You can create a cute mushroom cap hat to wear.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "830b054b240ca977ac4aad7b18aa3b15eb7e8f310d9f080fc6b25199f8ba8512",
+      "sourceHash": "d98e53fbb22727d4b680324c6c617a0adb94783e6a318f80930dc6a7042af708",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--spore-symbiote",
       "relationships": {
@@ -5991,7 +5590,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You can use Spore Symbiote.</p></section><section><h3>Benefit 2</h3><p>You gain Earth Elemental Mastery.</p></section><section><h3>Benefit 3</h3><p>You can create a cute mushroom cap hat to wear.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You can use Spore Symbiote.</p></section><section><h3>Benefit 2</h3><p>You gain Earth Elemental Mastery.</p></section><section><h3>Benefit 3</h3><p>You can create a cute mushroom cap hat to wear.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -6010,7 +5609,7 @@
         "seedKey": "official:key-ability--spore-symbiote",
         "stableId": "key-ability--spore-symbiote",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "830b054b240ca977ac4aad7b18aa3b15eb7e8f310d9f080fc6b25199f8ba8512",
+        "sourceHash": "d98e53fbb22727d4b680324c6c617a0adb94783e6a318f80930dc6a7042af708",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -6123,7 +5722,7 @@
       "range": "Special",
       "requirement": "<p>Throwing Weapon, Set of Missiles or Thrown attack only.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -6515,7 +6114,7 @@
       "range": "120ft",
       "requirement": "",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "precise",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -6962,10 +6561,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Status Assessment II.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Status Assessment II</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Status Assessment II.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "aa9e19efdae7071b4f1f9742feb9cbc2e42f84bbbbc544a0c6559998fad28e0d",
+      "sourceHash": "9a190ee8639fd98023db0485a6ba749c24521c948eaa522fda70b8346fcadcb9",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--status-assessment-ii",
       "relationships": {
@@ -7013,7 +6612,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Status Assessment II.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Status Assessment II</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Status Assessment II.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -7032,7 +6631,7 @@
         "seedKey": "official:key-ability--status-assessment-ii",
         "stableId": "key-ability--status-assessment-ii",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "aa9e19efdae7071b4f1f9742feb9cbc2e42f84bbbbc544a0c6559998fad28e0d",
+        "sourceHash": "9a190ee8639fd98023db0485a6ba749c24521c948eaa522fda70b8346fcadcb9",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -7907,10 +7506,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You can use Store Time.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Store Time</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You can use Store Time.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "551469d92255ca30ce437e282793aa58da65618a91b673a7bacdb3f15cc7e9cf",
+      "sourceHash": "eb50e8445c0a79abd1b2dde16fb7850ae8f48e54bd2d934043a7565f084d4103",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--store-time",
       "relationships": {
@@ -7947,7 +7546,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You can use Store Time.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Store Time</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You can use Store Time.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -7966,7 +7565,7 @@
         "seedKey": "official:key-ability--store-time",
         "stableId": "key-ability--store-time",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "551469d92255ca30ce437e282793aa58da65618a91b673a7bacdb3f15cc7e9cf",
+        "sourceHash": "eb50e8445c0a79abd1b2dde16fb7850ae8f48e54bd2d934043a7565f084d4103",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -8069,7 +7668,7 @@
       "range": "Melee Weapon Range",
       "requirement": "",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "precise",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -8264,7 +7863,7 @@
       "range": "Melee Weapon Range",
       "requirement": "Must be in Serene Water Stance.",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -8422,10 +8021,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain Elemental Mastery: Dark</p></section><section><h3>Benefit 2</h3><p>You may use Dark Bolt.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Dark Bolt</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain Elemental Mastery: Dark</p></section><section><h3>Benefit 2</h3><p>You may use Dark Bolt.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "011005d3a528a87456247bc279cee97b5627377cca8f425c792690028c2d4cc8",
+      "sourceHash": "62d8616a4bf196e4dfa50a1d90ba1642ff7ab62342dca0886e47b300cefc1bc2",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--stygian-comprehension",
       "relationships": {
@@ -8462,7 +8061,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain Elemental Mastery: Dark</p></section><section><h3>Benefit 2</h3><p>You may use Dark Bolt.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Dark Bolt</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain Elemental Mastery: Dark</p></section><section><h3>Benefit 2</h3><p>You may use Dark Bolt.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -8481,7 +8080,7 @@
         "seedKey": "official:key-ability--stygian-comprehension",
         "stableId": "key-ability--stygian-comprehension",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "011005d3a528a87456247bc279cee97b5627377cca8f425c792690028c2d4cc8",
+        "sourceHash": "62d8616a4bf196e4dfa50a1d90ba1642ff7ab62342dca0886e47b300cefc1bc2",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -8602,7 +8201,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -8744,10 +8343,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Summon Animal.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Summon Animal</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Summon Animal.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "b3e96a639925f226e370548939ec32f6747c9e81bfef64113027be4373aecc18",
+      "sourceHash": "8d17635cab63b67a332a9c034718359179f48eb1f8ed981b5ec9635a90a639eb",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--summon-animal",
       "relationships": {
@@ -8784,7 +8383,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Summon Animal.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Summon Animal</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Summon Animal.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -8803,7 +8402,7 @@
         "seedKey": "official:key-ability--summon-animal",
         "stableId": "key-ability--summon-animal",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "b3e96a639925f226e370548939ec32f6747c9e81bfef64113027be4373aecc18",
+        "sourceHash": "8d17635cab63b67a332a9c034718359179f48eb1f8ed981b5ec9635a90a639eb",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -8932,10 +8531,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may channel for 10 minutes after which you arrive at the space between worlds, allowing you to interact with Eidolons that wish to meet with you.</p></section><section><h3>Benefit 2</h3><p>You may use Attune Eidolon.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Attune Eidolon</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may channel for 10 minutes after which you arrive at the space between worlds, allowing you to interact with Eidolons that wish to meet with you.</p></section><section><h3>Benefit 2</h3><p>You may use Attune Eidolon.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "9227864642967722dbdcbfeb9fa75b423d984cd4bae67874b4554bb6282de1ce",
+      "sourceHash": "ab57f465b360dde2e07c5ddeaa83b892ee084c1d1e9a26e65c10f9b238896929",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--summoning-basics",
       "relationships": {
@@ -8972,7 +8571,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may channel for 10 minutes after which you arrive at the space between worlds, allowing you to interact with Eidolons that wish to meet with you.</p></section><section><h3>Benefit 2</h3><p>You may use Attune Eidolon.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Attune Eidolon</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may channel for 10 minutes after which you arrive at the space between worlds, allowing you to interact with Eidolons that wish to meet with you.</p></section><section><h3>Benefit 2</h3><p>You may use Attune Eidolon.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -8991,7 +8590,7 @@
         "seedKey": "official:key-ability--summoning-basics",
         "stableId": "key-ability--summoning-basics",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "9227864642967722dbdcbfeb9fa75b423d984cd4bae67874b4554bb6282de1ce",
+        "sourceHash": "ab57f465b360dde2e07c5ddeaa83b892ee084c1d1e9a26e65c10f9b238896929",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -9067,10 +8666,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Status Assessment III.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Status Assessment III</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Status Assessment III.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "433042e43c8a63b384e2bfbb08f1a7deae6a57ce68325e2167712c71d652d175",
+      "sourceHash": "2269134a0cdfc4a6a20642102ceab606ff25be6355f67b5e58091b0617ca0f7f",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--superior-assessment",
       "relationships": {
@@ -9107,7 +8706,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Status Assessment III.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Status Assessment III</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Status Assessment III.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -9126,7 +8725,7 @@
         "seedKey": "official:key-ability--superior-assessment",
         "stableId": "key-ability--superior-assessment",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "433042e43c8a63b384e2bfbb08f1a7deae6a57ce68325e2167712c71d652d175",
+        "sourceHash": "2269134a0cdfc4a6a20642102ceab606ff25be6355f67b5e58091b0617ca0f7f",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -10643,7 +10242,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -11729,10 +11328,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use the Timberwright&#39;s Core Crafting abilities</p></section><section><h3>Benefit 2</h3><p>You may craft using Ash and Yew materials.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Timberwright&#39;s Core Crafting</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use the Timberwright&#39;s Core Crafting abilities</p></section><section><h3>Benefit 2</h3><p>You may craft using Ash and Yew materials.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "f7ab30299ed177502efa52db4e3945a9abcc063c475507df12bc1927ff255a5a",
+      "sourceHash": "587e6b1a5ec59a622b1af53c99923524da5b57dfaba742320314b7757fec1120",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--timberwright-s-core-crafting",
       "relationships": {
@@ -11769,7 +11368,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use the Timberwright&#39;s Core Crafting abilities</p></section><section><h3>Benefit 2</h3><p>You may craft using Ash and Yew materials.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Timberwright&#39;s Core Crafting</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use the Timberwright&#39;s Core Crafting abilities</p></section><section><h3>Benefit 2</h3><p>You may craft using Ash and Yew materials.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -11788,7 +11387,7 @@
         "seedKey": "official:key-ability--timberwright-s-core-crafting",
         "stableId": "key-ability--timberwright-s-core-crafting",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "f7ab30299ed177502efa52db4e3945a9abcc063c475507df12bc1927ff255a5a",
+        "sourceHash": "587e6b1a5ec59a622b1af53c99923524da5b57dfaba742320314b7757fec1120",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -12136,10 +11735,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Toxic Blast.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Toxic Blast</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Toxic Blast.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "91edbc3c6df095674f83895a28dbe19b424ae707d03c088b2885c3464d8b31ff",
+      "sourceHash": "21ab8287840eeda6b7ab2981bded167eaee3028d766572d2907ca48d6e172ec9",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--toxic-blast",
       "relationships": {
@@ -12176,7 +11775,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Toxic Blast.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Toxic Blast</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Toxic Blast.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -12195,7 +11794,7 @@
         "seedKey": "official:key-ability--toxic-blast",
         "stableId": "key-ability--toxic-blast",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "91edbc3c6df095674f83895a28dbe19b424ae707d03c088b2885c3464d8b31ff",
+        "sourceHash": "21ab8287840eeda6b7ab2981bded167eaee3028d766572d2907ca48d6e172ec9",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -12579,10 +12178,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Transfusion.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Transfusion</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Transfusion.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "0f6ab7828d26c61762cbf395fbbe230419bbecd1a4e35ba1894f1d568c075b00",
+      "sourceHash": "e7f38ab6481fb32e6a9e043a06c818dc20f865f17a9ab1fccc63cb96a048795e",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--transfusion",
       "relationships": {
@@ -12619,7 +12218,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Transfusion.</p></section><section><h3>Benefit 2</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 3</h3><p>Transfusion</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Transfusion.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -12638,7 +12237,7 @@
         "seedKey": "official:key-ability--transfusion",
         "stableId": "key-ability--transfusion",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "0f6ab7828d26c61762cbf395fbbe230419bbecd1a4e35ba1894f1d568c075b00",
+        "sourceHash": "e7f38ab6481fb32e6a9e043a06c818dc20f865f17a9ab1fccc63cb96a048795e",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -12771,10 +12370,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>For 1 AP, You can create small items using transmuting to provide temporary comforts and curiosities— a cup to drink out of, a chair to sit down on, a figurine etc.  These items cannot have significant gameplay factors (such as a key or a tool).  If you’d like to create something small to give away or sell, you must utilize x amount of commodities of whatever quantity and type the GM decides.</p></section><section><h3>Benefit 2</h3><p>You may use your transmuter abilities a second time during a craft or co craft.</p></section><section><h3>Benefit 3</h3><p>You may use the following abilities:</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>For 1 AP, You can create small items using transmuting to provide temporary comforts and curiosities— a cup to drink out of, a chair to sit down on, a figurine etc.  These items cannot have significant gameplay factors (such as a key or a tool).  If you’d like to create something small to give away or sell, you must utilize x amount of commodities of whatever quantity and type the GM decides.</p></section><section><h3>Benefit 2</h3><p>You may use your transmuter abilities a second time during a craft or co craft.</p></section><section><h3>Benefit 3</h3><p>You may use the following abilities:</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "c53d7f999a00f34f864e42f3deb2f1b81e482582ae82cfc4ad4a40d7010ca8c0",
+      "sourceHash": "ede5bbc3afee74e8826ede7b7b2d28ec7692cf2f3ff2d490764050775da9e8ef",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--transmutation-tricks",
       "relationships": {
@@ -12811,7 +12410,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>For 1 AP, You can create small items using transmuting to provide temporary comforts and curiosities— a cup to drink out of, a chair to sit down on, a figurine etc.  These items cannot have significant gameplay factors (such as a key or a tool).  If you’d like to create something small to give away or sell, you must utilize x amount of commodities of whatever quantity and type the GM decides.</p></section><section><h3>Benefit 2</h3><p>You may use your transmuter abilities a second time during a craft or co craft.</p></section><section><h3>Benefit 3</h3><p>You may use the following abilities:</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>For 1 AP, You can create small items using transmuting to provide temporary comforts and curiosities— a cup to drink out of, a chair to sit down on, a figurine etc.  These items cannot have significant gameplay factors (such as a key or a tool).  If you’d like to create something small to give away or sell, you must utilize x amount of commodities of whatever quantity and type the GM decides.</p></section><section><h3>Benefit 2</h3><p>You may use your transmuter abilities a second time during a craft or co craft.</p></section><section><h3>Benefit 3</h3><p>You may use the following abilities:</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -12830,7 +12429,7 @@
         "seedKey": "official:key-ability--transmutation-tricks",
         "stableId": "key-ability--transmutation-tricks",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "c53d7f999a00f34f864e42f3deb2f1b81e482582ae82cfc4ad4a40d7010ca8c0",
+        "sourceHash": "ede5bbc3afee74e8826ede7b7b2d28ec7692cf2f3ff2d490764050775da9e8ef",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -13096,10 +12695,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You may use Biohacking.</p></section><section><h3>Benefit 2</h3><p>You can store up to one gene in your gene inventory.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Biohacking</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You may use Biohacking.</p></section><section><h3>Benefit 2</h3><p>You can store up to one gene in your gene inventory.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "7807351a1084949eccbfc6c961cb415269f97b3bfab26ea71fe8860589f502f6",
+      "sourceHash": "aceb5df1616b0cc752529d061db4962ba4981f8250f7ed0dcbafbefb46b86729",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--transmuter-of-life",
       "relationships": {
@@ -13136,7 +12735,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You may use Biohacking.</p></section><section><h3>Benefit 2</h3><p>You can store up to one gene in your gene inventory.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Biohacking</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You may use Biohacking.</p></section><section><h3>Benefit 2</h3><p>You can store up to one gene in your gene inventory.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -13155,7 +12754,7 @@
         "seedKey": "official:key-ability--transmuter-of-life",
         "stableId": "key-ability--transmuter-of-life",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "7807351a1084949eccbfc6c961cb415269f97b3bfab26ea71fe8860589f502f6",
+        "sourceHash": "aceb5df1616b0cc752529d061db4962ba4981f8250f7ed0dcbafbefb46b86729",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -13401,10 +13000,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain Earth Mastery.</p></section><section><h3>Benefit 2</h3><p>You may use Tremorsense</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Tremorsense</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain Earth Mastery.</p></section><section><h3>Benefit 2</h3><p>You may use Tremorsense</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "e06ad5cca1bb6348ca9c8c40aedc6921252ec3c18882d147380d3734db42e863",
+      "sourceHash": "d79945265e94f905f7ac1ad35006927db4e56528c6d63a43ba37f36527933f8e",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--tremorsense",
       "relationships": {
@@ -13452,7 +13051,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain Earth Mastery.</p></section><section><h3>Benefit 2</h3><p>You may use Tremorsense</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Tremorsense</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain Earth Mastery.</p></section><section><h3>Benefit 2</h3><p>You may use Tremorsense</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -13471,7 +13070,7 @@
         "seedKey": "official:key-ability--tremorsense",
         "stableId": "key-ability--tremorsense",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "e06ad5cca1bb6348ca9c8c40aedc6921252ec3c18882d147380d3734db42e863",
+        "sourceHash": "d79945265e94f905f7ac1ad35006927db4e56528c6d63a43ba37f36527933f8e",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -14957,10 +14556,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient. Your unarmed attacks cannot deal non-lethal damage.</p></section><section><h3>Benefit 2</h3><p>You may use the Vampire Bite ability.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Vampire Bite</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient. Your unarmed attacks cannot deal non-lethal damage.</p></section><section><h3>Benefit 2</h3><p>You may use the Vampire Bite ability.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "5527eff7298abe0aa22c5f4906cf4638c19d4ced8136ca94d477dd674f99ad20",
+      "sourceHash": "e1b69c8903a16aba92fe4ef00df36ea5859b1a169ef55818741b6863326fcd8c",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--vampiric-strength",
       "relationships": {
@@ -14997,7 +14596,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient. Your unarmed attacks cannot deal non-lethal damage.</p></section><section><h3>Benefit 2</h3><p>You may use the Vampire Bite ability.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Vampire Bite</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient. Your unarmed attacks cannot deal non-lethal damage.</p></section><section><h3>Benefit 2</h3><p>You may use the Vampire Bite ability.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -15016,7 +14615,7 @@
         "seedKey": "official:key-ability--vampiric-strength",
         "stableId": "key-ability--vampiric-strength",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "5527eff7298abe0aa22c5f4906cf4638c19d4ced8136ca94d477dd674f99ad20",
+        "sourceHash": "e1b69c8903a16aba92fe4ef00df36ea5859b1a169ef55818741b6863326fcd8c",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -15136,7 +14735,7 @@
       "range": "Weapon Range",
       "requirement": "<p>Your VIP was attacked last turn and you re-directed an attack from them to you or your VIP is downed.</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -15470,10 +15069,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>At the start of each arc, choose one person other than yourself as your VIP for that arc. Your VIP is the target for several of your abilities.</p></section><section><h3>Benefit 2</h3><p>You may use VIP Protection.</p></section><section><h3>Benefit 3</h3><p>If you choose a VIP, you cannot become the target of a VIP protection yourself.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>At the start of each arc, choose one person other than yourself as your VIP for that arc. Your VIP is the target for several of your abilities.</p></section><section><h3>Benefit 2</h3><p>You may use VIP Protection.</p></section><section><h3>Benefit 3</h3><p>If you choose a VIP, you cannot become the target of a VIP protection yourself.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "2d782c80e841270bd471af359580f9d326922e9d729b5b47e1ee35adc6b85ef5",
+      "sourceHash": "5e3d736ca42749afaeea85e17837eb8bd5369d064e6f215889f2d2cfe55aed24",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--vip-protection",
       "relationships": {
@@ -15510,7 +15109,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>At the start of each arc, choose one person other than yourself as your VIP for that arc. Your VIP is the target for several of your abilities.</p></section><section><h3>Benefit 2</h3><p>You may use VIP Protection.</p></section><section><h3>Benefit 3</h3><p>If you choose a VIP, you cannot become the target of a VIP protection yourself.</p></section><section><h3>Benefit 4</h3><p>ASSOCIATED ABILITY</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>At the start of each arc, choose one person other than yourself as your VIP for that arc. Your VIP is the target for several of your abilities.</p></section><section><h3>Benefit 2</h3><p>You may use VIP Protection.</p></section><section><h3>Benefit 3</h3><p>If you choose a VIP, you cannot become the target of a VIP protection yourself.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -15529,7 +15128,7 @@
         "seedKey": "official:key-ability--vip-protection",
         "stableId": "key-ability--vip-protection",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "2d782c80e841270bd471af359580f9d326922e9d729b5b47e1ee35adc6b85ef5",
+        "sourceHash": "5e3d736ca42749afaeea85e17837eb8bd5369d064e6f215889f2d2cfe55aed24",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -15584,7 +15183,7 @@
       "range": "20ft",
       "requirement": "",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "precise",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,
@@ -16869,10 +16468,10 @@
     "type": "ability",
     "img": "icons/svg/lightning.svg",
     "system": {
-      "description": "<section><h3>Benefit 1</h3><p>You gain Wind Mastery.</p></section><section><h3>Benefit 2</h3><p>You can use Glide.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Glide</p></section>",
+      "description": "<section><h3>Benefit 1</h3><p>You gain Wind Mastery.</p></section><section><h3>Benefit 2</h3><p>You can use Glide.</p></section>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-      "sourceHash": "7bcab28786d2f8c7db851dd585d71c33f8393209d4b8772f3a3e00047e05ce02",
+      "sourceHash": "fdcb88e64a25373559556f2180d81de3cbe9b42d7bff36b6e608eb60c647ccd5",
       "rulebookVersion": "0.13.3",
       "stableId": "key-ability--wind-master",
       "relationships": {
@@ -16931,7 +16530,7 @@
       "rawKeywords": "",
       "rawCost": "",
       "otherCosts": "",
-      "benefits": "<section><h3>Benefit 1</h3><p>You gain Wind Mastery.</p></section><section><h3>Benefit 2</h3><p>You can use Glide.</p></section><section><h3>Benefit 3</h3><p>ASSOCIATED ABILITY</p></section><section><h3>Benefit 4</h3><p>Glide</p></section>",
+      "benefits": "<section><h3>Benefit 1</h3><p>You gain Wind Mastery.</p></section><section><h3>Benefit 2</h3><p>You can use Glide.</p></section>",
       "isKeyAbility": true,
       "patchVersion": "0.13.3",
       "range": "",
@@ -16950,7 +16549,7 @@
         "seedKey": "official:key-ability--wind-master",
         "stableId": "key-ability--wind-master",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/abilities",
-        "sourceHash": "7bcab28786d2f8c7db851dd585d71c33f8393209d4b8772f3a3e00047e05ce02",
+        "sourceHash": "fdcb88e64a25373559556f2180d81de3cbe9b42d7bff36b6e608eb60c647ccd5",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0"
       }
@@ -17269,7 +16868,7 @@
       "range": "Melee Weapon Range",
       "requirement": "<p>-</p>",
       "hasAttack": false,
-      "attackType": "light",
+      "attackType": "heavy",
       "damageFormula": "",
       "damageType": "physical",
       "usesWeapon": false,

@@ -78,7 +78,7 @@
       "benefit1": "Due to symbiotic fungi within your body, you become resistant to all commonly known (book) poisons and may use Resist Poison.",
       "benefit2": "After being infected by an exotic poison or disease and surviving, that poison/disease is added to your list of resistances. Any disease or poison that you are resistant to can be used with Amoxicillin.",
       "benefit3": "Against a poison you are resistant to, you may use Resist Poison for 0 RP, 1 Mana instead of 1 RP.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "e522ec17-9951-49d8-a3fd-f21f486bb117"
     },
     "relationships": {
@@ -90,7 +90,7 @@
         }
       ]
     },
-    "source_hash": "fb0af5fdfc724e4ca63969d2fd1ea7fd3159f3bd1ecc8a7c3b95b75ab74cfa8e"
+    "source_hash": "f61a97a8fb81c71503512c72aa82a8260cf863482983603f0a9c9180cfa1d78a"
   },
   {
     "stable_id": "key-ability--giant-strength",
@@ -293,8 +293,8 @@
       "abilityId": "holy_orders",
       "name": "Holy Orders",
       "benefit1": "You may use Holy Orders.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Holy Orders",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "b5ae210d-a690-4a1b-841d-9a27b68b90fd"
     },
@@ -307,7 +307,7 @@
         }
       ]
     },
-    "source_hash": "73bea32189b897355443c9d16cd0e96a867511515260dd79c8c4104fce8d715d"
+    "source_hash": "e54c416e0ee18debd4ab554cf3171e677f2e10ecb918d83cac3ad30cdeb0ef19"
   },
   {
     "stable_id": "key-ability--iaijutsu",
@@ -388,7 +388,7 @@
       "benefit1": "You gain proficiency in wands, small weapons and light armor.",
       "benefit2": "You gain +5 skill points in Art. You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
       "benefit3": "You may use One Beat, One Heart",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "3c0c1814-64db-4c22-b158-424a0149c3eb"
     },
     "relationships": {
@@ -400,7 +400,7 @@
         }
       ]
     },
-    "source_hash": "66b8f8c7f98d8d0a82f49e14a7fa8cca484edf98de92d036f49b26114d0ae9b4"
+    "source_hash": "e2ea26c7fa99b20f4e5e8e42aa043e964a22f4999d168871f44b40a099e93933"
   },
   {
     "stable_id": "key-ability--improved-death-perception",
@@ -450,7 +450,7 @@
       "benefit1": "When using improvised weapons, they deal the same damage as normal weapons would. ",
       "benefit2": "You may use Chair Grab.",
       "benefit3": "Upon mastering this class, your improvised weapon attacks all gain the Prone keyword.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "2c86fc51-dffe-4a39-8a7d-4aa0bff9aacc"
     },
     "relationships": {
@@ -462,7 +462,7 @@
         }
       ]
     },
-    "source_hash": "264970b55d7c6a157a589599e6fce1bfb7a39a8ae5201fc0fd856c714c2467a5"
+    "source_hash": "8ab3366d67a1fc0a7dcb2fc41a70b65cd88d91e69b1cd6bd03a231000ee1cd8d"
   },
   {
     "stable_id": "key-ability--inconspicuous",
@@ -573,8 +573,8 @@
       "name": "Jump",
       "benefit1": "When using an ability with the Jump keyword, you do not take fall damage.",
       "benefit2": "You may use Jump.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Jump",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "208f4f91-aa08-457e-83f4-66ed5a30c03d"
     },
     "relationships": {
@@ -586,7 +586,7 @@
         }
       ]
     },
-    "source_hash": "81e5764793c9730f1e7d61c14c2f3049a4c864f4626daf97528f958f4d1d0c7c"
+    "source_hash": "5c4349e805b7189ff464570048903cb855ffaf93efe7dcdd1e05c3232eb4887b"
   },
   {
     "stable_id": "key-ability--knight-of-yggdrasil",
@@ -605,7 +605,7 @@
       "benefit1": "You may use Fluttering Blade.",
       "benefit2": "Once per round, if an enemy is holding a weapon affected by your Fluttering Blade, you may spend 1 RP to deal Heavy Full Pierce damage to it.",
       "benefit3": "When a Fluttering Blade you created is within 5ft of you, you may spend 0 AP to grab hold of it with a free hand.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "ca8b73da-9f28-4043-80a6-dc5b4c6f9872"
     },
     "relationships": {
@@ -617,7 +617,7 @@
         }
       ]
     },
-    "source_hash": "df4ddccf5c8a0a5e7ef8ed8235727bf4533f4d4ade8f184f6045a249236edabd"
+    "source_hash": "73fcb06143aed23f72171e2b86e6f68552737e9467dba811d1fa36a8b7b5aa4d"
   },
   {
     "stable_id": "key-ability--knight-of-yggdrasil-ii",
@@ -634,8 +634,8 @@
       "abilityId": "knight-of-yggdrasil-ii",
       "name": "Knight of Yggdrasil II",
       "benefit1": "You may use Fae Knight Style: Willow Stance",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Fae Knight Style: Willow Stance",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "6f63aea8-4474-413e-9e29-d7ad4309f05f"
     },
@@ -648,7 +648,7 @@
         }
       ]
     },
-    "source_hash": "94589fbf3a90e2417eebc968d0e08af612379fcf9865052b4661026bb6550ff0"
+    "source_hash": "e31abe463c1987f35b108ed04fafa44ebe67780b04bf0983c1dacf3395b7ac54"
   },
   {
     "stable_id": "key-ability--light-cavalry",
@@ -790,8 +790,8 @@
       "name": "Look of Death",
       "benefit1": "You may use Perish.",
       "benefit2": "One of your eyes becomes an Destruction Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Perish",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "003f15ef-ac1a-414f-8059-d63bedeb47f0"
     },
     "relationships": {
@@ -803,7 +803,7 @@
         }
       ]
     },
-    "source_hash": "53bb69bf34f40e357bea0ef6205be7c86653fe2e71fe7a5c6056dd653fb6f13b"
+    "source_hash": "dd240376be0f239fbbd9cb30f93af7d4f82f26cda4be1538a80ea3124fef6bbd"
   },
   {
     "stable_id": "key-ability--lord-s-dominion",
@@ -851,8 +851,8 @@
       "abilityId": "mage-armor",
       "name": "Mage Armor",
       "benefit1": "You may use Mage Armor",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Mage Armor",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "e837fc6d-f762-4369-84e8-a36bf264c521"
     },
@@ -865,7 +865,7 @@
         }
       ]
     },
-    "source_hash": "d9383c842de09d3f337724d2e8ac56f0ef664b76d1cb451ef6fa09746b517dcf"
+    "source_hash": "fa170d8cd56c0fa2187634cee2f811021c19faf0f156c5c2f52f30bf6c2a91d5"
   },
   {
     "stable_id": "key-ability--mage-knight",
@@ -915,7 +915,7 @@
       "benefit1": "You can use Blue Tide.",
       "benefit2": "You gain Elemental Mastery: Water",
       "benefit3": "You gain the ability to walk on water and skate across its surface—every 10ft of water surface movement only costs 5ft of movement.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "268bb8cf-7a75-49fc-862a-19e9576a108b"
     },
     "relationships": {
@@ -927,7 +927,7 @@
         }
       ]
     },
-    "source_hash": "a1072c17f80f231130ae42f5c0017cfe842dab39c03cfd24a1d37611e295342f"
+    "source_hash": "b66d379f86d6068e1c755848b94047dd68bdc286295b4fce01206ce1cd435ca2"
   },
   {
     "stable_id": "key-ability--mage-s-journey",
@@ -946,7 +946,7 @@
       "benefit1": "You gain proficiency in the Channeling weapon group's weapons and gain Arcane Mastery. Mastery of an element allows you to use it in Channeling weapon attacks and use it to perform minor tricks relating to it.",
       "benefit2": "You gain +5 skill points in the Magic skill. You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
       "benefit3": "You can use Sense Magic.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "cbfc49c9-90e8-4940-a09b-a2d913d42080"
     },
     "relationships": {
@@ -958,7 +958,7 @@
         }
       ]
     },
-    "source_hash": "70362ce14ff283123af05c132088ee20f3d9da7a40a6a14f370d73a1cfe4705b"
+    "source_hash": "01f066b11fe5346dd6ffb7b55e88cf56773473061c6479df5d45dfd577df9e43"
   },
   {
     "stable_id": "key-ability--magic-resistance",
@@ -1008,7 +1008,7 @@
       "benefit1": "You gain proficiency in staves (broom), small weapons, sets of missiles and light armor.",
       "benefit2": "You gain 5 skill points to spend in Athletics, Stealth, Roguecraft, Medicine, Common Knowledge, Linguistics, Appraise, History, Perception, Insight, Survival or Intimidation. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "benefit3": "You may use Graceful Service.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "fd369348-a806-47d8-9d62-0c2230771ae6"
     },
     "relationships": {
@@ -1020,7 +1020,7 @@
         }
       ]
     },
-    "source_hash": "bce2379a9117c6debb8d286bbe18729bc9b34f562289212a6131e5cbd7854e37"
+    "source_hash": "a8fe6548f40eb46c3d3bf1458f5a3e0b6fdad66a9ec9851a00c798cb9434f009"
   },
   {
     "stable_id": "key-ability--mana-sight",
@@ -1039,7 +1039,7 @@
       "benefit1": "You may use Mana Sight.",
       "benefit2": "One of your eyes becomes an Life Perception Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.",
       "benefit3": "When making an attack with the Mystic Eye keyword that use the Life Perception eye, you ignore 1 point of guard.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "f7e8cabb-aa1d-4b99-81ca-ea4dc212c2f9"
     },
     "relationships": {
@@ -1051,7 +1051,7 @@
         }
       ]
     },
-    "source_hash": "ebd1d2604cf9d0ad5b5fc96eedf16eeb170cdcc5506c95810698e5c2ae239a1b"
+    "source_hash": "c33dc8f1e7fb4c5f27e9ca5641be7d81d931c3624840d17a750e6e532a2a7a31"
   },
   {
     "stable_id": "key-ability--manifestor-s-journey",
@@ -1069,7 +1069,7 @@
       "benefit1": "You gain proficiency in 1 common melee weapon, light armor and shields.",
       "benefit2": "You gain +5 skill points to spend in Athletics, Perception, History, Magic, Intimidation or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "benefit3": "You may use Secret Art: Manifest",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": ""
     },
     "relationships": {
@@ -1080,7 +1080,7 @@
         }
       ]
     },
-    "source_hash": "4eaf82cecd164b33ee733534cedf36d7517ec505d2ae71e9f4bd1a4d2c0f1b44"
+    "source_hash": "1ac8ea91635c6ccb707df97f4fa1eca7d566c2c40534521548f93800877f993a"
   },
   {
     "stable_id": "key-ability--martial-artist-s-journey",
@@ -1099,7 +1099,7 @@
       "benefit1": "Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient.",
       "benefit2": "You gain +5 skill points to spend in Athletics, Perception, Insight, Medicine, Intimidation or a relevant Expert Knowledge skill (By DM approval). You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "benefit3": "You can use Discipline.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "9db4a877-8d93-460c-87a0-2609a36ddfbb"
     },
     "relationships": {
@@ -1111,7 +1111,7 @@
         }
       ]
     },
-    "source_hash": "e515e5368b338063151671466fa6d83ebcba11b9fc4f63c37edc3cd896fc353a"
+    "source_hash": "82ba2f3f1559a1ef417f8705ebb1e865e555fbfc388e831423b065e4bfdd95dd"
   },
   {
     "stable_id": "key-ability--mass-index",
@@ -1129,8 +1129,8 @@
       "name": "Mass Index",
       "benefit1": "Your spells with the Gravity keyword deal extra damage to the target based on its size. They deal an additional 1 damage to large creatures and an additional 3 to Huge creatures.",
       "benefit2": "You may use Gravity Crush.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Gravity Crush",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "ae0d84da-a321-46d0-9556-231ac2abcfbb"
     },
     "relationships": {
@@ -1142,7 +1142,7 @@
         }
       ]
     },
-    "source_hash": "b479e8072fbab23fbf081e042ffc2c31ceee9e790b79eca7c0784040b20aa591"
+    "source_hash": "f780f462d1f68e09b48e84bcab0717bcef9ab42c144873f9e2760997ce74a2e8"
   },
   {
     "stable_id": "key-ability--medic-s-journey",
@@ -1161,7 +1161,7 @@
       "benefit1": "You gain proficiency in small weapons, set of missiles and light armor.",
       "benefit2": "You gain +5 skill points to spend in Medicine. You can exchange any skill point for 2 expertise points, but must spend them in this skill.",
       "benefit3": "You gain the benefits of First Response.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "0e2cca4a-edc5-4f1a-a64b-6508cf7df15c"
     },
     "relationships": {
@@ -1173,7 +1173,7 @@
         }
       ]
     },
-    "source_hash": "601d161184ee07f41d4539fb03de0d02c2120ef3b08fc566a9b76e7fa788b590"
+    "source_hash": "dcf3b7aca62094141a8455577ef30b562002f154be3617cfbccd7dc216d0b998"
   },
   {
     "stable_id": "key-ability--mending",
@@ -1284,8 +1284,8 @@
       "name": "Mission Control",
       "benefit1": "You gain proficiency in the Aetherie Sensory Station.",
       "benefit2": "You may use Mind Connection.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Mind Connection",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "53afdce0-f6f0-441a-876c-cd25a63f7d6d"
     },
     "relationships": {
@@ -1297,7 +1297,7 @@
         }
       ]
     },
-    "source_hash": "ed6f37435089d2e4d7bccb9a78a15aab5d5719df1556044954321e0ca32f25f5"
+    "source_hash": "b578f4d24ecd4bcecd40e1d3236a3129f8af0ef3346f0e9a7e31ab7b496fab9c"
   },
   {
     "stable_id": "key-ability--mounted-basics",
@@ -1346,8 +1346,8 @@
       "name": "Natural Cycle",
       "benefit1": "At the start of your turn you may pay upkeep 1 mana for each Regrowth you have on an ally. If you do, you may extend its duration by 1 turn. You can choose this upkeep separately for each Regrowth.",
       "benefit2": "You may use Regrowth.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Regrowth",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "e30efab3-a95b-4976-b200-bf914fdacb29"
     },
     "relationships": {
@@ -1359,7 +1359,7 @@
         }
       ]
     },
-    "source_hash": "e5682ec31ac7cb078f5aacfd82c198f1c1b32342560659b74f8601996b95baea"
+    "source_hash": "2f21da0326bc4eabbc3d5111f3207ff000042724708ec38f820f9ca412a7c3f4"
   },
   {
     "stable_id": "key-ability--nightstalker",
@@ -1408,8 +1408,8 @@
       "name": "Ninja Style",
       "benefit1": "You gain proficiency in both Small Weapons and Sets of Missiles.",
       "benefit2": "You may use Ninja Run.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Ninja Run",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "9c7bfadd-dae1-4da1-b95e-e6d4d62ff1e6"
     },
     "relationships": {
@@ -1421,7 +1421,7 @@
         }
       ]
     },
-    "source_hash": "60f31f1ed4137b3696beb32c25a9b744961d9441191768f3389b3fe7cde20437"
+    "source_hash": "a94636a05dd94d9d901dc43aa93f80cb05459c51588ea586618215af15b4141f"
   },
   {
     "stable_id": "key-ability--ninja-techniques",
@@ -1439,8 +1439,8 @@
       "name": "Ninja Techniques",
       "benefit1": "Your Ninja Run now lasts for the entire turn.",
       "benefit2": "You may use Genjutsu Kai",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Genjutsu Kai",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "51ee50de-0fbe-4189-bd67-2cde1a56165b"
     },
     "relationships": {
@@ -1452,7 +1452,7 @@
         }
       ]
     },
-    "source_hash": "cbb5c8a34d451b8a2d489aba8e17edeefb38102f4da3adb6f182fff924e9aba3"
+    "source_hash": "5027957d86cc7276a513d69c1dcfb6adad7b3c9250681674ea0b633ce8e84bd3"
   },
   {
     "stable_id": "key-ability--on-my-terms",
@@ -1563,8 +1563,8 @@
       "name": "Past Self",
       "benefit1": "You may use Past Self.",
       "benefit2": "Using the Delay encounter start action does not consume your encounter start action use and may use it multiple times.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Past Self",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "29952616-a6e8-4442-94eb-afff28e44c16"
     },
     "relationships": {
@@ -1576,7 +1576,7 @@
         }
       ]
     },
-    "source_hash": "24cb18c35900f9b5aa99e68e75d0906718f500f954c170eb6eae50842e79fb85"
+    "source_hash": "344b8d9952111da798c9f838d10658687607a497b7460249b484cf5594798dfc"
   },
   {
     "stable_id": "key-ability--peddler-of-wares",
@@ -1655,8 +1655,8 @@
       "name": "Petrification Eye",
       "benefit1": "One of your eyes becomes a Petrification Eye. It may be used to make Mystic Eye type abilities of the appropriate type. An eye can only be a single mystic eye type.",
       "benefit2": "You may use Unpetrify.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Unpetrify",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": ""
     },
     "relationships": {
@@ -1667,7 +1667,7 @@
         }
       ]
     },
-    "source_hash": "4207734242444ed6be46aaab0787c0dc5979befa5ecb7116d93fff574bc34397"
+    "source_hash": "105930d0ee3b06d6f41f2a31a13a9eddbea92725a4a56a7060b8c00b264fa076"
   },
   {
     "stable_id": "key-ability--phantom-thief",
@@ -1685,8 +1685,8 @@
       "name": "Phantom Thief",
       "benefit1": "You are able to disable and modify t2 and t3 bounded fields.",
       "benefit2": "You may use Stolen Skill.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Stolen Skill",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "1fb943e0-15c3-4980-a4ab-2872d6d8f80c"
     },
     "relationships": {
@@ -1698,7 +1698,7 @@
         }
       ]
     },
-    "source_hash": "5d60190dd7e9a46a86937233efad0b59dbe8ab4ab6920a09b9c5103d4e9dc5c3"
+    "source_hash": "17d09c59a8462962e539283e7336d4243426863a5494428e35c63274b21c93d5"
   },
   {
     "stable_id": "key-ability--pierrot-s-journey",
@@ -1747,8 +1747,8 @@
       "name": "Puppet Grandmaster",
       "benefit1": "You can summon puppets under your control using Summon Piece. While these puppets follow movement rules as described in the abilities and are always Medium size, they can appear as whatever you wish, decided when you take this class.",
       "benefit2": "As an EP action, you may change the appearance of your pieces.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Summon Piece",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "646b5751-19fe-4b72-8991-cce46836a0cd"
     },
     "relationships": {
@@ -1760,7 +1760,7 @@
         }
       ]
     },
-    "source_hash": "c7fd300b5b84befb7a46e1e3ed29682e5196bfb5bdd3856510378a2a13ca0b43"
+    "source_hash": "042695f1da7dfcc485d52fa23e0795fed3e8687958ad5f39c99c50fd1d94e1fa"
   },
   {
     "stable_id": "key-ability--raise-undead",
@@ -1777,8 +1777,8 @@
       "abilityId": "raise_undead",
       "name": "Raise Undead",
       "benefit1": "You may use Raise Undead.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Raise Undead",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "613f9256-6e12-46da-b183-071f85cfb26c"
     },
@@ -1791,7 +1791,7 @@
         }
       ]
     },
-    "source_hash": "fe917987df314dc93a1f947ec8846a2177432052f472375424e7e4a6d6ed438d"
+    "source_hash": "3c96f45c01f61508df53c5ea2bb37f6c96c1d4c681ccffbf614c758ab91879ad"
   },
   {
     "stable_id": "key-ability--ranger-s-journey",
@@ -1810,7 +1810,7 @@
       "benefit1": "You gain proficiency in light and medium armor, a common ranged weapon group and a common melee weapon group.",
       "benefit2": "You gain 5 points in one of the following: Appraise, Athletics, Stealth, Medicine, Perception, Survival, Animal Husbandry or Common Knowledge. You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "benefit3": "You can use Status Assessment.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "bdd832c5-e394-46bd-83f4-bc26d284de17"
     },
     "relationships": {
@@ -1822,7 +1822,7 @@
         }
       ]
     },
-    "source_hash": "3c9fe94f2d1037fe1a644d0ea623da23af9322d4fc1e4753e6dda8940426e901"
+    "source_hash": "1cf4c0b953b07a3b5ec63e83534b4e246f017238a989e54b7fab15dac8ff6279"
   },
   {
     "stable_id": "key-ability--rapid-blasts",
@@ -1839,8 +1839,8 @@
       "abilityId": "rapid-blasts",
       "name": "Rapid Blasts",
       "benefit1": "You may use Ki Blast II.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Ki Blast II",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "bd6d6a19-72bb-4c4b-8a3e-4e13cf615cba"
     },
@@ -1853,7 +1853,7 @@
         }
       ]
     },
-    "source_hash": "04f11fb1c260dc6fb8b7786bf5fa8820fadcd81cc9a52cf124eb23bedae142ed"
+    "source_hash": "3565336c43355a6b15040bade974815e988b5123ca53888358d4849ea3a8c077"
   },
   {
     "stable_id": "key-ability--receive-oracle",
@@ -1870,8 +1870,8 @@
       "abilityId": "receive_oracle",
       "name": "Receive Oracle",
       "benefit1": "You may use Receive Oracle.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Receive Oracle",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "b94357a0-f9aa-46e2-940d-08db4414ef58"
     },
@@ -1884,7 +1884,7 @@
         }
       ]
     },
-    "source_hash": "b3576ade150a6d8b3bbe647a2edea9be5fe899bed0b94e4caa3dca3e153c1d77"
+    "source_hash": "d8dec9916e9fa25fd5bd4f0e6e426804650ccb53711b888603bcae4abf97b9ea"
   },
   {
     "stable_id": "key-ability--recoil-control",
@@ -1961,8 +1961,8 @@
       "abilityId": "resheathe",
       "name": "Resheathe",
       "benefit1": "You may use Resheathe.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Resheathe",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "554df130-95d9-4a33-bc63-5745c6161daf"
     },
@@ -1975,7 +1975,7 @@
         }
       ]
     },
-    "source_hash": "88181ece783f69788bfa5cd2d0301266f3245f352c4d628bdbd03bc79db4c674"
+    "source_hash": "c3b885206230dc996d3864cfb6f4df14e0f07a26ef5367b1994c3d576e6e6575"
   },
   {
     "stable_id": "key-ability--rock-and-stone",
@@ -2025,7 +2025,7 @@
       "benefit1": "You gain proficiency with light armor and with one of the following weapon groups: Small weapons, Light swords, Dueling weapons and Set of missiles.",
       "benefit2": "You gain +5 skill points in Roguecraft and +5 skill points to spend in Athletics, Stealth, Deception, Perception, Insight, Negotiation, Intimidation or a relevant Expert Knowledge skill (By DM Approval).  You can exchange any skill point for 2 expertise points, but must spend them in these skills.",
       "benefit3": "You can use Feint.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "7e9dca18-d206-424e-aea8-7cf7ea0913a3"
     },
     "relationships": {
@@ -2037,7 +2037,7 @@
         }
       ]
     },
-    "source_hash": "071691dcd7dccfb494a963f730f959bd36b381984fc9c5b7eadfdf71c5f103df"
+    "source_hash": "4e73713bd80dff150442807b788c9ff1e1c976a6c37a3a051b2280d99c46def0"
   },
   {
     "stable_id": "key-ability--rolling-thunder",
@@ -2086,8 +2086,8 @@
       "name": "Saboteur",
       "benefit1": "You gain proficiency in Saboteur Thread Daggers.",
       "benefit2": "You may use Presence Concealment.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Presence Concealment",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "1e26e66c-34c5-49dc-b99f-68b157be8aee"
     },
     "relationships": {
@@ -2099,7 +2099,7 @@
         }
       ]
     },
-    "source_hash": "091e5dac8c00a028380c878aa008c77b8aa69f23a03566a96214ec2f55236211"
+    "source_hash": "82a450c03c14c6dc80553ce162943d05e516ccb473407e8cf3b20f42a18b2183"
   },
   {
     "stable_id": "key-ability--sanctioned-healer",
@@ -2148,8 +2148,8 @@
       "name": "Scholar of Tactics",
       "benefit1": "You gain proficiency in Pistols.",
       "benefit2": "You may use Take Cover!.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Take Cover!",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "3832172d-0dcc-4857-8f51-3a6d4e5ce683"
     },
     "relationships": {
@@ -2161,7 +2161,7 @@
         }
       ]
     },
-    "source_hash": "c4741067d728f508448f3f0784cd43930f9d219bca93a78211e29647d0f263f1"
+    "source_hash": "a8a109bfbc5a79fade6d61d323d08c2c809efdd0332546da03568826131d3492"
   },
   {
     "stable_id": "key-ability--shared-darkness",
@@ -2179,8 +2179,8 @@
       "name": "Shared Darkness",
       "benefit1": "The range of your darkvision increases by 60ft.",
       "benefit2": "You may use Darkvision.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Darkvision",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "6b4a182a-59ee-475f-983e-0dc0bd13b962"
     },
     "relationships": {
@@ -2192,7 +2192,7 @@
         }
       ]
     },
-    "source_hash": "4bc44a52e9983eb70f99895313f744ab7b9f13da907c098dbd9220b889e56f86"
+    "source_hash": "b112aa411202065d83f78ff5a819b420906998c573385a5c9670ff580ed369e4"
   },
   {
     "stable_id": "key-ability--shield-the-fallen",
@@ -2209,8 +2209,8 @@
       "abilityId": "shield-the-fallen",
       "name": "Shield the Fallen",
       "benefit1": "You may use Shield the Fallen.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Shield the Fallen",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "2fff1f67-4567-40ae-814e-a94aa61a0287"
     },
@@ -2223,7 +2223,7 @@
         }
       ]
     },
-    "source_hash": "aa2252573a881d1454bbfe96af89038a0dee2fdffcaa344566402fa5ab9357a9"
+    "source_hash": "3026c2119d4f5e380d0748754af157b1ce17e64877dff22341843b143f8fd5c6"
   },
   {
     "stable_id": "key-ability--shielding-fist",
@@ -2271,8 +2271,8 @@
       "abilityId": "shrug-it-off",
       "name": "Shrug it off",
       "benefit1": "You may use Vital Drive II.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Vital Drive II",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "2c5b050a-d98f-4ea0-aea5-68865ee44652"
     },
@@ -2285,7 +2285,7 @@
         }
       ]
     },
-    "source_hash": "ceb7a5c7436817a534d447e26c9f2e70464ed19b8d3be1089aba617126eac786"
+    "source_hash": "4f480fbf8aa98a3ef4f80474f88ab6d555f768cd2a66c7c6c9ff46077862aa66"
   },
   {
     "stable_id": "key-ability--snipe",
@@ -2396,8 +2396,8 @@
       "name": "Soul Absorption",
       "benefit1": "You gain Elemental Mastery: Dark",
       "benefit2": "You may use Soul Absorption.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Soul Absorption",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "a0fdd470-fcd1-4926-a37f-d97a85ad6b32"
     },
     "relationships": {
@@ -2409,7 +2409,7 @@
         }
       ]
     },
-    "source_hash": "52d3b411b3829aa668eaf2bb027fb336015f30acdac16be953043873256423ce"
+    "source_hash": "058064a653cf214d3daf8ca2ee8a3597d1440705e0aaf4bd2541d512e5fa5e58"
   },
   {
     "stable_id": "key-ability--soul-bond",
@@ -2457,8 +2457,8 @@
       "abilityId": "sound-the-retreat",
       "name": "Sound the retreat",
       "benefit1": "You may use Sound the retreat",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Sound the retreat",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "dac4299e-a8fc-46cc-85c3-879ce2662fec"
     },
@@ -2471,7 +2471,7 @@
         }
       ]
     },
-    "source_hash": "cd97d157966b013ec9ce3a93c2f6c5ffe693cdc8b8ecd586f5619a107a14e437"
+    "source_hash": "2eea3ff88ce5478c0a2b2d2376ca1933392c5a4b2bb4b0a4d0091c432d9679d0"
   },
   {
     "stable_id": "key-ability--spell-challenge",
@@ -2552,7 +2552,7 @@
       "benefit1": "You can use Spore Symbiote.",
       "benefit2": "You gain Earth Elemental Mastery.",
       "benefit3": "You can create a cute mushroom cap hat to wear.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "0cf24f63-7c3e-4954-a37c-c3949b109237"
     },
     "relationships": {
@@ -2564,7 +2564,7 @@
         }
       ]
     },
-    "source_hash": "830b054b240ca977ac4aad7b18aa3b15eb7e8f310d9f080fc6b25199f8ba8512"
+    "source_hash": "d98e53fbb22727d4b680324c6c617a0adb94783e6a318f80930dc6a7042af708"
   },
   {
     "stable_id": "key-ability--status-assessment-ii",
@@ -2581,8 +2581,8 @@
       "abilityId": "status-assessment-ii",
       "name": "Status Assessment II",
       "benefit1": "You may use Status Assessment II.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Status Assessment II",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "f40ee45c-1c24-4f5c-9ec6-8c1d4602193f"
     },
@@ -2599,7 +2599,7 @@
         }
       ]
     },
-    "source_hash": "aa9e19efdae7071b4f1f9742feb9cbc2e42f84bbbbc544a0c6559998fad28e0d"
+    "source_hash": "9a190ee8639fd98023db0485a6ba749c24521c948eaa522fda70b8346fcadcb9"
   },
   {
     "stable_id": "key-ability--store-time",
@@ -2616,8 +2616,8 @@
       "abilityId": "store-time",
       "name": "Store Time",
       "benefit1": "You can use Store Time.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Store Time",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "f33a0ea1-1022-49b6-a0ad-4df2ebc5a018"
     },
@@ -2630,7 +2630,7 @@
         }
       ]
     },
-    "source_hash": "551469d92255ca30ce437e282793aa58da65618a91b673a7bacdb3f15cc7e9cf"
+    "source_hash": "eb50e8445c0a79abd1b2dde16fb7850ae8f48e54bd2d934043a7565f084d4103"
   },
   {
     "stable_id": "key-ability--studied-healer",
@@ -2679,8 +2679,8 @@
       "name": "Stygian Comprehension",
       "benefit1": "You gain Elemental Mastery: Dark",
       "benefit2": "You may use Dark Bolt.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Dark Bolt",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "d8b1c3a2-b246-44cb-8bf2-8192e51fb2c9"
     },
     "relationships": {
@@ -2692,7 +2692,7 @@
         }
       ]
     },
-    "source_hash": "011005d3a528a87456247bc279cee97b5627377cca8f425c792690028c2d4cc8"
+    "source_hash": "62d8616a4bf196e4dfa50a1d90ba1642ff7ab62342dca0886e47b300cefc1bc2"
   },
   {
     "stable_id": "key-ability--summon-animal",
@@ -2709,8 +2709,8 @@
       "abilityId": "summon-animal",
       "name": "Summon Animal",
       "benefit1": "You may use Summon Animal.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Summon Animal",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "9494f15b-c0ec-4e56-8c57-6329516af37b"
     },
@@ -2723,7 +2723,7 @@
         }
       ]
     },
-    "source_hash": "b3e96a639925f226e370548939ec32f6747c9e81bfef64113027be4373aecc18"
+    "source_hash": "8d17635cab63b67a332a9c034718359179f48eb1f8ed981b5ec9635a90a639eb"
   },
   {
     "stable_id": "key-ability--summoning-basics",
@@ -2741,8 +2741,8 @@
       "name": "Summoning Basics",
       "benefit1": "You may channel for 10 minutes after which you arrive at the space between worlds, allowing you to interact with Eidolons that wish to meet with you.",
       "benefit2": "You may use Attune Eidolon.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Attune Eidolon",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "9417f043-0cc8-4432-9d03-76dcd8cd304f"
     },
     "relationships": {
@@ -2754,7 +2754,7 @@
         }
       ]
     },
-    "source_hash": "9227864642967722dbdcbfeb9fa75b423d984cd4bae67874b4554bb6282de1ce"
+    "source_hash": "ab57f465b360dde2e07c5ddeaa83b892ee084c1d1e9a26e65c10f9b238896929"
   },
   {
     "stable_id": "key-ability--superconductor",
@@ -2802,8 +2802,8 @@
       "abilityId": "superior_assessment",
       "name": "Superior Assessment",
       "benefit1": "You may use Status Assessment III.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Status Assessment III",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "9dd5d233-7114-4bc8-be29-c97373f03965"
     },
@@ -2816,7 +2816,7 @@
         }
       ]
     },
-    "source_hash": "433042e43c8a63b384e2bfbb08f1a7deae6a57ce68325e2167712c71d652d175"
+    "source_hash": "2269134a0cdfc4a6a20642102ceab606ff25be6355f67b5e58091b0617ca0f7f"
   },
   {
     "stable_id": "key-ability--surgical-precision",
@@ -3020,8 +3020,8 @@
       "name": "Timberwright's Core Crafting",
       "benefit1": "You may use the Timberwright's Core Crafting abilities",
       "benefit2": "You may craft using Ash and Yew materials.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Timberwright's Core Crafting",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "01a4dde6-bfed-4af6-829f-060c91f0d20a"
     },
     "relationships": {
@@ -3033,7 +3033,7 @@
         }
       ]
     },
-    "source_hash": "f7ab30299ed177502efa52db4e3945a9abcc063c475507df12bc1927ff255a5a"
+    "source_hash": "587e6b1a5ec59a622b1af53c99923524da5b57dfaba742320314b7757fec1120"
   },
   {
     "stable_id": "key-ability--titan-s-grip",
@@ -3112,8 +3112,8 @@
       "abilityId": "toxic-blast",
       "name": "Toxic Blast",
       "benefit1": "You may use Toxic Blast.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Toxic Blast",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "ae446094-a5bb-48f2-ad4c-490657707200"
     },
@@ -3126,7 +3126,7 @@
         }
       ]
     },
-    "source_hash": "91edbc3c6df095674f83895a28dbe19b424ae707d03c088b2885c3464d8b31ff"
+    "source_hash": "21ab8287840eeda6b7ab2981bded167eaee3028d766572d2907ca48d6e172ec9"
   },
   {
     "stable_id": "key-ability--tranquil-prayers",
@@ -3174,8 +3174,8 @@
       "abilityId": "transfusion",
       "name": "Transfusion",
       "benefit1": "You may use Transfusion.",
-      "benefit2": "ASSOCIATED ABILITY",
-      "benefit3": "Transfusion",
+      "benefit2": "",
+      "benefit3": "",
       "benefit4": "",
       "associatedAbility": "314f6d68-9be0-42c6-a20f-4a0d5821739c"
     },
@@ -3188,7 +3188,7 @@
         }
       ]
     },
-    "source_hash": "0f6ab7828d26c61762cbf395fbbe230419bbecd1a4e35ba1894f1d568c075b00"
+    "source_hash": "e7f38ab6481fb32e6a9e043a06c818dc20f865f17a9ab1fccc63cb96a048795e"
   },
   {
     "stable_id": "key-ability--transmutation-basics",
@@ -3238,7 +3238,7 @@
       "benefit1": "For 1 AP, You can create small items using transmuting to provide temporary comforts and curiosities— a cup to drink out of, a chair to sit down on, a figurine etc.  These items cannot have significant gameplay factors (such as a key or a tool).  If you’d like to create something small to give away or sell, you must utilize x amount of commodities of whatever quantity and type the GM decides.",
       "benefit2": "You may use your transmuter abilities a second time during a craft or co craft.",
       "benefit3": "You may use the following abilities:",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "8c0dc284-0333-4d51-9bc1-eef2034c37ac"
     },
     "relationships": {
@@ -3250,7 +3250,7 @@
         }
       ]
     },
-    "source_hash": "c53d7f999a00f34f864e42f3deb2f1b81e482582ae82cfc4ad4a40d7010ca8c0"
+    "source_hash": "ede5bbc3afee74e8826ede7b7b2d28ec7692cf2f3ff2d490764050775da9e8ef"
   },
   {
     "stable_id": "key-ability--transmuter-of-life",
@@ -3268,8 +3268,8 @@
       "name": "Transmuter of Life",
       "benefit1": "You may use Biohacking.",
       "benefit2": "You can store up to one gene in your gene inventory.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Biohacking",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "94ad5731-f627-44db-baab-7ecc35179b70"
     },
     "relationships": {
@@ -3281,7 +3281,7 @@
         }
       ]
     },
-    "source_hash": "7807351a1084949eccbfc6c961cb415269f97b3bfab26ea71fe8860589f502f6"
+    "source_hash": "aceb5df1616b0cc752529d061db4962ba4981f8250f7ed0dcbafbefb46b86729"
   },
   {
     "stable_id": "key-ability--trap-basics",
@@ -3330,8 +3330,8 @@
       "name": "Tremorsense",
       "benefit1": "You gain Earth Mastery.",
       "benefit2": "You may use Tremorsense",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Tremorsense",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "3a1ba5e6-2df1-4b6f-aad6-00c4edcf5927"
     },
     "relationships": {
@@ -3347,7 +3347,7 @@
         }
       ]
     },
-    "source_hash": "e06ad5cca1bb6348ca9c8c40aedc6921252ec3c18882d147380d3734db42e863"
+    "source_hash": "d79945265e94f905f7ac1ad35006927db4e56528c6d63a43ba37f36527933f8e"
   },
   {
     "stable_id": "key-ability--undead-mastery",
@@ -3396,8 +3396,8 @@
       "name": "Vampiric Strength",
       "benefit1": "Your unarmed attack damage is treated as a One-Handed Weapon in which you are proficient. Your unarmed attacks cannot deal non-lethal damage.",
       "benefit2": "You may use the Vampire Bite ability.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Vampire Bite",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "d79a84ca-cf51-42b8-8fc4-023002ba0648"
     },
     "relationships": {
@@ -3409,7 +3409,7 @@
         }
       ]
     },
-    "source_hash": "5527eff7298abe0aa22c5f4906cf4638c19d4ced8136ca94d477dd674f99ad20"
+    "source_hash": "e1b69c8903a16aba92fe4ef00df36ea5859b1a169ef55818741b6863326fcd8c"
   },
   {
     "stable_id": "key-ability--versatile-range",
@@ -3459,7 +3459,7 @@
       "benefit1": "At the start of each arc, choose one person other than yourself as your VIP for that arc. Your VIP is the target for several of your abilities.",
       "benefit2": "You may use VIP Protection.",
       "benefit3": "If you choose a VIP, you cannot become the target of a VIP protection yourself.",
-      "benefit4": "ASSOCIATED ABILITY",
+      "benefit4": "",
       "associatedAbility": "d090d94f-fcc3-4b1b-bf35-2648b3ba1bbc"
     },
     "relationships": {
@@ -3471,7 +3471,7 @@
         }
       ]
     },
-    "source_hash": "2d782c80e841270bd471af359580f9d326922e9d729b5b47e1ee35adc6b85ef5"
+    "source_hash": "5e3d736ca42749afaeea85e17837eb8bd5369d064e6f215889f2d2cfe55aed24"
   },
   {
     "stable_id": "key-ability--wall-ride",
@@ -3520,8 +3520,8 @@
       "name": "Wind Master",
       "benefit1": "You gain Wind Mastery.",
       "benefit2": "You can use Glide.",
-      "benefit3": "ASSOCIATED ABILITY",
-      "benefit4": "Glide",
+      "benefit3": "",
+      "benefit4": "",
       "associatedAbility": "e8acaf6a-f6aa-47c8-b44a-802c49be7c67"
     },
     "relationships": {
@@ -3541,7 +3541,7 @@
         }
       ]
     },
-    "source_hash": "7bcab28786d2f8c7db851dd585d71c33f8393209d4b8772f3a3e00047e05ce02"
+    "source_hash": "fdcb88e64a25373559556f2180d81de3cbe9b42d7bff36b6e608eb60c647ccd5"
   },
   {
     "stable_id": "key-ability--zhen-jiao",
