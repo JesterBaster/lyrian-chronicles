@@ -14,6 +14,7 @@ import {
 import { collectWorshipBenefits, DIVINES } from "../rules/worship.mjs";
 import { convertOfficialEquipment } from "../rules/equipment-import.mjs";
 import { confirmItemRequirements } from "../rules/requirements.mjs";
+import { skyboundTrialBlocksSpend, skyboundTrialStatus } from "../rules/skybound-trial.mjs";
 import {
   compatibleModTargets,
   installedModFlag,
@@ -574,6 +575,7 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
       (n, b) => n + b.system.expCost,
       0
     );
+    context.skybound = skyboundTrialStatus(this.document.system);
   }
 
   /* -------------------------------------------- */
@@ -820,6 +822,15 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         ui.notifications.warn(game.i18n.format("LYRIAN.Progression.UnlockCost", {
           name: owned.name,
           exp
+        }));
+        return null;
+      }
+      // Checked before the prompt: _preUpdate would refuse the EXP after the
+      // class was already kept.
+      if (skyboundTrialBlocksSpend(this.document.system, exp)) {
+        await owned.delete();
+        ui.notifications.warn(game.i18n.format("LYRIAN.Warn.SkyboundTrial", {
+          name: this.document.name, limit: LYRIAN.skyboundTrial.spiritCoreLimit
         }));
         return null;
       }

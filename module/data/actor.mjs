@@ -279,8 +279,10 @@ export class LyrianActorBase extends foundry.abstract.TypeDataModel {
     for (const item of items) {
       const sys = item.system;
 
-      if (item.type === "gear" && sys.combatItem) {
-        out.burden += (sys.burden ?? 0) * (sys.quantity ?? 1);
+      // The item decides: combat items and carried kits count, stored kits
+      // (0.13.3) and other non-combat items do not.
+      if (item.type === "gear") {
+        out.burden += sys.totalBurden ?? 0;
         continue;
       }
 
@@ -329,6 +331,9 @@ export class LyrianCharacter extends LyrianActorBase {
       total: int(0),
       spent: int(0)
     });
+
+    // Rulebook 0.13.3: Spirit Core is held at 9999 until this is ticked.
+    schema.skyboundTrial = new fields.BooleanField({ initial: false });
 
     schema.interlude = new fields.SchemaField({
       points: int(0),

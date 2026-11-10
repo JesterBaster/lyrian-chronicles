@@ -23,6 +23,7 @@ import {
   formatSkillCapViolation,
   skillCapViolations
 } from "../rules/skill-caps.mjs";
+import { skyboundTrialBlocksSpend, skyboundTrialViolation } from "../rules/skybound-trial.mjs";
 import { schemaVersionForCreation } from "../rules/schema-versioning.mjs";
 import { requireActorActionPermission } from "../rules/action-permissions.mjs";
 import { isUnarmedProficient } from "../rules/proficiencies.mjs";
@@ -83,6 +84,16 @@ export class LyrianActor extends Actor {
   async _preUpdate(changes, options, user) {
     const allowed = await super._preUpdate(changes, options, user);
     if (allowed === false || this.type !== "character") return allowed;
+
+    // Covers every route EXP is spent by, including the class unlock that
+    // writes system.exp.spent directly.
+    const held = skyboundTrialViolation(this.system, changes);
+    if (held) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.SkyboundTrial", {
+        name: this.name, limit: held.limit
+      }));
+      return false;
+    }
 
     const violations = skillCapViolations(this.system, changes);
     if (!violations.length) return allowed;
@@ -1483,20 +1494,25 @@ export class LyrianActor extends Actor {
       );
       return false;
     }
+    if (skyboundTrialBlocksSpend(this.system, exp)) {
+      ui.notifications.warn(game.i18n.format("LYRIAN.Warn.SkyboundTrial", {
+        name: this.name, limit: LYRIAN.skyboundTrial.spiritCoreLimit
+      }));
+      return false;
+    }
 
     const before = this.system.spiritCore;
     await this.update({ "system.exp.spent": this.system.exp.spent + exp });
     const after = this.system.spiritCore;
 
     // Announce crossing a milestone, since it loosens the skill rank cap.
-    const crossed = LYRIAN.spiritCoreTiers.find(
-      (t) => t.threshold > before && t.threshold <= after
-    );
-    if (crossed) {
+    for (const crossed of LYRIAN.spiritCoreMilestones.filter(
+      (m) => m.threshold > before && m.threshold <= after
+    )) {
       await ChatMessage.create({
         speaker: ChatMessage.getSpeaker({ actor: this }),
-        content: `<p class="lyrian-banner">${game.i18n.format("LYRIAN.Msg.TierReached", {
-          name: this.name, tier: game.i18n.localize(crossed.label)
+        content: `<p class="lyrian-banner">${game.i18n.format(crossed.message, {
+          name: this.name, core: crossed.threshold, cap: this.system.skillCap
         })}</p>`
       });
     }

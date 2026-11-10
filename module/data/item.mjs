@@ -261,11 +261,15 @@ export class LyrianAbility extends LyrianItemBase {
     // "This ability counts as your dual wield attack for the turn."
     this.isDualWield = this.keywords?.has("dualWield") ?? false;
     this.isReaction = this.rpCost > 0 && this.apCost === 0;
-    this.costLabel = [
-      this.apCost ? `${this.apCost} AP` : null,
-      this.rpCost ? `${this.rpCost} RP` : null,
-      this.manaCost ? `${this.manaCost} Mana` : null
-    ]
+    // A variable cost ("spend up to 4 AP") is stored as 0, since only the
+    // player knows the X, and the original cost line keeps the X. Read from
+    // that, a variable pool reads "X AP" rather than vanishing as if free.
+    const variable = (pool) => new RegExp(`(^|[\\s,])X ${pool}\\b`).test(this.rawCost ?? "");
+    const label = (amount, pool) => {
+      if (amount) return `${amount} ${pool}`;
+      return variable(pool) ? `X ${pool}` : null;
+    };
+    this.costLabel = [label(this.apCost, "AP"), label(this.rpCost, "RP"), label(this.manaCost, "Mana")]
       .filter(Boolean)
       .join(", ") || "—";
   }
@@ -424,14 +428,18 @@ export class LyrianGear extends LyrianItemBase {
     schema.value = int(0, { min: 0 });
     schema.combatItem = new fields.BooleanField({ initial: true });
     schema.isKit = new fields.BooleanField({ initial: false });
+    // Rulebook 0.13.3: a kit picked up on an adventure can be stored for 0
+    // Burden, but cannot be used for the rest of that adventure.
+    schema.stored = new fields.BooleanField({ initial: false });
     schema.materialType = new fields.StringField({ blank: true, initial: "" });
     schema.units = int(0, { min: 0 });
     return schema;
   }
 
   prepareDerivedData() {
-    // Kits always count as burden even though they are non-combat items.
-    this.countsAsBurden = this.combatItem || this.isKit;
+    // Kits always count as burden even though they are non-combat items,
+    // unless stored for the adventure.
+    this.countsAsBurden = this.isKit ? !this.stored : this.combatItem;
     this.totalBurden = this.countsAsBurden ? this.burden * this.quantity : 0;
   }
 }

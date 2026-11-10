@@ -74,9 +74,9 @@ test("EXP spending is announced through a setting, milestones unconditionally", 
   const source = readFileSync("module/documents/actor.mjs", "utf8");
   assert.match(source, /options\.announce\s*\n?\s*\?\?\s*game\.settings\.get\("lyrian-chronicles", "announceExpSpending"\)/);
 
-  // Crossing a tier raises the skill rank cap, so that banner must not sit
+  // Crossing a milestone raises the skill rank cap, so that banner must not sit
   // behind the same switch as the routine per-advance message.
-  const banner = source.indexOf("LYRIAN.Msg.TierReached");
+  const banner = source.indexOf("LYRIAN.spiritCoreMilestones");
   const gate = source.indexOf('game.settings.get("lyrian-chronicles", "announceExpSpending")');
   assert.ok(banner > 0 && gate > 0);
   assert.ok(banner < gate, "the tier banner must post before the announce gate");
