@@ -42,6 +42,12 @@
   "difficulty": 2
  },
  {
+  "name": "Aetherologist",
+  "slug": "aetherologist",
+  "tier": 3,
+  "difficulty": 4
+ },
+ {
   "name": "Agrarian",
   "slug": "agrarian",
   "tier": 2,
@@ -336,6 +342,12 @@
   "difficulty": 2
  },
  {
+  "name": "Enforcer",
+  "slug": "enforcer",
+  "tier": 2,
+  "difficulty": 2
+ },
+ {
   "name": "Eremancer",
   "slug": "eremancer",
   "tier": 2,
@@ -394,6 +406,12 @@
   "slug": "farmer",
   "tier": 1,
   "difficulty": 2
+ },
+ {
+  "name": "Fateweaver",
+  "slug": "fateweaver",
+  "tier": 2,
+  "difficulty": 3
  },
  {
   "name": "Fencer",

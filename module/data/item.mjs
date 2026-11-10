@@ -261,11 +261,15 @@ export class LyrianAbility extends LyrianItemBase {
     // "This ability counts as your dual wield attack for the turn."
     this.isDualWield = this.keywords?.has("dualWield") ?? false;
     this.isReaction = this.rpCost > 0 && this.apCost === 0;
-    this.costLabel = [
-      this.apCost ? `${this.apCost} AP` : null,
-      this.rpCost ? `${this.rpCost} RP` : null,
-      this.manaCost ? `${this.manaCost} Mana` : null
-    ]
+    // A variable cost ("spend up to 4 AP") is stored as 0, since only the
+    // player knows the X, and the original cost line keeps the X. Read from
+    // that, a variable pool reads "X AP" rather than vanishing as if free.
+    const variable = (pool) => new RegExp(`(^|[\\s,])X ${pool}\\b`).test(this.rawCost ?? "");
+    const label = (amount, pool) => {
+      if (amount) return `${amount} ${pool}`;
+      return variable(pool) ? `X ${pool}` : null;
+    };
+    this.costLabel = [label(this.apCost, "AP"), label(this.rpCost, "RP"), label(this.manaCost, "Mana")]
       .filter(Boolean)
       .join(", ") || "—";
   }

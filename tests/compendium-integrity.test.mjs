@@ -185,7 +185,7 @@ test("every approved entry carries the feed's own id for what it is", () => {
   // regenerated every time. Hand-added entries used to skip it: 35 of them,
   // from the classes, abilities, keywords and ancestry added after the first
   // capture. Journal pages are written from rulebook prose and have no record.
-  const dir = "content-source/approved/0.13.2";
+  const dir = "content-source/approved/0.13.3";
   const missing = [];
   for (const file of readdirSync(dir).filter((name) => /-\d{2}\.json$/.test(name))) {
     for (const entry of JSON.parse(readFileSync(`${dir}/${file}`, "utf8"))) {

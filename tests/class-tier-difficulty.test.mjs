@@ -11,13 +11,13 @@ import { LYRIAN } from "../module/config.mjs";
  * it, and every class came back `total - 1`: a flat tier 2 / difficulty 3.
  *
  * For the 181 classes that already existed the merge kept the 0.13.1 values, so
- * only the four new ones shipped wrong. This pins all 185 against an
+ * only the four new ones shipped wrong. This pins every class against an
  * independently derived table, because the same mistake on a future update
  * would be just as quiet.
  */
 
 const TABLE = JSON.parse(readFileSync(
-  new URL("./fixtures/class-tier-difficulty-0.13.2.json", import.meta.url), "utf8"));
+  new URL("./fixtures/class-tier-difficulty-0.13.3.json", import.meta.url), "utf8"));
 
 const classes = () => [
   ...JSON.parse(readFileSync(new URL("../content/classes-01.json", import.meta.url), "utf8")),
@@ -51,6 +51,15 @@ test("the four classes new in 0.13.2 carry their real values", () => {
       .map((name) => `${name} ${built.get(name).tier}/${built.get(name).difficulty}`),
     ["Fusilier 2/2", "Manifestor 1/2", "Mystic Eyes of Petrification 3/2",
       "Still Stone Testament 3/3"]
+  );
+});
+
+test("the three classes new in 0.13.3 carry their real values", () => {
+  const built = new Map(classes().map((d) => [d.name, d.system]));
+  assert.deepEqual(
+    ["Aetherologist", "Enforcer", "Fateweaver"]
+      .map((name) => `${name} ${built.get(name).tier}/${built.get(name).difficulty}`),
+    ["Aetherologist 3/4", "Enforcer 2/2", "Fateweaver 2/3"]
   );
 });
 

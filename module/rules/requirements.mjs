@@ -128,7 +128,9 @@ export function evaluateRequirement(requirement, context = {}) {
       ownedClasses.filter((entry) => entry.mastered).length >= 2);
   }
 
-  for (const match of text.matchAll(/(?:any|one|1) tier\s*(\d+) class (?:mastered|maxed)/gi)) {
+  // "Any tier 2 mastered" drops the word "class" in five 0.13.3 entries
+  // (Aetherologist, the three Mystic Eyes, Transcendent Lightning Style).
+  for (const match of text.matchAll(/(?:any|one|1) tier\s*(\d+)(?: class)? (?:mastered|maxed)/gi)) {
     recognized = true;
     classDomain = true;
     const tier = Number(match[1]);
@@ -183,10 +185,18 @@ export function evaluateRequirement(requirement, context = {}) {
   if ((/\b(?:race|only|must be|be a|be human|be fae|be chimera|be youkai)\b/i.test(text) || exactRace) && mentionedRaces.length) {
     recognized = true;
     raceDomain = true;
-    const passed = mentionedRaces.some((candidate) => ownedByName(ownedRaces, candidate));
+    const matched = mentionedRaces.filter((candidate) => ownedByName(ownedRaces, candidate));
     addCheck(checks, `race:${mentionedRaces.map((entry) => entry.key).join("|")}`,
       "LYRIAN.Requirement.Check.BeRace",
-      { names: mentionedRaces.map((entry) => entry.name).join(" / ") }, passed);
+      { names: mentionedRaces.map((entry) => entry.name).join(" / ") }, matched.length > 0);
+    // "Nio, Bullfolk, Bearfolk or Male Oni": the sheet does not record sex, so
+    // a character who qualifies only through the qualified race is confirmed
+    // by hand rather than let through or refused.
+    const qualified = [...text.matchAll(/\b(?:male|female)\s+([a-z][a-z'-]*)/gi)].map((m) => key(m[1]));
+    if (matched.length && matched.every((candidate) =>
+      candidate.aliases.some((alias) => qualified.includes(alias)))) {
+      manual.push("The character's sex must be confirmed");
+    }
   }
 
   for (const match of text.matchAll(/(\d[\d,]*)\+?\s+spirit core/gi)) {

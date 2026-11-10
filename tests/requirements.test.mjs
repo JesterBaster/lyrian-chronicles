@@ -135,3 +135,25 @@ test("Thief's official compound alternative is never accepted from Rogue alone",
   assert.equal(evaluateRequirement(requirement, context({ races: ["Human"] })).status,
     REQUIREMENT_STATUS.MANUAL);
 });
+
+test("0.13.3's \"any tier 2 mastered\" checks the tier even without the word class", () => {
+  // Aetherologist: "Sorcerer or Mage mastered plus any tier 2 mastered."
+  const text = "Sorcerer or Mage mastered plus any tier 2 mastered.";
+  const mage = { name: "Mage", tier: 1, level: 8 };
+  const thief = { name: "Thief", tier: 2, level: 8 };
+  const withSorcerer = { ...catalog, classes: [...catalog.classes, { name: "Sorcerer", tier: 1 }] };
+  const evaluate = (classes) => evaluateRequirement(text, { ...context({ classes }), catalog: withSorcerer });
+  assert.equal(evaluate([mage]).status, REQUIREMENT_STATUS.FAIL);
+  assert.ok(evaluate([mage]).checks.some((check) => check.id === "class:tier:2"));
+  assert.equal(evaluate([mage, thief]).status, REQUIREMENT_STATUS.PASS);
+});
+
+test("a race qualified by sex is confirmed by hand when it is the only match", () => {
+  // Large Specimen in 0.13.3 adds "Male Oni"; the sheet does not record sex.
+  const text = "Must be a Nio, Bullfolk, Bearfolk or Male Oni";
+  const races = { ...catalog, races: ["Nio", "Bullfolk", "Bearfolk", "Oni", "Human"] };
+  const evaluate = (owned) => evaluateRequirement(text, { ...context({ races: owned }), catalog: races });
+  assert.equal(evaluate(["Nio"]).status, REQUIREMENT_STATUS.PASS);
+  assert.equal(evaluate(["Oni"]).status, REQUIREMENT_STATUS.MANUAL);
+  assert.equal(evaluate(["Human"]).status, REQUIREMENT_STATUS.FAIL);
+});

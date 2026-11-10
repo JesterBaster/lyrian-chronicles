@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "rulebook_version": "0.13.2",
-  "generated_from": "content-source/approved/0.13.2",
+  "rulebook_version": "0.13.3",
+  "generated_from": "content-source/approved/0.13.3",
   "packs": {
     "rules-setting-guide": {
       "type": "JournalEntry",
@@ -19,14 +19,14 @@
     },
     "breakthroughs": {
       "type": "Item",
-      "count": 89,
+      "count": 90,
       "files": [
         "breakthroughs-01.json"
       ]
     },
     "player-abilities": {
       "type": "Item",
-      "count": 1137,
+      "count": 1155,
       "files": [
         "player-abilities-01.json",
         "player-abilities-02.json",
@@ -43,7 +43,7 @@
     },
     "classes": {
       "type": "Item",
-      "count": 185,
+      "count": 188,
       "files": [
         "classes-01.json",
         "classes-02.json"
@@ -79,7 +79,7 @@
     },
     "artifices": {
       "type": "Item",
-      "count": 47,
+      "count": 49,
       "files": [
         "artifices-01.json"
       ]

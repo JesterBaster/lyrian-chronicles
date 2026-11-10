@@ -164,3 +164,27 @@ test("no shipped rulebook text carries the website's markup", () => {
       `${file} carries Angular scaffolding`);
   }
 });
+
+test("0.13.3 kept everything 0.13.2 had and added its 24 entries", () => {
+  const load = (version) => {
+    const dir = new URL(`../content-source/approved/${version}/`, import.meta.url);
+    const entries = [];
+    for (const file of readdirSync(dir).filter((f) => f.endsWith(".json") && f !== "manifest.json")) {
+      entries.push(...JSON.parse(readFileSync(new URL(file, dir), "utf8")));
+    }
+    return new Map(entries.map((e) => [e.stable_id, e]));
+  };
+  const before = load("0.13.2");
+  const after = load("0.13.3");
+
+  assert.equal(before.size, 2151);
+  assert.equal(after.size, 2175);
+  for (const id of before.keys()) assert.ok(after.has(id), `${id} was dropped`);
+  for (const entry of after.values()) assert.equal(entry.rulebook_version, "0.13.3", entry.stable_id);
+  // The feed's internal id survives between pulls; a changed one means the
+  // merge matched the wrong record.
+  for (const [id, old] of before) {
+    if (!old.source_ids?.index_id) continue;
+    assert.equal(after.get(id).source_ids.index_id, old.source_ids.index_id, id);
+  }
+});

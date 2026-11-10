@@ -10,7 +10,7 @@ import { promisify } from "node:util";
 const run = promisify(execFile);
 const ROOT = path.resolve(import.meta.dirname, "..");
 const MANIFEST = JSON.parse(await readFile(path.join(ROOT, "system.json"), "utf8"));
-const SNAPSHOT_DIRECTORY = path.join(ROOT, "content-source", "approved", "0.13.2");
+const SNAPSHOT_DIRECTORY = path.join(ROOT, "content-source", "approved", "0.13.3");
 const SNAPSHOT_MANIFEST = JSON.parse(await readFile(path.join(SNAPSHOT_DIRECTORY, "manifest.json"), "utf8"));
 const SNAPSHOT = {
   ...SNAPSHOT_MANIFEST,
@@ -22,15 +22,15 @@ const SNAPSHOT = {
 const PACKS = {
   "rules-setting-guide": 2,
   keywords: 92,
-  breakthroughs: 89,
-  "player-abilities": 1137,
+  breakthroughs: 90,
+  "player-abilities": 1155,
   races: 49,
-  classes: 185,
+  classes: 188,
   weapons: 45,
   "armor-shields": 9,
   consumables: 58,
   "gear-kits": 31,
-  artifices: 47,
+  artifices: 49,
   monsters: 84,
   "monster-abilities": 307,
 };
@@ -74,8 +74,8 @@ test("manifest declares reviewed rules plus focused equipment and crafting packs
 });
 
 test("approved snapshot is complete and has no unresolved relationships", () => {
-  assert.equal(SNAPSHOT.rulebook_version, "0.13.2");
-  assert.equal(SNAPSHOT.entries.length, 2151);
+  assert.equal(SNAPSHOT.rulebook_version, "0.13.3");
+  assert.equal(SNAPSHOT.entries.length, 2175);
   assert.deepEqual(SNAPSHOT.unresolved_relationships, []);
   assert.match(SNAPSHOT.attribution, /Angel's Sword Studios/);
 });
@@ -95,9 +95,9 @@ test("compiled packs have reviewed counts and stable unique IDs", () => {
       assert.ok(flags?.seedKey, `${pack}:${document.name} missing seedKey`);
       assert.ok(!seedKeys.has(flags.seedKey), `${pack} duplicate seedKey ${flags.seedKey}`);
       seedKeys.add(flags.seedKey);
-      assert.equal(flags.rulebookVersion, "0.13.2");
+      assert.equal(flags.rulebookVersion, "0.13.3");
       assert.equal(flags.contentBuild, pack === "races" ? "0.5.1" : "0.5.0");
-      assert.match(flags.sourceUrl, /^https:\/\/rpg\.angelssword\.com\/game\/0\.13\.2\//);
+      assert.match(flags.sourceUrl, /^https:\/\/rpg\.angelssword\.com\/game\/0\.13\.3\//);
       assert.match(flags.sourceHash, /^[a-f0-9]{64}$/);
     }
   }

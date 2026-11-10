@@ -9,7 +9,7 @@ import {
 } from "../module/rules/progression.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const SOURCE = process.argv[2] || path.join(ROOT, "content-source", "approved", "0.13.2");
+const SOURCE = process.argv[2] || path.join(ROOT, "content-source", "approved", "0.13.3");
 const OUTPUT = process.argv[3] || path.join(ROOT, "content");
 const SYSTEM_ID = "lyrian-chronicles";
 const CONTENT_BUILD = "0.5.0";
@@ -36,15 +36,15 @@ const PACKS = {
 const EXPECTED = {
   "rules-setting-guide": 2,
   keywords: 92,
-  breakthroughs: 89,
-  "player-abilities": 1137,
+  breakthroughs: 90,
+  "player-abilities": 1155,
   races: 49,
-  classes: 185,
+  classes: 188,
   weapons: 45,
   "armor-shields": 9,
   consumables: 58,
   "gear-kits": 31,
-  artifices: 47,
+  artifices: 49,
   monsters: 84,
   "monster-abilities": 307,
 };
@@ -103,6 +103,21 @@ function number(value, fallback = 0) {
   return match ? Number.parseInt(match[0], 10) : fallback;
 }
 
+/**
+ * One of an ability's costs, as the feed writes it.
+ *
+ * The feed writes a variable cost — "spend up to 4 AP", "X light attacks" —
+ * as -1. Taken as a number that became an AP, RP or mana cost of -1, which the
+ * schema refuses (costs are at least 0) and the cost line printed as "-1 AP".
+ * A variable cost is charged as 0 when the ability is used, since only the
+ * player knows the X, and labelled X so the card says so.
+ */
+function cost(value) {
+  const amount = number(value);
+  if (amount < 0) return { amount: 0, label: "X" };
+  return { amount, label: String(value ?? "").trim() };
+}
+
 function terms(value) {
   return String(value ?? "")
     .split(",")
@@ -150,7 +165,7 @@ function provenance(entry, description = "") {
   const relationshipLinks = relationshipMetadata(entry.relationships);
   return {
     description,
-    source: "The Lyrian Chronicles v0.13.2",
+    source: "The Lyrian Chronicles v0.13.3",
     sourceUrl: entry.source_url,
     sourceHash: entry.source_hash,
     rulebookVersion: entry.rulebook_version,
@@ -291,8 +306,20 @@ function buildBreakthrough(entry) {
     rawCost: String(entry.data.cost ?? ""),
     level: 1,
     requirements: String(entry.data.requirements ?? ""),
-    repeatable: /repeat/i.test(`${entry.data.description ?? ""} ${entry.data.requirements ?? ""}`),
+    repeatable: isRepeatable(`${entry.data.description ?? ""} ${entry.data.requirements ?? ""}`),
   });
+}
+
+/**
+ * The rulebook never says "repeatable". It says a breakthrough "can be selected
+ * multiple times", "may be taken multiple times", or may be picked "more than
+ * once". Matching the verb keeps "teleport multiple times" (Fae Flash Acrobat)
+ * from reading as permission to buy the breakthrough twice.
+ */
+function isRepeatable(text) {
+  const plain = String(text).replace(/<[^>]*>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ");
+  return /\b(?:take|taken|select|selected|pick|picked)(?: this breakthrough)? (?:multiple times|more than once)\b/i.test(plain)
+    || /\brepeatable\b/i.test(plain);
 }
 
 function keyAbilityDescription(data) {
@@ -307,19 +334,20 @@ function buildAbility(entry) {
   const data = entry.data;
   const isKeyAbility = entry.stable_id.startsWith("key-ability--");
   const description = isKeyAbility ? keyAbilityDescription(data) : data.description;
+  const [ap, rp, mana] = [data.apCost, data.rpCost, data.manaCost].map(cost);
   return baseDocument(entry, "ability", fallbackIcons.ability, {
     ...provenance(entry, description),
-    apCost: number(data.apCost),
-    rpCost: number(data.rpCost),
-    manaCost: number(data.manaCost),
+    apCost: ap.amount,
+    rpCost: rp.amount,
+    manaCost: mana.amount,
     upkeep: 0,
     timing: timingFor(data),
     keywords: keywords(data.keywords),
     rawKeywords: String(data.keywords ?? ""),
     rawCost: [
-      data.apCost ? `${data.apCost} AP` : "",
-      data.rpCost ? `${data.rpCost} RP` : "",
-      data.manaCost ? `${data.manaCost} Mana` : "",
+      data.apCost ? `${ap.label} AP` : "",
+      data.rpCost ? `${rp.label} RP` : "",
+      data.manaCost ? `${mana.label} Mana` : "",
     ].filter(Boolean).join(", "),
     otherCosts: String(data.otherCosts ?? ""),
     benefits: isKeyAbility ? description : "",
@@ -558,7 +586,7 @@ function buildMonster(entry, monsterAbilityByStableId) {
 }
 
 function validateSnapshot(snapshot) {
-  if (snapshot.rulebook_version !== "0.13.2") throw new Error("Expected rulebook v0.13.2");
+  if (snapshot.rulebook_version !== "0.13.3") throw new Error("Expected rulebook v0.13.3");
   if (snapshot.unresolved_relationships?.length) {
     throw new Error(`Snapshot has ${snapshot.unresolved_relationships.length} unresolved relationships`);
   }
