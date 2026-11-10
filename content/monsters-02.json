@@ -1344,7 +1344,7 @@
         "powerLevel": 0,
         "expReward": 0,
         "astraCorruption": 0,
-        "dangerLevel": "F",
+        "dangerLevel": "F (B)",
         "recommended": "",
         "appearance": "A white wolf like creature around which electricity constantly crackles.",
         "habitat": "Rarely found anywhere in the wild. Only seen by those it is hunting.",
@@ -1373,7 +1373,7 @@
       "source": {
         "stableId": "monster--raiju",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/raiju",
-        "hash": "a609790ad785d7d1dd4ecde8e725c570dfcd1136c908aff8196d98bf258cdeb1",
+        "hash": "9ff6df5f8af57b185ce70e37288f4eede8530507ff00218f11d27f9a4173fb03",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -1392,7 +1392,7 @@
         "seedKey": "official:monster--raiju",
         "stableId": "monster--raiju",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/raiju",
-        "sourceHash": "a609790ad785d7d1dd4ecde8e725c570dfcd1136c908aff8196d98bf258cdeb1",
+        "sourceHash": "9ff6df5f8af57b185ce70e37288f4eede8530507ff00218f11d27f9a4173fb03",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/a6c9d940-331f-4f14-9c40-cc64280e4713-Raiju_raw.sm.webp"
@@ -5809,7 +5809,7 @@
         "recommended": "",
         "appearance": "A small cute slime.",
         "habitat": "-",
-        "strongAgainst": "PhysicalWater and Fire damage",
+        "strongAgainst": "Physical, Water and Fire damage",
         "weakAgainst": "Lightning damage"
       },
       "gatherables": "",
@@ -5834,7 +5834,7 @@
       "source": {
         "stableId": "monster--water-slime",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/water-slime",
-        "hash": "a72af91f377e683be0644c89fc28a8bf7fa8889c0d962679cf40818d35ea3455",
+        "hash": "ecf035b867302d9f7e1c97659cf15057f06b9908fcd0f9a73e826617bab6525c",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -5856,7 +5856,7 @@
         "seedKey": "official:monster--water-slime",
         "stableId": "monster--water-slime",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/water-slime",
-        "sourceHash": "a72af91f377e683be0644c89fc28a8bf7fa8889c0d962679cf40818d35ea3455",
+        "sourceHash": "ecf035b867302d9f7e1c97659cf15057f06b9908fcd0f9a73e826617bab6525c",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/32adf002-d57f-473c-83c7-35f0da806e8b-water.sm.webp"
@@ -6567,7 +6567,7 @@
         "recommended": "",
         "appearance": "A translucent white creature with a vaguely humanoid shape.",
         "habitat": "Appears around places where a Wraith is.",
-        "strongAgainst": "Armored enemiesPhysical attackers",
+        "strongAgainst": "Armored enemies, Physical attackers",
         "weakAgainst": ""
       },
       "gatherables": "",
@@ -6592,7 +6592,7 @@
       "source": {
         "stableId": "monster--wight",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/wight",
-        "hash": "a609d67fdc78b7cbd8c7267c612004ff0e515d17c8295964589eadb454bfe4e5",
+        "hash": "b13dac59483075b740829b92b7bde96fe4d8efc7090b5c3cb4bfba552fcb85dc",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -6611,7 +6611,7 @@
         "seedKey": "official:monster--wight",
         "stableId": "monster--wight",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/wight",
-        "sourceHash": "a609d67fdc78b7cbd8c7267c612004ff0e515d17c8295964589eadb454bfe4e5",
+        "sourceHash": "b13dac59483075b740829b92b7bde96fe4d8efc7090b5c3cb4bfba552fcb85dc",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/0ac05118-fcb1-47bc-91fa-2ac255fde9a3-Wight_1_raw.sm.webp"
@@ -8131,7 +8131,7 @@
         "recommended": "",
         "appearance": " A large scaled lizard with a pair of wings on its back.",
         "habitat": " Most commonly found high in the mountain in places with a warm temperature.",
-        "strongAgainst": "Parties without ranged attacksPyromancers",
+        "strongAgainst": "Parties without ranged attacks, Pyromancers",
         "weakAgainst": "Aeromancers"
       },
       "gatherables": "",
@@ -8156,7 +8156,7 @@
       "source": {
         "stableId": "monster--wyrm-fire",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/wyrm--fire-",
-        "hash": "d9ad4af1ca3cd1ac2a097ae2f62f9887738110a733a7e7ab01501c4230d07cb4",
+        "hash": "10460a0870f0527a70724b745789260ee23645f5b8490549ad5149955718738d",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -8179,7 +8179,7 @@
         "seedKey": "official:monster--wyrm-fire",
         "stableId": "monster--wyrm-fire",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/wyrm--fire-",
-        "sourceHash": "d9ad4af1ca3cd1ac2a097ae2f62f9887738110a733a7e7ab01501c4230d07cb4",
+        "sourceHash": "10460a0870f0527a70724b745789260ee23645f5b8490549ad5149955718738d",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/2ec47897-5219-4c9b-9360-f340577f0f47-Fire_Wyrm_raw.sm.webp"

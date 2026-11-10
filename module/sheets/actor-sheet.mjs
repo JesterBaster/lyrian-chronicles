@@ -8,6 +8,7 @@ import {
 import {
   normalizeClassLevel,
   raceAncestryRequirement,
+  repeatedBreakthroughCost,
   raceSkillGrant,
   selectedRaceSkillBonuses
 } from "../rules/progression.mjs";
@@ -857,6 +858,13 @@ export class LyrianActorSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
         await owned.delete();
         ui.notifications.warn(game.i18n.format("LYRIAN.Requirement.Duplicate", { name: owned.name }));
         return null;
+      }
+      if (duplicate) {
+        const copies = this.document.items.filter((item) =>
+          item.id !== owned.id && item.type === "breakthrough"
+          && item.system.stableId === owned.system.stableId).length;
+        const expCost = repeatedBreakthroughCost(owned.system.expCost, owned.system.description, copies);
+        if (expCost !== owned.system.expCost) await owned.update({ "system.expCost": expCost });
       }
       const meetsRequirements = await confirmItemRequirements(this.document, owned);
       if (!meetsRequirements) {

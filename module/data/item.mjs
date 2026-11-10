@@ -264,7 +264,8 @@ export class LyrianAbility extends LyrianItemBase {
     // A variable cost ("spend up to 4 AP") is stored as 0, since only the
     // player knows the X, and the original cost line keeps the X. Read from
     // that, a variable pool reads "X AP" rather than vanishing as if free.
-    const variable = (pool) => new RegExp(`(^|[\\s,])X ${pool}\\b`).test(this.rawCost ?? "");
+    // Copies taken from compendiums built before 0.6.50 still read "-1 AP".
+    const variable = (pool) => new RegExp(`(^|[\\s,])(?:X|-1) ${pool}\\b`).test(this.rawCost ?? "");
     const label = (amount, pool) => {
       if (amount) return `${amount} ${pool}`;
       return variable(pool) ? `X ${pool}` : null;

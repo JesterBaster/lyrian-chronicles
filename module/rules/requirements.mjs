@@ -199,6 +199,20 @@ export function evaluateRequirement(requirement, context = {}) {
     }
   }
 
+  // "Evil Eye mastered or Oni plus any tier 2 mastered" (the three Mystic Eyes
+  // classes): being the race stands in for mastering the named class, and the
+  // tier clause applies either way. The race has none of the words the race
+  // check above looks for, so it is read here from its position.
+  const raceInstead = text.match(/\bmastered\s+or\s+([a-z][a-z' -]*?)\s+plus\b/i);
+  const insteadRace = raceInstead ? mentioned(raceCatalog, raceInstead[1])[0] : null;
+  if (insteadRace) {
+    const named = checks.find((check) => check.id.startsWith("class:named:"));
+    if (named) {
+      named.labelData = { classes: `${named.labelData.classes} / ${insteadRace.name}` };
+      if (ownedByName(ownedRaces, insteadRace)) named.status = REQUIREMENT_STATUS.PASS;
+    }
+  }
+
   for (const match of text.matchAll(/(\d[\d,]*)\+?\s+spirit core/gi)) {
     recognized = true;
     const minimum = Number(match[1].replaceAll(",", ""));

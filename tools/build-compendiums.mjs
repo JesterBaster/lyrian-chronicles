@@ -330,6 +330,20 @@ function keyAbilityDescription(data) {
   return sections.join("");
 }
 
+/**
+ * The attack type an ability's text names for its own strike: "make a Heavy
+ * Attack", "Light Attack the target". The attack itself stays switched off
+ * (hasAttack: false) — this only spares whoever switches it on from also
+ * having to change Light to Heavy. Text naming none, or more than one, keeps
+ * the Light default.
+ */
+const STATED_ATTACK = /\b(?:you\s+(?:may\s+|can\s+)?(?:make|perform)\s+(?:a|an|one)\s+(?:basic\s+)?|and\s+|then\s+)(light|heavy|precise)\s+attack\b|\b(light|heavy|precise)\s+attack\s+(?:the|a|an|one|all|each|every)\s+(?:target|enemy|creature)/gi;
+function statedAttackType(description) {
+  const text = String(description ?? "").replace(/<[^>]*>/g, " ").replace(/&nbsp;/g, " ");
+  const types = new Set([...text.matchAll(STATED_ATTACK)].map((m) => (m[1] || m[2]).toLowerCase()));
+  return types.size === 1 ? [...types][0] : "light";
+}
+
 function buildAbility(entry) {
   const data = entry.data;
   const isKeyAbility = entry.stable_id.startsWith("key-ability--");
@@ -356,7 +370,7 @@ function buildAbility(entry) {
     range: String(data.range ?? ""),
     requirement: String(data.requirement ?? ""),
     hasAttack: false,
-    attackType: "light",
+    attackType: statedAttackType(description),
     damageFormula: "",
     damageType: "physical",
     usesWeapon: false,

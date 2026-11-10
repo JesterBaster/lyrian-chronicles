@@ -630,7 +630,7 @@
       "description": "<p>Chimera are creatures that have been mutated due to magic and have gained sentience. &nbsp;Almost all Chimera can be traced back to areas of high magical concentration and a lifeform that was mutated. &nbsp;Despite being quite varied in physical characteristics, all Chimera are effectively the same race at their core. &nbsp;It is unknown how arcane magic was able to pattern itself in such a way…</p><p>From Slime Chimera to the more common Feline Chimeras, there are varied sub-races that can be found throughout the world. And those sub-races can vary widely, even within the same phenotypes. Coloration, ear and tail shapes, and even number of physical characteristics. These widely varying phenotypes are broadly categorized in two ways: kanolith and zoalith.</p><p>Kanolith chimera have limited physical characteristics. Most kanoliths will have ears, tails, or both corresponding to their sub-race. Kanoliths are the most common type of chimera overall and what most will think of when imagining a chimera of any sub-race.</p><p>Zoalith chimera have exaggerated or prevalent physical characteristics. Fur, scales, replaced or altered limbs, and animalistic face shapes are all examples of zoalith features. This often leads to zoalith chimera having a far more “bestial” appearance which can sometimes bring social challenges. While zoalith chimera are overall rarer than kanolith, there are some sub-races that this trend is reversed. Centaurs, harpies, lamiafolk, and slimefolk are all examples of sub-races which trend toward zoalith.</p>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/races/primary/chimera",
-      "sourceHash": "aee0459fe1d100c7bdc1e4ad224f39c2a4c737bfa37516671351906420b7d840",
+      "sourceHash": "4b7bf6bde8faba0b8aa8b81cec3f31ef1d4c7e75e496018596ae71c5ac024b96",
       "rulebookVersion": "0.13.3",
       "stableId": "primary-race--chimera",
       "relationships": {
@@ -653,7 +653,7 @@
       "subrace": "",
       "clan": "",
       "attributes": "You gain +1 in toughness and +1 in awareness.",
-      "ambition": "--",
+      "ambition": "",
       "ambitionExp": 0,
       "attributeBonuses": {
         "main": {
@@ -692,7 +692,7 @@
         "seedKey": "official:primary-race--chimera",
         "stableId": "primary-race--chimera",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/races/primary/chimera",
-        "sourceHash": "aee0459fe1d100c7bdc1e4ad224f39c2a4c737bfa37516671351906420b7d840",
+        "sourceHash": "4b7bf6bde8faba0b8aa8b81cec3f31ef1d4c7e75e496018596ae71c5ac024b96",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.1",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/1bf33da4-b9ac-44cf-ae53-ce85f84ee58f-Slime_GIrl_New_raw_1.sm.webp"
@@ -888,7 +888,7 @@
       "description": "<p>In Demon lore, they were the descendants of Angels who had rebelled against providence.&nbsp; Losing their angelic wings and methods to absorb the Divine might of Light, they’ve adapted techniques to burn their own life force to temporarily tap into their powers.&nbsp; The dangerous technique called&nbsp;<strong>Divine Release</strong>, is highly praised as the pinnacle of a demon’s powers.</p><p>While originally slandered as “demons” by humans and the angels of old, the demons have embraced the name as proof of their rebellion.&nbsp;</p><p>Demons appear as humanoids, and but have varying secondary characteristics.&nbsp; Some have tiny wings that are devoid of the providence absorbing “feathers”, while some have various kinds of horns or eye patterns.&nbsp; Some even have pointed ears like the fae.</p><p>The Demon city of Sorthen exists as an aristocratic meritocracy, where the power balance shifts, houses die and new ones are born based on their contribution to society. &nbsp;These Demon houses all grant their offspring a middle name, this name referencing their roles in society from servants to soldiers to scholars. &nbsp;Each family passes down the techniques of their role, specializing for the greatest efficiency. None of these roles are looked down upon, and it is considered an honor to fulfill your purpose to the highest capability. &nbsp;While the tradition of adhering to house societal roles, they are not inflexible. &nbsp;It is not unusual for an individual to carve out a new life path if they demonstrate exceptional merit, and straying from that assigned family role would then not be viewed negatively.</p><p><strong>Size</strong>: Medium</p>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/races/primary/demon",
-      "sourceHash": "e93515282f27e6812be091c55d432624806f83c0e28fef9cbac4841967d739e6",
+      "sourceHash": "7284c11e57efb287e9b1e6cceb873d877687c3a6104fb16bf3ad2ae9b4dad2df",
       "rulebookVersion": "0.13.3",
       "stableId": "primary-race--demon",
       "relationships": {
@@ -1001,7 +1001,7 @@
       "subrace": "",
       "clan": "",
       "attributes": "You gain +1 in Power and +1 in Reason.",
-      "ambition": "--",
+      "ambition": "",
       "ambitionExp": 0,
       "attributeBonuses": {
         "main": {
@@ -1094,7 +1094,7 @@
         "seedKey": "official:primary-race--demon",
         "stableId": "primary-race--demon",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/races/primary/demon",
-        "sourceHash": "e93515282f27e6812be091c55d432624806f83c0e28fef9cbac4841967d739e6",
+        "sourceHash": "7284c11e57efb287e9b1e6cceb873d877687c3a6104fb16bf3ad2ae9b4dad2df",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.1",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/7a2206e1-b5dc-433d-bc13-ee552982d128-Demon_Portrait_New_raw.sm.webp"
@@ -1356,7 +1356,7 @@
       "description": "<p>The Fae are widely considered the first people that populated Lyra.&nbsp; They are beings that were born from the will of nature and the world itself.&nbsp; Faeries can be quite varied in culture and demeanor, some using their age immortality to achieve great wisdom-- while others might use it to laze about and be merry.</p><p>The most common type of Fae are the High Fae which appear as youthful humanoids with pointed ears and eyes that come in various colors and patterns</p>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/races/primary/fae",
-      "sourceHash": "6fe08d8a634d09a9e39026edaa6964f8cd8119651d04764e30ac9999c1a3b59c",
+      "sourceHash": "60a5cc235c853b6aafe4ee269b0252512ca3a51cd5ef874c1dddd3eddd4bfbf9",
       "rulebookVersion": "0.13.3",
       "stableId": "primary-race--fae",
       "relationships": {
@@ -1379,7 +1379,7 @@
       "subrace": "",
       "clan": "",
       "attributes": "You gain +1 in Agility and +1 in Cunning.",
-      "ambition": "--",
+      "ambition": "",
       "ambitionExp": 0,
       "attributeBonuses": {
         "main": {
@@ -1416,7 +1416,7 @@
         "seedKey": "official:primary-race--fae",
         "stableId": "primary-race--fae",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/races/primary/fae",
-        "sourceHash": "6fe08d8a634d09a9e39026edaa6964f8cd8119651d04764e30ac9999c1a3b59c",
+        "sourceHash": "60a5cc235c853b6aafe4ee269b0252512ca3a51cd5ef874c1dddd3eddd4bfbf9",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.1",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/42158447-1039-4c70-992b-00b67e562492-Dryad_raw.sm.webp"
@@ -4244,7 +4244,7 @@
       "description": "<p>Contrary to popular belief, Youkai are not the same as Chimera.&nbsp; Rather than being lifeforms that have attained sentience through magical mutations, Youkai were once ambient magic that binded together to form lifeforms.&nbsp; Hailing from the misty isle of Kirara, the Youkai are the rarest race amongst the population of Lyr.</p><p>Like Chimera, the Youkai lineages are divided into Sub-Races.</p>",
       "source": "The Lyrian Chronicles v0.13.3",
       "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/races/primary/youkai",
-      "sourceHash": "a2f893eee1787d99b91f26a98bfbe24da8f31f76a2b5ac8754babf271db4ee6d",
+      "sourceHash": "b9df2751e0c91d02dc9e1a7b8db2030c4527c517a58fed678fc8d5b3fbd4d558",
       "rulebookVersion": "0.13.3",
       "stableId": "primary-race--youkai",
       "relationships": {
@@ -4267,7 +4267,7 @@
       "subrace": "",
       "clan": "",
       "attributes": "You gain +1 in Focus and +1 in Presence.",
-      "ambition": "--",
+      "ambition": "",
       "ambitionExp": 0,
       "attributeBonuses": {
         "main": {
@@ -4304,7 +4304,7 @@
         "seedKey": "official:primary-race--youkai",
         "stableId": "primary-race--youkai",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/races/primary/youkai",
-        "sourceHash": "a2f893eee1787d99b91f26a98bfbe24da8f31f76a2b5ac8754babf271db4ee6d",
+        "sourceHash": "b9df2751e0c91d02dc9e1a7b8db2030c4527c517a58fed678fc8d5b3fbd4d558",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.1",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/6cdb70f8-f6b5-43c2-a494-361d0f916d92-Jiangshi_New_raw.sm.webp"

@@ -1141,8 +1141,8 @@
         "recommended": "",
         "appearance": "A large mushroom with a spotted red cap. Looks similar to the normal mushroom, but with a size that of a regular person. It also has a face on the stalk, along with a pair of arms and legs attached to it.",
         "habitat": "Found in damp, dark places.",
-        "strongAgainst": "Melee heavy partiestight spaces",
-        "weakAgainst": "Ranged attacksPyromancers"
+        "strongAgainst": "Melee heavy parties, tight spaces",
+        "weakAgainst": "Ranged attacks, Pyromancers"
       },
       "gatherables": "",
       "tactics": "<p>The Amanita mushroom runs up to the closest target it can see and attacks it normally. Upon taking damage, it will use Poison Spore.</p>",
@@ -1166,7 +1166,7 @@
       "source": {
         "stableId": "monster--amanita-mushroom",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/amanita-mushroom",
-        "hash": "598376073d98d3f2b052619820f23728d9be61a02ab113768813cbed116700d2",
+        "hash": "a6af48516f712bcb9d93da7e542e4c141584812c31fb7ad66ce369f715d100da",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -1184,7 +1184,7 @@
         "seedKey": "official:monster--amanita-mushroom",
         "stableId": "monster--amanita-mushroom",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/amanita-mushroom",
-        "sourceHash": "598376073d98d3f2b052619820f23728d9be61a02ab113768813cbed116700d2",
+        "sourceHash": "a6af48516f712bcb9d93da7e542e4c141584812c31fb7ad66ce369f715d100da",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/b92c7db2-9401-4fc8-9482-f43404f23672-Amanita_raw.sm.webp"
@@ -2582,7 +2582,7 @@
         "recommended": "",
         "appearance": "A humanoid creature.",
         "habitat": "Can be found anywhere.",
-        "strongAgainst": "Parties with low perceptionLow defense parties",
+        "strongAgainst": "Parties with low perception, Low defense parties",
         "weakAgainst": "Tanky parties"
       },
       "gatherables": "",
@@ -2607,7 +2607,7 @@
       "source": {
         "stableId": "monster--assassin",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/assassin",
-        "hash": "64fee64dc06bd20858f3bc45061002c235f1e3e3922fa9fde42ebc6bf0d8b51f",
+        "hash": "9a5d0605b097675081d6f84597cca90858ac37dd7d68e7d0622464fbcd459299",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -2627,7 +2627,7 @@
         "seedKey": "official:monster--assassin",
         "stableId": "monster--assassin",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/assassin",
-        "sourceHash": "64fee64dc06bd20858f3bc45061002c235f1e3e3922fa9fde42ebc6bf0d8b51f",
+        "sourceHash": "9a5d0605b097675081d6f84597cca90858ac37dd7d68e7d0622464fbcd459299",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/8d10a7dd-9988-4634-b1e7-0104780e2139-Assassin_raw.sm.webp"
@@ -5271,7 +5271,7 @@
         "appearance": "A giant spider with a dozen of red eyes.",
         "habitat": "The broodmother lives in caves or underground, covering the tunnels with webbing.",
         "strongAgainst": "Dodgy characters",
-        "weakAgainst": "FireAoE attacks"
+        "weakAgainst": "Fire, AoE attacks"
       },
       "gatherables": "",
       "tactics": "<p>The core part of the broodmother's strategy is the Webbing and Feast skills. The broodmother will always cast Webbing on an enemy if there are no enemies it can safely reach and attack currently inside a web. It gains Lock-on against enemies inside the web, even if they aren't rooted, so it will prioritize attacks on those enemies. It will use Poison Bite each time it can.</p><p>The feast ability has a 4 AP cost and the setup keyword, meaning that it can't immediately finish even if the broodmother has 4 AP. The smartest way to use Feast is to only use it when the broodmother has 0 AP left, this will let the broodmother get in the maximum number of attacks even if the feast attempt fails due to the target being freed from the web. However, as the GM you can use this variable cost to make the fight easier if needed.</p>",
@@ -5295,7 +5295,7 @@
       "source": {
         "stableId": "monster--broodmother",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/broodmother",
-        "hash": "c6c69b24fc09b76951cd46eac7b4bf2e333b614c6425c03b77874dd09139509f",
+        "hash": "2a2a36b81ec5b5ca404a9d1a9acedfa2b521f50672466a1400cf49ec1f8dc658",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -5316,7 +5316,7 @@
         "seedKey": "official:monster--broodmother",
         "stableId": "monster--broodmother",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/broodmother",
-        "sourceHash": "c6c69b24fc09b76951cd46eac7b4bf2e333b614c6425c03b77874dd09139509f",
+        "sourceHash": "2a2a36b81ec5b5ca404a9d1a9acedfa2b521f50672466a1400cf49ec1f8dc658",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/457698ec-0e5c-41ca-bb9a-215c4e1b0e3c-Brood_Mother_1_raw.sm.webp"
@@ -6992,8 +6992,8 @@
         "recommended": "",
         "appearance": "-",
         "habitat": "Found in damp, dark places.",
-        "strongAgainst": "Melee heavy partiestight spaces",
-        "weakAgainst": "Ranged attacksPyromancers"
+        "strongAgainst": "Melee heavy parties, tight spaces",
+        "weakAgainst": "Ranged attacks, Pyromancers"
       },
       "gatherables": "",
       "tactics": "<p>The deathcap mushroom will start the fight by using Spore Launch at the largest group of enemies it can reach. After that, it will fight normally. When it takes damage, it will use Poison Spore as a reaction.</p>",
@@ -7017,7 +7017,7 @@
       "source": {
         "stableId": "monster--deathcap-mushroom",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/deathcap-mushroom",
-        "hash": "ca427550c4cc7f7f3701b2d95b8792b32f4dcfa71f84dd6abcb20dca52ba5f87",
+        "hash": "343d301bc1436f595b0aef3d9873b7e74afa9d3ddc5996412c561bd45eb29562",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -7036,7 +7036,7 @@
         "seedKey": "official:monster--deathcap-mushroom",
         "stableId": "monster--deathcap-mushroom",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/deathcap-mushroom",
-        "sourceHash": "ca427550c4cc7f7f3701b2d95b8792b32f4dcfa71f84dd6abcb20dca52ba5f87",
+        "sourceHash": "343d301bc1436f595b0aef3d9873b7e74afa9d3ddc5996412c561bd45eb29562",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/3b179682-ef5a-4291-8e52-e8ed550b1f2c-Deathcap_Mushroom_raw.sm.webp"
@@ -8031,7 +8031,7 @@
         "recommended": "",
         "appearance": "A large scaled lizard with a pair of wings on its back.",
         "habitat": "Most commonly found high in the mountain in places with a warm temperature.",
-        "strongAgainst": "Parties without ranged attacksPyromancers",
+        "strongAgainst": "Parties without ranged attacks, Pyromancers",
         "weakAgainst": "Aeromancers"
       },
       "gatherables": "",
@@ -8056,7 +8056,7 @@
       "source": {
         "stableId": "monster--drake",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/drake",
-        "hash": "eae9506ac53d49261008d80934f69fd86e76b6bcddde82d94b367a82d81d7a80",
+        "hash": "f3c6493fa011cfa666bee311574755971bdd9ce3a1939e0853c18018724473d3",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -8076,7 +8076,7 @@
         "seedKey": "official:monster--drake",
         "stableId": "monster--drake",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/drake",
-        "sourceHash": "eae9506ac53d49261008d80934f69fd86e76b6bcddde82d94b367a82d81d7a80",
+        "sourceHash": "f3c6493fa011cfa666bee311574755971bdd9ce3a1939e0853c18018724473d3",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/af735805-eb5d-4f2d-a029-a931afd7b858-Drake_1_raw.sm.webp"
@@ -9265,7 +9265,7 @@
         "recommended": "",
         "appearance": "A small cute slime.",
         "habitat": "-",
-        "strongAgainst": "PhysicalEarth and Lightning damage",
+        "strongAgainst": "Physical, Earth and Lightning damage",
         "weakAgainst": "Frost damage"
       },
       "gatherables": "",
@@ -9290,7 +9290,7 @@
       "source": {
         "stableId": "monster--earth-slime",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/earth-slime",
-        "hash": "f71bf0000012011a02951b1de17f3b01af653f70e048771126b3805fe33e7be9",
+        "hash": "48c395061b6bc7ae1eec4bd705cbc453bf1f06ac35d913558c3b640c3fccb856",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -9311,7 +9311,7 @@
         "seedKey": "official:monster--earth-slime",
         "stableId": "monster--earth-slime",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/earth-slime",
-        "sourceHash": "f71bf0000012011a02951b1de17f3b01af653f70e048771126b3805fe33e7be9",
+        "sourceHash": "48c395061b6bc7ae1eec4bd705cbc453bf1f06ac35d913558c3b640c3fccb856",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/5e0af3af-ec8a-4bec-8b0f-7a3cd7bb43c4-earth.sm.webp"
@@ -10307,7 +10307,7 @@
         "recommended": "",
         "appearance": "A small cute slime.",
         "habitat": "-",
-        "strongAgainst": "Physicalfire and frost damage",
+        "strongAgainst": "Physical, fire and frost damage",
         "weakAgainst": "Water damage"
       },
       "gatherables": "",
@@ -10332,7 +10332,7 @@
       "source": {
         "stableId": "monster--fire-slime",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/fire-slime",
-        "hash": "dbdf96dfa11f7575ea61832489e6acf4777fbc0a41832b113255f64dfac35c34",
+        "hash": "d48b5a1848aca71c27622da10aae9e81d018b9f7f6840b5a70d9a5fc975fae9b",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -10353,7 +10353,7 @@
         "seedKey": "official:monster--fire-slime",
         "stableId": "monster--fire-slime",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/fire-slime",
-        "sourceHash": "dbdf96dfa11f7575ea61832489e6acf4777fbc0a41832b113255f64dfac35c34",
+        "sourceHash": "d48b5a1848aca71c27622da10aae9e81d018b9f7f6840b5a70d9a5fc975fae9b",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/2be6de6f-5792-4726-a956-c9842abfb10c-fire.sm.webp"
@@ -11070,7 +11070,7 @@
         "appearance": "A beautiful woman with pale or blue skin and white hair.",
         "habitat": "Can be found in any place where it freezes for most of the year.",
         "strongAgainst": "Cryomancers",
-        "weakAgainst": "SalamandersCryomancersRoots"
+        "weakAgainst": "Salamanders, Cryomancers, Roots"
       },
       "gatherables": "",
       "tactics": "<p>The Frost Maiden is an assassin that functions by limiting the enemies vision and luring them apart from each other, then striking an isolated target.&nbsp;</p><p>She will start the battle by using Blizzard. On her first turn, she will use Blizzard Walker and wait around 40ft away from the enemies. If the enemies spread out to look for her, she can move in with Snow Assassin on her next turn to attack a target, then follow it up with normal attacks after.</p><p>From that point, she can alternate Blizzard Walker and Snow Assassin to get favorable engagements with a lower amount of enemies present.&nbsp;</p>",
@@ -11094,7 +11094,7 @@
       "source": {
         "stableId": "monster--frost-maiden",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/frost-maiden",
-        "hash": "308c40142ccc9588c59d496ea5bd42d77d2f10ec85c654b218cbe8b8931b3992",
+        "hash": "3e3a859c485e611796194c27193b17f3c6b9001f1f55b77bf9f7489ff9c00093",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -11115,7 +11115,7 @@
         "seedKey": "official:monster--frost-maiden",
         "stableId": "monster--frost-maiden",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/frost-maiden",
-        "sourceHash": "308c40142ccc9588c59d496ea5bd42d77d2f10ec85c654b218cbe8b8931b3992",
+        "sourceHash": "3e3a859c485e611796194c27193b17f3c6b9001f1f55b77bf9f7489ff9c00093",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/0b15375b-d44b-4f9a-8d5f-1a1fb9e19342-Frost_Maiden_raw.sm.webp"
@@ -15548,7 +15548,7 @@
         "appearance": "It appears like a giant pitcher plant.",
         "habitat": "Can be found anywhere in a forest or similar area.",
         "strongAgainst": "Ranged attackers with low saves ",
-        "weakAgainst": "Fire usersSlashing weapons"
+        "weakAgainst": "Fire users, Slashing weapons"
       },
       "gatherables": "",
       "tactics": "<p>The opening for a Heliamphora is to wait for a target to walk in range of its vines without noticing the plant. It may use Luring Pollen to do so.</p><p>After its surprise attack, it will try to put any grabbed creatures in its pitcher whenever possible. If any creatures are more than 10ft away from it, it will use its pollen to lure them closer. After that, it will try to grab as many creatures as possible using its basic attack and vine grab.</p>",
@@ -15572,7 +15572,7 @@
       "source": {
         "stableId": "monster--heliamphora",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/heliamphora",
-        "hash": "55b948760654ca01367bbf6e6c545e08abf14e59d3ad3b3f99dcc64aef751d59",
+        "hash": "47936b656b8ad9d41fa397d1b9479452e8e3f3836827307508a1733a1ef1b235",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -15594,7 +15594,7 @@
         "seedKey": "official:monster--heliamphora",
         "stableId": "monster--heliamphora",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/heliamphora",
-        "sourceHash": "55b948760654ca01367bbf6e6c545e08abf14e59d3ad3b3f99dcc64aef751d59",
+        "sourceHash": "47936b656b8ad9d41fa397d1b9479452e8e3f3836827307508a1733a1ef1b235",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/00fea509-bc40-42bc-8b79-08d8520c2490-Heliamphora_raw.sm.webp"
@@ -17270,7 +17270,7 @@
         "recommended": "",
         "appearance": "A beautiful woman with pale or blue skin and white hair. Stands out from the average yuki-onna or frost maiden with her regal stature and the crown of ice she wears on her head.",
         "habitat": " Can be found in any place where it freezes for most of the year.",
-        "strongAgainst": "Melee heavy groupsFrost mages",
+        "strongAgainst": "Melee heavy groups, Frost mages",
         "weakAgainst": "Debuff removal"
       },
       "gatherables": "",
@@ -17295,7 +17295,7 @@
       "source": {
         "stableId": "monster--ice-queen",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/ice-queen",
-        "hash": "56feb09f96ef6dd2f1efbecb35353665f6c4062708be0e0324c4523dc91d64b2",
+        "hash": "c432e9622b79064ada6115b096ca852c1343c0e94fbbc169578b9636ad8cca85",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -17317,7 +17317,7 @@
         "seedKey": "official:monster--ice-queen",
         "stableId": "monster--ice-queen",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/ice-queen",
-        "sourceHash": "56feb09f96ef6dd2f1efbecb35353665f6c4062708be0e0324c4523dc91d64b2",
+        "sourceHash": "c432e9622b79064ada6115b096ca852c1343c0e94fbbc169578b9636ad8cca85",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/41c81beb-8b19-4784-a8d9-07ce028ad113-Frost_Queen_raw.sm.webp"
@@ -18763,7 +18763,7 @@
         "appearance": "A small creature with a large fin.",
         "habitat": "Can be found anywhere in the wild. Most common in open fields.",
         "strongAgainst": "Ranged Attackers",
-        "weakAgainst": "Sure hit attacksother Burrowed creatures"
+        "weakAgainst": "Sure hit attacks, other Burrowed creatures"
       },
       "gatherables": "",
       "tactics": "<p>Landsharks are extremely hard to hit while they are not attacking. They become vulnerable when they leap out to bite, allowing for readied attacks or other reaction attacks to hit them easily.&nbsp;</p><p>Because ranged attackers cannot easily do this, they become the easiest target to focus on for Landsharks. If given the option, Landsharks should always aim to attack ranged attackers over melee ones. Landsharks do not provoke opportunity attacks, allowing them to swim past the melee line. Thus if they can reach a ranged attacker and attack them they should do so. Otherwise, they will attack the melee attacker closest to them if already in range and then swim away.</p>",
@@ -18787,7 +18787,7 @@
       "source": {
         "stableId": "monster--landshark",
         "url": "https://rpg.angelssword.com/game/0.13.3/monsters/landshark",
-        "hash": "a223aba7ba23b78a703e01b4319fc15ce0f16cd44d9e397533ca0259a394324f",
+        "hash": "a5e70076ef01786a0704960503f8a2223a02edc687aa86fa54cd73feae63a3a1",
         "rulebookVersion": "0.13.3",
         "relationships": {
           "passive_abilities": [
@@ -18805,7 +18805,7 @@
         "seedKey": "official:monster--landshark",
         "stableId": "monster--landshark",
         "sourceUrl": "https://rpg.angelssword.com/game/0.13.3/monsters/landshark",
-        "sourceHash": "a223aba7ba23b78a703e01b4319fc15ce0f16cd44d9e397533ca0259a394324f",
+        "sourceHash": "a5e70076ef01786a0704960503f8a2223a02edc687aa86fa54cd73feae63a3a1",
         "rulebookVersion": "0.13.3",
         "contentBuild": "0.5.0",
         "remoteImage": "https://cdn.angelssword.com/ttrpg/assets/81f97e5f-e4cc-4f18-a8e1-6118bcdbe156-Land_Shark_raw.sm.webp"

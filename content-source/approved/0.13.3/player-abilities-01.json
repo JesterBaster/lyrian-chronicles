@@ -2813,14 +2813,14 @@
       "description": "<p>You gain Haste, which gives you 2 AP for the rest of this turn. A target can only be affected by haste once per turn.</p>",
       "manaCost": "",
       "apCost": "0",
-      "rpCost": "0",
+      "rpCost": "",
       "keywords": "Miracle",
       "range": "Self",
       "requirement": "<p>Costs 500 Clim to use.</p>",
       "otherCosts": ""
     },
     "relationships": {},
-    "source_hash": "13910903025523072209c8201f2e4324e20e30aea0c7576fcfdc7b1fbe1a2b8f"
+    "source_hash": "6fd1ca7c6b4b8bb8cb499f751a5191abc504dec6a17258e07d09f85c64d95500"
   },
   {
     "stable_id": "ability--brilliance",
@@ -7019,7 +7019,7 @@
       "rpCost": "",
       "keywords": "Unarmed Strike,Dual Wield",
       "range": "Melee Weapon Range",
-      "requirement": "<p>Must not have made a dual wield attack this turn.</p>",
+      "requirement": "",
       "otherCosts": ""
     },
     "relationships": {
@@ -7030,7 +7030,7 @@
         }
       ]
     },
-    "source_hash": "fb3524637764359c043f0ae6c381c0bd2ff18a327467b2c5980db78bf716373a"
+    "source_hash": "786b62ca27eb09dbbdc1a73ba059eb6ca04f7070730ea77ed3058c906c7a4e60"
   },
   {
     "stable_id": "ability--double-slam",
@@ -10647,7 +10647,7 @@
       "name": "Flight",
       "description": "<p>You gain controlled Flight up to your speed. If you take damage while flying, your altitude drops by 20ft. If this would reduce your altitude to the point where you touch the ground, you become rooted and cannot fly again until the end of your next turn. If the attack that reduced your HP came from a flying creature other than yourself, you do not lose altitude.</p><p>When you end any movement within 5ft of the ground, Flight ends (Causing you to become rooted if this was cause of damage taken).</p>",
       "manaCost": "",
-      "apCost": "0",
+      "apCost": "",
       "rpCost": "0",
       "keywords": "Rage",
       "range": "Self",
@@ -10657,7 +10657,7 @@
     "relationships": {
       "classes": []
     },
-    "source_hash": "5f8dd7aaf4613385870dd140f9c061158ae4ecfe5e5efc4812c6c7688a024dde"
+    "source_hash": "3485da889e1019ef831e9790a07c43f5eef85fffc605fb599426b6716d596815"
   },
   {
     "stable_id": "ability--flower-squirt",

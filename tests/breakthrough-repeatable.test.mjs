@@ -28,3 +28,18 @@ test("doing something multiple times inside a breakthrough is not taking it twic
   assert.match(acrobat.system.description, /multiple times/);
   assert.equal(acrobat.system.repeatable, false);
 });
+
+test("Primary Stat Training costs 100 more per copy, up to 700", async () => {
+  const { repeatedBreakthroughCost } = await import("../module/rules/progression.mjs");
+  const training = breakthroughs.find((b) => b.name === "Primary Stat Training");
+  const cost = (owned) => repeatedBreakthroughCost(training.system.expCost, training.system.description, owned);
+  assert.deepEqual([0, 1, 2, 3, 4, 9].map(cost), [400, 500, 600, 700, 700, 700]);
+
+  const skill = breakthroughs.find((b) => b.name === "Skill Training");
+  assert.equal(repeatedBreakthroughCost(skill.system.expCost, skill.system.description, 5), 25);
+});
+
+test("the sheet applies the step when a further copy is dropped", () => {
+  const sheet = readFileSync(new URL("../module/sheets/actor-sheet.mjs", import.meta.url), "utf8");
+  assert.match(sheet, /repeatedBreakthroughCost\(owned\.system\.expCost, owned\.system\.description, copies\)/);
+});

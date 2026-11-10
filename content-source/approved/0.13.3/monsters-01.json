@@ -224,8 +224,8 @@
       "abilities": "85d4ede5-4387-4ce3-9029-0856cf7921a9",
       "activeActions": "7a92774f-fefd-408a-8418-27cabe09bbe2",
       "strategy": "<p>The Amanita mushroom runs up to the closest target it can see and attacks it normally. Upon taking damage, it will use Poison Spore.</p>",
-      "strongAgainst": "Melee heavy partiestight spaces",
-      "weakAgainst": "Ranged attacksPyromancers",
+      "strongAgainst": "Melee heavy parties, tight spaces",
+      "weakAgainst": "Ranged attacks, Pyromancers",
       "runningMonster": "<p>A dozen or so Amanita Mushrooms can make a threatening encounter for the average group of adventurers. They become more dangerous when the player’s movement is restricted, either through the size of the room or by the mushrooms surrounding the party.</p><p><strong>Gather Parts</strong>: 250 Alchemy units</p>",
       "appearance": "A large mushroom with a spotted red cap. Looks similar to the normal mushroom, but with a size that of a regular person. It also has a face on the stalk, along with a pair of arms and legs attached to it.",
       "habitat": "Found in damp, dark places.",
@@ -242,7 +242,7 @@
         "monster-action--poison-spore"
       ]
     },
-    "source_hash": "598376073d98d3f2b052619820f23728d9be61a02ab113768813cbed116700d2"
+    "source_hash": "a6af48516f712bcb9d93da7e542e4c141584812c31fb7ad66ce369f715d100da"
   },
   {
     "stable_id": "monster--animal-summoner",
@@ -524,7 +524,7 @@
       "abilities": "54facd15-8f41-4812-8622-858850d1c283",
       "activeActions": "2aefa4c2-f438-474c-89cb-876927001852",
       "strategy": "<p>Assassins aim for the backline, targeting enemy mages or archers. They aim to creep up while stealthed, then go in for a backstab. Once they’re on a target, they will keep attacking that target, using Evasive Maneuver aggressively if needed. If they get swarmed, they will use the disengage action and retreat to wait for a better opportunity to strike again.</p>",
-      "strongAgainst": "Parties with low perceptionLow defense parties",
+      "strongAgainst": "Parties with low perception, Low defense parties",
       "weakAgainst": "Tanky parties",
       "runningMonster": "<p>Assassins are intended to be generic heroic enemies that focus on skirmishing. They can be used for any race or situation and can easily be added to fit what you need. They are the heroic version of the ‘Rogue’ generic enemy.</p><p>An assassin can be run as a threat alongside several grunts, as a small group of 2-3 assassins or in a balanced group of heroic enemies combining it with others of its type like the Defender, Sniper etc.</p><p>Assassins prefer light or no armor along with a pair of light weapons, usually daggers.</p>",
       "appearance": "A humanoid creature.",
@@ -544,7 +544,7 @@
         "monster-action--evasive-maneuver"
       ]
     },
-    "source_hash": "64fee64dc06bd20858f3bc45061002c235f1e3e3922fa9fde42ebc6bf0d8b51f"
+    "source_hash": "9a5d0605b097675081d6f84597cca90858ac37dd7d68e7d0622464fbcd459299"
   },
   {
     "stable_id": "monster--astral-spider",
@@ -1016,7 +1016,7 @@
       "activeActions": "b9d8f010-3036-4ff4-bc10-f08a5f7c1900",
       "strategy": "<p>The core part of the broodmother's strategy is the Webbing and Feast skills. The broodmother will always cast Webbing on an enemy if there are no enemies it can safely reach and attack currently inside a web. It gains Lock-on against enemies inside the web, even if they aren't rooted, so it will prioritize attacks on those enemies. It will use Poison Bite each time it can.</p><p>The feast ability has a 4 AP cost and the setup keyword, meaning that it can't immediately finish even if the broodmother has 4 AP. The smartest way to use Feast is to only use it when the broodmother has 0 AP left, this will let the broodmother get in the maximum number of attacks even if the feast attempt fails due to the target being freed from the web. However, as the GM you can use this variable cost to make the fight easier if needed.</p>",
       "strongAgainst": "Dodgy characters",
-      "weakAgainst": "FireAoE attacks",
+      "weakAgainst": "Fire, AoE attacks",
       "runningMonster": "<p>The broodmother is intended as a mostly solo fight, though against stronger groups or groups that have easy access to fire you can add in a few of the grunt spiders.</p><p>The burrowing spiders that appear from the broodmother's passive should act on initiative 0. This gives players enough time to deal with them if they play well and they don't risk getting burrowed in without being able to do anything against it.</p>",
       "appearance": "A giant spider with a dozen of red eyes.",
       "habitat": "The broodmother lives in caves or underground, covering the tunnels with webbing.",
@@ -1036,7 +1036,7 @@
         "monster-action--webbing"
       ]
     },
-    "source_hash": "c6c69b24fc09b76951cd46eac7b4bf2e333b614c6425c03b77874dd09139509f"
+    "source_hash": "2a2a36b81ec5b5ca404a9d1a9acedfa2b521f50672466a1400cf49ec1f8dc658"
   },
   {
     "stable_id": "monster--brute",
@@ -1322,8 +1322,8 @@
       "abilities": "d9543514-1b8a-4e3c-95af-12ec6b4ebcb6",
       "activeActions": "2d40de8d-17cf-4b95-a21a-33127b8f98f3",
       "strategy": "<p>The deathcap mushroom will start the fight by using Spore Launch at the largest group of enemies it can reach. After that, it will fight normally. When it takes damage, it will use Poison Spore as a reaction.</p>",
-      "strongAgainst": "Melee heavy partiestight spaces",
-      "weakAgainst": "Ranged attacksPyromancers",
+      "strongAgainst": "Melee heavy parties, tight spaces",
+      "weakAgainst": "Ranged attacks, Pyromancers",
       "runningMonster": "<p>Two deathcap mushrooms or a deathcap mushroom combined with several amanita mushrooms can provide a suitable threat for a group of adventurers. A deathcap mushroom can provide a lasting debuff to a party that does not have ways to remove poison.</p><p><strong>Gather Parts:</strong> 500 alchemy units</p>",
       "appearance": "-",
       "habitat": "Found in damp, dark places.",
@@ -1341,7 +1341,7 @@
         "monster-action--spore-launch"
       ]
     },
-    "source_hash": "ca427550c4cc7f7f3701b2d95b8792b32f4dcfa71f84dd6abcb20dca52ba5f87"
+    "source_hash": "343d301bc1436f595b0aef3d9873b7e74afa9d3ddc5996412c561bd45eb29562"
   },
   {
     "stable_id": "monster--defender",
@@ -1507,7 +1507,7 @@
       "abilities": "359c575f-325d-4536-9c15-162e287ccde6",
       "activeActions": "7ce354c5-c10b-412f-80a8-3396dc52529e",
       "strategy": "<p>The drake will begin the fight by flying and attacking the party from the sky. It can use both Fireball and Flame Breath in the same turn while flying. If its mana runs out before being forced to the ground, it will land itself and attack as normal.</p><p>If the drake is forced to land through its soft wings ability, it will stay grounded unless it can take flight again without provoking attacks of opportunities. It can still use its Flame Breath even while on the ground, as long as it still has mana.</p>",
-      "strongAgainst": "Parties without ranged attacksPyromancers",
+      "strongAgainst": "Parties without ranged attacks, Pyromancers",
       "weakAgainst": "Aeromancers",
       "runningMonster": "<p>A group of drakes can provide a good challenge to an adventuring party, though they might be too much to handle depending on the party composition.</p><p>Running a pair of drake as a harasser from the sky can make a fight that drains the party's resources without there being a significant risk of anyone dying.</p><p>A drake is a size bigger than the wyrmling and a normal humanoid character.</p><p><strong>Gather Parts:</strong> 250 units of Dragonscale.</p>",
       "appearance": "A large scaled lizard with a pair of wings on its back.",
@@ -1527,7 +1527,7 @@
         "monster-action--fireball"
       ]
     },
-    "source_hash": "eae9506ac53d49261008d80934f69fd86e76b6bcddde82d94b367a82d81d7a80"
+    "source_hash": "f3c6493fa011cfa666bee311574755971bdd9ce3a1939e0853c18018724473d3"
   },
   {
     "stable_id": "monster--drake-wyrmling-fire",
@@ -1750,7 +1750,7 @@
       "abilities": "8540e267-502a-40fa-bb19-e644b8c9f99d",
       "activeActions": "e7f27cbe-efad-4a64-b9b8-b42141b78045",
       "strategy": "<p>-</p>",
-      "strongAgainst": "PhysicalEarth and Lightning damage",
+      "strongAgainst": "Physical, Earth and Lightning damage",
       "weakAgainst": "Frost damage",
       "runningMonster": "<p>About 4 slimes per player would make an adequate challenge for parties. Parties with only physical damage will struggle against slimes.</p><p><strong>Gather Parts:</strong> 250u of Ghimslag flamellons. With a check of at least 20 may also choose to gather the core, which functions as a Rare Earth Herb.</p>",
       "appearance": "A small cute slime.",
@@ -1771,7 +1771,7 @@
         "monster-action--consume"
       ]
     },
-    "source_hash": "f71bf0000012011a02951b1de17f3b01af653f70e048771126b3805fe33e7be9"
+    "source_hash": "48c395061b6bc7ae1eec4bd705cbc453bf1f06ac35d913558c3b640c3fccb856"
   },
   {
     "stable_id": "monster--efreet",
@@ -1935,7 +1935,7 @@
       "abilities": "d4ea424c-a6fc-4853-86e4-c7ed291dc624",
       "activeActions": "e7f27cbe-efad-4a64-b9b8-b42141b78045",
       "strategy": "<p>-</p>",
-      "strongAgainst": "Physicalfire and frost damage",
+      "strongAgainst": "Physical, fire and frost damage",
       "weakAgainst": "Water damage",
       "runningMonster": "<p>About 4 slimes per player would make an adequate challenge for parties. Parties with only physical damage will struggle against slimes.</p><p><strong>Gather Parts:</strong> 250u of Salachar flamellons. With a check of at least 20 may also choose to gather the core, which functions as a Rare Fire Herb.</p>",
       "appearance": "A small cute slime.",
@@ -1956,7 +1956,7 @@
         "monster-action--consume"
       ]
     },
-    "source_hash": "dbdf96dfa11f7575ea61832489e6acf4777fbc0a41832b113255f64dfac35c34"
+    "source_hash": "d48b5a1848aca71c27622da10aae9e81d018b9f7f6840b5a70d9a5fc975fae9b"
   },
   {
     "stable_id": "monster--fortuna",
@@ -2061,7 +2061,7 @@
       "activeActions": "95e4fda1-eac5-4bc1-978a-f631e9fb67e5",
       "strategy": "<p>The Frost Maiden is an assassin that functions by limiting the enemies vision and luring them apart from each other, then striking an isolated target.&nbsp;</p><p>She will start the battle by using Blizzard. On her first turn, she will use Blizzard Walker and wait around 40ft away from the enemies. If the enemies spread out to look for her, she can move in with Snow Assassin on her next turn to attack a target, then follow it up with normal attacks after.</p><p>From that point, she can alternate Blizzard Walker and Snow Assassin to get favorable engagements with a lower amount of enemies present.&nbsp;</p>",
       "strongAgainst": "Cryomancers",
-      "weakAgainst": "SalamandersCryomancersRoots",
+      "weakAgainst": "Salamanders, Cryomancers, Roots",
       "runningMonster": "<p>A group of frost maiden provides a challenging fight for high spirit core players.</p><p>As the GM, you can wait for a turn to see if the players will spread out and stumble into the blizzard alone to look for the frost maiden after the first turn. If they don't, then the frost maiden should just attack to not waste anybody's time. Make sure to hide the token after she moves out of vision range to further tempt people to spread out. Also, remember that if the frost maiden doesn't attack on her first turn, she can use her remaining AP to move and circle around the party to further throw them off about where she is.</p>",
       "appearance": "A beautiful woman with pale or blue skin and white hair.",
       "habitat": "Can be found in any place where it freezes for most of the year.",
@@ -2081,7 +2081,7 @@
         "monster-action--snow-assassin"
       ]
     },
-    "source_hash": "308c40142ccc9588c59d496ea5bd42d77d2f10ec85c654b218cbe8b8931b3992"
+    "source_hash": "3e3a859c485e611796194c27193b17f3c6b9001f1f55b77bf9f7489ff9c00093"
   },
   {
     "stable_id": "monster--gargoyle",
@@ -2809,7 +2809,7 @@
       "activeActions": "79903344-4642-4723-a73d-46945f86cf63",
       "strategy": "<p>The opening for a Heliamphora is to wait for a target to walk in range of its vines without noticing the plant. It may use Luring Pollen to do so.</p><p>After its surprise attack, it will try to put any grabbed creatures in its pitcher whenever possible. If any creatures are more than 10ft away from it, it will use its pollen to lure them closer. After that, it will try to grab as many creatures as possible using its basic attack and vine grab.</p>",
       "strongAgainst": "Ranged attackers with low saves ",
-      "weakAgainst": "Fire usersSlashing weapons",
+      "weakAgainst": "Fire users, Slashing weapons",
       "runningMonster": "<p>Make sure the players are aware of the threat of the pitcher once a player has been grabbed by describing the creature as attempting to move the player to its pitcher. Being dropped in it takes a player out of the fight and may get them killed.</p><p>Some players may also need help in recognizing that they can destroy the vines. If you want to go easy on the players, you can delay the first drop in pot and drop hints that the vines can be targeted.</p>",
       "appearance": "It appears like a giant pitcher plant.",
       "habitat": "Can be found anywhere in a forest or similar area.",
@@ -2830,7 +2830,7 @@
         "monster-action--vine-grab"
       ]
     },
-    "source_hash": "55b948760654ca01367bbf6e6c545e08abf14e59d3ad3b3f99dcc64aef751d59"
+    "source_hash": "47936b656b8ad9d41fa397d1b9479452e8e3f3836827307508a1733a1ef1b235"
   },
   {
     "stable_id": "monster--hobgoblin-boar-rider",
@@ -3116,7 +3116,7 @@
       "abilities": "8f059579-8409-48f7-b2f7-976b6db71bca",
       "activeActions": "91a3af44-2194-4f49-a7ed-52f235aba423",
       "strategy": "<p>The ice queen will start by summoning a tower near her enemies with both her encounter start action and her normal ability, then immediately follow it up with Reverbant Frost.</p><p>She wants to keep away from melee enemies as much as possible. If she can escape them without provoking, she will do so. Future towers will be placed to either slow melee enemies on top of her, or in the biggest group of enemies. She will always follow up a tower placement with Reverbant Frost.</p><p>If she has the option to hit slowed enemies safely with Shards of Ice, she will do so. Otherwise she will attack with whatever weapon is most suitable for the situation. She can easily use a ranged weapon to safely attack more vulnerable opponents.</p>",
-      "strongAgainst": "Melee heavy groupsFrost mages",
+      "strongAgainst": "Melee heavy groups, Frost mages",
       "weakAgainst": "Debuff removal",
       "runningMonster": "<p>The ice queen is a solo monster that is both intelligent and cunning. She may avoid direct fights if they don't appear to be in her favor or attempt to negotiate if things look dire.</p><p>Most of her threat comes from the towers. If players are dedicated to instantly destroying them, she may need reinforcements to keep up the threat.</p>",
       "appearance": "A beautiful woman with pale or blue skin and white hair. Stands out from the average yuki-onna or frost maiden with her regal stature and the crown of ice she wears on her head.",
@@ -3138,7 +3138,7 @@
         "monster-action--reverberant-frost"
       ]
     },
-    "source_hash": "56feb09f96ef6dd2f1efbecb35353665f6c4062708be0e0324c4523dc91d64b2"
+    "source_hash": "c432e9622b79064ada6115b096ca852c1343c0e94fbbc169578b9636ad8cca85"
   },
   {
     "stable_id": "monster--inkblight",
@@ -3366,7 +3366,7 @@
       "activeActions": "ed97fdda-1f7e-4527-838e-56ffb951072b",
       "strategy": "<p>Landsharks are extremely hard to hit while they are not attacking. They become vulnerable when they leap out to bite, allowing for readied attacks or other reaction attacks to hit them easily.&nbsp;</p><p>Because ranged attackers cannot easily do this, they become the easiest target to focus on for Landsharks. If given the option, Landsharks should always aim to attack ranged attackers over melee ones. Landsharks do not provoke opportunity attacks, allowing them to swim past the melee line. Thus if they can reach a ranged attacker and attack them they should do so. Otherwise, they will attack the melee attacker closest to them if already in range and then swim away.</p>",
       "strongAgainst": "Ranged Attackers",
-      "weakAgainst": "Sure hit attacksother Burrowed creatures",
+      "weakAgainst": "Sure hit attacks, other Burrowed creatures",
       "runningMonster": "<p>A large group of landsharks is a good challenge for a group of adventurers.</p><p>As a note, when a player makes a readied action against the Landshark to hit it when it comes up, the readied attack will go off first.</p><p><strong>Gather Parts: </strong>250 units of animal hides</p>",
       "appearance": "A small creature with a large fin.",
       "habitat": "Can be found anywhere in the wild. Most common in open fields.",
@@ -3383,7 +3383,7 @@
         "monster-action--jumping-bite"
       ]
     },
-    "source_hash": "a223aba7ba23b78a703e01b4319fc15ce0f16cd44d9e397533ca0259a394324f"
+    "source_hash": "a5e70076ef01786a0704960503f8a2223a02edc687aa86fa54cd73feae63a3a1"
   },
   {
     "stable_id": "monster--mage",
@@ -3830,7 +3830,7 @@
       "monsterId": "raiju",
       "name": "Raiju",
       "type": "Grunt Elemental",
-      "dangerLevel": "F",
+      "dangerLevel": "F (B)",
       "recommended": "",
       "hp": "25",
       "mana": "0",
@@ -3874,7 +3874,7 @@
         "monster-action--static-field"
       ]
     },
-    "source_hash": "a609790ad785d7d1dd4ecde8e725c570dfcd1136c908aff8196d98bf258cdeb1"
+    "source_hash": "9ff6df5f8af57b185ce70e37288f4eede8530507ff00218f11d27f9a4173fb03"
   },
   {
     "stable_id": "monster--rhinoceros-beetle",
@@ -4708,7 +4708,7 @@
       "abilities": "b0a93838-ec72-48b7-8b2f-7dd450b20d6c",
       "activeActions": "ed1d943f-96cc-4681-9542-dc8c43bf6647",
       "strategy": "<p>-</p>",
-      "strongAgainst": "PhysicalWater and Fire damage",
+      "strongAgainst": "Physical, Water and Fire damage",
       "weakAgainst": "Lightning damage",
       "runningMonster": "<p>About 4 slimes per player would make an adequate challenge for parties. Parties with only physical damage will struggle against slimes.</p><p><strong>Gather Parts:</strong> 250u of Vivinthal flamellons. With a check of at least 20 may also choose to gather the core, which functions as a Rare Water Herb.</p>",
       "appearance": "A small cute slime.",
@@ -4730,7 +4730,7 @@
         "monster-action--cure-body"
       ]
     },
-    "source_hash": "a72af91f377e683be0644c89fc28a8bf7fa8889c0d962679cf40818d35ea3455"
+    "source_hash": "ecf035b867302d9f7e1c97659cf15057f06b9908fcd0f9a73e826617bab6525c"
   },
   {
     "stable_id": "monster--westrian-heavy-paladin",
@@ -4833,7 +4833,7 @@
       "abilities": "3d69e109-e8c4-47cf-9c1c-a4dd600dfd10",
       "activeActions": "d92e8ea5-d6af-4897-9c53-ab2c758ad060",
       "strategy": "<p>The wight will attacks the closest target. It can choose between Spectral Touch or Draining Touch + a light attack, both are valid options.</p>",
-      "strongAgainst": "Armored enemiesPhysical attackers",
+      "strongAgainst": "Armored enemies, Physical attackers",
       "weakAgainst": "",
       "runningMonster": "<p>Wights are very strong against physical attackers. Even a small group of wights can be annoying to fight when you don't have any non-physical damage. Consider the party's abilities very carefully when choosing how many wights to put in.</p><p>You can choose to have Wights use their RP immediately, which opens them up for physical attackers, or have them save their RP so they can always react to the physical attackers. The first option will make the fight more manageable for the party members who don't have magical damage options.</p>",
       "appearance": "A translucent white creature with a vaguely humanoid shape.",
@@ -4852,7 +4852,7 @@
         "monster-action--spectral-touch"
       ]
     },
-    "source_hash": "a609d67fdc78b7cbd8c7267c612004ff0e515d17c8295964589eadb454bfe4e5"
+    "source_hash": "b13dac59483075b740829b92b7bde96fe4d8efc7090b5c3cb4bfba552fcb85dc"
   },
   {
     "stable_id": "monster--wind-slime",
@@ -5084,7 +5084,7 @@
       "abilities": "08eab558-5af0-4cfe-8d3b-71cccc5950d1",
       "activeActions": "c559538d-dd3c-4b41-a05c-e5894f7bb0bd",
       "strategy": "<p>The firewyrm will rain fire from the sky until it is forced down to the ground or it runs out of mana. Even when out of mana, it may still choose to do fly-by attacks instead of staying on the ground.</p><p>While in the sky, it can use both Fireball and Flame Breath at the largest group of enemies. On the ground, it will use tail swipe as the final action of each round and may still use flame breath if it has mana left.</p><p>At the encounter start, it will always use Terrifying Roar.</p>",
-      "strongAgainst": "Parties without ranged attacksPyromancers",
+      "strongAgainst": "Parties without ranged attacks, Pyromancers",
       "weakAgainst": "Aeromancers",
       "runningMonster": "<p>The firewyrm is a solo monster that is a serious threat to any party without aeromancers. In a space where their flight is limited, they can be less threatening. As they are intelligent creatures, a firewyrm may retreat if the battle starts going badly for it.</p><p>The firewyrm is bigger than a drake, but the token size is still the same.</p><p><strong>Gather Parts:</strong> 1000 units of dragonscale.</p>",
       "appearance": " A large scaled lizard with a pair of wings on its back.",
@@ -5107,7 +5107,7 @@
         "monster-action--terrifying-roar"
       ]
     },
-    "source_hash": "d9ad4af1ca3cd1ac2a097ae2f62f9887738110a733a7e7ab01501c4230d07cb4"
+    "source_hash": "10460a0870f0527a70724b745789260ee23645f5b8490549ad5149955718738d"
   },
   {
     "stable_id": "monster--zombies",

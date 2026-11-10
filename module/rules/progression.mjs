@@ -207,3 +207,23 @@ export function selectedRaceBonuses(raceSystem = {}) {
   }
   return { main, sub };
 }
+
+/**
+ * What another copy of a repeatable breakthrough costs.
+ *
+ * Primary Stat Training: "Each time you take this breakthrough the cost
+ * increases by 100, up to a maximum of 700." The first copy costs the printed
+ * price; each copy already owned adds the step, capped where the text caps it.
+ *
+ * @param {number} baseCost       The printed EXP cost.
+ * @param {string} description    The breakthrough's text.
+ * @param {number} alreadyOwned   Copies the character has before this one.
+ */
+export function repeatedBreakthroughCost(baseCost, description = "", alreadyOwned = 0) {
+  const base = Number(baseCost) || 0;
+  const text = String(description).replace(/<[^>]*>/g, " ").replace(/&nbsp;/g, " ");
+  const match = text.match(/cost increases by (\d+)(?:,?\s*up to a maximum of (\d+))?/i);
+  if (!match || !(alreadyOwned > 0)) return base;
+  const cost = base + Number(match[1]) * alreadyOwned;
+  return match[2] ? Math.min(cost, Number(match[2])) : cost;
+}
